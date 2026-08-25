@@ -24,9 +24,9 @@ levels:
     it: basso
     en: low
   description:
-    de: Keine zusätzlichen AWF über die Basisanforderungen hinaus.
-    fr: Aucun AWF supplémentaire au-delà des exigences de base.
-    it: Nessun AWF aggiuntivo oltre ai requisiti di base.
+    de: Keine zusätzlichen Workflows über die Basisanforderungen hinaus.
+    fr: Aucun workflow supplémentaire au-delà des exigences de base.
+    it: Nessun workflow aggiuntivo oltre ai requisiti di base.
     en: No additional workflows beyond baseline requirements.
   status: active
   activated_workflows: []
@@ -40,10 +40,10 @@ levels:
     it: medio
     en: medium
   description:
-    de: Qualitätssicherung Energiebezugsfläche (AWF-01-1).
-    fr: Assurance qualité surface de référence énergétique (AWF-01-1).
-    it: Assicurazione qualità superficie di riferimento energetico (AWF-01-1).
-    en: QA of energy reference area (AWF-01-1).
+    de: Qualitätssicherung Energiebezugsfläche.
+    fr: Assurance qualité surface de référence énergétique.
+    it: Assicurazione qualità superficie di riferimento energetico.
+    en: QA of energy reference area.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/qualitatssicherung-energiebezugsflache
@@ -57,10 +57,10 @@ levels:
     it: alto
     en: high
   description:
-    de: Lebenszykluskosten und Flächenkennwerte (AWF-03-4, AWF-03-6, AWF-03-8).
-    fr: Coûts du cycle de vie et indicateurs de surfaces (AWF-03-4, AWF-03-6, AWF-03-8).
-    it: Costi del ciclo di vita e indicatori di superficie (AWF-03-4, AWF-03-6, AWF-03-8).
-    en: Lifecycle costs and area key figures (AWF-03-4, AWF-03-6, AWF-03-8).
+    de: Lebenszykluskosten und Flächenkennwerte.
+    fr: Coûts du cycle de vie et indicateurs de surfaces.
+    it: Costi del ciclo di vita e indicatori di superficie.
+    en: Lifecycle costs and area key figures.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/bim2lcc-lebenszykluskosten

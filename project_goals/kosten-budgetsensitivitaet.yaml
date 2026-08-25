@@ -24,14 +24,14 @@ levels:
     it: generoso
     en: generous
   description:
-    de: Basis-Mengen-/Kostenermittlung (AWF-03).
-    fr: Détermination de base des quantités/coûts (AWF-03).
-    it: Determinazione base delle quantità/costi (AWF-03).
-    en: Baseline quantity/cost takeoff (AWF-03).
+    de: Basis-Mengen-/Kostenermittlung.
+    fr: Détermination de base des quantités/coûts.
+    it: Determinazione base delle quantità/costi.
+    en: Baseline quantity/cost takeoff.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/mengen-und-kostenermittlung
-  comment: Delta at level grosszügig (sort_order 1); Basis AWF-03.
+  comment: Delta at level grosszügig (sort_order 1).
 - id: pragmaticbim:project-goal-level/kosten-mittel
   code: COST-02
   sort_order: 2
@@ -41,10 +41,10 @@ levels:
     it: medio
     en: medium
   description:
-    de: Erweiterte Kostengliederung und Kennzahlen (AWF-03-1, AWF-03-6, AWF-03-8).
-    fr: Ventilation des coûts et indicateurs élargis (AWF-03-1, AWF-03-6, AWF-03-8).
-    it: Ripartizione costi e indicatori estesi (AWF-03-1, AWF-03-6, AWF-03-8).
-    en: Extended cost breakdown and key figures (AWF-03-1, AWF-03-6, AWF-03-8).
+    de: Erweiterte Kostengliederung und Kennzahlen.
+    fr: Ventilation des coûts et indicateurs élargis.
+    it: Ripartizione costi e indicatori estesi.
+    en: Extended cost breakdown and key figures.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/zuordnung-der-bauteile-nach-ebkp-3-stellig
@@ -60,10 +60,10 @@ levels:
     it: sensibile
     en: sensitive
   description:
-    de: Lebenszykluskosten und vertiefte Flächenkennwerte (AWF-03-4, AWF-01-05, AWF-01-3).
-    fr: Coûts du cycle de vie et indicateurs de surfaces approfondis (AWF-03-4, AWF-01-05, AWF-01-3).
-    it: Costi del ciclo di vita e indicatori di superficie approfonditi (AWF-03-4, AWF-01-05, AWF-01-3).
-    en: Lifecycle costing and deeper area metrics (AWF-03-4, AWF-01-05, AWF-01-3).
+    de: Lebenszykluskosten und vertiefte Flächenkennwerte.
+    fr: Coûts du cycle de vie et indicateurs de surfaces approfondis.
+    it: Costi del ciclo di vita e indicatori di superficie approfonditi.
+    en: Lifecycle costing and deeper area metrics.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/bim2lcc-lebenszykluskosten

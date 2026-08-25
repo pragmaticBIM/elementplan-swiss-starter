@@ -24,9 +24,9 @@ levels:
     it: non critico
     en: non-critical
   description:
-    de: Keine zusätzlichen terminbezogenen AWF.
-    fr: Aucun AWF lié aux délais supplémentaire.
-    it: Nessun AWF legato ai tempi aggiuntivo.
+    de: Keine zusätzlichen terminbezogenen Workflows.
+    fr: Aucun workflow lié aux délais supplémentaire.
+    it: Nessun workflow legato ai tempi aggiuntivo.
     en: No additional schedule-related workflows.
   status: active
   activated_workflows: []
@@ -40,10 +40,10 @@ levels:
     it: Standard
     en: Standard
   description:
-    de: Planungskoordination (AWF-05-2).
-    fr: Coordination de la planification (AWF-05-2).
-    it: Coordinamento della pianificazione (AWF-05-2).
-    en: Planning coordination (AWF-05-2).
+    de: Planungskoordination.
+    fr: Coordination de la planification.
+    it: Coordinamento della pianificazione.
+    en: Planning coordination.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/planungskoordination
@@ -57,10 +57,10 @@ levels:
     it: altamente critico
     en: highly critical
   description:
-    de: Bauablaufplanung und Simulation kritischer Abläufe (AWF-06, AWF-06-1).
-    fr: Planification du processus de construction et simulation des processus critiques (AWF-06, AWF-06-1).
-    it: Pianificazione del processo costruttivo e simulazione dei processi critici (AWF-06, AWF-06-1).
-    en: Construction sequencing and simulation of critical processes (AWF-06, AWF-06-1).
+    de: Bauablaufplanung und Simulation kritischer Abläufe.
+    fr: Planification du processus de construction et simulation des processus critiques.
+    it: Pianificazione del processo costruttivo e simulazione dei processi critici.
+    en: Construction sequencing and simulation of critical processes.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/bauablaufplanung-und-baufortschritt

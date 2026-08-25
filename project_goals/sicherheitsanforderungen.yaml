@@ -24,9 +24,9 @@ levels:
     it: Standard
     en: Standard
   description:
-    de: Keine zusätzlichen sicherheitsbezogenen AWF.
-    fr: Aucun AWF de sécurité supplémentaire.
-    it: Nessun AWF di sicurezza aggiuntivo.
+    de: Keine zusätzlichen sicherheitsbezogenen Workflows.
+    fr: Aucun workflow de sécurité supplémentaire.
+    it: Nessun workflow di sicurezza aggiuntivo.
     en: No additional security-related workflows.
   status: active
   activated_workflows: []
@@ -40,10 +40,10 @@ levels:
     it: elevato
     en: elevated
   description:
-    de: Sicherheitszonen und Feuerwehreinsatzplanung (AWF-02-8, AWF-02-15).
-    fr: Zones de sécurité et planification d'intervention pompiers (AWF-02-8, AWF-02-15).
-    it: Zone di sicurezza e pianificazione intervento vigili del fuoco (AWF-02-8, AWF-02-15).
-    en: Security zones and fire brigade deployment planning (AWF-02-8, AWF-02-15).
+    de: Sicherheitszonen und Feuerwehreinsatzplanung.
+    fr: Zones de sécurité et planification d'intervention pompiers.
+    it: Zone di sicurezza e pianificazione intervento vigili del fuoco.
+    en: Security zones and fire brigade deployment planning.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/darstellung-sicherheitszonen-in-modell
@@ -58,10 +58,10 @@ levels:
     it: classificato
     en: classified
   description:
-    de: Sicherheitstechnik und Fassadenklassifizierung COMSEC (AWF-02-9, AWF-02-10).
-    fr: Techniques de sécurité et classification de façade COMSEC (AWF-02-9, AWF-02-10).
-    it: Tecniche di sicurezza e classificazione facciata COMSEC (AWF-02-9, AWF-02-10).
-    en: Security systems and COMSEC facade classification (AWF-02-9, AWF-02-10).
+    de: Sicherheitstechnik und Fassadenklassifizierung COMSEC.
+    fr: Techniques de sécurité et classification de façade COMSEC.
+    it: Tecniche di sicurezza e classificazione facciata COMSEC.
+    en: Security systems and COMSEC facade classification.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/visualisierung-sicherheitstechnik-im-modell
