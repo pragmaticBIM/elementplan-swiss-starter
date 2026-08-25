@@ -1,0 +1,59 @@
+# Viewer S3 artifacts are published by the Elementplan editor (Publish Version /
+# Create & publish). This workflow is secondary: optional release asset attach
+# and S3 sync when repo vars/secrets are configured. It is not required for the
+# viewer to see a version.
+name: publish
+
+on:
+  push:
+    branches: [main]
+  release:
+    types: [published]
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install pandas pyyaml openpyxl python-slugify ifctester Jinja2 weasyprint
+
+      - name: Checkout elementplan core
+        uses: actions/checkout@v4
+        with:
+          repository: pragmaticBIM/elementplan
+          path: elementplan-src
+
+      - name: Build artifacts
+        env:
+          PROJECT_SLUG: ${{ vars.PROJECT_SLUG }}
+          VERSION: ${{ github.event.release.tag_name || 'dev' }}
+          GIT_SHA: ${{ github.sha }}
+        run: |
+          export PYTHONPATH="${{ github.workspace }}/elementplan-src/elementplan"
+          python -m core.publish \
+            --repo-dir . \
+            --version "${VERSION}" \
+            --slug "${PROJECT_SLUG}" \
+            --output-dir published
+
+      - name: Upload GitHub Release assets
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: published/**/*
+
+      - name: Sync to S3
+        if: vars.S3_BUCKET != ''
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ vars.S3_REGION || 'eu-central-1' }}
+        run: |
+          aws s3 sync published/ "s3://${{ vars.S3_BUCKET }}/projects/${{ vars.PROJECT_SLUG }}/${{ github.event.release.tag_name || github.sha }}/"

@@ -1,0 +1,22 @@
+id: pragmaticbim:workflow/des
+code: DES
+sort_order: 40
+name:
+  de: Entwurf
+  fr: Conception
+  it: Progettazione
+  en: Design
+description:
+  de: 'Planung und Ausarbeitung des Bauwerks und seiner Anlagen. Beispiele: Vorprojekt, Ausführungsplanung, Koordinationsmodelle.'
+  fr: 'Études et développement du projet du bâtiment et de ses installations. Exemples: avant-projet, projet d''exécution, maquettes de coordination.'
+  it: 'Progettazione e sviluppo dell''edificio e dei suoi impianti. Esempi: studio di fattibilità, progetto esecutivo, modelli di coordinamento.'
+  en: 'Planning and design development of the built asset and its systems. Examples: concept design, detailed design, coordination models.'
+workflow_group: null
+parent_workflow: null
+picture_link: null
+status: active
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+needed_for_project_goals: []
+comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

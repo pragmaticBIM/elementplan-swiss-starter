@@ -1,0 +1,61 @@
+id: pragmaticbim:element/site
+code: SITE
+sort_order: 2
+status: active
+name:
+  de: Areal
+  fr: Site
+  it: Sito
+  en: Site
+definition:
+  de: |
+    Planungsperimeter als Grundstück bzw. Areal (IfcSite). Dem Projekt zugeordnet.
+
+    **Modellierung**
+    - Genau ein IfcSite als Planungsperimeter.
+    - Mehrere Parzellen können zu einem IfcSite zusammengefasst werden.
+  fr: |
+    Périmètre de planification comme terrain ou site (IfcSite). Rattaché au projet.
+
+    **Modélisation**
+    - Exactement un IfcSite comme périmètre de planification.
+    - Plusieurs parcelles peuvent être regroupées en un IfcSite.
+  it: |
+    Perimetro di pianificazione come terreno o sito (IfcSite). Collegato al progetto.
+
+    **Modellazione**
+    - Esattamente un IfcSite come perimetro di pianificazione.
+    - Più particelle possono essere riunite in un IfcSite.
+  en: |
+    Planning perimeter as the site (IfcSite). Assigned to the project.
+
+    **Modelling**
+    - Exactly one IfcSite as the planning perimeter.
+    - Several parcels may be combined into one IfcSite.
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+entity_ifc2x3: IfcSite
+entity_ifc4: IfcSite
+entity_ifc4_3: IfcSite
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcSite
+attributes:
+  - name: Name
+    pset: null
+    definition:
+      de: Bezeichnung des Areals bzw. Planungsperimeters.
+      fr: Désignation du site ou du périmètre de planification.
+      it: Denominazione del sito o del perimetro di pianificazione.
+      en: Designation of the site or planning perimeter.
+    datatype: IfcLabel
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 1

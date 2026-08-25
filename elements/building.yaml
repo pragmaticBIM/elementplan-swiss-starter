@@ -1,0 +1,61 @@
+id: pragmaticbim:element/building
+code: BUILDING
+sort_order: 3
+status: active
+name:
+  de: Gebäude
+  fr: Bâtiment
+  it: Edificio
+  en: Building
+definition:
+  de: |
+    Gebäude als logische Gliederungsebene (IfcBuilding). Dem Areal zugeordnet.
+
+    **Modellierung**
+    - Mindestens ein IfcBuilding pro Datei.
+    - Mehrere Gebäude auf demselben Areal als eigene IfcBuilding führen.
+  fr: |
+    Bâtiment comme niveau logique (IfcBuilding). Rattaché au site.
+
+    **Modélisation**
+    - Au moins un IfcBuilding par fichier.
+    - Plusieurs bâtiments sur le même site comme IfcBuilding distincts.
+  it: |
+    Edificio come livello logico (IfcBuilding). Collegato al sito.
+
+    **Modellazione**
+    - Almeno un IfcBuilding per file.
+    - Più edifici sullo stesso sito come IfcBuilding distinti.
+  en: |
+    Building as a logical breakdown level (IfcBuilding). Assigned to the site.
+
+    **Modelling**
+    - At least one IfcBuilding per file.
+    - Several buildings on the same site as separate IfcBuilding instances.
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+entity_ifc2x3: IfcBuilding
+entity_ifc4: IfcBuilding
+entity_ifc4_3: IfcBuilding
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcBuilding
+attributes:
+  - name: Name
+    pset: null
+    definition:
+      de: Gebäudebezeichnung gemäss Projekt.
+      fr: Désignation du bâtiment selon le projet.
+      it: Denominazione dell'edificio secondo il progetto.
+      en: Building designation according to the project.
+    datatype: IfcLabel
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 1

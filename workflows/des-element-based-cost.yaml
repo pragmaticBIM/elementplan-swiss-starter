@@ -1,0 +1,54 @@
+id: pragmaticbim:workflow/des-element-based-cost
+code: DES-COST
+sort_order: 41
+name:
+  de: Elementbasierte Kostenermittlung mit abstractBIM-Mengen
+  fr: Calcul des coûts par élément à partir des quantités abstractBIM
+  it: Calcolo dei costi per elemento dalle quantità abstractBIM
+  en: Element-based cost calculation from abstractBIM quantities
+description:
+  de: |
+    Modellbasierte Mengen für eine elementbasierte Kostenermittlung.
+
+    abstractBIM erzeugt aus Innenräumen, Aussenräumen, Fenstern und Türen ein konsistentes Mengenmodell (Flächen, Volumen, Stückzahlen). Wände und Decken werden aus den Raumvolumen abgeleitet.
+
+    **Lieferobjekte**
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow und IfcDoor
+    - Raumname in LongName, optionale Raumnummer in Name
+    - abstractBIM-Mengen als Grundlage für Kostenschätzung und Variantenvergleich
+  fr: |
+    Quantités issues du modèle pour un calcul des coûts par élément.
+
+    abstractBIM produit un modèle de quantités cohérent (surfaces, volumes, pièces) à partir des espaces intérieurs et extérieurs, fenêtres et portes. Les murs et dalles sont dérivés des volumes spatiaux.
+
+    **Livrables**
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow et IfcDoor
+    - Nom du local dans LongName, numéro de local facultatif dans Name
+    - Quantités abstractBIM comme base d'estimation et de comparaison de variantes
+  it: |
+    Quantità da modello per un calcolo dei costi per elemento.
+
+    abstractBIM genera un modello di quantità coerente (superfici, volumi, pezzi) da spazi interni ed esterni, finestre e porte. Pareti e solai sono derivati dai volumi spaziali.
+
+    **Oggetti della fornitura**
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow e IfcDoor
+    - Nome del locale in LongName, numero locale facoltativo in Name
+    - Quantità abstractBIM come base per stima e confronto di varianti
+  en: |
+    Model-based quantities for element-based cost calculation.
+
+    abstractBIM builds a consistent quantity model (areas, volumes, counts) from interior spaces, exterior spaces, windows, and doors. Walls and slabs are derived from the space volumes.
+
+    **Deliverables**
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow, and IfcDoor
+    - Room name in LongName, optional room number in Name
+    - abstractBIM quantities as the basis for cost estimates and option comparison
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+needed_for_project_goals:
+  - pragmaticbim:project-goal/element-based-cost
+comment: Requires a clean architectural IFC with modelled spaces. abstractBIM provides metrics; unit rates stay external.

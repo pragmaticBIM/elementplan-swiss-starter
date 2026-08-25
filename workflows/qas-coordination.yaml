@@ -1,0 +1,51 @@
+id: pragmaticbim:workflow/qas-coordination
+code: QAS-COORD
+sort_order: 71
+name:
+  de: Koordination
+  fr: Coordination
+  it: Coordinamento
+  en: Coordination
+description:
+  de: |
+    Klassifikation und Status der Modellelemente für Koordination und Modellprüfung.
+
+    Jedes relevante Element trägt IFC-Entität, PredefinedType, die zugehörigen Pset_*Common-Eigenschaften, IsExisting und LoadBearing (tragend). Damit lassen sich Bestands- und Neubauanteile sowie tragende und nichttragende Teile in der Koordination unterscheiden.
+
+    **Lieferobjekte**
+    - Klassifizierte Fachmodelle Architektur und Gebäudetechnik
+    - Koordinationsergebnisse und Modellprüfungen
+  fr: |
+    Classification et statut des éléments de modèle pour la coordination et le contrôle.
+
+    Chaque élément pertinent porte l'entité IFC, PredefinedType, les propriétés Pset_*Common, IsExisting et LoadBearing (porteur). Cela permet de distinguer existant et neuf ainsi que les parties porteuses dans la coordination.
+
+    **Livrables**
+    - Maquettes spécialisées architecture et CVC classifiées
+    - Résultats de coordination et contrôles de modèle
+  it: |
+    Classificazione e stato degli elementi di modello per coordinamento e verifica.
+
+    Ogni elemento pertinente porta entità IFC, PredefinedType, proprietà Pset_*Common, IsExisting e LoadBearing (portante). Così si distinguono esistente e nuovo nonché le parti portanti nel coordinamento.
+
+    **Oggetti della fornitura**
+    - Modelli specialistici di architettura e impianti classificati
+    - Risultati di coordinamento e verifiche di modello
+  en: |
+    Classification and status of model elements for coordination and model checking.
+
+    Each relevant element carries its IFC entity, PredefinedType, the matching Pset_*Common properties, IsExisting, and LoadBearing. That lets coordination separate existing from new work and structural from non-structural parts.
+
+    **Deliverables**
+    - Classified architecture and MEP models
+    - Coordination results and model checks
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+needed_for_project_goals:
+  - pragmaticbim:project-goal/coordination
+comment: Applies to the spatial structure, spaces, windows, and doors used for DES-COST and DES-BPS.

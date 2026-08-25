@@ -1,0 +1,22 @@
+id: pragmaticbim:workflow/qas
+code: QAS
+sort_order: 70
+name:
+  de: Qualitätssicherung
+  fr: Assurance qualité
+  it: Assicurazione qualità
+  en: Quality assurance
+description:
+  de: 'Prüfung, Kontrolle und Nachweis der Einhaltung von Planungsdaten, Modellen und Ausführung. Beispiele: Modellprüfungen, Kollisionsprüfung, Prüfprotokolle, Auditberichte.'
+  fr: 'Vérification, contrôle et conformité des données de conception, modèles et exécution. Exemples: contrôle de maquettes, détection de conflits, protocoles d''essai, rapports d''audit.'
+  it: 'Verifica, ispezione e controllo di conformità di dati, modelli ed esecuzione. Esempi: verifica modelli, clash detection, protocolli di prova, rapporti di audit.'
+  en: 'Verification, inspection, and compliance checking of design data, models, and execution. Examples: model checks, clash detection, test protocols, audit reports.'
+workflow_group: null
+parent_workflow: null
+picture_link: null
+status: active
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+needed_for_project_goals: []
+comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

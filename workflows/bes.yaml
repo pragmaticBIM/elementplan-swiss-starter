@@ -1,0 +1,22 @@
+id: pragmaticbim:workflow/bes
+code: BES
+sort_order: 10
+name:
+  de: Bestellen
+  fr: Commande
+  it: Commessa
+  en: Ordering
+description:
+  de: 'Auftraggeberseitige Vergabe, Beschaffung und Beauftragung von Planungs- und Bauleistungen. Beispiele: Ausschreibungsunterlagen, Bauherrnanforderungen, Zuschlag.'
+  fr: 'Mise en concours, passation de marchés et commande des prestations de planification et de construction. Exemples: dossiers d''appel d''offres, programme du maître d''ouvrage, adjudication.'
+  it: 'Affidamento, approvvigionamento e incarico delle prestazioni di progettazione e costruzione. Esempi: documenti di gara, capitolato committente, aggiudicazione.'
+  en: 'Client commissioning, procurement, and placement of planning and construction services. Examples: tender documents, employer requirements, contract award.'
+workflow_group: null
+parent_workflow: null
+picture_link: null
+status: active
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+needed_for_project_goals: []
+comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

@@ -1,0 +1,22 @@
+id: pragmaticbim:workflow/con
+code: CON
+sort_order: 20
+name:
+  de: Ausführung
+  fr: Réalisation
+  it: Costruzione
+  en: Construction
+description:
+  de: 'Physische Ausführung, Fertigung und Montage auf der Baustelle oder in der Lieferkette. Beispiele: Werkplanung, Bestandsmodelle, Baustellenlogistik, Montagedokumentation.'
+  fr: 'Exécution physique, fabrication et pose sur chantier ou dans la chaîne d''approvisionnement. Exemples: plans d''atelier, modèles conformes à l''exécution, logistique chantier, fiches de pose.'
+  it: 'Esecuzione fisica, produzione e installazione in cantiere o nella supply chain. Esempi: disegni di officina, modelli as-built, logistica cantiere, registri di posa.'
+  en: 'Physical execution, fabrication, and installation on site or in the supply chain. Examples: shop drawings, as-built models, site logistics, installation records.'
+workflow_group: null
+parent_workflow: null
+picture_link: null
+status: active
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+needed_for_project_goals: []
+comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

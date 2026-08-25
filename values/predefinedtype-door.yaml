@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-door
+code: DOOR
+name:
+  de: PredefinedType Tür
+  fr: PredefinedType porte
+  it: PredefinedType porta
+  en: PredefinedType door
+description:
+  de: IfcDoor PredefinedType.
+  fr: IfcDoor PredefinedType.
+  it: IfcDoor PredefinedType.
+  en: IfcDoor PredefinedType.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - DOOR
+    - GATE
+    - TRAPDOOR
+  fr:
+    - DOOR
+    - GATE
+    - TRAPDOOR
+  it:
+    - DOOR
+    - GATE
+    - TRAPDOOR
+  en:
+    - DOOR
+    - GATE
+    - TRAPDOOR

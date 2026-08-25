@@ -1,0 +1,68 @@
+id: pragmaticbim:project-goal/terminkritikalitaet
+sort_order: 60
+code: PG-06
+name:
+  de: Terminkritikalität
+  fr: Criticité des délais
+  it: Criticità dei tempi
+  en: Schedule criticality
+description:
+  de: Steuert Bauablaufsimulation und Terminkoordinationstiefe über geordnete Ausprägungen.
+  fr: Contrôle la simulation du processus de construction et la profondeur de coordination des délais via des niveaux ordonnés.
+  it: Controlla la simulazione del processo costruttivo e la profondità di coordinamento dei tempi tramite livelli ordinati.
+  en: Controls construction-process simulation and schedule-coordination depth via ordered levels.
+picture_link: null
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/termin-unkritisch
+  code: SCH-01
+  sort_order: 1
+  name:
+    de: unkritisch
+    fr: non critique
+    it: non critico
+    en: non-critical
+  description:
+    de: Keine zusätzlichen terminbezogenen AWF.
+    fr: Aucun AWF lié aux délais supplémentaire.
+    it: Nessun AWF legato ai tempi aggiuntivo.
+    en: No additional schedule-related workflows.
+  status: active
+  activated_workflows: []
+  comment: Delta at level unkritisch (sort_order 1); empty.
+- id: pragmaticbim:project-goal-level/termin-standard
+  code: SCH-02
+  sort_order: 2
+  name:
+    de: Standard
+    fr: Standard
+    it: Standard
+    en: Standard
+  description:
+    de: Planungskoordination (AWF-05-2).
+    fr: Coordination de la planification (AWF-05-2).
+    it: Coordinamento della pianificazione (AWF-05-2).
+    en: Planning coordination (AWF-05-2).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/planungskoordination
+  comment: Delta at level Standard (sort_order 2); cumulative with unkritisch.
+- id: pragmaticbim:project-goal-level/termin-hochkritisch
+  code: SCH-03
+  sort_order: 3
+  name:
+    de: hochkritisch
+    fr: hautement critique
+    it: altamente critico
+    en: highly critical
+  description:
+    de: Bauablaufplanung und Simulation kritischer Abläufe (AWF-06, AWF-06-1).
+    fr: Planification du processus de construction et simulation des processus critiques (AWF-06, AWF-06-1).
+    it: Pianificazione del processo costruttivo e simulazione dei processi critici (AWF-06, AWF-06-1).
+    en: Construction sequencing and simulation of critical processes (AWF-06, AWF-06-1).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bauablaufplanung-und-baufortschritt
+  - pragmaticbim:workflow/simulation-kritischer-bauablaufe-in-modell
+  comment: Delta at level hochkritisch (sort_order 3); cumulative with Standard and unkritisch.

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-space-internal
+code: SPACE-INTERNAL
+name:
+  de: PredefinedType Innenraum
+  fr: PredefinedType espace intérieur
+  it: PredefinedType spazio interno
+  en: PredefinedType interior space
+description:
+  de: IfcSpace PredefinedType für Innenräume.
+  fr: IfcSpace PredefinedType pour les espaces intérieurs.
+  it: IfcSpace PredefinedType per gli spazi interni.
+  en: IfcSpace PredefinedType for interior spaces.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - INTERNAL
+  fr:
+    - INTERNAL
+  it:
+    - INTERNAL
+  en:
+    - INTERNAL

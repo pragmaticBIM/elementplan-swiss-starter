@@ -1,0 +1,159 @@
+id: pragmaticbim:element/doors
+code: DOOR
+sort_order: 40
+status: active
+name:
+  de: Türen
+  fr: Portes
+  it: Porte
+  en: Doors
+definition:
+  de: |
+    Alle Türen, Tore und Revisionsöffnungen (IfcDoor).
+
+    **Modellierung**
+    - Geschlossen modellieren.
+    - Glasflächen mit transparentem Material.
+    - abstractBIM vereinfacht Öffnungen für Mengen und Simulation.
+  fr: |
+    Toutes les portes, portails et trappes (IfcDoor).
+
+    **Modélisation**
+    - Modéliser fermées.
+    - Surfaces vitrées avec un matériau transparent.
+    - abstractBIM simplifie les ouvertures pour quantités et simulation.
+  it: |
+    Tutte le porte, i portoni e le aperture di ispezione (IfcDoor).
+
+    **Modellazione**
+    - Modellare chiuse.
+    - Superfici vetrate con materiale trasparente.
+    - abstractBIM semplifica le aperture per quantità e simulazione.
+  en: |
+    All doors, gates, and inspection openings (IfcDoor).
+
+    **Modelling**
+    - Model closed.
+    - Glazed areas with a transparent material.
+    - abstractBIM simplifies openings for quantities and simulation.
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+entity_ifc2x3: IfcDoor
+entity_ifc4: IfcDoor
+entity_ifc4_3: IfcDoor
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcDoor
+attributes:
+  - name: PredefinedType
+    pset: null
+    definition:
+      de: 'Art der Tür: DOOR, GATE oder TRAPDOOR.'
+      fr: 'Type de porte: DOOR, GATE ou TRAPDOOR.'
+      it: 'Tipo di porta: DOOR, GATE o TRAPDOOR.'
+      en: 'Door kind: DOOR, GATE, or TRAPDOOR.'
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/predefinedtype-door
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 1
+  - name: Reference
+    pset: Pset_DoorCommon
+    definition:
+      de: Referenzbezeichnung der Tür für die Koordination.
+      fr: Référence de la porte pour la coordination.
+      it: Riferimento della porta per il coordinamento.
+      en: Door reference used for coordination.
+    datatype: IfcIdentifier
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 2
+  - name: IsExternal
+    pset: Pset_DoorCommon
+    definition:
+      de: TRUE für Aussentüren, FALSE für Innentüren.
+      fr: TRUE pour une porte extérieure, FALSE pour une porte intérieure.
+      it: TRUE per porta esterna, FALSE per porta interna.
+      en: TRUE for an exterior door, FALSE for an interior door.
+    datatype: IfcBoolean
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 3
+  - name: Status
+    pset: Pset_DoorCommon
+    definition:
+      de: 'Bauteilstatus: NEW, EXISTING, DEMOLISH oder TEMPORARY.'
+      fr: 'Statut: NEW, EXISTING, DEMOLISH ou TEMPORARY.'
+      it: 'Stato: NEW, EXISTING, DEMOLISH o TEMPORARY.'
+      en: 'Element status: NEW, EXISTING, DEMOLISH, or TEMPORARY.'
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/element-status
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 4
+  - name: IsExisting
+    pset: null
+    definition:
+      de: TRUE wenn die Tür zum Bestand gehört.
+      fr: TRUE si la porte appartient à l'existant.
+      it: TRUE se la porta appartiene all'esistente.
+      en: TRUE if the door belongs to the existing asset.
+    datatype: IfcBoolean
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 5
+  - name: LoadBearing
+    pset: null
+    definition:
+      de: TRUE wenn die Tür oder der Rahmen lastabtragend ist (Is Structural).
+      fr: TRUE si la porte ou le cadre est porteur (Is Structural).
+      it: TRUE se la porta o il telaio è portante (Is Structural).
+      en: TRUE if the door or frame is load-bearing (Is Structural).
+    datatype: IfcBoolean
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 6
+  - name: Area
+    pset: Qto_DoorBaseQuantities
+    definition:
+      de: Fläche der Türöffnung.
+      fr: Surface de l'ouverture de porte.
+      it: Superficie dell'apertura della porta.
+      en: Area of the door opening.
+    datatype: IfcAreaMeasure
+    unit: m²
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+    is_applicability: false
+    status: active
+    sort_order: 7

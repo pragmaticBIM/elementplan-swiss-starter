@@ -1,0 +1,83 @@
+id: pragmaticbim:element/storey
+code: STOREY
+sort_order: 4
+status: active
+name:
+  de: Geschoss
+  fr: Étage
+  it: Piano
+  en: Storey
+definition:
+  de: |
+    Nutzbare Ebene als Geschoss (IfcBuildingStorey). Dem Gebäude zugeordnet.
+
+    **Modellierung**
+    - Jede nutzbare Ebene als eigenes IfcBuildingStorey.
+    - Räume dem jeweiligen Geschoss zuweisen.
+    - Name eindeutig je Gebäude.
+  fr: |
+    Niveau utilisable comme étage (IfcBuildingStorey). Rattaché au bâtiment.
+
+    **Modélisation**
+    - Chaque niveau utilisable comme IfcBuildingStorey distinct.
+    - Relier les locaux à l'étage concerné.
+    - Name unique par bâtiment.
+  it: |
+    Livello utilizzabile come piano (IfcBuildingStorey). Collegato all'edificio.
+
+    **Modellazione**
+    - Ogni livello utilizzabile come IfcBuildingStorey distinto.
+    - Assegnare i locali al piano corrispondente.
+    - Name univoco per edificio.
+  en: |
+    Usable level as a storey (IfcBuildingStorey). Assigned to the building.
+
+    **Modelling**
+    - Each usable level as its own IfcBuildingStorey.
+    - Assign spaces to the matching storey.
+    - Unique Name per building.
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+entity_ifc2x3: IfcBuildingStorey
+entity_ifc4: IfcBuildingStorey
+entity_ifc4_3: IfcBuildingStorey
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcBuildingStorey
+attributes:
+  - name: Name
+    pset: null
+    definition:
+      de: Geschossbezeichnung, eindeutig je Gebäude.
+      fr: Désignation de l'étage, unique par bâtiment.
+      it: Denominazione del piano, univoca per edificio.
+      en: Storey designation, unique per building.
+    datatype: IfcLabel
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 1
+  - name: Elevation
+    pset: null
+    definition:
+      de: Höhe der Geschossebene über dem Projektnullpunkt.
+      fr: Altitude du niveau d'étage par rapport au zéro du projet.
+      it: Quota del piano rispetto allo zero di progetto.
+      en: Elevation of the storey level relative to the project origin.
+    datatype: IfcLengthMeasure
+    unit: m
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 2

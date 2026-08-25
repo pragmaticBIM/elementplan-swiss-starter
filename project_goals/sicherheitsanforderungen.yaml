@@ -1,0 +1,69 @@
+id: pragmaticbim:project-goal/sicherheitsanforderungen
+sort_order: 40
+code: PG-04
+name:
+  de: Sicherheitsanforderungen
+  fr: Exigences de sécurité
+  it: Requisiti di sicurezza
+  en: Security requirements
+description:
+  de: Steuert Sicherheitszonen, -technik und Klassifizierung über geordnete Ausprägungen.
+  fr: Contrôle zones de sécurité, techniques et classification via des niveaux ordonnés.
+  it: Controlla zone di sicurezza, tecniche e classificazione tramite livelli ordinati.
+  en: Controls security zones, systems and classification via ordered levels.
+picture_link: null
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/sicherheit-standard
+  code: SEC-01
+  sort_order: 1
+  name:
+    de: Standard
+    fr: Standard
+    it: Standard
+    en: Standard
+  description:
+    de: Keine zusätzlichen sicherheitsbezogenen AWF.
+    fr: Aucun AWF de sécurité supplémentaire.
+    it: Nessun AWF di sicurezza aggiuntivo.
+    en: No additional security-related workflows.
+  status: active
+  activated_workflows: []
+  comment: Delta at level Standard (sort_order 1); empty.
+- id: pragmaticbim:project-goal-level/sicherheit-erhoeht
+  code: SEC-02
+  sort_order: 2
+  name:
+    de: erhöht
+    fr: élevé
+    it: elevato
+    en: elevated
+  description:
+    de: Sicherheitszonen und Feuerwehreinsatzplanung (AWF-02-8, AWF-02-15).
+    fr: Zones de sécurité et planification d'intervention pompiers (AWF-02-8, AWF-02-15).
+    it: Zone di sicurezza e pianificazione intervento vigili del fuoco (AWF-02-8, AWF-02-15).
+    en: Security zones and fire brigade deployment planning (AWF-02-8, AWF-02-15).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/darstellung-sicherheitszonen-in-modell
+  - pragmaticbim:workflow/einsatzplan-feuerwehr-am-modell
+  comment: Delta at level erhöht (sort_order 2); cumulative with Standard.
+- id: pragmaticbim:project-goal-level/sicherheit-klassifiziert
+  code: SEC-03
+  sort_order: 3
+  name:
+    de: klassifiziert
+    fr: classifié
+    it: classificato
+    en: classified
+  description:
+    de: Sicherheitstechnik und Fassadenklassifizierung COMSEC (AWF-02-9, AWF-02-10).
+    fr: Techniques de sécurité et classification de façade COMSEC (AWF-02-9, AWF-02-10).
+    it: Tecniche di sicurezza e classificazione facciata COMSEC (AWF-02-9, AWF-02-10).
+    en: Security systems and COMSEC facade classification (AWF-02-9, AWF-02-10).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/visualisierung-sicherheitstechnik-im-modell
+  - pragmaticbim:workflow/darstellung-sicherheitsklassifizierungen-der-fassade-nach-comsec-im-modell
+  comment: Delta at level klassifiziert (sort_order 3); cumulative with erhöht and Standard.

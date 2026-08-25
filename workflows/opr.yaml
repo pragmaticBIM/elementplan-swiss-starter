@@ -1,0 +1,22 @@
+id: pragmaticbim:workflow/opr
+code: OPR
+sort_order: 60
+name:
+  de: Betrieb
+  fr: Exploitation
+  it: Esercizio
+  en: Operation
+description:
+  de: 'Nutzung, Unterhalt und laufendes Management des Bauwerks während der Betriebsphase. Beispiele: FM-Daten, Unterhaltspläne, Energiemonitoring, Flächenmanagement.'
+  fr: 'Utilisation, maintenance et gestion courante de l''ouvrage pendant sa phase d''exploitation. Exemples: données FM, plans de maintenance, suivi énergétique, gestion des espaces.'
+  it: 'Utilizzo, manutenzione e gestione corrente dell''opera durante la fase di esercizio. Esempi: dati FM, piani di manutenzione, monitoraggio energetico, gestione spazi.'
+  en: 'Use, maintenance, and ongoing management of the built asset during its operational life. Examples: FM data, maintenance plans, energy monitoring, space management.'
+workflow_group: null
+parent_workflow: null
+picture_link: null
+status: active
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+needed_for_project_goals: []
+comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

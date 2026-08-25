@@ -1,0 +1,72 @@
+id: pragmaticbim:project-goal/kosten-budgetsensitivitaet
+sort_order: 10
+code: PG-01
+name:
+  de: Kosten-/Budgetsensitivität
+  fr: Sensibilité coûts/budget
+  it: Sensibilità costi/budget
+  en: Cost/budget sensitivity
+description:
+  de: Steuert Mengen-, Kosten- und Benchmarking-Tiefe über geordnete Ausprägungen.
+  fr: Contrôle la profondeur des quantités, coûts et benchmarking via des niveaux ordonnés.
+  it: Controlla la profondità di quantità, costi e benchmarking tramite livelli ordinati.
+  en: Controls quantity, cost and benchmarking depth via ordered levels.
+picture_link: null
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/kosten-grosszuegig
+  code: COST-01
+  sort_order: 1
+  name:
+    de: grosszügig
+    fr: généreux
+    it: generoso
+    en: generous
+  description:
+    de: Basis-Mengen-/Kostenermittlung (AWF-03).
+    fr: Détermination de base des quantités/coûts (AWF-03).
+    it: Determinazione base delle quantità/costi (AWF-03).
+    en: Baseline quantity/cost takeoff (AWF-03).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/mengen-und-kostenermittlung
+  comment: Delta at level grosszügig (sort_order 1); Basis AWF-03.
+- id: pragmaticbim:project-goal-level/kosten-mittel
+  code: COST-02
+  sort_order: 2
+  name:
+    de: mittel
+    fr: moyen
+    it: medio
+    en: medium
+  description:
+    de: Erweiterte Kostengliederung und Kennzahlen (AWF-03-1, AWF-03-6, AWF-03-8).
+    fr: Ventilation des coûts et indicateurs élargis (AWF-03-1, AWF-03-6, AWF-03-8).
+    it: Ripartizione costi e indicatori estesi (AWF-03-1, AWF-03-6, AWF-03-8).
+    en: Extended cost breakdown and key figures (AWF-03-1, AWF-03-6, AWF-03-8).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/zuordnung-der-bauteile-nach-ebkp-3-stellig
+  - pragmaticbim:workflow/kennwert-geschossflache-ermitteln
+  - pragmaticbim:workflow/ermitteln-von-geschossvolumen
+  comment: Delta at level mittel (sort_order 2); cumulative with grosszügig.
+- id: pragmaticbim:project-goal-level/kosten-sensitiv
+  code: COST-03
+  sort_order: 3
+  name:
+    de: sensitiv
+    fr: sensible
+    it: sensibile
+    en: sensitive
+  description:
+    de: Lebenszykluskosten und vertiefte Flächenkennwerte (AWF-03-4, AWF-01-05, AWF-01-3).
+    fr: Coûts du cycle de vie et indicateurs de surfaces approfondis (AWF-03-4, AWF-01-05, AWF-01-3).
+    it: Costi del ciclo di vita e indicatori di superficie approfonditi (AWF-03-4, AWF-01-05, AWF-01-3).
+    en: Lifecycle costing and deeper area metrics (AWF-03-4, AWF-01-05, AWF-01-3).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bim2lcc-lebenszykluskosten
+  - pragmaticbim:workflow/soll-ist-vergleich-raumflachen
+  - pragmaticbim:workflow/flachenauswertung-nach-sia416-dn265
+  comment: Delta at level sensitiv (sort_order 3); cumulative with mittel and grosszügig.

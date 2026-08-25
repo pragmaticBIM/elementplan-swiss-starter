@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-space-external
+code: SPACE-EXTERNAL
+name:
+  de: PredefinedType Aussenraum
+  fr: PredefinedType espace extérieur
+  it: PredefinedType spazio esterno
+  en: PredefinedType exterior space
+description:
+  de: IfcSpace PredefinedType für Aussenräume.
+  fr: IfcSpace PredefinedType pour les espaces extérieurs.
+  it: IfcSpace PredefinedType per gli spazi esterni.
+  en: IfcSpace PredefinedType for exterior spaces.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - EXTERNAL
+  fr:
+    - EXTERNAL
+  it:
+    - EXTERNAL
+  en:
+    - EXTERNAL

@@ -1,0 +1,36 @@
+id: pragmaticbim:value/element-status
+code: STATUS
+name:
+  de: Bauteilstatus
+  fr: Statut de l'élément
+  it: Stato dell'elemento
+  en: Element status
+description:
+  de: Status gemäss Pset_*Common für Bauen im Bestand.
+  fr: Statut selon Pset_*Common pour l'intervention dans l'existant.
+  it: Stato secondo Pset_*Common per interventi sull'esistente.
+  en: Status according to Pset_*Common for work on existing assets.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - NEW
+    - EXISTING
+    - DEMOLISH
+    - TEMPORARY
+  fr:
+    - NEW
+    - EXISTING
+    - DEMOLISH
+    - TEMPORARY
+  it:
+    - NEW
+    - EXISTING
+    - DEMOLISH
+    - TEMPORARY
+  en:
+    - NEW
+    - EXISTING
+    - DEMOLISH
+    - TEMPORARY

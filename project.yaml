@@ -1,0 +1,16 @@
+name: pragmaticBIM Public Minimal
+slug: public-minimal
+client: pragmaticbim
+project_number: "000"
+master_slug: public-minimal
+languages:
+  - de
+  - en
+  - fr
+  - it
+default_language: de
+description:
+  de: Öffentliche Minimalvorlage für Elementplan mit abstractBIM-Mengen, Gebäudesimulation und Koordination.
+  en: Public minimal Elementplan template for abstractBIM quantities, building performance simulation, and coordination.
+  fr: Modèle public minimal Elementplan pour quantités abstractBIM, simulation de performance et coordination.
+  it: Modello pubblico minimale Elementplan per quantità abstractBIM, simulazione delle prestazioni e coordinamento.

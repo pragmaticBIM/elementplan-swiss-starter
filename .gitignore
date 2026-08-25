@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+published/
+.DS_Store
+*.code-workspace

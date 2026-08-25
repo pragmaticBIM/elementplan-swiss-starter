@@ -1,0 +1,22 @@
+id: pragmaticbim:workflow/dec
+code: DEC
+sort_order: 30
+name:
+  de: Rückbau
+  fr: Démolition
+  it: Demolizione
+  en: Deconstruction
+description:
+  de: 'Selektiver Rückbau, Abbruch und End-of-Life-Rückgewinnung des Bauwerks und seiner Materialien. Beispiele: Rückbaupläne, Materialpässe, Recyclinglogistik, Schadstoffnachweise.'
+  fr: 'Démontage sélectif, démolition et valorisation en fin de vie de l''ouvrage et de ses matériaux. Exemples: plans de démolition, passeports matériaux, logistique de recyclage, registres de substances.'
+  it: 'Smontaggio selettivo, demolizione e recupero a fine vita dell''opera e dei suoi materiali. Esempi: piani di demolizione, passaporti materiali, logistica di riciclo, registri sostanze.'
+  en: 'Selective dismantling, demolition, and end-of-life recovery of the built asset and its materials. Examples: demolition plans, material passports, recycling logistics, hazardous substance records.'
+workflow_group: null
+parent_workflow: null
+picture_link: null
+status: active
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+needed_for_project_goals: []
+comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

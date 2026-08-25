@@ -1,0 +1,175 @@
+id: pragmaticbim:element/windows
+code: WINDOW
+sort_order: 30
+status: active
+name:
+  de: Fenster
+  fr: Fenêtres
+  it: Finestre
+  en: Windows
+definition:
+  de: |
+    Alle Innen- und Aussenfenster sowie Oberlichter (IfcWindow).
+
+    **Modellierung**
+    - Glasanteil mit transparentem Material exportieren.
+    - Jedes Fenster einem Raum zuordnen.
+    - abstractBIM vereinfacht Öffnungen für Mengen und Simulation.
+  fr: |
+    Toutes les fenêtres intérieures et extérieures ainsi que les lanterneaux (IfcWindow).
+
+    **Modélisation**
+    - Exporter le vitrage avec un matériau transparent.
+    - Relier chaque fenêtre à un local.
+    - abstractBIM simplifie les ouvertures pour quantités et simulation.
+  it: |
+    Tutte le finestre interne ed esterne e i lucernari (IfcWindow).
+
+    **Modellazione**
+    - Esportare la parte vetrata con materiale trasparente.
+    - Collegare ogni finestra a un locale.
+    - abstractBIM semplifica le aperture per quantità e simulazione.
+  en: |
+    All interior and exterior windows and skylights (IfcWindow).
+
+    **Modelling**
+    - Export glazing with a transparent material.
+    - Relate each window to a space.
+    - abstractBIM simplifies openings for quantities and simulation.
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+entity_ifc2x3: IfcWindow
+entity_ifc4: IfcWindow
+entity_ifc4_3: IfcWindow
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcWindow
+attributes:
+  - name: PredefinedType
+    pset: null
+    definition:
+      de: 'Art des Fensters: WINDOW, SKYLIGHT oder LIGHTDOME.'
+      fr: 'Type de fenêtre: WINDOW, SKYLIGHT ou LIGHTDOME.'
+      it: 'Tipo di finestra: WINDOW, SKYLIGHT o LIGHTDOME.'
+      en: 'Window kind: WINDOW, SKYLIGHT, or LIGHTDOME.'
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/predefinedtype-window
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 1
+  - name: Reference
+    pset: Pset_WindowCommon
+    definition:
+      de: Referenzbezeichnung des Fensters für die Koordination.
+      fr: Référence de la fenêtre pour la coordination.
+      it: Riferimento della finestra per il coordinamento.
+      en: Window reference used for coordination.
+    datatype: IfcIdentifier
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 2
+  - name: IsExternal
+    pset: Pset_WindowCommon
+    definition:
+      de: TRUE für Aussenfenster, FALSE für Innenfenster.
+      fr: TRUE pour une fenêtre extérieure, FALSE pour une fenêtre intérieure.
+      it: TRUE per finestra esterna, FALSE per finestra interna.
+      en: TRUE for an exterior window, FALSE for an interior window.
+    datatype: IfcBoolean
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 3
+  - name: Status
+    pset: Pset_WindowCommon
+    definition:
+      de: 'Bauteilstatus: NEW, EXISTING, DEMOLISH oder TEMPORARY.'
+      fr: 'Statut: NEW, EXISTING, DEMOLISH ou TEMPORARY.'
+      it: 'Stato: NEW, EXISTING, DEMOLISH o TEMPORARY.'
+      en: 'Element status: NEW, EXISTING, DEMOLISH, or TEMPORARY.'
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/element-status
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 4
+  - name: IsExisting
+    pset: null
+    definition:
+      de: TRUE wenn das Fenster zum Bestand gehört.
+      fr: TRUE si la fenêtre appartient à l'existant.
+      it: TRUE se la finestra appartiene all'esistente.
+      en: TRUE if the window belongs to the existing asset.
+    datatype: IfcBoolean
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 5
+  - name: LoadBearing
+    pset: null
+    definition:
+      de: TRUE wenn das Fenster oder der Rahmen lastabtragend ist (Is Structural).
+      fr: TRUE si la fenêtre ou le cadre est porteur (Is Structural).
+      it: TRUE se la finestra o il telaio è portante (Is Structural).
+      en: TRUE if the window or frame is load-bearing (Is Structural).
+    datatype: IfcBoolean
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 6
+  - name: ThermalTransmittance
+    pset: Pset_WindowCommon
+    definition:
+      de: U-Wert des Fensters für die Gebäudesimulation.
+      fr: Valeur U de la fenêtre pour la simulation.
+      it: Valore U della finestra per la simulazione.
+      en: Window U-value for building performance simulation.
+    datatype: IfcReal
+    unit: W/m²K
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-building-performance-simulation
+    is_applicability: false
+    status: active
+    sort_order: 7
+  - name: Area
+    pset: Qto_WindowBaseQuantities
+    definition:
+      de: Fläche der Fensteröffnung.
+      fr: Surface de l'ouverture de fenêtre.
+      it: Superficie dell'apertura della finestra.
+      en: Area of the window opening.
+    datatype: IfcAreaMeasure
+    unit: m²
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+    is_applicability: false
+    status: active
+    sort_order: 8

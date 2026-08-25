@@ -1,0 +1,19 @@
+id: pragmaticbim:phase/sia
+name:
+  de: SIA Phasen
+  fr: Phases SIA
+  it: Fasi SIA
+  en: SIA Phases
+values:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'

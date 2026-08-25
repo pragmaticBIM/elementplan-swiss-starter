@@ -1,0 +1,24 @@
+id: pragmaticbim:value/boolean-true
+code: 'TRUE'
+name:
+  de: 'TRUE'
+  fr: 'TRUE'
+  it: 'TRUE'
+  en: 'TRUE'
+description:
+  de: Boolescher Wert TRUE.
+  fr: Valeur booléenne TRUE.
+  it: Valore booleano TRUE.
+  en: Boolean value TRUE.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - 'TRUE'
+  fr:
+    - 'TRUE'
+  it:
+    - 'TRUE'
+  en:
+    - 'TRUE'

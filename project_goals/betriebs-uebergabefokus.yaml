@@ -1,0 +1,73 @@
+id: pragmaticbim:project-goal/betriebs-uebergabefokus
+sort_order: 50
+code: PG-05
+name:
+  de: Betriebs-/Übergabefokus
+  fr: Focus exploitation/remise
+  it: Focus esercizio/consegna
+  en: Operations/handover focus
+description:
+  de: Steuert die Tiefe der FM-/Bewirtschaftungsdaten über geordnete Ausprägungen.
+  fr: Contrôle la profondeur des données FM/gestion via des niveaux ordonnés.
+  it: Controlla la profondità dei dati FM/gestione tramite livelli ordinati.
+  en: Controls depth of FM/facility data via ordered levels.
+picture_link: null
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/betrieb-gering
+  code: OPS-01
+  sort_order: 1
+  name:
+    de: gering
+    fr: faible
+    it: basso
+    en: low
+  description:
+    de: Keine zusätzlichen FM-/Dokumentations-AWF.
+    fr: Aucun AWF FM/documentation supplémentaire.
+    it: Nessun AWF FM/documentazione aggiuntivo.
+    en: No additional FM/documentation workflows.
+  status: active
+  activated_workflows: []
+  comment: Delta at level gering (sort_order 1); empty.
+- id: pragmaticbim:project-goal-level/betrieb-mittel
+  code: OPS-02
+  sort_order: 2
+  name:
+    de: mittel
+    fr: moyen
+    it: medio
+    en: medium
+  description:
+    de: Bauwerksdokumentation Basis und LIA Gebäude/Areal/Grundstück (AWF-08, AWF-08-6, AWF-08-7, AWF-08-8).
+    fr: Documentation d'ouvrage de base et LIA bâtiment/aire/parcelle (AWF-08, AWF-08-6, AWF-08-7, AWF-08-8).
+    it: Documentazione opera di base e LIA edificio/area/parcella (AWF-08, AWF-08-6, AWF-08-7, AWF-08-8).
+    en: Baseline building documentation and LIA building/site/parcel (AWF-08, AWF-08-6, AWF-08-7, AWF-08-8).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bauwerksdokumentation-basis-awf-08-gemass-kbob
+  - pragmaticbim:workflow/lia-gebaude
+  - pragmaticbim:workflow/lia-areal
+  - pragmaticbim:workflow/lia-grundstuck
+  comment: Delta at level mittel (sort_order 2); cumulative with gering.
+- id: pragmaticbim:project-goal-level/betrieb-volle-fm-integration
+  code: OPS-03
+  sort_order: 3
+  name:
+    de: volle FM-Integration
+    fr: intégration FM complète
+    it: piena integrazione FM
+    en: full FM integration
+  description:
+    de: System-/Bauteilebene, NGF-Erfassung und modellbasiertes Nachtragsmanagement (AWF-08-1, AWF-08-2, AWF-08-11, AWF-07-1).
+    fr: Niveau système/élément, saisie NGF et gestion des avenants modélisée (AWF-08-1, AWF-08-2, AWF-08-11, AWF-07-1).
+    it: Livello sistema/componente, rilevamento NGF e gestione varianti modellata (AWF-08-1, AWF-08-2, AWF-08-11, AWF-07-1).
+    en: System/component level, NGF capture and model-based change management (AWF-08-1, AWF-08-2, AWF-08-11, AWF-07-1).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/modellbasierte-informationen-auf-systemebene-gebaudetechnik
+  - pragmaticbim:workflow/modellbasierte-informationen-auf-bauteilebene-gebaudetechnik
+  - pragmaticbim:workflow/lia-ngf-erfassungsliste
+  - pragmaticbim:workflow/modellbasierte-bestellungsanderung
+  comment: Delta at level volle FM-Integration (sort_order 3); cumulative with mittel and gering.

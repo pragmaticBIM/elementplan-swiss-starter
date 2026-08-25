@@ -1,0 +1,69 @@
+id: pragmaticbim:project-goal/nachhaltigkeit
+sort_order: 30
+code: PG-03
+name:
+  de: Nachhaltigkeit
+  fr: Durabilité
+  it: Sostenibilità
+  en: Sustainability
+description:
+  de: Steuert Energiebezug und Lebenszykluskosten über geordnete Ausprägungen.
+  fr: Contrôle le rapport énergétique et les coûts du cycle de vie via des niveaux ordonnés.
+  it: Controlla il riferimento energetico e i costi del ciclo di vita tramite livelli ordinati.
+  en: Controls energy reference and lifecycle costs via ordered levels.
+picture_link: null
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/nachhaltigkeit-gering
+  code: SUS-01
+  sort_order: 1
+  name:
+    de: gering
+    fr: faible
+    it: basso
+    en: low
+  description:
+    de: Keine zusätzlichen AWF über die Basisanforderungen hinaus.
+    fr: Aucun AWF supplémentaire au-delà des exigences de base.
+    it: Nessun AWF aggiuntivo oltre ai requisiti di base.
+    en: No additional workflows beyond baseline requirements.
+  status: active
+  activated_workflows: []
+  comment: Delta at level gering (sort_order 1); empty.
+- id: pragmaticbim:project-goal-level/nachhaltigkeit-mittel
+  code: SUS-02
+  sort_order: 2
+  name:
+    de: mittel
+    fr: moyen
+    it: medio
+    en: medium
+  description:
+    de: Qualitätssicherung Energiebezugsfläche (AWF-01-1).
+    fr: Assurance qualité surface de référence énergétique (AWF-01-1).
+    it: Assicurazione qualità superficie di riferimento energetico (AWF-01-1).
+    en: QA of energy reference area (AWF-01-1).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qualitatssicherung-energiebezugsflache
+  comment: Delta at level mittel (sort_order 2); cumulative with gering.
+- id: pragmaticbim:project-goal-level/nachhaltigkeit-hoch
+  code: SUS-03
+  sort_order: 3
+  name:
+    de: hoch
+    fr: élevé
+    it: alto
+    en: high
+  description:
+    de: Lebenszykluskosten und Flächenkennwerte (AWF-03-4, AWF-03-6, AWF-03-8).
+    fr: Coûts du cycle de vie et indicateurs de surfaces (AWF-03-4, AWF-03-6, AWF-03-8).
+    it: Costi del ciclo di vita e indicatori di superficie (AWF-03-4, AWF-03-6, AWF-03-8).
+    en: Lifecycle costs and area key figures (AWF-03-4, AWF-03-6, AWF-03-8).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bim2lcc-lebenszykluskosten
+  - pragmaticbim:workflow/kennwert-geschossflache-ermitteln
+  - pragmaticbim:workflow/ermitteln-von-geschossvolumen
+  comment: Delta at level hoch (sort_order 3); cumulative with mittel and gering.

@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-window
+code: WINDOW
+name:
+  de: PredefinedType Fenster
+  fr: PredefinedType fenêtre
+  it: PredefinedType finestra
+  en: PredefinedType window
+description:
+  de: IfcWindow PredefinedType.
+  fr: IfcWindow PredefinedType.
+  it: IfcWindow PredefinedType.
+  en: IfcWindow PredefinedType.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - WINDOW
+    - SKYLIGHT
+    - LIGHTDOME
+  fr:
+    - WINDOW
+    - SKYLIGHT
+    - LIGHTDOME
+  it:
+    - WINDOW
+    - SKYLIGHT
+    - LIGHTDOME
+  en:
+    - WINDOW
+    - SKYLIGHT
+    - LIGHTDOME

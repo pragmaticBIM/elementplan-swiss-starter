@@ -1,0 +1,215 @@
+id: pragmaticbim:element/spaces-interior
+code: SPACE-INT
+sort_order: 10
+status: active
+name:
+  de: Innenräume
+  fr: Espaces intérieurs
+  it: Spazi interni
+  en: Interior spaces
+definition:
+  de: |
+    Innenräume als Volumen (IfcSpace, PredefinedType INTERNAL).
+
+    **Modellierung**
+    - Mit dem Raumwerkzeug als Volumen modellieren, geschossweise.
+    - Von Oberkante Fertigboden bis Unterkante tragende Decke.
+    - Keine Überlappungen oder Doppelungen.
+    - Raumname in LongName, optionale Raumnummer in Name.
+  fr: |
+    Espaces intérieurs comme volumes (IfcSpace, PredefinedType INTERNAL).
+
+    **Modélisation**
+    - Modéliser comme volume avec l'outil local, étage par étage.
+    - Du dessus du sol fini au dessous du plafond porteur.
+    - Pas de chevauchement ni de duplication.
+    - Nom du local dans LongName, numéro facultatif dans Name.
+  it: |
+    Spazi interni come volumi (IfcSpace, PredefinedType INTERNAL).
+
+    **Modellazione**
+    - Modellare come volume con lo strumento locale, piano per piano.
+    - Dal bordo superiore del pavimento finito al bordo inferiore del solaio portante.
+    - Nessuna sovrapposizione o duplicazione.
+    - Nome del locale in LongName, numero facoltativo in Name.
+  en: |
+    Interior spaces as volumes (IfcSpace, PredefinedType INTERNAL).
+
+    **Modelling**
+    - Model as a volume with the space tool, storey by storey.
+    - From top of finished floor to underside of the structural ceiling.
+    - No overlaps or duplicates.
+    - Room name in LongName, optional room number in Name.
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+entity_ifc2x3: IfcSpace
+entity_ifc4: IfcSpace
+entity_ifc4_3: IfcSpace
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcSpace
+attributes:
+  - name: PredefinedType
+    pset: null
+    definition:
+      de: Kennzeichnet den Raum als Innenraum (INTERNAL).
+      fr: Identifie l'espace comme intérieur (INTERNAL).
+      it: Identifica lo spazio come interno (INTERNAL).
+      en: Marks the space as interior (INTERNAL).
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/predefinedtype-space-internal
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: true
+    status: active
+    sort_order: 1
+  - name: LongName
+    pset: null
+    definition:
+      de: Raumname bzw. Raumtyp. Pflicht für abstractBIM-Mengen und Simulation.
+      fr: Nom ou type de local. Obligatoire pour les quantités abstractBIM et la simulation.
+      it: Nome o tipo di locale. Obbligatorio per quantità abstractBIM e simulazione.
+      en: Room name or room type. Required for abstractBIM quantities and simulation.
+    datatype: IfcLabel
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+    is_applicability: false
+    status: active
+    sort_order: 2
+  - name: Name
+    pset: null
+    definition:
+      de: Optionale Raumnummer gemäss Projektnummerierung.
+      fr: Numéro de local facultatif selon la numérotation du projet.
+      it: Numero locale facoltativo secondo la numerazione di progetto.
+      en: Optional room number according to the project numbering scheme.
+    datatype: IfcIdentifier
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+    is_applicability: false
+    status: active
+    sort_order: 3
+  - name: Reference
+    pset: Pset_SpaceCommon
+    definition:
+      de: Referenzbezeichnung des Raums für die Koordination.
+      fr: Référence du local pour la coordination.
+      it: Riferimento del locale per il coordinamento.
+      en: Space reference used for coordination.
+    datatype: IfcIdentifier
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 4
+  - name: IsExternal
+    pset: Pset_SpaceCommon
+    definition:
+      de: FALSE für Innenräume.
+      fr: FALSE pour les espaces intérieurs.
+      it: FALSE per gli spazi interni.
+      en: FALSE for interior spaces.
+    datatype: IfcBoolean
+    allowed_values: pragmaticbim:value/boolean-false
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 5
+  - name: Status
+    pset: Pset_SpaceCommon
+    definition:
+      de: 'Bauteilstatus: NEW, EXISTING, DEMOLISH oder TEMPORARY.'
+      fr: 'Statut: NEW, EXISTING, DEMOLISH ou TEMPORARY.'
+      it: 'Stato: NEW, EXISTING, DEMOLISH o TEMPORARY.'
+      en: 'Element status: NEW, EXISTING, DEMOLISH, or TEMPORARY.'
+    datatype: IfcLabel
+    allowed_values: pragmaticbim:value/element-status
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 6
+  - name: IsExisting
+    pset: null
+    definition:
+      de: TRUE wenn der Raum zum Bestand gehört.
+      fr: TRUE si l'espace appartient à l'existant.
+      it: TRUE se lo spazio appartiene all'esistente.
+      en: TRUE if the space belongs to the existing asset.
+    datatype: IfcBoolean
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 7
+  - name: NetFloorArea
+    pset: Qto_SpaceBaseQuantities
+    definition:
+      de: Nettogeschossfläche des modellierten Raums.
+      fr: Surface nette du local modélisé.
+      it: Superficie netta del locale modellato.
+      en: Net floor area of the modelled space.
+    datatype: IfcAreaMeasure
+    unit: m²
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+    is_applicability: false
+    status: active
+    sort_order: 8
+  - name: NetVolume
+    pset: Qto_SpaceBaseQuantities
+    definition:
+      de: Nettovolumen des modellierten Raums.
+      fr: Volume net du local modélisé.
+      it: Volume netto del locale modellato.
+      en: Net volume of the modelled space.
+    datatype: IfcVolumeMeasure
+    unit: m³
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+    is_applicability: false
+    status: active
+    sort_order: 9
+  - name: Height
+    pset: Qto_SpaceBaseQuantities
+    definition:
+      de: Höhe des modellierten Raumvolumens.
+      fr: Hauteur du volume de local modélisé.
+      it: Altezza del volume di locale modellato.
+      en: Height of the modelled space volume.
+    datatype: IfcLengthMeasure
+    unit: m
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+    is_applicability: false
+    status: active
+    sort_order: 10

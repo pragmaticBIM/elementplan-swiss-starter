@@ -1,0 +1,24 @@
+id: pragmaticbim:value/boolean-false
+code: 'FALSE'
+name:
+  de: 'FALSE'
+  fr: 'FALSE'
+  it: 'FALSE'
+  en: 'FALSE'
+description:
+  de: Boolescher Wert FALSE.
+  fr: Valeur booléenne FALSE.
+  it: Valore booleano FALSE.
+  en: Boolean value FALSE.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+    - 'FALSE'
+  fr:
+    - 'FALSE'
+  it:
+    - 'FALSE'
+  en:
+    - 'FALSE'

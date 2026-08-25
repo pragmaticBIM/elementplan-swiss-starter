@@ -1,0 +1,19 @@
+id: pragmaticbim:domain/mep
+code: MEP
+sort_order: 20
+name:
+  de: Gebäudetechnik
+  fr: CVC / techniques du bâtiment
+  it: Impianti
+  en: MEP
+definition:
+  de: Liefergegenstände der Gebäudetechnik. Das Fachmodell beschreibt die technischen Anlagen — Heizung, Lüftung, Klima, Sanitär, Elektro und Automation.
+  fr: Livrables des techniques du bâtiment. La maquette décrit les installations techniques — chauffage, ventilation, climatisation, sanitaire, électricité et automatisation.
+  it: Consegne degli impianti. Il modello descrive gli impianti tecnici — riscaldamento, ventilazione, climatizzazione, idraulica, elettrica e automazione.
+  en: Deliverables from building services. The model describes the technical systems — heating, ventilation, air conditioning, plumbing, electrical, and automation.
+file_name:
+  de: '{Projekt}_{Phase}_MEP_{Freitext}'
+  fr: '{Projet}_{Phase}_MEP_{Libre}'
+  it: '{Progetto}_{Fase}_MEP_{Libero}'
+  en: '{Project}_{Phase}_MEP_{Free}'
+status: active

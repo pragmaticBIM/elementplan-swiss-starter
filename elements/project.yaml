@@ -1,0 +1,61 @@
+id: pragmaticbim:element/project
+code: PROJECT
+sort_order: 1
+status: active
+name:
+  de: Projekt
+  fr: Projet
+  it: Progetto
+  en: Project
+definition:
+  de: |
+    Wurzel der räumlichen Struktur (IfcProject). Muss in jeder IFC-Datei vorhanden sein.
+
+    **Modellierung**
+    - Genau ein IfcProject pro Datei.
+    - Name gemäss Projektbezeichnung pflegen.
+  fr: |
+    Racine de la structure spatiale (IfcProject). Obligatoire dans chaque fichier IFC.
+
+    **Modélisation**
+    - Exactement un IfcProject par fichier.
+    - Renseigner Name selon la désignation du projet.
+  it: |
+    Radice della struttura spaziale (IfcProject). Obbligatorio in ogni file IFC.
+
+    **Modellazione**
+    - Esattamente un IfcProject per file.
+    - Compilare Name secondo la denominazione di progetto.
+  en: |
+    Root of the spatial structure (IfcProject). Required in every IFC file.
+
+    **Modelling**
+    - Exactly one IfcProject per file.
+    - Populate Name according to the project designation.
+needed_in_domain:
+  - pragmaticbim:domain/architecture
+  - pragmaticbim:domain/mep
+entity_ifc2x3: IfcProject
+entity_ifc4: IfcProject
+entity_ifc4_3: IfcProject
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcProject
+attributes:
+  - name: Name
+    pset: null
+    definition:
+      de: Projektbezeichnung zur eindeutigen Zuordnung der IFC-Datei.
+      fr: Désignation du projet pour identifier le fichier IFC.
+      it: Denominazione del progetto per identificare il file IFC.
+      en: Project designation used to identify the IFC file.
+    datatype: IfcLabel
+    needed_in_phases: ['31', '32', '33']
+    ifc_versions: [ifc4, ifc4x3]
+    needed_for_workflows:
+      - pragmaticbim:workflow/des-element-based-cost
+      - pragmaticbim:workflow/des-building-performance-simulation
+      - pragmaticbim:workflow/qas-coordination
+    is_applicability: false
+    status: active
+    sort_order: 1

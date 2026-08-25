@@ -1,0 +1,70 @@
+id: pragmaticbim:project-goal/ausbaustandard
+sort_order: 20
+code: PG-02
+name:
+  de: Ausbaustandard
+  fr: Standard d'aménagement
+  it: Standard di finitura
+  en: Fit-out standard
+description:
+  de: Steuert die Detailtiefe der QS auf Bauteil-/Raumebene über geordnete Ausprägungen.
+  fr: Contrôle la profondeur de la QA au niveau élément/espace via des niveaux ordonnés.
+  it: Controlla la profondità della QA a livello di componente/spazio tramite livelli ordinati.
+  en: Controls QA depth at component/space level via ordered levels.
+picture_link: null
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/ausbau-standard
+  code: FIT-01
+  sort_order: 1
+  name:
+    de: Standard
+    fr: Standard
+    it: Standard
+    en: Standard
+  description:
+    de: Basis Raumflächen und Volumina (AWF-01).
+    fr: Surfaces et volumes de base (AWF-01).
+    it: Superfici e volumi di base (AWF-01).
+    en: Baseline room areas and volumes (AWF-01).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/raumflachen-und-volumina
+  comment: Delta at level Standard (sort_order 1); Basis AWF-01.
+- id: pragmaticbim:project-goal-level/ausbau-gehoben
+  code: FIT-02
+  sort_order: 2
+  name:
+    de: gehoben
+    fr: élevé
+    it: elevato
+    en: elevated
+  description:
+    de: Erweiterte QS Bodenbeläge und Nutzlasten (AWF-01-04, AWF-01-2).
+    fr: QA étendue revêtements de sol et charges utiles (AWF-01-04, AWF-01-2).
+    it: QA estesa pavimentazioni e carichi utili (AWF-01-04, AWF-01-2).
+    en: Extended QA for floor finishes and live loads (AWF-01-04, AWF-01-2).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qualitatssicherung-qs-bodenbelage
+  - pragmaticbim:workflow/qualitatssicherung-nutzlasten-tragwerkskonzept
+  comment: Delta at level gehoben (sort_order 2); cumulative with Standard.
+- id: pragmaticbim:project-goal-level/ausbau-premium
+  code: FIT-03
+  sort_order: 3
+  name:
+    de: Premium
+    fr: Premium
+    it: Premium
+    en: Premium
+  description:
+    de: Visualisierung Raumbeziehungen und kritischer Betriebsabläufe (AWF-02-13, AWF-02-14).
+    fr: Visualisation des relations spatiales et des processus critiques (AWF-02-13, AWF-02-14).
+    it: Visualizzazione relazioni spaziali e processi critici (AWF-02-13, AWF-02-14).
+    en: Visualisation of spatial relationships and critical operations (AWF-02-13, AWF-02-14).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/visualisierung-raumbeziehungen
+  - pragmaticbim:workflow/visualisierung-und-nachweis-kritischer-betriebsablaufe
+  comment: Delta at level Premium (sort_order 3); cumulative with gehoben and Standard.

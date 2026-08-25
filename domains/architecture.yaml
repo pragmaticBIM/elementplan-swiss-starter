@@ -1,0 +1,19 @@
+id: pragmaticbim:domain/architecture
+code: ARC
+sort_order: 10
+name:
+  de: Architektur
+  fr: Architecture
+  it: Architettura
+  en: Architecture
+definition:
+  de: Liefergegenstände der Architektur. Das Fachmodell beschreibt das Bauwerk aus Sicht der Architektin oder des Architekten — Räume, Hülle, Innenausbau und Umgebung.
+  fr: Livrables de l'architecte. La maquette décrit l'ouvrage du point de vue de l'architecte — locaux, enveloppe, aménagement intérieur et abords.
+  it: Consegne dell'architetto. Il modello descrive l'opera dal punto di vista dell'architetto — locali, involucro, finiture interne e dintorni.
+  en: Deliverables from the architect. The model describes the built asset from the architect's point of view — spaces, envelope, interior fit-out, and surroundings.
+file_name:
+  de: '{Projekt}_{Phase}_ARC_{Freitext}'
+  fr: '{Projet}_{Phase}_ARC_{Libre}'
+  it: '{Progetto}_{Fase}_ARC_{Libero}'
+  en: '{Project}_{Phase}_ARC_{Free}'
+status: active
