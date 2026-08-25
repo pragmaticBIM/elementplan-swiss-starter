@@ -1,6 +1,6 @@
-# pragmaticBIM Public Minimal
+# pragmaticBIM Public Swiss
 
-Public minimal [Elementplan](https://elementplan.pragmaticbim.ch) master template.
+Public Swiss [Elementplan](https://elementplan.pragmaticbim.ch) master template.
 
 It follows the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html) and keeps information requirements small enough for early design with [abstractBIM](https://www.abstractbim.com/).
 
