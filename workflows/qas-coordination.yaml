@@ -46,6 +46,4 @@ status: active
 needed_in_domain:
   - pragmaticbim:domain/architecture
   - pragmaticbim:domain/mep
-needed_for_project_goals:
-  - pragmaticbim:project-goal/terminkritikalitaet
 comment: Applies to the spatial structure, spaces, windows, and doors used for DES-COST and DES-BPS.

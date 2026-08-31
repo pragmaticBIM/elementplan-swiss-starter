@@ -38,7 +38,6 @@ definition:
     - Room name in LongName, optional room number in Name.
 needed_in_domain:
 - pragmaticbim:domain/architecture
-- pragmaticbim:domain/mep
 entity_ifc2x3: IfcSpace
 entity_ifc4: IfcSpace
 entity_ifc4_3: IfcSpace

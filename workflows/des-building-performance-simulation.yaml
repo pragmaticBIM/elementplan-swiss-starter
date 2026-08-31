@@ -50,6 +50,4 @@ status: active
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-needed_for_project_goals:
-- pragmaticbim:project-goal/nachhaltigkeit
 comment: Same geometric minimum as DES-COST. ThermalTransmittance on windows supports early simulation.
