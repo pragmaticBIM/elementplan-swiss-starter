@@ -10,7 +10,7 @@ description:
   de: |
     Klassifikation und Status der Modellelemente für Koordination und Modellprüfung.
 
-    Jedes relevante Element trägt IFC-Entität, PredefinedType, die zugehörigen Pset_*Common-Eigenschaften, IsExisting und LoadBearing (tragend). Damit lassen sich Bestands- und Neubauanteile sowie tragende und nichttragende Teile in der Koordination unterscheiden.
+    Jedes relevante Element trägt IFC-Entität, PredefinedType und die zugehörigen Pset_*Common-Eigenschaften (Reference, IsExternal, Status). Über Status (NEW, EXISTING, DEMOLISH, TEMPORARY) lassen sich Bestands- und Neubauanteile in der Koordination unterscheiden.
 
     **Lieferobjekte**
     - Klassifizierte Fachmodelle Architektur und Gebäudetechnik
@@ -18,7 +18,7 @@ description:
   fr: |
     Classification et statut des éléments de modèle pour la coordination et le contrôle.
 
-    Chaque élément pertinent porte l'entité IFC, PredefinedType, les propriétés Pset_*Common, IsExisting et LoadBearing (porteur). Cela permet de distinguer existant et neuf ainsi que les parties porteuses dans la coordination.
+    Chaque élément pertinent porte l'entité IFC, PredefinedType et les propriétés Pset_*Common (Reference, IsExternal, Status). Le Status (NEW, EXISTING, DEMOLISH, TEMPORARY) permet de distinguer existant et neuf dans la coordination.
 
     **Livrables**
     - Maquettes spécialisées architecture et CVC classifiées
@@ -26,7 +26,7 @@ description:
   it: |
     Classificazione e stato degli elementi di modello per coordinamento e verifica.
 
-    Ogni elemento pertinente porta entità IFC, PredefinedType, proprietà Pset_*Common, IsExisting e LoadBearing (portante). Così si distinguono esistente e nuovo nonché le parti portanti nel coordinamento.
+    Ogni elemento pertinente porta entità IFC, PredefinedType e le proprietà Pset_*Common (Reference, IsExternal, Status). Tramite Status (NEW, EXISTING, DEMOLISH, TEMPORARY) si distinguono esistente e nuovo nel coordinamento.
 
     **Oggetti della fornitura**
     - Modelli specialistici di architettura e impianti classificati
@@ -34,7 +34,7 @@ description:
   en: |
     Classification and status of model elements for coordination and model checking.
 
-    Each relevant element carries its IFC entity, PredefinedType, the matching Pset_*Common properties, IsExisting, and LoadBearing. That lets coordination separate existing from new work and structural from non-structural parts.
+    Each relevant element carries its IFC entity, PredefinedType, and the matching Pset_*Common properties (Reference, IsExternal, Status). Status (NEW, EXISTING, DEMOLISH, TEMPORARY) lets coordination separate existing from new work.
 
     **Deliverables**
     - Classified architecture and MEP models

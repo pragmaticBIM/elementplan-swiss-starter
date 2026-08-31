@@ -110,36 +110,6 @@ attributes:
     is_applicability: false
     status: active
     sort_order: 4
-  - name: IsExisting
-    pset: null
-    definition:
-      de: TRUE wenn die Tür zum Bestand gehört.
-      fr: TRUE si la porte appartient à l'existant.
-      it: TRUE se la porta appartiene all'esistente.
-      en: TRUE if the door belongs to the existing asset.
-    datatype: IfcBoolean
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 5
-  - name: LoadBearing
-    pset: null
-    definition:
-      de: TRUE wenn die Tür oder der Rahmen lastabtragend ist (Is Structural).
-      fr: TRUE si la porte ou le cadre est porteur (Is Structural).
-      it: TRUE se la porta o il telaio è portante (Is Structural).
-      en: TRUE if the door or frame is load-bearing (Is Structural).
-    datatype: IfcBoolean
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 6
   - name: Area
     pset: Qto_DoorBaseQuantities
     definition:
@@ -156,4 +126,4 @@ attributes:
       - pragmaticbim:workflow/des-building-performance-simulation
     is_applicability: false
     status: active
-    sort_order: 7
+    sort_order: 5

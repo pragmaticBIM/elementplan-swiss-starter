@@ -55,8 +55,8 @@ For **QAS-COORD**, the same elements also require:
 - Named spatial structure (`IfcProject`, `IfcSite`, `IfcBuilding`, `IfcBuildingStorey`)
 - IFC entity and `PredefinedType` on spaces, windows, and doors
 - The entity `Pset_*Common` properties used here (`Reference`, `IsExternal`, `Status`, plus `ThermalTransmittance` on windows)
-- `IsExisting`
-- `LoadBearing` (Is Structural) on windows and doors
+
+Existing versus new work is expressed through `Status` (`NEW`, `EXISTING`, `DEMOLISH`, `TEMPORARY`) in the `Pset_*Common` property set.
 
 ## Phases
 
