@@ -7,10 +7,11 @@ name:
   it: Calcolo dei costi per elemento dalle quantità abstractBIM
   en: Element-based cost calculation from abstractBIM quantities
 description:
-  de: |
+  de: |-
     Modellbasierte Mengen für eine elementbasierte Kostenermittlung.
 
-    abstractBIM erzeugt aus Innenräumen, Aussenräumen, Fenstern und Türen ein konsistentes Mengenmodell (Flächen, Volumen, Stückzahlen). Wände und Decken werden aus den Raumvolumen abgeleitet.
+
+    www.abstractBIM.com  erzeugt aus Innenräumen, Aussenräumen, Fenstern und Türen ein konsistentes Mengenmodell (Flächen, Volumen, Stückzahlen). Wände und Decken werden aus den Raumvolumen abgeleitet.
 
     **Lieferobjekte**
     - Architekturmodell mit IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow und IfcDoor
@@ -48,7 +49,7 @@ parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
 needed_in_domain:
-  - pragmaticbim:domain/architecture
+- pragmaticbim:domain/architecture
 needed_for_project_goals:
-  - pragmaticbim:project-goal/element-based-cost
+- pragmaticbim:project-goal/element-based-cost
 comment: Requires a clean architectural IFC with modelled spaces. abstractBIM provides metrics; unit rates stay external.
