@@ -8,7 +8,7 @@ name:
   it: Porte
   en: Doors
 definition:
-  de: |
+  de: |-
     Alle Türen, Tore und Revisionsöffnungen (IfcDoor).
 
     **Modellierung**
@@ -37,7 +37,7 @@ definition:
     - Glazed areas with a transparent material.
     - abstractBIM simplifies openings for quantities and simulation.
 needed_in_domain:
-  - pragmaticbim:domain/architecture
+- pragmaticbim:domain/architecture
 entity_ifc2x3: IfcDoor
 entity_ifc4: IfcDoor
 entity_ifc4_3: IfcDoor
@@ -45,85 +45,85 @@ picture_link: null
 model_link: null
 applicability: entity_ifc4=IfcDoor
 attributes:
-  - name: PredefinedType
-    pset: null
-    definition:
-      de: 'Art der Tür: DOOR, GATE oder TRAPDOOR.'
-      fr: 'Type de porte: DOOR, GATE ou TRAPDOOR.'
-      it: 'Tipo di porta: DOOR, GATE o TRAPDOOR.'
-      en: 'Door kind: DOOR, GATE, or TRAPDOOR.'
-    datatype: IfcLabel
-    allowed_values: pragmaticbim:value/predefinedtype-door
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 1
-  - name: Reference
-    pset: Pset_DoorCommon
-    definition:
-      de: Referenzbezeichnung der Tür für die Koordination.
-      fr: Référence de la porte pour la coordination.
-      it: Riferimento della porta per il coordinamento.
-      en: Door reference used for coordination.
-    datatype: IfcIdentifier
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 2
-  - name: IsExternal
-    pset: Pset_DoorCommon
-    definition:
-      de: TRUE für Aussentüren, FALSE für Innentüren.
-      fr: TRUE pour une porte extérieure, FALSE pour une porte intérieure.
-      it: TRUE per porta esterna, FALSE per porta interna.
-      en: TRUE for an exterior door, FALSE for an interior door.
-    datatype: IfcBoolean
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 3
-  - name: Status
-    pset: Pset_DoorCommon
-    definition:
-      de: 'Bauteilstatus: NEW, EXISTING, DEMOLISH oder TEMPORARY.'
-      fr: 'Statut: NEW, EXISTING, DEMOLISH ou TEMPORARY.'
-      it: 'Stato: NEW, EXISTING, DEMOLISH o TEMPORARY.'
-      en: 'Element status: NEW, EXISTING, DEMOLISH, or TEMPORARY.'
-    datatype: IfcLabel
-    allowed_values: pragmaticbim:value/element-status
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 4
-  - name: Area
-    pset: Qto_DoorBaseQuantities
-    definition:
-      de: Fläche der Türöffnung.
-      fr: Surface de l'ouverture de porte.
-      it: Superficie dell'apertura della porta.
-      en: Area of the door opening.
-    datatype: IfcAreaMeasure
-    unit: m²
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-    is_applicability: false
-    status: active
-    sort_order: 5
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art der Tür: DOOR, GATE oder TRAPDOOR.'
+    fr: 'Type de porte: DOOR, GATE ou TRAPDOOR.'
+    it: 'Tipo di porta: DOOR, GATE o TRAPDOOR.'
+    en: 'Door kind: DOOR, GATE, or TRAPDOOR.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-door
+  needed_in_phases: ['31', '32', '33']
+  ifc_versions: [ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-element-based-cost
+  - pragmaticbim:workflow/des-building-performance-simulation
+  - pragmaticbim:workflow/qas-coordination
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: Reference
+  pset: Pset_DoorCommon
+  definition:
+    de: Referenzbezeichnung der Tür für die Koordination.
+    fr: Référence de la porte pour la coordination.
+    it: Riferimento della porta per il coordinamento.
+    en: Door reference used for coordination.
+  datatype: IfcIdentifier
+  needed_in_phases: ['31', '32', '33']
+  ifc_versions: [ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-coordination
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: IsExternal
+  pset: Pset_DoorCommon
+  definition:
+    de: TRUE für Aussentüren, FALSE für Innentüren.
+    fr: TRUE pour une porte extérieure, FALSE pour une porte intérieure.
+    it: TRUE per porta esterna, FALSE per porta interna.
+    en: TRUE for an exterior door, FALSE for an interior door.
+  datatype: IfcBoolean
+  needed_in_phases: ['31', '32', '33']
+  ifc_versions: [ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-building-performance-simulation
+  - pragmaticbim:workflow/qas-coordination
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Status
+  pset: Pset_DoorCommon
+  definition:
+    de: 'Bauteilstatus: NEW, EXISTING, DEMOLISH oder TEMPORARY.'
+    fr: 'Statut: NEW, EXISTING, DEMOLISH ou TEMPORARY.'
+    it: 'Stato: NEW, EXISTING, DEMOLISH o TEMPORARY.'
+    en: 'Element status: NEW, EXISTING, DEMOLISH, or TEMPORARY.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases: ['31', '32', '33']
+  ifc_versions: [ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-coordination
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: Area
+  pset: Qto_DoorBaseQuantities
+  definition:
+    de: Fläche der Türöffnung.
+    fr: Surface de l'ouverture de porte.
+    it: Superficie dell'apertura della porta.
+    en: Area of the door opening.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases: ['31', '32', '33']
+  ifc_versions: [ifc4, ifc4x3]
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-element-based-cost
+  - pragmaticbim:workflow/des-building-performance-simulation
+  is_applicability: false
+  status: active
+  sort_order: 5

@@ -7,10 +7,10 @@ name:
   it: Simulazione delle prestazioni dell'edificio da abstractBIM
   en: Building performance simulation based on abstractBIM
 description:
-  de: |
+  de: |-
     Geometrie und Raumdaten für energetische und raumklimatische Simulation.
 
-    abstractBIM vereinfacht das Architekturmodell zu einem konsistenten Raum- und Öffnungsmodell. Innenräume, Aussenräume, Fenster und Türen sind die Eingabe; LongName trägt die Raumnutzung.
+    www.abstractBIM.com vereinfacht das Architekturmodell zu einem konsistenten Raum- und Öffnungsmodell. Innenräume, Aussenräume, Fenster und Türen sind die Eingabe; LongName trägt die Raumnutzung.
 
     **Lieferobjekte**
     - Architekturmodell mit IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow und IfcDoor
@@ -48,8 +48,8 @@ parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
 needed_in_domain:
-  - pragmaticbim:domain/architecture
-  - pragmaticbim:domain/mep
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
 needed_for_project_goals:
-  - pragmaticbim:project-goal/building-performance
+- pragmaticbim:project-goal/building-performance
 comment: Same geometric minimum as DES-COST. ThermalTransmittance on windows supports early simulation.
