@@ -51,5 +51,5 @@ status: active
 needed_in_domain:
 - pragmaticbim:domain/architecture
 needed_for_project_goals:
-- pragmaticbim:project-goal/element-based-cost
+- pragmaticbim:project-goal/kosten-budgetsensitivitaet
 comment: Requires a clean architectural IFC with modelled spaces. abstractBIM provides metrics; unit rates stay external.

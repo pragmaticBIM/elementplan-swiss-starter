@@ -131,22 +131,6 @@ attributes:
     is_applicability: false
     status: active
     sort_order: 5
-  - name: Status
-    pset: Pset_SpaceCommon
-    definition:
-      de: 'Bauteilstatus: NEW, EXISTING, DEMOLISH oder TEMPORARY.'
-      fr: 'Statut: NEW, EXISTING, DEMOLISH ou TEMPORARY.'
-      it: 'Stato: NEW, EXISTING, DEMOLISH o TEMPORARY.'
-      en: 'Element status: NEW, EXISTING, DEMOLISH, or TEMPORARY.'
-    datatype: IfcLabel
-    allowed_values: pragmaticbim:value/element-status
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 6
   - name: NetFloorArea
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -163,7 +147,7 @@ attributes:
       - pragmaticbim:workflow/des-building-performance-simulation
     is_applicability: false
     status: active
-    sort_order: 7
+    sort_order: 6
   - name: NetVolume
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -180,7 +164,7 @@ attributes:
       - pragmaticbim:workflow/des-building-performance-simulation
     is_applicability: false
     status: active
-    sort_order: 8
+    sort_order: 7
   - name: Height
     pset: Qto_SpaceBaseQuantities
     definition:
@@ -197,4 +181,4 @@ attributes:
       - pragmaticbim:workflow/des-building-performance-simulation
     is_applicability: false
     status: active
-    sort_order: 9
+    sort_order: 8
