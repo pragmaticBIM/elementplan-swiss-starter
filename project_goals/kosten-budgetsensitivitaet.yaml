@@ -30,7 +30,7 @@ levels:
     en: Baseline quantity/cost takeoff.
   status: active
   activated_workflows:
-  - pragmaticbim:workflow/mengen-und-kostenermittlung
+  - pragmaticbim:workflow/des-element-based-cost
   comment: Delta at level grosszügig (sort_order 1).
 - id: pragmaticbim:project-goal-level/kosten-mittel
   code: COST-02
@@ -46,10 +46,7 @@ levels:
     it: Ripartizione costi e indicatori estesi.
     en: Extended cost breakdown and key figures.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/zuordnung-der-bauteile-nach-ebkp-3-stellig
-  - pragmaticbim:workflow/kennwert-geschossflache-ermitteln
-  - pragmaticbim:workflow/ermitteln-von-geschossvolumen
+  activated_workflows: []
   comment: Delta at level mittel (sort_order 2); cumulative with grosszügig.
 - id: pragmaticbim:project-goal-level/kosten-sensitiv
   code: COST-03
@@ -65,8 +62,5 @@ levels:
     it: Costi del ciclo di vita e indicatori di superficie approfonditi.
     en: Lifecycle costing and deeper area metrics.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/bim2lcc-lebenszykluskosten
-  - pragmaticbim:workflow/soll-ist-vergleich-raumflachen
-  - pragmaticbim:workflow/flachenauswertung-nach-sia416-dn265
+  activated_workflows: []
   comment: Delta at level sensitiv (sort_order 3); cumulative with mittel and grosszügig.

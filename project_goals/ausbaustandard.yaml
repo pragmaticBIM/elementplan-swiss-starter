@@ -29,8 +29,7 @@ levels:
     it: Superfici e volumi di base.
     en: Baseline room areas and volumes.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/raumflachen-und-volumina
+  activated_workflows: []
   comment: Delta at level Standard (sort_order 1).
 - id: pragmaticbim:project-goal-level/ausbau-gehoben
   code: FIT-02
@@ -46,9 +45,7 @@ levels:
     it: QA estesa pavimentazioni e carichi utili.
     en: Extended QA for floor finishes and live loads.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/qualitatssicherung-qs-bodenbelage
-  - pragmaticbim:workflow/qualitatssicherung-nutzlasten-tragwerkskonzept
+  activated_workflows: []
   comment: Delta at level gehoben (sort_order 2); cumulative with Standard.
 - id: pragmaticbim:project-goal-level/ausbau-premium
   code: FIT-03
@@ -64,7 +61,5 @@ levels:
     it: Visualizzazione relazioni spaziali e processi critici.
     en: Visualisation of spatial relationships and critical operations.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/visualisierung-raumbeziehungen
-  - pragmaticbim:workflow/visualisierung-und-nachweis-kritischer-betriebsablaufe
+  activated_workflows: []
   comment: Delta at level Premium (sort_order 3); cumulative with gehoben and Standard.

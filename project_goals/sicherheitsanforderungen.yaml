@@ -45,9 +45,7 @@ levels:
     it: Zone di sicurezza e pianificazione intervento vigili del fuoco.
     en: Security zones and fire brigade deployment planning.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/darstellung-sicherheitszonen-in-modell
-  - pragmaticbim:workflow/einsatzplan-feuerwehr-am-modell
+  activated_workflows: []
   comment: Delta at level erhöht (sort_order 2); cumulative with Standard.
 - id: pragmaticbim:project-goal-level/sicherheit-klassifiziert
   code: SEC-03
@@ -63,7 +61,5 @@ levels:
     it: Tecniche di sicurezza e classificazione facciata COMSEC.
     en: Security systems and COMSEC facade classification.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/visualisierung-sicherheitstechnik-im-modell
-  - pragmaticbim:workflow/darstellung-sicherheitsklassifizierungen-der-fassade-nach-comsec-im-modell
+  activated_workflows: []
   comment: Delta at level klassifiziert (sort_order 3); cumulative with erhöht and Standard.

@@ -46,7 +46,7 @@ levels:
     en: QA of energy reference area.
   status: active
   activated_workflows:
-  - pragmaticbim:workflow/qualitatssicherung-energiebezugsflache
+  - pragmaticbim:workflow/des-building-performance-simulation
   comment: Delta at level mittel (sort_order 2); cumulative with gering.
 - id: pragmaticbim:project-goal-level/nachhaltigkeit-hoch
   code: SUS-03
@@ -62,8 +62,5 @@ levels:
     it: Costi del ciclo di vita e indicatori di superficie.
     en: Lifecycle costs and area key figures.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/bim2lcc-lebenszykluskosten
-  - pragmaticbim:workflow/kennwert-geschossflache-ermitteln
-  - pragmaticbim:workflow/ermitteln-von-geschossvolumen
+  activated_workflows: []
   comment: Delta at level hoch (sort_order 3); cumulative with mittel and gering.

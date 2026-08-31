@@ -46,7 +46,7 @@ levels:
     en: Planning coordination.
   status: active
   activated_workflows:
-  - pragmaticbim:workflow/planungskoordination
+  - pragmaticbim:workflow/qas-coordination
   comment: Delta at level Standard (sort_order 2); cumulative with unkritisch.
 - id: pragmaticbim:project-goal-level/termin-hochkritisch
   code: SCH-03
@@ -62,7 +62,5 @@ levels:
     it: Pianificazione del processo costruttivo e simulazione dei processi critici.
     en: Construction sequencing and simulation of critical processes.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/bauablaufplanung-und-baufortschritt
-  - pragmaticbim:workflow/simulation-kritischer-bauablaufe-in-modell
+  activated_workflows: []
   comment: Delta at level hochkritisch (sort_order 3); cumulative with Standard and unkritisch.

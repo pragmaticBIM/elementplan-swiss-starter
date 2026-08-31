@@ -45,11 +45,7 @@ levels:
     it: Documentazione opera di base e LIA edificio/area/parcella.
     en: Baseline building documentation and LIA building/site/parcel.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/bauwerksdokumentation-basis-awf-08-gemass-kbob
-  - pragmaticbim:workflow/lia-gebaude
-  - pragmaticbim:workflow/lia-areal
-  - pragmaticbim:workflow/lia-grundstuck
+  activated_workflows: []
   comment: Delta at level mittel (sort_order 2); cumulative with gering.
 - id: pragmaticbim:project-goal-level/betrieb-volle-fm-integration
   code: OPS-03
@@ -65,9 +61,5 @@ levels:
     it: Livello sistema/componente, rilevamento NGF e gestione varianti modellata.
     en: System/component level, NGF capture and model-based change management.
   status: active
-  activated_workflows:
-  - pragmaticbim:workflow/modellbasierte-informationen-auf-systemebene-gebaudetechnik
-  - pragmaticbim:workflow/modellbasierte-informationen-auf-bauteilebene-gebaudetechnik
-  - pragmaticbim:workflow/lia-ngf-erfassungsliste
-  - pragmaticbim:workflow/modellbasierte-bestellungsanderung
+  activated_workflows: []
   comment: Delta at level volle FM-Integration (sort_order 3); cumulative with mittel and gering.
