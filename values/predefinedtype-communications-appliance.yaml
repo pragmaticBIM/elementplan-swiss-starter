@@ -1,0 +1,52 @@
+id: pragmaticbim:value/predefinedtype-communications-appliance
+code: COMMUNICATIONS_APPLI
+name:
+  de: PredefinedType IfcCommunicationsAppliance
+  fr: PredefinedType IfcCommunicationsAppliance
+  it: PredefinedType IfcCommunicationsAppliance
+  en: PredefinedType IfcCommunicationsAppliance
+description:
+  de: Ifc PredefinedType für IfcCommunicationsAppliance.
+  fr: PredefinedType IFC pour IfcCommunicationsAppliance.
+  it: PredefinedType IFC per IfcCommunicationsAppliance.
+  en: IFC PredefinedType for IfcCommunicationsAppliance.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - NETWORKAPPLIANCE
+  - ROUTER
+  - NETWORKHUB
+  - COMPUTER
+  - ANTENNA
+  - GATEWAY
+  - MODEM
+  - USERDEFINED
+  fr:
+  - NETWORKAPPLIANCE
+  - ROUTER
+  - NETWORKHUB
+  - COMPUTER
+  - ANTENNA
+  - GATEWAY
+  - MODEM
+  - USERDEFINED
+  it:
+  - NETWORKAPPLIANCE
+  - ROUTER
+  - NETWORKHUB
+  - COMPUTER
+  - ANTENNA
+  - GATEWAY
+  - MODEM
+  - USERDEFINED
+  en:
+  - NETWORKAPPLIANCE
+  - ROUTER
+  - NETWORKHUB
+  - COMPUTER
+  - ANTENNA
+  - GATEWAY
+  - MODEM
+  - USERDEFINED

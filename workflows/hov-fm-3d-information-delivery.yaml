@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/hov-fm-3d-information-delivery
+code: HOV-FM-3D
+sort_order: 52
+name:
+  de: FM — Lieferung von 3D-Informationen
+  fr: FM — Livraison d'informations 3D
+  it: FM — Consegna di informazioni 3D
+  en: FM — Delivery of 3D information
+description:
+  de: 'Mit dem Betreiber klären, welche Objekte er tatsächlich bewirtschaftet — und nur diese mit den vereinbarten Stammdaten im 3D-Modell übergeben.
+
+
+    **Ausgangslage**
+
+    - Ein festes TGA-Elementpaket trifft selten die reale FM-Bewirtschaftung.
+
+    - Ohne Abstimmung entstehen zu viele oder falsche Objekte in der Übergabe.
+
+
+    **Ziel & Nutzen**
+
+    - Übergabeumfang gemeinsam mit FM/Betreiber festlegen.
+
+    - Nur vereinbarte Objekte mit vereinbarten Attributen (z. B. Kennzeichnung, Garantie, Dokumente) liefern.
+
+
+    **Ablauf**
+
+    1. Mit FM/Betreiber die bewirtschafteten Objektarten und Pflichtattribute festlegen.
+
+    2. Diese Objekte im Modell führen und Stammdaten gemäss Vereinbarung setzen.
+
+    3. Übergabe prüfen und an den Betreiber ausliefern.
+
+
+    **Ergebnis**
+
+    - Projektspezifische 3D-FM-Übergabe — ohne generisches TGA-Pflichtkatalog.
+
+
+    **Lieferobjekte**
+
+    - Modell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Objektarten und Attribute gemäss schriftlicher Vereinbarung mit FM/Betreiber
+
+    - Kein festes Elementplan-TGA-Elementpaket für diesen Anwendungsfall'
+  fr: 'Clarifier avec l''exploitant les objets qu''il gère réellement — et ne livrer que ceux-ci avec les données convenues dans la maquette 3D.
+
+
+    **Situation de départ**
+
+    - Un catalogue CVC fixe correspond rarement à la gestion FM réelle.
+
+    - Sans accord, la livraison contient trop d''objets ou les mauvais.
+
+
+    **Objectif et bénéfice**
+
+    - Définir le périmètre de livraison avec le FM / l''exploitant.
+
+    - Livrer uniquement les objets convenus avec les attributs convenus (p. ex. identification, garantie, documents).
+
+
+    **Déroulement**
+
+    1. Définir avec le FM / l''exploitant les types d''objets gérés et les attributs obligatoires.
+
+    2. Porter ces objets dans le modèle et renseigner les données selon l''accord.
+
+    3. Contrôler la livraison et la remettre à l''exploitant.
+
+
+    **Résultat**
+
+    - Livraison FM 3D spécifique au projet — sans catalogue CVC générique obligatoire.
+
+
+    **Livrables**
+
+    - Maquette avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Types d''objets et attributs selon accord écrit avec FM / exploitant
+
+    - Pas de paquet d''éléments CVC Elementplan fixe pour ce cas d''usage'
+  it: 'Chiarire con il gestore quali oggetti gestisce davvero — e consegnare solo quelli con i dati anagrafici concordati nel modello 3D.
+
+
+    **Situazione di partenza**
+
+    - Un catalogo impianti fisso raramente corrisponde alla gestione FM reale.
+
+    - Senza accordo la consegna contiene troppi oggetti o quelli sbagliati.
+
+
+    **Obiettivo e beneficio**
+
+    - Definire il perimetro di consegna con FM / gestore.
+
+    - Consegnare solo gli oggetti concordati con gli attributi concordati (p. es. identificazione, garanzia, documenti).
+
+
+    **Svolgimento**
+
+    1. Definire con FM / gestore i tipi di oggetti gestiti e gli attributi obbligatori.
+
+    2. Gestire questi oggetti nel modello e impostare i dati secondo l''accordo.
+
+    3. Verificare la consegna e consegnarla al gestore.
+
+
+    **Risultato**
+
+    - Consegna FM 3D specifica del progetto — senza catalogo impianti generico obbligatorio.
+
+
+    **Oggetti della fornitura**
+
+    - Modello con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Tipi di oggetto e attributi secondo accordo scritto con FM / gestore
+
+    - Nessun pacchetto elementi impianti Elementplan fisso per questo caso d''uso'
+  en: 'Agree with the operator which objects they actually manage — and hand over only those with the agreed master data in the 3D model.
+
+
+    **Starting point**
+
+    - A fixed MEP element pack rarely matches real FM asset management.
+
+    - Without agreement, handover includes too many or the wrong objects.
+
+
+    **Goal & benefit**
+
+    - Set handover scope together with FM / the operator.
+
+    - Deliver only agreed objects with agreed attributes (e.g. identification, warranty, documents).
+
+
+    **Process**
+
+    1. Define with FM / the operator the managed object kinds and mandatory attributes.
+
+    2. Carry those objects in the model and set master data per the agreement.
+
+    3. Check the handover and deliver it to the operator.
+
+
+    **Outcome**
+
+    - Project-specific 3D FM handover — without a generic mandatory MEP catalogue.
+
+
+    **Deliverables**
+
+    - Model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Object kinds and attributes according to a written agreement with FM / the operator
+
+    - No fixed Elementplan MEP element pack for this use case'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/hov
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: FM handover. No fixed MEP element attribute pack — scope agreed with operator. Phases typically 51–62.

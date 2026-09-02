@@ -1,0 +1,247 @@
+id: pragmaticbim:element/spaces-parking
+code: SPACE-PARK
+sort_order: 25
+status: active
+name:
+  de: Parkplätze
+  fr: Places de stationnement
+  it: Posti auto
+  en: Parking spaces
+definition:
+  de: 'Parkplätze als eigene Räume modellieren — für Nachweis und Auswertung ab Bauprojekt.
+
+
+    **Beschreibung**
+
+    - Einzelne Parkplätze (innen oder aussen) als eigene Raumvolumen.
+
+    - Dienen dem Parkplatznachweis und der Flächenauswertung aus dem Modell.
+
+
+    **Modellierungsrichtlinie**
+
+    - Ab Bauprojekt jeden Parkplatz als eigenen Raum modellieren.
+
+    - Name mit eindeutiger Parkplatznummer führen (z. B. P0016).
+
+    - Dem zugehörigen Geschoss bzw. Aussenbereich zuweisen; keine Überlappungen.'
+  fr: 'Modéliser les places de stationnement comme locaux distincts — pour le justificatif et l''évaluation dès le projet de construction.
+
+
+    **Description**
+
+    - Places de stationnement individuelles (intérieures ou extérieures) comme volumes de local distincts.
+
+    - Servent au justificatif de places et à l''évaluation des surfaces à partir du modèle.
+
+
+    **Directives de modélisation**
+
+    - Dès le projet de construction, modéliser chaque place comme local distinct.
+
+    - Porter Name avec un numéro de place unique (p. ex. P0016).
+
+    - Rattacher à l''étage ou à l''espace extérieur concerné ; pas de chevauchement.'
+  it: 'Modellare i posti auto come locali distinti — per verifica e valutazione dal progetto di costruzione.
+
+
+    **Descrizione**
+
+    - Singoli posti auto (interni o esterni) come volumi di locale distinti.
+
+    - Servono alla verifica dei posti e alla valutazione delle superfici dal modello.
+
+
+    **Direttive di modellazione**
+
+    - Dal progetto di costruzione modellare ogni posto come locale distinto.
+
+    - Portare Name con un numero di posto univoco (p. es. P0016).
+
+    - Assegnare al piano o all''area esterna corrispondente; nessuna sovrapposizione.'
+  en: 'Model parking spaces as dedicated spaces — for verification and evaluation from building design onward.
+
+
+    **Description**
+
+    - Individual parking spaces (interior or exterior) as dedicated space volumes.
+
+    - Used for parking verification and area evaluation from the model.
+
+
+    **Modelling guidelines**
+
+    - From building design onward, model each parking bay as its own space.
+
+    - Carry Name with a unique parking number (e.g. P0016).
+
+    - Assign to the matching storey or exterior area; no overlaps.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcSpace
+entity_ifc4: IfcSpace
+entity_ifc4_3: IfcSpace
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcSpace AND PredefinedType=PARKING
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Raum als Parkplatz.
+
+
+      **Zulässige Werte**
+
+      - `PARKING` — Parkplatz'
+    fr: 'Identifie l''espace comme place de stationnement.
+
+
+      **Valeurs admises**
+
+      - `PARKING` — place de stationnement'
+    it: 'Identifica lo spazio come posto auto.
+
+
+      **Valori ammessi**
+
+      - `PARKING` — posto auto'
+    en: 'Marks the space as a parking space.
+
+
+      **Allowed values**
+
+      - `PARKING` — parking space'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-space-parking
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-parking-verification
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Raum als Parkplatz.
+
+
+      **Zulässige Werte**
+
+      - `PARKING` — Parkplatz
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Identifie l''espace comme place de stationnement.
+
+
+      **Valeurs admises**
+
+      - `PARKING` — place de stationnement
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Identifica lo spazio come posto auto.
+
+
+      **Valori ammessi**
+
+      - `PARKING` — posto auto
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Marks the space as a parking space.
+
+
+      **Allowed values**
+
+      - `PARKING` — parking space'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-space-parking
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-parking-verification
+  is_applicability: true
+  status: active
+  sort_order: '2
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: Name
+  pset: null
+  definition:
+    de: Eindeutige Parkplatznummer nach dem Muster P gefolgt von einer vierstelligen Nummer (z. B. P0016).
+    fr: Numéro de place unique selon le modèle P suivi d'un numéro à quatre chiffres (p. ex. P0016).
+    it: Numero di posto univoco secondo il modello P seguito da un numero a quattro cifre (p. es. P0016).
+    en: Unique parking number in the pattern P followed by a four-digit number (e.g. P0016).
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-parking-verification
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: NetFloorArea
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Nettogeschossfläche des modellierten Parkplatzes.
+    fr: Surface nette de la place de stationnement modélisée.
+    it: Superficie netta del posto auto modellato.
+    en: Net floor area of the modelled parking space.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-parking-verification
+  is_applicability: false
+  status: active
+  sort_order: 4

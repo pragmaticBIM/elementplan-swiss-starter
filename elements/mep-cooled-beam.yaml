@@ -1,0 +1,270 @@
+id: pragmaticbim:element/mep-cooled-beam
+code: MEP-COOL-BEAM
+sort_order: 95
+status: active
+name:
+  de: Kühldecke / Kühlbalken
+  fr: Plafond froid / poutre froide
+  it: Soffitto freddo / trave fredda
+  en: Chilled ceiling / beam
+definition:
+  de: '**Beschreibung**
+
+    - Kühlfläche oder -balken zur Raumkühlung.
+
+    - Passive oder aktive Kühldecke / Kühlbalken.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als Geräteobjekt mit Abmessungen und Lage modellieren.
+
+    - Dem zugehörigen Geschoss und dem System zuweisen.'
+  fr: '**Description**
+
+    - Surface ou poutre froide pour le refroidissement des locaux.
+
+    - Plafond/poutre froide.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme appareil avec dimensions et position.
+
+    - Rattacher à l''étage et à la zone technique ou d''usage.'
+  it: '**Descrizione**
+
+    - Superficie o trave fredda per il raffreddamento degli ambienti.
+
+    - Soffitto/trave fredda.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come apparecchio con dimensioni e posizione.
+
+    - Assegnare al piano e alla zona tecnica o d''uso.'
+  en: '**Description**
+
+    - Chilled surface or beam for room cooling.
+
+    - Chilled ceiling or beam.
+
+
+    **Modelling guidelines**
+
+    - Model as an equipment object with size and location.
+
+    - Assign to the matching storey and technical or use zone.'
+needed_in_domain:
+- pragmaticbim:domain/mep
+entity_ifc2x3: IfcEnergyConversionDevice
+entity_ifc4: IfcCooledBeam
+entity_ifc4_3: IfcCooledBeam
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcCooledBeam
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art des Geräts bzw. Terminals.
+
+
+      **Zulässige Werte**
+
+      - `ACTIVE` — aktiv
+
+      - `PASSIVE` — passiv'
+    fr: 'Type d''appareil ou de terminal.
+
+
+      **Valeurs admises**
+
+      - `ACTIVE` — actif
+
+      - `PASSIVE` — passif'
+    it: 'Tipo di apparecchio o terminale.
+
+
+      **Valori ammessi**
+
+      - `ACTIVE` — attivo
+
+      - `PASSIVE` — passivo'
+    en: 'Kind of equipment or terminal.
+
+
+      **Allowed values**
+
+      - `ACTIVE` — active
+
+      - `PASSIVE` — passive'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-cooled-beam
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: Tag
+  pset: null
+  definition:
+    de: 'Anlagenkennzeichnung (AKS) gemäss Bauherrenstandard.
+
+
+      Fehlt ein projektspezifischer Standard, Vorschlag: `{Gebäude}-{Geschoss}-{Gewerk}-{Anlagenart}-{nnn}` (z. B. `B01-02-H-RLT-003`).'
+    fr: 'Identification d''installation (AKS) selon le standard du maître d''ouvrage.
+
+
+      Si aucun standard de projet n''existe, proposition : `{Bâtiment}-{Étage}-{Corps de métier}-{Type d''installation}-{nnn}` (p. ex. `B01-02-H-RLT-003`).'
+    it: 'Identificazione impianto (AKS) secondo lo standard del committente.
+
+
+      Se manca uno standard di progetto, proposta: `{Edificio}-{Piano}-{Disciplina}-{Tipo impianto}-{nnn}` (p. es. `B01-02-H-RLT-003`).'
+    en: 'Plant identification (AKS) according to the client standard.
+
+
+      If no project-specific standard exists, suggestion: `{Building}-{Storey}-{Trade}-{Plant type}-{nnn}` (e.g. `B01-02-H-RLT-003`).'
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: WarrantyEndDate
+  pset: Pset_Warranty
+  definition:
+    de: Datum des Garantieendes — vom Unternehmer zu liefern.
+    fr: Date de fin de garantie — à fournir par l'entrepreneur.
+    it: Data di fine garanzia — da fornire dall'impresa.
+    en: Warranty end date — to be provided by the contractor.
+  datatype: IfcDate
+  needed_in_phases:
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: DatasheetLink
+  pset: null
+  definition:
+    de: Link (URI) zum Produktdatenblatt.
+    fr: Lien (URI) vers la fiche technique du produit.
+    it: Link (URI) alla scheda tecnica del prodotto.
+    en: Link (URI) to the product datasheet.
+  datatype: IfcURIReference
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: Status
+  pset: Pset_CooledBeamTypeCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 5

@@ -1,0 +1,44 @@
+id: pragmaticbim:value/predefinedtype-fan
+code: FAN
+name:
+  de: PredefinedType IfcFan
+  fr: PredefinedType IfcFan
+  it: PredefinedType IfcFan
+  en: PredefinedType IfcFan
+description:
+  de: Ifc PredefinedType für IfcFan.
+  fr: PredefinedType IFC pour IfcFan.
+  it: PredefinedType IFC per IfcFan.
+  en: IFC PredefinedType for IfcFan.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - CENTRIFUGALAIRFOIL
+  - CENTRIFUGALBACKWARDINCLINEDCURVED
+  - CENTRIFUGALRADIAL
+  - PROPELLORAXIAL
+  - TUBEAXIAL
+  - VANEAXIAL
+  fr:
+  - CENTRIFUGALAIRFOIL
+  - CENTRIFUGALBACKWARDINCLINEDCURVED
+  - CENTRIFUGALRADIAL
+  - PROPELLORAXIAL
+  - TUBEAXIAL
+  - VANEAXIAL
+  it:
+  - CENTRIFUGALAIRFOIL
+  - CENTRIFUGALBACKWARDINCLINEDCURVED
+  - CENTRIFUGALRADIAL
+  - PROPELLORAXIAL
+  - TUBEAXIAL
+  - VANEAXIAL
+  en:
+  - CENTRIFUGALAIRFOIL
+  - CENTRIFUGALBACKWARDINCLINEDCURVED
+  - CENTRIFUGALRADIAL
+  - PROPELLORAXIAL
+  - TUBEAXIAL
+  - VANEAXIAL

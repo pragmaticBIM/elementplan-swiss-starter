@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-air-terminal-box
+code: AIR_TERMINAL_BOX
+name:
+  de: PredefinedType IfcAirTerminalBox
+  fr: PredefinedType IfcAirTerminalBox
+  it: PredefinedType IfcAirTerminalBox
+  en: PredefinedType IfcAirTerminalBox
+description:
+  de: Ifc PredefinedType für IfcAirTerminalBox.
+  fr: PredefinedType IFC pour IfcAirTerminalBox.
+  it: PredefinedType IFC per IfcAirTerminalBox.
+  en: IFC PredefinedType for IfcAirTerminalBox.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - CONSTANTFLOW
+  - VARIABLEFLOWPRESSUREDEPENDANT
+  - VARIABLEFLOWPRESSUREINDEPENDANT
+  fr:
+  - CONSTANTFLOW
+  - VARIABLEFLOWPRESSUREDEPENDANT
+  - VARIABLEFLOWPRESSUREINDEPENDANT
+  it:
+  - CONSTANTFLOW
+  - VARIABLEFLOWPRESSUREDEPENDANT
+  - VARIABLEFLOWPRESSUREINDEPENDANT
+  en:
+  - CONSTANTFLOW
+  - VARIABLEFLOWPRESSUREDEPENDANT
+  - VARIABLEFLOWPRESSUREINDEPENDANT

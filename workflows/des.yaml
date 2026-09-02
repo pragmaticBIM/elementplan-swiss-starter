@@ -16,6 +16,6 @@ parent_workflow: null
 picture_link: null
 status: active
 needed_in_domain:
-  - pragmaticbim:domain/architecture
-  - pragmaticbim:domain/mep
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
 comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

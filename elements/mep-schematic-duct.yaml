@@ -1,0 +1,358 @@
+id: pragmaticbim:element/mep-schematic-duct
+code: MEP-SCH-DUCT
+sort_order: 61
+status: active
+name:
+  de: Luftleitung (schematisch)
+  fr: Conduit d'air (schématique)
+  it: Canale aria (schematico)
+  en: Duct (schematic)
+definition:
+  de: 'Schematische Luftleitung für die frühe Koordination — Medium in Reference.
+
+
+    **Beschreibung**
+
+    - Vereinfachtes Segment oder Volumen für Hauptkanalführungen (Zu-/Abluft u. a.).
+
+    - Dient der Machbarkeits- und Kollisionsprüfung, nicht der Ausführungsplanung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als Volumen oder vereinfachtes Segment modellieren; Querschnitt gemäss Grobkonzept.
+
+    - Medium über Reference setzen (z. B. ZU, AB).
+
+    - Keine Armaturen, Brandschutzklappen oder Anschlussdetails modellieren.'
+  fr: 'Conduit d''air schématique pour la coordination précoce — médium dans Reference.
+
+
+    **Description**
+
+    - Segment ou volume simplifié pour tracés principaux (soufflage / reprise, etc.).
+
+    - Sert à la faisabilité et aux collisions, pas à l''exécution.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume ou segment simplifié; section selon le concept grossier.
+
+    - Indiquer le médium dans Reference (p. ex. ZU, AB).
+
+    - Ne pas modéliser armatures, clapets coupe-feu ou raccords de détail.'
+  it: 'Canale aria schematico per il coordinamento precoce — mezzo in Reference.
+
+
+    **Descrizione**
+
+    - Segmento o volume semplificato per percorsi principali (immissione / ripresa, ecc.).
+
+    - Serve per fattibilità e collisioni, non per l''esecuzione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume o segmento semplificato; sezione secondo il concept grossolano.
+
+    - Impostare il mezzo in Reference (p. es. ZU, AB).
+
+    - Non modellare armature, serrande tagliafuoco o dettagli di collegamento.'
+  en: 'Schematic duct for early coordination — medium in Reference.
+
+
+    **Description**
+
+    - Simplified segment or volume for main duct routes (supply / extract, etc.).
+
+    - Used for feasibility and clash checking, not for execution planning.
+
+
+    **Modelling guidelines**
+
+    - Model as a volume or simplified segment; cross-section according to the sketch concept.
+
+    - Set the medium in Reference (e.g. ZU, AB).
+
+    - Do not model fittings, fire dampers, or connection details.'
+needed_in_domain:
+- pragmaticbim:domain/mep
+entity_ifc2x3: IfcFlowSegment
+entity_ifc4: IfcDuctSegment
+entity_ifc4_3: IfcDuctSegment
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcDuctSegment OR entity_ifc2x3=IfcFlowSegment
+attributes:
+- name: Reference
+  pset: Pset_DuctSegmentTypeCommon
+  definition:
+    de: 'Medium der schematischen Luftleitung.
+
+
+      **Zulässige Werte**
+
+      - `ZU` — Zuluft
+
+      - `AB` — Abluft
+
+      - `AU` — Aussenluft
+
+      - `FO` — Fortluft'
+    fr: 'Médium du conduit schématique.
+
+
+      **Valeurs admises**
+
+      - `ZU` — soufflage
+
+      - `AB` — reprise
+
+      - `AU` — air neuf
+
+      - `FO` — rejet'
+    it: 'Mezzo del canale schematico.
+
+
+      **Valori ammessi**
+
+      - `ZU` — immissione
+
+      - `AB` — ripresa
+
+      - `AU` — aria esterna
+
+      - `FO` — espulsione'
+    en: 'Medium of the schematic duct.
+
+
+      **Allowed values**
+
+      - `ZU` — supply air
+
+      - `AB` — extract air
+
+      - `AU` — outdoor air
+
+      - `FO` — exhaust air'
+  datatype: IfcIdentifier
+  allowed_values: pragmaticbim:value/duct-reference-schematic
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: CrossSectionArea
+  pset: Qto_DuctSegmentBaseQuantities
+  definition:
+    de: Querschnittsfläche der modellierten schematischen Luftleitung.
+    fr: Section transversale du conduit schématique modélisé.
+    it: Area della sezione trasversale del canale schematico modellato.
+    en: Cross-sectional area of the modelled schematic duct.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: Status
+  pset: Pset_DuctSegmentTypeCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 4

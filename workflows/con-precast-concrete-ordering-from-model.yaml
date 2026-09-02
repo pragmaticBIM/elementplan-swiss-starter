@@ -1,0 +1,160 @@
+id: pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+code: CON-PRECAST-ORDER
+sort_order: 24
+name:
+  de: Bestellen von Betonfertigteilen ab Modell
+  fr: Commande d'éléments préfabriqués en béton à partir du modèle
+  it: Ordine di elementi prefabbricati in calcestruzzo dal modello
+  en: Precast concrete parts ordering from model
+description:
+  de: 'Betonfertigteile aus dem Tragwerksmodell für Bestellung und Lieferplanung bereitstellen.
+
+
+    **Ausgangslage**
+
+    - Fertigteilnummern fehlen im Modell oder sind nicht eindeutig; Bestellung und Baustellenlogistik basieren auf manuellen Listen.
+
+    - Ohne abgestimmte Zuordnung im Tragwerksmodell entstehen Fehlbestellungen und Verzögerungen in der Lieferkette.
+
+
+    **Ziel & Nutzen**
+
+    - Jedes Betonfertigteil im Tragwerksmodell mit eindeutiger Fertigteilnummer versehen.
+
+    - Bestellung und Lieferplanung direkt aus dem Modell ableiten.
+
+
+    **Ablauf**
+
+    1. Tragwerksmodell mit ausführungsgenauen Betonfertigteilen bereitstellen.
+
+    2. Fertigteilnummer je Bauteil im Attribut Name erfassen.
+
+    3. Modell für Bestellung und Lieferplanung exportieren.
+
+
+    **Ergebnis**
+
+    - Eindeutig nummerierte Betonfertigteile als Grundlage für Bestellung und Lieferkoordination auf der Baustelle.
+
+
+    **Lieferobjekte**
+
+    - Tragwerksmodell mit IfcColumn, IfcBeam, IfcWall und IfcSlab
+
+    - Name mit Fertigteilnummer je Betonfertigteil (natives IFC-Attribut)'
+  fr: 'Préparer les éléments préfabriqués en béton à partir du modèle structurel pour la commande et la planification des livraisons.
+
+
+    **Situation de départ**
+
+    - Les numéros de pièces préfabriquées manquent dans le modèle ou ne sont pas uniques ; commande et logistique de chantier reposent sur des listes manuelles.
+
+    - Sans attribution convenue dans le modèle structurel, des erreurs de commande et des retards dans la chaîne d''approvisionnement surviennent.
+
+
+    **Objectif et bénéfice**
+
+    - Attribuer un numéro de pièce préfabriquée unique à chaque élément en béton dans le modèle structurel.
+
+    - Dériver la commande et la planification des livraisons directement du modèle.
+
+
+    **Déroulement**
+
+    1. Fournir le modèle structurel avec des éléments préfabriqués en béton conformes à l''exécution.
+
+    2. Saisir le numéro de pièce préfabriquée par composant dans l''attribut Name.
+
+    3. Exporter le modèle pour la commande et la planification des livraisons.
+
+
+    **Résultat**
+
+    - Éléments préfabriqués en béton numérotés de manière unique comme base pour la commande et la coordination des livraisons sur chantier.
+
+
+    **Livrables**
+
+    - Modèle structurel avec IfcColumn, IfcBeam, IfcWall et IfcSlab
+
+    - Name avec numéro de pièce préfabriquée par élément en béton (attribut IFC natif)'
+  it: 'Preparare gli elementi prefabbricati in calcestruzzo dal modello strutturale per l''ordine e la pianificazione delle consegne.
+
+
+    **Situazione di partenza**
+
+    - I numeri di pezzo prefabbricato mancano nel modello o non sono univoci; ordine e logistica di cantiere si basano su liste manuali.
+
+    - Senza assegnazione concordata nel modello strutturale si verificano errori d''ordine e ritardi nella catena di approvvigionamento.
+
+
+    **Obiettivo e beneficio**
+
+    - Dotare ogni elemento prefabbricato in calcestruzzo nel modello strutturale di un numero di pezzo univoco.
+
+    - Derivare ordine e pianificazione delle consegne direttamente dal modello.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello strutturale con elementi prefabbricati in calcestruzzo esecutivi.
+
+    2. Registrare il numero di pezzo prefabbricato per componente nell''attributo Name.
+
+    3. Esportare il modello per ordine e pianificazione delle consegne.
+
+
+    **Risultato**
+
+    - Elementi prefabbricati in calcestruzzo numerati in modo univoco come base per ordine e coordinamento delle consegne in cantiere.
+
+
+    **Oggetti della fornitura**
+
+    - Modello strutturale con IfcColumn, IfcBeam, IfcWall e IfcSlab
+
+    - Name con numero di pezzo prefabbricato per ogni elemento in calcestruzzo (attributo IFC nativo)'
+  en: 'Provide precast concrete parts from the structural model for ordering and delivery planning.
+
+
+    **Starting point**
+
+    - Prefabricated part numbers are missing from the model or are not unique; ordering and site logistics rely on manual lists.
+
+    - Without agreed assignment in the structural model, ordering errors and supply chain delays occur.
+
+
+    **Goal & benefit**
+
+    - Assign a unique prefabricated part number to each precast concrete component in the structural model.
+
+    - Derive ordering and delivery planning directly from the model.
+
+
+    **Process**
+
+    1. Provide the structural model with execution-accurate precast concrete parts.
+
+    2. Capture the prefabricated part number per component in the Name attribute.
+
+    3. Export the model for ordering and delivery planning.
+
+
+    **Outcome**
+
+    - Uniquely numbered precast concrete parts as the basis for ordering and delivery coordination on site.
+
+
+    **Deliverables**
+
+    - Structural model with IfcColumn, IfcBeam, IfcWall, and IfcSlab
+
+    - Name with prefabricated part number per precast concrete part (native IFC attribute)'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/con
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/structural
+comment: Construction phases SIA 51–53. For this workflow, Name carries the Fertigteilnummer (prefabricated part number), distinct from general structural designation in tender workflows.

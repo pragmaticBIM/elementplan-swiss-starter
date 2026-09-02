@@ -1,0 +1,206 @@
+id: pragmaticbim:element/architecture-detail-reference
+code: ARC-DET-REF
+sort_order: 58
+status: active
+name:
+  de: Detailverweis
+  fr: Renvoi de détail
+  it: Riferimento al dettaglio
+  en: Detail reference
+definition:
+  de: 'Volumenkörper in der Detailverweisübersicht, der analog zum 2D-Detailverweis angibt, wo welches Standarddetail gilt.
+
+
+    **Beschreibung**
+
+    - Räumliche Gültigkeitszone für ein Standarddetail aus dem Detailkatalog.
+
+    - Ermöglicht die Erkennung von Planungslücken und fehlenden Detailzuordnungen im Modell.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachtes Volumen modellieren; Umfang gemäss Gültigkeitsbereich des Standarddetails.
+
+    - Dem zugehörigen Geschoss zuweisen.
+
+    - Keine Ausführungsgeometrie oder Schichtaufbauten modellieren.'
+  fr: 'Volume dans la vue d''ensemble des renvois de détail indiquant, comme un renvoi de détail 2D, où s''applique chaque détail type.
+
+
+    **Description**
+
+    - Zone spatiale de validité pour un détail type du catalogue.
+
+    - Permet de repérer les lacunes de planification et les affectations manquantes dans le modèle.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume simplifié ; étendue selon la zone de validité du détail type.
+
+    - Rattacher à l''étage concerné.
+
+    - Ne pas modéliser géométrie d''exécution ni compositions de couches.'
+  it: 'Volume nella panoramica dei riferimenti al dettaglio che indica, come un riferimento al dettaglio 2D, dove vale ciascun dettaglio standard.
+
+
+    **Descrizione**
+
+    - Zona spaziale di validità per un dettaglio standard del catalogo.
+
+    - Consente di individuare lacune di pianificazione e assegnazioni mancanti nel modello.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume semplificato; estensione secondo l''ambito di validità del dettaglio standard.
+
+    - Assegnare al piano corrispondente.
+
+    - Non modellare geometria esecutiva o composizioni stratificate.'
+  en: 'Volume in the detail reference overview that indicates, like a 2D detail reference, where each standard detail applies.
+
+
+    **Description**
+
+    - Spatial validity zone for a standard detail from the detail catalogue.
+
+    - Enables detection of planning gaps and missing detail assignments in the model.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified volume; extent according to the standard detail''s validity area.
+
+    - Assign to the matching storey.
+
+    - Do not model execution geometry or layer build-ups.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Detailverweis) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Detailverweis)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-detail-reference-model
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Detailverweis` — räumlicher Verweis auf ein Standarddetail'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Detailverweis` — renvoi spatial vers un détail type'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Detailverweis` — riferimento spaziale a un dettaglio standard'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Detailverweis` — spatial reference to a standard detail'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-detail-reference
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-detail-reference-model
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Standarddetails für die Zuordnung in der Detailverweisübersicht.
+    fr: Désignation du détail type pour l'affectation dans la vue d'ensemble des renvois.
+    it: Designazione del dettaglio standard per l'assegnazione nella panoramica dei riferimenti.
+    en: Standard detail designation for assignment in the detail reference overview.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-detail-reference-model
+  is_applicability: false
+  status: active
+  sort_order: 3

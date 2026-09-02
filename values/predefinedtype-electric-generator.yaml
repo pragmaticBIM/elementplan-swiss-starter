@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-electric-generator
+code: ELECTRIC_GENERATOR
+name:
+  de: PredefinedType IfcElectricGenerator
+  fr: PredefinedType IfcElectricGenerator
+  it: PredefinedType IfcElectricGenerator
+  en: PredefinedType IfcElectricGenerator
+description:
+  de: Ifc PredefinedType für IfcElectricGenerator.
+  fr: PredefinedType IFC pour IfcElectricGenerator.
+  it: PredefinedType IFC per IfcElectricGenerator.
+  en: IFC PredefinedType for IfcElectricGenerator.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - CHP
+  - ENGINEGENERATOR
+  - STANDALONE
+  fr:
+  - CHP
+  - ENGINEGENERATOR
+  - STANDALONE
+  it:
+  - CHP
+  - ENGINEGENERATOR
+  - STANDALONE
+  en:
+  - CHP
+  - ENGINEGENERATOR
+  - STANDALONE

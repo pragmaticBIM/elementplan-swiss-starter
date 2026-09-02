@@ -1,0 +1,353 @@
+id: pragmaticbim:element/mep-schematic-equipment-space
+code: MEP-SCH-EQUIP
+sort_order: 63
+status: active
+name:
+  de: Erzeugerplatz (schematisch)
+  fr: Espace générateurs (schématique)
+  it: Spazio generatori (schematico)
+  en: Equipment space (schematic)
+definition:
+  de: 'Schematischer Platzbedarf für Erzeuger und Technikzentralen in der frühen Koordination.
+
+
+    **Beschreibung**
+
+    - Koordinationsvolumen für Technikzentralen, Hauszentralen und ähnliche Anlagen — kein Raumobjekt.
+
+    - Dient der Machbarkeitsprüfung, nicht der Ausführungsplanung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachten Proxy-Körper modellieren; Abmessungen gemäss Grobkonzept inklusive Wartungszone.
+
+    - ObjectType = Erzeugerplatz; dem zugehörigen Geschoss zuweisen.
+
+    - Keine einzelnen Geräte oder Anschlussdetails modellieren.'
+  fr: 'Besoin d''espace schématique pour générateurs et locaux techniques en coordination précoce.
+
+
+    **Description**
+
+    - Volume de coordination pour centrales et locaux techniques — pas un objet local.
+
+    - Sert à la faisabilité, pas à l''exécution.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy simplifié; dimensions selon le concept grossier incluant la zone de maintenance.
+
+    - ObjectType = Erzeugerplatz; rattacher à l''étage concerné.
+
+    - Ne pas modéliser appareils individuels ni raccords de détail.'
+  it: 'Fabbisogno schematico di spazio per generatori e centrali nel coordinamento precoce.
+
+
+    **Descrizione**
+
+    - Volume di coordinamento per centrali tecniche — non un oggetto locale.
+
+    - Serve per la fattibilità, non per l''esecuzione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy semplificato; dimensioni secondo il concept grossolano inclusa la zona di manutenzione.
+
+    - ObjectType = Erzeugerplatz; assegnare al piano corrispondente.
+
+    - Non modellare singoli apparecchi o dettagli di collegamento.'
+  en: 'Schematic space requirement for plant and technical rooms in early coordination.
+
+
+    **Description**
+
+    - Coordination volume for plant rooms and similar installations — not a space object.
+
+    - Used for feasibility checking, not for execution planning.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified proxy body; dimensions according to the sketch concept including maintenance clearance.
+
+    - ObjectType = Erzeugerplatz; assign to the matching storey.
+
+    - Do not model individual appliances or connection details.'
+needed_in_domain:
+- pragmaticbim:domain/mep
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcBuildingElementProxy AND ObjectType=Erzeugerplatz) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Erzeugerplatz)
+attributes:
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Erzeugerplatz` — schematischer Platzbedarf für Erzeuger / Technikzentralen'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Erzeugerplatz` — besoin d''espace schématique pour générateurs / centrales'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Erzeugerplatz` — fabbisogno schematico di spazio per generatori / centrali'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Erzeugerplatz` — schematic space requirement for plant / technical rooms'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-equipment-space
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: Status
+  pset: Pset_BuildingElementProxyCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 4

@@ -15,22 +15,22 @@ norm_reference: IFC4
 status: active
 values:
   de:
-    - NEW
-    - EXISTING
-    - DEMOLISH
-    - TEMPORARY
+  - NEW
+  - EXISTING
+  - DEMOLISH
+  - TEMPORARY
   fr:
-    - NEW
-    - EXISTING
-    - DEMOLISH
-    - TEMPORARY
+  - NEW
+  - EXISTING
+  - DEMOLISH
+  - TEMPORARY
   it:
-    - NEW
-    - EXISTING
-    - DEMOLISH
-    - TEMPORARY
+  - NEW
+  - EXISTING
+  - DEMOLISH
+  - TEMPORARY
   en:
-    - NEW
-    - EXISTING
-    - DEMOLISH
-    - TEMPORARY
+  - NEW
+  - EXISTING
+  - DEMOLISH
+  - TEMPORARY

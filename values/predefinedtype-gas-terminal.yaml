@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-gas-terminal
+code: GAS_TERMINAL
+name:
+  de: PredefinedType IfcGasTerminal
+  fr: PredefinedType IfcGasTerminal
+  it: PredefinedType IfcGasTerminal
+  en: PredefinedType IfcGasTerminal
+description:
+  de: Ifc PredefinedType für IfcGasTerminal.
+  fr: PredefinedType IFC pour IfcGasTerminal.
+  it: PredefinedType IFC per IfcGasTerminal.
+  en: IFC PredefinedType for IfcGasTerminal.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - GASAPPLIANCE
+  - GASBOOSTER
+  - GASBURNER
+  fr:
+  - GASAPPLIANCE
+  - GASBOOSTER
+  - GASBURNER
+  it:
+  - GASAPPLIANCE
+  - GASBOOSTER
+  - GASBURNER
+  en:
+  - GASAPPLIANCE
+  - GASBOOSTER
+  - GASBURNER

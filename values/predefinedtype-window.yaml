@@ -15,18 +15,18 @@ norm_reference: IFC4
 status: active
 values:
   de:
-    - WINDOW
-    - SKYLIGHT
-    - LIGHTDOME
+  - WINDOW
+  - SKYLIGHT
+  - LIGHTDOME
   fr:
-    - WINDOW
-    - SKYLIGHT
-    - LIGHTDOME
+  - WINDOW
+  - SKYLIGHT
+  - LIGHTDOME
   it:
-    - WINDOW
-    - SKYLIGHT
-    - LIGHTDOME
+  - WINDOW
+  - SKYLIGHT
+  - LIGHTDOME
   en:
-    - WINDOW
-    - SKYLIGHT
-    - LIGHTDOME
+  - WINDOW
+  - SKYLIGHT
+  - LIGHTDOME

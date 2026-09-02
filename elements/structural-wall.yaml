@@ -1,0 +1,108 @@
+id: pragmaticbim:element/structural-wall
+code: STR-WALL
+sort_order: 72
+status: active
+name:
+  de: Wand detailiert
+  fr: Mur détaillé
+  it: Parete dettagliata
+  en: Wall detailed
+definition:
+  de: 'Tragwerkselement für Wände und Betonfertigteilwände im Tragwerksmodell.
+
+
+    **Beschreibung**
+
+    - Ausführungsgenaue Geometrie gemäss Tragwerksplanung.
+
+    - Massgebendes Fachmodell für Ausführungsplanung, Bestellung und Koordination.
+
+
+    **Modellierungsrichtlinie**
+
+    - Geschossweise und so modellieren, wie gebaut wird.
+
+    - Bauteilgrenzen und Zuordnung zu Geschoss und Tragwerksteil einhalten.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Élément porteur pour murs et parois préfabriquées en béton dans le modèle structurel.
+
+
+    **Description**
+
+    - Géométrie d''exécution selon le plan structurel.
+
+    - Maquette fédérée de référence pour l''exécution, la commande et la coordination.
+
+
+    **Directives de modélisation**
+
+    - Modéliser étage par étage et tel qu''il sera construit.
+
+    - Respecter les limites de composants et l''attribution à l''étage et à la partie porteuse.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Elemento strutturale per pareti e elementi prefabbricati in calcestruzzo nel modello strutturale.
+
+
+    **Descrizione**
+
+    - Geometria esecutiva secondo la pianificazione strutturale.
+
+    - Modello federato di riferimento per esecuzione, ordine e coordinamento.
+
+
+    **Direttive di modellazione**
+
+    - Modellare piano per piano e come sarà costruito.
+
+    - Rispettare i confini dei componenti e l''assegnazione a piano e parte strutturale.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Structural element for walls and precast concrete wall panels in the structural model.
+
+
+    **Description**
+
+    - Execution-accurate geometry according to the structural design.
+
+    - Authoritative federated model for execution planning, ordering, and coordination.
+
+
+    **Modelling guidelines**
+
+    - Model storey by storey and as it will be built.
+
+    - Maintain component boundaries and assignment to storey and structural part.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/structural
+entity_ifc2x3: IfcWall
+entity_ifc4: IfcWall
+entity_ifc4_3: IfcWall
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcWall OR entity_ifc2x3=IfcWall
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Wand gemäss Tragwerksplan.
+    fr: Désignation du mur selon le plan structurel.
+    it: Denominazione della parete secondo il piano strutturale.
+    en: Wall designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+  is_applicability: false
+  status: active
+  sort_order: 1

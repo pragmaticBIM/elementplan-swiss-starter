@@ -1,0 +1,697 @@
+id: pragmaticbim:element/architecture-wall-exterior
+code: ARC-WALL-EXT
+sort_order: 44
+status: active
+name:
+  de: Aussenwand
+  fr: Mur extérieur
+  it: Parete esterna
+  en: Exterior wall
+definition:
+  de: 'Aussenwand als Gebäudehülle — in frühen Phasen und bei einfachen Fassaden als Mehrschichtbauteil modelliert.
+
+
+    **Beschreibung**
+
+    - Tragende oder nichttragende Aussenwand mit vollständigem Fassadenaufbau.
+
+    - Dient der Mengenermittlung, Bauphysik und Koordination der Gebäudehülle.
+
+
+    **Modellierungsrichtlinie**
+
+    - In frühen Phasen und bei einfachen Fassaden als Mehrschichtbauteil mit vollständigem Aufbau modellieren.
+
+    - Geschossweise modellieren; an Bauteil- und Geschossgrenzen teilen.
+
+    - Bei höherer Komplexität oder Tool-Limitierung den Fassadenaufbau als separate Schicht modellieren.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Mur extérieur comme enveloppe — modélisé en phases précoces et pour façades simples comme composant multicouche.
+
+
+    **Description**
+
+    - Mur extérieur porteur ou non porteur avec complexe de façade complet.
+
+    - Sert au métré, à la physique du bâtiment et à la coordination de l''enveloppe.
+
+
+    **Directives de modélisation**
+
+    - En phases précoces et pour façades simples, modéliser comme composant multicouche avec complexe complet.
+
+    - Modéliser par étage ; diviser aux limites de composants et d''étages.
+
+    - En cas de complexité accrue ou limite d''outil, modéliser le complexe de façade comme couche séparée.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Parete esterna come involucro — modellata nelle fasi precoci e per facciate semplici come componente multic strato.
+
+
+    **Descrizione**
+
+    - Parete esterna portante o non portante con stratigrafia di facciata completa.
+
+    - Serve per computo metrico, fisica edilizia e coordinamento dell''involucro.
+
+
+    **Direttive di modellazione**
+
+    - Nelle fasi precoci e per facciate semplici, modellare come componente multic strato con stratigrafia completa.
+
+    - Modellare per piano; suddividere ai confini di componenti e piani.
+
+    - In caso di maggiore complessità o limiti dello strumento, modellare la stratigrafia di facciata come strato separato.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Exterior wall as building envelope — modelled in early phases and for simple facades as a multi-layer component.
+
+
+    **Description**
+
+    - Load-bearing or non-load-bearing exterior wall with full facade build-up.
+
+    - Used for quantity take-off, building physics, and envelope coordination.
+
+
+    **Modelling guidelines**
+
+    - In early phases and for simple facades, model as a multi-layer component with full build-up.
+
+    - Model storey by storey; split at component and storey boundaries.
+
+    - When complexity increases or tool limits apply, model the facade build-up as a separate layer.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcWall
+entity_ifc4: IfcWall
+entity_ifc4_3: IfcWall
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcWall AND IsExternal=TRUE) OR (entity_ifc2x3=IfcWall AND IsExternal=TRUE)
+attributes:
+- name: IsExternal
+  pset: Pset_WallCommon
+  definition:
+    de: 'Kennzeichnet eine Aussenwand.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — Aussenwand'
+    fr: 'Identifie un mur extérieur.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — mur extérieur'
+    it: 'Identifica una parete esterna.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — parete esterna'
+    en: 'Marks an exterior wall.
+
+
+      **Allowed values**
+
+      - `TRUE` — exterior wall'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-true
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/qas-early-design-coordination
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: Reference
+  pset: Pset_WallCommon
+  definition:
+    de: Fassadenaufbau gemäss Bauteilkatalog (Mehrschichtbauteil).
+    fr: Complexe de façade selon le catalogue de composants (composant multicouche).
+    it: Stratigrafia di facciata secondo il catalogo componenti (componente multic strato).
+    en: Facade build-up according to the component catalogue (multi-layer component).
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: Status
+  pset: Pset_WallCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art der Aussenwand.
+
+
+      **Zulässige Werte**
+
+      - `STANDARD` — Standardwand
+
+      - `PARTITIONING` — Trennwand
+
+      - `SOLIDWALL` — Massivwand
+
+      - `ELEMENTEDWALL` — Elementwand
+
+      - `MOVABLE` — Bewegliche Wand
+
+      - `PLUMBINGWALL` — Installationswand'
+    fr: 'Type de mur extérieur.
+
+
+      **Valeurs admises**
+
+      - `STANDARD` — mur standard
+
+      - `PARTITIONING` — cloison
+
+      - `SOLIDWALL` — mur massif
+
+      - `ELEMENTEDWALL` — mur à éléments
+
+      - `MOVABLE` — cloison mobile
+
+      - `PLUMBINGWALL` — mur technique'
+    it: 'Tipo di parete esterna.
+
+
+      **Valori ammessi**
+
+      - `STANDARD` — parete standard
+
+      - `PARTITIONING` — tramezzo
+
+      - `SOLIDWALL` — parete massiccia
+
+      - `ELEMENTEDWALL` — parete a elementi
+
+      - `MOVABLE` — parete mobile
+
+      - `PLUMBINGWALL` — parete impianti'
+    en: 'Kind of exterior wall.
+
+
+      **Allowed values**
+
+      - `STANDARD` — standard wall
+
+      - `PARTITIONING` — partition wall
+
+      - `SOLIDWALL` — solid wall
+
+      - `ELEMENTEDWALL` — elemented wall
+
+      - `MOVABLE` — movable wall
+
+      - `PLUMBINGWALL` — plumbing wall'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-wall
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art der Aussenwand.
+
+
+      **Zulässige Werte**
+
+      - `STANDARD` — Standardwand
+
+      - `PARTITIONING` — Trennwand
+
+      - `SOLIDWALL` — Massivwand
+
+      - `ELEMENTEDWALL` — Elementwand
+
+      - `MOVABLE` — Bewegliche Wand
+
+      - `PLUMBINGWALL` — Installationswand
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Type de mur extérieur.
+
+
+      **Valeurs admises**
+
+      - `STANDARD` — mur standard
+
+      - `PARTITIONING` — cloison
+
+      - `SOLIDWALL` — mur massif
+
+      - `ELEMENTEDWALL` — mur à éléments
+
+      - `MOVABLE` — cloison mobile
+
+      - `PLUMBINGWALL` — mur technique
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Tipo di parete esterna.
+
+
+      **Valori ammessi**
+
+      - `STANDARD` — parete standard
+
+      - `PARTITIONING` — tramezzo
+
+      - `SOLIDWALL` — parete massiccia
+
+      - `ELEMENTEDWALL` — parete a elementi
+
+      - `MOVABLE` — parete mobile
+
+      - `PLUMBINGWALL` — parete impianti
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Kind of exterior wall.
+
+
+      **Allowed values**
+
+      - `STANDARD` — standard wall
+
+      - `PARTITIONING` — partition wall
+
+      - `SOLIDWALL` — solid wall
+
+      - `ELEMENTEDWALL` — elemented wall
+
+      - `MOVABLE` — movable wall
+
+      - `PLUMBINGWALL` — plumbing wall'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-wall
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: '6
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: FireRating
+  pset: Pset_WallCommon
+  definition:
+    de: 'Feuerwiderstandsklasse der Aussenwand gemäss Brandschutzkonzept.
+
+
+      **Zulässige Werte**
+
+      - `R 30` — Tragfähigkeit 30 min
+
+      - `R 60` — Tragfähigkeit 60 min
+
+      - `R 90` — Tragfähigkeit 90 min
+
+      - `EI 30` — Raumabschluss 30 min
+
+      - `EI 60` — Raumabschluss 60 min
+
+      - `EI 90` — Raumabschluss 90 min
+
+      - `REI 30` — Tragfähigkeit und Raumabschluss 30 min
+
+      - `REI 60` — Tragfähigkeit und Raumabschluss 60 min
+
+      - `REI 90` — Tragfähigkeit und Raumabschluss 90 min'
+    fr: 'Classe de résistance au feu du mur extérieur selon le concept de protection incendie.
+
+
+      **Valeurs admises**
+
+      - `R 30` — portance 30 min
+
+      - `R 60` — portance 60 min
+
+      - `R 90` — portance 90 min
+
+      - `EI 30` — étanchéité au feu 30 min
+
+      - `EI 60` — étanchéité au feu 60 min
+
+      - `EI 90` — étanchéité au feu 90 min
+
+      - `REI 30` — portance et étanchéité 30 min
+
+      - `REI 60` — portance et étanchéité 60 min
+
+      - `REI 90` — portance et étanchéité 90 min'
+    it: 'Classe di resistenza al fuoco della parete esterna secondo il concetto antincendio.
+
+
+      **Valori ammessi**
+
+      - `R 30` — capacità portante 30 min
+
+      - `R 60` — capacità portante 60 min
+
+      - `R 90` — capacità portante 90 min
+
+      - `EI 30` — compartimentazione 30 min
+
+      - `EI 60` — compartimentazione 60 min
+
+      - `EI 90` — compartimentazione 90 min
+
+      - `REI 30` — portanza e compartimentazione 30 min
+
+      - `REI 60` — portanza e compartimentazione 60 min
+
+      - `REI 90` — portanza e compartimentazione 90 min'
+    en: 'Fire resistance class of the exterior wall according to the fire protection concept.
+
+
+      **Allowed values**
+
+      - `R 30` — load-bearing 30 min
+
+      - `R 60` — load-bearing 60 min
+
+      - `R 90` — load-bearing 90 min
+
+      - `EI 30` — integrity and insulation 30 min
+
+      - `EI 60` — integrity and insulation 60 min
+
+      - `EI 90` — integrity and insulation 90 min
+
+      - `REI 30` — load-bearing, integrity and insulation 30 min
+
+      - `REI 60` — load-bearing, integrity and insulation 60 min
+
+      - `REI 90` — load-bearing, integrity and insulation 90 min'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/fire-rating
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: AcousticRating
+  pset: Pset_WallCommon
+  definition:
+    de: Bewertetes Schalldämm-Maß Rw [dB] als Labor-/Katalogwert — nicht R'w.
+    fr: Indice d'affaiblissement acoustique pondéré Rw [dB] comme valeur de laboratoire/catalogue — pas R'w.
+    it: Potere fonoisolante ponderato Rw [dB] come valore di laboratorio/catalogo — non R'w.
+    en: Weighted sound reduction index Rw [dB] as laboratory/catalogue value — not R'w.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: NetSideArea
+  pset: Qto_WallBaseQuantities
+  definition:
+    de: Nettofläche der modellierten Aussenwand.
+    fr: Surface nette du mur extérieur modélisé.
+    it: Superficie netta della parete esterna modellata.
+    en: Net side area of the modelled exterior wall.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: false
+  status: active
+  sort_order: 9

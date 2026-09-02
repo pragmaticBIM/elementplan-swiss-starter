@@ -7,31 +7,31 @@ name:
   it: Sensibilità costi/budget
   en: Cost/budget sensitivity
 description:
-  de: Steuert Mengen-, Kosten- und Benchmarking-Tiefe über geordnete Ausprägungen.
-  fr: Contrôle la profondeur des quantités, coûts et benchmarking via des niveaux ordonnés.
-  it: Controlla la profondità di quantità, costi e benchmarking tramite livelli ordinati.
-  en: Controls quantity, cost and benchmarking depth via ordered levels.
+  de: Steuert Mengen-, Kosten- und Ausschreibungstiefe über geordnete Ausprägungen.
+  fr: Contrôle la profondeur des quantités, coûts et appels d'offres via des niveaux ordonnés.
+  it: Controlla la profondità di quantità, costi e gare tramite livelli ordinati.
+  en: Controls quantity, cost and tendering depth via ordered levels.
 picture_link: null
 status: active
 comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
 levels:
-- id: pragmaticbim:project-goal-level/kosten-grosszuegig
+- id: pragmaticbim:project-goal-level/kosten-niedrig
   code: COST-01
   sort_order: 1
   name:
-    de: grosszügig
-    fr: généreux
-    it: generoso
-    en: generous
+    de: niedrig
+    fr: faible
+    it: basso
+    en: low
   description:
-    de: Basis-Mengen-/Kostenermittlung.
-    fr: Détermination de base des quantités/coûts.
-    it: Determinazione base delle quantità/costi.
-    en: Baseline quantity/cost takeoff.
+    de: Flächennachweis nach SIA 416 am Raummodell.
+    fr: Justificatif de surfaces selon SIA 416 sur le modèle de locaux.
+    it: Verifica delle superfici secondo SIA 416 sul modello dei locali.
+    en: Area verification according to SIA 416 on the space model.
   status: active
   activated_workflows:
-  - pragmaticbim:workflow/des-element-based-cost
-  comment: Delta at level grosszügig (sort_order 1).
+  - pragmaticbim:workflow/des-sia416-area-verification
+  comment: Delta at level niedrig (sort_order 1); SIA 416 area verification.
 - id: pragmaticbim:project-goal-level/kosten-mittel
   code: COST-02
   sort_order: 2
@@ -41,26 +41,28 @@ levels:
     it: medio
     en: medium
   description:
-    de: Erweiterte Kostengliederung und Kennzahlen.
-    fr: Ventilation des coûts et indicateurs élargis.
-    it: Ripartizione costi e indicatori estesi.
-    en: Extended cost breakdown and key figures.
+    de: Elementbasierte Kostenermittlung mit abstractBIM-Mengen.
+    fr: Calcul des coûts par élément à partir des quantités abstractBIM.
+    it: Calcolo dei costi per elemento dalle quantità abstractBIM.
+    en: Element-based cost calculation from abstractBIM quantities.
   status: active
-  activated_workflows: []
-  comment: Delta at level mittel (sort_order 2); cumulative with grosszügig.
-- id: pragmaticbim:project-goal-level/kosten-sensitiv
+  activated_workflows:
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  comment: Delta at level mittel (sort_order 2); cumulative with niedrig.
+- id: pragmaticbim:project-goal-level/kosten-hoch
   code: COST-03
   sort_order: 3
   name:
-    de: sensitiv
-    fr: sensible
-    it: sensibile
-    en: sensitive
+    de: hoch
+    fr: élevé
+    it: alto
+    en: high
   description:
-    de: Lebenszykluskosten und vertiefte Flächenkennwerte.
-    fr: Coûts du cycle de vie et indicateurs de surfaces approfondis.
-    it: Costi del ciclo di vita e indicatori di superficie approfonditi.
-    en: Lifecycle costing and deeper area metrics.
+    de: Ausschreibung Betonarbeiten ab Modell zusätzlich zur abstractBIM-Kostenermittlung.
+    fr: Appel d'offres travaux en béton à partir du modèle en plus du calcul abstractBIM.
+    it: Gara lavori in calcestruzzo dal modello oltre al calcolo abstractBIM.
+    en: Concrete works tender from model in addition to abstractBIM cost calculation.
   status: active
-  activated_workflows: []
-  comment: Delta at level sensitiv (sort_order 3); cumulative with mittel and grosszügig.
+  activated_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  comment: Delta at level hoch (sort_order 3); cumulative with mittel and niedrig.

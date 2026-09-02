@@ -1,0 +1,40 @@
+id: pragmaticbim:value/predefinedtype-outlet
+code: OUTLET
+name:
+  de: PredefinedType IfcOutlet
+  fr: PredefinedType IfcOutlet
+  it: PredefinedType IfcOutlet
+  en: PredefinedType IfcOutlet
+description:
+  de: Ifc PredefinedType für IfcOutlet.
+  fr: PredefinedType IFC pour IfcOutlet.
+  it: PredefinedType IFC per IfcOutlet.
+  en: IFC PredefinedType for IfcOutlet.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - POWEROUTLET
+  - DATAOUTLET
+  - TELEPHONEOUTLET
+  - COMMUNICATIONSOUTLET
+  - AUDIOVISUALOUTLET
+  fr:
+  - POWEROUTLET
+  - DATAOUTLET
+  - TELEPHONEOUTLET
+  - COMMUNICATIONSOUTLET
+  - AUDIOVISUALOUTLET
+  it:
+  - POWEROUTLET
+  - DATAOUTLET
+  - TELEPHONEOUTLET
+  - COMMUNICATIONSOUTLET
+  - AUDIOVISUALOUTLET
+  en:
+  - POWEROUTLET
+  - DATAOUTLET
+  - TELEPHONEOUTLET
+  - COMMUNICATIONSOUTLET
+  - AUDIOVISUALOUTLET

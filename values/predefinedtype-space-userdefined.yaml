@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-space-userdefined
+code: SPACE-USERDEFINED
+name:
+  de: PredefinedType benutzerdefinierter Raum
+  fr: PredefinedType espace défini par l'utilisateur
+  it: PredefinedType spazio definito dall'utente
+  en: PredefinedType user-defined space
+description:
+  de: IfcSpace PredefinedType für benutzerdefinierte Raumarten (ObjectType präzisiert).
+  fr: IfcSpace PredefinedType pour types d'espace définis par l'utilisateur (ObjectType précise).
+  it: IfcSpace PredefinedType per tipi di spazio definiti dall'utente (ObjectType precisa).
+  en: IfcSpace PredefinedType for user-defined space kinds (ObjectType specifies).
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - USERDEFINED
+  fr:
+  - USERDEFINED
+  it:
+  - USERDEFINED
+  en:
+  - USERDEFINED

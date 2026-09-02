@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/des-full-life-cycle-calculation
+code: DES-LCA
+sort_order: 55
+name:
+  de: Lebenszyklusberechnung (Ökobilanz) aus dem Modell
+  fr: Calcul du cycle de vie (ACV) à partir du modèle
+  it: Calcolo del ciclo di vita (LCA) dal modello
+  en: Full life-cycle calculation (LCA) from the model
+description:
+  de: 'Bauteilmengen und Materialien so im Modell führen, dass eine Ökobilanz ohne parallele Mengenlisten möglich wird.
+
+
+    **Ausgangslage**
+
+    - Lebenszyklusbewertungen brauchen belastbare Mengen und Materialangaben; diese fehlen im Modell oft oder liegen nur in Tabellen.
+
+    - Manuelle Nachpflege für SNBS, KBOB oder LCA-Tools ist fehleranfällig und verzögert Entscheide.
+
+
+    **Ziel & Nutzen**
+
+    - Architektur- und Tragwerksbauteile mit Material und Mengen als Grundlage für die Ökobilanz bereitstellen.
+
+    - Frühere, wiederholbare Lebenszyklusberechnungen statt später Einmalaufwände.
+
+
+    **Ablauf**
+
+    1. Massgebende Bauteile mit Geometrie und Materialangabe im Modell führen.
+
+    2. Mengen (Volumen, Flächen) und Materialkennwerte aus dem Modell ausziehen.
+
+    3. Daten in die LCA-/Zertifizierungswerkzeuge übernehmen und Varianten vergleichen.
+
+
+    **Ergebnis**
+
+    - Modellgestützte Eingangsdaten für die vollständige Lebenszyklusberechnung (Ökobilanz).
+
+
+    **Lieferobjekte**
+
+    - Architektur- und Tragwerksmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Massgebende Bauteile (Wände, Decken, Dächer, Stützen, Träger, Fundamente, Fassaden- und Ausbauelemente) mit Material
+
+    - Mengenattribute (z. B. GrossVolume, GrossSideArea, GrossFloorArea) je Bauteil'
+  fr: 'Porter quantités et matériaux dans le modèle pour permettre une ACV sans listes de quantités parallèles.
+
+
+    **Situation de départ**
+
+    - Les évaluations du cycle de vie exigent des quantités et matériaux fiables ; le modèle en manque souvent ou ils n''existent qu''en tableaux.
+
+    - La reprise manuelle pour SNBS, KBOB ou outils ACV est source d''erreurs et retarde les décisions.
+
+
+    **Objectif et bénéfice**
+
+    - Fournir les composants architecture et structure avec matériau et quantités comme base d''ACV.
+
+    - Permettre des calculs de cycle de vie plus précoces et reproductibles plutôt que des reprises tardives.
+
+
+    **Déroulement**
+
+    1. Porter les composants déterminants avec géométrie et matériau dans le modèle.
+
+    2. Extraire quantités (volumes, surfaces) et indicateurs matériaux du modèle.
+
+    3. Transférer les données dans les outils ACV/certification et comparer les variantes.
+
+
+    **Résultat**
+
+    - Données d''entrée basées sur le modèle pour le calcul complet du cycle de vie (ACV).
+
+
+    **Livrables**
+
+    - Maquette architecture et structure avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Composants déterminants (murs, dalles, toitures, poteaux, poutres, fondations, façade et finitions) avec matériau
+
+    - Attributs de quantité (p. ex. GrossVolume, GrossSideArea, GrossFloorArea) par composant'
+  it: 'Gestire quantità e materiali nel modello per consentire un LCA senza elenchi quantità paralleli.
+
+
+    **Situazione di partenza**
+
+    - Le valutazioni del ciclo di vita richiedono quantità e materiali affidabili; nel modello spesso mancano o esistono solo in tabelle.
+
+    - Il ripristino manuale per SNBS, KBOB o strumenti LCA è soggetto a errori e ritarda le decisioni.
+
+
+    **Obiettivo e beneficio**
+
+    - Fornire componenti di architettura e struttura con materiale e quantità come base per l''LCA.
+
+    - Consentire calcoli del ciclo di vita più precoci e ripetibili invece di riprese tardive.
+
+
+    **Svolgimento**
+
+    1. Gestire i componenti rilevanti con geometria e materiale nel modello.
+
+    2. Estrarre quantità (volumi, superfici) e indicatori di materiale dal modello.
+
+    3. Trasferire i dati negli strumenti LCA/certificazione e confrontare le varianti.
+
+
+    **Risultato**
+
+    - Dati di input basati sul modello per il calcolo completo del ciclo di vita (LCA).
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura e struttura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Componenti rilevanti (pareti, solai, tetti, colonne, travi, fondazioni, facciata e finiture) con materiale
+
+    - Attributi di quantità (p. es. GrossVolume, GrossSideArea, GrossFloorArea) per componente'
+  en: 'Carry component quantities and materials in the model so a full LCA is possible without parallel quantity lists.
+
+
+    **Starting point**
+
+    - Life-cycle assessments need reliable quantities and material data; these are often missing in the model or only live in spreadsheets.
+
+    - Manual rework for SNBS, KBOB, or LCA tools is error-prone and delays decisions.
+
+
+    **Goal & benefit**
+
+    - Provide architecture and structural components with material and quantities as the LCA basis.
+
+    - Enable earlier, repeatable life-cycle calculations instead of late one-off rework.
+
+
+    **Process**
+
+    1. Carry governing components with geometry and material in the model.
+
+    2. Extract quantities (volumes, areas) and material indicators from the model.
+
+    3. Transfer the data into LCA/certification tools and compare variants.
+
+
+    **Outcome**
+
+    - Model-based input data for a full life-cycle calculation (LCA).
+
+
+    **Deliverables**
+
+    - Architecture and structural model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Governing components (walls, slabs, roofs, columns, beams, foundations, facade and fit-out elements) with material
+
+    - Quantity attributes (e.g. GrossVolume, GrossSideArea, GrossFloorArea) per component'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+comment: Environmental LCA (Ökobilanz), not lifecycle costing. Material attribute required on governing building elements.

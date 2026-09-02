@@ -1,0 +1,88 @@
+id: pragmaticbim:value/floor-covering-type
+code: FLOOR-COVERING-TYPE
+name:
+  de: Bodenbelagstyp
+  fr: Type de revêtement de sol
+  it: Tipo pavimentazione
+  en: Floor covering type
+description:
+  de: Bodenbelagstyp gemäss Bauteilkatalog für die Ausführungsplanung.
+  fr: Type de revêtement de sol selon le catalogue de composants pour la planification d'exécution.
+  it: Tipo di pavimentazione secondo il catalogo componenti per la pianificazione esecutiva.
+  en: Floor covering type according to the component catalogue for execution planning.
+year: 2026
+norm_reference: null
+status: active
+values:
+  de:
+  - nicht definiert
+  - Parkett
+  - Naturstein
+  - Plattenbelag
+  - Teppich
+  - Schmutzschleuse
+  - Linoleum
+  - PVC
+  - Beton
+  - Monobeton
+  - Zementüberzug
+  - Hartbeton
+  - fugenloser Belag
+  - Beton gestrichen
+  - Epoxidharzbelag
+  - Terrazzo
+  - Sportbelag
+  fr:
+  - nicht definiert
+  - Parkett
+  - Naturstein
+  - Plattenbelag
+  - Teppich
+  - Schmutzschleuse
+  - Linoleum
+  - PVC
+  - Beton
+  - Monobeton
+  - Zementüberzug
+  - Hartbeton
+  - fugenloser Belag
+  - Beton gestrichen
+  - Epoxidharzbelag
+  - Terrazzo
+  - Sportbelag
+  it:
+  - nicht definiert
+  - Parkett
+  - Naturstein
+  - Plattenbelag
+  - Teppich
+  - Schmutzschleuse
+  - Linoleum
+  - PVC
+  - Beton
+  - Monobeton
+  - Zementüberzug
+  - Hartbeton
+  - fugenloser Belag
+  - Beton gestrichen
+  - Epoxidharzbelag
+  - Terrazzo
+  - Sportbelag
+  en:
+  - nicht definiert
+  - Parkett
+  - Naturstein
+  - Plattenbelag
+  - Teppich
+  - Schmutzschleuse
+  - Linoleum
+  - PVC
+  - Beton
+  - Monobeton
+  - Zementüberzug
+  - Hartbeton
+  - fugenloser Belag
+  - Beton gestrichen
+  - Epoxidharzbelag
+  - Terrazzo
+  - Sportbelag

@@ -1,0 +1,178 @@
+id: pragmaticbim:workflow/qas-arch-structural-coordination
+code: QAS-ARCH-STRUCT-COORD
+sort_order: 74
+name:
+  de: Koordination Architektur – Tragwerk
+  fr: Coordination architecture – structure
+  it: Coordinamento architettura – struttura
+  en: Architecture–structural coordination
+description:
+  de: 'Tragende Bauteile zwischen Architektur- und Tragwerksmodell abstimmen — wie bisher auf Betonierplänen, jetzt im Modell.
+
+
+    **Ausgangslage**
+
+    - Die Abstimmung zwischen Architektur und Tragwerksplanung erfolgte bisher auf 2D-Betonierplänen.
+
+    - Ohne Modellabgleich entstehen Abweichungen zwischen Architektur- und Tragwerksgeometrie — mit Folgen für Schalung, Mengen und Koordination.
+
+
+    **Ziel & Nutzen**
+
+    - Dieselben tragenden Bauteile in beiden Fachmodellen mit abgestimmtem Name führen.
+
+    - Fachübergreifend auf Abweichungen, Kollisionen und fehlende Zuordnungen prüfen.
+
+
+    **Ablauf**
+
+    1. Architekt und Tragwerksplaner modellieren dieselben Bauteile in ihren Fachmodellen (Architektur grob, Tragwerk ausführungsnah).
+
+    2. Name je Element abstimmen und Modelle im Gesamtmodell zusammenführen.
+
+    3. Auf Abweichungen, Kollisionen und fehlende Zuordnungen prüfen; Ergebnis verbindlich freigeben.
+
+
+    **Ergebnis**
+
+    - Abgestimmte Architektur- und Tragwerksmodelle als verbindliche Planungsgrundlage für Bauprojekt und Ausführung.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit groben tragenden Bauteilen als IfcFooting, IfcSlab, IfcColumn, IfcBeam und IfcRoof (geneigt) mit IsStructural=TRUE
+
+    - Tragwerksmodell mit denselben Bauteiltypen als IfcFooting, IfcSlab, IfcColumn und IfcBeam (ausführungsnah)
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey in beiden Modellen
+
+    - Name je Element, übereinstimmend zwischen beiden Fachmodellen'
+  fr: 'Harmoniser les éléments porteurs entre les modèles d''architecture et de structure — comme auparavant sur les plans de coulage, désormais en maquette.
+
+
+    **Situation de départ**
+
+    - L''harmonisation entre architecture et ingénierie structurelle se faisait auparavant sur des plans de coulage 2D.
+
+    - Sans alignement de maquettes, des écarts apparaissent entre géométrie d''architecture et structure — avec conséquences pour coffrage, quantités et coordination.
+
+
+    **Objectif et bénéfice**
+
+    - Porter les mêmes éléments porteurs dans les deux maquettes disciplinaires avec Name harmonisé.
+
+    - Vérifier entre disciplines écarts, collisions et assignations manquantes.
+
+
+    **Déroulement**
+
+    1. Architecte et ingénieur structure modélisent les mêmes éléments dans leurs maquettes (architecture grossière, structure proche de l''exécution).
+
+    2. Harmoniser Name par élément et fusionner les maquettes en maquette fédérée.
+
+    3. Vérifier écarts, collisions et assignations manquantes ; valider le résultat de façon contraignante.
+
+
+    **Résultat**
+
+    - Maquettes d''architecture et structure harmonisées comme base contraignante pour projet de construction et exécution.
+
+
+    **Livrables**
+
+    - Modèle d''architecture avec éléments porteurs grossiers comme IfcFooting, IfcSlab, IfcColumn, IfcBeam et IfcRoof (incliné) avec IsStructural=TRUE
+
+    - Modèle structurel avec les mêmes types d''éléments comme IfcFooting, IfcSlab, IfcColumn et IfcBeam (proche de l''exécution)
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey dans les deux modèles
+
+    - Name par élément, cohérent entre les deux maquettes disciplinaires'
+  it: 'Allineare gli elementi portanti tra modello di architettura e modello strutturale — come in passato sui piani di getto, ora nel modello.
+
+
+    **Situazione di partenza**
+
+    - L''allineamento tra architettura e ingegneria strutturale avveniva finora su piani di getto 2D.
+
+    - Senza confronto tra modelli sorgono scostamenti tra geometria architettonica e strutturale — con conseguenze per casseri, quantità e coordinamento.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire gli stessi elementi portanti in entrambi i modelli disciplinari con Name allineato.
+
+    - Verificare tra discipline scostamenti, collisioni e assegnazioni mancanti.
+
+
+    **Svolgimento**
+
+    1. Architetto e ingegnere strutturista modellano gli stessi elementi nei rispettivi modelli (architettura grossolana, struttura prossima all''esecuzione).
+
+    2. Allineare Name per elemento e unire i modelli nel modello federato.
+
+    3. Verificare scostamenti, collisioni e assegnazioni mancanti; approvare il risultato in modo vincolante.
+
+
+    **Risultato**
+
+    - Modelli di architettura e struttura allineati come base vincolante per progetto esecutivo ed esecuzione.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con elementi portanti grossolani come IfcFooting, IfcSlab, IfcColumn, IfcBeam e IfcRoof (inclinato) con IsStructural=TRUE
+
+    - Modello strutturale con gli stessi tipi di elementi come IfcFooting, IfcSlab, IfcColumn e IfcBeam (prossimo all''esecuzione)
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey in entrambi i modelli
+
+    - Name per elemento, coerente tra i due modelli disciplinari'
+  en: 'Align load-bearing components between architecture and structural models — as previously done on 2D concrete pouring plans, now in the model.
+
+
+    **Starting point**
+
+    - Alignment between architecture and structural engineering previously happened on 2D concrete pouring plans.
+
+    - Without model alignment, deviations arise between architecture and structural geometry — affecting formwork, quantities, and coordination.
+
+
+    **Goal & benefit**
+
+    - Carry the same load-bearing components in both discipline models with aligned Name.
+
+    - Check across disciplines for deviations, clashes, and missing assignments.
+
+
+    **Process**
+
+    1. Architect and structural engineer model the same components in their discipline models (architecture rough, structure near-execution).
+
+    2. Align Name per element and merge models in the federated model.
+
+    3. Check for deviations, clashes, and missing assignments; approve the result bindingly.
+
+
+    **Outcome**
+
+    - Aligned architecture and structural models as the binding planning basis for construction project and execution.
+
+
+    **Deliverables**
+
+    - Architecture model with rough load-bearing components as IfcFooting, IfcSlab, IfcColumn, IfcBeam, and IfcRoof (pitched) with IsStructural=TRUE
+
+    - Structural model with the same component types as IfcFooting, IfcSlab, IfcColumn, and IfcBeam (near-execution)
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey in both models
+
+    - Name per element, consistent across both discipline models'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+comment: Schalungsplan/Betonierplan-style coordination. Same load-bearing components in both models; match Name across architecture (rough, IsStructural) and structural (near-execution) discipline models.
+  Pitched roof ARC-only.

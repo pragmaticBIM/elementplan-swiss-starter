@@ -1,0 +1,492 @@
+id: pragmaticbim:element/architecture-wall-cladding-exterior
+code: ARC-WALL-CLAD-EXT
+sort_order: 45
+status: active
+name:
+  de: Fassadenbekleidung
+  fr: Revêtement de façade
+  it: Rivestimento di facciata
+  en: Facade cladding
+definition:
+  de: 'Fassadenbekleidung als modellierte Schicht für Mengenauszug und Koordination.
+
+
+    **Beschreibung**
+
+    - Aussenliegende Bekleidungsschicht mit definierter Qualität gemäss Bauteilkatalog.
+
+    - Eigenständige Schicht, getrennt von der tragenden Aussenwand.
+
+
+    **Modellierungsrichtlinie**
+
+    - Modellieren wenn Mehrschichtbauteil nicht unterstützt wird oder höhere Komplexität erforderlich ist.
+
+    - Als eigene Schicht modellieren; an Bauteil- und Geschossgrenzen teilen.
+
+    - Bekleidungsqualität über Reference erfassen.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Revêtement de façade comme couche modélisée pour le métré et la coordination.
+
+
+    **Description**
+
+    - Couche de revêtement extérieure avec qualité définie selon le catalogue de composants.
+
+    - Couche distincte, séparée du mur extérieur porteur.
+
+
+    **Directives de modélisation**
+
+    - Modéliser lorsque le composant multicouche n''est pas supporté ou que la complexité exige une couche séparée.
+
+    - Modéliser comme couche distincte ; diviser aux limites de composants et d''étages.
+
+    - Saisir la qualité de revêtement via Reference.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Rivestimento di facciata come strato modellato per computo metrico e coordinamento.
+
+
+    **Descrizione**
+
+    - Strato di rivestimento esterno con qualità definita secondo il catalogo componenti.
+
+    - Strato autonomo, separato dalla parete esterna portante.
+
+
+    **Direttive di modellazione**
+
+    - Modellare quando il componente multic strato non è supportato o la complessità richiede uno strato separato.
+
+    - Modellare come strato autonomo; suddividere ai confini di componenti e piani.
+
+    - Registrare la qualità del rivestimento tramite Reference.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Facade cladding as a modelled layer for quantity take-off and coordination.
+
+
+    **Description**
+
+    - Exterior cladding layer with defined quality according to the component catalogue.
+
+    - Separate layer, distinct from the load-bearing exterior wall.
+
+
+    **Modelling guidelines**
+
+    - Model when multi-layer components are not supported or higher complexity requires a separate layer.
+
+    - Model as a separate layer; split at component and storey boundaries.
+
+    - Capture cladding quality via Reference.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcCovering
+entity_ifc4: IfcCovering
+entity_ifc4_3: IfcCovering
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcCovering AND PredefinedType=CLADDING AND IsExternal=TRUE
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet die Fassadenbekleidung.
+
+
+      **Zulässige Werte**
+
+      - `CLADDING` — Fassadenbekleidung'
+    fr: 'Identifie le revêtement de façade.
+
+
+      **Valeurs admises**
+
+      - `CLADDING` — revêtement de façade'
+    it: 'Identifica il rivestimento di facciata.
+
+
+      **Valori ammessi**
+
+      - `CLADDING` — rivestimento di facciata'
+    en: 'Marks the facade cladding.
+
+
+      **Allowed values**
+
+      - `CLADDING` — facade cladding'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-cladding
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Kennzeichnet die Fassadenbekleidung.
+
+
+      **Zulässige Werte**
+
+      - `CLADDING` — Fassadenbekleidung
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Identifie le revêtement de façade.
+
+
+      **Valeurs admises**
+
+      - `CLADDING` — revêtement de façade
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Identifica il rivestimento di facciata.
+
+
+      **Valori ammessi**
+
+      - `CLADDING` — rivestimento di facciata
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Marks the facade cladding.
+
+
+      **Allowed values**
+
+      - `CLADDING` — facade cladding'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-cladding
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: true
+  status: active
+  sort_order: '2
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: IsExternal
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Kennzeichnet eine aussenliegende Fassadenbekleidung.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — Fassadenbekleidung'
+    fr: 'Identifie un revêtement de façade extérieur.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — revêtement de façade'
+    it: 'Identifica un rivestimento di facciata esterno.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — rivestimento di facciata'
+    en: 'Marks an exterior facade cladding.
+
+
+      **Allowed values**
+
+      - `TRUE` — facade cladding'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-true
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Bekleidungsqualität der Fassade gemäss Bauteilkatalog.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Fassadenbekleidungsqualität.'
+    fr: 'Qualité de revêtement de façade selon le catalogue de composants.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Qualité de revêtement de façade.'
+    it: 'Qualità del rivestimento di facciata secondo il catalogo componenti.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Qualità rivestimento di facciata.'
+    en: 'Cladding quality of the facade according to the component catalogue.
+
+
+      **Allowed values**
+
+      - See value list Facade cladding quality.'
+  datatype: IfcIdentifier
+  allowed_values: pragmaticbim:value/facade-cladding-quality
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: Status
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: NetArea
+  pset: Qto_CoveringBaseQuantities
+  definition:
+    de: Nettofläche der modellierten Fassadenbekleidung.
+    fr: Surface nette du revêtement de façade modélisé.
+    it: Superficie netta del rivestimento di facciata modellato.
+    en: Net area of the modelled facade cladding.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: false
+  status: active
+  sort_order: 7

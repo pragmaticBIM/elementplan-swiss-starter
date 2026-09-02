@@ -1,0 +1,319 @@
+id: pragmaticbim:element/mep-downpipe
+code: MEP-DOWNPIPE
+sort_order: 67
+status: active
+name:
+  de: Fallleitung
+  fr: Descente
+  it: Pluviale
+  en: Downpipe
+definition:
+  de: 'Fallleitung von Dach- und Balkonentwässerung bis zur Sammelleitung.
+
+
+    **Beschreibung**
+
+    - Vertikale Entwässerungsleitung von Flachdach und Balkonen.
+
+    - Dient der Koordination in Steigzonen und an Durchführungen.
+
+
+    **Modellierungsrichtlinie**
+
+    - Von Entwässerungspunkten auf Dach und Balkon bis zur Abwassersammelleitung führen.
+
+    - Balkon-Fallleitungen gesondert modellieren und zuordnen.
+
+    - Keine Armaturen, Schächte oder Anschlussdetails modellieren.'
+  fr: 'Descente depuis le drainage de toiture et de balcons jusqu''au collecteur principal.
+
+
+    **Description**
+
+    - Canalisation verticale d''évacuation depuis toiture plate et balcons.
+
+    - Sert à la coordination dans les cages et aux traversées.
+
+
+    **Directives de modélisation**
+
+    - Mener des points d''évacuation sur toiture et balcon jusqu''au collecteur d''eaux usées.
+
+    - Modéliser séparément les descentes de balcons et les identifier.
+
+    - Ne pas modéliser armatures, regards ou raccords de détail.'
+  it: 'Pluviale dal drenaggio di tetto e balconi fino al collettore principale.
+
+
+    **Descrizione**
+
+    - Condotta verticale di drenaggio da tetto piano e balconi.
+
+    - Serve al coordinamento in vani e agli attraversamenti.
+
+
+    **Direttive di modellazione**
+
+    - Condurre dai punti di scarico su tetto e balcone fino al collettore di acque reflue.
+
+    - Modellare separatamente i pluviali dei balconi e identificarli.
+
+    - Non modellare armature, pozzetti o dettagli di collegamento.'
+  en: 'Downpipe from roof and balcony drainage to the main collector.
+
+
+    **Description**
+
+    - Vertical drainage pipe from flat roof and balconies.
+
+    - Used for coordination in risers and at penetrations.
+
+
+    **Modelling guidelines**
+
+    - Route from drainage points on roof and balcony to the wastewater collector.
+
+    - Model balcony downpipes separately and identify them.
+
+    - Do not model fittings, manholes, or connection details.'
+needed_in_domain:
+- pragmaticbim:domain/mep
+entity_ifc2x3: IfcFlowSegment
+entity_ifc4: IfcPipeSegment
+entity_ifc4_3: IfcPipeSegment
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcPipeSegment AND Reference=FL) OR (entity_ifc2x3=IfcFlowSegment AND Reference=FL)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art der Rohrleitung.
+
+
+      **Zulässige Werte**
+
+      - `RIGIDSEGMENT` — starres Segment
+
+      - `FLEXIBLESEGMENT` — flexibles Segment'
+    fr: 'Type de canalisation.
+
+
+      **Valeurs admises**
+
+      - `RIGIDSEGMENT` — segment rigide
+
+      - `FLEXIBLESEGMENT` — segment flexible'
+    it: 'Tipo di condotta.
+
+
+      **Valori ammessi**
+
+      - `RIGIDSEGMENT` — segmento rigido
+
+      - `FLEXIBLESEGMENT` — segmento flessibile'
+    en: 'Kind of pipe segment.
+
+
+      **Allowed values**
+
+      - `RIGIDSEGMENT` — rigid segment
+
+      - `FLEXIBLESEGMENT` — flexible segment'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-pipe-segment
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Fallleitung gemäss Koordinationsplan (z. B. FL-Dach-Nord, FL-Balkon-2OG).
+    fr: Désignation de la descente selon le plan de coordination (p. ex. FL-Toit-Nord, FL-Balcon-2e).
+    it: Denominazione del pluviale secondo il piano di coordinamento (es. FL-Tetto-Nord, FL-Balcone-2P).
+    en: Downpipe designation according to the coordination plan (e.g. FL-Roof-North, FL-Balcony-2F).
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: Reference
+  pset: Pset_PipeSegmentTypeCommon
+  definition:
+    de: 'Referenz zur Zuordnung als Fallleitung im Koordinationsmodell.
+
+
+      **Zulässige Werte**
+
+      - `FL` — Fallleitung'
+    fr: 'Référence pour l''identification comme descente dans le modèle de coordination.
+
+
+      **Valeurs admises**
+
+      - `FL` — descente'
+    it: 'Riferimento per l''identificazione come pluviale nel modello di coordinamento.
+
+
+      **Valori ammessi**
+
+      - `FL` — pluviale'
+    en: 'Reference used to identify a downpipe in the coordination model.
+
+
+      **Allowed values**
+
+      - `FL` — downpipe'
+  datatype: IfcIdentifier
+  allowed_values: pragmaticbim:value/pipe-reference-downpipe
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: CrossSectionArea
+  pset: Qto_PipeSegmentBaseQuantities
+  definition:
+    de: Querschnittsfläche der modellierten Fallleitung.
+    fr: Section transversale de la descente modélisée.
+    it: Area della sezione trasversale del pluviale modellato.
+    en: Cross-sectional area of the modelled downpipe.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: Status
+  pset: Pset_PipeSegmentTypeCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 5

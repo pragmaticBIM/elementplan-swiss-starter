@@ -1,0 +1,32 @@
+id: pragmaticbim:value/subfloor-type
+code: SUBFLOOR-TYPE
+name:
+  de: Unterlagsboden
+  fr: Chape
+  it: Sottofondo
+  en: Subfloor
+description:
+  de: Unterlagsbodentyp im modellierten Bodenaufbau.
+  fr: Type de chape dans le complexe de sol modélisé.
+  it: Tipo di sottofondo nella stratigrafia di pavimento modellata.
+  en: Subfloor type in the modelled floor build-up.
+year: 2026
+norm_reference: null
+status: active
+values:
+  de:
+  - nicht definiert
+  - Zement-UB
+  - Anhydrit-UB
+  fr:
+  - nicht definiert
+  - Zement-UB
+  - Anhydrit-UB
+  it:
+  - nicht definiert
+  - Zement-UB
+  - Anhydrit-UB
+  en:
+  - nicht definiert
+  - Zement-UB
+  - Anhydrit-UB

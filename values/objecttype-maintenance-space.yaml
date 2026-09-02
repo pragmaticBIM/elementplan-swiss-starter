@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-maintenance-space
+code: OBJ-MAINT-SPACE
+name:
+  de: ObjectType Wartungsraum
+  fr: ObjectType local de maintenance
+  it: ObjectType locale di manutenzione
+  en: ObjectType maintenance space
+description:
+  de: ObjectType für IfcBuildingElementProxy als freizuhaltender Wartungsraum für Kollisionsnachweis.
+  fr: ObjectType pour IfcBuildingElementProxy comme local de maintenance à maintenir libre pour preuve de collision.
+  it: ObjectType per IfcBuildingElementProxy come locale di manutenzione da mantenere libero per prova di collisione.
+  en: ObjectType for IfcBuildingElementProxy as a clear maintenance space for clash verification.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Wartungsraum
+  fr:
+  - Wartungsraum
+  it:
+  - Wartungsraum
+  en:
+  - Wartungsraum

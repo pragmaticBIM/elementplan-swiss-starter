@@ -1,0 +1,324 @@
+id: pragmaticbim:element/spaces-luftraum
+code: SPACE-AIR
+sort_order: 16
+status: active
+name:
+  de: Luftraum
+  fr: Volumes d'air
+  it: Volumi d'aria
+  en: Air spaces
+definition:
+  de: 'Nicht nutzbare Lufträume geschossweise modellieren — zur Abzugsmenge bei der Geschossflächenermittlung und als Referenzraum für die Gebäudetechnik.
+
+
+    **Beschreibung**
+
+    - Lufträume wie Atrien, Treppenaugen, mehrgeschossige Räume oder sonstige nicht nutzbare Volumen innerhalb des Geschossvolumens.
+
+    - Werden vom Geschossvolumen abgezogen, um die anrechenbare Geschossfläche bzw. das Nutzvolumen zu ermitteln.
+
+    - Bieten den Gebäudetechnikern einen Referenzraum.
+
+
+    **Modellierungsrichtlinie**
+
+    - Jeden grösseren Hohlraum im Gebäude mit einem Luftraum füllen — z. B. Atrium, Treppenauge, mehrgeschossige Räume, Luftraum über dem obersten Treppenlauf.
+
+    - Mit dem Raumwerkzeug als Volumen modellieren, geschossweise.
+
+    - Unterkante = Oberkante des darunter liegenden Raumvolumens; Oberkante = Unterkante Rohdecke bzw. Abschluss des Geschossvolumens.
+
+    - Dem zugehörigen Geschoss zuweisen; keine Überlappungen mit nutzbaren Räumen oder Doppelungen.'
+  fr: 'Modéliser les volumes d''air non utilisables étage par étage — comme quantité à déduire pour déterminer la surface de plancher et comme espace de référence pour la technique du bâtiment.
+
+
+    **Description**
+
+    - Volumes d''air tels qu''atriums, cages d''escalier ouvertes, locaux multi-étages ou autres volumes non utilisables dans le volume d''étage.
+
+    - Se déduisent du volume d''étage pour obtenir la surface de plancher comptable ou le volume utile.
+
+    - Servent d''espace de référence aux ingénieurs en technique du bâtiment.
+
+
+    **Directives de modélisation**
+
+    - Remplir chaque cavité importante du bâtiment avec un volume d''air — p. ex. atrium, cage d''escalier ouverte, locaux multi-étages, volume d''air au-dessus de la dernière volée d''escalier.
+
+    - Modéliser comme volume avec l''outil local, étage par étage.
+
+    - Face inférieure = dessus du volume de local sous-jacent ; face supérieure = dessous du plafond brut ou limite du volume d''étage.
+
+    - Rattacher à l''étage concerné ; pas de chevauchement avec locaux utilisables ni de duplication.'
+  it: 'Modellare i volumi d''aria non utilizzabili piano per piano — come quantità da detrarre per determinare la superficie di piano e come spazio di riferimento per la tecnica dell''edificio.
+
+
+    **Descrizione**
+
+    - Volumi d''aria come atrii, occhi di scala, locali multipiano o altri volumi non utilizzabili all''interno del volume di piano.
+
+    - Si detraggono dal volume di piano per ottenere la superficie di piano computabile o il volume utile.
+
+    - Offrono agli impiantisti uno spazio di riferimento.
+
+
+    **Direttive di modellazione**
+
+    - Riempire ogni cavità significativa dell''edificio con un volume d''aria — p. es. atrio, occhio di scala, locali multipiano, volume d''aria sopra l''ultima rampa di scale.
+
+    - Modellare come volume con lo strumento locale, piano per piano.
+
+    - Bordo inferiore = bordo superiore del volume di locale sottostante; bordo superiore = bordo inferiore del solaio grezzo o limite del volume di piano.
+
+    - Assegnare al piano corrispondente; nessuna sovrapposizione con locali utilizzabili né duplicazione.'
+  en: 'Model non-occupiable air spaces storey by storey — as deduction quantities when determining floor area and as a reference space for building services.
+
+
+    **Description**
+
+    - Air spaces such as atriums, stair voids, multi-storey rooms, or other non-occupiable volumes within the storey volume.
+
+    - Deducted from storey volume to obtain countable floor area or usable volume.
+
+    - Provide a reference space for building services engineers.
+
+
+    **Modelling guidelines**
+
+    - Fill every larger cavity in the building with an air space — e.g. atrium, stair void, multi-storey rooms, air space above the uppermost stair flight.
+
+    - Model as a volume with the space tool, storey by storey.
+
+    - Bottom = top of the space volume below; top = underside of the raw slab or boundary of the storey volume.
+
+    - Assign to the matching storey; no overlaps with usable spaces or duplicates.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcSpace
+entity_ifc4: IfcSpace
+entity_ifc4_3: IfcSpace
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType=Luftraum) OR (entity_ifc2x3=IfcSpace AND ObjectType=Luftraum)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Raum als benutzerdefinierten Typ; ObjectType präzisiert die Art.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType = Luftraum'
+    fr: 'Identifie l''espace comme type défini par l''utilisateur ; ObjectType précise la nature.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType = Luftraum'
+    it: 'Identifica lo spazio come tipo definito dall''utente ; ObjectType precisa la natura.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType = Luftraum'
+    en: 'Marks the space as a user-defined type; ObjectType specifies the kind.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType = Luftraum'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-space-userdefined
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des benutzerdefinierten Raums.
+
+
+      **Zulässige Werte**
+
+      - `Luftraum` — nicht nutzbarer Luftraum'
+    fr: 'Nature de l''espace défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `Luftraum` — volume d''air non utilisable'
+    it: 'Tipo dello spazio definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `Luftraum` — volume d''aria non utilizzabile'
+    en: 'Kind of user-defined space.
+
+
+      **Allowed values**
+
+      - `Luftraum` — non-occupiable air space'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-luftraum
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: Optionale Bezeichnung oder Nummer des Luftraums gemäss Projekt.
+    fr: Désignation ou numéro facultatif du volume d'air selon le projet.
+    it: Denominazione o numero facoltativo del volume d'aria secondo il progetto.
+    en: Optional designation or number of the air space according to the project.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: GrossFloorArea
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Grundfläche des modellierten Luftraums.
+    fr: Surface au sol du volume d'air modélisé.
+    it: Superficie di base del volume d'aria modellato.
+    en: Footprint area of the modelled air space.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: GrossVolume
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Volumen des modellierten Luftraums.
+    fr: Volume du volume d'air modélisé.
+    it: Volume del volume d'aria modellato.
+    en: Volume of the modelled air space.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: Height
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Höhe des modellierten Luftraums.
+    fr: Hauteur du volume d'air modélisé.
+    it: Altezza del volume d'aria modellato.
+    en: Height of the modelled air space.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 6

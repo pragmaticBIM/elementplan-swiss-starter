@@ -1,0 +1,64 @@
+id: pragmaticbim:value/wall-cladding-quality
+code: WALL-CLADDING-QUALITY
+name:
+  de: Wandoberflächenqualität
+  fr: Qualité de revêtement mural
+  it: Qualità rivestimento murale
+  en: Wall surface quality
+description:
+  de: Oberflächenqualität der Wandbekleidung gemäss Bauteilkatalog.
+  fr: Qualité de surface du revêtement mural selon le catalogue de composants.
+  it: Qualità superficiale del rivestimento murale secondo il catalogo componenti.
+  en: Surface quality of the wall cladding according to the component catalogue.
+year: 2026
+norm_reference: null
+status: active
+values:
+  de:
+  - nicht definiert
+  - Plattenbelag
+  - Verputz
+  - Sichtbeton
+  - Beton roh
+  - Anstrich
+  - Tapete
+  - unbehandelt
+  - fugenloser Belag
+  - roh gestrichen
+  - Holzverkleidung
+  fr:
+  - nicht definiert
+  - Plattenbelag
+  - Verputz
+  - Sichtbeton
+  - Beton roh
+  - Anstrich
+  - Tapete
+  - unbehandelt
+  - fugenloser Belag
+  - roh gestrichen
+  - Holzverkleidung
+  it:
+  - nicht definiert
+  - Plattenbelag
+  - Verputz
+  - Sichtbeton
+  - Beton roh
+  - Anstrich
+  - Tapete
+  - unbehandelt
+  - fugenloser Belag
+  - roh gestrichen
+  - Holzverkleidung
+  en:
+  - nicht definiert
+  - Plattenbelag
+  - Verputz
+  - Sichtbeton
+  - Beton roh
+  - Anstrich
+  - Tapete
+  - unbehandelt
+  - fugenloser Belag
+  - roh gestrichen
+  - Holzverkleidung

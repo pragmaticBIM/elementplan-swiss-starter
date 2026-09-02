@@ -1,0 +1,56 @@
+id: pragmaticbim:value/space-reference-exterior-sia416-d0165
+code: SPACE-REF-EXT-SIA416-D0165
+name:
+  de: Raumreferenz Aussenraum SIA 416 / D0165
+  fr: Référence de local extérieur SIA 416 / D0165
+  it: Riferimento locale esterno SIA 416 / D0165
+  en: Space reference exterior SIA 416 / D0165
+description:
+  de: 'Flächenklassen für Aussenräume nach SIA 416 oder SIA D0165 für die Raumreferenz (Pset_SpaceCommon.Reference). Quellen: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
+    und https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html'
+  fr: 'Classes de surfaces pour les locaux extérieurs selon SIA 416 ou SIA D0165 pour la référence de local (Pset_SpaceCommon.Reference). Sources : https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
+    et https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html'
+  it: 'Classi di superficie per locali esterni secondo SIA 416 o SIA D0165 per il riferimento del locale (Pset_SpaceCommon.Reference). Fonti: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
+    e https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html'
+  en: 'Area classes for exterior spaces according to SIA 416 or SIA D0165 for the space reference (Pset_SpaceCommon.Reference). Sources: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
+    and https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html'
+year: 2026
+norm_reference: SIA 416 / SIA D0165
+status: active
+values:
+  de:
+  - AGF
+  - UF
+  - AVF
+  - BUF
+  - UUF
+  - BUF-10
+  - AFF
+  - ANF
+  fr:
+  - AGF
+  - UF
+  - AVF
+  - BUF
+  - UUF
+  - BUF-10
+  - AFF
+  - ANF
+  it:
+  - AGF
+  - UF
+  - AVF
+  - BUF
+  - UUF
+  - BUF-10
+  - AFF
+  - ANF
+  en:
+  - AGF
+  - UF
+  - AVF
+  - BUF
+  - UUF
+  - BUF-10
+  - AFF
+  - ANF

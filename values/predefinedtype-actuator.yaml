@@ -1,0 +1,40 @@
+id: pragmaticbim:value/predefinedtype-actuator
+code: ACTUATOR
+name:
+  de: PredefinedType IfcActuator
+  fr: PredefinedType IfcActuator
+  it: PredefinedType IfcActuator
+  en: PredefinedType IfcActuator
+description:
+  de: Ifc PredefinedType für IfcActuator.
+  fr: PredefinedType IFC pour IfcActuator.
+  it: PredefinedType IFC per IfcActuator.
+  en: IFC PredefinedType for IfcActuator.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - ELECTRICACTUATOR
+  - PNEUMATICACTUATOR
+  - HYDRAULICACTUATOR
+  - HANDOPERATEDACTUATOR
+  - THERMOSTATICACTUATOR
+  fr:
+  - ELECTRICACTUATOR
+  - PNEUMATICACTUATOR
+  - HYDRAULICACTUATOR
+  - HANDOPERATEDACTUATOR
+  - THERMOSTATICACTUATOR
+  it:
+  - ELECTRICACTUATOR
+  - PNEUMATICACTUATOR
+  - HYDRAULICACTUATOR
+  - HANDOPERATEDACTUATOR
+  - THERMOSTATICACTUATOR
+  en:
+  - ELECTRICACTUATOR
+  - PNEUMATICACTUATOR
+  - HYDRAULICACTUATOR
+  - HANDOPERATEDACTUATOR
+  - THERMOSTATICACTUATOR

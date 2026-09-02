@@ -1,0 +1,466 @@
+id: pragmaticbim:element/structural-column
+code: STR-COLUMN
+sort_order: 71
+status: active
+name:
+  de: Stütze detailiert
+  fr: Poteau détaillé
+  it: Colonna dettagliata
+  en: Column detailed
+definition:
+  de: 'Tragwerkselement für Stützen im Tragwerksmodell.
+
+
+    **Beschreibung**
+
+    - Ausführungsgenaue Geometrie gemäss Tragwerksplanung.
+
+    - Massgebendes Fachmodell für Ausführungsplanung, Mengenermittlung und Koordination.
+
+
+    **Modellierungsrichtlinie**
+
+    - Geschossweise und so modellieren, wie gebaut wird.
+
+    - Bauteilgrenzen und Zuordnung zu Geschoss und Tragwerksteil einhalten.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Élément porteur pour poteaux dans le modèle structurel.
+
+
+    **Description**
+
+    - Géométrie d''exécution selon le plan structurel.
+
+    - Maquette fédérée de référence pour l''exécution, les quantités et la coordination.
+
+
+    **Directives de modélisation**
+
+    - Modéliser étage par étage et tel qu''il sera construit.
+
+    - Respecter les limites de composants et l''attribution à l''étage et à la partie porteuse.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Elemento strutturale per colonne nel modello strutturale.
+
+
+    **Descrizione**
+
+    - Geometria esecutiva secondo la pianificazione strutturale.
+
+    - Modello federato di riferimento per esecuzione, quantità e coordinamento.
+
+
+    **Direttive di modellazione**
+
+    - Modellare piano per piano e come sarà costruito.
+
+    - Rispettare i confini dei componenti e l''assegnazione a piano e parte strutturale.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Structural element for columns in the structural model.
+
+
+    **Description**
+
+    - Execution-accurate geometry according to the structural design.
+
+    - Authoritative federated model for execution planning, quantities, and coordination.
+
+
+    **Modelling guidelines**
+
+    - Model storey by storey and as it will be built.
+
+    - Maintain component boundaries and assignment to storey and structural part.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/structural
+entity_ifc2x3: IfcColumn
+entity_ifc4: IfcColumn
+entity_ifc4_3: IfcColumn
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcColumn OR entity_ifc2x3=IfcColumn
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Stütze gemäss Tragwerksplan.
+    fr: Désignation du poteau selon le plan structurel.
+    it: Denominazione della colonna secondo il piano strutturale.
+    en: Column designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: GrossVolume
+  pset: Qto_ColumnBaseQuantities
+  definition:
+    de: Bruttovolumen der modellierten Stütze.
+    fr: Volume brut du poteau modélisé.
+    it: Volume lordo della colonna modellata.
+    en: Gross volume of the modelled column.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Bewehrungsgehalt
+  pset: 211.5_Beton_und_Stahlbetonarbeiten
+  definition:
+    de: Bewehrungsgehalt des Betonbauteils in kg/m³ gemäss Tragwerksplanung.
+    fr: Teneur en armatures de l'élément en béton en kg/m³ selon le plan structurel.
+    it: Contenuto di armatura dell'elemento in calcestruzzo in kg/m³ secondo la pianificazione strutturale.
+    en: Reinforcement content of the concrete component in kg/m³ according to the structural design.
+  datatype: IfcLabel
+  unit: kg/m³
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: Oberfläche
+  pset: 211.5_Beton_und_Stahlbetonarbeiten
+  definition:
+    de: Oberflächenanforderung und Seitenbezug des Betonbauteils für die NPK-Ausschreibung.
+    fr: Exigence de surface et côté de l'élément en béton pour l'appel d'offres NPK.
+    it: Requisito di superficie e lato dell'elemento in calcestruzzo per la gara NPK.
+    en: Surface requirement and side reference of the concrete component for NPK tendering.
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/concrete-surface-tender
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: Betonqualität
+  pset: 211.5_Beton_und_Stahlbetonarbeiten
+  definition:
+    de: 'Betonsorte gemäss SN EN 206 für die NPK-Ausschreibung.
+
+
+      **Zulässige Werte**
+
+      - `0` — Sorte 0
+
+      - `A` — NPK A (Hochbau)
+
+      - `B` — NPK B (Hochbau)
+
+      - `C` — NPK C (Hochbau)
+
+      - `D` — NPK D (Tiefbau)
+
+      - `E` — NPK E (Tiefbau)
+
+      - `F` — NPK F (Tiefbau)
+
+      - `G` — NPK G (Tiefbau)
+
+      - `P1` — Pfahlbeton im Trockenen (NPK H)
+
+      - `P2` — Pfahlbeton unter Wasser (NPK I)
+
+      - `P3` — Schlitzwandbeton im Trockenen (NPK K)
+
+      - `P4` — Schlitzwandbeton unter Wasser (NPK L)'
+    fr: 'Sorte de béton selon SN EN 206 pour l''appel d''offres NPK.
+
+
+      **Valeurs admises**
+
+      - `0` — sorte 0
+
+      - `A` — NPK A (construction verticale)
+
+      - `B` — NPK B (construction verticale)
+
+      - `C` — NPK C (construction verticale)
+
+      - `D` — NPK D (génie civil)
+
+      - `E` — NPK E (génie civil)
+
+      - `F` — NPK F (génie civil)
+
+      - `G` — NPK G (génie civil)
+
+      - `P1` — béton de pieux à sec (NPK H)
+
+      - `P2` — béton de pieux sous l''eau (NPK I)
+
+      - `P3` — béton de paroi moulée à sec (NPK K)
+
+      - `P4` — béton de paroi moulée sous l''eau (NPK L)'
+    it: 'Sorta di calcestruzzo secondo SN EN 206 per la gara NPK.
+
+
+      **Valori ammessi**
+
+      - `0` — sorta 0
+
+      - `A` — NPK A (edilizia)
+
+      - `B` — NPK B (edilizia)
+
+      - `C` — NPK C (edilizia)
+
+      - `D` — NPK D (opere civili)
+
+      - `E` — NPK E (opere civili)
+
+      - `F` — NPK F (opere civili)
+
+      - `G` — NPK G (opere civili)
+
+      - `P1` — calcestruzzo per pali a secco (NPK H)
+
+      - `P2` — calcestruzzo per pali sott''acqua (NPK I)
+
+      - `P3` — calcestruzzo per diaframma a secco (NPK K)
+
+      - `P4` — calcestruzzo per diaframma sott''acqua (NPK L)'
+    en: 'Concrete grade according to SN EN 206 for NPK tendering.
+
+
+      **Allowed values**
+
+      - `0` — grade 0
+
+      - `A` — NPK A (building)
+
+      - `B` — NPK B (building)
+
+      - `C` — NPK C (building)
+
+      - `D` — NPK D (civil engineering)
+
+      - `E` — NPK E (civil engineering)
+
+      - `F` — NPK F (civil engineering)
+
+      - `G` — NPK G (civil engineering)
+
+      - `P1` — dry pile concrete (NPK H)
+
+      - `P2` — underwater pile concrete (NPK I)
+
+      - `P3` — dry diaphragm wall concrete (NPK K)
+
+      - `P4` — underwater diaphragm wall concrete (NPK L)'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/concrete-quality-npk
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: Status
+  pset: Pset_ColumnCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  is_applicability: false
+  status: active
+  sort_order: 8

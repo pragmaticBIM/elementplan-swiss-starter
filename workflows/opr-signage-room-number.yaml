@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/opr-signage-room-number
+code: OPR-SIGNAGE-ROOM
+sort_order: 61
+name:
+  de: Managen der Signaletik-Raumnummer
+  fr: Gestion du numéro de local pour la signalétique
+  it: Gestione del numero locale per la segnaletica
+  en: Managing the signage room number
+description:
+  de: 'Signaletik-Raumnummern im Betrieb führen und aktualisieren — getrennt von der technischen Planungsraumnummer.
+
+
+    **Ausgangslage**
+
+    - Signaletik-Raumnummern ändern sich häufig (Nutzungswechsel, Wegführungskonzept, Mieterwünsche) und weichen oft von der Planungsnummer ab.
+
+    - Die technische Planungsraumnummer muss stabil bleiben; sie eignet sich deshalb nicht als Träger der Signaletik.
+
+
+    **Ziel & Nutzen**
+
+    - Signaletik-Nummern im Modell führen, ohne die stabile Planungsnummer zu überschreiben.
+
+    - Beschriftung, Flächenmanagement und CAFM aus derselben, prüfbaren Quelle ableiten.
+
+
+    **Ablauf**
+
+    1. Innenräume mit stabiler technischer Raumnummer (Name) im Modell belassen.
+
+    2. Signaletik-Raumnummer als separates Attribut führen und bei Änderungen aktualisieren.
+
+    3. Listen für Beschriftung und Betrieb aus dem Modell ausziehen und mit dem Signaletikkonzept abgleichen.
+
+
+    **Ergebnis**
+
+    - Aktuelle Signaletik-Raumnummern im Betriebsmodell — ohne Vermischung mit der Planungsraumnummer.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Innenräume (IfcSpace): Name (technische Planungsraumnummer), SignageRoomNumber (ePset_SpaceSignage)
+
+    - Optional: Aussenräume (IfcSpace) mit SignageRoomNumber, falls signaletisch nummeriert'
+  fr: 'Porter et mettre à jour les numéros de local pour la signalétique en exploitation — séparément du numéro technique de planification.
+
+
+    **Situation de départ**
+
+    - Les numéros de signalétique changent souvent (changement d''usage, concept d''orientation, souhaits des locataires) et divergent souvent du numéro de planification.
+
+    - Le numéro technique de planification doit rester stable ; il ne convient donc pas comme support de la signalétique.
+
+
+    **Objectif et bénéfice**
+
+    - Porter les numéros de signalétique dans le modèle sans écraser le numéro de planification stable.
+
+    - Dériver marquage, gestion des espaces et CAFM d''une même source vérifiable.
+
+
+    **Déroulement**
+
+    1. Conserver dans le modèle les locaux intérieurs avec leur numéro technique stable (Name).
+
+    2. Porter le numéro de signalétique comme attribut séparé et le mettre à jour en cas de changement.
+
+    3. Extraire du modèle les listes pour marquage et exploitation et les aligner avec le concept de signalétique.
+
+
+    **Résultat**
+
+    - Numéros de signalétique à jour dans le modèle d''exploitation — sans les mélanger avec le numéro de planification.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Locaux intérieurs (IfcSpace) : Name (numéro technique de planification), SignageRoomNumber (ePset_SpaceSignage)
+
+    - Facultatif : espaces extérieurs (IfcSpace) avec SignageRoomNumber s''ils sont numérotés pour la signalétique'
+  it: 'Gestire e aggiornare i numeri locale per la segnaletica in esercizio — separati dal numero tecnico di pianificazione.
+
+
+    **Situazione di partenza**
+
+    - I numeri di segnaletica cambiano spesso (cambio d''uso, concetto di orientamento, richieste degli affittuari) e spesso differiscono dal numero di pianificazione.
+
+    - Il numero tecnico di pianificazione deve restare stabile; non è quindi adatto come supporto della segnaletica.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire i numeri di segnaletica nel modello senza sovrascrivere il numero di pianificazione stabile.
+
+    - Derivare etichettatura, gestione spazi e CAFM dalla stessa fonte verificabile.
+
+
+    **Svolgimento**
+
+    1. Mantenere nel modello i locali interni con il numero tecnico stabile (Name).
+
+    2. Gestire il numero di segnaletica come attributo separato e aggiornarlo in caso di modifiche.
+
+    3. Estrarre dal modello gli elenchi per etichettatura ed esercizio e allinearli al concetto di segnaletica.
+
+
+    **Risultato**
+
+    - Numeri di segnaletica aggiornati nel modello di esercizio — senza mescolarli con il numero di pianificazione.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Locali interni (IfcSpace): Name (numero tecnico di pianificazione), SignageRoomNumber (ePset_SpaceSignage)
+
+    - Facoltativo: spazi esterni (IfcSpace) con SignageRoomNumber se numerati per la segnaletica'
+  en: 'Maintain and update signage room numbers in operation — separate from the technical planning room number.
+
+
+    **Starting point**
+
+    - Signage room numbers often change (use changes, wayfinding concept, tenant requests) and frequently differ from the planning number.
+
+    - The technical planning room number must stay stable; it is therefore not suitable as the carrier for signage.
+
+
+    **Goal & benefit**
+
+    - Carry signage numbers in the model without overwriting the stable planning number.
+
+    - Derive labelling, space management, and CAFM from the same checkable source.
+
+
+    **Process**
+
+    1. Keep interior spaces in the model with their stable technical room number (Name).
+
+    2. Maintain the signage room number as a separate attribute and update it when it changes.
+
+    3. Extract labelling and operations lists from the model and align them with the signage concept.
+
+
+    **Outcome**
+
+    - Current signage room numbers in the operations model — without mixing them with the planning room number.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Interior spaces (IfcSpace): Name (technical planning room number), SignageRoomNumber (ePset_SpaceSignage)
+
+    - Optional: exterior spaces (IfcSpace) with SignageRoomNumber if numbered for wayfinding'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/opr
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: IFC has no dedicated attribute for a signage/wayfinding room number distinct from the planning number. Do not use IfcSpace.Name for signage — Name remains the stable technical planning room number.
+  Custom property SignageRoomNumber in ePset_SpaceSignage. Typical phases 61–62.

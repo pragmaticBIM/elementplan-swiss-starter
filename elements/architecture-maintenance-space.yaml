@@ -1,0 +1,210 @@
+id: pragmaticbim:element/architecture-maintenance-space
+code: ARCH-MAINT-SPACE
+sort_order: 64
+status: active
+name:
+  de: Wartungsraum
+  fr: Local de maintenance
+  it: Locale di manutenzione
+  en: Maintenance space
+definition:
+  de: 'Freizuhaltender Wartungsraum für den Kollisionsnachweis.
+
+
+    **Beschreibung**
+
+    - Volumen, das für Zugang und Arbeiten an Anlagen freigehalten werden muss — kein Raumobjekt.
+
+    - Dient der Koordination und dem Nachweis, nicht der Raumplanung oder Ausführungsdetailierung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachten Proxy-Körper modellieren; Abmessungen gemäss benötigtem Freiraum.
+
+    - Dem zugehörigen Geschoss zuweisen; ObjectType = Wartungsraum.
+
+    - Keine Geräte, Leitungen oder Ausbau innerhalb des Volumens modellieren.'
+  fr: 'Local de maintenance à maintenir libre pour la preuve de collision.
+
+
+    **Description**
+
+    - Volume à réserver pour l''accès et les travaux sur les installations — pas un objet local.
+
+    - Sert à la coordination et à la preuve, pas à la planification spatiale ni au détail d''exécution.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy simplifié ; dimensions selon le dégagement requis.
+
+    - Rattacher à l''étage concerné ; ObjectType = Wartungsraum.
+
+    - Ne pas modéliser appareils, réseaux ou finitions à l''intérieur du volume.'
+  it: 'Locale di manutenzione da mantenere libero per la prova di collisione.
+
+
+    **Descrizione**
+
+    - Volume da riservare per accesso e lavori sugli impianti — non un oggetto locale.
+
+    - Serve al coordinamento e alla prova, non alla pianificazione spaziale o al dettaglio esecutivo.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy semplificato; dimensioni secondo lo spazio libero necessario.
+
+    - Assegnare al piano corrispondente; ObjectType = Wartungsraum.
+
+    - Non modellare apparecchi, reti o finiture all''interno del volume.'
+  en: 'Clear maintenance space for clash verification.
+
+
+    **Description**
+
+    - Volume that must remain clear for access and work on plant — not a space object.
+
+    - Used for coordination and verification, not for room planning or execution detailing.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified proxy body; dimensions according to the required clearance.
+
+    - Assign to the matching storey; ObjectType = Wartungsraum.
+
+    - Do not model equipment, services, or finishes inside the volume.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Wartungsraum) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Wartungsraum)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-maintenance-space-verification
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Wartungsraum` — freizuhaltender Wartungsraum für Kollisionsnachweis'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Wartungsraum` — local de maintenance à maintenir libre pour preuve de collision'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Wartungsraum` — locale di manutenzione da mantenere libero per prova di collisione'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Wartungsraum` — clear maintenance space for clash verification'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-maintenance-space
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-maintenance-space-verification
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Wartungsraums.
+    fr: Désignation du local de maintenance.
+    it: Denominazione del locale di manutenzione.
+    en: Maintenance space designation.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-maintenance-space-verification
+  is_applicability: false
+  status: active
+  sort_order: 3

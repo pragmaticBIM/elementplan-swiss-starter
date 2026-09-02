@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-slab-floor
+code: SLAB-FLOOR
+name:
+  de: PredefinedType Geschossdecke
+  fr: PredefinedType dalle d'étage
+  it: PredefinedType solaio
+  en: PredefinedType floor slab
+description:
+  de: IfcSlab PredefinedType für Geschossdecken.
+  fr: IfcSlab PredefinedType pour dalles d'étage.
+  it: IfcSlab PredefinedType per solai.
+  en: IfcSlab PredefinedType for floor slabs.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - FLOOR
+  fr:
+  - FLOOR
+  it:
+  - FLOOR
+  en:
+  - FLOOR

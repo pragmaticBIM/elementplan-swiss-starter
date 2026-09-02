@@ -1,0 +1,168 @@
+id: pragmaticbim:workflow/qas-fire-protection
+code: QAS-FIRE
+sort_order: 78
+name:
+  de: QS Brandschutz Bauteilkennwerte
+  fr: AQ protection incendie — valeurs des composants
+  it: AQ protezione antincendio — valori dei componenti
+  en: QA fire protection component values
+description:
+  de: 'Feuerwiderstandsklassen ab Ende Bauprojekt im Architekturmodell führen und gegen das Brandschutzkonzept prüfen.
+
+
+    **Ausgangslage**
+
+    - Brandschutzanforderungen an Wände, Decken, Öffnungen und Tragteile stehen oft nur in Berichten; im Modell fehlen die Kennwerte.
+
+    - Ohne einheitliche Bauteilangaben sind Nachweise und Ausschreibung fehleranfällig.
+
+
+    **Ziel & Nutzen**
+
+    - Architekt pflegt Feuerwiderstandsklassen (VKF) an den massgebenden Bauteilen.
+
+    - Brandschutzplanung kann Kennwerte und Lücken direkt am Modell prüfen.
+
+
+    **Ablauf**
+
+    1. Brandschutzkonzept und erforderliche Feuerwiderstandsklassen festlegen.
+
+    2. Architekt trägt FireRating, Status und PredefinedType an Wänden, Decken, Fenstern, Türen, Stützen und Unterzügen ein.
+
+    3. Kennwerte gegen Brandschutzkonzept und Bewilligungsunterlagen abgleichen.
+
+
+    **Ergebnis**
+
+    - Architekturmodell mit nachvollziehbaren Feuerwiderstandsangaben als Basis für QS Brandschutz.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcWall (Aussen- und nichttragende Innenwände), IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn und IfcBeam
+
+    - FireRating, Status und PredefinedType je Bauteil
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey'
+  fr: 'Porter les classes de résistance au feu dans le modèle d''architecture dès la fin du projet de construction et les vérifier face au concept de protection incendie.
+
+
+    **Situation de départ**
+
+    - Les exigences incendie pour murs, dalles, ouvertures et éléments porteurs figurent souvent seulement dans des rapports ; les valeurs manquent dans le modèle.
+
+    - Sans indications homogènes sur les composants, justifications et appels d''offres sont sources d''erreurs.
+
+
+    **Objectif et bénéfice**
+
+    - L''architecte renseigne les classes de résistance au feu (AEAI) sur les composants déterminants.
+
+    - La planification incendie peut contrôler valeurs et lacunes directement sur le modèle.
+
+
+    **Déroulement**
+
+    1. Fixer le concept de protection incendie et les classes de résistance requises.
+
+    2. L''architecte saisit FireRating, Status et PredefinedType sur murs, dalles, fenêtres, portes, poteaux et poutres.
+
+    3. Comparer les valeurs au concept de protection incendie et aux dossiers d''autorisation.
+
+
+    **Résultat**
+
+    - Modèle d''architecture avec indications de résistance au feu traçables comme base pour l''AQ incendie.
+
+
+    **Livrables**
+
+    - Modèle d''architecture avec IfcWall (murs extérieurs et cloisons non porteuses), IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn et IfcBeam
+
+    - FireRating, Status et PredefinedType par composant
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey'
+  it: 'Gestire le classi di resistenza al fuoco nel modello di architettura dalla fine del progetto di costruzione e verificarle rispetto al concetto antincendio.
+
+
+    **Situazione di partenza**
+
+    - I requisiti antincendio per pareti, solette, aperture ed elementi portanti sono spesso solo nei rapporti; i valori mancano nel modello.
+
+    - Senza indicazioni omogenee sui componenti, verifiche e gare sono soggette a errori.
+
+
+    **Obiettivo e beneficio**
+
+    - L''architetto inserisce le classi di resistenza al fuoco (AICAA) sui componenti rilevanti.
+
+    - La pianificazione antincendio può controllare valori e lacune direttamente sul modello.
+
+
+    **Svolgimento**
+
+    1. Definire il concetto antincendio e le classi di resistenza richieste.
+
+    2. L''architetto inserisce FireRating, Status e PredefinedType su pareti, solette, finestre, porte, colonne e travi.
+
+    3. Confrontare i valori con il concetto antincendio e i documenti di autorizzazione.
+
+
+    **Risultato**
+
+    - Modello di architettura con indicazioni di resistenza al fuoco tracciabili come base per l''AQ antincendio.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcWall (pareti esterne e interne non portanti), IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn e IfcBeam
+
+    - FireRating, Status e PredefinedType per componente
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey'
+  en: 'Maintain fire resistance classes in the architecture model from the end of the building project phase and check them against the fire protection concept.
+
+
+    **Starting point**
+
+    - Fire requirements for walls, slabs, openings, and load-bearing parts often exist only in reports; values are missing in the model.
+
+    - Without consistent component data, verification and tendering are error-prone.
+
+
+    **Goal & benefit**
+
+    - The architect enters fire resistance classes (VKF) on the governing components.
+
+    - Fire protection planning can check values and gaps directly on the model.
+
+
+    **Process**
+
+    1. Define the fire protection concept and required fire resistance classes.
+
+    2. The architect enters FireRating, Status, and PredefinedType on walls, slabs, windows, doors, columns, and beams.
+
+    3. Align values with the fire protection concept and permit documents.
+
+
+    **Outcome**
+
+    - Architecture model with traceable fire resistance data as the basis for fire protection QA.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcWall (exterior and non-load-bearing interior walls), IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn, and IfcBeam
+
+    - FireRating, Status, and PredefinedType per component
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Architect fills FireRating (VKF) from end of SIA phase 32; Status and PredefinedType required. No AcousticRating on columns/beams.

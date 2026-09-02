@@ -1,0 +1,44 @@
+id: pragmaticbim:value/predefinedtype-wall
+code: WALL-TYPE
+name:
+  de: PredefinedType Wand
+  fr: PredefinedType mur
+  it: PredefinedType parete
+  en: PredefinedType wall
+description:
+  de: IfcWall PredefinedType für Architekturwände.
+  fr: PredefinedType IfcWall pour murs d'architecture.
+  it: PredefinedType IfcWall per pareti di architettura.
+  en: IfcWall PredefinedType for architecture walls.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - STANDARD
+  - PARTITIONING
+  - SOLIDWALL
+  - ELEMENTEDWALL
+  - MOVABLE
+  - PLUMBINGWALL
+  fr:
+  - STANDARD
+  - PARTITIONING
+  - SOLIDWALL
+  - ELEMENTEDWALL
+  - MOVABLE
+  - PLUMBINGWALL
+  it:
+  - STANDARD
+  - PARTITIONING
+  - SOLIDWALL
+  - ELEMENTEDWALL
+  - MOVABLE
+  - PLUMBINGWALL
+  en:
+  - STANDARD
+  - PARTITIONING
+  - SOLIDWALL
+  - ELEMENTEDWALL
+  - MOVABLE
+  - PLUMBINGWALL

@@ -8,76 +8,173 @@ name:
   it: Piano
   en: Storey
 definition:
-  de: |
-    Nutzbare Ebene als Geschoss (IfcBuildingStorey). Dem Gebäude zugeordnet.
+  de: '**Beschreibung**
 
-    **Modellierung**
-    - Jede nutzbare Ebene als eigenes IfcBuildingStorey.
+    - Horizontale Gebäudeebene: nutzbare Geschosse und Gründung/Fundament.
+
+    - Dem Gebäude zugeordnet.
+
+
+    **Modellierungsrichtlinie**
+
+    - Jede nutzbare Ebene als eigenes Geschoss.
+
+    - Gründung/Fundament als eigenes Geschoss mit Name `FD` oder `GR`; Gründungsbauteile diesem Geschoss zuweisen.
+
     - Räume dem jeweiligen Geschoss zuweisen.
-    - Name eindeutig je Gebäude.
-  fr: |
-    Niveau utilisable comme étage (IfcBuildingStorey). Rattaché au bâtiment.
 
-    **Modélisation**
-    - Chaque niveau utilisable comme IfcBuildingStorey distinct.
-    - Relier les locaux à l'étage concerné.
-    - Name unique par bâtiment.
-  it: |
-    Livello utilizzabile come piano (IfcBuildingStorey). Collegato all'edificio.
+    - Name gemäss Klassifikation Geschosse, eindeutig je Gebäude.'
+  fr: '**Description**
 
-    **Modellazione**
-    - Ogni livello utilizzabile come IfcBuildingStorey distinto.
+    - Niveau horizontal du bâtiment : étages utilisables et fondation.
+
+    - Rattaché au bâtiment.
+
+
+    **Directives de modélisation**
+
+    - Chaque niveau utilisable comme étage distinct.
+
+    - Fondation comme étage distinct avec le nom `FD` ou `GR` ; affecter les éléments de fondation à cet étage.
+
+    - Relier les locaux à l''étage concerné.
+
+    - Nom selon la classification des étages, unique par bâtiment.'
+  it: '**Descrizione**
+
+    - Livello orizzontale dell''edificio: piani utilizzabili e fondazione.
+
+    - Collegato all''edificio.
+
+
+    **Direttive di modellazione**
+
+    - Ogni livello utilizzabile come piano distinto.
+
+    - Fondazione come piano distinto con nome `FD` o `GR`; assegnare gli elementi di fondazione a questo piano.
+
     - Assegnare i locali al piano corrispondente.
-    - Name univoco per edificio.
-  en: |
-    Usable level as a storey (IfcBuildingStorey). Assigned to the building.
 
-    **Modelling**
-    - Each usable level as its own IfcBuildingStorey.
+    - Nome secondo la classificazione dei piani, univoco per edificio.'
+  en: '**Description**
+
+    - Horizontal building level: usable storeys and foundation.
+
+    - Assigned to the building.
+
+
+    **Modelling guidelines**
+
+    - Each usable level as its own storey.
+
+    - Foundation as its own storey named `FD` or `GR`; assign foundation elements to this storey.
+
     - Assign spaces to the matching storey.
-    - Unique Name per building.
+
+    - Name according to storey classification, unique per building.'
 needed_in_domain:
-  - pragmaticbim:domain/architecture
-  - pragmaticbim:domain/mep
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
 entity_ifc2x3: IfcBuildingStorey
 entity_ifc4: IfcBuildingStorey
 entity_ifc4_3: IfcBuildingStorey
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcBuildingStorey
+applicability: entity_ifc4=IfcBuildingStorey OR entity_ifc2x3=IfcBuildingStorey
 attributes:
-  - name: Name
-    pset: null
-    definition:
-      de: Geschossbezeichnung, eindeutig je Gebäude.
-      fr: Désignation de l'étage, unique par bâtiment.
-      it: Denominazione del piano, univoca per edificio.
-      en: Storey designation, unique per building.
-    datatype: IfcLabel
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 1
-  - name: Elevation
-    pset: null
-    definition:
-      de: Höhe der Geschossebene über dem Projektnullpunkt.
-      fr: Altitude du niveau d'étage par rapport au zéro du projet.
-      it: Quota del piano rispetto allo zero di progetto.
-      en: Elevation of the storey level relative to the project origin.
-    datatype: IfcLengthMeasure
-    unit: m
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: 'Eindeutiger Geschosscode gemäss Klassifikation Geschosse, einmalig je Gebäude.
+
+
+      **Zulässige Werte**
+
+      - `FD` oder `GR` — Gründung/Fundament; als eigenes Geschoss modellieren
+
+      - `U01`–`U99` — Untergeschoss; Nummer steigt nach unten (`U01` = 1. UG direkt unter dem EG)
+
+      - `00` oder `EG` — Erdgeschoss
+
+      - `01`–`99` — Obergeschoss; Nummer steigt nach oben
+
+      - `Z00` oder `{Geschoss}.Z` — Zwischengeschoss (z. B. `01.Z` über Geschoss `01`)
+
+
+      z. B. `FD`, `U01`, `EG`, `03`, `01.Z`'
+    fr: 'Code d''étage unique selon la classification des étages, une fois par bâtiment.
+
+
+      **Valeurs admises**
+
+      - `FD` ou `GR` — fondation ; modéliser comme étage distinct
+
+      - `U01`–`U99` — sous-sol ; numéro croissant vers le bas (`U01` = 1er sous-sol directement sous le RDC)
+
+      - `00` ou `EG` — rez-de-chaussée
+
+      - `01`–`99` — étage ; numéro croissant vers le haut
+
+      - `Z00` ou `{étage}.Z` — étage intermédiaire (p. ex. `01.Z` au-dessus de l''étage `01`)
+
+
+      p. ex. `FD`, `U01`, `EG`, `03`, `01.Z`'
+    it: 'Codice piano univoco secondo la classificazione dei piani, una volta per edificio.
+
+
+      **Valori ammessi**
+
+      - `FD` o `GR` — fondazione ; modellare come piano distinto
+
+      - `U01`–`U99` — seminterrato ; numerazione crescente verso il basso (`U01` = 1° seminterrato direttamente sotto il PT)
+
+      - `00` o `EG` — pianterreno
+
+      - `01`–`99` — piano superiore ; numerazione crescente verso l''alto
+
+      - `Z00` o `{piano}.Z` — piano intermedio (ad es. `01.Z` sopra il piano `01`)
+
+
+      ad es. `FD`, `U01`, `EG`, `03`, `01.Z`'
+    en: 'Unique storey code according to storey classification, once per building.
+
+
+      **Allowed values**
+
+      - `FD` or `GR` — foundation; model as its own storey
+
+      - `U01`–`U99` — basement; number increases downward (`U01` = 1st basement directly below ground floor)
+
+      - `00` or `EG` — ground floor
+
+      - `01`–`99` — upper floor; number increases upward
+
+      - `Z00` or `{storey}.Z` — mezzanine (e.g. `01.Z` above storey `01`)
+
+
+      e.g. `FD`, `U01`, `EG`, `03`, `01.Z`'
+  datatype: IfcLabel
+  regex: ^(FD|GR|U[0-9]{2}|Z[0-9]{2}|EG|[0-9]{2}|[0-9]{2}\.Z)$
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  is_applicability: false
+  status: active
+  sort_order: 1

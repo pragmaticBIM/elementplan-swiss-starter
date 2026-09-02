@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-covering-ceiling
+code: COVERING-CEILING
+name:
+  de: PredefinedType Abhangdecke
+  fr: PredefinedType plafond suspendu
+  it: PredefinedType controsoffitto
+  en: PredefinedType suspended ceiling
+description:
+  de: IfcCovering PredefinedType für Abhangdecken.
+  fr: IfcCovering PredefinedType pour plafonds suspendus.
+  it: IfcCovering PredefinedType per controsoffitti.
+  en: IfcCovering PredefinedType for suspended ceilings.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - CEILING
+  fr:
+  - CEILING
+  it:
+  - CEILING
+  en:
+  - CEILING

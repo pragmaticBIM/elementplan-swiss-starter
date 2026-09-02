@@ -1,0 +1,203 @@
+id: pragmaticbim:workflow/qas-arch-mep-coordination-openings
+code: QAS-ARCH-MEP-OPENINGS
+sort_order: 74
+name:
+  de: Koordination Architektur–TGA in späteren Phasen (Aussparungen Tragwerk)
+  fr: Coordination architecture–CVC en phases avancées (réservations structure)
+  it: Coordinamento architettura–impianti in fasi avanzate (fori struttura)
+  en: Architecture–MEP coordination in later phases (structural openings)
+description:
+  de: 'Architektur und Gebäudetechnik in späteren Phasen koordinieren und Durchbrüche sowie Aussparungen verbindlich im Tragwerksmodell führen.
+
+
+    **Ausgangslage**
+
+    - Späte TGA-Trassen und Geräteplatzierungen erzeugen Durchbrüche, die im Tragwerk oft fehlen oder nur in 2D-Plänen stehen.
+
+    - Fehlende oder verspätete Aussparungen im Tragwerksmodell führen zu Kollisionen, Nachträgen und Bauverzögerungen.
+
+
+    **Ziel & Nutzen**
+
+    - Architektur-, TGA- und Tragwerksmodelle in der Projektierung auf Kollisionen und Durchführungen abstimmen.
+
+    - TGA-Forderungen als Aussparungsanforderungen modellieren und freigegebene Öffnungen verbindlich im Tragwerk dokumentieren.
+
+    - Öffnungen in nichttragenden Architekturbauteilen und Mauerwerk im Architekturmodell führen.
+
+
+    **Ablauf**
+
+    1. Architektur- und TGA-Modelle mit ausführungsnaher Geometrie für die Koordination bereitstellen.
+
+    2. Erforderliche Durchbrüche und Aussparungen im Tragwerk als Aussparungsanforderungen im TGA-Modell fordern; Öffnungen in Architekturbauteilen im Architekturmodell modellieren.
+
+    3. Freigegebene Öffnungen im Tragwerksmodell modellieren und im Gesamtmodell prüfen.
+
+
+    **Ergebnis**
+
+    - Abgestimmte ARCH–TGA-Koordination mit freigegebenen Aussparungen im Tragwerksmodell und klarer Rollenverteilung je Fachmodell.
+
+
+    **Lieferobjekte**
+
+    - Architektur-, TGA- und Tragwerksmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Aussparungsanforderungen als IfcBuildingElementProxy im TGA-Modell (PredefinedType=PROVISIONFORVOID; IFC2x3 ObjectType=PROVISIONFORVOID)
+
+    - Freigegebene Durchbrüche und Aussparungen als IfcOpeningElement im Tragwerksmodell (PredefinedType OPENING oder RECESS)
+
+    - Öffnungen in Architekturbauteilen als IfcOpeningElement im Architekturmodell (PredefinedType OPENING oder RECESS)
+
+    - Abgestimmte Name und Reference zwischen TGA-Aussparungsanforderung und Tragwerksöffnung
+
+    - Lage und Abmessungen der Öffnung für die Tragwerksfreigabe'
+  fr: 'Coordonner architecture et techniques du bâtiment en phases avancées et porter réservations et percements de façon contraignante dans le modèle structurel.
+
+
+    **Situation de départ**
+
+    - Les tracés CVC tardifs et placements d''appareils génèrent des percements souvent absents du modèle structurel ou seulement en plans 2D.
+
+    - Des réservations manquantes ou tardives dans le modèle structurel entraînent collisions, avenants et retards.
+
+
+    **Objectif et bénéfice**
+
+    - Harmoniser maquettes architecture, CVC et structure en projet d''exécution sur collisions et traversées.
+
+    - Modéliser les exigences CVC comme exigences de réservation et documenter les ouvertures validées de façon contraignante dans la structure.
+
+    - Porter les ouvertures dans les composants architecturaux non porteurs et la maçonnerie dans le modèle d''architecture.
+
+
+    **Déroulement**
+
+    1. Fournir maquettes architecture et CVC avec géométrie proche de l''exécution pour la coordination.
+
+    2. Demander les percements et réservations structurels comme exigences de réservation dans le modèle CVC ; modéliser les ouvertures dans les composants architecturaux dans le modèle d''architecture.
+
+    3. Modéliser les ouvertures validées dans le modèle structurel et les vérifier dans le modèle fédéré.
+
+
+    **Résultat**
+
+    - Coordination architecture–CVC alignée avec réservations validées dans le modèle structurel et répartition claire des rôles par maquette métier.
+
+
+    **Livrables**
+
+    - Maquettes architecture, CVC et structure avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Exigences de réservation comme IfcBuildingElementProxy dans le modèle CVC (PredefinedType=PROVISIONFORVOID; IFC2x3 ObjectType=PROVISIONFORVOID)
+
+    - Percements et réservations validés comme IfcOpeningElement dans le modèle structurel (PredefinedType OPENING ou RECESS)
+
+    - Ouvertures dans les composants architecturaux comme IfcOpeningElement dans le modèle d''architecture (PredefinedType OPENING ou RECESS)
+
+    - Name et Reference alignés entre exigence CVC et ouverture structurelle
+
+    - Position et dimensions de l''ouverture pour validation structurelle'
+  it: 'Coordinare architettura e impianti in fasi avanzate e gestire fori e riserve in modo vincolante nel modello strutturale.
+
+
+    **Situazione di partenza**
+
+    - Tracciati impianti tardivi e posizionamenti apparecchi generano fori spesso assenti dal modello strutturale o solo in piani 2D.
+
+    - Fori mancanti o tardivi nel modello strutturale causano collisioni, varianti e ritardi.
+
+
+    **Obiettivo e beneficio**
+
+    - Allineare modelli di architettura, impianti e struttura in progettazione esecutiva su collisioni e attraversamenti.
+
+    - Modellare le richieste impianti come richieste di riserva e documentare le aperture approvate in modo vincolante nella struttura.
+
+    - Gestire le aperture nei componenti architettonici non portanti e nella muratura nel modello di architettura.
+
+
+    **Svolgimento**
+
+    1. Fornire modelli di architettura e impianti con geometria prossima all''esecuzione per il coordinamento.
+
+    2. Richiedere fori e riserve strutturali come richieste di riserva nel modello impianti; modellare le aperture nei componenti architettonici nel modello di architettura.
+
+    3. Modellare le aperture approvate nel modello strutturale e verificarle nel modello federato.
+
+
+    **Risultato**
+
+    - Coordinamento architettura–impianti allineato con fori approvati nel modello strutturale e chiara ripartizione dei ruoli per modello disciplinare.
+
+
+    **Oggetti della fornitura**
+
+    - Modelli di architettura, impianti e struttura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Richieste di riserva come IfcBuildingElementProxy nel modello impianti (PredefinedType=PROVISIONFORVOID; IFC2x3 ObjectType=PROVISIONFORVOID)
+
+    - Fori e riserve approvati come IfcOpeningElement nel modello strutturale (PredefinedType OPENING o RECESS)
+
+    - Aperture nei componenti architettonici come IfcOpeningElement nel modello di architettura (PredefinedType OPENING o RECESS)
+
+    - Name e Reference allineati tra richiesta impianti e apertura strutturale
+
+    - Posizione e dimensioni dell''apertura per l''approvazione strutturale'
+  en: 'Coordinate architecture and MEP in later phases and carry openings and recesses bindingly in the structural model.
+
+
+    **Starting point**
+
+    - Late MEP routes and equipment placements create openings that are often missing in the structural model or only exist in 2D drawings.
+
+    - Missing or late openings in the structural model cause clashes, variations, and construction delay.
+
+
+    **Goal & benefit**
+
+    - Align architecture, MEP, and structural models during detailed design on clashes and penetrations.
+
+    - Model MEP requests as provisions for void and document approved openings bindingly in the structure.
+
+    - Carry openings in non-load-bearing architectural components and masonry in the architecture model.
+
+
+    **Process**
+
+    1. Provide architecture and MEP models with near-execution geometry for coordination.
+
+    2. Request structural openings and recesses as provisions for void in the MEP model; model openings in architectural hosts in the architecture model.
+
+    3. Model approved openings in the structural model and check them in the federated model.
+
+
+    **Outcome**
+
+    - Aligned ARCH–MEP coordination with approved openings in the structural model and a clear role split per discipline model.
+
+
+    **Deliverables**
+
+    - Architecture, MEP, and structural models with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Provisions for void as IfcBuildingElementProxy in the MEP model (PredefinedType=PROVISIONFORVOID; IFC2x3 ObjectType=PROVISIONFORVOID)
+
+    - Approved openings and recesses as IfcOpeningElement in the structural model (PredefinedType OPENING or RECESS)
+
+    - Openings in architectural components as IfcOpeningElement in the architecture model (PredefinedType OPENING or RECESS)
+
+    - Aligned Name and Reference between MEP provision for void and structural opening
+
+    - Location and dimensions of the opening for structural approval'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
+comment: Late-phase coordination. MEP requests voids as IfcBuildingElementProxy (PredefinedType=PROVISIONFORVOID; IFC2x3 ObjectType=PROVISIONFORVOID). Binding openings land as IfcOpeningElement in the structural
+  model after approval. Architecture openings only for ARCH-owned hosts (non-load-bearing walls, architectural masonry). Match Name/Reference across MEP request and structural opening.

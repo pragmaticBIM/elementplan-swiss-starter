@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-provision-for-void
+code: OBJ-PROV-VOID
+name:
+  de: ObjectType Aussparungsanforderung
+  fr: ObjectType exigence de réservation
+  it: ObjectType richiesta di riserva
+  en: ObjectType provision for void
+description:
+  de: ObjectType für IfcBuildingElementProxy als IFC2x3-Ersatz für PredefinedType=PROVISIONFORVOID.
+  fr: ObjectType pour IfcBuildingElementProxy comme substitut IFC2x3 de PredefinedType=PROVISIONFORVOID.
+  it: ObjectType per IfcBuildingElementProxy come sostituto IFC2x3 di PredefinedType=PROVISIONFORVOID.
+  en: ObjectType for IfcBuildingElementProxy as IFC2x3 substitute for PredefinedType=PROVISIONFORVOID.
+year: 2026
+norm_reference: IFC2x3
+status: active
+values:
+  de:
+  - PROVISIONFORVOID
+  fr:
+  - PROVISIONFORVOID
+  it:
+  - PROVISIONFORVOID
+  en:
+  - PROVISIONFORVOID

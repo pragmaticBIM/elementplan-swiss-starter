@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-building-element-proxy
+code: PROXY-TYPE
+name:
+  de: Proxy-Typ
+  fr: Type de proxy
+  it: Tipo di proxy
+  en: Proxy type
+description:
+  de: PredefinedType für IfcBuildingElementProxy in der Detailverweisübersicht.
+  fr: PredefinedType pour IfcBuildingElementProxy dans la vue d'ensemble des renvois de détail.
+  it: PredefinedType per IfcBuildingElementProxy nella panoramica dei riferimenti al dettaglio.
+  en: PredefinedType for IfcBuildingElementProxy in the detail reference overview.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - USERDEFINED
+  fr:
+  - USERDEFINED
+  it:
+  - USERDEFINED
+  en:
+  - USERDEFINED

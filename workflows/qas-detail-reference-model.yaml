@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/qas-detail-reference-model
+code: QAS-DET-REF
+sort_order: 76
+name:
+  de: Detailverweisübersicht
+  fr: Vue d'ensemble des renvois de détail
+  it: Panoramica dei riferimenti al dettaglio
+  en: Detail reference overview
+description:
+  de: 'Analog zu Detailverweisen in 2D-Schnitten zeigt die Detailverweisübersicht im 3D-Modell, wo welches Standarddetail gilt — für schnelle Lückenerkennung und bessere Ausführungsqualität.
+
+
+    **Ausgangslage**
+
+    - In 2D-Plänen werden Detailverweise in Schnitten geführt; im Modell fehlt oft die räumliche Zuordnung der Standarddetails.
+
+    - Ohne modellbasierte Gültigkeitszonen sind Planungslücken und fehlende Detailzuordnungen schwer zu erkennen.
+
+
+    **Ziel & Nutzen**
+
+    - Standarddetails räumlich im Modell verorten und deren Gültigkeitsbereich als Volumen abbilden.
+
+    - Planungslücken, Überlappungen und fehlende Detailzuordnungen früh sichtbar machen.
+
+
+    **Ablauf**
+
+    1. Standarddetailkatalog und Detailnummern festlegen.
+
+    2. Detailverweise als Volumenkörper in der Detailverweisübersicht platzieren und den Standarddetails zuordnen.
+
+    3. Modell prüfen und fehlende oder widersprüchliche Zuordnungen bereinigen.
+
+
+    **Ergebnis**
+
+    - Nachvollziehbare Detailverweisübersicht mit klarer Zuordnung von Standarddetails zu Bauteilzonen als Basis für Ausführungsplanung und Qualitätssicherung.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Detailverweise als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Detailverweis
+
+    - Name mit Detailbezeichnung'
+  fr: 'Comme les renvois de détail en coupe 2D, la vue d''ensemble des renvois de détail montre en 3D où chaque détail type s''applique — pour repérer rapidement les lacunes et améliorer la qualité d''exécution.
+
+
+    **Situation de départ**
+
+    - En 2D, les renvois de détail figurent dans les coupes ; dans le modèle, l''affectation spatiale des détails types manque souvent.
+
+    - Sans zones de validité modélisées, les lacunes de planification et les affectations manquantes restent difficiles à repérer.
+
+
+    **Objectif et bénéfice**
+
+    - Localiser les détails types dans le modèle et représenter leur zone de validité par un volume.
+
+    - Rendre visibles tôt les lacunes, chevauchements et affectations manquantes.
+
+
+    **Déroulement**
+
+    1. Définir le catalogue de détails types et les numéros de détail.
+
+    2. Placer les renvois de détail comme volumes dans la vue d''ensemble des renvois et les affecter aux détails types.
+
+    3. Contrôler le modèle et corriger les affectations manquantes ou contradictoires.
+
+
+    **Résultat**
+
+    - Vue d''ensemble des renvois de détail traçable avec affectation claire des détails types aux zones constructives, comme base pour le projet d''exécution et l''assurance qualité.
+
+
+    **Livrables**
+
+    - Modèle d''architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Renvois de détail comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Detailverweis
+
+    - Name avec désignation du détail'
+  it: 'Come i riferimenti al dettaglio nelle sezioni 2D, la panoramica dei riferimenti al dettaglio mostra in 3D dove vale ciascun dettaglio standard — per individuare rapidamente le lacune e migliorare
+    la qualità esecutiva.
+
+
+    **Situazione di partenza**
+
+    - Nei plani 2D i riferimenti al dettaglio sono indicati nelle sezioni; nel modello manca spesso l''assegnazione spaziale dei dettagli standard.
+
+    - Senza zone di validità modellate, lacune di pianificazione e assegnazioni mancanti sono difficili da individuare.
+
+
+    **Obiettivo e beneficio**
+
+    - Localizzare i dettagli standard nel modello e rappresentarne l''ambito di validità come volume.
+
+    - Rendere visibili precocemente lacune, sovrapposizioni e assegnazioni mancanti.
+
+
+    **Svolgimento**
+
+    1. Definire il catalogo dei dettagli standard e i numeri di dettaglio.
+
+    2. Posizionare i riferimenti al dettaglio come volumi nella panoramica dei riferimenti e associarli ai dettagli standard.
+
+    3. Verificare il modello e correggere assegnazioni mancanti o contraddittorie.
+
+
+    **Risultato**
+
+    - Panoramica dei riferimenti al dettaglio tracciabile con chiara assegnazione dei dettagli standard alle zone costruttive, come base per la progettazione esecutiva e l''assicurazione qualità.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Riferimenti al dettaglio come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Detailverweis
+
+    - Name con designazione del dettaglio'
+  en: 'Like detail references in 2D sections, the detail reference overview shows in 3D where each standard detail applies — to spot planning gaps quickly and improve execution quality.
+
+
+    **Starting point**
+
+    - In 2D plans, detail references are shown in sections; the model often lacks the spatial assignment of standard details.
+
+    - Without modelled validity zones, planning gaps and missing detail assignments are hard to detect.
+
+
+    **Goal & benefit**
+
+    - Locate standard details in the model and represent their validity area as a volume.
+
+    - Make gaps, overlaps, and missing assignments visible early.
+
+
+    **Process**
+
+    1. Define the standard detail catalogue and detail numbers.
+
+    2. Place detail references as volumes in the detail reference overview and assign them to standard details.
+
+    3. Check the model and resolve missing or conflicting assignments.
+
+
+    **Outcome**
+
+    - Traceable detail reference overview with clear assignment of standard details to building zones as the basis for detailed design and quality assurance.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Detail references as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Detailverweis
+
+    - Name with detail designation'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 3D detail reference volumes analogous to 2D section detail markers; ObjectType=Detailverweis on IfcBuildingElementProxy.

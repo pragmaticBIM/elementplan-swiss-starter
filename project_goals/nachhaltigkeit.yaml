@@ -7,10 +7,10 @@ name:
   it: Sostenibilità
   en: Sustainability
 description:
-  de: Steuert Energiebezug und Lebenszykluskosten über geordnete Ausprägungen.
-  fr: Contrôle le rapport énergétique et les coûts du cycle de vie via des niveaux ordonnés.
-  it: Controlla il riferimento energetico e i costi del ciclo di vita tramite livelli ordinati.
-  en: Controls energy reference and lifecycle costs via ordered levels.
+  de: Steuert Energie- und Lebenszyklusbewertung über geordnete Ausprägungen.
+  fr: Contrôle l'évaluation énergétique et du cycle de vie via des niveaux ordonnés.
+  it: Controlla la valutazione energetica e del ciclo di vita tramite livelli ordinati.
+  en: Controls energy and life-cycle assessment depth via ordered levels.
 picture_link: null
 status: active
 comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
@@ -40,13 +40,13 @@ levels:
     it: medio
     en: medium
   description:
-    de: Qualitätssicherung Energiebezugsfläche.
-    fr: Assurance qualité surface de référence énergétique.
-    it: Assicurazione qualità superficie di riferimento energetico.
-    en: QA of energy reference area.
+    de: Gebäudesimulation auf Basis von abstractBIM.
+    fr: Simulation de performance du bâtiment à partir d'abstractBIM.
+    it: Simulazione delle prestazioni dell'edificio da abstractBIM.
+    en: Building performance simulation based on abstractBIM.
   status: active
   activated_workflows:
-  - pragmaticbim:workflow/des-building-performance-simulation
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   comment: Delta at level mittel (sort_order 2); cumulative with gering.
 - id: pragmaticbim:project-goal-level/nachhaltigkeit-hoch
   code: SUS-03
@@ -57,10 +57,11 @@ levels:
     it: alto
     en: high
   description:
-    de: Lebenszykluskosten und Flächenkennwerte.
-    fr: Coûts du cycle de vie et indicateurs de surfaces.
-    it: Costi del ciclo di vita e indicatori di superficie.
-    en: Lifecycle costs and area key figures.
+    de: Lebenszyklusberechnung (Ökobilanz) aus dem Modell.
+    fr: Calcul du cycle de vie (ACV) à partir du modèle.
+    it: Calcolo del ciclo di vita (LCA) dal modello.
+    en: Full life-cycle calculation (LCA) from the model.
   status: active
-  activated_workflows: []
+  activated_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
   comment: Delta at level hoch (sort_order 3); cumulative with mittel and gering.

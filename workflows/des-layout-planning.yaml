@@ -1,0 +1,176 @@
+id: pragmaticbim:workflow/des-layout-planning
+code: DES-LAYOUT
+sort_order: 51
+name:
+  de: Layoutplanung für Entscheidungsfindung
+  fr: Planification de layout pour la prise de décision
+  it: Pianificazione layout per il processo decisionale
+  en: Layout planning for decision-making
+description:
+  de: 'Raumlayout früh im Modell führen und Varianten entscheiden — nur Räume, optional symbolische Türen.
+
+
+    **Ausgangslage**
+
+    - Layoutentscheidungen (Zuschnitt, Erschliessung, Belichtung) brauchen frühe 3D-Orientierung; vollständige Bauteilmodellierung ist in dieser Phase zu aufwändig.
+
+    - 2D-Pläne allein erschweren den Variantenvergleich und die Abstimmung mit Bauherrschaft und Nutzern.
+
+
+    **Ziel & Nutzen**
+
+    - Nur Raumvolumen modellieren und damit Grösse, Lage und Zuschnitt früh prüfen.
+
+    - Optional Türen symbolisch ergänzen — mit PredefinedType und ungefährer Lage.
+
+
+    **Ablauf**
+
+    1. Innenräume als Volumen mit Nutzung und Abmessungen bereitstellen; optional Aussenräume für Balkone und Terrassen.
+
+    2. Bei Bedarf Türen mit PredefinedType symbolisch setzen — ohne ausführungsreife Details.
+
+    3. Varianten vergleichen.
+
+
+    **Ergebnis**
+
+    - Abgestimmtes Raumlayout als Entscheidungsgrundlage — ohne Wand- oder Ausbau-Modellierung.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Innenräume als modellierte IfcSpace-Volumen (PredefinedType=INTERNAL); LongName mit Nutzung; NetFloorArea als Abmessungsangabe
+
+    - Optional: Aussenräume (IfcSpace, PredefinedType=EXTERNAL) für Balkone und Terrassen
+
+    - Optional früh: IfcDoor symbolisch — PredefinedType und ungefähre Lage'
+  fr: 'Porter le layout spatial tôt dans le modèle et trancher les variantes — uniquement les locaux, éventuellement des portes symboliques.
+
+
+    **Situation de départ**
+
+    - Les décisions de layout (découpage, desserte, éclairage) exigent une orientation 3D précoce ; la modélisation complète des éléments est trop lourde à ce stade.
+
+    - Les plans 2D seuls compliquent la comparaison de variantes et la coordination avec le maître d''ouvrage et les utilisateurs.
+
+
+    **Objectif et bénéfice**
+
+    - Modéliser uniquement les volumes de locaux pour vérifier tôt taille, position et découpage.
+
+    - Compléter éventuellement des portes de façon symbolique — avec PredefinedType et position approximative.
+
+
+    **Déroulement**
+
+    1. Fournir les locaux intérieurs comme volumes avec usage et dimensions ; éventuellement des espaces extérieurs pour balcons et terrasses.
+
+    2. Au besoin, placer des portes avec PredefinedType de façon symbolique — sans détail d''exécution.
+
+    3. Comparer les variantes.
+
+
+    **Résultat**
+
+    - Layout spatial coordonné comme base de décision — sans modélisation de murs ni de finitions.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Locaux intérieurs comme volumes IfcSpace modélisés (PredefinedType=INTERNAL) ; LongName avec usage ; NetFloorArea comme indication dimensionnelle
+
+    - Facultatif : espaces extérieurs (IfcSpace, PredefinedType=EXTERNAL) pour balcons et terrasses
+
+    - Facultatif tôt : IfcDoor symbolique — PredefinedType et position approximative'
+  it: 'Gestire il layout degli spazi presto nel modello e decidere le varianti — solo locali, eventualmente porte simboliche.
+
+
+    **Situazione di partenza**
+
+    - Le decisioni di layout (taglio, distribuzione, illuminazione) richiedono un orientamento 3D precoce; la modellazione completa degli elementi è troppo onerosa in questa fase.
+
+    - Le sole planimetrie 2D complicano il confronto delle varianti e il coordinamento con committenza e utenti.
+
+
+    **Obiettivo e beneficio**
+
+    - Modellare solo i volumi di locale per verificare presto dimensioni, posizione e taglio.
+
+    - Integrare eventualmente porte in modo simbolico — con PredefinedType e posizione approssimativa.
+
+
+    **Svolgimento**
+
+    1. Fornire i locali interni come volumi con uso e dimensioni; eventualmente spazi esterni per balconi e terrazze.
+
+    2. Se necessario, posizionare porte con PredefinedType in modo simbolico — senza dettaglio esecutivo.
+
+    3. Confrontare le varianti.
+
+
+    **Risultato**
+
+    - Layout degli spazi coordinato come base decisionale — senza modellazione di pareti o finiture.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Locali interni come volumi IfcSpace modellati (PredefinedType=INTERNAL); LongName con uso; NetFloorArea come indicazione dimensionale
+
+    - Facoltativo: spazi esterni (IfcSpace, PredefinedType=EXTERNAL) per balconi e terrazze
+
+    - Facoltativo all''inizio: IfcDoor simbolico — PredefinedType e posizione approssimativa'
+  en: 'Maintain the spatial layout early in the model and decide on options — spaces only, optionally symbolic doors.
+
+
+    **Starting point**
+
+    - Layout decisions (subdivision, circulation, daylight) need early 3D orientation; full element modelling is too heavy at this stage.
+
+    - 2D plans alone make option comparison and alignment with client and users harder.
+
+
+    **Goal & benefit**
+
+    - Model only space volumes to check size, location, and subdivision early.
+
+    - Optionally add doors symbolically — with PredefinedType and approximate location.
+
+
+    **Process**
+
+    1. Provide interior spaces as volumes with use and dimensions; optionally exterior spaces for balconies and terraces.
+
+    2. Where needed, place doors with PredefinedType symbolically — without execution detail.
+
+    3. Compare options.
+
+
+    **Outcome**
+
+    - Coordinated spatial layout as a decision basis — without wall or fit-out modelling.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Interior spaces as modelled IfcSpace volumes (PredefinedType=INTERNAL); LongName with use; NetFloorArea as size indication
+
+    - Optional: exterior spaces (IfcSpace, PredefinedType=EXTERNAL) for balconies and terraces
+
+    - Optional early: symbolic IfcDoor — PredefinedType and approximate location'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Spaces only — no walls or fit-out. Doors optional with PredefinedType only. Detailed door attributes (OverallWidth, OverallHeight, OperationType) — see des-door-planning.

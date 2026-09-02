@@ -1,0 +1,88 @@
+id: pragmaticbim:value/space-covering-floor-type
+code: SPACE-FLOOR-TYPE
+name:
+  de: Bodenbelagstyp Raum
+  fr: Type de revêtement de sol local
+  it: Tipo pavimentazione locale
+  en: Space floor covering type
+description:
+  de: Bodenbelagstyp für die frühe Planung im Innenraum.
+  fr: Type de revêtement de sol pour la planification précoce dans le local intérieur.
+  it: Tipo di pavimentazione per la pianificazione precoce nel locale interno.
+  en: Floor covering type for early planning in the interior space.
+year: 2026
+norm_reference: null
+status: active
+values:
+  de:
+  - nicht definiert
+  - Parkett
+  - Naturstein
+  - Plattenbelag
+  - Teppich
+  - Schmutzschleuse
+  - Linoleum
+  - PVC
+  - Beton
+  - Monobeton
+  - Zementüberzug
+  - Hartbeton
+  - fugenloser Belag
+  - Beton gestrichen
+  - Epoxidharzbelag
+  - Terrazzo
+  - Sportbelag
+  fr:
+  - nicht definiert
+  - Parkett
+  - Naturstein
+  - Plattenbelag
+  - Teppich
+  - Schmutzschleuse
+  - Linoleum
+  - PVC
+  - Beton
+  - Monobeton
+  - Zementüberzug
+  - Hartbeton
+  - fugenloser Belag
+  - Beton gestrichen
+  - Epoxidharzbelag
+  - Terrazzo
+  - Sportbelag
+  it:
+  - nicht definiert
+  - Parkett
+  - Naturstein
+  - Plattenbelag
+  - Teppich
+  - Schmutzschleuse
+  - Linoleum
+  - PVC
+  - Beton
+  - Monobeton
+  - Zementüberzug
+  - Hartbeton
+  - fugenloser Belag
+  - Beton gestrichen
+  - Epoxidharzbelag
+  - Terrazzo
+  - Sportbelag
+  en:
+  - nicht definiert
+  - Parkett
+  - Naturstein
+  - Plattenbelag
+  - Teppich
+  - Schmutzschleuse
+  - Linoleum
+  - PVC
+  - Beton
+  - Monobeton
+  - Zementüberzug
+  - Hartbeton
+  - fugenloser Belag
+  - Beton gestrichen
+  - Epoxidharzbelag
+  - Terrazzo
+  - Sportbelag

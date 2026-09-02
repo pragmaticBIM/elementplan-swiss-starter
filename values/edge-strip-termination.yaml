@@ -1,0 +1,44 @@
+id: pragmaticbim:value/edge-strip-termination
+code: EDGE-STRIP-TERM
+name:
+  de: Randabschluss
+  fr: Terminaison de rive
+  it: Terminazione di bordo
+  en: Edge termination
+description:
+  de: Zulässige Ausführungen für den Schalungsrandabschluss von Randstreifen (NPK 211.5).
+  fr: Exécutions admises pour la terminaison de rive de coffrage des bandes de rive (NPK 211.5).
+  it: Esecuzioni ammesse per la terminazione di bordo di cassero delle fasce di bordo (NPK 211.5).
+  en: Allowed executions for the formwork edge termination of edge strips (NPK 211.5).
+year: 2026
+norm_reference: null
+status: active
+values:
+  de:
+  - Einreihig
+  - Zweireihig
+  - Stellplatte
+  - Stellplatte mit Wasserstein
+  - Randstein
+  - Schalenstein
+  fr:
+  - Einreihig
+  - Zweireihig
+  - Stellplatte
+  - Stellplatte mit Wasserstein
+  - Randstein
+  - Schalenstein
+  it:
+  - Einreihig
+  - Zweireihig
+  - Stellplatte
+  - Stellplatte mit Wasserstein
+  - Randstein
+  - Schalenstein
+  en:
+  - Einreihig
+  - Zweireihig
+  - Stellplatte
+  - Stellplatte mit Wasserstein
+  - Randstein
+  - Schalenstein

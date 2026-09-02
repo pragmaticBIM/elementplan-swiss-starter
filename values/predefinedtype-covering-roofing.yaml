@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-covering-roofing
+code: COVERING-ROOFING
+name:
+  de: PredefinedType Gefälledämmung
+  fr: PredefinedType isolation à pente
+  it: PredefinedType isolamento a pendenza
+  en: PredefinedType tapered insulation
+description:
+  de: IfcCovering PredefinedType für Gefälledämmung auf Flachdach und Balkon.
+  fr: IfcCovering PredefinedType pour isolation à pente sur toiture plate et balcon.
+  it: IfcCovering PredefinedType per isolamento a pendenza su tetto piano e balcone.
+  en: IfcCovering PredefinedType for tapered insulation on flat roof and balcony.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - ROOFING
+  fr:
+  - ROOFING
+  it:
+  - ROOFING
+  en:
+  - ROOFING

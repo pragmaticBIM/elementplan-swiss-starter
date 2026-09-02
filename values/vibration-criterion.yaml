@@ -1,0 +1,40 @@
+id: pragmaticbim:value/vibration-criterion
+code: VC
+name:
+  de: Schwingungskriterium VC
+  fr: Critère vibratoire VC
+  it: Criterio di vibrazione VC
+  en: Vibration criterion VC
+description:
+  de: Vibration Criterion (VC) nach IEST für empfindliche Nutzungen — vereinbarte Schwingungsanforderung in der Nutzungsvereinbarung.
+  fr: Vibration Criterion (VC) selon IEST pour usages sensibles — exigence vibratoire convenue dans la convention d'utilisation.
+  it: Vibration Criterion (VC) secondo IEST per usi sensibili — requisito di vibrazione concordato nella convenzione d'uso.
+  en: Vibration Criterion (VC) per IEST for sensitive uses — agreed vibration requirement in the usage agreement.
+year: 2026
+norm_reference: IEST
+status: active
+values:
+  de:
+  - VC-A
+  - VC-B
+  - VC-C
+  - VC-D
+  - VC-E
+  fr:
+  - VC-A
+  - VC-B
+  - VC-C
+  - VC-D
+  - VC-E
+  it:
+  - VC-A
+  - VC-B
+  - VC-C
+  - VC-D
+  - VC-E
+  en:
+  - VC-A
+  - VC-B
+  - VC-C
+  - VC-D
+  - VC-E

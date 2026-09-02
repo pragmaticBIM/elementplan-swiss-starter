@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-    - 'FALSE'
+  - 'FALSE'
   fr:
-    - 'FALSE'
+  - 'FALSE'
   it:
-    - 'FALSE'
+  - 'FALSE'
   en:
-    - 'FALSE'
+  - 'FALSE'

@@ -1,0 +1,56 @@
+id: pragmaticbim:value/fire-rating
+code: FIRE-RATING
+name:
+  de: Feuerwiderstand
+  fr: Résistance au feu
+  it: Resistenza al fuoco
+  en: Fire rating
+description:
+  de: Typische Feuerwiderstandsklassen gemäss VKF-Brandschutzvorschriften.
+  fr: Classes de résistance au feu typiques selon les prescriptions AEAI.
+  it: Classi tipiche di resistenza al fuoco secondo le prescrizioni AICAA.
+  en: Typical fire resistance classes according to VKF fire protection regulations.
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - R 30
+  - R 60
+  - R 90
+  - EI 30
+  - EI 60
+  - EI 90
+  - REI 30
+  - REI 60
+  - REI 90
+  fr:
+  - R 30
+  - R 60
+  - R 90
+  - EI 30
+  - EI 60
+  - EI 90
+  - REI 30
+  - REI 60
+  - REI 90
+  it:
+  - R 30
+  - R 60
+  - R 90
+  - EI 30
+  - EI 60
+  - EI 90
+  - REI 30
+  - REI 60
+  - REI 90
+  en:
+  - R 30
+  - R 60
+  - R 90
+  - EI 30
+  - EI 60
+  - EI 90
+  - REI 30
+  - REI 60
+  - REI 90

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-geographic-element-terrain
+code: GEO-TERRAIN
+name:
+  de: Gelände-Typ
+  fr: Type de terrain
+  it: Tipo di terreno
+  en: Terrain type
+description:
+  de: PredefinedType für IfcGeographicElement als Geländeoberfläche.
+  fr: PredefinedType pour IfcGeographicElement comme surface de terrain.
+  it: PredefinedType per IfcGeographicElement come superficie del terreno.
+  en: PredefinedType for IfcGeographicElement as terrain surface.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - TERRAIN
+  fr:
+  - TERRAIN
+  it:
+  - TERRAIN
+  en:
+  - TERRAIN

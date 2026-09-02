@@ -1,0 +1,64 @@
+id: pragmaticbim:value/predefinedtype-sensor
+code: SENSOR
+name:
+  de: PredefinedType IfcSensor
+  fr: PredefinedType IfcSensor
+  it: PredefinedType IfcSensor
+  en: PredefinedType IfcSensor
+description:
+  de: Ifc PredefinedType für IfcSensor.
+  fr: PredefinedType IFC pour IfcSensor.
+  it: PredefinedType IFC per IfcSensor.
+  en: IFC PredefinedType for IfcSensor.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - TEMPERATURESENSOR
+  - HUMIDITYSENSOR
+  - CO2SENSOR
+  - COSENSOR
+  - SMOKESENSOR
+  - FIRESENSOR
+  - MOVEMENTSENSOR
+  - PRESSURESENSOR
+  - FLOWSENSOR
+  - CONTACTSENSOR
+  - USERDEFINED
+  fr:
+  - TEMPERATURESENSOR
+  - HUMIDITYSENSOR
+  - CO2SENSOR
+  - COSENSOR
+  - SMOKESENSOR
+  - FIRESENSOR
+  - MOVEMENTSENSOR
+  - PRESSURESENSOR
+  - FLOWSENSOR
+  - CONTACTSENSOR
+  - USERDEFINED
+  it:
+  - TEMPERATURESENSOR
+  - HUMIDITYSENSOR
+  - CO2SENSOR
+  - COSENSOR
+  - SMOKESENSOR
+  - FIRESENSOR
+  - MOVEMENTSENSOR
+  - PRESSURESENSOR
+  - FLOWSENSOR
+  - CONTACTSENSOR
+  - USERDEFINED
+  en:
+  - TEMPERATURESENSOR
+  - HUMIDITYSENSOR
+  - CO2SENSOR
+  - COSENSOR
+  - SMOKESENSOR
+  - FIRESENSOR
+  - MOVEMENTSENSOR
+  - PRESSURESENSOR
+  - FLOWSENSOR
+  - CONTACTSENSOR
+  - USERDEFINED

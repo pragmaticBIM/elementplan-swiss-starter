@@ -1,0 +1,231 @@
+id: pragmaticbim:element/survey-surface-geometry
+code: SURVEY-SURFACE
+sort_order: 6
+status: active
+name:
+  de: Oberflächengeometrie
+  fr: Géométrie de surface
+  it: Geometria di superficie
+  en: Surface geometry
+definition:
+  de: 'Geländeoberfläche als modellierte Oberflächengeometrie — dokumentiertes Geländemodell im gemeinsamen Bezugsrahmen.
+
+
+    **Beschreibung**
+
+    - Aufgenommene Geländeform mit Lage und Höhe im Bezugsrahmen LV95.
+
+    - Grundlage für Abgleich mit Punktwolke und für Planungsentscheide zu Abbruch, Neubau oder Umbau.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als Oberflächengeometrie gemäss Geometerlieferung modellieren; dem Planungsperimeter zuweisen.
+
+    - Lage und Höhe in LV95; mit der Punktwolke abstimmen.'
+  fr: 'Surface de terrain modélisée comme géométrie de surface — modèle de terrain documenté dans le référentiel commun.
+
+
+    **Description**
+
+    - Forme du terrain relevée avec position et altitude dans le référentiel LV95.
+
+    - Base pour le calage sur le nuage de points et les décisions de démolition, reconstruction ou transformation.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme géométrie de surface selon la livraison du géomètre ; rattacher au périmètre de planification.
+
+    - Position et altitude en LV95 ; caler sur le nuage de points.'
+  it: 'Superficie del terreno modellata come geometria di superficie — modello del terreno documentato nel riferimento comune.
+
+
+    **Descrizione**
+
+    - Forma del terreno rilevata con posizione e quota nel sistema di riferimento LV95.
+
+    - Base per l''allineamento alla nuvola di punti e per le decisioni su demolizione, ricostruzione o trasformazione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come geometria di superficie secondo la consegna del geometra; assegnare al perimetro di pianificazione.
+
+    - Posizione e quota in LV95; allineare alla nuvola di punti.'
+  en: 'Terrain surface as modelled surface geometry — documented terrain model in the shared reference frame.
+
+
+    **Description**
+
+    - Surveyed terrain form with position and height in the LV95 reference frame.
+
+    - Basis for point-cloud alignment and decisions on demolition, new build, or conversion.
+
+
+    **Modelling guidelines**
+
+    - Model as surface geometry according to the surveyor delivery; assign to the planning perimeter.
+
+    - Position and height in LV95; align with the point cloud.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcGeographicElement
+entity_ifc4_3: IfcGeographicElement
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcGeographicElement AND PredefinedType=TERRAIN) OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=TERRAIN) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Gelände)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet das Element als Geländeoberfläche.
+
+
+      **Zulässige Werte**
+
+      - `TERRAIN` — Gelände / Terrain'
+    fr: 'Identifie l''élément comme surface de terrain.
+
+
+      **Valeurs admises**
+
+      - `TERRAIN` — terrain'
+    it: 'Identifica l''elemento come superficie del terreno.
+
+
+      **Valori ammessi**
+
+      - `TERRAIN` — terreno'
+    en: 'Marks the element as a terrain surface.
+
+
+      **Allowed values**
+
+      - `TERRAIN` — terrain'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-geographic-element-terrain
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-site-survey
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements als Geländeoberfläche.
+
+
+      **Zulässige Werte**
+
+      - `Gelände` — modellierte Geländeoberfläche im Bezugsmodell
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Nature de l''élément proxy comme surface de terrain.
+
+
+      **Valeurs admises**
+
+      - `Gelände` — surface de terrain modélisée dans le modèle de référence
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Tipo dell''elemento proxy come superficie del terreno.
+
+
+      **Valori ammessi**
+
+      - `Gelände` — superficie del terreno modellata nel modello di riferimento
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Kind of proxy element as terrain surface.
+
+
+      **Allowed values**
+
+      - `Gelände` — modelled terrain surface in the reference model
+
+
+      **Note**
+
+      - IFC2x3 substitute for PredefinedType.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-survey-terrain
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-site-survey
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Geländeoberfläche gemäss Vermessung oder Projekt.
+    fr: Désignation de la surface de terrain selon le levé ou le projet.
+    it: Designazione della superficie del terreno secondo il rilievo o il progetto.
+    en: Terrain surface designation according to the survey or project.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-site-survey
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: false
+  status: active
+  sort_order: 3

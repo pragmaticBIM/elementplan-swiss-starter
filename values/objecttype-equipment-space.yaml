@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-equipment-space
+code: OBJ-EQUIP-SPACE
+name:
+  de: ObjectType Erzeugerplatz
+  fr: ObjectType espace générateurs
+  it: ObjectType spazio generatori
+  en: ObjectType equipment space
+description:
+  de: ObjectType für IfcBuildingElementProxy als schematischer Erzeuger-/Zentralenplatzbedarf.
+  fr: ObjectType pour IfcBuildingElementProxy comme besoin d'espace schématique pour générateurs/centrales.
+  it: ObjectType per IfcBuildingElementProxy come fabbisogno schematico di spazio per generatori/centrali.
+  en: ObjectType for IfcBuildingElementProxy as schematic plant/equipment space requirement.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Erzeugerplatz
+  fr:
+  - Erzeugerplatz
+  it:
+  - Erzeugerplatz
+  en:
+  - Erzeugerplatz

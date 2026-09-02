@@ -1,0 +1,176 @@
+id: pragmaticbim:workflow/des-parking-verification
+code: DES-PARKING
+sort_order: 53
+name:
+  de: Parkplatznachweis mittels Modell
+  fr: Justificatif de places de stationnement via le modèle
+  it: Verifica posti auto tramite modello
+  en: Parking verification from the model
+description:
+  de: 'Parkplätze ab Bauprojekt als eigene Räume modellieren und Anzahl sowie Flächen direkt aus dem Modell auswerten.
+
+
+    **Ausgangslage**
+
+    - Parkplatznachweise und Kennwerte brauchen eine nachvollziehbare Zählung und Flächenangabe.
+
+    - Manuelle Listen oder 2D-Auszüge sind fehleranfällig und schwer mit dem Modell abzugleichen.
+
+
+    **Ziel & Nutzen**
+
+    - Jeden Parkplatz als eigenen Raum führen und eindeutig nummerieren.
+
+    - Anzahl und Fläche der Parkplätze aus dem Modell ableiten.
+
+
+    **Ablauf**
+
+    1. Ab Bauprojekt jeden Parkplatz als eigenen Raum mit Nummer und Fläche modellieren.
+
+    2. Parkplätze im Modell zählen und Flächen auswerten.
+
+    3. Nachweis und Kennwerte aus dem Auszug ableiten.
+
+
+    **Ergebnis**
+
+    - Nachvollziehbarer Parkplatznachweis aus dem Modell — Anzahl und Fläche je Parkplatz.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Parkplätze als modellierte IfcSpace-Volumen (PredefinedType=PARKING)
+
+    - Name mit eindeutiger Parkplatznummer (z. B. P0016)
+
+    - NetFloorArea je Parkplatz'
+  fr: 'Modéliser les places de stationnement comme locaux distincts dès le projet de construction et en extraire nombre et surfaces directement du modèle.
+
+
+    **Situation de départ**
+
+    - Les justificatifs de places et les indicateurs exigent un dénombrement et des surfaces traçables.
+
+    - Les listes manuelles ou extractions 2D sont sources d''erreurs et difficiles à aligner avec le modèle.
+
+
+    **Objectif et bénéfice**
+
+    - Porter chaque place comme local distinct et la numéroter de façon unique.
+
+    - Dériver nombre et surface des places à partir du modèle.
+
+
+    **Déroulement**
+
+    1. Dès le projet de construction, modéliser chaque place comme local distinct avec numéro et surface.
+
+    2. Compter les places dans le modèle et évaluer les surfaces.
+
+    3. Dériver le justificatif et les indicateurs de l''extraction.
+
+
+    **Résultat**
+
+    - Justificatif de places traçable à partir du modèle — nombre et surface par place.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Places comme volumes IfcSpace modélisés (PredefinedType=PARKING)
+
+    - Name avec numéro de place unique (p. ex. P0016)
+
+    - NetFloorArea par place'
+  it: 'Modellare i posti auto come locali distinti dal progetto di costruzione ed estrarre numero e superfici direttamente dal modello.
+
+
+    **Situazione di partenza**
+
+    - Le verifiche dei posti e gli indicatori richiedono un conteggio e superfici tracciabili.
+
+    - Elenchi manuali o estratti 2D sono soggetti a errori e difficili da allineare al modello.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire ogni posto come locale distinto e numerarlo in modo univoco.
+
+    - Derivare numero e superficie dei posti dal modello.
+
+
+    **Svolgimento**
+
+    1. Dal progetto di costruzione modellare ogni posto come locale distinto con numero e superficie.
+
+    2. Contare i posti nel modello e valutare le superfici.
+
+    3. Derivare la verifica e gli indicatori dall''estratto.
+
+
+    **Risultato**
+
+    - Verifica dei posti tracciabile dal modello — numero e superficie per posto.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Posti auto come volumi IfcSpace modellati (PredefinedType=PARKING)
+
+    - Name con numero di posto univoco (p. es. P0016)
+
+    - NetFloorArea per posto'
+  en: 'Model parking spaces as dedicated spaces from building design onward and evaluate count and areas directly from the model.
+
+
+    **Starting point**
+
+    - Parking verification and metrics need a traceable count and area statement.
+
+    - Manual lists or 2D take-offs are error-prone and hard to align with the model.
+
+
+    **Goal & benefit**
+
+    - Carry each parking bay as its own space with a unique number.
+
+    - Derive parking count and area from the model.
+
+
+    **Process**
+
+    1. From building design onward, model each parking bay as its own space with number and area.
+
+    2. Count parking spaces in the model and evaluate areas.
+
+    3. Derive the verification and metrics from the take-off.
+
+
+    **Outcome**
+
+    - Traceable parking verification from the model — count and area per bay.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Parking spaces as modelled IfcSpace volumes (PredefinedType=PARKING)
+
+    - Name with unique parking number (e.g. P0016)
+
+    - NetFloorArea per parking space'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: From SIA phase 32 (Bauprojekt) onward. One IfcSpace per parking bay; Name = P####; PredefinedType=PARKING; NetFloorArea for area take-off.

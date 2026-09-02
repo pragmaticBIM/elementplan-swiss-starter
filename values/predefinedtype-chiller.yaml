@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-chiller
+code: CHILLER
+name:
+  de: PredefinedType IfcChiller
+  fr: PredefinedType IfcChiller
+  it: PredefinedType IfcChiller
+  en: PredefinedType IfcChiller
+description:
+  de: Ifc PredefinedType für IfcChiller.
+  fr: PredefinedType IFC pour IfcChiller.
+  it: PredefinedType IFC per IfcChiller.
+  en: IFC PredefinedType for IfcChiller.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - AIRCOOLED
+  - WATERCOOLED
+  - HEATRECOVERY
+  fr:
+  - AIRCOOLED
+  - WATERCOOLED
+  - HEATRECOVERY
+  it:
+  - AIRCOOLED
+  - WATERCOOLED
+  - HEATRECOVERY
+  en:
+  - AIRCOOLED
+  - WATERCOOLED
+  - HEATRECOVERY

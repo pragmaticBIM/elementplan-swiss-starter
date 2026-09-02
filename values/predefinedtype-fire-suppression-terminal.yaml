@@ -1,0 +1,40 @@
+id: pragmaticbim:value/predefinedtype-fire-suppression-terminal
+code: FIRE_SUPPRESSION_TER
+name:
+  de: PredefinedType IfcFireSuppressionTerminal
+  fr: PredefinedType IfcFireSuppressionTerminal
+  it: PredefinedType IfcFireSuppressionTerminal
+  en: PredefinedType IfcFireSuppressionTerminal
+description:
+  de: Ifc PredefinedType für IfcFireSuppressionTerminal.
+  fr: PredefinedType IFC pour IfcFireSuppressionTerminal.
+  it: PredefinedType IFC per IfcFireSuppressionTerminal.
+  en: IFC PredefinedType for IfcFireSuppressionTerminal.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - HOSEREEL
+  - SPRINKLER
+  - SPRINKLERDEFLECTOR
+  - FIREHYDRANT
+  - BREECHINGINLET
+  fr:
+  - HOSEREEL
+  - SPRINKLER
+  - SPRINKLERDEFLECTOR
+  - FIREHYDRANT
+  - BREECHINGINLET
+  it:
+  - HOSEREEL
+  - SPRINKLER
+  - SPRINKLERDEFLECTOR
+  - FIREHYDRANT
+  - BREECHINGINLET
+  en:
+  - HOSEREEL
+  - SPRINKLER
+  - SPRINKLERDEFLECTOR
+  - FIREHYDRANT
+  - BREECHINGINLET

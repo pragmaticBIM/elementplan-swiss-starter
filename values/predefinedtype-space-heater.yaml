@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-space-heater
+code: SPACE_HEATER
+name:
+  de: PredefinedType IfcSpaceHeater
+  fr: PredefinedType IfcSpaceHeater
+  it: PredefinedType IfcSpaceHeater
+  en: PredefinedType IfcSpaceHeater
+description:
+  de: Ifc PredefinedType für IfcSpaceHeater.
+  fr: PredefinedType IFC pour IfcSpaceHeater.
+  it: PredefinedType IFC per IfcSpaceHeater.
+  en: IFC PredefinedType for IfcSpaceHeater.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - RADIATOR
+  - CONVECTOR
+  fr:
+  - RADIATOR
+  - CONVECTOR
+  it:
+  - RADIATOR
+  - CONVECTOR
+  en:
+  - RADIATOR
+  - CONVECTOR

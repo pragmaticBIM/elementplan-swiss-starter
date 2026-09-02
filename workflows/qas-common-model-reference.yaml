@@ -1,0 +1,196 @@
+id: pragmaticbim:workflow/qas-common-model-reference
+code: QAS-MODEL-REF
+sort_order: 77
+name:
+  de: Gemeinsames Bezugsmodell für Planung und Ausführung
+  fr: Modèle de référence commun pour planification et réalisation
+  it: Modello di riferimento comune per progettazione e costruzione
+  en: Common model reference for planning and construction
+description:
+  de: 'Ein gemeinsames, georeferenziertes Bezugsmodell von Anfang an festlegen — die meisten Koordinationsfehler entstehen durch nicht ausgerichtete Modelle; Nachkorrekturen sind aufwendig und fehleranfällig.
+
+
+    **Ausgangslage**
+
+    - Fachmodelle starten oft mit unterschiedlichen Nullpunkten, Drehungen oder Höhenbezügen.
+
+    - Die meisten Koordinationsfehler entstehen, weil Modelle nicht auf denselben räumlichen Bezug ausgerichtet sind.
+
+    - Späteres Verschieben und Nachführen aller Modelle ist kompliziert, teuer und riskiert Inkonsistenzen bis in die Ausführung.
+
+
+    **Ziel & Nutzen**
+
+    - Verbindlichen räumlichen Bezug für Planung und Ausführung einmal früh festlegen und für alle Disziplinen nutzen.
+
+    - Georeferenzierung in LV95 sicherstellen; idealerweise liefert ein Geometer das Bezugsmodell.
+
+    - Einheitliche Bezeichnung der räumlichen Struktur (Projekt, Planungsperimeter, Gebäude, Geschoss) und Projektphase als gemeinsame Modellgrundlage.
+
+
+    **Ablauf**
+
+    1. Geometer beauftragen und mindestens drei Bezugspunkte im Planungsperimeter festlegen.
+
+    2. Bezugsmodell georeferenziert in LV95 liefern und als verbindliche Grundlage freigeben.
+
+    3. Alle Fachmodelle darauf ausrichten und die Ausrichtung vor Koordinationsprüfungen verifizieren.
+
+
+    **Ergebnis**
+
+    - Gemeinsames Bezugsmodell mit benannter räumlicher Struktur und mindestens drei LV95-Bezugspunkten als stabile Basis für Planung, Koordination und Ausführung.
+
+
+    **Lieferobjekte**
+
+    - Bezugsmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey, georeferenziert in LV95 (EPSG:2056)
+
+    - Name für Projekt, Planungsperimeter, Gebäude und Geschoss; Phase am Projekt gemäss SIA 112
+
+    - Mindestens drei Bezugspunkte als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Bezugspunkt
+
+    - Name und Reference je Bezugspunkt gemäss Vermessung; Lage und Höhe in LV95'
+  fr: 'Fixer dès le début un modèle de référence commun géoréférencé — la plupart des erreurs de coordination viennent de maquettes non alignées ; les corrections ultérieures sont lourdes et sujettes à
+    erreur.
+
+
+    **Situation de départ**
+
+    - Les maquettes métiers démarrent souvent avec des origines, rotations ou références altimétriques différentes.
+
+    - La plupart des erreurs de coordination viennent du fait que les modèles ne partagent pas le même référentiel spatial.
+
+    - Déplacer et mettre à jour tous les modèles plus tard est compliqué, coûteux et risque des incohérences jusqu''à la réalisation.
+
+
+    **Objectif et bénéfice**
+
+    - Établir tôt un référentiel spatial contraignant pour la planification et la réalisation, utilisable par toutes les disciplines.
+
+    - Assurer le géoréférencement en LV95 ; idéalement, un géomètre livre le modèle de référence.
+
+    - Désignation homogène de la structure spatiale (projet, site, bâtiment, étage) et phase de projet comme base commune du modèle.
+
+
+    **Déroulement**
+
+    1. Mandater un géomètre et définir au moins trois points de référence dans le périmètre de planification.
+
+    2. Livrer le modèle de référence géoréférencé en LV95 et le valider comme base contraignante.
+
+    3. Aligner toutes les maquettes métiers dessus et vérifier l''alignement avant les contrôles de coordination.
+
+
+    **Résultat**
+
+    - Modèle de référence commun avec structure spatiale nommée et au moins trois points de référence LV95 comme base stable pour planification, coordination et réalisation.
+
+
+    **Livrables**
+
+    - Modèle de référence avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey, géoréférencé en LV95 (EPSG:2056)
+
+    - Name pour projet, site, bâtiment et étage ; Phase du projet selon SIA 112
+
+    - Au moins trois points de référence comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Bezugspunkt
+
+    - Name et Reference par point selon le levé ; position et altitude en LV95'
+  it: 'Stabilire fin dall''inizio un modello di riferimento comune georeferenziato — la maggior parte degli errori di coordinamento nasce da modelli non allineati; le correzioni successive sono onerose
+    e soggette a errori.
+
+
+    **Situazione di partenza**
+
+    - I modelli disciplinari partono spesso con origini, rotazioni o riferimenti altimetrici diversi.
+
+    - La maggior parte degli errori di coordinamento nasce perché i modelli non condividono lo stesso riferimento spaziale.
+
+    - Spostare e aggiornare tutti i modelli in seguito è complicato, costoso e rischia incoerenze fino alla costruzione.
+
+
+    **Obiettivo e beneficio**
+
+    - Definire presto un riferimento spaziale vincolante per progettazione e costruzione, utilizzabile da tutte le discipline.
+
+    - Garantire la georeferenziazione in LV95; idealmente un geometra consegna il modello di riferimento.
+
+    - Denominazione uniforme della struttura spaziale (progetto, sito, edificio, piano) e fase di progetto come base comune del modello.
+
+
+    **Svolgimento**
+
+    1. Incaricare un geometra e definire almeno tre punti di riferimento nel perimetro di pianificazione.
+
+    2. Consegnare il modello di riferimento georeferenziato in LV95 e convalidarlo come base vincolante.
+
+    3. Allineare tutti i modelli disciplinari e verificare l''allineamento prima dei controlli di coordinamento.
+
+
+    **Risultato**
+
+    - Modello di riferimento comune con struttura spaziale denominata e almeno tre punti di riferimento LV95 come base stabile per progettazione, coordinamento e costruzione.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di riferimento con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey, georeferenziato in LV95 (EPSG:2056)
+
+    - Name per progetto, sito, edificio e piano; Phase del progetto secondo SIA 112
+
+    - Almeno tre punti di riferimento come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Bezugspunkt
+
+    - Name e Reference per punto secondo il rilievo; posizione e quota in LV95'
+  en: 'Establish a shared, georeferenced model reference from the start — most coordination mistakes happen because models are not aligned; fixing later is complicated and error-prone.
+
+
+    **Starting point**
+
+    - Discipline models often start with different origins, rotations, or height references.
+
+    - Most coordination mistakes happen because models do not share the same spatial reference.
+
+    - Shifting and updating all models later is complicated, costly, and risks inconsistencies through to construction.
+
+
+    **Goal & benefit**
+
+    - Set one binding spatial reference early for planning and construction, used by all disciplines.
+
+    - Ensure georeferencing in LV95; ideally a licensed surveyor (Geometer) delivers the reference model.
+
+    - Consistent naming of the spatial structure (project, site, building, storey) and project phase as the shared model baseline.
+
+
+    **Process**
+
+    1. Contract a surveyor and define at least three reference points within the planning perimeter.
+
+    2. Deliver the reference model georeferenced in LV95 and approve it as the binding basis.
+
+    3. Align all discipline models to it and verify alignment before coordination checks.
+
+
+    **Outcome**
+
+    - Common model reference with named spatial structure and at least three LV95 reference points as a stable basis for planning, coordination, and construction.
+
+
+    **Deliverables**
+
+    - Reference model with IfcProject, IfcSite, IfcBuilding and IfcBuildingStorey, georeferenced in LV95 (EPSG:2056)
+
+    - Name for project, site, building and storey; Phase on the project according to SIA 112
+
+    - At least three reference points as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Bezugspunkt
+
+    - Name and Reference per point according to the survey; position and height in LV95'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
+comment: Baseline for all projects — spatial structure names/phase plus LV95 reference. Prefer surveyor delivery; minimum three LV95 control points. ObjectType=Bezugspunkt on IfcBuildingElementProxy.

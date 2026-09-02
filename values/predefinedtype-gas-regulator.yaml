@@ -1,0 +1,36 @@
+id: pragmaticbim:value/predefinedtype-gas-regulator
+code: GAS_REGULATOR
+name:
+  de: PredefinedType IfcFlowMeter
+  fr: PredefinedType IfcFlowMeter
+  it: PredefinedType IfcFlowMeter
+  en: PredefinedType IfcFlowMeter
+description:
+  de: Ifc PredefinedType für IfcFlowMeter.
+  fr: PredefinedType IFC pour IfcFlowMeter.
+  it: PredefinedType IFC per IfcFlowMeter.
+  en: IFC PredefinedType for IfcFlowMeter.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - GASMETER
+  - ENERGYMETER
+  - WATERMETER
+  - OILMETER
+  fr:
+  - GASMETER
+  - ENERGYMETER
+  - WATERMETER
+  - OILMETER
+  it:
+  - GASMETER
+  - ENERGYMETER
+  - WATERMETER
+  - OILMETER
+  en:
+  - GASMETER
+  - ENERGYMETER
+  - WATERMETER
+  - OILMETER

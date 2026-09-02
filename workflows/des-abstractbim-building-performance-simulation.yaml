@@ -1,0 +1,185 @@
+id: pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+code: DES-ABSTRACTBIM-BPS
+sort_order: 43
+name:
+  de: Gebäudesimulation auf Basis von abstractBIM
+  fr: Simulation de performance du bâtiment à partir d'abstractBIM
+  it: Simulazione delle prestazioni dell'edificio da abstractBIM
+  en: Building performance simulation based on abstractBIM
+description:
+  de: 'Gebäudesimulation vorbereiten, ohne das Architekturmodell manuell für Simulations-Tools nachzubauen.
+
+
+    **Ausgangslage**
+
+    - Architekturmodelle sind für energetische und raumklimatische Simulation oft zu detailliert oder widersprüchlich.
+
+    - Die manuelle Aufbereitung für Tools wie IDA ICE, Lesosai oder andere gbXML-basierte Software kann über 50 % des Simulationsaufwands ausmachen.
+
+    - Simulationen verbessern Energieverbrauch und Komfort deutlich — der Modellaufwand bremst sie aber häufig aus.
+
+
+    **Ziel & Nutzen**
+
+    - Architekturmodelle mit minimalem Aufwand so aufbereiten, dass abstractBIM daraus simulationstaugliche Modelle erzeugt.
+
+    - Frühere, wiederholbare Simulationen statt späten Einzelaufwänden.
+
+
+    **Ablauf**
+
+    1. Architekturmodell mit den Mindestanforderungen bereitstellen (gleiche geometrische Basis wie DES-ABSTRACTBIM-COST).
+
+    2. Bei abstractBIM.com hochladen und verarbeiten lassen.
+
+    3. Simulationsmodell herunterladen — IFC für IDA ICE oder gbXML für weitere Tools.
+
+
+    **Ergebnis**
+
+    - gbXML mit Wänden, Decken, Räumen, Dächern, Fenstern und Türen.
+
+    - Alternativ IFC für IDA ICE mit Wänden, Decken, Fenstern, Türen und BuildingBody.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow und IfcDoor
+
+    - Raumname in LongName, optionale Raumnummer in Name
+
+    - Vereinfachtes Simulationsmodell (z. B. gbXML) aus abstractBIM'
+  fr: 'Préparer la simulation du bâtiment sans reconstruire manuellement la maquette architecture pour les outils de simulation.
+
+
+    **Situation de départ**
+
+    - Les maquettes architecture sont souvent trop détaillées ou incohérentes pour la simulation énergétique et climatique.
+
+    - La préparation manuelle pour des outils comme IDA ICE, Lesosai ou d''autres logiciels basés sur gbXML peut représenter plus de 50 % de l''effort de simulation.
+
+    - Les simulations améliorent nettement la consommation d''énergie et le confort — mais la préparation du modèle les freine souvent.
+
+
+    **Objectif et bénéfice**
+
+    - Préparer les maquettes architecture avec un effort minimal pour qu''abstractBIM produise des modèles prêts pour la simulation.
+
+    - Permettre des simulations plus précoces et reproductibles plutôt que des reprises tardives ponctuelles.
+
+
+    **Déroulement**
+
+    1. Fournir une maquette architecture répondant aux exigences minimales (même base géométrique que DES-ABSTRACTBIM-COST).
+
+    2. Téléverser et traiter sur abstractBIM.com.
+
+    3. Télécharger le modèle de simulation — IFC pour IDA ICE ou gbXML pour d''autres outils.
+
+
+    **Résultat**
+
+    - gbXML avec murs, dalles, espaces, toitures, fenêtres et portes.
+
+    - Alternativement, IFC pour IDA ICE avec murs, dalles, fenêtres, portes et BuildingBody.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow et IfcDoor
+
+    - Nom du local dans LongName, numéro de local facultatif dans Name
+
+    - Modèle de simulation simplifié (p. ex. gbXML) issu d''abstractBIM'
+  it: 'Preparare la simulazione dell''edificio senza ricostruire manualmente il modello architettonico per gli strumenti di simulazione.
+
+
+    **Situazione di partenza**
+
+    - I modelli architettonici sono spesso troppo dettagliati o incoerenti per la simulazione energetica e climatica.
+
+    - La preparazione manuale per strumenti come IDA ICE, Lesosai o altri software basati su gbXML può assorbire oltre il 50 % dell''efforto di simulazione.
+
+    - Le simulazioni migliorano nettamente consumo energetico e comfort — ma la preparazione del modello le rallenta spesso.
+
+
+    **Obiettivo e beneficio**
+
+    - Preparare i modelli architettonici con sforzo minimo affinché abstractBIM produca modelli pronti per la simulazione.
+
+    - Consentire simulazioni più precoci e ripetibili invece di rielaborazioni tardive una tantum.
+
+
+    **Svolgimento**
+
+    1. Fornire un modello architettonico che soddisfi i requisiti minimi (stessa base geometrica di DES-ABSTRACTBIM-COST).
+
+    2. Caricare ed elaborare su abstractBIM.com.
+
+    3. Scaricare il modello di simulazione — IFC per IDA ICE o gbXML per altri strumenti.
+
+
+    **Risultato**
+
+    - gbXML con pareti, solai, spazi, coperture, finestre e porte.
+
+    - In alternativa, IFC per IDA ICE con pareti, solai, finestre, porte e BuildingBody.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow e IfcDoor
+
+    - Nome del locale in LongName, numero locale facoltativo in Name
+
+    - Modello di simulazione semplificato (p. es. gbXML) da abstractBIM'
+  en: 'Prepare building simulation without manually rebuilding the architecture model for simulation tools.
+
+
+    **Starting point**
+
+    - Architecture models are often too detailed or inconsistent for energy and indoor-climate simulation.
+
+    - Manual rework for tools such as IDA ICE, Lesosai, or other gbXML-based software can account for more than 50% of simulation effort.
+
+    - Simulations significantly improve energy use and comfort — but model preparation often slows them down.
+
+
+    **Goal & benefit**
+
+    - Prepare architecture models with minimal effort so abstractBIM can produce simulation-ready outputs.
+
+    - Enable earlier, repeatable simulations instead of late one-off rework.
+
+
+    **Process**
+
+    1. Provide an architecture model meeting the minimum requirements (same geometric basis as DES-ABSTRACTBIM-COST).
+
+    2. Upload and process at abstractBIM.com.
+
+    3. Download the simulation model — IFC for IDA ICE or gbXML for other tools.
+
+
+    **Outcome**
+
+    - gbXML with walls, slabs, spaces, roofs, windows, and doors.
+
+    - Alternatively, IFC for IDA ICE with walls, slabs, windows, doors, and BuildingBody.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow, and IfcDoor
+
+    - Room name in LongName, optional room number in Name
+
+    - Simplified simulation model (for example gbXML) from abstractBIM'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: abstractBIM workflow. Same geometric minimum as DES-ABSTRACTBIM-COMP and DES-ABSTRACTBIM-COST. ThermalTransmittance on windows supports early simulation.

@@ -1,28 +1,28 @@
 id: pragmaticbim:project-goal/terminkritikalitaet
-sort_order: 60
-code: PG-06
+sort_order: 50
+code: PG-05
 name:
   de: Terminkritikalität
   fr: Criticité des délais
   it: Criticità dei tempi
   en: Schedule criticality
 description:
-  de: Steuert Bauablaufsimulation und Terminkoordinationstiefe über geordnete Ausprägungen.
-  fr: Contrôle la simulation du processus de construction et la profondeur de coordination des délais via des niveaux ordonnés.
-  it: Controlla la simulazione del processo costruttivo e la profondità di coordinamento dei tempi tramite livelli ordinati.
-  en: Controls construction-process simulation and schedule-coordination depth via ordered levels.
+  de: Steuert Koordinationstiefe und terminrelevante Modellabstimmungen über geordnete Ausprägungen.
+  fr: Contrôle la profondeur de coordination et les alignements de modèles liés aux délais via des niveaux ordonnés.
+  it: Controlla la profondità di coordinamento e gli allineamenti di modello legati ai tempi tramite livelli ordinati.
+  en: Controls coordination depth and schedule-relevant model alignment via ordered levels.
 picture_link: null
 status: active
 comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
 levels:
-- id: pragmaticbim:project-goal-level/termin-unkritisch
+- id: pragmaticbim:project-goal-level/termin-gering
   code: SCH-01
   sort_order: 1
   name:
-    de: unkritisch
-    fr: non critique
-    it: non critico
-    en: non-critical
+    de: gering
+    fr: faible
+    it: basso
+    en: low
   description:
     de: Keine zusätzlichen terminbezogenen Workflows.
     fr: Aucun workflow lié aux délais supplémentaire.
@@ -30,37 +30,47 @@ levels:
     en: No additional schedule-related workflows.
   status: active
   activated_workflows: []
-  comment: Delta at level unkritisch (sort_order 1); empty.
-- id: pragmaticbim:project-goal-level/termin-standard
+  comment: Delta at level gering (sort_order 1); empty.
+- id: pragmaticbim:project-goal-level/termin-mittel
   code: SCH-02
   sort_order: 2
   name:
-    de: Standard
-    fr: Standard
-    it: Standard
-    en: Standard
+    de: mittel
+    fr: moyen
+    it: medio
+    en: medium
   description:
-    de: Planungskoordination.
-    fr: Coordination de la planification.
-    it: Coordinamento della pianificazione.
-    en: Planning coordination.
+    de: Koordination Architektur–TGA in späteren Phasen inkl. Aussparungen im Tragwerk.
+    fr: Coordination architecture–CVC en phases avancées incl. réservations dans la structure.
+    it: Coordinamento architettura–impianti in fasi avanzate incl. fori nella struttura.
+    en: Architecture–MEP coordination in later phases including structural openings.
   status: active
   activated_workflows:
-  - pragmaticbim:workflow/qas-coordination
-  comment: Delta at level Standard (sort_order 2); cumulative with unkritisch.
-- id: pragmaticbim:project-goal-level/termin-hochkritisch
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  comment: Delta at level mittel (sort_order 2); cumulative with gering.
+- id: pragmaticbim:project-goal-level/termin-hoch
   code: SCH-03
   sort_order: 3
   name:
-    de: hochkritisch
-    fr: hautement critique
-    it: altamente critico
-    en: highly critical
+    de: hoch
+    fr: élevé
+    it: alto
+    en: high
   description:
-    de: Bauablaufplanung und Simulation kritischer Abläufe.
-    fr: Planification du processus de construction et simulation des processus critiques.
-    it: Pianificazione del processo costruttivo e simulazione dei processi critici.
-    en: Construction sequencing and simulation of critical processes.
+    de: Vertiefte Koordination (früh, Tragwerk inkl. Sperrzonen-QS und Schalungsplan-Koordination, TGA-Detail), Nachweis Einbringwege und Wartungsräume, Baulogistik mit Raum-QR sowie Ausführung Bewehrung, Befestigung/Aufhängung und Bestellung Betonfertigteile ab Modell.
+    fr: Coordination approfondie (précoce, structure incl. contrôle zones d'exclusion et coordination type plan de coulage, détail CVC), preuve des voies d'apport et espaces de maintenance, logistique de chantier avec QR locaux ainsi qu'exécution armatures, fixation/suspension et commande d'éléments préfabriqués en béton à partir du modèle.
+    it: Coordinamento approfondito (precoce, struttura incl. controllo zone di esclusione e coordinamento tipo piano di getto, dettaglio impianti), verifica vie di introduzione e spazi di manutenzione, logistica di cantiere con QR locali nonché esecuzione armature, fissaggio/sospensione e ordine di elementi prefabbricati in calcestruzzo dal modello.
+    en: Deeper coordination (early, structure incl. exclusion zone QS and formwork-plan coordination, MEP detail), verification of installation paths and maintenance spaces, fit-out logistics with room QR, plus reinforcement execution, fastening/suspension, and precast concrete ordering from model.
   status: active
-  activated_workflows: []
-  comment: Delta at level hochkritisch (sort_order 3); cumulative with Standard and unkritisch.
+  activated_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/qas-mep-detail-coordination
+  - pragmaticbim:workflow/qas-installation-path-verification
+  - pragmaticbim:workflow/qas-maintenance-space-verification
+  - pragmaticbim:workflow/con-logistics-fit-out
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  - pragmaticbim:workflow/con-fastening-suspension-from-model
+  - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+  comment: Delta at level hoch (sort_order 3); cumulative with mittel and gering.

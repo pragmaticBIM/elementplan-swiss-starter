@@ -1,0 +1,236 @@
+id: pragmaticbim:element/structural-exclusion-zone
+code: STR-EXCL-ZONE
+sort_order: 57
+status: active
+name:
+  de: Sperrzone
+  fr: Zone d'exclusion
+  it: Zona di esclusione
+  en: Exclusion zone
+definition:
+  de: 'Sperrzone im Sperrzonenmodell der Tragwerksplanung.
+
+
+    **Beschreibung**
+
+    - Volumen, in dem Architektur und Gebäudetechnik nichts platzieren dürfen (z. B. Stützenachse, Trägerzone, Aussparungsreserve).
+
+    - Vom Tragwerksplaner als verbindliche Planungsgrenze geliefert, nicht vom Architekten modelliert.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachten Proxy-Körper modellieren; Abmessungen gemäss Tragwerksplanung.
+
+    - Dem zugehörigen Geschoss zuweisen.
+
+    - Keine Bewehrung, Ausführungsdetails oder tragende Bauteile modellieren.'
+  fr: 'Zone d''exclusion dans le modèle de zones d''exclusion de l''ingénierie structurelle.
+
+
+    **Description**
+
+    - Volume dans lequel l''architecture et les techniques du bâtiment ne peuvent rien placer (p. ex. axe de poteau, zone de poutre, réserve de réservation).
+
+    - Fournie par l''ingénieur structure comme limite de planification contraignante, non modélisée par l''architecte.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy simplifié ; dimensions selon la planification structurelle.
+
+    - Rattacher à l''étage concerné.
+
+    - Ne pas modéliser armatures, détails d''exécution ou éléments porteurs.'
+  it: 'Zona di esclusione nel modello delle zone di esclusione dell''ingegneria strutturale.
+
+
+    **Descrizione**
+
+    - Volume in cui architettura e impianti non possono collocare nulla (p. es. asse di colonna, zona di trave, riserva di foro).
+
+    - Consegnata dall''ingegnere strutturista come limite vincolante di pianificazione, non modellata dall''architetto.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy semplificato; dimensioni secondo la pianificazione strutturale.
+
+    - Assegnare al piano corrispondente.
+
+    - Non modellare armature, dettagli esecutivi o elementi portanti.'
+  en: 'Exclusion zone in the structural engineering exclusion zone model.
+
+
+    **Description**
+
+    - Volume where architecture and building services must not place anything (for example column axis, beam zone, opening reserve).
+
+    - Delivered by the structural engineer as a binding planning boundary, not modelled by the architect.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified proxy body; dimensions according to the structural design.
+
+    - Assign to the matching storey.
+
+    - Do not model reinforcement, execution details, or load-bearing components.'
+needed_in_domain:
+- pragmaticbim:domain/structural
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Sperrzone) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Sperrzone)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Sperrzone` — No-go-Zone gemäss Tragwerksplanung'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Sperrzone` — zone d''exclusion selon la planification structurelle'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Sperrzone` — zona di esclusione secondo la pianificazione strutturale'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Sperrzone` — no-go zone according to the structural design'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-exclusion-zone
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Reference
+  pset: Pset_BuildingElementProxyCommon
+  definition:
+    de: Referenz zur Zuordnung im Koordinationsmodell.
+    fr: Référence pour l'identification dans le modèle de coordination.
+    it: Riferimento per l'identificazione nel modello di coordinamento.
+    en: Reference used for identification in the coordination model.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Sperrzone gemäss Tragwerksplanung.
+    fr: Désignation de la zone d'exclusion selon la planification structurelle.
+    it: Denominazione della zona di esclusione secondo la pianificazione strutturale.
+    en: Exclusion zone designation according to the structural design.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  is_applicability: false
+  status: active
+  sort_order: 4

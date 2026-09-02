@@ -1,0 +1,210 @@
+id: pragmaticbim:element/architecture-installation-path
+code: ARCH-INSTALL-PATH
+sort_order: 59
+status: active
+name:
+  de: Einbringweg
+  fr: Voie d'apport
+  it: Percorso di trasporto
+  en: Installation access path
+definition:
+  de: 'Freizuhaltender Einbringweg für den Kollisionsnachweis.
+
+
+    **Beschreibung**
+
+    - Volumen, das für den Transport und die Einbringung grosser Geräte oder Bauteile freigehalten werden muss.
+
+    - Dient der Koordination und dem Nachweis, nicht der Ausführungsplanung einzelner Bauteile.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachten Proxy-Körper modellieren; Abmessungen gemäss benötigtem Freiraum.
+
+    - Dem zugehörigen Geschoss zuweisen; ObjectType = Einbringweg.
+
+    - Keine Bauteile, Geräte oder Ausbau innerhalb des Volumens modellieren.'
+  fr: 'Voie d''apport à maintenir libre pour la preuve de collision.
+
+
+    **Description**
+
+    - Volume à réserver pour le transport et l''apport de grands appareils ou éléments.
+
+    - Sert à la coordination et à la preuve, pas à l''exécution de composants individuels.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy simplifié ; dimensions selon le dégagement requis.
+
+    - Rattacher à l''étage concerné ; ObjectType = Einbringweg.
+
+    - Ne pas modéliser éléments, appareils ou finitions à l''intérieur du volume.'
+  it: 'Percorso di trasporto da mantenere libero per la prova di collisione.
+
+
+    **Descrizione**
+
+    - Volume da riservare per il trasporto e l''introduzione di grandi apparecchi o componenti.
+
+    - Serve al coordinamento e alla prova, non all''esecuzione di singoli componenti.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy semplificato; dimensioni secondo lo spazio libero necessario.
+
+    - Assegnare al piano corrispondente; ObjectType = Einbringweg.
+
+    - Non modellare componenti, apparecchi o finiture all''interno del volume.'
+  en: 'Clear installation access path for clash verification.
+
+
+    **Description**
+
+    - Volume that must remain clear for transporting and bringing in large equipment or components.
+
+    - Used for coordination and verification, not for detailing individual building elements.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified proxy body; dimensions according to the required clearance.
+
+    - Assign to the matching storey; ObjectType = Einbringweg.
+
+    - Do not model building elements, equipment, or finishes inside the volume.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Einbringweg) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Einbringweg)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-installation-path-verification
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Einbringweg` — freizuhaltender Einbringweg für Kollisionsnachweis'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Einbringweg` — voie d''apport à maintenir libre pour preuve de collision'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Einbringweg` — percorso di trasporto da mantenere libero per prova di collisione'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Einbringweg` — clear installation access path for clash verification'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-installation-path
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-installation-path-verification
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Einbringwegs.
+    fr: Désignation de la voie d'apport.
+    it: Denominazione del percorso di trasporto.
+    en: Installation access path designation.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-installation-path-verification
+  is_applicability: false
+  status: active
+  sort_order: 3

@@ -1,0 +1,794 @@
+id: pragmaticbim:element/architecture-wall-interior
+code: ARC-WALL-INT
+sort_order: 45
+status: active
+name:
+  de: Nichttragende Innenwand
+  fr: Cloison intérieure non porteuse
+  it: Parete interna non portante
+  en: Non-load-bearing interior wall
+definition:
+  de: 'Nichttragende Innenwand zur Raumtrennung — Grundlage für Brandschutz- und Schallschutzangaben.
+
+
+    **Beschreibung**
+
+    - Nichttragende Trennwand zwischen Innenräumen.
+
+    - Dient der Koordination, Brandschutz- und Schallschutznachweisen sowie der Bauteilkennzeichnung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Geschossweise modellieren; an Bauteil- und Geschossgrenzen teilen.
+
+    - IsExternal=FALSE und LoadBearing=FALSE setzen.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Cloison intérieure non porteuse pour la séparation des locaux — base pour les indications de protection incendie et acoustique.
+
+
+    **Description**
+
+    - Cloison non porteuse entre locaux intérieurs.
+
+    - Sert à la coordination, aux justifications incendie et acoustique et au marquage des composants.
+
+
+    **Directives de modélisation**
+
+    - Modéliser par étage ; diviser aux limites de composants et d''étages.
+
+    - Définir IsExternal=FALSE et LoadBearing=FALSE.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Parete interna non portante per la separazione dei locali — base per le indicazioni di protezione antincendio e acustica.
+
+
+    **Descrizione**
+
+    - Parete divisoria non portante tra locali interni.
+
+    - Serve per coordinamento, verifiche antincendio e acustiche e marcatura dei componenti.
+
+
+    **Direttive di modellazione**
+
+    - Modellare per piano; suddividere ai confini di componenti e piani.
+
+    - Impostare IsExternal=FALSE e LoadBearing=FALSE.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Non-load-bearing interior wall for room separation — basis for fire and acoustic performance data.
+
+
+    **Description**
+
+    - Non-load-bearing partition between interior spaces.
+
+    - Used for coordination, fire and acoustic verification, and component identification.
+
+
+    **Modelling guidelines**
+
+    - Model storey by storey; split at component and storey boundaries.
+
+    - Set IsExternal=FALSE and LoadBearing=FALSE.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcWall
+entity_ifc4: IfcWall
+entity_ifc4_3: IfcWall
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcWall AND IsExternal=FALSE AND LoadBearing=FALSE) OR (entity_ifc2x3=IfcWall AND IsExternal=FALSE AND LoadBearing=FALSE)
+attributes:
+- name: IsExternal
+  pset: Pset_WallCommon
+  definition:
+    de: 'Kennzeichnet eine Innenwand.
+
+
+      **Zulässige Werte**
+
+      - `FALSE` — Innenwand'
+    fr: 'Identifie une cloison intérieure.
+
+
+      **Valeurs admises**
+
+      - `FALSE` — cloison intérieure'
+    it: 'Identifica una parete interna.
+
+
+      **Valori ammessi**
+
+      - `FALSE` — parete interna'
+    en: 'Marks an interior wall.
+
+
+      **Allowed values**
+
+      - `FALSE` — interior wall'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-false
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/qas-early-design-coordination
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: LoadBearing
+  pset: Pset_WallCommon
+  definition:
+    de: 'Kennzeichnet die Wand als nichttragend.
+
+
+      **Zulässige Werte**
+
+      - `FALSE` — nichttragend'
+    fr: 'Identifie la cloison comme non porteuse.
+
+
+      **Valeurs admises**
+
+      - `FALSE` — non porteuse'
+    it: 'Identifica la parete come non portante.
+
+
+      **Valori ammessi**
+
+      - `FALSE` — non portante'
+    en: 'Marks the wall as non-load-bearing.
+
+
+      **Allowed values**
+
+      - `FALSE` — non-load-bearing'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-false
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art der Innenwand.
+
+
+      **Zulässige Werte**
+
+      - `STANDARD` — Standardwand
+
+      - `PARTITIONING` — Trennwand
+
+      - `SOLIDWALL` — Massivwand
+
+      - `ELEMENTEDWALL` — Elementwand
+
+      - `MOVABLE` — Bewegliche Wand
+
+      - `PLUMBINGWALL` — Installationswand'
+    fr: 'Type de cloison intérieure.
+
+
+      **Valeurs admises**
+
+      - `STANDARD` — mur standard
+
+      - `PARTITIONING` — cloison
+
+      - `SOLIDWALL` — mur massif
+
+      - `ELEMENTEDWALL` — mur à éléments
+
+      - `MOVABLE` — cloison mobile
+
+      - `PLUMBINGWALL` — mur technique'
+    it: 'Tipo di parete interna.
+
+
+      **Valori ammessi**
+
+      - `STANDARD` — parete standard
+
+      - `PARTITIONING` — tramezzo
+
+      - `SOLIDWALL` — parete massiccia
+
+      - `ELEMENTEDWALL` — parete a elementi
+
+      - `MOVABLE` — parete mobile
+
+      - `PLUMBINGWALL` — parete impianti'
+    en: 'Kind of interior wall.
+
+
+      **Allowed values**
+
+      - `STANDARD` — standard wall
+
+      - `PARTITIONING` — partition wall
+
+      - `SOLIDWALL` — solid wall
+
+      - `ELEMENTEDWALL` — elemented wall
+
+      - `MOVABLE` — movable wall
+
+      - `PLUMBINGWALL` — plumbing wall'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-wall
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art der Innenwand.
+
+
+      **Zulässige Werte**
+
+      - `STANDARD` — Standardwand
+
+      - `PARTITIONING` — Trennwand
+
+      - `SOLIDWALL` — Massivwand
+
+      - `ELEMENTEDWALL` — Elementwand
+
+      - `MOVABLE` — Bewegliche Wand
+
+      - `PLUMBINGWALL` — Installationswand
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Type de cloison intérieure.
+
+
+      **Valeurs admises**
+
+      - `STANDARD` — mur standard
+
+      - `PARTITIONING` — cloison
+
+      - `SOLIDWALL` — mur massif
+
+      - `ELEMENTEDWALL` — mur à éléments
+
+      - `MOVABLE` — cloison mobile
+
+      - `PLUMBINGWALL` — mur technique
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Tipo di parete interna.
+
+
+      **Valori ammessi**
+
+      - `STANDARD` — parete standard
+
+      - `PARTITIONING` — tramezzo
+
+      - `SOLIDWALL` — parete massiccia
+
+      - `ELEMENTEDWALL` — parete a elementi
+
+      - `MOVABLE` — parete mobile
+
+      - `PLUMBINGWALL` — parete impianti
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Kind of interior wall.
+
+
+      **Allowed values**
+
+      - `STANDARD` — standard wall
+
+      - `PARTITIONING` — partition wall
+
+      - `SOLIDWALL` — solid wall
+
+      - `ELEMENTEDWALL` — elemented wall
+
+      - `MOVABLE` — movable wall
+
+      - `PLUMBINGWALL` — plumbing wall'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-wall
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: '4
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: Reference
+  pset: Pset_WallCommon
+  definition:
+    de: Referenzbezeichnung der Innenwand gemäss Bauteilkatalog.
+    fr: Référence de la cloison intérieure selon le catalogue de composants.
+    it: Riferimento della parete interna secondo il catalogo componenti.
+    en: Interior wall reference according to the component catalogue.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: Status
+  pset: Pset_WallCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: FireRating
+  pset: Pset_WallCommon
+  definition:
+    de: 'Feuerwiderstandsklasse der Innenwand gemäss Brandschutzkonzept.
+
+
+      **Zulässige Werte**
+
+      - `R 30` — Tragfähigkeit 30 min
+
+      - `R 60` — Tragfähigkeit 60 min
+
+      - `R 90` — Tragfähigkeit 90 min
+
+      - `EI 30` — Raumabschluss 30 min
+
+      - `EI 60` — Raumabschluss 60 min
+
+      - `EI 90` — Raumabschluss 90 min
+
+      - `REI 30` — Tragfähigkeit und Raumabschluss 30 min
+
+      - `REI 60` — Tragfähigkeit und Raumabschluss 60 min
+
+      - `REI 90` — Tragfähigkeit und Raumabschluss 90 min'
+    fr: 'Classe de résistance au feu de la cloison selon le concept de protection incendie.
+
+
+      **Valeurs admises**
+
+      - `R 30` — portance 30 min
+
+      - `R 60` — portance 60 min
+
+      - `R 90` — portance 90 min
+
+      - `EI 30` — étanchéité au feu 30 min
+
+      - `EI 60` — étanchéité au feu 60 min
+
+      - `EI 90` — étanchéité au feu 90 min
+
+      - `REI 30` — portance et étanchéité 30 min
+
+      - `REI 60` — portance et étanchéité 60 min
+
+      - `REI 90` — portance et étanchéité 90 min'
+    it: 'Classe di resistenza al fuoco della parete interna secondo il concetto antincendio.
+
+
+      **Valori ammessi**
+
+      - `R 30` — capacità portante 30 min
+
+      - `R 60` — capacità portante 60 min
+
+      - `R 90` — capacità portante 90 min
+
+      - `EI 30` — compartimentazione 30 min
+
+      - `EI 60` — compartimentazione 60 min
+
+      - `EI 90` — compartimentazione 90 min
+
+      - `REI 30` — portanza e compartimentazione 30 min
+
+      - `REI 60` — portanza e compartimentazione 60 min
+
+      - `REI 90` — portanza e compartimentazione 90 min'
+    en: 'Fire resistance class of the interior wall according to the fire protection concept.
+
+
+      **Allowed values**
+
+      - `R 30` — load-bearing 30 min
+
+      - `R 60` — load-bearing 60 min
+
+      - `R 90` — load-bearing 90 min
+
+      - `EI 30` — integrity and insulation 30 min
+
+      - `EI 60` — integrity and insulation 60 min
+
+      - `EI 90` — integrity and insulation 90 min
+
+      - `REI 30` — load-bearing, integrity and insulation 30 min
+
+      - `REI 60` — load-bearing, integrity and insulation 60 min
+
+      - `REI 90` — load-bearing, integrity and insulation 90 min'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/fire-rating
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: AcousticRating
+  pset: Pset_WallCommon
+  definition:
+    de: Bewertetes Schalldämm-Maß Rw [dB] als Labor-/Katalogwert — nicht R'w.
+    fr: Indice d'affaiblissement acoustique pondéré Rw [dB] comme valeur de laboratoire/catalogue — pas R'w.
+    it: Potere fonoisolante ponderato Rw [dB] come valore di laboratorio/catalogo — non R'w.
+    en: Weighted sound reduction index Rw [dB] as laboratory/catalogue value — not R'w.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 9
+- name: NetSideArea
+  pset: Qto_WallBaseQuantities
+  definition:
+    de: Nettofläche der modellierten Innenwand.
+    fr: Surface nette de la cloison intérieure modélisée.
+    it: Superficie netta della parete interna modellata.
+    en: Net side area of the modelled interior wall.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  is_applicability: false
+  status: active
+  sort_order: 10
+- name: Width
+  pset: Qto_WallBaseQuantities
+  definition:
+    de: Dicke der modellierten Innenwand.
+    fr: Épaisseur de la cloison intérieure modélisée.
+    it: Spessore della parete interna modellata.
+    en: Thickness of the modelled interior wall.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  is_applicability: false
+  status: active
+  sort_order: 11
+- name: GrossVolume
+  pset: Qto_WallBaseQuantities
+  definition:
+    de: Bruttovolumen der modellierten Innenwand.
+    fr: Volume brut de la cloison intérieure modélisée.
+    it: Volume lordo della parete interna modellata.
+    en: Gross volume of the modelled interior wall.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  is_applicability: false
+  status: active
+  sort_order: 12

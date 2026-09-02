@@ -1,0 +1,186 @@
+id: pragmaticbim:workflow/des-existing-site-survey
+code: DES-EXISTING-SITE
+sort_order: 45
+name:
+  de: Aufnahme Gelände Bestand
+  fr: Relève terrain existant
+  it: Rilievo terreno esistente
+  en: Existing site survey
+description:
+  de: 'Gelände und Lagebezug im Bestand aufnehmen als Grundlage für Abbruch/Neubau oder Umbaustrategien.
+
+
+    **Ausgangslage**
+
+    - Entscheidungen zu Abbruch, Neubau oder Umbau brauchen verlässliche Gelände- und Lageinformationen.
+
+    - Ohne gemeinsamen Bezugsrahmen (LV95) und aktuelle Aufnahme weichen Fachmodelle voneinander ab.
+
+
+    **Ziel & Nutzen**
+
+    - Gelände und Bezugspunkte früh und nachvollziehbar bereitstellen.
+
+    - Varianten (Abbruch/Neubau, Umbau) auf derselben räumlichen Grundlage vergleichen.
+
+
+    **Ablauf**
+
+    1. Gelände und mindestens drei Bezugspunkte gemäss Geometerlieferung in LV95 bereitstellen.
+
+    2. Punktwolke möglichst farbig erfassen und mit dem Geländemodell abgleichen.
+
+    3. Aufwandstiefe projektspezifisch festlegen und Lieferobjekte prüfen.
+
+
+    **Ergebnis**
+
+    - Gemeinsamer Lage- und Höhenbezug mit dokumentiertem Gelände für die Strategiewahl.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und Bezugspunkten (IfcBuildingElementProxy)
+
+    - Gelände als Oberflächengeometrie (IfcGeographicElement TERRAIN) in LV95
+
+    - Geländeaufnahme und Passpunkte in LV95
+
+    - Punktwolke empfohlen farbig; Abgleich mit Geländemodell
+
+    - Aufwandstiefe projektspezifisch'
+  fr: 'Relever le terrain et le référentiel de position de l''existant comme base pour démolition/reconstruction ou stratégies de transformation.
+
+
+    **Situation de départ**
+
+    - Les décisions de démolition, reconstruction ou transformation exigent des informations terrain et position fiables.
+
+    - Sans référentiel commun (LV95) et relève à jour, les maquettes métiers divergent.
+
+
+    **Objectif et bénéfice**
+
+    - Fournir tôt un terrain et des points de référence traçables.
+
+    - Comparer les variantes sur la même base spatiale.
+
+
+    **Déroulement**
+
+    1. Fournir le terrain et au moins trois points de référence selon la livraison du géomètre en LV95.
+
+    2. Capturer si possible un nuage de points en couleur et le caler sur le modèle de terrain.
+
+    3. Fixer la profondeur d''effort selon le projet et contrôler les livrables.
+
+
+    **Résultat**
+
+    - Référentiel commun de position et d''altitude avec terrain documenté pour le choix de stratégie.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et points de référence (IfcBuildingElementProxy)
+
+    - Terrain comme géométrie de surface (IfcGeographicElement TERRAIN) en LV95
+
+    - Relève terrain et points de calage en LV95
+
+    - Nuage de points recommandé en couleur ; calage avec le modèle de terrain
+
+    - Profondeur d''effort spécifique au projet'
+  it: 'Rilevare terreno e riferimento di posizione dell''esistente come base per demolizione/ricostruzione o strategie di trasformazione.
+
+
+    **Situazione di partenza**
+
+    - Decisioni su demolizione, ricostruzione o trasformazione richiedono informazioni affidabili su terreno e posizione.
+
+    - Senza riferimento comune (LV95) e rilievo aggiornato, i modelli disciplinari divergono.
+
+
+    **Obiettivo e beneficio**
+
+    - Fornire presto terreno e punti di riferimento tracciabili.
+
+    - Confrontare le varianti sulla stessa base spaziale.
+
+
+    **Svolgimento**
+
+    1. Fornire terreno e almeno tre punti di riferimento secondo la consegna del geometra in LV95.
+
+    2. Acquisire se possibile una nuvola di punti a colori e allinearla al modello del terreno.
+
+    3. Definire la profondità di impegno specifica del progetto e verificare i livrabili.
+
+
+    **Risultato**
+
+    - Riferimento comune di posizione e quota con terreno documentato per la scelta della strategia.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e punti di riferimento (IfcBuildingElementProxy)
+
+    - Terreno come geometria di superficie (IfcGeographicElement TERRAIN) in LV95
+
+    - Rilievo del terreno e punti di appoggio in LV95
+
+    - Nuvola di punti raccomandata a colori; allineamento con il modello del terreno
+
+    - Profondità di impegno specifica del progetto'
+  en: 'Survey terrain and position reference on the existing site as the basis for demolition/new build or conversion strategies.
+
+
+    **Starting point**
+
+    - Decisions on demolition, new build, or conversion need reliable terrain and position information.
+
+    - Without a shared reference frame (LV95) and an up-to-date survey, discipline models diverge.
+
+
+    **Goal & benefit**
+
+    - Provide terrain and reference points early and traceably.
+
+    - Compare options on the same spatial basis.
+
+
+    **Process**
+
+    1. Provide terrain and at least three reference points according to the surveyor delivery in LV95.
+
+    2. Capture a colour point cloud if possible and align it with the terrain model.
+
+    3. Set project-specific effort depth and check deliverables.
+
+
+    **Outcome**
+
+    - Shared position and height reference with documented terrain for strategy choice.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and survey reference points (IfcBuildingElementProxy)
+
+    - Terrain as surface geometry (IfcGeographicElement TERRAIN) in LV95
+
+    - Terrain survey and control points in LV95
+
+    - Point cloud recommended in colour; alignment with terrain model
+
+    - Project-specific effort depth'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+comment: Phase 11 Bestand. Effort depth is project-specific; coloured point cloud recommended.

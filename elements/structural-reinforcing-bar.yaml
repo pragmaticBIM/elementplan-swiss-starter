@@ -1,0 +1,192 @@
+id: pragmaticbim:element/structural-reinforcing-bar
+code: STR-REBAR
+sort_order: 78
+status: active
+name:
+  de: Bewehrung
+  fr: Armature
+  it: Armatura
+  en: Reinforcement
+definition:
+  de: 'Bewehrungselemente im Schal- und Bewehrungsmodell für die Ausführung.
+
+
+    **Beschreibung**
+
+    - Einzelstäbe und Verlegungen gemäss Bewehrungsplanung und Absprache mit dem Unternehmer.
+
+    - Dient der lageweisen Filterung, Stahllisten und Ausführung auf der Baustelle.
+
+
+    **Modellierungsrichtlinie**
+
+    - Pro Etappe im Schal- und Bewehrungsmodell führen.
+
+    - Bewehrungslage über Layer steuern (nicht als Attribut); Bewehrungslage muss filterbar sein.'
+  fr: 'Éléments d''armature dans le modèle de coffrage et d''armatures pour l''exécution.
+
+
+    **Description**
+
+    - Barres individuelles et poses selon le plan d''armatures et l''accord avec l''entreprise.
+
+    - Sert au filtrage par lit, aux listes d''acier et à l''exécution sur chantier.
+
+
+    **Directives de modélisation**
+
+    - Gérer par étape dans le modèle de coffrage et d''armatures.
+
+    - Contrôler le lit d''armatures via les calques (pas comme attribut) ; le lit d''armatures doit être filtrable.'
+  it: 'Elementi di armatura nel modello di cassero e armatura per l''esecuzione.
+
+
+    **Descrizione**
+
+    - Barre singole e pose secondo il piano di armatura e l''accordo con l''impresa.
+
+    - Serve al filtro per strato, alle liste acciaio e all''esecuzione in cantiere.
+
+
+    **Direttive di modellazione**
+
+    - Gestire per tappa nel modello di cassero e armatura.
+
+    - Controllare lo strato di armatura tramite layer (non come attributo); lo strato di armatura deve essere filtrabile.'
+  en: 'Reinforcement elements in the formwork and reinforcement model for execution.
+
+
+    **Description**
+
+    - Individual bars and placements according to the reinforcement design and agreement with the contractor.
+
+    - Used for layer-wise filtering, steel schedules, and on-site execution.
+
+
+    **Modelling guidelines**
+
+    - Maintain per stage in the formwork and reinforcement model.
+
+    - Control reinforcement layer via CAD layers (not as an attribute); reinforcement layer must be filterable.'
+needed_in_domain:
+- pragmaticbim:domain/structural
+entity_ifc2x3: IfcReinforcingBar
+entity_ifc4: IfcReinforcingBar
+entity_ifc4_3: IfcReinforcingBar
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcReinforcingBar OR entity_ifc2x3=IfcReinforcingBar
+attributes:
+- name: Bewehrungsposition
+  pset: AllplanAttributes
+  definition:
+    de: Positionsnummer der Bewehrung gemäss Bewehrungsplan (nur Ziffern).
+    fr: Numéro de position de l'armature selon le plan d'armatures (chiffres uniquement).
+    it: Numero di posizione dell'armatura secondo il piano di armatura (solo cifre).
+    en: Reinforcement position number according to the reinforcement drawing (digits only).
+  datatype: IfcIdentifier
+  regex: ^\d+$
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: Bewehrungsdurchmesser
+  pset: AllplanAttributes
+  definition:
+    de: Nenndurchmesser der Bewehrung in mm.
+    fr: Diamètre nominal de l'armature en mm.
+    it: Diametro nominale dell'armatura in mm.
+    en: Nominal reinforcement diameter in mm.
+  datatype: IfcLabel
+  unit: mm
+  allowed_values: pragmaticbim:value/reinforcement-diameter
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: Teilung
+  pset: AllplanAttributes
+  definition:
+    de: Achsabstand (Teilung) der Bewehrungsverlegung in mm.
+    fr: Entraxe (pas) de la pose d'armatures en mm.
+    it: Interasse (passo) della posa di armatura in mm.
+    en: Centre-to-centre spacing of the reinforcement placement in mm.
+  datatype: IfcLabel
+  unit: mm
+  regex: ^(\d+(\.\d*)?|\.\d+)$
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Stückzahl
+  pset: AllplanAttributes
+  definition:
+    de: Anzahl gleicher Bewehrungsstäbe der Position.
+    fr: Nombre de barres d'armature identiques de la position.
+    it: Numero di barre di armatura identiche della posizione.
+    en: Number of identical reinforcement bars for the position.
+  datatype: IfcLabel
+  unit: St
+  regex: ^\d+$
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: Stahllistennummer
+  pset: AllplanAttributes
+  definition:
+    de: Stahllistennummer im Format Geschoss-Etappenummer-Fortlaufendezahl (0–9), z. B. `U1-5-1`.
+    fr: Numéro de liste d'acier au format étage-numéro d'étape-numéro séquentiel (0–9), p. ex. `U1-5-1`.
+    it: Numero lista acciaio nel formato piano-numero tappa-numero progressivo (0–9), es. `U1-5-1`.
+    en: Steel schedule number in the format storey-stage number-sequential digit (0–9), e.g. `U1-5-1`.
+  datatype: IfcIdentifier
+  regex: ^([A-Za-z0-9]+)-(\d+)-([0-9])$
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  is_applicability: false
+  status: active
+  sort_order: 5

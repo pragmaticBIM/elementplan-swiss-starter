@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-cooled-beam
+code: COOLED_BEAM
+name:
+  de: PredefinedType IfcCooledBeam
+  fr: PredefinedType IfcCooledBeam
+  it: PredefinedType IfcCooledBeam
+  en: PredefinedType IfcCooledBeam
+description:
+  de: Ifc PredefinedType für IfcCooledBeam.
+  fr: PredefinedType IFC pour IfcCooledBeam.
+  it: PredefinedType IFC per IfcCooledBeam.
+  en: IFC PredefinedType for IfcCooledBeam.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - ACTIVE
+  - PASSIVE
+  fr:
+  - ACTIVE
+  - PASSIVE
+  it:
+  - ACTIVE
+  - PASSIVE
+  en:
+  - ACTIVE
+  - PASSIVE

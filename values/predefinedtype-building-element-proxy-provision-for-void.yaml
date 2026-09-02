@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-building-element-proxy-provision-for-void
+code: PROXY-PROV-VOID
+name:
+  de: PredefinedType Aussparungsanforderung
+  fr: PredefinedType exigence de réservation
+  it: PredefinedType richiesta di riserva
+  en: PredefinedType provision for void
+description:
+  de: PredefinedType für IfcBuildingElementProxy als Aussparungsanforderung (Provision for void).
+  fr: PredefinedType pour IfcBuildingElementProxy comme exigence de réservation (provision for void).
+  it: PredefinedType per IfcBuildingElementProxy come richiesta di riserva (provision for void).
+  en: PredefinedType for IfcBuildingElementProxy as a provision for void.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - PROVISIONFORVOID
+  fr:
+  - PROVISIONFORVOID
+  it:
+  - PROVISIONFORVOID
+  en:
+  - PROVISIONFORVOID

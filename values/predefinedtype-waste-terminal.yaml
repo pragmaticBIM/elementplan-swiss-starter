@@ -1,0 +1,48 @@
+id: pragmaticbim:value/predefinedtype-waste-terminal
+code: WASTE_TERMINAL
+name:
+  de: PredefinedType IfcWasteTerminal
+  fr: PredefinedType IfcWasteTerminal
+  it: PredefinedType IfcWasteTerminal
+  en: PredefinedType IfcWasteTerminal
+description:
+  de: Ifc PredefinedType für IfcWasteTerminal.
+  fr: PredefinedType IFC pour IfcWasteTerminal.
+  it: PredefinedType IFC per IfcWasteTerminal.
+  en: IFC PredefinedType for IfcWasteTerminal.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - FLOORWASTE
+  - FLOORTRAP
+  - GULLYTRAP
+  - GULLYSUMP
+  - WASTETRAP
+  - WASTEDISPOSALUNIT
+  - ROOFDRAIN
+  fr:
+  - FLOORWASTE
+  - FLOORTRAP
+  - GULLYTRAP
+  - GULLYSUMP
+  - WASTETRAP
+  - WASTEDISPOSALUNIT
+  - ROOFDRAIN
+  it:
+  - FLOORWASTE
+  - FLOORTRAP
+  - GULLYTRAP
+  - GULLYSUMP
+  - WASTETRAP
+  - WASTEDISPOSALUNIT
+  - ROOFDRAIN
+  en:
+  - FLOORWASTE
+  - FLOORTRAP
+  - GULLYTRAP
+  - GULLYSUMP
+  - WASTETRAP
+  - WASTEDISPOSALUNIT
+  - ROOFDRAIN

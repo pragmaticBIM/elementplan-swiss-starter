@@ -1,0 +1,623 @@
+id: pragmaticbim:element/structural-ramp
+code: STR-RAMP
+sort_order: 77
+status: active
+name:
+  de: Rampe detailiert
+  fr: Rampe détaillée
+  it: Rampa dettagliata
+  en: Ramp detailed
+definition:
+  de: 'Tragwerkselement für Rampen im Tragwerksmodell.
+
+
+    **Beschreibung**
+
+    - Ausführungsgenaue Geometrie gemäss Tragwerksplanung.
+
+    - Massgebendes Fachmodell für Ausführungsplanung, Mengenermittlung und Koordination.
+
+
+    **Modellierungsrichtlinie**
+
+    - Mit korrekter Steigung so modellieren, wie gebaut wird.
+
+    - Zuordnung zu Geschoss und Tragwerksteil einhalten.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Élément porteur pour rampes dans le modèle structurel.
+
+
+    **Description**
+
+    - Géométrie d''exécution selon le plan structurel.
+
+    - Maquette fédérée de référence pour l''exécution, les quantités et la coordination.
+
+
+    **Directives de modélisation**
+
+    - Modéliser avec la pente correcte telle qu''elle sera construite.
+
+    - Respecter l''attribution à l''étage et à la partie porteuse.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Elemento strutturale per rampe nel modello strutturale.
+
+
+    **Descrizione**
+
+    - Geometria esecutiva secondo la pianificazione strutturale.
+
+    - Modello federato di riferimento per esecuzione, quantità e coordinamento.
+
+
+    **Direttive di modellazione**
+
+    - Modellare con la pendenza corretta come sarà costruito.
+
+    - Rispettare l''assegnazione a piano e parte strutturale.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Structural element for ramps in the structural model.
+
+
+    **Description**
+
+    - Execution-accurate geometry according to the structural design.
+
+    - Authoritative federated model for execution planning, quantities, and coordination.
+
+
+    **Modelling guidelines**
+
+    - Model with the correct slope as it will be built.
+
+    - Maintain assignment to storey and structural part.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/structural
+entity_ifc2x3: IfcRamp
+entity_ifc4: IfcRamp
+entity_ifc4_3: IfcRamp
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcRamp OR entity_ifc2x3=IfcRamp
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Form der Rampe.
+
+
+      **Zulässige Werte**
+
+      - `STRAIGHT_RUN_RAMP` — gerade Rampe
+
+      - `TWO_STRAIGHT_RUN_RAMP` — zweiläufig gerade Rampe
+
+      - `QUARTER_TURN_RAMP` — L-Rampe
+
+      - `TWO_QUARTER_TURN_RAMP` — zweifach L-Rampe
+
+      - `HALF_TURN_RAMP` — U-Rampe
+
+      - `SPIRAL_RAMP` — Spiralrampe'
+    fr: 'Forme de la rampe.
+
+
+      **Valeurs admises**
+
+      - `STRAIGHT_RUN_RAMP` — rampe droite
+
+      - `TWO_STRAIGHT_RUN_RAMP` — rampe droite à deux volées
+
+      - `QUARTER_TURN_RAMP` — rampe en L
+
+      - `TWO_QUARTER_TURN_RAMP` — rampe double en L
+
+      - `HALF_TURN_RAMP` — rampe en U
+
+      - `SPIRAL_RAMP` — rampe en spirale'
+    it: 'Forma della rampa.
+
+
+      **Valori ammessi**
+
+      - `STRAIGHT_RUN_RAMP` — rampa retta
+
+      - `TWO_STRAIGHT_RUN_RAMP` — rampa retta a due rampe
+
+      - `QUARTER_TURN_RAMP` — rampa a L
+
+      - `TWO_QUARTER_TURN_RAMP` — rampa doppia a L
+
+      - `HALF_TURN_RAMP` — rampa a U
+
+      - `SPIRAL_RAMP` — rampa a spirale'
+    en: 'Form of the ramp.
+
+
+      **Allowed values**
+
+      - `STRAIGHT_RUN_RAMP` — straight ramp
+
+      - `TWO_STRAIGHT_RUN_RAMP` — two straight flights
+
+      - `QUARTER_TURN_RAMP` — L-ramp
+
+      - `TWO_QUARTER_TURN_RAMP` — double L-ramp
+
+      - `HALF_TURN_RAMP` — U-ramp
+
+      - `SPIRAL_RAMP` — spiral ramp'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-ramp
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Form der Rampe.
+
+
+      **Zulässige Werte**
+
+      - `STRAIGHT_RUN_RAMP` — gerade Rampe
+
+      - `TWO_STRAIGHT_RUN_RAMP` — zweiläufig gerade Rampe
+
+      - `QUARTER_TURN_RAMP` — L-Rampe
+
+      - `TWO_QUARTER_TURN_RAMP` — zweifach L-Rampe
+
+      - `HALF_TURN_RAMP` — U-Rampe
+
+      - `SPIRAL_RAMP` — Spiralrampe
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Forme de la rampe.
+
+
+      **Valeurs admises**
+
+      - `STRAIGHT_RUN_RAMP` — rampe droite
+
+      - `TWO_STRAIGHT_RUN_RAMP` — rampe droite à deux volées
+
+      - `QUARTER_TURN_RAMP` — rampe en L
+
+      - `TWO_QUARTER_TURN_RAMP` — rampe double en L
+
+      - `HALF_TURN_RAMP` — rampe en U
+
+      - `SPIRAL_RAMP` — rampe en spirale
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Forma della rampa.
+
+
+      **Valori ammessi**
+
+      - `STRAIGHT_RUN_RAMP` — rampa retta
+
+      - `TWO_STRAIGHT_RUN_RAMP` — rampa retta a due rampe
+
+      - `QUARTER_TURN_RAMP` — rampa a L
+
+      - `TWO_QUARTER_TURN_RAMP` — rampa doppia a L
+
+      - `HALF_TURN_RAMP` — rampa a U
+
+      - `SPIRAL_RAMP` — rampa a spirale
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Form of the ramp.
+
+
+      **Allowed values**
+
+      - `STRAIGHT_RUN_RAMP` — straight ramp
+
+      - `TWO_STRAIGHT_RUN_RAMP` — two straight flights
+
+      - `QUARTER_TURN_RAMP` — L-ramp
+
+      - `TWO_QUARTER_TURN_RAMP` — double L-ramp
+
+      - `HALF_TURN_RAMP` — U-ramp
+
+      - `SPIRAL_RAMP` — spiral ramp
+
+
+      **Note**
+
+      - IFC2x3 substitute for PredefinedType.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-ramp
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Rampe gemäss Tragwerksplan.
+    fr: Désignation de la rampe selon le plan structurel.
+    it: Denominazione della rampa secondo il piano strutturale.
+    en: Ramp designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Bewehrungsgehalt
+  pset: 211.5_Beton_und_Stahlbetonarbeiten
+  definition:
+    de: Bewehrungsgehalt des Betonbauteils in kg/m³ gemäss Tragwerksplanung.
+    fr: Teneur en armatures de l'élément en béton en kg/m³ selon le plan structurel.
+    it: Contenuto di armatura dell'elemento in calcestruzzo in kg/m³ secondo la pianificazione strutturale.
+    en: Reinforcement content of the concrete component in kg/m³ according to the structural design.
+  datatype: IfcLabel
+  unit: kg/m³
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: Oberfläche
+  pset: 211.5_Beton_und_Stahlbetonarbeiten
+  definition:
+    de: Oberflächenanforderung und Seitenbezug des Betonbauteils für die NPK-Ausschreibung.
+    fr: Exigence de surface et côté de l'élément en béton pour l'appel d'offres NPK.
+    it: Requisito di superficie e lato dell'elemento in calcestruzzo per la gara NPK.
+    en: Surface requirement and side reference of the concrete component for NPK tendering.
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/concrete-surface-tender
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: Betonqualität
+  pset: 211.5_Beton_und_Stahlbetonarbeiten
+  definition:
+    de: 'Betonsorte gemäss SN EN 206 für die NPK-Ausschreibung.
+
+
+      **Zulässige Werte**
+
+      - `0` — Sorte 0
+
+      - `A` — NPK A (Hochbau)
+
+      - `B` — NPK B (Hochbau)
+
+      - `C` — NPK C (Hochbau)
+
+      - `D` — NPK D (Tiefbau)
+
+      - `E` — NPK E (Tiefbau)
+
+      - `F` — NPK F (Tiefbau)
+
+      - `G` — NPK G (Tiefbau)
+
+      - `P1` — Pfahlbeton im Trockenen (NPK H)
+
+      - `P2` — Pfahlbeton unter Wasser (NPK I)
+
+      - `P3` — Schlitzwandbeton im Trockenen (NPK K)
+
+      - `P4` — Schlitzwandbeton unter Wasser (NPK L)'
+    fr: 'Sorte de béton selon SN EN 206 pour l''appel d''offres NPK.
+
+
+      **Valeurs admises**
+
+      - `0` — sorte 0
+
+      - `A` — NPK A (construction verticale)
+
+      - `B` — NPK B (construction verticale)
+
+      - `C` — NPK C (construction verticale)
+
+      - `D` — NPK D (génie civil)
+
+      - `E` — NPK E (génie civil)
+
+      - `F` — NPK F (génie civil)
+
+      - `G` — NPK G (génie civil)
+
+      - `P1` — béton de pieux à sec (NPK H)
+
+      - `P2` — béton de pieux sous l''eau (NPK I)
+
+      - `P3` — béton de paroi moulée à sec (NPK K)
+
+      - `P4` — béton de paroi moulée sous l''eau (NPK L)'
+    it: 'Sorta di calcestruzzo secondo SN EN 206 per la gara NPK.
+
+
+      **Valori ammessi**
+
+      - `0` — sorta 0
+
+      - `A` — NPK A (edilizia)
+
+      - `B` — NPK B (edilizia)
+
+      - `C` — NPK C (edilizia)
+
+      - `D` — NPK D (opere civili)
+
+      - `E` — NPK E (opere civili)
+
+      - `F` — NPK F (opere civili)
+
+      - `G` — NPK G (opere civili)
+
+      - `P1` — calcestruzzo per pali a secco (NPK H)
+
+      - `P2` — calcestruzzo per pali sott''acqua (NPK I)
+
+      - `P3` — calcestruzzo per diaframma a secco (NPK K)
+
+      - `P4` — calcestruzzo per diaframma sott''acqua (NPK L)'
+    en: 'Concrete grade according to SN EN 206 for NPK tendering.
+
+
+      **Allowed values**
+
+      - `0` — grade 0
+
+      - `A` — NPK A (building)
+
+      - `B` — NPK B (building)
+
+      - `C` — NPK C (building)
+
+      - `D` — NPK D (civil engineering)
+
+      - `E` — NPK E (civil engineering)
+
+      - `F` — NPK F (civil engineering)
+
+      - `G` — NPK G (civil engineering)
+
+      - `P1` — dry pile concrete (NPK H)
+
+      - `P2` — underwater pile concrete (NPK I)
+
+      - `P3` — dry diaphragm wall concrete (NPK K)
+
+      - `P4` — underwater diaphragm wall concrete (NPK L)'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/concrete-quality-npk
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: Status
+  pset: Pset_RampCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  is_applicability: false
+  status: active
+  sort_order: 9

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-slab-roof
+code: SLAB-ROOF
+name:
+  de: PredefinedType Flachdach
+  fr: PredefinedType toiture plate
+  it: PredefinedType tetto piano
+  en: PredefinedType flat roof slab
+description:
+  de: IfcSlab PredefinedType für Flachdächer.
+  fr: IfcSlab PredefinedType pour toitures plates.
+  it: IfcSlab PredefinedType per tetti piani.
+  en: IfcSlab PredefinedType for flat roof slabs.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - ROOF
+  fr:
+  - ROOF
+  it:
+  - ROOF
+  en:
+  - ROOF

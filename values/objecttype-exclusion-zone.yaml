@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-exclusion-zone
+code: OBJ-EXCL-ZONE
+name:
+  de: ObjectType Sperrzone
+  fr: ObjectType zone d'exclusion
+  it: ObjectType zona di esclusione
+  en: ObjectType exclusion zone
+description:
+  de: ObjectType für IfcBuildingElementProxy als Sperrzone im Sperrzonenmodell der Tragwerksplanung.
+  fr: ObjectType pour IfcBuildingElementProxy comme zone d'exclusion dans le modèle de zones d'exclusion de l'ingénierie structurelle.
+  it: ObjectType per IfcBuildingElementProxy come zona di esclusione nel modello delle zone di esclusione dell'ingegneria strutturale.
+  en: ObjectType for IfcBuildingElementProxy as an exclusion zone in the structural engineering exclusion zone model.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Sperrzone
+  fr:
+  - Sperrzone
+  it:
+  - Sperrzone
+  en:
+  - Sperrzone

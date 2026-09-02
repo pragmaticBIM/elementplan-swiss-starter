@@ -1,0 +1,24 @@
+id: pragmaticbim:value/interiororexteriorspace-external
+code: SPACE-IOE-EXTERNAL
+name:
+  de: InteriorOrExteriorSpace Aussenraum
+  fr: InteriorOrExteriorSpace espace extérieur
+  it: InteriorOrExteriorSpace spazio esterno
+  en: InteriorOrExteriorSpace exterior space
+description:
+  de: IfcSpace InteriorOrExteriorSpace für Aussenräume (IFC2x3).
+  fr: IfcSpace InteriorOrExteriorSpace pour les espaces extérieurs (IFC2x3).
+  it: IfcSpace InteriorOrExteriorSpace per gli spazi esterni (IFC2x3).
+  en: IfcSpace InteriorOrExteriorSpace for exterior spaces (IFC2x3).
+year: 2026
+norm_reference: IFC2X3
+status: active
+values:
+  de:
+  - EXTERNAL
+  fr:
+  - EXTERNAL
+  it:
+  - EXTERNAL
+  en:
+  - EXTERNAL

@@ -1,0 +1,250 @@
+id: pragmaticbim:element/mep-provision-for-void
+code: MEP-PROV-VOID
+sort_order: 59
+status: active
+name:
+  de: Aussparungsanforderung
+  fr: Exigence de réservation
+  it: Richiesta di riserva
+  en: Provision for void
+definition:
+  de: 'Forderung der Gebäudetechnik für einen Durchbruch oder eine Aussparung im Tragwerk — Grundlage für die Freigabe durch die Tragwerksplanung.
+
+
+    **Beschreibung**
+
+    - Volumen für Lage und lichte Abmessungen der gewünschten Öffnung in tragenden Bauteilen.
+
+    - Dient der Koordination; wird erst nach Freigabe im Tragwerksmodell als verbindliche Öffnung umgesetzt.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachten Proxy-Körper im TGA-Modell modellieren; Abmessungen = gewünschte lichte Öffnung inklusive Toleranz gemäss Projektvereinbarung.
+
+    - Dem zugehörigen Geschoss zuweisen; kein tragendes Bauteil durchschneiden und keine Öffnung am Tragwerk selbst modellieren.
+
+    - Name und Reference so setzen, dass die spätere Tragwerksöffnung eindeutig zugeordnet werden kann.'
+  fr: 'Exigence des techniques du bâtiment pour un percement ou une réservation dans la structure — base pour la validation par l''ingénierie structurelle.
+
+
+    **Description**
+
+    - Volume pour la position et les dimensions libres de l''ouverture souhaitée dans les composants porteurs.
+
+    - Sert à la coordination; n''est mis en œuvre comme ouverture contraignante dans le modèle structurel qu''après validation.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy simplifié dans le modèle CVC; dimensions = ouverture libre souhaitée y compris tolérance selon convention de projet.
+
+    - Rattacher à l''étage concerné; ne pas découper de composant porteur ni modéliser d''ouverture sur la structure elle-même.
+
+    - Définir Name et Reference de façon à pouvoir rattacher sans ambiguïté l''ouverture structurelle ultérieure.'
+  it: 'Richiesta degli impianti per un foro o una riserva nella struttura — base per l''approvazione da parte dell''ingegneria strutturale.
+
+
+    **Descrizione**
+
+    - Volume per posizione e dimensioni libere dell''apertura desiderata nei componenti portanti.
+
+    - Serve al coordinamento; diventa apertura vincolante nel modello strutturale solo dopo l''approvazione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy semplificato nel modello impianti; dimensioni = apertura libera desiderata inclusa tolleranza secondo accordo di progetto.
+
+    - Assegnare al piano corrispondente; non tagliare componenti portanti né modellare aperture sulla struttura stessa.
+
+    - Impostare Name e Reference in modo da poter collegare in modo univoco la successiva apertura strutturale.'
+  en: 'MEP request for an opening or recess in the structure — basis for approval by structural engineering.
+
+
+    **Description**
+
+    - Volume for the location and clear dimensions of the desired void in load-bearing components.
+
+    - Used for coordination; implemented as a binding opening in the structural model only after approval.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified proxy body in the MEP model; dimensions = desired clear opening including tolerance per project agreement.
+
+    - Assign to the matching storey; do not cut a load-bearing component or model an opening on the structure itself.
+
+    - Set Name and Reference so the later structural opening can be matched unambiguously.'
+needed_in_domain:
+- pragmaticbim:domain/mep
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=PROVISIONFORVOID) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=PROVISIONFORVOID)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als Aussparungsanforderung.
+
+
+      **Zulässige Werte**
+
+      - `PROVISIONFORVOID` — Forderung für Durchbruch oder Aussparung im Tragwerk (noch nicht als Öffnung umgesetzt)'
+    fr: 'Identifie le proxy comme exigence de réservation.
+
+
+      **Valeurs admises**
+
+      - `PROVISIONFORVOID` — exigence de percement ou réservation dans la structure (pas encore mise en œuvre comme ouverture)'
+    it: 'Identifica il proxy come richiesta di riserva.
+
+
+      **Valori ammessi**
+
+      - `PROVISIONFORVOID` — richiesta di foro o riserva nella struttura (non ancora implementata come apertura)'
+    en: 'Marks the proxy as a provision for void.
+
+
+      **Allowed values**
+
+      - `PROVISIONFORVOID` — request for an opening or recess in the structure (not yet implemented as an opening)'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy-provision-for-void
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `PROVISIONFORVOID` — Forderung für Durchbruch oder Aussparung im Tragwerk (noch nicht als Öffnung umgesetzt)
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `PROVISIONFORVOID` — exigence de percement ou réservation dans la structure (pas encore mise en œuvre comme ouverture)
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `PROVISIONFORVOID` — richiesta di foro o riserva nella struttura (non ancora implementata come apertura)
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `PROVISIONFORVOID` — request for an opening or recess in the structure (not yet implemented as an opening)
+
+
+      **Note**
+
+      - IFC2x3 substitute for PredefinedType.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-provision-for-void
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Aussparungsanforderung zur Zuordnung zu Leitung, Gerät oder Tragwerksöffnung.
+    fr: Désignation de l'exigence de réservation pour rattachement à réseau, appareil ou ouverture structurelle.
+    it: Denominazione della richiesta di riserva per collegamento a rete, apparecchio o apertura strutturale.
+    en: Provision-for-void designation for assignment to service, equipment, or structural opening.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_BuildingElementProxyCommon
+  definition:
+    de: Referenz zur eindeutigen Abstimmung mit der freigegebenen Tragwerksöffnung.
+    fr: Référence pour l'alignement univoque avec l'ouverture structurelle validée.
+    it: Riferimento per l'allineamento univoco con l'apertura strutturale approvata.
+    en: Reference for unique alignment with the approved structural opening.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: false
+  status: active
+  sort_order: 4

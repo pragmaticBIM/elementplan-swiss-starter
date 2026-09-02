@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-covering-cladding
+code: COVERING-CLADDING
+name:
+  de: PredefinedType Wandbekleidung
+  fr: PredefinedType revêtement mural
+  it: PredefinedType rivestimento murale
+  en: PredefinedType wall cladding
+description:
+  de: IfcCovering PredefinedType für Wandbekleidungen.
+  fr: IfcCovering PredefinedType pour revêtements muraux.
+  it: IfcCovering PredefinedType per rivestimenti murali.
+  en: IfcCovering PredefinedType for wall claddings.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - CLADDING
+  fr:
+  - CLADDING
+  it:
+  - CLADDING
+  en:
+  - CLADDING

@@ -1,0 +1,556 @@
+id: pragmaticbim:element/architecture-footing
+code: ARC-FOOTING
+sort_order: 50
+status: active
+name:
+  de: Fundament (Grob)
+  fr: Fondation (Approximatif)
+  it: Fondazione (Indicativo)
+  en: Footing (Rough)
+definition:
+  de: 'Grobe Dimensionen gemäss Tragwerksplanung für Fundamente in Projektierung und Bewilligungsverfahren.
+
+
+    **Beschreibung**
+
+    - Grob dimensionierte Fundamentgeometrie gemäss Tragwerkskonzept.
+
+    - Dient der Koordination zwischen Architektur und Tragwerksplanung, nicht der Ausführungsplanung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachtes Volumen modellieren; Abmessungen gemäss Tragwerksentwurf.
+
+    - An Bauteilgrenzen teilen.
+
+    - Keine Bewehrung, Gründungsdetails oder Schichtaufbauten modellieren.
+
+    - Früh: Konzept über Skizzen als Tragwerksskizze im ARC-Modell; Sperrzonen vom Tragwerksplaner prüfen.
+
+    - Später: Dieselben Bauteile mit Reference auch im Tragwerksmodell abstimmen.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Dimensions approximatives selon la conception structurale pour fondations en phases de projet et de procédure d''autorisation.
+
+
+    **Description**
+
+    - Géométrie de fondation dimensionnée grossièrement selon le concept structurel.
+
+    - Sert à la coordination entre architecture et ingénierie structurelle, pas à l''exécution.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume simplifié ; dimensions selon l''esquisse structurelle.
+
+    - Diviser aux limites de composants.
+
+    - Ne pas modéliser armatures, détails de fondation ou couches.
+
+    - Tôt : concept par croquis comme esquisse porteuse dans le modèle d''architecture ; vérifier les zones d''exclusion de l''ingénieur structure.
+
+    - Plus tard : harmoniser les mêmes éléments avec Reference dans le modèle structurel.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Dimensioni indicative secondo la progettazione strutturale per fondazioni nelle fasi di progettazione e procedura di autorizzazione.
+
+
+    **Descrizione**
+
+    - Geometria di fondazione dimensionata grossolanamente secondo il concept strutturale.
+
+    - Serve per il coordinamento tra architettura e ingegneria strutturale, non per l''esecuzione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume semplificato; dimensioni secondo lo schizzo strutturale.
+
+    - Suddividere ai confini dei componenti.
+
+    - Non modellare armature, dettagli di fondazione o stratigrafie.
+
+    - Presto: concept tramite schizzi come schizzo strutturale nel modello di architettura; verificare le zone di esclusione dell''ingegnere strutturista.
+
+    - Più tardi: allineare gli stessi elementi con Reference anche nel modello strutturale.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Rough dimensions according to structural engineering for footings in design development and permitting stages.
+
+
+    **Description**
+
+    - Coarsely dimensioned footing geometry according to the structural concept.
+
+    - Used for coordination between architecture and structural engineering, not for execution planning.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified volume; dimensions according to the structural sketch.
+
+    - Split at component boundaries.
+
+    - Do not model reinforcement, foundation details, or layer build-ups.
+
+    - Early: concept via sketches as structural sketch in the architecture model; verify exclusion zones from the structural engineer.
+
+    - Later: align the same components with Reference in the structural model as well.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcFooting
+entity_ifc4: IfcFooting
+entity_ifc4_3: IfcFooting
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcFooting OR entity_ifc2x3=IfcFooting
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art des Fundaments.
+
+
+      **Zulässige Werte**
+
+      - `STRIP_FOOTING` — Streifenfundament
+
+      - `PAD_FOOTING` — Punktfundament
+
+      - `PILE_CAP` — Pfahlkopf'
+    fr: 'Type de fondation.
+
+
+      **Valeurs admises**
+
+      - `STRIP_FOOTING` — semelle filante
+
+      - `PAD_FOOTING` — semelle isolée
+
+      - `PILE_CAP` — tête de pieu'
+    it: 'Tipo di fondazione.
+
+
+      **Valori ammessi**
+
+      - `STRIP_FOOTING` — fondazione a nastro
+
+      - `PAD_FOOTING` — fondazione isolata
+
+      - `PILE_CAP` — testa di palo'
+    en: 'Kind of footing.
+
+
+      **Allowed values**
+
+      - `STRIP_FOOTING` — strip footing
+
+      - `PAD_FOOTING` — pad footing
+
+      - `PILE_CAP` — pile cap'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-footing
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Fundaments.
+
+
+      **Zulässige Werte**
+
+      - `STRIP_FOOTING` — Streifenfundament
+
+      - `PAD_FOOTING` — Punktfundament
+
+      - `PILE_CAP` — Pfahlkopf
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Type de fondation.
+
+
+      **Valeurs admises**
+
+      - `STRIP_FOOTING` — semelle filante
+
+      - `PAD_FOOTING` — semelle isolée
+
+      - `PILE_CAP` — tête de pieu
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Tipo di fondazione.
+
+
+      **Valori ammessi**
+
+      - `STRIP_FOOTING` — fondazione a nastro
+
+      - `PAD_FOOTING` — fondazione isolata
+
+      - `PILE_CAP` — testa di palo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Kind of footing.
+
+
+      **Allowed values**
+
+      - `STRIP_FOOTING` — strip footing
+
+      - `PAD_FOOTING` — pad footing
+
+      - `PILE_CAP` — pile cap'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-footing
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: '2
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Fundaments gemäss Tragwerksplan.
+    fr: Désignation de la fondation selon le plan structurel.
+    it: Denominazione della fondazione secondo il piano strutturale.
+    en: Footing designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_FootingCommon
+  definition:
+    de: Referenz zur Zuordnung im Koordinationsmodell.
+    fr: Référence pour l'identification dans le modèle de coordination.
+    it: Riferimento per l'identificazione nel modello di coordinamento.
+    en: Reference used for identification in the coordination model.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: IsStructural
+  pset: Pset_FootingCommon
+  definition:
+    de: 'Kennzeichnet das Element als tragendes Bauteil im Architekturmodell.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — tragendes Bauteil'
+    fr: 'Identifie l''élément comme composant porteur dans le modèle d''architecture.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — élément porteur'
+    it: 'Identifica l''elemento come componente portante nel modello di architettura.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — elemento portante'
+    en: 'Marks the element as a load-bearing component in the architecture model.
+
+
+      **Allowed values**
+
+      - `TRUE` — load-bearing element'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-true
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: GrossVolume
+  pset: Qto_FootingBaseQuantities
+  definition:
+    de: Bruttovolumen des modellierten Fundaments.
+    fr: Volume brut de la fondation modélisée.
+    it: Volume lordo della fondazione modellata.
+    en: Gross volume of the modelled footing.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: Status
+  pset: Pset_FootingCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 8

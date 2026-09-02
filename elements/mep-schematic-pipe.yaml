@@ -1,0 +1,423 @@
+id: pragmaticbim:element/mep-schematic-pipe
+code: MEP-SCH-PIPE
+sort_order: 60
+status: active
+name:
+  de: Rohrleitung (schematisch)
+  fr: Canalisation (schématique)
+  it: Condotta (schematica)
+  en: Pipe (schematic)
+definition:
+  de: 'Schematische Rohrleitung für die frühe Koordination — Medium in Reference.
+
+
+    **Beschreibung**
+
+    - Vereinfachtes Segment oder Volumen für Hauptführungen (Heizung, Kälte, Frischwasser, Abwasser u. a.).
+
+    - Dient der Machbarkeits- und Kollisionsprüfung, nicht der Ausführungsplanung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als Volumen oder vereinfachtes Segment modellieren; Querschnitt gemäss Grobkonzept.
+
+    - Medium über Reference setzen (z. B. HZ, KZ, TW, AW, FL).
+
+    - Keine Armaturen, Regelventile oder Anschlussdetails modellieren.'
+  fr: 'Canalisation schématique pour la coordination précoce — médium dans Reference.
+
+
+    **Description**
+
+    - Segment ou volume simplifié pour tracés principaux (chauffage, froid, eau, eaux usées, etc.).
+
+    - Sert à la faisabilité et aux collisions, pas à l''exécution.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume ou segment simplifié; section selon le concept grossier.
+
+    - Indiquer le médium dans Reference (p. ex. HZ, KZ, TW, AW, FL).
+
+    - Ne pas modéliser armatures, vannes ou raccords de détail.'
+  it: 'Condotta schematica per il coordinamento precoce — mezzo in Reference.
+
+
+    **Descrizione**
+
+    - Segmento o volume semplificato per percorsi principali (riscaldamento, freddo, acqua, scarichi, ecc.).
+
+    - Serve per fattibilità e collisioni, non per l''esecuzione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume o segmento semplificato; sezione secondo il concept grossolano.
+
+    - Impostare il mezzo in Reference (p. es. HZ, KZ, TW, AW, FL).
+
+    - Non modellare armature, valvole o dettagli di collegamento.'
+  en: 'Schematic pipe for early coordination — medium in Reference.
+
+
+    **Description**
+
+    - Simplified segment or volume for main routes (heating, cooling, water, wastewater, etc.).
+
+    - Used for feasibility and clash checking, not for execution planning.
+
+
+    **Modelling guidelines**
+
+    - Model as a volume or simplified segment; cross-section according to the sketch concept.
+
+    - Set the medium in Reference (e.g. HZ, KZ, TW, AW, FL).
+
+    - Do not model fittings, control valves, or connection details.'
+needed_in_domain:
+- pragmaticbim:domain/mep
+entity_ifc2x3: IfcFlowSegment
+entity_ifc4: IfcPipeSegment
+entity_ifc4_3: IfcPipeSegment
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcPipeSegment OR entity_ifc2x3=IfcFlowSegment
+attributes:
+- name: Reference
+  pset: Pset_PipeSegmentTypeCommon
+  definition:
+    de: 'Medium der schematischen Rohrleitung.
+
+
+      **Zulässige Werte**
+
+      - `HZ` — Heizung
+
+      - `VL-H` — Vorlauf Heizung
+
+      - `RL-H` — Rücklauf Heizung
+
+      - `KZ` — Kälte
+
+      - `VL-K` — Vorlauf Kälte
+
+      - `RL-K` — Rücklauf Kälte
+
+      - `TW` — Trinkwasser
+
+      - `FW` — Frischwasser
+
+      - `AW` — Abwasser (sanitär)
+
+      - `WW` — Abwasser (alternative Kennung)
+
+      - `ENT` — Entwässerung (Gebäudeentwässerung)
+
+      - `FL` — Fallleitung (Regenfallleitung)'
+    fr: 'Médium de la canalisation schématique.
+
+
+      **Valeurs admises**
+
+      - `HZ` — chauffage
+
+      - `VL-H` — départ chauffage
+
+      - `RL-H` — retour chauffage
+
+      - `KZ` — froid
+
+      - `VL-K` — départ froid
+
+      - `RL-K` — retour froid
+
+      - `TW` — eau potable
+
+      - `FW` — eau froide
+
+      - `AW` — eaux usées (sanitaires)
+
+      - `WW` — eaux usées (code alternatif)
+
+      - `ENT` — drainage (évacuation du bâtiment)
+
+      - `FL` — descente pluviale'
+    it: 'Mezzo della condotta schematica.
+
+
+      **Valori ammessi**
+
+      - `HZ` — riscaldamento
+
+      - `VL-H` — mandata riscaldamento
+
+      - `RL-H` — ritorno riscaldamento
+
+      - `KZ` — freddo
+
+      - `VL-K` — mandata freddo
+
+      - `RL-K` — ritorno freddo
+
+      - `TW` — acqua potabile
+
+      - `FW` — acqua fredda
+
+      - `AW` — acque reflue (sanitarie)
+
+      - `WW` — acque reflue (codice alternativo)
+
+      - `ENT` — drenaggio (edificio)
+
+      - `FL` — pluviale (discendente)'
+    en: 'Medium of the schematic pipe.
+
+
+      **Allowed values**
+
+      - `HZ` — heating
+
+      - `VL-H` — heating flow (supply)
+
+      - `RL-H` — heating return
+
+      - `KZ` — cooling
+
+      - `VL-K` — cooling flow (supply)
+
+      - `RL-K` — cooling return
+
+      - `TW` — drinking water
+
+      - `FW` — fresh water
+
+      - `AW` — wastewater (sanitary)
+
+      - `WW` — wastewater (alternate code)
+
+      - `ENT` — drainage (building)
+
+      - `FL` — downpipe (rainwater)'
+  datatype: IfcIdentifier
+  allowed_values: pragmaticbim:value/pipe-reference-schematic
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: CrossSectionArea
+  pset: Qto_PipeSegmentBaseQuantities
+  definition:
+    de: Querschnittsfläche der modellierten schematischen Rohrleitung.
+    fr: Section transversale de la canalisation schématique modélisée.
+    it: Area della sezione trasversale della condotta schematica modellata.
+    en: Cross-sectional area of the modelled schematic pipe.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: Status
+  pset: Pset_PipeSegmentTypeCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 4

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-slab-baseslab
+code: SLAB-BASESLAB
+name:
+  de: PredefinedType Bodenplatte
+  fr: PredefinedType dalle de fondation
+  it: PredefinedType soletta di fondazione
+  en: PredefinedType base slab
+description:
+  de: IfcSlab PredefinedType für Bodenplatten.
+  fr: IfcSlab PredefinedType pour dalles de fondation.
+  it: IfcSlab PredefinedType per solette di fondazione.
+  en: IfcSlab PredefinedType for base slabs.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - BASESLAB
+  fr:
+  - BASESLAB
+  it:
+  - BASESLAB
+  en:
+  - BASESLAB

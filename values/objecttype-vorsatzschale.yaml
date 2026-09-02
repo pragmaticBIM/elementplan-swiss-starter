@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-vorsatzschale
+code: OBJ-VORSATZ
+name:
+  de: ObjectType Vorsatzschale
+  fr: ObjectType contre-cloison
+  it: ObjectType controparete
+  en: ObjectType facing shell
+description:
+  de: ObjectType für IfcSpace als nutzbaren Raum einer Vorsatzschale (ohne Konstruktion).
+  fr: ObjectType pour IfcSpace comme espace utile d'une contre-cloison (hors construction).
+  it: ObjectType per IfcSpace come spazio utile di una controparete (senza costruzione).
+  en: ObjectType for IfcSpace as the usable space of a facing shell (excluding construction).
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Vorsatzschale
+  fr:
+  - Vorsatzschale
+  it:
+  - Vorsatzschale
+  en:
+  - Vorsatzschale

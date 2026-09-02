@@ -1,0 +1,189 @@
+id: pragmaticbim:workflow/des-d0165-area-verification
+code: DES-D0165
+sort_order: 58
+name:
+  de: Flächennachweis nach SIA D0165
+  fr: Justificatif de surfaces selon SIA D0165
+  it: Verifica delle superfici secondo SIA D0165
+  en: Area verification according to SIA D0165
+description:
+  de: 'Flächennachweis nach SIA D0165 aus dem Raummodell — Flächenklasse über Reference, Nutzung über LongName.
+
+
+    **Ausgangslage**
+
+    - Detaillierte Flächennachweise nach SIA D0165 (z. B. `HNF-1` … `HNF-6`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`) brauchen eine nachvollziehbare Zuordnung je Raum.
+
+    - Manuelle Listen oder parallele Klassifikationsattribute ausserhalb des Modells sind fehleranfällig.
+
+
+    **Ziel & Nutzen**
+
+    - Innen- und Aussenräume mit Reference (D0165-Klasse) und LongName (Raumnutzung) führen.
+
+    - Flächenklassen direkt am Raum halten statt separat aus Listen abzugleichen.
+
+
+    **Ablauf**
+
+    1. Innen- und Aussenräume als Volumen mit LongName und Reference (D0165-Code) bereitstellen.
+
+    2. Nettoflächen je Raum aus dem Modell auswerten.
+
+    3. Flächen nach D0165 über Reference aggregieren.
+
+
+    **Ergebnis**
+
+    - Nachvollziehbarer Flächennachweis nach SIA D0165 aus dem Modell.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Innenräume als IfcSpace (PredefinedType=INTERNAL) und Aussenräume als IfcSpace (PredefinedType=EXTERNAL)
+
+    - LongName gemäss https://schema.pragmaticbim.ch/classification/room-name.html
+
+    - Reference mit D0165-Code (z. B. `HNF-1`, `HNF-2`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`, `AVF`, `UUF`) — Mapping: https://schema.pragmaticbim.ch/classification/mapping-d0165-to-room-activity.html und
+    https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
+
+    - NetFloorArea je Raum'
+  fr: 'Justificatif de surfaces selon SIA D0165 à partir du modèle spatial — classe de surface via Reference, usage via LongName.
+
+
+    **Situation de départ**
+
+    - Les justificatifs détaillés SIA D0165 (p. ex. `HNF-1` … `HNF-6`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`) exigent une affectation traçable par local.
+
+    - Les listes manuelles ou attributs de classification hors modèle sont sources d''erreurs.
+
+
+    **Objectif et bénéfice**
+
+    - Porter espaces intérieurs et extérieurs avec Reference (classe D0165) et LongName (usage du local).
+
+    - Maintenir les classes de surface directement sur le local plutôt que de les réconcilier via des listes.
+
+
+    **Déroulement**
+
+    1. Fournir espaces intérieurs et extérieurs comme volumes avec LongName et Reference (code D0165).
+
+    2. Évaluer les surfaces nettes par local à partir du modèle.
+
+    3. Agréger les surfaces selon D0165 via Reference.
+
+
+    **Résultat**
+
+    - Justificatif de surfaces SIA D0165 traçable à partir du modèle.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Espaces intérieurs comme IfcSpace (PredefinedType=INTERNAL) et espaces extérieurs comme IfcSpace (PredefinedType=EXTERNAL)
+
+    - LongName selon https://schema.pragmaticbim.ch/classification/room-name.html
+
+    - Reference avec code D0165 (p. ex. `HNF-1`, `HNF-2`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`, `AVF`, `UUF`) — mapping : https://schema.pragmaticbim.ch/classification/mapping-d0165-to-room-activity.html et
+    https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
+
+    - NetFloorArea par local'
+  it: 'Verifica delle superfici secondo SIA D0165 dal modello spaziale — classe di superficie tramite Reference, uso tramite LongName.
+
+
+    **Situazione di partenza**
+
+    - Le verifiche dettagliate SIA D0165 (p. es. `HNF-1` … `HNF-6`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`) richiedono un''assegnazione tracciabile per locale.
+
+    - Elenchi manuali o attributi di classificazione fuori dal modello sono soggetti a errori.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire spazi interni ed esterni con Reference (classe D0165) e LongName (uso del locale).
+
+    - Mantenere le classi di superficie direttamente sul locale invece di riconciliarle tramite elenchi.
+
+
+    **Svolgimento**
+
+    1. Fornire spazi interni ed esterni come volumi con LongName e Reference (codice D0165).
+
+    2. Valutare le superfici nette per locale dal modello.
+
+    3. Aggregare le superfici secondo D0165 tramite Reference.
+
+
+    **Risultato**
+
+    - Verifica delle superfici SIA D0165 tracciabile dal modello.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Spazi interni come IfcSpace (PredefinedType=INTERNAL) e spazi esterni come IfcSpace (PredefinedType=EXTERNAL)
+
+    - LongName secondo https://schema.pragmaticbim.ch/classification/room-name.html
+
+    - Reference con codice D0165 (p. es. `HNF-1`, `HNF-2`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`, `AVF`, `UUF`) — mapping: https://schema.pragmaticbim.ch/classification/mapping-d0165-to-room-activity.html e
+    https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
+
+    - NetFloorArea per locale'
+  en: 'SIA D0165 area verification from the space model — area class via Reference, use via LongName.
+
+
+    **Starting point**
+
+    - Detailed SIA D0165 area verification (e.g. `HNF-1` … `HNF-6`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`) needs a traceable assignment per space.
+
+    - Manual lists or classification attributes outside the model are error-prone.
+
+
+    **Goal & benefit**
+
+    - Carry interior and exterior spaces with Reference (D0165 class) and LongName (room use).
+
+    - Keep area classes directly on the space instead of reconciling them via lists.
+
+
+    **Process**
+
+    1. Provide interior and exterior spaces as volumes with LongName and Reference (D0165 code).
+
+    2. Evaluate net areas per space from the model.
+
+    3. Aggregate areas according to D0165 via Reference.
+
+
+    **Outcome**
+
+    - Traceable SIA D0165 area verification from the model.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Interior spaces as IfcSpace (PredefinedType=INTERNAL) and exterior spaces as IfcSpace (PredefinedType=EXTERNAL)
+
+    - LongName according to https://schema.pragmaticbim.ch/classification/room-name.html
+
+    - Reference with D0165 code (e.g. `HNF-1`, `HNF-2`, `NNF-7`, `FF-8`, `VF-9`, `BUF-10`, `AVF`, `UUF`) — mapping: https://schema.pragmaticbim.ch/classification/mapping-d0165-to-room-activity.html and
+    https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
+
+    - NetFloorArea per space'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Reference carries the D0165 area class (shortcuts e.g. d0165:HNF-1…HNF-6, d0165:NNF-7, d0165:FF-8, d0165:VF-9, d0165:BUF-10, d0165:AVF, d0165:UUF). LongName remains the Building Space Name Classification
+  room use. Mapping: https://schema.pragmaticbim.ch/classification/mapping-d0165-to-room-activity.html, https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html'

@@ -1,0 +1,60 @@
+id: pragmaticbim:value/facade-cladding-quality
+code: FACADE-CLADDING-QUALITY
+name:
+  de: Fassadenbekleidungsqualität
+  fr: Qualité de revêtement de façade
+  it: Qualità rivestimento di facciata
+  en: Facade cladding quality
+description:
+  de: Bekleidungsqualität der Fassade gemäss Bauteilkatalog.
+  fr: Qualité de revêtement de façade selon le catalogue de composants.
+  it: Qualità del rivestimento di facciata secondo il catalogo componenti.
+  en: Cladding quality of the facade according to the component catalogue.
+year: 2026
+norm_reference: null
+status: active
+values:
+  de:
+  - nicht definiert
+  - Putzfassade
+  - WDVS
+  - Hinterlüftete Fassade
+  - Holzfassade
+  - Sichtbeton
+  - Metallverkleidung
+  - Faserzement
+  - Naturstein
+  - Klinker
+  fr:
+  - nicht definiert
+  - Putzfassade
+  - WDVS
+  - Hinterlüftete Fassade
+  - Holzfassade
+  - Sichtbeton
+  - Metallverkleidung
+  - Faserzement
+  - Naturstein
+  - Klinker
+  it:
+  - nicht definiert
+  - Putzfassade
+  - WDVS
+  - Hinterlüftete Fassade
+  - Holzfassade
+  - Sichtbeton
+  - Metallverkleidung
+  - Faserzement
+  - Naturstein
+  - Klinker
+  en:
+  - nicht definiert
+  - Putzfassade
+  - WDVS
+  - Hinterlüftete Fassade
+  - Holzfassade
+  - Sichtbeton
+  - Metallverkleidung
+  - Faserzement
+  - Naturstein
+  - Klinker

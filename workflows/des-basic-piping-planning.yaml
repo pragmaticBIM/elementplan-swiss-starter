@@ -1,0 +1,185 @@
+id: pragmaticbim:workflow/des-basic-piping-planning
+code: DES-BASIC-PIPING
+sort_order: 50
+name:
+  de: Planung der Grundleitungen
+  fr: Planification des réseaux de base
+  it: Pianificazione delle condotte di base
+  en: Basic services piping planning
+description:
+  de: 'Entwässerung und Abwasser früh im Modell koordinieren — bevor Kollisionen in Steigzonen und unter Decken teure Planungsänderungen auslösen.
+
+
+    **Ausgangslage**
+
+    - Dachentwässerung, Fallleitungen und Abwasser werden oft erst spät geplant; Kollisionen mit Tragwerk und Gebäudetechnik sind dann schwer zu lösen.
+
+    - Balkonentwässerung wird häufig vergessen und führt zu Nachträgen in der Ausführungsplanung.
+
+
+    **Ziel & Nutzen**
+
+    - Entwässerungsweg von Dach und Balkon über Fallleitungen bis zu den Abwasserrohren früh nachvollziehbar modellieren.
+
+    - Steigzonen, Durchführungen und Platzbedarf vor der Detailplanung prüfen.
+
+
+    **Ablauf**
+
+    1. Gefälledämmung auf Flachdach und Balkon mit Gefälle modellieren; Entwässerungspunkte aus Gefälleverlauf ableiten.
+
+    2. Fallleitungen von Dach und Balkonen bis zur Sammelleitung führen.
+
+    3. Abwasserrohre in Steigzonen und Haupttrasse koordinieren und im Gesamtmodell auf Kollisionen prüfen.
+
+
+    **Ergebnis**
+
+    - Abgestimmter Entwässerungs- und Abwasserstrang als Basis für die Detailplanung Sanitär.
+
+
+    **Lieferobjekte**
+
+    - Architektur- und Gebäudetechnikmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - IfcCovering mit PredefinedType=ROOFING — Gefälledämmung auf Flachdach und Balkon mit Gefälle
+
+    - IfcPipeSegment mit Reference=FL — Fallleitungen von Dach und Balkonen
+
+    - IfcPipeSegment mit Reference=AW, WW oder ENT — Abwasserrohre in Steigzonen und Haupttrasse
+
+    - IfcSpace mit PredefinedType=EXTERNAL — Balkone und Terrassen als Entwässerungsausgangspunkte'
+  fr: 'Coordonner tôt drainage et eaux usées dans le modèle — avant que les collisions dans les cages et sous plafonds n''entraînent des modifications coûteuses.
+
+
+    **Situation de départ**
+
+    - Drainage de toiture, descentes et eaux usées sont souvent planifiés tard ; les collisions avec la structure et le GT deviennent difficiles à résoudre.
+
+    - Le drainage des balcons est fréquemment oublié et mène à des avenants en phase d''exécution.
+
+
+    **Objectif et bénéfice**
+
+    - Modéliser tôt le parcours d''évacuation du toit et du balcon via descentes jusqu''aux collecteurs d''eaux usées.
+
+    - Vérifier cages, traversées et besoin d''espace avant la planification détaillée.
+
+
+    **Déroulement**
+
+    1. Modéliser l''isolation à pente sur toiture plate et balcon ; déduire les points d''évacuation du tracé de pente.
+
+    2. Mener les descentes du toit et des balcons jusqu''au collecteur principal.
+
+    3. Coordonner les canalisations d''eaux usées dans les cages et la conduite principale ; vérifier les collisions en maquette fédérée.
+
+
+    **Résultat**
+
+    - Parcours d''évacuation et d''eaux usées coordonné comme base pour la planification sanitaire détaillée.
+
+
+    **Livrables**
+
+    - Maquettes architecture et CVC avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - IfcCovering avec PredefinedType=ROOFING — isolation à pente sur toiture plate et balcon
+
+    - IfcPipeSegment avec Reference=FL — descentes depuis toiture et balcons
+
+    - IfcPipeSegment avec Reference=AW, WW ou ENT — canalisations d''eaux usées dans cages et conduite principale
+
+    - IfcSpace avec PredefinedType=EXTERNAL — balcons et terrasses comme points de départ du drainage'
+  it: 'Coordinare presto drenaggio e acque reflue nel modello — prima che collisioni in vani e sotto controsoffitti provochino modifiche costose.
+
+
+    **Situazione di partenza**
+
+    - Drenaggio di tetto, pluviali e acque reflue sono spesso pianificati tardi; le collisioni con struttura e impianti diventano difficili da risolvere.
+
+    - Il drenaggio dei balconi viene spesso dimenticato e porta a varianti in fase esecutiva.
+
+
+    **Obiettivo e beneficio**
+
+    - Modellare presto il percorso di drenaggio da tetto e balcone attraverso pluviali fino ai collettori di acque reflue.
+
+    - Verificare vani, attraversamenti e spazio necessario prima della pianificazione di dettaglio.
+
+
+    **Svolgimento**
+
+    1. Modellare l''isolamento a pendenza su tetto piano e balcone; derivare i punti di scarico dal tracciato di pendenza.
+
+    2. Condurre i pluviali da tetto e balconi fino al collettore principale.
+
+    3. Coordinare le condotte di acque reflue in vani e tratta principale; verificare collisioni nel modello federato.
+
+
+    **Risultato**
+
+    - Percorso di drenaggio e acque reflue coordinato come base per la pianificazione idraulica di dettaglio.
+
+
+    **Oggetti della fornitura**
+
+    - Modelli di architettura e impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - IfcCovering con PredefinedType=ROOFING — isolamento a pendenza su tetto piano e balcone
+
+    - IfcPipeSegment con Reference=FL — pluviali da tetto e balconi
+
+    - IfcPipeSegment con Reference=AW, WW o ENT — condotte di acque reflue in vani e tratta principale
+
+    - IfcSpace con PredefinedType=EXTERNAL — balconi e terrazze come punti di partenza del drenaggio'
+  en: 'Coordinate drainage and wastewater early in the model — before clashes in risers and below ceilings trigger costly design changes.
+
+
+    **Starting point**
+
+    - Roof drainage, downpipes, and wastewater are often planned late; clashes with structure and MEP become hard to resolve.
+
+    - Balcony drainage is frequently forgotten and leads to change orders during execution planning.
+
+
+    **Goal & benefit**
+
+    - Model the drainage path from roof and balcony through downpipes to wastewater mains early and traceably.
+
+    - Check risers, penetrations, and space requirements before detailed planning.
+
+
+    **Process**
+
+    1. Model tapered insulation on flat roof and balcony with falls; derive drainage points from the fall layout.
+
+    2. Route downpipes from roof and balconies to the main collector.
+
+    3. Coordinate wastewater pipes in risers and main routes; check for clashes in the federated model.
+
+
+    **Outcome**
+
+    - Coordinated drainage and wastewater route as the basis for detailed sanitary planning.
+
+
+    **Deliverables**
+
+    - Architecture and MEP models with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - IfcCovering with PredefinedType=ROOFING — tapered insulation on flat roof and balcony with falls
+
+    - IfcPipeSegment with Reference=FL — downpipes from roof and balconies
+
+    - IfcPipeSegment with Reference=AW, WW, or ENT — wastewater pipes in risers and main routes
+
+    - IfcSpace with PredefinedType=EXTERNAL — balconies and terraces as drainage starting points'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: Plan early — drainage clashes are a common source of late design changes. Include balcony drainage explicitly; route from balcony slabs through downpipes to wastewater mains.

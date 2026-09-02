@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-column
+code: COLUMN-TYPE
+name:
+  de: PredefinedType Stütze
+  fr: PredefinedType poteau
+  it: PredefinedType colonna
+  en: PredefinedType column
+description:
+  de: IfcColumn PredefinedType für Architekturstützen.
+  fr: PredefinedType IfcColumn pour poteaux d'architecture.
+  it: PredefinedType IfcColumn per colonne di architettura.
+  en: IfcColumn PredefinedType for architecture columns.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - COLUMN
+  - PILASTER
+  fr:
+  - COLUMN
+  - PILASTER
+  it:
+  - COLUMN
+  - PILASTER
+  en:
+  - COLUMN
+  - PILASTER

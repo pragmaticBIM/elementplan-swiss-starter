@@ -1,0 +1,572 @@
+id: pragmaticbim:element/architecture-opening-void
+code: ARC-OPENING-VOID
+sort_order: 46
+status: active
+name:
+  de: Durchbruch / Aussparung (Architektur)
+  fr: Percement / réservation (architecture)
+  it: Foro / riserva (architettura)
+  en: Opening / recess (architecture)
+definition:
+  de: 'Durchbruch oder Aussparung in architektonischen Bauteilen — Mauerwerk und nichttragende Wände.
+
+
+    **Beschreibung**
+
+    - Öffnung in Wand, Decke oder anderem Architekturbauteil für Leitungen, Geräte oder bauliche Anforderungen.
+
+    - Verbindlich für Bauteile, die nur im Architekturmodell geführt werden (nichttragende Innenwände, architektonisches Mauerwerk).
+
+
+    **Modellierungsrichtlinie**
+
+    - Als Öffnungselement modellieren und dem durchbrochenen Architekturbauteil zuordnen.
+
+    - Durchbruch durchgehend als OPENING, einseitige oder nicht durchgehende Aussparung als RECESS.
+
+    - Geschossweise und bauteilbezogen eindeutig benennen; Durchbrüche im Tragwerk nicht hier, sondern über TGA-Aussparungsanforderung und Tragwerksöffnung führen.'
+  fr: 'Percement ou réservation dans les composants architecturaux — maçonnerie et cloisons non porteuses.
+
+
+    **Description**
+
+    - Ouverture dans un mur, une dalle ou un autre composant architectural pour réseaux, appareils ou exigences constructives.
+
+    - Contraignante pour les composants portés uniquement dans le modèle d''architecture (cloisons intérieures non porteuses, maçonnerie architecturale).
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme élément d''ouverture et le rattacher au composant architectural traversé.
+
+    - Percement traversant en OPENING, réservation unilatérale ou non traversante en RECESS.
+
+    - Nommer de façon univoque par étage et par composant ; ne pas porter ici les percements structurels — via exigence CVC et ouverture structurelle.'
+  it: 'Foro o riserva in componenti architettonici — muratura e pareti non portanti.
+
+
+    **Descrizione**
+
+    - Apertura in parete, solaio o altro componente architettonico per reti, apparecchi o requisiti costruttivi.
+
+    - Vincolante per componenti gestiti solo nel modello di architettura (pareti interne non portanti, muratura architettonica).
+
+
+    **Direttive di modellazione**
+
+    - Modellare come elemento di apertura e assegnarlo al componente architettonico attraversato.
+
+    - Foro passante come OPENING, riserva unilaterale o non passante come RECESS.
+
+    - Nominare in modo univoco per piano e per componente; non gestire qui i fori strutturali — tramite richiesta impianti e apertura strutturale.'
+  en: 'Opening or recess in architectural components — masonry and non-load-bearing walls.
+
+
+    **Description**
+
+    - Void in a wall, slab, or other architectural component for services, equipment, or construction requirements.
+
+    - Binding for components carried only in the architecture model (non-load-bearing interior walls, architectural masonry).
+
+
+    **Modelling guidelines**
+
+    - Model as an opening element and assign it to the voided architectural host.
+
+    - Through opening as OPENING; one-sided or non-through recess as RECESS.
+
+    - Name uniquely by storey and host component; do not carry structural penetrations here — use the MEP void request and the structural opening.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcOpeningElement
+entity_ifc4: IfcOpeningElement
+entity_ifc4_3: IfcOpeningElement
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcOpeningElement OR entity_ifc2x3=IfcOpeningElement
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet die Art der Öffnung.
+
+
+      **Zulässige Werte**
+
+      - `OPENING` — Durchbruch (durchgehend)
+
+      - `RECESS` — Aussparung (nicht oder nicht vollständig durchgehend)'
+    fr: 'Identifie le type d''ouverture.
+
+
+      **Valeurs admises**
+
+      - `OPENING` — percement (traversant)
+
+      - `RECESS` — réservation (non ou non entièrement traversante)'
+    it: 'Identifica il tipo di apertura.
+
+
+      **Valori ammessi**
+
+      - `OPENING` — foro (passante)
+
+      - `RECESS` — riserva (non o non completamente passante)'
+    en: 'Marks the kind of opening.
+
+
+      **Allowed values**
+
+      - `OPENING` — through opening
+
+      - `RECESS` — recess (not or not fully through)'
+  datatype: null
+  allowed_values: null
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Kennzeichnet die Art der Öffnung.
+
+
+      **Zulässige Werte**
+
+      - `OPENING` — Durchbruch (durchgehend)
+
+      - `RECESS` — Aussparung (nicht oder nicht vollständig durchgehend)
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Identifie le type d''ouverture.
+
+
+      **Valeurs admises**
+
+      - `OPENING` — percement (traversant)
+
+      - `RECESS` — réservation (non ou non entièrement traversante)
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Identifica il tipo di apertura.
+
+
+      **Valori ammessi**
+
+      - `OPENING` — foro (passante)
+
+      - `RECESS` — riserva (non o non completamente passante)
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Marks the kind of opening.
+
+
+      **Allowed values**
+
+      - `OPENING` — through opening
+
+      - `RECESS` — recess (not or not fully through)'
+  datatype: null
+  allowed_values: null
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: true
+  status: active
+  sort_order: '2
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Öffnung zur Zuordnung zu Leitung, Gerät oder Anforderung.
+    fr: Désignation de l'ouverture pour rattachement à réseau, appareil ou exigence.
+    it: Denominazione dell'apertura per collegamento a rete, apparecchio o requisito.
+    en: Opening designation for assignment to service, equipment, or requirement.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: null
+  definition:
+    de: Referenz zur eindeutigen Identifikation der Öffnung im Architektur- und Koordinationsmodell.
+    fr: Référence pour l'identification univoque de l'ouverture dans les modèles d'architecture et de coordination.
+    it: Riferimento per l'identificazione univoca dell'apertura nei modelli di architettura e di coordinamento.
+    en: Reference for unique identification of the opening in the architecture and coordination models.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: Width
+  pset: Qto_OpeningElementBaseQuantities
+  definition:
+    de: Lichte Breite der modellierten Öffnung.
+    fr: Largeur libre de l'ouverture modélisée.
+    it: Larghezza libera dell'apertura modellata.
+    en: Clear width of the modelled opening.
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: OverallWidth
+  pset: ePset_OpeningDimensions
+  definition:
+    de: 'Lichte Breite der modellierten Öffnung.
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Width (Qto_OpeningElementBaseQuantities).'
+    fr: 'Largeur libre de l''ouverture modélisée.
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Width (Qto_OpeningElementBaseQuantities).'
+    it: 'Larghezza libera dell''apertura modellata.
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Width (Qto_OpeningElementBaseQuantities).'
+    en: 'Clear width of the modelled opening.
+
+
+      **Note**
+
+      - IFC2x3 substitute for Width (Qto_OpeningElementBaseQuantities).'
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: Height
+  pset: Qto_OpeningElementBaseQuantities
+  definition:
+    de: Lichte Höhe der modellierten Öffnung.
+    fr: Hauteur libre de l'ouverture modélisée.
+    it: Altezza libera dell'apertura modellata.
+    en: Clear height of the modelled opening.
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: OverallHeight
+  pset: ePset_OpeningDimensions
+  definition:
+    de: 'Lichte Höhe der modellierten Öffnung.
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Height (Qto_OpeningElementBaseQuantities).'
+    fr: 'Hauteur libre de l''ouverture modélisée.
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Height (Qto_OpeningElementBaseQuantities).'
+    it: 'Altezza libera dell''apertura modellata.
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Height (Qto_OpeningElementBaseQuantities).'
+    en: 'Clear height of the modelled opening.
+
+
+      **Note**
+
+      - IFC2x3 substitute for Height (Qto_OpeningElementBaseQuantities).'
+  datatype: IfcPositiveLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: Status
+  pset: Pset_OpeningElementCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 9
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 10

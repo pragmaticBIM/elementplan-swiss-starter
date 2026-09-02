@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-survey-terrain
+code: OBJ-SURVEY-TERRAIN
+name:
+  de: ObjectType Gelände
+  fr: ObjectType terrain
+  it: ObjectType terreno
+  en: ObjectType terrain
+description:
+  de: ObjectType für IfcBuildingElementProxy als Geländeoberfläche (IFC2x3-Ersatz).
+  fr: ObjectType pour IfcBuildingElementProxy comme surface de terrain (substitut IFC2x3).
+  it: ObjectType per IfcBuildingElementProxy come superficie del terreno (sostituto IFC2x3).
+  en: ObjectType for IfcBuildingElementProxy as terrain surface (IFC2x3 substitute).
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Gelände
+  fr:
+  - Gelände
+  it:
+  - Gelände
+  en:
+  - Gelände

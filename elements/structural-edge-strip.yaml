@@ -1,0 +1,236 @@
+id: pragmaticbim:element/structural-edge-strip
+code: STR-EDGE-STRIP
+sort_order: 79
+status: active
+name:
+  de: Randstreifen
+  fr: Bande de rive
+  it: Fascia di bordo
+  en: Edge strip
+definition:
+  de: 'Schalungsrandstreifen im Schal- und Bewehrungsmodell der Tragwerksplanung.
+
+
+    **Beschreibung**
+
+    - Seitlicher Schalungsabschluss entlang Decken und anderen Betonbauteilen (verlorene oder dauerhafte Randschalung).
+
+    - Randabschluss-Typ (z. B. Einreihig, Stellplatte, Schalenstein) für Ausführung und NPK 211.5.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachtes Volumen oder Linienbauteil entlang der Randlinie mit ObjectType `Randstreifen` modellieren.'
+  fr: 'Bande de rive de coffrage dans le modèle de coffrage et d''armatures de l''ingénierie structurelle.
+
+
+    **Description**
+
+    - Terminaison de coffrage latérale le long des dalles et autres éléments en béton (coffrage de rive perdu ou permanent).
+
+    - Type de terminaison de rive (p. ex. Einreihig, Stellplatte, Schalenstein) pour l''exécution et NPK 211.5.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume simplifié ou élément linéaire le long de la ligne de rive avec ObjectType `Randstreifen`.'
+  it: 'Fascia di bordo di cassero nel modello di cassero e armatura dell''ingegneria strutturale.
+
+
+    **Descrizione**
+
+    - Terminazione laterale di cassero lungo solette e altri elementi in calcestruzzo (cassero di bordo a perdere o permanente).
+
+    - Tipo di terminazione di bordo (es. Einreihig, Stellplatte, Schalenstein) per esecuzione e NPK 211.5.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume semplificato o elemento lineare lungo la linea di bordo con ObjectType `Randstreifen`.'
+  en: 'Formwork edge strip in the structural formwork and reinforcement model.
+
+
+    **Description**
+
+    - Lateral formwork termination along slabs and other concrete components (lost or permanent edge formwork).
+
+    - Edge-termination type (e.g. Einreihig, Stellplatte, Schalenstein) for execution and NPK 211.5.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified volume or linear element along the edge line with ObjectType `Randstreifen`.'
+needed_in_domain:
+- pragmaticbim:domain/structural
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Randstreifen) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Randstreifen)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Randstreifen` — Schalungsrandstreifen gemäss Tragwerksplanung'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Randstreifen` — bande de rive de coffrage selon la planification structurelle'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Randstreifen` — fascia di bordo di cassero secondo la pianificazione strutturale'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Randstreifen` — formwork edge strip according to the structural design'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-edge-strip
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Randabschluss
+  pset: 211.5_Beton_und_Stahlbetonarbeiten
+  definition:
+    de: 'Ausführung des Schalungsrandabschlusses.
+
+
+      **Zulässige Werte**
+
+      - `Einreihig` — einreihige Ausführung
+
+      - `Zweireihig` — zweireihige Ausführung
+
+      - `Stellplatte` — Stellplatte
+
+      - `Stellplatte mit Wasserstein` — Stellplatte mit Wasserstein
+
+      - `Randstein` — Randstein
+
+      - `Schalenstein` — Schalenstein'
+    fr: 'Exécution de la terminaison de rive de coffrage.
+
+
+      **Valeurs admises**
+
+      - `Einreihig` — exécution sur une rangée
+
+      - `Zweireihig` — exécution sur deux rangées
+
+      - `Stellplatte` — dalle de rive
+
+      - `Stellplatte mit Wasserstein` — dalle de rive avec pierre à eau
+
+      - `Randstein` — bordure
+
+      - `Schalenstein` — pierre de coque'
+    it: 'Esecuzione della terminazione di bordo di cassero.
+
+
+      **Valori ammessi**
+
+      - `Einreihig` — esecuzione a una fila
+
+      - `Zweireihig` — esecuzione a due file
+
+      - `Stellplatte` — piastra di bordo
+
+      - `Stellplatte mit Wasserstein` — piastra di bordo con pietra scolo
+
+      - `Randstein` — cordolo
+
+      - `Schalenstein` — pietra a scocca'
+    en: 'Formwork edge-termination execution.
+
+
+      **Allowed values**
+
+      - `Einreihig` — single-row execution
+
+      - `Zweireihig` — double-row execution
+
+      - `Stellplatte` — edge plate
+
+      - `Stellplatte mit Wasserstein` — edge plate with waterstone
+
+      - `Randstein` — edge stone
+
+      - `Schalenstein` — shell block'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/edge-strip-termination
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  is_applicability: false
+  status: active
+  sort_order: 3

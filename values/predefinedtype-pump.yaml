@@ -1,0 +1,48 @@
+id: pragmaticbim:value/predefinedtype-pump
+code: PUMP
+name:
+  de: PredefinedType IfcPump
+  fr: PredefinedType IfcPump
+  it: PredefinedType IfcPump
+  en: PredefinedType IfcPump
+description:
+  de: Ifc PredefinedType für IfcPump.
+  fr: PredefinedType IFC pour IfcPump.
+  it: PredefinedType IFC per IfcPump.
+  en: IFC PredefinedType for IfcPump.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - CIRCULATOR
+  - ENDSUCTION
+  - SPLITCASE
+  - SUBMERSIBLEPUMP
+  - SUMPPUMP
+  - VERTICALINLINE
+  - VERTICALTURBINE
+  fr:
+  - CIRCULATOR
+  - ENDSUCTION
+  - SPLITCASE
+  - SUBMERSIBLEPUMP
+  - SUMPPUMP
+  - VERTICALINLINE
+  - VERTICALTURBINE
+  it:
+  - CIRCULATOR
+  - ENDSUCTION
+  - SPLITCASE
+  - SUBMERSIBLEPUMP
+  - SUMPPUMP
+  - VERTICALINLINE
+  - VERTICALTURBINE
+  en:
+  - CIRCULATOR
+  - ENDSUCTION
+  - SPLITCASE
+  - SUBMERSIBLEPUMP
+  - SUMPPUMP
+  - VERTICALINLINE
+  - VERTICALTURBINE

@@ -1,0 +1,186 @@
+id: pragmaticbim:workflow/qas-early-design-coordination
+code: QAS-EARLY-COORD
+sort_order: 71
+name:
+  de: Koordination in frühen Entwurfsphasen
+  fr: Coordination en phases de conception précoce
+  it: Coordinamento nelle fasi di progetto precoce
+  en: Early design stage coordination
+description:
+  de: 'Konzept und Machbarkeit früh im Modell abstimmen — vergleichbar mit einem Strichkonzept, ohne Ausführungsdetail.
+
+
+    **Ausgangslage**
+
+    - In Vorprojekt und Studium fehlen oft belastbare Angaben zum Technikplatzbedarf.
+
+    - Späte Koordination führt zu teuren Planungsänderungen; reine 2D-Skizzen sind schwer gegen andere Disziplinen zu prüfen.
+
+
+    **Ziel & Nutzen**
+
+    - Konzepte als Volumen und Platzreserven im Modell führen und früh auf Kollisionen und Engpässe prüfen.
+
+    - Machbarkeit von Technikzentralen und Leitungsführungen für alle Beteiligten nachvollziehbar machen.
+
+
+    **Ablauf**
+
+    1. Architektur- und Technikmodelle mit Volumen statt Ausführungsdetail bereitstellen.
+
+    2. Technikplatzbedarf (Elektro, Lüftung, Sanitär, Heizung, Kälte, Erzeuger) als Koordinationsgeometrie modellieren.
+
+    3. Fachübergreifend im Gesamtmodell auf Kollisionen, Mindesthöhen und Reserven prüfen.
+
+
+    **Ergebnis**
+
+    - Abgestimmtes Strichkonzept mit nachvollziehbarem Technikplatzbedarf als Basis für die weitere Planung.
+
+
+    **Lieferobjekte**
+
+    - Koordinationsmodelle Architektur und Gebäudetechnik mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - IfcWall und IfcSlab (FLOOR) — Wände und Deckenplatten als Koordinationsgeometrie (ohne Ausführungsdetail)
+
+    - Schematische Hauptverteilungen: IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment mit Medium in Reference; Erzeugerplatz als IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
+
+    - Name und Reference je Element zur Zuordnung im Koordinationsmodell
+
+    - Leitungsquerschnitt (CrossSectionArea) als Grössenangabe für Machbarkeitsprüfung'
+  fr: 'Accorder concept et faisabilité tôt dans le modèle — comparable à une esquisse, sans détail d''exécution.
+
+
+    **Situation de départ**
+
+    - En avant-projet et étude, les besoins en espace technique manquent souvent de données fiables.
+
+    - Une coordination tardive entraîne des modifications coûteuses ; les croquis 2D seuls sont difficiles à vérifier entre disciplines.
+
+
+    **Objectif et bénéfice**
+
+    - Porter les concepts comme volumes et réserves d''espace dans le modèle et détecter tôt les collisions et les goulots.
+
+    - Rendre la faisabilité des locaux techniques et des cheminements de réseaux compréhensibles pour toutes les parties.
+
+
+    **Déroulement**
+
+    1. Fournir maquettes architecture et techniques en volumes plutôt qu''en détail d''exécution.
+
+    2. Modéliser le besoin d''espace technique (électricité, ventilation, sanitaire, chauffage, froid, production) comme géométrie de coordination.
+
+    3. Vérifier en modèle fédéré les collisions, hauteurs minimales et réserves.
+
+
+    **Résultat**
+
+    - Esquisse coordonnée avec besoin d''espace traçable comme base pour la suite de la planification.
+
+
+    **Livrables**
+
+    - Maquettes de coordination architecture et CVC avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - IfcWall et IfcSlab (FLOOR) — murs et dalles de plancher comme géométrie de coordination (sans détail d''exécution)
+
+    - Distributions principales schématiques : IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment avec médium dans Reference ; espace générateurs comme IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
+
+    - Name et Reference par élément pour l''identification dans le modèle de coordination
+
+    - Section de canalisation (CrossSectionArea) comme indication de dimension pour la vérification de faisabilité'
+  it: 'Coordinare concept e fattibilità presto nel modello — comparabile a uno schizzo concettuale, senza dettaglio esecutivo.
+
+
+    **Situazione di partenza**
+
+    - In predimensionamento e studio mancano spesso dati affidabili sullo spazio tecnico.
+
+    - Un coordinamento tardivo causa modifiche costose; i soli schizzi 2D sono difficili da verificare tra discipline.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire i concept come volumi e riserve di spazio nel modello e rilevare presto collisioni e colli di bottiglia.
+
+    - Rendere la fattibilità di centrali tecniche e percorsi impiantistici comprensibile per tutte le parti.
+
+
+    **Svolgimento**
+
+    1. Fornire modelli di architettura e impianti come volumi anziché dettaglio esecutivo.
+
+    2. Modellare il fabbisogno di spazio tecnico (elettrico, ventilazione, sanitario, riscaldamento, freddo, produzione) come geometria di coordinamento.
+
+    3. Verificare nel modello federato collisioni, altezze minime e riserve.
+
+
+    **Risultato**
+
+    - Schizzo concettuale coordinato con fabbisogno di spazio tracciabile come base per la pianificazione successiva.
+
+
+    **Oggetti della fornitura**
+
+    - Modelli di coordinamento architettura e impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - IfcWall e IfcSlab (FLOOR) — pareti e solette di piano come geometria di coordinamento (senza dettaglio esecutivo)
+
+    - Distribuzioni principali schematiche: IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment con mezzo in Reference; spazio generatori come IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
+
+    - Name e Reference per elemento per l''identificazione nel modello di coordinamento
+
+    - Sezione di condotta (CrossSectionArea) come indicazione dimensionale per la verifica di fattibilità'
+  en: 'Align concept and feasibility early in the model — comparable to a sketch design, without execution detail.
+
+
+    **Starting point**
+
+    - In preliminary design and study, reliable data on technical space requirements is often missing.
+
+    - Late coordination leads to costly design changes; 2D sketches alone are hard to check across disciplines.
+
+
+    **Goal & benefit**
+
+    - Maintain concepts as volumes and space reserves in the model and check early for clashes and bottlenecks.
+
+    - Make feasibility of plant rooms and service routes understandable for all parties.
+
+
+    **Process**
+
+    1. Provide architecture and services models as volumes rather than execution detail.
+
+    2. Model technical space requirements (electrical, ventilation, sanitary, heating, cooling, plant) as coordination geometry.
+
+    3. Check clashes, minimum heights, and reserves in the federated model.
+
+
+    **Outcome**
+
+    - Coordinated sketch design with traceable space requirements as the basis for further planning.
+
+
+    **Deliverables**
+
+    - Coordination models for architecture and MEP with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - IfcWall and IfcSlab (FLOOR) — walls and floor slabs as coordination geometry (without execution detail)
+
+    - Schematic main distributions: IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment with medium in Reference; equipment space as IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
+
+    - Name and Reference per element for identification in the coordination model
+
+    - Route cross-section (CrossSectionArea) as a size indication for feasibility checking'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: MEP–Architecture sketch coordination. Early phases use walls and floor slabs as coordination geometry plus schematic pipe/duct/tray/equipment-space with Reference medium; suspended ceilings are
+  not required here — see des-ceiling-mirror-planning.

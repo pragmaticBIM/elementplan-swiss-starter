@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/qas-installation-path-verification
+code: QAS-INSTALL-PATH
+sort_order: 80
+name:
+  de: Kontrolle und Nachweis von Einbringwegen
+  fr: Contrôle et preuve des voies d'apport
+  it: Controllo e prova dei percorsi di trasporto
+  en: Control and verification of installation access paths
+description:
+  de: 'Freizuhaltende Einbringwege im Modell führen und kollisionsfrei nachweisen — bevor grosse Geräte oder Bauteile nicht mehr einbringbar sind.
+
+
+    **Ausgangslage**
+
+    - Ohne freigehaltene Einbringwege kollidieren grosse Geräte und Bauteile mit Bauwerk oder Gebäudetechnik.
+
+    - Späte Konflikte führen zu teuren Umbauten, Sondertransporten oder nicht einbringbaren Anlagen.
+
+
+    **Ziel & Nutzen**
+
+    - Freizuhaltende Einbringwege als Proxy-Volumen im Modell führen.
+
+    - Im Gesamtmodell gegen Bauwerk und TGA auf Kollisionen prüfen und den Nachweis dokumentieren.
+
+
+    **Ablauf**
+
+    1. Freizuhaltende Einbringwege als Proxy-Volumen modellieren.
+
+    2. Einbringwege im Gesamtmodell gegen Bauwerk und Gebäudetechnik auf Kollisionen prüfen.
+
+    3. Kollisionsnachweis dokumentieren und freigegebene Wege verbindlich halten.
+
+
+    **Ergebnis**
+
+    - Nachgewiesene, kollisionsfreie Einbringwege als Planungsgrundlage für Einbau und Koordination.
+
+
+    **Lieferobjekte**
+
+    - Freizuhaltende Einbringwege als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Einbringweg
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Name je Element'
+  fr: 'Porter les voies d''apport à maintenir libres dans le modèle et prouver l''absence de collisions — avant que grands appareils ou éléments ne deviennent intransportables.
+
+
+    **Situation de départ**
+
+    - Sans voies d''apport réservées, grands appareils et éléments entrent en collision avec le bâtiment ou les techniques.
+
+    - Des conflits tardifs entraînent des transformations coûteuses, des transports spéciaux ou des installations non apportables.
+
+
+    **Objectif et bénéfice**
+
+    - Porter les voies d''apport à maintenir libres comme volumes proxy dans le modèle.
+
+    - Vérifier les collisions en maquette fédérée contre bâtiment et techniques et documenter la preuve.
+
+
+    **Déroulement**
+
+    1. Modéliser les voies d''apport à maintenir libres comme volumes proxy.
+
+    2. Vérifier les collisions des voies d''apport en maquette fédérée contre bâtiment et techniques du bâtiment.
+
+    3. Documenter la preuve de collision et tenir les voies approuvées comme contraignantes.
+
+
+    **Résultat**
+
+    - Voies d''apport prouvées sans collision comme base de planification pour pose et coordination.
+
+
+    **Livrables**
+
+    - Voies d''apport à maintenir libres comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Einbringweg
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Name par élément'
+  it: 'Gestire nel modello i percorsi di trasporto da mantenere liberi e dimostrare l''assenza di collisioni — prima che grandi apparecchi o componenti non siano più trasportabili.
+
+
+    **Situazione di partenza**
+
+    - Senza percorsi di trasporto riservati, grandi apparecchi e componenti collidono con edificio o impianti.
+
+    - Conflitti tardivi causano trasformazioni costose, trasporti speciali o impianti non trasportabili.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire i percorsi di trasporto da mantenere liberi come volumi proxy nel modello.
+
+    - Verificare collisioni nel modello federato contro edificio e impianti e documentare la prova.
+
+
+    **Svolgimento**
+
+    1. Modellare i percorsi di trasporto da mantenere liberi come volumi proxy.
+
+    2. Verificare collisioni dei percorsi nel modello federato contro edificio e impianti.
+
+    3. Documentare la prova di collisione e mantenere vincolanti i percorsi approvati.
+
+
+    **Risultato**
+
+    - Percorsi di trasporto dimostrati senza collisione come base di pianificazione per montaggio e coordinamento.
+
+
+    **Oggetti della fornitura**
+
+    - Percorsi di trasporto da mantenere liberi come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Einbringweg
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Name per elemento'
+  en: 'Maintain clear installation access paths in the model and prove them clash-free — before large equipment or components can no longer be brought in.
+
+
+    **Starting point**
+
+    - Without reserved access paths, large equipment and components clash with the building or building services.
+
+    - Late conflicts lead to costly rebuilds, special transports, or equipment that cannot be delivered.
+
+
+    **Goal & benefit**
+
+    - Maintain clear installation access paths as proxy volumes in the model.
+
+    - Check clashes against building and MEP in the federated model and document the verification.
+
+
+    **Process**
+
+    1. Model clear installation access paths as proxy volumes.
+
+    2. Check access paths for clashes against building and building services in the federated model.
+
+    3. Document the clash verification and keep approved paths binding.
+
+
+    **Outcome**
+
+    - Verified clash-free installation access paths as the planning basis for installation and coordination.
+
+
+    **Deliverables**
+
+    - Clear installation access paths as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Einbringweg
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Name per element'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: Clear installation access paths as IfcBuildingElementProxy ObjectType=Einbringweg; clash checks against building/MEP in the federated model.

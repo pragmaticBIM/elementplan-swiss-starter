@@ -8,54 +8,92 @@ name:
   it: Edificio
   en: Building
 definition:
-  de: |
-    Gebäude als logische Gliederungsebene (IfcBuilding). Dem Areal zugeordnet.
+  de: '**Beschreibung**
 
-    **Modellierung**
-    - Mindestens ein IfcBuilding pro Datei.
-    - Mehrere Gebäude auf demselben Areal als eigene IfcBuilding führen.
-  fr: |
-    Bâtiment comme niveau logique (IfcBuilding). Rattaché au site.
+    - Gebäude als logische Gliederungsebene.
 
-    **Modélisation**
-    - Au moins un IfcBuilding par fichier.
-    - Plusieurs bâtiments sur le même site comme IfcBuilding distincts.
-  it: |
-    Edificio come livello logico (IfcBuilding). Collegato al sito.
+    - Dem Planungsperimeter zugeordnet.
 
-    **Modellazione**
-    - Almeno un IfcBuilding per file.
-    - Più edifici sullo stesso sito come IfcBuilding distinti.
-  en: |
-    Building as a logical breakdown level (IfcBuilding). Assigned to the site.
 
-    **Modelling**
-    - At least one IfcBuilding per file.
-    - Several buildings on the same site as separate IfcBuilding instances.
+    **Modellierungsrichtlinie**
+
+    - Mindestens ein Gebäude pro Datei.
+
+    - Mehrere Gebäude auf demselben Areal als eigene Gebäude führen. Oft macht es Sinn, diese in einzelne Modelldateien aufzuteilen.'
+  fr: '**Description**
+
+    - Bâtiment comme niveau logique de découpage.
+
+    - Rattaché au périmètre de planification.
+
+
+    **Directives de modélisation**
+
+    - Au moins un bâtiment par fichier.
+
+    - Plusieurs bâtiments sur le même site comme bâtiments distincts. Il est souvent judicieux de les répartir dans des fichiers de modèle séparés.'
+  it: '**Descrizione**
+
+    - Edificio come livello logico di suddivisione.
+
+    - Collegato al perimetro di pianificazione.
+
+
+    **Direttive di modellazione**
+
+    - Almeno un edificio per file.
+
+    - Più edifici sullo stesso sito come edifici distinti. Spesso ha senso suddividerli in singoli file di modello.'
+  en: '**Description**
+
+    - Building as a logical breakdown level.
+
+    - Assigned to the planning perimeter.
+
+
+    **Modelling guidelines**
+
+    - At least one building per file.
+
+    - Several buildings on the same site as separate buildings. It often makes sense to split them into separate model files.'
 needed_in_domain:
-  - pragmaticbim:domain/architecture
-  - pragmaticbim:domain/mep
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
 entity_ifc2x3: IfcBuilding
 entity_ifc4: IfcBuilding
 entity_ifc4_3: IfcBuilding
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcBuilding
+applicability: entity_ifc4=IfcBuilding OR entity_ifc2x3=IfcBuilding
 attributes:
-  - name: Name
-    pset: null
-    definition:
-      de: Gebäudebezeichnung gemäss Projekt.
-      fr: Désignation du bâtiment selon le projet.
-      it: Denominazione dell'edificio secondo il progetto.
-      en: Building designation according to the project.
-    datatype: IfcLabel
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 1
+- name: Name
+  pset: null
+  definition:
+    de: Gebäudebezeichnung gemäss Projekt.
+    fr: Désignation du bâtiment selon le projet.
+    it: Denominazione dell'edificio secondo il progetto.
+    en: Building designation according to the project.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  is_applicability: false
+  status: active
+  sort_order: 1

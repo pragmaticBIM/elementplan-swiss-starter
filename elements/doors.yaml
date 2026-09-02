@@ -8,34 +8,58 @@ name:
   it: Porte
   en: Doors
 definition:
-  de: |-
-    Alle Türen, Tore und Revisionsöffnungen (IfcDoor).
+  de: 'Begehbare Öffnungen in der Gebäudehülle und zwischen Räumen.
 
-    **Modellierung**
-    - Geschlossen modellieren.
+
+    **Beschreibung**
+
+    - Türen, Tore und Revisionsöffnungen.
+
+
+    **Modellierungsrichtlinie**
+
     - Glasflächen mit transparentem Material.
-    - abstractBIM vereinfacht Öffnungen für Mengen und Simulation.
-  fr: |
-    Toutes les portes, portails et trappes (IfcDoor).
 
-    **Modélisation**
-    - Modéliser fermées.
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Ouvertures praticables dans l''enveloppe et entre locaux.
+
+
+    **Description**
+
+    - Portes, portails et trappes.
+
+
+    **Directives de modélisation**
+
     - Surfaces vitrées avec un matériau transparent.
-    - abstractBIM simplifie les ouvertures pour quantités et simulation.
-  it: |
-    Tutte le porte, i portoni e le aperture di ispezione (IfcDoor).
 
-    **Modellazione**
-    - Modellare chiuse.
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Aperture percorribili nell''involucro e tra i locali.
+
+
+    **Descrizione**
+
+    - Porte, portoni e aperture di ispezione.
+
+
+    **Direttive di modellazione**
+
     - Superfici vetrate con materiale trasparente.
-    - abstractBIM semplifica le aperture per quantità e simulazione.
-  en: |
-    All doors, gates, and inspection openings (IfcDoor).
 
-    **Modelling**
-    - Model closed.
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Walk-through openings in the building envelope and between rooms.
+
+
+    **Description**
+
+    - Doors, gates, and inspection openings.
+
+
+    **Modelling guidelines**
+
     - Glazed areas with a transparent material.
-    - abstractBIM simplifies openings for quantities and simulation.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcDoor
@@ -43,26 +67,199 @@ entity_ifc4: IfcDoor
 entity_ifc4_3: IfcDoor
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcDoor
+applicability: entity_ifc4=IfcDoor OR entity_ifc2x3=IfcDoor
 attributes:
+- name: GlobalId
+  pset: null
+  definition:
+    de: Eindeutige IFC-GUID des Türelements.
+    fr: GUID IFC unique de la porte.
+    it: GUID IFC univoco della porta.
+    en: Unique IFC GUID of the door element.
+  datatype: IfcGloballyUniqueId
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  is_applicability: false
+  status: active
+  sort_order: 0
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Art der Tür: DOOR, GATE oder TRAPDOOR.'
-    fr: 'Type de porte: DOOR, GATE ou TRAPDOOR.'
-    it: 'Tipo di porta: DOOR, GATE o TRAPDOOR.'
-    en: 'Door kind: DOOR, GATE, or TRAPDOOR.'
+    de: 'Art der Tür.
+
+
+      **Zulässige Werte**
+
+      - `DOOR` — Tür
+
+      - `GATE` — Tor
+
+      - `TRAPDOOR` — Revisionsöffnung'
+    fr: 'Type de porte.
+
+
+      **Valeurs admises**
+
+      - `DOOR` — porte
+
+      - `GATE` — portail
+
+      - `TRAPDOOR` — trappe'
+    it: 'Tipo di porta.
+
+
+      **Valori ammessi**
+
+      - `DOOR` — porta
+
+      - `GATE` — portone
+
+      - `TRAPDOOR` — botola'
+    en: 'Kind of door.
+
+
+      **Allowed values**
+
+      - `DOOR` — door
+
+      - `GATE` — gate
+
+      - `TRAPDOOR` — trapdoor'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-door
-  needed_in_phases: ['31', '32', '33']
-  ifc_versions: [ifc4, ifc4x3]
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-element-based-cost
-  - pragmaticbim:workflow/des-building-performance-simulation
-  - pragmaticbim:workflow/qas-coordination
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-door-planning
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
   is_applicability: false
   status: active
   sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art der Tür.
+
+
+      **Zulässige Werte**
+
+      - `DOOR` — Tür
+
+      - `GATE` — Tor
+
+      - `TRAPDOOR` — Revisionsöffnung
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Type de porte.
+
+
+      **Valeurs admises**
+
+      - `DOOR` — porte
+
+      - `GATE` — portail
+
+      - `TRAPDOOR` — trappe
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Tipo di porta.
+
+
+      **Valori ammessi**
+
+      - `DOOR` — porta
+
+      - `GATE` — portone
+
+      - `TRAPDOOR` — botola
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Kind of door.
+
+
+      **Allowed values**
+
+      - `DOOR` — door
+
+      - `GATE` — gate
+
+      - `TRAPDOOR` — trapdoor
+
+
+      **Note**
+
+      - IFC2x3 substitute for PredefinedType.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-door
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-door-planning
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 2
 - name: Reference
   pset: Pset_DoorCommon
   definition:
@@ -71,45 +268,391 @@ attributes:
     it: Riferimento della porta per il coordinamento.
     en: Door reference used for coordination.
   datatype: IfcIdentifier
-  needed_in_phases: ['31', '32', '33']
-  ifc_versions: [ifc4, ifc4x3]
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-coordination
-  is_applicability: false
-  status: active
-  sort_order: 2
-- name: IsExternal
-  pset: Pset_DoorCommon
-  definition:
-    de: TRUE für Aussentüren, FALSE für Innentüren.
-    fr: TRUE pour une porte extérieure, FALSE pour une porte intérieure.
-    it: TRUE per porta esterna, FALSE per porta interna.
-    en: TRUE for an exterior door, FALSE for an interior door.
-  datatype: IfcBoolean
-  needed_in_phases: ['31', '32', '33']
-  ifc_versions: [ifc4, ifc4x3]
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-building-performance-simulation
-  - pragmaticbim:workflow/qas-coordination
+  - pragmaticbim:workflow/qas-early-design-coordination
   is_applicability: false
   status: active
   sort_order: 3
-- name: Status
+- name: IsExternal
   pset: Pset_DoorCommon
   definition:
-    de: 'Bauteilstatus: NEW, EXISTING, DEMOLISH oder TEMPORARY.'
-    fr: 'Statut: NEW, EXISTING, DEMOLISH ou TEMPORARY.'
-    it: 'Stato: NEW, EXISTING, DEMOLISH o TEMPORARY.'
-    en: 'Element status: NEW, EXISTING, DEMOLISH, or TEMPORARY.'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/element-status
-  needed_in_phases: ['31', '32', '33']
-  ifc_versions: [ifc4, ifc4x3]
+    de: 'Kennzeichnet, ob die Tür zur Aussenluft oder zwischen Innenräumen liegt.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — Aussentür
+
+      - `FALSE` — Innentür'
+    fr: 'Indique si la porte donne sur l''extérieur ou entre locaux intérieurs.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — porte extérieure
+
+      - `FALSE` — porte intérieure'
+    it: 'Indica se la porta dà sull''esterno o tra locali interni.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — porta esterna
+
+      - `FALSE` — porta interna'
+    en: 'Indicates whether the door faces the exterior or between interior spaces.
+
+
+      **Allowed values**
+
+      - `TRUE` — exterior door
+
+      - `FALSE` — interior door'
+  datatype: IfcBoolean
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-coordination
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/qas-early-design-coordination
   is_applicability: false
   status: active
   sort_order: 4
+- name: Status
+  pset: Pset_DoorCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: FireRating
+  pset: Pset_DoorCommon
+  definition:
+    de: 'Feuerwiderstandsklasse der Tür gemäss Brandschutzkonzept.
+
+
+      **Zulässige Werte**
+
+      - `R 30` — Tragfähigkeit 30 min
+
+      - `R 60` — Tragfähigkeit 60 min
+
+      - `R 90` — Tragfähigkeit 90 min
+
+      - `EI 30` — Raumabschluss 30 min
+
+      - `EI 60` — Raumabschluss 60 min
+
+      - `EI 90` — Raumabschluss 90 min
+
+      - `REI 30` — Tragfähigkeit und Raumabschluss 30 min
+
+      - `REI 60` — Tragfähigkeit und Raumabschluss 60 min
+
+      - `REI 90` — Tragfähigkeit und Raumabschluss 90 min'
+    fr: 'Classe de résistance au feu de la porte selon le concept de protection incendie.
+
+
+      **Valeurs admises**
+
+      - `R 30` — portance 30 min
+
+      - `R 60` — portance 60 min
+
+      - `R 90` — portance 90 min
+
+      - `EI 30` — étanchéité au feu 30 min
+
+      - `EI 60` — étanchéité au feu 60 min
+
+      - `EI 90` — étanchéité au feu 90 min
+
+      - `REI 30` — portance et étanchéité 30 min
+
+      - `REI 60` — portance et étanchéité 60 min
+
+      - `REI 90` — portance et étanchéité 90 min'
+    it: 'Classe di resistenza al fuoco della porta secondo il concetto antincendio.
+
+
+      **Valori ammessi**
+
+      - `R 30` — capacità portante 30 min
+
+      - `R 60` — capacità portante 60 min
+
+      - `R 90` — capacità portante 90 min
+
+      - `EI 30` — compartimentazione 30 min
+
+      - `EI 60` — compartimentazione 60 min
+
+      - `EI 90` — compartimentazione 90 min
+
+      - `REI 30` — portanza e compartimentazione 30 min
+
+      - `REI 60` — portanza e compartimentazione 60 min
+
+      - `REI 90` — portanza e compartimentazione 90 min'
+    en: 'Fire resistance class of the door according to the fire protection concept.
+
+
+      **Allowed values**
+
+      - `R 30` — load-bearing 30 min
+
+      - `R 60` — load-bearing 60 min
+
+      - `R 90` — load-bearing 90 min
+
+      - `EI 30` — integrity and insulation 30 min
+
+      - `EI 60` — integrity and insulation 60 min
+
+      - `EI 90` — integrity and insulation 90 min
+
+      - `REI 30` — load-bearing, integrity and insulation 30 min
+
+      - `REI 60` — load-bearing, integrity and insulation 60 min
+
+      - `REI 90` — load-bearing, integrity and insulation 90 min'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/fire-rating
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: AcousticRating
+  pset: Pset_DoorCommon
+  definition:
+    de: Bewertetes Schalldämm-Maß Rw [dB] als Labor-/Katalogwert — nicht R'w.
+    fr: Indice d'affaiblissement acoustique pondéré Rw [dB] comme valeur de laboratoire/catalogue — pas R'w.
+    it: Potere fonoisolante ponderato Rw [dB] come valore di laboratorio/catalogo — non R'w.
+    en: Weighted sound reduction index Rw [dB] as laboratory/catalogue value — not R'w.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 8
 - name: Area
   pset: Qto_DoorBaseQuantities
   definition:
@@ -119,11 +662,308 @@ attributes:
     en: Area of the door opening.
   datatype: IfcAreaMeasure
   unit: m²
-  needed_in_phases: ['31', '32', '33']
-  ifc_versions: [ifc4, ifc4x3]
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-element-based-cost
-  - pragmaticbim:workflow/des-building-performance-simulation
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
   is_applicability: false
   status: active
-  sort_order: 5
+  sort_order: 9
+- name: OverallWidth
+  pset: null
+  definition:
+    de: Lichte Breite der Türöffnung.
+    fr: Largeur nette de l'ouverture de porte.
+    it: Larghezza netta dell'apertura della porta.
+    en: Clear width of the door opening.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-door-planning
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  is_applicability: false
+  status: active
+  sort_order: 10
+- name: OverallHeight
+  pset: null
+  definition:
+    de: Lichte Höhe der Türöffnung.
+    fr: Hauteur nette de l'ouverture de porte.
+    it: Altezza netta dell'apertura della porta.
+    en: Clear height of the door opening.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-door-planning
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  is_applicability: false
+  status: active
+  sort_order: 11
+- name: OperationType
+  pset: null
+  definition:
+    de: 'Öffnungsart und -richtung der Tür.
+
+
+      **Zulässige Werte**
+
+      - `SINGLE_SWING_LEFT` — Einflügelig, Anschlag links
+
+      - `SINGLE_SWING_RIGHT` — Einflügelig, Anschlag rechts
+
+      - `DOUBLE_DOOR_SINGLE_SWING` — Doppeltür, gleiche Drehrichtung
+
+      - `DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT` — Doppeltür, gegengleich, Anschlag links
+
+      - `DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT` — Doppeltür, gegengleich, Anschlag rechts
+
+      - `DOUBLE_SWING_LEFT` — Pendeltür, Anschlag links
+
+      - `DOUBLE_SWING_RIGHT` — Pendeltür, Anschlag rechts
+
+      - `DOUBLE_DOOR_DOUBLE_SWING` — Doppelte Pendeltür
+
+      - `SLIDING_TO_LEFT` — Schiebetür nach links
+
+      - `SLIDING_TO_RIGHT` — Schiebetür nach rechts
+
+      - `DOUBLE_DOOR_SLIDING` — Doppeltür schiebend
+
+      - `FOLDING_TO_LEFT` — Falttür nach links
+
+      - `FOLDING_TO_RIGHT` — Falttür nach rechts
+
+      - `DOUBLE_DOOR_FOLDING` — Doppeltür faltend
+
+      - `REVOLVING` — Drehtür
+
+      - `ROLLINGUP` — Rolltor
+
+      - `SWING_FIXED_LEFT` — Drehflügel fest, links
+
+      - `SWING_FIXED_RIGHT` — Drehflügel fest, rechts
+
+      - `USERDEFINED` — Benutzerdefiniert
+
+      - `NOTDEFINED` — Nicht definiert'
+    fr: 'Type et sens d''ouverture de la porte.
+
+
+      **Valeurs admises**
+
+      - `SINGLE_SWING_LEFT` — simple battant, paumelles à gauche
+
+      - `SINGLE_SWING_RIGHT` — simple battant, paumelles à droite
+
+      - `DOUBLE_DOOR_SINGLE_SWING` — double porte, même sens
+
+      - `DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT` — double porte, sens opposés, gauche
+
+      - `DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT` — double porte, sens opposés, droite
+
+      - `DOUBLE_SWING_LEFT` — porte battante, gauche
+
+      - `DOUBLE_SWING_RIGHT` — porte battante, droite
+
+      - `DOUBLE_DOOR_DOUBLE_SWING` — double porte battante
+
+      - `SLIDING_TO_LEFT` — coulissante vers la gauche
+
+      - `SLIDING_TO_RIGHT` — coulissante vers la droite
+
+      - `DOUBLE_DOOR_SLIDING` — double porte coulissante
+
+      - `FOLDING_TO_LEFT` — pliante vers la gauche
+
+      - `FOLDING_TO_RIGHT` — pliante vers la droite
+
+      - `DOUBLE_DOOR_FOLDING` — double porte pliante
+
+      - `REVOLVING` — porte tournante
+
+      - `ROLLINGUP` — porte à enroulement
+
+      - `SWING_FIXED_LEFT` — battant fixe, gauche
+
+      - `SWING_FIXED_RIGHT` — battant fixe, droite
+
+      - `USERDEFINED` — défini par l''utilisateur
+
+      - `NOTDEFINED` — non défini'
+    it: 'Tipo e senso di apertura della porta.
+
+
+      **Valori ammessi**
+
+      - `SINGLE_SWING_LEFT` — anta singola, cerniere a sinistra
+
+      - `SINGLE_SWING_RIGHT` — anta singola, cerniere a destra
+
+      - `DOUBLE_DOOR_SINGLE_SWING` — porta doppia, stesso senso
+
+      - `DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT` — porta doppia, sensi opposti, sinistra
+
+      - `DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT` — porta doppia, sensi opposti, destra
+
+      - `DOUBLE_SWING_LEFT` — porta a bilico, sinistra
+
+      - `DOUBLE_SWING_RIGHT` — porta a bilico, destra
+
+      - `DOUBLE_DOOR_DOUBLE_SWING` — porta doppia a bilico
+
+      - `SLIDING_TO_LEFT` — scorrevole a sinistra
+
+      - `SLIDING_TO_RIGHT` — scorrevole a destra
+
+      - `DOUBLE_DOOR_SLIDING` — porta doppia scorrevole
+
+      - `FOLDING_TO_LEFT` — a libro a sinistra
+
+      - `FOLDING_TO_RIGHT` — a libro a destra
+
+      - `DOUBLE_DOOR_FOLDING` — porta doppia a libro
+
+      - `REVOLVING` — porta girevole
+
+      - `ROLLINGUP` — serranda
+
+      - `SWING_FIXED_LEFT` — anta fissa, sinistra
+
+      - `SWING_FIXED_RIGHT` — anta fissa, destra
+
+      - `USERDEFINED` — definito dall''utente
+
+      - `NOTDEFINED` — non definito'
+    en: 'Door opening type and direction.
+
+
+      **Allowed values**
+
+      - `SINGLE_SWING_LEFT` — single swing, hinge left
+
+      - `SINGLE_SWING_RIGHT` — single swing, hinge right
+
+      - `DOUBLE_DOOR_SINGLE_SWING` — double door, same swing
+
+      - `DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT` — double door, opposite swing, left
+
+      - `DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT` — double door, opposite swing, right
+
+      - `DOUBLE_SWING_LEFT` — double swing, left
+
+      - `DOUBLE_SWING_RIGHT` — double swing, right
+
+      - `DOUBLE_DOOR_DOUBLE_SWING` — double door, double swing
+
+      - `SLIDING_TO_LEFT` — sliding to left
+
+      - `SLIDING_TO_RIGHT` — sliding to right
+
+      - `DOUBLE_DOOR_SLIDING` — double sliding door
+
+      - `FOLDING_TO_LEFT` — folding to left
+
+      - `FOLDING_TO_RIGHT` — folding to right
+
+      - `DOUBLE_DOOR_FOLDING` — double folding door
+
+      - `REVOLVING` — revolving
+
+      - `ROLLINGUP` — rolling shutter
+
+      - `SWING_FIXED_LEFT` — swing fixed left
+
+      - `SWING_FIXED_RIGHT` — swing fixed right
+
+      - `USERDEFINED` — user-defined
+
+      - `NOTDEFINED` — not defined'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/operationtype-door
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-door-planning
+  is_applicability: false
+  status: active
+  sort_order: 12
+- name: Name
+  pset: null
+  definition:
+    de: 'Türnummer gemäss Bürostandard. Empfehlung: T{Raumnummer in welche die Tür öffnet}. Dies bedingt, dass auch Aussenräume eine Raumnummer bekommen.'
+    fr: 'Numéro de porte selon le standard du bureau. Recommandation : T{numéro de local dans lequel la porte s''ouvre}. Cela implique que les espaces extérieurs reçoivent également un numéro de local.'
+    it: 'Numero porta secondo lo standard dello studio. Raccomandazione: T{numero di locale in cui si apre la porta}. Ciò implica che anche gli spazi esterni ricevano un numero di locale.'
+    en: 'Door number according to office standard. Recommendation: T{room number of the space the door opens into}. This requires outdoor spaces to receive a room number as well.'
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  is_applicability: false
+  status: active
+  sort_order: 13

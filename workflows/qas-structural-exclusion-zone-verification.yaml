@@ -1,0 +1,177 @@
+id: pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+code: QAS-EXCL-ZONE
+sort_order: 73
+name:
+  de: Kontrolle Sperrzonen und Tragwerksskizze
+  fr: Contrôle zones d'exclusion et esquisse porteuse
+  it: Controllo zone di esclusione e schizzo strutturale
+  en: Control of exclusion zones and structural sketch
+description:
+  de: 'Sperrzonenmodell und Tragwerksskizze im Gesamtmodell prüfen — bevor Planung in gesperrte Zonen läuft.
+
+
+    **Ausgangslage**
+
+    - Der Tragwerksplaner liefert das Tragwerkskonzept als Skizze, nicht als Modell; der Architekt braucht dennoch belastbare Tragwerksgeometrie im Architekturmodell.
+
+    - Ohne verbindliche Sperrzonen und frühe Prüfung werden Bauteile in No-go-Zonen geplant — mit teuren Folgeänderungen.
+
+
+    **Ziel & Nutzen**
+
+    - Tragwerkskonzept als grobe Tragwerksskizze im Architekturmodell führen und als tragend kennzeichnen.
+
+    - Sperrzonenmodell vom Tragwerksplaner als verbindliche Planungsgrenze prüfen und den Nachweis dokumentieren.
+
+
+    **Ablauf**
+
+    1. Tragwerksplaner liefert Sperrzonenmodell; Architekt führt Tragwerkskonzept als grobe Skizze im Architekturmodell (IsStructural=TRUE).
+
+    2. Beide Modelle im Gesamtmodell zusammenführen.
+
+    3. Prüfen, dass Architektur-Geometrie und weitere Disziplinen die Sperrzonen nicht verletzen; Nachweis dokumentieren.
+
+
+    **Ergebnis**
+
+    - Nachgewiesene Einhaltung der Sperrzonen als Planungsgrundlage für Projektierung und Bewilligungsverfahren.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit Tragwerksskizze als IfcFooting, IfcSlab, IfcRoof, IfcColumn und IfcBeam mit IsStructural=TRUE
+
+    - Sperrzonenmodell Tragwerksplanung als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Sperrzone
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey in beiden Modellen
+
+    - Name und Reference je Element'
+  fr: 'Vérifier le modèle de zones d''exclusion et l''esquisse porteuse en maquette fédérée — avant que la planification n''empiète sur les zones interdites.
+
+
+    **Situation de départ**
+
+    - L''ingénieur structure fournit le concept porteur sous forme de croquis, pas de modèle ; l''architecte a néanmoins besoin d''une géométrie porteuse fiable dans le modèle d''architecture.
+
+    - Sans zones d''exclusion contraignantes et contrôle précoce, des composants sont planifiés dans des no-go zones — avec des modifications coûteuses en cascade.
+
+
+    **Objectif et bénéfice**
+
+    - Porter le concept porteur comme esquisse porteuse grossière dans le modèle d''architecture et le marquer comme porteur.
+
+    - Vérifier le modèle de zones d''exclusion de l''ingénieur structure comme limite de planification contraignante et documenter la preuve.
+
+
+    **Déroulement**
+
+    1. L''ingénieur structure fournit le modèle de zones d''exclusion ; l''architecte reprend le concept porteur comme esquisse grossière dans le modèle d''architecture (IsStructural=TRUE).
+
+    2. Fusionner les deux modèles en maquette fédérée.
+
+    3. Vérifier que la géométrie d''architecture et les autres disciplines ne violent pas les zones d''exclusion ; documenter la preuve.
+
+
+    **Résultat**
+
+    - Respect des zones d''exclusion prouvé comme base de planification pour le projet et la procédure d''autorisation.
+
+
+    **Livrables**
+
+    - Modèle d''architecture avec esquisse porteuse comme IfcFooting, IfcSlab, IfcRoof, IfcColumn et IfcBeam avec IsStructural=TRUE
+
+    - Modèle de zones d''exclusion de l''ingénierie structurelle comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Sperrzone
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey dans les deux modèles
+
+    - Name et Reference par élément'
+  it: 'Verificare il modello delle zone di esclusione e lo schizzo strutturale nel modello federato — prima che la pianificazione invada zone vietate.
+
+
+    **Situazione di partenza**
+
+    - L''ingegnere strutturista consegna il concept strutturale come schizzo, non come modello; l''architetto necessita comunque di una geometria portante affidabile nel modello di architettura.
+
+    - Senza zone di esclusione vincolanti e verifica precoce, componenti vengono pianificati in no-go zone — con costose modifiche a catena.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire il concept strutturale come schizzo strutturale grossolano nel modello di architettura e contrassegnarlo come portante.
+
+    - Verificare il modello delle zone di esclusione dell''ingegnere strutturista come limite vincolante di pianificazione e documentare la prova.
+
+
+    **Svolgimento**
+
+    1. L''ingegnere strutturista consegna il modello delle zone di esclusione; l''architetto riprende il concept strutturale come schizzo grossolano nel modello di architettura (IsStructural=TRUE).
+
+    2. Unire entrambi i modelli nel modello federato.
+
+    3. Verificare che la geometria architettonica e le altre discipline non violino le zone di esclusione; documentare la prova.
+
+
+    **Risultato**
+
+    - Rispetto delle zone di esclusione dimostrato come base di pianificazione per progettazione e procedura di autorizzazione.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con schizzo strutturale come IfcFooting, IfcSlab, IfcRoof, IfcColumn e IfcBeam con IsStructural=TRUE
+
+    - Modello delle zone di esclusione dell''ingegneria strutturale come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Sperrzone
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey in entrambi i modelli
+
+    - Name e Reference per elemento'
+  en: 'Verify the exclusion zone model and structural sketch in the federated model — before planning runs into restricted zones.
+
+
+    **Starting point**
+
+    - The structural engineer delivers the structural concept as a sketch, not a model; the architect still needs reliable structural geometry in the architecture model.
+
+    - Without binding exclusion zones and early checks, components get planned in no-go zones — leading to costly follow-up changes.
+
+
+    **Goal & benefit**
+
+    - Maintain the structural concept as a rough structural sketch in the architecture model and mark it as load-bearing.
+
+    - Verify the structural engineer''s exclusion zone model as a binding planning boundary and document the proof.
+
+
+    **Process**
+
+    1. The structural engineer delivers the exclusion zone model; the architect transfers the structural concept as a rough sketch into the architecture model (IsStructural=TRUE).
+
+    2. Merge both models in the federated model.
+
+    3. Verify that architecture geometry and other disciplines do not violate the exclusion zones; document the proof.
+
+
+    **Outcome**
+
+    - Verified compliance with exclusion zones as the planning basis for design development and permitting.
+
+
+    **Deliverables**
+
+    - Architecture model with structural sketch as IfcFooting, IfcSlab, IfcRoof, IfcColumn, and IfcBeam with IsStructural=TRUE
+
+    - Structural engineering exclusion zone model as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Sperrzone
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey in both models
+
+    - Name and Reference per element'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+comment: Early QS. Structural concept via sketches in architecture model (IsStructural); structural engineer delivers exclusion zone model only. ObjectType=Sperrzone on IfcBuildingElementProxy.

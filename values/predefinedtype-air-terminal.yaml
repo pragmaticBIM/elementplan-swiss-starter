@@ -1,0 +1,36 @@
+id: pragmaticbim:value/predefinedtype-air-terminal
+code: AIR_TERMINAL
+name:
+  de: PredefinedType IfcAirTerminal
+  fr: PredefinedType IfcAirTerminal
+  it: PredefinedType IfcAirTerminal
+  en: PredefinedType IfcAirTerminal
+description:
+  de: Ifc PredefinedType für IfcAirTerminal.
+  fr: PredefinedType IFC pour IfcAirTerminal.
+  it: PredefinedType IFC per IfcAirTerminal.
+  en: IFC PredefinedType for IfcAirTerminal.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - DIFFUSER
+  - GRILLE
+  - LOUVRE
+  - REGISTER
+  fr:
+  - DIFFUSER
+  - GRILLE
+  - LOUVRE
+  - REGISTER
+  it:
+  - DIFFUSER
+  - GRILLE
+  - LOUVRE
+  - REGISTER
+  en:
+  - DIFFUSER
+  - GRILLE
+  - LOUVRE
+  - REGISTER

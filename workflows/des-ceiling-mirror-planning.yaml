@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/des-ceiling-mirror-planning
+code: DES-CEILING-MIRROR
+sort_order: 48
+name:
+  de: Deckenspiegelplanung
+  fr: Planification miroir de plafond
+  it: Pianificazione specchio del soffitto
+  en: Ceiling mirror planning
+description:
+  de: 'Innenausbau — Abhangdecke im Modell führen, von der frühen Raumzuweisung bis zur ausführungsreifen Schichtmodellierung für GT-Koordination.
+
+
+    **Ausgangslage**
+
+    - Deckenspiegel werden oft erst in 2D geplant; Koordination mit Gebäudetechnik entsteht spät.
+
+    - Revisionsöffnungen in Abhangdecken fehlen im Modell häufig für die Ausschreibung.
+
+
+    **Ziel & Nutzen**
+
+    - Abhangdecken inklusive Revisionsöffnungen als modellierte Schicht mit definierter Unterkante für die GT-Koordination.
+
+
+    **Ablauf**
+
+    1. Innenräume bereitstellen.
+
+    2. Abhangdecken als modellierte Schichten mit Bauteiltypen und Revisionsöffnungen modellieren.
+
+    3. Deckenspiegel mit den relevanten GT-Einbauten abstimmen.
+
+
+    **Ergebnis**
+
+    - Koordinationsfähige Abhangdecke im Modell — von der frühen Raumzuweisung bis zur ausschreibungsreifen Deckenspiegelplanung.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - IfcSpace mit FinishCeilingHeight — Abhangdeckenhöhe; bei ungleichmässiger Decke die tiefste Unterkante
+
+    - IfcCovering mit PredefinedType=CEILING — Abhangdecke als eine Schicht mit definierter Unterkante
+
+    - IfcDoor mit PredefinedType=TRAPDOOR — Revisionsöffnungen in Abhangdecken'
+  fr: 'Aménagement intérieur — mener les plafonds suspendus dans le modèle, de l''affectation précoce par local à la modélisation par couche prête à l''exécution pour la coordination GT.
+
+
+    **Situation de départ**
+
+    - Le miroir de plafond est souvent planifié en 2D ; la coordination avec le GT arrive tard.
+
+    - Les trappes de plafond suspendu manquent fréquemment dans le modèle pour l''appel d''offres.
+
+
+    **Objectif et bénéfice**
+
+    - Plafonds suspendus incluant trappes comme couche modélisée avec intrados défini pour la coordination GT.
+
+
+    **Déroulement**
+
+    1. Fournir les locaux intérieurs.
+
+    2. Modéliser les plafonds suspendus comme couches avec types de composants et trappes.
+
+    3. Coordonner le miroir de plafond avec les équipements GT pertinents.
+
+
+    **Résultat**
+
+    - Plafond suspendu coordonnable dans le modèle — de l''affectation précoce par local à la planification prête pour l''appel d''offres.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - IfcSpace avec FinishCeilingHeight — hauteur sous plafond suspendu ; en cas de plafond irrégulier, l''intrados le plus bas
+
+    - IfcCovering avec PredefinedType=CEILING — plafond suspendu comme couche unique avec intrados défini
+
+    - IfcDoor avec PredefinedType=TRAPDOOR — trappes dans les plafonds suspendus'
+  it: 'Finiture interne — gestire i controsoffitti nel modello, dall''assegnazione precoce per locale alla modellazione a strati esecutiva per il coordinamento impianti.
+
+
+    **Situazione di partenza**
+
+    - Lo specchio del soffitto è spesso pianificato in 2D; il coordinamento con gli impianti arriva tardi.
+
+    - Le botole in controsoffitti mancano spesso nel modello per la gara.
+
+
+    **Obiettivo e beneficio**
+
+    - Controsoffitti incluse botole come strato modellato con intradosso definito per il coordinamento impianti.
+
+
+    **Svolgimento**
+
+    1. Fornire i locali interni.
+
+    2. Modellare i controsoffitti come strati con tipi di componente e botole.
+
+    3. Coordinare lo specchio del soffitto con gli inserti impiantistici pertinenti.
+
+
+    **Risultato**
+
+    - Controsoffitto coordinabile nel modello — dall''assegnazione precoce per locale alla pianificazione pronta per la gara.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - IfcSpace con FinishCeilingHeight — altezza del controsoffitto; con controsoffitto irregolare, l''intradosso più basso
+
+    - IfcCovering con PredefinedType=CEILING — controsoffitto come strato unico con intradosso definito
+
+    - IfcDoor con PredefinedType=TRAPDOOR — botole nei controsoffitti'
+  en: 'Interior finishes — maintain suspended ceilings in the model, from early room assignment through execution-grade layer modelling for MEP coordination.
+
+
+    **Starting point**
+
+    - Ceiling mirrors are often planned in 2D; MEP coordination comes late.
+
+    - Access openings in suspended ceilings are often missing from the model for tendering.
+
+
+    **Goal & benefit**
+
+    - Suspended ceilings including access openings as a modelled layer with a defined underside for MEP coordination.
+
+
+    **Process**
+
+    1. Provide interior spaces.
+
+    2. Model suspended ceilings as layers with component types and access openings.
+
+    3. Coordinate the ceiling mirror with relevant MEP insertions.
+
+
+    **Outcome**
+
+    - Coordination-ready suspended ceiling in the model — from early room assignment through tender-ready ceiling mirror planning.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - IfcSpace with FinishCeilingHeight — suspended ceiling height; for an uneven ceiling, the deepest underside
+
+    - IfcCovering with PredefinedType=CEILING — suspended ceiling as one layer with defined underside
+
+    - IfcDoor with PredefinedType=TRAPDOOR — access openings in suspended ceilings'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: FinishCeilingHeight on the space records clear height to the suspended ceiling (worst case / deepest underside if uneven). From design development onward, suspended ceilings are modelled as IfcCovering
+  layers. Relevant MEP insertions for coordination include dampers, air terminals, light fixtures, sprinklers, and smoke detectors.

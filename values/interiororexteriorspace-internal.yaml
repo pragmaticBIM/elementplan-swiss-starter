@@ -1,0 +1,24 @@
+id: pragmaticbim:value/interiororexteriorspace-internal
+code: SPACE-IOE-INTERNAL
+name:
+  de: InteriorOrExteriorSpace Innenraum
+  fr: InteriorOrExteriorSpace espace intérieur
+  it: InteriorOrExteriorSpace spazio interno
+  en: InteriorOrExteriorSpace interior space
+description:
+  de: IfcSpace InteriorOrExteriorSpace für Innenräume (IFC2x3).
+  fr: IfcSpace InteriorOrExteriorSpace pour les espaces intérieurs (IFC2x3).
+  it: IfcSpace InteriorOrExteriorSpace per gli spazi interni (IFC2x3).
+  en: IfcSpace InteriorOrExteriorSpace for interior spaces (IFC2x3).
+year: 2026
+norm_reference: IFC2X3
+status: active
+values:
+  de:
+  - INTERNAL
+  fr:
+  - INTERNAL
+  it:
+  - INTERNAL
+  en:
+  - INTERNAL

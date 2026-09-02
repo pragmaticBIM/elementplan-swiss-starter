@@ -1,0 +1,458 @@
+id: pragmaticbim:element/architecture-ceiling-suspended
+code: ARC-CEILING
+sort_order: 41
+status: active
+name:
+  de: Abhangdecke
+  fr: Plafond suspendu
+  it: Controsoffitto
+  en: Suspended ceiling
+definition:
+  de: 'Abhangdecke als modellierte Schicht für Deckenspiegelplanung und GT-Koordination.
+
+
+    **Beschreibung**
+
+    - Innen- und aussenliegende Abhangdecken mit definierter Unterkante.
+
+    - Schliesst Revisionsöffnungen und Aussparungen für Gebäudetechnik ein.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als eine Schicht mit finaler Oberfläche modellieren.
+
+    - Dicke inkl. Unterkonstruktion modellieren — nicht nur die Gipskartonplatte (z. B. nicht 2 cm, sondern ca. 7 cm mit Unterkonstruktion).
+
+    - Revisionsöffnungen als IfcDoor mit PredefinedType=TRAPDOOR in der Decke modellieren.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Plafond suspendu comme couche modélisée pour la planification miroir de plafond et la coordination GT.
+
+
+    **Description**
+
+    - Plafonds suspendus intérieurs et extérieurs avec intrados défini.
+
+    - Inclut trappes et réservations pour le génie civil.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme couche unique avec finition.
+
+    - Modéliser l''épaisseur y compris la sous-structure — pas seulement la plaque de plâtre (p. ex. pas 2 cm, mais environ 7 cm avec sous-structure).
+
+    - Modéliser les trappes comme IfcDoor avec PredefinedType=TRAPDOOR dans le plafond.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Controsoffitto come strato modellato per la pianificazione specchio del soffitto e il coordinamento impianti.
+
+
+    **Descrizione**
+
+    - Controsoffitti interni ed esterni con intradosso definito.
+
+    - Comprende botole e vani per impianti.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come strato unico con finitura.
+
+    - Modellare lo spessore inclusa la sottostruttura — non solo la lastra di cartongesso (es. non 2 cm, ma circa 7 cm con sottostruttura).
+
+    - Modellare le botole come IfcDoor con PredefinedType=TRAPDOOR nel soffitto.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Suspended ceiling as a modelled layer for ceiling mirror planning and MEP coordination.
+
+
+    **Description**
+
+    - Interior and exterior suspended ceilings with a defined underside.
+
+    - Includes access openings and reservations for building services.
+
+
+    **Modelling guidelines**
+
+    - Model as one layer with final surface.
+
+    - Model thickness including the substructure — not only the gypsum board (e.g. not 2 cm, but about 7 cm with substructure).
+
+    - Model access openings as IfcDoor with PredefinedType=TRAPDOOR in the ceiling.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcCovering
+entity_ifc4: IfcCovering
+entity_ifc4_3: IfcCovering
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcCovering AND PredefinedType=CEILING
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet die Abhangdecke.
+
+
+      **Zulässige Werte**
+
+      - `CEILING` — Abhangdecke'
+    fr: 'Identifie le plafond suspendu.
+
+
+      **Valeurs admises**
+
+      - `CEILING` — plafond suspendu'
+    it: 'Identifica il controsoffitto.
+
+
+      **Valori ammessi**
+
+      - `CEILING` — controsoffitto'
+    en: 'Marks the suspended ceiling.
+
+
+      **Allowed values**
+
+      - `CEILING` — suspended ceiling'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-ceiling
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Kennzeichnet die Abhangdecke.
+
+
+      **Zulässige Werte**
+
+      - `CEILING` — Abhangdecke
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Identifie le plafond suspendu.
+
+
+      **Valeurs admises**
+
+      - `CEILING` — plafond suspendu
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Identifica il controsoffitto.
+
+
+      **Valori ammessi**
+
+      - `CEILING` — controsoffitto
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Marks the suspended ceiling.
+
+
+      **Allowed values**
+
+      - `CEILING` — suspended ceiling'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-ceiling
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: true
+  status: active
+  sort_order: '2
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: IsExternal
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Kennzeichnet, ob die Abhangdecke innen- oder aussenliegend ist.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — Aussenliegende Abhangdecke
+
+      - `FALSE` — Innenliegende Abhangdecke'
+    fr: 'Indique si le plafond suspendu est intérieur ou extérieur.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — plafond suspendu extérieur
+
+      - `FALSE` — plafond suspendu intérieur'
+    it: 'Indica se il controsoffitto è interno o esterno.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — controsoffitto esterno
+
+      - `FALSE` — controsoffitto interno'
+    en: 'Indicates whether the suspended ceiling is interior or exterior.
+
+
+      **Allowed values**
+
+      - `TRUE` — exterior suspended ceiling
+
+      - `FALSE` — interior suspended ceiling'
+  datatype: IfcBoolean
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Status
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: NetArea
+  pset: Qto_CoveringBaseQuantities
+  definition:
+    de: Nettofläche der modellierten Abhangdecke.
+    fr: Surface nette du plafond suspendu modélisé.
+    it: Superficie netta del controsoffitto modellato.
+    en: Net area of the modelled suspended ceiling.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: false
+  status: active
+  sort_order: 6

@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-beam
+code: BEAM-TYPE
+name:
+  de: Trägertyp
+  fr: Type de poutre
+  it: Tipo di trave
+  en: Beam type
+description:
+  de: PredefinedType für IfcBeam in der Tragwerksskizze.
+  fr: PredefinedType pour IfcBeam dans l'esquisse porteuse.
+  it: PredefinedType per IfcBeam nello schizzo strutturale.
+  en: PredefinedType for IfcBeam in the structural sketch.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - BEAM
+  - GIRDER
+  - JOIST
+  fr:
+  - BEAM
+  - GIRDER
+  - JOIST
+  it:
+  - BEAM
+  - GIRDER
+  - JOIST
+  en:
+  - BEAM
+  - GIRDER
+  - JOIST

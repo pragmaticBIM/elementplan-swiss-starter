@@ -1,0 +1,68 @@
+id: pragmaticbim:project-goal/umgang-mit-bestand
+sort_order: 60
+code: PG-06
+name:
+  de: Umgang mit Bestand
+  fr: Gestion de l'existant
+  it: Gestione dell'esistente
+  en: Dealing with existing stock
+description:
+  de: Steuert die Aufnahme- und Modellierungstiefe im Bestand (Gelände, Tragwerk, Gebäudetechnik) für Strategien von Abbruch/Neubau über Rückbau auf Tragwerk mit Erweiterung bis Umnutzung unter Beibehaltung der Gebäudetechnik.
+  fr: Contrôle la profondeur de relève et de modélisation de l'existant (terrain, structure, techniques) pour des stratégies allant de la démolition/reconstruction au démontage jusqu'à la structure avec agrandissement jusqu'au changement d'affectation en conservant les installations techniques.
+  it: Controlla la profondità di rilievo e modellazione dell'esistente (terreno, struttura, impianti) per strategie dalla demolizione/ricostruzione allo smontaggio fino alla struttura con ampliamento fino al cambio d'uso mantenendo gli impianti.
+  en: Controls survey and modelling depth on existing assets (terrain, structure, MEP) for strategies from demolition/new build through strip-back to structure with extension to change of use while retaining building services.
+picture_link: null
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ). Aufwandstiefe projektspezifisch.'
+levels:
+- id: pragmaticbim:project-goal-level/bestand-gering
+  code: EXIST-01
+  sort_order: 1
+  name:
+    de: Neubau
+    fr: Neuf
+    it: Nuova costruzione
+    en: New build
+  description:
+    de: Aufnahme des Geländes — bestehender Gebäudebestand wird abgebrochen (Abbruch/Neubau).
+    fr: Relève du terrain — le bâtiment existant sera démoli (démolition/reconstruction).
+    it: Rilievo del terreno — l'edificio esistente verrà demolito (demolizione/ricostruzione).
+    en: Terrain survey — existing building will be demolished (demolition/new build).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-existing-site-survey
+  comment: Delta at level Neubau (sort_order 1); site survey.
+- id: pragmaticbim:project-goal-level/bestand-mittel
+  code: EXIST-02
+  sort_order: 2
+  name:
+    de: Erhalt Tragwerk
+    fr: Conservation de la structure
+    it: Conservazione della struttura
+    en: Structure retained
+  description:
+    de: Zusätzlich Aufnahme und Modellierung des Tragwerks — z. B. Sanierung, Erweiterung, Rückbau auf Tragwerk.
+    fr: En plus, relève et modélisation de la structure — p. ex. rénovation, agrandissement, démontage jusqu'à la structure.
+    it: In più, rilievo e modellazione della struttura — p. es. ristrutturazione, ampliamento, smontaggio fino alla struttura.
+    en: Additionally survey and model the structure — e.g. refurbishment, extension, strip-back to structure.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  comment: Delta at level Erhalt Tragwerk (sort_order 2); cumulative with Neubau.
+- id: pragmaticbim:project-goal-level/bestand-hoch
+  code: EXIST-03
+  sort_order: 3
+  name:
+    de: Erhalt Gebäudetechnik
+    fr: Conservation des installations techniques
+    it: Conservazione degli impianti
+    en: Building services retained
+  description:
+    de: Zusätzlich Aufnahme und Modellierung der Gebäudetechnik — z. B. Umbau, Umnutzung unter Beibehaltung der Anlagen.
+    fr: En plus, relève et modélisation des installations techniques — p. ex. transformation, changement d'affectation en conservant les installations.
+    it: In più, rilievo e modellazione degli impianti — p. es. ristrutturazione, cambio d'uso mantenendo gli impianti.
+    en: Additionally survey and model building services — e.g. conversion, change of use while retaining services.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  comment: Delta at level Erhalt Gebäudetechnik (sort_order 3); cumulative with Erhalt Tragwerk and Neubau.

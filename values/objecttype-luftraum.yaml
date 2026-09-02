@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-luftraum
+code: OBJ-LUFTRAUM
+name:
+  de: ObjectType Luftraum
+  fr: ObjectType volume d'air
+  it: ObjectType volume d'aria
+  en: ObjectType air space
+description:
+  de: ObjectType für IfcSpace als nicht nutzbaren Luftraum (z. B. Atrium, Durchbruch).
+  fr: ObjectType pour IfcSpace comme volume d'air non utilisable (p. ex. atrium, vide).
+  it: ObjectType per IfcSpace come volume d'aria non utilizzabile (p. es. atrio, vuoto).
+  en: ObjectType for IfcSpace as a non-occupiable air space (e.g. atrium, void).
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Luftraum
+  fr:
+  - Luftraum
+  it:
+  - Luftraum
+  en:
+  - Luftraum

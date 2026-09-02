@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-detail-reference
+code: OBJ-DET-REF
+name:
+  de: ObjectType Detailverweis
+  fr: ObjectType renvoi de détail
+  it: ObjectType riferimento al dettaglio
+  en: ObjectType detail reference
+description:
+  de: ObjectType für IfcBuildingElementProxy als Detailverweis in der Detailverweisübersicht.
+  fr: ObjectType pour IfcBuildingElementProxy comme renvoi de détail dans la vue d'ensemble des renvois.
+  it: ObjectType per IfcBuildingElementProxy come riferimento al dettaglio nella panoramica dei riferimenti.
+  en: ObjectType for IfcBuildingElementProxy as a detail reference in the detail reference overview.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Detailverweis
+  fr:
+  - Detailverweis
+  it:
+  - Detailverweis
+  en:
+  - Detailverweis

@@ -1,0 +1,692 @@
+id: pragmaticbim:element/architecture-roof-pitched
+code: ARC-ROOF-PITCH
+sort_order: 54
+status: active
+name:
+  de: Steildach (Grob)
+  fr: Toiture inclinée (Approximatif)
+  it: Tetto inclinato (Indicativo)
+  en: Pitched roof (Rough)
+definition:
+  de: 'Grobe Dimensionen gemäss Tragwerksplanung für Steildächer in Projektierung und Bewilligungsverfahren.
+
+
+    **Beschreibung**
+
+    - Grob dimensionierte Steildachgeometrie gemäss Tragwerks- und Hüllkonzept.
+
+    - Dient der Koordination zwischen Architektur und Tragwerksplanung, nicht der Ausführungsplanung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachtes Volumen oder Dachfläche modellieren; Neigung gemäss Grobkonzept.
+
+    - Keine Dachaufbauten, Eindeckungen oder Detailanschlüsse modellieren.
+
+    - Früh: Konzept über Skizzen als Tragwerksskizze im ARC-Modell; Sperrzonen vom Tragwerksplaner prüfen.
+
+    - Später: Dieselben Bauteile mit Reference auch im Tragwerksmodell abstimmen.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Dimensions approximatives selon la conception structurale pour toitures inclinées en phases de projet et de procédure d''autorisation.
+
+
+    **Description**
+
+    - Géométrie de toiture inclinée dimensionnée grossièrement selon le concept porteur et enveloppe.
+
+    - Sert à la coordination entre architecture et ingénierie structurelle, pas à l''exécution.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume simplifié ou surface de toiture ; pente selon le concept grossier.
+
+    - Ne pas modéliser superstructures, couverture ou raccords de détail.
+
+    - Tôt : concept par croquis comme esquisse porteuse dans le modèle d''architecture ; vérifier les zones d''exclusion de l''ingénieur structure.
+
+    - Plus tard : harmoniser les mêmes éléments avec Reference dans le modèle structurel.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Dimensioni indicative secondo la progettazione strutturale per tetti inclinati nelle fasi di progettazione e procedura di autorizzazione.
+
+
+    **Descrizione**
+
+    - Geometria di tetto inclinato dimensionata grossolanamente secondo il concept strutturale e dell''involucro.
+
+    - Serve per il coordinamento tra architettura e ingegneria strutturale, non per l''esecuzione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume semplificato o superficie di copertura; inclinazione secondo il concept grossolano.
+
+    - Non modellare sovrastrutture, manto di copertura o giunti di dettaglio.
+
+    - Presto: concept tramite schizzi come schizzo strutturale nel modello di architettura; verificare le zone di esclusione dell''ingegnere strutturista.
+
+    - Più tardi: allineare gli stessi elementi con Reference anche nel modello strutturale.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Rough dimensions according to structural engineering for pitched roofs in design development and permitting stages.
+
+
+    **Description**
+
+    - Coarsely dimensioned pitched roof geometry according to the structural and envelope concept.
+
+    - Used for coordination between architecture and structural engineering, not for execution planning.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified volume or roof surface; pitch according to the sketch concept.
+
+    - Do not model roof build-ups, cladding, or detail connections.
+
+    - Early: concept via sketches as structural sketch in the architecture model; verify exclusion zones from the structural engineer.
+
+    - Later: align the same components with Reference in the structural model as well.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcRoof
+entity_ifc4: IfcRoof
+entity_ifc4_3: IfcRoof
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcRoof OR entity_ifc2x3=IfcRoof
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Form des Steildachs.
+
+
+      **Zulässige Werte**
+
+      - `SHED_ROOF` — Pultdach
+
+      - `GABLE_ROOF` — Satteldach
+
+      - `HIP_ROOF` — Walmdach
+
+      - `HIPPED_GABLE_ROOF` — Krüppelwalmdach
+
+      - `GAMBREL_ROOF` — Mansarddach
+
+      - `MANSARD_ROOF` — Mansartdach
+
+      - `BARREL_ROOF` — Tonnendach
+
+      - `RAINBOW_ROOF` — Regenbogen-Dach
+
+      - `BUTTERFLY_ROOF` — Schmetterlingsdach
+
+      - `PAVILION_ROOF` — Zeltdach
+
+      - `DOME_ROOF` — Kuppeldach
+
+      - `FREEFORM` — Freiform'
+    fr: 'Forme de la toiture inclinée.
+
+
+      **Valeurs admises**
+
+      - `SHED_ROOF` — toit monopente
+
+      - `GABLE_ROOF` — toit à deux pentes
+
+      - `HIP_ROOF` — toit en croupe
+
+      - `HIPPED_GABLE_ROOF` — toit croupe-jonction
+
+      - `GAMBREL_ROOF` — toit mansardé
+
+      - `MANSARD_ROOF` — toit mansart
+
+      - `BARREL_ROOF` — toit en berceau
+
+      - `RAINBOW_ROOF` — toit arc-en-ciel
+
+      - `BUTTERFLY_ROOF` — toit papillon
+
+      - `PAVILION_ROOF` — toit pavillon
+
+      - `DOME_ROOF` — toit dôme
+
+      - `FREEFORM` — forme libre'
+    it: 'Forma del tetto inclinato.
+
+
+      **Valori ammessi**
+
+      - `SHED_ROOF` — tetto a una falda
+
+      - `GABLE_ROOF` — tetto a due falde
+
+      - `HIP_ROOF` — tetto a padiglione
+
+      - `HIPPED_GABLE_ROOF` — tetto a padiglione con frontone
+
+      - `GAMBREL_ROOF` — tetto a mansarda
+
+      - `MANSARD_ROOF` — tetto mansart
+
+      - `BARREL_ROOF` — tetto a botte
+
+      - `RAINBOW_ROOF` — tetto arcobaleno
+
+      - `BUTTERFLY_ROOF` — tetto a farfalla
+
+      - `PAVILION_ROOF` — tetto piramidale
+
+      - `DOME_ROOF` — tetto a cupola
+
+      - `FREEFORM` — forma libera'
+    en: 'Form of the pitched roof.
+
+
+      **Allowed values**
+
+      - `SHED_ROOF` — shed roof
+
+      - `GABLE_ROOF` — gable roof
+
+      - `HIP_ROOF` — hip roof
+
+      - `HIPPED_GABLE_ROOF` — hipped gable roof
+
+      - `GAMBREL_ROOF` — gambrel roof
+
+      - `MANSARD_ROOF` — mansard roof
+
+      - `BARREL_ROOF` — barrel roof
+
+      - `RAINBOW_ROOF` — rainbow roof
+
+      - `BUTTERFLY_ROOF` — butterfly roof
+
+      - `PAVILION_ROOF` — pavilion roof
+
+      - `DOME_ROOF` — dome roof
+
+      - `FREEFORM` — freeform'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-roof-pitched
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Form des Steildachs.
+
+
+      **Zulässige Werte**
+
+      - `SHED_ROOF` — Pultdach
+
+      - `GABLE_ROOF` — Satteldach
+
+      - `HIP_ROOF` — Walmdach
+
+      - `HIPPED_GABLE_ROOF` — Krüppelwalmdach
+
+      - `GAMBREL_ROOF` — Mansarddach
+
+      - `MANSARD_ROOF` — Mansartdach
+
+      - `BARREL_ROOF` — Tonnendach
+
+      - `RAINBOW_ROOF` — Regenbogen-Dach
+
+      - `BUTTERFLY_ROOF` — Schmetterlingsdach
+
+      - `PAVILION_ROOF` — Zeltdach
+
+      - `DOME_ROOF` — Kuppeldach
+
+      - `FREEFORM` — Freiform
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Forme de la toiture inclinée.
+
+
+      **Valeurs admises**
+
+      - `SHED_ROOF` — toit monopente
+
+      - `GABLE_ROOF` — toit à deux pentes
+
+      - `HIP_ROOF` — toit en croupe
+
+      - `HIPPED_GABLE_ROOF` — toit croupe-jonction
+
+      - `GAMBREL_ROOF` — toit mansardé
+
+      - `MANSARD_ROOF` — toit mansart
+
+      - `BARREL_ROOF` — toit en berceau
+
+      - `RAINBOW_ROOF` — toit arc-en-ciel
+
+      - `BUTTERFLY_ROOF` — toit papillon
+
+      - `PAVILION_ROOF` — toit pavillon
+
+      - `DOME_ROOF` — toit dôme
+
+      - `FREEFORM` — forme libre
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Forma del tetto inclinato.
+
+
+      **Valori ammessi**
+
+      - `SHED_ROOF` — tetto a una falda
+
+      - `GABLE_ROOF` — tetto a due falde
+
+      - `HIP_ROOF` — tetto a padiglione
+
+      - `HIPPED_GABLE_ROOF` — tetto a padiglione con frontone
+
+      - `GAMBREL_ROOF` — tetto a mansarda
+
+      - `MANSARD_ROOF` — tetto mansart
+
+      - `BARREL_ROOF` — tetto a botte
+
+      - `RAINBOW_ROOF` — tetto arcobaleno
+
+      - `BUTTERFLY_ROOF` — tetto a farfalla
+
+      - `PAVILION_ROOF` — tetto piramidale
+
+      - `DOME_ROOF` — tetto a cupola
+
+      - `FREEFORM` — forma libera
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Form of the pitched roof.
+
+
+      **Allowed values**
+
+      - `SHED_ROOF` — shed roof
+
+      - `GABLE_ROOF` — gable roof
+
+      - `HIP_ROOF` — hip roof
+
+      - `HIPPED_GABLE_ROOF` — hipped gable roof
+
+      - `GAMBREL_ROOF` — gambrel roof
+
+      - `MANSARD_ROOF` — mansard roof
+
+      - `BARREL_ROOF` — barrel roof
+
+      - `RAINBOW_ROOF` — rainbow roof
+
+      - `BUTTERFLY_ROOF` — butterfly roof
+
+      - `PAVILION_ROOF` — pavilion roof
+
+      - `DOME_ROOF` — dome roof
+
+      - `FREEFORM` — freeform'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-roof-pitched
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: '2
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Steildachs gemäss Tragwerksplan.
+    fr: Désignation de la toiture inclinée selon le plan structurel.
+    it: Denominazione del tetto inclinato secondo il piano strutturale.
+    en: Pitched roof designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_RoofCommon
+  definition:
+    de: Referenz zur Zuordnung im Koordinationsmodell.
+    fr: Référence pour l'identification dans le modèle de coordination.
+    it: Riferimento per l'identificazione nel modello di coordinamento.
+    en: Reference used for identification in the coordination model.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: IsStructural
+  pset: Pset_RoofCommon
+  definition:
+    de: 'Kennzeichnet das Element als tragendes Bauteil im Architekturmodell.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — tragendes Bauteil'
+    fr: 'Identifie l''élément comme composant porteur dans le modèle d''architecture.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — élément porteur'
+    it: 'Identifica l''elemento come componente portante nel modello di architettura.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — elemento portante'
+    en: 'Marks the element as a load-bearing component in the architecture model.
+
+
+      **Allowed values**
+
+      - `TRUE` — load-bearing element'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-true
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: GrossArea
+  pset: Qto_RoofBaseQuantities
+  definition:
+    de: Bruttofläche des modellierten Steildachs.
+    fr: Surface brute de la toiture inclinée modélisée.
+    it: Superficie lorda del tetto inclinato modellato.
+    en: Gross area of the modelled pitched roof.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: Status
+  pset: Pset_RoofCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 8

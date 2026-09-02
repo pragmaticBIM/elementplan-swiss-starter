@@ -1,0 +1,68 @@
+id: pragmaticbim:value/sia-phase
+code: SIA-PHASE
+name:
+  de: SIA-Teilphase
+  fr: Phase partielle SIA
+  it: Sottofase SIA
+  en: SIA sub-phase
+description:
+  de: Nummern der Teilphasen nach SIA 112.
+  fr: Numéros des phases partielles selon SIA 112.
+  it: Numeri delle sottofasi secondo SIA 112.
+  en: Sub-phase numbers according to SIA 112.
+year: 2026
+norm_reference: SIA 112
+status: active
+values:
+  de:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  fr:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  it:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  en:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'

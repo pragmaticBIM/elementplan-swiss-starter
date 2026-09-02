@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-ups
+code: UPS
+name:
+  de: PredefinedType IfcElectricFlowStorageDevice
+  fr: PredefinedType IfcElectricFlowStorageDevice
+  it: PredefinedType IfcElectricFlowStorageDevice
+  en: PredefinedType IfcElectricFlowStorageDevice
+description:
+  de: Ifc PredefinedType für IfcElectricFlowStorageDevice.
+  fr: PredefinedType IFC pour IfcElectricFlowStorageDevice.
+  it: PredefinedType IFC per IfcElectricFlowStorageDevice.
+  en: IFC PredefinedType for IfcElectricFlowStorageDevice.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - UPS
+  - BATTERY
+  - CAPACITORBANK
+  fr:
+  - UPS
+  - BATTERY
+  - CAPACITORBANK
+  it:
+  - UPS
+  - BATTERY
+  - CAPACITORBANK
+  en:
+  - UPS
+  - BATTERY
+  - CAPACITORBANK

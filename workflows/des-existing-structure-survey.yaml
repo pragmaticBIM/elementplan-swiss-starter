@@ -1,0 +1,176 @@
+id: pragmaticbim:workflow/des-existing-structure-survey
+code: DES-EXISTING-STRUCTURE
+sort_order: 46
+name:
+  de: Aufnahme Tragwerk Bestand
+  fr: Relève structure existante
+  it: Rilievo struttura esistente
+  en: Existing structure survey
+description:
+  de: 'Gebäudekörper im Bestand aufnehmen und modellieren als Grundlage für Rückbau, Erweiterung oder Umnutzung.
+
+
+    **Ausgangslage**
+
+    - Strategien wie Rückbau auf Tragwerk mit Erweiterung brauchen ein belastbares Bestandsmodell des Gebäudekörpers.
+
+    - Pläne fehlen oft oder weichen von der Ausführung ab; ohne Abgleich mit der Punktwolke entstehen Fehlentscheidungen.
+
+
+    **Ziel & Nutzen**
+
+    - Gebäudekörper früh mit Status (Bestand / Abbruch / Neubau / temporär) im Architekturmodell führen.
+
+    - Architekturpläne nutzen und mit der Punktwolke abgleichen.
+
+
+    **Ablauf**
+
+    1. Verfügbare Architekturpläne beschaffen und vor Ort ergänzen.
+
+    2. Gebäudekörper im Architekturmodell erfassen und mit der Punktwolke abgleichen (Punktwolke empfohlen farbig).
+
+    3. Status je Bauteil setzen und Aufwandstiefe projektspezifisch festlegen.
+
+
+    **Ergebnis**
+
+    - Nachvollziehbares Architektur-Bestandsmodell mit Status für die gewählte Umbaustrategie.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit modellierten Bauteilen (u. a. Wände, Decken, Dächer, Stützen, Träger, Türen, Fenster)
+
+    - Status gemäss Pset_*Common: NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - Abgleich mit Punktwolke; Architekturpläne als Grundlage
+
+    - Aufwandstiefe projektspezifisch'
+  fr: 'Relever et modéliser le corps du bâtiment existant comme base pour démontage, agrandissement ou changement d''affectation.
+
+
+    **Situation de départ**
+
+    - Les stratégies comme le démontage jusqu''à la structure avec agrandissement exigent une maquette fiable du corps du bâtiment.
+
+    - Les plans manquent souvent ou divergent de l''exécuté ; sans calage sur le nuage de points, les décisions sont erronées.
+
+
+    **Objectif et bénéfice**
+
+    - Porter tôt le corps du bâtiment avec statut (existant / à démolir / neuf / temporaire) dans la maquette d''architecture.
+
+    - Utiliser les plans d''architecture et les caler sur le nuage de points.
+
+
+    **Déroulement**
+
+    1. Obtenir les plans d''architecture disponibles et les compléter sur site.
+
+    2. Relever le corps du bâtiment dans la maquette d''architecture et le caler sur le nuage de points (nuage recommandé en couleur).
+
+    3. Attribuer le statut par élément et fixer la profondeur d''effort selon le projet.
+
+
+    **Résultat**
+
+    - Maquette d''architecture de l''existant traçable avec statut pour la stratégie de transformation.
+
+
+    **Livrables**
+
+    - Maquette d''architecture avec éléments modélisés (p. ex. murs, dalles, toitures, poteaux, poutres, portes, fenêtres)
+
+    - Statut selon Pset_*Common : NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - Calage sur nuage de points ; plans d''architecture comme base
+
+    - Profondeur d''effort spécifique au projet'
+  it: 'Rilevare e modellare il corpo del fabbricato esistente come base per smontaggio, ampliamento o cambio d''uso.
+
+
+    **Situazione di partenza**
+
+    - Strategie come lo smontaggio fino alla struttura con ampliamento richiedono un modello affidabile del corpo del fabbricato.
+
+    - I piani spesso mancano o divergono dall''eseguito; senza allineamento alla nuvola di punti si prendono decisioni errate.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire presto il corpo del fabbricato con stato (esistente / da demolire / nuovo / temporaneo) nel modello architettonico.
+
+    - Usare i piani architettonici e allinearli alla nuvola di punti.
+
+
+    **Svolgimento**
+
+    1. Procurare i piani architettonici disponibili e integrarli in situ.
+
+    2. Rilevare il corpo del fabbricato nel modello architettonico e allinearlo alla nuvola di punti (nuvola raccomandata a colori).
+
+    3. Impostare lo stato per elemento e definire la profondità di impegno specifica del progetto.
+
+
+    **Risultato**
+
+    - Modello architettonico dell''esistente tracciabile con stato per la strategia di trasformazione.
+
+
+    **Oggetti della fornitura**
+
+    - Modello architettonico con componenti modellati (tra cui pareti, solai, tetti, pilastri, travi, porte, finestre)
+
+    - Stato secondo Pset_*Common: NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - Allineamento alla nuvola di punti; piani architettonici come base
+
+    - Profondità di impegno specifica del progetto'
+  en: 'Survey and model the existing building shell as the basis for strip-back, extension, or change of use.
+
+
+    **Starting point**
+
+    - Strategies such as strip-back to structure with extension need a reliable as-built model of the building shell.
+
+    - Drawings are often missing or diverge from built reality; without point-cloud alignment, decisions go wrong.
+
+
+    **Goal & benefit**
+
+    - Carry the building shell early in the architecture model with status (existing / demolish / new / temporary).
+
+    - Use architecture drawings and align them with the point cloud.
+
+
+    **Process**
+
+    1. Obtain available architecture drawings and complement them on site.
+
+    2. Capture the building shell in the architecture model and align it with the point cloud (colour point cloud recommended).
+
+    3. Set status per element and fix project-specific effort depth.
+
+
+    **Outcome**
+
+    - Traceable as-built architecture model with status for the chosen conversion strategy.
+
+
+    **Deliverables**
+
+    - Architecture model with modelled elements (e.g. walls, slabs, roofs, columns, beams, doors, windows)
+
+    - Status according to Pset_*Common: NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - Point-cloud alignment; architecture drawings as the basis
+
+    - Project-specific effort depth'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Phase 11 Bestand. Status on architecture elements only; effort depth project-specific.

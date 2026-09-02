@@ -1,0 +1,593 @@
+id: pragmaticbim:element/architecture-slab-flat-roof
+code: ARC-SLAB-ROOF
+sort_order: 53
+status: active
+name:
+  de: Flachdach (Grob)
+  fr: Toiture plate (Approximatif)
+  it: Tetto piano (Indicativo)
+  en: Flat roof (Rough)
+definition:
+  de: 'Grobe Dimensionen gemäss Tragwerksplanung für Flachdächer in Projektierung und Bewilligungsverfahren.
+
+
+    **Beschreibung**
+
+    - Grob dimensionierte Flachdachplatte gemäss Tragwerks- und Hüllkonzept.
+
+    - Dient der Koordination zwischen Architektur und Tragwerksplanung, nicht der Ausführungsplanung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachtes Volumen modellieren; an Bauteilgrenzen teilen.
+
+    - Keine Dachaufbauten, Entwässerungsdetails oder Schichtaufbauten modellieren.
+
+    - Früh: Konzept über Skizzen als Tragwerksskizze im ARC-Modell; Sperrzonen vom Tragwerksplaner prüfen.
+
+    - Später: Dieselben Bauteile mit Reference auch im Tragwerksmodell abstimmen.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Dimensions approximatives selon la conception structurale pour toitures plates en phases de projet et de procédure d''autorisation.
+
+
+    **Description**
+
+    - Dalle de toiture plate dimensionnée grossièrement selon le concept porteur et enveloppe.
+
+    - Sert à la coordination entre architecture et ingénierie structurelle, pas à l''exécution.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume simplifié ; diviser aux limites de composants.
+
+    - Ne pas modéliser superstructures de toiture, drainage ou stratification.
+
+    - Tôt : concept par croquis comme esquisse porteuse dans le modèle d''architecture ; vérifier les zones d''exclusion de l''ingénieur structure.
+
+    - Plus tard : harmoniser les mêmes éléments avec Reference dans le modèle structurel.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Dimensioni indicative secondo la progettazione strutturale per tetti piani nelle fasi di progettazione e procedura di autorizzazione.
+
+
+    **Descrizione**
+
+    - Soletta di tetto piano dimensionata grossolanamente secondo il concept strutturale e dell''involucro.
+
+    - Serve per il coordinamento tra architettura e ingegneria strutturale, non per l''esecuzione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume semplificato; suddividere ai confini dei componenti.
+
+    - Non modellare sovrastrutture di copertura, drenaggio o stratigrafie.
+
+    - Presto: concept tramite schizzi come schizzo strutturale nel modello di architettura; verificare le zone di esclusione dell''ingegnere strutturista.
+
+    - Più tardi: allineare gli stessi elementi con Reference anche nel modello strutturale.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Rough dimensions according to structural engineering for flat roofs in design development and permitting stages.
+
+
+    **Description**
+
+    - Coarsely dimensioned flat roof slab according to the structural and envelope concept.
+
+    - Used for coordination between architecture and structural engineering, not for execution planning.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified volume; split at component boundaries.
+
+    - Do not model roof build-ups, drainage details, or layer build-ups.
+
+    - Early: concept via sketches as structural sketch in the architecture model; verify exclusion zones from the structural engineer.
+
+    - Later: align the same components with Reference in the structural model as well.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcSlab
+entity_ifc4: IfcSlab
+entity_ifc4_3: IfcSlab
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcSlab AND PredefinedType=ROOF
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet das Flachdach.
+
+
+      **Zulässige Werte**
+
+      - `ROOF` — Flachdach'
+    fr: 'Identifie la toiture plate.
+
+
+      **Valeurs admises**
+
+      - `ROOF` — toiture plate'
+    it: 'Identifica il tetto piano.
+
+
+      **Valori ammessi**
+
+      - `ROOF` — tetto piano'
+    en: 'Marks the flat roof.
+
+
+      **Allowed values**
+
+      - `ROOF` — flat roof'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-slab-roof
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Kennzeichnet das Flachdach.
+
+
+      **Zulässige Werte**
+
+      - `ROOF` — Flachdach
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Identifie la toiture plate.
+
+
+      **Valeurs admises**
+
+      - `ROOF` — toiture plate
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Identifica il tetto piano.
+
+
+      **Valori ammessi**
+
+      - `ROOF` — tetto piano
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Marks the flat roof.
+
+
+      **Allowed values**
+
+      - `ROOF` — flat roof'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-slab-roof
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: true
+  status: active
+  sort_order: '2
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Flachdachs gemäss Tragwerksplan.
+    fr: Désignation de la toiture plate selon le plan structurel.
+    it: Denominazione del tetto piano secondo il piano strutturale.
+    en: Flat roof designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_SlabCommon
+  definition:
+    de: Referenz zur Zuordnung im Koordinationsmodell.
+    fr: Référence pour l'identification dans le modèle de coordination.
+    it: Riferimento per l'identificazione nel modello di coordinamento.
+    en: Reference used for identification in the coordination model.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: IsExternal
+  pset: Pset_SlabCommon
+  definition:
+    de: 'Kennzeichnet das Dach als aussenliegendes Bauteil.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — Aussenbauteil'
+    fr: 'Identifie la toiture comme élément extérieur.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — élément extérieur'
+    it: 'Identifica la copertura come elemento esterno.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — elemento esterno'
+    en: 'Marks the roof as an external element.
+
+
+      **Allowed values**
+
+      - `TRUE` — external element'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-true
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: IsStructural
+  pset: Pset_SlabCommon
+  definition:
+    de: 'Kennzeichnet das Element als tragendes Bauteil im Architekturmodell.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — tragendes Bauteil'
+    fr: 'Identifie l''élément comme composant porteur dans le modèle d''architecture.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — élément porteur'
+    it: 'Identifica l''elemento come componente portante nel modello di architettura.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — elemento portante'
+    en: 'Marks the element as a load-bearing component in the architecture model.
+
+
+      **Allowed values**
+
+      - `TRUE` — load-bearing element'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-true
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: GrossVolume
+  pset: Qto_SlabBaseQuantities
+  definition:
+    de: Bruttovolumen des modellierten Flachdachs.
+    fr: Volume brut de la toiture plate modélisée.
+    it: Volume lordo del tetto piano modellato.
+    en: Gross volume of the modelled flat roof.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: GrossArea
+  pset: Qto_SlabBaseQuantities
+  definition:
+    de: Bruttofläche des modellierten Flachdachs.
+    fr: Surface brute de la toiture plate modélisée.
+    it: Superficie lorda del tetto piano modellato.
+    en: Gross area of the modelled flat roof.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: Status
+  pset: Pset_SlabCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 9
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 10

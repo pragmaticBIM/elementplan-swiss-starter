@@ -1,0 +1,168 @@
+id: pragmaticbim:workflow/qas-mep-detail-coordination
+code: QAS-MEP-DETAIL
+sort_order: 72
+name:
+  de: Detailkoordination Gebäudetechnik
+  fr: Coordination détaillée CVC
+  it: Coordinamento dettagliato impianti
+  en: MEP detail coordination
+description:
+  de: 'Gebäudetechnik ab Bauprojekt mit IFC-Entitäten und PredefinedType koordinieren — nicht mehr nur schematisch.
+
+
+    **Ausgangslage**
+
+    - Schematische Hauptverteilungen reichen für die Detailkoordination und Ausführungsnähe nicht.
+
+    - Ohne typisierte Geräte und Terminals bleiben Kollisionen und Anschlüsse unklar.
+
+
+    **Ziel & Nutzen**
+
+    - Relevante TGA-Objekte als IFC-Entitäten mit PredefinedType im Modell führen.
+
+    - Fachübergreifend prüfen, ohne FM-Stammdaten vorwegzunehmen.
+
+
+    **Ablauf**
+
+    1. Schematische Reserven durch typisierte IFC-Objekte der Gebäudetechnik ersetzen oder ergänzen.
+
+    2. PredefinedType je Objekt setzen und Lage/Anschlüsse im Gesamtmodell prüfen.
+
+    3. Status führen, wo Bestand und Neubau gemischt sind.
+
+
+    **Ergebnis**
+
+    - Koordinierbares Detailmodell der Gebäudetechnik mit prüfbaren Entitäten und Typen.
+
+
+    **Lieferobjekte**
+
+    - Gebäudetechnikmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Relevante IFC-TGA-Entitäten (Erzeuger, Terminals, Armaturen, u. a.) mit PredefinedType
+
+    - Status gemäss Pset_*Common wo Bestandskoordination nötig: NEW, EXISTING, DEMOLISH, TEMPORARY'
+  fr: 'Coordonner les techniques du bâtiment dès le projet de construction avec entités IFC et PredefinedType — plus seulement schématique.
+
+
+    **Situation de départ**
+
+    - Les distributions schématiques ne suffisent pas pour la coordination détaillée.
+
+    - Sans appareils et terminaux typés, collisions et raccordements restent flous.
+
+
+    **Objectif et bénéfice**
+
+    - Porter les objets CVC pertinents comme entités IFC avec PredefinedType.
+
+    - Vérifier entre disciplines sans anticiper les données FM.
+
+
+    **Déroulement**
+
+    1. Remplacer ou compléter les réserves schématiques par des objets IFC typés.
+
+    2. Renseigner PredefinedType et vérifier position/raccordements en maquette fédérée.
+
+    3. Porter le statut lorsque existant et neuf se mêlent.
+
+
+    **Résultat**
+
+    - Maquette détaillée CVC coordonnable avec entités et types vérifiables.
+
+
+    **Livrables**
+
+    - Maquette techniques avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Entités IFC CVC pertinentes (générateurs, terminaux, armatures, etc.) avec PredefinedType
+
+    - Statut selon Pset_*Common si coordination existant : NEW, EXISTING, DEMOLISH, TEMPORARY'
+  it: 'Coordinare gli impianti dal progetto di costruzione con entità IFC e PredefinedType — non più solo schematico.
+
+
+    **Situazione di partenza**
+
+    - Le distribuzioni schematiche non bastano per il coordinamento di dettaglio.
+
+    - Senza apparecchi e terminali tipizzati, collisioni e collegamenti restano poco chiari.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire gli oggetti impianti rilevanti come entità IFC con PredefinedType.
+
+    - Verificare tra discipline senza anticipare i dati FM.
+
+
+    **Svolgimento**
+
+    1. Sostituire o integrare le riserve schematiche con oggetti IFC tipizzati.
+
+    2. Impostare PredefinedType e verificare posizione/collegamenti nel modello federato.
+
+    3. Gestire lo stato dove esistente e nuovo si mescolano.
+
+
+    **Risultato**
+
+    - Modello di dettaglio impianti coordinabile con entità e tipi verificabili.
+
+
+    **Oggetti della fornitura**
+
+    - Modello impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Entità IFC impianti rilevanti (generatori, terminali, armature, ecc.) con PredefinedType
+
+    - Stato secondo Pset_*Common se serve coordinamento sull''esistente: NEW, EXISTING, DEMOLISH, TEMPORARY'
+  en: 'Coordinate building services from construction project phase with IFC entities and PredefinedType — no longer schematic only.
+
+
+    **Starting point**
+
+    - Schematic main distributions are not enough for detailed coordination.
+
+    - Without typed equipment and terminals, clashes and connections stay unclear.
+
+
+    **Goal & benefit**
+
+    - Carry relevant MEP objects as IFC entities with PredefinedType.
+
+    - Check across disciplines without assuming FM master data.
+
+
+    **Process**
+
+    1. Replace or complement schematic reserves with typed IFC MEP objects.
+
+    2. Set PredefinedType per object and check location/connections in the federated model.
+
+    3. Carry Status where existing and new work are mixed.
+
+
+    **Outcome**
+
+    - Coordinatable detailed MEP model with checkable entities and types.
+
+
+    **Deliverables**
+
+    - MEP model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Relevant IFC MEP entities (plant, terminals, fittings, etc.) with PredefinedType
+
+    - Status per Pset_*Common where existing-stock coordination is needed: NEW, EXISTING, DEMOLISH, TEMPORARY'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/mep
+comment: Detailed MEP coordination from phase 32. No fixed FM attribute pack.

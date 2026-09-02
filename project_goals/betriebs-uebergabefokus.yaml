@@ -1,21 +1,21 @@
 id: pragmaticbim:project-goal/betriebs-uebergabefokus
-sort_order: 50
-code: PG-05
+sort_order: 40
+code: PG-04
 name:
-  de: Betriebs-/Übergabefokus
-  fr: Focus exploitation/remise
-  it: Focus esercizio/consegna
-  en: Operations/handover focus
+  de: Übergabefokus
+  fr: Focus remise
+  it: Focus consegna
+  en: Handover focus
 description:
-  de: Steuert die Tiefe der FM-/Bewirtschaftungsdaten über geordnete Ausprägungen.
-  fr: Contrôle la profondeur des données FM/gestion via des niveaux ordonnés.
-  it: Controlla la profondità dei dati FM/gestione tramite livelli ordinati.
-  en: Controls depth of FM/facility data via ordered levels.
+  de: Steuert die Tiefe der FM-Datenübergabe an den Betreiber über geordnete Ausprägungen.
+  fr: Contrôle la profondeur de la livraison des données FM à l'exploitant via des niveaux ordonnés.
+  it: Controlla la profondità della consegna dati FM al gestore tramite livelli ordinati.
+  en: Controls depth of FM data handover to the operator via ordered levels.
 picture_link: null
 status: active
-comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ). Handover (HOV), not ongoing operation.'
 levels:
-- id: pragmaticbim:project-goal-level/betrieb-gering
+- id: pragmaticbim:project-goal-level/uebergabe-gering
   code: OPS-01
   sort_order: 1
   name:
@@ -24,14 +24,14 @@ levels:
     it: basso
     en: low
   description:
-    de: Keine zusätzlichen FM-/Dokumentations-Workflows.
-    fr: Aucun workflow FM/documentation supplémentaire.
-    it: Nessun workflow FM/documentazione aggiuntivo.
-    en: No additional FM/documentation workflows.
+    de: Keine zusätzlichen FM-Übergabe-Workflows.
+    fr: Aucun workflow de livraison FM supplémentaire.
+    it: Nessun workflow di consegna FM aggiuntivo.
+    en: No additional FM handover workflows.
   status: active
   activated_workflows: []
   comment: Delta at level gering (sort_order 1); empty.
-- id: pragmaticbim:project-goal-level/betrieb-mittel
+- id: pragmaticbim:project-goal-level/uebergabe-mittel
   code: OPS-02
   sort_order: 2
   name:
@@ -40,26 +40,28 @@ levels:
     it: medio
     en: medium
   description:
-    de: Bauwerksdokumentation Basis und LIA Gebäude/Areal/Grundstück.
-    fr: Documentation d'ouvrage de base et LIA bâtiment/aire/parcelle.
-    it: Documentazione opera di base e LIA edificio/area/parcella.
-    en: Baseline building documentation and LIA building/site/parcel.
+    de: Minimale FM-Datenübergabe — Raum- und Türlisten sowie FM-relevante Gebäudetechnik.
+    fr: Livraison FM minimale — listes de locaux et de portes ainsi que technique du bâtiment pertinente pour le FM.
+    it: Consegna FM minimale — elenchi locali e porte nonché impianti rilevanti per il FM.
+    en: Minimal FM data handover — space and door lists plus FM-relevant MEP.
   status: active
-  activated_workflows: []
+  activated_workflows:
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
   comment: Delta at level mittel (sort_order 2); cumulative with gering.
-- id: pragmaticbim:project-goal-level/betrieb-volle-fm-integration
+- id: pragmaticbim:project-goal-level/uebergabe-vertieft
   code: OPS-03
   sort_order: 3
   name:
-    de: volle FM-Integration
-    fr: intégration FM complète
-    it: piena integrazione FM
-    en: full FM integration
+    de: vertiefte 3D-Übergabe
+    fr: remise 3D approfondie
+    it: consegna 3D approfondita
+    en: deepened 3D handover
   description:
-    de: System-/Bauteilebene, NGF-Erfassung und modellbasiertes Nachtragsmanagement.
-    fr: Niveau système/élément, saisie NGF et gestion des avenants modélisée.
-    it: Livello sistema/componente, rilevamento NGF e gestione varianti modellata.
-    en: System/component level, NGF capture and model-based change management.
+    de: 3D-FM-Datenübergabe der TGA-Erzeuger und -Endgeräte mit AKS, Garantie und Dokumentenbezug.
+    fr: Livraison FM 3D des générateurs et terminaux TGA avec AKS, garantie et référence documentaire.
+    it: Consegna FM 3D di generatori e terminali TGA con AKS, garanzia e riferimento documentale.
+    en: 3D FM data handover of MEP generating units and terminals with AKS, warranty, and document reference.
   status: active
-  activated_workflows: []
-  comment: Delta at level volle FM-Integration (sort_order 3); cumulative with mittel and gering.
+  activated_workflows:
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  comment: Delta at level vertiefte 3D-Übergabe (sort_order 3); cumulative with mittel and gering.

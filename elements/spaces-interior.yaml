@@ -8,176 +8,852 @@ name:
   it: Spazi interni
   en: Interior spaces
 definition:
-  de: |
-    Innenräume als Volumen (IfcSpace, PredefinedType INTERNAL).
+  de: 'Geschlossene, begehbare Raumvolumen innerhalb des Gebäudes.
 
-    **Modellierung**
+
+    **Beschreibung**
+
+    - Nutzbare Innenräume als durchgängig modellierte Volumen.
+
+    - Raumnutzung wird über LongName geführt; Name kann die Raumnummer tragen.
+
+
+    **Modellierungsrichtlinie**
+
     - Mit dem Raumwerkzeug als Volumen modellieren, geschossweise.
-    - Von Oberkante Fertigboden bis Unterkante tragende Decke.
-    - Keine Überlappungen oder Doppelungen.
-    - Raumname in LongName, optionale Raumnummer in Name.
-  fr: |
-    Espaces intérieurs comme volumes (IfcSpace, PredefinedType INTERNAL).
 
-    **Modélisation**
-    - Modéliser comme volume avec l'outil local, étage par étage.
-    - Du dessus du sol fini au dessous du plafond porteur.
-    - Pas de chevauchement ni de duplication.
-    - Nom du local dans LongName, numéro facultatif dans Name.
-  it: |
-    Spazi interni come volumi (IfcSpace, PredefinedType INTERNAL).
+    - Von Oberkante Fertigboden bis Unterkante tragende Decke — nicht Abhangdecke. Nur so kann der Raum von anderen Gewerken weiterverwendet werden.
 
-    **Modellazione**
+    - Keine Überlappungen oder Doppelungen.'
+  fr: 'Volumes de locaux clos et accessibles à l''intérieur du bâtiment.
+
+
+    **Description**
+
+    - Locaux intérieurs utilisables modélisés comme volumes continus.
+
+    - L''usage du local est porté par LongName; Name peut porter le numéro de local.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume avec l''outil local, étage par étage.
+
+    - Du dessus du sol fini au dessous du plafond porteur — pas de plafond suspendu. Seulement ainsi le local peut être réutilisé par les autres corps de métier.
+
+    - Pas de chevauchement ni de duplication.'
+  it: 'Volumi di locali chiusi e percorribili all''interno dell''edificio.
+
+
+    **Descrizione**
+
+    - Locali interni utilizzabili modellati come volumi continui.
+
+    - L''uso del locale è indicato in LongName; Name può riportare il numero del locale.
+
+
+    **Direttive di modellazione**
+
     - Modellare come volume con lo strumento locale, piano per piano.
-    - Dal bordo superiore del pavimento finito al bordo inferiore del solaio portante.
-    - Nessuna sovrapposizione o duplicazione.
-    - Nome del locale in LongName, numero facoltativo in Name.
-  en: |
-    Interior spaces as volumes (IfcSpace, PredefinedType INTERNAL).
 
-    **Modelling**
+    - Dal bordo superiore del pavimento finito al bordo inferiore del solaio portante — non controsoffitto. Solo così il locale può essere riutilizzato dalle altre discipline.
+
+    - Nessuna sovrapposizione o duplicazione.'
+  en: 'Enclosed, walkable room volumes within the building.
+
+
+    **Description**
+
+    - Usable interior spaces modelled as continuous volumes.
+
+    - Room use is carried in LongName; Name may carry the room number.
+
+
+    **Modelling guidelines**
+
     - Model as a volume with the space tool, storey by storey.
-    - From top of finished floor to underside of the structural ceiling.
-    - No overlaps or duplicates.
-    - Room name in LongName, optional room number in Name.
+
+    - From top of finished floor to underside of the structural ceiling — not a suspended ceiling. Only then can the space be reused by other trades.
+
+    - No overlaps or duplicates.'
 needed_in_domain:
-  - pragmaticbim:domain/architecture
+- pragmaticbim:domain/architecture
 entity_ifc2x3: IfcSpace
 entity_ifc4: IfcSpace
 entity_ifc4_3: IfcSpace
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcSpace
+applicability: entity_ifc4=IfcSpace OR (entity_ifc2x3=IfcSpace AND InteriorOrExteriorSpace=INTERNAL)
 attributes:
-  - name: PredefinedType
-    pset: null
-    definition:
-      de: Kennzeichnet den Raum als Innenraum (INTERNAL).
-      fr: Identifie l'espace comme intérieur (INTERNAL).
-      it: Identifica lo spazio come interno (INTERNAL).
-      en: Marks the space as interior (INTERNAL).
-    datatype: IfcLabel
-    allowed_values: pragmaticbim:value/predefinedtype-space-internal
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: true
-    status: active
-    sort_order: 1
-  - name: LongName
-    pset: null
-    definition:
-      de: Raumname bzw. Raumtyp. Pflicht für abstractBIM-Mengen und Simulation.
-      fr: Nom ou type de local. Obligatoire pour les quantités abstractBIM et la simulation.
-      it: Nome o tipo di locale. Obbligatorio per quantità abstractBIM e simulazione.
-      en: Room name or room type. Required for abstractBIM quantities and simulation.
-    datatype: IfcLabel
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-    is_applicability: false
-    status: active
-    sort_order: 2
-  - name: Name
-    pset: null
-    definition:
-      de: Optionale Raumnummer gemäss Projektnummerierung.
-      fr: Numéro de local facultatif selon la numérotation du projet.
-      it: Numero locale facoltativo secondo la numerazione di progetto.
-      en: Optional room number according to the project numbering scheme.
-    datatype: IfcIdentifier
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-    is_applicability: false
-    status: active
-    sort_order: 3
-  - name: Reference
-    pset: Pset_SpaceCommon
-    definition:
-      de: Referenzbezeichnung des Raums für die Koordination.
-      fr: Référence du local pour la coordination.
-      it: Riferimento del locale per il coordinamento.
-      en: Space reference used for coordination.
-    datatype: IfcIdentifier
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 4
-  - name: IsExternal
-    pset: Pset_SpaceCommon
-    definition:
-      de: FALSE für Innenräume.
-      fr: FALSE pour les espaces intérieurs.
-      it: FALSE per gli spazi interni.
-      en: FALSE for interior spaces.
-    datatype: IfcBoolean
-    allowed_values: pragmaticbim:value/boolean-false
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 5
-  - name: NetFloorArea
-    pset: Qto_SpaceBaseQuantities
-    definition:
-      de: Nettogeschossfläche des modellierten Raums.
-      fr: Surface nette du local modélisé.
-      it: Superficie netta del locale modellato.
-      en: Net floor area of the modelled space.
-    datatype: IfcAreaMeasure
-    unit: m²
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-    is_applicability: false
-    status: active
-    sort_order: 6
-  - name: NetVolume
-    pset: Qto_SpaceBaseQuantities
-    definition:
-      de: Nettovolumen des modellierten Raums.
-      fr: Volume net du local modélisé.
-      it: Volume netto del locale modellato.
-      en: Net volume of the modelled space.
-    datatype: IfcVolumeMeasure
-    unit: m³
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-    is_applicability: false
-    status: active
-    sort_order: 7
-  - name: Height
-    pset: Qto_SpaceBaseQuantities
-    definition:
-      de: Höhe des modellierten Raumvolumens.
-      fr: Hauteur du volume de local modélisé.
-      it: Altezza del volume di locale modellato.
-      en: Height of the modelled space volume.
-    datatype: IfcLengthMeasure
-    unit: m
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-    is_applicability: false
-    status: active
-    sort_order: 8
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Raum als Innenraum.
+
+
+      **Zulässige Werte**
+
+      - `INTERNAL` — Innenraum'
+    fr: 'Identifie l''espace comme intérieur.
+
+
+      **Valeurs admises**
+
+      - `INTERNAL` — espace intérieur'
+    it: 'Identifica lo spazio come interno.
+
+
+      **Valori ammessi**
+
+      - `INTERNAL` — spazio interno'
+    en: 'Marks the space as interior.
+
+
+      **Allowed values**
+
+      - `INTERNAL` — interior space'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-space-internal
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/qas-special-room-user-coordination
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: InteriorOrExteriorSpace
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Raum als Innenraum.
+
+
+      **Zulässige Werte**
+
+      - `INTERNAL` — Innenraum
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType und IsExternal.'
+    fr: 'Identifie l''espace comme intérieur.
+
+
+      **Valeurs admises**
+
+      - `INTERNAL` — espace intérieur
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType et IsExternal.'
+    it: 'Identifica lo spazio come interno.
+
+
+      **Valori ammessi**
+
+      - `INTERNAL` — spazio interno
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType e IsExternal.'
+    en: 'Marks the space as interior.
+
+
+      **Allowed values**
+
+      - `INTERNAL` — interior space
+
+
+      **Note**
+
+      - IFC2x3 substitute for PredefinedType and IsExternal.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/interiororexteriorspace-internal
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/qas-special-room-user-coordination
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: LongName
+  pset: null
+  definition:
+    de: 'Normalisierte Raumnutzung für Innenräume gemäss Pragmatic BIM Building Space Name Classification v0.2.0.
+
+
+      **Quelle**
+
+      - https://schema.pragmaticbim.ch/classification/room-name.html
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Raumbezeichnung Innenraum v0.2.0 — RN-Notation.'
+    fr: 'Usage normalisé du local intérieur selon Pragmatic BIM Building Space Name Classification v0.2.0.
+
+
+      **Source**
+
+      - https://schema.pragmaticbim.ch/classification/room-name.html
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Désignation de local intérieur v0.2.0 — notation RN.'
+    it: 'Uso normalizzato del locale interno secondo Pragmatic BIM Building Space Name Classification v0.2.0.
+
+
+      **Fonte**
+
+      - https://schema.pragmaticbim.ch/classification/room-name.html
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Denominazione locale interno v0.2.0 — notazione RN.'
+    en: 'Normalized room use for interior spaces according to Pragmatic BIM Building Space Name Classification v0.2.0.
+
+
+      **Source**
+
+      - https://schema.pragmaticbim.ch/classification/room-name.html
+
+
+      **Allowed values**
+
+      - See value list Room name interior space v0.2.0 — RN notation.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/room-name-interior-v0.2.0
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/qas-special-room-user-coordination
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/con-logistics-fit-out
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Name
+  pset: null
+  definition:
+    de: 'Eindeutige technische Raumnummer für die Planung. Sie soll gleichbleiben, solange:
+
+      - der Raum die Grösse nicht wesentlich ändert (z. B. von 12 m² Büro auf 25 m² Grossraumbüro)
+
+      - die Funktion nicht wesentlich ändert (z. B. von Büro auf Sitzungszimmer)
+
+      - und die Ausrichtung nicht wechselt (z. B. von Süd- auf Ostausrichtung)
+
+
+      Nicht für die Signaletik verwenden — Signaletik-Raumnummern ändern sich häufig und gehören in SignageRoomNumber.'
+    fr: 'Numéro technique de local unique pour la planification. Il doit rester inchangé tant que :
+
+      - la surface du local ne change pas substantiellement (p. ex. de 12 m² bureau à 25 m² bureau paysager)
+
+      - la fonction ne change pas substantiellement (p. ex. de bureau à salle de réunion)
+
+      - et l''orientation ne change pas (p. ex. du sud à l''est)
+
+
+      Ne pas utiliser pour la signalétique — les numéros de signalétique changent souvent et appartiennent à SignageRoomNumber.'
+    it: 'Numero tecnico del locale univoco per la pianificazione. Deve restare invariato finché:
+
+      - la superficie del locale non cambia sostanzialmente (es. da 12 m² ufficio a 25 m² open space)
+
+      - la funzione non cambia sostanzialmente (es. da ufficio a sala riunioni)
+
+      - e l''orientamento non cambia (es. da sud a est)
+
+
+      Non usare per la segnaletica — i numeri di segnaletica cambiano spesso e appartengono a SignageRoomNumber.'
+    en: 'Unique technical room number for planning. It should stay stable as long as:
+
+      - the room size does not change substantially (e.g. from 12 m² office to 25 m² open-plan office)
+
+      - the function does not change substantially (e.g. from office to meeting room)
+
+      - and the orientation does not change (e.g. from south to east facing)
+
+
+      Do not use for signage — signage room numbers change often and belong in SignageRoomNumber.'
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/qas-special-room-user-coordination
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/opr-signage-room-number
+  - pragmaticbim:workflow/con-logistics-fit-out
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: SignageRoomNumber
+  pset: ePset_SpaceSignage
+  definition:
+    de: Raumnummer für die Signaletik (Beschriftung, Wegführung). Separat von der technischen Planungsraumnummer (Name), weil Signaletik-Nummern sich häufig ändern und somit kein stabiler Identifikator
+      für die Planung und Betrieb sind.
+    fr: Numéro de local pour la signalétique (marquage, orientation). Séparé du numéro technique de planification (Name), car les numéros de signalétique changent souvent et divergent souvent du numéro
+      de planification.
+    it: Numero locale per la segnaletica (etichettatura, orientamento). Separato dal numero tecnico di pianificazione (Name), perché i numeri di segnaletica cambiano spesso e spesso differiscono dal numero
+      di pianificazione.
+    en: Room number for wayfinding signage (labelling, orientation). Separate from the technical planning room number (Name), because signage numbers often change and frequently differ from the planning
+      number.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/opr-signage-room-number
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: Reference
+  pset: Pset_SpaceCommon
+  definition:
+    de: 'Flächenklasse des Raums nach SIA 416 oder SIA D0165.
+
+
+      **Quelle**
+
+      - SIA 416: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
+
+      - SIA D0165: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Raumreferenz Innenraum SIA 416 / D0165 — z. B. `HNF`, `NNF`, `VF` (SIA 416) oder `HNF-1`, `NNF-7`, `VF-9` (D0165).'
+    fr: 'Classe de surface du local selon SIA 416 ou SIA D0165.
+
+
+      **Source**
+
+      - SIA 416 : https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
+
+      - SIA D0165 : https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Référence de local intérieur SIA 416 / D0165 — p. ex. `HNF`, `NNF`, `VF` (SIA 416) ou `HNF-1`, `NNF-7`, `VF-9` (D0165).'
+    it: 'Classe di superficie del locale secondo SIA 416 o SIA D0165.
+
+
+      **Fonte**
+
+      - SIA 416: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
+
+      - SIA D0165: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Riferimento locale interno SIA 416 / D0165 — p. es. `HNF`, `NNF`, `VF` (SIA 416) o `HNF-1`, `NNF-7`, `VF-9` (D0165).'
+    en: 'Area class of the space according to SIA 416 or SIA D0165.
+
+
+      **Source**
+
+      - SIA 416: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
+
+      - SIA D0165: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
+
+
+      **Allowed values**
+
+      - See value list Space reference interior SIA 416 / D0165 — e.g. `HNF`, `NNF`, `VF` (SIA 416) or `HNF-1`, `NNF-7`, `VF-9` (D0165).'
+  datatype: IfcIdentifier
+  allowed_values: pragmaticbim:value/space-reference-interior-sia416-d0165
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: IsExternal
+  pset: Pset_SpaceCommon
+  definition:
+    de: 'Kennzeichnet einen Innenraum.
+
+
+      **Zulässige Werte**
+
+      - `FALSE` — Innenraum'
+    fr: 'Identifie un espace intérieur.
+
+
+      **Valeurs admises**
+
+      - `FALSE` — espace intérieur'
+    it: 'Identifica uno spazio interno.
+
+
+      **Valori ammessi**
+
+      - `FALSE` — spazio interno'
+    en: 'Marks an interior space.
+
+
+      **Allowed values**
+
+      - `FALSE` — interior space'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-false
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: NetFloorArea
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Nettogeschossfläche des modellierten Raums.
+    fr: Surface nette du local modélisé.
+    it: Superficie netta del locale modellato.
+    en: Net floor area of the modelled space.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: NetVolume
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Nettovolumen des modellierten Raums.
+    fr: Volume net du local modélisé.
+    it: Volume netto del locale modellato.
+    en: Net volume of the modelled space.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  is_applicability: false
+  status: active
+  sort_order: 9
+- name: Height
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Höhe des modellierten Raumvolumens.
+    fr: Hauteur du volume de local modélisé.
+    it: Altezza del volume di locale modellato.
+    en: Height of the modelled space volume.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  is_applicability: false
+  status: active
+  sort_order: 10
+- name: FinishCeilingHeight
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: 'Abhangdeckenhöhe — lichte Höhe von Oberkante Fertigboden bis Unterkante Abhangdecke.
+
+
+      **Hinweis**
+
+      - Bei ungleichmässiger Abhangdecke den ungünstigsten Fall für die Nutzung wählen: die tiefste Unterkante (geringste lichte Höhe).'
+    fr: 'Hauteur sous plafond suspendu — hauteur libre du dessus du sol fini à l''intrados du plafond suspendu.
+
+
+      **Remarque**
+
+      - En cas de plafond suspendu irrégulier, retenir le cas le plus défavorable pour l''usage : l''intrados le plus bas (hauteur libre minimale).'
+    it: 'Altezza del controsoffitto — altezza libera dal bordo superiore del pavimento finito all''intradosso del controsoffitto.
+
+
+      **Nota**
+
+      - Con controsoffitto irregolare, scegliere il caso peggiore per l''uso: l''intradosso più basso (altezza libera minima).'
+    en: 'Suspended ceiling height — clear height from top of finished floor to underside of the suspended ceiling.
+
+
+      **Note**
+
+      - For an uneven suspended ceiling, pick the worst case for use: the deepest underside (smallest clear height).'
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  is_applicability: false
+  status: active
+  sort_order: 11
+- name: FloorCovering
+  pset: Pset_SpaceCoveringRequirements
+  definition:
+    de: 'Bodenbelagstyp für die frühe Planung — nur als Raumeigenschaft, ohne modellierten Bodenaufbau.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Bodenbelagstyp Raum.'
+    fr: 'Type de revêtement de sol pour la planification précoce — uniquement comme propriété de local, sans complexe de sol modélisé.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Type de revêtement de sol local.'
+    it: 'Tipo di pavimentazione per la pianificazione precoce — solo come proprietà del locale, senza stratigrafia di pavimento modellata.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Tipo pavimentazione locale.'
+    en: 'Floor covering type for early planning — as a space property only, without a modelled floor build-up.
+
+
+      **Allowed values**
+
+      - See value list Space floor covering type.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/space-covering-floor-type
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  is_applicability: false
+  status: active
+  sort_order: 12
+- name: DesignAreaLoad
+  pset: ePset_SpaceUsageAgreement
+  definition:
+    de: Vereinbarte Flächenlast Soll für die Nutzungsvereinbarung (SIA 260).
+    fr: Charge surfacique cible convenue pour la convention d'utilisation (SIA 260).
+    it: Carico areale obiettivo concordato per la convenzione d'uso (SIA 260).
+    en: Agreed design area load for the usage agreement (SIA 260).
+  datatype: IfcReal
+  unit: kN/m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  is_applicability: false
+  status: active
+  sort_order: 13
+- name: DesignPointLoad
+  pset: ePset_SpaceUsageAgreement
+  definition:
+    de: Vereinbarte Punktlast Soll für die Nutzungsvereinbarung (SIA 260).
+    fr: Charge ponctuelle cible convenue pour la convention d'utilisation (SIA 260).
+    it: Carico puntuale obiettivo concordato per la convenzione d'uso (SIA 260).
+    en: Agreed design point load for the usage agreement (SIA 260).
+  datatype: IfcReal
+  unit: kN
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  is_applicability: false
+  status: active
+  sort_order: 14
+- name: VibrationRequirements
+  pset: ePset_SpaceUsageAgreement
+  definition:
+    de: 'Vereinbarte Schwingungsanforderungen für die Nutzungsvereinbarung (SIA 260) als Vibration Criterion (VC).
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Schwingungskriterium VC.'
+    fr: 'Exigences vibratoires convenues pour la convention d''utilisation (SIA 260) comme Vibration Criterion (VC).
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Critère vibratoire VC.'
+    it: 'Requisiti di vibrazione concordati per la convenzione d''uso (SIA 260) come Vibration Criterion (VC).
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Criterio di vibrazione VC.'
+    en: 'Agreed vibration requirements for the usage agreement (SIA 260) as Vibration Criterion (VC).
+
+
+      **Allowed values**
+
+      - See value list Vibration criterion VC.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/vibration-criterion
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  is_applicability: false
+  status: active
+  sort_order: 15
+- name: Checkliste
+  pset: ePset_SpaceFitOut
+  definition:
+    de: Freitext-Beschreibung der Ausbauarbeiten im Raum inkl. Reihenfolge — damit Unternehmen vor Ort sehen, was zu tun ist.
+    fr: Description en texte libre des travaux d'aménagement dans le local, y compris l'ordre — pour que les entreprises voient sur place ce qu'il faut faire.
+    it: Descrizione in testo libero dei lavori di finitura nel locale, compreso l'ordine — così le imprese vedono in loco cosa va fatto.
+    en: Free-text description of fit-out work in the room including sequence — so contractors on site can see what needs to be done.
+  datatype: IfcText
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-logistics-fit-out
+  is_applicability: false
+  status: active
+  sort_order: 16

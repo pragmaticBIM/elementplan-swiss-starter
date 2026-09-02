@@ -1,0 +1,161 @@
+id: pragmaticbim:workflow/qas-design-review
+code: QAS-DESIGN-REVIEW
+sort_order: 83
+name:
+  de: Designreview am Phasenende
+  fr: Revue de conception en fin de phase
+  it: Design review a fine fase
+  en: End-of-phase design review
+description:
+  de: 'Designreview am Abschluss jeder Projektphase — Qualität und Reife der Planung prüfen, offene Punkte festhalten und die Freigabe für die nächste Phase dokumentieren.
+
+
+    **Ausgangslage**
+
+    - Ohne strukturierte Phasenabschlüsse gehen offene Punkte, Risiken und Abstimmungslücken in die nächste Phase.
+
+    - Späte Korrekturen kosten Zeit und verzögern nachfolgende Disziplinen und Termine.
+
+
+    **Ziel & Nutzen**
+
+    - Planungsstand und Koordination am Phasenende gemeinsam bewerten.
+
+    - Go/No-go und offene Punkte für die nächste Phase verbindlich festhalten.
+
+    - Qualitätssicherung als Prozess, unabhängig von modellbasierten Datenanforderungen.
+
+
+    **Ablauf**
+
+    1. Relevante Planungsunterlagen und Modelle für die abgeschlossene Phase zusammenstellen.
+
+    2. Designreview mit Projektleitung und Fachplanern durchführen.
+
+    3. Protokoll mit Entscheiden, offenen Punkten und Freigabe für die nächste Phase erstellen.
+
+
+    **Ergebnis**
+
+    - Dokumentiertes Designreview-Protokoll als Nachweis der Phasenfreigabe und der verbleibenden Aufgaben.
+
+
+    **Lieferobjekte**
+
+    - Keine zusätzlichen IFC-Entitäten oder Attribute — Review-Protokoll als Prozessergebnis.'
+  fr: 'Revue de conception à la clôture de chaque phase de projet — contrôler la qualité et la maturité de la planification, consigner les points ouverts et documenter la libération pour la phase suivante.
+
+
+    **Situation de départ**
+
+    - Sans clôtures de phase structurées, points ouverts, risques et lacunes de coordination passent à la phase suivante.
+
+    - Des corrections tardives coûtent du temps et retardent les disciplines et les délais suivants.
+
+
+    **Objectif et bénéfice**
+
+    - Évaluer ensemble l''état de planification et de coordination en fin de phase.
+
+    - Fixer de manière contraignante go/no-go et points ouverts pour la phase suivante.
+
+    - Assurance qualité comme processus, indépendamment des exigences de données modélisées.
+
+
+    **Déroulement**
+
+    1. Rassembler les documents et maquettes pertinents pour la phase clôturée.
+
+    2. Conduire la revue de conception avec la direction de projet et les spécialistes.
+
+    3. Rédiger un procès-verbal avec décisions, points ouverts et libération pour la phase suivante.
+
+
+    **Résultat**
+
+    - Procès-verbal de revue de conception documenté comme preuve de libération de phase et de tâches restantes.
+
+
+    **Livrables**
+
+    - Aucune entité ou attribut IFC supplémentaire — procès-verbal de revue comme résultat de processus.'
+  it: 'Design review alla chiusura di ogni fase di progetto — verificare qualità e maturità della pianificazione, registrare i punti aperti e documentare il rilascio per la fase successiva.
+
+
+    **Situazione di partenza**
+
+    - Senza chiusure di fase strutturate, punti aperti, rischi e lacune di coordinamento passano alla fase successiva.
+
+    - Correzioni tardive costano tempo e ritardano discipline e tempi successivi.
+
+
+    **Obiettivo e beneficio**
+
+    - Valutare congiuntamente lo stato di pianificazione e coordinamento a fine fase.
+
+    - Definire in modo vincolante go/no-go e punti aperti per la fase successiva.
+
+    - Assicurazione qualità come processo, indipendentemente dai requisiti dati del modello.
+
+
+    **Svolgimento**
+
+    1. Raccogliere documenti e modelli pertinenti per la fase conclusa.
+
+    2. Condurre il design review con direzione di progetto e specialisti.
+
+    3. Redigere un verbale con decisioni, punti aperti e rilascio per la fase successiva.
+
+
+    **Risultato**
+
+    - Verbale di design review documentato come prova del rilascio di fase e dei compiti rimanenti.
+
+
+    **Oggetti della fornitura**
+
+    - Nessuna entità o attributo IFC aggiuntivo — verbale di review come risultato di processo.'
+  en: 'Design review at the end of each project phase — check planning quality and maturity, record open points, and document release for the next phase.
+
+
+    **Starting point**
+
+    - Without structured phase closures, open points, risks, and coordination gaps carry into the next phase.
+
+    - Late corrections cost time and delay follow-on disciplines and schedules.
+
+
+    **Goal & benefit**
+
+    - Jointly assess planning and coordination status at phase end.
+
+    - Record go/no-go and open points for the next phase in a binding way.
+
+    - Quality assurance as a process, independent of model-based data requirements.
+
+
+    **Process**
+
+    1. Assemble relevant planning documents and models for the completed phase.
+
+    2. Conduct the design review with project management and discipline leads.
+
+    3. Create minutes with decisions, open points, and release for the next phase.
+
+
+    **Outcome**
+
+    - Documented design review minutes as evidence of phase release and remaining tasks.
+
+
+    **Deliverables**
+
+    - No additional IFC entities or attributes — review minutes as the process deliverable.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: End-of-phase design review as a QA process; no additional IFC data requirements.

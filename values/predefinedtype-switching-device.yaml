@@ -1,0 +1,56 @@
+id: pragmaticbim:value/predefinedtype-switching-device
+code: SWITCHING_DEVICE
+name:
+  de: PredefinedType IfcSwitchingDevice
+  fr: PredefinedType IfcSwitchingDevice
+  it: PredefinedType IfcSwitchingDevice
+  en: PredefinedType IfcSwitchingDevice
+description:
+  de: Ifc PredefinedType für IfcSwitchingDevice.
+  fr: PredefinedType IFC pour IfcSwitchingDevice.
+  it: PredefinedType IFC per IfcSwitchingDevice.
+  en: IFC PredefinedType for IfcSwitchingDevice.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - TOGGLESWITCH
+  - DIMMERSWITCH
+  - KEYPAD
+  - SELECTORSWITCH
+  - MOMENTARYSWITCH
+  - EMERGENCYSTOP
+  - CONTACTOR
+  - STARTER
+  - SWITCHDISCONNECTOR
+  fr:
+  - TOGGLESWITCH
+  - DIMMERSWITCH
+  - KEYPAD
+  - SELECTORSWITCH
+  - MOMENTARYSWITCH
+  - EMERGENCYSTOP
+  - CONTACTOR
+  - STARTER
+  - SWITCHDISCONNECTOR
+  it:
+  - TOGGLESWITCH
+  - DIMMERSWITCH
+  - KEYPAD
+  - SELECTORSWITCH
+  - MOMENTARYSWITCH
+  - EMERGENCYSTOP
+  - CONTACTOR
+  - STARTER
+  - SWITCHDISCONNECTOR
+  en:
+  - TOGGLESWITCH
+  - DIMMERSWITCH
+  - KEYPAD
+  - SELECTORSWITCH
+  - MOMENTARYSWITCH
+  - EMERGENCYSTOP
+  - CONTACTOR
+  - STARTER
+  - SWITCHDISCONNECTOR

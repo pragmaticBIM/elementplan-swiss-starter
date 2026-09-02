@@ -1,0 +1,160 @@
+id: pragmaticbim:workflow/con-logistics-fit-out
+code: CON-LOGISTICS-FITOUT
+sort_order: 21
+name:
+  de: Logistik für Ausbau
+  fr: Logistique d'aménagement
+  it: Logistica di finitura
+  en: Fit-out logistics
+description:
+  de: 'Raum-QR mit Raumname und Raumnummer drucken und in jedem Raum anbringen — für Orientierung, Logistik und Mängelmanagement im Ausbau.
+
+
+    **Ausgangslage**
+
+    - Auf der Baustelle ist die räumliche Orientierung oft schwierig; Lieferungen und Mängelmeldungen fehlen ohne eindeutige Raumreferenz.
+
+    - Papierlisten und mündliche Angaben veralten schnell und führen zu Fehlzuordnungen.
+
+
+    **Ziel & Nutzen**
+
+    - Einheitliche Raumkennzeichnung vor Ort (z. B. am Fenster) aus dem Modell ableiten.
+
+    - QR-Scan für Orientierung sowie für Logistik- und Mängelerfassung an derselben, prüfbaren Raumreferenz.
+
+
+    **Ablauf**
+
+    1. Innenräume mit stabiler Planungsraumnummer (Name) und Raumnutzung (LongName) im Modell führen.
+
+    2. Raumliste aus dem Modell ableiten und QR-Etiketten mit Raumname und Raumnummer drucken.
+
+    3. Etiketten raumweise anbringen (z. B. am Fenster).
+
+
+    **Ergebnis**
+
+    - Raumweise QR-Kennzeichnung für Ausbau-Logistik und Mängelmanagement.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Innenräume (IfcSpace): Name (technische Planungsraumnummer), LongName (Raumnutzung/-name), Checkliste (Ausbauarbeiten und Reihenfolge)'
+  fr: 'Imprimer un QR de local avec désignation et numéro et le poser dans chaque local — pour l''orientation, la logistique et la gestion des défauts en aménagement.
+
+
+    **Situation de départ**
+
+    - Sur chantier, l''orientation spatiale est souvent difficile ; livraisons et signalements de défauts manquent sans référence de local claire.
+
+    - Listes papier et indications orales vieillissent vite et provoquent des affectations erronées.
+
+
+    **Objectif et bénéfice**
+
+    - Dériver du modèle un marquage de local uniforme sur place (p. ex. à la fenêtre).
+
+    - Scan QR pour l''orientation ainsi que pour la saisie logistique et des défauts sur la même référence de local vérifiable.
+
+
+    **Déroulement**
+
+    1. Porter dans le modèle les locaux intérieurs avec numéro technique stable (Name) et usage du local (LongName).
+
+    2. Extraire la liste des locaux du modèle et imprimer des étiquettes QR avec désignation et numéro.
+
+    3. Poser les étiquettes local par local (p. ex. à la fenêtre).
+
+
+    **Résultat**
+
+    - Marquage QR par local pour la logistique d''aménagement et la gestion des défauts.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Locaux intérieurs (IfcSpace) : Name (numéro technique de planification), LongName (usage / désignation du local), Checkliste (travaux d''aménagement et ordre)'
+  it: 'Stampare un QR locale con denominazione e numero e affiggerlo in ogni locale — per orientamento, logistica e gestione dei difetti in finitura.
+
+
+    **Situazione di partenza**
+
+    - In cantiere l''orientamento spaziale è spesso difficile; consegne e segnalazioni di difetti mancano senza un riferimento di locale chiaro.
+
+    - Elenchi cartacei e indicazioni orali invecchiano in fretta e portano ad assegnazioni errate.
+
+
+    **Obiettivo e beneficio**
+
+    - Derivare dal modello una marcatura uniforme del locale in loco (es. sulla finestra).
+
+    - Scansione QR per l''orientamento e per la rilevazione logistica e dei difetti sulla stessa referenza di locale verificabile.
+
+
+    **Svolgimento**
+
+    1. Gestire nel modello i locali interni con numero tecnico stabile (Name) e uso del locale (LongName).
+
+    2. Estrarre l''elenco locali dal modello e stampare etichette QR con denominazione e numero.
+
+    3. Affiggere le etichette locale per locale (es. sulla finestra).
+
+
+    **Risultato**
+
+    - Marcatura QR per locale per la logistica di finitura e la gestione dei difetti.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Locali interni (IfcSpace): Name (numero tecnico di pianificazione), LongName (uso / denominazione del locale), Checkliste (lavori di finitura e ordine)'
+  en: 'Print a room QR with room name and number and place it in every room — for orientation, logistics, and defect management during fit-out.
+
+
+    **Starting point**
+
+    - On site, spatial orientation is often difficult; deliveries and defect reports lack a clear room reference.
+
+    - Paper lists and verbal notes go stale quickly and cause misassignment.
+
+
+    **Goal & benefit**
+
+    - Derive uniform on-site room labelling (e.g. on the window) from the model.
+
+    - QR scan for orientation and for logistics and defect capture on the same checkable room reference.
+
+
+    **Process**
+
+    1. Maintain interior spaces in the model with stable planning room number (Name) and room use (LongName).
+
+    2. Extract the room list from the model and print QR labels with room name and number.
+
+    3. Affix labels room by room (e.g. on the window).
+
+
+    **Outcome**
+
+    - Room-wise QR labelling for fit-out logistics and defect management.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Interior spaces (IfcSpace): Name (technical planning room number), LongName (room use / name), Checkliste (fit-out work and sequence)'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/con
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Construction-phase (typically SIA 51–53). QR encodes planning Name + LongName. Do not use SignageRoomNumber for this use case — that belongs to opr-signage-room-number.

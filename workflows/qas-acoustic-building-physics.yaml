@@ -1,0 +1,168 @@
+id: pragmaticbim:workflow/qas-acoustic-building-physics
+code: QAS-ACOUSTIC
+sort_order: 79
+name:
+  de: QS Akustik / Bauphysik Bauteilkennwerte
+  fr: AQ acoustique / physique du bâtiment — valeurs des composants
+  it: AQ acustica / fisica edilizia — valori dei componenti
+  en: QA acoustics / building physics component values
+description:
+  de: 'Schalldämmwerte Rw ab Ende Bauprojekt im Architekturmodell führen und gegen die Akustikplanung prüfen.
+
+
+    **Ausgangslage**
+
+    - Erforderliche Schalldämmung steht oft nur im Akustikbericht; Bauteile im Modell tragen keine Rw-Werte.
+
+    - Ohne einheitliche Katalogwerte sind Nachweise und Variantenvergleiche aufwendig.
+
+
+    **Ziel & Nutzen**
+
+    - Architekt pflegt Rw (Labor-/Katalogwert) an trennenden Bauteilen.
+
+    - Akustik- und Bauphysikplanung können Kennwerte und Lücken direkt am Modell prüfen.
+
+
+    **Ablauf**
+
+    1. Schallschutzkonzept und erforderliche Rw-Klassen festlegen.
+
+    2. Architekt trägt AcousticRating (Rw als Zahl), Status und PredefinedType an Wänden, Decken, Fenstern und Türen ein.
+
+    3. Kennwerte gegen Akustikkonzept und Nachweisunterlagen abgleichen.
+
+
+    **Ergebnis**
+
+    - Architekturmodell mit nachvollziehbaren Rw-Angaben als Basis für QS Akustik / Bauphysik.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcWall (Aussen- und nichttragende Innenwände), IfcSlab (FLOOR), IfcWindow und IfcDoor
+
+    - AcousticRating (Rw [dB] als Zahl), Status und PredefinedType je Bauteil
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey'
+  fr: 'Porter les indices d''affaiblissement Rw dans le modèle d''architecture dès la fin du projet de construction et les vérifier face à la planification acoustique.
+
+
+    **Situation de départ**
+
+    - L''isolation acoustique requise figure souvent seulement dans le rapport acoustique ; les composants du modèle n''ont pas de valeurs Rw.
+
+    - Sans valeurs de catalogue homogènes, justifications et comparaisons de variantes sont laborieuses.
+
+
+    **Objectif et bénéfice**
+
+    - L''architecte renseigne Rw (valeur de laboratoire/catalogue) sur les composants séparatifs.
+
+    - La planification acoustique et la physique du bâtiment peuvent contrôler valeurs et lacunes directement sur le modèle.
+
+
+    **Déroulement**
+
+    1. Fixer le concept d''isolation phonique et les classes Rw requises.
+
+    2. L''architecte saisit AcousticRating (Rw comme nombre), Status et PredefinedType sur murs, dalles, fenêtres et portes.
+
+    3. Comparer les valeurs au concept acoustique et aux dossiers de justification.
+
+
+    **Résultat**
+
+    - Modèle d''architecture avec indications Rw traçables comme base pour l''AQ acoustique / physique du bâtiment.
+
+
+    **Livrables**
+
+    - Modèle d''architecture avec IfcWall (murs extérieurs et cloisons non porteuses), IfcSlab (FLOOR), IfcWindow et IfcDoor
+
+    - AcousticRating (Rw [dB] comme nombre), Status et PredefinedType par composant
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey'
+  it: 'Gestire i valori di potere fonoisolante Rw nel modello di architettura dalla fine del progetto di costruzione e verificarli rispetto alla pianificazione acustica.
+
+
+    **Situazione di partenza**
+
+    - L''isolamento acustico richiesto è spesso solo nel rapporto acustico; i componenti nel modello non hanno valori Rw.
+
+    - Senza valori di catalogo omogenei, verifiche e confronti di varianti sono onerosi.
+
+
+    **Obiettivo e beneficio**
+
+    - L''architetto inserisce Rw (valore di laboratorio/catalogo) sui componenti separanti.
+
+    - La pianificazione acustica e la fisica edilizia possono controllare valori e lacune direttamente sul modello.
+
+
+    **Svolgimento**
+
+    1. Definire il concetto di isolamento acustico e le classi Rw richieste.
+
+    2. L''architetto inserisce AcousticRating (Rw come numero), Status e PredefinedType su pareti, solette, finestre e porte.
+
+    3. Confrontare i valori con il concetto acustico e i documenti di verifica.
+
+
+    **Risultato**
+
+    - Modello di architettura con indicazioni Rw tracciabili come base per l''AQ acustica / fisica edilizia.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcWall (pareti esterne e interne non portanti), IfcSlab (FLOOR), IfcWindow e IfcDoor
+
+    - AcousticRating (Rw [dB] come numero), Status e PredefinedType per componente
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey'
+  en: 'Maintain sound reduction values Rw in the architecture model from the end of the building project phase and check them against acoustic planning.
+
+
+    **Starting point**
+
+    - Required sound insulation often exists only in the acoustic report; model components carry no Rw values.
+
+    - Without consistent catalogue values, verification and option comparison are laborious.
+
+
+    **Goal & benefit**
+
+    - The architect enters Rw (laboratory/catalogue value) on separating components.
+
+    - Acoustic and building physics planning can check values and gaps directly on the model.
+
+
+    **Process**
+
+    1. Define the sound insulation concept and required Rw classes.
+
+    2. The architect enters AcousticRating (Rw as a number), Status, and PredefinedType on walls, slabs, windows, and doors.
+
+    3. Align values with the acoustic concept and verification documents.
+
+
+    **Outcome**
+
+    - Architecture model with traceable Rw data as the basis for acoustics / building physics QA.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcWall (exterior and non-load-bearing interior walls), IfcSlab (FLOOR), IfcWindow, and IfcDoor
+
+    - AcousticRating (Rw [dB] as a number), Status, and PredefinedType per component
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Architect fills AcousticRating as bare Rw number (dB) from end of SIA phase 32. Columns/beams out of scope. Not R'w.

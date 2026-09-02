@@ -1,0 +1,56 @@
+id: pragmaticbim:value/predefinedtype-sanitary-terminal
+code: SANITARY_TERMINAL
+name:
+  de: PredefinedType IfcSanitaryTerminal
+  fr: PredefinedType IfcSanitaryTerminal
+  it: PredefinedType IfcSanitaryTerminal
+  en: PredefinedType IfcSanitaryTerminal
+description:
+  de: Ifc PredefinedType für IfcSanitaryTerminal.
+  fr: PredefinedType IFC pour IfcSanitaryTerminal.
+  it: PredefinedType IFC per IfcSanitaryTerminal.
+  en: IFC PredefinedType for IfcSanitaryTerminal.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - SHOWER
+  - SINK
+  - WASHHANDBASIN
+  - TOILETPAN
+  - CISTERN
+  - BIDET
+  - BATH
+  - URINAL
+  - USERDEFINED
+  fr:
+  - SHOWER
+  - SINK
+  - WASHHANDBASIN
+  - TOILETPAN
+  - CISTERN
+  - BIDET
+  - BATH
+  - URINAL
+  - USERDEFINED
+  it:
+  - SHOWER
+  - SINK
+  - WASHHANDBASIN
+  - TOILETPAN
+  - CISTERN
+  - BIDET
+  - BATH
+  - URINAL
+  - USERDEFINED
+  en:
+  - SHOWER
+  - SINK
+  - WASHHANDBASIN
+  - TOILETPAN
+  - CISTERN
+  - BIDET
+  - BATH
+  - URINAL
+  - USERDEFINED

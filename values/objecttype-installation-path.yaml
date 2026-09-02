@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-installation-path
+code: OBJ-INSTALL-PATH
+name:
+  de: ObjectType Einbringweg
+  fr: ObjectType voie d'apport
+  it: ObjectType percorso di trasporto
+  en: ObjectType installation access path
+description:
+  de: ObjectType für IfcBuildingElementProxy als freizuhaltender Einbringweg für Kollisionsnachweis.
+  fr: ObjectType pour IfcBuildingElementProxy comme voie d'apport à maintenir libre pour preuve de collision.
+  it: ObjectType per IfcBuildingElementProxy come percorso di trasporto da mantenere libero per prova di collisione.
+  en: ObjectType for IfcBuildingElementProxy as a clear installation access path for clash verification.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Einbringweg
+  fr:
+  - Einbringweg
+  it:
+  - Einbringweg
+  en:
+  - Einbringweg

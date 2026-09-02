@@ -1,0 +1,383 @@
+id: pragmaticbim:element/spaces-gross-volume
+code: SPACE-GROSS
+sort_order: 15
+status: active
+name:
+  de: Bruttovolumen
+  fr: Volumes bruts
+  it: Volumi lordi
+  en: Gross volumes
+definition:
+  de: 'Geschossweise modellierte Bruttovolumen für Massenstudien.
+
+
+    **Beschreibung**
+
+    - Bruttoraumvolumen je Geschoss als durchgängig modellierte Volumen bis zur Aussenkante Fassade.
+
+    - Die Norm sieht vor, dass das Bruttovolumen bis zur Aussenkante der Dämmschicht und nicht zur Aussenkante einer hinterlüfteten Fassade geht; da es oft um städtebauliche Fluchten und Abstandsflächen
+    geht, empfehlen wir die Abweichung von der Norm.
+
+    - Nutzungsanteile wie Wohnungen, Einheiten oder Allgemeinflächen werden über LongName gemäss Programm geführt.
+
+
+    **Modellierungsrichtlinie**
+
+    - Mit dem Raumwerkzeug als Volumen modellieren, geschossweise; horizontal bis zur Aussenkante Fassade.
+
+    - Untergeschoss von Unterkante Bodenplatte bis Oberkante Fertigboden.
+
+    - Obergeschosse von Oberkante Fertigboden bis Oberkante nächster Fertigboden bzw. Dach.
+
+    - Optional nach Wohnungen, Einheiten oder Allgemeinflächen trennen; keine Überlappungen oder Doppelungen.'
+  fr: 'Volumes bruts modélisés par étage pour les études de masse.
+
+
+    **Description**
+
+    - Volumes bruts par étage modélisés comme volumes continus jusqu''au bord extérieur de la façade.
+
+    - La norme prévoit que le volume brut s''étende jusqu''au bord extérieur de l''isolation et non jusqu''au bord extérieur d''une façade ventilée ; comme il s''agit souvent de lignes de façade urbanistiques
+    et de zones de recul, nous recommandons de s''écarter de la norme.
+
+    - Les parts de programme comme logements, unités ou espaces communs sont portées par LongName selon le programme.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume avec l''outil local, étage par étage ; horizontalement jusqu''au bord extérieur de la façade.
+
+    - Sous-sol : de la face inférieure de la dalle de fondation au dessus du sol fini.
+
+    - Étages supérieurs : du dessus du sol fini au dessus du sol fini suivant ou à la toiture.
+
+    - Séparer facultativement par logements, unités ou espaces communs ; pas de chevauchement ni de duplication.'
+  it: 'Volumi lordi modellati per piano per studi di massa e conformità urbanistica.
+
+
+    **Descrizione**
+
+    - Volumi lordi per piano modellati come volumi continui fino al bordo esterno della facciata.
+
+    - La norma prevede che il volume lordo arrivi fino al bordo esterno dello strato isolante e non al bordo esterno di una facciata ventilata; poiché spesso contano le linee di facciata urbanistica e le
+    distanze, raccomandiamo di discostarsi dalla norma.
+
+    - Quote di programma come alloggi, unità o spazi comuni sono indicate in LongName secondo il programma.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume con lo strumento locale, piano per piano; orizzontalmente fino al bordo esterno della facciata.
+
+    - Sotterraneo: dal bordo inferiore della soletta di fondazione al bordo superiore del pavimento finito.
+
+    - Piani superiori: dal bordo superiore del pavimento finito al bordo superiore del pavimento finito successivo o alla copertura.
+
+    - Separare facoltativamente per alloggi, unità o spazi comuni; nessuna sovrapposizione o duplicazione.'
+  en: 'Storey-wise modelled gross volumes for mass studies.
+
+
+    **Description**
+
+    - Gross room volumes per storey modelled as continuous volumes to the outer edge of the facade.
+
+    - The standard requires gross volume to extend to the outer edge of the insulation layer, not the outer edge of a ventilated facade; as urban alignment lines and setback areas are often decisive, we
+    recommend deviating from the standard.
+
+    - Programme shares such as flats, units, or public space are carried in LongName according to the brief.
+
+
+    **Modelling guidelines**
+
+    - Model as a volume with the space tool, storey by storey; horizontally to the outer edge of the facade.
+
+    - Basement from underside of base slab to top of finished floor.
+
+    - Upper storeys from top of finished floor to top of next finished floor or roof.
+
+    - Optionally separate by flats, units, or public space; no overlaps or duplicates.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcSpace
+entity_ifc4: IfcSpace
+entity_ifc4_3: IfcSpace
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcSpace OR (entity_ifc2x3=IfcSpace AND InteriorOrExteriorSpace=INTERNAL)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Raum als Innenraum.
+
+
+      **Zulässige Werte**
+
+      - `INTERNAL` — Innenraum'
+    fr: 'Identifie l''espace comme intérieur.
+
+
+      **Valeurs admises**
+
+      - `INTERNAL` — espace intérieur'
+    it: 'Identifica lo spazio come interno.
+
+
+      **Valori ammessi**
+
+      - `INTERNAL` — spazio interno'
+    en: 'Marks the space as interior.
+
+
+      **Allowed values**
+
+      - `INTERNAL` — interior space'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-space-internal
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: InteriorOrExteriorSpace
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Raum als Innenraum.
+
+
+      **Zulässige Werte**
+
+      - `INTERNAL` — Innenraum
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType und IsExternal.'
+    fr: 'Identifie l''espace comme intérieur.
+
+
+      **Valeurs admises**
+
+      - `INTERNAL` — espace intérieur
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType et IsExternal.'
+    it: 'Identifica lo spazio come interno.
+
+
+      **Valori ammessi**
+
+      - `INTERNAL` — spazio interno
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType e IsExternal.'
+    en: 'Marks the space as interior.
+
+
+      **Allowed values**
+
+      - `INTERNAL` — interior space
+
+
+      **Note**
+
+      - IFC2x3 substitute for PredefinedType and IsExternal.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/interiororexteriorspace-internal
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: LongName
+  pset: null
+  definition:
+    de: Einheits- oder Nutzungsbezeichnung gemäss Programm (z. B. Wohnung, Einheit, Allgemeinfläche).
+    fr: Désignation d'unité ou d'usage selon le programme (p. ex. logement, unité, espace commun).
+    it: Denominazione di unità o uso secondo il programma (p. es. alloggio, unità, spazio comune).
+    en: Unit or use designation according to the brief (for example flat, unit, public space).
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Name
+  pset: null
+  definition:
+    de: Optionale Bezeichnung oder Nummer der Einheit gemäss Projekt.
+    fr: Désignation ou numéro d'unité facultatif selon le projet.
+    it: Denominazione o numero di unità facoltativo secondo il progetto.
+    en: Optional unit designation or number according to the project.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: GrossFloorArea
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Bruttogeschossfläche des modellierten Bruttovolumens.
+    fr: Surface brute de plancher du volume brut modélisé.
+    it: Superficie lorda di pavimento del volume lordo modellato.
+    en: Gross floor area of the modelled gross volume.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: GrossVolume
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Bruttovolumen des modellierten Bruttoraumvolumens.
+    fr: Volume brut du volume de local modélisé.
+    it: Volume lordo del volume di locale modellato.
+    en: Gross volume of the modelled gross room volume.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: Height
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Höhe des modellierten Bruttovolumens.
+    fr: Hauteur du volume brut modélisé.
+    it: Altezza del volume lordo modellato.
+    en: Height of the modelled gross volume.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 7

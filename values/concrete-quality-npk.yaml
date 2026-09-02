@@ -1,0 +1,68 @@
+id: pragmaticbim:value/concrete-quality-npk
+code: CONCRETE-NPK
+name:
+  de: NPK-Betonsorte
+  fr: Sorte de béton NPK
+  it: Sorta di calcestruzzo NPK
+  en: NPK concrete grade
+description:
+  de: Einheitsbetonsorten gemäss SN EN 206 für NPK-Ausschreibungen (Hochbau A–C, Tiefbau D–G, Pfahlbeton P1–P4).
+  fr: Sortes de béton normalisées selon SN EN 206 pour appels d'offres NPK (Hochbau A–C, génie civil D–G, pieux P1–P4).
+  it: Sorte di calcestruzzo normalizzate secondo SN EN 206 per gare NPK (edilizia A–C, opere civili D–G, pali P1–P4).
+  en: Standard concrete grades according to SN EN 206 for NPK tendering (building A–C, civil D–G, piling P1–P4).
+year: 2026
+norm_reference: SN EN 206:2013+A2:2021
+status: active
+values:
+  de:
+  - '0'
+  - A
+  - B
+  - C
+  - D
+  - E
+  - F
+  - G
+  - P1
+  - P2
+  - P3
+  - P4
+  fr:
+  - '0'
+  - A
+  - B
+  - C
+  - D
+  - E
+  - F
+  - G
+  - P1
+  - P2
+  - P3
+  - P4
+  it:
+  - '0'
+  - A
+  - B
+  - C
+  - D
+  - E
+  - F
+  - G
+  - P1
+  - P2
+  - P3
+  - P4
+  en:
+  - '0'
+  - A
+  - B
+  - C
+  - D
+  - E
+  - F
+  - G
+  - P1
+  - P2
+  - P3
+  - P4

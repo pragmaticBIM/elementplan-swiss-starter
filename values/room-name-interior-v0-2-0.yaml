@@ -1,0 +1,412 @@
+id: pragmaticbim:value/room-name-interior-v0.2.0
+code: ROOM-NAME-INT-V020
+name:
+  de: Raumbezeichnung Innenraum v0.2.0
+  fr: Désignation de local intérieur v0.2.0
+  it: Denominazione locale interno v0.2.0
+  en: Room name interior space v0.2.0
+description:
+  de: 'Normalisierte Raumbezeichnungen für Innenräume gemäss Building Space Name Classification v0.2.0. Quelle: https://schema.pragmaticbim.ch/classification/room-name.html'
+  fr: 'Désignations normalisées pour les locaux intérieurs selon Building Space Name Classification v0.2.0. Source : https://schema.pragmaticbim.ch/classification/room-name.html'
+  it: 'Denominazioni normalizzate per locali interni secondo Building Space Name Classification v0.2.0. Fonte: https://schema.pragmaticbim.ch/classification/room-name.html'
+  en: 'Normalized room names for interior spaces according to Building Space Name Classification v0.2.0. Source: https://schema.pragmaticbim.ch/classification/room-name.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract v0.2.0
+status: active
+values:
+  de:
+  - Schlafzimmer
+  - Wohnzimmer
+  - Esszimmer
+  - Arbeitszimmer
+  - Gaestezimmer
+  - Kueche
+  - Badezimmer
+  - Waschkueche
+  - Hauswirtschaftsraum
+  - Wohnungseingang
+  - Abstellraum Wohnen
+  - Wohneinheit
+  - Buero
+  - Grossraumbuero
+  - Besprechungsraum
+  - Konferenzraum
+  - Pausenraum
+  - Empfang
+  - Flur
+  - Eingangshalle
+  - Entree
+  - Vorraum
+  - Treppenhaus
+  - Aufzugszone
+  - Rampe
+  - Herren-WC
+  - Damen-WC
+  - Barrierefreies WC
+  - Allgemeines WC
+  - Duschraum
+  - Umkleideraum
+  - Schliessfachraum
+  - Patientenzimmer
+  - Aufwachraum
+  - Behandlungsraum
+  - Operationssaal
+  - Eingriffsraum
+  - Untersuchungsraum
+  - Bildgebungsraum
+  - Medizinisches Labor
+  - Wartezimmer
+  - Pflegestationszimmer
+  - Klassenzimmer
+  - Hoersaal
+  - Seminarraum
+  - Computerraum
+  - Bibliotheksraum
+  - Lernraum
+  - Ausbildungswerkstatt
+  - Aula
+  - Kunstatelier
+  - Naturwissenschaftslabor
+  - Cafeteria
+  - Restaurant
+  - Bar
+  - Food-Court
+  - Verkaufsraum
+  - Verkaufsflaeche
+  - Kiosk
+  - Kundenbetreuungsbereich
+  - Ausstellungsraum
+  - Hotelzimmer
+  - Werkstatt
+  - Produktionshalle
+  - Montagebereich
+  - Verpackungsbereich
+  - Reinraum
+  - Lagerhalle
+  - Laderampe
+  - Qualitaetskontrollraum
+  - Wartungsbucht
+  - HLK-Zentralraum
+  - Pumpenraum
+  - Heizungsraum
+  - Kaelteraum
+  - Sprinklerraum
+  - Elektroraum
+  - Serverraum
+  - Generatorraum
+  - Transformatorenraum
+  - Kommunikationsraum
+  - Zaehlerraum
+  - Abfallraum
+  - Allgemeiner Lagerraum
+  - Materialraum
+  - Geraetelager
+  - Annahmelager
+  - Hauswarteschrank
+  - Archivraum
+  - Postraum
+  - Kuehlraum
+  - Schacht
+  - Steigzone
+  - Installationszwischenraum
+  - Technikhohlraum
+  - Luftraum
+  - Atrium
+  - Innenparkierplatz
+  fr:
+  - Bedroom
+  - Living Room
+  - Dining Room
+  - Home Study
+  - Guest Room
+  - Kitchen
+  - Bathroom
+  - Laundry Room
+  - Utility Room
+  - Residential Entry
+  - Residential Closet
+  - Apartment Unit
+  - Office
+  - Open-Plan Office
+  - Meeting Room
+  - Conference Room
+  - Break Room
+  - Reception
+  - Corridor
+  - Lobby
+  - Entrance Hall
+  - Vestibule
+  - Stairwell
+  - Elevator Lobby
+  - Ramp
+  - Male Toilet
+  - Female Toilet
+  - Accessible Toilet
+  - Unisex Toilet
+  - Shower Room
+  - Changing Room
+  - Locker Room
+  - Patient Room
+  - Recovery Room
+  - Treatment Room
+  - Operating Room
+  - Procedure Room
+  - Examination Room
+  - Imaging Room
+  - Medical Laboratory
+  - Waiting Room
+  - Nurses Station
+  - Classroom
+  - Lecture Hall
+  - Seminar Room
+  - Computer Lab
+  - Library Room
+  - Study Room
+  - Training Workshop
+  - Auditorium
+  - Art Studio
+  - Science Lab
+  - Cafeteria
+  - Restaurant
+  - Bar
+  - Food Court
+  - Retail Space
+  - Sales Floor
+  - Kiosk
+  - Customer Service Area
+  - Exhibition Space
+  - Hotel Room
+  - Workshop
+  - Production Hall
+  - Assembly Area
+  - Packaging Area
+  - Clean Room
+  - Warehouse
+  - Loading Dock
+  - Quality Control Room
+  - Maintenance Bay
+  - HVAC Plant Room
+  - Pump Room
+  - Boiler Room
+  - Chiller Room
+  - Sprinkler Room
+  - Electrical Room
+  - Server Room
+  - Generator Room
+  - Transformer Room
+  - Communications Room
+  - Meter Room
+  - Waste Room
+  - General Storage
+  - Supply Room
+  - Equipment Storage
+  - Unloading Storage
+  - Janitor Closet
+  - Archive Room
+  - Mail Room
+  - Cold Storage
+  - Shaft
+  - Riser
+  - Plenum
+  - Mechanical Void
+  - Air Space
+  - Atrium Void
+  - Interior Parking Stall
+  it:
+  - Bedroom
+  - Living Room
+  - Dining Room
+  - Home Study
+  - Guest Room
+  - Kitchen
+  - Bathroom
+  - Laundry Room
+  - Utility Room
+  - Residential Entry
+  - Residential Closet
+  - Apartment Unit
+  - Office
+  - Open-Plan Office
+  - Meeting Room
+  - Conference Room
+  - Break Room
+  - Reception
+  - Corridor
+  - Lobby
+  - Entrance Hall
+  - Vestibule
+  - Stairwell
+  - Elevator Lobby
+  - Ramp
+  - Male Toilet
+  - Female Toilet
+  - Accessible Toilet
+  - Unisex Toilet
+  - Shower Room
+  - Changing Room
+  - Locker Room
+  - Patient Room
+  - Recovery Room
+  - Treatment Room
+  - Operating Room
+  - Procedure Room
+  - Examination Room
+  - Imaging Room
+  - Medical Laboratory
+  - Waiting Room
+  - Nurses Station
+  - Classroom
+  - Lecture Hall
+  - Seminar Room
+  - Computer Lab
+  - Library Room
+  - Study Room
+  - Training Workshop
+  - Auditorium
+  - Art Studio
+  - Science Lab
+  - Cafeteria
+  - Restaurant
+  - Bar
+  - Food Court
+  - Retail Space
+  - Sales Floor
+  - Kiosk
+  - Customer Service Area
+  - Exhibition Space
+  - Hotel Room
+  - Workshop
+  - Production Hall
+  - Assembly Area
+  - Packaging Area
+  - Clean Room
+  - Warehouse
+  - Loading Dock
+  - Quality Control Room
+  - Maintenance Bay
+  - HVAC Plant Room
+  - Pump Room
+  - Boiler Room
+  - Chiller Room
+  - Sprinkler Room
+  - Electrical Room
+  - Server Room
+  - Generator Room
+  - Transformer Room
+  - Communications Room
+  - Meter Room
+  - Waste Room
+  - General Storage
+  - Supply Room
+  - Equipment Storage
+  - Unloading Storage
+  - Janitor Closet
+  - Archive Room
+  - Mail Room
+  - Cold Storage
+  - Shaft
+  - Riser
+  - Plenum
+  - Mechanical Void
+  - Air Space
+  - Atrium Void
+  - Interior Parking Stall
+  en:
+  - Bedroom
+  - Living Room
+  - Dining Room
+  - Home Study
+  - Guest Room
+  - Kitchen
+  - Bathroom
+  - Laundry Room
+  - Utility Room
+  - Residential Entry
+  - Residential Closet
+  - Apartment Unit
+  - Office
+  - Open-Plan Office
+  - Meeting Room
+  - Conference Room
+  - Break Room
+  - Reception
+  - Corridor
+  - Lobby
+  - Entrance Hall
+  - Vestibule
+  - Stairwell
+  - Elevator Lobby
+  - Ramp
+  - Male Toilet
+  - Female Toilet
+  - Accessible Toilet
+  - Unisex Toilet
+  - Shower Room
+  - Changing Room
+  - Locker Room
+  - Patient Room
+  - Recovery Room
+  - Treatment Room
+  - Operating Room
+  - Procedure Room
+  - Examination Room
+  - Imaging Room
+  - Medical Laboratory
+  - Waiting Room
+  - Nurses Station
+  - Classroom
+  - Lecture Hall
+  - Seminar Room
+  - Computer Lab
+  - Library Room
+  - Study Room
+  - Training Workshop
+  - Auditorium
+  - Art Studio
+  - Science Lab
+  - Cafeteria
+  - Restaurant
+  - Bar
+  - Food Court
+  - Retail Space
+  - Sales Floor
+  - Kiosk
+  - Customer Service Area
+  - Exhibition Space
+  - Hotel Room
+  - Workshop
+  - Production Hall
+  - Assembly Area
+  - Packaging Area
+  - Clean Room
+  - Warehouse
+  - Loading Dock
+  - Quality Control Room
+  - Maintenance Bay
+  - HVAC Plant Room
+  - Pump Room
+  - Boiler Room
+  - Chiller Room
+  - Sprinkler Room
+  - Electrical Room
+  - Server Room
+  - Generator Room
+  - Transformer Room
+  - Communications Room
+  - Meter Room
+  - Waste Room
+  - General Storage
+  - Supply Room
+  - Equipment Storage
+  - Unloading Storage
+  - Janitor Closet
+  - Archive Room
+  - Mail Room
+  - Cold Storage
+  - Shaft
+  - Riser
+  - Plenum
+  - Mechanical Void
+  - Air Space
+  - Atrium Void
+  - Interior Parking Stall

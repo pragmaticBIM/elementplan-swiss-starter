@@ -1,0 +1,44 @@
+id: pragmaticbim:value/predefinedtype-unitary-equipment
+code: UNITARY_EQUIPMENT
+name:
+  de: PredefinedType IfcUnitaryEquipment
+  fr: PredefinedType IfcUnitaryEquipment
+  it: PredefinedType IfcUnitaryEquipment
+  en: PredefinedType IfcUnitaryEquipment
+description:
+  de: Ifc PredefinedType für IfcUnitaryEquipment.
+  fr: PredefinedType IFC pour IfcUnitaryEquipment.
+  it: PredefinedType IFC per IfcUnitaryEquipment.
+  en: IFC PredefinedType for IfcUnitaryEquipment.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - AIRHANDLER
+  - AIRCONDITIONINGUNIT
+  - SPLITSYSTEM
+  - ROOFTOPUNIT
+  - DEHUMIDIFIER
+  - USERDEFINED
+  fr:
+  - AIRHANDLER
+  - AIRCONDITIONINGUNIT
+  - SPLITSYSTEM
+  - ROOFTOPUNIT
+  - DEHUMIDIFIER
+  - USERDEFINED
+  it:
+  - AIRHANDLER
+  - AIRCONDITIONINGUNIT
+  - SPLITSYSTEM
+  - ROOFTOPUNIT
+  - DEHUMIDIFIER
+  - USERDEFINED
+  en:
+  - AIRHANDLER
+  - AIRCONDITIONINGUNIT
+  - SPLITSYSTEM
+  - ROOFTOPUNIT
+  - DEHUMIDIFIER
+  - USERDEFINED

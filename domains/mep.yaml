@@ -7,10 +7,46 @@ name:
   it: Impianti
   en: MEP
 definition:
-  de: Liefergegenstände der Gebäudetechnik. Das Fachmodell beschreibt die technischen Anlagen — Heizung, Lüftung, Klima, Sanitär, Elektro und Automation.
-  fr: Livrables des techniques du bâtiment. La maquette décrit les installations techniques — chauffage, ventilation, climatisation, sanitaire, électricité et automatisation.
-  it: Consegne degli impianti. Il modello descrive gli impianti tecnici — riscaldamento, ventilazione, climatizzazione, idraulica, elettrica e automazione.
-  en: Deliverables from building services. The model describes the technical systems — heating, ventilation, air conditioning, plumbing, electrical, and automation.
+  de: 'Liefergegenstände der Gebäudetechnik (Heizung, Lüftung, Klima, Sanitär, Elektro, Automation).
+
+
+    - Bestandsmodellierung: Status und PredefinedType an den modellierten TGA-Objekten; Tiefe projektspezifisch.
+
+    - Frühe Koordination: wenige schematische Hauptverteilungen (Rohr, Luft, Trasse, Erzeugerplatz) — Medium in Reference.
+
+    - Detailplanung: relevante IFC-TGA-Entitäten mit PredefinedType und Status.
+
+    - FM: kein festes TGA-Elementpaket — mit Betreiber klären, welche Objekte tatsächlich bewirtschaftet werden.'
+  fr: 'Livrables des techniques du bâtiment (chauffage, ventilation, climatisation, sanitaire, électricité, automatisation).
+
+
+    - Existant: Status et PredefinedType sur les objets CVC modélisés ; profondeur spécifique au projet.
+
+    - Coordination précoce: peu de distributions principales schématiques (canalisation, air, chemin de câbles, espace générateurs) — médium dans Reference.
+
+    - Projet détaillé: entités IFC CVC pertinentes avec PredefinedType et Status.
+
+    - FM: pas de catalogue CVC fixe — clarifier avec l''exploitant les objets réellement gérés.'
+  it: 'Consegne degli impianti (riscaldamento, ventilazione, climatizzazione, idraulica, elettrica, automazione).
+
+
+    - Esistente: Status e PredefinedType sugli oggetti impianti modellati; profondità specifica del progetto.
+
+    - Coordinamento precoce: poche distribuzioni principali schematiche (condotta, aria, canalina, spazio generatori) — mezzo in Reference.
+
+    - Progetto di dettaglio: entità IFC impianti rilevanti con PredefinedType e Status.
+
+    - FM: nessun catalogo impianti fisso — chiarire con il gestore quali oggetti sono effettivamente gestiti.'
+  en: 'Deliverables from building services (heating, ventilation, air conditioning, plumbing, electrical, automation).
+
+
+    - Existing stock: Status and PredefinedType on modelled MEP objects; depth project-specific.
+
+    - Early coordination: few schematic main distributions (pipe, duct, tray, equipment space) — medium in Reference.
+
+    - Detailed design: relevant IFC MEP entities with PredefinedType and Status.
+
+    - FM: no fixed MEP element pack — agree with the operator which objects they actually manage.'
 file_name:
   de: '{Projekt}_{Phase}_MEP_{Freitext}'
   fr: '{Projet}_{Phase}_MEP_{Libre}'

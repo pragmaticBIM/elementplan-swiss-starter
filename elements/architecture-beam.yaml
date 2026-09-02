@@ -1,0 +1,663 @@
+id: pragmaticbim:element/architecture-beam
+code: ARC-BEAM
+sort_order: 56
+status: active
+name:
+  de: Unterzug / Überzug (Grob)
+  fr: Poutre / solive (Approximatif)
+  it: Trave / travetto (Indicativo)
+  en: Beam / girder (Rough)
+definition:
+  de: 'Grobe Dimensionen gemäss Tragwerksplanung für Träger, Unterzüge und Überzüge in Projektierung und Bewilligungsverfahren.
+
+
+    **Beschreibung**
+
+    - Grob dimensionierte Trägergeometrie gemäss Tragwerkskonzept.
+
+    - Dient der Koordination zwischen Architektur und Tragwerksplanung, nicht der Ausführungsplanung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachtes Volumen modellieren; Abmessungen gemäss Tragwerksentwurf.
+
+    - Keine Bewehrung, Einbauteile oder Anschlussdetails modellieren.
+
+    - Früh: Konzept über Skizzen als Tragwerksskizze im ARC-Modell; Sperrzonen vom Tragwerksplaner prüfen.
+
+    - Später: Dieselben Bauteile mit Reference auch im Tragwerksmodell abstimmen.
+
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Dimensions approximatives selon la conception structurale pour poutres et solives en phases de projet et de procédure d''autorisation.
+
+
+    **Description**
+
+    - Géométrie de poutre dimensionnée grossièrement selon le concept structurel.
+
+    - Sert à la coordination entre architecture et ingénierie structurelle, pas à l''exécution.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume simplifié ; dimensions selon l''esquisse structurelle.
+
+    - Ne pas modéliser armatures, inserts ou raccords de détail.
+
+    - Tôt : concept par croquis comme esquisse porteuse dans le modèle d''architecture ; vérifier les zones d''exclusion de l''ingénieur structure.
+
+    - Plus tard : harmoniser les mêmes éléments avec Reference dans le modèle structurel.
+
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Dimensioni indicative secondo la progettazione strutturale per travi e travetti nelle fasi di progettazione e procedura di autorizzazione.
+
+
+    **Descrizione**
+
+    - Geometria di trave dimensionata grossolanamente secondo il concept strutturale.
+
+    - Serve per il coordinamento tra architettura e ingegneria strutturale, non per l''esecuzione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume semplificato; dimensioni secondo lo schizzo strutturale.
+
+    - Non modellare armature, inserti o giunti di dettaglio.
+
+    - Presto: concept tramite schizzi come schizzo strutturale nel modello di architettura; verificare le zone di esclusione dell''ingegnere strutturista.
+
+    - Più tardi: allineare gli stessi elementi con Reference anche nel modello strutturale.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Rough dimensions according to structural engineering for beams and girders in design development and permitting stages.
+
+
+    **Description**
+
+    - Coarsely dimensioned beam geometry according to the structural concept.
+
+    - Used for coordination between architecture and structural engineering, not for execution planning.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified volume; dimensions according to the structural sketch.
+
+    - Do not model reinforcement, inserts, or detail connections.
+
+    - Early: concept via sketches as structural sketch in the architecture model; verify exclusion zones from the structural engineer.
+
+    - Later: align the same components with Reference in the structural model as well.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBeam
+entity_ifc4: IfcBeam
+entity_ifc4_3: IfcBeam
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcBeam OR entity_ifc2x3=IfcBeam
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art des Trägers.
+
+
+      **Zulässige Werte**
+
+      - `BEAM` — Träger / Überzug
+
+      - `GIRDER` — Unterzug
+
+      - `JOIST` — Joist'
+    fr: 'Type de poutre.
+
+
+      **Valeurs admises**
+
+      - `BEAM` — poutre / solive
+
+      - `GIRDER` — poutre principale
+
+      - `JOIST` — solive'
+    it: 'Tipo di trave.
+
+
+      **Valori ammessi**
+
+      - `BEAM` — trave / travetto
+
+      - `GIRDER` — trave principale
+
+      - `JOIST` — travetto'
+    en: 'Kind of beam.
+
+
+      **Allowed values**
+
+      - `BEAM` — beam / girder
+
+      - `GIRDER` — main girder
+
+      - `JOIST` — joist'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-beam
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Trägers.
+
+
+      **Zulässige Werte**
+
+      - `BEAM` — Träger / Überzug
+
+      - `GIRDER` — Unterzug
+
+      - `JOIST` — Joist
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Type de poutre.
+
+
+      **Valeurs admises**
+
+      - `BEAM` — poutre / solive
+
+      - `GIRDER` — poutre principale
+
+      - `JOIST` — solive
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Tipo di trave.
+
+
+      **Valori ammessi**
+
+      - `BEAM` — trave / travetto
+
+      - `GIRDER` — trave principale
+
+      - `JOIST` — travetto
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Kind of beam.
+
+
+      **Allowed values**
+
+      - `BEAM` — beam / girder
+
+      - `GIRDER` — main girder
+
+      - `JOIST` — joist'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-beam
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: '2
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Trägers gemäss Tragwerksplan.
+    fr: Désignation de la poutre selon le plan structurel.
+    it: Denominazione della trave secondo il piano strutturale.
+    en: Beam designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_BeamCommon
+  definition:
+    de: Referenz zur Zuordnung im Koordinationsmodell.
+    fr: Référence pour l'identification dans le modèle de coordination.
+    it: Riferimento per l'identificazione nel modello di coordinamento.
+    en: Reference used for identification in the coordination model.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: IsStructural
+  pset: Pset_BeamCommon
+  definition:
+    de: 'Kennzeichnet das Element als tragendes Bauteil im Architekturmodell.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — tragendes Bauteil'
+    fr: 'Identifie l''élément comme composant porteur dans le modèle d''architecture.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — élément porteur'
+    it: 'Identifica l''elemento come componente portante nel modello di architettura.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — elemento portante'
+    en: 'Marks the element as a load-bearing component in the architecture model.
+
+
+      **Allowed values**
+
+      - `TRUE` — load-bearing element'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-true
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: GrossVolume
+  pset: Qto_BeamBaseQuantities
+  definition:
+    de: Bruttovolumen des modellierten Trägers.
+    fr: Volume brut de la poutre modélisée.
+    it: Volume lordo della trave modellata.
+    en: Gross volume of the modelled beam.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: Status
+  pset: Pset_BeamCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: FireRating
+  pset: Pset_BeamCommon
+  definition:
+    de: 'Feuerwiderstandsklasse des Trägers gemäss Brandschutzkonzept.
+
+
+      **Zulässige Werte**
+
+      - `R 30` — Tragfähigkeit 30 min
+
+      - `R 60` — Tragfähigkeit 60 min
+
+      - `R 90` — Tragfähigkeit 90 min
+
+      - `EI 30` — Raumabschluss 30 min
+
+      - `EI 60` — Raumabschluss 60 min
+
+      - `EI 90` — Raumabschluss 90 min
+
+      - `REI 30` — Tragfähigkeit und Raumabschluss 30 min
+
+      - `REI 60` — Tragfähigkeit und Raumabschluss 60 min
+
+      - `REI 90` — Tragfähigkeit und Raumabschluss 90 min'
+    fr: 'Classe de résistance au feu de la poutre selon le concept de protection incendie.
+
+
+      **Valeurs admises**
+
+      - `R 30` — portance 30 min
+
+      - `R 60` — portance 60 min
+
+      - `R 90` — portance 90 min
+
+      - `EI 30` — étanchéité au feu 30 min
+
+      - `EI 60` — étanchéité au feu 60 min
+
+      - `EI 90` — étanchéité au feu 90 min
+
+      - `REI 30` — portance et étanchéité 30 min
+
+      - `REI 60` — portance et étanchéité 60 min
+
+      - `REI 90` — portance et étanchéité 90 min'
+    it: 'Classe di resistenza al fuoco della trave secondo il concetto antincendio.
+
+
+      **Valori ammessi**
+
+      - `R 30` — capacità portante 30 min
+
+      - `R 60` — capacità portante 60 min
+
+      - `R 90` — capacità portante 90 min
+
+      - `EI 30` — compartimentazione 30 min
+
+      - `EI 60` — compartimentazione 60 min
+
+      - `EI 90` — compartimentazione 90 min
+
+      - `REI 30` — portanza e compartimentazione 30 min
+
+      - `REI 60` — portanza e compartimentazione 60 min
+
+      - `REI 90` — portanza e compartimentazione 90 min'
+    en: 'Fire resistance class of the beam according to the fire protection concept.
+
+
+      **Allowed values**
+
+      - `R 30` — load-bearing 30 min
+
+      - `R 60` — load-bearing 60 min
+
+      - `R 90` — load-bearing 90 min
+
+      - `EI 30` — integrity and insulation 30 min
+
+      - `EI 60` — integrity and insulation 60 min
+
+      - `EI 90` — integrity and insulation 90 min
+
+      - `REI 30` — load-bearing, integrity and insulation 30 min
+
+      - `REI 60` — load-bearing, integrity and insulation 60 min
+
+      - `REI 90` — load-bearing, integrity and insulation 90 min'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/fire-rating
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 9

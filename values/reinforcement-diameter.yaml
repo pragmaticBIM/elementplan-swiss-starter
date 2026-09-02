@@ -1,0 +1,88 @@
+id: pragmaticbim:value/reinforcement-diameter
+code: REBAR-DIA
+name:
+  de: Bewehrungsdurchmesser
+  fr: Diamètre d'armature
+  it: Diametro di armatura
+  en: Reinforcement diameter
+description:
+  de: Zulässige Nenndurchmesser der Bewehrung in mm.
+  fr: Diamètres nominaux admis de l'armature en mm.
+  it: Diametri nominali ammessi dell'armatura in mm.
+  en: Allowed nominal reinforcement diameters in mm.
+year: 2026
+norm_reference: null
+status: active
+values:
+  de:
+  - '8'
+  - '10'
+  - '12'
+  - '14'
+  - '16'
+  - '18'
+  - '20'
+  - '22'
+  - '24'
+  - '26'
+  - '28'
+  - '30'
+  - '32'
+  - '34'
+  - '36'
+  - '38'
+  - '40'
+  fr:
+  - '8'
+  - '10'
+  - '12'
+  - '14'
+  - '16'
+  - '18'
+  - '20'
+  - '22'
+  - '24'
+  - '26'
+  - '28'
+  - '30'
+  - '32'
+  - '34'
+  - '36'
+  - '38'
+  - '40'
+  it:
+  - '8'
+  - '10'
+  - '12'
+  - '14'
+  - '16'
+  - '18'
+  - '20'
+  - '22'
+  - '24'
+  - '26'
+  - '28'
+  - '30'
+  - '32'
+  - '34'
+  - '36'
+  - '38'
+  - '40'
+  en:
+  - '8'
+  - '10'
+  - '12'
+  - '14'
+  - '16'
+  - '18'
+  - '20'
+  - '22'
+  - '24'
+  - '26'
+  - '28'
+  - '30'
+  - '32'
+  - '34'
+  - '36'
+  - '38'
+  - '40'

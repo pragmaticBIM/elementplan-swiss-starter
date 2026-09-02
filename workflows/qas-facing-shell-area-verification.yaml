@@ -1,0 +1,176 @@
+id: pragmaticbim:workflow/qas-facing-shell-area-verification
+code: QAS-VORSATZ
+sort_order: 82
+name:
+  de: Nachweis Platzbedarf / Flächenauswirkung von Vorsatzschalen
+  fr: Preuve besoin d'espace / impact surfacique des contre-cloisons
+  it: Prova fabbisogno di spazio / impatto superficiale delle contropareti
+  en: Verification of space demand / floor-area impact of facing shells
+description:
+  de: 'Nutzbaren Raum von Vorsatzschalen im Modell führen und die Flächenauswirkung nachweisen — bevor Nasszellen zu klein werden.
+
+
+    **Ausgangslage**
+
+    - Vorsatzschalen (z. B. Installationsvorsatzschalen) beanspruchen Fläche und lichten Raum.
+
+    - Ohne modellierten Nachweis werden Bäder und andere Nasszellen oft zu klein geplant.
+
+
+    **Ziel & Nutzen**
+
+    - Nutzbaren Vorsatzschalen-Raum ohne Konstruktion als eigenen Raum führen.
+
+    - Platzbedarf und Flächenauswirkung aus dem Modell auswerten und gegen den verbleibenden Nutzraum prüfen.
+
+
+    **Ablauf**
+
+    1. Nutzbaren Raum je Vorsatzschale als Raumvolumen bis zu den lichten Innenflächen modellieren.
+
+    2. Nettofläche der Vorsatzschalen-Räume und der angrenzenden Nutzräume aus dem Modell auswerten.
+
+    3. Flächenauswirkung und ausreichenden Restnutzraum dokumentieren.
+
+
+    **Ergebnis**
+
+    - Nachgewiesener Platzbedarf und Flächenauswirkung von Vorsatzschalen — mit belastbarem Restnutzraum (z. B. Bad).
+
+
+    **Lieferobjekte**
+
+    - Vorsatzschalen-Räume als IfcSpace mit PredefinedType=USERDEFINED und ObjectType=Vorsatzschale (Geometrie ohne Konstruktion, nur nutzbarer / lichter Raum)
+
+    - NetFloorArea je Vorsatzschalen-Raum
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Name je Element (optional)'
+  fr: 'Porter l''espace utile des contre-cloisons dans le modèle et prouver l''impact sur les surfaces — avant que les salles d''eau ne deviennent trop petites.
+
+
+    **Situation de départ**
+
+    - Les contre-cloisons (p. ex. techniques) occupent surface et espace libre.
+
+    - Sans preuve modélisée, salles de bains et autres salles d''eau sont souvent trop petites.
+
+
+    **Objectif et bénéfice**
+
+    - Porter l''espace utile de contre-cloison hors construction comme local distinct.
+
+    - Évaluer besoin d''espace et impact surfacique à partir du modèle et les confronter au local utile restant.
+
+
+    **Déroulement**
+
+    1. Modéliser l''espace utile de chaque contre-cloison comme volume jusqu''aux faces intérieures libres.
+
+    2. Évaluer la surface nette des espaces de contre-cloison et des locaux utiles adjacents à partir du modèle.
+
+    3. Documenter l''impact surfacique et le local utile restant suffisant.
+
+
+    **Résultat**
+
+    - Besoin d''espace et impact surfacique des contre-cloisons prouvés — avec local utile restant fiable (p. ex. salle de bains).
+
+
+    **Livrables**
+
+    - Espaces de contre-cloison comme IfcSpace avec PredefinedType=USERDEFINED et ObjectType=Vorsatzschale (géométrie hors construction, uniquement espace utile / libre)
+
+    - NetFloorArea par espace de contre-cloison
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Name par élément (facultatif)'
+  it: 'Gestire nel modello lo spazio utile delle contropareti e dimostrare l''impatto sulle superfici — prima che i locali umidi diventino troppo piccoli.
+
+
+    **Situazione di partenza**
+
+    - Le contropareti (p. es. impianti) occupano superficie e spazio libero.
+
+    - Senza prova modellata, bagni e altri locali umidi risultano spesso troppo piccoli.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire lo spazio utile di controparete senza costruzione come locale distinto.
+
+    - Valutare fabbisogno di spazio e impatto superficiale dal modello e confrontarli con il locale utile residuo.
+
+
+    **Svolgimento**
+
+    1. Modellare lo spazio utile di ogni controparete come volume fino alle facce interne libere.
+
+    2. Valutare la superficie netta degli spazi controparete e dei locali utili adiacenti dal modello.
+
+    3. Documentare l''impatto superficiale e il locale utile residuo sufficiente.
+
+
+    **Risultato**
+
+    - Fabbisogno di spazio e impatto superficiale delle contropareti dimostrati — con locale utile residuo affidabile (p. es. bagno).
+
+
+    **Oggetti della fornitura**
+
+    - Spazi controparete come IfcSpace con PredefinedType=USERDEFINED e ObjectType=Vorsatzschale (geometria senza costruzione, solo spazio utile / libero)
+
+    - NetFloorArea per spazio controparete
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Name per elemento (facoltativo)'
+  en: 'Carry the usable space of facing shells in the model and prove floor-area impact — before wet rooms become too small.
+
+
+    **Starting point**
+
+    - Facing shells (e.g. plumbing linings) consume floor area and clear space.
+
+    - Without modelled verification, bathrooms and other wet rooms are often planned too small.
+
+
+    **Goal & benefit**
+
+    - Carry usable facing-shell space excluding construction as a dedicated space.
+
+    - Evaluate space demand and floor-area impact from the model and check against remaining usable room area.
+
+
+    **Process**
+
+    1. Model the usable space of each facing shell as a volume to the clear inner faces.
+
+    2. Evaluate net area of facing-shell spaces and adjacent usable rooms from the model.
+
+    3. Document floor-area impact and sufficient remaining usable room area.
+
+
+    **Outcome**
+
+    - Verified space demand and floor-area impact of facing shells — with reliable remaining usable room area (e.g. bathroom).
+
+
+    **Deliverables**
+
+    - Facing-shell spaces as IfcSpace with PredefinedType=USERDEFINED and ObjectType=Vorsatzschale (geometry excluding construction, usable / clear space only)
+
+    - NetFloorArea per facing-shell space
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Name per element (optional)'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Usable clear space of a facing shell (Vorsatzschale) as IfcSpace ObjectType=Vorsatzschale — construction excluded. NetFloorArea for area-impact QS; bathrooms often become too small.

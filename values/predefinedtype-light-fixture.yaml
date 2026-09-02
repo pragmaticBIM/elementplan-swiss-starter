@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-light-fixture
+code: LIGHT_FIXTURE
+name:
+  de: PredefinedType IfcLightFixture
+  fr: PredefinedType IfcLightFixture
+  it: PredefinedType IfcLightFixture
+  en: PredefinedType IfcLightFixture
+description:
+  de: Ifc PredefinedType für IfcLightFixture.
+  fr: PredefinedType IFC pour IfcLightFixture.
+  it: PredefinedType IFC per IfcLightFixture.
+  en: IFC PredefinedType for IfcLightFixture.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - POINTSOURCE
+  - DIRECTIONSOURCE
+  - SECURITYLIGHTING
+  fr:
+  - POINTSOURCE
+  - DIRECTIONSOURCE
+  - SECURITYLIGHTING
+  it:
+  - POINTSOURCE
+  - DIRECTIONSOURCE
+  - SECURITYLIGHTING
+  en:
+  - POINTSOURCE
+  - DIRECTIONSOURCE
+  - SECURITYLIGHTING

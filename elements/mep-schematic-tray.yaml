@@ -1,0 +1,304 @@
+id: pragmaticbim:element/mep-schematic-tray
+code: MEP-SCH-TRAY
+sort_order: 62
+status: active
+name:
+  de: Trasse (schematisch)
+  fr: Chemin de câbles (schématique)
+  it: Canalina (schematica)
+  en: Cable tray (schematic)
+definition:
+  de: 'Schematische Elektrotrasse für die frühe Koordination — Medium in Reference.
+
+
+    **Beschreibung**
+
+    - Vereinfachtes Segment oder Volumen für Haupttrassen und Steigzonen.
+
+    - Dient der Machbarkeits- und Kollisionsprüfung, nicht der Ausführungsplanung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als Volumen oder vereinfachtes Segment modellieren; Querschnitt gemäss Grobkonzept.
+
+    - Medium über Reference setzen (z. B. EL).
+
+    - Keine Kabel, Detailarmaturen oder Schächte modellieren.'
+  fr: 'Chemin de câbles schématique pour la coordination précoce — médium dans Reference.
+
+
+    **Description**
+
+    - Segment ou volume simplifié pour tracés principaux et cages.
+
+    - Sert à la faisabilité et aux collisions, pas à l''exécution.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume ou segment simplifié; section selon le concept grossier.
+
+    - Indiquer le médium dans Reference (p. ex. EL).
+
+    - Ne pas modéliser câbles, armatures de détail ou fourreaux.'
+  it: 'Canalina schematica per il coordinamento precoce — mezzo in Reference.
+
+
+    **Descrizione**
+
+    - Segmento o volume semplificato per percorsi principali e vani.
+
+    - Serve per fattibilità e collisioni, non per l''esecuzione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume o segmento semplificato; sezione secondo il concept grossolano.
+
+    - Impostare il mezzo in Reference (p. es. EL).
+
+    - Non modellare cavi, armature di dettaglio o canaline secondarie.'
+  en: 'Schematic cable tray for early coordination — medium in Reference.
+
+
+    **Description**
+
+    - Simplified segment or volume for main trays and risers.
+
+    - Used for feasibility and clash checking, not for execution planning.
+
+
+    **Modelling guidelines**
+
+    - Model as a volume or simplified segment; cross-section according to the sketch concept.
+
+    - Set the medium in Reference (e.g. EL).
+
+    - Do not model cables, detailed fittings, or secondary conduits.'
+needed_in_domain:
+- pragmaticbim:domain/mep
+entity_ifc2x3: IfcFlowSegment
+entity_ifc4: IfcCableCarrierSegment
+entity_ifc4_3: IfcCableCarrierSegment
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcCableCarrierSegment OR entity_ifc2x3=IfcFlowSegment
+attributes:
+- name: Reference
+  pset: Pset_CableCarrierSegmentTypeCommon
+  definition:
+    de: 'Medium der schematischen Trasse.
+
+
+      **Zulässige Werte**
+
+      - `EL` — Elektro'
+    fr: 'Médium du chemin de câbles schématique.
+
+
+      **Valeurs admises**
+
+      - `EL` — électricité'
+    it: 'Mezzo della canalina schematica.
+
+
+      **Valori ammessi**
+
+      - `EL` — elettrico'
+    en: 'Medium of the schematic cable tray.
+
+
+      **Allowed values**
+
+      - `EL` — electrical'
+  datatype: IfcIdentifier
+  allowed_values: pragmaticbim:value/cable-reference-schematic
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-early-design-coordination
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: Status
+  pset: Pset_CableCarrierSegmentTypeCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-mep-survey
+  is_applicability: false
+  status: active
+  sort_order: 3

@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-boiler
+code: BOILER
+name:
+  de: PredefinedType IfcBoiler
+  fr: PredefinedType IfcBoiler
+  it: PredefinedType IfcBoiler
+  en: PredefinedType IfcBoiler
+description:
+  de: Ifc PredefinedType für IfcBoiler.
+  fr: PredefinedType IFC pour IfcBoiler.
+  it: PredefinedType IFC per IfcBoiler.
+  en: IFC PredefinedType for IfcBoiler.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - WATER
+  - STEAM
+  fr:
+  - WATER
+  - STEAM
+  it:
+  - WATER
+  - STEAM
+  en:
+  - WATER
+  - STEAM

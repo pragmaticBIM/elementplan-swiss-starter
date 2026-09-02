@@ -8,54 +8,231 @@ name:
   it: Progetto
   en: Project
 definition:
-  de: |
-    Wurzel der räumlichen Struktur (IfcProject). Muss in jeder IFC-Datei vorhanden sein.
+  de: '**Beschreibung**
 
-    **Modellierung**
-    - Genau ein IfcProject pro Datei.
-    - Name gemäss Projektbezeichnung pflegen.
-  fr: |
-    Racine de la structure spatiale (IfcProject). Obligatoire dans chaque fichier IFC.
+    - Wurzel der räumlichen Struktur; fasst alle Planungsinhalte einer IFC-Datei zusammen.
 
-    **Modélisation**
-    - Exactement un IfcProject par fichier.
-    - Renseigner Name selon la désignation du projet.
-  it: |
-    Radice della struttura spaziale (IfcProject). Obbligatorio in ogni file IFC.
+    - Muss in jeder IFC-Datei vorhanden sein.
 
-    **Modellazione**
-    - Esattamente un IfcProject per file.
-    - Compilare Name secondo la denominazione di progetto.
-  en: |
-    Root of the spatial structure (IfcProject). Required in every IFC file.
 
-    **Modelling**
-    - Exactly one IfcProject per file.
-    - Populate Name according to the project designation.
+    **Modellierungsrichtlinie**
+
+    - Genau ein Projekt pro IFC-Datei.
+
+    - Name gemäss Projektbezeichnung pflegen.'
+  fr: '**Description**
+
+    - Racine de la structure spatiale; regroupe l''ensemble du contenu de planification d''un fichier IFC.
+
+    - Obligatoire dans chaque fichier IFC.
+
+
+    **Directives de modélisation**
+
+    - Exactement un projet par fichier IFC.
+
+    - Renseigner Name selon la désignation du projet.'
+  it: '**Descrizione**
+
+    - Radice della struttura spaziale; riunisce tutti i contenuti di pianificazione di un file IFC.
+
+    - Obbligatorio in ogni file IFC.
+
+
+    **Direttive di modellazione**
+
+    - Esattamente un progetto per file IFC.
+
+    - Compilare Name secondo la denominazione di progetto.'
+  en: '**Description**
+
+    - Root of the spatial structure; groups all planning content of an IFC file.
+
+    - Required in every IFC file.
+
+
+    **Modelling guidelines**
+
+    - Exactly one project per IFC file.
+
+    - Populate Name according to the project designation.'
 needed_in_domain:
-  - pragmaticbim:domain/architecture
-  - pragmaticbim:domain/mep
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
 entity_ifc2x3: IfcProject
 entity_ifc4: IfcProject
 entity_ifc4_3: IfcProject
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcProject
+applicability: entity_ifc4=IfcProject OR entity_ifc2x3=IfcProject
 attributes:
-  - name: Name
-    pset: null
-    definition:
-      de: Projektbezeichnung zur eindeutigen Zuordnung der IFC-Datei.
-      fr: Désignation du projet pour identifier le fichier IFC.
-      it: Denominazione del progetto per identificare il file IFC.
-      en: Project designation used to identify the IFC file.
-    datatype: IfcLabel
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 1
+- name: Name
+  pset: null
+  definition:
+    de: Projektbezeichnung zur eindeutigen Zuordnung der Dateien.
+    fr: Désignation du projet pour identifier le fichier IFC.
+    it: Denominazione del progetto per identificare il file IFC.
+    en: Project designation used to identify the IFC file.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: Phase
+  pset: null
+  definition:
+    de: 'Nummer der Teilphase nach SIA 112.
+
+
+      **Zulässige Werte**
+
+      - `11` — Bedürfnisformulierung
+
+      - `21` — Vorstudie
+
+      - `22` — Auswahlverfahren
+
+      - `31` — Vorprojekt
+
+      - `32` — Bauprojekt
+
+      - `33` — Bewilligungsverfahren
+
+      - `41` — Ausschreibung
+
+      - `51` — Ausführungsprojekt
+
+      - `52` — Ausführung
+
+      - `53` — Inbetriebnahme
+
+      - `61` — Betrieb
+
+      - `62` — Unterhalt'
+    fr: 'Numéro de la phase partielle selon SIA 112.
+
+
+      **Valeurs admises**
+
+      - `11` — formulation des besoins
+
+      - `21` — étude préliminaire
+
+      - `22` — procédure de sélection
+
+      - `31` — avant-projet
+
+      - `32` — projet de construction
+
+      - `33` — procédure d''autorisation
+
+      - `41` — appel d''offres
+
+      - `51` — projet d''exécution
+
+      - `52` — exécution
+
+      - `53` — mise en service
+
+      - `61` — exploitation
+
+      - `62` — maintenance'
+    it: 'Numero della sottofase secondo SIA 112.
+
+
+      **Valori ammessi**
+
+      - `11` — formulazione dei bisogni
+
+      - `21` — studio preliminare
+
+      - `22` — procedura di selezione
+
+      - `31` — progetto di massima
+
+      - `32` — progetto di costruzione
+
+      - `33` — procedura di autorizzazione
+
+      - `41` — bando di gara
+
+      - `51` — progetto esecutivo
+
+      - `52` — esecuzione
+
+      - `53` — messa in servizio
+
+      - `61` — esercizio
+
+      - `62` — manutenzione'
+    en: 'Sub-phase number according to SIA 112.
+
+
+      **Allowed values**
+
+      - `11` — needs definition
+
+      - `21` — preliminary study
+
+      - `22` — selection procedure
+
+      - `31` — preliminary design
+
+      - `32` — construction project
+
+      - `33` — permit procedure
+
+      - `41` — tendering
+
+      - `51` — detailed design
+
+      - `52` — construction
+
+      - `53` — commissioning
+
+      - `61` — operation
+
+      - `62` — maintenance'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/sia-phase
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  is_applicability: false
+  status: active
+  sort_order: 2

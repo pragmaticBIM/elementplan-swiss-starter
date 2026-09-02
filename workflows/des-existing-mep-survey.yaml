@@ -1,0 +1,184 @@
+id: pragmaticbim:workflow/des-existing-mep-survey
+code: DES-EXISTING-MEP
+sort_order: 47
+name:
+  de: Aufnahme Gebäudetechnik Bestand
+  fr: Relève techniques existantes
+  it: Rilievo impianti esistenti
+  en: Existing MEP survey
+description:
+  de: 'Gebäudetechnik im Bestand aufnehmen und modellieren für Umnutzung oder gezielten Austausch.
+
+
+    **Ausgangslage**
+
+    - Umnutzung oder Beibehalten der Gebäudetechnik setzt voraus, dass Anlagen und Leitungen im Bestand bekannt sind.
+
+    - Ohne Status und belastbares Modell bleiben Entscheidungen zu Erhalt, Abbruch oder Neubau unklar.
+
+
+    **Ziel & Nutzen**
+
+    - Gebäudetechnik mit Status und PredefinedType im Modell führen.
+
+    - Aufwandstiefe projektspezifisch steuern — nicht alles muss gleich tief erfasst werden.
+
+
+    **Ablauf**
+
+    1. Verfügbare Technikpläne und Anlagenlisten beschaffen und vor Ort ergänzen.
+
+    2. Relevante Geräte und Leitungen modellieren und mit der Punktwolke abgleichen (empfohlen farbig; wenn möglich Abhangdecken öffnen).
+
+    3. Status und PredefinedType je Objekt setzen und Lieferobjekte prüfen.
+
+
+    **Ergebnis**
+
+    - Nachvollziehbares Gebäudetechnik-Bestandsmodell mit Status und Typ für Erhalt oder Umbau.
+
+
+    **Lieferobjekte**
+
+    - Gebäudetechnikmodell mit modellierten Geräten und Leitungs-/Trassenobjekten
+
+    - Status gemäss Pset_*Common bzw. Pset_*TypeCommon: NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - PredefinedType je modelliertem TGA-Objekt
+
+    - Abgleich mit Punktwolke empfohlen farbig
+
+    - Aufwandstiefe projektspezifisch'
+  fr: 'Relever et modéliser les installations techniques existantes pour un changement d''affectation ou un remplacement ciblé.
+
+
+    **Situation de départ**
+
+    - Conserver ou transformer les techniques exige de connaître appareils et réseaux existants.
+
+    - Sans statut et maquette fiable, les décisions de conservation, démolition ou neuf restent floues.
+
+
+    **Objectif et bénéfice**
+
+    - Porter les techniques avec statut et PredefinedType dans le modèle.
+
+    - Régler la profondeur d''effort selon le projet — tout n''a pas besoin du même niveau de détail.
+
+
+    **Déroulement**
+
+    1. Obtenir plans techniques et listes d''appareils disponibles et les compléter sur site.
+
+    2. Modéliser les appareils et réseaux pertinents et les caler sur le nuage (recommandé en couleur ; ouvrir les faux plafonds si possible).
+
+    3. Attribuer statut et PredefinedType par objet et contrôler les livrables.
+
+
+    **Résultat**
+
+    - Maquette technique de l''existant traçable avec statut et type pour conservation ou transformation.
+
+
+    **Livrables**
+
+    - Maquette techniques avec appareils et objets de réseaux/cheminements modélisés
+
+    - Statut selon Pset_*Common ou Pset_*TypeCommon : NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - PredefinedType par objet CVC modélisé
+
+    - Calage sur nuage de points recommandé en couleur
+
+    - Profondeur d''effort spécifique au projet'
+  it: 'Rilevare e modellare gli impianti esistenti per cambio d''uso o sostituzione mirata.
+
+
+    **Situazione di partenza**
+
+    - Mantenere o trasformare gli impianti richiede di conoscere apparecchi e reti esistenti.
+
+    - Senza stato e modello affidabile, le decisioni su conservazione, demolizione o nuovo restano incerte.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire gli impianti con stato e PredefinedType nel modello.
+
+    - Regolare la profondità di impegno specifica del progetto — non tutto richiede lo stesso dettaglio.
+
+
+    **Svolgimento**
+
+    1. Procurare piani tecnici e elenchi apparecchi disponibili e integrarli in situ.
+
+    2. Modellare apparecchi e reti rilevanti e allinearli alla nuvola (raccomandata a colori; aprire i controsoffitti se possibile).
+
+    3. Impostare stato e PredefinedType per oggetto e verificare i livrabili.
+
+
+    **Risultato**
+
+    - Modello impiantistico dell''esistente tracciabile con stato e tipo per conservazione o trasformazione.
+
+
+    **Oggetti della fornitura**
+
+    - Modello impianti con apparecchi e oggetti di reti/percorsi modellati
+
+    - Stato secondo Pset_*Common o Pset_*TypeCommon: NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - PredefinedType per ogni oggetto impianti modellato
+
+    - Allineamento alla nuvola di punti raccomandato a colori
+
+    - Profondità di impegno specifica del progetto'
+  en: 'Survey and model existing building services for change of use or targeted replacement.
+
+
+    **Starting point**
+
+    - Retaining or converting MEP systems requires knowing existing equipment and networks.
+
+    - Without status and a reliable model, keep / demolish / new decisions stay unclear.
+
+
+    **Goal & benefit**
+
+    - Carry MEP in the model with Status and PredefinedType.
+
+    - Steer effort depth by project — not everything needs the same capture depth.
+
+
+    **Process**
+
+    1. Obtain available MEP drawings and equipment lists and complement them on site.
+
+    2. Model relevant equipment and networks and align with the point cloud (colour recommended; open suspended ceilings when possible).
+
+    3. Set Status and PredefinedType per object and check deliverables.
+
+
+    **Outcome**
+
+    - Traceable as-built MEP model with status and type for retention or conversion.
+
+
+    **Deliverables**
+
+    - MEP model with modelled equipment and network/route objects
+
+    - Status according to Pset_*Common or Pset_*TypeCommon: NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - PredefinedType on each modelled MEP object
+
+    - Point-cloud alignment recommended in colour
+
+    - Project-specific effort depth'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/mep
+comment: Phase 11 Bestand. Status + PredefinedType on MEP elements; effort depth project-specific.

@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-heat-exchanger
+code: HEAT_EXCHANGER
+name:
+  de: PredefinedType IfcHeatExchanger
+  fr: PredefinedType IfcHeatExchanger
+  it: PredefinedType IfcHeatExchanger
+  en: PredefinedType IfcHeatExchanger
+description:
+  de: Ifc PredefinedType für IfcHeatExchanger.
+  fr: PredefinedType IFC pour IfcHeatExchanger.
+  it: PredefinedType IFC per IfcHeatExchanger.
+  en: IFC PredefinedType for IfcHeatExchanger.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - PLATE
+  - SHELLANDTUBE
+  fr:
+  - PLATE
+  - SHELLANDTUBE
+  it:
+  - PLATE
+  - SHELLANDTUBE
+  en:
+  - PLATE
+  - SHELLANDTUBE

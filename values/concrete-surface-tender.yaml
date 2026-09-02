@@ -1,0 +1,48 @@
+id: pragmaticbim:value/concrete-surface-tender
+code: CONCRETE-SURFACE
+name:
+  de: Betonoberfläche (Ausschreibung)
+  fr: Surface béton (appel d'offres)
+  it: Superficie calcestruzzo (gara)
+  en: Concrete surface (tender)
+description:
+  de: Kombinierte Oberflächenanforderung und Seitenbezug für NPK-Ausschreibung gemäss SIA 118/262.
+  fr: Exigence de surface et côté combinés pour appel d'offres NPK selon SIA 118/262.
+  it: Requisito di superficie e lato combinati per gara NPK secondo SIA 118/262.
+  en: Combined surface requirement and side reference for NPK tendering according to SIA 118/262.
+year: 2026
+norm_reference: SIA 118/262
+status: active
+values:
+  de:
+  - nicht sichtbar
+  - sichtbar BOK 1 einseitig
+  - sichtbar BOK 1 zweiseitig
+  - Sichtbeton BOK 2 einseitig
+  - Sichtbeton BOK 2 zweiseitig
+  - Sichtbeton BOK 3 einseitig
+  - Sichtbeton BOK 3 zweiseitig
+  fr:
+  - nicht sichtbar
+  - sichtbar BOK 1 einseitig
+  - sichtbar BOK 1 zweiseitig
+  - Sichtbeton BOK 2 einseitig
+  - Sichtbeton BOK 2 zweiseitig
+  - Sichtbeton BOK 3 einseitig
+  - Sichtbeton BOK 3 zweiseitig
+  it:
+  - nicht sichtbar
+  - sichtbar BOK 1 einseitig
+  - sichtbar BOK 1 zweiseitig
+  - Sichtbeton BOK 2 einseitig
+  - Sichtbeton BOK 2 zweiseitig
+  - Sichtbeton BOK 3 einseitig
+  - Sichtbeton BOK 3 zweiseitig
+  en:
+  - nicht sichtbar
+  - sichtbar BOK 1 einseitig
+  - sichtbar BOK 1 zweiseitig
+  - Sichtbeton BOK 2 einseitig
+  - Sichtbeton BOK 2 zweiseitig
+  - Sichtbeton BOK 3 einseitig
+  - Sichtbeton BOK 3 zweiseitig

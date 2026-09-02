@@ -1,0 +1,193 @@
+id: pragmaticbim:workflow/qas-special-room-user-coordination
+code: QAS-SPECIAL-ROOM-USER
+sort_order: 75
+name:
+  de: Nutzerabstimmung Spezialräume
+  fr: Coordination utilisateurs — locaux spéciaux
+  it: Coordinamento utenti — locali speciali
+  en: Special room user coordination
+description:
+  de: 'Spezialräume schnell und grob im Modell skizzieren und mit Nutzern abstimmen — ohne formale Modellierungsrichtlinien, für Gespräche und Visualisierung.
+
+
+    **Ausgangslage**
+
+    - Klassenzimmer, Labors, Patientenzimmer, OP-Säle und ähnliche Spezialräume brauchen frühe Abstimmung mit künftigen Nutzern.
+
+    - Formale BIM-Modellierung ist in dieser Phase zu aufwändig und hemmt den Dialog.
+
+    - Reine 2D-Pläne reichen oft nicht, um Raumwirkung, Anordnung und Ausstattung zu beurteilen.
+
+
+    **Ziel & Nutzen**
+
+    - Raumtypen und Varianten als grobe 3D-Skizze im Modell führen — quick and dirty.
+
+    - Nutzer können Grösse, Zuschnitt und Ausstattung visuell prüfen und Entscheidungen treffen.
+
+
+    **Ablauf**
+
+    1. Typische Spezialräume als Muster oder im Gebäude grob als Volumen modellieren — ohne Anspruch auf saubere Geometrie.
+
+    2. Einrichtung, Arbeitsplätze, Geräte sowie Steckdosen, Schalter und weitere Ausstattung im für die Entscheidung nötigen Detailgrad modellieren.
+
+    3. Visualisierung und Pläne für Nutzergespräche erstellen, Varianten vergleichen und freigeben.
+
+
+    **Ergebnis**
+
+    - Abgestimmte Raumtypen und Ausstattungskonfigurationen als Basis für die weitere Planung — ohne ausführungsreife Modellqualität.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Spezialräume als grob modellierte IfcSpace-Volumen
+
+    - LongName mit Raumtyp oder Nutzungsbezeichnung (z. B. Klassenzimmer, Labor, Patientenzimmer)
+
+    - Einrichtung, Geräte, Steckdosen, Schalter und weitere für die Nutzerabstimmung relevante Ausstattung im nötigen Detailgrad (z. B. IfcFurnishingElement, IfcOutlet, IfcSwitchingDevice)
+
+    - Name optional; keine Anforderung an formale Raumgrenzen oder Mengenattribute'
+  fr: 'Esquisser rapidement les locaux spéciaux dans le modèle et les coordonner avec les utilisateurs — sans directives formelles de modélisation, pour les entretiens et la visualisation.
+
+
+    **Situation de départ**
+
+    - Salles de classe, laboratoires, chambres de patient, blocs opératoires et locaux similaires exigent une coordination précoce avec les futurs utilisateurs.
+
+    - La modélisation BIM formelle est trop lourde à ce stade et freine le dialogue.
+
+    - Les plans 2D seuls suffisent rarement pour juger de l''effet spatial, de la disposition et de l''équipement.
+
+
+    **Objectif et bénéfice**
+
+    - Porter les types de locaux et les variantes comme esquisse 3D grossière dans le modèle — quick and dirty.
+
+    - Permettre aux utilisateurs d''évaluer visuellement taille, découpage et équipement et de prendre des décisions.
+
+
+    **Déroulement**
+
+    1. Modéliser grossièrement les locaux spéciaux typiques comme modèles ou volumes dans le bâtiment — sans exigence de géométrie propre.
+
+    2. Modéliser mobilier, postes de travail, appareils ainsi que prises, interrupteurs et autre équipement au degré de détail nécessaire à la décision.
+
+    3. Produire visualisations et plans pour les entretiens utilisateurs, comparer les variantes et les valider.
+
+
+    **Résultat**
+
+    - Types de locaux et configurations d''équipement coordonnés comme base pour la suite de la planification — sans qualité de modèle d''exécution.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Locaux spéciaux comme volumes IfcSpace modélisés grossièrement
+
+    - LongName avec type de local ou désignation d''usage (p. ex. salle de classe, laboratoire, chambre de patient)
+
+    - Mobilier, appareils, prises, interrupteurs et autre équipement pertinent pour la coordination utilisateurs au degré de détail requis (p. ex. IfcFurnishingElement, IfcOutlet, IfcSwitchingDevice)
+
+    - Name facultatif ; pas d''exigence sur les limites formelles de local ni les attributs de quantités'
+  it: 'Schizzare rapidamente i locali speciali nel modello e coordinarli con gli utenti — senza direttive formali di modellazione, per colloqui e visualizzazione.
+
+
+    **Situazione di partenza**
+
+    - Aule, laboratori, camere di paziente, sale operatorie e locali simili richiedono un coordinamento precoce con i futuri utenti.
+
+    - La modellazione BIM formale è troppo onerosa in questa fase e frena il dialogo.
+
+    - I soli planimetrie 2D spesso non bastano per valutare effetto spaziale, disposizione e dotazione.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire tipi di locale e varianti come schizzo 3D grossolano nel modello — quick and dirty.
+
+    - Consentire agli utenti di verificare visivamente dimensioni, taglio e dotazione e prendere decisioni.
+
+
+    **Svolgimento**
+
+    1. Modellare grossolanamente i locali speciali tipici come modelli o volumi nell''edificio — senza richiesta di geometria pulita.
+
+    2. Modellare arredi, postazioni di lavoro, apparecchiature nonché prese, interruttori e altra dotazione nel grado di dettaglio necessario per la decisione.
+
+    3. Creare visualizzazioni e planimetrie per i colloqui con gli utenti, confrontare le varianti e approvarle.
+
+
+    **Risultato**
+
+    - Tipi di locale e configurazioni di dotazione coordinati come base per la pianificazione successiva — senza qualità di modello esecutivo.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Locali speciali come volumi IfcSpace modellati grossolanamente
+
+    - LongName con tipo di locale o denominazione d''uso (es. aula, laboratorio, camera di paziente)
+
+    - Arredi, apparecchiature, prese, interruttori e altra dotazione rilevante per il coordinamento utenti nel grado di dettaglio richiesto (es. IfcFurnishingElement, IfcOutlet, IfcSwitchingDevice)
+
+    - Name facoltativo; nessun requisito su limiti formali del locale o attributi quantitativi'
+  en: 'Sketch special rooms quickly and roughly in the model and align them with users — no formal modelling guidelines, for meetings and visualization.
+
+
+    **Starting point**
+
+    - Classrooms, labs, patient rooms, operating theatres, and similar special rooms need early coordination with future users.
+
+    - Formal BIM modelling is too heavy at this stage and slows the dialogue.
+
+    - 2D plans alone are often insufficient to judge spatial effect, layout, and equipment.
+
+
+    **Goal & benefit**
+
+    - Maintain room types and options as a rough 3D sketch in the model — quick and dirty.
+
+    - Let users visually check size, layout, and equipment and make decisions.
+
+
+    **Process**
+
+    1. Model typical special rooms as templates or rough volumes in the building — no requirement for clean geometry.
+
+    2. Model furniture, workstations, equipment, plus outlets, switches, and other fittings at the level of detail needed for the decision.
+
+    3. Create visualizations and plans for user meetings, compare options, and sign them off.
+
+
+    **Outcome**
+
+    - Coordinated room types and equipment configurations as the basis for further planning — without execution-grade model quality.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Special rooms as roughly modelled IfcSpace volumes
+
+    - LongName with room type or use designation (e.g. classroom, lab, patient room)
+
+    - Furniture, equipment, outlets, switches, and other fittings relevant to user coordination at the required level of detail (e.g. IfcFurnishingElement, IfcOutlet, IfcSwitchingDevice)
+
+    - Name optional; no requirement for formal space boundaries or quantity attributes'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Quick-and-dirty room type sketches for user meetings. Room volumes stay rough; equipment, outlets, switches etc. must be modelled at decision-relevant detail. Formal element modelling guidelines
+  do not apply to spaces; replace with proper interior spaces in later design workflows.

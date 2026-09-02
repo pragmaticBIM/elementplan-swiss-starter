@@ -65,3 +65,13 @@ Attributes are requested in SIA design phases `31`, `32`, and `33`. The phase ca
 ## Schema
 
 Entities follow the [pragmaticBIM Elementplan schema](https://github.com/pragmaticBIM/elementplan-data-schema). IDs use the `pragmaticbim:` prefix.
+
+## Syncing from add-ons
+
+This free master is a published copy. The source of truth lives in `elementplan_pragmaticbim_swiss_data_add_ons`. Refresh entity YAML from there with:
+
+```bash
+python scripts/sync_free_from_addons.py
+```
+
+`project.yaml`, this README, `LICENSE`, and `.github/` are left unchanged.

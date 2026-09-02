@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-pipe-segment
+code: PIPE-SEG
+name:
+  de: Rohrleitung
+  fr: Canalisation
+  it: Condotta
+  en: Pipe segment
+description:
+  de: PredefinedType für IfcPipeSegment in der Techniklagenkoordination.
+  fr: PredefinedType pour IfcPipeSegment dans la coordination des réseaux techniques.
+  it: PredefinedType per IfcPipeSegment nel coordinamento degli impianti.
+  en: PredefinedType for IfcPipeSegment in services coordination.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - RIGIDSEGMENT
+  - FLEXIBLESEGMENT
+  fr:
+  - RIGIDSEGMENT
+  - FLEXIBLESEGMENT
+  it:
+  - RIGIDSEGMENT
+  - FLEXIBLESEGMENT
+  en:
+  - RIGIDSEGMENT
+  - FLEXIBLESEGMENT

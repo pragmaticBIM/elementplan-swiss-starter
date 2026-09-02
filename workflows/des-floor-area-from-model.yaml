@@ -1,0 +1,176 @@
+id: pragmaticbim:workflow/des-floor-area-from-model
+code: DES-GFA
+sort_order: 54
+name:
+  de: Geschossfläche am Modell ermitteln
+  fr: Déterminer la surface de plancher à partir du modèle
+  it: Determinare la superficie di piano dal modello
+  en: Determine floor area from the model
+description:
+  de: 'Geschossvolumen und Lufträume modellieren und die Geschossfläche aus Geschossvolumen minus Luftraum ableiten.
+
+
+    **Ausgangslage**
+
+    - Geschossflächennachweise und Kennwerte brauchen nachvollziehbare Mengen je Geschoss.
+
+    - Manuelle Abzüge für Atrien und Durchbrüche sind fehleranfällig und schwer mit dem Modell abzugleichen.
+
+
+    **Ziel & Nutzen**
+
+    - Geschossvolumen und Lufträume getrennt im Modell führen.
+
+    - Anrechenbare Geschossfläche und Volumen direkt aus Geschossvolumen − Luftraum ableiten.
+
+
+    **Ablauf**
+
+    1. Geschossvolumen je Geschoss gemäss Modellierungsrichtlinie bereitstellen.
+
+    2. Nicht nutzbare Lufträume geschossweise modellieren.
+
+    3. Geschossfläche und Volumen aus Geschossvolumen minus Luftraum auswerten.
+
+
+    **Ergebnis**
+
+    - Nachvollziehbare Geschossfläche und Volumen je Geschoss aus dem Modell — unter Abzug der Lufträume.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Geschossvolumen je Geschoss als modellierte IfcSpace-Volumen (Bruttovolumen)
+
+    - Lufträume als IfcSpace mit PredefinedType=USERDEFINED und ObjectType=Luftraum
+
+    - GrossFloorArea, GrossVolume und Height je Geschossvolumen und je Luftraum'
+  fr: 'Modéliser les volumes d''étage et les volumes d''air, puis dériver la surface de plancher à partir du volume d''étage moins le volume d''air.
+
+
+    **Situation de départ**
+
+    - Les justificatifs de surface de plancher et les indicateurs exigent des quantités traçables par étage.
+
+    - Les déductions manuelles pour atriums et vides sont sources d''erreurs et difficiles à aligner avec le modèle.
+
+
+    **Objectif et bénéfice**
+
+    - Porter séparément volumes d''étage et volumes d''air dans le modèle.
+
+    - Dériver surface de plancher et volume comptables directement de volume d''étage − volume d''air.
+
+
+    **Déroulement**
+
+    1. Fournir les volumes d''étage selon la directive de modélisation.
+
+    2. Modéliser les volumes d''air non utilisables étage par étage.
+
+    3. Évaluer surface de plancher et volume à partir du volume d''étage moins le volume d''air.
+
+
+    **Résultat**
+
+    - Surface de plancher et volumes traçables par étage à partir du modèle — volumes d''air déduits.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Volumes d''étage modélisés comme IfcSpace (volumes bruts)
+
+    - Volumes d''air comme IfcSpace avec PredefinedType=USERDEFINED et ObjectType=Luftraum
+
+    - GrossFloorArea, GrossVolume et Height par volume d''étage et par volume d''air'
+  it: 'Modellare i volumi di piano e i volumi d''aria e derivare la superficie di piano da volume di piano meno volume d''aria.
+
+
+    **Situazione di partenza**
+
+    - Le verifiche di superficie di piano e gli indicatori richiedono quantità tracciabili per piano.
+
+    - Detrazioni manuali per atrii e fori sono soggette a errori e difficili da allineare al modello.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire separatamente volumi di piano e volumi d''aria nel modello.
+
+    - Derivare superficie di piano e volume computabili direttamente da volume di piano − volume d''aria.
+
+
+    **Svolgimento**
+
+    1. Fornire i volumi di piano secondo la direttiva di modellazione.
+
+    2. Modellare i volumi d''aria non utilizzabili piano per piano.
+
+    3. Valutare superficie di piano e volume da volume di piano meno volume d''aria.
+
+
+    **Risultato**
+
+    - Superficie di piano e volumi tracciabili per piano dal modello — con detrazione dei volumi d''aria.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Volumi di piano modellati come IfcSpace (volumi lordi)
+
+    - Volumi d''aria come IfcSpace con PredefinedType=USERDEFINED e ObjectType=Luftraum
+
+    - GrossFloorArea, GrossVolume e Height per ogni volume di piano e ogni volume d''aria'
+  en: 'Model storey volumes and air spaces and derive floor area from storey volume minus air space.
+
+
+    **Starting point**
+
+    - Floor-area verification and metrics need traceable quantities per storey.
+
+    - Manual deductions for atriums and voids are error-prone and hard to align with the model.
+
+
+    **Goal & benefit**
+
+    - Maintain storey volumes and air spaces separately in the model.
+
+    - Derive countable floor area and volume directly from storey volume − air space.
+
+
+    **Process**
+
+    1. Provide storey volumes according to the modelling guideline.
+
+    2. Model non-occupiable air spaces storey by storey.
+
+    3. Evaluate floor area and volume from storey volume minus air space.
+
+
+    **Outcome**
+
+    - Traceable floor area and volume per storey from the model — with air spaces deducted.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Storey volumes modelled as IfcSpace (gross volumes)
+
+    - Air spaces as IfcSpace with PredefinedType=USERDEFINED and ObjectType=Luftraum
+
+    - GrossFloorArea, GrossVolume, and Height per storey volume and per air space'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Early-phase GF take-off. Model spaces-gross-volume and spaces-luftraum; countable quantities = Geschossvolumen − Luftraum (area and volume).

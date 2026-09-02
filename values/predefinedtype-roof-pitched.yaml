@@ -1,0 +1,68 @@
+id: pragmaticbim:value/predefinedtype-roof-pitched
+code: ROOF-PITCH
+name:
+  de: Steildachform
+  fr: Forme de toiture inclinée
+  it: Forma di tetto inclinato
+  en: Pitched roof form
+description:
+  de: PredefinedType für IfcRoof als Steildach in der Hüllskizze.
+  fr: PredefinedType pour IfcRoof comme toiture inclinée dans l'esquisse d'enveloppe.
+  it: PredefinedType per IfcRoof come tetto inclinato nello schizzo dell'involucro.
+  en: PredefinedType for IfcRoof as a pitched roof in the envelope sketch.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - SHED_ROOF
+  - GABLE_ROOF
+  - HIP_ROOF
+  - HIPPED_GABLE_ROOF
+  - GAMBREL_ROOF
+  - MANSARD_ROOF
+  - BARREL_ROOF
+  - RAINBOW_ROOF
+  - BUTTERFLY_ROOF
+  - PAVILION_ROOF
+  - DOME_ROOF
+  - FREEFORM
+  fr:
+  - SHED_ROOF
+  - GABLE_ROOF
+  - HIP_ROOF
+  - HIPPED_GABLE_ROOF
+  - GAMBREL_ROOF
+  - MANSARD_ROOF
+  - BARREL_ROOF
+  - RAINBOW_ROOF
+  - BUTTERFLY_ROOF
+  - PAVILION_ROOF
+  - DOME_ROOF
+  - FREEFORM
+  it:
+  - SHED_ROOF
+  - GABLE_ROOF
+  - HIP_ROOF
+  - HIPPED_GABLE_ROOF
+  - GAMBREL_ROOF
+  - MANSARD_ROOF
+  - BARREL_ROOF
+  - RAINBOW_ROOF
+  - BUTTERFLY_ROOF
+  - PAVILION_ROOF
+  - DOME_ROOF
+  - FREEFORM
+  en:
+  - SHED_ROOF
+  - GABLE_ROOF
+  - HIP_ROOF
+  - HIPPED_GABLE_ROOF
+  - GAMBREL_ROOF
+  - MANSARD_ROOF
+  - BARREL_ROOF
+  - RAINBOW_ROOF
+  - BUTTERFLY_ROOF
+  - PAVILION_ROOF
+  - DOME_ROOF
+  - FREEFORM

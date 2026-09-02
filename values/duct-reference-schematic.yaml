@@ -1,0 +1,36 @@
+id: pragmaticbim:value/duct-reference-schematic
+code: DUCT-REF-SCH
+name:
+  de: Referenz Medium Luftleitung (schematisch)
+  fr: Référence médium conduit (schématique)
+  it: Riferimento mezzo canale (schematico)
+  en: Duct medium reference (schematic)
+description:
+  de: Medium-Kennung für schematische Lüftungskanäle in der frühen Koordination.
+  fr: Code de médium pour conduits de ventilation schématiques en coordination précoce.
+  it: Codice mezzo per canali di ventilazione schematici nel coordinamento precoce.
+  en: Medium code for schematic ventilation ducts in early coordination.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - ZU
+  - AB
+  - AU
+  - FO
+  fr:
+  - ZU
+  - AB
+  - AU
+  - FO
+  it:
+  - ZU
+  - AB
+  - AU
+  - FO
+  en:
+  - ZU
+  - AB
+  - AU
+  - FO

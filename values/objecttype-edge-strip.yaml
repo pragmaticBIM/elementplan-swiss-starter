@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-edge-strip
+code: OBJ-EDGE-STRIP
+name:
+  de: ObjectType Randstreifen
+  fr: ObjectType bande de rive
+  it: ObjectType fascia di bordo
+  en: ObjectType edge strip
+description:
+  de: ObjectType für IfcBuildingElementProxy als Schalungsrandstreifen im Schal- und Bewehrungsmodell.
+  fr: ObjectType pour IfcBuildingElementProxy comme bande de rive de coffrage dans le modèle de coffrage et d'armatures.
+  it: ObjectType per IfcBuildingElementProxy come fascia di bordo di cassero nel modello di cassero e armatura.
+  en: ObjectType for IfcBuildingElementProxy as a formwork edge strip in the formwork and reinforcement model.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Randstreifen
+  fr:
+  - Randstreifen
+  it:
+  - Randstreifen
+  en:
+  - Randstreifen

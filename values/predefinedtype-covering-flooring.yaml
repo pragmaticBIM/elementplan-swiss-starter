@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-covering-flooring
+code: COVERING-FLOORING
+name:
+  de: PredefinedType Bodenbelag
+  fr: PredefinedType revêtement de sol
+  it: PredefinedType pavimentazione
+  en: PredefinedType floor covering
+description:
+  de: IfcCovering PredefinedType für Bodenaufbauten.
+  fr: IfcCovering PredefinedType pour complexes de sol.
+  it: IfcCovering PredefinedType per stratigrafie di pavimento.
+  en: IfcCovering PredefinedType for floor build-ups.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - FLOORING
+  fr:
+  - FLOORING
+  it:
+  - FLOORING
+  en:
+  - FLOORING

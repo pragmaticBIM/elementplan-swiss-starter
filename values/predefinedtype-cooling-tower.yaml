@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-cooling-tower
+code: COOLING_TOWER
+name:
+  de: PredefinedType IfcCoolingTower
+  fr: PredefinedType IfcCoolingTower
+  it: PredefinedType IfcCoolingTower
+  en: PredefinedType IfcCoolingTower
+description:
+  de: Ifc PredefinedType für IfcCoolingTower.
+  fr: PredefinedType IFC pour IfcCoolingTower.
+  it: PredefinedType IFC per IfcCoolingTower.
+  en: IFC PredefinedType for IfcCoolingTower.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - NATURALDRAFT
+  - MECHANICALINDUCEDDRAFT
+  - MECHANICALFORCEDDRAFT
+  fr:
+  - NATURALDRAFT
+  - MECHANICALINDUCEDDRAFT
+  - MECHANICALFORCEDDRAFT
+  it:
+  - NATURALDRAFT
+  - MECHANICALINDUCEDDRAFT
+  - MECHANICALFORCEDDRAFT
+  en:
+  - NATURALDRAFT
+  - MECHANICALINDUCEDDRAFT
+  - MECHANICALFORCEDDRAFT

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-model-reference-point
+code: OBJ-MODEL-REF
+name:
+  de: ObjectType Bezugspunkt
+  fr: ObjectType point de référence
+  it: ObjectType punto di riferimento
+  en: ObjectType survey reference point
+description:
+  de: ObjectType für IfcBuildingElementProxy als Bezugspunkt.
+  fr: ObjectType pour IfcBuildingElementProxy comme point de référence.
+  it: ObjectType per IfcBuildingElementProxy come punto di riferimento.
+  en: ObjectType for IfcBuildingElementProxy as a survey reference point.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Bezugspunkt
+  fr:
+  - Bezugspunkt
+  it:
+  - Bezugspunkt
+  en:
+  - Bezugspunkt

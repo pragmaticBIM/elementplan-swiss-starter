@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-space-parking
+code: SPACE-PARKING
+name:
+  de: PredefinedType Parkplatz
+  fr: PredefinedType place de stationnement
+  it: PredefinedType posto auto
+  en: PredefinedType parking space
+description:
+  de: IfcSpace PredefinedType für Parkplätze.
+  fr: IfcSpace PredefinedType pour les places de stationnement.
+  it: IfcSpace PredefinedType per i posti auto.
+  en: IfcSpace PredefinedType for parking spaces.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - PARKING
+  fr:
+  - PARKING
+  it:
+  - PARKING
+  en:
+  - PARKING

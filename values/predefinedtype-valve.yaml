@@ -1,0 +1,56 @@
+id: pragmaticbim:value/predefinedtype-valve
+code: VALVE
+name:
+  de: PredefinedType IfcValve
+  fr: PredefinedType IfcValve
+  it: PredefinedType IfcValve
+  en: PredefinedType IfcValve
+description:
+  de: Ifc PredefinedType für IfcValve.
+  fr: PredefinedType IFC pour IfcValve.
+  it: PredefinedType IFC per IfcValve.
+  en: IFC PredefinedType for IfcValve.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - MIXING
+  - DIVERTING
+  - ISOLATING
+  - REGULATING
+  - SAFETYCUTOFF
+  - STEAMTRAP
+  - GASCOCK
+  - DRAWOFFCOCK
+  - USERDEFINED
+  fr:
+  - MIXING
+  - DIVERTING
+  - ISOLATING
+  - REGULATING
+  - SAFETYCUTOFF
+  - STEAMTRAP
+  - GASCOCK
+  - DRAWOFFCOCK
+  - USERDEFINED
+  it:
+  - MIXING
+  - DIVERTING
+  - ISOLATING
+  - REGULATING
+  - SAFETYCUTOFF
+  - STEAMTRAP
+  - GASCOCK
+  - DRAWOFFCOCK
+  - USERDEFINED
+  en:
+  - MIXING
+  - DIVERTING
+  - ISOLATING
+  - REGULATING
+  - SAFETYCUTOFF
+  - STEAMTRAP
+  - GASCOCK
+  - DRAWOFFCOCK
+  - USERDEFINED

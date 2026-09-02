@@ -1,0 +1,185 @@
+id: pragmaticbim:workflow/des-urban-design-mass-study
+code: DES-URBAN-MASS
+sort_order: 44
+name:
+  de: Urban Design Massenstudie
+  fr: Étude de masse urbanistique
+  it: Studio di massa urbanistica
+  en: Urban design mass study
+description:
+  de: 'Bruttovolumen geschossweise modellieren und Mengen für die urbanistische Massenstudie auswerten.
+
+
+    **Ausgangslage**
+
+    - Massenstudien und Zonenkonformität verlangen Bruttoflächen und -volumen je Geschoss.
+
+    - Manuelle Flächen- und Volumenlisten aus Volumenmodellen sind fehleranfällig und verlangsamen Variantenvergleiche.
+
+
+    **Ziel & Nutzen**
+
+    - Bruttovolumen früh und geschossweise im Modell führen.
+
+    - Fläche, Volumen und Höhe je Einheit oder Nutzungsanteil direkt aus dem Modell ableiten.
+
+
+    **Ablauf**
+
+    1. Bruttovolumen je Geschoss gemäss Modellierungsrichtlinie bereitstellen.
+
+    2. Optional nach Wohnungen, Einheiten oder Allgemeinflächen trennen und in LongName gemäss Programm benennen.
+
+    3. Geschossweise Flächen, Volumen und Höhen auswerten und Varianten vergleichen.
+
+
+    **Ergebnis**
+
+    - Nachvollziehbare Bruttomengen je Geschoss und Nutzungsanteil als Grundlage für die Massenstudie.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Bruttovolumen je Geschoss als modellierte IfcSpace-Volumen
+
+    - Untergeschoss von Unterkante Bodenplatte bis Oberkante Fertigboden; Obergeschosse von Oberkante Fertigboden bis Oberkante nächster Fertigboden bzw. Dach
+
+    - LongName mit Einheits- oder Nutzungsbezeichnung gemäss Programm; optionale Trennung nach Wohnungen, Einheiten oder Allgemeinflächen
+
+    - GrossFloorArea, GrossVolume und Height je Bruttovolumen'
+  fr: 'Modéliser les volumes bruts par étage et en extraire les quantités pour l''étude de masse urbanistique.
+
+
+    **Situation de départ**
+
+    - Les études de masse et la conformité aux zones exigent des surfaces et volumes bruts par étage.
+
+    - Les tableaux manuels de surfaces et volumes à partir de modèles volumiques sont sources d''erreurs et ralentissent la comparaison de variantes.
+
+
+    **Objectif et bénéfice**
+
+    - Maintenir les volumes bruts tôt dans le modèle, étage par étage.
+
+    - Dériver directement surface, volume et hauteur par unité ou part de programme.
+
+
+    **Déroulement**
+
+    1. Fournir les volumes bruts par étage selon la directive de modélisation.
+
+    2. Séparer facultativement par logements, unités ou espaces communs et nommer LongName selon le programme.
+
+    3. Évaluer surfaces, volumes et hauteurs par étage et comparer les variantes.
+
+
+    **Résultat**
+
+    - Quantités brutes traçables par étage et part de programme comme base de l''étude de masse.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Volumes bruts par étage modélisés comme IfcSpace
+
+    - Sous-sol : de la face inférieure de la dalle de fondation au dessus du sol fini ; étages supérieurs : du dessus du sol fini au dessus du sol fini suivant ou à la toiture
+
+    - LongName avec désignation d''unité ou d''usage selon le programme ; séparation facultative par logements, unités ou espaces communs
+
+    - GrossFloorArea, GrossVolume et Height par volume brut'
+  it: 'Modellare i volumi lordi per piano ed estrarre le quantità per lo studio di massa urbanistica.
+
+
+    **Situazione di partenza**
+
+    - Studi di massa e conformità urbanistica richiedono superfici e volumi lordi per piano.
+
+    - Elenchi manuali di superfici e volumi da modelli volumetrici sono error-prone e rallentano il confronto delle varianti.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire i volumi lordi in fase precoce, piano per piano.
+
+    - Derivare direttamente superficie, volume e altezza per unità o quota di programma.
+
+
+    **Svolgimento**
+
+    1. Fornire volumi lordi per piano secondo la direttiva di modellazione.
+
+    2. Separare facoltativamente per alloggi, unità o spazi comuni e denominare LongName secondo il programma.
+
+    3. Valutare superfici, volumi e altezze per piano e confrontare le varianti.
+
+
+    **Risultato**
+
+    - Quantità lorde tracciabili per piano e quota di programma come base per lo studio di massa.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Volumi lordi per piano modellati come IfcSpace
+
+    - Sotterraneo: dal bordo inferiore della soletta di fondazione al bordo superiore del pavimento finito; piani superiori: dal bordo superiore del pavimento finito al bordo superiore del pavimento finito
+    successivo o alla copertura
+
+    - LongName con denominazione di unità o uso secondo il programma; separazione facoltativa per alloggi, unità o spazi comuni
+
+    - GrossFloorArea, GrossVolume e Height per ogni volume lordo'
+  en: 'Model gross volumes per storey and extract quantities for the urban design mass study.
+
+
+    **Starting point**
+
+    - Mass studies and zoning compliance require gross areas and volumes per storey.
+
+    - Manual area and volume tables from volume models are error-prone and slow option comparison.
+
+
+    **Goal & benefit**
+
+    - Maintain gross volumes early in the model, storey by storey.
+
+    - Derive area, volume, and height per unit or programme share directly from the model.
+
+
+    **Process**
+
+    1. Provide gross volumes per storey according to the modelling guideline.
+
+    2. Optionally separate by flats, units, or public space and set LongName according to the brief.
+
+    3. Evaluate areas, volumes, and heights per storey and compare options.
+
+
+    **Outcome**
+
+    - Traceable gross quantities per storey and programme share as the basis for the mass study.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Gross volumes per storey modelled as IfcSpace
+
+    - Basement from underside of base slab to top of finished floor; upper storeys from top of finished floor to top of next finished floor or roof
+
+    - LongName with unit or use designation according to the brief; optional separation by flats, units, or public space
+
+    - GrossFloorArea, GrossVolume, and Height per gross volume'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Early-phase mass study. Gross-volume spaces use storey-height modelling; replace with net interior spaces in later design workflows.

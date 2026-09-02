@@ -1,0 +1,40 @@
+id: pragmaticbim:value/predefinedtype-transformer
+code: TRANSFORMER
+name:
+  de: PredefinedType IfcTransformer
+  fr: PredefinedType IfcTransformer
+  it: PredefinedType IfcTransformer
+  en: PredefinedType IfcTransformer
+description:
+  de: Ifc PredefinedType für IfcTransformer.
+  fr: PredefinedType IFC pour IfcTransformer.
+  it: PredefinedType IFC per IfcTransformer.
+  en: IFC PredefinedType for IfcTransformer.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - VOLTAGE
+  - CURRENT
+  - FREQUENCY
+  - INVERTER
+  - RECTIFIER
+  fr:
+  - VOLTAGE
+  - CURRENT
+  - FREQUENCY
+  - INVERTER
+  - RECTIFIER
+  it:
+  - VOLTAGE
+  - CURRENT
+  - FREQUENCY
+  - INVERTER
+  - RECTIFIER
+  en:
+  - VOLTAGE
+  - CURRENT
+  - FREQUENCY
+  - INVERTER
+  - RECTIFIER

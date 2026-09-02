@@ -1,0 +1,48 @@
+id: pragmaticbim:value/predefinedtype-alarm
+code: ALARM
+name:
+  de: PredefinedType IfcAlarm
+  fr: PredefinedType IfcAlarm
+  it: PredefinedType IfcAlarm
+  en: PredefinedType IfcAlarm
+description:
+  de: Ifc PredefinedType für IfcAlarm.
+  fr: PredefinedType IFC pour IfcAlarm.
+  it: PredefinedType IFC per IfcAlarm.
+  en: IFC PredefinedType for IfcAlarm.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - BREAKGLASSBUTTON
+  - MANUALPULLBOX
+  - BELL
+  - SIREN
+  - LIGHT
+  - WHISTLE
+  - USERDEFINED
+  fr:
+  - BREAKGLASSBUTTON
+  - MANUALPULLBOX
+  - BELL
+  - SIREN
+  - LIGHT
+  - WHISTLE
+  - USERDEFINED
+  it:
+  - BREAKGLASSBUTTON
+  - MANUALPULLBOX
+  - BELL
+  - SIREN
+  - LIGHT
+  - WHISTLE
+  - USERDEFINED
+  en:
+  - BREAKGLASSBUTTON
+  - MANUALPULLBOX
+  - BELL
+  - SIREN
+  - LIGHT
+  - WHISTLE
+  - USERDEFINED

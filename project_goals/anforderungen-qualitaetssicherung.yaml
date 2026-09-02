@@ -1,0 +1,71 @@
+id: pragmaticbim:project-goal/anforderungen-qualitaetssicherung
+sort_order: 70
+code: PG-07
+name:
+  de: Anforderungen an die Qualitätssicherung
+  fr: Exigences d'assurance qualité
+  it: Requisiti di assicurazione qualità
+  en: Quality assurance requirements
+description:
+  de: Steuert allgemeine QS-Prozesse (Designreviews) und fachliche Nachweise (Brandschutz, Akustik, Vorsatzschalen).
+  fr: Contrôle les processus QA généraux (revues de conception) et les preuves spécialisées (incendie, acoustique, contre-cloisons), distincts du standard d'aménagement.
+  it: Controlla processi QA generali (design review) e prove specialistiche (antincendio, acustica, contropareti), distinti dallo standard di finitura.
+  en: Controls general QA processes (design reviews) and specialist verifications (fire, acoustic, facing shells), separate from fit-out standard.
+picture_link: null
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/qa-gering
+  code: QA-01
+  sort_order: 1
+  name:
+    de: gering
+    fr: faible
+    it: basso
+    en: low
+  description:
+    de: Gemeinsames georeferenziertes Bezugsmodell für Planung und Ausführung.
+    fr: Modèle de référence commun géoréférencé pour planification et réalisation.
+    it: Modello di riferimento comune georiferito per progettazione e costruzione.
+    en: Common georeferenced reference model for planning and construction.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  comment: Delta at level gering (sort_order 1); baseline model reference.
+- id: pragmaticbim:project-goal-level/qa-mittel
+  code: QA-02
+  sort_order: 2
+  name:
+    de: mittel
+    fr: moyen
+    it: medio
+    en: medium
+  description:
+    de: Designreview am Abschluss jeder Projektphase (Prozess, ohne zusätzliche Modellanforderungen).
+    fr: Revue de conception à la clôture de chaque phase (processus, sans exigences de modèle supplémentaires).
+    it: Design review a fine fase (processo, senza requisiti aggiuntivi sul modello).
+    en: End-of-phase design review (process, no additional model requirements).
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-design-review
+  comment: Delta at level mittel (sort_order 2); cumulative with gering.
+- id: pragmaticbim:project-goal-level/qa-hoch
+  code: QA-03
+  sort_order: 3
+  name:
+    de: hoch
+    fr: élevé
+    it: alto
+    en: high
+  description:
+    de: Zusätzlich fachliche QS-Nachweise Brandschutz, Akustik/Bauphysik, nutzbarer Raum in Vorsatzschalen und Detailverweisübersicht.
+    fr: En plus, preuves QA spécialisées incendie, acoustique/physique du bâtiment, espace utile des contre-cloisons et vue d'ensemble des renvois de détail.
+    it: In più, prove QA specialistiche antincendio, acustica/fisica edilizia, spazio utile nelle contropareti e panoramica dei riferimenti al dettaglio.
+    en: Additionally specialist QA verifications for fire protection, acoustic/building physics, usable space in facing shells, and detail reference overview.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/qas-facing-shell-area-verification
+  - pragmaticbim:workflow/qas-detail-reference-model
+  comment: Delta at level hoch (sort_order 3); cumulative with mittel and gering.

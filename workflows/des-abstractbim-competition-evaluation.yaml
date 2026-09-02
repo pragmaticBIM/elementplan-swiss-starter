@@ -1,0 +1,192 @@
+id: pragmaticbim:workflow/des-abstractbim-competition-evaluation
+code: DES-ABSTRACTBIM-COMP
+sort_order: 41
+name:
+  de: Wettbewerbsauswertung mit abstractBIM
+  fr: Évaluation de concours avec abstractBIM
+  it: Valutazione di concorsi con abstractBIM
+  en: Competition evaluation with abstractBIM
+description:
+  de: 'Wettbewerbsbeiträge vergleichbar auswerten — unabhängig von Modellierstil und Software der Verfasser.
+
+
+    **Ausgangslage**
+
+    - Wettbewerbsbeiträge kommen aus unterschiedlichen Tools und Modellierweisen; Mengen und Kennwerte sind kaum direkt vergleichbar.
+
+    - Manuelle Vereinheitlichung für die Jury ist aufwendig und fehleranfällig — oft fehlen belastbare Flächen- und Volumenvergleiche.
+
+
+    **Ziel & Nutzen**
+
+    - Alle Beiträge auf eine konsistente geometrische Basis bringen.
+
+    - Objektive Kennwerte und Mengen für Jury und Bauherrschaft bereitstellen.
+
+
+    **Ablauf**
+
+    1. Architekturmodell jedes Beitrags mit den Mindestanforderungen bereitstellen (gleiche geometrische Basis wie DES-ABSTRACTBIM-COST).
+
+    2. Bei abstractBIM.com hochladen — daraus entsteht ein vergleichbares Mengen- und Raummodell.
+
+    3. Modelle herunterladen und Kennwerte der Beiträge systematisch vergleichen.
+
+
+    **Ergebnis**
+
+    - Gebäudevolumen und Bruttogeschossfläche.
+
+    - Innen- und Aussenwände mit eindeutiger Zuordnung zu ein oder zwei Räumen.
+
+    - Decken, Dächer und Bodenplatten.
+
+    - Fenster, Türen und Bekleidungen mit Raumbezug und Richtung.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow und IfcDoor
+
+    - Raumname in LongName, optionale Raumnummer in Name
+
+    - abstractBIM-Mengen und Kennwerte als Grundlage für den Beitragsvergleich'
+  fr: 'Évaluer les projets de concours de manière comparable — indépendamment du style de modélisation et du logiciel des auteurs.
+
+
+    **Situation de départ**
+
+    - Les projets de concours proviennent d''outils et de pratiques de modélisation différents ; quantités et indicateurs sont difficilement comparables directement.
+
+    - L''harmonisation manuelle pour le jury est laborieuse et sujette aux erreurs — des comparaisons fiables de surfaces et de volumes manquent souvent.
+
+
+    **Objectif et bénéfice**
+
+    - Placer tous les projets sur une base géométrique cohérente.
+
+    - Fournir des indicateurs et quantités objectifs pour le jury et le maître d''ouvrage.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette architecture de chaque projet répondant aux exigences minimales (même base géométrique que DES-ABSTRACTBIM-COST).
+
+    2. Téléverser sur abstractBIM.com — un modèle de quantités et d''espaces comparable en résulte.
+
+    3. Télécharger les modèles et comparer systématiquement les indicateurs des projets.
+
+
+    **Résultat**
+
+    - Volume du bâtiment et surface brute de plancher.
+
+    - Murs intérieurs et extérieurs avec rattachement clair à un ou deux locaux.
+
+    - Dalles, toitures et dalles de fondation.
+
+    - Fenêtres, portes et revêtements avec rattachement au local et orientation.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow et IfcDoor
+
+    - Nom du local dans LongName, numéro de local facultatif dans Name
+
+    - Quantités et indicateurs abstractBIM comme base de comparaison des projets'
+  it: 'Valutare i contributi di concorso in modo confrontabile — indipendentemente dallo stile di modellazione e dal software degli autori.
+
+
+    **Situazione di partenza**
+
+    - I contributi di concorso provengono da strumenti e pratiche di modellazione diversi; quantità e indicatori sono difficilmente confrontabili direttamente.
+
+    - L''armonizzazione manuale per la giuria è onerosa e soggetta a errori — spesso mancano confronti affidabili di superfici e volumi.
+
+
+    **Obiettivo e beneficio**
+
+    - Portare tutti i contributi su una base geometrica coerente.
+
+    - Fornire indicatori e quantità oggettivi per giuria e committenza.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello architettonico di ogni contributo che soddisfi i requisiti minimi (stessa base geometrica di DES-ABSTRACTBIM-COST).
+
+    2. Caricare su abstractBIM.com — ne deriva un modello di quantità e spazi confrontabile.
+
+    3. Scaricare i modelli e confrontare sistematicamente gli indicatori dei contributi.
+
+
+    **Risultato**
+
+    - Volume dell''edificio e superficie lorda di pavimento.
+
+    - Pareti interne ed esterne con chiara assegnazione a uno o due locali.
+
+    - Solette, coperture e platee di fondazione.
+
+    - Finestre, porte e rivestimenti con collegamento al locale e orientamento.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow e IfcDoor
+
+    - Nome del locale in LongName, numero locale facoltativo in Name
+
+    - Quantità e indicatori abstractBIM come base per il confronto dei contributi'
+  en: 'Evaluate competition entries on a comparable basis — independent of each author''s modelling style and software.
+
+
+    **Starting point**
+
+    - Competition entries come from different tools and modelling practices; quantities and metrics are rarely directly comparable.
+
+    - Manual harmonisation for the jury is labor-intensive and error-prone — reliable area and volume comparisons are often missing.
+
+
+    **Goal & benefit**
+
+    - Bring all entries onto a consistent geometric basis.
+
+    - Provide objective metrics and quantities for jury and client.
+
+
+    **Process**
+
+    1. Provide each entry''s architecture model meeting the minimum requirements (same geometric basis as DES-ABSTRACTBIM-COST).
+
+    2. Upload to abstractBIM.com to build a comparable quantity and space model.
+
+    3. Download the models and systematically compare entry metrics.
+
+
+    **Outcome**
+
+    - Building volume and gross floor area.
+
+    - Interior and exterior walls with a clear relation to one or two spaces.
+
+    - Slabs, roofs, and base slabs.
+
+    - Windows, doors, and coverings with space relation and direction.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow, and IfcDoor
+
+    - Room name in LongName, optional room number in Name
+
+    - abstractBIM quantities and metrics as the basis for entry comparison'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: abstractBIM workflow. Same geometric minimum as DES-ABSTRACTBIM-COST. Normalises heterogeneous competition IFCs for comparable metrics.

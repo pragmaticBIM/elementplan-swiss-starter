@@ -7,15 +7,17 @@ name:
   it: Consegna
   en: Handover
 description:
-  de: 'Fertigstellung, Abnahme und Übergabe des Bauwerks und der Dokumentation an Eigentümer oder Betreiber. Beispiele: Inbetriebnahme, Betriebs- und Wartungsunterlagen, Gewährleistungsübergabe, Betriebsübernahme.'
-  fr: 'Achèvement, réception et transfert de l''ouvrage et de la documentation au maître d''ouvrage ou exploitant. Exemples: mise en service, manuels d''exploitation, réception avec garanties, reprise par l''exploitant.'
-  it: 'Completamento, collaudo e consegna dell''opera e della documentazione al committente o gestore. Esempi: messa in servizio, manuali O&M, consegna in garanzia, presa in carico dell''impianto.'
-  en: 'Completion, acceptance, and transfer of the asset and documentation to the owner or operator. Examples: commissioning, O&M manuals, warranty handover, facility takeover.'
+  de: 'Fertigstellung, Abnahme und Übergabe des Bauwerks und der Dokumentation an Eigentümer oder Betreiber. Beispiele: Inbetriebnahme, FM-Datenlieferung, Betriebs- und Wartungsunterlagen, Gewährleistungsübergabe,
+    Betriebsübernahme.'
+  fr: 'Achèvement, réception et transfert de l''ouvrage et de la documentation au maître d''ouvrage ou exploitant. Exemples: mise en service, livraison de données FM, manuels d''exploitation, réception
+    avec garanties, reprise par l''exploitant.'
+  it: 'Completamento, collaudo e consegna dell''opera e della documentazione al committente o gestore. Esempi: messa in servizio, consegna dati FM, manuali O&M, consegna in garanzia, presa in carico dell''impianto.'
+  en: 'Completion, acceptance, and transfer of the asset and documentation to the owner or operator. Examples: commissioning, FM data delivery, O&M manuals, warranty handover, facility takeover.'
 workflow_group: null
 parent_workflow: null
 picture_link: null
 status: active
 needed_in_domain:
-  - pragmaticbim:domain/architecture
-  - pragmaticbim:domain/mep
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
 comment: 'Abstract use case classification: https://schema.pragmaticbim.ch/classification/usecase.html'

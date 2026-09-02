@@ -1,0 +1,36 @@
+id: pragmaticbim:value/predefinedtype-electric-distribution-board
+code: ELECTRIC_DISTRIBUTIO
+name:
+  de: PredefinedType IfcElectricDistributionBoard
+  fr: PredefinedType IfcElectricDistributionBoard
+  it: PredefinedType IfcElectricDistributionBoard
+  en: PredefinedType IfcElectricDistributionBoard
+description:
+  de: Ifc PredefinedType für IfcElectricDistributionBoard.
+  fr: PredefinedType IFC pour IfcElectricDistributionBoard.
+  it: PredefinedType IFC per IfcElectricDistributionBoard.
+  en: IFC PredefinedType for IfcElectricDistributionBoard.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - SWITCHBOARD
+  - DISTRIBUTIONBOARD
+  - CONSUMERUNIT
+  - MOTORCONTROLCENTRE
+  fr:
+  - SWITCHBOARD
+  - DISTRIBUTIONBOARD
+  - CONSUMERUNIT
+  - MOTORCONTROLCENTRE
+  it:
+  - SWITCHBOARD
+  - DISTRIBUTIONBOARD
+  - CONSUMERUNIT
+  - MOTORCONTROLCENTRE
+  en:
+  - SWITCHBOARD
+  - DISTRIBUTIONBOARD
+  - CONSUMERUNIT
+  - MOTORCONTROLCENTRE

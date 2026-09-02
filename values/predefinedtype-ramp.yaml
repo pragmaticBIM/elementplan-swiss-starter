@@ -1,0 +1,44 @@
+id: pragmaticbim:value/predefinedtype-ramp
+code: RAMP-TYPE
+name:
+  de: Rampentyp
+  fr: Type de rampe
+  it: Tipo di rampa
+  en: Ramp type
+description:
+  de: PredefinedType für IfcRamp im Tragwerksmodell.
+  fr: PredefinedType pour IfcRamp dans le modèle structurel.
+  it: PredefinedType per IfcRamp nel modello strutturale.
+  en: PredefinedType for IfcRamp in the structural model.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - STRAIGHT_RUN_RAMP
+  - TWO_STRAIGHT_RUN_RAMP
+  - QUARTER_TURN_RAMP
+  - TWO_QUARTER_TURN_RAMP
+  - HALF_TURN_RAMP
+  - SPIRAL_RAMP
+  fr:
+  - STRAIGHT_RUN_RAMP
+  - TWO_STRAIGHT_RUN_RAMP
+  - QUARTER_TURN_RAMP
+  - TWO_QUARTER_TURN_RAMP
+  - HALF_TURN_RAMP
+  - SPIRAL_RAMP
+  it:
+  - STRAIGHT_RUN_RAMP
+  - TWO_STRAIGHT_RUN_RAMP
+  - QUARTER_TURN_RAMP
+  - TWO_QUARTER_TURN_RAMP
+  - HALF_TURN_RAMP
+  - SPIRAL_RAMP
+  en:
+  - STRAIGHT_RUN_RAMP
+  - TWO_STRAIGHT_RUN_RAMP
+  - QUARTER_TURN_RAMP
+  - TWO_QUARTER_TURN_RAMP
+  - HALF_TURN_RAMP
+  - SPIRAL_RAMP

@@ -15,18 +15,18 @@ norm_reference: IFC4
 status: active
 values:
   de:
-    - DOOR
-    - GATE
-    - TRAPDOOR
+  - DOOR
+  - GATE
+  - TRAPDOOR
   fr:
-    - DOOR
-    - GATE
-    - TRAPDOOR
+  - DOOR
+  - GATE
+  - TRAPDOOR
   it:
-    - DOOR
-    - GATE
-    - TRAPDOOR
+  - DOOR
+  - GATE
+  - TRAPDOOR
   en:
-    - DOOR
-    - GATE
-    - TRAPDOOR
+  - DOOR
+  - GATE
+  - TRAPDOOR

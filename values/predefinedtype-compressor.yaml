@@ -1,0 +1,60 @@
+id: pragmaticbim:value/predefinedtype-compressor
+code: COMPRESSOR
+name:
+  de: PredefinedType IfcCompressor
+  fr: PredefinedType IfcCompressor
+  it: PredefinedType IfcCompressor
+  en: PredefinedType IfcCompressor
+description:
+  de: Ifc PredefinedType für IfcCompressor.
+  fr: PredefinedType IFC pour IfcCompressor.
+  it: PredefinedType IFC per IfcCompressor.
+  en: IFC PredefinedType for IfcCompressor.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - DYNAMIC
+  - RECIPROCATING
+  - ROTARY
+  - SCROLL
+  - TROCHOIDAL
+  - SINGLESTAGE
+  - BOOSTER
+  - OPENTYPE
+  - HERMETIC
+  - SEMIHERMETIC
+  fr:
+  - DYNAMIC
+  - RECIPROCATING
+  - ROTARY
+  - SCROLL
+  - TROCHOIDAL
+  - SINGLESTAGE
+  - BOOSTER
+  - OPENTYPE
+  - HERMETIC
+  - SEMIHERMETIC
+  it:
+  - DYNAMIC
+  - RECIPROCATING
+  - ROTARY
+  - SCROLL
+  - TROCHOIDAL
+  - SINGLESTAGE
+  - BOOSTER
+  - OPENTYPE
+  - HERMETIC
+  - SEMIHERMETIC
+  en:
+  - DYNAMIC
+  - RECIPROCATING
+  - ROTARY
+  - SCROLL
+  - TROCHOIDAL
+  - SINGLESTAGE
+  - BOOSTER
+  - OPENTYPE
+  - HERMETIC
+  - SEMIHERMETIC

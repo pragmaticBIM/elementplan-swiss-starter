@@ -1,0 +1,44 @@
+id: pragmaticbim:value/predefinedtype-damper
+code: DAMPER
+name:
+  de: PredefinedType IfcDamper
+  fr: PredefinedType IfcDamper
+  it: PredefinedType IfcDamper
+  en: PredefinedType IfcDamper
+description:
+  de: Ifc PredefinedType für IfcDamper.
+  fr: PredefinedType IFC pour IfcDamper.
+  it: PredefinedType IFC per IfcDamper.
+  en: IFC PredefinedType for IfcDamper.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - FIREDAMPER
+  - SMOKEDAMPER
+  - FIRESMOKEDAMPER
+  - CONTROLDAMPER
+  - BALANCINGDAMPER
+  - BACKDRAFTDAMPER
+  fr:
+  - FIREDAMPER
+  - SMOKEDAMPER
+  - FIRESMOKEDAMPER
+  - CONTROLDAMPER
+  - BALANCINGDAMPER
+  - BACKDRAFTDAMPER
+  it:
+  - FIREDAMPER
+  - SMOKEDAMPER
+  - FIRESMOKEDAMPER
+  - CONTROLDAMPER
+  - BALANCINGDAMPER
+  - BACKDRAFTDAMPER
+  en:
+  - FIREDAMPER
+  - SMOKEDAMPER
+  - FIRESMOKEDAMPER
+  - CONTROLDAMPER
+  - BALANCINGDAMPER
+  - BACKDRAFTDAMPER

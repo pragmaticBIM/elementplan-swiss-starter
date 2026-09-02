@@ -8,138 +8,571 @@ name:
   it: Finestre
   en: Windows
 definition:
-  de: |
-    Alle Innen- und Aussenfenster sowie Oberlichter (IfcWindow).
+  de: 'Licht- und Luftöffnungen in der Gebäudehülle und zwischen Räumen.
 
-    **Modellierung**
+
+    **Beschreibung**
+
+    - Innen- und Aussenfenster sowie Oberlichter.
+
+    - Jedes Fenster ist einem Raum zugeordnet.
+
+
+    **Modellierungsrichtlinie**
+
     - Glasanteil mit transparentem Material exportieren.
+
     - Jedes Fenster einem Raum zuordnen.
-    - abstractBIM vereinfacht Öffnungen für Mengen und Simulation.
-  fr: |
-    Toutes les fenêtres intérieures et extérieures ainsi que les lanterneaux (IfcWindow).
 
-    **Modélisation**
+    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Ouvertures de jour et de ventilation dans l''enveloppe et entre locaux.
+
+
+    **Description**
+
+    - Fenêtres intérieures et extérieures ainsi que lanterneaux.
+
+    - Chaque fenêtre est rattachée à un local.
+
+
+    **Directives de modélisation**
+
     - Exporter le vitrage avec un matériau transparent.
+
     - Relier chaque fenêtre à un local.
-    - abstractBIM simplifie les ouvertures pour quantités et simulation.
-  it: |
-    Tutte le finestre interne ed esterne e i lucernari (IfcWindow).
 
-    **Modellazione**
+    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
+  it: 'Aperture di luce e ventilazione nell''involucro e tra i locali.
+
+
+    **Descrizione**
+
+    - Finestre interne ed esterne e lucernari.
+
+    - Ogni finestra è collegata a un locale.
+
+
+    **Direttive di modellazione**
+
     - Esportare la parte vetrata con materiale trasparente.
-    - Collegare ogni finestra a un locale.
-    - abstractBIM semplifica le aperture per quantità e simulazione.
-  en: |
-    All interior and exterior windows and skylights (IfcWindow).
 
-    **Modelling**
+    - Collegare ogni finestra a un locale.
+
+    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
+  en: 'Daylight and ventilation openings in the building envelope and between rooms.
+
+
+    **Description**
+
+    - Interior and exterior windows and skylights.
+
+    - Each window is assigned to a space.
+
+
+    **Modelling guidelines**
+
     - Export glazing with a transparent material.
+
     - Relate each window to a space.
-    - abstractBIM simplifies openings for quantities and simulation.
+
+    - Use an IfcMaterial that corresponds to the actual material class.'
 needed_in_domain:
-  - pragmaticbim:domain/architecture
+- pragmaticbim:domain/architecture
 entity_ifc2x3: IfcWindow
 entity_ifc4: IfcWindow
 entity_ifc4_3: IfcWindow
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcWindow
+applicability: entity_ifc4=IfcWindow OR entity_ifc2x3=IfcWindow
 attributes:
-  - name: PredefinedType
-    pset: null
-    definition:
-      de: 'Art des Fensters: WINDOW, SKYLIGHT oder LIGHTDOME.'
-      fr: 'Type de fenêtre: WINDOW, SKYLIGHT ou LIGHTDOME.'
-      it: 'Tipo di finestra: WINDOW, SKYLIGHT o LIGHTDOME.'
-      en: 'Window kind: WINDOW, SKYLIGHT, or LIGHTDOME.'
-    datatype: IfcLabel
-    allowed_values: pragmaticbim:value/predefinedtype-window
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 1
-  - name: Reference
-    pset: Pset_WindowCommon
-    definition:
-      de: Referenzbezeichnung des Fensters für die Koordination.
-      fr: Référence de la fenêtre pour la coordination.
-      it: Riferimento della finestra per il coordinamento.
-      en: Window reference used for coordination.
-    datatype: IfcIdentifier
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 2
-  - name: IsExternal
-    pset: Pset_WindowCommon
-    definition:
-      de: TRUE für Aussenfenster, FALSE für Innenfenster.
-      fr: TRUE pour une fenêtre extérieure, FALSE pour une fenêtre intérieure.
-      it: TRUE per finestra esterna, FALSE per finestra interna.
-      en: TRUE for an exterior window, FALSE for an interior window.
-    datatype: IfcBoolean
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 3
-  - name: Status
-    pset: Pset_WindowCommon
-    definition:
-      de: 'Bauteilstatus: NEW, EXISTING, DEMOLISH oder TEMPORARY.'
-      fr: 'Statut: NEW, EXISTING, DEMOLISH ou TEMPORARY.'
-      it: 'Stato: NEW, EXISTING, DEMOLISH o TEMPORARY.'
-      en: 'Element status: NEW, EXISTING, DEMOLISH, or TEMPORARY.'
-    datatype: IfcLabel
-    allowed_values: pragmaticbim:value/element-status
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 4
-  - name: ThermalTransmittance
-    pset: Pset_WindowCommon
-    definition:
-      de: U-Wert des Fensters für die Gebäudesimulation.
-      fr: Valeur U de la fenêtre pour la simulation.
-      it: Valore U della finestra per la simulazione.
-      en: Window U-value for building performance simulation.
-    datatype: IfcReal
-    unit: W/m²K
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-building-performance-simulation
-    is_applicability: false
-    status: active
-    sort_order: 5
-  - name: Area
-    pset: Qto_WindowBaseQuantities
-    definition:
-      de: Fläche der Fensteröffnung.
-      fr: Surface de l'ouverture de fenêtre.
-      it: Superficie dell'apertura della finestra.
-      en: Area of the window opening.
-    datatype: IfcAreaMeasure
-    unit: m²
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-    is_applicability: false
-    status: active
-    sort_order: 6
+- name: GlobalId
+  pset: null
+  definition:
+    de: Eindeutige IFC-GUID des Fensterelements.
+    fr: GUID IFC unique de la fenêtre.
+    it: GUID IFC univoco della finestra.
+    en: Unique IFC GUID of the window element.
+  datatype: IfcGloballyUniqueId
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  is_applicability: false
+  status: active
+  sort_order: 0
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art des Fensters.
+
+
+      **Zulässige Werte**
+
+      - `WINDOW` — Fenster
+
+      - `SKYLIGHT` — Oberlicht
+
+      - `LIGHTDOME` — Lichtkuppel'
+    fr: 'Type de fenêtre.
+
+
+      **Valeurs admises**
+
+      - `WINDOW` — fenêtre
+
+      - `SKYLIGHT` — lanterneau
+
+      - `LIGHTDOME` — coupole vitrée'
+    it: 'Tipo di finestra.
+
+
+      **Valori ammessi**
+
+      - `WINDOW` — finestra
+
+      - `SKYLIGHT` — lucernario
+
+      - `LIGHTDOME` — cupola luminosa'
+    en: 'Kind of window.
+
+
+      **Allowed values**
+
+      - `WINDOW` — window
+
+      - `SKYLIGHT` — skylight
+
+      - `LIGHTDOME` — light dome'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-window
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Fensters.
+
+
+      **Zulässige Werte**
+
+      - `WINDOW` — Fenster
+
+      - `SKYLIGHT` — Oberlicht
+
+      - `LIGHTDOME` — Lichtkuppel
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Type de fenêtre.
+
+
+      **Valeurs admises**
+
+      - `WINDOW` — fenêtre
+
+      - `SKYLIGHT` — lanterneau
+
+      - `LIGHTDOME` — coupole vitrée
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Tipo di finestra.
+
+
+      **Valori ammessi**
+
+      - `WINDOW` — finestra
+
+      - `SKYLIGHT` — lucernario
+
+      - `LIGHTDOME` — cupola luminosa
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Kind of window.
+
+
+      **Allowed values**
+
+      - `WINDOW` — window
+
+      - `SKYLIGHT` — skylight
+
+      - `LIGHTDOME` — light dome
+
+
+      **Note**
+
+      - IFC2x3 substitute for PredefinedType.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-window
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: Status
+  pset: Pset_WindowCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: FireRating
+  pset: Pset_WindowCommon
+  definition:
+    de: 'Feuerwiderstandsklasse des Fensters gemäss Brandschutzkonzept.
+
+
+      **Zulässige Werte**
+
+      - `R 30` — Tragfähigkeit 30 min
+
+      - `R 60` — Tragfähigkeit 60 min
+
+      - `R 90` — Tragfähigkeit 90 min
+
+      - `EI 30` — Raumabschluss 30 min
+
+      - `EI 60` — Raumabschluss 60 min
+
+      - `EI 90` — Raumabschluss 90 min
+
+      - `REI 30` — Tragfähigkeit und Raumabschluss 30 min
+
+      - `REI 60` — Tragfähigkeit und Raumabschluss 60 min
+
+      - `REI 90` — Tragfähigkeit und Raumabschluss 90 min'
+    fr: 'Classe de résistance au feu de la fenêtre selon le concept de protection incendie.
+
+
+      **Valeurs admises**
+
+      - `R 30` — portance 30 min
+
+      - `R 60` — portance 60 min
+
+      - `R 90` — portance 90 min
+
+      - `EI 30` — étanchéité au feu 30 min
+
+      - `EI 60` — étanchéité au feu 60 min
+
+      - `EI 90` — étanchéité au feu 90 min
+
+      - `REI 30` — portance et étanchéité 30 min
+
+      - `REI 60` — portance et étanchéité 60 min
+
+      - `REI 90` — portance et étanchéité 90 min'
+    it: 'Classe di resistenza al fuoco della finestra secondo il concetto antincendio.
+
+
+      **Valori ammessi**
+
+      - `R 30` — capacità portante 30 min
+
+      - `R 60` — capacità portante 60 min
+
+      - `R 90` — capacità portante 90 min
+
+      - `EI 30` — compartimentazione 30 min
+
+      - `EI 60` — compartimentazione 60 min
+
+      - `EI 90` — compartimentazione 90 min
+
+      - `REI 30` — portanza e compartimentazione 30 min
+
+      - `REI 60` — portanza e compartimentazione 60 min
+
+      - `REI 90` — portanza e compartimentazione 90 min'
+    en: 'Fire resistance class of the window according to the fire protection concept.
+
+
+      **Allowed values**
+
+      - `R 30` — load-bearing 30 min
+
+      - `R 60` — load-bearing 60 min
+
+      - `R 90` — load-bearing 90 min
+
+      - `EI 30` — integrity and insulation 30 min
+
+      - `EI 60` — integrity and insulation 60 min
+
+      - `EI 90` — integrity and insulation 90 min
+
+      - `REI 30` — load-bearing, integrity and insulation 30 min
+
+      - `REI 60` — load-bearing, integrity and insulation 60 min
+
+      - `REI 90` — load-bearing, integrity and insulation 90 min'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/fire-rating
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: AcousticRating
+  pset: Pset_WindowCommon
+  definition:
+    de: Bewertetes Schalldämm-Maß Rw [dB] als Labor-/Katalogwert — nicht R'w.
+    fr: Indice d'affaiblissement acoustique pondéré Rw [dB] comme valeur de laboratoire/catalogue — pas R'w.
+    it: Potere fonoisolante ponderato Rw [dB] come valore di laboratorio/catalogo — non R'w.
+    en: Weighted sound reduction index Rw [dB] as laboratory/catalogue value — not R'w.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  is_applicability: false
+  status: active
+  sort_order: 6

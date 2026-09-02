@@ -1,0 +1,469 @@
+id: pragmaticbim:element/architecture-roof-drainage
+code: ARC-ROOF-DRAIN
+sort_order: 46
+status: active
+name:
+  de: Gefälledämmung
+  fr: Isolation à pente
+  it: Isolamento a pendenza
+  en: Tapered insulation
+definition:
+  de: 'Gefälledämmung auf Flachdach und Balkon als modellierte Schicht mit Gefälle.
+
+
+    **Beschreibung**
+
+    - Dämmschicht im Dach- oder Balkonaufbau, die das Gefälle zur Entwässerung bildet.
+
+    - Dient der Koordination von Gefälle, Ablaufpositionen und Anschluss an Fallleitungen.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als eigene Schicht auf Flachdach und Balkon modellieren; Gefälle erfassen.
+
+    - Entwässerungspunkte aus dem Gefälleverlauf ableiten; Balkon nicht vergessen.
+
+    - Keine Ausführungsdetails wie Gullytypen oder Einzeldämmplatten modellieren.'
+  fr: 'Isolation à pente sur toiture plate et balcon comme couche modélisée avec pente.
+
+
+    **Description**
+
+    - Couche isolante dans le complexe de toiture ou de balcon qui forme la pente d''évacuation.
+
+    - Sert à coordonner pente, positions de collecte et raccord aux descentes.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme couche distincte sur toiture plate et balcon ; saisir la pente.
+
+    - Déduire les points d''évacuation du tracé de pente ; ne pas oublier le balcon.
+
+    - Ne pas modéliser les détails d''exécution comme types de siphons ou panneaux isolants individuels.'
+  it: 'Isolamento a pendenza su tetto piano e balcone come strato modellato con pendenza.
+
+
+    **Descrizione**
+
+    - Strato isolante nella stratigrafia di copertura o balcone che forma la pendenza di drenaggio.
+
+    - Serve a coordinare pendenza, posizioni di scarico e collegamento ai pluviali.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come strato autonomo su tetto piano e balcone; registrare la pendenza.
+
+    - Derivare i punti di scarico dal tracciato di pendenza; non dimenticare il balcone.
+
+    - Non modellare dettagli esecutivi come tipi di scarico o pannelli isolanti singoli.'
+  en: 'Tapered insulation on flat roof and balcony as a modelled layer with falls.
+
+
+    **Description**
+
+    - Insulation layer in the roof or balcony build-up that forms the fall for drainage.
+
+    - Used to coordinate falls, outlet positions, and connection to downpipes.
+
+
+    **Modelling guidelines**
+
+    - Model as a separate layer on flat roof and balcony; capture falls.
+
+    - Derive drainage points from the fall layout; do not forget the balcony.
+
+    - Do not model execution details such as gully types or individual insulation boards.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcCovering
+entity_ifc4: IfcCovering
+entity_ifc4_3: IfcCovering
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcCovering AND PredefinedType=ROOFING AND IsExternal=TRUE
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet die Gefälledämmung.
+
+
+      **Zulässige Werte**
+
+      - `ROOFING` — Gefälledämmung auf Flachdach und Balkon'
+    fr: 'Identifie l''isolation à pente.
+
+
+      **Valeurs admises**
+
+      - `ROOFING` — isolation à pente sur toiture plate et balcon'
+    it: 'Identifica l''isolamento a pendenza.
+
+
+      **Valori ammessi**
+
+      - `ROOFING` — isolamento a pendenza su tetto piano e balcone'
+    en: 'Marks the tapered insulation.
+
+
+      **Allowed values**
+
+      - `ROOFING` — tapered insulation on flat roof and balcony'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-roofing
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Kennzeichnet die Gefälledämmung.
+
+
+      **Zulässige Werte**
+
+      - `ROOFING` — Gefälledämmung auf Flachdach und Balkon
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Identifie l''isolation à pente.
+
+
+      **Valeurs admises**
+
+      - `ROOFING` — isolation à pente sur toiture plate et balcon
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Identifica l''isolamento a pendenza.
+
+
+      **Valori ammessi**
+
+      - `ROOFING` — isolamento a pendenza su tetto piano e balcone
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Marks the tapered insulation.
+
+
+      **Allowed values**
+
+      - `ROOFING` — tapered insulation on flat roof and balcony
+
+
+      **Note**
+
+      - IFC2x3 substitute for PredefinedType.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-roofing
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: IsExternal
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Kennzeichnet eine aussenliegende Gefälledämmung.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — Gefälledämmung auf Flachdach oder Balkon'
+    fr: 'Identifie une isolation à pente extérieure.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — isolation à pente sur toiture plate ou balcon'
+    it: 'Identifica un isolamento a pendenza esterno.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — isolamento a pendenza su tetto piano o balcone'
+    en: 'Marks exterior tapered insulation.
+
+
+      **Allowed values**
+
+      - `TRUE` — tapered insulation on flat roof or balcony'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-true
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_CoveringCommon
+  definition:
+    de: Bezeichnung der Gefälledämmungszone gemäss Koordinationsplan (z. B. Flachdach Nord, Balkon 2. OG).
+    fr: Désignation de la zone d'isolation à pente selon le plan de coordination (p. ex. toiture plate nord, balcon 2e étage).
+    it: Denominazione della zona di isolamento a pendenza secondo il piano di coordinamento (es. tetto piano nord, balcone 2° piano).
+    en: Tapered insulation zone designation according to the coordination plan (e.g. flat roof north, balcony 2nd floor).
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: Status
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: NetArea
+  pset: Qto_CoveringBaseQuantities
+  definition:
+    de: Nettofläche der modellierten Gefälledämmung.
+    fr: Surface nette de l'isolation à pente modélisée.
+    it: Superficie netta dell'isolamento a pendenza modellato.
+    en: Net area of the modelled tapered insulation.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-basic-piping-planning
+  is_applicability: false
+  status: active
+  sort_order: 7

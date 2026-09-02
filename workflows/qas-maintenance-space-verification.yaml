@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/qas-maintenance-space-verification
+code: QAS-MAINT-SPACE
+sort_order: 81
+name:
+  de: Nachweis von Wartungsräumen
+  fr: Preuve des locaux de maintenance
+  it: Prova dei locali di manutenzione
+  en: Verification of maintenance spaces
+description:
+  de: 'Freizuhaltende Wartungsräume im Modell führen und kollisionsfrei nachweisen — bevor Anlagen nicht mehr wartbar sind.
+
+
+    **Ausgangslage**
+
+    - Ohne freigehaltene Wartungsräume fehlen Zugänge und Arbeitsflächen für Betrieb und Unterhalt.
+
+    - Späte Konflikte mit Bauwerk oder TGA machen Wartung teuer oder unmöglich.
+
+
+    **Ziel & Nutzen**
+
+    - Freizuhaltende Wartungsräume als Proxy-Volumen im Modell führen.
+
+    - Im Gesamtmodell gegen Bauwerk und TGA auf Kollisionen prüfen und den Nachweis dokumentieren.
+
+
+    **Ablauf**
+
+    1. Freizuhaltende Wartungsräume als Proxy-Volumen modellieren.
+
+    2. Wartungsräume im Gesamtmodell gegen Bauwerk und Gebäudetechnik auf Kollisionen prüfen.
+
+    3. Kollisionsnachweis dokumentieren und freigegebene Volumen verbindlich halten.
+
+
+    **Ergebnis**
+
+    - Nachgewiesene, kollisionsfreie Wartungsräume als Planungsgrundlage für Betrieb und Koordination.
+
+
+    **Lieferobjekte**
+
+    - Freizuhaltende Wartungsräume als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Wartungsraum
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Name je Element'
+  fr: 'Porter les locaux de maintenance à maintenir libres dans le modèle et prouver l''absence de collisions — avant que les installations ne deviennent non maintenables.
+
+
+    **Situation de départ**
+
+    - Sans locaux de maintenance réservés, accès et surfaces de travail pour exploitation et entretien manquent.
+
+    - Des conflits tardifs avec le bâtiment ou les techniques rendent la maintenance coûteuse ou impossible.
+
+
+    **Objectif et bénéfice**
+
+    - Porter les locaux de maintenance à maintenir libres comme volumes proxy dans le modèle.
+
+    - Vérifier les collisions en maquette fédérée contre bâtiment et techniques et documenter la preuve.
+
+
+    **Déroulement**
+
+    1. Modéliser les locaux de maintenance à maintenir libres comme volumes proxy.
+
+    2. Vérifier les collisions des locaux de maintenance en maquette fédérée contre bâtiment et techniques du bâtiment.
+
+    3. Documenter la preuve de collision et tenir les volumes approuvés comme contraignants.
+
+
+    **Résultat**
+
+    - Locaux de maintenance prouvés sans collision comme base de planification pour exploitation et coordination.
+
+
+    **Livrables**
+
+    - Locaux de maintenance à maintenir libres comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Wartungsraum
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Name par élément'
+  it: 'Gestire nel modello i locali di manutenzione da mantenere liberi e dimostrare l''assenza di collisioni — prima che gli impianti non siano più manutenibili.
+
+
+    **Situazione di partenza**
+
+    - Senza locali di manutenzione riservati, mancano accessi e superfici di lavoro per esercizio e manutenzione.
+
+    - Conflitti tardivi con edificio o impianti rendono la manutenzione costosa o impossibile.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire i locali di manutenzione da mantenere liberi come volumi proxy nel modello.
+
+    - Verificare collisioni nel modello federato contro edificio e impianti e documentare la prova.
+
+
+    **Svolgimento**
+
+    1. Modellare i locali di manutenzione da mantenere liberi come volumi proxy.
+
+    2. Verificare collisioni dei locali di manutenzione nel modello federato contro edificio e impianti.
+
+    3. Documentare la prova di collisione e mantenere vincolanti i volumi approvati.
+
+
+    **Risultato**
+
+    - Locali di manutenzione dimostrati senza collisione come base di pianificazione per esercizio e coordinamento.
+
+
+    **Oggetti della fornitura**
+
+    - Locali di manutenzione da mantenere liberi come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Wartungsraum
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Name per elemento'
+  en: 'Maintain clear maintenance spaces in the model and prove them clash-free — before plant becomes unmaintainable.
+
+
+    **Starting point**
+
+    - Without reserved maintenance spaces, access and working areas for operation and upkeep are missing.
+
+    - Late conflicts with the building or MEP make maintenance costly or impossible.
+
+
+    **Goal & benefit**
+
+    - Maintain clear maintenance spaces as proxy volumes in the model.
+
+    - Check clashes against building and MEP in the federated model and document the verification.
+
+
+    **Process**
+
+    1. Model clear maintenance spaces as proxy volumes.
+
+    2. Check maintenance spaces for clashes against building and building services in the federated model.
+
+    3. Document the clash verification and keep approved volumes binding.
+
+
+    **Outcome**
+
+    - Verified clash-free maintenance spaces as the planning basis for operation and coordination.
+
+
+    **Deliverables**
+
+    - Clear maintenance spaces as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Wartungsraum
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Name per element'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: Clear maintenance spaces as IfcBuildingElementProxy ObjectType=Wartungsraum; clash checks against building/MEP in the federated model. Not an IfcSpace room object.

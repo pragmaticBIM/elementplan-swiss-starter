@@ -1,0 +1,32 @@
+id: pragmaticbim:value/predefinedtype-footing
+code: FOOTING-TYPE
+name:
+  de: Fundamenttyp
+  fr: Type de fondation
+  it: Tipo di fondazione
+  en: Footing type
+description:
+  de: PredefinedType für IfcFooting in der Tragwerksskizze.
+  fr: PredefinedType pour IfcFooting dans l'esquisse porteuse.
+  it: PredefinedType per IfcFooting nello schizzo strutturale.
+  en: PredefinedType for IfcFooting in the structural sketch.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - STRIP_FOOTING
+  - PAD_FOOTING
+  - PILE_CAP
+  fr:
+  - STRIP_FOOTING
+  - PAD_FOOTING
+  - PILE_CAP
+  it:
+  - STRIP_FOOTING
+  - PAD_FOOTING
+  - PILE_CAP
+  en:
+  - STRIP_FOOTING
+  - PAD_FOOTING
+  - PILE_CAP

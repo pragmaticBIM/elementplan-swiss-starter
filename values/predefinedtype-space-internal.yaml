@@ -15,10 +15,10 @@ norm_reference: IFC4
 status: active
 values:
   de:
-    - INTERNAL
+  - INTERNAL
   fr:
-    - INTERNAL
+  - INTERNAL
   it:
-    - INTERNAL
+  - INTERNAL
   en:
-    - INTERNAL
+  - INTERNAL

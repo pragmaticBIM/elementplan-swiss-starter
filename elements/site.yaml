@@ -3,59 +3,97 @@ code: SITE
 sort_order: 2
 status: active
 name:
-  de: Areal
+  de: Planungsperimeter
   fr: Site
   it: Sito
   en: Site
 definition:
-  de: |
-    Planungsperimeter als Grundstück bzw. Areal (IfcSite). Dem Projekt zugeordnet.
+  de: '**Beschreibung**
 
-    **Modellierung**
-    - Genau ein IfcSite als Planungsperimeter.
-    - Mehrere Parzellen können zu einem IfcSite zusammengefasst werden.
-  fr: |
-    Périmètre de planification comme terrain ou site (IfcSite). Rattaché au projet.
+    - Planungsperimeter des Projekts.
 
-    **Modélisation**
-    - Exactement un IfcSite comme périmètre de planification.
-    - Plusieurs parcelles peuvent être regroupées en un IfcSite.
-  it: |
-    Perimetro di pianificazione come terreno o sito (IfcSite). Collegato al progetto.
+    - Dem Projekt zugeordnet.
 
-    **Modellazione**
-    - Esattamente un IfcSite come perimetro di pianificazione.
-    - Più particelle possono essere riunite in un IfcSite.
-  en: |
-    Planning perimeter as the site (IfcSite). Assigned to the project.
 
-    **Modelling**
-    - Exactly one IfcSite as the planning perimeter.
-    - Several parcels may be combined into one IfcSite.
+    **Modellierungsrichtlinie**
+
+    - Genau ein Planungsperimeter.
+
+    - Mehrere baurechtliche Parzellen können in einem Planungsperimeter abgebildet sein.'
+  fr: '**Description**
+
+    - Périmètre de planification du projet.
+
+    - Rattaché au projet.
+
+
+    **Directives de modélisation**
+
+    - Exactement un périmètre de planification.
+
+    - Plusieurs parcelles au sens du droit de la construction peuvent être représentées dans un périmètre de planification.'
+  it: '**Descrizione**
+
+    - Perimetro di pianificazione del progetto.
+
+    - Collegato al progetto.
+
+
+    **Direttive di modellazione**
+
+    - Esattamente un perimetro di pianificazione.
+
+    - Più particelle edilizie possono essere rappresentate in un perimetro di pianificazione.'
+  en: '**Description**
+
+    - Planning perimeter of the project.
+
+    - Assigned to the project.
+
+
+    **Modelling guidelines**
+
+    - Exactly one planning perimeter.
+
+    - Several building-law parcels may be represented in one planning perimeter.'
 needed_in_domain:
-  - pragmaticbim:domain/architecture
-  - pragmaticbim:domain/mep
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
 entity_ifc2x3: IfcSite
 entity_ifc4: IfcSite
 entity_ifc4_3: IfcSite
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcSite
+applicability: entity_ifc4=IfcSite OR entity_ifc2x3=IfcSite
 attributes:
-  - name: Name
-    pset: null
-    definition:
-      de: Bezeichnung des Areals bzw. Planungsperimeters.
-      fr: Désignation du site ou du périmètre de planification.
-      it: Denominazione del sito o del perimetro di pianificazione.
-      en: Designation of the site or planning perimeter.
-    datatype: IfcLabel
-    needed_in_phases: ['31', '32', '33']
-    ifc_versions: [ifc4, ifc4x3]
-    needed_for_workflows:
-      - pragmaticbim:workflow/des-element-based-cost
-      - pragmaticbim:workflow/des-building-performance-simulation
-      - pragmaticbim:workflow/qas-coordination
-    is_applicability: false
-    status: active
-    sort_order: 1
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Planungsperimeters.
+    fr: Désignation du périmètre de planification.
+    it: Denominazione del perimetro di pianificazione.
+    en: Designation of the planning perimeter.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  is_applicability: false
+  status: active
+  sort_order: 1

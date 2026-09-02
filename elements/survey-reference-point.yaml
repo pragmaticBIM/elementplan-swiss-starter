@@ -1,0 +1,246 @@
+id: pragmaticbim:element/survey-reference-point
+code: SURVEY-REF
+sort_order: 5
+status: active
+name:
+  de: Bezugspunkt
+  fr: Point de référence
+  it: Punto di riferimento
+  en: Survey reference point
+definition:
+  de: 'Vermessungspunkt — verbindlicher Lage- und Höhenbezug für Planung und Ausführung.
+
+
+    **Beschreibung**
+
+    - Festpunkt bzw. Passpunkt mit Lage und Höhe im Bezugsrahmen LV95.
+
+    - Mindestens drei Bezugspunkte bilden den gemeinsamen räumlichen Bezug aller Fachmodelle.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachten Punkt oder Marker modellieren; Position und Höhe gemäss Vermessung in LV95.
+
+    - Dem Planungsperimeter zuweisen; Bezeichnung und Nummer gemäss Geometerlieferung.'
+  fr: 'Point de levé — référence contraignante de position et d''altitude pour planification et réalisation.
+
+
+    **Description**
+
+    - Point fixe ou point de calage avec position et altitude dans le référentiel LV95.
+
+    - Au moins trois points de référence constituent le référentiel spatial commun de toutes les maquettes métiers.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme point ou marqueur simplifié ; position et altitude selon le levé en LV95.
+
+    - Rattacher au site ; désignation et numéro selon la livraison du géomètre.'
+  it: 'Punto di rilievo — riferimento vincolante di posizione e quota per progettazione e costruzione.
+
+
+    **Descrizione**
+
+    - Punto fisso o di appoggio con posizione e quota nel sistema di riferimento LV95.
+
+    - Almeno tre punti di riferimento costituiscono il riferimento spaziale comune di tutti i modelli disciplinari.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come punto o marcatore semplificato; posizione e quota secondo il rilievo in LV95.
+
+    - Assegnare al sito; designazione e numero secondo la consegna del geometra.'
+  en: 'Survey point — binding position and height reference for planning and construction.
+
+
+    **Description**
+
+    - Control or tie point with position and height in the LV95 reference frame.
+
+    - At least three reference points form the shared spatial reference for all discipline models.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified point or marker; position and height according to the survey in LV95.
+
+    - Assign to the site; designation and number according to the surveyor delivery.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Bezugspunkt) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Bezugspunkt)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  - pragmaticbim:workflow/des-existing-site-survey
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Bezugspunkt` — Vermessungspunkt'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Bezugspunkt` — point de levé'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Bezugspunkt` — punto di rilievo'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Bezugspunkt` — survey point'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-model-reference-point
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  - pragmaticbim:workflow/des-existing-site-survey
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Bezugspunkts gemäss Vermessung.
+    fr: Désignation du point de référence selon le levé.
+    it: Designazione del punto di riferimento secondo il rilievo.
+    en: Reference point designation according to the survey.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  - pragmaticbim:workflow/des-existing-site-survey
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_BuildingElementProxyCommon
+  definition:
+    de: Nummer bzw. Kennung des Festpunkts gemäss Geometerlieferung.
+    fr: Numéro ou identifiant du point fixe selon la livraison du géomètre.
+    it: Numero o identificativo del punto fisso secondo la consegna del geometra.
+    en: Control point number or identifier according to the surveyor delivery.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-common-model-reference
+  - pragmaticbim:workflow/des-existing-site-survey
+  is_applicability: false
+  status: active
+  sort_order: 4

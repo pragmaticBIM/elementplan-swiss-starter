@@ -1,0 +1,48 @@
+id: pragmaticbim:value/predefinedtype-tank
+code: TANK
+name:
+  de: PredefinedType IfcTank
+  fr: PredefinedType IfcTank
+  it: PredefinedType IfcTank
+  en: PredefinedType IfcTank
+description:
+  de: Ifc PredefinedType für IfcTank.
+  fr: PredefinedType IFC pour IfcTank.
+  it: PredefinedType IFC per IfcTank.
+  en: IFC PredefinedType for IfcTank.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - STORAGE
+  - PRESSUREVESSEL
+  - EXPANSION
+  - VESSEL
+  - BREAKPRESSURE
+  - FEEDANDEXPANSION
+  - OILSTORAGE
+  fr:
+  - STORAGE
+  - PRESSUREVESSEL
+  - EXPANSION
+  - VESSEL
+  - BREAKPRESSURE
+  - FEEDANDEXPANSION
+  - OILSTORAGE
+  it:
+  - STORAGE
+  - PRESSUREVESSEL
+  - EXPANSION
+  - VESSEL
+  - BREAKPRESSURE
+  - FEEDANDEXPANSION
+  - OILSTORAGE
+  en:
+  - STORAGE
+  - PRESSUREVESSEL
+  - EXPANSION
+  - VESSEL
+  - BREAKPRESSURE
+  - FEEDANDEXPANSION
+  - OILSTORAGE

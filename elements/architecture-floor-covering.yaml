@@ -1,0 +1,473 @@
+id: pragmaticbim:element/architecture-floor-covering
+code: ARC-FLOOR-COV
+sort_order: 43
+status: active
+name:
+  de: Bodenaufbau
+  fr: Complexe de sol
+  it: Stratigrafia di pavimento
+  en: Floor build-up
+definition:
+  de: 'Unterlagsboden und Bodenbelag als modellierte Schicht für Ausführungsplanung und Mengenauszug.
+
+
+    **Beschreibung**
+
+    - Bodenaufbau aus Unterlagsboden und Belag gemäss Bauteilkatalog.
+
+    - Fugen sind im Modell enthalten, insbesondere bei Fussbodenheizung.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als eine Schicht modellieren — nicht nach Räumen, sondern nach Aufbautypen trennen; ein Aufbau kann mehrere Räume umfassen.
+
+    - Fugen und Fugenausführung modellieren, insbesondere bei Fussbodenheizung.
+
+    - Bodenbelagstyp über Finish, Unterlagsbodentyp über SubfloorType erfassen.
+
+    - Material verwenden, das der tatsächlichen Materialklasse entspricht.'
+  fr: 'Chape et revêtement de sol comme couche modélisée pour la planification d''exécution et le métré.
+
+
+    **Description**
+
+    - Complexe de sol avec chape et revêtement selon le catalogue de composants.
+
+    - Joints inclus dans le modèle, notamment avec chauffage au sol.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme couche unique — diviser par type d''aufbau, pas par locaux ; un aufbau peut couvrir plusieurs locaux.
+
+    - Modéliser joints et exécution des joints, notamment avec chauffage au sol.
+
+    - Saisir le type de revêtement via Finish, le type de chape via SubfloorType.
+
+    - Utiliser un matériau correspondant à la classe de matériau réelle.'
+  it: 'Sottofondo e pavimentazione come strato modellato per la pianificazione esecutiva e il computo metrico.
+
+
+    **Descrizione**
+
+    - Stratigrafia di pavimento con sottofondo e rivestimento secondo il catalogo componenti.
+
+    - Fughe incluse nel modello, in particolare con riscaldamento a pavimento.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come strato unico — dividere per tipo di stratigrafia, non per locali; una stratigrafia può coprire più locali.
+
+    - Modellare fughe ed esecuzione delle fughe, in particolare con riscaldamento a pavimento.
+
+    - Registrare il tipo di pavimentazione tramite Finish, il tipo di sottofondo tramite SubfloorType.
+
+    - Usare un materiale corrispondente alla classe di materiale effettiva.'
+  en: 'Subfloor and floor covering as a modelled layer for execution planning and quantity take-off.
+
+
+    **Description**
+
+    - Floor build-up with subfloor and finish according to the component catalogue.
+
+    - Joints included in the model, especially with underfloor heating.
+
+
+    **Modelling guidelines**
+
+    - Model as one layer — split by build-up type, not by rooms; one build-up may span several rooms.
+
+    - Model joints and joint execution, especially with underfloor heating.
+
+    - Capture floor covering type via Finish, subfloor type via SubfloorType.
+
+    - Use a material that corresponds to the actual material class.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcCovering
+entity_ifc4: IfcCovering
+entity_ifc4_3: IfcCovering
+picture_link: null
+model_link: null
+applicability: entity_ifc4=IfcCovering AND PredefinedType=FLOORING
+attributes:
+- name: Status
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Element status for coordination on existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — to demolish
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-existing-structure-survey
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: NetArea
+  pset: Qto_CoveringBaseQuantities
+  definition:
+    de: Nettofläche des modellierten Bodenaufbaus.
+    fr: Surface nette du complexe de sol modélisé.
+    it: Superficie netta della stratigrafia di pavimento modellata.
+    en: Net area of the modelled floor build-up.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Bodenaufbau.
+
+
+      **Zulässige Werte**
+
+      - `FLOORING` — Bodenbelag'
+    fr: 'Identifie le complexe de sol.
+
+
+      **Valeurs admises**
+
+      - `FLOORING` — revêtement de sol'
+    it: 'Identifica la stratigrafia di pavimento.
+
+
+      **Valori ammessi**
+
+      - `FLOORING` — pavimentazione'
+    en: 'Marks the floor build-up.
+
+
+      **Allowed values**
+
+      - `FLOORING` — floor covering'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-flooring
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Bodenaufbau.
+
+
+      **Zulässige Werte**
+
+      - `FLOORING` — Bodenbelag
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Identifie le complexe de sol.
+
+
+      **Valeurs admises**
+
+      - `FLOORING` — revêtement de sol
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Identifica la stratigrafia di pavimento.
+
+
+      **Valori ammessi**
+
+      - `FLOORING` — pavimentazione
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Marks the floor build-up.
+
+
+      **Allowed values**
+
+      - `FLOORING` — floor covering'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-flooring
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  is_applicability: true
+  status: active
+  sort_order: '2
+
+    **Note** - IFC2x3 substitute for PredefinedType.'
+- name: Finish
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Bodenbelagstyp gemäss Bauteilkatalog.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Bodenbelagstyp.'
+    fr: 'Type de revêtement de sol selon le catalogue de composants.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Type de revêtement de sol.'
+    it: 'Tipo di pavimentazione secondo il catalogo componenti.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Tipo pavimentazione.'
+    en: 'Floor covering type according to the component catalogue.
+
+
+      **Allowed values**
+
+      - See value list Floor covering type.'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/floor-covering-type
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: SubfloorType
+  pset: ePset_CoveringFlooring
+  definition:
+    de: 'Unterlagsbodentyp im modellierten Bodenaufbau.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Unterlagsboden.'
+    fr: 'Type de chape dans le complexe de sol modélisé.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Chape.'
+    it: 'Tipo di sottofondo nella stratigrafia di pavimento modellata.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Sottofondo.'
+    en: 'Subfloor type in the modelled floor build-up.
+
+
+      **Allowed values**
+
+      - See value list Subfloor.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/subfloor-type
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  is_applicability: false
+  status: active
+  sort_order: 4

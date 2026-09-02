@@ -1,0 +1,56 @@
+id: pragmaticbim:value/room-name-exterior-v0.2.0
+code: ROOM-NAME-EXT-V020
+name:
+  de: Raumbezeichnung Aussenraum v0.2.0
+  fr: Désignation de local extérieur v0.2.0
+  it: Denominazione locale esterno v0.2.0
+  en: Room name exterior space v0.2.0
+description:
+  de: 'Normalisierte Raumbezeichnungen für Aussenräume gemäss Building Space Name Classification v0.2.0. Quelle: https://schema.pragmaticbim.ch/classification/room-name.html'
+  fr: 'Désignations normalisées pour les locaux extérieurs selon Building Space Name Classification v0.2.0. Source : https://schema.pragmaticbim.ch/classification/room-name.html'
+  it: 'Denominazioni normalisées per locali esterni secondo Building Space Name Classification v0.2.0. Fonte: https://schema.pragmaticbim.ch/classification/room-name.html'
+  en: 'Normalized room names for exterior spaces according to Building Space Name Classification v0.2.0. Source: https://schema.pragmaticbim.ch/classification/room-name.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract v0.2.0
+status: active
+values:
+  de:
+  - Ueberdachter Hof
+  - Balkon
+  - Terrasse
+  - Innenhof
+  - Gartenflaeche
+  - Spielplatz
+  - Beckenflaeche
+  - Ueberdachter Fussweg
+  - Portikus
+  fr:
+  - Covered Yard
+  - Balcony
+  - Terrace
+  - Patio
+  - Garden Area
+  - Playground
+  - Pool Area
+  - Covered Walkway
+  - Portico
+  it:
+  - Covered Yard
+  - Balcony
+  - Terrace
+  - Patio
+  - Garden Area
+  - Playground
+  - Pool Area
+  - Covered Walkway
+  - Portico
+  en:
+  - Covered Yard
+  - Balcony
+  - Terrace
+  - Patio
+  - Garden Area
+  - Playground
+  - Pool Area
+  - Covered Walkway
+  - Portico
