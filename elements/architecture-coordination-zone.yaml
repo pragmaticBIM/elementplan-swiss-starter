@@ -1,0 +1,197 @@
+id: pragmaticbim:element/architecture-coordination-zone
+code: ARCH-COORD-ZONE
+sort_order: 60
+status: active
+name:
+  de: Koordinationszone
+  fr: Zone de coordination
+  it: Zona di coordinamento
+  en: Coordination zone
+definition:
+  de: 'Geplantes Koordinationsvolumen mit Zuordnung zum Koordinationsmeeting.
+
+
+    **Beschreibung**
+
+    - Volumen, das den räumlichen Scope eines Koordinationsmeetings abgrenzt — kein Raumobjekt und kein Bauwerksteil.
+
+    - Dient der Planung der Koordination (welches Volumen in welchem Meeting), nicht der Kollisionsprüfung selbst.
+
+
+    **Modellierungsrichtlinie**
+
+    - Als vereinfachten Proxy-Körper modellieren; Abmessungen gemäss geplantem Koordinationsbereich.
+
+    - Dem zugehörigen Geschoss zuweisen; ObjectType = Koordinationszone.
+
+    - Name = Bezeichnung des Koordinationsmeetings; keine Bauteile, Leitungen oder Ausbau innerhalb des Volumens modellieren.'
+  fr: 'Volume de coordination planifié rattaché à la réunion de coordination.
+
+
+    **Description**
+
+    - Volume qui délimite le périmètre spatial d''une réunion de coordination — pas un objet local ni un élément de construction.
+
+    - Sert à planifier la coordination (quel volume dans quelle réunion), pas à la détection de collisions elle-même.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy simplifié ; dimensions selon le périmètre de coordination prévu.
+
+    - Rattacher à l''étage concerné ; ObjectType = Koordinationszone.
+
+    - Name = désignation de la réunion de coordination ; ne pas modéliser composants, réseaux ou finitions à l''intérieur du volume.'
+  it: 'Volume di coordinamento pianificato assegnato alla riunione di coordinamento.
+
+
+    **Descrizione**
+
+    - Volume che delimita l''ambito spaziale di una riunione di coordinamento — non un oggetto locale né un elemento costruttivo.
+
+    - Serve a pianificare il coordinamento (quale volume in quale riunione), non alla verifica di collisioni stessa.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy semplificato; dimensioni secondo l''ambito di coordinamento previsto.
+
+    - Assegnare al piano corrispondente; ObjectType = Koordinationszone.
+
+    - Name = denominazione della riunione di coordinamento; non modellare componenti, reti o finiture all''interno del volume.'
+  en: 'Planned coordination volume assigned to a coordination meeting.
+
+
+    **Description**
+
+    - Volume that bounds the spatial scope of a coordination meeting — not a space object and not a building component.
+
+    - Used to plan coordination (which volume in which meeting), not for clash detection itself.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified proxy body; dimensions according to the planned coordination extent.
+
+    - Assign to the matching storey; ObjectType = Koordinationszone.
+
+    - Name = coordination meeting designation; do not model components, services, or finishes inside the volume.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: null
+model_link: null
+applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Koordinationszone) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Koordinationszone)
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-coordination-zone-planning
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Koordinationszone` — geplantes Koordinationsvolumen mit Meeting-Zuordnung'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Koordinationszone` — volume de coordination planifié rattaché à une réunion'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Koordinationszone` — volume di coordinamento pianificato assegnato a una riunione'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Koordinationszone` — planned coordination volume assigned to a meeting'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-coordination-zone
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-coordination-zone-planning
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Koordinationsmeetings für diese Zone.
+    fr: Désignation de la réunion de coordination pour cette zone.
+    it: Denominazione della riunione di coordinamento per questa zona.
+    en: Coordination meeting designation for this zone.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-coordination-zone-planning
+  is_applicability: false
+  status: active
+  sort_order: 3

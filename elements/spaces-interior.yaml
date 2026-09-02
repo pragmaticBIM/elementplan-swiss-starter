@@ -302,6 +302,7 @@ attributes:
   - pragmaticbim:workflow/des-d0165-area-verification
   - pragmaticbim:workflow/hov-fm-minimal-data-delivery
   - pragmaticbim:workflow/con-logistics-fit-out
+  - pragmaticbim:workflow/bes-flooring-tender-basis
   is_applicability: false
   status: active
   sort_order: 3
@@ -377,6 +378,7 @@ attributes:
   - pragmaticbim:workflow/hov-fm-minimal-data-delivery
   - pragmaticbim:workflow/opr-signage-room-number
   - pragmaticbim:workflow/con-logistics-fit-out
+  - pragmaticbim:workflow/bes-flooring-tender-basis
   is_applicability: false
   status: active
   sort_order: 4
@@ -571,6 +573,7 @@ attributes:
   - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
   - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/bes-flooring-tender-basis
   is_applicability: false
   status: active
   sort_order: 8
@@ -729,6 +732,7 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/bes-flooring-tender-basis
   is_applicability: false
   status: active
   sort_order: 12

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-bruttovolumen
+code: OBJ-BRUTTOVOLUMEN
+name:
+  de: ObjectType Bruttovolumen
+  fr: ObjectType volume brut
+  it: ObjectType volume lordo
+  en: ObjectType gross volume
+description:
+  de: ObjectType für IfcSpace als geschossweises Bruttovolumen für Massenstudien.
+  fr: ObjectType pour IfcSpace comme volume brut par étage pour les études de masse.
+  it: ObjectType per IfcSpace come volume lordo per piano per studi di massa.
+  en: ObjectType for IfcSpace as storey-wise gross volume for mass studies.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Bruttovolumen
+  fr:
+  - Bruttovolumen
+  it:
+  - Bruttovolumen
+  en:
+  - Bruttovolumen

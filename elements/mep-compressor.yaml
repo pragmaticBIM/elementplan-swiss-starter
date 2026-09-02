@@ -237,7 +237,7 @@ attributes:
   status: active
   sort_order: 3
 - name: DatasheetLink
-  pset: null
+  pset: ePset_ProductData
   definition:
     de: Link (URI) zum Produktdatenblatt.
     fr: Lien (URI) vers la fiche technique du produit.

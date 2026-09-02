@@ -236,7 +236,7 @@ attributes:
   status: active
   sort_order: 3
 - name: Reference
-  pset: null
+  pset: Pset_OpeningElementCommon
   definition:
     de: Referenz zur eindeutigen Identifikation der Öffnung im Architektur- und Koordinationsmodell.
     fr: Référence pour l'identification univoque de l'ouverture dans les modèles d'architecture et de coordination.

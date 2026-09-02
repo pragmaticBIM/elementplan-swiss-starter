@@ -215,7 +215,7 @@ attributes:
   is_applicability: true
   status: active
   sort_order: 3
-- name: CrossSectionArea
+- name: GrossCrossSectionArea
   pset: Qto_PipeSegmentBaseQuantities
   definition:
     de: Querschnittsfläche der modellierten Fallleitung.
@@ -235,7 +235,6 @@ attributes:
   - '61'
   - '62'
   ifc_versions:
-  - ifc2x3
   - ifc4
   - ifc4x3
   needed_for_workflows:

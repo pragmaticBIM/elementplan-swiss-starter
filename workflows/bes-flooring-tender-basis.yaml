@@ -1,0 +1,160 @@
+id: pragmaticbim:workflow/bes-flooring-tender-basis
+code: BES-FLOORING-TENDER
+sort_order: 12
+name:
+  de: Grundlagen für Ausschreiben Bodenbelagsarbeiten
+  fr: Bases pour l'appel d'offres travaux de revêtements de sol
+  it: Basi per la gara lavori di pavimentazione
+  en: Basics for tendering flooring works
+description:
+  de: 'Bodenbelagsangaben raumweise im Raummodell für die Ausschreibungsgrundlage erfassen — ohne modellierten Bodenaufbau.
+
+
+    **Ausgangslage**
+
+    - Bodenbelagsmengen und -typen für die Ausschreibung werden oft manuell aus Plänen und Raumlisten zusammengesucht.
+
+    - Ohne einheitliche Raumeigenschaft fehlen Belagstyp und Fläche als prüfbare Grundlage für Positionen und Mengen.
+
+
+    **Ziel & Nutzen**
+
+    - Pro Innenraum den vorgesehenen Bodenbelag und die Nettogeschossfläche im Modell führen.
+
+    - Raumweise Auswertung als Grundlage für Leistungsverzeichnis und Mengenermittlung der Bodenbelagsarbeiten.
+
+
+    **Ablauf**
+
+    1. Innenräume mit Raumnummer und Nutzung im Architekturmodell bereitstellen.
+
+    2. Bodenbelagstyp (FloorCovering) und NetFloorArea je Raum erfassen.
+
+    3. Raumliste nach Belagstyp und Fläche für die Ausschreibungsunterlagen ableiten.
+
+
+    **Ergebnis**
+
+    - Raumweise Bodenbelagsgrundlage für die Ausschreibung der Bodenbelagsarbeiten.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit Innenräumen (IfcSpace)
+
+    - Name, LongName, FloorCovering (Pset_SpaceCoveringRequirements) und NetFloorArea je Innenraum'
+  fr: 'Saisir les indications de revêtement de sol par local dans le modèle de locaux comme base d''appel d''offres — sans complexe de sol modélisé.
+
+
+    **Situation de départ**
+
+    - Quantités et types de revêtements pour l''appel d''offres sont souvent rassemblés manuellement depuis plans et listes de locaux.
+
+    - Sans propriété de local uniforme, type de revêtement et surface manquent comme base vérifiable pour positions et quantités.
+
+
+    **Objectif et bénéfice**
+
+    - Porter par local intérieur le revêtement prévu et la surface nette dans le modèle.
+
+    - Évaluation par local comme base pour le cahier des charges et le métré des travaux de revêtements de sol.
+
+
+    **Déroulement**
+
+    1. Fournir les locaux intérieurs avec numéro et usage dans le modèle d''architecture.
+
+    2. Saisir le type de revêtement (FloorCovering) et NetFloorArea par local.
+
+    3. Dériver la liste des locaux par type de revêtement et surface pour les documents d''appel d''offres.
+
+
+    **Résultat**
+
+    - Base de revêtement de sol par local pour l''appel d''offres des travaux de revêtements de sol.
+
+
+    **Livrables**
+
+    - Modèle d''architecture avec locaux intérieurs (IfcSpace)
+
+    - Name, LongName, FloorCovering (Pset_SpaceCoveringRequirements) et NetFloorArea par local intérieur'
+  it: 'Registrare le indicazioni di pavimentazione per locale nel modello dei locali come base di gara — senza stratigrafia di pavimento modellata.
+
+
+    **Situazione di partenza**
+
+    - Quantità e tipi di pavimentazione per la gara vengono spesso raccolti manualmente da disegni ed elenchi locali.
+
+    - Senza proprietà di locale uniforme mancano tipo di rivestimento e superficie come base verificabile per posizioni e quantità.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire per ogni locale interno la pavimentazione prevista e la superficie netta nel modello.
+
+    - Valutazione per locale come base per capitolato e computo metrico dei lavori di pavimentazione.
+
+
+    **Svolgimento**
+
+    1. Fornire i locali interni con numero e uso nel modello di architettura.
+
+    2. Registrare il tipo di pavimentazione (FloorCovering) e NetFloorArea per locale.
+
+    3. Derivare l''elenco locali per tipo di pavimentazione e superficie per i documenti di gara.
+
+
+    **Risultato**
+
+    - Base di pavimentazione per locale per la gara dei lavori di pavimentazione.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con locali interni (IfcSpace)
+
+    - Name, LongName, FloorCovering (Pset_SpaceCoveringRequirements) e NetFloorArea per ogni locale interno'
+  en: 'Capture flooring information per space in the space model as the tender basis — without a modelled floor build-up.
+
+
+    **Starting point**
+
+    - Flooring quantities and types for tendering are often assembled manually from drawings and room lists.
+
+    - Without a uniform space property, covering type and area are missing as a checkable basis for positions and quantities.
+
+
+    **Goal & benefit**
+
+    - Maintain the intended floor covering and net floor area per interior space in the model.
+
+    - Room-wise evaluation as the basis for the specification and quantity take-off of flooring works.
+
+
+    **Process**
+
+    1. Provide interior spaces with room number and use in the architecture model.
+
+    2. Capture floor covering type (FloorCovering) and NetFloorArea per space.
+
+    3. Derive the room list by covering type and area for the tender documents.
+
+
+    **Outcome**
+
+    - Room-wise flooring basis for tendering flooring works.
+
+
+    **Deliverables**
+
+    - Architecture model with interior spaces (IfcSpace)
+
+    - Name, LongName, FloorCovering (Pset_SpaceCoveringRequirements), and NetFloorArea per interior space'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Tender preparation (SIA phase 41). Uses space property FloorCovering only — no modelled IfcCovering FLOORING. For modelled floor build-up see con-flooring-execution.

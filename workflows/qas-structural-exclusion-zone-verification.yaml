@@ -26,7 +26,7 @@ description:
 
     **Ablauf**
 
-    1. Tragwerksplaner liefert Sperrzonenmodell; Architekt führt Tragwerkskonzept als grobe Skizze im Architekturmodell (IsStructural=TRUE).
+    1. Tragwerksplaner liefert Sperrzonenmodell; Architekt führt Tragwerkskonzept als grobe Skizze im Architekturmodell (LoadBearing=TRUE).
 
     2. Beide Modelle im Gesamtmodell zusammenführen.
 
@@ -40,7 +40,7 @@ description:
 
     **Lieferobjekte**
 
-    - Architekturmodell mit Tragwerksskizze als IfcFooting, IfcSlab, IfcRoof, IfcColumn und IfcBeam mit IsStructural=TRUE
+    - Architekturmodell mit Tragwerksskizze als IfcFooting, IfcSlab, IfcRoof, IfcColumn und IfcBeam mit LoadBearing=TRUE
 
     - Sperrzonenmodell Tragwerksplanung als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Sperrzone
 
@@ -66,7 +66,7 @@ description:
 
     **Déroulement**
 
-    1. L''ingénieur structure fournit le modèle de zones d''exclusion ; l''architecte reprend le concept porteur comme esquisse grossière dans le modèle d''architecture (IsStructural=TRUE).
+    1. L''ingénieur structure fournit le modèle de zones d''exclusion ; l''architecte reprend le concept porteur comme esquisse grossière dans le modèle d''architecture (LoadBearing=TRUE).
 
     2. Fusionner les deux modèles en maquette fédérée.
 
@@ -80,7 +80,7 @@ description:
 
     **Livrables**
 
-    - Modèle d''architecture avec esquisse porteuse comme IfcFooting, IfcSlab, IfcRoof, IfcColumn et IfcBeam avec IsStructural=TRUE
+    - Modèle d''architecture avec esquisse porteuse comme IfcFooting, IfcSlab, IfcRoof, IfcColumn et IfcBeam avec LoadBearing=TRUE
 
     - Modèle de zones d''exclusion de l''ingénierie structurelle comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Sperrzone
 
@@ -106,7 +106,7 @@ description:
 
     **Svolgimento**
 
-    1. L''ingegnere strutturista consegna il modello delle zone di esclusione; l''architetto riprende il concept strutturale come schizzo grossolano nel modello di architettura (IsStructural=TRUE).
+    1. L''ingegnere strutturista consegna il modello delle zone di esclusione; l''architetto riprende il concept strutturale come schizzo grossolano nel modello di architettura (LoadBearing=TRUE).
 
     2. Unire entrambi i modelli nel modello federato.
 
@@ -120,7 +120,7 @@ description:
 
     **Oggetti della fornitura**
 
-    - Modello di architettura con schizzo strutturale come IfcFooting, IfcSlab, IfcRoof, IfcColumn e IfcBeam con IsStructural=TRUE
+    - Modello di architettura con schizzo strutturale come IfcFooting, IfcSlab, IfcRoof, IfcColumn e IfcBeam con LoadBearing=TRUE
 
     - Modello delle zone di esclusione dell''ingegneria strutturale come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Sperrzone
 
@@ -146,7 +146,7 @@ description:
 
     **Process**
 
-    1. The structural engineer delivers the exclusion zone model; the architect transfers the structural concept as a rough sketch into the architecture model (IsStructural=TRUE).
+    1. The structural engineer delivers the exclusion zone model; the architect transfers the structural concept as a rough sketch into the architecture model (LoadBearing=TRUE).
 
     2. Merge both models in the federated model.
 
@@ -160,7 +160,7 @@ description:
 
     **Deliverables**
 
-    - Architecture model with structural sketch as IfcFooting, IfcSlab, IfcRoof, IfcColumn, and IfcBeam with IsStructural=TRUE
+    - Architecture model with structural sketch as IfcFooting, IfcSlab, IfcRoof, IfcColumn, and IfcBeam with LoadBearing=TRUE
 
     - Structural engineering exclusion zone model as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Sperrzone
 
@@ -174,4 +174,4 @@ status: active
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/structural
-comment: Early QS. Structural concept via sketches in architecture model (IsStructural); structural engineer delivers exclusion zone model only. ObjectType=Sperrzone on IfcBuildingElementProxy.
+comment: Early QS. Structural concept via sketches in architecture model (LoadBearing); structural engineer delivers exclusion zone model only. ObjectType=Sperrzone on IfcBuildingElementProxy.

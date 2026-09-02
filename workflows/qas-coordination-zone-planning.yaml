@@ -1,0 +1,170 @@
+id: pragmaticbim:workflow/qas-coordination-zone-planning
+code: QAS-COORD-ZONE
+sort_order: 70
+name:
+  de: Koordinationszonen planen
+  fr: Planifier les zones de coordination
+  it: Pianificare le zone di coordinamento
+  en: Plan coordination zones
+description:
+  de: 'Welche Bereiche in welchem Koordinationsmeeting abgestimmt werden — statt alles gegen alles.
+
+
+    **Ausgangslage**
+
+    - Auf grossen Projekten skaliert die Koordination aller Modelle gegen alle Modelle nicht; der Aufwand explodiert und der Nutzen sinkt.
+
+    - Ohne geplante Koordinationszonen fehlen klare Meeting-Scopes und Verbindlichkeiten.
+
+
+    **Ziel & Nutzen**
+
+    - Koordinationsprogramm volumetrisch im Modell führen: jeder Bereich ist einem benannten Meeting zugeordnet.
+
+    - Scope und Priorität der Koordination für alle Disziplinen nachvollziehbar machen.
+
+
+    **Ablauf**
+
+    1. Koordinationszonen und zugehörige Meetings festlegen.
+
+    2. Zonen als Proxy-Volumen modellieren und den Meeting-Namen im Name setzen.
+
+    3. Modell als Grundlage für Koordinationsplan und Meeting-Scopes nutzen.
+
+
+    **Ergebnis**
+
+    - Volumetrisches Modell, das zeigt, welcher Bereich zu welchem Koordinationsmeeting gehört.
+
+
+    **Lieferobjekte**
+
+    - Koordinationszonenmodell als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Koordinationszone
+
+    - Name je Zone = Bezeichnung des Koordinationsmeetings
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey; Zonen dem zugehörigen Geschoss zuweisen'
+  fr: 'Quels secteurs sont coordonnés dans quelle réunion de coordination — au lieu de tout contre tout.
+
+
+    **Situation de départ**
+
+    - Sur les grands projets, coordonner tous les modèles contre tous ne passe pas à l''échelle ; l''effort explose et le bénéfice diminue.
+
+    - Sans zones de coordination planifiées, les périmètres de réunion et les engagements manquent de clarté.
+
+
+    **Objectif et bénéfice**
+
+    - Porter le programme de coordination de façon volumétrique dans le modèle : chaque secteur est rattaché à une réunion nommée.
+
+    - Rendre le périmètre et la priorité de la coordination compréhensibles pour toutes les disciplines.
+
+
+    **Déroulement**
+
+    1. Définir les zones de coordination et les réunions associées.
+
+    2. Modéliser les zones comme volumes proxy et renseigner le nom de la réunion dans Name.
+
+    3. Utiliser le modèle comme base pour le plan de coordination et les périmètres de réunion.
+
+
+    **Résultat**
+
+    - Modèle volumétrique indiquant quel secteur appartient à quelle réunion de coordination.
+
+
+    **Livrables**
+
+    - Modèle de zones de coordination comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Koordinationszone
+
+    - Name par zone = désignation de la réunion de coordination
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey ; rattacher les zones à l''étage concerné'
+  it: 'Quali ambiti sono coordinati in quale riunione di coordinamento — invece di tutto contro tutto.
+
+
+    **Situazione di partenza**
+
+    - Nei grandi progetti, coordinare tutti i modelli contro tutti non scala; lo sforzo esplode e il beneficio cala.
+
+    - Senza zone di coordinamento pianificate mancano ambiti di riunione e impegni chiari.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire il programma di coordinamento in modo volumetrico nel modello: ogni ambito è assegnato a una riunione nominata.
+
+    - Rendere ambito e priorità del coordinamento comprensibili per tutte le discipline.
+
+
+    **Svolgimento**
+
+    1. Definire le zone di coordinamento e le riunioni associate.
+
+    2. Modellare le zone come volumi proxy e impostare il nome della riunione in Name.
+
+    3. Usare il modello come base per il piano di coordinamento e gli ambiti delle riunioni.
+
+
+    **Risultato**
+
+    - Modello volumetrico che mostra quale ambito appartiene a quale riunione di coordinamento.
+
+
+    **Oggetti della fornitura**
+
+    - Modello delle zone di coordinamento come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Koordinationszone
+
+    - Name per zona = denominazione della riunione di coordinamento
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey; assegnare le zone al piano corrispondente'
+  en: 'Which areas are coordinated in which coordination meeting — instead of everything against everything.
+
+
+    **Starting point**
+
+    - On large projects, coordinating all models against all models does not scale; effort explodes and benefit drops.
+
+    - Without planned coordination zones, meeting scopes and commitments stay unclear.
+
+
+    **Goal & benefit**
+
+    - Maintain the coordination programme volumetrically in the model: each area is assigned to a named meeting.
+
+    - Make coordination scope and priority understandable for all disciplines.
+
+
+    **Process**
+
+    1. Define coordination zones and the associated meetings.
+
+    2. Model the zones as proxy volumes and set the meeting name in Name.
+
+    3. Use the model as the basis for the coordination plan and meeting scopes.
+
+
+    **Outcome**
+
+    - Volumetric model showing which area belongs to which coordination meeting.
+
+
+    **Deliverables**
+
+    - Coordination zone model as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Koordinationszone
+
+    - Name per zone = coordination meeting designation
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey; assign zones to the matching storey'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
+comment: Planning layer for coordination scope and meetings via ObjectType=Koordinationszone; distinct from clash workflows (early design, MEP detail, openings, exclusion zones).

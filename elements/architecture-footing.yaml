@@ -107,7 +107,7 @@ entity_ifc4: IfcFooting
 entity_ifc4_3: IfcFooting
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcFooting OR entity_ifc2x3=IfcFooting
+applicability: entity_ifc4=IfcFooting AND LoadBearing=TRUE
 attributes:
 - name: PredefinedType
   pset: null
@@ -309,7 +309,7 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 4
-- name: IsStructural
+- name: LoadBearing
   pset: Pset_FootingCommon
   definition:
     de: 'Kennzeichnet das Element als tragendes Bauteil im Architekturmodell.
@@ -355,7 +355,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
   - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
+  is_applicability: true
   status: active
   sort_order: 5
 - name: GrossVolume

@@ -159,7 +159,7 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 1
-- name: CrossSectionArea
+- name: GrossCrossSectionArea
   pset: Qto_DuctSegmentBaseQuantities
   definition:
     de: Querschnittsfläche der modellierten schematischen Luftleitung.
@@ -181,7 +181,6 @@ attributes:
   - '61'
   - '62'
   ifc_versions:
-  - ifc2x3
   - ifc4
   - ifc4x3
   needed_for_workflows:

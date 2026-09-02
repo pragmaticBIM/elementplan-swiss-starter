@@ -22,7 +22,7 @@ definition:
 
     - Geschossweise modellieren; Abmessungen gemäss Tragwerksentwurf.
 
-    - IsStructural=TRUE setzen; als vereinfachtes Volumen ohne Bewehrung oder Anschlussdetails modellieren.
+    - LoadBearing=TRUE setzen; als vereinfachtes Volumen ohne Bewehrung oder Anschlussdetails modellieren.
 
     - Früh: Konzept über Skizzen als Tragwerksskizze im ARC-Modell; Sperrzonen vom Tragwerksplaner prüfen.
 
@@ -43,7 +43,7 @@ definition:
 
     - Modéliser étage par étage ; dimensions selon l''esquisse structurelle.
 
-    - Définir IsStructural=TRUE ; modéliser comme volume simplifié sans armatures ni raccords de détail.
+    - Définir LoadBearing=TRUE ; modéliser comme volume simplifié sans armatures ni raccords de détail.
 
     - Tôt : concept par croquis comme esquisse porteuse dans le modèle d''architecture ; vérifier les zones d''exclusion de l''ingénieur structure.
 
@@ -64,7 +64,7 @@ definition:
 
     - Modellare piano per piano; dimensioni secondo lo schizzo strutturale.
 
-    - Impostare IsStructural=TRUE; modellare come volume semplificato senza armature o giunti di dettaglio.
+    - Impostare LoadBearing=TRUE; modellare come volume semplificato senza armature o giunti di dettaglio.
 
     - Presto: concept tramite schizzi come schizzo strutturale nel modello di architettura; verificare le zone di esclusione dell''ingegnere strutturista.
 
@@ -85,7 +85,7 @@ definition:
 
     - Model storey by storey; dimensions according to the structural sketch.
 
-    - Set IsStructural=TRUE; model as a simplified volume without reinforcement or detail connections.
+    - Set LoadBearing=TRUE; model as a simplified volume without reinforcement or detail connections.
 
     - Early: concept via sketches as structural sketch in the architecture model; verify exclusion zones from the structural engineer.
 
@@ -99,7 +99,7 @@ entity_ifc4: IfcColumn
 entity_ifc4_3: IfcColumn
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcColumn OR entity_ifc2x3=IfcColumn
+applicability: entity_ifc4=IfcColumn AND LoadBearing=TRUE
 attributes:
 - name: Name
   pset: null
@@ -157,7 +157,7 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 2
-- name: IsStructural
+- name: LoadBearing
   pset: Pset_ColumnCommon
   definition:
     de: 'Kennzeichnet die Stütze als tragendes Bauteil im Architekturmodell.
@@ -203,7 +203,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
   - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
+  is_applicability: true
   status: active
   sort_order: 3
 - name: GrossVolume

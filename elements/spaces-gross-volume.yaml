@@ -23,7 +23,7 @@ definition:
 
     **Modellierungsrichtlinie**
 
-    - Mit dem Raumwerkzeug als Volumen modellieren, geschossweise; horizontal bis zur Aussenkante Fassade.
+    - Mit dem Raumwerkzeug als Volumen modellieren, geschossweise; horizontal bis zur Aussenkante Fassade; ObjectType = Bruttovolumen.
 
     - Untergeschoss von Unterkante Bodenplatte bis Oberkante Fertigboden.
 
@@ -45,7 +45,7 @@ definition:
 
     **Directives de modélisation**
 
-    - Modéliser comme volume avec l''outil local, étage par étage ; horizontalement jusqu''au bord extérieur de la façade.
+    - Modéliser comme volume avec l''outil local, étage par étage ; horizontalement jusqu''au bord extérieur de la façade ; ObjectType = Bruttovolumen.
 
     - Sous-sol : de la face inférieure de la dalle de fondation au dessus du sol fini.
 
@@ -67,7 +67,7 @@ definition:
 
     **Direttive di modellazione**
 
-    - Modellare come volume con lo strumento locale, piano per piano; orizzontalmente fino al bordo esterno della facciata.
+    - Modellare come volume con lo strumento locale, piano per piano; orizzontalmente fino al bordo esterno della facciata; ObjectType = Bruttovolumen.
 
     - Sotterraneo: dal bordo inferiore della soletta di fondazione al bordo superiore del pavimento finito.
 
@@ -89,7 +89,7 @@ definition:
 
     **Modelling guidelines**
 
-    - Model as a volume with the space tool, storey by storey; horizontally to the outer edge of the facade.
+    - Model as a volume with the space tool, storey by storey; horizontally to the outer edge of the facade; ObjectType = Bruttovolumen.
 
     - Basement from underside of base slab to top of finished floor.
 
@@ -103,37 +103,37 @@ entity_ifc4: IfcSpace
 entity_ifc4_3: IfcSpace
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcSpace OR (entity_ifc2x3=IfcSpace AND InteriorOrExteriorSpace=INTERNAL)
+applicability: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType=Bruttovolumen) OR (entity_ifc2x3=IfcSpace AND ObjectType=Bruttovolumen)
 attributes:
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Kennzeichnet den Raum als Innenraum.
+    de: 'Kennzeichnet den Raum als benutzerdefinierten Typ; ObjectType präzisiert die Art.
 
 
       **Zulässige Werte**
 
-      - `INTERNAL` — Innenraum'
-    fr: 'Identifie l''espace comme intérieur.
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType = Bruttovolumen'
+    fr: 'Identifie l''espace comme type défini par l''utilisateur ; ObjectType précise la nature.
 
 
       **Valeurs admises**
 
-      - `INTERNAL` — espace intérieur'
-    it: 'Identifica lo spazio come interno.
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType = Bruttovolumen'
+    it: 'Identifica lo spazio come tipo definito dall''utente ; ObjectType precisa la natura.
 
 
       **Valori ammessi**
 
-      - `INTERNAL` — spazio interno'
-    en: 'Marks the space as interior.
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType = Bruttovolumen'
+    en: 'Marks the space as a user-defined type; ObjectType specifies the kind.
 
 
       **Allowed values**
 
-      - `INTERNAL` — interior space'
+      - `USERDEFINED` — user-defined type; ObjectType = Bruttovolumen'
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-space-internal
+  allowed_values: pragmaticbim:value/predefinedtype-space-userdefined
   needed_in_phases:
   - '11'
   - '21'
@@ -156,55 +156,35 @@ attributes:
   is_applicability: true
   status: active
   sort_order: 1
-- name: InteriorOrExteriorSpace
+- name: ObjectType
   pset: null
   definition:
-    de: 'Kennzeichnet den Raum als Innenraum.
+    de: 'Art des benutzerdefinierten Raums.
 
 
       **Zulässige Werte**
 
-      - `INTERNAL` — Innenraum
-
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für PredefinedType und IsExternal.'
-    fr: 'Identifie l''espace comme intérieur.
+      - `Bruttovolumen` — geschossweises Bruttovolumen'
+    fr: 'Nature de l''espace défini par l''utilisateur.
 
 
       **Valeurs admises**
 
-      - `INTERNAL` — espace intérieur
-
-
-      **Remarque**
-
-      - Substitut IFC2x3 de PredefinedType et IsExternal.'
-    it: 'Identifica lo spazio come interno.
+      - `Bruttovolumen` — volume brut par étage'
+    it: 'Tipo dello spazio definito dall''utente.
 
 
       **Valori ammessi**
 
-      - `INTERNAL` — spazio interno
-
-
-      **Nota**
-
-      - Sostituto IFC2x3 di PredefinedType e IsExternal.'
-    en: 'Marks the space as interior.
+      - `Bruttovolumen` — volume lordo per piano'
+    en: 'Kind of user-defined space.
 
 
       **Allowed values**
 
-      - `INTERNAL` — interior space
-
-
-      **Note**
-
-      - IFC2x3 substitute for PredefinedType and IsExternal.'
+      - `Bruttovolumen` — storey-wise gross volume'
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/interiororexteriorspace-internal
+  allowed_values: pragmaticbim:value/objecttype-bruttovolumen
   needed_in_phases:
   - '11'
   - '21'
@@ -220,6 +200,8 @@ attributes:
   - '62'
   ifc_versions:
   - ifc2x3
+  - ifc4
+  - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-urban-design-mass-study
   - pragmaticbim:workflow/des-floor-area-from-model

@@ -42,7 +42,7 @@ description:
 
     - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
 
-    - Bruttovolumen je Geschoss als modellierte IfcSpace-Volumen
+    - Bruttovolumen je Geschoss als modellierte IfcSpace-Volumen mit PredefinedType=USERDEFINED und ObjectType=Bruttovolumen
 
     - Untergeschoss von Unterkante Bodenplatte bis Oberkante Fertigboden; Obergeschosse von Oberkante Fertigboden bis Oberkante nächster Fertigboden bzw. Dach
 
@@ -84,7 +84,7 @@ description:
 
     - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
 
-    - Volumes bruts par étage modélisés comme IfcSpace
+    - Volumes bruts par étage modélisés comme IfcSpace avec PredefinedType=USERDEFINED et ObjectType=Bruttovolumen
 
     - Sous-sol : de la face inférieure de la dalle de fondation au dessus du sol fini ; étages supérieurs : du dessus du sol fini au dessus du sol fini suivant ou à la toiture
 
@@ -126,7 +126,7 @@ description:
 
     - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
 
-    - Volumi lordi per piano modellati come IfcSpace
+    - Volumi lordi per piano modellati come IfcSpace con PredefinedType=USERDEFINED e ObjectType=Bruttovolumen
 
     - Sotterraneo: dal bordo inferiore della soletta di fondazione al bordo superiore del pavimento finito; piani superiori: dal bordo superiore del pavimento finito al bordo superiore del pavimento finito
     successivo o alla copertura
@@ -169,7 +169,7 @@ description:
 
     - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
 
-    - Gross volumes per storey modelled as IfcSpace
+    - Gross volumes per storey modelled as IfcSpace with PredefinedType=USERDEFINED and ObjectType=Bruttovolumen
 
     - Basement from underside of base slab to top of finished floor; upper storeys from top of finished floor to top of next finished floor or roof
 

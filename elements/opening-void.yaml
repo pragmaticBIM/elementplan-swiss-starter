@@ -136,7 +136,7 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/qas-arch-mep-coordination-openings
-  is_applicability: true
+  is_applicability: false
   status: active
   sort_order: 1
 - name: ObjectType
@@ -204,7 +204,7 @@ attributes:
   - ifc2x3
   needed_for_workflows:
   - pragmaticbim:workflow/qas-arch-mep-coordination-openings
-  is_applicability: true
+  is_applicability: false
   status: active
   sort_order: '2
 

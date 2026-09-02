@@ -1,0 +1,160 @@
+id: pragmaticbim:workflow/con-flooring-execution
+code: CON-FLOORING-EXEC
+sort_order: 25
+name:
+  de: Ausführen Bodenbelagsarbeiten
+  fr: Exécution des travaux de revêtements de sol
+  it: Esecuzione dei lavori di pavimentazione
+  en: Execute flooring works
+description:
+  de: 'Modellierten Bodenaufbau mit Belag und Unterlagsboden für die Ausführung und den Mengenauszug bereitstellen.
+
+
+    **Ausgangslage**
+
+    - Bodenbelagsarbeiten auf der Baustelle brauchen klare Aufbautypen, Flächen und Fugen; reine Raumeigenschaften reichen nicht.
+
+    - Ohne modellierten Bodenaufbau fehlen Belag, Unterlagsboden und Nettofläche als ausführungs- und abrechnungsrelevante Grundlage.
+
+
+    **Ziel & Nutzen**
+
+    - Bodenaufbau nach Aufbautyp modellieren und mit Finish sowie SubfloorType attributieren.
+
+    - Nettoflächen und Aufbautypen direkt aus dem Modell für Ausführung und Mengenauszug nutzen.
+
+
+    **Ablauf**
+
+    1. Bodenaufbau als modellierte Schicht nach Aufbautyp bereitstellen (nicht raumweise aufteilen).
+
+    2. Finish (Bodenbelagstyp) und SubfloorType (Unterlagsboden) sowie NetArea erfassen; Fugen bei Bedarf modellieren.
+
+    3. Modell für Ausführung, Filterung nach Aufbautyp und Mengenauszug nutzen.
+
+
+    **Ergebnis**
+
+    - Attributierter, flächenauswertbarer Bodenaufbau für die Ausführung der Bodenbelagsarbeiten.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit Bodenaufbau (IfcCovering, PredefinedType=FLOORING)
+
+    - Finish (Pset_CoveringCommon), SubfloorType (ePset_CoveringFlooring) und NetArea (Qto_CoveringBaseQuantities) je Bodenaufbau'
+  fr: 'Fournir le complexe de sol modélisé avec revêtement et chape pour l''exécution et le métré.
+
+
+    **Situation de départ**
+
+    - Les travaux de revêtements sur chantier exigent des types d''aufbau clairs, des surfaces et des joints ; les seules propriétés de local ne suffisent pas.
+
+    - Sans complexe de sol modélisé, revêtement, chape et surface nette manquent comme base pertinente pour l''exécution et le décompte.
+
+
+    **Objectif et bénéfice**
+
+    - Modéliser le complexe de sol par type d''aufbau et l''attribuer avec Finish et SubfloorType.
+
+    - Utiliser surfaces nettes et types d''aufbau directement depuis le modèle pour l''exécution et le métré.
+
+
+    **Déroulement**
+
+    1. Fournir le complexe de sol comme couche modélisée par type d''aufbau (ne pas diviser par locaux).
+
+    2. Saisir Finish (type de revêtement) et SubfloorType (chape) ainsi que NetArea ; modéliser les joints si besoin.
+
+    3. Utiliser le modèle pour l''exécution, le filtrage par type d''aufbau et le métré.
+
+
+    **Résultat**
+
+    - Complexe de sol attribué et évaluable en surface pour l''exécution des travaux de revêtements de sol.
+
+
+    **Livrables**
+
+    - Modèle d''architecture avec complexe de sol (IfcCovering, PredefinedType=FLOORING)
+
+    - Finish (Pset_CoveringCommon), SubfloorType (ePset_CoveringFlooring) et NetArea (Qto_CoveringBaseQuantities) par complexe de sol'
+  it: 'Fornire la stratigrafia di pavimento modellata con rivestimento e sottofondo per l''esecuzione e il computo metrico.
+
+
+    **Situazione di partenza**
+
+    - I lavori di pavimentazione in cantiere richiedono tipi di stratigrafia chiari, superfici e fughe; le sole proprietà di locale non bastano.
+
+    - Senza stratigrafia modellata mancano rivestimento, sottofondo e superficie netta come base rilevante per esecuzione e conteggio.
+
+
+    **Obiettivo e beneficio**
+
+    - Modellare la stratigrafia per tipo e attributarla con Finish e SubfloorType.
+
+    - Usare superfici nette e tipi di stratigrafia direttamente dal modello per esecuzione e computo.
+
+
+    **Svolgimento**
+
+    1. Fornire la stratigrafia come strato modellato per tipo (non suddividere per locali).
+
+    2. Registrare Finish (tipo pavimentazione) e SubfloorType (sottofondo) nonché NetArea; modellare le fughe se necessario.
+
+    3. Usare il modello per esecuzione, filtro per tipo di stratigrafia e computo metrico.
+
+
+    **Risultato**
+
+    - Stratigrafia di pavimento attributata e valutabile in superficie per l''esecuzione dei lavori di pavimentazione.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con stratigrafia di pavimento (IfcCovering, PredefinedType=FLOORING)
+
+    - Finish (Pset_CoveringCommon), SubfloorType (ePset_CoveringFlooring) e NetArea (Qto_CoveringBaseQuantities) per ogni stratigrafia'
+  en: 'Provide the modelled floor build-up with covering and subfloor for execution and quantity take-off.
+
+
+    **Starting point**
+
+    - Flooring works on site need clear build-up types, areas, and joints; space properties alone are not enough.
+
+    - Without a modelled floor build-up, finish, subfloor, and net area are missing as an execution- and billing-relevant basis.
+
+
+    **Goal & benefit**
+
+    - Model floor build-up by type and attribute it with Finish and SubfloorType.
+
+    - Use net areas and build-up types directly from the model for execution and quantity take-off.
+
+
+    **Process**
+
+    1. Provide floor build-up as a modelled layer by build-up type (do not split by rooms).
+
+    2. Capture Finish (floor covering type) and SubfloorType (subfloor) plus NetArea; model joints where needed.
+
+    3. Use the model for execution, filtering by build-up type, and quantity take-off.
+
+
+    **Outcome**
+
+    - Attributed, area-evaluable floor build-up for executing flooring works.
+
+
+    **Deliverables**
+
+    - Architecture model with floor build-up (IfcCovering, PredefinedType=FLOORING)
+
+    - Finish (Pset_CoveringCommon), SubfloorType (ePset_CoveringFlooring), and NetArea (Qto_CoveringBaseQuantities) per floor build-up'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/con
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Construction phases SIA 51–53. Modelled IfcCovering FLOORING split by build-up type. Early tender basis without modelled covering: bes-flooring-tender-basis (space FloorCovering).'

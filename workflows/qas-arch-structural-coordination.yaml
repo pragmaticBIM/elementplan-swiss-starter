@@ -40,7 +40,7 @@ description:
 
     **Lieferobjekte**
 
-    - Architekturmodell mit groben tragenden Bauteilen als IfcFooting, IfcSlab, IfcColumn, IfcBeam und IfcRoof (geneigt) mit IsStructural=TRUE
+    - Architekturmodell mit groben tragenden Bauteilen als IfcFooting, IfcSlab, IfcColumn, IfcBeam und IfcRoof (geneigt) mit LoadBearing=TRUE
 
     - Tragwerksmodell mit denselben Bauteiltypen als IfcFooting, IfcSlab, IfcColumn und IfcBeam (ausführungsnah)
 
@@ -80,7 +80,7 @@ description:
 
     **Livrables**
 
-    - Modèle d''architecture avec éléments porteurs grossiers comme IfcFooting, IfcSlab, IfcColumn, IfcBeam et IfcRoof (incliné) avec IsStructural=TRUE
+    - Modèle d''architecture avec éléments porteurs grossiers comme IfcFooting, IfcSlab, IfcColumn, IfcBeam et IfcRoof (incliné) avec LoadBearing=TRUE
 
     - Modèle structurel avec les mêmes types d''éléments comme IfcFooting, IfcSlab, IfcColumn et IfcBeam (proche de l''exécution)
 
@@ -120,7 +120,7 @@ description:
 
     **Oggetti della fornitura**
 
-    - Modello di architettura con elementi portanti grossolani come IfcFooting, IfcSlab, IfcColumn, IfcBeam e IfcRoof (inclinato) con IsStructural=TRUE
+    - Modello di architettura con elementi portanti grossolani come IfcFooting, IfcSlab, IfcColumn, IfcBeam e IfcRoof (inclinato) con LoadBearing=TRUE
 
     - Modello strutturale con gli stessi tipi di elementi come IfcFooting, IfcSlab, IfcColumn e IfcBeam (prossimo all''esecuzione)
 
@@ -160,7 +160,7 @@ description:
 
     **Deliverables**
 
-    - Architecture model with rough load-bearing components as IfcFooting, IfcSlab, IfcColumn, IfcBeam, and IfcRoof (pitched) with IsStructural=TRUE
+    - Architecture model with rough load-bearing components as IfcFooting, IfcSlab, IfcColumn, IfcBeam, and IfcRoof (pitched) with LoadBearing=TRUE
 
     - Structural model with the same component types as IfcFooting, IfcSlab, IfcColumn, and IfcBeam (near-execution)
 
@@ -174,5 +174,5 @@ status: active
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/structural
-comment: Schalungsplan/Betonierplan-style coordination. Same load-bearing components in both models; match Name across architecture (rough, IsStructural) and structural (near-execution) discipline models.
+comment: Schalungsplan/Betonierplan-style coordination. Same load-bearing components in both models; match Name across architecture (rough, LoadBearing) and structural (near-execution) discipline models.
   Pitched roof ARC-only.

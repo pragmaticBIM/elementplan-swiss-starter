@@ -42,7 +42,7 @@ description:
 
     - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
 
-    - Geschossvolumen je Geschoss als modellierte IfcSpace-Volumen (Bruttovolumen)
+    - Geschossvolumen je Geschoss als modellierte IfcSpace-Volumen mit PredefinedType=USERDEFINED und ObjectType=Bruttovolumen
 
     - Lufträume als IfcSpace mit PredefinedType=USERDEFINED und ObjectType=Luftraum
 
@@ -82,7 +82,7 @@ description:
 
     - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
 
-    - Volumes d''étage modélisés comme IfcSpace (volumes bruts)
+    - Volumes d''étage modélisés comme IfcSpace avec PredefinedType=USERDEFINED et ObjectType=Bruttovolumen
 
     - Volumes d''air comme IfcSpace avec PredefinedType=USERDEFINED et ObjectType=Luftraum
 
@@ -122,7 +122,7 @@ description:
 
     - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
 
-    - Volumi di piano modellati come IfcSpace (volumi lordi)
+    - Volumi di piano modellati come IfcSpace con PredefinedType=USERDEFINED e ObjectType=Bruttovolumen
 
     - Volumi d''aria come IfcSpace con PredefinedType=USERDEFINED e ObjectType=Luftraum
 
@@ -162,7 +162,7 @@ description:
 
     - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
 
-    - Storey volumes modelled as IfcSpace (gross volumes)
+    - Storey volumes modelled as IfcSpace with PredefinedType=USERDEFINED and ObjectType=Bruttovolumen
 
     - Air spaces as IfcSpace with PredefinedType=USERDEFINED and ObjectType=Luftraum
 

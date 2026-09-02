@@ -1,77 +1,30 @@
-# pragmaticBIM Public Swiss
+# Swiss Starter Elementplan
 
-Public Swiss [Elementplan](https://elementplan.pragmaticbim.ch) master template.
+Public Swiss master template for [pragmaticBIM Elementplan](https://pragmaticbim.ch).
 
-It follows the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html) and keeps information requirements small enough for early design with [abstractBIM](https://www.abstractbim.com/).
+## Problem
 
-## Use cases
+BIM requirements usually arrive as wishlists: long Excel sheets and 300-page manuals that nobody can check against a model. Every project reinvents the list, modelers guess which parameters matter, and owners cannot verify what they ordered.
 
-Parent workflows use the official classification codes:
+## Solution
 
-| Code | Role |
-| --- | --- |
-| BES | Ordering |
-| CON | Construction |
-| DEC | Deconstruction |
-| DES | Design |
-| HOV | Handover |
-| OPR | Operation |
-| QAS | Quality assurance |
+This repository is a **starting Elementplan** you can read, fork, or copy into a [pragmaticBIM](https://pragmaticbim.ch) project. Requirements are treated like code: goal levels activate workflows, elements carry IFC entities, attributes, and allowed values, and the same source becomes contract Excel, PDF reports, and machine-readable IDS.
 
-Three project workflows sit under that structure:
+Configure intensity per project goal instead of ticking a use-case checklist. Only order data with a clear benefit. See the [visual tour](https://pragmaticbim.ch/en/how-to/elementplan-visual-tour) for how owners and BIM managers use the same artifact end to end.
 
-| Workflow | Parent | Purpose |
-| --- | --- | --- |
-| DES-COST | DES | Element-based cost calculation from abstractBIM quantities |
-| DES-BPS | DES | Building performance simulation from abstractBIM |
-| QAS-COORD | QAS | Coordination and model checking |
+Open it in the [Elementplan editor](https://elementplan.pragmaticbim.ch).
 
-## Domains
+## What is in this template
 
-- **Architecture** — source model for abstractBIM (spatial structure, spaces, windows, doors)
-- **MEP** — uses the same spatial structure and interior/exterior spaces for simulation and coordination
+- **7 project goals** — cost/budget sensitivity, fit-out standard, sustainability, quality assurance, operations and handover focus, schedule criticality, and how the project deals with existing structures
+- **40+ workflows** — mapped to those goals, following the [abstract use case classification](https://schema.pragmaticbim.ch/classification/usecase.html) (ordering, design, construction, handover, operation, quality assurance)
+- **~80 elements** — architecture, structure, and MEP, each with IFC entity, attributes, property sets, allowed values, and SIA phases
+- **No Teilmodelle** — model split is project-specific in the Information Delivery Plan
 
-Models (Teilmodelle) are project-specific and are not part of this template.
+Several workflows lean on [abstractBIM](https://www.abstractbim.com/), which derives walls, slabs, and quantities from correctly modelled spaces and openings.
 
-## Elements
-
-For **DES-COST** and **DES-BPS**:
-
-- Project (`IfcProject`)
-- Site (`IfcSite`)
-- Building (`IfcBuilding`)
-- Storey (`IfcBuildingStorey`, with `Elevation`)
-- Interior spaces (`IfcSpace`, `PredefinedType=INTERNAL`)
-- Exterior spaces (`IfcSpace`, `PredefinedType=EXTERNAL`)
-- Windows (`IfcWindow`)
-- Doors (`IfcDoor`)
-- Room name in `LongName`
-- Optional room number in `Name`
-
-abstractBIM derives walls, slabs, and quantities from correctly modelled spaces and openings. Model interior spaces as volumes from the top of the finished floor to the underside of the structural ceiling.
-
-For **QAS-COORD**, the same elements also require:
-
-- Named spatial structure (`IfcProject`, `IfcSite`, `IfcBuilding`, `IfcBuildingStorey`)
-- IFC entity and `PredefinedType` on spaces, windows, and doors
-- The entity `Pset_*Common` properties used here (`Reference` and `IsExternal` on spaces, windows, and doors, `Status` on windows and doors, plus `ThermalTransmittance` on windows)
-
-Existing versus new work is expressed through `Status` (`NEW`, `EXISTING`, `DEMOLISH`, `TEMPORARY`) on windows and doors. `Pset_SpaceCommon` has no `Status` property, so spaces carry no element status.
-
-## Phases
-
-Attributes are requested in SIA design phases `31`, `32`, and `33`. The phase catalogue also lists the other SIA codes so projects can extend later.
+This is a starting point, not a Swiss standard. It does not replace KBOB or federal authority templates. If you find a mistake, open an issue.
 
 ## Schema
 
 Entities follow the [pragmaticBIM Elementplan schema](https://github.com/pragmaticBIM/elementplan-data-schema). IDs use the `pragmaticbim:` prefix.
-
-## Syncing from add-ons
-
-This free master is a published copy. The source of truth lives in `elementplan_pragmaticbim_swiss_data_add_ons`. Refresh entity YAML from there with:
-
-```bash
-python scripts/sync_free_from_addons.py
-```
-
-`project.yaml`, this README, `LICENSE`, and `.github/` are left unchanged.

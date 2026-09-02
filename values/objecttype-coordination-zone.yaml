@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-coordination-zone
+code: OBJ-COORD-ZONE
+name:
+  de: ObjectType Koordinationszone
+  fr: ObjectType zone de coordination
+  it: ObjectType zona di coordinamento
+  en: ObjectType coordination zone
+description:
+  de: ObjectType für IfcBuildingElementProxy als geplante Koordinationszone mit Zuordnung zum Koordinationsmeeting.
+  fr: ObjectType pour IfcBuildingElementProxy comme zone de coordination planifiée avec rattachement à la réunion de coordination.
+  it: ObjectType per IfcBuildingElementProxy come zona di coordinamento pianificata con assegnazione alla riunione di coordinamento.
+  en: ObjectType for IfcBuildingElementProxy as a planned coordination zone assigned to a coordination meeting.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Koordinationszone
+  fr:
+  - Koordinationszone
+  it:
+  - Koordinationszone
+  en:
+  - Koordinationszone

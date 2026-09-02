@@ -93,6 +93,203 @@ picture_link: null
 model_link: null
 applicability: entity_ifc4=IfcCovering AND PredefinedType=FLOORING
 attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Bodenaufbau.
+
+
+      **Zulässige Werte**
+
+      - `FLOORING` — Bodenbelag'
+    fr: 'Identifie le complexe de sol.
+
+
+      **Valeurs admises**
+
+      - `FLOORING` — revêtement de sol'
+    it: 'Identifica la stratigrafia di pavimento.
+
+
+      **Valori ammessi**
+
+      - `FLOORING` — pavimentazione'
+    en: 'Marks the floor build-up.
+
+
+      **Allowed values**
+
+      - `FLOORING` — floor covering'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-flooring
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-flooring-execution
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Bodenaufbau.
+
+
+      **Zulässige Werte**
+
+      - `FLOORING` — Bodenbelag
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für PredefinedType.'
+    fr: 'Identifie le complexe de sol.
+
+
+      **Valeurs admises**
+
+      - `FLOORING` — revêtement de sol
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de PredefinedType.'
+    it: 'Identifica la stratigrafia di pavimento.
+
+
+      **Valori ammessi**
+
+      - `FLOORING` — pavimentazione
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di PredefinedType.'
+    en: 'Marks the floor build-up.
+
+
+      **Allowed values**
+
+      - `FLOORING` — floor covering
+
+
+      **Note**
+
+      - IFC2x3 substitute for PredefinedType.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-flooring
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-flooring-execution
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Finish
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Bodenbelagstyp gemäss Bauteilkatalog.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Bodenbelagstyp.'
+    fr: 'Type de revêtement de sol selon le catalogue de composants.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Type de revêtement de sol.'
+    it: 'Tipo di pavimentazione secondo il catalogo componenti.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Tipo pavimentazione.'
+    en: 'Floor covering type according to the component catalogue.
+
+
+      **Allowed values**
+
+      - See value list Floor covering type.'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/floor-covering-type
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-flooring-execution
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: SubfloorType
+  pset: ePset_CoveringFlooring
+  definition:
+    de: 'Unterlagsbodentyp im modellierten Bodenaufbau.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Unterlagsboden.'
+    fr: 'Type de chape dans le complexe de sol modélisé.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Chape.'
+    it: 'Tipo di sottofondo nella stratigrafia di pavimento modellata.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Sottofondo.'
+    en: 'Subfloor type in the modelled floor build-up.
+
+
+      **Allowed values**
+
+      - See value list Subfloor.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/subfloor-type
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-flooring-execution
+  is_applicability: false
+  status: active
+  sort_order: 4
 - name: Status
   pset: Pset_CoveringCommon
   definition:
@@ -282,192 +479,7 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/con-flooring-execution
   is_applicability: false
   status: active
   sort_order: 7
-- name: PredefinedType
-  pset: null
-  definition:
-    de: 'Kennzeichnet den Bodenaufbau.
-
-
-      **Zulässige Werte**
-
-      - `FLOORING` — Bodenbelag'
-    fr: 'Identifie le complexe de sol.
-
-
-      **Valeurs admises**
-
-      - `FLOORING` — revêtement de sol'
-    it: 'Identifica la stratigrafia di pavimento.
-
-
-      **Valori ammessi**
-
-      - `FLOORING` — pavimentazione'
-    en: 'Marks the floor build-up.
-
-
-      **Allowed values**
-
-      - `FLOORING` — floor covering'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-covering-flooring
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
-  is_applicability: true
-  status: active
-  sort_order: 1
-- name: ObjectType
-  pset: null
-  definition:
-    de: 'Kennzeichnet den Bodenaufbau.
-
-
-      **Zulässige Werte**
-
-      - `FLOORING` — Bodenbelag
-
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für PredefinedType.'
-    fr: 'Identifie le complexe de sol.
-
-
-      **Valeurs admises**
-
-      - `FLOORING` — revêtement de sol
-
-
-      **Remarque**
-
-      - Substitut IFC2x3 de PredefinedType.'
-    it: 'Identifica la stratigrafia di pavimento.
-
-
-      **Valori ammessi**
-
-      - `FLOORING` — pavimentazione
-
-
-      **Nota**
-
-      - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Marks the floor build-up.
-
-
-      **Allowed values**
-
-      - `FLOORING` — floor covering'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-covering-flooring
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  is_applicability: true
-  status: active
-  sort_order: '2
-
-    **Note** - IFC2x3 substitute for PredefinedType.'
-- name: Finish
-  pset: Pset_CoveringCommon
-  definition:
-    de: 'Bodenbelagstyp gemäss Bauteilkatalog.
-
-
-      **Zulässige Werte**
-
-      - Siehe Werteliste Bodenbelagstyp.'
-    fr: 'Type de revêtement de sol selon le catalogue de composants.
-
-
-      **Valeurs admises**
-
-      - Voir la liste de valeurs Type de revêtement de sol.'
-    it: 'Tipo di pavimentazione secondo il catalogo componenti.
-
-
-      **Valori ammessi**
-
-      - Vedere l''elenco valori Tipo pavimentazione.'
-    en: 'Floor covering type according to the component catalogue.
-
-
-      **Allowed values**
-
-      - See value list Floor covering type.'
-  datatype: IfcText
-  allowed_values: pragmaticbim:value/floor-covering-type
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  is_applicability: false
-  status: active
-  sort_order: 3
-- name: SubfloorType
-  pset: ePset_CoveringFlooring
-  definition:
-    de: 'Unterlagsbodentyp im modellierten Bodenaufbau.
-
-
-      **Zulässige Werte**
-
-      - Siehe Werteliste Unterlagsboden.'
-    fr: 'Type de chape dans le complexe de sol modélisé.
-
-
-      **Valeurs admises**
-
-      - Voir la liste de valeurs Chape.'
-    it: 'Tipo di sottofondo nella stratigrafia di pavimento modellata.
-
-
-      **Valori ammessi**
-
-      - Vedere l''elenco valori Sottofondo.'
-    en: 'Subfloor type in the modelled floor build-up.
-
-
-      **Allowed values**
-
-      - See value list Subfloor.'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/subfloor-type
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  is_applicability: false
-  status: active
-  sort_order: 4

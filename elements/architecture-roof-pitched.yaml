@@ -445,7 +445,7 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 4
-- name: IsStructural
+- name: LoadBearing
   pset: Pset_RoofCommon
   definition:
     de: 'Kennzeichnet das Element als tragendes Bauteil im Architekturmodell.

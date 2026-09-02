@@ -99,7 +99,7 @@ entity_ifc4: IfcSlab
 entity_ifc4_3: IfcSlab
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcSlab AND PredefinedType=BASESLAB
+applicability: entity_ifc4=IfcSlab AND PredefinedType=BASESLAB AND LoadBearing=TRUE
 attributes:
 - name: PredefinedType
   pset: null
@@ -213,7 +213,7 @@ attributes:
   sort_order: '2
 
     **Note** - IFC2x3 substitute for PredefinedType.'
-- name: IsStructural
+- name: LoadBearing
   pset: Pset_SlabCommon
   definition:
     de: 'Kennzeichnet das Element als tragendes Bauteil im Architekturmodell.
@@ -259,7 +259,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
   - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
+  is_applicability: true
   status: active
   sort_order: 3
 - name: GrossVolume

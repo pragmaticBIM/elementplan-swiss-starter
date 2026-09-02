@@ -1,15 +1,15 @@
 id: pragmaticbim:value/predefinedtype-gas-terminal
 code: GAS_TERMINAL
 name:
-  de: PredefinedType IfcGasTerminal
-  fr: PredefinedType IfcGasTerminal
-  it: PredefinedType IfcGasTerminal
-  en: PredefinedType IfcGasTerminal
+  de: ObjectType Gasentnahmestelle (IfcFlowTerminal)
+  fr: ObjectType prise de gaz (IfcFlowTerminal)
+  it: ObjectType presa gas (IfcFlowTerminal)
+  en: ObjectType gas outlet (IfcFlowTerminal)
 description:
-  de: Ifc PredefinedType für IfcGasTerminal.
-  fr: PredefinedType IFC pour IfcGasTerminal.
-  it: PredefinedType IFC per IfcGasTerminal.
-  en: IFC PredefinedType for IfcGasTerminal.
+  de: ObjectType-Werte für Gasentnahmestellen als IfcFlowTerminal.
+  fr: Valeurs ObjectType pour prises de gaz en tant qu'IfcFlowTerminal.
+  it: Valori ObjectType per prese gas come IfcFlowTerminal.
+  en: ObjectType values for gas outlets modelled as IfcFlowTerminal.
 year: 2026
 norm_reference: IFC4
 status: active

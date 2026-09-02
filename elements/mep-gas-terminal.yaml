@@ -59,13 +59,13 @@ definition:
 needed_in_domain:
 - pragmaticbim:domain/mep
 entity_ifc2x3: IfcFlowTerminal
-entity_ifc4: IfcGasTerminal
-entity_ifc4_3: IfcGasTerminal
+entity_ifc4: IfcFlowTerminal
+entity_ifc4_3: IfcFlowTerminal
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcGasTerminal
+applicability: entity_ifc4=IfcFlowTerminal OR entity_ifc2x3=IfcFlowTerminal
 attributes:
-- name: PredefinedType
+- name: ObjectType
   pset: null
   definition:
     de: 'Art des Geräts bzw. Terminals.
@@ -77,7 +77,12 @@ attributes:
 
       - `GASBOOSTER` — Gasbooster
 
-      - `GASBURNER` — Gasbrenner'
+      - `GASBURNER` — Gasbrenner
+
+
+      **Hinweis**
+
+      - IFC-Ersatz für PredefinedType (IfcFlowTerminal ohne PredefinedType).'
     fr: 'Type d''appareil ou de terminal.
 
 
@@ -87,7 +92,12 @@ attributes:
 
       - `GASBOOSTER` — surpresseur gaz
 
-      - `GASBURNER` — brûleur gaz'
+      - `GASBURNER` — brûleur gaz
+
+
+      **Remarque**
+
+      - Substitut IFC de PredefinedType (IfcFlowTerminal sans PredefinedType).'
     it: 'Tipo di apparecchio o terminale.
 
 
@@ -97,7 +107,12 @@ attributes:
 
       - `GASBOOSTER` — booster gas
 
-      - `GASBURNER` — bruciatore gas'
+      - `GASBURNER` — bruciatore gas
+
+
+      **Nota**
+
+      - Sostituto IFC di PredefinedType (IfcFlowTerminal senza PredefinedType).'
     en: 'Kind of equipment or terminal.
 
 
@@ -107,7 +122,12 @@ attributes:
 
       - `GASBOOSTER` — gas booster
 
-      - `GASBURNER` — gas burner'
+      - `GASBURNER` — gas burner
+
+
+      **Note**
+
+      - IFC substitute for PredefinedType (IfcFlowTerminal has no PredefinedType).'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-gas-terminal
   needed_in_phases:
@@ -117,6 +137,7 @@ attributes:
   - '61'
   - '62'
   ifc_versions:
+  - ifc2x3
   - ifc4
   - ifc4x3
   needed_for_workflows:
@@ -181,7 +202,7 @@ attributes:
   status: active
   sort_order: 3
 - name: DatasheetLink
-  pset: null
+  pset: ePset_ProductData
   definition:
     de: Link (URI) zum Produktdatenblatt.
     fr: Lien (URI) vers la fiche technique du produit.
@@ -202,8 +223,8 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 4
-- name: Status
-  pset: Pset_GasTerminalTypeCommon
+- name: ElementStatus
+  pset: ePset_ElementStatus
   definition:
     de: 'Bauteilstatus für Koordination im Bestand.
 
@@ -269,6 +290,7 @@ attributes:
   - '61'
   - '62'
   ifc_versions:
+  - ifc2x3
   - ifc4
   - ifc4x3
   needed_for_workflows:
