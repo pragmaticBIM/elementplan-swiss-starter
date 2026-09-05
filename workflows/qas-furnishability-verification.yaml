@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/qas-furnishability-verification
+code: QAS-FURNISHABILITY
+sort_order: 84
+name:
+  de: Nachweis der Möblierbarkeit
+  fr: Preuve de meublabilité
+  it: Prova di arredabilità
+  en: Furnishability verification
+description:
+  de: 'Möblierbarkeit von Innenräumen im Modell nachweisen — bevor Wände und Öffnungen die Nutzung einschränken.
+
+
+    **Ausgangslage**
+
+    - Ohne Möbel im Modell bleibt unklar, ob Räume mit der geplanten Nutzung wirklich möblierbar sind.
+
+    - Späte Konflikte mit Wänden, Türen und Erschliessung führen zu Umbauten oder unbrauchbaren Grundrissen.
+
+
+    **Ziel & Nutzen**
+
+    - Möbel als vereinfachte Körper mit realen Abmessungen im Modell führen.
+
+    - Passung und Bewegungsflächen gegen Raum und Bauwerk prüfen und den Nachweis dokumentieren.
+
+
+    **Ablauf**
+
+    1. Innenräume mit Nutzung und Abmessungen bereitstellen.
+
+    2. Möbel schematisch mit realem Grundriss und Höhe platzieren.
+
+    3. Passung und Kollisionen prüfen und den Nachweis dokumentieren.
+
+
+    **Ergebnis**
+
+    - Nachgewiesene Möblierbarkeit als Planungsgrundlage — bevor der Grundriss verbindlich wird.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Innenräume als modellierte IfcSpace-Volumen (PredefinedType=INTERNAL); LongName mit Nutzung; NetFloorArea als Abmessungsangabe
+
+    - IfcFurnishingElement mit Name und PredefinedType (IFC4+) bzw. ObjectType (IFC2x3); schematische Geometrie mit realem Grundriss'
+  fr: 'Prouver dans le modèle que les locaux intérieurs restent meublables — avant que murs et ouvertures ne limitent l''usage.
+
+
+    **Situation de départ**
+
+    - Sans mobilier dans le modèle, il reste incertain que les locaux avec l''usage prévu soient réellement meublables.
+
+    - Des conflits tardifs avec murs, portes et desserte entraînent des transformations ou des plans inutilisables.
+
+
+    **Objectif et bénéfice**
+
+    - Saisir le mobilier comme corps simplifiés avec dimensions réelles dans le modèle.
+
+    - Vérifier l''ajustement et les surfaces de circulation contre local et bâtiment et documenter la preuve.
+
+
+    **Déroulement**
+
+    1. Fournir les locaux intérieurs avec usage et dimensions.
+
+    2. Placer le mobilier de façon schématique avec emprise et hauteur réelles.
+
+    3. Vérifier ajustement et collisions et documenter la preuve.
+
+
+    **Résultat**
+
+    - Ameublement prouvé comme base de planification — avant que le plan ne devienne contraignant.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Locaux intérieurs comme volumes IfcSpace modélisés (PredefinedType=INTERNAL) ; LongName avec usage ; NetFloorArea comme indication dimensionnelle
+
+    - IfcFurnishingElement avec Name et PredefinedType (IFC4+) ou ObjectType (IFC2x3) ; géométrie schématique avec emprise réelle'
+  it: 'Dimostrare nel modello che i locali interni restano arredabili — prima che pareti e aperture limitino l''uso.
+
+
+    **Situazione di partenza**
+
+    - Senza arredi nel modello resta incerto se i locali con l''uso previsto siano realmente arredabili.
+
+    - Conflitti tardivi con pareti, porte e distribuzione causano trasformazioni o piante inutilizzabili.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire gli arredi come corpi semplificati con dimensioni reali nel modello.
+
+    - Verificare adattamento e superfici di circolazione contro locale ed edificio e documentare la prova.
+
+
+    **Svolgimento**
+
+    1. Fornire i locali interni con uso e dimensioni.
+
+    2. Posizionare gli arredi in modo schematico con ingombro e altezza reali.
+
+    3. Verificare adattamento e collisioni e documentare la prova.
+
+
+    **Risultato**
+
+    - Arredabilità dimostrata come base di pianificazione — prima che la pianta diventi vincolante.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Locali interni come volumi IfcSpace modellati (PredefinedType=INTERNAL); LongName con uso; NetFloorArea come indicazione dimensionale
+
+    - IfcFurnishingElement con Name e PredefinedType (IFC4+) o ObjectType (IFC2x3); geometria schematica con ingombro reale'
+  en: 'Prove in the model that interior rooms remain furnishable — before walls and openings lock in the use.
+
+
+    **Starting point**
+
+    - Without furniture in the model, it stays unclear whether rooms with the intended use can actually be furnished.
+
+    - Late conflicts with walls, doors, and circulation lead to rebuilds or unusable layouts.
+
+
+    **Goal & benefit**
+
+    - Maintain furniture as simplified bodies with real dimensions in the model.
+
+    - Check fit and circulation against room and building and document the verification.
+
+
+    **Process**
+
+    1. Provide interior spaces with use and dimensions.
+
+    2. Place furniture schematically with real footprint and height.
+
+    3. Check fit and clashes and document the verification.
+
+
+    **Outcome**
+
+    - Verified furnishability as the planning basis — before the layout becomes binding.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Interior spaces as modelled IfcSpace volumes (PredefinedType=INTERNAL); LongName with use; NetFloorArea as size indication
+
+    - IfcFurnishingElement with Name and PredefinedType (IFC4+) or ObjectType (IFC2x3); schematic geometry with real footprint'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Schematic IfcFurnishingElement with real footprint for clash/fit checks against interior spaces and building. Distinct from des-furniture-planning (layout lists) and qas-special-room-user-coordination
+  (informal sketches).

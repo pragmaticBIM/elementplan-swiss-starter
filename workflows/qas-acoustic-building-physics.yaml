@@ -45,7 +45,7 @@ description:
     - AcousticRating (Rw [dB] als Zahl), Status und PredefinedType je Bauteil
 
     - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey'
-  fr: 'Porter les indices d''affaiblissement Rw dans le modèle d''architecture dès la fin du projet de construction et les vérifier face à la planification acoustique.
+  fr: 'Saisir les indices d''affaiblissement Rw dans le modèle d''architecture dès la fin du projet de construction et les vérifier face à la planification acoustique.
 
 
     **Situation de départ**
@@ -80,7 +80,7 @@ description:
 
     - Modèle d''architecture avec IfcWall (murs extérieurs et cloisons non porteuses), IfcSlab (FLOOR), IfcWindow et IfcDoor
 
-    - AcousticRating (Rw [dB] comme nombre), Status et PredefinedType par composant
+    - AcousticRating (Rw [dB] comme nombre), Status et PredefinedType par élément
 
     - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey'
   it: 'Gestire i valori di potere fonoisolante Rw nel modello di architettura dalla fine del progetto di costruzione e verificarli rispetto alla pianificazione acustica.

@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-furnishing-element
+code: FURNISHING
+name:
+  de: PredefinedType Möbel
+  fr: PredefinedType mobilier
+  it: PredefinedType arredo
+  en: PredefinedType furnishing
+description:
+  de: IfcFurnishingElement PredefinedType.
+  fr: IfcFurnishingElement PredefinedType.
+  it: IfcFurnishingElement PredefinedType.
+  en: IfcFurnishingElement PredefinedType.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - FURNITURE
+  - SYSTEMFURNITURE
+  fr:
+  - FURNITURE
+  - SYSTEMFURNITURE
+  it:
+  - FURNITURE
+  - SYSTEMFURNITURE
+  en:
+  - FURNITURE
+  - SYSTEMFURNITURE

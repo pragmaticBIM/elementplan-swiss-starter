@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-cool-emit
+code: EBKP-H-MEP-COOLEMIT
+name:
+  de: eBKP-H Kälteabgabe
+  fr: eBKP-H émission de froid
+  it: eBKP-H emissione di freddo
+  en: eBKP-H cold emission
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D06.05.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D06.05.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D06.05.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D06.05.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D06.05
+  fr:
+  - D06.05
+  it:
+  - D06.05
+  en:
+  - D06.05

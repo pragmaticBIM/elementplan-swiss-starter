@@ -3,8 +3,8 @@ code: DES-LAYOUT
 sort_order: 51
 name:
   de: Layoutplanung für Entscheidungsfindung
-  fr: Planification de layout pour la prise de décision
-  it: Pianificazione layout per il processo decisionale
+  fr: Planification de l'agencement pour la prise de décision
+  it: Pianificazione della disposizione per il processo decisionale
   en: Layout planning for decision-making
 description:
   de: 'Raumlayout früh im Modell führen und Varianten entscheiden — nur Räume, optional symbolische Türen.
@@ -47,12 +47,12 @@ description:
     - Optional: Aussenräume (IfcSpace, PredefinedType=EXTERNAL) für Balkone und Terrassen
 
     - Optional früh: IfcDoor symbolisch — PredefinedType und ungefähre Lage'
-  fr: 'Porter le layout spatial tôt dans le modèle et trancher les variantes — uniquement les locaux, éventuellement des portes symboliques.
+  fr: 'Saisir le layout spatial tôt dans le modèle et trancher les variantes — uniquement les locaux, éventuellement des portes symboliques.
 
 
     **Situation de départ**
 
-    - Les décisions de layout (découpage, desserte, éclairage) exigent une orientation 3D précoce ; la modélisation complète des éléments est trop lourde à ce stade.
+    - Les décisions de layout (découpage, desserte, éclairage) exigent une orientation 3D en phase initiale ; la modélisation complète des éléments est trop lourde à ce stade.
 
     - Les plans 2D seuls compliquent la comparaison de variantes et la coordination avec le maître d''ouvrage et les utilisateurs.
 
@@ -92,7 +92,7 @@ description:
 
     **Situazione di partenza**
 
-    - Le decisioni di layout (taglio, distribuzione, illuminazione) richiedono un orientamento 3D precoce; la modellazione completa degli elementi è troppo onerosa in questa fase.
+    - Le decisioni di layout (taglio, distribuzione, illuminazione) richiedono un orientamento 3D in fase iniziale; la modellazione completa degli elementi è troppo onerosa in questa fase.
 
     - Le sole planimetrie 2D complicano il confronto delle varianti e il coordinamento con committenza e utenti.
 

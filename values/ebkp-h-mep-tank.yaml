@@ -1,0 +1,32 @@
+id: pragmaticbim:value/ebkp-h-mep-tank
+code: EBKP-H-MEP-TANK
+name:
+  de: eBKP-H Speicher
+  fr: eBKP-H réservoir
+  it: eBKP-H serbatoio
+  en: eBKP-H tank
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D05.03, D06.03, D08.03.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D05.03, D06.03, D08.03.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D05.03, D06.03, D08.03.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D05.03, D06.03, D08.03.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D05.03
+  - D06.03
+  - D08.03
+  fr:
+  - D05.03
+  - D06.03
+  - D08.03
+  it:
+  - D05.03
+  - D06.03
+  - D08.03
+  en:
+  - D05.03
+  - D06.03
+  - D08.03

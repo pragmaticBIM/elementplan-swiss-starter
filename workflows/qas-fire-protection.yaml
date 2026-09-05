@@ -45,7 +45,7 @@ description:
     - FireRating, Status und PredefinedType je Bauteil
 
     - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey'
-  fr: 'Porter les classes de résistance au feu dans le modèle d''architecture dès la fin du projet de construction et les vérifier face au concept de protection incendie.
+  fr: 'Saisir les classes de résistance au feu dans le modèle d''architecture dès la fin du projet de construction et les vérifier face au concept de protection incendie.
 
 
     **Situation de départ**
@@ -80,7 +80,7 @@ description:
 
     - Modèle d''architecture avec IfcWall (murs extérieurs et cloisons non porteuses), IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn et IfcBeam
 
-    - FireRating, Status et PredefinedType par composant
+    - FireRating, Status et PredefinedType par élément
 
     - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey'
   it: 'Gestire le classi di resistenza al fuoco nel modello di architettura dalla fine del progetto di costruzione e verificarle rispetto al concetto antincendio.

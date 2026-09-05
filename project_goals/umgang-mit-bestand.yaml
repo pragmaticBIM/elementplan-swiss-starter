@@ -8,8 +8,8 @@ name:
   en: Dealing with existing stock
 description:
   de: Steuert die Aufnahme- und Modellierungstiefe im Bestand (Gelände, Tragwerk, Gebäudetechnik) für Strategien von Abbruch/Neubau über Rückbau auf Tragwerk mit Erweiterung bis Umnutzung unter Beibehaltung der Gebäudetechnik.
-  fr: Contrôle la profondeur de relève et de modélisation de l'existant (terrain, structure, techniques) pour des stratégies allant de la démolition/reconstruction au démontage jusqu'à la structure avec agrandissement jusqu'au changement d'affectation en conservant les installations techniques.
-  it: Controlla la profondità di rilievo e modellazione dell'esistente (terreno, struttura, impianti) per strategie dalla demolizione/ricostruzione allo smontaggio fino alla struttura con ampliamento fino al cambio d'uso mantenendo gli impianti.
+  fr: Détermine la profondeur de relève et de modélisation de l'existant (terrain, structure, techniques) pour des stratégies allant de la démolition/reconstruction au démontage jusqu'à la structure avec agrandissement jusqu'au changement d'affectation en conservant les installations techniques.
+  it: Determina la profondità di rilievo e modellazione dell'esistente (terreno, struttura, impianti) per strategie dalla demolizione/ricostruzione allo smontaggio fino alla struttura con ampliamento fino al cambio d'uso mantenendo gli impianti.
   en: Controls survey and modelling depth on existing assets (terrain, structure, MEP) for strategies from demolition/new build through strip-back to structure with extension to change of use while retaining building services.
 picture_link: null
 status: active
@@ -31,7 +31,8 @@ levels:
   status: active
   activated_workflows:
   - pragmaticbim:workflow/des-existing-site-survey
-  comment: Delta at level Neubau (sort_order 1); site survey.
+  - pragmaticbim:workflow/des-managing-existing-with-models
+  comment: Full set at level Neubau (sort_order 1).
 - id: pragmaticbim:project-goal-level/bestand-mittel
   code: EXIST-02
   sort_order: 2
@@ -47,8 +48,10 @@ levels:
     en: Additionally survey and model the structure — e.g. refurbishment, extension, strip-back to structure.
   status: active
   activated_workflows:
+  - pragmaticbim:workflow/des-existing-site-survey
   - pragmaticbim:workflow/des-existing-structure-survey
-  comment: Delta at level Erhalt Tragwerk (sort_order 2); cumulative with Neubau.
+  - pragmaticbim:workflow/des-managing-existing-with-models
+  comment: Full set at level Erhalt Tragwerk (sort_order 2); includes lower levels.
 - id: pragmaticbim:project-goal-level/bestand-hoch
   code: EXIST-03
   sort_order: 3
@@ -64,5 +67,8 @@ levels:
     en: Additionally survey and model building services — e.g. conversion, change of use while retaining services.
   status: active
   activated_workflows:
+  - pragmaticbim:workflow/des-existing-site-survey
+  - pragmaticbim:workflow/des-existing-structure-survey
   - pragmaticbim:workflow/des-existing-mep-survey
-  comment: Delta at level Erhalt Gebäudetechnik (sort_order 3); cumulative with Erhalt Tragwerk and Neubau.
+  - pragmaticbim:workflow/des-managing-existing-with-models
+  comment: Full set at level Erhalt Gebäudetechnik (sort_order 3); includes lower levels.

@@ -2,13 +2,13 @@ id: pragmaticbim:value/pipe-reference-schematic
 code: PIPE-REF-SCH
 name:
   de: Referenz Medium Rohrleitung (schematisch)
-  fr: Référence médium canalisation (schématique)
-  it: Riferimento mezzo condotta (schematica)
+  fr: Référence fluide canalisation (schématique)
+  it: Riferimento fluido condotta (schematica)
   en: Pipe medium reference (schematic)
 description:
   de: Medium-Kennung für schematische Rohrleitungen in der frühen Koordination.
-  fr: Code de médium pour canalisations schématiques en coordination précoce.
-  it: Codice mezzo per condotte schematiche nel coordinamento precoce.
+  fr: Code de fluide pour canalisations schématiques en coordination en phase initiale.
+  it: Codice fluido per condotte schematiche nel coordinamento in fase iniziale.
   en: Medium code for schematic piping in early coordination.
 year: 2026
 norm_reference: IFC4

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-air-term
+code: EBKP-H-MEP-AIRTERM
+name:
+  de: eBKP-H Luftauslass
+  fr: eBKP-H bouche d'air
+  it: eBKP-H bocchetta
+  en: eBKP-H air terminal
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D07.05.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D07.05.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D07.05.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D07.05.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D07.05
+  fr:
+  - D07.05
+  it:
+  - D07.05
+  en:
+  - D07.05

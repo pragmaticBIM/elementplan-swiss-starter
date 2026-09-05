@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-column
+code: EBKP-H-COLUMN
+name:
+  de: eBKP-H Stütze
+  fr: eBKP-H poteau
+  it: eBKP-H colonna
+  en: eBKP-H column
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C03.01, C03.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C03.01, C03.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C03.01, C03.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C03.01, C03.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C03.01
+  - C03.02
+  fr:
+  - C03.01
+  - C03.02
+  it:
+  - C03.01
+  - C03.02
+  en:
+  - C03.01
+  - C03.02

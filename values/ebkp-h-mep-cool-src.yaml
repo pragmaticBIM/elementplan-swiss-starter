@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-cool-src
+code: EBKP-H-MEP-COOLSRC
+name:
+  de: eBKP-H Kältequelle
+  fr: eBKP-H source de froid
+  it: eBKP-H sorgente di freddo
+  en: eBKP-H cold source
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D06.01.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D06.01.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D06.01.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D06.01.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D06.01
+  fr:
+  - D06.01
+  it:
+  - D06.01
+  en:
+  - D06.01

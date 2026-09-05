@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-transformer
+code: EBKP-H-MEP-TR
+name:
+  de: eBKP-H Transformator
+  fr: eBKP-H transformateur
+  it: eBKP-H trasformatore
+  en: eBKP-H transformer
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D01.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D01.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D01.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D01.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D01.02
+  fr:
+  - D01.02
+  it:
+  - D01.02
+  en:
+  - D01.02

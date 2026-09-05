@@ -1,0 +1,177 @@
+id: pragmaticbim:workflow/des-ebkp-h-classification
+code: DES-EBKP-H
+sort_order: 61
+name:
+  de: eBKP-H-Klassifizierung der wesentlichen Positionen automatisiert berechnen
+  fr: Calculer automatiquement la classification eBKP-H des postes principaux
+  it: Calcolare automaticamente la classificazione eBKP-H delle voci principali
+  en: Automatically calculate eBKP-H classification for major positions
+description:
+  de: 'eBKP-H-Codes für die wesentlichen Architektur- und TGA-Positionen aus wenigen Modelleigenschaften ableiten — statt die Klassifizierung manuell zu setzen.
+
+
+    **Ausgangslage**
+
+    - eBKP-H-Zuordnung an Wänden, Decken, Bekleidungen und TGA-Geräten wird oft manuell gepflegt und weicht zwischen Modell und Kostenplan ab.
+
+    - Elementtyp, Medium, Innen/Aussen, tragend/nichttragend und unter/über Terrain stecken schon in den Bauteileigenschaften — sie werden aber nicht durchgängig für die Klassifizierung genutzt.
+
+
+    **Ziel & Nutzen**
+
+    - Wesentliche Positionen einheitlich nach SN 506 511 klassifizieren.
+
+    - Wenige eindeutige Eingaben; eBKP-H-Code automatisch berechnen.
+
+
+    **Ablauf**
+
+    1. Architektur- und TGA-Bauteile mit IsExternal, LoadBearing, Medium und BelowTerrain bereitstellen.
+
+    2. EbkpH automatisiert ableiten (z. B. Aussenwand → `C02.01`, Heizkessel → `D05.02`, Luftauslass → `D07.05`).
+
+    3. Klassifizierte Mengen prüfen und für die Kostenermittlung nutzen.
+
+
+    **Ergebnis**
+
+    - Nachvollziehbare eBKP-H-Klassifizierung der wesentlichen Positionen direkt aus dem Modell.
+
+
+    **Lieferobjekte**
+
+    - Architektur- und TGA-Fachmodelle mit den modellierten Bauteilen
+
+    - IsExternal, LoadBearing (Pset_*Common), Medium (Reference) und BelowTerrain (ePset_Cost)
+
+    - EbkpH (ePset_Cost) gemäss SN 506 511, z. B. `C02.01`, `D05.02`, `D07.05`'
+  fr: 'Déduire les codes eBKP-H des postes principaux architecture et CVC à partir de quelques propriétés du modèle — au lieu de classer manuellement.
+
+
+    **Situation de départ**
+
+    - L''affectation eBKP-H sur murs, dalles, revêtements et appareils CVC est souvent tenue manuellement et diverge entre modèle et plan de coûts.
+
+    - Type d''élément, fluide, intérieur/extérieur, porteur/non porteur et sous/sur le niveau du terrain sont déjà dans les propriétés — mais ne sont pas utilisés de façon systématique pour la classification.
+
+
+    **Objectif et bénéfice**
+
+    - Classer les postes principaux de façon uniforme selon SN 506 511.
+
+    - Peu de saisies univoques ; calculer le code eBKP-H automatiquement.
+
+
+    **Déroulement**
+
+    1. Fournir les éléments d''architecture et CVC avec IsExternal, LoadBearing, fluide et BelowTerrain.
+
+    2. Déduire EbkpH automatiquement (p. ex. mur extérieur → `C02.01`, chaudière → `D05.02`, bouche d''air → `D07.05`).
+
+    3. Vérifier les quantités classées et les utiliser pour le calcul des coûts.
+
+
+    **Résultat**
+
+    - Classification eBKP-H traçable des postes principaux directement à partir du modèle.
+
+
+    **Livrables**
+
+    - Maquettes architecture et CVC avec les éléments modélisés
+
+    - IsExternal, LoadBearing (Pset_*Common), fluide (Reference) et BelowTerrain (ePset_Cost)
+
+    - EbkpH (ePset_Cost) selon SN 506 511, p. ex. `C02.01`, `D05.02`, `D07.05`'
+  it: 'Ricavare i codici eBKP-H delle voci principali di architettura e impianti da poche proprietà del modello — invece di classificare manualmente.
+
+
+    **Situazione di partenza**
+
+    - L''assegnazione eBKP-H su pareti, solai, rivestimenti e apparecchi impianti è spesso gestita manualmente e diverge tra modello e piano dei costi.
+
+    - Tipo di elemento, fluido, interno/esterno, portante/non portante e sotto/sopra il livello del terreno sono già nelle proprietà — ma non sono usati in modo sistematico per la classificazione.
+
+
+    **Obiettivo e beneficio**
+
+    - Classificare le voci principali in modo uniforme secondo SN 506 511.
+
+    - Pochi input univoci; calcolare il codice eBKP-H automaticamente.
+
+
+    **Svolgimento**
+
+    1. Fornire i componenti di architettura e impianti con IsExternal, LoadBearing, fluido e BelowTerrain.
+
+    2. Ricavare EbkpH automaticamente (es. parete esterna → `C02.01`, caldaia → `D05.02`, bocchetta → `D07.05`).
+
+    3. Verificare le quantità classificate e usarle per il calcolo dei costi.
+
+
+    **Risultato**
+
+    - Classificazione eBKP-H tracciabile delle voci principali direttamente dal modello.
+
+
+    **Oggetti della fornitura**
+
+    - Modelli di architettura e impianti con i componenti modellati
+
+    - IsExternal, LoadBearing (Pset_*Common), fluido (Reference) e BelowTerrain (ePset_Cost)
+
+    - EbkpH (ePset_Cost) secondo SN 506 511, es. `C02.01`, `D05.02`, `D07.05`'
+  en: 'Derive eBKP-H codes for major architecture and MEP positions from a few model properties — instead of classifying by hand.
+
+
+    **Starting point**
+
+    - eBKP-H assignment on walls, slabs, coverings, and MEP equipment is often maintained manually and drifts between model and cost plan.
+
+    - Element type, medium, interior/exterior, load-bearing, and below/above terrain already sit in component properties — but they are not used consistently for classification.
+
+
+    **Goal & benefit**
+
+    - Classify major positions uniformly according to SN 506 511.
+
+    - Use a few unambiguous inputs; calculate the eBKP-H code automatically.
+
+
+    **Process**
+
+    1. Provide architecture and MEP components with IsExternal, LoadBearing, medium, and BelowTerrain.
+
+    2. Derive EbkpH automatically (e.g. exterior wall → `C02.01`, boiler → `D05.02`, air terminal → `D07.05`).
+
+    3. Check classified quantities and use them for cost calculation.
+
+
+    **Outcome**
+
+    - Traceable eBKP-H classification of major positions directly from the model.
+
+
+    **Deliverables**
+
+    - Architecture and MEP models with the modelled components
+
+    - IsExternal, LoadBearing (Pset_*Common), medium (Reference), and BelowTerrain (ePset_Cost)
+
+    - EbkpH (ePset_Cost) according to SN 506 511, e.g. `C02.01`, `D05.02`, `D07.05`'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: 'Automated eBKP-H (SN 506 511) for major architecture and MEP positions. Allowed EbkpH is per element (narrow lists). BelowTerrain and EbkpH live in ePset_Cost. Architecture from IsExternal, LoadBearing,
+  BelowTerrain: Wall+IsExternal → C02.01; Wall+not external+LoadBearing → C02.02 (no architecture element; interior wall is non-load-bearing → G01.01); Column+IsExternal → C03.01 else C03.02; Footing →
+  C01.02; Base slab → C01.03; Floor slab → C04.01; Flat roof → C04.04; Pitched roof → C04.05; Exterior cladding+BelowTerrain → E01 else E02; Interior cladding → G03.02; Floor covering → G02.02; Suspended
+  ceiling → G04.02. MEP from element type, medium (Reference), PredefinedType, BelowTerrain: Generator → D01.01; Transformer → D01.02; UPS → D01.03; Tray → D01.04 (Starkstrom) or D01.10 (Schwachstrom);
+  Outlet → D01.04 or D01.11; Switchboard/switching device → D01.04 or D02.06; Light → D01.05; Communications appliance → D01.11; Sensor/actuator → D02.03; Alarm → D03.01 or D04.01; Fire terminal → D04.03
+  / D04.04 / D04.05; Boiler / heat exchanger → D05.02; Space heater → D05.05; Pipe medium HZ/VL-H/RL-H → D05.04, KZ/VL-K/RL-K → D06.04, TW/FW → D08.04, AW/WW/ENT/FL → D09.01, gas → D10.04; Pump/tank follow
+  the same system split (D05 / D06 / D08); Valve as distribution or terminal (D05.04, D06.04, D08.04, D08.05, D09.01, D10.05); Chiller/compressor → D06.02; Cooling tower → D06.01; Cooled beam → D06.05;
+  Duct AU/FO → D07.01 else D07.04; Fan → D07.02 or D07.04; Air terminal → D07.05; Air terminal box / damper → D07.04; Unitary AIRHANDLER → D07.02, cooling types → D06.02, heat pump → D05.02; Sanitary terminal
+  → D08.05; Waste terminal → D09.05; Downpipe → D09.01; Gas terminal → D10.05; Gas regulator → D10.02 or D10.04.'

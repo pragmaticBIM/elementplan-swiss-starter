@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-floor-covering
+code: EBKP-H-FLOOR
+name:
+  de: eBKP-H Bodenbelag
+  fr: eBKP-H revêtement de sol
+  it: eBKP-H pavimentazione
+  en: eBKP-H floor covering
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): G02.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : G02.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): G02.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): G02.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - G02.02
+  fr:
+  - G02.02
+  it:
+  - G02.02
+  en:
+  - G02.02

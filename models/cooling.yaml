@@ -1,0 +1,40 @@
+id: pragmaticbim:model/cooling
+code: KUE
+sort_order: 22
+name:
+  de: Kühlung
+  fr: Froid
+  it: Raffrescamento
+  en: Cooling
+definition:
+  de: Kälteanlagen — Erzeugung, Verteilung und Abgabe von Kälte. Fachmodelle nach Status trennen (B Bestand, A Abbruch, N Neubau, T temporär). Die Trennung macht Modelle schnell lesbar und erlaubt, Neubau und Abbruch gezielt ein- und auszublenden.
+  fr: Installations de froid — production, distribution et émission de froid. Séparer les maquettes par statut (E existant, D démolition, N neuf, T temporaire). La séparation rend les maquettes rapidement lisibles et permet d'afficher ou de masquer ce qui est neuf et ce qui est retiré.
+  it: Impianti di raffrescamento — produzione, distribuzione ed emissione di freddo. Separare i modelli per stato (E esistente, D demolizione, N nuovo, T temporaneo). La separazione rende i modelli rapidamente comprensibili e permette di visualizzare o nascondere ciò che è nuovo e ciò che viene rimosso.
+  en: Cooling systems — generation, distribution, and emission of cold. Split models by status (E existing, D demolish, N new, T temporary). The split makes models readable at a glance and lets you toggle what is new versus what is removed.
+file_name:
+  de: '{Projektnummer}_{B|A|N|T}_TGA-KUE_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_{E|D|N|T}_CVC-KUE_{Libre}.{ext}'
+  it: '{NumeroProgetto}_{E|D|N|T}_IMP-KUE_{Libero}.{ext}'
+  en: '{ProjectNumber}_{E|D|N|T}_MEP-KUE_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/architecture-installation-path
+  - pragmaticbim:element/mep-provision-for-void
+  - pragmaticbim:element/mep-schematic-pipe
+  - pragmaticbim:element/mep-schematic-equipment-space
+  - pragmaticbim:element/architecture-maintenance-space
+  - pragmaticbim:element/mep-chiller
+  - pragmaticbim:element/mep-cooling-tower
+  - pragmaticbim:element/mep-tank
+  - pragmaticbim:element/mep-pump
+  - pragmaticbim:element/mep-unitary-equipment
+  - pragmaticbim:element/mep-cooled-beam
+  - pragmaticbim:element/mep-valve
+  - pragmaticbim:element/mep-sensor
+  - pragmaticbim:element/mep-actuator

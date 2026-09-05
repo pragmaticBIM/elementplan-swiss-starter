@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-wall-exterior
+code: EBKP-H-WALL-EXT
+name:
+  de: eBKP-H Aussenwand
+  fr: eBKP-H mur extérieur
+  it: eBKP-H parete esterna
+  en: eBKP-H exterior wall
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C02.01.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C02.01.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C02.01.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C02.01.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C02.01
+  fr:
+  - C02.01
+  it:
+  - C02.01
+  en:
+  - C02.01

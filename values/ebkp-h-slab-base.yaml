@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-slab-base
+code: EBKP-H-SLAB-BASE
+name:
+  de: eBKP-H Bodenplatte
+  fr: eBKP-H dalle de fondation
+  it: eBKP-H platea
+  en: eBKP-H base slab
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C01.03.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C01.03.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C01.03.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C01.03.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C01.03
+  fr:
+  - C01.03
+  it:
+  - C01.03
+  en:
+  - C01.03

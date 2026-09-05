@@ -55,7 +55,7 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter par local intérieur le revêtement prévu et la surface nette dans le modèle.
+    - Saisir par local intérieur le revêtement prévu et la surface nette dans le modèle.
 
     - Évaluation par local comme base pour le cahier des charges et le métré des travaux de revêtements de sol.
 
@@ -66,7 +66,7 @@ description:
 
     2. Saisir le type de revêtement (FloorCovering) et NetFloorArea par local.
 
-    3. Dériver la liste des locaux par type de revêtement et surface pour les documents d''appel d''offres.
+    3. Déduire la liste des locaux par type de revêtement et surface pour les documents d''appel d''offres.
 
 
     **Résultat**
@@ -102,7 +102,7 @@ description:
 
     2. Registrare il tipo di pavimentazione (FloorCovering) e NetFloorArea per locale.
 
-    3. Derivare l''elenco locali per tipo di pavimentazione e superficie per i documenti di gara.
+    3. Ricavare l''elenco locali per tipo di pavimentazione e superficie per i documenti di gara.
 
 
     **Risultato**

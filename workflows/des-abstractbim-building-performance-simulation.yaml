@@ -65,7 +65,7 @@ description:
 
     - Préparer les maquettes architecture avec un effort minimal pour qu''abstractBIM produise des modèles prêts pour la simulation.
 
-    - Permettre des simulations plus précoces et reproductibles plutôt que des reprises tardives ponctuelles.
+    - Permettre des simulations plus tôt et reproductibles plutôt que des reprises tardives ponctuelles.
 
 
     **Déroulement**
@@ -182,4 +182,4 @@ status: active
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: abstractBIM workflow. Same geometric minimum as DES-ABSTRACTBIM-COMP and DES-ABSTRACTBIM-COST. ThermalTransmittance on windows supports early simulation.
+comment: abstractBIM workflow. Same geometric minimum as BES-ABSTRACTBIM-COMP and DES-ABSTRACTBIM-COST. ThermalTransmittance on windows supports early simulation.

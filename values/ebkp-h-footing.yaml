@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-footing
+code: EBKP-H-FOOTING
+name:
+  de: eBKP-H Fundament
+  fr: eBKP-H fondation
+  it: eBKP-H fondazione
+  en: eBKP-H footing
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C01.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C01.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C01.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C01.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C01.02
+  fr:
+  - C01.02
+  it:
+  - C01.02
+  en:
+  - C01.02

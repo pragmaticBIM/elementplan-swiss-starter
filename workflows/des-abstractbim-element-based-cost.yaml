@@ -63,7 +63,7 @@ description:
 
     **Objectif et bénéfice**
 
-    - Extraire les quantités dès les phases précoces de conception.
+    - Extraire les quantités dès les phases initiales de conception.
 
     - Conception orientée coûts itérative : comparer les variantes avant que les coûts ne soient figés.
 
@@ -95,7 +95,7 @@ description:
     - Nom du local dans LongName, numéro de local facultatif dans Name
 
     - Quantités abstractBIM comme base d''estimation et de comparaison de variantes'
-  it: 'Determinare le quantità in fase di progettazione precoce e sviluppare i costi in modo iterativo con il modello.
+  it: 'Determinare le quantità in fase di progettazione iniziale e sviluppare i costi in modo iterativo con il modello.
 
 
     **Situazione di partenza**

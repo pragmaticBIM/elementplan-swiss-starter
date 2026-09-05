@@ -12,7 +12,7 @@ definition:
   it: Consegne dell'ingegneria strutturale. Il modello descrive l'opera portante — fondazioni, colonne, travi, solette, scale e rampe — dal punto di vista dell'ingegnere strutturista.
   en: Deliverables from structural engineering. The model describes the load-bearing built asset — foundations, columns, beams, slabs, stairs, and ramps — from the structural engineer's point of view.
 file_name:
-  de: '{Projekt}_{Phase}_STR_{Freitext}'
+  de: '{Projekt}_{Phase}_TRG_{Freitext}'
   fr: '{Projet}_{Phase}_STR_{Libre}'
   it: '{Progetto}_{Fase}_STR_{Libero}'
   en: '{Project}_{Phase}_STR_{Free}'

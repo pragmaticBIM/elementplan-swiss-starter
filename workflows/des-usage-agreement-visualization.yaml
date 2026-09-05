@@ -7,7 +7,7 @@ name:
   it: Visualizzazioni per convenzioni d'uso dal modello
   en: Visualizations for usage agreements from the model
 description:
-  de: 'Nutzungsanforderungen der Nutzungsvereinbarung (SIA 260) raumweise im Modell führen und daraus lesbare Visualisierungen ableiten.
+  de: 'Nutzungsanforderungen der Nutzungsvereinbarung raumweise im Modell führen und daraus lesbare Visualisierungen ableiten.
 
 
     **Ausgangslage**
@@ -52,8 +52,8 @@ description:
 
     - DesignPointLoad (Punktlast Soll) in kN
 
-    - VibrationRequirements (Schwingungsanforderungen) als VC-A … VC-E'
-  fr: 'Porter les exigences d''utilisation de la convention d''utilisation (SIA 260) par local dans le modèle et en dériver des visualisations lisibles.
+    - VibrationRequirements (Schwingungsanforderungen) als ISO Workshop … VC-E'
+  fr: 'Saisir les exigences d''utilisation de la convention d''utilisation par local dans la maquette et en déduire des visualisations lisibles.
 
 
     **Situation de départ**
@@ -78,7 +78,7 @@ description:
 
     2. Saisir par local charge surfacique cible, charge ponctuelle cible et exigences vibratoires.
 
-    3. Dériver visualisations et plans du modèle et les aligner avec la convention d''utilisation.
+    3. Déduire visualisations et plans du modèle et les aligner avec la convention d''utilisation.
 
 
     **Résultat**
@@ -98,8 +98,8 @@ description:
 
     - DesignPointLoad (charge ponctuelle cible) en kN
 
-    - VibrationRequirements (exigences vibratoires) comme VC-A … VC-E'
-  it: 'Gestire i requisiti d''uso della convenzione d''uso (SIA 260) per locale nel modello e derivarne visualizzazioni leggibili.
+    - VibrationRequirements (exigences vibratoires) comme ISO Workshop … VC-E'
+  it: 'Tenere i requisiti d''uso della convenzione d''uso per locale nel modello e ricavarne visualizzazioni leggibili.
 
 
     **Situazione di partenza**
@@ -124,7 +124,7 @@ description:
 
     2. Registrare per locale carico areale obiettivo, carico puntuale obiettivo e requisiti di vibrazione.
 
-    3. Derivare visualizzazioni e planimetrie dal modello e allinearle con la convenzione d''uso.
+    3. Ricavare visualizzazioni e planimetrie dal modello e allinearle con la convenzione d''uso.
 
 
     **Risultato**
@@ -144,8 +144,8 @@ description:
 
     - DesignPointLoad (carico puntuale obiettivo) in kN
 
-    - VibrationRequirements (requisiti di vibrazione) come VC-A … VC-E'
-  en: 'Hold usage-agreement requirements (SIA 260) per space in the model and derive readable visualizations from them.
+    - VibrationRequirements (requisiti di vibrazione) come ISO Workshop … VC-E'
+  en: 'Hold usage-agreement requirements per space in the model and derive readable visualizations from them.
 
 
     **Starting point**
@@ -190,7 +190,7 @@ description:
 
     - DesignPointLoad (design point load) in kN
 
-    - VibrationRequirements (vibration requirements) as VC-A … VC-E'
+    - VibrationRequirements (vibration requirements) as ISO Workshop … VC-E'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null

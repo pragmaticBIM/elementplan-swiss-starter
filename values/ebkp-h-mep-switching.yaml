@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-mep-switching
+code: EBKP-H-MEP-SW
+name:
+  de: eBKP-H Schaltgerät
+  fr: eBKP-H appareil de commutation
+  it: eBKP-H apparecchio di manovra
+  en: eBKP-H switching device
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D01.04, D02.06.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D01.04, D02.06.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D01.04, D02.06.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D01.04, D02.06.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D01.04
+  - D02.06
+  fr:
+  - D01.04
+  - D02.06
+  it:
+  - D01.04
+  - D02.06
+  en:
+  - D01.04
+  - D02.06

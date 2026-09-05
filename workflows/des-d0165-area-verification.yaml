@@ -62,7 +62,7 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter espaces intérieurs et extérieurs avec Reference (classe D0165) et LongName (usage du local).
+    - Saisir les espaces intérieurs et extérieurs avec Reference (classe D0165) et LongName (usage du local).
 
     - Maintenir les classes de surface directement sur le local plutôt que de les réconcilier via des listes.
 

@@ -2,13 +2,13 @@ id: pragmaticbim:value/cable-reference-schematic
 code: CABLE-REF-SCH
 name:
   de: Referenz Medium Trasse (schematisch)
-  fr: Référence médium chemin de câbles (schématique)
-  it: Riferimento mezzo canalina (schematica)
+  fr: Référence fluide chemin de câbles (schématique)
+  it: Riferimento fluido canalina (schematica)
   en: Cable tray medium reference (schematic)
 description:
   de: Medium-Kennung für schematische Elektrotrassen in der frühen Koordination.
-  fr: Code de médium pour chemins de câbles schématiques en coordination précoce.
-  it: Codice mezzo per canaline elettriche schematiche nel coordinamento precoce.
+  fr: Code de fluide pour chemins de câbles schématiques en coordination en phase initiale.
+  it: Codice fluido per canaline elettriche schematiche nel coordinamento in fase iniziale.
   en: Medium code for schematic cable trays in early coordination.
 year: 2026
 norm_reference: IFC4

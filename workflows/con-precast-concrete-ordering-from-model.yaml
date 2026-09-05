@@ -57,14 +57,14 @@ description:
 
     - Attribuer un numéro de pièce préfabriquée unique à chaque élément en béton dans le modèle structurel.
 
-    - Dériver la commande et la planification des livraisons directement du modèle.
+    - Déduire la commande et la planification des livraisons directement du modèle.
 
 
     **Déroulement**
 
     1. Fournir le modèle structurel avec des éléments préfabriqués en béton conformes à l''exécution.
 
-    2. Saisir le numéro de pièce préfabriquée par composant dans l''attribut Name.
+    2. Saisir le numéro de pièce préfabriquée par élément dans l''attribut Name.
 
     3. Exporter le modèle pour la commande et la planification des livraisons.
 
@@ -93,7 +93,7 @@ description:
 
     - Dotare ogni elemento prefabbricato in calcestruzzo nel modello strutturale di un numero di pezzo univoco.
 
-    - Derivare ordine e pianificazione delle consegne direttamente dal modello.
+    - Ricavare ordine e pianificazione delle consegne direttamente dal modello.
 
 
     **Svolgimento**

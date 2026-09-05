@@ -1,0 +1,40 @@
+id: pragmaticbim:model/plumbing
+code: SAN
+sort_order: 24
+name:
+  de: Sanitär
+  fr: Sanitaire
+  it: Sanitario
+  en: Plumbing
+definition:
+  de: Sanitäranlagen — Trinkwasser, Abwasser und sanitäre Apparate im Gebäude, ohne Grundleitungen. Fachmodelle nach Status trennen (B Bestand, A Abbruch, N Neubau, T temporär). Die Trennung macht Modelle schnell lesbar und erlaubt, Neubau und Abbruch gezielt ein- und auszublenden.
+  fr: Installations sanitaires — eau potable, eaux usées et appareils sanitaires dans le bâtiment, hors collecteurs enterrés. Séparer les maquettes par statut (E existant, D démolition, N neuf, T temporaire). La séparation rend les maquettes rapidement lisibles et permet d'afficher ou de masquer ce qui est neuf et ce qui est retiré.
+  it: Impianti sanitari — acqua potabile, acque reflue e apparecchi sanitari nell'edificio, escluse le condotte interrate. Separare i modelli per stato (E esistente, D demolizione, N nuovo, T temporaneo). La separazione rende i modelli rapidamente comprensibili e permette di visualizzare o nascondere ciò che è nuovo e ciò che viene rimosso.
+  en: Plumbing systems — drinking water, wastewater, and sanitary appliances in the building, excluding underground drains. Split models by status (E existing, D demolish, N new, T temporary). The split makes models readable at a glance and lets you toggle what is new versus what is removed.
+file_name:
+  de: '{Projektnummer}_{B|A|N|T}_TGA-SAN_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_{E|D|N|T}_CVC-SAN_{Libre}.{ext}'
+  it: '{NumeroProgetto}_{E|D|N|T}_IMP-SAN_{Libero}.{ext}'
+  en: '{ProjectNumber}_{E|D|N|T}_MEP-SAN_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/architecture-installation-path
+  - pragmaticbim:element/mep-provision-for-void
+  - pragmaticbim:element/mep-schematic-pipe
+  - pragmaticbim:element/mep-schematic-equipment-space
+  - pragmaticbim:element/architecture-maintenance-space
+  - pragmaticbim:element/mep-downpipe
+  - pragmaticbim:element/mep-gas-regulator
+  - pragmaticbim:element/mep-tank
+  - pragmaticbim:element/mep-pump
+  - pragmaticbim:element/mep-sanitary-terminal
+  - pragmaticbim:element/mep-waste-terminal
+  - pragmaticbim:element/mep-gas-terminal
+  - pragmaticbim:element/mep-fire-suppression-terminal
+  - pragmaticbim:element/mep-valve

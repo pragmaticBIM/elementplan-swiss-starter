@@ -45,7 +45,7 @@ description:
     - Innenräume (IfcSpace): Name (technische Planungsraumnummer), SignageRoomNumber (ePset_SpaceSignage)
 
     - Optional: Aussenräume (IfcSpace) mit SignageRoomNumber, falls signaletisch nummeriert'
-  fr: 'Porter et mettre à jour les numéros de local pour la signalétique en exploitation — séparément du numéro technique de planification.
+  fr: 'Saisir et mettre à jour les numéros de local pour la signalétique en exploitation — séparément du numéro technique de planification.
 
 
     **Situation de départ**
@@ -57,16 +57,16 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter les numéros de signalétique dans le modèle sans écraser le numéro de planification stable.
+    - Saisir les numéros de signalétique dans le modèle sans écraser le numéro de planification stable.
 
-    - Dériver marquage, gestion des espaces et CAFM d''une même source vérifiable.
+    - Déduire marquage, gestion des espaces et CAFM d''une même source vérifiable.
 
 
     **Déroulement**
 
     1. Conserver dans le modèle les locaux intérieurs avec leur numéro technique stable (Name).
 
-    2. Porter le numéro de signalétique comme attribut séparé et le mettre à jour en cas de changement.
+    2. Saisir le numéro de signalétique comme attribut séparé et le mettre à jour en cas de changement.
 
     3. Extraire du modèle les listes pour marquage et exploitation et les aligner avec le concept de signalétique.
 
@@ -97,7 +97,7 @@ description:
 
     - Gestire i numeri di segnaletica nel modello senza sovrascrivere il numero di pianificazione stabile.
 
-    - Derivare etichettatura, gestione spazi e CAFM dalla stessa fonte verificabile.
+    - Ricavare etichettatura, gestione spazi e CAFM dalla stessa fonte verificabile.
 
 
     **Svolgimento**

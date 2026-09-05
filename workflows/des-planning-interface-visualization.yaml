@@ -1,0 +1,162 @@
+id: pragmaticbim:workflow/des-planning-interface-visualization
+code: DES-PLANNING-INTERFACE
+sort_order: 60
+name:
+  de: Planungsschnittstellen visualisieren
+  fr: Visualiser les interfaces de planification
+  it: Visualizzare le interfacce di pianificazione
+  en: Visualize planning interfaces
+description:
+  de: 'Planungsverantwortung je Bauteil im Modell führen und kolorieren — vergessene Teile an den Planungsschnittstellen werden sichtbar.
+
+
+    **Ausgangslage**
+
+    - Fehler entstehen an den Schnittstellen zwischen Planungsdisziplinen; Bauteile ohne klare Planungszuständigkeit gehen leicht verloren.
+
+    - Listen und Organigramme machen Lücken an den Planungsschnittstellen schlecht sichtbar.
+
+
+    **Ziel & Nutzen**
+
+    - Jedes Architektur- und TGA-Bauteil einem BKP-Planungspaket zuweisen.
+
+    - Kolorierte Pläne machen fehlende Zuordnungen und Überschneidungen an den Schnittstellen sichtbar.
+
+
+    **Ablauf**
+
+    1. Architektur- und TGA-Bauteile im Fachmodell bereitstellen.
+
+    2. PlanningInterface mit dem BKP-3-Steller der Planungsposition setzen.
+
+    3. Visualisierung nach Planungspaket ableiten und Lücken prüfen.
+
+
+    **Ergebnis**
+
+    - Sichtbare Planungsschnittstellen; fehlende oder doppelte Planungszuständigkeiten sind erkennbar, bevor sie in die Ausführung gehen.
+
+
+    **Lieferobjekte**
+
+    - Architektur- und TGA-Fachmodelle mit den modellierten Bauteilen
+
+    - PlanningInterface (ePset_Cost) mit BKP-3-Steller, z. B. `091`, `092`, `094`'
+  fr: 'Tenir la responsabilité de planification par élément dans la maquette et colorier les plans — les parties oubliées aux interfaces de planification deviennent visibles.
+
+
+    **Situation de départ**
+
+    - Les erreurs surviennent aux interfaces entre disciplines de planification ; les composants sans responsabilité claire se perdent facilement.
+
+    - Listes et organigrammes ne permettent pas de voir clairement les lacunes aux interfaces de planification.
+
+
+    **Objectif et bénéfice**
+
+    - Affecter chaque élément d''architecture et CVC à un lot de planification BKP.
+
+    - Les plans colorés rendent visibles les affectations manquantes et les chevauchements aux interfaces.
+
+
+    **Déroulement**
+
+    1. Fournir les éléments d''architecture et CVC dans la maquette de discipline.
+
+    2. Définir PlanningInterface avec le code BKP à trois chiffres de la position de planification.
+
+    3. Déduire la visualisation par lot de planification et vérifier les lacunes.
+
+
+    **Résultat**
+
+    - Interfaces de planification visibles ; responsabilités manquantes ou doubles sont détectables avant l''exécution.
+
+
+    **Livrables**
+
+    - Maquettes architecture et CVC avec les éléments modélisés
+
+    - PlanningInterface (ePset_Cost) avec code BKP à trois chiffres, p. ex. `091`, `092`, `094`'
+  it: 'Assegnare la responsabilità di pianificazione per componente nel modello e colorare i piani — le parti dimenticate alle interfacce di pianificazione diventano visibili.
+
+
+    **Situazione di partenza**
+
+    - Gli errori nascono alle interfacce tra discipline di pianificazione; i componenti senza responsabilità chiara si perdono facilmente.
+
+    - Elenchi e organigrammi rendono poco visibili le lacune alle interfacce di pianificazione.
+
+
+    **Obiettivo e beneficio**
+
+    - Assegnare ogni componente di architettura e impianti a un lotto di pianificazione BKP.
+
+    - Le planimetrie colorate rendono visibili assegnazioni mancanti e sovrapposizioni alle interfacce.
+
+
+    **Svolgimento**
+
+    1. Fornire i componenti di architettura e impianti nel modello di disciplina.
+
+    2. Impostare PlanningInterface con il codice BKP a tre cifre della posizione di pianificazione.
+
+    3. Ricavare la visualizzazione per lotto di pianificazione e verificare le lacune.
+
+
+    **Risultato**
+
+    - Interfacce di pianificazione visibili; responsabilità mancanti o doppie sono riconoscibili prima dell''esecuzione.
+
+
+    **Oggetti della fornitura**
+
+    - Modelli di architettura e impianti con i componenti modellati
+
+    - PlanningInterface (ePset_Cost) con codice BKP a tre cifre, es. `091`, `092`, `094`'
+  en: 'Carry planning responsibility per component in the model and colour it — forgotten parts at planning interfaces become visible.
+
+
+    **Starting point**
+
+    - Errors happen at the interfaces between planning disciplines; components without a clear planning owner are easily lost.
+
+    - Lists and organigrams make gaps at planning interfaces hard to see.
+
+
+    **Goal & benefit**
+
+    - Assign every architecture and MEP component to a BKP planning package.
+
+    - Coloured plans make missing assignments and overlaps at the interfaces visible.
+
+
+    **Process**
+
+    1. Provide architecture and MEP components in the discipline model.
+
+    2. Set PlanningInterface to the three-digit BKP code of the planning position.
+
+    3. Derive visualization by planning package and check for gaps.
+
+
+    **Outcome**
+
+    - Visible planning interfaces; missing or duplicate planning responsibilities are detectable before execution.
+
+
+    **Deliverables**
+
+    - Architecture and MEP models with the modelled components
+
+    - PlanningInterface (ePset_Cost) with three-digit BKP code, e.g. `091`, `092`, `094`'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: 'Custom property PlanningInterface in ePset_Cost (same pset as CostInterface and AwardInterface). Allowed values: three-digit BKP planning and incidental positions (CRB honoraria, permits, reserves).
+  Typical phases 32–41. Visualization to catch forgotten parts at planning-discipline interfaces.'

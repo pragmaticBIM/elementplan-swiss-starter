@@ -45,7 +45,7 @@ description:
     - Innenräume als modellierte IfcSpace-Volumen (PredefinedType=INTERNAL)
 
     - IfcDoor mit PredefinedType, OverallWidth, OverallHeight und OperationType (Öffnungsrichtung)'
-  fr: 'Dériver les bases de planification des portes à partir du modèle — dimensions, type de porte et sens d''ouverture pour listes et coordination.
+  fr: 'Déduire les bases de planification des portes à partir du modèle — dimensions, type de porte et sens d''ouverture pour listes et coordination.
 
 
     **Situation de départ**
@@ -57,9 +57,9 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter les portes dans le modèle avec dimensions, PredefinedType et OperationType.
+    - Saisir les portes dans le modèle avec dimensions, PredefinedType et OperationType.
 
-    - Dériver les bases de planification des portes pour listes, comparaison de variantes et coordination.
+    - Déduire les bases de planification des portes pour listes, comparaison de variantes et coordination.
 
 
     **Déroulement**
@@ -68,7 +68,7 @@ description:
 
     2. Compléter les portes avec OverallWidth, OverallHeight, PredefinedType et OperationType.
 
-    3. Dériver et coordonner listes de portes et bases de planification à partir du modèle.
+    3. Déduire et coordonner listes de portes et bases de planification à partir du modèle.
 
 
     **Résultat**
@@ -83,7 +83,7 @@ description:
     - Locaux intérieurs comme volumes IfcSpace modélisés (PredefinedType=INTERNAL)
 
     - IfcDoor avec PredefinedType, OverallWidth, OverallHeight et OperationType (sens d''ouverture)'
-  it: 'Derivare le basi per la pianificazione delle porte dal modello — dimensioni, tipo di porta e senso di apertura per elenchi e coordinamento.
+  it: 'Ricavare le basi per la pianificazione delle porte dal modello — dimensioni, tipo di porta e senso di apertura per elenchi e coordinamento.
 
 
     **Situazione di partenza**
@@ -97,7 +97,7 @@ description:
 
     - Gestire le porte nel modello con dimensioni, PredefinedType e OperationType.
 
-    - Derivare le basi per la pianificazione delle porte per elenchi, confronto varianti e coordinamento.
+    - Ricavare le basi per la pianificazione delle porte per elenchi, confronto varianti e coordinamento.
 
 
     **Svolgimento**
@@ -106,7 +106,7 @@ description:
 
     2. Completare le porte con OverallWidth, OverallHeight, PredefinedType e OperationType.
 
-    3. Derivare e coordinare elenchi porte e basi di pianificazione dal modello.
+    3. Ricavare e coordinare elenchi porte e basi di pianificazione dal modello.
 
 
     **Risultato**

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-slab-floor
+code: EBKP-H-SLAB-FLOOR
+name:
+  de: eBKP-H Geschossdecke
+  fr: eBKP-H dalle de plancher
+  it: eBKP-H solaio di piano
+  en: eBKP-H floor slab
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C04.01.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C04.01.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C04.01.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C04.01.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C04.01
+  fr:
+  - C04.01
+  it:
+  - C04.01
+  en:
+  - C04.01

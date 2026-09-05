@@ -59,14 +59,14 @@ description:
 
     **Objectif et bénéfice**
 
-    - Dériver du modèle et remettre une liste de locaux et une liste de portes vérifiables.
+    - Déduire du modèle et remettre une liste de locaux et une liste de portes vérifiables.
 
     - Technique du bâtiment uniquement dans la mesure exigée par le système FM — clarifier le périmètre avec l''exploitant, pas de catalogue CVC fixe.
 
 
     **Déroulement**
 
-    1. Porter dans le modèle les locaux intérieurs et les portes avec les données de base et quantités requises.
+    1. Saisir dans le modèle les locaux intérieurs et les portes avec les données de base et quantités requises.
 
     2. Extraire listes et indicateurs du modèle et les aligner avec les exigences de réception du système FM.
 
@@ -99,7 +99,7 @@ description:
 
     **Obiettivo e beneficio**
 
-    - Derivare dal modello e consegnare un elenco locali e un elenco porte verificabili.
+    - Ricavare dal modello e consegnare un elenco locali e un elenco porte verificabili.
 
     - Consegnare gli impianti solo nella misura richiesta dal sistema FM — chiarire il perimetro con il gestore, nessun catalogo impianti fisso.
 

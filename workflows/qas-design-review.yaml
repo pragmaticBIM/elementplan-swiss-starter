@@ -4,7 +4,7 @@ sort_order: 83
 name:
   de: Designreview am Phasenende
   fr: Revue de conception en fin de phase
-  it: Design review a fine fase
+  it: Revisione di progetto a fine fase
   en: End-of-phase design review
 description:
   de: 'Designreview am Abschluss jeder Projektphase — Qualität und Reife der Planung prüfen, offene Punkte festhalten und die Freigabe für die nächste Phase dokumentieren.

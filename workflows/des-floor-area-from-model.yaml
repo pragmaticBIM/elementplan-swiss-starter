@@ -47,7 +47,7 @@ description:
     - Lufträume als IfcSpace mit PredefinedType=USERDEFINED und ObjectType=Luftraum
 
     - GrossFloorArea, GrossVolume und Height je Geschossvolumen und je Luftraum'
-  fr: 'Modéliser les volumes d''étage et les volumes d''air, puis dériver la surface de plancher à partir du volume d''étage moins le volume d''air.
+  fr: 'Modéliser les volumes d''étage et les volumes d''air, puis déduire la surface de plancher à partir du volume d''étage moins le volume d''air.
 
 
     **Situation de départ**
@@ -59,9 +59,9 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter séparément volumes d''étage et volumes d''air dans le modèle.
+    - Saisir séparément volumes d''étage et volumes d''air dans le modèle.
 
-    - Dériver surface de plancher et volume comptables directement de volume d''étage − volume d''air.
+    - Déduire surface de plancher et volume comptables directement de volume d''étage − volume d''air.
 
 
     **Déroulement**
@@ -87,7 +87,7 @@ description:
     - Volumes d''air comme IfcSpace avec PredefinedType=USERDEFINED et ObjectType=Luftraum
 
     - GrossFloorArea, GrossVolume et Height par volume d''étage et par volume d''air'
-  it: 'Modellare i volumi di piano e i volumi d''aria e derivare la superficie di piano da volume di piano meno volume d''aria.
+  it: 'Modellare i volumi di piano e i volumi d''aria e ricavare la superficie di piano da volume di piano meno volume d''aria.
 
 
     **Situazione di partenza**
@@ -101,7 +101,7 @@ description:
 
     - Gestire separatamente volumi di piano e volumi d''aria nel modello.
 
-    - Derivare superficie di piano e volume computabili direttamente da volume di piano − volume d''aria.
+    - Ricavare superficie di piano e volume computabili direttamente da volume di piano − volume d''aria.
 
 
     **Svolgimento**

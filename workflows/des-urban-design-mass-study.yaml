@@ -2,7 +2,7 @@ id: pragmaticbim:workflow/des-urban-design-mass-study
 code: DES-URBAN-MASS
 sort_order: 44
 name:
-  de: Urban Design Massenstudie
+  de: Städtebauliche Massenstudie
   fr: Étude de masse urbanistique
   it: Studio di massa urbanistica
   en: Urban design mass study
@@ -63,7 +63,7 @@ description:
 
     - Maintenir les volumes bruts tôt dans le modèle, étage par étage.
 
-    - Dériver directement surface, volume et hauteur par unité ou part de programme.
+    - Déduire directement surface, volume et hauteur par unité ou part de programme.
 
 
     **Déroulement**
@@ -103,9 +103,9 @@ description:
 
     **Obiettivo e beneficio**
 
-    - Gestire i volumi lordi in fase precoce, piano per piano.
+    - Gestire i volumi lordi in fase iniziale, piano per piano.
 
-    - Derivare direttamente superficie, volume e altezza per unità o quota di programma.
+    - Ricavare direttamente superficie, volume e altezza per unità o quota di programma.
 
 
     **Svolgimento**

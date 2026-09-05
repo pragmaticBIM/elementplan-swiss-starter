@@ -1,0 +1,170 @@
+id: pragmaticbim:workflow/des-managing-existing-with-models
+code: DES-EXISTING-MODELS
+sort_order: 45
+name:
+  de: Bestand, Abbruch, Neubau und Temporär mit Modellen führen
+  fr: Gérer existant, démolition, neuf et temporaire avec des maquettes
+  it: Gestire esistente, demolizione, nuovo e temporaneo con i modelli
+  en: Managing existing, demolition, new and temporary with models
+description:
+  de: 'Fachmodelle nach Bestand, Abbruch, Neubau und Temporär trennen — so ist sofort klar, was neu ist und was entfernt wird, und ganze Modelle lassen sich ein- und ausblenden.
+
+
+    **Ausgangslage**
+
+    - Bestand, Abbruch und Neubau in einem Fachmodell vermischen die Lesbarkeit; Ein- und Ausblenden nach Status ist umständlich.
+
+    - Ohne Kennzeichnung im Dateinamen ist im federierten Modell nicht sofort ersichtlich, welches Modell Bestand, Abbruch, Neubau oder Temporär enthält.
+
+
+    **Ziel & Nutzen**
+
+    - Fachmodelle nach Status trennen; der Buchstabe steht im Dateinamen direkt nach der Projektnummer.
+
+    - Modelle schnell verstehen und gezielt ein- und ausblenden, was neu ist und was entfernt wird.
+
+
+    **Ablauf**
+
+    1. Status je Bauteil setzen (NEW, EXISTING, DEMOLISH, TEMPORARY).
+
+    2. Fachmodelle nach Status aufteilen und im Dateinamen nach der Projektnummer kennzeichnen (B, A, N oder T).
+
+    3. Im Koordinationsmodell Bestand, Abbruch, Neubau und Temporär gezielt ein- und ausblenden.
+
+
+    **Ergebnis**
+
+    - Getrennte Fachmodelle nach Status, die sich schnell lesen und umschalten lassen.
+
+
+    **Lieferobjekte**
+
+    - Fachmodelle nach Status getrennt; Dateiname mit Buchstaben nach der Projektnummer (B Bestand, A Abbruch, N Neubau, T temporär)
+
+    - Status gemäss Pset_*Common: NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - ElementStatus (ePset_ElementStatus) als IFC2x3-Ersatz'
+  fr: 'Séparer les maquettes selon existant, démolition, neuf et temporaire — ainsi on voit tout de suite ce qui est neuf et ce qui est retiré, et des maquettes entières s''affichent ou se masquent.
+
+
+    **Situation de départ**
+
+    - Mélanger existant, démolition et neuf dans une même maquette nuit à la lisibilité ; afficher ou masquer selon le statut est lourd.
+
+    - Sans indication dans le nom de fichier, on ne voit pas tout de suite dans le modèle fédéré quelle maquette contient l''existant, la démolition, le neuf ou le temporaire.
+
+
+    **Objectif et bénéfice**
+
+    - Séparer les maquettes par statut ; la lettre figure dans le nom de fichier juste après le numéro de projet.
+
+    - Comprendre rapidement les maquettes et afficher ou masquer ce qui est neuf et ce qui est retiré.
+
+
+    **Déroulement**
+
+    1. Attribuer le statut par élément (NEW, EXISTING, DEMOLISH, TEMPORARY).
+
+    2. Répartir les maquettes par statut et indiquer la lettre dans le nom de fichier après le numéro de projet (E, D, N ou T).
+
+    3. Afficher ou masquer existant, démolition, neuf et temporaire dans le modèle de coordination.
+
+
+    **Résultat**
+
+    - Maquettes séparées par statut, rapidement lisibles et commutables.
+
+
+    **Livrables**
+
+    - Maquettes séparées par statut ; nom de fichier avec lettre après le numéro de projet (E existant, D démolition, N neuf, T temporaire)
+
+    - Statut selon Pset_*Common : NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - ElementStatus (ePset_ElementStatus) comme substitut IFC2x3'
+  it: 'Separare i modelli secondo esistente, demolizione, nuovo e temporaneo — così è subito chiaro cosa è nuovo e cosa viene rimosso, e interi modelli si visualizzano o si nascondono.
+
+
+    **Situazione di partenza**
+
+    - Mischiare esistente, demolizione e nuovo in un solo modello nuoce alla leggibilità; visualizzare o nascondere per stato è scomodo.
+
+    - Senza indicazione nel nome file, nel modello federato non è subito chiaro quale modello contiene esistente, demolizione, nuovo o temporaneo.
+
+
+    **Obiettivo e beneficio**
+
+    - Separare i modelli per stato; la lettera sta nel nome file subito dopo il numero di progetto.
+
+    - Capire rapidamente i modelli e visualizzare o nascondere ciò che è nuovo e ciò che viene rimosso.
+
+
+    **Svolgimento**
+
+    1. Impostare lo stato per elemento (NEW, EXISTING, DEMOLISH, TEMPORARY).
+
+    2. Suddividere i modelli per stato e indicare la lettera nel nome file dopo il numero di progetto (E, D, N o T).
+
+    3. Visualizzare o nascondere esistente, demolizione, nuovo e temporaneo nel modello di coordinamento.
+
+
+    **Risultato**
+
+    - Modelli separati per stato, rapidamente leggibili e commutabili.
+
+
+    **Oggetti della fornitura**
+
+    - Modelli separati per stato; nome file con lettera dopo il numero di progetto (E esistente, D demolizione, N nuovo, T temporaneo)
+
+    - Stato secondo Pset_*Common: NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - ElementStatus (ePset_ElementStatus) come sostituto IFC2x3'
+  en: 'Split models by existing, demolish, new and temporary — so it is immediately clear what is new and what is removed, and whole models can be toggled on and off.
+
+
+    **Starting point**
+
+    - Mixing existing, demolish and new in one model hurts readability; toggling by status is cumbersome.
+
+    - Without a filename marker, the federated model does not show at a glance which file holds existing, demolish, new or temporary.
+
+
+    **Goal & benefit**
+
+    - Split models by status; the letter sits in the filename right after the project number.
+
+    - Understand models quickly and toggle what is new versus what is removed.
+
+
+    **Process**
+
+    1. Set status per element (NEW, EXISTING, DEMOLISH, TEMPORARY).
+
+    2. Split models by status and mark the letter in the filename after the project number (E, D, N or T).
+
+    3. Toggle existing, demolish, new and temporary in the coordination model.
+
+
+    **Outcome**
+
+    - Models split by status that can be read and switched quickly.
+
+
+    **Deliverables**
+
+    - Models split by status; filename with letter after the project number (E existing, D demolish, N new, T temporary)
+
+    - Status according to Pset_*Common: NEW, EXISTING, DEMOLISH, TEMPORARY
+
+    - ElementStatus (ePset_ElementStatus) as IFC2x3 substitute'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
+comment: Split Fachmodelle by Status (B/A/N/T in DE filenames, E/D/N/T in FR/IT/EN). Status on elements; ElementStatus for IFC2x3.

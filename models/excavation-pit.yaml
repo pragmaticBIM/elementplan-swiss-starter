@@ -1,0 +1,26 @@
+id: pragmaticbim:model/excavation-pit
+code: BGR
+sort_order: 35
+name:
+  de: Baugrube
+  fr: Fouille
+  it: Scavo di fondazione
+  en: Excavation pit
+definition:
+  de: Baugrubensicherung — Wände, Anker, Aussteifungen und weitere Sicherungselemente. Fachmodelle nach Status trennen (B Bestand, A Abbruch, N Neubau, T temporär). Die Trennung macht Modelle schnell lesbar und erlaubt, Neubau und Abbruch gezielt ein- und auszublenden.
+  fr: Soutènement de fouille — parois, ancrages, butons et autres éléments de sécurisation. Séparer les maquettes par statut (E existant, D démolition, N neuf, T temporaire). La séparation rend les maquettes rapidement lisibles et permet d'afficher ou de masquer ce qui est neuf et ce qui est retiré.
+  it: Opere di sostegno dello scavo — pareti, tiranti, puntelli e altri elementi di messa in sicurezza. Separare i modelli per stato (E esistente, D demolizione, N nuovo, T temporaneo). La separazione rende i modelli rapidamente comprensibili e permette di visualizzare o nascondere ciò che è nuovo e ciò che viene rimosso.
+  en: Excavation-pit support — walls, anchors, struts, and other retaining elements. Split models by status (E existing, D demolish, N new, T temporary). The split makes models readable at a glance and lets you toggle what is new versus what is removed.
+file_name:
+  de: '{Projektnummer}_{B|A|N|T}_TRG-BGR_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_{E|D|N|T}_STR-BGR_{Libre}.{ext}'
+  it: '{NumeroProgetto}_{E|D|N|T}_STR-BGR_{Libero}.{ext}'
+  en: '{ProjectNumber}_{E|D|N|T}_STR-BGR_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/structural
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point

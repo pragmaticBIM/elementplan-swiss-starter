@@ -56,7 +56,7 @@ description:
 
     **Situation de départ**
 
-    - Salles de classe, laboratoires, chambres de patient, blocs opératoires et locaux similaires exigent une coordination précoce avec les futurs utilisateurs.
+    - Salles de classe, laboratoires, chambres de patient, blocs opératoires et locaux similaires exigent une coordination en phase initiale avec les futurs utilisateurs.
 
     - La modélisation BIM formelle est trop lourde à ce stade et freine le dialogue.
 
@@ -65,7 +65,7 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter les types de locaux et les variantes comme esquisse 3D grossière dans le modèle — quick and dirty.
+    - Saisir les types de locaux et les variantes comme esquisse 3D grossière dans le modèle — à gros traits.
 
     - Permettre aux utilisateurs d''évaluer visuellement taille, découpage et équipement et de prendre des décisions.
 
@@ -100,7 +100,7 @@ description:
 
     **Situazione di partenza**
 
-    - Aule, laboratori, camere di paziente, sale operatorie e locali simili richiedono un coordinamento precoce con i futuri utenti.
+    - Aule, laboratori, camere di paziente, sale operatorie e locali simili richiedono un coordinamento in fase iniziale con i futuri utenti.
 
     - La modellazione BIM formale è troppo onerosa in questa fase e frena il dialogo.
 
@@ -109,7 +109,7 @@ description:
 
     **Obiettivo e beneficio**
 
-    - Gestire tipi di locale e varianti come schizzo 3D grossolano nel modello — quick and dirty.
+    - Gestire tipi di locale e varianti come schizzo 3D grossolano nel modello — in modo sommario.
 
     - Consentire agli utenti di verificare visivamente dimensioni, taglio e dotazione e prendere decisioni.
 

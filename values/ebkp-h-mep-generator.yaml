@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-generator
+code: EBKP-H-MEP-GEN
+name:
+  de: eBKP-H Erzeugung Starkstrom
+  fr: eBKP-H production courant fort
+  it: eBKP-H produzione corrente forte
+  en: eBKP-H power generation
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D01.01.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D01.01.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D01.01.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D01.01.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D01.01
+  fr:
+  - D01.01
+  it:
+  - D01.01
+  en:
+  - D01.01

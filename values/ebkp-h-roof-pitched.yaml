@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-roof-pitched
+code: EBKP-H-ROOF-PITCHED
+name:
+  de: eBKP-H Steildach
+  fr: eBKP-H toiture inclinée
+  it: eBKP-H tetto inclinato
+  en: eBKP-H pitched roof
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C04.05.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C04.05.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C04.05.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C04.05.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C04.05
+  fr:
+  - C04.05
+  it:
+  - C04.05
+  en:
+  - C04.05

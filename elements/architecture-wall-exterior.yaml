@@ -27,7 +27,7 @@ definition:
     - Bei höherer Komplexität oder Tool-Limitierung den Fassadenaufbau als separate Schicht modellieren.
 
     - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
-  fr: 'Mur extérieur comme enveloppe — modélisé en phases précoces et pour façades simples comme composant multicouche.
+  fr: 'Mur extérieur comme enveloppe — modélisé en phases initiales et pour façades simples comme composant multicouche.
 
 
     **Description**
@@ -39,14 +39,14 @@ definition:
 
     **Directives de modélisation**
 
-    - En phases précoces et pour façades simples, modéliser comme composant multicouche avec complexe complet.
+    - En phases initiales et pour façades simples, modéliser comme composant multicouche avec complexe complet.
 
     - Modéliser par étage ; diviser aux limites de composants et d''étages.
 
     - En cas de complexité accrue ou limite d''outil, modéliser le complexe de façade comme couche séparée.
 
     - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
-  it: 'Parete esterna come involucro — modellata nelle fasi precoci e per facciate semplici come componente multic strato.
+  it: 'Parete esterna come involucro — modellata nelle fasi iniziali e per facciate semplici come componente multistrato.
 
 
     **Descrizione**
@@ -58,7 +58,7 @@ definition:
 
     **Direttive di modellazione**
 
-    - Nelle fasi precoci e per facciate semplici, modellare come componente multic strato con stratigrafia completa.
+    - Nelle fasi iniziali e per facciate semplici, modellare come componente multistrato con stratigrafia completa.
 
     - Modellare per piano; suddividere ai confini di componenti e piani.
 
@@ -139,6 +139,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/des-facade-planning
   - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: true
   status: active
   sort_order: 1
@@ -147,7 +148,7 @@ attributes:
   definition:
     de: Fassadenaufbau gemäss Bauteilkatalog (Mehrschichtbauteil).
     fr: Complexe de façade selon le catalogue de composants (composant multicouche).
-    it: Stratigrafia di facciata secondo il catalogo componenti (componente multic strato).
+    it: Stratigrafia di facciata secondo il catalogo componenti (componente multistrato).
     en: Facade build-up according to the component catalogue (multi-layer component).
   datatype: IfcIdentifier
   needed_in_phases:
@@ -243,6 +244,7 @@ attributes:
   - pragmaticbim:workflow/des-existing-structure-survey
   - pragmaticbim:workflow/qas-fire-protection
   - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-managing-existing-with-models
   is_applicability: false
   status: active
   sort_order: 3
@@ -339,6 +341,7 @@ attributes:
   - pragmaticbim:workflow/des-existing-structure-survey
   - pragmaticbim:workflow/qas-fire-protection
   - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-managing-existing-with-models
   is_applicability: false
   status: active
   sort_order: 4
@@ -529,9 +532,7 @@ attributes:
   - pragmaticbim:workflow/qas-acoustic-building-physics
   is_applicability: false
   status: active
-  sort_order: '6
-
-    **Note** - IFC2x3 substitute for PredefinedType.'
+  sort_order: 6
 - name: FireRating
   pset: Pset_WallCommon
   definition:
@@ -562,11 +563,11 @@ attributes:
 
       **Valeurs admises**
 
-      - `R 30` — portance 30 min
+      - `R 30` — stabilité 30 min
 
-      - `R 60` — portance 60 min
+      - `R 60` — stabilité 60 min
 
-      - `R 90` — portance 90 min
+      - `R 90` — stabilité 90 min
 
       - `EI 30` — étanchéité au feu 30 min
 
@@ -574,11 +575,11 @@ attributes:
 
       - `EI 90` — étanchéité au feu 90 min
 
-      - `REI 30` — portance et étanchéité 30 min
+      - `REI 30` — stabilité et étanchéité 30 min
 
-      - `REI 60` — portance et étanchéité 60 min
+      - `REI 60` — stabilité et étanchéité 60 min
 
-      - `REI 90` — portance et étanchéité 90 min'
+      - `REI 90` — stabilité et étanchéité 90 min'
     it: 'Classe di resistenza al fuoco della parete esterna secondo il concetto antincendio.
 
 
@@ -695,3 +696,233 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 9
+- name: CostInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Kostenschnittstelle des Bauteils — Grundausbau oder Mieterausbau.
+
+
+      **Zulässige Werte**
+
+      - `GAB` — Grundausbau (Bauherr / Vermieter)
+
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_Migros`'
+    fr: 'Interface de coûts de l''élément — aménagement de base ou aménagement locataire.
+
+
+      **Valeurs admises**
+
+      - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
+
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_Migros`'
+    it: 'Interfaccia di costo del componente — allestimento di base o allestimento locatario.
+
+
+      **Valori ammessi**
+
+      - `GAB` — allestimento di base (committente / locatore)
+
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_Migros`'
+    en: 'Cost interface of the component — base building or tenant fit-out.
+
+
+      **Allowed values**
+
+      - `GAB` — base building (client / landlord)
+
+      - `MAB_{Mietername}` — tenant fit-out, e.g. `MAB_Migros`'
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+  is_applicability: false
+  status: active
+  sort_order: 10
+- name: AwardInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Vergabepaket des Bauteils nach BKP-3-Steller — damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste BKP-Vergabepaket — z. B. `211`, `221`, `244`.'
+    fr: 'Lot d''adjudication de l''élément selon le BKP à trois chiffres — pour rendre visibles les interfaces entre lots d''entreprise.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot d''adjudication BKP — p. ex. `211`, `221`, `244`.'
+    it: 'Lotto di aggiudicazione del componente secondo il BKP a tre cifre — per rendere visibili le interfacce tra lotti d''impresa.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Lotto di aggiudicazione BKP — es. `211`, `221`, `244`.'
+    en: 'Award package of the component by three-digit BKP code — so interfaces between contractor packages become visible.
+
+
+      **Allowed values**
+
+      - See value list BKP award package — e.g. `211`, `221`, `244`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-award-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-award-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 11
+- name: PlanningInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller — damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste BKP-Planungspaket — z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres — pour rendre visibles les responsabilités entre disciplines de planification.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot de planification BKP — p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre — per rendere visibili le responsabilità tra discipline di pianificazione.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Lotto di pianificazione BKP — es. `091`, `092`, `094`.'
+    en: 'Planning interface of the component by three-digit BKP code — so responsibilities between planning disciplines become visible.
+
+
+      **Allowed values**
+
+      - See value list BKP planning package — e.g. `091`, `092`, `094`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-planning-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-planning-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 12
+- name: BelowTerrain
+  pset: ePset_Cost
+  definition:
+    de: 'Kennzeichnet, ob das Bauteil unter Terrain liegt.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — unter Terrain
+
+      - `FALSE` — über Terrain'
+    fr: 'Indique si l''élément se trouve sous le niveau du terrain.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — sous le niveau du terrain
+
+      - `FALSE` — au-dessus du niveau du terrain'
+    it: 'Indica se il componente si trova sotto il livello del terreno.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — sotto il livello del terreno
+
+      - `FALSE` — sopra il livello del terreno'
+    en: 'Marks whether the component is below terrain.
+
+
+      **Allowed values**
+
+      - `TRUE` — below terrain
+
+      - `FALSE` — above terrain'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  is_applicability: false
+  status: active
+  sort_order: 13
+- name: EbkpH
+  pset: ePset_Cost
+  definition:
+    de: 'eBKP-H-Klassifizierung nach SN 506 511 — ableitbar aus IsExternal, LoadBearing und BelowTerrain.
+
+
+      **Zulässige Werte**
+
+      - `C02.01` — Aussenwandkonstruktion'
+    fr: 'Classification eBKP-H selon SN 506 511 — déductible à partir de IsExternal, LoadBearing et BelowTerrain.
+
+
+      **Valeurs admises**
+
+      - `C02.01` — construction de mur extérieur'
+    it: 'Classificazione eBKP-H secondo SN 506 511 — ricavabile da IsExternal, LoadBearing e BelowTerrain.
+
+
+      **Valori ammessi**
+
+      - `C02.01` — costruzione di parete esterna'
+    en: 'eBKP-H classification according to SN 506 511 — derivable from IsExternal, LoadBearing, and BelowTerrain.
+
+
+      **Allowed values**
+
+      - `C02.01` — exterior wall construction'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/ebkp-h-wall-exterior
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  is_applicability: false
+  status: active
+  sort_order: 14

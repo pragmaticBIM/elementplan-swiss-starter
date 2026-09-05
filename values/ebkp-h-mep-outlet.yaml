@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-mep-outlet
+code: EBKP-H-MEP-OUTLET
+name:
+  de: eBKP-H Steckdose / Anschluss
+  fr: eBKP-H prise / raccordement
+  it: eBKP-H presa / allaccio
+  en: eBKP-H outlet
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D01.04, D01.11.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D01.04, D01.11.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D01.04, D01.11.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D01.04, D01.11.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D01.04
+  - D01.11
+  fr:
+  - D01.04
+  - D01.11
+  it:
+  - D01.04
+  - D01.11
+  en:
+  - D01.04
+  - D01.11

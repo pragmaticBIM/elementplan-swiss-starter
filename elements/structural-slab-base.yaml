@@ -473,6 +473,7 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/des-managing-existing-with-models
   is_applicability: false
   status: active
   sort_order: 9
@@ -566,6 +567,7 @@ attributes:
   - ifc2x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/des-managing-existing-with-models
   is_applicability: false
   status: active
   sort_order: 10

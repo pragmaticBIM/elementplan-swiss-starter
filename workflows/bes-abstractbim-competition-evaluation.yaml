@@ -1,6 +1,6 @@
-id: pragmaticbim:workflow/des-abstractbim-competition-evaluation
-code: DES-ABSTRACTBIM-COMP
-sort_order: 41
+id: pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+code: BES-ABSTRACTBIM-COMP
+sort_order: 15
 name:
   de: Wettbewerbsauswertung mit abstractBIM
   fr: Évaluation de concours avec abstractBIM
@@ -184,7 +184,7 @@ description:
 
     - abstractBIM quantities and metrics as the basis for entry comparison'
 workflow_group: null
-parent_workflow: pragmaticbim:workflow/des
+parent_workflow: pragmaticbim:workflow/bes
 picture_link: null
 status: active
 needed_in_domain:

@@ -53,7 +53,7 @@ description:
     - IfcCovering mit PredefinedType=CEILING und IsExternal=TRUE — aussenliegende Abhangdecke als modellierte Schicht
 
     - Gelände als Oberflächengeometrie (IfcGeographicElement TERRAIN)'
-  fr: 'Mener l''enveloppe du bâtiment dans le modèle — de la construction multicouche précoce à la couche de façade prête à l''exécution pour le métré et la physique du bâtiment.
+  fr: 'Mener l''enveloppe du bâtiment dans le modèle — de la construction multicouche en phase initiale à la couche de façade prête à l''exécution pour le métré et la physique du bâtiment.
 
 
     **Situation de départ**
@@ -65,11 +65,11 @@ description:
 
     **Objectif et bénéfice**
 
-    - Modéliser les façades simples en phases précoces comme composant multicouche (mur extérieur).
+    - Modéliser les façades simples en phases initiales comme composant multicouche (mur extérieur).
 
     - Mener une couche de façade séparée en cas de limite d''outil ou de complexité accrue.
 
-    - Dériver surfaces de façade et ouvertures depuis le modèle pour métré et coordination.
+    - Déduire surfaces de façade et ouvertures depuis le modèle pour métré et coordination.
 
 
     **Déroulement**
@@ -78,19 +78,19 @@ description:
 
     2. Modéliser l''ossature de façade comme composant multicouche ou couche séparée — selon la phase et la complexité.
 
-    3. Dériver surfaces de façade et parts d''ouvertures depuis le modèle pour métré et physique du bâtiment.
+    3. Déduire surfaces de façade et parts d''ouvertures depuis le modèle pour métré et physique du bâtiment.
 
 
     **Résultat**
 
-    - Enveloppe coordonnable dans le modèle — de la phase précoce à la planification de façade prête pour l''appel d''offres.
+    - Enveloppe coordonnable dans le modèle — de la phase initiale à la planification de façade prête pour l''appel d''offres.
 
 
     **Livrables**
 
     - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
 
-    - IfcWall avec IsExternal=TRUE — mur extérieur comme composant multicouche (phases précoces, façades simples)
+    - IfcWall avec IsExternal=TRUE — mur extérieur comme composant multicouche (phases initiales, façades simples)
 
     - IfcCovering avec PredefinedType=CLADDING et IsExternal=TRUE — couche de façade séparée en cas de complexité accrue ou limite d''outil
 
@@ -99,44 +99,44 @@ description:
     - IfcCovering avec PredefinedType=CEILING et IsExternal=TRUE — plafond suspendu extérieur comme couche modélisée
 
     - Terrain comme géométrie de surface (IfcGeographicElement TERRAIN)'
-  it: 'Gestire l''involucro nel modello — dalla costruzione multic strato nelle fasi precoci alla stratigrafia di facciata esecutiva per computo metrico e fisica edilizia.
+  it: 'Gestire l''involucro nel modello — dalla costruzione multistrato nelle fasi iniziali alla stratigrafia di facciata esecutiva per computo metrico e fisica edilizia.
 
 
     **Situazione di partenza**
 
     - Le facciate sono spesso dettagliate tardi; computo metrico e fisica edilizia si basano su stime.
 
-    - I CAD supportano i componenti multic strato in modo diverso; gli stratigrafici complessi non stanno sempre in un unico muro.
+    - I CAD supportano i componenti multistrato in modo diverso; gli stratigrafici complessi non stanno sempre in un unico muro.
 
 
     **Obiettivo e beneficio**
 
-    - Modellare facciate semplici nelle fasi precoci come componente multic strato (parete esterna).
+    - Modellare facciate semplici nelle fasi iniziali come componente multistrato (parete esterna).
 
     - Gestire uno strato di facciata separato in caso di limiti dello strumento o maggiore complessità.
 
-    - Derivare superfici di facciata e aperture dal modello per computo metrico e coordinamento.
+    - Ricavare superfici di facciata e aperture dal modello per computo metrico e coordinamento.
 
 
     **Svolgimento**
 
     1. Fornire pareti esterne, finestre e porte.
 
-    2. Modellare la stratigrafia di facciata come componente multic strato o strato separato — a seconda della fase e della complessità.
+    2. Modellare la stratigrafia di facciata come componente multistrato o strato separato — a seconda della fase e della complessità.
 
-    3. Derivare superfici di facciata e quote di aperture dal modello per computo metrico e fisica edilizia.
+    3. Ricavare superfici di facciata e quote di aperture dal modello per computo metrico e fisica edilizia.
 
 
     **Risultato**
 
-    - Involucro coordinabile nel modello — dalle fasi precoci alla pianificazione di facciata pronta per la gara.
+    - Involucro coordinabile nel modello — dalle fasi iniziali alla pianificazione di facciata pronta per la gara.
 
 
     **Oggetti della fornitura**
 
     - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
 
-    - IfcWall con IsExternal=TRUE — parete esterna come componente multic strato (fasi precoci, facciate semplici)
+    - IfcWall con IsExternal=TRUE — parete esterna come componente multistrato (fasi iniziali, facciate semplici)
 
     - IfcCovering con PredefinedType=CLADDING e IsExternal=TRUE — strato di facciata separato in caso di maggiore complessità o limiti dello strumento
 

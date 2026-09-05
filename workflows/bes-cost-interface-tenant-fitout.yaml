@@ -1,0 +1,162 @@
+id: pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+code: BES-COST-INTERFACE
+sort_order: 13
+name:
+  de: Kostenschnittstellen Mieterausbau / Grundausbau führen und visualisieren
+  fr: Gérer et visualiser les interfaces de coûts aménagement locataire / aménagement de base
+  it: Gestire e visualizzare le interfacce di costo allestimento locatario / allestimento di base
+  en: Manage and visualize tenant fit-out / base-building cost interfaces
+description:
+  de: 'Kostenträger je Bauteil im Modell führen (`GAB` vs `MAB_{Mieter}`) und daraus kolorierte Pläne und Mengen für die Ausschreibung ableiten.
+
+
+    **Ausgangslage**
+
+    - Die Kostenschnittstelle zwischen Grundausbau und Mieterausbau wird oft nur in Listen, Plänen oder Verträgen geführt — schwer mit dem Modell abzugleichen.
+
+    - Ohne eindeutige Zuordnung je Bauteil vermischen sich Mengen und Positionen von Bauherr und Mietern in der Ausschreibung.
+
+
+    **Ziel & Nutzen**
+
+    - Jedes Architektur- und TGA-Bauteil einem Kostenträger zuweisen: Grundausbau oder ein benannter Mieterausbau.
+
+    - Kolorierte Pläne, Filter und Mengen nach Kostenschnittstelle direkt aus dem Modell ableiten.
+
+
+    **Ablauf**
+
+    1. Architektur- und TGA-Bauteile im Fachmodell bereitstellen.
+
+    2. CostInterface setzen: `GAB` oder `MAB_{Mietername}` (ein Wert je Bauteil).
+
+    3. Visualisierungen und Mengen nach Kostenschnittstelle aus dem Modell ableiten.
+
+
+    **Ergebnis**
+
+    - Prüfbare Kostenschnittstelle je Bauteil als Grundlage für Ausschreibung, Mengen und Visualisierung von Grundausbau und Mieterausbau.
+
+
+    **Lieferobjekte**
+
+    - Architektur- und TGA-Fachmodelle mit den modellierten Bauteilen
+
+    - CostInterface (ePset_Cost): `GAB` oder `MAB_{Mietername}` (z. B. `MAB_Migros`)'
+  fr: 'Saisir l''imputation par élément dans la maquette (`GAB` vs `MAB_{locataire}`) et en déduire plans coloriés et quantités pour l''appel d''offres.
+
+
+    **Situation de départ**
+
+    - L''interface de coûts entre aménagement de base et aménagement locataire est souvent tenue seulement dans des listes, plans ou contrats — difficile à aligner avec le modèle.
+
+    - Sans affectation claire par élément, quantités et positions du maître d''ouvrage et des locataires se mélangent dans l''appel d''offres.
+
+
+    **Objectif et bénéfice**
+
+    - Affecter chaque élément d''architecture et CVC à une imputation : aménagement de base ou aménagement locataire nommé.
+
+    - Déduire plans colorés, filtres et quantités par interface de coûts directement du modèle.
+
+
+    **Déroulement**
+
+    1. Fournir les éléments d''architecture et CVC dans la maquette de discipline.
+
+    2. Définir CostInterface : `GAB` ou `MAB_{nom du locataire}` (une valeur par élément).
+
+    3. Déduire visualisations et quantités par interface de coûts à partir du modèle.
+
+
+    **Résultat**
+
+    - Interface de coûts vérifiable par élément comme base pour l''appel d''offres, le métré et la visualisation de l''aménagement de base et locataire.
+
+
+    **Livrables**
+
+    - Maquettes architecture et CVC avec les éléments modélisés
+
+    - CostInterface (ePset_Cost) : `GAB` ou `MAB_{nom du locataire}` (p. ex. `MAB_Migros`)'
+  it: 'Gestire l''imputazione per componente nel modello (`GAB` vs `MAB_{locatario}`) e ricavarne planimetrie colorate e quantità per la gara.
+
+
+    **Situazione di partenza**
+
+    - L''interfaccia di costo tra allestimento di base e allestimento locatario è spesso gestita solo in elenchi, disegni o contratti — difficile da allineare con il modello.
+
+    - Senza assegnazione chiara per componente, quantità e posizioni di committenza e locatari si mescolano in gara.
+
+
+    **Obiettivo e beneficio**
+
+    - Assegnare ogni componente di architettura e impianti a un''imputazione: allestimento di base o allestimento locatario nominato.
+
+    - Ricavare planimetrie colorate, filtri e quantità per interfaccia di costo direttamente dal modello.
+
+
+    **Svolgimento**
+
+    1. Fornire i componenti di architettura e impianti nel modello di disciplina.
+
+    2. Impostare CostInterface: `GAB` o `MAB_{nome locatario}` (un valore per componente).
+
+    3. Ricavare visualizzazioni e quantità per interfaccia di costo dal modello.
+
+
+    **Risultato**
+
+    - Interfaccia di costo verificabile per componente come base per gara, computo e visualizzazione dell''allestimento di base e locatario.
+
+
+    **Oggetti della fornitura**
+
+    - Modelli di architettura e impianti con i componenti modellati
+
+    - CostInterface (ePset_Cost): `GAB` o `MAB_{nome locatario}` (es. `MAB_Migros`)'
+  en: 'Carry the cost bearer per component in the model (`GAB` vs `MAB_{tenant}`) and derive coloured plans and quantities for tendering from it.
+
+
+    **Starting point**
+
+    - The cost interface between base building and tenant fit-out is often kept only in lists, drawings, or contracts — hard to align with the model.
+
+    - Without a clear assignment per component, landlord and tenant quantities and positions mix in the tender.
+
+
+    **Goal & benefit**
+
+    - Assign every architecture and MEP component to a cost bearer: base building or a named tenant fit-out.
+
+    - Derive coloured plans, filters, and quantities by cost interface directly from the model.
+
+
+    **Process**
+
+    1. Provide architecture and MEP components in the discipline model.
+
+    2. Set CostInterface: `GAB` or `MAB_{tenant name}` (one value per component).
+
+    3. Derive visualizations and quantities by cost interface from the model.
+
+
+    **Outcome**
+
+    - Checkable cost interface per component as the basis for tender, quantities, and visualization of base building and tenant fit-out.
+
+
+    **Deliverables**
+
+    - Architecture and MEP models with the modelled components
+
+    - CostInterface (ePset_Cost): `GAB` or `MAB_{tenant name}` (e.g. `MAB_Migros`)'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: 'Custom property CostInterface in ePset_Cost. Values: GAB (base building) or MAB_{tenant name} (tenant fit-out). Tenant names are project-specific — no closed enum. Typical phases 32–41 (design
+  through tender).'

@@ -1,0 +1,28 @@
+id: pragmaticbim:value/boolean
+code: BOOLEAN
+name:
+  de: Wahrheitswert
+  fr: Valeur booléenne
+  it: Valore booleano
+  en: Boolean
+description:
+  de: Boolescher Wert TRUE oder FALSE.
+  fr: Valeur booléenne TRUE ou FALSE.
+  it: Valore booleano TRUE o FALSE.
+  en: Boolean value TRUE or FALSE.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - 'TRUE'
+  - 'FALSE'
+  fr:
+  - 'TRUE'
+  - 'FALSE'
+  it:
+  - 'TRUE'
+  - 'FALSE'
+  en:
+  - 'TRUE'
+  - 'FALSE'

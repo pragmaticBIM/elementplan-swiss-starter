@@ -8,8 +8,8 @@ name:
   en: Cost/budget sensitivity
 description:
   de: Steuert Mengen-, Kosten- und Ausschreibungstiefe über geordnete Ausprägungen.
-  fr: Contrôle la profondeur des quantités, coûts et appels d'offres via des niveaux ordonnés.
-  it: Controlla la profondità di quantità, costi e gare tramite livelli ordinati.
+  fr: Détermine la profondeur des quantités, coûts et appels d'offres selon des niveaux ordonnés.
+  it: Determina la profondità di quantità, costi e gare secondo livelli ordinati.
   en: Controls quantity, cost and tendering depth via ordered levels.
 picture_link: null
 status: active
@@ -19,50 +19,63 @@ levels:
   code: COST-01
   sort_order: 1
   name:
-    de: niedrig
-    fr: faible
-    it: basso
-    en: low
+    de: Niedrig
+    fr: Faible
+    it: Basso
+    en: Low
   description:
-    de: Flächennachweis nach SIA 416 am Raummodell.
-    fr: Justificatif de surfaces selon SIA 416 sur le modèle de locaux.
-    it: Verifica delle superfici secondo SIA 416 sul modello dei locali.
-    en: Area verification according to SIA 416 on the space model.
+    de: Flächennachweis nach SIA 416 am Raummodell und städtebauliche Massenstudie mit Bruttovolumen.
+    fr: Justificatif de surfaces selon SIA 416 sur le modèle de locaux et étude de masse urbanistique avec volumes bruts.
+    it: Verifica delle superfici secondo SIA 416 sul modello dei locali e studio di massa urbanistica con volumi lordi.
+    en: Area verification according to SIA 416 on the space model and urban design mass study with gross volumes.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/des-sia416-area-verification
-  comment: Delta at level niedrig (sort_order 1); SIA 416 area verification.
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  comment: Full set at level niedrig (sort_order 1).
 - id: pragmaticbim:project-goal-level/kosten-mittel
   code: COST-02
   sort_order: 2
   name:
-    de: mittel
-    fr: moyen
-    it: medio
-    en: medium
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
   description:
-    de: Elementbasierte Kostenermittlung mit abstractBIM-Mengen.
-    fr: Calcul des coûts par élément à partir des quantités abstractBIM.
-    it: Calcolo dei costi per elemento dalle quantità abstractBIM.
-    en: Element-based cost calculation from abstractBIM quantities.
+    de: Elementbasierte Kostenermittlung mit abstractBIM-Mengen, automatisierte eBKP-H-Klassifizierung und Visualisierung der Planungsschnittstellen.
+    fr: Calcul des coûts par élément à partir des quantités abstractBIM, classification eBKP-H automatisée et visualisation des interfaces de planification.
+    it: Calcolo dei costi per elemento dalle quantità abstractBIM, classificazione eBKP-H automatica e visualizzazione delle interfacce di pianificazione.
+    en: Element-based cost calculation from abstractBIM quantities, automated eBKP-H classification, and visualization of planning interfaces.
   status: active
   activated_workflows:
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-urban-design-mass-study
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
-  comment: Delta at level mittel (sort_order 2); cumulative with niedrig.
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  - pragmaticbim:workflow/des-planning-interface-visualization
+  comment: Full set at level mittel (sort_order 2); includes lower levels.
 - id: pragmaticbim:project-goal-level/kosten-hoch
   code: COST-03
   sort_order: 3
   name:
-    de: hoch
-    fr: élevé
-    it: alto
-    en: high
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
   description:
-    de: Ausschreibung Betonarbeiten ab Modell zusätzlich zur abstractBIM-Kostenermittlung.
-    fr: Appel d'offres travaux en béton à partir du modèle en plus du calcul abstractBIM.
-    it: Gara lavori in calcestruzzo dal modello oltre al calcolo abstractBIM.
-    en: Concrete works tender from model in addition to abstractBIM cost calculation.
+    de: Ausschreibung Beton- und Bodenbelagsarbeiten ab Modell sowie Visualisierung der Vergabe- und Kostenschnittstellen (Grundausbau/Mieterausbau).
+    fr: Appel d'offres travaux en béton et de revêtements de sol à partir du modèle ainsi que visualisation des interfaces d'adjudication et de coûts (aménagement de base/aménagement locataire).
+    it: Gara lavori in calcestruzzo e di pavimentazione dal modello nonché visualizzazione delle interfacce di aggiudicazione e di costo (allestimento di base/allestimento locatario).
+    en: Concrete and flooring works tender from model plus visualization of award and cost interfaces (base building/tenant fit-out).
   status: active
   activated_workflows:
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  - pragmaticbim:workflow/des-planning-interface-visualization
   - pragmaticbim:workflow/bes-concrete-tender-from-model
-  comment: Delta at level hoch (sort_order 3); cumulative with mittel and niedrig.
+  - pragmaticbim:workflow/bes-flooring-tender-basis
+  - pragmaticbim:workflow/bes-award-interface-visualization
+  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+  comment: Full set at level hoch (sort_order 3); includes lower levels.

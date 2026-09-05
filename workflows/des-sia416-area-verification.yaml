@@ -61,7 +61,7 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter espaces intérieurs et extérieurs avec Reference (classe SIA 416) et LongName (usage du local).
+    - Saisir les espaces intérieurs et extérieurs avec Reference (classe SIA 416) et LongName (usage du local).
 
     - Maintenir les classes de surface directement sur le local plutôt que de les réconcilier via des listes.
 

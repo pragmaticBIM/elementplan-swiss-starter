@@ -8,8 +8,8 @@ name:
   en: Sustainability
 description:
   de: Steuert Energie- und Lebenszyklusbewertung über geordnete Ausprägungen.
-  fr: Contrôle l'évaluation énergétique et du cycle de vie via des niveaux ordonnés.
-  it: Controlla la valutazione energetica e del ciclo di vita tramite livelli ordinati.
+  fr: Détermine l'évaluation énergétique et du cycle de vie selon des niveaux ordonnés.
+  it: Determina la valutazione energetica e del ciclo di vita secondo livelli ordinati.
   en: Controls energy and life-cycle assessment depth via ordered levels.
 picture_link: null
 status: active
@@ -19,10 +19,10 @@ levels:
   code: SUS-01
   sort_order: 1
   name:
-    de: gering
-    fr: faible
-    it: basso
-    en: low
+    de: Gering
+    fr: Faible
+    it: Basso
+    en: Low
   description:
     de: Keine zusätzlichen Workflows über die Basisanforderungen hinaus.
     fr: Aucun workflow supplémentaire au-delà des exigences de base.
@@ -30,15 +30,15 @@ levels:
     en: No additional workflows beyond baseline requirements.
   status: active
   activated_workflows: []
-  comment: Delta at level gering (sort_order 1); empty.
+  comment: Full set at level gering (sort_order 1); empty.
 - id: pragmaticbim:project-goal-level/nachhaltigkeit-mittel
   code: SUS-02
   sort_order: 2
   name:
-    de: mittel
-    fr: moyen
-    it: medio
-    en: medium
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
   description:
     de: Gebäudesimulation auf Basis von abstractBIM.
     fr: Simulation de performance du bâtiment à partir d'abstractBIM.
@@ -47,15 +47,15 @@ levels:
   status: active
   activated_workflows:
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
-  comment: Delta at level mittel (sort_order 2); cumulative with gering.
+  comment: Full set at level mittel (sort_order 2); includes lower levels.
 - id: pragmaticbim:project-goal-level/nachhaltigkeit-hoch
   code: SUS-03
   sort_order: 3
   name:
-    de: hoch
-    fr: élevé
-    it: alto
-    en: high
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
   description:
     de: Lebenszyklusberechnung (Ökobilanz) aus dem Modell.
     fr: Calcul du cycle de vie (ACV) à partir du modèle.
@@ -63,5 +63,6 @@ levels:
     en: Full life-cycle calculation (LCA) from the model.
   status: active
   activated_workflows:
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   - pragmaticbim:workflow/des-full-life-cycle-calculation
-  comment: Delta at level hoch (sort_order 3); cumulative with mittel and gering.
+  comment: Full set at level hoch (sort_order 3); includes lower levels.

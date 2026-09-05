@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-wall-interior
+code: EBKP-H-WALL-INT
+name:
+  de: eBKP-H Innenwand
+  fr: eBKP-H cloison intérieure
+  it: eBKP-H parete interna
+  en: eBKP-H interior wall
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): G01.01.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : G01.01.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): G01.01.'
+  en: 'Allowed eBKP-H codes (SN 506 511): G01.01.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - G01.01
+  fr:
+  - G01.01
+  it:
+  - G01.01
+  en:
+  - G01.01

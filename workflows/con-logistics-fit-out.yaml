@@ -55,14 +55,14 @@ description:
 
     **Objectif et bénéfice**
 
-    - Dériver du modèle un marquage de local uniforme sur place (p. ex. à la fenêtre).
+    - Déduire du modèle un marquage de local uniforme sur place (p. ex. à la fenêtre).
 
     - Scan QR pour l''orientation ainsi que pour la saisie logistique et des défauts sur la même référence de local vérifiable.
 
 
     **Déroulement**
 
-    1. Porter dans le modèle les locaux intérieurs avec numéro technique stable (Name) et usage du local (LongName).
+    1. Saisir dans le modèle les locaux intérieurs avec numéro technique stable (Name) et usage du local (LongName).
 
     2. Extraire la liste des locaux du modèle et imprimer des étiquettes QR avec désignation et numéro.
 
@@ -91,7 +91,7 @@ description:
 
     **Obiettivo e beneficio**
 
-    - Derivare dal modello una marcatura uniforme del locale in loco (es. sulla finestra).
+    - Ricavare dal modello una marcatura uniforme del locale in loco (es. sulla finestra).
 
     - Scansione QR per l''orientamento e per la rilevazione logistica e dei difetti sulla stessa referenza di locale verificabile.
 

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-light
+code: EBKP-H-MEP-LIGHT
+name:
+  de: eBKP-H Leuchte
+  fr: eBKP-H luminaire
+  it: eBKP-H illuminazione
+  en: eBKP-H luminaire
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D01.05.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D01.05.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D01.05.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D01.05.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D01.05
+  fr:
+  - D01.05
+  it:
+  - D01.05
+  en:
+  - D01.05

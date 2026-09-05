@@ -54,7 +54,7 @@ description:
 
     **Situation de départ**
 
-    - Drainage de toiture, descentes et eaux usées sont souvent planifiés tard ; les collisions avec la structure et le GT deviennent difficiles à résoudre.
+    - Drainage de toiture, descentes et eaux usées sont souvent planifiés tard ; les collisions avec la structure et le CVC deviennent difficiles à résoudre.
 
     - Le drainage des balcons est fréquemment oublié et mène à des avenants en phase d''exécution.
 
@@ -110,7 +110,7 @@ description:
 
     **Svolgimento**
 
-    1. Modellare l''isolamento a pendenza su tetto piano e balcone; derivare i punti di scarico dal tracciato di pendenza.
+    1. Modellare l''isolamento a pendenza su tetto piano e balcone; ricavare i punti di scarico dal tracciato di pendenza.
 
     2. Condurre i pluviali da tetto e balconi fino al collettore principale.
 

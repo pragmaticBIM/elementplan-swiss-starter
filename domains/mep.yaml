@@ -22,7 +22,7 @@ definition:
 
     - Existant: Status et PredefinedType sur les objets CVC modélisés ; profondeur spécifique au projet.
 
-    - Coordination précoce: peu de distributions principales schématiques (canalisation, air, chemin de câbles, espace générateurs) — médium dans Reference.
+    - Coordination en phase initiale : peu de distributions principales schématiques (canalisation, air, chemin de câbles, espace générateurs) — fluide dans Reference.
 
     - Projet détaillé: entités IFC CVC pertinentes avec PredefinedType et Status.
 
@@ -32,7 +32,7 @@ definition:
 
     - Esistente: Status e PredefinedType sugli oggetti impianti modellati; profondità specifica del progetto.
 
-    - Coordinamento precoce: poche distribuzioni principali schematiche (condotta, aria, canalina, spazio generatori) — mezzo in Reference.
+    - Coordinamento in fase iniziale: poche distribuzioni principali schematiche (condotta, aria, canalina, spazio generatori) — fluido in Reference.
 
     - Progetto di dettaglio: entità IFC impianti rilevanti con PredefinedType e Status.
 
@@ -48,8 +48,8 @@ definition:
 
     - FM: no fixed MEP element pack — agree with the operator which objects they actually manage.'
 file_name:
-  de: '{Projekt}_{Phase}_MEP_{Freitext}'
-  fr: '{Projet}_{Phase}_MEP_{Libre}'
-  it: '{Progetto}_{Fase}_MEP_{Libero}'
+  de: '{Projekt}_{Phase}_TGA_{Freitext}'
+  fr: '{Projet}_{Phase}_CVC_{Libre}'
+  it: '{Progetto}_{Fase}_IMP_{Libero}'
   en: '{Project}_{Phase}_MEP_{Free}'
 status: active

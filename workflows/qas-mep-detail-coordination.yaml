@@ -57,7 +57,7 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter les objets CVC pertinents comme entités IFC avec PredefinedType.
+    - Saisir les objets CVC pertinents comme entités IFC avec PredefinedType.
 
     - Vérifier entre disciplines sans anticiper les données FM.
 
@@ -68,7 +68,7 @@ description:
 
     2. Renseigner PredefinedType et vérifier position/raccordements en maquette fédérée.
 
-    3. Porter le statut lorsque existant et neuf se mêlent.
+    3. Saisir le statut lorsque existant et neuf se mêlent.
 
 
     **Résultat**

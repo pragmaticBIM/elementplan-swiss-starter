@@ -3,26 +3,26 @@ sort_order: 40
 code: PG-04
 name:
   de: Übergabefokus
-  fr: Focus remise
-  it: Focus consegna
+  fr: Priorité à la remise
+  it: Priorità alla consegna
   en: Handover focus
 description:
   de: Steuert die Tiefe der FM-Datenübergabe an den Betreiber über geordnete Ausprägungen.
-  fr: Contrôle la profondeur de la livraison des données FM à l'exploitant via des niveaux ordonnés.
-  it: Controlla la profondità della consegna dati FM al gestore tramite livelli ordinati.
+  fr: Détermine la profondeur de la livraison des données FM à l'exploitant selon des niveaux ordonnés.
+  it: Determina la profondità della consegna dati FM al gestore secondo livelli ordinati.
   en: Controls depth of FM data handover to the operator via ordered levels.
 picture_link: null
 status: active
-comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ). Handover (HOV), not ongoing operation.'
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
 levels:
 - id: pragmaticbim:project-goal-level/uebergabe-gering
   code: OPS-01
   sort_order: 1
   name:
-    de: gering
-    fr: faible
-    it: basso
-    en: low
+    de: Gering
+    fr: Faible
+    it: Basso
+    en: Low
   description:
     de: Keine zusätzlichen FM-Übergabe-Workflows.
     fr: Aucun workflow de livraison FM supplémentaire.
@@ -30,38 +30,41 @@ levels:
     en: No additional FM handover workflows.
   status: active
   activated_workflows: []
-  comment: Delta at level gering (sort_order 1); empty.
+  comment: Full set at level gering (sort_order 1); empty.
 - id: pragmaticbim:project-goal-level/uebergabe-mittel
   code: OPS-02
   sort_order: 2
   name:
-    de: mittel
-    fr: moyen
-    it: medio
-    en: medium
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
   description:
-    de: Minimale FM-Datenübergabe — Raum- und Türlisten sowie FM-relevante Gebäudetechnik.
-    fr: Livraison FM minimale — listes de locaux et de portes ainsi que technique du bâtiment pertinente pour le FM.
-    it: Consegna FM minimale — elenchi locali e porte nonché impianti rilevanti per il FM.
-    en: Minimal FM data handover — space and door lists plus FM-relevant MEP.
+    de: Minimale FM-Datenübergabe — Raum- und Türlisten sowie FM-relevante Gebäudetechnik, inkl. Signaletik-Raumnummer.
+    fr: Livraison FM minimale — listes de locaux et de portes ainsi que technique du bâtiment pertinente pour le FM, y compris le numéro de local pour la signalétique.
+    it: Consegna FM minimale — elenchi locali e porte nonché impianti rilevanti per il FM, incluso il numero locale per la segnaletica.
+    en: Minimal FM data handover — space and door lists plus FM-relevant MEP, including signage room number.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/hov-fm-minimal-data-delivery
-  comment: Delta at level mittel (sort_order 2); cumulative with gering.
+  - pragmaticbim:workflow/opr-signage-room-number
+  comment: Full set at level mittel (sort_order 2); includes lower levels.
 - id: pragmaticbim:project-goal-level/uebergabe-vertieft
   code: OPS-03
   sort_order: 3
   name:
-    de: vertiefte 3D-Übergabe
-    fr: remise 3D approfondie
-    it: consegna 3D approfondita
-    en: deepened 3D handover
+    de: Vertiefte 3D-Übergabe
+    fr: Remise 3D approfondie
+    it: Consegna 3D approfondita
+    en: Deepened 3D handover
   description:
     de: 3D-FM-Datenübergabe der TGA-Erzeuger und -Endgeräte mit AKS, Garantie und Dokumentenbezug.
-    fr: Livraison FM 3D des générateurs et terminaux TGA avec AKS, garantie et référence documentaire.
-    it: Consegna FM 3D di generatori e terminali TGA con AKS, garanzia e riferimento documentale.
+    fr: Livraison FM 3D des générateurs et terminaux CVC avec AKS, garantie et référence documentaire.
+    it: Consegna FM 3D di generatori e terminali impianti con AKS, garanzia e riferimento documentale.
     en: 3D FM data handover of MEP generating units and terminals with AKS, warranty, and document reference.
   status: active
   activated_workflows:
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/opr-signage-room-number
   - pragmaticbim:workflow/hov-fm-3d-information-delivery
-  comment: Delta at level vertiefte 3D-Übergabe (sort_order 3); cumulative with mittel and gering.
+  comment: Full set at level vertiefte 3D-Übergabe (sort_order 3); includes lower levels.

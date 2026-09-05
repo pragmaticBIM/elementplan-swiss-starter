@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-field
+code: EBKP-H-MEP-FIELD
+name:
+  de: eBKP-H Feldebene
+  fr: eBKP-H niveau terrain
+  it: eBKP-H livello di campo
+  en: eBKP-H field level
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D02.03.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D02.03.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D02.03.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D02.03.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D02.03
+  fr:
+  - D02.03
+  it:
+  - D02.03
+  en:
+  - D02.03

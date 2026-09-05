@@ -131,12 +131,14 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   - pragmaticbim:workflow/qas-special-room-user-coordination
   - pragmaticbim:workflow/des-ceiling-mirror-planning
   - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-furniture-planning
+  - pragmaticbim:workflow/qas-furnishability-verification
   - pragmaticbim:workflow/des-usage-agreement-visualization
   - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
@@ -210,12 +212,14 @@ attributes:
   ifc_versions:
   - ifc2x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   - pragmaticbim:workflow/qas-special-room-user-coordination
   - pragmaticbim:workflow/des-ceiling-mirror-planning
   - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-furniture-planning
+  - pragmaticbim:workflow/qas-furnishability-verification
   - pragmaticbim:workflow/des-usage-agreement-visualization
   - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
@@ -291,12 +295,14 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   - pragmaticbim:workflow/qas-special-room-user-coordination
   - pragmaticbim:workflow/des-ceiling-mirror-planning
   - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-furniture-planning
+  - pragmaticbim:workflow/qas-furnishability-verification
   - pragmaticbim:workflow/des-usage-agreement-visualization
   - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
@@ -368,12 +374,14 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   - pragmaticbim:workflow/qas-special-room-user-coordination
   - pragmaticbim:workflow/des-ceiling-mirror-planning
   - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-furniture-planning
+  - pragmaticbim:workflow/qas-furnishability-verification
   - pragmaticbim:workflow/des-usage-agreement-visualization
   - pragmaticbim:workflow/hov-fm-minimal-data-delivery
   - pragmaticbim:workflow/opr-signage-room-number
@@ -565,11 +573,13 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   - pragmaticbim:workflow/des-full-life-cycle-calculation
   - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-furniture-planning
+  - pragmaticbim:workflow/qas-furnishability-verification
   - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
   - pragmaticbim:workflow/hov-fm-minimal-data-delivery
@@ -603,7 +613,7 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   is_applicability: false
@@ -635,7 +645,7 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   - pragmaticbim:workflow/hov-fm-minimal-data-delivery
@@ -697,13 +707,13 @@ attributes:
       **Zulässige Werte**
 
       - Siehe Werteliste Bodenbelagstyp Raum.'
-    fr: 'Type de revêtement de sol pour la planification précoce — uniquement comme propriété de local, sans complexe de sol modélisé.
+    fr: 'Type de revêtement de sol pour la planification en phase initiale — uniquement comme propriété de local, sans complexe de sol modélisé.
 
 
       **Valeurs admises**
 
       - Voir la liste de valeurs Type de revêtement de sol local.'
-    it: 'Tipo di pavimentazione per la pianificazione precoce — solo come proprietà del locale, senza stratigrafia di pavimento modellata.
+    it: 'Tipo di pavimentazione per la pianificazione in fase iniziale — solo come proprietà del locale, senza stratigrafia di pavimento modellata.
 
 
       **Valori ammessi**
@@ -739,10 +749,10 @@ attributes:
 - name: DesignAreaLoad
   pset: ePset_SpaceUsageAgreement
   definition:
-    de: Vereinbarte Flächenlast Soll für die Nutzungsvereinbarung (SIA 260).
-    fr: Charge surfacique cible convenue pour la convention d'utilisation (SIA 260).
-    it: Carico areale obiettivo concordato per la convenzione d'uso (SIA 260).
-    en: Agreed design area load for the usage agreement (SIA 260).
+    de: Vereinbarte Flächenlast Soll für die Nutzungsvereinbarung.
+    fr: Charge surfacique cible convenue pour la convention d'utilisation.
+    it: Carico areale obiettivo concordato per la convenzione d'uso.
+    en: Agreed design area load for the usage agreement.
   datatype: IfcReal
   unit: kN/m²
   needed_in_phases:
@@ -767,10 +777,10 @@ attributes:
 - name: DesignPointLoad
   pset: ePset_SpaceUsageAgreement
   definition:
-    de: Vereinbarte Punktlast Soll für die Nutzungsvereinbarung (SIA 260).
-    fr: Charge ponctuelle cible convenue pour la convention d'utilisation (SIA 260).
-    it: Carico puntuale obiettivo concordato per la convenzione d'uso (SIA 260).
-    en: Agreed design point load for the usage agreement (SIA 260).
+    de: Vereinbarte Punktlast Soll für die Nutzungsvereinbarung.
+    fr: Charge ponctuelle cible convenue pour la convention d'utilisation.
+    it: Carico puntuale obiettivo concordato per la convenzione d'uso.
+    en: Agreed design point load for the usage agreement.
   datatype: IfcReal
   unit: kN
   needed_in_phases:
@@ -795,30 +805,94 @@ attributes:
 - name: VibrationRequirements
   pset: ePset_SpaceUsageAgreement
   definition:
-    de: 'Vereinbarte Schwingungsanforderungen für die Nutzungsvereinbarung (SIA 260) als Vibration Criterion (VC).
+    de: 'Vereinbarte Schwingungsanforderungen für die Nutzungsvereinbarung nach ISO-Schwingungskriterien und Vibration Criterion (VC) nach IEST.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste Schwingungskriterium VC.'
-    fr: 'Exigences vibratoires convenues pour la convention d''utilisation (SIA 260) comme Vibration Criterion (VC).
+      - `ISO Workshop` — 800 µm/s (32.000 µin/s): Werkstätten, grobe Fertigungsbereiche, Maschinenschutzzonen
+
+      - `ISO Office` — 400 µm/s (16.000 µin/s): Büroräume, Kontrollräume, allgemeine Verwaltungsbereiche
+
+      - `ISO Residential (Night)` — 200 µm/s (8.000 µin/s): Wohnbereiche (Nacht), leichte PC-Arbeitsplätze, Mikroskope <40×
+
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4.000 µin/s): Basislinie (Base Curve): Operationssäle, allgemeine Labore, Mikroskope bis 100×
+
+      - `VC-A` — Vibration Criterion A nach IEST
+
+      - `VC-B` — Vibration Criterion B nach IEST
+
+      - `VC-C` — Vibration Criterion C nach IEST
+
+      - `VC-D` — Vibration Criterion D nach IEST
+
+      - `VC-E` — Vibration Criterion E nach IEST'
+    fr: 'Exigences vibratoires convenues pour la convention d''utilisation selon les critères vibratoires ISO et le Vibration Criterion (VC) selon IEST.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Critère vibratoire VC.'
-    it: 'Requisiti di vibrazione concordati per la convenzione d''uso (SIA 260) come Vibration Criterion (VC).
+      - `ISO Workshop` — 800 µm/s (32 000 µin/s) : ateliers, zones de fabrication grossière, zones de protection des machines
+
+      - `ISO Office` — 400 µm/s (16 000 µin/s) : bureaux, salles de contrôle, locaux administratifs généraux
+
+      - `ISO Residential (Night)` — 200 µm/s (8 000 µin/s) : locaux d''habitation (nuit), postes de travail PC légers, microscopes <40×
+
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4 000 µin/s) : courbe de base (Base Curve) : salles d''opération, laboratoires généraux, microscopes jusqu''à 100×
+
+      - `VC-A` — Vibration Criterion A selon IEST
+
+      - `VC-B` — Vibration Criterion B selon IEST
+
+      - `VC-C` — Vibration Criterion C selon IEST
+
+      - `VC-D` — Vibration Criterion D selon IEST
+
+      - `VC-E` — Vibration Criterion E selon IEST'
+    it: 'Requisiti di vibrazione concordati per la convenzione d''uso secondo i criteri di vibrazione ISO e il Vibration Criterion (VC) secondo IEST.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Criterio di vibrazione VC.'
-    en: 'Agreed vibration requirements for the usage agreement (SIA 260) as Vibration Criterion (VC).
+      - `ISO Workshop` — 800 µm/s (32.000 µin/s): officine, aree di produzione grezza, zone di protezione macchine
+
+      - `ISO Office` — 400 µm/s (16.000 µin/s): uffici, sale di controllo, aree amministrative generali
+
+      - `ISO Residential (Night)` — 200 µm/s (8.000 µin/s): aree residenziali (notte), postazioni PC leggere, microscopi <40×
+
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4.000 µin/s): curva di base (Base Curve): sale operatorie, laboratori generali, microscopi fino a 100×
+
+      - `VC-A` — Vibration Criterion A secondo IEST
+
+      - `VC-B` — Vibration Criterion B secondo IEST
+
+      - `VC-C` — Vibration Criterion C secondo IEST
+
+      - `VC-D` — Vibration Criterion D secondo IEST
+
+      - `VC-E` — Vibration Criterion E secondo IEST'
+    en: 'Agreed vibration requirements for the usage agreement according to ISO vibration criteria and Vibration Criterion (VC) per IEST.
 
 
       **Allowed values**
 
-      - See value list Vibration criterion VC.'
+      - `ISO Workshop` — 800 µm/s (32,000 µin/s): workshops, coarse manufacturing areas, machine protection zones
+
+      - `ISO Office` — 400 µm/s (16,000 µin/s): offices, control rooms, general administrative areas
+
+      - `ISO Residential (Night)` — 200 µm/s (8,000 µin/s): residential areas (night), light PC workplaces, microscopes <40×
+
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4,000 µin/s): baseline (Base Curve): operating theatres, general laboratories, microscopes up to 100×
+
+      - `VC-A` — Vibration Criterion A per IEST
+
+      - `VC-B` — Vibration Criterion B per IEST
+
+      - `VC-C` — Vibration Criterion C per IEST
+
+      - `VC-D` — Vibration Criterion D per IEST
+
+      - `VC-E` — Vibration Criterion E per IEST'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/vibration-criterion
   needed_in_phases:

@@ -45,7 +45,7 @@ description:
     - Massgebende Bauteile (Wände, Decken, Dächer, Stützen, Träger, Fundamente, Fassaden- und Ausbauelemente) mit Material
 
     - Mengenattribute (z. B. GrossVolume, GrossSideArea, GrossFloorArea) je Bauteil'
-  fr: 'Porter quantités et matériaux dans le modèle pour permettre une ACV sans listes de quantités parallèles.
+  fr: 'Saisir quantités et matériaux dans le modèle pour permettre une ACV sans listes de quantités parallèles.
 
 
     **Situation de départ**
@@ -57,14 +57,14 @@ description:
 
     **Objectif et bénéfice**
 
-    - Fournir les composants architecture et structure avec matériau et quantités comme base d''ACV.
+    - Fournir les éléments architecture et structure avec matériau et quantités comme base d''ACV.
 
-    - Permettre des calculs de cycle de vie plus précoces et reproductibles plutôt que des reprises tardives.
+    - Permettre des calculs de cycle de vie plus tôt et reproductibles plutôt que des reprises tardives.
 
 
     **Déroulement**
 
-    1. Porter les composants déterminants avec géométrie et matériau dans le modèle.
+    1. Saisir les éléments déterminants avec géométrie et matériau dans le modèle.
 
     2. Extraire quantités (volumes, surfaces) et indicateurs matériaux du modèle.
 
@@ -82,7 +82,7 @@ description:
 
     - Composants déterminants (murs, dalles, toitures, poteaux, poutres, fondations, façade et finitions) avec matériau
 
-    - Attributs de quantité (p. ex. GrossVolume, GrossSideArea, GrossFloorArea) par composant'
+    - Attributs de quantité (p. ex. GrossVolume, GrossSideArea, GrossFloorArea) par élément'
   it: 'Gestire quantità e materiali nel modello per consentire un LCA senza elenchi quantità paralleli.
 
 

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-ceiling
+code: EBKP-H-CEILING
+name:
+  de: eBKP-H Deckenbekleidung
+  fr: eBKP-H revêtement de plafond
+  it: eBKP-H rivestimento di soffitto
+  en: eBKP-H ceiling covering
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): G04.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : G04.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): G04.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): G04.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - G04.02
+  fr:
+  - G04.02
+  it:
+  - G04.02
+  en:
+  - G04.02

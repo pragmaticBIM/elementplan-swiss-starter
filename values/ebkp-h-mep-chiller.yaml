@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-chiller
+code: EBKP-H-MEP-CHILLER
+name:
+  de: eBKP-H Kälteerzeugung
+  fr: eBKP-H production de froid
+  it: eBKP-H produzione di freddo
+  en: eBKP-H cold generation
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D06.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D06.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D06.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D06.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D06.02
+  fr:
+  - D06.02
+  it:
+  - D06.02
+  en:
+  - D06.02

@@ -1,0 +1,40 @@
+id: pragmaticbim:value/ebkp-h-mep-pipe
+code: EBKP-H-MEP-PIPE
+name:
+  de: eBKP-H Rohrleitung
+  fr: eBKP-H canalisation
+  it: eBKP-H condotta
+  en: eBKP-H pipe
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D05.04, D06.04, D08.04, D09.01, D10.04.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D05.04, D06.04, D08.04, D09.01, D10.04.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D05.04, D06.04, D08.04, D09.01, D10.04.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D05.04, D06.04, D08.04, D09.01, D10.04.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D05.04
+  - D06.04
+  - D08.04
+  - D09.01
+  - D10.04
+  fr:
+  - D05.04
+  - D06.04
+  - D08.04
+  - D09.01
+  - D10.04
+  it:
+  - D05.04
+  - D06.04
+  - D08.04
+  - D09.01
+  - D10.04
+  en:
+  - D05.04
+  - D06.04
+  - D08.04
+  - D09.01
+  - D10.04

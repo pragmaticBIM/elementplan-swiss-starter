@@ -8,8 +8,8 @@ name:
   en: Schedule criticality
 description:
   de: Steuert Koordinationstiefe und terminrelevante Modellabstimmungen über geordnete Ausprägungen.
-  fr: Contrôle la profondeur de coordination et les alignements de modèles liés aux délais via des niveaux ordonnés.
-  it: Controlla la profondità di coordinamento e gli allineamenti di modello legati ai tempi tramite livelli ordinati.
+  fr: Détermine la profondeur de coordination et les alignements de modèles liés aux délais selon des niveaux ordonnés.
+  it: Determina la profondità di coordinamento e gli allineamenti di modello legati ai tempi secondo livelli ordinati.
   en: Controls coordination depth and schedule-relevant model alignment via ordered levels.
 picture_link: null
 status: active
@@ -19,10 +19,10 @@ levels:
   code: SCH-01
   sort_order: 1
   name:
-    de: gering
-    fr: faible
-    it: basso
-    en: low
+    de: Gering
+    fr: Faible
+    it: Basso
+    en: Low
   description:
     de: Keine zusätzlichen terminbezogenen Workflows.
     fr: Aucun workflow lié aux délais supplémentaire.
@@ -30,39 +30,42 @@ levels:
     en: No additional schedule-related workflows.
   status: active
   activated_workflows: []
-  comment: Delta at level gering (sort_order 1); empty.
+  comment: Full set at level gering (sort_order 1); empty.
 - id: pragmaticbim:project-goal-level/termin-mittel
   code: SCH-02
   sort_order: 2
   name:
-    de: mittel
-    fr: moyen
-    it: medio
-    en: medium
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
   description:
-    de: Koordination Architektur–TGA in späteren Phasen inkl. Aussparungen im Tragwerk.
-    fr: Coordination architecture–CVC en phases avancées incl. réservations dans la structure.
-    it: Coordinamento architettura–impianti in fasi avanzate incl. fori nella struttura.
-    en: Architecture–MEP coordination in later phases including structural openings.
+    de: Koordination Architektur–TGA in späteren Phasen inkl. Aussparungen im Tragwerk sowie Planung der Koordinationszonen.
+    fr: Coordination architecture–CVC en phases avancées incl. réservations dans la structure ainsi que planification des zones de coordination.
+    it: Coordinamento architettura–impianti in fasi avanzate incl. fori nella struttura nonché pianificazione delle zone di coordinamento.
+    en: Architecture–MEP coordination in later phases including structural openings, plus coordination zone planning.
   status: active
   activated_workflows:
   - pragmaticbim:workflow/qas-arch-mep-coordination-openings
-  comment: Delta at level mittel (sort_order 2); cumulative with gering.
+  - pragmaticbim:workflow/qas-coordination-zone-planning
+  comment: Full set at level mittel (sort_order 2); includes lower levels.
 - id: pragmaticbim:project-goal-level/termin-hoch
   code: SCH-03
   sort_order: 3
   name:
-    de: hoch
-    fr: élevé
-    it: alto
-    en: high
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
   description:
-    de: Vertiefte Koordination (früh, Tragwerk inkl. Sperrzonen-QS und Schalungsplan-Koordination, TGA-Detail), Nachweis Einbringwege und Wartungsräume, Baulogistik mit Raum-QR sowie Ausführung Bewehrung, Befestigung/Aufhängung und Bestellung Betonfertigteile ab Modell.
-    fr: Coordination approfondie (précoce, structure incl. contrôle zones d'exclusion et coordination type plan de coulage, détail CVC), preuve des voies d'apport et espaces de maintenance, logistique de chantier avec QR locaux ainsi qu'exécution armatures, fixation/suspension et commande d'éléments préfabriqués en béton à partir du modèle.
-    it: Coordinamento approfondito (precoce, struttura incl. controllo zone di esclusione e coordinamento tipo piano di getto, dettaglio impianti), verifica vie di introduzione e spazi di manutenzione, logistica di cantiere con QR locali nonché esecuzione armature, fissaggio/sospensione e ordine di elementi prefabbricati in calcestruzzo dal modello.
-    en: Deeper coordination (early, structure incl. exclusion zone QS and formwork-plan coordination, MEP detail), verification of installation paths and maintenance spaces, fit-out logistics with room QR, plus reinforcement execution, fastening/suspension, and precast concrete ordering from model.
+    de: Vertiefte Koordination (früh, Tragwerk inkl. Sperrzonen-QS und Schalungsplan-Koordination, TGA-Detail), Nachweis Einbringwege und Wartungsräume, Baulogistik mit Raum-QR sowie Ausführung Bewehrung, Befestigung/Aufhängung, Bodenbelagsarbeiten und Bestellung Betonfertigteile ab Modell.
+    fr: Coordination approfondie (en phase initiale, structure incl. contrôle zones d'exclusion et coordination type plan de coulage, détail CVC), preuve des voies d'apport et espaces de maintenance, logistique de chantier avec QR locaux ainsi qu'exécution armatures, fixation/suspension, revêtements de sol et commande d'éléments préfabriqués en béton à partir du modèle.
+    it: Coordinamento approfondito (in fase iniziale, struttura incl. controllo zone di esclusione e coordinamento tipo piano di getto, dettaglio impianti), verifica vie di introduzione e spazi di manutenzione, logistica di cantiere con QR locali nonché esecuzione armature, fissaggio/sospensione, lavori di pavimentazione e ordine di elementi prefabbricati in calcestruzzo dal modello.
+    en: Deeper coordination (early, structure incl. exclusion zone QS and formwork-plan coordination, MEP detail), verification of installation paths and maintenance spaces, fit-out logistics with room QR, plus reinforcement execution, fastening/suspension, flooring works, and precast concrete ordering from model.
   status: active
   activated_workflows:
+  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  - pragmaticbim:workflow/qas-coordination-zone-planning
   - pragmaticbim:workflow/qas-early-design-coordination
   - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
   - pragmaticbim:workflow/qas-arch-structural-coordination
@@ -73,4 +76,5 @@ levels:
   - pragmaticbim:workflow/con-reinforcement-execution-from-model
   - pragmaticbim:workflow/con-fastening-suspension-from-model
   - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
-  comment: Delta at level hoch (sort_order 3); cumulative with mittel and gering.
+  - pragmaticbim:workflow/con-flooring-execution
+  comment: Full set at level hoch (sort_order 3); includes lower levels.

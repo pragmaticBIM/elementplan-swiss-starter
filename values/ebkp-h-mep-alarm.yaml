@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-mep-alarm
+code: EBKP-H-MEP-ALARM
+name:
+  de: eBKP-H Meldeanlage
+  fr: eBKP-H alarme
+  it: eBKP-H allarme
+  en: eBKP-H alarm
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D03.01, D04.01.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D03.01, D04.01.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D03.01, D04.01.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D03.01, D04.01.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D03.01
+  - D04.01
+  fr:
+  - D03.01
+  - D04.01
+  it:
+  - D03.01
+  - D04.01
+  en:
+  - D03.01
+  - D04.01

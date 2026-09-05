@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-slab-flat-roof
+code: EBKP-H-SLAB-ROOF
+name:
+  de: eBKP-H Flachdach
+  fr: eBKP-H toiture plate
+  it: eBKP-H tetto piano
+  en: eBKP-H flat roof
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C04.04.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C04.04.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C04.04.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C04.04.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C04.04
+  fr:
+  - C04.04
+  it:
+  - C04.04
+  en:
+  - C04.04

@@ -8,8 +8,8 @@ name:
   en: Fit-out standard
 description:
   de: Steuert die Detailtiefe der Planung auf Raumebene über geordnete Ausprägungen.
-  fr: Contrôle la profondeur de planification au niveau des locaux via des niveaux ordonnés.
-  it: Controlla la profondità di pianificazione a livello di locali tramite livelli ordinati.
+  fr: Détermine la profondeur de planification au niveau des locaux selon des niveaux ordonnés.
+  it: Determina la profondità di pianificazione a livello di locali secondo livelli ordinati.
   en: Controls planning depth at room level via ordered levels.
 picture_link: null
 status: active
@@ -32,22 +32,24 @@ levels:
   activated_workflows:
   - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
-  comment: Delta at level Standard (sort_order 1).
+  comment: Full set at level Standard (sort_order 1).
 - id: pragmaticbim:project-goal-level/ausbau-gehoben
   code: FIT-02
   sort_order: 2
   name:
-    de: gehoben
-    fr: élevé
-    it: elevato
-    en: elevated
+    de: Gehoben
+    fr: Élevé
+    it: Elevato
+    en: Elevated
   description:
-    de: Erweiterte Planung auf Raumebene — Layout, Türen, Fassade, Deckenspiegel, Grundleitungen, Geschossfläche, Parkplatznachweis und Nutzerabstimmung Spezialräume.
-    fr: Planification étendue au niveau des locaux — layout, portes, façade, miroir de plafond, réseaux de base, surface de plancher, justificatif de stationnement et coordination utilisateurs des locaux spéciaux.
-    it: Pianificazione estesa a livello di locali — layout, porte, facciata, specchio del soffitto, condotte di base, superficie di piano, verifica posti auto e coordinamento utenti dei locali speciali.
-    en: Extended room-level planning — layout, doors, facade, ceiling mirror, basic piping, floor area, parking verification, and special-room user coordination.
+    de: Erweiterte Planung auf Raumebene — Layout, Türen, Fassade, Deckenspiegel, Grundleitungen, Geschossfläche, Parkplatznachweis, Möblierungsplanung, Nachweis der Möblierbarkeit und Nutzerabstimmung Spezialräume.
+    fr: Planification étendue au niveau des locaux — agencement, portes, façade, plan de plafond, réseaux de base, surface de plancher, justificatif de stationnement, planification du mobilier, preuve de meublabilité et coordination utilisateurs des locaux spéciaux.
+    it: Pianificazione estesa a livello di locali — disposizione, porte, facciata, piano del soffitto, condotte di base, superficie di piano, verifica posti auto, pianificazione dell'arredo, prova di arredabilità e coordinamento utenti dei locali speciali.
+    en: Extended room-level planning — layout, doors, facade, ceiling mirror, basic piping, floor area, parking verification, furniture planning, furnishability verification, and special-room user coordination.
   status: active
   activated_workflows:
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
   - pragmaticbim:workflow/des-layout-planning
   - pragmaticbim:workflow/des-door-planning
   - pragmaticbim:workflow/des-facade-planning
@@ -55,8 +57,10 @@ levels:
   - pragmaticbim:workflow/des-basic-piping-planning
   - pragmaticbim:workflow/des-floor-area-from-model
   - pragmaticbim:workflow/des-parking-verification
+  - pragmaticbim:workflow/des-furniture-planning
+  - pragmaticbim:workflow/qas-furnishability-verification
   - pragmaticbim:workflow/qas-special-room-user-coordination
-  comment: Delta at level gehoben (sort_order 2); cumulative with Standard.
+  comment: Full set at level gehoben (sort_order 2); includes lower levels.
 - id: pragmaticbim:project-goal-level/ausbau-premium
   code: FIT-03
   sort_order: 3
@@ -72,5 +76,17 @@ levels:
     en: Visualisations for usage agreements from the model.
   status: active
   activated_workflows:
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-door-planning
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-basic-piping-planning
+  - pragmaticbim:workflow/des-floor-area-from-model
+  - pragmaticbim:workflow/des-parking-verification
+  - pragmaticbim:workflow/des-furniture-planning
+  - pragmaticbim:workflow/qas-furnishability-verification
+  - pragmaticbim:workflow/qas-special-room-user-coordination
   - pragmaticbim:workflow/des-usage-agreement-visualization
-  comment: Delta at level Premium (sort_order 3); cumulative with gehoben and Standard.
+  comment: Full set at level Premium (sort_order 3); includes lower levels.

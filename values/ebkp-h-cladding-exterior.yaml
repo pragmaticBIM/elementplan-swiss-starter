@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-cladding-exterior
+code: EBKP-H-CLAD-EXT
+name:
+  de: eBKP-H äussere Wandbekleidung
+  fr: eBKP-H revêtement de mur extérieur
+  it: eBKP-H rivestimento parete esterna
+  en: eBKP-H exterior wall cladding
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): E01, E02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : E01, E02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): E01, E02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): E01, E02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - E01
+  - E02
+  fr:
+  - E01
+  - E02
+  it:
+  - E01
+  - E02
+  en:
+  - E01
+  - E02

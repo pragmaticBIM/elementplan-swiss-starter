@@ -41,7 +41,7 @@ definition:
 
     **Directives de modélisation**
 
-    - Modéliser comme volume simplifié ou surface de toiture ; pente selon le concept grossier.
+    - Modéliser comme volume simplifié ou surface de toiture ; pente selon le concept d''ensemble.
 
     - Ne pas modéliser superstructures, couverture ou raccords de détail.
 
@@ -62,7 +62,7 @@ definition:
 
     **Direttive di modellazione**
 
-    - Modellare come volume semplificato o superficie di copertura; inclinazione secondo il concept grossolano.
+    - Modellare come volume semplificato o superficie di copertura; inclinazione secondo il concetto di massima.
 
     - Non modellare sovrastrutture, manto di copertura o giunti di dettaglio.
 
@@ -491,6 +491,7 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
   - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
   status: active
   sort_order: 5
@@ -594,6 +595,7 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/des-managing-existing-with-models
   is_applicability: false
   status: active
   sort_order: 7
@@ -687,6 +689,237 @@ attributes:
   - ifc2x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/des-managing-existing-with-models
   is_applicability: false
   status: active
   sort_order: 8
+- name: CostInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Kostenschnittstelle des Bauteils — Grundausbau oder Mieterausbau.
+
+
+      **Zulässige Werte**
+
+      - `GAB` — Grundausbau (Bauherr / Vermieter)
+
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_Migros`'
+    fr: 'Interface de coûts de l''élément — aménagement de base ou aménagement locataire.
+
+
+      **Valeurs admises**
+
+      - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
+
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_Migros`'
+    it: 'Interfaccia di costo del componente — allestimento di base o allestimento locatario.
+
+
+      **Valori ammessi**
+
+      - `GAB` — allestimento di base (committente / locatore)
+
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_Migros`'
+    en: 'Cost interface of the component — base building or tenant fit-out.
+
+
+      **Allowed values**
+
+      - `GAB` — base building (client / landlord)
+
+      - `MAB_{Mietername}` — tenant fit-out, e.g. `MAB_Migros`'
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+  is_applicability: false
+  status: active
+  sort_order: 9
+- name: AwardInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Vergabepaket des Bauteils nach BKP-3-Steller — damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste BKP-Vergabepaket — z. B. `211`, `221`, `244`.'
+    fr: 'Lot d''adjudication de l''élément selon le BKP à trois chiffres — pour rendre visibles les interfaces entre lots d''entreprise.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot d''adjudication BKP — p. ex. `211`, `221`, `244`.'
+    it: 'Lotto di aggiudicazione del componente secondo il BKP a tre cifre — per rendere visibili le interfacce tra lotti d''impresa.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Lotto di aggiudicazione BKP — es. `211`, `221`, `244`.'
+    en: 'Award package of the component by three-digit BKP code — so interfaces between contractor packages become visible.
+
+
+      **Allowed values**
+
+      - See value list BKP award package — e.g. `211`, `221`, `244`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-award-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-award-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 10
+- name: PlanningInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller — damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste BKP-Planungspaket — z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres — pour rendre visibles les responsabilités entre disciplines de planification.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot de planification BKP — p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre — per rendere visibili le responsabilità tra discipline di pianificazione.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Lotto di pianificazione BKP — es. `091`, `092`, `094`.'
+    en: 'Planning interface of the component by three-digit BKP code — so responsibilities between planning disciplines become visible.
+
+
+      **Allowed values**
+
+      - See value list BKP planning package — e.g. `091`, `092`, `094`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-planning-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-planning-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 11
+- name: BelowTerrain
+  pset: ePset_Cost
+  definition:
+    de: 'Kennzeichnet, ob das Bauteil unter Terrain liegt.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — unter Terrain
+
+      - `FALSE` — über Terrain'
+    fr: 'Indique si l''élément se trouve sous le niveau du terrain.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — sous le niveau du terrain
+
+      - `FALSE` — au-dessus du niveau du terrain'
+    it: 'Indica se il componente si trova sotto il livello del terreno.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — sotto il livello del terreno
+
+      - `FALSE` — sopra il livello del terreno'
+    en: 'Marks whether the component is below terrain.
+
+
+      **Allowed values**
+
+      - `TRUE` — below terrain
+
+      - `FALSE` — above terrain'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  is_applicability: false
+  status: active
+  sort_order: 12
+- name: EbkpH
+  pset: ePset_Cost
+  definition:
+    de: 'eBKP-H-Klassifizierung nach SN 506 511 — ableitbar aus IsExternal, LoadBearing und BelowTerrain.
+
+
+      **Zulässige Werte**
+
+      - `C04.05` — Konstruktion geneigtes Dach'
+    fr: 'Classification eBKP-H selon SN 506 511 — déductible à partir de IsExternal, LoadBearing et BelowTerrain.
+
+
+      **Valeurs admises**
+
+      - `C04.05` — construction de toiture inclinée'
+    it: 'Classificazione eBKP-H secondo SN 506 511 — ricavabile da IsExternal, LoadBearing e BelowTerrain.
+
+
+      **Valori ammessi**
+
+      - `C04.05` — costruzione di tetto inclinato'
+    en: 'eBKP-H classification according to SN 506 511 — derivable from IsExternal, LoadBearing, and BelowTerrain.
+
+
+      **Allowed values**
+
+      - `C04.05` — pitched roof construction'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/ebkp-h-roof-pitched
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  is_applicability: false
+  status: active
+  sort_order: 13

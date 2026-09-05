@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-comms
+code: EBKP-H-MEP-COMMS
+name:
+  de: eBKP-H Schwachstromgerät
+  fr: eBKP-H appareil courant faible
+  it: eBKP-H apparecchio corrente debole
+  en: eBKP-H communications appliance
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D01.11.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D01.11.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D01.11.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D01.11.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D01.11
+  fr:
+  - D01.11
+  it:
+  - D01.11
+  en:
+  - D01.11

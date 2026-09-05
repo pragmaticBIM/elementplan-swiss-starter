@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-mep-fan
+code: EBKP-H-MEP-FAN
+name:
+  de: eBKP-H Ventilator
+  fr: eBKP-H ventilateur
+  it: eBKP-H ventilatore
+  en: eBKP-H fan
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D07.02, D07.04.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D07.02, D07.04.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D07.02, D07.04.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D07.02, D07.04.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D07.02
+  - D07.04
+  fr:
+  - D07.02
+  - D07.04
+  it:
+  - D07.02
+  - D07.04
+  en:
+  - D07.02
+  - D07.04

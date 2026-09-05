@@ -7,8 +7,8 @@ name:
   en: Space floor covering type
 description:
   de: Bodenbelagstyp für die frühe Planung im Innenraum.
-  fr: Type de revêtement de sol pour la planification précoce dans le local intérieur.
-  it: Tipo di pavimentazione per la pianificazione precoce nel locale interno.
+  fr: Type de revêtement de sol pour la planification en phase initiale dans le local intérieur.
+  it: Tipo di pavimentazione per la pianificazione in fase iniziale nel locale interno.
   en: Floor covering type for early planning in the interior space.
 year: 2026
 norm_reference: null

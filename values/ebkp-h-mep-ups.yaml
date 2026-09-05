@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-ups
+code: EBKP-H-MEP-UPS
+name:
+  de: eBKP-H Speicherung Starkstrom
+  fr: eBKP-H stockage courant fort
+  it: eBKP-H accumulo corrente forte
+  en: eBKP-H power storage
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D01.03.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D01.03.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D01.03.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D01.03.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D01.03
+  fr:
+  - D01.03
+  it:
+  - D01.03
+  en:
+  - D01.03

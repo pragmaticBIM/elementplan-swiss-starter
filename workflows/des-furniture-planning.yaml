@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/des-furniture-planning
+code: DES-FURNITURE
+sort_order: 59
+name:
+  de: Möblierungsplanung
+  fr: Planification du mobilier
+  it: Pianificazione dell'arredo
+  en: Furniture planning
+description:
+  de: 'Möbel im Modell führen und Lage sowie Typ entscheiden — schematisch, ohne Produktkatalog.
+
+
+    **Ausgangslage**
+
+    - Nach der Layoutentscheidung fehlen oft strukturierte Möbelangaben für Listen, Varianten und Koordination.
+
+    - Möblierung wird häufig nur in 2D geplant; Lage und Typ sind im Modell nicht nachvollziehbar.
+
+
+    **Ziel & Nutzen**
+
+    - Möbel im Modell mit Bezeichnung und Typ führen.
+
+    - Möblierungsgrundlagen für Listen, Variantenvergleich und Abstimmung aus dem Modell ableiten.
+
+
+    **Ablauf**
+
+    1. Innenräume mit Nutzung und Abmessungen bereitstellen.
+
+    2. Möbel schematisch mit Name und PredefinedType bzw. ObjectType platzieren.
+
+    3. Möbellisten und Planungsgrundlagen aus dem Modell ableiten und abstimmen.
+
+
+    **Ergebnis**
+
+    - Abgestimmte Möblierungsplanung aus dem Modell — ohne ausführungsreife Produktdetails.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Innenräume als modellierte IfcSpace-Volumen (PredefinedType=INTERNAL); LongName mit Nutzung; NetFloorArea als Abmessungsangabe
+
+    - IfcFurnishingElement mit Name und PredefinedType (IFC4+) bzw. ObjectType (IFC2x3)'
+  fr: 'Saisir le mobilier dans le modèle et trancher position et type — de façon schématique, sans catalogue produits.
+
+
+    **Situation de départ**
+
+    - Après la décision de layout, les données structurées sur le mobilier manquent souvent pour listes, variantes et coordination.
+
+    - Le mobilier est fréquemment planifié uniquement en 2D ; position et type ne sont pas traçables dans le modèle.
+
+
+    **Objectif et bénéfice**
+
+    - Saisir le mobilier dans le modèle avec désignation et type.
+
+    - Déduire les bases de planification du mobilier pour listes, comparaison de variantes et coordination.
+
+
+    **Déroulement**
+
+    1. Fournir les locaux intérieurs avec usage et dimensions.
+
+    2. Placer le mobilier de façon schématique avec Name et PredefinedType ou ObjectType.
+
+    3. Déduire et coordonner listes de mobilier et bases de planification à partir du modèle.
+
+
+    **Résultat**
+
+    - Planification du mobilier coordonnée à partir du modèle — sans détail produit d''exécution.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Locaux intérieurs comme volumes IfcSpace modélisés (PredefinedType=INTERNAL) ; LongName avec usage ; NetFloorArea comme indication dimensionnelle
+
+    - IfcFurnishingElement avec Name et PredefinedType (IFC4+) ou ObjectType (IFC2x3)'
+  it: 'Gestire gli arredi nel modello e decidere posizione e tipo — in modo schematico, senza catalogo prodotti.
+
+
+    **Situazione di partenza**
+
+    - Dopo la decisione di layout mancano spesso dati strutturati sugli arredi per elenchi, varianti e coordinamento.
+
+    - L''arredo è spesso pianificato solo in 2D; posizione e tipo non sono tracciabili nel modello.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire gli arredi nel modello con denominazione e tipo.
+
+    - Ricavare le basi di pianificazione dell''arredo per elenchi, confronto varianti e coordinamento.
+
+
+    **Svolgimento**
+
+    1. Fornire i locali interni con uso e dimensioni.
+
+    2. Posizionare gli arredi in modo schematico con Name e PredefinedType o ObjectType.
+
+    3. Ricavare e coordinare elenchi arredi e basi di pianificazione dal modello.
+
+
+    **Risultato**
+
+    - Pianificazione dell''arredo coordinata dal modello — senza dettaglio prodotto esecutivo.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Locali interni come volumi IfcSpace modellati (PredefinedType=INTERNAL); LongName con uso; NetFloorArea come indicazione dimensionale
+
+    - IfcFurnishingElement con Name e PredefinedType (IFC4+) o ObjectType (IFC2x3)'
+  en: 'Maintain furniture in the model and decide location and type — schematically, without a product catalogue.
+
+
+    **Starting point**
+
+    - After layout decisions, structured furniture data is often missing for schedules, options, and coordination.
+
+    - Furniture is frequently planned only in 2D; location and type are not traceable in the model.
+
+
+    **Goal & benefit**
+
+    - Maintain furniture in the model with designation and type.
+
+    - Derive furniture planning foundations for schedules, option comparison, and alignment.
+
+
+    **Process**
+
+    1. Provide interior spaces with use and dimensions.
+
+    2. Place furniture schematically with Name and PredefinedType or ObjectType.
+
+    3. Derive and align furniture schedules and planning foundations from the model.
+
+
+    **Outcome**
+
+    - Coordinated furniture planning from the model — without execution-grade product detail.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Interior spaces as modelled IfcSpace volumes (PredefinedType=INTERNAL); LongName with use; NetFloorArea as size indication
+
+    - IfcFurnishingElement with Name and PredefinedType (IFC4+) or ObjectType (IFC2x3)'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Formal furniture planning on proper interior spaces. Distinct from qas-special-room-user-coordination (informal sketches) and qas-furnishability-verification (fit/clash proof). Requires clean space
+  assignment.

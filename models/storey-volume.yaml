@@ -1,0 +1,28 @@
+id: pragmaticbim:model/storey-volume
+code: GVM
+sort_order: 12
+name:
+  de: Geschossvolumen
+  fr: Volume d'étage
+  it: Volume di piano
+  en: Storey volume
+definition:
+  de: Bruttovolumen je Geschoss für Massenstudien, Kennwerte und städtebauliche Nachweise. Fachmodelle nach Status trennen (B Bestand, A Abbruch, N Neubau, T temporär). Die Trennung macht Modelle schnell lesbar und erlaubt, Neubau und Abbruch gezielt ein- und auszublenden.
+  fr: Volume brut par étage pour études de masse, indicateurs et justificatifs urbanistiques. Séparer les maquettes par statut (E existant, D démolition, N neuf, T temporaire). La séparation rend les maquettes rapidement lisibles et permet d'afficher ou de masquer ce qui est neuf et ce qui est retiré.
+  it: Volume lordo per piano per studi di massa, indicatori e verifiche urbanistiche. Separare i modelli per stato (E esistente, D demolizione, N nuovo, T temporaneo). La separazione rende i modelli rapidamente comprensibili e permette di visualizzare o nascondere ciò che è nuovo e ciò che viene rimosso.
+  en: Gross volume per storey for massing studies, metrics, and urban-design verification. Split models by status (E existing, D demolish, N new, T temporary). The split makes models readable at a glance and lets you toggle what is new versus what is removed.
+file_name:
+  de: '{Projektnummer}_{B|A|N|T}_ARX-GVM_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_{E|D|N|T}_ARC-GVM_{Libre}.{ext}'
+  it: '{NumeroProgetto}_{E|D|N|T}_ARC-GVM_{Libero}.{ext}'
+  en: '{ProjectNumber}_{E|D|N|T}_ARC-GVM_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/spaces-gross-volume
+  - pragmaticbim:element/spaces-luftraum

@@ -54,12 +54,12 @@ description:
 
     - L''ingénieur structure fournit le concept porteur sous forme de croquis, pas de modèle ; l''architecte a néanmoins besoin d''une géométrie porteuse fiable dans le modèle d''architecture.
 
-    - Sans zones d''exclusion contraignantes et contrôle précoce, des composants sont planifiés dans des no-go zones — avec des modifications coûteuses en cascade.
+    - Sans zones d''exclusion contraignantes et contrôle en phase initiale, des composants sont planifiés dans des no-go zones — avec des modifications coûteuses en cascade.
 
 
     **Objectif et bénéfice**
 
-    - Porter le concept porteur comme esquisse porteuse grossière dans le modèle d''architecture et le marquer comme porteur.
+    - Saisir le concept porteur comme esquisse porteuse grossière dans le modèle d''architecture et le marquer comme porteur.
 
     - Vérifier le modèle de zones d''exclusion de l''ingénieur structure comme limite de planification contraignante et documenter la preuve.
 
@@ -94,7 +94,7 @@ description:
 
     - L''ingegnere strutturista consegna il concept strutturale come schizzo, non come modello; l''architetto necessita comunque di una geometria portante affidabile nel modello di architettura.
 
-    - Senza zone di esclusione vincolanti e verifica precoce, componenti vengono pianificati in no-go zone — con costose modifiche a catena.
+    - Senza zone di esclusione vincolanti e verifica in fase iniziale, componenti vengono pianificati in no-go zone — con costose modifiche a catena.
 
 
     **Obiettivo e beneficio**

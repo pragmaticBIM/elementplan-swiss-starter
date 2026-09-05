@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-waste-term
+code: EBKP-H-MEP-WASTE
+name:
+  de: eBKP-H Abwasserapparat
+  fr: eBKP-H appareil eaux usées
+  it: eBKP-H apparecchio acque reflue
+  en: eBKP-H waste terminal
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D09.05.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D09.05.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D09.05.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D09.05.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D09.05
+  fr:
+  - D09.05
+  it:
+  - D09.05
+  en:
+  - D09.05

@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-mep-gas-reg
+code: EBKP-H-MEP-GASREG
+name:
+  de: eBKP-H Gasregler
+  fr: eBKP-H détendeur gaz
+  it: eBKP-H regolatore gas
+  en: eBKP-H gas regulator
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D10.02, D10.04.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D10.02, D10.04.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D10.02, D10.04.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D10.02, D10.04.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D10.02
+  - D10.04
+  fr:
+  - D10.02
+  - D10.04
+  it:
+  - D10.02
+  - D10.04
+  en:
+  - D10.02
+  - D10.04

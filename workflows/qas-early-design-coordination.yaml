@@ -3,8 +3,8 @@ code: QAS-EARLY-COORD
 sort_order: 71
 name:
   de: Koordination in frühen Entwurfsphasen
-  fr: Coordination en phases de conception précoce
-  it: Coordinamento nelle fasi di progetto precoce
+  fr: Coordination en phases de conception initiale
+  it: Coordinamento nelle fasi di progetto iniziale
   en: Early design stage coordination
 description:
   de: 'Konzept und Machbarkeit früh im Modell abstimmen — vergleichbar mit einem Strichkonzept, ohne Ausführungsdetail.
@@ -61,7 +61,7 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter les concepts comme volumes et réserves d''espace dans le modèle et détecter tôt les collisions et les goulots.
+    - Saisir les concepts comme volumes et réserves d''espace dans le modèle et détecter tôt les collisions et les goulots.
 
     - Rendre la faisabilité des locaux techniques et des cheminements de réseaux compréhensibles pour toutes les parties.
 
@@ -86,7 +86,7 @@ description:
 
     - IfcWall et IfcSlab (FLOOR) — murs et dalles de plancher comme géométrie de coordination (sans détail d''exécution)
 
-    - Distributions principales schématiques : IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment avec médium dans Reference ; espace générateurs comme IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
+    - Distributions principales schématiques : IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment avec fluide dans Reference ; espace générateurs comme IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
 
     - Name et Reference par élément pour l''identification dans le modèle de coordination
 
@@ -128,7 +128,7 @@ description:
 
     - IfcWall e IfcSlab (FLOOR) — pareti e solette di piano come geometria di coordinamento (senza dettaglio esecutivo)
 
-    - Distribuzioni principali schematiche: IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment con mezzo in Reference; spazio generatori come IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
+    - Distribuzioni principali schematiche: IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment con fluido in Reference; spazio generatori come IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
 
     - Name e Reference per elemento per l''identificazione nel modello di coordinamento
 

@@ -3,8 +3,8 @@ code: DES-CEILING-MIRROR
 sort_order: 48
 name:
   de: Deckenspiegelplanung
-  fr: Planification miroir de plafond
-  it: Pianificazione specchio del soffitto
+  fr: Planification du plan de plafond
+  it: Pianificazione piano del soffitto
   en: Ceiling mirror planning
 description:
   de: 'Innenausbau — Abhangdecke im Modell führen, von der frühen Raumzuweisung bis zur ausführungsreifen Schichtmodellierung für GT-Koordination.
@@ -45,19 +45,19 @@ description:
     - IfcCovering mit PredefinedType=CEILING — Abhangdecke als eine Schicht mit definierter Unterkante
 
     - IfcDoor mit PredefinedType=TRAPDOOR — Revisionsöffnungen in Abhangdecken'
-  fr: 'Aménagement intérieur — mener les plafonds suspendus dans le modèle, de l''affectation précoce par local à la modélisation par couche prête à l''exécution pour la coordination GT.
+  fr: 'Aménagement intérieur — mener les plafonds suspendus dans le modèle, de l''affectation initiale par local à la modélisation par couche prête à l''exécution pour la coordination CVC.
 
 
     **Situation de départ**
 
-    - Le miroir de plafond est souvent planifié en 2D ; la coordination avec le GT arrive tard.
+    - Le plan de plafond est souvent planifié en 2D ; la coordination avec le CVC arrive tard.
 
     - Les trappes de plafond suspendu manquent fréquemment dans le modèle pour l''appel d''offres.
 
 
     **Objectif et bénéfice**
 
-    - Plafonds suspendus incluant trappes comme couche modélisée avec intrados défini pour la coordination GT.
+    - Plafonds suspendus incluant trappes comme couche modélisée avec intrados défini pour la coordination CVC.
 
 
     **Déroulement**
@@ -66,12 +66,12 @@ description:
 
     2. Modéliser les plafonds suspendus comme couches avec types de composants et trappes.
 
-    3. Coordonner le miroir de plafond avec les équipements GT pertinents.
+    3. Coordonner le plan de plafond avec les équipements CVC pertinents.
 
 
     **Résultat**
 
-    - Plafond suspendu coordonnable dans le modèle — de l''affectation précoce par local à la planification prête pour l''appel d''offres.
+    - Plafond suspendu coordonnable dans le modèle — de l''affectation initiale par local à la planification prête pour l''appel d''offres.
 
 
     **Livrables**
@@ -83,12 +83,12 @@ description:
     - IfcCovering avec PredefinedType=CEILING — plafond suspendu comme couche unique avec intrados défini
 
     - IfcDoor avec PredefinedType=TRAPDOOR — trappes dans les plafonds suspendus'
-  it: 'Finiture interne — gestire i controsoffitti nel modello, dall''assegnazione precoce per locale alla modellazione a strati esecutiva per il coordinamento impianti.
+  it: 'Finiture interne — gestire i controsoffitti nel modello, dall''assegnazione in fase iniziale per locale alla modellazione a strati esecutiva per il coordinamento impianti.
 
 
     **Situazione di partenza**
 
-    - Lo specchio del soffitto è spesso pianificato in 2D; il coordinamento con gli impianti arriva tardi.
+    - Lo piano del soffitto è spesso pianificato in 2D; il coordinamento con gli impianti arriva tardi.
 
     - Le botole in controsoffitti mancano spesso nel modello per la gara.
 
@@ -104,12 +104,12 @@ description:
 
     2. Modellare i controsoffitti come strati con tipi di componente e botole.
 
-    3. Coordinare lo specchio del soffitto con gli inserti impiantistici pertinenti.
+    3. Coordinare lo piano del soffitto con gli inserti impiantistici pertinenti.
 
 
     **Risultato**
 
-    - Controsoffitto coordinabile nel modello — dall''assegnazione precoce per locale alla pianificazione pronta per la gara.
+    - Controsoffitto coordinabile nel modello — dall''assegnazione in fase iniziale per locale alla pianificazione pronta per la gara.
 
 
     **Oggetti della fornitura**

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-cladding-interior
+code: EBKP-H-CLAD-INT
+name:
+  de: eBKP-H innere Wandbekleidung
+  fr: eBKP-H revêtement mural intérieur
+  it: eBKP-H rivestimento murale interno
+  en: eBKP-H interior wall covering
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): G03.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : G03.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): G03.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): G03.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - G03.02
+  fr:
+  - G03.02
+  it:
+  - G03.02
+  en:
+  - G03.02

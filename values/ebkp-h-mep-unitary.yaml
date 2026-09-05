@@ -1,0 +1,32 @@
+id: pragmaticbim:value/ebkp-h-mep-unitary
+code: EBKP-H-MEP-UNIT
+name:
+  de: eBKP-H Kompaktgerät
+  fr: eBKP-H équipement unitaire
+  it: eBKP-H apparecchio unitario
+  en: eBKP-H unitary equipment
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D05.02, D06.02, D07.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D05.02, D06.02, D07.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D05.02, D06.02, D07.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D05.02, D06.02, D07.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D05.02
+  - D06.02
+  - D07.02
+  fr:
+  - D05.02
+  - D06.02
+  - D07.02
+  it:
+  - D05.02
+  - D06.02
+  - D07.02
+  en:
+  - D05.02
+  - D06.02
+  - D07.02

@@ -1,0 +1,44 @@
+id: pragmaticbim:value/ebkp-h-mep-valve
+code: EBKP-H-MEP-VALVE
+name:
+  de: eBKP-H Armatur
+  fr: eBKP-H robinetterie
+  it: eBKP-H valvola
+  en: eBKP-H valve
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D05.04, D06.04, D08.04, D08.05, D09.01, D10.05.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D05.04, D06.04, D08.04, D08.05, D09.01, D10.05.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D05.04, D06.04, D08.04, D08.05, D09.01, D10.05.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D05.04, D06.04, D08.04, D08.05, D09.01, D10.05.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D05.04
+  - D06.04
+  - D08.04
+  - D08.05
+  - D09.01
+  - D10.05
+  fr:
+  - D05.04
+  - D06.04
+  - D08.04
+  - D08.05
+  - D09.01
+  - D10.05
+  it:
+  - D05.04
+  - D06.04
+  - D08.04
+  - D08.05
+  - D09.01
+  - D10.05
+  en:
+  - D05.04
+  - D06.04
+  - D08.04
+  - D08.05
+  - D09.01
+  - D10.05

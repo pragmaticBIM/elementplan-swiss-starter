@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-downpipe
+code: EBKP-H-MEP-DOWN
+name:
+  de: eBKP-H Fallleitung
+  fr: eBKP-H descente
+  it: eBKP-H discendente
+  en: eBKP-H downpipe
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D09.01.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D09.01.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D09.01.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D09.01.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D09.01
+  fr:
+  - D09.01
+  it:
+  - D09.01
+  en:
+  - D09.01

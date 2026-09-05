@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-mep-tray
+code: EBKP-H-MEP-TRAY
+name:
+  de: eBKP-H Kabeltrasse
+  fr: eBKP-H chemin de câbles
+  it: eBKP-H canalina
+  en: eBKP-H cable tray
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D01.04, D01.10.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D01.04, D01.10.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D01.04, D01.10.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D01.04, D01.10.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D01.04
+  - D01.10
+  fr:
+  - D01.04
+  - D01.10
+  it:
+  - D01.04
+  - D01.10
+  en:
+  - D01.04
+  - D01.10

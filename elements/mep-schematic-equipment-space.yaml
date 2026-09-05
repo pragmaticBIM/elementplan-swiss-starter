@@ -25,7 +25,7 @@ definition:
     - ObjectType = Erzeugerplatz; dem zugehörigen Geschoss zuweisen.
 
     - Keine einzelnen Geräte oder Anschlussdetails modellieren.'
-  fr: 'Besoin d''espace schématique pour générateurs et locaux techniques en coordination précoce.
+  fr: 'Besoin d''espace schématique pour générateurs et locaux techniques en coordination en phase initiale.
 
 
     **Description**
@@ -37,12 +37,12 @@ definition:
 
     **Directives de modélisation**
 
-    - Modéliser comme corps proxy simplifié; dimensions selon le concept grossier incluant la zone de maintenance.
+    - Modéliser comme corps proxy simplifié; dimensions selon le concept d''ensemble incluant la zone de maintenance.
 
     - ObjectType = Erzeugerplatz; rattacher à l''étage concerné.
 
     - Ne pas modéliser appareils individuels ni raccords de détail.'
-  it: 'Fabbisogno schematico di spazio per generatori e centrali nel coordinamento precoce.
+  it: 'Fabbisogno schematico di spazio per generatori e centrali nel coordinamento in fase iniziale.
 
 
     **Descrizione**
@@ -54,7 +54,7 @@ definition:
 
     **Direttive di modellazione**
 
-    - Modellare come corpo proxy semplificato; dimensioni secondo il concept grossolano inclusa la zona di manutenzione.
+    - Modellare come corpo proxy semplificato; dimensioni secondo il concetto di massima inclusa la zona di manutenzione.
 
     - ObjectType = Erzeugerplatz; assegnare al piano corrispondente.
 
@@ -255,6 +255,7 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-existing-mep-survey
+  - pragmaticbim:workflow/des-managing-existing-with-models
   is_applicability: false
   status: active
   sort_order: 3
@@ -348,6 +349,7 @@ attributes:
   - ifc2x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-existing-mep-survey
+  - pragmaticbim:workflow/des-managing-existing-with-models
   is_applicability: false
   status: active
   sort_order: 4

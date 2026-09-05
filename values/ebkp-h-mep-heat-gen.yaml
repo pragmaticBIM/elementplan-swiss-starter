@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-mep-heat-gen
+code: EBKP-H-MEP-HEATGEN
+name:
+  de: eBKP-H Wärmeerzeugung
+  fr: eBKP-H production de chaleur
+  it: eBKP-H produzione di calore
+  en: eBKP-H heat generation
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): D05.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : D05.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): D05.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): D05.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - D05.02
+  fr:
+  - D05.02
+  it:
+  - D05.02
+  en:
+  - D05.02

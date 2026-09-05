@@ -47,7 +47,7 @@ description:
     - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
 
     - Name je Element (optional)'
-  fr: 'Porter l''espace utile des contre-cloisons dans le modèle et prouver l''impact sur les surfaces — avant que les salles d''eau ne deviennent trop petites.
+  fr: 'Saisir l''espace utile des contre-cloisons dans le modèle et prouver l''impact sur les surfaces — avant que les salles d''eau ne deviennent trop petites.
 
 
     **Situation de départ**
@@ -59,7 +59,7 @@ description:
 
     **Objectif et bénéfice**
 
-    - Porter l''espace utile de contre-cloison hors construction comme local distinct.
+    - Saisir l''espace utile de contre-cloison hors construction comme local distinct.
 
     - Évaluer besoin d''espace et impact surfacique à partir du modèle et les confronter au local utile restant.
 
