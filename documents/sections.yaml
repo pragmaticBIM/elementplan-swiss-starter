@@ -1,0 +1,52 @@
+id: pragmaticbim:document/sections
+code: SCT
+sort_order: 102
+name:
+  de: Schnitte
+  fr: Coupes
+  it: Sezioni
+  en: Sections
+definition:
+  de: Gebäudeschnitte als geometrische und visuelle Planungsgrundlage. Sie dienen als Vollständigkeits-Check gegenüber dem IFC-Modell — Höhen, Schichten und vertikale Bezüge müssen im Plan lesbar sein.
+  fr: Coupes du bâtiment comme base géométrique et visuelle de planification. Elles servent de contrôle de complétude face à la maquette IFC — hauteurs, couches et relations verticales doivent être lisibles sur le plan.
+  it: Sezioni dell'edificio come base geometrica e visiva di pianificazione. Servono da controllo di completezza rispetto al modello IFC — altezze, stratigrafie e relazioni verticali devono essere leggibili sul disegno.
+  en: Building sections as the geometric and visual planning basis. They act as a completeness check against the IFC model — heights, layers, and vertical relationships must be readable on the drawing.
+description:
+  de: |-
+    - Gebäudeschnitte durch die relevanten Geschosse
+    - Höhen, Geschosse und Schichten lesbar
+    - Absolute Höhe über dem Meeresspiegel enthalten
+    - Vertikale Bezüge und Anschlüsse
+    - Masse, Massstab und Plankopf
+  fr: |-
+    - Coupes du bâtiment à travers les étages pertinents
+    - Hauteurs, étages et couches lisibles
+    - Altitude absolue au-dessus du niveau de la mer
+    - Relations verticales et raccords
+    - Cotes, échelle et cartouche
+  it: |-
+    - Sezioni dell'edificio attraverso i piani pertinenti
+    - Altezze, piani e stratigrafie leggibili
+    - Quota assoluta sul livello del mare
+    - Relazioni verticali e raccordi
+    - Quote, scala e cartiglio
+  en: |-
+    - Building sections through the relevant storeys
+    - Heights, storeys, and construction layers readable
+    - Absolute height above sea level included
+    - Vertical relationships and junctions
+    - Dimensions, scale, and title block
+file_name:
+  de: '{Projektnummer}_ARX-SCT_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-SCT_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-SCT_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-SCT_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "31:beginning"
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"
+  - "51:beginning"
+  - "52:beginning"

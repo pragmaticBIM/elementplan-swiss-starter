@@ -1,0 +1,43 @@
+id: pragmaticbim:document/permit-plans-ventilation
+code: BGL
+sort_order: 117
+name:
+  de: Baugenehmigungspläne Lüftung
+  fr: Plans de permis — ventilation
+  it: Piani di autorizzazione — ventilazione
+  en: Permit plans ventilation
+definition:
+  de: Baugenehmigungspläne Lüftung für das Baugesuch. Darstellung der Lüftungsanlagen in der für die Bewilligungsbehörde erforderlichen Form.
+  fr: Plans de permis ventilation pour la mise à l'enquête. Représentation des installations de ventilation selon les exigences de l'autorité.
+  it: Piani di autorizzazione ventilazione per la domanda edilizia. Rappresentazione degli impianti di ventilazione nella forma richiesta dall'autorità.
+  en: Ventilation permit plans for the building application. Representation of the ventilation systems in the form required by the authority.
+description:
+  de: |-
+    - Lüftungsanlagen in der für die Bewilligungsbehörde erforderlichen Darstellung
+    - Luftführung, Geräte und lufttechnische Verteilung
+    - Anlagestandorte und Hauptführungen
+    - Plankopf und Massstab
+  fr: |-
+    - Installations de ventilation selon les exigences de l'autorité
+    - Réseaux d'air, appareils et distribution aéraulique
+    - Emplacements d'installations et conduites principales
+    - Cartouche et échelle
+  it: |-
+    - Impianti di ventilazione nella forma richiesta dall'autorità
+    - Condotte d'aria, apparecchi e distribuzione aeraulica
+    - Ubicazioni degli impianti e condotte principali
+    - Cartiglio e scala
+  en: |-
+    - Ventilation systems in the representation required by the authority
+    - Air routes, equipment, and air-side distribution
+    - Plant locations and main routes
+    - Title block and scale
+file_name:
+  de: '{Projektnummer}_TGA-BGL_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-BGL_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-BGL_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-BGL_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+scheduled_milestones:
+  - "33:beginning"

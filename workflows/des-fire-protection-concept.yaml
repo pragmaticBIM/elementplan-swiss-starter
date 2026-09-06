@@ -1,0 +1,176 @@
+id: pragmaticbim:workflow/des-fire-protection-concept
+code: DES-FIRE-CONCEPT
+sort_order: 63
+name:
+  de: Erarbeiten Brandschutzkonzept
+  fr: Élaborer le concept de protection incendie
+  it: Elaborare il concetto di protezione antincendio
+  en: Develop the fire protection concept
+description:
+  de: 'Brandschutzkonzept und Brandschutzplan erarbeiten als verbindliche Grundlage für Bewilligung und Modellkennwerte.
+
+
+    **Ausgangslage**
+
+    - Schutzziele, Brandabschnitte und Feuerwiderstandsklassen stehen oft nur in lose abgestimmten Berichten.
+
+    - Ohne verbindliches Konzept fehlen Plan und Modell eine gemeinsame Lesart für Bewilligung und QS.
+
+
+    **Ziel & Nutzen**
+
+    - Schutzziele, Brandabschnitte und erforderliche Feuerwiderstandsklassen verbindlich festlegen.
+
+    - Brandschutzplan mit Fluchtwegen und massgebenden Bauteilen auf das Konzept abstimmen.
+
+
+    **Ablauf**
+
+    1. Architekturmodell mit Räumen, Hülle und Öffnungen bereitstellen.
+
+    2. Brandschutzkonzept mit Schutzzielen, Abschnitten und Feuerwiderstandsklassen festlegen.
+
+    3. Brandschutzplan ableiten und mit Konzept und Bewilligungsunterlagen abstimmen.
+
+
+    **Ergebnis**
+
+    - Verbindliches Brandschutzkonzept und abgestimmter Brandschutzplan als Grundlage für Bewilligung und QS Brandschutz.
+
+
+    **Lieferobjekte**
+
+    - Brandschutzkonzept und Brandschutzplan
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Massgebende Bauteile IfcWall, IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn und IfcBeam
+
+    - Keine zusätzlichen Brandschutz-Attribute — Kennwerte prüft QS Brandschutz Bauteilkennwerte'
+  fr: 'Élaborer le concept et le plan de protection incendie comme base contraignante pour l''autorisation et les valeurs du modèle.
+
+
+    **Situation de départ**
+
+    - Objectifs de protection, compartiments et classes de résistance figurent souvent seulement dans des rapports peu alignés.
+
+    - Sans concept contraignant, plan et maquette n''ont pas de lecture commune pour autorisation et AQ.
+
+
+    **Objectif et bénéfice**
+
+    - Fixer de façon contraignante objectifs, compartiments et classes de résistance au feu requises.
+
+    - Aligner le plan incendie — voies d''évacuation et éléments déterminants — sur le concept.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette d''architecture avec locaux, enveloppe et ouvertures.
+
+    2. Fixer le concept de protection incendie avec objectifs, compartiments et classes de résistance.
+
+    3. Obtenir le plan incendie et l''aligner sur le concept et les dossiers d''autorisation.
+
+
+    **Résultat**
+
+    - Concept de protection incendie contraignant et plan incendie aligné comme base pour autorisation et AQ incendie.
+
+
+    **Livrables**
+
+    - Concept de protection incendie et plan de protection incendie
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Éléments déterminants IfcWall, IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn et IfcBeam
+
+    - Pas d''attributs incendie supplémentaires — les valeurs sont contrôlées par l''AQ protection incendie'
+  it: 'Elaborare concetto e piano di protezione antincendio come base vincolante per autorizzazione e valori del modello.
+
+
+    **Situazione di partenza**
+
+    - Obiettivi di protezione, compartimenti e classi di resistenza sono spesso solo in rapporti poco allineati.
+
+    - Senza concetto vincolante, piano e modello non hanno una lettura comune per autorizzazione e AQ.
+
+
+    **Obiettivo e beneficio**
+
+    - Fissare in modo vincolante obiettivi, compartimenti e classi di resistenza al fuoco richieste.
+
+    - Allineare il piano antincendio — vie di fuga e componenti determinanti — al concetto.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello di architettura con locali, involucro e aperture.
+
+    2. Definire il concetto antincendio con obiettivi, compartimenti e classi di resistenza.
+
+    3. Ottenere il piano antincendio e allinearlo al concetto e agli atti di autorizzazione.
+
+
+    **Risultato**
+
+    - Concetto antincendio vincolante e piano antincendio allineato come base per autorizzazione e AQ antincendio.
+
+
+    **Oggetti della fornitura**
+
+    - Concetto di protezione antincendio e piano di protezione antincendio
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Componenti determinanti IfcWall, IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn e IfcBeam
+
+    - Nessun attributo antincendio aggiuntivo — i valori sono verificati dall''AQ protezione antincendio'
+  en: 'Develop the fire protection concept and fire plan as the binding basis for permit and model values.
+
+
+    **Starting point**
+
+    - Protection goals, compartments, and fire-resistance classes often exist only in loosely aligned reports.
+
+    - Without a binding concept, plan and model lack a shared reading for permit and QA.
+
+
+    **Goal & benefit**
+
+    - Set protection goals, compartments, and required fire-resistance classes bindingly.
+
+    - Align the fire plan — escape routes and governing components — with the concept.
+
+
+    **Process**
+
+    1. Provide the architecture model with spaces, envelope, and openings.
+
+    2. Define the fire protection concept with goals, compartments, and fire-resistance classes.
+
+    3. Derive the fire plan and align it with the concept and permit documents.
+
+
+    **Outcome**
+
+    - Binding fire protection concept and aligned fire plan as the basis for permit and fire QA.
+
+
+    **Deliverables**
+
+    - Fire protection concept and fire protection plan
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Governing components IfcWall, IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn, and IfcBeam
+
+    - No additional fire attributes — values are checked by QA fire protection component values'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/fire-protection
+comment: Produces BSK and BSP. QAS-FIRE remains the FireRating check against the concept.

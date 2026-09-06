@@ -1,0 +1,48 @@
+id: pragmaticbim:document/elevations
+code: ANS
+sort_order: 103
+name:
+  de: Ansichten
+  fr: Élévations
+  it: Prospetti
+  en: Elevations
+definition:
+  de: Gebäudeansichten als geometrische und visuelle Planungsgrundlage. Sie dienen als Vollständigkeits-Check gegenüber dem IFC-Modell — Fassade, Öffnungen und Anschlüsse müssen im Plan lesbar sein.
+  fr: Élévations du bâtiment comme base géométrique et visuelle de planification. Elles servent de contrôle de complétude face à la maquette IFC — façade, ouvertures et raccords doivent être lisibles sur le plan.
+  it: Prospetti dell'edificio come base geometrica e visiva di pianificazione. Servono da controllo di completezza rispetto al modello IFC — facciata, aperture e raccordi devono essere leggibili sul disegno.
+  en: Building elevations as the geometric and visual planning basis. They act as a completeness check against the IFC model — facade, openings, and junctions must be readable on the drawing.
+description:
+  de: |-
+    - Gebäudeansichten aller relevanten Fassaden
+    - Öffnungen und Anschlüsse lesbar
+    - Höhen und Materialien lesbar
+    - Masse, Massstab und Plankopf
+  fr: |-
+    - Élévations de toutes les façades pertinentes
+    - Ouvertures et raccords lisibles
+    - Hauteurs et matériaux lisibles
+    - Cotes, échelle et cartouche
+  it: |-
+    - Prospetti di tutte le facciate pertinenti
+    - Aperture e raccordi leggibili
+    - Altezze e materiali leggibili
+    - Quote, scala e cartiglio
+  en: |-
+    - Elevations of all relevant facades
+    - Openings and junctions readable
+    - Heights and materials readable
+    - Dimensions, scale, and title block
+file_name:
+  de: '{Projektnummer}_ARX-ANS_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-ANS_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-ANS_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-ANS_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "31:beginning"
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"
+  - "51:beginning"
+  - "52:beginning"

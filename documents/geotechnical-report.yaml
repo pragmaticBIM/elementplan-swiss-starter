@@ -1,0 +1,54 @@
+id: pragmaticbim:document/geotechnical-report
+code: BDG
+sort_order: 108
+name:
+  de: Bodengutachten
+  fr: Rapport géotechnique
+  it: Relazione geotecnica
+  en: Geotechnical report
+definition:
+  de: Bodengutachten mit Baugrund, Tragfähigkeit und geotechnischen Empfehlungen. Ergänzt die Geländeaufnahme und den Lagebezug als Grundlage für Fundation, Aushub und Strategiewahl.
+  fr: Rapport géotechnique avec sous-sol, portance et recommandations. Il complète la relève du terrain et le référentiel de position comme base pour fondation, fouille et choix de stratégie.
+  it: Relazione geotecnica con sottosuolo, capacità portante e raccomandazioni. Completa il rilievo del terreno e il riferimento di posizione come base per fondazione, scavo e scelta della strategia.
+  en: Geotechnical report with subsoil, bearing capacity, and geotechnical recommendations. It complements the terrain survey and position reference as the basis for foundations, excavation, and strategy choice.
+description:
+  de: |-
+    - Baugrund und Schichten
+    - Tragfähigkeit
+    - Empfehlungen zu Fundation und Aushub
+    - Plan oder Modell mit Übersicht zu Bohr- und Sondierstellen
+    - Weitere Massnahmen
+  fr: |-
+    - Sous-sol et couches
+    - Portance
+    - Recommandations pour fondation et fouille
+    - Plan ou maquette avec aperçu des forages et sondages
+    - Mesures complémentaires
+  it: |-
+    - Sottosuolo e strati
+    - Capacità portante
+    - Raccomandazioni per fondazione e scavo
+    - Disegno o modello con panoramica dei sondaggi e delle perforazioni
+    - Ulteriori misure
+  en: |-
+    - Subsoil and strata
+    - Bearing capacity
+    - Recommendations for foundations and excavation
+    - Plan or model with overview of borehole and sounding locations
+    - Further measures
+file_name:
+  de: '{Projektnummer}_PRO-BDG_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-BDG_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-BDG_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-BDG_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+scheduled_milestones:
+  - "22:beginning"
+  - "31:beginning"

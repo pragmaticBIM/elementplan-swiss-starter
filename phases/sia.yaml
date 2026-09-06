@@ -17,3 +17,268 @@ values:
   - '53'
   - '61'
   - '62'
+milestones:
+  - id: '11:beginning'
+    code: beginning
+    sort_order: 1
+    name:
+      de: Beginn 11 (Strategische Planung)
+      fr: Début 11 (Planification stratégique)
+      it: Inizio 11 (Pianificazione strategica)
+      en: Beginning 11 (Strategic planning)
+    status: active
+    phase: '11'
+    kind: beginning
+  - id: '11:end'
+    code: end
+    sort_order: 2
+    name:
+      de: Ende 11 (Strategische Planung)
+      fr: Fin 11 (Planification stratégique)
+      it: Fine 11 (Pianificazione strategica)
+      en: End 11 (Strategic planning)
+    status: active
+    phase: '11'
+    kind: end
+  - id: '21:beginning'
+    code: beginning
+    sort_order: 3
+    name:
+      de: Beginn 21 (Vorstudien)
+      fr: Début 21 (Études préliminaires)
+      it: Inizio 21 (Studi preliminari)
+      en: Beginning 21 (Preliminary studies)
+    status: active
+    phase: '21'
+    kind: beginning
+  - id: '21:end'
+    code: end
+    sort_order: 4
+    name:
+      de: Ende 21 (Vorstudien)
+      fr: Fin 21 (Études préliminaires)
+      it: Fine 21 (Studi preliminari)
+      en: End 21 (Preliminary studies)
+    status: active
+    phase: '21'
+    kind: end
+  - id: '22:beginning'
+    code: beginning
+    sort_order: 5
+    name:
+      de: Beginn 22 (Vorstudien Verfahren)
+      fr: Début 22 (Études préliminaires, procédure)
+      it: Inizio 22 (Studi preliminari, procedura)
+      en: Beginning 22 (Preliminary studies, procedure)
+    status: active
+    phase: '22'
+    kind: beginning
+  - id: '22:end'
+    code: end
+    sort_order: 6
+    name:
+      de: Ende 22 (Vorstudien Verfahren)
+      fr: Fin 22 (Études préliminaires, procédure)
+      it: Fine 22 (Studi preliminari, procedura)
+      en: End 22 (Preliminary studies, procedure)
+    status: active
+    phase: '22'
+    kind: end
+  - id: '31:beginning'
+    code: beginning
+    sort_order: 7
+    name:
+      de: Beginn 31 (Vorprojekt)
+      fr: Début 31 (Avant-projet)
+      it: Inizio 31 (Avamprogetto)
+      en: Beginning 31 (Preliminary design)
+    status: active
+    phase: '31'
+    kind: beginning
+  - id: '31:end'
+    code: end
+    sort_order: 8
+    name:
+      de: Ende 31 (Vorprojekt)
+      fr: Fin 31 (Avant-projet)
+      it: Fine 31 (Avamprogetto)
+      en: End 31 (Preliminary design)
+    status: active
+    phase: '31'
+    kind: end
+  - id: '32:beginning'
+    code: beginning
+    sort_order: 9
+    name:
+      de: Beginn 32 (Bauprojekt)
+      fr: Début 32 (Projet de construction)
+      it: Inizio 32 (Progetto di costruzione)
+      en: Beginning 32 (Construction project)
+    status: active
+    phase: '32'
+    kind: beginning
+  - id: '32:end'
+    code: end
+    sort_order: 10
+    name:
+      de: Ende 32 (Bauprojekt)
+      fr: Fin 32 (Projet de construction)
+      it: Fine 32 (Progetto di costruzione)
+      en: End 32 (Construction project)
+    status: active
+    phase: '32'
+    kind: end
+  - id: '33:beginning'
+    code: beginning
+    sort_order: 11
+    name:
+      de: Beginn 33 (Bewilligungsverfahren)
+      fr: Début 33 (Procédure d'autorisation)
+      it: Inizio 33 (Procedura di autorizzazione)
+      en: Beginning 33 (Permit procedure)
+    status: active
+    phase: '33'
+    kind: beginning
+  - id: '33:end'
+    code: end
+    sort_order: 12
+    name:
+      de: Ende 33 (Bewilligungsverfahren)
+      fr: Fin 33 (Procédure d'autorisation)
+      it: Fine 33 (Procedura di autorizzazione)
+      en: End 33 (Permit procedure)
+    status: active
+    phase: '33'
+    kind: end
+  - id: '41:beginning'
+    code: beginning
+    sort_order: 13
+    name:
+      de: Beginn 41 (Ausschreibung)
+      fr: Début 41 (Appel d'offres)
+      it: Inizio 41 (Gara)
+      en: Beginning 41 (Tender)
+    status: active
+    phase: '41'
+    kind: beginning
+  - id: '41:end'
+    code: end
+    sort_order: 14
+    name:
+      de: Ende 41 (Ausschreibung)
+      fr: Fin 41 (Appel d'offres)
+      it: Fine 41 (Gara)
+      en: End 41 (Tender)
+    status: active
+    phase: '41'
+    kind: end
+  - id: '51:beginning'
+    code: beginning
+    sort_order: 15
+    name:
+      de: Beginn 51 (Ausführungsplanung)
+      fr: Début 51 (Planification d'exécution)
+      it: Inizio 51 (Pianificazione esecutiva)
+      en: Beginning 51 (Execution planning)
+    status: active
+    phase: '51'
+    kind: beginning
+  - id: '51:end'
+    code: end
+    sort_order: 16
+    name:
+      de: Ende 51 (Ausführungsplanung)
+      fr: Fin 51 (Planification d'exécution)
+      it: Fine 51 (Pianificazione esecutiva)
+      en: End 51 (Execution planning)
+    status: active
+    phase: '51'
+    kind: end
+  - id: '52:beginning'
+    code: beginning
+    sort_order: 17
+    name:
+      de: Beginn 52 (Ausführung)
+      fr: Début 52 (Exécution)
+      it: Inizio 52 (Esecuzione)
+      en: Beginning 52 (Construction)
+    status: active
+    phase: '52'
+    kind: beginning
+  - id: '52:end'
+    code: end
+    sort_order: 18
+    name:
+      de: Ende 52 (Ausführung)
+      fr: Fin 52 (Exécution)
+      it: Fine 52 (Esecuzione)
+      en: End 52 (Construction)
+    status: active
+    phase: '52'
+    kind: end
+  - id: '53:beginning'
+    code: beginning
+    sort_order: 19
+    name:
+      de: Beginn 53 (Inbetriebnahme)
+      fr: Début 53 (Mise en service)
+      it: Inizio 53 (Messa in servizio)
+      en: Beginning 53 (Commissioning)
+    status: active
+    phase: '53'
+    kind: beginning
+  - id: '53:end'
+    code: end
+    sort_order: 20
+    name:
+      de: Ende 53 (Inbetriebnahme)
+      fr: Fin 53 (Mise en service)
+      it: Fine 53 (Messa in servizio)
+      en: End 53 (Commissioning)
+    status: active
+    phase: '53'
+    kind: end
+  - id: '61:beginning'
+    code: beginning
+    sort_order: 21
+    name:
+      de: Beginn 61 (Betrieb)
+      fr: Début 61 (Exploitation)
+      it: Inizio 61 (Esercizio)
+      en: Beginning 61 (Operation)
+    status: active
+    phase: '61'
+    kind: beginning
+  - id: '61:end'
+    code: end
+    sort_order: 22
+    name:
+      de: Ende 61 (Betrieb)
+      fr: Fin 61 (Exploitation)
+      it: Fine 61 (Esercizio)
+      en: End 61 (Operation)
+    status: active
+    phase: '61'
+    kind: end
+  - id: '62:beginning'
+    code: beginning
+    sort_order: 23
+    name:
+      de: Beginn 62 (Überwachung)
+      fr: Début 62 (Surveillance)
+      it: Inizio 62 (Sorveglianza)
+      en: Beginning 62 (Monitoring)
+    status: active
+    phase: '62'
+    kind: beginning
+  - id: '62:end'
+    code: end
+    sort_order: 24
+    name:
+      de: Ende 62 (Überwachung)
+      fr: Fin 62 (Surveillance)
+      it: Fine 62 (Sorveglianza)
+      en: End 62 (Monitoring)
+    status: active
+    phase: '62'
+    kind: end

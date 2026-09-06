@@ -1,0 +1,43 @@
+id: pragmaticbim:document/permit-plans-air-conditioning
+code: BGC
+sort_order: 118
+name:
+  de: Baugenehmigungspläne Klima
+  fr: Plans de permis — climatisation
+  it: Piani di autorizzazione — climatizzazione
+  en: Permit plans air conditioning
+definition:
+  de: Baugenehmigungspläne Klima für das Baugesuch. Darstellung der Klimaanlagen in der für die Bewilligungsbehörde erforderlichen Form.
+  fr: Plans de permis climatisation pour la mise à l'enquête. Représentation des installations de climatisation selon les exigences de l'autorité.
+  it: Piani di autorizzazione climatizzazione per la domanda edilizia. Rappresentazione degli impianti di climatizzazione nella forma richiesta dall'autorità.
+  en: Air-conditioning permit plans for the building application. Representation of the air-conditioning systems in the form required by the authority.
+description:
+  de: |-
+    - Klimaanlagen in der für die Bewilligungsbehörde erforderlichen Darstellung
+    - Geräte und luft- bzw. kältetechnische Verteilung
+    - Anlagestandorte und Hauptführungen
+    - Plankopf und Massstab
+  fr: |-
+    - Installations de climatisation selon les exigences de l'autorité
+    - Appareils et distribution aéraulique ou de froid
+    - Emplacements d'installations et conduites principales
+    - Cartouche et échelle
+  it: |-
+    - Impianti di climatizzazione nella forma richiesta dall'autorità
+    - Apparecchi e distribuzione aeraulica o del freddo
+    - Ubicazioni degli impianti e condotte principali
+    - Cartiglio e scala
+  en: |-
+    - Air-conditioning systems in the representation required by the authority
+    - Equipment and air- or cold-side distribution
+    - Plant locations and main routes
+    - Title block and scale
+file_name:
+  de: '{Projektnummer}_TGA-BGC_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-BGC_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-BGC_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-BGC_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+scheduled_milestones:
+  - "33:beginning"

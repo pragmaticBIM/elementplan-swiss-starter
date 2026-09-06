@@ -1,0 +1,53 @@
+id: pragmaticbim:document/details
+code: DET
+sort_order: 104
+name:
+  de: Details
+  fr: Détails
+  it: Dettagli
+  en: Details
+definition:
+  de: Standard- und Ausführungsdetails als geometrische Planungsgrundlage. Sie schliessen die Lücke zwischen Modell und Ausführung und dienen als Vollständigkeits-Check, wo das IFC-Modell nicht in Detailtiefe geführt wird.
+  fr: Détails types et d'exécution comme base géométrique de planification. Ils comblent l'écart entre maquette et exécution et servent de contrôle de complétude là où la maquette IFC n'est pas tenue au niveau du détail.
+  it: Dettagli tipo e di esecuzione come base geometrica di pianificazione. Colmano il divario tra modello ed esecuzione e servono da controllo di completezza dove il modello IFC non è tenuto a livello di dettaglio.
+  en: Standard and execution details as the geometric planning basis. They close the gap between model and construction and act as a completeness check where the IFC model is not held at detail depth.
+description:
+  de: |-
+    - Standard- und Ausführungsdetails
+    - Anschlüsse und Schichten im Detailmassstab
+    - Masse und Materialangaben
+    - Bezug zum übergeordneten Plan oder Bauteil
+  fr: |-
+    - Détails types et d'exécution
+    - Raccords et couches à l'échelle du détail
+    - Cotes et indications de matériaux
+    - Référence au plan ou à l'élément supérieur
+  it: |-
+    - Dettagli tipo e di esecuzione
+    - Raccordi e stratigrafie alla scala di dettaglio
+    - Quote e indicazioni di materiale
+    - Riferimento al disegno o al componente superiore
+  en: |-
+    - Standard and execution details
+    - Junctions and layers at detail scale
+    - Dimensions and material notes
+    - Reference to the parent drawing or component
+file_name:
+  de: '{Projektnummer}_ARX-DET_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-DET_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-DET_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-DET_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/architecture-detail-reference
+scheduled_milestones:
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"
+  - "51:beginning"

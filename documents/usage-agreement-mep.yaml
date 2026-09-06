@@ -1,0 +1,60 @@
+id: pragmaticbim:document/usage-agreement-mep
+code: NVG
+sort_order: 133
+name:
+  de: Nutzungsvereinbarung Gebäudetechnik
+  fr: Convention d'utilisation CVC
+  it: Convenzione d'uso impianti
+  en: Usage agreement MEP
+definition:
+  de: Nutzungsvereinbarung Gebäudetechnik. Verknüpft vereinbarte raumweise Anforderungen an Heizung, Lüftung, Klima, Sanitär und Elektro mit dem technischen Planungsstand.
+  fr: Convention d'utilisation des techniques du bâtiment. Elle relie les exigences convenues par local pour chauffage, ventilation, climatisation, sanitaire et électricité à l'état technique de la planification.
+  it: Convenzione d'uso impianti. Collega i requisiti concordati per locale per riscaldamento, ventilazione, climatizzazione, idraulica ed elettrica allo stato tecnico della pianificazione.
+  en: MEP usage agreement. It links agreed room-wise requirements for heating, ventilation, air conditioning, plumbing, and electrical to the technical planning status.
+description:
+  de: |-
+    - Raumweise Anforderungen Heizung
+    - Raumweise Anforderungen Lüftung
+    - Raumweise Anforderungen Klima
+    - Raumweise Anforderungen Sanitär
+    - Raumweise Anforderungen Elektro
+    - Sommerlicher Wärmeschutz mit unterschiedlichen Klimaszenarien
+  fr: |-
+    - Exigences par local pour le chauffage
+    - Exigences par local pour la ventilation
+    - Exigences par local pour la climatisation
+    - Exigences par local pour le sanitaire
+    - Exigences par local pour l'électricité
+    - Protection contre la surchauffe estivale avec différents scénarios climatiques
+  it: |-
+    - Requisiti per locale per il riscaldamento
+    - Requisiti per locale per la ventilazione
+    - Requisiti per locale per la climatizzazione
+    - Requisiti per locale per l'idraulica
+    - Requisiti per locale per l'elettrica
+    - Protezione dal surriscaldamento estivo con diversi scenari climatici
+  en: |-
+    - Room-wise requirements for heating
+    - Room-wise requirements for ventilation
+    - Room-wise requirements for air conditioning
+    - Room-wise requirements for plumbing
+    - Room-wise requirements for electrical
+    - Summer thermal protection with different climate scenarios
+file_name:
+  de: '{Projektnummer}_TGA-NVG_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-NVG_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-NVG_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-NVG_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/spaces-interior
+  - pragmaticbim:element/spaces-exterior
+scheduled_milestones:
+  - "31:beginning"
+  - "32:beginning"

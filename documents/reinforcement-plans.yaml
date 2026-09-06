@@ -1,0 +1,55 @@
+id: pragmaticbim:document/reinforcement-plans
+code: BWP
+sort_order: 112
+name:
+  de: Bewehrungspläne
+  fr: Plans d'armature
+  it: Piani delle armature
+  en: Reinforcement plans
+definition:
+  de: Bewehrungspläne für die Betonausführung. Zeigen Stäbe, Lagen und Positionen lesbar für die Baustelle.
+  fr: Plans d'armature pour l'exécution du béton. Ils rendent barres, nappes et positions lisibles pour le chantier.
+  it: Piani delle armature per l'esecuzione del calcestruzzo. Rendono barre, strati e posizioni leggibili per il cantiere.
+  en: Reinforcement plans for concrete execution. They make bars, layers, and positions readable for site.
+description:
+  de: |-
+    - Bewehrungsstäbe
+    - Lagen und Positionen
+    - Durchmesser, Abstände und Verlegelagen
+    - Für die Baustelle lesbarer Plankopf und Massstab
+    - Freigabestand erkennbar
+  fr: |-
+    - Barres d'armature
+    - Nappes et positions
+    - Diamètres, écartements et nappes de pose
+    - Cartouche et échelle lisibles pour le chantier
+    - État d'approbation lisible
+  it: |-
+    - Barre d'armatura
+    - Strati e posizioni
+    - Diametri, interassi e strati di posa
+    - Cartiglio e scala leggibili per il cantiere
+    - Stato di approvazione riconoscibile
+  en: |-
+    - Reinforcement bars
+    - Layers and positions
+    - Diameters, spacings, and placing layers
+    - Title block and scale readable for site
+    - Approval status readable
+file_name:
+  de: '{Projektnummer}_TRG-BWP_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_STR-BWP_{Libre}.{ext}'
+  it: '{NumeroProgetto}_STR-BWP_{Libero}.{ext}'
+  en: '{ProjectNumber}_STR-BWP_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/structural
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/structural-reinforcing-bar
+  - pragmaticbim:element/structural-edge-strip
+scheduled_milestones:
+  - "51:beginning"

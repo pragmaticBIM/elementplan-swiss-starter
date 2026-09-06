@@ -44,7 +44,7 @@ description:
 
     - Innenräume als modellierte IfcSpace-Volumen (PredefinedType=INTERNAL); LongName mit Nutzung; NetFloorArea als Abmessungsangabe
 
-    - IfcFurnishingElement mit Name und PredefinedType (IFC4+) bzw. ObjectType (IFC2x3); schematische Geometrie mit realem Grundriss'
+    - IfcFurniture mit Name und PredefinedType (IFC4+) bzw. IfcFurnishingElement mit ObjectType (IFC2x3); schematische Geometrie mit realem Grundriss'
   fr: 'Prouver dans le modèle que les locaux intérieurs restent meublables — avant que murs et ouvertures ne limitent l''usage.
 
 
@@ -82,7 +82,7 @@ description:
 
     - Locaux intérieurs comme volumes IfcSpace modélisés (PredefinedType=INTERNAL) ; LongName avec usage ; NetFloorArea comme indication dimensionnelle
 
-    - IfcFurnishingElement avec Name et PredefinedType (IFC4+) ou ObjectType (IFC2x3) ; géométrie schématique avec emprise réelle'
+    - IfcFurniture avec Name et PredefinedType (IFC4+) ou IfcFurnishingElement avec ObjectType (IFC2x3) ; géométrie schématique avec emprise réelle'
   it: 'Dimostrare nel modello che i locali interni restano arredabili — prima che pareti e aperture limitino l''uso.
 
 
@@ -120,7 +120,7 @@ description:
 
     - Locali interni come volumi IfcSpace modellati (PredefinedType=INTERNAL); LongName con uso; NetFloorArea come indicazione dimensionale
 
-    - IfcFurnishingElement con Name e PredefinedType (IFC4+) o ObjectType (IFC2x3); geometria schematica con ingombro reale'
+    - IfcFurniture con Name e PredefinedType (IFC4+) o IfcFurnishingElement con ObjectType (IFC2x3); geometria schematica con ingombro reale'
   en: 'Prove in the model that interior rooms remain furnishable — before walls and openings lock in the use.
 
 
@@ -158,12 +158,12 @@ description:
 
     - Interior spaces as modelled IfcSpace volumes (PredefinedType=INTERNAL); LongName with use; NetFloorArea as size indication
 
-    - IfcFurnishingElement with Name and PredefinedType (IFC4+) or ObjectType (IFC2x3); schematic geometry with real footprint'
+    - IfcFurniture with Name and PredefinedType (IFC4+) or IfcFurnishingElement with ObjectType (IFC2x3); schematic geometry with real footprint'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Schematic IfcFurnishingElement with real footprint for clash/fit checks against interior spaces and building. Distinct from des-furniture-planning (layout lists) and qas-special-room-user-coordination
-  (informal sketches).
+comment: Schematic IfcFurniture (IFC4+) or IfcFurnishingElement (IFC2x3) with real footprint for clash/fit checks against interior spaces and building. Distinct from des-furniture-planning (layout lists)
+  and qas-special-room-user-coordination (informal sketches).

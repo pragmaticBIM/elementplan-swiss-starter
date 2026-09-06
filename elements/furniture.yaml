@@ -8,12 +8,12 @@ name:
   it: Arredo
   en: Furniture
 definition:
-  de: 'Möbel und Systemmöbel für den Nachweis der Möblierbarkeit und die Möblierungsplanung.
+  de: 'Möbel für den Nachweis der Möblierbarkeit und die Möblierungsplanung.
 
 
     **Beschreibung**
 
-    - Bewegliche oder fest eingebaute Möbelstücke und Systemmöbel in Innenräumen.
+    - Bewegliche oder fest eingebaute Möbelstücke in Innenräumen.
 
     - Dienen der Prüfung, ob Räume möblierbar bleiben, und der Lage- und Typenplanung — nicht der Produktkatalog- oder Ausführungsdetailierung.
 
@@ -25,12 +25,12 @@ definition:
     - Dem zugehörigen Geschoss zuweisen.
 
     - Keine Herstellerprodukte, Leitungen oder Ausbau innerhalb des Möbelkörpers modellieren.'
-  fr: 'Mobilier et mobilier système pour la preuve de meublabilité et la planification du mobilier.
+  fr: 'Mobilier pour la preuve de meublabilité et la planification du mobilier.
 
 
     **Description**
 
-    - Pièces de mobilier mobiles ou fixes et mobilier système dans les locaux intérieurs.
+    - Pièces de mobilier mobiles ou fixes dans les locaux intérieurs.
 
     - Servent à vérifier que les locaux restent meublables et à planifier position et type — pas au catalogue produits ni au détail d''exécution.
 
@@ -42,12 +42,12 @@ definition:
     - Rattacher à l''étage concerné.
 
     - Ne pas modéliser produits fabricant, réseaux ou finitions à l''intérieur du corps de mobilier.'
-  it: 'Arredi e arredi di sistema per la prova di arredabilità e la pianificazione dell''arredo.
+  it: 'Arredi per la prova di arredabilità e la pianificazione dell''arredo.
 
 
     **Descrizione**
 
-    - Pezzi di arredo mobili o fissi e arredi di sistema nei locali interni.
+    - Pezzi di arredo mobili o fissi nei locali interni.
 
     - Servono a verificare che i locali restino arredabili e a pianificare posizione e tipo — non al catalogo prodotti né al dettaglio esecutivo.
 
@@ -59,12 +59,12 @@ definition:
     - Assegnare al piano corrispondente.
 
     - Non modellare prodotti del produttore, reti o finiture all''interno del corpo d''arredo.'
-  en: 'Furniture and system furniture for furnishability verification and furniture planning.
+  en: 'Furniture for furnishability verification and furniture planning.
 
 
     **Description**
 
-    - Movable or built-in furniture pieces and system furniture in interior rooms.
+    - Movable or built-in furniture pieces in interior rooms.
 
     - Used to check that rooms remain furnishable and to plan location and type — not product catalogues or execution detailing.
 
@@ -79,11 +79,11 @@ definition:
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcFurnishingElement
-entity_ifc4: IfcFurnishingElement
-entity_ifc4_3: IfcFurnishingElement
+entity_ifc4: IfcFurniture
+entity_ifc4_3: IfcFurniture
 picture_link: null
 model_link: null
-applicability: entity_ifc4=IfcFurnishingElement OR entity_ifc2x3=IfcFurnishingElement
+applicability: entity_ifc4=IfcFurniture OR entity_ifc2x3=IfcFurnishingElement
 attributes:
 - name: PredefinedType
   pset: null
@@ -93,35 +93,83 @@ attributes:
 
       **Zulässige Werte**
 
-      - `FURNITURE` — Möbelstück
+      - `CHAIR` — Stuhl
 
-      - `SYSTEMFURNITURE` — Systemmöbel'
+      - `TABLE` — Tisch
+
+      - `DESK` — Schreibtisch
+
+      - `BED` — Bett
+
+      - `FILECABINET` — Aktenschrank
+
+      - `SHELF` — Regal
+
+      - `SOFA` — Sofa
+
+      - `USERDEFINED` — benutzerdefiniert'
     fr: 'Type de mobilier.
 
 
       **Valeurs admises**
 
-      - `FURNITURE` — pièce de mobilier
+      - `CHAIR` — chaise
 
-      - `SYSTEMFURNITURE` — mobilier système'
+      - `TABLE` — table
+
+      - `DESK` — bureau
+
+      - `BED` — lit
+
+      - `FILECABINET` — armoire à dossiers
+
+      - `SHELF` — étagère
+
+      - `SOFA` — canapé
+
+      - `USERDEFINED` — défini par l''utilisateur'
     it: 'Tipo di arredo.
 
 
       **Valori ammessi**
 
-      - `FURNITURE` — pezzo di arredo
+      - `CHAIR` — sedia
 
-      - `SYSTEMFURNITURE` — arredo di sistema'
-    en: 'Kind of furnishing.
+      - `TABLE` — tavolo
+
+      - `DESK` — scrivania
+
+      - `BED` — letto
+
+      - `FILECABINET` — schedario
+
+      - `SHELF` — scaffale
+
+      - `SOFA` — divano
+
+      - `USERDEFINED` — definito dall''utente'
+    en: 'Kind of furniture.
 
 
       **Allowed values**
 
-      - `FURNITURE` — furniture piece
+      - `CHAIR` — chair
 
-      - `SYSTEMFURNITURE` — system furniture'
+      - `TABLE` — table
+
+      - `DESK` — desk
+
+      - `BED` — bed
+
+      - `FILECABINET` — file cabinet
+
+      - `SHELF` — shelf
+
+      - `SOFA` — sofa
+
+      - `USERDEFINED` — user-defined'
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-furnishing-element
+  allowed_values: pragmaticbim:value/predefinedtype-furniture
   needed_in_phases:
   - '31'
   - '32'
@@ -149,9 +197,21 @@ attributes:
 
       **Zulässige Werte**
 
-      - `FURNITURE` — Möbelstück
+      - `CHAIR` — Stuhl
 
-      - `SYSTEMFURNITURE` — Systemmöbel
+      - `TABLE` — Tisch
+
+      - `DESK` — Schreibtisch
+
+      - `BED` — Bett
+
+      - `FILECABINET` — Aktenschrank
+
+      - `SHELF` — Regal
+
+      - `SOFA` — Sofa
+
+      - `USERDEFINED` — benutzerdefiniert
 
 
       **Hinweis**
@@ -162,9 +222,21 @@ attributes:
 
       **Valeurs admises**
 
-      - `FURNITURE` — pièce de mobilier
+      - `CHAIR` — chaise
 
-      - `SYSTEMFURNITURE` — mobilier système
+      - `TABLE` — table
+
+      - `DESK` — bureau
+
+      - `BED` — lit
+
+      - `FILECABINET` — armoire à dossiers
+
+      - `SHELF` — étagère
+
+      - `SOFA` — canapé
+
+      - `USERDEFINED` — défini par l''utilisateur
 
 
       **Remarque**
@@ -175,29 +247,53 @@ attributes:
 
       **Valori ammessi**
 
-      - `FURNITURE` — pezzo di arredo
+      - `CHAIR` — sedia
 
-      - `SYSTEMFURNITURE` — arredo di sistema
+      - `TABLE` — tavolo
+
+      - `DESK` — scrivania
+
+      - `BED` — letto
+
+      - `FILECABINET` — schedario
+
+      - `SHELF` — scaffale
+
+      - `SOFA` — divano
+
+      - `USERDEFINED` — definito dall''utente
 
 
       **Nota**
 
       - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Kind of furnishing.
+    en: 'Kind of furniture.
 
 
       **Allowed values**
 
-      - `FURNITURE` — furniture piece
+      - `CHAIR` — chair
 
-      - `SYSTEMFURNITURE` — system furniture
+      - `TABLE` — table
+
+      - `DESK` — desk
+
+      - `BED` — bed
+
+      - `FILECABINET` — file cabinet
+
+      - `SHELF` — shelf
+
+      - `SOFA` — sofa
+
+      - `USERDEFINED` — user-defined
 
 
       **Note**
 
       - IFC2x3 substitute for PredefinedType.'
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-furnishing-element
+  allowed_values: pragmaticbim:value/predefinedtype-furniture
   needed_in_phases:
   - '31'
   - '32'

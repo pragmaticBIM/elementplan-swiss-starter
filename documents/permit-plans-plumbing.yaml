@@ -1,0 +1,43 @@
+id: pragmaticbim:document/permit-plans-plumbing
+code: BGS
+sort_order: 119
+name:
+  de: Baugenehmigungspläne Sanitär
+  fr: Plans de permis — sanitaire
+  it: Piani di autorizzazione — sanitario
+  en: Permit plans plumbing
+definition:
+  de: Baugenehmigungspläne Sanitär für das Baugesuch. Darstellung der Sanitäranlagen in der für die Bewilligungsbehörde erforderlichen Form.
+  fr: Plans de permis sanitaire pour la mise à l'enquête. Représentation des installations sanitaires selon les exigences de l'autorité.
+  it: Piani di autorizzazione sanitario per la domanda edilizia. Rappresentazione degli impianti sanitari nella forma richiesta dall'autorità.
+  en: Plumbing permit plans for the building application. Representation of the plumbing systems in the form required by the authority.
+description:
+  de: |-
+    - Sanitäranlagen in der für die Bewilligungsbehörde erforderlichen Darstellung
+    - Trinkwasser, Abwasser und Apparate
+    - Hauptführungen und Anlagestandorte
+    - Plankopf und Massstab
+  fr: |-
+    - Installations sanitaires selon les exigences de l'autorité
+    - Eau potable, eaux usées et appareils
+    - Conduites principales et emplacements d'installations
+    - Cartouche et échelle
+  it: |-
+    - Impianti sanitari nella forma richiesta dall'autorità
+    - Acqua potabile, acque reflue e apparecchi
+    - Condotte principali e ubicazioni degli impianti
+    - Cartiglio e scala
+  en: |-
+    - Plumbing systems in the representation required by the authority
+    - Potable water, wastewater, and fixtures
+    - Main routes and plant locations
+    - Title block and scale
+file_name:
+  de: '{Projektnummer}_TGA-BGS_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-BGS_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-BGS_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-BGS_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+scheduled_milestones:
+  - "33:beginning"

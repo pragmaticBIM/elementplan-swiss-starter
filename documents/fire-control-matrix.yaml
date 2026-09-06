@@ -1,0 +1,58 @@
+id: pragmaticbim:document/fire-control-matrix
+code: BSM
+sort_order: 123
+name:
+  de: Brandfallsteuermatrix
+  fr: Matrice de commande incendie
+  it: Matrice di comando antincendio
+  en: Fire-case control matrix
+definition:
+  de: Brandfallsteuermatrix für Melder, Klappen, Antriebe und Löscheinrichtungen. Stellt sicher, dass die Sicherheits-Matrix vor der Ausführung formal abgesegnet ist.
+  fr: Matrice de commande en cas d'incendie pour détecteurs, clapets, actionneurs et installations d'extinction. Elle garantit que la matrice de sécurité est formellement approuvée avant l'exécution.
+  it: Matrice di comando antincendio per rivelatori, serrande, attuatori e impianti di spegnimento. Garantisce che la matrice di sicurezza sia formalmente approvata prima dell'esecuzione.
+  en: Fire-case control matrix for detectors, dampers, actuators, and suppression equipment. It ensures the safety matrix is formally approved before construction.
+description:
+  de: |-
+    - Melder, Klappen, Antriebe und Löscheinrichtungen
+    - Ursache-Wirkung bzw. Steuerlogik im Brandfall
+    - Zuordnung zu Anlagen und Räumen
+    - Freigabestand erkennbar
+  fr: |-
+    - Détecteurs, clapets, actionneurs et installations d'extinction
+    - Cause-effet ou logique de commande en cas d'incendie
+    - Affectation aux installations et aux locaux
+    - État d'approbation lisible
+  it: |-
+    - Rivelatori, serrande, attuatori e impianti di spegnimento
+    - Causa-effetto ovvero logica di comando in caso d'incendio
+    - Assegnazione a impianti e locali
+    - Stato di approvazione riconoscibile
+  en: |-
+    - Detectors, dampers, actuators, and suppression equipment
+    - Cause-effect or control logic in a fire case
+    - Assignment to plant and rooms
+    - Approval status readable
+file_name:
+  de: '{Projektnummer}_TGA-BSM_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-BSM_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-BSM_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-BSM_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/mep-alarm
+  - pragmaticbim:element/mep-sensor
+  - pragmaticbim:element/mep-actuator
+  - pragmaticbim:element/mep-damper
+  - pragmaticbim:element/mep-fire-suppression-terminal
+  - pragmaticbim:element/mep-switching-device
+scheduled_milestones:
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"
+  - "51:beginning"

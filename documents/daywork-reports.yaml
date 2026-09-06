@@ -1,0 +1,52 @@
+id: pragmaticbim:document/daywork-reports
+code: RGR
+sort_order: 138
+name:
+  de: Regierapporte
+  fr: Rapports en régie
+  it: Rapporti in economia
+  en: Daywork reports
+definition:
+  de: Regierapporte für Arbeiten nach Aufwand. Verhindern ungeplante Mehrkosten, indem Regieleistungen direkt an betroffene Meilensteine und Container (Projekt, Areal, Gebäude, Geschoss) gekoppelt werden.
+  fr: Rapports en régie pour travaux au temps passé. Ils évitent des surcoûts imprévus en rattachant les prestations en régie aux jalons et conteneurs concernés (projet, site, bâtiment, étage).
+  it: Rapporti in economia per lavori a tempo. Evitano extra costi non pianificati collegando le prestazioni in economia ai traguardi e ai contenitori interessati (progetto, sito, edificio, piano).
+  en: Daywork reports for time-and-material work. They prevent unplanned extra cost by coupling daywork directly to the affected milestones and containers (project, site, building, storey).
+description:
+  de: |-
+    - Regieleistung nach Aufwand
+    - Auslöser
+    - Aufwand (Zeit, Material)
+    - Datum
+    - Freigabe durch
+  fr: |-
+    - Prestations en régie au temps passé
+    - Motif
+    - Temps et matériel
+    - Date
+    - Approuvé par
+  it: |-
+    - Prestazioni in economia a tempo
+    - Motivo
+    - Tempo e materiale
+    - Data
+    - Approvato da
+  en: |-
+    - Time-and-material work
+    - Cause
+    - Effort (time, material)
+    - Date
+    - Approved by
+file_name:
+  de: '{Projektnummer}_PRO-RGR_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-RGR_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-RGR_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-RGR_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+scheduled_milestones:
+  - "52:beginning"

@@ -1,0 +1,168 @@
+id: pragmaticbim:workflow/des-traffic-study
+code: DES-TRAFFIC
+sort_order: 68
+name:
+  de: Erstellen Verkehrsgutachten
+  fr: Établir l'étude de trafic
+  it: Predisporre lo studio del traffico
+  en: Prepare the traffic study
+description:
+  de: 'Verkehrsgutachten für Erschliessung, Parkierung und Netzauswirkungen als Grundlage für das Baugesuch erarbeiten.
+
+
+    **Ausgangslage**
+
+    - Bewilligungsbehörden verlangen oft ein Verkehrsgutachten; Annahmen zu Erschliessung und Parkierung sind im Projekt verstreut.
+
+    - Ohne gebündeltes Gutachten fehlen Gesuch und Fachplanung eine gemeinsame Lesart.
+
+
+    **Ziel & Nutzen**
+
+    - Erschliessung, Parkierung und Auswirkungen auf das umliegende Netz nachvollziehbar belegen.
+
+    - Gutachten mit Planungsstand und Bewilligungsunterlagen abstimmen — ergänzend zum Parkplatznachweis am Modell.
+
+
+    **Ablauf**
+
+    1. Lage, Erschliessung und Parkierung aus dem aktuellen Planungsstand zusammenstellen.
+
+    2. Verkehrsgutachten erarbeiten und mit Behörde und Fachplanung abstimmen.
+
+    3. Gutachten als Grundlage für das Baugesuch freigeben.
+
+
+    **Ergebnis**
+
+    - Abgestimmtes Verkehrsgutachten als Grundlage für das Baugesuch.
+
+
+    **Lieferobjekte**
+
+    - Verkehrsgutachten
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey als räumlicher Bezug
+
+    - Keine zusätzlichen IFC-Attribute — Gutachten als Prozessergebnis'
+  fr: 'Établir l''étude de trafic pour desserte, stationnement et effets sur le réseau comme base pour la mise à l''enquête.
+
+
+    **Situation de départ**
+
+    - Les autorités exigent souvent une étude de trafic ; les hypothèses de desserte et de stationnement sont dispersées dans le projet.
+
+    - Sans étude regroupée, enquête et spécialistes n''ont pas de lecture commune.
+
+
+    **Objectif et bénéfice**
+
+    - Justifier de façon traçable desserte, stationnement et effets sur le réseau environnant.
+
+    - Aligner l''étude avec l''état de planification et les dossiers d''autorisation — en complément du justificatif de places via le modèle.
+
+
+    **Déroulement**
+
+    1. Rassembler situation, desserte et stationnement à partir de l''état actuel de planification.
+
+    2. Établir l''étude de trafic et l''aligner avec autorité et spécialistes.
+
+    3. Approuver l''étude comme base pour la mise à l''enquête.
+
+
+    **Résultat**
+
+    - Étude de trafic alignée comme base pour la mise à l''enquête.
+
+
+    **Livrables**
+
+    - Étude de trafic
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey comme référence spatiale
+
+    - Pas d''attributs IFC supplémentaires — étude comme résultat de processus'
+  it: 'Predisporre lo studio del traffico per accesso, parcheggio ed effetti sulla rete come base per la domanda edilizia.
+
+
+    **Situazione di partenza**
+
+    - Le autorità richiedono spesso uno studio del traffico; le ipotesi su accesso e parcheggio sono sparse nel progetto.
+
+    - Senza studio raggruppato, domanda e specialisti non hanno una lettura comune.
+
+
+    **Obiettivo e beneficio**
+
+    - Documentare in modo tracciabile accesso, parcheggio ed effetti sulla rete circostante.
+
+    - Allineare lo studio con lo stato di pianificazione e gli atti di autorizzazione — in complementarità alla verifica posti auto dal modello.
+
+
+    **Svolgimento**
+
+    1. Raccogliere situazione, accesso e parcheggio dallo stato attuale di pianificazione.
+
+    2. Predisporre lo studio del traffico e allinearlo con autorità e specialisti.
+
+    3. Approvare lo studio come base per la domanda edilizia.
+
+
+    **Risultato**
+
+    - Studio del traffico allineato come base per la domanda edilizia.
+
+
+    **Oggetti della fornitura**
+
+    - Studio del traffico
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey come riferimento spaziale
+
+    - Nessun attributo IFC aggiuntivo — studio come risultato di processo'
+  en: 'Prepare the traffic study for access, parking, and network effects as the basis for the building application.
+
+
+    **Starting point**
+
+    - Authorities often require a traffic study; assumptions on access and parking are scattered across the project.
+
+    - Without a bundled study, the application and specialists lack a shared reading.
+
+
+    **Goal & benefit**
+
+    - Evidence access, parking, and effects on the surrounding network traceably.
+
+    - Align the study with planning status and permit documents — complementary to parking verification from the model.
+
+
+    **Process**
+
+    1. Assemble site, access, and parking from the current planning status.
+
+    2. Prepare the traffic study and align it with the authority and specialists.
+
+    3. Release the study as the basis for the building application.
+
+
+    **Outcome**
+
+    - Aligned traffic study as the basis for the building application.
+
+
+    **Deliverables**
+
+    - Traffic study
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey as spatial reference
+
+    - No additional IFC attributes — study as the process deliverable'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Produces VKG. Complements DES-PARKING (model parking verification); does not replace it.

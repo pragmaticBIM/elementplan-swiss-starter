@@ -1,0 +1,43 @@
+id: pragmaticbim:document/bills-of-quantities
+code: LV
+sort_order: 135
+name:
+  de: Leistungsverzeichnisse / Devis
+  fr: Devis / cahiers des charges
+  it: Capitolati / elenchi prestazioni
+  en: Bills of quantities
+definition:
+  de: Leistungsverzeichnisse und Devis für Ausschreibung und Vergabe. Verknüpfen die kaufmännischen Meilensteine direkt mit dem technischen Planungsstand.
+  fr: Devis et cahiers des charges pour appel d'offres et adjudication. Ils relient les jalons commerciaux à l'état technique de la planification.
+  it: Capitolati ed elenchi prestazioni per gara e affidamento. Collegano i traguardi commerciali direttamente allo stato tecnico della pianificazione.
+  en: Bills of quantities for tender and award. They link commercial milestones directly to the technical planning status.
+description:
+  de: |-
+    - Positionen für Ausschreibung
+    - Mengen
+    - Leistungsbeschrieb
+    - Bezug zum Planungsstand
+  fr: |-
+    - Positions pour l'appel d'offres
+    - Quantités
+    - Descriptif des prestations
+    - Référence à l'état de planification
+  it: |-
+    - Voci per la gara
+    - Quantità
+    - Descrizione delle prestazioni
+    - Riferimento allo stato di pianificazione
+  en: |-
+    - Tender items
+    - Quantities
+    - Description of works
+    - Reference to the planning status
+file_name:
+  de: '{Projektnummer}_PRO-LV_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-LV_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-LV_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-LV_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "41:beginning"

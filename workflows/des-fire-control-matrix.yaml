@@ -1,0 +1,176 @@
+id: pragmaticbim:workflow/des-fire-control-matrix
+code: DES-FIRE-MATRIX
+sort_order: 67
+name:
+  de: Erarbeiten Brandfallsteuermatrix
+  fr: Élaborer la matrice de commande incendie
+  it: Elaborare la matrice di comando antincendio
+  en: Develop the fire-case control matrix
+description:
+  de: 'Brandfallsteuermatrix für Melder, Klappen, Antriebe und Löscheinrichtungen vor der Ausführung formal absegnen.
+
+
+    **Ausgangslage**
+
+    - Steuerungslogik im Brandfall steht oft nur in Tabellen ohne Bezug zu den TGA-Geräten im Modell.
+
+    - Ohne formale Freigabe der Matrix fehlt der Ausführung die verbindliche Sicherheits-Logik.
+
+
+    **Ziel & Nutzen**
+
+    - Matrix für Melder, Klappen, Antriebe und Löscheinrichtungen verbindlich führen.
+
+    - Sicherheits-Logik vor der Ausführung absegnen, getrennt vom Brandschutzkonzept der Architektur.
+
+
+    **Ablauf**
+
+    1. TGA-Modell mit Meldern, Klappen, Antrieben und Löscheinrichtungen bereitstellen.
+
+    2. Brandfallsteuermatrix erarbeiten und mit Brandschutzplanung und TGA abstimmen.
+
+    3. Matrix formal freigeben als Grundlage für die Ausführung.
+
+
+    **Ergebnis**
+
+    - Formal abgesegnete Brandfallsteuermatrix als Grundlage für die TGA-Ausführung.
+
+
+    **Lieferobjekte**
+
+    - Brandfallsteuermatrix
+
+    - TGA-Modell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - IfcAlarm, IfcSensor, IfcActuator, IfcDamper, IfcFireSuppressionTerminal und IfcSwitchingDevice
+
+    - Keine zusätzlichen Steuerungs-Attribute — Matrix als Prozessergebnis'
+  fr: 'Approuver formellement avant l''exécution la matrice de commande incendie pour détecteurs, clapets, actionneurs et installations d''extinction.
+
+
+    **Situation de départ**
+
+    - La logique de commande en cas d''incendie figure souvent seulement dans des tableaux sans lien avec les appareils CVC du modèle.
+
+    - Sans approbation formelle, l''exécution n''a pas de logique de sécurité contraignante.
+
+
+    **Objectif et bénéfice**
+
+    - Tenir de façon contraignante la matrice pour détecteurs, clapets, actionneurs et extinction.
+
+    - Approuver la logique de sécurité avant l''exécution, distincte du concept incendie d''architecture.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette CVC avec détecteurs, clapets, actionneurs et extinction.
+
+    2. Élaborer la matrice de commande incendie et l''aligner avec planification incendie et CVC.
+
+    3. Approuver formellement la matrice comme base pour l''exécution.
+
+
+    **Résultat**
+
+    - Matrice de commande incendie formellement approuvée comme base pour l''exécution CVC.
+
+
+    **Livrables**
+
+    - Matrice de commande incendie
+
+    - Maquette CVC avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - IfcAlarm, IfcSensor, IfcActuator, IfcDamper, IfcFireSuppressionTerminal et IfcSwitchingDevice
+
+    - Pas d''attributs de commande supplémentaires — matrice comme résultat de processus'
+  it: 'Approvare formalmente prima dell''esecuzione la matrice di comando antincendio per rivelatori, serrande, attuatori e impianti di spegnimento.
+
+
+    **Situazione di partenza**
+
+    - La logica di comando in caso d''incendio è spesso solo in tabelle senza collegamento agli apparecchi impianti del modello.
+
+    - Senza approvazione formale, l''esecuzione non ha una logica di sicurezza vincolante.
+
+
+    **Obiettivo e beneficio**
+
+    - Tenere in modo vincolante la matrice per rivelatori, serrande, attuatori e spegnimento.
+
+    - Approvare la logica di sicurezza prima dell''esecuzione, distinta dal concetto antincendio di architettura.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello impianti con rivelatori, serrande, attuatori e spegnimento.
+
+    2. Elaborare la matrice di comando antincendio e allinearla con pianificazione antincendio e impianti.
+
+    3. Approvare formalmente la matrice come base per l''esecuzione.
+
+
+    **Risultato**
+
+    - Matrice di comando antincendio formalmente approvata come base per l''esecuzione impianti.
+
+
+    **Oggetti della fornitura**
+
+    - Matrice di comando antincendio
+
+    - Modello impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - IfcAlarm, IfcSensor, IfcActuator, IfcDamper, IfcFireSuppressionTerminal e IfcSwitchingDevice
+
+    - Nessun attributo di comando aggiuntivo — matrice come risultato di processo'
+  en: 'Formally approve the fire-case control matrix for detectors, dampers, actuators, and suppression equipment before construction.
+
+
+    **Starting point**
+
+    - Fire-case control logic often exists only in tables without a link to MEP devices in the model.
+
+    - Without formal matrix approval, execution lacks binding safety logic.
+
+
+    **Goal & benefit**
+
+    - Maintain the matrix for detectors, dampers, actuators, and suppression bindingly.
+
+    - Approve safety logic before construction, separate from the architecture fire concept.
+
+
+    **Process**
+
+    1. Provide the MEP model with detectors, dampers, actuators, and suppression equipment.
+
+    2. Develop the fire-case control matrix and align it with fire planning and MEP.
+
+    3. Formally approve the matrix as the basis for execution.
+
+
+    **Outcome**
+
+    - Formally approved fire-case control matrix as the basis for MEP execution.
+
+
+    **Deliverables**
+
+    - Fire-case control matrix
+
+    - MEP model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - IfcAlarm, IfcSensor, IfcActuator, IfcDamper, IfcFireSuppressionTerminal, and IfcSwitchingDevice
+
+    - No additional control attributes — matrix as the process deliverable'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/mep
+comment: Produces BSM. Distinct from DES-FIRE-CONCEPT (architecture concept/plan vs MEP safety matrix).

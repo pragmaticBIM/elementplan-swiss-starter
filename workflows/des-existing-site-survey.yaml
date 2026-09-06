@@ -35,7 +35,7 @@ description:
 
     **Ergebnis**
 
-    - Gemeinsamer Lage- und Höhenbezug mit dokumentiertem Gelände für die Strategiewahl.
+    - Gemeinsamer Lage- und Höhenbezug mit dokumentiertem Gelände und Bodengutachten für die Strategiewahl.
 
 
     **Lieferobjekte**
@@ -47,6 +47,8 @@ description:
     - Geländeaufnahme und Passpunkte in LV95
 
     - Punktwolke empfohlen farbig; Abgleich mit Geländemodell
+
+    - Bodengutachten
 
     - Aufwandstiefe projektspezifisch'
   fr: 'Relever le terrain et le référentiel de position de l''existant comme base pour démolition/reconstruction ou stratégies de transformation.
@@ -77,7 +79,7 @@ description:
 
     **Résultat**
 
-    - Référentiel commun de position et d''altitude avec terrain documenté pour le choix de stratégie.
+    - Référentiel commun de position et d''altitude avec terrain documenté et rapport géotechnique pour le choix de stratégie.
 
 
     **Livrables**
@@ -89,6 +91,8 @@ description:
     - Relève terrain et points de calage en LV95
 
     - Nuage de points recommandé en couleur ; calage avec le modèle de terrain
+
+    - Rapport géotechnique
 
     - Profondeur d''effort spécifique au projet'
   it: 'Rilevare terreno e riferimento di posizione dell''esistente come base per demolizione/ricostruzione o strategie di trasformazione.
@@ -119,7 +123,7 @@ description:
 
     **Risultato**
 
-    - Riferimento comune di posizione e quota con terreno documentato per la scelta della strategia.
+    - Riferimento comune di posizione e quota con terreno documentato e relazione geotecnica per la scelta della strategia.
 
 
     **Oggetti della fornitura**
@@ -131,6 +135,8 @@ description:
     - Rilievo del terreno e punti di appoggio in LV95
 
     - Nuvola di punti raccomandata a colori; allineamento con il modello del terreno
+
+    - Relazione geotecnica
 
     - Profondità di impegno specifica del progetto'
   en: 'Survey terrain and position reference on the existing site as the basis for demolition/new build or conversion strategies.
@@ -161,7 +167,7 @@ description:
 
     **Outcome**
 
-    - Shared position and height reference with documented terrain for strategy choice.
+    - Shared position and height reference with documented terrain and geotechnical report for strategy choice.
 
 
     **Deliverables**
@@ -174,13 +180,16 @@ description:
 
     - Point cloud recommended in colour; alignment with terrain model
 
+    - Geotechnical report
+
     - Project-specific effort depth'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
 needed_in_domain:
+- pragmaticbim:domain/surveyor
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/structural
 - pragmaticbim:domain/mep
-comment: Phase 11 Bestand. Effort depth is project-specific; coloured point cloud recommended.
+comment: Phase 11 Bestand. Effort depth is project-specific; coloured point cloud recommended. Geländeaufnahme as document GLD; Bodengutachten as document BDG.

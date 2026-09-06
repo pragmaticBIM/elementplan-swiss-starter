@@ -1,0 +1,168 @@
+id: pragmaticbim:workflow/des-environmental-impact-assessment
+code: DES-UVP
+sort_order: 69
+name:
+  de: Erstellen Umweltverträglichkeitsprüfung
+  fr: Établir l'étude d'impact sur l'environnement
+  it: Predisporre la valutazione d'impatto ambientale
+  en: Prepare the environmental impact assessment
+description:
+  de: 'Umweltverträglichkeitsprüfung mit Auswirkungen des Vorhabens auf Umwelt und Umfeld als Grundlage für das Baugesuch erarbeiten.
+
+
+    **Ausgangslage**
+
+    - Bewilligungsbehörden verlangen je nach Vorhaben eine Umweltverträglichkeitsprüfung; Annahmen sind im Projekt verstreut.
+
+    - Ohne gebündelte Prüfung fehlen Gesuch und Fachplanung eine gemeinsame Lesart der Umweltauswirkungen.
+
+
+    **Ziel & Nutzen**
+
+    - Auswirkungen auf Umwelt und Umfeld nachvollziehbar belegen.
+
+    - Prüfung mit Planungsstand und Bewilligungsunterlagen abstimmen.
+
+
+    **Ablauf**
+
+    1. Vorhaben, Lage und relevante Umweltaspekte aus dem aktuellen Planungsstand zusammenstellen.
+
+    2. Umweltverträglichkeitsprüfung erarbeiten und mit Behörde und Fachplanung abstimmen.
+
+    3. Prüfung als Grundlage für das Baugesuch freigeben.
+
+
+    **Ergebnis**
+
+    - Abgestimmte Umweltverträglichkeitsprüfung als Grundlage für das Baugesuch.
+
+
+    **Lieferobjekte**
+
+    - Umweltverträglichkeitsprüfung
+
+    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey als räumlicher Bezug
+
+    - Keine zusätzlichen IFC-Attribute — Prüfung als Prozessergebnis'
+  fr: 'Établir l''étude d''impact sur l''environnement avec les effets du projet sur l''environnement et le voisinage comme base pour la mise à l''enquête.
+
+
+    **Situation de départ**
+
+    - Selon le projet, les autorités exigent une étude d''impact ; les hypothèses sont dispersées dans le projet.
+
+    - Sans étude regroupée, enquête et spécialistes n''ont pas de lecture commune des effets environnementaux.
+
+
+    **Objectif et bénéfice**
+
+    - Justifier de façon traçable les effets sur l''environnement et le voisinage.
+
+    - Aligner l''étude avec l''état de planification et les dossiers d''autorisation.
+
+
+    **Déroulement**
+
+    1. Rassembler projet, situation et aspects environnementaux pertinents à partir de l''état actuel de planification.
+
+    2. Établir l''étude d''impact et l''aligner avec autorité et spécialistes.
+
+    3. Approuver l''étude comme base pour la mise à l''enquête.
+
+
+    **Résultat**
+
+    - Étude d''impact sur l''environnement alignée comme base pour la mise à l''enquête.
+
+
+    **Livrables**
+
+    - Étude d''impact sur l''environnement
+
+    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey comme référence spatiale
+
+    - Pas d''attributs IFC supplémentaires — étude comme résultat de processus'
+  it: 'Predisporre la valutazione d''impatto ambientale con gli effetti del progetto su ambiente e contesto come base per la domanda edilizia.
+
+
+    **Situazione di partenza**
+
+    - A seconda del progetto, le autorità richiedono una valutazione d''impatto; le ipotesi sono sparse nel progetto.
+
+    - Senza valutazione raggruppata, domanda e specialisti non hanno una lettura comune degli effetti ambientali.
+
+
+    **Obiettivo e beneficio**
+
+    - Documentare in modo tracciabile gli effetti su ambiente e contesto.
+
+    - Allineare la valutazione con lo stato di pianificazione e gli atti di autorizzazione.
+
+
+    **Svolgimento**
+
+    1. Raccogliere progetto, situazione e aspetti ambientali pertinenti dallo stato attuale di pianificazione.
+
+    2. Predisporre la valutazione d''impatto e allinearla con autorità e specialisti.
+
+    3. Approvare la valutazione come base per la domanda edilizia.
+
+
+    **Risultato**
+
+    - Valutazione d''impatto ambientale allineata come base per la domanda edilizia.
+
+
+    **Oggetti della fornitura**
+
+    - Valutazione d''impatto ambientale
+
+    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey come riferimento spaziale
+
+    - Nessun attributo IFC aggiuntivo — valutazione come risultato di processo'
+  en: 'Prepare the environmental impact assessment of the project''s effects on the environment and surroundings as the basis for the building application.
+
+
+    **Starting point**
+
+    - Depending on the project, authorities require an environmental impact assessment; assumptions are scattered across the project.
+
+    - Without a bundled assessment, the application and specialists lack a shared reading of environmental effects.
+
+
+    **Goal & benefit**
+
+    - Evidence effects on the environment and surroundings traceably.
+
+    - Align the assessment with planning status and permit documents.
+
+
+    **Process**
+
+    1. Assemble the project, site, and relevant environmental aspects from the current planning status.
+
+    2. Prepare the environmental impact assessment and align it with the authority and specialists.
+
+    3. Release the assessment as the basis for the building application.
+
+
+    **Outcome**
+
+    - Aligned environmental impact assessment as the basis for the building application.
+
+
+    **Deliverables**
+
+    - Environmental impact assessment
+
+    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey as spatial reference
+
+    - No additional IFC attributes — assessment as the process deliverable'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Produces UVP. Process deliverable for permit; no additional IFC attributes.

@@ -1,0 +1,176 @@
+id: pragmaticbim:workflow/des-building-physics-concept
+code: DES-PHYSICS
+sort_order: 64
+name:
+  de: Erstellen Bauphysikkonzept
+  fr: Établir le concept de physique du bâtiment
+  it: Elaborare il concetto di fisica della costruzione
+  en: Create the building physics concept
+description:
+  de: 'Bauphysik-Bauteilkatalog mit Kennwerten der Hülle und der trennenden Bauteile festlegen.
+
+
+    **Ausgangslage**
+
+    - Hüllen- und Trennkennwerte stehen oft nur in Berichten; Varianten und Nachweise sind schwer mit dem Modell abzugleichen.
+
+    - Ohne Katalogwerte fehlen Architektur und Fachplanung eine gemeinsame Grundlage.
+
+
+    **Ziel & Nutzen**
+
+    - Bauteilkatalog der Bauphysik verbindlich führen.
+
+    - Nachweise, Varianten und Abstimmung mit Architektur und Fachplanung auf denselben Kennwerten aufbauen.
+
+
+    **Ablauf**
+
+    1. Architekturmodell mit Hülle und trennenden Bauteilen bereitstellen.
+
+    2. Bauteilkatalog mit Kennwerten der Hülle und der Trennbauteile festlegen.
+
+    3. Katalog mit Architektur, Fachplanung und Nachweisunterlagen abstimmen.
+
+
+    **Ergebnis**
+
+    - Abgestimmter Bauphysik-Bauteilkatalog als Grundlage für Nachweise und QS Akustik / Bauphysik.
+
+
+    **Lieferobjekte**
+
+    - Bauphysik Bauteilkatalog
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Hülle und Trennbauteile IfcWall, IfcSlab (FLOOR), IfcRoof, IfcWindow und IfcDoor
+
+    - Keine zusätzlichen Rw-Attribute — Kennwerte prüft QS Akustik / Bauphysik'
+  fr: 'Fixer le catalogue des composants de physique du bâtiment avec les valeurs de l''enveloppe et des éléments de séparation.
+
+
+    **Situation de départ**
+
+    - Les valeurs d''enveloppe et de séparation figurent souvent seulement dans des rapports ; variantes et justifications sont difficiles à caler sur la maquette.
+
+    - Sans valeurs de catalogue, architecture et spécialistes n''ont pas de base commune.
+
+
+    **Objectif et bénéfice**
+
+    - Tenir de façon contraignante le catalogue des composants de physique du bâtiment.
+
+    - Fonder justifications, variantes et coordination sur les mêmes valeurs.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette d''architecture avec enveloppe et éléments de séparation.
+
+    2. Fixer le catalogue avec les valeurs de l''enveloppe et des éléments de séparation.
+
+    3. Aligner le catalogue avec architecture, spécialistes et dossiers de justification.
+
+
+    **Résultat**
+
+    - Catalogue des composants de physique du bâtiment aligné comme base pour justifications et AQ acoustique / physique du bâtiment.
+
+
+    **Livrables**
+
+    - Catalogue des composants — physique du bâtiment
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Enveloppe et éléments de séparation IfcWall, IfcSlab (FLOOR), IfcRoof, IfcWindow et IfcDoor
+
+    - Pas d''attributs Rw supplémentaires — les valeurs sont contrôlées par l''AQ acoustique / physique du bâtiment'
+  it: 'Definire il catalogo componenti di fisica della costruzione con i valori dell''involucro e degli elementi di separazione.
+
+
+    **Situazione di partenza**
+
+    - I valori di involucro e separazione sono spesso solo nei rapporti; varianti e verifiche sono difficili da allineare al modello.
+
+    - Senza valori di catalogo, architettura e specialisti non hanno una base comune.
+
+
+    **Obiettivo e beneficio**
+
+    - Tenere in modo vincolante il catalogo componenti di fisica della costruzione.
+
+    - Fondare verifiche, varianti e coordinamento sugli stessi valori.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello di architettura con involucro ed elementi di separazione.
+
+    2. Definire il catalogo con i valori dell''involucro e degli elementi di separazione.
+
+    3. Allineare il catalogo con architettura, specialisti e documenti di verifica.
+
+
+    **Risultato**
+
+    - Catalogo componenti di fisica della costruzione allineato come base per verifiche e AQ acustica / fisica edilizia.
+
+
+    **Oggetti della fornitura**
+
+    - Catalogo componenti di fisica della costruzione
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Involucro ed elementi di separazione IfcWall, IfcSlab (FLOOR), IfcRoof, IfcWindow e IfcDoor
+
+    - Nessun attributo Rw aggiuntivo — i valori sono verificati dall''AQ acustica / fisica edilizia'
+  en: 'Set the building physics component catalogue with values for the envelope and separating components.
+
+
+    **Starting point**
+
+    - Envelope and separation values often exist only in reports; variants and verification are hard to align with the model.
+
+    - Without catalogue values, architecture and specialists lack a shared basis.
+
+
+    **Goal & benefit**
+
+    - Maintain the building physics component catalogue bindingly.
+
+    - Base verification, variants, and coordination on the same values.
+
+
+    **Process**
+
+    1. Provide the architecture model with envelope and separating components.
+
+    2. Define the catalogue with envelope and separating-component values.
+
+    3. Align the catalogue with architecture, specialists, and verification documents.
+
+
+    **Outcome**
+
+    - Aligned building physics component catalogue as the basis for verification and QA acoustics / building physics.
+
+
+    **Deliverables**
+
+    - Building physics component catalogue
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Envelope and separating components IfcWall, IfcSlab (FLOOR), IfcRoof, IfcWindow, and IfcDoor
+
+    - No additional Rw attributes — values are checked by QA acoustics / building physics'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/building-physics
+comment: Produces BPK. QAS-ACOUSTIC remains the Rw check; DES-ABSTRACTBIM-BPS remains simulation.

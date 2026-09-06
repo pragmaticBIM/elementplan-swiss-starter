@@ -1,0 +1,55 @@
+id: pragmaticbim:document/traffic-study
+code: VKG
+sort_order: 109
+name:
+  de: Verkehrsgutachten
+  fr: Étude de trafic
+  it: Studio del traffico
+  en: Traffic study
+definition:
+  de: Verkehrsgutachten für Erschliessung, Parkierung und Auswirkungen auf das umliegende Netz. Grundlage für das Baugesuch und die Abstimmung mit der Bewilligungsbehörde.
+  fr: Étude de trafic pour desserte, stationnement et effets sur le réseau environnant. Base pour la mise à l'enquête et l'alignement avec l'autorité.
+  it: Studio del traffico per accesso, parcheggio e effetti sulla rete circostante. Base per la domanda edilizia e l'allineamento con l'autorità.
+  en: Traffic study for access, parking, and effects on the surrounding network. Basis for the building application and alignment with the authority.
+description:
+  de: |-
+    - Erschliessung
+    - Parkierung
+    - Velos / Fahrräder
+    - Auswirkungen auf das umliegende Netz
+    - Schlussfolgerungen für das Baugesuch
+  fr: |-
+    - Desserte
+    - Stationnement
+    - Vélos
+    - Effets sur le réseau environnant
+    - Conclusions pour la mise à l'enquête
+  it: |-
+    - Accesso
+    - Parcheggio
+    - Biciclette
+    - Effetti sulla rete circostante
+    - Conclusioni per la domanda edilizia
+  en: |-
+    - Access
+    - Parking
+    - Bicycles
+    - Effects on the surrounding network
+    - Conclusions for the building application
+file_name:
+  de: '{Projektnummer}_PRO-VKG_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-VKG_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-VKG_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-VKG_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+scheduled_milestones:
+  - "22:beginning"
+  - "31:beginning"
+  - "32:beginning"
+  - "33:beginning"

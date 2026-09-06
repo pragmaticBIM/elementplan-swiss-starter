@@ -1,0 +1,176 @@
+id: pragmaticbim:workflow/des-mep-schematics
+code: DES-MEP-SCHEM
+sort_order: 66
+name:
+  de: Erarbeiten TGA-Schemata
+  fr: Élaborer les schémas CVC
+  it: Elaborare gli schemi impianti
+  en: Develop MEP schematics
+description:
+  de: 'System- und Strangschemata der Gebäudetechnik erarbeiten und vor der Ausführung formal absegnen.
+
+
+    **Ausgangslage**
+
+    - Haustechnik-Konzepte und vertikale Verteilungen sind oft nur in losen Skizzen festgehalten.
+
+    - Ohne formale Freigabe der Schemata fehlen Ausführung und 3D-Koordination eine verbindliche Grundlage.
+
+
+    **Ziel & Nutzen**
+
+    - System- und Anlageschemata sowie Strangschemata / Steigzonen verbindlich führen.
+
+    - Konzepte vor der Ausführung absegnen, ergänzend zur frühen TGA-Koordination im Modell.
+
+
+    **Ablauf**
+
+    1. TGA-Modell mit schematischen Leitungen, Kanälen, Trassen und Steigzonen bereitstellen.
+
+    2. System- und Strangschemata erarbeiten und mit Architektur und Fachplanung abstimmen.
+
+    3. Schemata formal freigeben als Grundlage für Ausführung und Detailkoordination.
+
+
+    **Ergebnis**
+
+    - Formal abgesegnete System- und Strangschemata als Grundlage für TGA-Ausführung.
+
+
+    **Lieferobjekte**
+
+    - System- und Anlageschemata (HLKSE) und Strangschemata / Steigzonen
+
+    - TGA-Modell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Schematische Leitungen, Kanäle und Trassen (IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment)
+
+    - Anlagenräume und Steigzonen (IfcBuildingElementProxy), Fallleitungen (IfcPipeSegment)'
+  fr: 'Élaborer les schémas de système et de colonnes des techniques du bâtiment et les approuver formellement avant l''exécution.
+
+
+    **Situation de départ**
+
+    - Les concepts CVC et les distributions verticales figurent souvent seulement dans des croquis.
+
+    - Sans approbation formelle des schémas, exécution et coordination 3D n''ont pas de base contraignante.
+
+
+    **Objectif et bénéfice**
+
+    - Tenir de façon contraignante les schémas de système et d''installation ainsi que les schémas de colonnes / gaines.
+
+    - Approuver les concepts avant l''exécution, en complément de la coordination CVC initiale en maquette.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette CVC avec conduites, gaines, chemins de câbles et gaines techniques schématiques.
+
+    2. Élaborer les schémas de système et de colonnes et les aligner avec architecture et spécialistes.
+
+    3. Approuver formellement les schémas comme base pour exécution et coordination détaillée.
+
+
+    **Résultat**
+
+    - Schémas de système et de colonnes formellement approuvés comme base pour l''exécution CVC.
+
+
+    **Livrables**
+
+    - Schémas de système et d''installation (CVC) et schémas de colonnes / gaines techniques
+
+    - Maquette CVC avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Conduites, gaines et chemins de câbles schématiques (IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment)
+
+    - Locaux techniques et gaines (IfcBuildingElementProxy), colonnes de descente (IfcPipeSegment)'
+  it: 'Elaborare gli schemi di sistema e delle colonne impianti e approvarli formalmente prima dell''esecuzione.
+
+
+    **Situazione di partenza**
+
+    - I concetti impianti e le distribuzioni verticali sono spesso solo in schizzi.
+
+    - Senza approvazione formale degli schemi, esecuzione e coordinamento 3D non hanno una base vincolante.
+
+
+    **Obiettivo e beneficio**
+
+    - Tenere in modo vincolante gli schemi di sistema e d''impianto nonché gli schemi delle colonne montanti / cavedi.
+
+    - Approvare i concetti prima dell''esecuzione, in complementarità al coordinamento impianti iniziale nel modello.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello impianti con condotte, canali, passerelle e cavedi schematici.
+
+    2. Elaborare gli schemi di sistema e delle colonne e allinearli con architettura e specialisti.
+
+    3. Approvare formalmente gli schemi come base per esecuzione e coordinamento di dettaglio.
+
+
+    **Risultato**
+
+    - Schemi di sistema e delle colonne formalmente approvati come base per l''esecuzione impianti.
+
+
+    **Oggetti della fornitura**
+
+    - Schemi di sistema e d''impianto e schemi delle colonne montanti / cavedi
+
+    - Modello impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Condotte, canali e passerelle schematiche (IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment)
+
+    - Locali tecnici e cavedi (IfcBuildingElementProxy), colonne di scarico (IfcPipeSegment)'
+  en: 'Develop MEP system and riser schematics and formally approve them before construction.
+
+
+    **Starting point**
+
+    - Building-services concepts and vertical distribution are often held only in loose sketches.
+
+    - Without formal schematic approval, execution and 3D coordination lack a binding basis.
+
+
+    **Goal & benefit**
+
+    - Maintain system and plant schematics and riser / shaft schematics bindingly.
+
+    - Approve concepts before construction, complementary to early MEP coordination in the model.
+
+
+    **Process**
+
+    1. Provide the MEP model with schematic pipes, ducts, trays, and shafts.
+
+    2. Develop system and riser schematics and align them with architecture and specialists.
+
+    3. Formally approve the schematics as the basis for execution and detail coordination.
+
+
+    **Outcome**
+
+    - Formally approved system and riser schematics as the basis for MEP execution.
+
+
+    **Deliverables**
+
+    - System and plant schematics (MEP) and riser schematics / shafts
+
+    - MEP model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Schematic pipes, ducts, and trays (IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment)
+
+    - Equipment spaces and shafts (IfcBuildingElementProxy), downpipes (IfcPipeSegment)'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/mep
+comment: Produces SYS and STG. Complements QAS-EARLY-COORD; does not replace schematic geometry in the model.

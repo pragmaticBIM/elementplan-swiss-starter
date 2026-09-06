@@ -60,6 +60,9 @@ needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
 - pragmaticbim:domain/structural
+- pragmaticbim:domain/fire-protection
+- pragmaticbim:domain/building-physics
+- pragmaticbim:domain/surveyor
 entity_ifc2x3: IfcBuilding
 entity_ifc4: IfcBuilding
 entity_ifc4_3: IfcBuilding

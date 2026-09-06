@@ -1,0 +1,43 @@
+id: pragmaticbim:document/permit-plans-heating
+code: BGH
+sort_order: 115
+name:
+  de: Baugenehmigungspläne Heizung
+  fr: Plans de permis — chauffage
+  it: Piani di autorizzazione — riscaldamento
+  en: Permit plans heating
+definition:
+  de: Baugenehmigungspläne Heizung für das Baugesuch. Darstellung der Heizungsanlagen in der für die Bewilligungsbehörde erforderlichen Form.
+  fr: Plans de permis chauffage pour la mise à l'enquête. Représentation des installations de chauffage selon les exigences de l'autorité.
+  it: Piani di autorizzazione riscaldamento per la domanda edilizia. Rappresentazione degli impianti di riscaldamento nella forma richiesta dall'autorità.
+  en: Heating permit plans for the building application. Representation of the heating systems in the form required by the authority.
+description:
+  de: |-
+    - Heizungsanlagen in der für die Bewilligungsbehörde erforderlichen Darstellung
+    - Wärmeerzeugung, Verteilung und Wärmeabgabe
+    - Geräte, Hauptführungen und Anlagestandorte
+    - Plankopf und Massstab
+  fr: |-
+    - Installations de chauffage selon les exigences de l'autorité
+    - Production, distribution et émission de chaleur
+    - Appareils, conduites principales et emplacements d'installations
+    - Cartouche et échelle
+  it: |-
+    - Impianti di riscaldamento nella forma richiesta dall'autorità
+    - Produzione, distribuzione ed emissione di calore
+    - Apparecchi, condotte principali e ubicazioni degli impianti
+    - Cartiglio e scala
+  en: |-
+    - Heating systems in the representation required by the authority
+    - Heat generation, distribution, and emission
+    - Equipment, main routes, and plant locations
+    - Title block and scale
+file_name:
+  de: '{Projektnummer}_TGA-BGH_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-BGH_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-BGH_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-BGH_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+scheduled_milestones:
+  - "33:beginning"

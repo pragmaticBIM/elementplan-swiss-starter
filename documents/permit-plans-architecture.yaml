@@ -1,0 +1,43 @@
+id: pragmaticbim:document/permit-plans-architecture
+code: BGA
+sort_order: 114
+name:
+  de: Baugenehmigungspläne Architektur
+  fr: Plans de permis — architecture
+  it: Piani di autorizzazione — architettura
+  en: Permit plans architecture
+definition:
+  de: Baugenehmigungspläne der Architektur für das Baugesuch. Grundrisse, Schnitte und Ansichten in der für die Bewilligungsbehörde erforderlichen Darstellung.
+  fr: Plans de permis de l'architecture pour la mise à l'enquête. Plans, coupes et élévations dans la représentation exigée par l'autorité.
+  it: Piani di autorizzazione dell'architettura per la domanda edilizia. Planimetrie, sezioni e prospetti nella rappresentazione richiesta dall'autorità.
+  en: Architecture permit plans for the building application. Floor plans, sections, and elevations in the representation required by the authority.
+description:
+  de: |-
+    - Grundrisse, Schnitte und Ansichten für die Bewilligungsbehörde
+    - Situation und Gebäudeumriss
+    - Für das Baugesuch erforderliche Masse und Angaben
+    - Plankopf und Massstab
+  fr: |-
+    - Plans, coupes et élévations pour l'autorité
+    - Situation et emprise du bâtiment
+    - Cotes et indications exigées pour la mise à l'enquête
+    - Cartouche et échelle
+  it: |-
+    - Planimetrie, sezioni e prospetti per l'autorità
+    - Situazione e sagoma dell'edificio
+    - Quote e indicazioni richieste per la domanda edilizia
+    - Cartiglio e scala
+  en: |-
+    - Floor plans, sections, and elevations for the authority
+    - Site plan and building outline
+    - Dimensions and notes required for the building application
+    - Title block and scale
+file_name:
+  de: '{Projektnummer}_ARX-BGA_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-BGA_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-BGA_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-BGA_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "33:beginning"

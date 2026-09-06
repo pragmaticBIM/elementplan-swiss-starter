@@ -1,0 +1,52 @@
+id: pragmaticbim:value/predefinedtype-furniture
+code: FURNITURE-TYPE
+name:
+  de: PredefinedType Möbel
+  fr: PredefinedType mobilier
+  it: PredefinedType arredo
+  en: PredefinedType furniture
+description:
+  de: IfcFurniture PredefinedType.
+  fr: IfcFurniture PredefinedType.
+  it: IfcFurniture PredefinedType.
+  en: IfcFurniture PredefinedType.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - CHAIR
+  - TABLE
+  - DESK
+  - BED
+  - FILECABINET
+  - SHELF
+  - SOFA
+  - USERDEFINED
+  fr:
+  - CHAIR
+  - TABLE
+  - DESK
+  - BED
+  - FILECABINET
+  - SHELF
+  - SOFA
+  - USERDEFINED
+  it:
+  - CHAIR
+  - TABLE
+  - DESK
+  - BED
+  - FILECABINET
+  - SHELF
+  - SOFA
+  - USERDEFINED
+  en:
+  - CHAIR
+  - TABLE
+  - DESK
+  - BED
+  - FILECABINET
+  - SHELF
+  - SOFA
+  - USERDEFINED

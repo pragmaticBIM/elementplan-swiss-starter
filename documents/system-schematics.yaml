@@ -1,0 +1,56 @@
+id: pragmaticbim:document/system-schematics
+code: SYS
+sort_order: 121
+name:
+  de: System- und Anlageschemata (HLKSE)
+  fr: Schémas de système et d'installation (CVC)
+  it: Schemi di sistema e d'impianto
+  en: System and plant schematics (MEP)
+definition:
+  de: System- und Anlageschemata der Gebäudetechnik (Heizung, Lüftung, Klima, Sanitär, Elektro). Stellen sicher, dass die Haustechnik-Konzepte vor der Ausführung formal abgesegnet sind.
+  fr: Schémas de système et d'installation des techniques du bâtiment (chauffage, ventilation, climatisation, sanitaire, électricité). Ils garantissent que les concepts CVC sont formellement approuvés avant l'exécution.
+  it: Schemi di sistema e d'impianto (riscaldamento, ventilazione, climatizzazione, idraulica, elettrica). Garantiscono che i concetti impianti siano formalmente approvati prima dell'esecuzione.
+  en: MEP system and plant schematics (heating, ventilation, air conditioning, plumbing, electrical). They ensure building-services concepts are formally approved before construction.
+description:
+  de: |-
+    - System- und Anlageschemata Heizung, Lüftung, Klima, Sanitär, Elektro
+    - Medien und Hauptgeräte
+    - Anlagenbezug und Bezeichnungen
+    - Freigabestand erkennbar
+  fr: |-
+    - Schémas de système et d'installation chauffage, ventilation, climatisation, sanitaire, électricité
+    - Fluides et appareils principaux
+    - Référence aux installations et désignations
+    - État d'approbation lisible
+  it: |-
+    - Schemi di sistema e d'impianto riscaldamento, ventilazione, climatizzazione, idraulica, elettrica
+    - Fluidi e apparecchi principali
+    - Riferimento agli impianti e denominazioni
+    - Stato di approvazione riconoscibile
+  en: |-
+    - System and plant schematics for heating, ventilation, air conditioning, plumbing, electrical
+    - Media and main equipment
+    - Plant reference and designations
+    - Approval status readable
+file_name:
+  de: '{Projektnummer}_TGA-SYS_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-SYS_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-SYS_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-SYS_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/mep-schematic-pipe
+  - pragmaticbim:element/mep-schematic-duct
+  - pragmaticbim:element/mep-schematic-tray
+  - pragmaticbim:element/mep-schematic-equipment-space
+scheduled_milestones:
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"
+  - "51:beginning"

@@ -44,7 +44,7 @@ description:
 
     - Innenräume als modellierte IfcSpace-Volumen (PredefinedType=INTERNAL); LongName mit Nutzung; NetFloorArea als Abmessungsangabe
 
-    - IfcFurnishingElement mit Name und PredefinedType (IFC4+) bzw. ObjectType (IFC2x3)'
+    - IfcFurniture mit Name und PredefinedType (IFC4+) bzw. IfcFurnishingElement mit ObjectType (IFC2x3)'
   fr: 'Saisir le mobilier dans le modèle et trancher position et type — de façon schématique, sans catalogue produits.
 
 
@@ -82,7 +82,7 @@ description:
 
     - Locaux intérieurs comme volumes IfcSpace modélisés (PredefinedType=INTERNAL) ; LongName avec usage ; NetFloorArea comme indication dimensionnelle
 
-    - IfcFurnishingElement avec Name et PredefinedType (IFC4+) ou ObjectType (IFC2x3)'
+    - IfcFurniture avec Name et PredefinedType (IFC4+) ou IfcFurnishingElement avec ObjectType (IFC2x3)'
   it: 'Gestire gli arredi nel modello e decidere posizione e tipo — in modo schematico, senza catalogo prodotti.
 
 
@@ -120,7 +120,7 @@ description:
 
     - Locali interni come volumi IfcSpace modellati (PredefinedType=INTERNAL); LongName con uso; NetFloorArea come indicazione dimensionale
 
-    - IfcFurnishingElement con Name e PredefinedType (IFC4+) o ObjectType (IFC2x3)'
+    - IfcFurniture con Name e PredefinedType (IFC4+) o IfcFurnishingElement con ObjectType (IFC2x3)'
   en: 'Maintain furniture in the model and decide location and type — schematically, without a product catalogue.
 
 
@@ -158,7 +158,7 @@ description:
 
     - Interior spaces as modelled IfcSpace volumes (PredefinedType=INTERNAL); LongName with use; NetFloorArea as size indication
 
-    - IfcFurnishingElement with Name and PredefinedType (IFC4+) or ObjectType (IFC2x3)'
+    - IfcFurniture with Name and PredefinedType (IFC4+) or IfcFurnishingElement with ObjectType (IFC2x3)'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null

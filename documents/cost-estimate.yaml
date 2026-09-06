@@ -1,0 +1,48 @@
+id: pragmaticbim:document/cost-estimate
+code: KVA
+sort_order: 134
+name:
+  de: Kostenvoranschlag / Kostenberechnung
+  fr: Devis estimatif / calcul des coûts
+  it: Preventivo / calcolo dei costi
+  en: Cost estimate / cost calculation
+definition:
+  de: Kostenvoranschlag und Kostenberechnung. Verknüpft die kaufmännischen Meilensteine direkt mit dem technischen Planungsstand und den modellbasierten Mengen.
+  fr: Devis estimatif et calcul des coûts. Il relie les jalons commerciaux à l'état technique de la planification et aux quantités issues de la maquette.
+  it: Preventivo e calcolo dei costi. Collega i traguardi commerciali direttamente allo stato tecnico della pianificazione e alle quantità dal modello.
+  en: Cost estimate and cost calculation. It links commercial milestones directly to the technical planning status and model-based quantities.
+description:
+  de: |-
+    - Kostenstruktur
+    - Bezug zum Planungsstand
+    - Mengengrundlage
+    - Kostensumme und Stand
+  fr: |-
+    - Structure des coûts
+    - Référence à l'état de planification
+    - Base des quantités
+    - Somme des coûts et état
+  it: |-
+    - Struttura dei costi
+    - Riferimento allo stato di pianificazione
+    - Base delle quantità
+    - Somma dei costi e stato
+  en: |-
+    - Cost structure
+    - Reference to the planning status
+    - Quantity basis
+    - Cost total and status
+file_name:
+  de: '{Projektnummer}_PRO-KVA_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-KVA_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-KVA_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-KVA_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "21:beginning"
+  - "22:beginning"
+  - "31:beginning"
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"

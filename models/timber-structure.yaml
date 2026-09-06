@@ -7,10 +7,10 @@ name:
   it: Costruzione in legno
   en: Timber
 definition:
-  de: Holztragwerk — Stützen, Träger, Decken und weitere tragende Holzbauteile. Fachmodelle nach Status trennen (B Bestand, A Abbruch, N Neubau, T temporär). Die Trennung macht Modelle schnell lesbar und erlaubt, Neubau und Abbruch gezielt ein- und auszublenden.
-  fr: Ouvrage en bois — poteaux, poutres, planchers et autres éléments porteurs en bois. Séparer les maquettes par statut (E existant, D démolition, N neuf, T temporaire). La séparation rend les maquettes rapidement lisibles et permet d'afficher ou de masquer ce qui est neuf et ce qui est retiré.
-  it: Struttura in legno — colonne, travi, solai e altri elementi portanti in legno. Separare i modelli per stato (E esistente, D demolizione, N nuovo, T temporaneo). La separazione rende i modelli rapidamente comprensibili e permette di visualizzare o nascondere ciò che è nuovo e ciò che viene rimosso.
-  en: Timber structure — columns, beams, floors, and other load-bearing timber members. Split models by status (E existing, D demolish, N new, T temporary). The split makes models readable at a glance and lets you toggle what is new versus what is removed.
+  de: "Holztragwerk — Stützen, Träger, Decken und weitere tragende Holzbauteile. Fachmodelle nach Status trennen (B Bestand, A Abbruch, N Neubau, T temporär). Die Trennung macht Modelle schnell lesbar und erlaubt, Neubau und Abbruch gezielt ein- und auszublenden."
+  fr: "Ouvrage en bois — poteaux, poutres, planchers et autres éléments porteurs en bois. Séparer les maquettes par statut (E existant, D démolition, N neuf, T temporaire). La séparation rend les maquettes rapidement lisibles et permet d'afficher ou de masquer ce qui est neuf et ce qui est retiré."
+  it: "Struttura in legno — colonne, travi, solai e altri elementi portanti in legno. Separare i modelli per stato (E esistente, D demolizione, N nuovo, T temporaneo). La separazione rende i modelli rapidamente comprensibili e permette di visualizzare o nascondere ciò che è nuovo e ciò che viene rimosso."
+  en: "Timber structure — columns, beams, floors, and other load-bearing timber members. Split models by status (E existing, D demolish, N new, T temporary). The split makes models readable at a glance and lets you toggle what is new versus what is removed."
 file_name:
   de: '{Projektnummer}_{B|A|N|T}_TRG-HLZ_{Freitext}.{ext}'
   fr: '{NumeroProjet}_{E|D|N|T}_STR-HLZ_{Libre}.{ext}'
@@ -35,3 +35,11 @@ included_elements:
   - pragmaticbim:element/structural-slab-flat-roof
   - pragmaticbim:element/structural-stair
   - pragmaticbim:element/structural-ramp
+scheduled_milestones:
+  - "31:beginning"
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"
+  - "51:beginning"
+  - "52:beginning"
+  - "53:beginning"

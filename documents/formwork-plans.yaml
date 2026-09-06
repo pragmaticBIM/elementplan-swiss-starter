@@ -1,0 +1,67 @@
+id: pragmaticbim:document/formwork-plans
+code: SHL
+sort_order: 111
+name:
+  de: Schalpläne
+  fr: Plans de coffrage
+  it: Piani di casseratura
+  en: Formwork plans
+definition:
+  de: Schalpläne für die Betonausführung. Zeigen Schalung, Abmessungen und Anschlüsse lesbar für die Baustelle.
+  fr: Plans de coffrage pour l'exécution du béton. Ils rendent coffrage, dimensions et raccords lisibles pour le chantier.
+  it: Piani di casseratura per l'esecuzione del calcestruzzo. Rendono casseratura, dimensioni e raccordi leggibili per il cantiere.
+  en: Formwork plans for concrete execution. They make formwork, dimensions, and junctions readable for site.
+description:
+  de: |-
+    - Schalungsgeometrie
+    - Bemassung lesbar
+    - Anschlüsse
+    - Höhen und Öffnungen
+    - Für die Baustelle lesbarer Plankopf und Massstab
+    - Freigabestand erkennbar
+  fr: |-
+    - Géométrie du coffrage
+    - Cotation lisible
+    - Raccords
+    - Hauteurs et ouvertures
+    - Cartouche et échelle lisibles pour le chantier
+    - État d'approbation lisible
+  it: |-
+    - Geometria della casseratura
+    - Quotatura leggibile
+    - Raccordi
+    - Altezze e aperture
+    - Cartiglio e scala leggibili per il cantiere
+    - Stato di approvazione riconoscibile
+  en: |-
+    - Formwork geometry
+    - Dimensioning readable
+    - Junctions
+    - Heights and openings
+    - Title block and scale readable for site
+    - Approval status readable
+file_name:
+  de: '{Projektnummer}_TRG-SHL_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_STR-SHL_{Libre}.{ext}'
+  it: '{NumeroProgetto}_STR-SHL_{Libero}.{ext}'
+  en: '{ProjectNumber}_STR-SHL_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/structural
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/structural-edge-strip
+  - pragmaticbim:element/structural-beam
+  - pragmaticbim:element/structural-column
+  - pragmaticbim:element/structural-footing
+  - pragmaticbim:element/structural-wall
+  - pragmaticbim:element/structural-slab-floor
+  - pragmaticbim:element/structural-slab-base
+  - pragmaticbim:element/structural-slab-flat-roof
+  - pragmaticbim:element/structural-stair
+  - pragmaticbim:element/structural-ramp
+scheduled_milestones:
+  - "51:beginning"

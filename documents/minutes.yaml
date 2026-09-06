@@ -1,0 +1,52 @@
+id: pragmaticbim:document/minutes
+code: PRT
+sort_order: 137
+name:
+  de: Protokolle
+  fr: Procès-verbaux
+  it: Verbali
+  en: Minutes
+definition:
+  de: Sitzungs- und Entscheidprotokolle. Verknüpfen organisatorische Meilensteine und Entscheide direkt mit dem technischen Planungsstand.
+  fr: Procès-verbaux de séances et de décisions. Ils relient jalons organisationnels et décisions à l'état technique de la planification.
+  it: Verbali di seduta e di decisione. Collegano i traguardi organizzativi e le decisioni direttamente allo stato tecnico della pianificazione.
+  en: Meeting and decision minutes. They link organisational milestones and decisions directly to the technical planning status.
+description:
+  de: |-
+    - Datum und Teilnehmende
+    - Entscheide
+    - Pendenzen bzw. Aufgaben
+    - Bezug zum Planungsstand
+  fr: |-
+    - Date et personnes présentes
+    - Décisions
+    - Tâches restantes
+    - Référence à l'état de planification
+  it: |-
+    - Data e partecipanti
+    - Decisioni
+    - Compiti rimanenti
+    - Riferimento allo stato di pianificazione
+  en: |-
+    - Date and attendees
+    - Decisions
+    - Remaining tasks
+    - Reference to the planning status
+file_name:
+  de: '{Projektnummer}_PRO-PRT_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-PRT_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-PRT_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-PRT_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "11:beginning"
+  - "21:beginning"
+  - "22:beginning"
+  - "31:beginning"
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"
+  - "51:beginning"
+  - "52:beginning"
+  - "53:beginning"

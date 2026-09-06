@@ -165,4 +165,5 @@ picture_link: null
 status: active
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Architect fills AcousticRating as bare Rw number (dB) from end of SIA phase 32. Columns/beams out of scope. Not R'w.
+- pragmaticbim:domain/building-physics
+comment: Architect fills AcousticRating as bare Rw number (dB) from end of SIA phase 32. Columns/beams out of scope. Not R'w. Component catalogue produced by DES-PHYSICS.

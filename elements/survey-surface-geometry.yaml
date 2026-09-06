@@ -70,6 +70,7 @@ definition:
     - Position and height in LV95; align with the point cloud.'
 needed_in_domain:
 - pragmaticbim:domain/architecture
+- pragmaticbim:domain/surveyor
 entity_ifc2x3: IfcBuildingElementProxy
 entity_ifc4: IfcGeographicElement
 entity_ifc4_3: IfcGeographicElement

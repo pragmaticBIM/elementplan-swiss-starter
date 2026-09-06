@@ -1,0 +1,19 @@
+id: pragmaticbim:domain/surveyor
+code: GEO
+sort_order: 5
+name:
+  de: Geometer
+  fr: Géomètre
+  it: Geometra
+  en: Surveyor
+definition:
+  de: Liefergegenstände der Vermessung. Geländeaufnahme, Lage- und Höhenbezug im Bezugsrahmen LV95 und Passpunkte als gemeinsame räumliche Grundlage aller Fachmodelle.
+  fr: Livrables du géomètre. Relève du terrain, référentiel de position et d'altitude dans le système LV95 et points de calage comme base spatiale commune de toutes les maquettes métiers.
+  it: Consegne del geometra. Rilievo del terreno, riferimento di posizione e quota nel sistema LV95 e punti di appoggio come base spaziale comune di tutti i modelli disciplinari.
+  en: Deliverables from the surveyor. Terrain survey, position and height reference in the LV95 frame, and control points as the shared spatial basis for all discipline models.
+file_name:
+  de: '{Projekt}_{Phase}_GEO_{Freitext}'
+  fr: '{Projet}_{Phase}_GEO_{Libre}'
+  it: '{Progetto}_{Fase}_GEO_{Libero}'
+  en: '{Project}_{Phase}_SUR_{Free}'
+status: active

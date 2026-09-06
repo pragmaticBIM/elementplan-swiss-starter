@@ -165,4 +165,5 @@ picture_link: null
 status: active
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Architect fills FireRating (VKF) from end of SIA phase 32; Status and PredefinedType required. No AcousticRating on columns/beams.
+- pragmaticbim:domain/fire-protection
+comment: Architect fills FireRating (VKF) from end of SIA phase 32; Status and PredefinedType required. No AcousticRating on columns/beams. Concept and plan produced by DES-FIRE-CONCEPT.

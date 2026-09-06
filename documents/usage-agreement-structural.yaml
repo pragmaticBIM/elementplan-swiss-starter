@@ -1,0 +1,56 @@
+id: pragmaticbim:document/usage-agreement-structural
+code: NVT
+sort_order: 132
+name:
+  de: Nutzungsvereinbarung Tragwerk
+  fr: Convention d'utilisation structure
+  it: Convenzione d'uso strutture
+  en: Usage agreement structure
+definition:
+  de: Nutzungsvereinbarung Tragwerk nach SIA 260. Verknüpft vereinbarte Nutzungen, Lasten und Schwingungsanforderungen raumweise mit dem technischen Planungsstand der Tragwerksplanung.
+  fr: Convention d'utilisation structure selon SIA 260. Elle relie usages, charges et exigences vibratoires convenus par local à l'état technique de la planification structurelle.
+  it: Convenzione d'uso strutture secondo SIA 260. Collega usi, carichi e requisiti di vibrazione concordati per locale allo stato tecnico della pianificazione strutturale.
+  en: Structural usage agreement according to SIA 260. It links agreed uses, loads, and vibration requirements per space to the technical planning status of the structure.
+description:
+  de: |-
+    - Nutzungen je Raum
+    - Lasten je Raum
+    - Schwingungsanforderungen
+    - Klar definierte Annahmen
+    - Bezug zu SIA 260
+  fr: |-
+    - Usages par local
+    - Charges par local
+    - Exigences vibratoires
+    - Hypothèses clairement définies
+    - Référence à la SIA 260
+  it: |-
+    - Usi per locale
+    - Carichi per locale
+    - Requisiti di vibrazione
+    - Ipotesi chiaramente definite
+    - Riferimento alla SIA 260
+  en: |-
+    - Uses per space
+    - Loads per space
+    - Vibration requirements
+    - Clearly defined assumptions
+    - Reference to SIA 260
+file_name:
+  de: '{Projektnummer}_TRG-NVT_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_STR-NVT_{Libre}.{ext}'
+  it: '{NumeroProgetto}_STR-NVT_{Libero}.{ext}'
+  en: '{ProjectNumber}_STR-NVT_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/structural
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/spaces-interior
+  - pragmaticbim:element/spaces-exterior
+scheduled_milestones:
+  - "31:beginning"
+  - "32:beginning"

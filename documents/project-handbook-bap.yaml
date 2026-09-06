@@ -1,0 +1,54 @@
+id: pragmaticbim:document/project-handbook-bap
+code: BAP
+sort_order: 131
+name:
+  de: Projekt-Handbuch / BAP
+  fr: Manuel de projet / BAP
+  it: Manuale di progetto / BAP
+  en: Project handbook / BEP
+definition:
+  de: Projekt-Handbuch und BIM-Abwicklungsplan. Verknüpft die organisatorischen Meilensteine — Rollen, Prozesse, Lieferobjekte — direkt mit dem technischen Planungsstand.
+  fr: Manuel de projet et plan d'exécution BIM. Il relie les jalons organisationnels — rôles, processus, livrables — à l'état technique de la planification.
+  it: Manuale di progetto e piano di gestione BIM. Collega i traguardi organizzativi — ruoli, processi, oggetti di fornitura — direttamente allo stato tecnico della pianificazione.
+  en: Project handbook and BIM execution plan. It links organisational milestones — roles, processes, deliverables — directly to the technical planning status.
+description:
+  de: |-
+    - Rollen und Verantwortlichkeiten
+    - Prozesse und Meilensteine
+    - Lieferobjekte
+    - Bezug zu Datenanforderungen
+    - Teamvereinbarungen
+  fr: |-
+    - Rôles et responsabilités
+    - Processus et jalons
+    - Livrables
+    - Référence aux exigences de données
+    - Accords d'équipe
+  it: |-
+    - Ruoli e responsabilità
+    - Processi e traguardi
+    - Oggetti della fornitura
+    - Riferimento ai requisiti di dati
+    - Accordi di team
+  en: |-
+    - Roles and responsibilities
+    - Processes and milestones
+    - Deliverables
+    - Reference to data requirements
+    - Team agreements
+file_name:
+  de: '{Projektnummer}_PRO-BAP_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-BAP_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-BAP_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-BAP_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "11:beginning"
+  - "21:beginning"
+  - "22:beginning"
+  - "31:beginning"
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"
+  - "51:beginning"

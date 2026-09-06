@@ -1,0 +1,48 @@
+id: pragmaticbim:document/fire-protection-concept
+code: BSK
+sort_order: 106
+name:
+  de: Brandschutzkonzept
+  fr: Concept de protection incendie
+  it: Concetto di protezione antincendio
+  en: Fire protection concept
+definition:
+  de: Brandschutzkonzept mit Schutzziele, Brandabschnitten und erforderlichen Feuerwiderstandsklassen. Verbindliche Grundlage für Brandschutzplan, Modellkennwerte und Bewilligung.
+  fr: Concept de protection incendie avec objectifs de protection, compartiments et classes de résistance au feu requises. Base contraignante pour le plan incendie, les valeurs du modèle et l'autorisation.
+  it: Concetto di protezione antincendio con obiettivi di protezione, compartimenti e classi di resistenza al fuoco richieste. Base vincolante per il piano antincendio, i valori del modello e l'autorizzazione.
+  en: Fire protection concept with protection goals, compartments, and required fire-resistance classes. Binding basis for the fire plan, model values, and permit.
+description:
+  de: |-
+    - Schutzziele
+    - Brandabschnitte
+    - Erforderliche Feuerwiderstandsklassen
+    - Bezug zum Planstand Architektur
+    - Bezug zu Plänen
+  fr: |-
+    - Objectifs de protection
+    - Compartiments coupe-feu
+    - Classes de résistance au feu requises
+    - Référence à l'état de planification architecture
+    - Référence aux plans
+  it: |-
+    - Obiettivi di protezione
+    - Compartimenti antincendio
+    - Classi di resistenza al fuoco richieste
+    - Riferimento allo stato di pianificazione architettura
+    - Riferimento ai disegni
+  en: |-
+    - Protection goals
+    - Fire compartments
+    - Required fire-resistance classes
+    - Reference to the architecture planning status
+    - Reference to the drawings
+file_name:
+  de: '{Projektnummer}_BRS-BSK_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_INC-BSK_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ANT-BSK_{Libero}.{ext}'
+  en: '{ProjectNumber}_FIR-BSK_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/fire-protection
+scheduled_milestones:
+  - "31:beginning"
+  - "32:beginning"

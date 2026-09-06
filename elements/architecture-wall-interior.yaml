@@ -737,7 +737,6 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/des-abstractbim-element-based-cost
   is_applicability: false
   status: active
   sort_order: 10
@@ -765,7 +764,6 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/des-abstractbim-element-based-cost
   is_applicability: false
   status: active
   sort_order: 11
@@ -792,7 +790,6 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/des-abstractbim-element-based-cost
   is_applicability: false
   status: active
   sort_order: 12

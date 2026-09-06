@@ -1,0 +1,19 @@
+id: pragmaticbim:domain/fire-protection
+code: FIR
+sort_order: 40
+name:
+  de: Brandschutz
+  fr: Protection incendie
+  it: Protezione antincendio
+  en: Fire protection
+definition:
+  de: Liefergegenstände der Brandschutzplanung. Konzept und Plan zu Schutzzielen, Brandabschnitten, Fluchtwegen und Feuerwiderstand — Grundlage für Bewilligung und Modellkennwerte.
+  fr: Livrables de la planification incendie. Concept et plan avec objectifs de protection, compartiments, voies d'évacuation et résistance au feu — base pour l'autorisation et les valeurs du modèle.
+  it: Consegne della pianificazione antincendio. Concetto e piano con obiettivi di protezione, compartimenti, vie di fuga e resistenza al fuoco — base per l'autorizzazione e i valori del modello.
+  en: Deliverables from fire protection planning. Concept and plan covering protection goals, compartments, escape routes, and fire resistance — basis for permit and model values.
+file_name:
+  de: '{Projekt}_{Phase}_BRS_{Freitext}'
+  fr: '{Projet}_{Phase}_INC_{Libre}'
+  it: '{Progetto}_{Fase}_ANT_{Libero}'
+  en: '{Project}_{Phase}_FIR_{Free}'
+status: active

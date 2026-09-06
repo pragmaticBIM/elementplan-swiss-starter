@@ -1,0 +1,54 @@
+id: pragmaticbim:document/change-requests
+code: CRQ
+sort_order: 140
+name:
+  de: Bestellungsänderungen / Change Requests
+  fr: Modifications de commande
+  it: Varianti d'ordine
+  en: Change requests
+definition:
+  de: Bestellungsänderungen und Nachträge. Verhindern ungeplante Mehrkosten, indem Nachträge direkt an betroffene Meilensteine und Container (Projekt, Areal, Gebäude, Geschoss) gekoppelt werden.
+  fr: Modifications de commande et avenants. Ils évitent des surcoûts imprévus en rattachant les avenants aux jalons et conteneurs concernés (projet, site, bâtiment, étage).
+  it: Varianti d'ordine e aggiuntivi. Evitano extra costi non pianificati collegando gli aggiuntivi direttamente ai traguardi e ai contenitori interessati (progetto, sito, edificio, piano).
+  en: Change orders and variations. They prevent unplanned extra cost by coupling variations directly to the affected milestones and containers (project, site, building, storey).
+description:
+  de: |-
+    - Beschreibung der Änderung
+    - Betroffener Leistungsumfang
+    - Folge für Planungs- und Baukosten
+    - Terminfolge
+    - Bezug zu Meilenstein oder Container
+  fr: |-
+    - Description de la modification
+    - Étendue des prestations concernée
+    - Conséquences sur les coûts de planification et de construction
+    - Conséquences de délai
+    - Référence au jalon ou au conteneur
+  it: |-
+    - Descrizione della modifica
+    - Estensione delle prestazioni interessata
+    - Conseguenze sui costi di pianificazione e di costruzione
+    - Conseguenze di termine
+    - Riferimento a traguardo o contenitore
+  en: |-
+    - Description of the change
+    - Affected scope of works
+    - Impact on planning and construction costs
+    - Schedule impact
+    - Reference to milestone or container
+file_name:
+  de: '{Projektnummer}_PRO-CRQ_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-CRQ_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-CRQ_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-CRQ_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+scheduled_milestones:
+  - "41:beginning"
+  - "51:beginning"
+  - "52:beginning"

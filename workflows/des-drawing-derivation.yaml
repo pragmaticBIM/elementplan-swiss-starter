@@ -1,0 +1,160 @@
+id: pragmaticbim:workflow/des-drawing-derivation
+code: DES-DRAWINGS
+sort_order: 62
+name:
+  de: Planableitung aus dem 3D-Modell
+  fr: Obtention des plans à partir du modèle 3D
+  it: Ottenimento dei disegni dal modello 3D
+  en: Drawing derivation from the 3D model
+description:
+  de: 'Pläne aus dem 3D-Modell ableiten und als Vollständigkeits-Check gegen das IFC-Modell lesen.
+
+
+    **Ausgangslage**
+
+    - Pläne und Modell laufen oft auseinander; Lesbarkeit für Abstimmung und Ausführung fehlt.
+
+    - Parallele 2D-Stände ohne Ableitung aus dem Modell sind fehleranfällig.
+
+
+    **Ziel & Nutzen**
+
+    - Grundrisse, Schnitte, Ansichten und Details direkt aus dem Modell ableiten.
+
+    - Pläne als Vollständigkeits-Check gegenüber dem IFC-Modell nutzen.
+
+
+    **Ablauf**
+
+    1. Architekturmodell mit aktuellem Planungsstand bereitstellen.
+
+    2. Grundrisse, Schnitte, Ansichten und Details aus dem Modell ableiten.
+
+    3. Lesbarkeit und Vollständigkeit gegenüber dem Modell prüfen.
+
+
+    **Ergebnis**
+
+    - Abgestimmte Grundrisse, Schnitte, Ansichten und Details als geometrische Planungsgrundlage.
+
+
+    **Lieferobjekte**
+
+    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+
+    - Grundrisse, Schnitte, Ansichten und Details'
+  fr: 'Obtenir les plans à partir du modèle 3D et les lire comme contrôle de complétude face à la maquette IFC.
+
+
+    **Situation de départ**
+
+    - Plans et maquette divergent souvent ; la lisibilité pour coordination et exécution manque.
+
+    - Des états 2D parallèles sans obtention depuis la maquette sont sources d''erreurs.
+
+
+    **Objectif et bénéfice**
+
+    - Obtenir plans des étages, coupes, élévations et détails directement depuis la maquette.
+
+    - Utiliser les plans comme contrôle de complétude face à la maquette IFC.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette d''architecture avec l''état actuel de planification.
+
+    2. Obtenir plans des étages, coupes, élévations et détails à partir de la maquette.
+
+    3. Contrôler lisibilité et complétude face à la maquette.
+
+
+    **Résultat**
+
+    - Plans des étages, coupes, élévations et détails coordonnés comme base géométrique de planification.
+
+
+    **Livrables**
+
+    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+
+    - Plans des étages, coupes, élévations et détails'
+  it: 'Ottenere i disegni dal modello 3D e leggerli come controllo di completezza rispetto al modello IFC.
+
+
+    **Situazione di partenza**
+
+    - Disegni e modello divergono spesso; manca la leggibilità per coordinamento ed esecuzione.
+
+    - Stati 2D paralleli senza ottenimento dal modello sono soggetti a errori.
+
+
+    **Obiettivo e beneficio**
+
+    - Ottenere planimetrie, sezioni, prospetti e dettagli direttamente dal modello.
+
+    - Usare i disegni come controllo di completezza rispetto al modello IFC.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello di architettura con lo stato attuale di pianificazione.
+
+    2. Ottenere planimetrie, sezioni, prospetti e dettagli dal modello.
+
+    3. Verificare leggibilità e completezza rispetto al modello.
+
+
+    **Risultato**
+
+    - Planimetrie, sezioni, prospetti e dettagli coordinati come base geometrica di pianificazione.
+
+
+    **Oggetti della fornitura**
+
+    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+
+    - Planimetrie, sezioni, prospetti e dettagli'
+  en: 'Derive drawings from the 3D model and read them as a completeness check against the IFC model.
+
+
+    **Starting point**
+
+    - Drawings and model often diverge; readability for coordination and execution is missing.
+
+    - Parallel 2D statuses without derivation from the model are error-prone.
+
+
+    **Goal & benefit**
+
+    - Derive floor plans, sections, elevations, and details directly from the model.
+
+    - Use the drawings as a completeness check against the IFC model.
+
+
+    **Process**
+
+    1. Provide the architecture model with the current planning status.
+
+    2. Derive floor plans, sections, elevations, and details from the model.
+
+    3. Check readability and completeness against the model.
+
+
+    **Outcome**
+
+    - Coordinated floor plans, sections, elevations, and details as the geometric planning basis.
+
+
+    **Deliverables**
+
+    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+
+    - Floor plans, sections, elevations, and details'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 2D drawing derivation as completeness check vs IFC. Distinct from QAS-DET-REF (3D detail references).

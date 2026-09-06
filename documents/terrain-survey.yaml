@@ -1,0 +1,52 @@
+id: pragmaticbim:document/terrain-survey
+code: GLD
+sort_order: 107
+name:
+  de: Geländeaufnahme
+  fr: Relève du terrain
+  it: Rilievo del terreno
+  en: Terrain survey
+definition:
+  de: Geländeaufnahme mit Lage- und Höhenbezug in LV95 sowie Passpunkten. Verbindliche räumliche Grundlage aller Fachmodelle; ergänzt durch das Bodengutachten.
+  fr: Relève du terrain avec référentiel de position et d'altitude en LV95 et points de calage. Base spatiale contraignante de toutes les maquettes métiers ; complétée par le rapport géotechnique.
+  it: Rilievo del terreno con riferimento di posizione e quota in LV95 e punti di appoggio. Base spaziale vincolante di tutti i modelli disciplinari; completata dalla relazione geotecnica.
+  en: Terrain survey with position and height reference in LV95 and control points. Binding spatial basis for all discipline models; complemented by the geotechnical report.
+description:
+  de: |-
+    - Lage- und Höhenbezug in LV95
+    - Passpunkte
+    - Geländegeometrie
+    - Aufnahmedatum und Bezugssystem
+  fr: |-
+    - Référentiel de position et d'altitude en LV95
+    - Points de calage
+    - Géométrie du terrain
+    - Date de relève et système de référence
+  it: |-
+    - Riferimento di posizione e quota in LV95
+    - Punti di appoggio
+    - Geometria del terreno
+    - Data di rilievo e sistema di riferimento
+  en: |-
+    - Position and height reference in LV95
+    - Control points
+    - Terrain geometry
+    - Survey date and reference system
+file_name:
+  de: '{Projektnummer}_GEO-GLD_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_GEO-GLD_{Libre}.{ext}'
+  it: '{NumeroProgetto}_GEO-GLD_{Libero}.{ext}'
+  en: '{ProjectNumber}_SUR-GLD_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/surveyor
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/survey-surface-geometry
+scheduled_milestones:
+  - "21:beginning"
+  - "22:beginning"
+  - "31:beginning"

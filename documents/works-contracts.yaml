@@ -1,0 +1,51 @@
+id: pragmaticbim:document/works-contracts
+code: WVK
+sort_order: 136
+name:
+  de: Werkverträge
+  fr: Contrats d'entreprise
+  it: Contratti d'appalto
+  en: Works contracts
+definition:
+  de: Werkverträge mit Unternehmerinnen und Unternehmern. Verknüpfen die kaufmännischen Meilensteine direkt mit dem technischen Planungsstand, der der Beauftragung zugrunde liegt.
+  fr: Contrats d'entreprise avec les entrepreneurs. Ils relient les jalons commerciaux à l'état technique de la planification qui fonde le mandat.
+  it: Contratti d'appalto con le imprese. Collegano i traguardi commerciali direttamente allo stato tecnico della pianificazione alla base dell'incarico.
+  en: Works contracts with contractors. They link commercial milestones directly to the technical planning status that underpins the award.
+description:
+  de: |-
+    - Leistungsumfang der Unternehmerin oder des Unternehmers
+    - Preis
+    - Grundlage der Beauftragung
+    - Vertragsklauseln
+    - Vertragsreihenfolge, Bauherr vor Unternehmer
+    - Vertragsparteien und Datum
+  fr: |-
+    - Étendue des prestations de l'entrepreneur
+    - Prix
+    - Base du mandat
+    - Clauses contractuelles
+    - Ordre des pièces contractuelles, maître d'ouvrage avant l'entrepreneur
+    - Parties contractantes et date
+  it: |-
+    - Estensione delle prestazioni dell'impresa
+    - Prezzo
+    - Base dell'incarico
+    - Clausole contrattuali
+    - Ordine dei documenti contrattuali, committente prima dell'impresa
+    - Parti contraenti e data
+  en: |-
+    - Contractor scope of works
+    - Price
+    - Basis of the award
+    - Contract clauses
+    - Order of contract documents, client before contractor
+    - Contracting parties and date
+file_name:
+  de: '{Projektnummer}_PRO-WVK_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-WVK_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-WVK_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-WVK_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "41:beginning"

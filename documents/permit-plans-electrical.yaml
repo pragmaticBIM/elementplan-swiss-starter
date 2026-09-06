@@ -1,0 +1,43 @@
+id: pragmaticbim:document/permit-plans-electrical
+code: BGE
+sort_order: 120
+name:
+  de: Baugenehmigungspläne Elektro
+  fr: Plans de permis — électricité
+  it: Piani di autorizzazione — elettrica
+  en: Permit plans electrical
+definition:
+  de: Baugenehmigungspläne Elektro für das Baugesuch. Darstellung der Elektroanlagen in der für die Bewilligungsbehörde erforderlichen Form.
+  fr: Plans de permis électricité pour la mise à l'enquête. Représentation des installations électriques selon les exigences de l'autorité.
+  it: Piani di autorizzazione elettrica per la domanda edilizia. Rappresentazione degli impianti elettrici nella forma richiesta dall'autorità.
+  en: Electrical permit plans for the building application. Representation of the electrical systems in the form required by the authority.
+description:
+  de: |-
+    - Elektroanlagen in der für die Bewilligungsbehörde erforderlichen Darstellung
+    - Verteilung, Steigzonen und Hauptanlagen
+    - Anlagestandorte und Hauptführungen
+    - Plankopf und Massstab
+  fr: |-
+    - Installations électriques selon les exigences de l'autorité
+    - Distribution, gaines techniques et installations principales
+    - Emplacements d'installations et chemins principaux
+    - Cartouche et échelle
+  it: |-
+    - Impianti elettrici nella forma richiesta dall'autorità
+    - Distribuzione, cavedi e impianti principali
+    - Ubicazioni degli impianti e percorsi principali
+    - Cartiglio e scala
+  en: |-
+    - Electrical systems in the representation required by the authority
+    - Distribution, shafts, and main equipment
+    - Plant locations and main routes
+    - Title block and scale
+file_name:
+  de: '{Projektnummer}_TGA-BGE_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-BGE_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-BGE_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-BGE_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+scheduled_milestones:
+  - "33:beginning"

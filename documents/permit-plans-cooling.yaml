@@ -1,0 +1,43 @@
+id: pragmaticbim:document/permit-plans-cooling
+code: BGK
+sort_order: 116
+name:
+  de: Baugenehmigungspläne Kälte
+  fr: Plans de permis — froid
+  it: Piani di autorizzazione — raffrescamento
+  en: Permit plans cooling
+definition:
+  de: Baugenehmigungspläne Kälte für das Baugesuch. Darstellung der Kälteanlagen in der für die Bewilligungsbehörde erforderlichen Form.
+  fr: Plans de permis froid pour la mise à l'enquête. Représentation des installations de froid selon les exigences de l'autorité.
+  it: Piani di autorizzazione raffrescamento per la domanda edilizia. Rappresentazione degli impianti di raffrescamento nella forma richiesta dall'autorità.
+  en: Cooling permit plans for the building application. Representation of the cooling systems in the form required by the authority.
+description:
+  de: |-
+    - Kälteanlagen in der für die Bewilligungsbehörde erforderlichen Darstellung
+    - Kälteerzeugung und Verteilung
+    - Geräte, Hauptführungen und Anlagestandorte
+    - Plankopf und Massstab
+  fr: |-
+    - Installations de froid selon les exigences de l'autorité
+    - Production et distribution de froid
+    - Appareils, conduites principales et emplacements d'installations
+    - Cartouche et échelle
+  it: |-
+    - Impianti di raffrescamento nella forma richiesta dall'autorità
+    - Produzione e distribuzione del freddo
+    - Apparecchi, condotte principali e ubicazioni degli impianti
+    - Cartiglio e scala
+  en: |-
+    - Cooling systems in the representation required by the authority
+    - Cold generation and distribution
+    - Equipment, main routes, and plant locations
+    - Title block and scale
+file_name:
+  de: '{Projektnummer}_TGA-BGK_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-BGK_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-BGK_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-BGK_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+scheduled_milestones:
+  - "33:beginning"

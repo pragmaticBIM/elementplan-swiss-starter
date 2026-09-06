@@ -1,0 +1,57 @@
+id: pragmaticbim:document/riser-schematics
+code: STG
+sort_order: 122
+name:
+  de: Strangschemata / Steigzonen
+  fr: Schémas de colonnes / gaines techniques
+  it: Schemi delle colonne montanti / cavedi
+  en: Riser schematics / shafts
+definition:
+  de: Strangschemata und Steigzonen der Gebäudetechnik. Stellen sicher, dass vertikale Verteilungen und Schächte vor der Ausführung formal abgesegnet sind.
+  fr: Schémas de colonnes et gaines techniques des installations. Ils garantissent que les distributions verticales et les gaines sont formellement approuvées avant l'exécution.
+  it: Schemi delle colonne montanti e dei cavedi impianti. Garantiscono che le distribuzioni verticali e i cavedi siano formalmente approvati prima dell'esecuzione.
+  en: Riser schematics and shafts for building services. They ensure vertical distribution and shafts are formally approved before construction.
+description:
+  de: |-
+    - Vertikale Verteilungen und Steigzonen
+    - Schächte und Geschossanschlüsse
+    - Medien und Stränge
+    - Freigabestand erkennbar
+  fr: |-
+    - Distributions verticales et gaines techniques
+    - Gaines et raccords d'étage
+    - Fluides et colonnes
+    - État d'approbation lisible
+  it: |-
+    - Distribuzioni verticali e cavedi
+    - Cavedi e raccordi di piano
+    - Fluidi e colonne montanti
+    - Stato di approvazione riconoscibile
+  en: |-
+    - Vertical distribution and shafts
+    - Shafts and storey connections
+    - Media and risers
+    - Approval status readable
+file_name:
+  de: '{Projektnummer}_TGA-STG_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-STG_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-STG_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-STG_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/architecture-installation-path
+  - pragmaticbim:element/mep-schematic-pipe
+  - pragmaticbim:element/mep-schematic-duct
+  - pragmaticbim:element/mep-schematic-tray
+  - pragmaticbim:element/mep-downpipe
+scheduled_milestones:
+  - "32:beginning"
+  - "33:beginning"
+  - "41:beginning"
+  - "51:beginning"

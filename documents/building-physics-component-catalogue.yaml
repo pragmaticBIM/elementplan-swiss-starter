@@ -1,0 +1,57 @@
+id: pragmaticbim:document/building-physics-component-catalogue
+code: BPK
+sort_order: 145
+name:
+  de: Bauphysik Bauteilkatalog
+  fr: Catalogue des composants — physique du bâtiment
+  it: Catalogo componenti di fisica della costruzione
+  en: Building physics component catalogue
+definition:
+  de: Bauteilkatalog der Bauphysik mit Kennwerten der Hülle und der trennenden Bauteile. Grundlage für Nachweise, Varianten und die Abstimmung mit Architektur und Fachplanung.
+  fr: Catalogue des composants de physique du bâtiment avec les valeurs de l'enveloppe et des éléments de séparation. Base pour justifications, variantes et coordination avec architecture et spécialistes.
+  it: Catalogo componenti di fisica della costruzione con i valori dell'involucro e degli elementi di separazione. Base per verifiche, varianti e coordinamento con architettura e specialisti.
+  en: Building physics component catalogue with values for the envelope and separating components. Basis for verification, variants, and coordination with architecture and specialists.
+description:
+  de: |-
+    - Hüllenbauteile und trennende Bauteile
+    - Kennwerte der Bauphysik (z. B. U-Wert, Rw)
+    - Aufbau bzw. Schichtfolge
+    - Bezug zu Nachweisen und Varianten
+  fr: |-
+    - Éléments d'enveloppe et de séparation
+    - Valeurs de physique du bâtiment (p. ex. valeur U, Rw)
+    - Composition ou succession des couches
+    - Référence aux justifications et aux variantes
+  it: |-
+    - Componenti dell'involucro e di separazione
+    - Valori di fisica della costruzione (p. es. valore U, Rw)
+    - Stratigrafia ovvero successione degli strati
+    - Riferimento a verifiche e varianti
+  en: |-
+    - Envelope and separating components
+    - Building-physics values (e.g. U-value, Rw)
+    - Build-up or layer sequence
+    - Reference to verifications and variants
+file_name:
+  de: '{Projektnummer}_BPH-BPK_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PHY-BPK_{Libre}.{ext}'
+  it: '{NumeroProgetto}_FIS-BPK_{Libero}.{ext}'
+  en: '{ProjectNumber}_PHY-BPK_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/building-physics
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/architecture-wall-exterior
+  - pragmaticbim:element/architecture-wall-interior
+  - pragmaticbim:element/architecture-slab-floor
+  - pragmaticbim:element/architecture-slab-flat-roof
+  - pragmaticbim:element/architecture-roof-pitched
+  - pragmaticbim:element/windows
+  - pragmaticbim:element/doors
+scheduled_milestones:
+  - "32:beginning"
+  - "33:beginning"

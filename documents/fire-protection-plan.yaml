@@ -1,0 +1,61 @@
+id: pragmaticbim:document/fire-protection-plan
+code: BSP
+sort_order: 105
+name:
+  de: Brandschutzplan
+  fr: Plan de protection incendie
+  it: Piano di protezione antincendio
+  en: Fire protection plan
+definition:
+  de: Brandschutzplan mit Brandabschnitten, Fluchtwegen und Feuerwiderstand der massgebenden Bauteile. Dient der Abstimmung mit dem Brandschutzkonzept und den Bewilligungsunterlagen.
+  fr: Plan de protection incendie avec compartiments, voies d'évacuation et résistance au feu des composants déterminants. Il sert à l'alignement avec le concept de protection incendie et les dossiers d'autorisation.
+  it: Piano di protezione antincendio con compartimenti, vie di fuga e resistenza al fuoco dei componenti determinanti. Serve all'allineamento con il concetto antincendio e gli atti di autorizzazione.
+  en: Fire protection plan with compartments, escape routes, and fire resistance of the governing components. It supports alignment with the fire concept and permit documents.
+description:
+  de: |-
+    - Brandabschnitte
+    - Fluchtwege
+    - Feuerwiderstand der massgebenden Bauteile
+    - Masse, Legende und Plankopf
+    - Bezug zum Architekturstand
+  fr: |-
+    - Compartiments coupe-feu
+    - Voies d'évacuation
+    - Résistance au feu des éléments déterminants
+    - Cotes, légende et cartouche
+    - Référence à l'état architecture
+  it: |-
+    - Compartimenti antincendio
+    - Vie di fuga
+    - Resistenza al fuoco dei componenti determinanti
+    - Quote, legenda e cartiglio
+    - Riferimento allo stato architettura
+  en: |-
+    - Fire compartments
+    - Escape routes
+    - Fire resistance of the governing components
+    - Dimensions, legend, and title block
+    - Reference to the architecture status
+file_name:
+  de: '{Projektnummer}_BRS-BSP_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_INC-BSP_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ANT-BSP_{Libero}.{ext}'
+  en: '{ProjectNumber}_FIR-BSP_{Free}.{ext}'
+status: active
+domain: pragmaticbim:domain/fire-protection
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+  - pragmaticbim:element/architecture-wall-exterior
+  - pragmaticbim:element/architecture-wall-interior
+  - pragmaticbim:element/architecture-slab-floor
+  - pragmaticbim:element/architecture-column
+  - pragmaticbim:element/architecture-beam
+  - pragmaticbim:element/windows
+  - pragmaticbim:element/doors
+scheduled_milestones:
+  - "32:beginning"
+  - "33:beginning"

@@ -1,0 +1,19 @@
+id: pragmaticbim:domain/building-physics
+code: PHY
+sort_order: 50
+name:
+  de: Bauphysik
+  fr: Physique du bâtiment
+  it: Fisica della costruzione
+  en: Building physics
+definition:
+  de: Liefergegenstände der Bauphysik. Kennwerte der Hülle und der trennenden Bauteile für Nachweise zu Wärme, Feuchte und Akustik.
+  fr: Livrables de la physique du bâtiment. Valeurs de l'enveloppe et des éléments de séparation pour les justifications thermiques, hygriques et acoustiques.
+  it: Consegne della fisica della costruzione. Valori dell'involucro e degli elementi di separazione per le verifiche termiche, igrometriche e acustiche.
+  en: Deliverables from building physics. Envelope and separating-component values for thermal, moisture, and acoustic verification.
+file_name:
+  de: '{Projekt}_{Phase}_BPH_{Freitext}'
+  fr: '{Projet}_{Phase}_PHY_{Libre}'
+  it: '{Progetto}_{Fase}_FIS_{Libero}'
+  en: '{Project}_{Phase}_PHY_{Free}'
+status: active
