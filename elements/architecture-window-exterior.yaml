@@ -613,7 +613,7 @@ attributes:
   status: active
   sort_order: 11
 - name: SunProtection
-  pset: Pset_WindowCommon
+  pset: ePset_SunProtection
   definition:
     de: 'Art des Sonnenschutzes am Aussenfenster, auch wenn das Gerät als eigenes Bauteil modelliert ist.
 

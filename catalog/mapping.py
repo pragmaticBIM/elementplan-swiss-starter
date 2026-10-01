@@ -61,8 +61,6 @@ from catalog.schema import (
     TREE_ELEMENT_SLUG,
     HUMUS_DEFAULTS,
     HUMUS_ELEMENT_SLUG,
-    TREE_PIT_DEFAULTS,
-    TREE_PIT_ELEMENT_SLUG,
     RETENTION_DEFAULTS,
     RETENTION_ELEMENT_SLUG,
     BUILT_IN_FURNITURE_DEFAULTS,
@@ -302,12 +300,6 @@ from generators.humus import (
     DEFAULT_LAYER_WIDTH,
     generate_humus,
 )
-from generators.tree_pit import (
-    DEFAULT_PIT_DEPTH,
-    DEFAULT_PIT_LENGTH,
-    DEFAULT_PIT_WIDTH,
-    generate_tree_pit,
-)
 from generators.retention import (
     DEFAULT_BASIN_DEPTH,
     DEFAULT_BASIN_LENGTH,
@@ -462,7 +454,6 @@ ELEMENT_GENERATORS: dict[str, Callable[[dict[str, Any]], tuple]] = {
     "IfcShadingDevice": generate_shading,
     "LAN-TREE": generate_tree,
     "LAN-HUMUS": generate_humus,
-    "LAN-TREEPIT": generate_tree_pit,
     "LAN-RETENTION": generate_retention,
     "FURN": generate_furniture,
     "IfcFurniture": generate_furniture,
@@ -541,7 +532,6 @@ RAILING_TYPES = frozenset({"ARC-RAILING", "IfcRailing"})
 SHADING_DEVICE_TYPES = frozenset({"ARC-SHADING", "IfcShadingDevice"})
 TREE_TYPES = frozenset({"LAN-TREE"})
 HUMUS_TYPES = frozenset({"LAN-HUMUS"})
-TREE_PIT_TYPES = frozenset({"LAN-TREEPIT"})
 RETENTION_TYPES = frozenset({"LAN-RETENTION"})
 FURNITURE_TYPES = frozenset({"FURN", "IfcFurniture", "ARC-FURN-BUILTIN"})
 COORDINATION_ZONE_TYPES = frozenset({"ARC-COORD-ZONE"})
@@ -1224,10 +1214,6 @@ def is_tree_entry(entry: dict[str, Any]) -> bool:
 
 def is_humus_entry(entry: dict[str, Any]) -> bool:
     return entry.get("element_type") in HUMUS_TYPES
-
-
-def is_tree_pit_entry(entry: dict[str, Any]) -> bool:
-    return entry.get("element_type") in TREE_PIT_TYPES
 
 
 def is_retention_entry(entry: dict[str, Any]) -> bool:
@@ -2557,42 +2543,6 @@ def map_humus_params(entry: dict[str, Any]) -> dict[str, Any]:
     return params
 
 
-def map_tree_pit_params(entry: dict[str, Any]) -> dict[str, Any]:
-    """Convert a Baumgrube catalog entry into ``generate_tree_pit`` params."""
-    if not is_tree_pit_entry(entry):
-        raise ValueError(
-            f"unsupported element_type for tree pit: {entry.get('element_type')!r}"
-        )
-
-    length = float(entry.get("length", DEFAULT_PIT_LENGTH))
-    width = float(entry.get("width", DEFAULT_PIT_WIDTH))
-    depth = float(entry.get("depth", DEFAULT_PIT_DEPTH))
-    geometry = {"area": length * width, "height": depth}
-
-    resolved = build_element_attributes_from_yaml(
-        entry=entry,
-        element_slug=TREE_PIT_ELEMENT_SLUG,
-        defaults=TREE_PIT_DEFAULTS,
-        geometry=geometry,
-    )
-
-    params: dict[str, Any] = {
-        "project_name": entry.get("project_name") or entry.get("id") or "Baumgrube",
-        "name": entry.get("name") or resolved.get("Name") or TREE_PIT_DEFAULTS["Name"],
-        "predefined_type": resolved.get("PredefinedType") or "USERDEFINED",
-        "object_type": resolved.get("ObjectType") or TREE_PIT_DEFAULTS["ObjectType"],
-        "properties": resolved.get("properties") or {},
-        "property_datatypes": resolved.get("property_datatypes") or {},
-        "quantities": resolved.get("quantities") or {},
-        "length": length,
-        "width": width,
-        "depth": depth,
-    }
-    if entry.get("with_context") is not None:
-        params["with_context"] = entry["with_context"]
-    return params
-
-
 def map_retention_params(entry: dict[str, Any]) -> dict[str, Any]:
     """Convert a Retentionsvolumen catalog entry into ``generate_retention`` params."""
     if not is_retention_entry(entry):
@@ -3570,8 +3520,6 @@ def map_entry_params(entry: dict[str, Any]) -> dict[str, Any]:
         return map_tree_params(entry)
     if element_type in HUMUS_TYPES:
         return map_humus_params(entry)
-    if element_type in TREE_PIT_TYPES:
-        return map_tree_pit_params(entry)
     if element_type in RETENTION_TYPES:
         return map_retention_params(entry)
     if element_type in FURNITURE_TYPES:

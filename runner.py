@@ -51,7 +51,6 @@ from catalog.mapping import (
     SHADING_DEVICE_TYPES,
     TREE_TYPES,
     HUMUS_TYPES,
-    TREE_PIT_TYPES,
     RETENTION_TYPES,
     VORSATZSCHALE_TYPES,
     get_generator,
@@ -430,7 +429,7 @@ def _primary_colors(element_type: str, primary) -> dict[str, list[float]] | None
         if not hasattr(primary, "GlobalId"):
             return None
         return {primary.GlobalId: list(_HUMUS_COLOR)}
-    if element_type in TREE_PIT_TYPES | RETENTION_TYPES:
+    if element_type in RETENTION_TYPES:
         if not hasattr(primary, "GlobalId"):
             return None
         return {primary.GlobalId: list(_HUMUS_COLOR)}
@@ -502,7 +501,6 @@ def run_catalog(
         | SHADING_DEVICE_TYPES
         | TREE_TYPES
         | HUMUS_TYPES
-        | TREE_PIT_TYPES
         | RETENTION_TYPES
         | FURNITURE_TYPES
         | COORDINATION_ZONE_TYPES
@@ -735,7 +733,7 @@ def run_catalog(
                         mark = " *" if product == primary else ""
                         print(f"    [{ifc_class}]{mark}")
                         _print_element_properties(product)
-            elif element_type in TREE_PIT_TYPES | RETENTION_TYPES:
+            elif element_type in RETENTION_TYPES:
                 print(f"OK  {element_id} -> {assets}")
                 for ifc_class in ("IfcGeographicElement", "IfcSlab", "IfcBuildingElementProxy"):
                     for product in ifc_file.by_type(ifc_class):

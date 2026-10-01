@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-shading-device
+code: OBJ-SHADING
+name:
+  de: ObjectType Sonnenschutz
+  fr: ObjectType protection solaire
+  it: ObjectType protezione solare
+  en: ObjectType shading device
+description:
+  de: ObjectType für IfcBuildingElementProxy als Sonnenschutz in IFC2x3.
+  fr: ObjectType pour IfcBuildingElementProxy comme protection solaire en IFC2x3.
+  it: ObjectType per IfcBuildingElementProxy come protezione solare in IFC2x3.
+  en: ObjectType for IfcBuildingElementProxy as a shading device in IFC2x3.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Sonnenschutz
+  fr:
+  - Protection solaire
+  it:
+  - Protezione solare
+  en:
+  - Shading device

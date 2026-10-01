@@ -80,7 +80,6 @@ ENGRAVE_BY_ID: dict[str, EngraveSpec] = {
     "slab-balcony-01": EngraveSpec(scale=5.0),
     # Tree: lateral terrain tip; absolute width so other cards stay untouched.
     "tree-01": EngraveSpec(side_corner=True, stamp_width=2.8),
-    "tree-pit-01": EngraveSpec(side_corner=True, stamp_width=2.8),
     "retention-01": EngraveSpec(side_corner=True, stamp_width=2.8),
     # Furniture: brand on the back wall (same as other interior wall cards).
     "furniture-01": EngraveSpec(prefer_wall=True, wall_top=True),

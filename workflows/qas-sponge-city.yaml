@@ -33,8 +33,7 @@ description:
 
     **Ablauf**
 
-    1. Baumstandorte mit Baumgruben verknüpfen und das Wurzelraumvolumen je Standort nach Artansprüchen festlegen; Aussenraumflächen nach Aussenraum-Oberflächenklassifikation (AOF) einteilen und den versickerungsfähigen
-    Anteil ableiten.
+    1. Wurzelraum je Baum nach Artansprüchen festlegen; Aussenraumflächen nach Aussenraum-Oberflächenklassifikation (AOF) einteilen und den versickerungsfähigen Anteil ableiten.
 
     2. Retentionsvolumen den zugeordneten Einzugsflächen zuweisen, gegen die Regenspende bemessen und Flächen mit geplanter Retentionsfunktion im Alltag als Retentionsfläche kennzeichnen.
 
@@ -43,7 +42,7 @@ description:
 
     **Lieferergebnis**
 
-    - Landschaftsmodell mit Baumgruben, Versickerungsflächen und Retentionsvolumen
+    - Landschaftsmodell mit Bäumen, Versickerungsflächen und Retentionsvolumen
 
     - Nachweis Wurzelraumvolumen je Baum sowie versickerungsfähiger Flächenanteil nach AOF
 
@@ -74,8 +73,7 @@ description:
 
     **Déroulement**
 
-    1. Relier les emplacements d''arbres aux fosses de plantation et fixer le volume racinaire selon les exigences de l''espèce; classer les espaces extérieurs selon la classification des surfaces extérieures
-    (AOF) et en déduire la part infiltrable.
+    1. Fixer pour chaque arbre l''espace racinaire selon les exigences de l''espèce; classer les espaces extérieurs selon la classification des surfaces extérieures (AOF) et en déduire la part infiltrable.
 
     2. Attribuer le volume de rétention aux bassins versants, le dimensionner selon l''intensité de pluie et marquer les surfaces à fonction de rétention quotidienne comme surface de rétention.
 
@@ -84,7 +82,7 @@ description:
 
     **Livrable**
 
-    - Maquette paysagère avec fosses de plantation, surfaces d''infiltration et volumes de rétention
+    - Maquette paysagère avec arbres, surfaces d''infiltration et volumes de rétention
 
     - Preuve du volume racinaire par arbre et de la part de surface infiltrable selon AOF
 
@@ -115,8 +113,7 @@ description:
 
     **Svolgimento**
 
-    1. Collegare le posizioni degli alberi alle fosse di piantumazione e fissare il volume radicale secondo le esigenze della specie; classificare gli spazi esterni secondo la classificazione delle superfici
-    esterne (AOF) e ricavarne la quota infiltrabile.
+    1. Fissare per ogni albero lo spazio radicale secondo le esigenze della specie; classificare gli spazi esterni secondo la classificazione delle superfici esterne (AOF) e ricavarne la quota infiltrabile.
 
     2. Assegnare il volume di ritenzione ai bacini di raccolta, dimensionarlo secondo l''intensità di pioggia e contrassegnare le superfici con funzione di ritenzione quotidiana come superficie di ritenzione.
 
@@ -125,7 +122,7 @@ description:
 
     **Risultato della fornitura**
 
-    - Modello paesaggistico con fosse di piantumazione, superfici di infiltrazione e volumi di ritenzione
+    - Modello paesaggistico con alberi, superfici di infiltrazione e volumi di ritenzione
 
     - Prova del volume radicale per albero e della quota di superficie infiltrabile secondo AOF
 
@@ -156,8 +153,7 @@ description:
 
     **Process**
 
-    1. Link tree locations to tree pits and set the root volume per location to the requirements of the species; classify outdoor spaces by the outdoor-surface classification (AOF) and derive the permeable
-    share.
+    1. Set the root volume of each tree to the requirements of the species; classify outdoor spaces by the outdoor-surface classification (AOF) and derive the permeable share.
 
     2. Assign retention volume to the related catchments, size it against rainfall intensity, and mark everyday surfaces with a planned retention function as retention area.
 
@@ -166,7 +162,7 @@ description:
 
     **Deliverable**
 
-    - Landscape model with tree pits, infiltration surfaces, and retention volumes
+    - Landscape model with trees, infiltration surfaces, and retention volumes
 
     - Proof of root volume per tree and permeable surface share by AOF
 
@@ -179,6 +175,6 @@ service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/infrastructure
-comment: 'Public code LAN-SPONGE-CITY; parent is QAS (verification / proof). Elements: LAN-TREE linked to LAN-TREEPIT (NetVolume = root volume); exterior IfcSpace (SPACE-EXT / RN-11) with LongName and FloorCovering
-  (AOF names from outdoor-floor-surface / schema v1.0.2) for permeable share; LAN-RETENTION NetVolume per design event; multifunctional everyday retention surfaces as LongName Retentionsflaeche (RN-11-20-04).
+comment: 'Public code LAN-SPONGE-CITY; parent is QAS (verification / proof). Elements: LAN-TREE (root sphere is the root volume); exterior IfcSpace (SPACE-EXT / RN-11) with LongName and FloorCovering (AOF
+  names from outdoor-floor-surface / schema v1.0.2) for permeable share; LAN-RETENTION NetVolume per design event; multifunctional everyday retention surfaces as LongName Retentionsflaeche (RN-11-20-04).
   Outdoor floor materials: early on the space via FloorCovering (AOF); detail via ARC-FLOOR-COV-EXT (IsExternal=TRUE, Finish=AOF). Interior covering remains ARC-FLOOR-COV. Typical containers: LAN, UMG.'

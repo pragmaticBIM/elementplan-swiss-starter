@@ -23,7 +23,6 @@ included_elements:
   - pragmaticbim:element/survey-surface-geometry
   - pragmaticbim:element/landscape-tree
   - pragmaticbim:element/landscape-humus
-  - pragmaticbim:element/landscape-tree-pit
   - pragmaticbim:element/landscape-retention
   - pragmaticbim:element/architecture-floor-covering-exterior
 scheduled_milestones:

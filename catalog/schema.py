@@ -64,7 +64,6 @@ DETAIL_REFERENCE_ELEMENT_SLUG = "architecture-detail-reference"
 BEAM_ELEMENT_SLUG = "architecture-beam"
 TREE_ELEMENT_SLUG = "landscape-tree"
 HUMUS_ELEMENT_SLUG = "landscape-humus"
-TREE_PIT_ELEMENT_SLUG = "landscape-tree-pit"
 RETENTION_ELEMENT_SLUG = "landscape-retention"
 FURNITURE_ELEMENT_SLUG = "furniture"
 BUILT_IN_FURNITURE_ELEMENT_SLUG = "architecture-built-in-furniture"
@@ -422,14 +421,6 @@ HUMUS_DEFAULTS: dict[str, Any] = {
     "ObjectType": "Humus",
     "Name": "Humus-01",
     "ElementStatus": "NEW",
-}
-
-# Tree pit — substrate volume linked to a tree
-TREE_PIT_DEFAULTS: dict[str, Any] = {
-    "PredefinedType": "USERDEFINED",
-    "ObjectType": "Baumgrube",
-    "Name": "BG0001",
-    "TreeReference": "B0001",
 }
 
 # Retention volume — stormwater storage

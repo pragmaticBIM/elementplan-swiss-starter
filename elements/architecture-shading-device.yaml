@@ -79,14 +79,18 @@ definition:
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/building-physics
-entity_ifc2x3: IfcShadingDevice
+entity_ifc2x3: IfcBuildingElementProxy
 entity_ifc4: IfcShadingDevice
 entity_ifc4_3: IfcShadingDevice
 picture_link: architecture-shading-device.png
 attachment_link: architecture-shading-device.ifc
 picture_print_link: architecture-shading-device-print.tif
 model_link: architecture-shading-device.ifc
-applicability: entity_ifc4=IfcShadingDevice OR entity_ifc2x3=IfcShadingDevice
+applicability:
+  de: entity_ifc4=IfcShadingDevice OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Sonnenschutz)
+  fr: entity_ifc4=IfcShadingDevice OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Protection solaire")
+  it: entity_ifc4=IfcShadingDevice OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Protezione solare")
+  en: entity_ifc4=IfcShadingDevice OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Shading device")
 attributes:
 - name: Name
   pset: null
@@ -184,7 +188,6 @@ attributes:
   - '52'
   - '53'
   ifc_versions:
-  - ifc2x3
   - ifc4
   - ifc4x3
   needed_for_workflows:
@@ -193,6 +196,71 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Elements als Sonnenschutz.
+
+
+      **Zulässige Werte**
+
+      - `Sonnenschutz`
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für das Sonnenschutz-Element.'
+    fr: 'Nature de l''élément comme protection solaire.
+
+
+      **Valeurs admises**
+
+      - `Protection solaire`
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de l''élément protection solaire.'
+    it: 'Tipo dell''elemento come protezione solare.
+
+
+      **Valori ammessi**
+
+      - `Protezione solare`
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 dell''elemento protezione solare.'
+    en: 'Kind of element as a shading device.
+
+
+      **Allowed values**
+
+      - `Shading device`
+
+
+      **Note**
+
+      - IFC2x3 substitute for the shading-device element.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-shading-device
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/des-facade-planning
+  is_applicability: true
+  status: active
+  sort_order: 3
 - name: IsExternal
   pset: Pset_ShadingDeviceCommon
   definition:
@@ -231,7 +299,6 @@ attributes:
   - '52'
   - '53'
   ifc_versions:
-  - ifc2x3
   - ifc4
   - ifc4x3
   needed_for_workflows:
@@ -239,7 +306,7 @@ attributes:
   - pragmaticbim:workflow/des-facade-planning
   is_applicability: true
   status: active
-  sort_order: 3
+  sort_order: 4
 - name: Status
   pset: Pset_ShadingDeviceCommon
   definition:
@@ -309,7 +376,7 @@ attributes:
   - pragmaticbim:workflow/des-facade-planning
   is_applicability: false
   status: active
-  sort_order: 4
+  sort_order: 5
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
@@ -398,7 +465,7 @@ attributes:
   - pragmaticbim:workflow/des-facade-planning
   is_applicability: false
   status: active
-  sort_order: 5
+  sort_order: 6
 - name: eBKP
   pset: ePset_Cost
   definition:
@@ -442,4 +509,4 @@ attributes:
   - pragmaticbim:workflow/des-facade-planning
   is_applicability: false
   status: active
-  sort_order: 6
+  sort_order: 7

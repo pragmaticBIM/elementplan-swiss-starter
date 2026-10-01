@@ -536,12 +536,6 @@ SAMPLE_CATALOG: list[dict] = [
         "attach_element": "landscape-humus",
     },
     {
-        # Tree pit substrate box with a short trunk marker.
-        "id": "tree-pit-01",
-        "element_type": "LAN-TREEPIT",
-        "attach_element": "landscape-tree-pit",
-    },
-    {
         # Shallow retention basin on terrain.
         "id": "retention-01",
         "element_type": "LAN-RETENTION",
