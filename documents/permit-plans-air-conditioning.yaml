@@ -1,10 +1,10 @@
 id: pragmaticbim:document/permit-plans-air-conditioning
 code: BGC
-sort_order: 118
+sort_order: 103
 name:
   de: Baugenehmigungspläne Klima
-  fr: Plans de permis — climatisation
-  it: Piani di autorizzazione — climatizzazione
+  fr: Plans de permis – climatisation
+  it: Piani di autorizzazione – climatizzazione
   en: Permit plans air conditioning
 definition:
   de: Baugenehmigungspläne Klima für das Baugesuch. Darstellung der Klimaanlagen in der für die Bewilligungsbehörde erforderlichen Form.
@@ -36,8 +36,8 @@ file_name:
   de: '{Projektnummer}_TGA-BGC_{Freitext}.{ext}'
   fr: '{NumeroProjet}_CVC-BGC_{Libre}.{ext}'
   it: '{NumeroProgetto}_IMP-BGC_{Libero}.{ext}'
-  en: '{ProjectNumber}_MEP-BGC_{Free}.{ext}'
+  en: '{ProjectNumber}_MEP-BGC_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/mep
 scheduled_milestones:
-  - "33:beginning"
+  - "33:M"

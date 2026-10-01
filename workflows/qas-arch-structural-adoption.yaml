@@ -1,0 +1,134 @@
+id: pragmaticbim:workflow/qas-arch-structural-adoption
+code: QAS-ARCH-STRUCT-ADOPT
+sort_order: 73
+name:
+  de: Tragwerksplanung ins Architekturmodell übernehmen
+  fr: Reprendre la planification structurelle dans la maquette d'architecture
+  it: Integrare la pianificazione strutturale nel modello di architettura
+  en: Adopt structural design in the architecture model
+description:
+  de: 'Abgestimmte Abmessungen der groben Tragwerksbauteile ins Architekturmodell übernehmen, solange noch kein detailliertes Tragwerksmodell vorliegt.
+
+
+    **Ausgangslage**
+
+    - Solange die Architektur konzeptionell arbeitet, verursacht ein detailliertes Volumenmodell der Tragwerksplanung unnötigen Aufwand und wird durch Änderungen schnell überholt.
+
+    - Die Architektur benötigt dennoch abgestimmte Abmessungen der wesentlichen Tragwerksbauteile für Raum, Hülle und die weitere Planung.
+
+
+    **Ziel & Nutzen**
+
+    - Tragwerkskonzept und wesentliche Bauteilabmessungen direkt zwischen Tragwerksplanung und Architektur abstimmen.
+
+    - Die abgestimmten Abmessungen im Architekturmodell führen, ohne ein detailliertes Tragwerksmodell zu verlangen.
+
+
+    **Ablauf**
+
+    1. Tragwerkskonzept und relevante Bauteilabmessungen gemeinsam anhand des Architekturentwurfs abstimmen.
+
+    2. Abmessungen der konzeptionellen Tragwerksbauteile ins Architekturmodell übernehmen.
+
+    3. Übernommene Abmessungen gegen das abgestimmte Tragwerkskonzept prüfen und Abweichungen dokumentieren.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit abgestimmten Abmessungen der konzeptionellen Tragwerksbauteile.'
+  fr: 'Reprendre dans la maquette d''architecture les dimensions coordonnées des éléments porteurs grossiers, tant qu''une maquette structure détaillée n''existe pas encore.
+
+
+    **Situation de départ**
+
+    - Tant que l''architecture travaille au niveau conceptuel, une maquette volumique détaillée de la structure entraîne un travail inutile et devient rapidement obsolète.
+
+    - L''architecture a néanmoins besoin des dimensions coordonnées des principaux éléments porteurs pour les locaux, l''enveloppe et la suite de la planification.
+
+
+    **Objectif et bénéfice**
+
+    - Coordonner directement le concept porteur et les dimensions principales entre l''ingénieur structure et l''architecte.
+
+    - Tenir les dimensions coordonnées dans la maquette d''architecture, sans exiger une maquette structure détaillée.
+
+
+    **Déroulement**
+
+    1. Coordonner le concept porteur et les dimensions pertinentes à partir du projet d''architecture.
+
+    2. Reprendre les dimensions des éléments porteurs conceptuels dans la maquette d''architecture.
+
+    3. Contrôler les dimensions reprises par rapport au concept porteur convenu et documenter les écarts.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec les dimensions coordonnées des éléments porteurs conceptuels.'
+  it: 'Integrare nel modello di architettura le dimensioni concordate dei componenti strutturali indicativi, finché non esiste ancora un modello strutturale dettagliato.
+
+
+    **Situazione di partenza**
+
+    - Finché l''architettura lavora a livello concettuale, un modello volumetrico dettagliato della struttura comporta lavoro inutile e diventa rapidamente obsoleto.
+
+    - L''architettura necessita comunque delle dimensioni coordinate dei principali componenti strutturali per i locali, l''involucro e la pianificazione successiva.
+
+
+    **Obiettivo e beneficio**
+
+    - Coordinare direttamente il concept strutturale e le dimensioni principali tra ingegnere strutturista e architetto.
+
+    - Tenere le dimensioni concordate nel modello di architettura, senza richiedere un modello strutturale dettagliato.
+
+
+    **Svolgimento**
+
+    1. Coordinare il concept strutturale e le dimensioni rilevanti sulla base del progetto architettonico.
+
+    2. Riprendere le dimensioni dei componenti strutturali concettuali nel modello di architettura.
+
+    3. Verificare le dimensioni riprese rispetto al concept strutturale concordato e documentare gli scostamenti.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con le dimensioni coordinate dei componenti strutturali concettuali.'
+  en: 'Adopt the coordinated dimensions of the coarse structural components in the architecture model while no detailed structural model exists yet.
+
+
+    **Starting point**
+
+    - While architecture is still conceptual, a detailed structural volume model creates unnecessary work and quickly becomes obsolete as the design changes.
+
+    - Architecture still needs coordinated dimensions for the principal structural components for spaces, the envelope, and further planning.
+
+
+    **Goal & benefit**
+
+    - Coordinate the structural concept and principal component dimensions directly between structural engineer and architect.
+
+    - Keep the agreed dimensions in the architecture model without requiring a detailed structural model.
+
+
+    **Process**
+
+    1. Coordinate the structural concept and relevant component dimensions based on the architectural design.
+
+    2. Adopt the conceptual structural component dimensions in the architecture model.
+
+    3. Check the adopted dimensions against the agreed structural concept and document deviations.
+
+
+    **Deliverable**
+
+    - Architecture model with coordinated dimensions of the conceptual structural components.'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+comment: Early phase. Architect adopts conceptual structural dimensions coordinated with the structural engineer; no detailed structural model required. LoadBearing=TRUE on conceptual structural components.

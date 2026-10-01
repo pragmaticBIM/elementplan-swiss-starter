@@ -1,0 +1,36 @@
+id: pragmaticbim:value/security-level
+code: SEC-LEVEL
+name:
+  de: Sicherheitsstufe
+  fr: Niveau de sécurité
+  it: Livello di sicurezza
+  en: Security level
+description:
+  de: Sicherheitsstufe eines Raums gemäss Sicherheitskonzept.
+  fr: Niveau de sécurité d'un local selon le concept de sécurité.
+  it: Livello di sicurezza di un locale secondo il concetto di sicurezza.
+  en: Security level of a space according to the security concept.
+year: 2026
+norm_reference: project-specific
+status: active
+values:
+  de:
+  - Öffentlich
+  - Intern
+  - Eingeschränkt
+  - Hochgesichert
+  fr:
+  - Public
+  - Interne
+  - Restreint
+  - Haute sécurité
+  it:
+  - Pubblico
+  - Interno
+  - Ristretto
+  - Alta sicurezza
+  en:
+  - Public
+  - Internal
+  - Restricted
+  - High security

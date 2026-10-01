@@ -1,0 +1,159 @@
+id: pragmaticbim:workflow/con-defect-management
+code: CON-DEFECT-MGMT
+sort_order: 31
+name:
+  de: Mängel mit Raum-QR-Codes erfassen und bearbeiten
+  fr: Saisir et traiter les défauts avec des codes QR par local
+  it: Rilevare e gestire i difetti con codici QR per locale
+  en: Capture and manage defects with room QR codes
+description:
+  de: 'Mängel direkt am betroffenen Ort über einen Raum-QR-Code erfassen, damit die Raumzuordnung ohne Suche im Plan oder Navigation in einer App eindeutig ist.
+
+
+    **Ausgangslage**
+
+    - Bei der Mängelerfassung über Pläne muss der richtige Raum zuerst gesucht und ausgewählt werden; auf der Baustelle entstehen dadurch Fehlzuordnungen oder unvollständige Meldungen.
+
+    - Fotos und Notizen ausserhalb des Mängelmanagements lassen sich später nur mit Aufwand einem Raum, einer verantwortlichen Person und einem Bearbeitungsstand zuordnen.
+
+
+    **Ziel & Nutzen**
+
+    - Einen Mangel mit der Smartphone-Kamera am Raum-QR-Code starten und die Raumreferenz automatisch vorbelegen.
+
+    - Meldung, Foto, Verantwortung, Termin und Bearbeitungsstand im vereinbarten Mängelmanagement durchgängig nachführen.
+
+
+    **Ablauf**
+
+    1. Mängelprozess, Rollen, Pflichtangaben, Fristen und Status bis zur Abnahme festlegen sowie je Innenraum die technische Raumnummer (Name) und Raumnutzung (LongName) bereitstellen.
+
+    2. Je Raum eine A4-Kennzeichnung mit Raumnummer, Raumnutzung und QR-Code drucken; den QR-Code direkt mit dem Raum im Mängelmanagement oder mit einem raumbezogen vorbelegten Formular verknüpfen und die
+    Kennzeichnung mit einem für den Untergrund geeigneten, rückstandsfrei entfernbaren Klebeband an Tür oder Fenster befestigen.
+
+    3. QR-Code vor Ort scannen, Mangel und Foto erfassen, die Meldung bei Verwendung eines Formulars mit dem Mängelmanagement synchronisieren sowie Zuweisung, Behebung, Kontrolle und Abschluss nachführen.
+
+
+    **Lieferergebnis**
+
+    - Lesbare und geprüfte A4-Raumkennzeichnung je Raum mit Raumnummer, Raumnutzung und funktionierendem QR-Link.
+
+    - Mit dem Mängelmanagement synchronisierte, eindeutig räumlich zugeordnete Meldungen mit Foto, Verantwortung, Termin und Status.
+
+    - Nachvollziehbarer Prüf- und Abschlussnachweis für behobene Mängel.'
+  fr: 'Saisir les défauts directement à l''endroit concerné au moyen d''un code QR de local afin d''assurer une attribution claire sans rechercher le local sur un plan ni naviguer dans une application.
+
+
+    **Situation de départ**
+
+    - Lors de la saisie des défauts sur un plan, il faut d''abord rechercher et sélectionner le bon local ; sur le chantier, cela entraîne des erreurs d''attribution ou des signalements incomplets.
+
+    - Les photos et notes conservées hors de la gestion des défauts sont ensuite difficiles à rattacher à un local, à une personne responsable et à un état de traitement.
+
+
+    **Objectif et bénéfice**
+
+    - Démarrer le signalement d''un défaut avec la caméra du smartphone devant le code QR du local et préremplir automatiquement la référence du local.
+
+    - Tenir à jour sans rupture le signalement, la photo, la responsabilité, le délai et l''état de traitement dans l''outil de gestion des défauts convenu.
+
+
+    **Déroulement**
+
+    1. Définir le processus de gestion des défauts, les rôles, les données obligatoires, les délais et les statuts jusqu''à la réception, puis fournir pour chaque local intérieur le numéro technique (Name)
+    et l''usage du local (LongName).
+
+    2. Imprimer pour chaque local une feuille A4 avec numéro, usage et code QR ; relier le code QR directement au local dans l''outil de gestion des défauts ou à un formulaire prérempli pour ce local, puis
+    fixer la feuille sur la porte ou la fenêtre avec un ruban adhésif adapté au support et qui s''enlève sans laisser de traces.
+
+    3. Scanner le code QR sur place, saisir le défaut et la photo, synchroniser le signalement avec l''outil de gestion des défauts lorsqu''un formulaire est utilisé, puis tenir à jour l''attribution, la
+    correction, le contrôle et la clôture.
+
+
+    **Livrable**
+
+    - Feuille A4 lisible et contrôlée pour chaque local, avec numéro, usage et lien QR fonctionnel.
+
+    - Signalements synchronisés avec l''outil de gestion des défauts, attribués sans ambiguïté au local et comprenant photo, responsabilité, délai et statut.
+
+    - Justificatif traçable du contrôle et de la clôture des défauts corrigés.'
+  it: 'Rilevare i difetti direttamente nel luogo interessato mediante un codice QR del locale, così da attribuirli in modo univoco senza cercare il locale su una planimetria o navigare in un''app.
+
+
+    **Situazione di partenza**
+
+    - Per rilevare i difetti su una planimetria occorre prima cercare e selezionare il locale corretto; in cantiere ciò causa attribuzioni errate o segnalazioni incomplete.
+
+    - Foto e appunti conservati al di fuori della gestione dei difetti sono in seguito difficili da collegare a un locale, a una persona responsabile e a uno stato di lavorazione.
+
+
+    **Obiettivo e beneficio**
+
+    - Avviare la segnalazione di un difetto con la fotocamera dello smartphone davanti al codice QR del locale e precompilare automaticamente il riferimento del locale.
+
+    - Aggiornare senza interruzioni segnalazione, foto, responsabilità, scadenza e stato di lavorazione nel sistema di gestione dei difetti concordato.
+
+
+    **Svolgimento**
+
+    1. Definire il processo di gestione dei difetti, i ruoli, i dati obbligatori, le scadenze e gli stati fino al collaudo, quindi fornire per ogni locale interno il numero tecnico (Name) e l''uso del locale
+    (LongName).
+
+    2. Stampare per ogni locale un cartello A4 con numero, uso e codice QR; collegare il codice QR direttamente al locale nel sistema di gestione dei difetti oppure a un modulo precompilato per il locale
+    e fissare il cartello alla porta o alla finestra con un nastro adesivo adatto al supporto e rimovibile senza residui.
+
+    3. Scansionare il codice QR sul posto, registrare il difetto e la foto, sincronizzare la segnalazione con il sistema di gestione dei difetti quando si utilizza un modulo e aggiornare assegnazione, correzione,
+    controllo e chiusura.
+
+
+    **Risultato della fornitura**
+
+    - Cartello A4 leggibile e verificato per ogni locale, con numero, uso e collegamento QR funzionante.
+
+    - Segnalazioni sincronizzate con il sistema di gestione dei difetti, attribuite in modo univoco al locale e complete di foto, responsabilità, scadenza e stato.
+
+    - Prova tracciabile del controllo e della chiusura dei difetti corretti.'
+  en: 'Capture defects directly at the affected location using a room QR code so that each report is assigned unambiguously without searching a drawing or navigating through an app.
+
+
+    **Starting point**
+
+    - Capturing defects from drawings requires users to find and select the correct room first; on site, this leads to misassigned or incomplete reports.
+
+    - Photographs and notes stored outside the defect-management system are difficult to associate later with a room, responsible person, and status.
+
+
+    **Goal & benefit**
+
+    - Start a defect report with the smartphone camera at the room QR code and prefill the room reference automatically.
+
+    - Maintain the report, photograph, responsibility, due date, and status consistently in the agreed defect-management system.
+
+
+    **Process**
+
+    1. Define the defect process, roles, mandatory information, deadlines, and statuses through acceptance, then provide the technical room number (Name) and room use (LongName) for each interior space.
+
+    2. Print an A4 label for each room with room number, room use, and QR code; link the QR code directly to the room in the defect-management system or to a room-specific prefilled form, then attach the
+    label to the door or window using tape that is suitable for the surface and can be removed without residue.
+
+    3. Scan the QR code on site, capture the defect and photograph, synchronize the report with the defect-management system when a form is used, and maintain assignment, rectification, verification, and
+    closure.
+
+
+    **Deliverable**
+
+    - Legible and verified A4 label for each room with room number, room use, and a working QR link.
+
+    - Reports synchronized with the defect-management system, assigned unambiguously to the room, and including photograph, responsibility, due date, and status.
+
+    - Traceable verification and closure record for rectified defects.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/con
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Construction-phase workflow, typically SIA phases 51–53. Reuses the physical A4 room labels from CON-ROOM-LABEL. Name is the stable technical room number and LongName is the room use; the QR target
+  and defect records remain in the agreed defect-management system rather than in IFC.

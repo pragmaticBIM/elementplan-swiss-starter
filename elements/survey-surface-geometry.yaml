@@ -1,6 +1,6 @@
 id: pragmaticbim:element/survey-surface-geometry
 code: SURVEY-SURFACE
-sort_order: 6
+sort_order: 60
 status: active
 name:
   de: Oberflächengeometrie
@@ -8,76 +8,117 @@ name:
   it: Geometria di superficie
   en: Surface geometry
 definition:
-  de: 'Geländeoberfläche als modellierte Oberflächengeometrie — dokumentiertes Geländemodell im gemeinsamen Bezugsrahmen.
+  de: 'Stellt Bestand und projektiertes Gelände bereit, damit Anschlüsse ans Gebäude und Erdmassen abgestimmt geplant werden können.
 
 
     **Beschreibung**
 
-    - Aufgenommene Geländeform mit Lage und Höhe im Bezugsrahmen LV95.
+    - Geländeform mit Lage und Höhe im Bezugsrahmen LV95, als Bestand oder als Projekt.
 
-    - Grundlage für Abgleich mit Punktwolke und für Planungsentscheide zu Abbruch, Neubau oder Umbau.
+    - Grundlage für den Abgleich mit der Punktwolke und für die Prüfung der Gebäudeanschlüsse.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
-    - Als Oberflächengeometrie gemäss Geometerlieferung modellieren; dem Planungsperimeter zuweisen.
+    - Bestandsfläche gemäss Geometerlieferung, projektierte Fläche gemäss Landschaftsplanung; dem Planungsperimeter zuweisen.
 
-    - Lage und Höhe in LV95; mit der Punktwolke abstimmen.'
-  fr: 'Surface de terrain modélisée comme géométrie de surface — modèle de terrain documenté dans le référentiel commun.
+    - Beide als getrennte Oberflächen führen. Den Humusabtrag nicht auf der Fläche abbilden.
+
+    - Lage und Höhe in LV95; Bestand mit der Punktwolke abstimmen.'
+  fr: 'Fournit le terrain existant et le terrain projeté afin de planifier de manière coordonnée les raccordements au bâtiment et les mouvements de terre.
 
 
     **Description**
 
-    - Forme du terrain relevée avec position et altitude dans le référentiel LV95.
+    - Forme du terrain avec position et altitude dans le référentiel LV95, en existant ou en projet.
 
-    - Base pour le calage sur le nuage de points et les décisions de démolition, reconstruction ou transformation.
+    - Base pour le calage sur le nuage de points et le contrôle des raccordements au bâtiment.
 
 
     **Directives de modélisation**
 
-    - Modéliser comme géométrie de surface selon la livraison du géomètre ; rattacher au périmètre de planification.
+    - Surface existante selon la livraison du géomètre, surface projetée selon l''aménagement paysager ; rattacher au périmètre de planification.
 
-    - Position et altitude en LV95 ; caler sur le nuage de points.'
-  it: 'Superficie del terreno modellata come geometria di superficie — modello del terreno documentato nel riferimento comune.
+    - Tenir les deux comme surfaces distinctes. Ne pas représenter le déblai d''humus sur la surface.
+
+    - Position et altitude en LV95 ; caler l''existant sur le nuage de points.'
+  it: 'Fornisce il terreno esistente e quello di progetto per pianificare in modo coordinato i raccordi con l''edificio e i movimenti di terra.
 
 
     **Descrizione**
 
-    - Forma del terreno rilevata con posizione e quota nel sistema di riferimento LV95.
+    - Forma del terreno con posizione e quota nel sistema di riferimento LV95, come esistente o come progetto.
 
-    - Base per l''allineamento alla nuvola di punti e per le decisioni su demolizione, ricostruzione o trasformazione.
+    - Base per l''allineamento alla nuvola di punti e per la verifica dei raccordi con l''edificio.
 
 
     **Direttive di modellazione**
 
-    - Modellare come geometria di superficie secondo la consegna del geometra; assegnare al perimetro di pianificazione.
+    - Superficie esistente secondo la consegna del geometra, superficie di progetto secondo la progettazione del paesaggio; assegnare al perimetro di pianificazione.
 
-    - Posizione e quota in LV95; allineare alla nuvola di punti.'
-  en: 'Terrain surface as modelled surface geometry — documented terrain model in the shared reference frame.
+    - Tenere entrambe come superfici distinte. Non rappresentare lo scavo dell''humus sulla superficie.
+
+    - Posizione e quota in LV95; allineare l''esistente alla nuvola di punti.'
+  en: 'Provides existing and designed terrain so that connections to the building and earth quantities can be planned in coordination.
 
 
     **Description**
 
-    - Surveyed terrain form with position and height in the LV95 reference frame.
+    - Terrain form with position and height in the LV95 reference frame, as existing or as design.
 
-    - Basis for point-cloud alignment and decisions on demolition, new build, or conversion.
+    - Basis for point-cloud alignment and for checking connections to the building.
 
 
     **Modelling guidelines**
 
-    - Model as surface geometry according to the surveyor delivery; assign to the planning perimeter.
+    - Existing surface according to the surveyor delivery, designed surface according to landscape design; assign to the planning perimeter.
 
-    - Position and height in LV95; align with the point cloud.'
+    - Keep both as separate surfaces. Do not show humus stripping on the surface.
+
+    - Position and height in LV95; align the existing surface with the point cloud.'
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/surveyor
 entity_ifc2x3: IfcBuildingElementProxy
 entity_ifc4: IfcGeographicElement
 entity_ifc4_3: IfcGeographicElement
-picture_link: null
+picture_link: survey-surface-geometry.png
+picture_print_link: survey-surface-geometry-print.tif
 model_link: null
-applicability: (entity_ifc4=IfcGeographicElement AND PredefinedType=TERRAIN) OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=TERRAIN) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Gelände)
+applicability: (entity_ifc4=IfcGeographicElement AND PredefinedType=TERRAIN) OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=TERRAIN)
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Geländeoberfläche gemäss Vermessung oder Projekt.
+    fr: Désignation de la surface de terrain selon le levé ou le projet.
+    it: Designazione della superficie del terreno secondo il rilievo o il progetto.
+    en: Terrain surface designation according to the survey or project.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-survey-existing-model-procurement
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-terrain-design
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
@@ -124,89 +165,65 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-site-survey
+  - pragmaticbim:workflow/bes-survey-existing-model-procurement
   - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-terrain-design
   is_applicability: true
   status: active
-  sort_order: 1
-- name: ObjectType
-  pset: null
+  sort_order: 2
+- name: ElementStatus
+  pset: ePset_ElementStatus
   definition:
-    de: 'Art des Proxy-Elements als Geländeoberfläche.
+    de: 'Status der Geländeoberfläche zur Trennung von Bestand und projektiertem Terrain. Der Humusabtrag gehört nicht hierher.
 
 
       **Zulässige Werte**
 
-      - `Gelände` — modellierte Geländeoberfläche im Bezugsmodell
+      - `NEW` — projektiertes Terrain
 
+      - `EXISTING` — Bestand
 
-      **Hinweis**
+      - `DEMOLISH` — entfallende Fläche
 
-      - IFC2x3-Ersatz für PredefinedType.'
-    fr: 'Nature de l''élément proxy comme surface de terrain.
+      - `TEMPORARY` — temporäres Terrain'
+    fr: 'Statut de la surface de terrain pour distinguer l''existant et le terrain projeté. Le déblai d''humus n''y figure pas.
 
 
       **Valeurs admises**
 
-      - `Gelände` — surface de terrain modélisée dans le modèle de référence
+      - `NEW` — terrain projeté
 
+      - `EXISTING` — existant
 
-      **Remarque**
+      - `DEMOLISH` — surface supprimée
 
-      - Substitut IFC2x3 de PredefinedType.'
-    it: 'Tipo dell''elemento proxy come superficie del terreno.
+      - `TEMPORARY` — terrain provisoire'
+    it: 'Stato della superficie del terreno per distinguere l''esistente e il terreno di progetto. Lo scavo dell''humus non vi rientra.
 
 
       **Valori ammessi**
 
-      - `Gelände` — superficie del terreno modellata nel modello di riferimento
+      - `NEW` — terreno di progetto
 
+      - `EXISTING` — esistente
 
-      **Nota**
+      - `DEMOLISH` — superficie eliminata
 
-      - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Kind of proxy element as terrain surface.
+      - `TEMPORARY` — terreno provvisorio'
+    en: 'Terrain-surface status distinguishing existing and designed terrain. Humus stripping does not belong here.
 
 
       **Allowed values**
 
-      - `Gelände` — modelled terrain surface in the reference model
+      - `NEW` — designed terrain
 
+      - `EXISTING` — existing
 
-      **Note**
+      - `DEMOLISH` — surface to remove
 
-      - IFC2x3 substitute for PredefinedType.'
+      - `TEMPORARY` — temporary terrain'
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/objecttype-survey-terrain
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-site-survey
-  - pragmaticbim:workflow/des-facade-planning
-  is_applicability: true
-  status: active
-  sort_order: 2
-- name: Name
-  pset: null
-  definition:
-    de: Bezeichnung der Geländeoberfläche gemäss Vermessung oder Projekt.
-    fr: Désignation de la surface de terrain selon le levé ou le projet.
-    it: Designazione della superficie del terreno secondo il rilievo o il progetto.
-    en: Terrain surface designation according to the survey or project.
-  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
   needed_in_phases:
   - '11'
   - '21'
@@ -225,8 +242,9 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-site-survey
+  - pragmaticbim:workflow/bes-survey-existing-model-procurement
   - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-terrain-design
   is_applicability: false
   status: active
   sort_order: 3

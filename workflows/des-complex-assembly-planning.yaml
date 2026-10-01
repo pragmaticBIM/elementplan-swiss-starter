@@ -1,0 +1,134 @@
+id: pragmaticbim:workflow/des-complex-assembly-planning
+code: DES-COMPLEX-ASSEMBLY
+sort_order: 76
+name:
+  de: Komplexe Montagen und Zwischenbauzustände planen
+  fr: Planifier les montages complexes et les états intermédiaires
+  it: Pianificare montaggi complessi e stati intermedi
+  en: Plan complex assemblies and intermediate states
+description:
+  de: 'Montagevarianten und temporäre Bauzustände mit vereinfachten Modellen sichtbar machen und beurteilen, bevor sie auf der Baustelle zu Konflikten führen.
+
+
+    **Ausgangslage**
+
+    - Bei komplexen Montagen ändern sich Zugänglichkeit, Absturzkanten und Platzverhältnisse während der Ausführung.
+
+    - Rein zweidimensionale Montagepläne machen räumliche Konflikte und Auswirkungen verschiedener Reihenfolgen oft erst spät erkennbar.
+
+
+    **Ziel & Nutzen**
+
+    - Kritische Zwischenbauzustände und Montageoptionen mit wenig Modellierungsaufwand vergleichen.
+
+    - Entscheide schneller herbeiführen und verworfene Varianten nach der Beurteilung ohne Pflegeaufwand entfernen.
+
+
+    **Ablauf**
+
+    1. Kritische Montagephasen, temporäre Bauteile und freizuhaltende Bereiche als vereinfachte Geometrie bereitstellen.
+
+    2. Varianten im Koordinationsmodell visualisieren und mit den zuständigen Planenden und Unternehmen hinsichtlich Sicherheit, Zugänglichkeit und Bauablauf beurteilen.
+
+    3. Gewählte Variante und Entscheide dokumentieren; nicht weiterverfolgte Wegwerfmodelle entfernen.
+
+
+    **Lieferergebnis**
+
+    - Beurteilte Montagevariante mit nachvollziehbaren Zwischenbauzuständen und dokumentierten Entscheiden.'
+  fr: 'Visualiser et évaluer les variantes de montage et les états temporaires au moyen de maquettes simplifiées avant qu''ils ne provoquent des conflits sur le chantier.
+
+
+    **Situation de départ**
+
+    - Lors de montages complexes, l''accessibilité, les bords présentant un risque de chute et l''espace disponible évoluent pendant l''exécution.
+
+    - Des plans de montage uniquement bidimensionnels révèlent souvent trop tard les conflits spatiaux et les effets des différentes séquences.
+
+
+    **Objectif et bénéfice**
+
+    - Comparer les états intermédiaires critiques et les options de montage avec un effort de modélisation limité.
+
+    - Prendre les décisions plus rapidement et supprimer les variantes écartées sans devoir les tenir à jour.
+
+
+    **Déroulement**
+
+    1. Fournir sous forme de géométries simplifiées les phases de montage critiques, les éléments temporaires et les zones à maintenir libres.
+
+    2. Visualiser les variantes dans la maquette de coordination et les évaluer avec les mandataires et entreprises responsables quant à la sécurité, à l''accessibilité et au déroulement des travaux.
+
+    3. Documenter la variante retenue et les décisions; supprimer les maquettes d''étude qui ne sont pas poursuivies.
+
+
+    **Livrable**
+
+    - Variante de montage évaluée avec états intermédiaires compréhensibles et décisions documentées.'
+  it: 'Visualizzare e valutare le varianti di montaggio e gli stati temporanei mediante modelli semplificati prima che causino conflitti in cantiere.
+
+
+    **Situazione di partenza**
+
+    - Nei montaggi complessi, l''accessibilità, i bordi con rischio di caduta e gli spazi disponibili cambiano durante l''esecuzione.
+
+    - I soli piani di montaggio bidimensionali rendono spesso riconoscibili troppo tardi i conflitti spaziali e gli effetti delle diverse sequenze.
+
+
+    **Obiettivo e beneficio**
+
+    - Confrontare gli stati intermedi critici e le opzioni di montaggio con un impegno di modellazione limitato.
+
+    - Prendere decisioni più rapidamente ed eliminare le varianti scartate senza doverle aggiornare.
+
+
+    **Svolgimento**
+
+    1. Fornire le fasi di montaggio critiche, gli elementi temporanei e le zone da mantenere libere come geometrie semplificate.
+
+    2. Visualizzare le varianti nel modello di coordinamento e valutarle con i progettisti e le imprese responsabili in termini di sicurezza, accessibilità e sequenza dei lavori.
+
+    3. Documentare la variante scelta e le decisioni; eliminare i modelli di studio non più perseguiti.
+
+
+    **Risultato della fornitura**
+
+    - Variante di montaggio valutata con stati intermedi comprensibili e decisioni documentate.'
+  en: 'Visualize and assess assembly options and temporary construction states with simplified models before they cause conflicts on site.
+
+
+    **Starting point**
+
+    - During complex assemblies, access, fall edges, and available space change as construction progresses.
+
+    - Two-dimensional installation drawings alone often reveal spatial conflicts and the effects of different sequences too late.
+
+
+    **Goal & benefit**
+
+    - Compare critical intermediate states and assembly options with limited modelling effort.
+
+    - Reach decisions faster and remove discarded options without ongoing maintenance.
+
+
+    **Process**
+
+    1. Provide critical assembly phases, temporary components, and areas to remain clear as simplified geometry.
+
+    2. Visualize the options in the coordination model and assess safety, access, and construction sequence with the responsible designers and contractors.
+
+    3. Document the selected option and decisions; remove disposable models that will not be pursued.
+
+
+    **Deliverable**
+
+    - Assessed assembly option with understandable intermediate states and documented decisions.'
+workflow_group: arbeitsvorbereitung
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+comment: Simplified option models are intentionally disposable; temporary components are identified by element status and model split.

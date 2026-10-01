@@ -1,0 +1,134 @@
+id: pragmaticbim:phase-mapping/sia-to-lm-vm
+source: pragmaticbim:phase/sia
+target: pragmaticbim:phase/lm-vm
+status: active
+name:
+  de: SIA → LM.VM Leistungsphasen
+  fr: SIA → phases LM.VM
+  it: SIA → fasi LM.VM
+  en: SIA → LM.VM service phases
+comment:
+  de: Ungefähre LM.VM-Entsprechung zur Anzeige.
+  en: Approximate LM.VM equivalence for display.
+phases:
+  - source: '11'
+    target: '1'
+  - source: '21'
+    target: '2'
+  - source: '22'
+    target: '2'
+  - source: '31'
+    target: '2'
+    also:
+      - '3'
+  - source: '32'
+    target: '3'
+  - source: '33'
+    target: '4'
+  - source: '41'
+    target: '6'
+  - source: '51'
+    target: '5'
+  - source: '52'
+    target: '7'
+    also:
+      - '8'
+  - source: '53'
+    target: '8'
+    also:
+      - '9'
+  - source: '61'
+    target: '9'
+  - source: '62'
+    target: '9'
+milestones:
+  - source: '11:B'
+    target: 'lm-vm:1:B'
+  - source: '11:M'
+    target: 'lm-vm:1:M'
+  - source: '11:E'
+    target: 'lm-vm:1:E'
+  - source: '21:B'
+    target: 'lm-vm:2:B'
+  - source: '21:M'
+    target: 'lm-vm:2:M'
+  - source: '21:E'
+    target: 'lm-vm:2:E'
+  - source: '22:B'
+    target: 'lm-vm:2:B'
+  - source: '22:M'
+    target: 'lm-vm:2:M'
+  - source: '22:E'
+    target: 'lm-vm:2:E'
+  - source: '31:B'
+    target: 'lm-vm:2:B'
+    also:
+      - 'lm-vm:3:B'
+  - source: '31:M'
+    target: 'lm-vm:2:M'
+    also:
+      - 'lm-vm:3:M'
+  - source: '31:E'
+    target: 'lm-vm:2:E'
+    also:
+      - 'lm-vm:3:E'
+  - source: '32:B'
+    target: 'lm-vm:3:B'
+  - source: '32:M'
+    target: 'lm-vm:3:M'
+  - source: '32:E'
+    target: 'lm-vm:3:E'
+  - source: '33:B'
+    target: 'lm-vm:4:B'
+  - source: '33:M'
+    target: 'lm-vm:4:M'
+  - source: '33:E'
+    target: 'lm-vm:4:E'
+  - source: '41:B'
+    target: 'lm-vm:6:B'
+  - source: '41:M'
+    target: 'lm-vm:6:M'
+  - source: '41:E'
+    target: 'lm-vm:6:E'
+  - source: '51:B'
+    target: 'lm-vm:5:B'
+  - source: '51:M'
+    target: 'lm-vm:5:M'
+  - source: '51:E'
+    target: 'lm-vm:5:E'
+  - source: '52:B'
+    target: 'lm-vm:7:B'
+    also:
+      - 'lm-vm:8:B'
+  - source: '52:M'
+    target: 'lm-vm:7:M'
+    also:
+      - 'lm-vm:8:M'
+  - source: '52:E'
+    target: 'lm-vm:7:E'
+    also:
+      - 'lm-vm:8:E'
+  - source: '53:B'
+    target: 'lm-vm:8:B'
+    also:
+      - 'lm-vm:9:B'
+  - source: '53:M'
+    target: 'lm-vm:8:M'
+    also:
+      - 'lm-vm:9:M'
+  - source: '53:E'
+    target: 'lm-vm:8:E'
+    also:
+      - 'lm-vm:9:E'
+  - source: '61:B'
+    target: 'lm-vm:9:B'
+  - source: '61:M'
+    target: 'lm-vm:9:M'
+  - source: '61:E'
+    target: 'lm-vm:9:E'
+  - source: '62:B'
+    target: 'lm-vm:9:B'
+  - source: '62:M'
+    target: 'lm-vm:9:M'
+  - source: '62:E'
+    target: 'lm-vm:9:E'

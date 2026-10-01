@@ -1,0 +1,28 @@
+id: pragmaticbim:usage-scenario/spielplatz-garten
+code: US-WH-17
+sort_order: 17
+name:
+  de: Spielplatz und Garten
+  fr: Place de jeux et jardin
+  it: Parco giochi e giardino
+  en: Playground and garden
+description:
+  de: Bewohnende gehen von der Eingangshalle in den Garten und auf den Spielplatz.
+  fr: Les occupants vont du hall d'entrée au jardin et à la place de jeux.
+  it: Chi abita va dall'atrio al giardino e al parco giochi.
+  en: Occupants go from the lobby to the garden and the playground.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/eingangshalle
+- pragmaticbim:room-type/gartenflaeche
+- pragmaticbim:room-type/spielplatz
+room_relationships:
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/gartenflaeche
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/spielplatz
+- from_room_type: pragmaticbim:room-type/gartenflaeche
+  to_room_type: pragmaticbim:room-type/spielplatz

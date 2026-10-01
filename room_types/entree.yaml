@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/entree
+code: RT-WH-24
+sort_order: 24
+name:
+  de: Entree
+  fr: Entrée
+  it: Entrata
+  en: Entrance Hall
+definition:
+  de: Eingangs-Übergangsraum im Wohnkontext.
+  fr: Espace de transition à l'entrée du logement.
+  it: Spazio di transizione all'ingresso dell'alloggio.
+  en: Residential entrance transition space within a dwelling context.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Entree
+    fr: Entrée
+    it: Entrata
+    en: Entrance Hall
+restrictions:
+  min_area: 2
+status: active

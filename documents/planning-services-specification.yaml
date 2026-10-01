@@ -1,0 +1,51 @@
+id: pragmaticbim:document/planning-services-specification
+code: LVP
+sort_order: 125
+name:
+  de: Leistungsverzeichnis Planung
+  fr: Cahier des prestations de planification
+  it: Capitolato delle prestazioni di progettazione
+  en: Planning services specification
+definition:
+  de: Vertragsfähiger Beschrieb der erwarteten Planungsleistungen, Ergebnisse und Datenlieferungen für die Beschaffung eines Planungsteams.
+  fr: Descriptif contractuel des prestations d'étude, résultats et livraisons de données attendus pour l'acquisition d'une équipe de mandataires.
+  it: Descrizione contrattuale delle prestazioni di progettazione, dei risultati e delle forniture di dati attesi per l'acquisizione di un gruppo di progettisti.
+  en: Contract-ready description of the planning services, results, and data deliveries expected when procuring a design team.
+description:
+  de: |-
+    - Projektziele, wesentliche Risiken und überprüfbare Erfolgskriterien als Grundlage des Leistungsumfangs
+    - Erwartete Grundleistungen und projektspezifische Zusatzleistungen je Fachbereich und Projektphase, eindeutig voneinander abgegrenzt
+    - Vereinbarte Ergebnisse und Datenlieferungen mit Zweck, Inhalt, Lieferzeitpunkt, Format und Bewertungskriterien
+    - Von der Bauherrschaft bereitgestellte Grundlagen mit Version und Freigabestand, insbesondere Raumprogramm, räumlicher Bezug, Terrain und Bestandsunterlagen
+    - Zuschlagskriterium zur digitalen Projektbearbeitung mit einer Referenzperson und einem einseitigen Vorgehenskonzept, das den BIM-Einsatz zum Erreichen der Bauherrenziele und zum Umgang mit den identifizierten Projektrisiken aufzeigt
+  fr: |-
+    - Objectifs du projet, risques principaux et critères de réussite vérifiables comme base de l'étendue des prestations
+    - Prestations de base attendues et prestations supplémentaires propres au projet par discipline et phase, clairement délimitées
+    - Résultats et livraisons de données convenus avec usage, contenu, échéance, format et critères d'évaluation
+    - Données de base fournies par le maître d'ouvrage avec version et état de validation, notamment programme des locaux, référence spatiale, terrain et documents de l'existant
+    - Critère d'adjudication relatif au traitement numérique du projet, comprenant une personne de référence et une note méthodologique d'une page reliant l'usage du BIM aux objectifs du maître d'ouvrage et aux risques identifiés du projet
+  it: |-
+    - Obiettivi del progetto, rischi principali e criteri di successo verificabili come base dell'estensione delle prestazioni
+    - Prestazioni di base attese e prestazioni supplementari specifiche del progetto per disciplina e fase, chiaramente delimitate
+    - Risultati e forniture di dati concordati con scopo, contenuto, scadenza, formato e criteri di valutazione
+    - Basi fornite dal committente con versione e stato di approvazione, in particolare programma dei locali, riferimento spaziale, terreno e documenti dello stato di fatto
+    - Criterio di aggiudicazione per l'elaborazione digitale del progetto, comprendente una persona di riferimento e un concetto operativo di una pagina che collega l'impiego del BIM agli obiettivi del committente e ai rischi di progetto identificati
+  en: |-
+    - Project goals, principal risks, and verifiable success criteria as the basis for the scope of services
+    - Expected basic services and project-specific additional services by discipline and phase, clearly distinguished from each other
+    - Agreed results and data deliveries with purpose, content, delivery date, format, and evaluation criteria
+    - Client-provided foundations with version and approval status, particularly the room programme, spatial reference, terrain, and existing-condition information
+    - Award criterion for digital project delivery comprising a reference contact and a one-page approach explaining how BIM will support the client's goals and manage the identified project risks
+file_name:
+  de: '{Projektnummer}_PRO-LVP_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-LVP_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-LVP_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-LVP_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "22:M"
+comment: >-
+  Auftraggeberseitige Vertragsgrundlage für die Beschaffung des Planungsteams.
+  Digitale Anforderungen werden als zweckbezogene, prüfbare Ergebnisse und
+  Datenlieferungen in den regulären phasenbezogenen Leistungsbeschrieb integriert.

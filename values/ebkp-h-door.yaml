@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-door
+code: EBKP-H-DOOR
+name:
+  de: eBKP-H Tür
+  fr: eBKP-H porte
+  it: eBKP-H porta
+  en: eBKP-H door
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): E03.02, G01.05.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : E03.02, G01.05.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): E03.02, G01.05.'
+  en: 'Allowed eBKP-H codes (SN 506 511): E03.02, G01.05.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - E03.02
+  - G01.05
+  fr:
+  - E03.02
+  - G01.05
+  it:
+  - E03.02
+  - G01.05
+  en:
+  - E03.02
+  - G01.05

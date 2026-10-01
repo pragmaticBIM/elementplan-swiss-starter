@@ -1,0 +1,128 @@
+id: pragmaticbim:workflow/bes-elevator-early-procurement
+code: BES-ELEVATOR-EARLY
+sort_order: 19
+name:
+  de: Aufzugsanlage vorgezogen ausschreiben
+  fr: Mettre l'installation d'ascenseur en appel d'offres anticipé
+  it: Mettere in gara anticipata l'impianto ascensore
+  en: Tender the elevator installation early
+description:
+  de: 'Den Aufzugsunternehmer nach erteilter Baugenehmigung frühzeitig einbinden und die Schachtgeometrie vor der weiteren Planung auf die gewählte Anlage abstimmen.
+
+
+    **Ausgangslage**
+
+    - Aufzugsanlagen werden häufig erst spät ausgeschrieben. Abweichende Schachtabmessungen, Schachtgruben und Schachtköpfe führen dann zu Fehlern und Umplanungen im Grundriss sowie bei Tragwerk und Fundamenten.
+
+
+    **Ziel & Nutzen**
+
+    - Anlagenspezifische Abmessungen und Planungsparameter rechtzeitig erhalten und in die Architektur- und Tragwerksplanung übernehmen.
+
+    - Späte Umplanungen der Schachtgeometrie, angrenzender Räume und Fundamente vermeiden.
+
+
+    **Ablauf**
+
+    1. Aufzugsanlage nach erteilter Baugenehmigung mit einer vertraglichen Klausel zu Rücktrittsrecht und Vergütung des Planungsaufwands ausschreiben.
+
+    2. Schachtabmessungen, Schachtgrube, Schachtkopf, Öffnungen, Lasten und weitere Planungsparameter beim vorgesehenen Aufzugsunternehmer anfragen und abstimmen.
+
+    3. Abgestimmte Vorgaben in das Architektur- und Tragwerksmodell übernehmen
+
+    **Lieferergebnis**
+
+    - Koordinierte Architektur- und Tragwerksmodelle mit korrekter Schachtgeometrie und berücksichtigten Planungsparametern der vorgesehenen Aufzugsanlage.'
+  fr: 'Associer l''entreprise d''ascenseurs dès l''obtention du permis de construire et coordonner la géométrie de la gaine avec l''installation retenue avant la poursuite des études.
+
+
+    **Situation de départ**
+
+    - Les installations d''ascenseur font souvent l''objet d''un appel d''offres tardif. Des dimensions divergentes de la gaine, de la fosse et de la tête de gaine entraînent alors des erreurs et des reprises
+    dans les plans d''étage, la structure et les fondations.
+
+
+    **Objectif et bénéfice**
+
+    - Obtenir à temps les dimensions et paramètres de planification propres à l''installation et les intégrer dans les études d''architecture et de structure.
+
+    - Éviter des reprises tardives de la géométrie de la gaine, des locaux adjacents et des fondations.
+
+
+    **Déroulement**
+
+    1. Lancer l''appel d''offres pour l''installation d''ascenseur après l''obtention du permis de construire, avec une clause contractuelle réglant le droit de résiliation et la rémunération des prestations
+    d''étude.
+
+    2. Demander à l''entreprise d''ascenseurs pressentie les dimensions de la gaine, de la fosse et de la tête de gaine, les ouvertures, les charges et les autres paramètres de planification, puis les coordonner.
+
+    3. Intégrer les prescriptions convenues dans les maquettes d''architecture et de structure, puis contrôler les plans d''étage et les fondations concernés.
+
+
+    **Livrable**
+
+    - Maquettes d''architecture et de structure coordonnées avec une géométrie correcte de la gaine et les paramètres de planification de l''installation d''ascenseur pressentie.'
+  it: 'Coinvolgere l''impresa di ascensori subito dopo il rilascio della licenza edilizia e coordinare la geometria del vano con l''impianto scelto prima di proseguire la progettazione.
+
+
+    **Situazione di partenza**
+
+    - Gli impianti ascensore vengono spesso messi in gara troppo tardi. Dimensioni divergenti del vano, della fossa e della testata causano errori e riprogettazioni delle piante, della struttura e delle
+    fondazioni.
+
+
+    **Obiettivo e beneficio**
+
+    - Ottenere tempestivamente le dimensioni e i parametri di progettazione specifici dell''impianto e integrarli nella progettazione architettonica e strutturale.
+
+    - Evitare riprogettazioni tardive della geometria del vano, degli spazi adiacenti e delle fondazioni.
+
+
+    **Svolgimento**
+
+    1. Mettere in gara l''impianto ascensore dopo il rilascio della licenza edilizia, prevedendo una clausola contrattuale sul diritto di recesso e sulla remunerazione delle prestazioni di progettazione.
+
+    2. Richiedere all''impresa di ascensori prevista le dimensioni del vano, della fossa e della testata, le aperture, i carichi e gli altri parametri di progettazione, quindi coordinarli.
+
+    3. Integrare le prescrizioni concordate nei modelli di architettura e della struttura e verificare le piante e le fondazioni interessate.
+
+
+    **Risultato della fornitura**
+
+    - Modelli di architettura e della struttura coordinati con la geometria corretta del vano e i parametri di progettazione dell''impianto ascensore previsto.'
+  en: 'Engage the elevator contractor once the building permit has been granted and coordinate the shaft geometry with the selected installation before design progresses.
+
+
+    **Starting point**
+
+    - Elevator installations are often tendered too late. Different shaft, pit, and headroom dimensions then cause errors and redesign of floor plans, the structure, and foundations.
+
+
+    **Goal & benefit**
+
+    - Obtain installation-specific dimensions and design parameters in good time and incorporate them into the architecture and structural design.
+
+    - Avoid late redesign of the shaft geometry, adjacent spaces, and foundations.
+
+
+    **Process**
+
+    1. Tender the elevator installation once the building permit has been granted, including a contractual clause covering the right of withdrawal and remuneration for design work.
+
+    2. Request and coordinate shaft, pit, headroom, opening, load, and other design parameters from the intended elevator contractor.
+
+    3. Incorporate the agreed requirements into the architecture and structural models.
+
+
+    **Deliverable**
+
+    - Coordinated architecture and structural models with correct shaft geometry and the design parameters of the intended elevator installation incorporated.'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+comment: The linked elevator space represents the geometric spatial provision per storey; system-specific installation parameters are coordinated with the elevator contractor.

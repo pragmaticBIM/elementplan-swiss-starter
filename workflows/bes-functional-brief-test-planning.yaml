@@ -1,0 +1,150 @@
+id: pragmaticbim:workflow/bes-functional-brief-test-planning
+code: BES-FUNCTIONAL-BRIEF
+sort_order: 10
+name:
+  de: Betriebs- und Funktionsgrundlagen mit Testplanung klären
+  fr: Clarifier les bases d'exploitation et fonctionnelles par une étude test
+  it: Chiarire le basi operative e funzionali con uno studio di fattibilità
+  en: Clarify operational and functional foundations through test planning
+description:
+  de: 'Betrieb, Funktionen und Flächen vor der Beschaffung räumlich überprüfen, ohne die spätere bauliche Lösung vorwegzunehmen.
+
+
+    **Ausgangslage**
+
+    - Raumprogramme nennen Flächen und Räume, bilden betriebliche Abläufe, Nutzerbedürfnisse und funktionale Beziehungen aber oft nur unvollständig ab.
+
+    - Widersprüche werden dadurch erst im Wettbewerb oder in der Planung sichtbar und führen zu ungeeigneten Lösungen, Flächenzuwachs oder späten Bestellungsänderungen.
+
+
+    **Ziel & Nutzen**
+
+    - Betriebs- und Funktionszusammenhänge so beschreiben, dass Lösungsvorschläge gegen nachvollziehbare Anforderungen geprüft werden können.
+
+    - Mit mehreren räumlichen Varianten nachweisen, dass Programm, Standort und wesentliche Funktionsbeziehungen grundsätzlich zusammenpassen.
+
+
+    **Ablauf**
+
+    1. Betriebsabläufe, Nutzergruppen und funktionale Anforderungen als User Stories mit prüfbaren Akzeptanzkriterien sowie als Funktions- und Prozessdiagramme beschreiben.
+
+    2. Mehrere Testplanungsvarianten als geschossweise Volumenmodelle entwickeln und Flächen, Volumen, Erschliessung, Funktionsbeziehungen und Standortbedingungen vergleichen.
+
+    3. Zielkonflikte, Annahmen und offene Entscheide dokumentieren und die freigegebene Variante als Grundlage für Raumprogramm, Wettbewerb oder Beschaffung bereitstellen.
+
+
+    **Lieferergebnis**
+
+    - Nutzungskonzept mit Betriebsannahmen, priorisierten User Stories, Akzeptanzkriterien, Zielkonflikten und Empfehlungen.
+
+    - Funktions- und Prozessdiagramme mit den erforderlichen Beziehungen und Trennungen.
+
+    - Geschossvolumenmodelle der untersuchten Varianten mit nachvollziehbarem Variantenvergleich.'
+  fr: 'Vérifier spatialement l''exploitation, les fonctions et les surfaces avant l''acquisition, sans préjuger de la future solution constructive.
+
+
+    **Situation de départ**
+
+    - Les programmes des locaux indiquent des surfaces et des locaux, mais ne représentent souvent que partiellement les processus d''exploitation, les besoins des usagers et les relations fonctionnelles.
+
+    - Les contradictions n''apparaissent alors qu''au concours ou durant les études et entraînent des solutions inadéquates, une augmentation des surfaces ou des modifications tardives de la commande.
+
+
+    **Objectif et bénéfice**
+
+    - Décrire les relations d''exploitation et fonctionnelles de manière à pouvoir vérifier les propositions sur la base d''exigences traçables.
+
+    - Démontrer au moyen de plusieurs variantes spatiales que le programme, le site et les principales relations fonctionnelles sont compatibles dans leur principe.
+
+
+    **Déroulement**
+
+    1. Décrire les processus d''exploitation, les groupes d''usagers et les exigences fonctionnelles sous forme de récits utilisateurs assortis de critères de réception vérifiables ainsi que de diagrammes
+    fonctionnels et de processus.
+
+    2. Élaborer plusieurs variantes d''étude test sous forme de volumes par étage et comparer les surfaces, les volumes, les circulations, les relations fonctionnelles et les contraintes du site.
+
+    3. Documenter les conflits d''objectifs, les hypothèses et les décisions en suspens, puis mettre la variante validée à disposition comme base du programme des locaux, du concours ou de l''acquisition.
+
+
+    **Livrable**
+
+    - Concept d''utilisation comprenant les hypothèses d''exploitation, les récits utilisateurs priorisés, les critères de réception, les conflits d''objectifs et les recommandations.
+
+    - Diagrammes fonctionnels et de processus indiquant les relations et séparations requises.
+
+    - Modèles de volumes par étage des variantes étudiées avec comparaison traçable.'
+  it: 'Verificare nello spazio l''esercizio, le funzioni e le superfici prima dell''acquisizione, senza anticipare la futura soluzione costruttiva.
+
+
+    **Situazione di partenza**
+
+    - I programmi dei locali indicano superfici e locali, ma spesso rappresentano solo in parte i processi operativi, le esigenze degli utenti e le relazioni funzionali.
+
+    - Le contraddizioni emergono quindi soltanto nel concorso o durante la progettazione e comportano soluzioni inadeguate, aumenti di superficie o modifiche tardive dell''ordine.
+
+
+    **Obiettivo e beneficio**
+
+    - Descrivere le relazioni operative e funzionali in modo che le proposte possano essere verificate rispetto a requisiti tracciabili.
+
+    - Dimostrare con più varianti spaziali che programma, sito e principali relazioni funzionali sono sostanzialmente compatibili.
+
+
+    **Svolgimento**
+
+    1. Descrivere i processi operativi, i gruppi di utenti e i requisiti funzionali come storie utente con criteri di accettazione verificabili e mediante diagrammi funzionali e di processo.
+
+    2. Elaborare più varianti di studio sotto forma di volumi per piano e confrontare superfici, volumi, percorsi, relazioni funzionali e condizioni del sito.
+
+    3. Documentare i conflitti tra obiettivi, le ipotesi e le decisioni aperte e mettere a disposizione la variante approvata come base per il programma dei locali, il concorso o l''acquisizione.
+
+
+    **Risultato della fornitura**
+
+    - Concetto d''uso con ipotesi operative, storie utente priorizzate, criteri di accettazione, conflitti tra obiettivi e raccomandazioni.
+
+    - Diagrammi funzionali e di processo con le relazioni e separazioni necessarie.
+
+    - Modelli dei volumi per piano delle varianti esaminate con confronto tracciabile.'
+  en: 'Test operations, functions, and areas spatially before procurement without predetermining the later building solution.
+
+
+    **Starting point**
+
+    - Room programmes state areas and rooms but often capture operational processes, user needs, and functional relationships only partially.
+
+    - Contradictions therefore emerge only during a competition or design, leading to unsuitable solutions, area growth, or late changes to the brief.
+
+
+    **Goal & benefit**
+
+    - Describe operational and functional relationships so that proposals can be checked against traceable requirements.
+
+    - Use multiple spatial options to demonstrate that the programme, site, and principal functional relationships are fundamentally compatible.
+
+
+    **Process**
+
+    1. Describe operational processes, user groups, and functional requirements as user stories with verifiable acceptance criteria and as functional and process diagrams.
+
+    2. Develop several test-planning options as storey-by-storey volume models and compare areas, volumes, circulation, functional relationships, and site constraints.
+
+    3. Document conflicting objectives, assumptions, and open decisions, then provide the approved option as the basis for the room programme, competition, or procurement.
+
+
+    **Deliverable**
+
+    - Usage concept containing operational assumptions, prioritized user stories, acceptance criteria, conflicting objectives, and recommendations.
+
+    - Functional and process diagrams showing the required relationships and separations.
+
+    - Storey-volume models of the assessed options with a traceable comparison.'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Bauherrenseitige Bestellgrundlage vor Wettbewerb oder Beschaffung. User Stories beschreiben Abläufe und Nutzerinteraktionen; statische Anforderungen werden als messbare Akzeptanzkriterien geführt.

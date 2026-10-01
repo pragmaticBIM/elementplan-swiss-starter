@@ -1,0 +1,84 @@
+id: pragmaticbim:value/product-class-roof-covering
+code: PRODUCT-RCP
+name:
+  de: Abstrakte Dachbekleidungsprodukte
+  fr: Abstract roof covering products
+  it: Abstract roof covering products
+  en: Abstract roof covering products
+description:
+  de: 'Produktklassen gemäss Abstrakte Dachbekleidungsprodukte. Quelle: https://schema.pragmaticbim.ch/classification/roof-covering-product.html'
+  fr: 'Classes de produits selon Abstract roof covering products. Source : https://schema.pragmaticbim.ch/classification/roof-covering-product.html'
+  it: 'Classi di prodotto secondo Abstract roof covering products. Fonte: https://schema.pragmaticbim.ch/classification/roof-covering-product.html'
+  en: 'Product classes according to Abstract roof covering products. Source: https://schema.pragmaticbim.ch/classification/roof-covering-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Mehrlagen- / Bitumen-Flachdach
+  - Bitumen-Flachdach Daemmschicht
+  - Bitumen-Flachdach Abdichtungsschicht
+  - Einfachlagen-Flachdach (EPDM / TPO / PVC)
+  - Einfachlagen-Flachdach Daemmschicht
+  - Einfachlagen-Flachdach Folien-Schicht
+  - Fluessigkunststoff-Flachdach
+  - Metallblech-Dach
+  - Tonziegel-Dach
+  - Betonziegel-Dach
+  - Naturschiefer-Dach
+  - Holzschindel- / -schindeldach
+  - Extensives Gruendach
+  - Intensives Gruendach
+  - Aufgestaendigtes Photovoltaik-Dach
+  - Sonstige / unbekannte Dachbekleidung
+  fr:
+  - Built-up / bitumen flat roof
+  - Bitumen flat roof insulation layer
+  - Bitumen flat roof membrane layer
+  - Single-ply membrane flat roof
+  - Single-ply flat roof insulation layer
+  - Single-ply flat roof membrane layer
+  - Liquid-applied flat roof
+  - Metal sheet roof
+  - Clay tile roof
+  - Concrete tile roof
+  - Natural slate roof
+  - Wood shingle / shake roof
+  - Extensive green roof
+  - Intensive green roof
+  - Roof-mounted photovoltaic system
+  - Other / unknown roof covering
+  it:
+  - Built-up / bitumen flat roof
+  - Bitumen flat roof insulation layer
+  - Bitumen flat roof membrane layer
+  - Single-ply membrane flat roof
+  - Single-ply flat roof insulation layer
+  - Single-ply flat roof membrane layer
+  - Liquid-applied flat roof
+  - Metal sheet roof
+  - Clay tile roof
+  - Concrete tile roof
+  - Natural slate roof
+  - Wood shingle / shake roof
+  - Extensive green roof
+  - Intensive green roof
+  - Roof-mounted photovoltaic system
+  - Other / unknown roof covering
+  en:
+  - Built-up / bitumen flat roof
+  - Bitumen flat roof insulation layer
+  - Bitumen flat roof membrane layer
+  - Single-ply membrane flat roof
+  - Single-ply flat roof insulation layer
+  - Single-ply flat roof membrane layer
+  - Liquid-applied flat roof
+  - Metal sheet roof
+  - Clay tile roof
+  - Concrete tile roof
+  - Natural slate roof
+  - Wood shingle / shake roof
+  - Extensive green roof
+  - Intensive green roof
+  - Roof-mounted photovoltaic system
+  - Other / unknown roof covering

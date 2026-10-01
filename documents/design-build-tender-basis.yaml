@@ -1,0 +1,52 @@
+id: pragmaticbim:document/design-build-tender-basis
+code: DBA
+sort_order: 149
+name:
+  de: Funktionale Ausschreibungsgrundlage Design-Build
+  fr: Base d'appel d'offres fonctionnel conception-réalisation
+  it: Base di appalto funzionale progettazione e costruzione
+  en: Design-build functional tender basis
+definition:
+  de: Auftraggeberseitige funktionale Ausschreibungsgrundlage mit Anforderungen, Richtmengen, Qualitätsvorgaben und Kostenabgrenzung als Basis für Design-Build-Vergaben mit verbindlichem Angebotspreis.
+  fr: Base d'appel d'offres fonctionnel du maître d'ouvrage, avec exigences, quantités indicatives, prescriptions de qualité et délimitation du prix, servant de fondement aux adjudications conception-réalisation à prix d'offre ferme.
+  it: Base di appalto funzionale del committente, con requisiti, quantità indicative, prescrizioni qualitative e delimitazione del prezzo, quale fondamento per le aggiudicazioni di progettazione e costruzione con prezzo d'offerta vincolante.
+  en: Client-side functional tender basis with requirements, indicative quantities, quality specifications, and price boundaries as the foundation for design-build awards with a binding offer price.
+description:
+  de: |-
+    - Funktionale Anforderungen, Qualitäten und Richtmengen der Ausschreibungsgrundlage
+    - Abgrenzung von Leistungsumfang, Annahmen und Ausschlüssen
+    - Kostenabgrenzung und Preisgrenzen für das verbindliche Angebot
+    - Abnahmekriterien für die Design-Build-Lösung
+    - Änderungsregeln für Abweichungen nach Zuschlag
+  fr: |-
+    - Exigences fonctionnelles, qualités et quantités indicatives de la base d'appel d'offres
+    - Délimitation de l'étendue des prestations, des hypothèses et des exclusions
+    - Délimitation du prix et limites de prix pour l'offre ferme
+    - Critères de réception de la solution conception-réalisation
+    - Règles de modification pour les écarts après adjudication
+  it: |-
+    - Requisiti funzionali, qualità e quantità indicative della base di appalto
+    - Delimitazione dell'estensione delle prestazioni, delle ipotesi e delle esclusioni
+    - Delimitazione del prezzo e limiti di prezzo per l'offerta vincolante
+    - Criteri di collaudo della soluzione di progettazione e costruzione
+    - Regole di modifica per gli scostamenti dopo l'aggiudicazione
+  en: |-
+    - Functional requirements, qualities, and indicative quantities of the tender basis
+    - Delimitation of scope, assumptions, and exclusions
+    - Price boundaries and limits for the binding offer
+    - Acceptance criteria for the design-build solution
+    - Change rules for deviations after award
+file_name:
+  de: '{Projektnummer}_PRO-DBA_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-DBA_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-DBA_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-DBA_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "22:M"
+comment: >-
+  Auftraggeberseitige Vertragsgrundlage für Design-Build-Vergaben mit verbindlichem
+  Angebotspreis. Das schlanke Raummodell und abstractBIM liefern Anforderungen und
+  Richtmengen; Preiswirkung entsteht aus Angebot und Vertrag, nicht aus dem Modell
+  allein. Referenzkosten, Indexierung, Honorar und Bonus gehören in die IPD-Grundreferenz.

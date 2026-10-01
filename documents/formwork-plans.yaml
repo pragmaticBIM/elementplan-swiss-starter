@@ -1,6 +1,6 @@
 id: pragmaticbim:document/formwork-plans
 code: SHL
-sort_order: 111
+sort_order: 137
 name:
   de: Schalpläne
   fr: Plans de coffrage
@@ -44,15 +44,11 @@ file_name:
   de: '{Projektnummer}_TRG-SHL_{Freitext}.{ext}'
   fr: '{NumeroProjet}_STR-SHL_{Libre}.{ext}'
   it: '{NumeroProgetto}_STR-SHL_{Libero}.{ext}'
-  en: '{ProjectNumber}_STR-SHL_{Free}.{ext}'
+  en: '{ProjectNumber}_STR-SHL_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/structural
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/structural-edge-strip
   - pragmaticbim:element/structural-beam
   - pragmaticbim:element/structural-column
@@ -64,4 +60,4 @@ included_elements:
   - pragmaticbim:element/structural-stair
   - pragmaticbim:element/structural-ramp
 scheduled_milestones:
-  - "51:beginning"
+  - "51:M"

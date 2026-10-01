@@ -1,0 +1,19 @@
+id: pragmaticbim:domain/infrastructure
+code: INF
+sort_order: 25
+name:
+  de: Infrastruktur
+  fr: Infrastructure
+  it: Infrastruttura
+  en: Infrastructure
+definition:
+  de: Liefergegenstände der Infrastrukturplanung. Tiefbau und Erschliessung als räumlicher und fachlicher Kontext – Elementkatalog projektspezifisch.
+  fr: Livrables de la planification d'infrastructure. Génie civil et desserte comme contexte spatial et disciplinaire – catalogue d'éléments spécifique au projet.
+  it: Consegne della pianificazione infrastrutturale. Opere civili e allacciamenti come contesto spaziale e disciplinare – catalogo elementi specifico del progetto.
+  en: Infrastructure design deliverables. Civil works and servicing as spatial and disciplinary context – element catalogue project-specific.
+file_name:
+  de: '{Projekt}_{Phase}_INF_{Freitext}'
+  fr: '{Projet}_{Phase}_INF_{Libre}'
+  it: '{Progetto}_{Fase}_INF_{Libero}'
+  en: '{Project}_{Phase}_INF_{FreeText}'
+status: active

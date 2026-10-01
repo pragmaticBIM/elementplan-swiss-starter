@@ -1,0 +1,32 @@
+id: pragmaticbim:model/point-cloud
+code: PWO
+sort_order: 10
+name:
+  de: Punktwolke
+  fr: Nuage de points
+  it: Nuvola di punti
+  en: Point cloud
+definition:
+  de: "Georeferenzierte Punktwolke von Gelände oder Bauwerk als eigener Informationscontainer, nicht als nachmodelliertes Fachmodell. Die Aufnahme des gebauten Zustands vor Projektbeginn wird als Bestand (B) geführt, die Aufnahme des fertiggestellten Bauwerks als Neubau (N). Der Aufnahmezeitpunkt steht in den Metadaten und nicht im Dateinamen. IFC transportiert keine Punktwolken; im Koordinationsmodell wird die Punktwolke deshalb als separater, verknüpfter Container geführt."
+  fr: "Nuage de points géoréférencé du terrain ou de l'ouvrage, comme conteneur d'information propre et non comme maquette métier remodélisée. Le relevé de l'état construit avant le début du projet est tenu comme existant (E), le relevé de l'ouvrage achevé comme neuf (N). La date du relevé figure dans les métadonnées et non dans le nom de fichier. L'IFC ne transporte pas de nuages de points; dans la maquette de coordination, le nuage de points est donc tenu comme conteneur séparé et lié."
+  it: "Nuvola di punti georeferenziata del terreno o dell'opera, come contenitore informativo proprio e non come modello disciplinare rimodellato. Il rilievo dello stato costruito prima dell'inizio del progetto è tenuto come esistente (E), il rilievo dell'opera completata come nuovo (N). La data del rilievo figura nei metadati e non nel nome del file. L'IFC non trasporta nuvole di punti; nel modello di coordinamento la nuvola di punti è quindi tenuta come contenitore separato e collegato."
+  en: "Georeferenced point cloud of the terrain or building as its own information container, not as a remodelled discipline model. The survey of the built condition before the project starts is filed as existing (E); the survey of the completed building as new (N). The capture date is metadata, not part of the file name. IFC does not carry point clouds, so the coordination model keeps the point cloud as a separate linked container."
+file_name:
+  de: '{Projektnummer}_{B|N}_GEO-PWO_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_{E|N}_GEO-PWO_{Libre}.{ext}'
+  it: '{NumeroProgetto}_{E|N}_GEO-PWO_{Libero}.{ext}'
+  en: '{ProjectNumber}_{B|N}_SUR-PWO_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/surveyor
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/survey-reference-point
+scheduled_milestones:
+  - "11:M"
+  - "21:M"
+  - "61:M"
+  - "62:M"
+comment: >-
+  Liefercontainer der Bestandsaufnahme und der klassifizierten FM-Punktwolke.
+  Die Nachmodellierung bleibt ein separates Fachmodell.

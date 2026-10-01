@@ -1,0 +1,147 @@
+id: pragmaticbim:workflow/des-lighting-design-coordination
+code: DES-LIGHTING-COORD
+sort_order: 49
+name:
+  de: Leuchtenkonzept und Leuchtenplanung koordinieren
+  fr: Coordonner le concept et l'étude d'éclairage
+  it: Coordinare il concetto e la progettazione illuminotecnica
+  en: Coordinate lighting concept and fixture design
+description:
+  de: 'Leuchtenkonzept, Architektur und technische Leuchtenplanung bewusst zusammenführen, damit der freigegebene gestalterische Ansatz im Elektro- oder Lichtplanermodell korrekt umgesetzt wird.
+
+
+    **Ausgangslage**
+
+    - Ein Leuchtenkonzept wird häufig als Skizze, Plan oder frühes Modell entwickelt, ohne dass die Übergabe an Elektro- oder Lichtplanung eindeutig geregelt ist.
+
+    - Werden Leuchtentypen und Positionen erst in der Detailplanung sichtbar, entstehen Widersprüche zu Raumgestaltung, Deckenspiegel, Nutzung oder technischen Anforderungen.
+
+
+    **Ziel & Nutzen**
+
+    - Gestalterische Absicht, Lichtwirkung und typische Leuchtenanordnung verständlich kommunizieren.
+
+    - Das daraus entwickelte Leuchtenmodell mit Architektur und Nutzung koordinieren und den abgestimmten Stand bewusst freigeben.
+
+
+    **Ablauf**
+
+    1. Die Architektur oder Lichtplanung stellt das Leuchtenkonzept als Skizze, Plan oder Modell mit den gestalterischen und nutzungsbezogenen Anforderungen bereit.
+
+    2. Elektro- oder Lichtplanung überführt das Konzept in ein Fachmodell mit Leuchtentypen, genauer Lage, Abmessungen und den erforderlichen technischen Angaben.
+
+    3. Die Beteiligten prüfen Lichtwirkung, Raumlayout, Deckenspiegel, Anschlüsse und Zugänglichkeit, lösen Abweichungen und geben den koordinierten Stand gemeinsam frei.
+
+
+    **Lieferergebnis**
+
+    - Nachvollziehbar freigegebenes Leuchtenkonzept mit dokumentierten Gestaltungs- und Nutzungsanforderungen.
+
+    - Koordiniertes Leuchtenmodell mit abgestimmten Typen und Positionen sowie darauf abgestimmter Deckenspiegel.'
+  fr: 'Réunir de manière explicite le concept d''éclairage, l''architecture et l''étude technique des luminaires afin que l''intention architecturale validée soit correctement transposée dans la maquette
+    de l''électricien ou du concepteur lumière.
+
+
+    **Situation de départ**
+
+    - Le concept d''éclairage est souvent élaboré sous forme d''esquisse, de plan ou de maquette initiale sans que sa transmission à l''électricien ou au concepteur lumière soit clairement réglée.
+
+    - Lorsque les types et positions des luminaires ne deviennent visibles qu''au stade de l''étude détaillée, ils peuvent contredire l''aménagement des locaux, le plan de plafond, l''usage ou les exigences
+    techniques.
+
+
+    **Objectif et bénéfice**
+
+    - Communiquer clairement l''intention architecturale, l''effet lumineux et la disposition type des luminaires.
+
+    - Coordonner avec l''architecture et l''usage la maquette des luminaires qui en résulte, puis valider explicitement l''état concerté.
+
+
+    **Déroulement**
+
+    1. L''architecture ou le concepteur lumière fournit le concept d''éclairage sous forme d''esquisse, de plan ou de maquette avec les exigences architecturales et d''usage.
+
+    2. L''électricien ou le concepteur lumière transpose le concept dans une maquette métier avec les types de luminaires, leur position exacte, leurs dimensions et les données techniques nécessaires.
+
+    3. Les intervenants contrôlent l''effet lumineux, l''aménagement des locaux, le plan de plafond, les raccordements et l''accessibilité, résolvent les écarts et valident ensemble l''état coordonné.
+
+
+    **Livrable**
+
+    - Concept d''éclairage validé de manière traçable avec les exigences architecturales et d''usage documentées.
+
+    - Maquette des luminaires coordonnée avec les types et positions convenus ainsi que le plan de plafond correspondant.'
+  it: 'Riunire in modo consapevole il concetto di illuminazione, l''architettura e la progettazione tecnica degli apparecchi, affinché l''impostazione architettonica approvata sia attuata correttamente
+    nel modello dell''elettricista o del progettista illuminotecnico.
+
+
+    **Situazione di partenza**
+
+    - Il concetto di illuminazione viene spesso elaborato come schizzo, piano o modello preliminare senza regolare chiaramente il passaggio alla progettazione elettrica o illuminotecnica.
+
+    - Se tipi e posizioni degli apparecchi diventano visibili solo nella progettazione di dettaglio, possono sorgere contraddizioni con la configurazione dei locali, il piano del soffitto, l''uso o i requisiti
+    tecnici.
+
+
+    **Obiettivo e beneficio**
+
+    - Comunicare in modo comprensibile l''intento architettonico, l''effetto luminoso e la disposizione tipica degli apparecchi.
+
+    - Coordinare con l''architettura e l''uso il modello degli apparecchi che ne deriva e approvare consapevolmente lo stato concordato.
+
+
+    **Svolgimento**
+
+    1. L''architettura o il progettista illuminotecnico fornisce il concetto di illuminazione come schizzo, piano o modello con i requisiti architettonici e d''uso.
+
+    2. Il progettista elettrico o illuminotecnico traduce il concetto in un modello disciplinare con tipi di apparecchi, posizione esatta, dimensioni e dati tecnici necessari.
+
+    3. I partecipanti verificano l''effetto luminoso, il layout dei locali, il piano del soffitto, gli allacciamenti e l''accessibilità, risolvono gli scostamenti e approvano congiuntamente lo stato coordinato.
+
+
+    **Risultato della fornitura**
+
+    - Concetto di illuminazione approvato in modo tracciabile con requisiti architettonici e d''uso documentati.
+
+    - Modello degli apparecchi coordinato con tipi e posizioni concordati e con il relativo piano del soffitto.'
+  en: 'Deliberately bring together the lighting concept, architecture, and technical fixture design so the approved design intent is implemented correctly in the electrical or lighting designer''s model.
+
+
+    **Starting point**
+
+    - A lighting concept is often developed as a sketch, drawing, or early model without a clearly defined handover to the electrical or lighting designer.
+
+    - If fixture types and locations become visible only during detailed design, they may conflict with room design, the reflected ceiling plan, use, or technical requirements.
+
+
+    **Goal & benefit**
+
+    - Communicate design intent, lighting effect, and typical fixture arrangement clearly.
+
+    - Coordinate the resulting fixture model with architecture and use and deliberately approve the agreed state.
+
+
+    **Process**
+
+    1. Architecture or the lighting designer provides the lighting concept as a sketch, drawing, or model with the design and use requirements.
+
+    2. The electrical or lighting designer develops the concept into a discipline model with fixture types, exact locations, dimensions, and the required technical information.
+
+    3. The participants check lighting effect, room layout, reflected ceiling plan, connections, and accessibility, resolve deviations, and jointly approve the coordinated state.
+
+
+    **Deliverable**
+
+    - Traceably approved lighting concept with documented design and use requirements.
+
+    - Coordinated lighting model with agreed fixture types and locations and the corresponding reflected ceiling plan.'
+workflow_group: arbeitsvorbereitung
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: The lighting concept may be communicated as a sketch, drawing, or model. The electrical or lighting designer owns the authoritative technical fixture model. Approval covers the coordinated design
+  state, including its relationship to the reflected ceiling plan.

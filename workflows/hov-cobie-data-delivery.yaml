@@ -1,0 +1,148 @@
+id: pragmaticbim:workflow/hov-cobie-data-delivery
+code: HOV-COBIE
+sort_order: 53
+name:
+  de: Betriebsdaten im COBie-Format übergeben
+  fr: Remettre les données d'exploitation au format COBie
+  it: Consegnare i dati di esercizio in formato COBie
+  en: Hand over operational data in COBie format
+description:
+  de: 'Betriebsrelevante Stammdaten so übergeben, dass der Betreiber sie im Zielsystem prüfen und über das offene COBie-Format importieren kann.
+
+
+    **Ausgangslage**
+
+    - COBie ist in der Schweiz bislang wenig verbreitet, wird jedoch international für die strukturierte Übergabe an den Betrieb eingesetzt und von verschiedenen BIM- und FM-Softwareprodukten unterstützt.
+    Der konkrete Funktionsumfang kann je nach Produkt, Zusatzmodul und Konfiguration abweichen.
+
+    - Eine formal vollständige COBie-Datei ist noch keine nutzbare Übergabe, wenn Umfang, Bezeichnungen und Beziehungen nicht zum Zielsystem des Betreibers passen.
+
+
+    **Ziel & Nutzen**
+
+    - Eine softwareunabhängig prüfbare Übergabe für internationale Auftraggebende, Betreiber und Projekte bereitstellen.
+
+    - Nur tatsächlich bewirtschaftete Räume, Bauteile und Anlagen mit den vereinbarten Stammdaten, Typen, Standorten und Dokumenten liefern.
+
+
+    **Ablauf**
+
+    1. Mit dem Betreiber Zielsystem, COBie-Version, benötigte Tabellen und Pflichtfelder sowie die bewirtschafteten Objektarten festlegen.
+
+    2. Räumliche Struktur, Räume, Türen, Fenster und vereinbarte Anlagen mit eindeutigen Kennzeichnungen, Typ- und Standortbezug sowie benötigten Dokumenten aufbereiten.
+
+    3. COBie-Datei exportieren, Vollständigkeit und Beziehungen prüfen und den Import in das Zielsystem testen.
+
+
+    **Lieferergebnis**
+
+    - Geprüfte COBie-Datenlieferung mit den vereinbarten Tabellen und Objektarten.
+
+    - Importprotokoll mit dokumentierten Abweichungen oder nicht unterstützten Feldern.'
+  fr: 'Remettre à l''exploitant les données des bâtiments et des installations utiles à l''exploitation selon la spécification d''échange ouverte COBie, établie au niveau international.
+
+
+    **Situation de départ**
+
+    - COBie est encore peu répandu en Suisse, mais il est utilisé à l''échelle internationale pour la remise structurée à l''exploitation et pris en charge par différents logiciels BIM et FM. Les fonctions
+    disponibles peuvent varier selon le produit, le module complémentaire et la configuration.
+
+    - Un fichier COBie formellement complet ne constitue pas encore une remise exploitable si le périmètre, les désignations et les relations ne correspondent pas au système cible de l''exploitant.
+
+
+    **Objectif et bénéfice**
+
+    - Mettre à disposition une remise vérifiable indépendamment du logiciel pour les mandants, exploitants et projets internationaux.
+
+    - Livrer uniquement les locaux, éléments et installations effectivement gérés, avec les données de base, types, emplacements et documents convenus.
+
+
+    **Déroulement**
+
+    1. Définir avec l''exploitant le système cible, la version COBie, les feuilles et champs obligatoires requis ainsi que les types d''objets gérés.
+
+    2. Préparer la structure spatiale, les locaux, portes, fenêtres et installations convenues avec des identifiants univoques, les liens vers les types et emplacements ainsi que les documents requis.
+
+    3. Exporter le fichier COBie, contrôler l''exhaustivité et les relations, puis tester l''importation dans le système cible.
+
+
+    **Livrable**
+
+    - Livraison de données COBie contrôlée comprenant les feuilles et types d''objets convenus.
+
+    - Procès-verbal d''importation avec les écarts ou champs non pris en charge documentés.'
+  it: 'Consegnare al gestore i dati di edifici e impianti rilevanti per l''esercizio secondo la specifica di scambio aperta COBie, affermata a livello internazionale.
+
+
+    **Situazione di partenza**
+
+    - COBie è tuttora poco diffuso in Svizzera, ma viene utilizzato a livello internazionale per la consegna strutturata all''esercizio ed è supportato da diversi software BIM e FM. Le funzionalità disponibili
+    possono variare a seconda del prodotto, del modulo aggiuntivo e della configurazione.
+
+    - Un file COBie formalmente completo non costituisce ancora una consegna utilizzabile se il perimetro, le denominazioni e le relazioni non corrispondono al sistema di destinazione del gestore.
+
+
+    **Obiettivo e beneficio**
+
+    - Mettere a disposizione una consegna verificabile indipendentemente dal software per committenti, gestori e progetti internazionali.
+
+    - Consegnare unicamente locali, componenti e impianti effettivamente gestiti, con i dati anagrafici, i tipi, le ubicazioni e i documenti concordati.
+
+
+    **Svolgimento**
+
+    1. Definire con il gestore il sistema di destinazione, la versione COBie, i fogli e i campi obbligatori richiesti nonché i tipi di oggetti gestiti.
+
+    2. Preparare la struttura spaziale, i locali, le porte, le finestre e gli impianti concordati con identificativi univoci, riferimenti a tipi e ubicazioni nonché i documenti necessari.
+
+    3. Esportare il file COBie, verificarne la completezza e le relazioni e testare l''importazione nel sistema di destinazione.
+
+
+    **Risultato della fornitura**
+
+    - Consegna dati COBie verificata con i fogli e i tipi di oggetti concordati.
+
+    - Verbale d''importazione con gli scostamenti o i campi non supportati documentati.'
+  en: 'Hand over operationally relevant master data so that the operator can check it in the target system and import it using the open COBie format.
+
+
+    **Starting point**
+
+    - COBie is not yet widely used in Switzerland, but it is used internationally for structured operational handover and supported by various BIM and FM software products. Available functionality may vary
+    by product, add-on, and configuration.
+
+    - A formally complete COBie file is not yet a usable handover if its scope, designations, and relationships do not match the operator''s target system.
+
+
+    **Goal & benefit**
+
+    - Provide a software-independent, verifiable handover for international clients, operators, and projects.
+
+    - Deliver only the spaces, components, and assets that are actually managed, with the agreed master data, types, locations, and documents.
+
+
+    **Process**
+
+    1. Agree the target system, COBie version, required worksheets and fields, and managed object types with the operator.
+
+    2. Prepare the spatial structure, spaces, doors, windows, and agreed assets with unique identifiers, type and location references, and required documents.
+
+    3. Export the COBie file, check completeness and relationships, and test the import into the target system.
+
+
+    **Deliverable**
+
+    - Validated COBie data delivery containing the agreed worksheets and object types.
+
+    - Import record documenting deviations or unsupported fields.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/hov
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: Optional international handover profile. COBie is an internationally agreed information-exchange schema for facility data. Software support must be verified against the selected COBie version and
+  the operator's target system. Attribute scope follows the curated minimal and 3D FM handover requirements; ordinary construction elements are not included unless they are managed assets. An elevator-space
+  object remains a space and must not be treated as the physical elevator asset. Phases typically 51–62.

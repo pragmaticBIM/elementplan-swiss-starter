@@ -1,0 +1,159 @@
+id: pragmaticbim:workflow/des-wall-requirements-from-space-use
+code: DES-WALL-REQUIREMENTS
+sort_order: 65
+name:
+  de: Wandanforderungen aus Fachberichten zusammenführen
+  fr: Regrouper les exigences relatives aux murs issues des rapports spécialisés
+  it: Integrare i requisiti delle pareti dai rapporti specialistici
+  en: Combine wall requirements from discipline reports
+description:
+  de: 'Brandschutz- und Bauphysikanforderungen je Wand zusammenführen, damit eindeutige Anforderungsprofile und geeignete Wandtypen entstehen.
+
+
+    **Ausgangslage**
+
+    - Brandschutz und Bauphysik führen ihre verbindlichen Sollanforderungen in getrennten Berichten.
+
+
+    **Ziel & Nutzen**
+
+    - Verbindliche Sollwerte beider Fachberichte den betroffenen Wänden zuordnen und zu einem Anforderungsprofil zusammenführen.
+
+    - Geeignete Katalogtypen vorschlagen und Konflikte oder fehlende Zuordnungen früh sichtbar machen.
+
+    - Die fachliche Hoheit und Freigabe bei den zuständigen Fachplanenden belassen.
+
+
+    **Ablauf**
+
+    1. Architekturmodell mit Räumen sowie die freigegebenen Brandschutz- und Bauphysikberichte bereitstellen.
+
+    2. Sollwerte aus beiden Fachberichten den betroffenen Wänden zuordnen und zu Wandanforderungsprofilen kombinieren.
+
+    3. Konflikte und fehlende Zuordnungen klären, geeignete Katalogtypen auswählen und fachlich bestätigen lassen.
+
+
+    **Hinweis:** Beim Arbeiten mit abstractBIM können die Anforderungen regelbasiert über die Raumbeziehungen der Wand aufinformiert werden.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit nachvollziehbar zugeordneten Wandanforderungsprofilen und vorgeschlagenen Katalogtypen
+
+    - Nachvollziehbare Grundlagen für die Kostenberechnung und Ausschreibung'
+  fr: 'Regrouper pour chaque mur les exigences de protection incendie et de physique du bâtiment afin d''obtenir des profils d''exigences univoques et des types de mur appropriés.
+
+
+    **Situation de départ**
+
+    - Les exigences de référence contraignantes de la protection incendie et de la physique du bâtiment sont consignées dans des rapports distincts.
+
+
+    **Objectif et bénéfice**
+
+    - Attribuer les valeurs de référence des deux rapports spécialisés aux murs concernés et les regrouper en un profil d''exigences.
+
+    - Proposer des types de catalogue appropriés et rendre visibles rapidement les conflits ou les attributions manquantes.
+
+    - Maintenir la responsabilité et la validation des exigences spécialisées auprès des mandataires compétents.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette d''architecture avec les locaux ainsi que les rapports de protection incendie et de physique du bâtiment approuvés.
+
+    2. Attribuer les valeurs de référence des deux rapports aux murs concernés et les regrouper en profils d''exigences.
+
+    3. Clarifier les conflits et les attributions manquantes, choisir des types de catalogue appropriés et les faire valider par les spécialistes.
+
+
+    **Remarque :** Avec abstractBIM, les exigences peuvent être renseignées selon des règles à partir des relations entre le mur et les locaux.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec profils d''exigences des murs attribués de manière traçable et types de catalogue proposés
+
+    - Bases vérifiables pour le calcul des coûts et l''appel d''offres'
+  it: 'Integrare per ogni parete i requisiti antincendio e di fisica della costruzione, affinché risultino profili dei requisiti univoci e tipi di parete adeguati.
+
+
+    **Situazione di partenza**
+
+    - La protezione antincendio e la fisica della costruzione riportano i rispettivi requisiti di riferimento vincolanti in rapporti separati.
+
+
+    **Obiettivo e beneficio**
+
+    - Attribuire i valori di riferimento dei due rapporti specialistici alle pareti interessate e integrarli in un profilo dei requisiti.
+
+    - Proporre tipi di catalogo adeguati ed evidenziare tempestivamente conflitti o attribuzioni mancanti.
+
+    - Mantenere la competenza e l''approvazione dei requisiti specialistici presso i progettisti responsabili.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello di architettura con i locali e i rapporti antincendio e di fisica della costruzione approvati.
+
+    2. Attribuire i valori di riferimento dei due rapporti alle pareti interessate e integrarli in profili dei requisiti.
+
+    3. Chiarire i conflitti e le attribuzioni mancanti, scegliere tipi di catalogo adeguati e sottoporli all''approvazione specialistica.
+
+
+    **Nota:** Con abstractBIM, i requisiti possono essere assegnati mediante regole in base alle relazioni tra la parete e i locali.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con profili dei requisiti delle pareti attribuiti in modo tracciabile e tipi di catalogo proposti
+
+    - Basi verificabili per il calcolo dei costi e l''appalto'
+  en: 'Combine fire protection and building physics requirements for each wall to create unambiguous requirement profiles and suitable wall types.
+
+
+    **Starting point**
+
+    - Fire protection and building physics document their binding target requirements in separate reports.
+
+
+    **Goal & benefit**
+
+    - Assign target values from both discipline reports to the affected walls and combine them into a requirement profile.
+
+    - Propose suitable catalogue types and identify conflicts or missing assignments early.
+
+    - Keep responsibility and approval for discipline requirements with the responsible specialists.
+
+
+    **Process**
+
+    1. Provide the architecture model with spaces and the approved fire protection and building physics reports.
+
+    2. Assign target values from both reports to the affected walls and combine them into wall requirement profiles.
+
+    3. Resolve conflicts and missing assignments, select suitable catalogue types, and have them approved by the responsible specialists.
+
+
+    **Note:** When working with abstractBIM, requirements can be assigned using rules based on the wall''s relationships to spaces.
+
+
+    **Deliverable**
+
+    - Architecture model with traceably assigned wall requirement profiles and proposed catalogue types
+
+    - Traceable basis for cost calculation and tendering'
+workflow_group: konzept
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/fire-protection
+- pragmaticbim:domain/building-physics
+comment: This workflow integrates requirements but does not author them. The approved fire protection and building physics reports remain authoritative. Spatial mapping uses normalized LongName values,
+  UsageUnitReference / FireCompartmentReference of adjacent spaces, and exterior, terrain, and party-boundary topology. The combined profile may include FireRating, AcousticRating, and ThermalTransmittance;
+  Reference identifies the proposed catalogue type.

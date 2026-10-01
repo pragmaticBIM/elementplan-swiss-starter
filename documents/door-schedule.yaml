@@ -1,0 +1,69 @@
+id: pragmaticbim:document/door-schedule
+code: TL
+sort_order: 142
+name:
+  de: Türliste
+  fr: Liste des portes
+  it: Elenco porte
+  en: Door schedule
+definition:
+  de: Ausführungsreife Liste aller Türen, Tore und Revisionsöffnungen mit den für Bestellung, Fertigung und Montage notwendigen Angaben.
+  fr: Liste prête pour l'exécution de toutes les portes, portails et trappes, avec les indications nécessaires à la commande, à la fabrication et à la pose.
+  it: Elenco esecutivo di tutte le porte, i portoni e le aperture di ispezione con le indicazioni necessarie per ordine, produzione e posa.
+  en: Construction-ready schedule of all doors, gates, and inspection openings with the information required for ordering, fabrication, and installation.
+description:
+  de: |-
+    - Sämtliche Innen- und Aussentüren, Tore sowie Revisionsöffnungen mit eindeutiger Nummer und Lage
+    - Lichte Breite und Höhe, Türtyp, Flügelzahl sowie Öffnungsart und -richtung
+    - Aufbau, Material und Oberflächen von Türblatt, Zarge bzw. Rahmen und Schwelle
+    - Anforderungen an Brand-, Rauch-, Schall-, Wärme- und Einbruchschutz sowie Barrierefreiheit
+    - Beschläge, Schliessung, Zutritt, Feststellanlagen und Schnittstellen zu angrenzenden Bauteilen
+    - Freigabe-, Revisions- und Bearbeitungsstand für Bestellung, Fertigung und Montage
+  fr: |-
+    - Toutes les portes intérieures et extérieures, portails et trappes avec numéro univoque et localisation
+    - Largeur et hauteur de passage, type de porte, nombre de vantaux ainsi que type et sens d'ouverture
+    - Composition, matériau et finitions du vantail, de l'huisserie ou du cadre et du seuil
+    - Exigences de protection incendie, fumée, acoustique, thermique et anti-effraction ainsi que d'accessibilité
+    - Ferrures, fermeture, contrôle d'accès, dispositifs de retenue et interfaces avec les éléments adjacents
+    - État d'approbation, de révision et de traitement pour commande, fabrication et pose
+  it: |-
+    - Tutte le porte interne ed esterne, i portoni e le aperture di ispezione con numero univoco e ubicazione
+    - Larghezza e altezza nette, tipo di porta, numero di ante nonché tipo e senso di apertura
+    - Stratigrafia, materiale e finiture di anta, telaio o controtelaio e soglia
+    - Requisiti di protezione antincendio, antifumo, acustica, termica e antieffrazione nonché di accessibilità
+    - Ferramenta, chiusura, controllo accessi, dispositivi di fermo e interfacce con i componenti adiacenti
+    - Stato di approvazione, revisione ed elaborazione per ordine, produzione e posa
+  en: |-
+    - All interior and exterior doors, gates, and inspection openings with unique number and location
+    - Clear width and height, door type, number of leaves, and opening type and direction
+    - Build-up, material, and finishes of leaf, lining or frame, and threshold
+    - Fire, smoke, acoustic, thermal, burglary-resistance, and accessibility requirements
+    - Ironmongery, locking, access control, hold-open devices, and interfaces with adjacent elements
+    - Approval, revision, and status for ordering, fabrication, and installation
+file_name:
+  de: '{Projektnummer}_ARC-TL_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-TL_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-TL_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-TL_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+- pragmaticbim:element/architecture-door-interior
+- pragmaticbim:element/architecture-door-exterior
+scheduled_milestones:
+- "41:M"
+- "51:M"
+- "52:M"
+- "53:M"
+comment: >-
+  Proposed IFC4+ mapping: one IfcDoor occurrence per door, gate, or inspection
+  opening; IfcDoor.PredefinedType=TRAPDOOR identifies an inspection opening.
+  Identity and dimensions: IfcDoor.GlobalId, Name, OverallWidth, OverallHeight;
+  type assignment via IfcRelDefinesByType to IfcDoorType, with OperationType on
+  the type. General requirements: Pset_DoorCommon.Reference, IsExternal,
+  FireRating, AcousticRating, ThermalTransmittance, SmokeStop, SelfClosing,
+  SecurityRating, HandicapAccessible. Materials and build-up via
+  IfcRelAssociatesMaterial; location and host via IfcRelContainedInSpatialStructure,
+  IfcRelFillsElement, and IfcRelVoidsElement. Hardware or execution information
+  without an IFC standard property should be linked as a document through
+  IfcRelAssociatesDocument rather than assigned a misleading standard property.

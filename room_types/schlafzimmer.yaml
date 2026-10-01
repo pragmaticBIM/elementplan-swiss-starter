@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/schlafzimmer
+code: RT-WH-06
+sort_order: 6
+name:
+  de: Schlafzimmer
+  fr: Chambre
+  it: Camera da letto
+  en: Bedroom
+definition:
+  de: Raum primär für Schlafen.
+  fr: Local principalement destiné au sommeil.
+  it: Locale destinato principalmente al riposo.
+  en: Room primarily used for sleeping.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Schlafzimmer
+    fr: Chambre
+    it: Camera da letto
+    en: Bedroom
+restrictions:
+  min_area: 10
+status: active

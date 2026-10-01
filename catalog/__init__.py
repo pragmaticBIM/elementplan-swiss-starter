@@ -1,0 +1,1 @@
+"""Catalog instance mapping and sample data for the IFC render pipeline."""

@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/wohnzimmer
+code: RT-WH-03
+sort_order: 3
+name:
+  de: Wohnzimmer
+  fr: Séjour
+  it: Soggiorno
+  en: Living Room
+definition:
+  de: Raum für Wohnen und Entspannung.
+  fr: Local pour habiter et se détendre.
+  it: Locale per vivere e riposare.
+  en: Room for daily living and relaxation.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Wohnzimmer
+    fr: Séjour
+    it: Soggiorno
+    en: Living Room
+restrictions:
+  min_area: 18
+status: active

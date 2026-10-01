@@ -1,6 +1,6 @@
 id: pragmaticbim:element/spaces-luftraum
 code: SPACE-AIR
-sort_order: 16
+sort_order: 14
 status: active
 name:
   de: Luftraum
@@ -8,7 +8,7 @@ name:
   it: Volumi d'aria
   en: Air spaces
 definition:
-  de: 'Nicht nutzbare Lufträume geschossweise modellieren — zur Abzugsmenge bei der Geschossflächenermittlung und als Referenzraum für die Gebäudetechnik.
+  de: 'Verhindert, dass nicht nutzbare Volumen als Geschossfläche angerechnet werden, und stellt zugleich einen räumlichen Bezug für die Gebäudetechnik bereit.
 
 
     **Beschreibung**
@@ -20,16 +20,23 @@ definition:
     - Bieten den Gebäudetechnikern einen Referenzraum.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
-    - Jeden grösseren Hohlraum im Gebäude mit einem Luftraum füllen — z. B. Atrium, Treppenauge, mehrgeschossige Räume, Luftraum über dem obersten Treppenlauf.
+    - Jeden grösseren Hohlraum im Gebäude mit einem Luftraum füllen – z. B. Atrium, Treppenauge, mehrgeschossige Räume, Luftraum über dem obersten Treppenlauf.
 
     - Mit dem Raumwerkzeug als Volumen modellieren, geschossweise.
 
     - Unterkante = Oberkante des darunter liegenden Raumvolumens; Oberkante = Unterkante Rohdecke bzw. Abschluss des Geschossvolumens.
 
-    - Dem zugehörigen Geschoss zuweisen; keine Überlappungen mit nutzbaren Räumen oder Doppelungen.'
-  fr: 'Modéliser les volumes d''air non utilisables étage par étage — comme quantité à déduire pour déterminer la surface de plancher et comme espace de référence pour la technique du bâtiment.
+    - Dem zugehörigen Geschoss zuweisen; keine Überlappungen mit nutzbaren Räumen oder Doppelungen.
+
+
+    **Diskussionsimpuls**
+
+    - Lufträume werden bislang selten als eigene Volumen modelliert. Häufig werden stattdessen ein Geschossvolumen für städtebauliche Auswertungen und die Ermittlung des Gebäudevolumens sowie eine Geschossfläche
+    angelegt. Ein eigener Luftraum lässt sich direkt auswerten, für nachgelagerte Flächen- und Volumenberechnungen weiterverwenden und der Gebäudetechnik als räumlicher Bezug bereitstellen. Zudem ist er
+    als reale räumliche Situation intuitiv verständlich, während die Interpretation eines Geschossflächenmodells Kenntnisse der zugrunde liegenden Norm erfordert.'
+  fr: 'Évite de comptabiliser les volumes non utilisables dans la surface de plancher et fournit en même temps une référence spatiale aux techniques du bâtiment.
 
 
     **Description**
@@ -43,14 +50,21 @@ definition:
 
     **Directives de modélisation**
 
-    - Remplir chaque cavité importante du bâtiment avec un volume d''air — p. ex. atrium, cage d''escalier ouverte, locaux multi-étages, volume d''air au-dessus de la dernière volée d''escalier.
+    - Remplir chaque cavité importante du bâtiment avec un volume d''air – p. ex. atrium, cage d''escalier ouverte, locaux multi-étages, volume d''air au-dessus de la dernière volée d''escalier.
 
     - Modéliser comme volume avec l''outil local, étage par étage.
 
     - Face inférieure = dessus du volume de local sous-jacent ; face supérieure = dessous du plafond brut ou limite du volume d''étage.
 
-    - Rattacher à l''étage concerné ; pas de chevauchement avec locaux utilisables ni de duplication.'
-  it: 'Modellare i volumi d''aria non utilizzabili piano per piano — come quantità da detrarre per determinare la superficie di piano e come spazio di riferimento per la tecnica dell''edificio.
+    - Rattacher à l''étage concerné ; pas de chevauchement avec locaux utilisables ni de duplication.
+
+
+    **Piste de réflexion**
+
+    - Les volumes d''air sont encore rarement modélisés comme des volumes distincts. Ils sont souvent remplacés par un volume d''étage destiné aux analyses urbanistiques et au volume du bâtiment, ainsi
+    que par une surface d''étage. Un volume d''air distinct peut être évalué directement, réutilisé pour des calculs ultérieurs de surfaces et de volumes et mis à disposition des techniques du bâtiment
+    comme référence spatiale. Il représente en outre une situation spatiale réelle et intuitive, tandis que l''interprétation d''un modèle de surfaces d''étage exige de connaître la norme sous-jacente.'
+  it: 'Evita di computare i volumi non utilizzabili nella superficie di piano e fornisce al contempo un riferimento spaziale agli impianti.
 
 
     **Descrizione**
@@ -64,14 +78,21 @@ definition:
 
     **Direttive di modellazione**
 
-    - Riempire ogni cavità significativa dell''edificio con un volume d''aria — p. es. atrio, occhio di scala, locali multipiano, volume d''aria sopra l''ultima rampa di scale.
+    - Riempire ogni cavità significativa dell''edificio con un volume d''aria – p. es. atrio, occhio di scala, locali multipiano, volume d''aria sopra l''ultima rampa di scale.
 
     - Modellare come volume con lo strumento locale, piano per piano.
 
     - Bordo inferiore = bordo superiore del volume di locale sottostante; bordo superiore = bordo inferiore del solaio grezzo o limite del volume di piano.
 
-    - Assegnare al piano corrispondente; nessuna sovrapposizione con locali utilizzabili né duplicazione.'
-  en: 'Model non-occupiable air spaces storey by storey — as deduction quantities when determining floor area and as a reference space for building services.
+    - Assegnare al piano corrispondente; nessuna sovrapposizione con locali utilizzabili né duplicazione.
+
+
+    **Spunto di discussione**
+
+    - I volumi d''aria sono ancora raramente modellati come volumi distinti. Spesso vengono invece creati un volume di piano per le valutazioni urbanistiche e il volume dell''edificio, nonché una superficie
+    di piano. Un volume d''aria distinto può essere valutato direttamente, riutilizzato per successivi calcoli di superfici e volumi e messo a disposizione degli impiantisti come riferimento spaziale. Rappresenta
+    inoltre una situazione spaziale reale e intuitiva, mentre l''interpretazione di un modello delle superfici di piano richiede la conoscenza della norma di riferimento.'
+  en: 'Prevents non-occupiable volumes from being counted as floor area while providing a spatial reference for building services.
 
 
     **Description**
@@ -85,22 +106,66 @@ definition:
 
     **Modelling guidelines**
 
-    - Fill every larger cavity in the building with an air space — e.g. atrium, stair void, multi-storey rooms, air space above the uppermost stair flight.
+    - Fill every larger cavity in the building with an air space – e.g. atrium, stair void, multi-storey rooms, air space above the uppermost stair flight.
 
     - Model as a volume with the space tool, storey by storey.
 
     - Bottom = top of the space volume below; top = underside of the raw slab or boundary of the storey volume.
 
-    - Assign to the matching storey; no overlaps with usable spaces or duplicates.'
+    - Assign to the matching storey; no overlaps with usable spaces or duplicates.
+
+
+    **Discussion point**
+
+    - Air spaces are still rarely modelled as separate volumes. Instead, teams often create a storey volume for urban-design evaluations and building volume together with a storey-area model. A separate
+    air space can be evaluated directly, reused for subsequent area and volume calculations, and made available to building services as a spatial reference. It also represents a real spatial condition that
+    is intuitively understandable, whereas interpreting a storey-area model requires knowledge of the underlying standard.'
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcSpace
 entity_ifc4: IfcSpace
 entity_ifc4_3: IfcSpace
-picture_link: null
-model_link: null
-applicability: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType=Luftraum) OR (entity_ifc2x3=IfcSpace AND ObjectType=Luftraum)
+picture_link: spaces-luftraum.png
+picture_print_link: spaces-luftraum-print.tif
+attachment_link: spaces-luftraum.ifc
+model_link: spaces-luftraum.ifc
+applicability:
+  de: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType=Luftraum) OR (entity_ifc2x3=IfcSpace AND ObjectType=Luftraum)
+  fr: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType="Volume d'air") OR (entity_ifc2x3=IfcSpace AND ObjectType="Volume d'air")
+  it: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType="Volume d'aria") OR (entity_ifc2x3=IfcSpace AND ObjectType="Volume d'aria")
+  en: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType="Air space") OR (entity_ifc2x3=IfcSpace AND ObjectType="Air space")
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Optionale Bezeichnung oder Nummer des Luftraums gemäss Projekt.
+    fr: Désignation ou numéro facultatif du volume d'air selon le projet.
+    it: Denominazione o numero facoltativo del volume d'aria secondo il progetto.
+    en: Optional designation or number of the air space according to the project.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/des-floor-area-from-model
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
@@ -147,10 +212,11 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/des-floor-area-from-model
   is_applicability: true
   status: active
-  sort_order: 1
+  sort_order: 2
 - name: ObjectType
   pset: null
   definition:
@@ -198,38 +264,9 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/des-floor-area-from-model
   is_applicability: true
-  status: active
-  sort_order: 2
-- name: Name
-  pset: null
-  definition:
-    de: Optionale Bezeichnung oder Nummer des Luftraums gemäss Projekt.
-    fr: Désignation ou numéro facultatif du volume d'air selon le projet.
-    it: Denominazione o numero facoltativo del volume d'aria secondo il progetto.
-    en: Optional designation or number of the air space according to the project.
-  datatype: IfcIdentifier
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-floor-area-from-model
-  is_applicability: false
   status: active
   sort_order: 3
 - name: GrossFloorArea
@@ -259,6 +296,7 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-floor-area-from-model
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
   sort_order: 4
@@ -289,6 +327,8 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-floor-area-from-model
+  - pragmaticbim:workflow/des-construction-volume
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
   sort_order: 5

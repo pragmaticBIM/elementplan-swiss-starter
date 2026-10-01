@@ -2,168 +2,144 @@ id: pragmaticbim:workflow/qas-acoustic-building-physics
 code: QAS-ACOUSTIC
 sort_order: 79
 name:
-  de: QS Akustik / Bauphysik Bauteilkennwerte
-  fr: AQ acoustique / physique du bâtiment — valeurs des composants
-  it: AQ acustica / fisica edilizia — valori dei componenti
-  en: QA acoustics / building physics component values
+  de: Schall- und Wärmeschutz an Bauteilen prüfen
+  fr: Contrôler l'isolation phonique et thermique des éléments
+  it: Verificare l'isolamento acustico e termico dei componenti
+  en: Check sound and thermal insulation on components
 description:
-  de: 'Schalldämmwerte Rw ab Ende Bauprojekt im Architekturmodell führen und gegen die Akustikplanung prüfen.
+  de: 'Architekturmodell automatisiert gegen das freigegebene Bauphysik-Anforderungsmodell prüfen, damit Abweichungen bei Schall- und Wärmeschutz nach jeder relevanten Planungsänderung sichtbar werden.
 
 
     **Ausgangslage**
 
-    - Erforderliche Schalldämmung steht oft nur im Akustikbericht; Bauteile im Modell tragen keine Rw-Werte.
+    - Bei der manuellen Übernahme bauphysikalischer Anforderungen in das Architekturmodell entstehen Lücken, widersprüchliche Kennwerte und hoher Abstimmungsaufwand.
 
-    - Ohne einheitliche Katalogwerte sind Nachweise und Variantenvergleiche aufwendig.
+    - Punktuelle Prüfungen erkennen Abweichungen zwischen Fachplanung, Bauteilkatalog und Architekturmodell häufig erst spät.
 
 
     **Ziel & Nutzen**
 
-    - Architekt pflegt Rw (Labor-/Katalogwert) an trennenden Bauteilen.
+    - Sollwerte anhand der räumlichen Beziehungen automatisiert den Hüll- und Trennbauteilen des Architekturmodells gegenüberstellen.
 
-    - Akustik- und Bauphysikplanung können Kennwerte und Lücken direkt am Modell prüfen.
+    - Fehlende, abweichende oder nicht eindeutig zuordenbare Angaben früh ausweisen und deren Bereinigung nachvollziehbar dokumentieren.
 
 
     **Ablauf**
 
-    1. Schallschutzkonzept und erforderliche Rw-Klassen festlegen.
+    1. Freigegebenes Bauphysik-Anforderungsmodell und aktuelles Architekturmodell bereitstellen.
 
-    2. Architekt trägt AcousticRating (Rw als Zahl), Status und PredefinedType an Wänden, Decken, Fenstern und Türen ein.
+    2. Räumliche Zuordnung sowie Schall- und Wärmeschutzwerte der Bauteile automatisiert mit den Sollanforderungen vergleichen.
 
-    3. Kennwerte gegen Akustikkonzept und Nachweisunterlagen abgleichen.
-
-
-    **Ergebnis**
-
-    - Architekturmodell mit nachvollziehbaren Rw-Angaben als Basis für QS Akustik / Bauphysik.
+    3. Abweichungen dokumentieren, fachlich beurteilen und durch die zuständige Planung im Anforderungs- oder Architekturmodell bereinigen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Architekturmodell mit IfcWall (Aussen- und nichttragende Innenwände), IfcSlab (FLOOR), IfcWindow und IfcDoor
+    - Geprüftes Architekturmodell mit abgestimmten Schall- und Wärmeschutzinformationen
 
-    - AcousticRating (Rw [dB] als Zahl), Status und PredefinedType je Bauteil
-
-    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey'
-  fr: 'Saisir les indices d''affaiblissement Rw dans le modèle d''architecture dès la fin du projet de construction et les vérifier face à la planification acoustique.
+    - Nachvollziehbarer Prüfbericht mit offenen, akzeptierten und bereinigten Abweichungen'
+  fr: 'Contrôler automatiquement la maquette d''architecture par rapport au modèle d''exigences de physique du bâtiment approuvé, afin de rendre visibles les écarts d''isolation phonique et thermique après
+    chaque modification déterminante du projet.
 
 
     **Situation de départ**
 
-    - L''isolation acoustique requise figure souvent seulement dans le rapport acoustique ; les composants du modèle n''ont pas de valeurs Rw.
+    - Le report manuel des exigences de physique du bâtiment dans la maquette d''architecture entraîne des lacunes, des valeurs contradictoires et un important travail de coordination.
 
-    - Sans valeurs de catalogue homogènes, justifications et comparaisons de variantes sont laborieuses.
+    - Les contrôles ponctuels détectent souvent trop tard les écarts entre la planification spécialisée, le catalogue des éléments et la maquette d''architecture.
 
 
     **Objectif et bénéfice**
 
-    - L''architecte renseigne Rw (valeur de laboratoire/catalogue) sur les composants séparatifs.
+    - Comparer automatiquement les valeurs de référence aux éléments d''enveloppe et de séparation de la maquette d''architecture à partir des relations spatiales.
 
-    - La planification acoustique et la physique du bâtiment peuvent contrôler valeurs et lacunes directement sur le modèle.
+    - Signaler rapidement les indications manquantes, divergentes ou non attribuables sans ambiguïté et documenter leur traitement de manière traçable.
 
 
     **Déroulement**
 
-    1. Fixer le concept d''isolation phonique et les classes Rw requises.
+    1. Fournir le modèle d''exigences de physique du bâtiment approuvé et la maquette d''architecture actuelle.
 
-    2. L''architecte saisit AcousticRating (Rw comme nombre), Status et PredefinedType sur murs, dalles, fenêtres et portes.
+    2. Comparer automatiquement l''attribution spatiale ainsi que les valeurs d''isolation phonique et thermique des éléments avec les exigences de référence.
 
-    3. Comparer les valeurs au concept acoustique et aux dossiers de justification.
-
-
-    **Résultat**
-
-    - Modèle d''architecture avec indications Rw traçables comme base pour l''AQ acoustique / physique du bâtiment.
+    3. Documenter les écarts, les évaluer du point de vue spécialisé et les faire corriger par le mandataire responsable dans le modèle d''exigences ou la maquette d''architecture.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Modèle d''architecture avec IfcWall (murs extérieurs et cloisons non porteuses), IfcSlab (FLOOR), IfcWindow et IfcDoor
+    - Maquette d''architecture contrôlée avec des informations coordonnées sur l''isolation phonique et thermique
 
-    - AcousticRating (Rw [dB] comme nombre), Status et PredefinedType par élément
-
-    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey'
-  it: 'Gestire i valori di potere fonoisolante Rw nel modello di architettura dalla fine del progetto di costruzione e verificarli rispetto alla pianificazione acustica.
+    - Rapport de contrôle traçable indiquant les écarts ouverts, acceptés et corrigés'
+  it: 'Verificare automaticamente il modello di architettura rispetto al modello dei requisiti di fisica della costruzione approvato, affinché gli scostamenti nell''isolamento acustico e termico siano visibili
+    dopo ogni modifica rilevante del progetto.
 
 
     **Situazione di partenza**
 
-    - L''isolamento acustico richiesto è spesso solo nel rapporto acustico; i componenti nel modello non hanno valori Rw.
+    - Il trasferimento manuale dei requisiti di fisica della costruzione nel modello di architettura causa lacune, valori contraddittori e un notevole onere di coordinamento.
 
-    - Senza valori di catalogo omogenei, verifiche e confronti di varianti sono onerosi.
+    - Le verifiche puntuali individuano spesso troppo tardi gli scostamenti tra progettazione specialistica, catalogo degli elementi e modello di architettura.
 
 
     **Obiettivo e beneficio**
 
-    - L''architetto inserisce Rw (valore di laboratorio/catalogo) sui componenti separanti.
+    - Confrontare automaticamente i valori di riferimento con gli elementi di involucro e di separazione del modello di architettura in base alle relazioni spaziali.
 
-    - La pianificazione acustica e la fisica edilizia possono controllare valori e lacune direttamente sul modello.
+    - Evidenziare tempestivamente le informazioni mancanti, divergenti o non attribuibili in modo univoco e documentarne la risoluzione in modo tracciabile.
 
 
     **Svolgimento**
 
-    1. Definire il concetto di isolamento acustico e le classi Rw richieste.
+    1. Fornire il modello dei requisiti di fisica della costruzione approvato e il modello di architettura aggiornato.
 
-    2. L''architetto inserisce AcousticRating (Rw come numero), Status e PredefinedType su pareti, solette, finestre e porte.
+    2. Confrontare automaticamente l''attribuzione spaziale e i valori di isolamento acustico e termico degli elementi con i requisiti di riferimento.
 
-    3. Confrontare i valori con il concetto acustico e i documenti di verifica.
-
-
-    **Risultato**
-
-    - Modello di architettura con indicazioni Rw tracciabili come base per l''AQ acustica / fisica edilizia.
+    3. Documentare gli scostamenti, valutarli dal punto di vista specialistico e farli correggere dal progettista responsabile nel modello dei requisiti o nel modello di architettura.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Modello di architettura con IfcWall (pareti esterne e interne non portanti), IfcSlab (FLOOR), IfcWindow e IfcDoor
+    - Modello di architettura verificato con informazioni coordinate sull''isolamento acustico e termico
 
-    - AcousticRating (Rw [dB] come numero), Status e PredefinedType per componente
-
-    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey'
-  en: 'Maintain sound reduction values Rw in the architecture model from the end of the building project phase and check them against acoustic planning.
+    - Rapporto di verifica tracciabile con gli scostamenti aperti, accettati e risolti'
+  en: 'Automatically check the architecture model against the approved building physics requirements model so sound and thermal insulation deviations become visible after every relevant design change.
 
 
     **Starting point**
 
-    - Required sound insulation often exists only in the acoustic report; model components carry no Rw values.
+    - Manually transferring building physics requirements to the architecture model creates gaps, conflicting values, and substantial coordination effort.
 
-    - Without consistent catalogue values, verification and option comparison are laborious.
+    - Spot checks often detect deviations between discipline planning, the component catalogue, and the architecture model too late.
 
 
     **Goal & benefit**
 
-    - The architect enters Rw (laboratory/catalogue value) on separating components.
+    - Automatically compare target values with envelope and separating components in the architecture model based on their spatial relationships.
 
-    - Acoustic and building physics planning can check values and gaps directly on the model.
+    - Identify missing, divergent, or ambiguous information early and document its resolution traceably.
 
 
     **Process**
 
-    1. Define the sound insulation concept and required Rw classes.
+    1. Provide the approved building physics requirements model and the current architecture model.
 
-    2. The architect enters AcousticRating (Rw as a number), Status, and PredefinedType on walls, slabs, windows, and doors.
+    2. Automatically compare component location and sound and thermal insulation values with the target requirements.
 
-    3. Align values with the acoustic concept and verification documents.
-
-
-    **Outcome**
-
-    - Architecture model with traceable Rw data as the basis for acoustics / building physics QA.
+    3. Document deviations, get a specialist assessment, and have the responsible designer resolve them in the requirements or architecture model.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture model with IfcWall (exterior and non-load-bearing interior walls), IfcSlab (FLOOR), IfcWindow, and IfcDoor
+    - Checked architecture model with coordinated sound and thermal insulation information
 
-    - AcousticRating (Rw [dB] as a number), Status, and PredefinedType per component
-
-    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey'
-workflow_group: null
+    - Traceable check report showing open, accepted, and resolved deviations'
+workflow_group: fachpruefung
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/building-physics
-comment: Architect fills AcousticRating as bare Rw number (dB) from end of SIA phase 32. Columns/beams out of scope. Not R'w. Component catalogue produced by DES-PHYSICS.
+comment: DES-PHYSICS produces the requirements model and its component catalogue. QAS-ACOUSTIC compares the spatially assigned targets with AcousticRating as bare Rw number (dB), ThermalTransmittance as
+  U [W/(m²·K)], Status, and PredefinedType in the architecture model. Columns/beams are out of scope. Not R'w.

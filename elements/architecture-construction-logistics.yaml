@@ -1,0 +1,365 @@
+id: pragmaticbim:element/architecture-construction-logistics
+code: ARC-SITE-LOG
+sort_order: 70
+status: active
+name:
+  de: Baustelleneinrichtungsobjekt
+  fr: Objet d'installation de chantier
+  it: Oggetto di installazione di cantiere
+  en: Site setup object
+definition:
+  de: 'Macht Platzbedarf und zeitliche Abfolge der Baustellenlogistik früh abstimmbar und verhindert Konflikte während der Bauausführung.
+
+
+    **Beschreibung**
+
+    - Volumen, das ein Element der Baustelleneinrichtung abbildet (z. B. Kran, Container, Reifenwaschanlage).
+
+    - Dient der Abstimmung der Logistikplanung mit Behörden und Unternehmen sowie dem Nachführen über die Bauphasen – nicht der Ausführungsdetailierung der Geräte.
+
+
+    **Modellierungshinweis**
+
+    - Als vereinfachten Proxy-Körper modellieren; Grundriss und Höhe gemäss benötigtem Platzbedarf inkl. Rampengefälle und Freiräumen.
+
+    - Dem Planungsperimeter bzw. zugehörigen Geschoss zuweisen; ObjectType = Baustelleneinricht.
+
+    - Name = Art der Einrichtung aus der Auswahlliste.
+
+    - LogisticsPhase = nummerierte Logistikphase (1, 2, 3, …); keine Datums- oder Monatsangaben.
+
+    - Keine Geräte, Fahrzeuge oder Ausbau innerhalb des Volumens detaillieren.'
+  fr: 'Permet de coordonner tôt l''emprise et le déroulement de la logistique de chantier et évite les conflits pendant l''exécution.
+
+
+    **Description**
+
+    - Volume représentant un élément de l''installation de chantier (p. ex. grue, container, lave-roues).
+
+    - Sert à coordonner la planification logistique avec autorités et entreprises et à la tenir à jour sur les phases de construction – pas au détail d''exécution des engins.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy simplifié ; emprise et hauteur selon l''espace requis, y compris pentes de rampes et dégagements.
+
+    - Rattacher au périmètre de planification ou à l''étage concerné ; ObjectType = Installation de chantier.
+
+    - Name = nature de l''installation selon la liste de choix.
+
+    - LogisticsPhase = phase logistique numérotée (1, 2, 3, …) ; pas de dates ni de mois.
+
+    - Ne pas détailler engins, véhicules ou finitions à l''intérieur du volume.'
+  it: 'Consente di coordinare tempestivamente gli ingombri e la sequenza della logistica di cantiere ed evita conflitti durante l’esecuzione.
+
+
+    **Descrizione**
+
+    - Volume che rappresenta un elemento dell''installazione di cantiere (p. es. gru, container, lavaruote).
+
+    - Serve al coordinamento della pianificazione logistica con autorità e imprese e all''aggiornamento sulle fasi di costruzione – non al dettaglio esecutivo delle attrezzature.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy semplificato; impronta e altezza secondo lo spazio necessario, comprese pendenze di rampe e spazi liberi.
+
+    - Assegnare al perimetro di pianificazione o al piano corrispondente; ObjectType = Installazione di cantiere.
+
+    - Name = tipo dell''installazione secondo l''elenco di scelta.
+
+    - LogisticsPhase = fase logistica numerata (1, 2, 3, …); nessuna data o mese.
+
+    - Non dettagliare attrezzature, veicoli o finiture all''interno del volume.'
+  en: 'Makes the space requirements and sequence of site logistics alignable early and prevents conflicts during construction.
+
+
+    **Description**
+
+    - Volume representing a site-setup element (e.g. crane, container, wheel wash).
+
+    - Used to align logistics planning with authorities and contractors and to keep it current across construction phases – not for detailing the equipment.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified proxy body; footprint and height according to required space including ramp slopes and clearances.
+
+    - Assign to the planning perimeter or matching storey; ObjectType = Site setup.
+
+    - Name = kind of installation from the value list.
+
+    - LogisticsPhase = numbered logistics phase (1, 2, 3, …); no dates or months.
+
+    - Do not detail equipment, vehicles, or finishes inside the volume.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/infrastructure
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-construction-logistics.png
+attachment_link: architecture-construction-logistics.ifc
+picture_print_link: architecture-construction-logistics-print.tif
+model_link: architecture-construction-logistics.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Baustelleneinricht) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Baustelleneinricht)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Installation de chantier") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Installation de chantier")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Installazione di cantiere") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Installazione di cantiere")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Site setup") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Site setup")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: 'Art der Baustelleneinrichtung.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Name Baustelleneinrichtung.'
+    fr: 'Nature de l''installation de chantier.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Nom d''installation de chantier.'
+    it: 'Tipo dell''installazione di cantiere.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Nome installazione di cantiere.'
+    en: 'Kind of site setup.
+
+
+      **Allowed values**
+
+      - See the Site setup name value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/name-construction-logistics
+  needed_in_phases:
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-construction-site-logistics
+  - pragmaticbim:workflow/des-humus-handling
+  - pragmaticbim:workflow/bes-plan-model-box
+  - pragmaticbim:workflow/qas-qr-stakeholder-info
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/qas-construction-site-logistics
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/qas-qr-stakeholder-info
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Baustelleneinricht` — Element der Baustelleneinrichtung (Kran, Container, Reifenwaschanlage u. a.)'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Installation de chantier` — élément d''installation de chantier (grue, container, lave-roues, etc.)'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Installazione di cantiere` — elemento di installazione di cantiere (gru, container, lavaruote, ecc.)'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Site setup` — site-setup element (crane, container, wheel wash, etc.)'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-construction-logistics
+  needed_in_phases:
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-construction-site-logistics
+  - pragmaticbim:workflow/qas-qr-stakeholder-info
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: LogisticsPhase
+  pset: ePset_SiteLogistics
+  definition:
+    de: 'Nummerierte Logistikphase, in der dieses Baustelleneinrichtungsobjekt benötigt wird. Keine Datums- oder Monatsangaben.
+
+
+      **Zulässige Werte**
+
+      - `1` — Logistikphase 1
+
+      - `2` — Logistikphase 2
+
+      - `3` — Logistikphase 3
+
+      - `4` — Logistikphase 4
+
+      - `5` — Logistikphase 5
+
+      - `6` — Logistikphase 6
+
+      - `7` — Logistikphase 7
+
+      - `8` — Logistikphase 8
+
+      - `9` — Logistikphase 9
+
+      - `10` — Logistikphase 10'
+    fr: 'Phase logistique numérotée pour laquelle cet objet d''installation de chantier est requis. Pas de dates ni de mois.
+
+
+      **Valeurs admises**
+
+      - `1` — phase logistique 1
+
+      - `2` — phase logistique 2
+
+      - `3` — phase logistique 3
+
+      - `4` — phase logistique 4
+
+      - `5` — phase logistique 5
+
+      - `6` — phase logistique 6
+
+      - `7` — phase logistique 7
+
+      - `8` — phase logistique 8
+
+      - `9` — phase logistique 9
+
+      - `10` — phase logistique 10'
+    it: 'Fase logistica numerata per la quale questo oggetto di installazione di cantiere è richiesto. Nessuna data o mese.
+
+
+      **Valori ammessi**
+
+      - `1` — fase logistica 1
+
+      - `2` — fase logistica 2
+
+      - `3` — fase logistica 3
+
+      - `4` — fase logistica 4
+
+      - `5` — fase logistica 5
+
+      - `6` — fase logistica 6
+
+      - `7` — fase logistica 7
+
+      - `8` — fase logistica 8
+
+      - `9` — fase logistica 9
+
+      - `10` — fase logistica 10'
+    en: 'Numbered logistics phase in which this site setup object is required. No dates or months.
+
+
+      **Allowed values**
+
+      - `1` — logistics phase 1
+
+      - `2` — logistics phase 2
+
+      - `3` — logistics phase 3
+
+      - `4` — logistics phase 4
+
+      - `5` — logistics phase 5
+
+      - `6` — logistics phase 6
+
+      - `7` — logistics phase 7
+
+      - `8` — logistics phase 8
+
+      - `9` — logistics phase 9
+
+      - `10` — logistics phase 10'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/logistics-phase
+  needed_in_phases:
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-construction-site-logistics
+  - pragmaticbim:workflow/qas-qr-stakeholder-info
+  is_applicability: false
+  status: active
+  sort_order: 4

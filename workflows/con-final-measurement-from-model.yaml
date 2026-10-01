@@ -1,0 +1,163 @@
+id: pragmaticbim:workflow/con-final-measurement-from-model
+code: CON-FINAL-MEASUREMENT
+sort_order: 30
+name:
+  de: Schlussausmass für Unternehmerabrechnungen aus dem Modell ermitteln
+  fr: Établir le métré définitif pour les décomptes d'entreprise à partir de la maquette
+  it: Determinare dal modello la misurazione finale per i consuntivi delle imprese
+  en: Determine final quantities for contractor accounts from the model
+description:
+  de: 'Das Schlussausmass aus dem nachgeführten Ausführungsmodell ableiten, damit Unternehmerrechnungen schneller geprüft und freigegeben werden können.
+
+
+    **Ausgangslage**
+
+    - Unternehmer und Bauleitung ermitteln das Schlussausmass häufig getrennt; Abweichungen werden erst bei der Schlussrechnung sichtbar und sind nur mit grossem Aufwand prüfbar.
+
+    - Ein geometrisches Effektivausmass aus dem Modell kann von den NPK-Ausmassbestimmungen abweichen, deren Vereinfachungen auf ein händisches Ausmass ausgerichtet sind. Ohne ausdrückliche Vereinbarung
+    in Ausschreibung und Werkvertrag fehlt eine belastbare Abrechnungsgrundlage.
+
+
+    **Ziel & Nutzen**
+
+    - Eine gemeinsame, nachvollziehbare Mengenbasis für Unternehmer, Bauleitung und Kostenplanung schaffen.
+
+    - Schlussrechnungen schneller prüfen und freigeben, den Cashflow der Unternehmer verbessern und einen Anreiz für modellbasierte Abrechnungsprozesse im Markt setzen.
+
+
+    **Ablauf**
+
+    1. Bereits in Ausschreibung und Werkvertrag Effektivausmass, Abweichungen von den NPK-Ausmassbestimmungen, Modellumfang, Verantwortlichkeiten, Toleranzen, Stichtag sowie den Umgang mit nicht modellierten
+    Leistungen und Bestellungsänderungen eindeutig festlegen.
+
+    2. Ausführungsmodell auf den tatsächlich ausgeführten Stand nachführen und Vollständigkeit sowie Änderungen gegen Baustellendokumentation und freigegebene Bestellungsänderungen prüfen.
+
+    3. Abrechnungsmengen je Position aus dem eingefrorenen Modellstand ableiten, gemeinsam abgleichen, Abweichungen dokumentieren und als Grundlage für die Schlussrechnung freigeben.
+
+
+    **Lieferergebnis**
+
+    - In Ausschreibung und Werkvertrag vereinbarte Ausmass- und Abrechnungsregeln mit ausdrücklichem Hinweis auf Abweichungen von den NPK-Ausmassbestimmungen.
+
+    - Eingefrorener, prüfbarer Modellstand der ausgeführten Leistungen mit positionsbezogenem Schlussausmass.
+
+    - Abgleich- und Freigabeprotokoll für die Schlussrechnung mit dokumentierten Differenzen.'
+  fr: 'Déduire le métré définitif de la maquette d''exécution mise à jour afin d''accélérer le contrôle et la validation des décomptes finaux des entreprises.
+
+
+    **Situation de départ**
+
+    - L''entreprise et la direction des travaux établissent souvent le métré définitif séparément ; les écarts n''apparaissent qu''au décompte final et leur contrôle demande beaucoup de travail.
+
+    - Un métré géométrique effectif issu de la maquette peut différer des règles de métré CAN, dont les simplifications sont prévues pour un métré manuel. Sans convention explicite dans l''appel d''offres
+    et le contrat d''entreprise, la base de décompte n''est pas suffisamment définie.
+
+
+    **Objectif et bénéfice**
+
+    - Établir une base de quantités commune et traçable pour l''entreprise, la direction des travaux et la planification des coûts.
+
+    - Accélérer le contrôle et la validation des décomptes finaux, améliorer la trésorerie des entreprises et inciter le marché à adopter des processus de décompte basés sur la maquette.
+
+
+    **Déroulement**
+
+    1. Définir clairement dès l''appel d''offres et dans le contrat d''entreprise le métré effectif, les dérogations aux règles de métré CAN, le périmètre de la maquette, les responsabilités, les tolérances,
+    la date de référence ainsi que le traitement des prestations non modélisées et des modifications de commande.
+
+    2. Mettre à jour la maquette d''exécution selon l''état effectivement réalisé, puis contrôler son exhaustivité et les modifications par rapport à la documentation de chantier et aux modifications de
+    commande approuvées.
+
+    3. Calculer les quantités de décompte par position à partir de l''état figé de la maquette, les vérifier conjointement, documenter les écarts et les valider comme base du décompte final.
+
+
+    **Livrable**
+
+    - Règles de métré et de décompte convenues dans l''appel d''offres et le contrat d''entreprise, avec mention explicite des dérogations aux règles de métré CAN.
+
+    - État figé et contrôlable de la maquette des prestations réalisées avec métré définitif par position.
+
+    - Procès-verbal de vérification et de validation du décompte final avec écarts documentés.'
+  it: 'Ricavare la misurazione finale dal modello esecutivo aggiornato per accelerare il controllo e l''approvazione dei consuntivi finali delle imprese.
+
+
+    **Situazione di partenza**
+
+    - L''impresa e la direzione lavori determinano spesso separatamente la misurazione finale; le differenze emergono solo con il consuntivo finale e richiedono un controllo oneroso.
+
+    - Una misurazione geometrica effettiva ricavata dal modello può differire dalle regole di misurazione CPN, le cui semplificazioni sono pensate per una misurazione manuale. Senza un accordo esplicito
+    nel bando e nel contratto d''appalto manca una base di conteggio sufficientemente definita.
+
+
+    **Obiettivo e beneficio**
+
+    - Creare una base quantitativa comune e tracciabile per impresa, direzione lavori e pianificazione dei costi.
+
+    - Accelerare il controllo e l''approvazione dei consuntivi finali, migliorare il flusso di cassa delle imprese e incentivare nel mercato processi di conteggio basati sul modello.
+
+
+    **Svolgimento**
+
+    1. Definire chiaramente già nel bando e nel contratto d''appalto la misurazione effettiva, le deroghe alle regole di misurazione CPN, l''estensione del modello, le responsabilità, le tolleranze, la
+    data di riferimento e il trattamento delle prestazioni non modellate e delle modifiche d''ordine.
+
+    2. Aggiornare il modello esecutivo allo stato effettivamente realizzato e verificarne la completezza e le modifiche rispetto alla documentazione di cantiere e alle modifiche d''ordine approvate.
+
+    3. Calcolare le quantità per posizione dallo stato congelato del modello, verificarle congiuntamente, documentare le differenze e approvarle come base del consuntivo finale.
+
+
+    **Risultato della fornitura**
+
+    - Regole di misurazione e conteggio concordate nel bando e nel contratto d''appalto, con indicazione esplicita delle deroghe alle regole di misurazione CPN.
+
+    - Stato congelato e verificabile del modello delle prestazioni eseguite con misurazione finale per posizione.
+
+    - Verbale di verifica e approvazione del consuntivo finale con differenze documentate.'
+  en: 'Derive final quantities from the updated construction model so that contractors'' final accounts can be checked and approved faster.
+
+
+    **Starting point**
+
+    - Contractors and site management often determine final quantities separately; discrepancies only become visible in the final account and are costly to verify.
+
+    - Geometric actual quantities from the model may differ from NPK measurement provisions, whose simplifications are intended for manual measurement. Without an explicit agreement in the tender and works
+    contract, there is no sufficiently defined basis for payment.
+
+
+    **Goal & benefit**
+
+    - Establish a shared, traceable quantity basis for contractors, site management, and cost planning.
+
+    - Check and approve final accounts faster, improve contractors'' cash flow, and encourage market adoption of model-based payment processes.
+
+
+    **Process**
+
+    1. Define actual measurement, deviations from NPK measurement provisions, model scope, responsibilities, tolerances, cut-off date, and the treatment of unmodelled work and change orders clearly in the
+    tender and works contract.
+
+    2. Update the construction model to the work actually executed, then check completeness and changes against site records and approved change orders.
+
+    3. Derive account quantities by item from the frozen model state, reconcile them jointly, document discrepancies, and approve them as the basis for the final account.
+
+
+    **Deliverable**
+
+    - Measurement and payment rules agreed in the tender and works contract, explicitly identifying deviations from NPK measurement provisions.
+
+    - Frozen, auditable model state of the executed work with final quantities by item.
+
+    - Reconciliation and approval record for the final account with documented discrepancies.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/con
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+comment: Construction close-out workflow, typically SIA phase 53. The model is an agreed measurement basis, not an automatic replacement for contractual NPK provisions. Tender and works contract must define
+  any differing effective measurement rules, model precedence, scope, tolerances, cut-off, approval, and treatment of unmodelled work and change orders.

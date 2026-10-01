@@ -1,0 +1,28 @@
+id: pragmaticbim:room-type/strasse
+code: RT-WH-16
+sort_order: 16
+name:
+  de: Strasse
+  fr: Rue
+  it: Strada
+  en: Street
+definition:
+  de: Öffentliche Erschliessung vor dem Gebäude.
+  fr: Accès public devant le bâtiment.
+  it: Accesso pubblico davanti all'edificio.
+  en: Public access in front of the building.
+attribute_presets:
+- element: pragmaticbim:element/spaces-exterior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-exterior
+  name: IsExternal
+  value: true
+- element: pragmaticbim:element/spaces-exterior
+  name: LongName
+  value:
+    de: Strasse
+    fr: Rue
+    it: Strada
+    en: Street
+status: active

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-surrounding-building
+code: OBJ-UMG-NEIGHBOR
+name:
+  de: ObjectType Umgebungsbau
+  fr: ObjectType construction environnante
+  it: ObjectType edificio circostante
+  en: ObjectType surrounding building
+description:
+  de: ObjectType für IfcBuildingElementProxy als vereinfachtes Nachbargebäude im Umgebungsmodell.
+  fr: ObjectType pour IfcBuildingElementProxy comme bâtiment voisin simplifié dans la maquette de contexte.
+  it: ObjectType per IfcBuildingElementProxy come edificio vicino semplificato nel modello di contesto.
+  en: ObjectType for IfcBuildingElementProxy as a simplified neighbouring building in the surroundings model.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Umgebungsbau
+  fr:
+  - Construction environnante
+  it:
+  - Edificio circostante
+  en:
+  - Surrounding building

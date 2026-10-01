@@ -1,0 +1,28 @@
+id: pragmaticbim:room-type/flur
+code: RT-WH-20
+sort_order: 20
+name:
+  de: Flur
+  fr: Couloir commun
+  it: Corridoio comune
+  en: Corridor
+definition:
+  de: Gemeinsamer Erschliessungsgang ausserhalb der Wohneinheiten.
+  fr: Circulation commune hors des logements.
+  it: Disimpegno comune fuori dalle unità abitative.
+  en: Shared circulation outside the dwelling units.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Flur
+    fr: Couloir commun
+    it: Corridoio comune
+    en: Corridor
+status: active

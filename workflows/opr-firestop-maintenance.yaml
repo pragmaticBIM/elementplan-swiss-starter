@@ -1,0 +1,162 @@
+id: pragmaticbim:workflow/opr-firestop-maintenance
+code: OPR-FIRESTOP-MAINT
+sort_order: 64
+name:
+  de: Brandschotte im Betrieb managen
+  fr: Gérer les obturations coupe-feu en exploitation
+  it: Gestire le sigillature antincendio in esercizio
+  en: Manage firestops in operation
+description:
+  de: 'Brandschotte dauerhaft kennzeichnen, kontrollieren und bei Umbauten nachführen, damit der geforderte Feuerwiderstand im Betrieb erhalten bleibt.
+
+
+    **Ausgangslage**
+
+    - Mieterseitige Umbauten und neue Leitungsführungen verändern Brandschotte häufig; ohne geregelten Prozess bleiben beschädigte oder nachbelegte Schotte unbemerkt.
+
+    - Ohne stabile Referenz und dauerhafte Kennzeichnung lassen sich Abnahme, Wartung, Meldungen und zuständiger Unternehmer nicht zuverlässig einem Brandschott zuordnen.
+
+
+    **Ziel & Nutzen**
+
+    - Brandschottliste aus dem Modell als prüfbare Abnahmegrundlage ableiten.
+
+    - Jedes Brandschott über eine dauerhafte Etikette mit QR-Code eindeutig mit der Brandschottliste und seiner Wartungshistorie verknüpfen.
+
+    - Änderungen und Schäden direkt vor Ort melden, dem zuständigen Unternehmer zuweisen und nach der Instandsetzung nachvollziehbar abschliessen.
+
+    - Feuerwiderstand, Typ und Zustand auch bei häufigen Mieterausbauten prüfbar aktuell halten.
+
+
+    **Ablauf**
+
+    1. Brandschottliste aus dem Modell als Abnahmegrundlage ableiten; ausgeführte Brandschotte abnehmen, mit dauerhafter QR-Etikette kennzeichnen und über die stabile Durchbruchreferenz erfassen.
+
+    2. Brandschotte periodisch sowie nach jedem Eingriff kontrollieren und Änderungen, Schäden, Fotos und Zuständigkeit über den QR-Meldeweg dokumentieren.
+
+    3. Instandsetzung durch den zuständigen Unternehmer auslösen, Abschluss prüfen und Brandschottliste sowie Wartungshistorie nachführen.
+
+
+    **Lieferergebnis**
+
+    - Aus dem Modell abgeleitete und nachgeführte Brandschottliste mit eindeutiger Referenz, Feuerwiderstand, Typ, Zustand und dokumentierter Wartungshistorie.
+
+    - Dauerhafte QR-Kennzeichnung vor Ort und geregelter Melde-, Prüf- und Abschlussprozess für Umbauten und Schäden.'
+  fr: 'Identifier durablement les obturations coupe-feu, les contrôler et les mettre à jour lors des transformations afin de maintenir la résistance au feu requise pendant l''exploitation.
+
+
+    **Situation de départ**
+
+    - Les aménagements locatifs et les nouveaux cheminements de réseaux modifient fréquemment les obturations ; sans procédure définie, les obturations endommagées ou traversées ultérieurement passent inaperçues.
+
+    - Sans référence stable ni marquage durable, la réception, l''entretien, les signalements et l''entreprise responsable ne peuvent pas être attribués de manière fiable à une obturation.
+
+
+    **Objectif et bénéfice**
+
+    - Déduire la liste des obturations depuis la maquette comme base de réception vérifiable.
+
+    - Relier chaque obturation, au moyen d''une étiquette durable avec code QR, à la liste des obturations et à son historique d''entretien.
+
+    - Signaler les modifications et dommages directement sur place, les attribuer à l''entreprise responsable et documenter leur clôture après remise en état.
+
+    - Tenir à jour de manière vérifiable la résistance au feu, le type et l''état, même lors de transformations locatives fréquentes.
+
+
+    **Déroulement**
+
+    1. Déduire la liste des obturations depuis la maquette comme base de réception ; réceptionner les obturations exécutées, les munir d''une étiquette QR durable et les saisir au moyen de la référence
+    stable du percement.
+
+    2. Contrôler les obturations périodiquement et après chaque intervention, puis documenter les modifications, dommages, photos et responsabilités par le canal de signalement QR.
+
+    3. Déclencher la remise en état par l''entreprise responsable, contrôler la clôture et mettre à jour la liste ainsi que l''historique d''entretien.
+
+
+    **Livrable**
+
+    - Liste des obturations coupe-feu déduite de la maquette et tenue à jour, avec référence univoque, résistance au feu, type, état et historique d''entretien documenté.
+
+    - Marquage QR durable sur place et procédure définie pour le signalement, le contrôle et la clôture des transformations et dommages.'
+  it: 'Contrassegnare in modo permanente le sigillature antincendio, controllarle e aggiornarle in caso di trasformazioni, affinché la resistenza al fuoco richiesta sia mantenuta durante l''esercizio.
+
+
+    **Situazione di partenza**
+
+    - Gli allestimenti dei locatari e i nuovi passaggi degli impianti modificano frequentemente le sigillature; senza un processo definito, le sigillature danneggiate o attraversate successivamente restano
+    inosservate.
+
+    - Senza un riferimento stabile e una marcatura permanente, collaudo, manutenzione, segnalazioni e impresa responsabile non possono essere assegnati in modo affidabile a una sigillatura.
+
+
+    **Obiettivo e beneficio**
+
+    - Ricavare l''elenco delle sigillature dal modello come base di collaudo verificabile.
+
+    - Collegare ogni sigillatura, mediante un''etichetta permanente con codice QR, all''elenco delle sigillature e al relativo storico di manutenzione.
+
+    - Segnalare modifiche e danni direttamente sul posto, assegnarli all''impresa responsabile e documentarne la chiusura dopo il ripristino.
+
+    - Mantenere aggiornati e verificabili resistenza al fuoco, tipo e stato anche in caso di frequenti trasformazioni dei locatari.
+
+
+    **Svolgimento**
+
+    1. Ricavare l''elenco delle sigillature dal modello come base di collaudo; collaudare le sigillature eseguite, applicare etichette QR permanenti e registrarle tramite il riferimento stabile del foro.
+
+    2. Controllare le sigillature periodicamente e dopo ogni intervento, documentando modifiche, danni, fotografie e responsabilità tramite il canale di segnalazione QR.
+
+    3. Avviare il ripristino da parte dell''impresa responsabile, verificarne la conclusione e aggiornare l''elenco e lo storico di manutenzione.
+
+
+    **Risultato della fornitura**
+
+    - Elenco delle sigillature antincendio ricavato dal modello e aggiornato, con riferimento univoco, resistenza al fuoco, tipo, stato e storico di manutenzione documentato.
+
+    - Marcatura QR permanente sul posto e processo definito per segnalazione, verifica e chiusura di trasformazioni e danni.'
+  en: 'Permanently identify, inspect, and update firestops during alterations so that the required fire resistance is maintained in operation.
+
+
+    **Starting point**
+
+    - Tenant alterations and new service routes frequently affect firestops; without a defined process, damaged or subsequently penetrated firestops go unnoticed.
+
+    - Without a stable reference and permanent identification, acceptance, maintenance, reports, and the responsible contractor cannot be assigned reliably to a firestop.
+
+
+    **Goal & benefit**
+
+    - Derive the firestop schedule from the model as a verifiable acceptance basis.
+
+    - Link every firestop to the firestop schedule and its maintenance history through a permanent label with a QR code.
+
+    - Report alterations and damage directly on site, assign them to the responsible contractor, and close them traceably after repair.
+
+    - Keep fire resistance, type, and condition verifiably current even where tenant alterations are frequent.
+
+
+    **Process**
+
+    1. Derive the firestop schedule from the model as the acceptance basis; accept installed firestops, attach permanent QR labels, and record them using the stable opening reference.
+
+    2. Inspect firestops periodically and after every intervention, documenting alterations, damage, photographs, and responsibility through the QR reporting route.
+
+    3. Trigger repair by the responsible contractor, verify completion, and update the firestop schedule and maintenance history.
+
+
+    **Deliverable**
+
+    - Model-derived and maintained firestop schedule with unambiguous reference, fire resistance, type, condition, and documented maintenance history.
+
+    - Permanent on-site QR identification and a defined reporting, inspection, and closure process for alterations and damage.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/opr
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/fire-protection
+comment: Operations workflow for SIA phases 61–62. The firestop schedule is derived from the model as the acceptance checklist; Reference remains the stable key shared by the opening, schedule, QR label,
+  acceptance record, and maintenance history. Condition, photographs, contractor routing, and case status are maintained in the linked operations or reporting system rather than duplicated as IFC properties.

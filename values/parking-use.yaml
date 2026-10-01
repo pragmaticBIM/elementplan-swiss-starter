@@ -1,0 +1,44 @@
+id: pragmaticbim:value/parking-use
+code: PARKING-USE
+name:
+  de: Fahrzeugart Parkplatz
+  fr: Type de véhicule de la place de stationnement
+  it: Tipo di veicolo del posto
+  en: Parking space vehicle type
+description:
+  de: Fahrzeugart, für welche der Parkplatz ausgelegt ist.
+  fr: Type de véhicule pour lequel la place de stationnement est conçue.
+  it: Tipo di veicolo per il quale il posto è progettato.
+  en: Type of vehicle for which the parking space is designed.
+year: 2026
+norm_reference: IFC2x3 / IFC4 / IFC4.3, Pset_SpaceParking.ParkingUse
+status: active
+values:
+  de:
+  - CAR
+  - BICYCLE
+  - MOTORCYCLE
+  - TRUCK
+  - BUS
+  - OTHER
+  fr:
+  - CAR
+  - BICYCLE
+  - MOTORCYCLE
+  - TRUCK
+  - BUS
+  - OTHER
+  it:
+  - CAR
+  - BICYCLE
+  - MOTORCYCLE
+  - TRUCK
+  - BUS
+  - OTHER
+  en:
+  - CAR
+  - BICYCLE
+  - MOTORCYCLE
+  - TRUCK
+  - BUS
+  - OTHER

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-geographic-element-humus
+code: GEO-HUMUS
+name:
+  de: Humus-Typ
+  fr: Type d'humus
+  it: Tipo di humus
+  en: Humus type
+description:
+  de: PredefinedType für IfcGeographicElement als Humusschicht. USERDEFINED; die Art steht in ObjectType.
+  fr: PredefinedType pour IfcGeographicElement comme couche d'humus. USERDEFINED ; la nature figure dans ObjectType.
+  it: PredefinedType per IfcGeographicElement come strato di humus. USERDEFINED; il tipo sta in ObjectType.
+  en: PredefinedType for IfcGeographicElement as a humus layer. USERDEFINED; the kind is in ObjectType.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - USERDEFINED
+  fr:
+  - USERDEFINED
+  it:
+  - USERDEFINED
+  en:
+  - USERDEFINED

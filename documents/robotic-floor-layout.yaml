@@ -1,0 +1,59 @@
+id: pragmaticbim:document/robotic-floor-layout
+code: LAY
+sort_order: 124
+name:
+  de: Layout-Datei robotische Absteckung
+  fr: Fichier de layout implantation robotisée
+  it: File di layout tracciamento robotizzato
+  en: Robotic layout file
+definition:
+  de: Geschossweise, aus dem Architekturmodell abgeleitete Layout-Datei für den Roboterdruck auf der Rohdecke. Sie enthält die abzusteckenden Linien und Kurztexte – nicht als paralleler 2D-Plan, sondern als Ableitung aus dem Modellstand.
+  fr: Fichier de layout par étage, déduit de la maquette d'architecture, pour l'impression robotisée sur le plancher brut. Il contient les lignes et textes courts à implanter – non comme plan 2D parallèle, mais comme obtention depuis l'état de la maquette.
+  it: File di layout per piano, ricavato dal modello di architettura, per la stampa robotizzata sul solaio grezzo. Contiene le linee e i testi brevi da tracciare – non come piano 2D parallelo, bensì come ottenimento dallo stato del modello.
+  en: Storey-wise layout file derived from the architecture model for robotic printing on the structural slab. It contains the lines and short texts to set out – not as a parallel 2D drawing, but as a derivation from the model status.
+description:
+  de: |-
+    - Wandlinien der nichttragenden Innenwände und Öffnungen
+    - Kurze Wandtyp-Referenzen an den Wandlinien
+    - Raumnummern und Türnummern als Kurztexte
+    - Bekannte Hindernisse und Kontrollpunkte für die Roboterpositionierung
+    - Ableitung aus dem aktuellen Architekturmodell, geschossweise
+  fr: |-
+    - Lignes de cloisons intérieures non porteuses et ouvertures
+    - Références courtes de type de cloison le long des lignes
+    - Numéros de locaux et de portes en textes courts
+    - Obstacles connus et points de contrôle pour le positionnement du robot
+    - Obtention depuis la maquette d'architecture actuelle, étage par étage
+  it: |-
+    - Linee delle pareti interne non portanti e aperture
+    - Riferimenti brevi del tipo di parete lungo le linee
+    - Numeri di locale e di porta come testi brevi
+    - Ostacoli noti e punti di controllo per il posizionamento del robot
+    - Ottenimento dal modello di architettura aggiornato, piano per piano
+  en: |-
+    - Wall lines of non-load-bearing interior walls and openings
+    - Short wall-type references along the wall lines
+    - Room numbers and door numbers as short texts
+    - Known obstacles and control points for robot positioning
+    - Derivation from the current architecture model, storey by storey
+file_name:
+  de: '{Projektnummer}_ARC-LAY_{Geschoss}.{ext}'
+  fr: '{NumeroProjet}_ARC-LAY_{Etage}.{ext}'
+  it: '{NumeroProgetto}_ARC-LAY_{Piano}.{ext}'
+  en: '{ProjectNumber}_ARC-LAY_{Storey}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/architecture-wall-interior
+  - pragmaticbim:element/architecture-wall-interior-loadbearing
+  - pragmaticbim:element/architecture-wall-exterior
+  - pragmaticbim:element/architecture-column
+  - pragmaticbim:element/architecture-opening-void
+  - pragmaticbim:element/architecture-door-interior
+  - pragmaticbim:element/spaces-interior
+  - pragmaticbim:element/survey-reference-point
+scheduled_milestones:
+  - "51:M"
+  - "52:M"
+  - "53:M"

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-built-in-furniture
+code: BUILT-IN-FURNITURE-TYPE
+name:
+  de: PredefinedType Einbaumöbel
+  fr: PredefinedType mobilier intégré
+  it: PredefinedType arredo fisso
+  en: PredefinedType built-in furniture
+description:
+  de: PredefinedType für benutzerdefinierte Einbaumöbel.
+  fr: PredefinedType pour le mobilier intégré défini par l'utilisateur.
+  it: PredefinedType per arredi fissi definiti dall'utente.
+  en: PredefinedType for user-defined built-in furniture.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - USERDEFINED
+  fr:
+  - USERDEFINED
+  it:
+  - USERDEFINED
+  en:
+  - USERDEFINED

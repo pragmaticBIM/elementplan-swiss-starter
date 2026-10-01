@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/abfallraum
+code: RT-WH-11
+sort_order: 11
+name:
+  de: Abfallraum
+  fr: Local déchets
+  it: Locale rifiuti
+  en: Waste Room
+definition:
+  de: Raum für das Sammeln und Bereitstellen von Siedlungsabfall.
+  fr: Local pour collecter et présenter les déchets ménagers.
+  it: Locale per raccogliere e conferire i rifiuti domestici.
+  en: Room for collecting and setting out household waste.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Abfallraum
+    fr: Local déchets
+    it: Locale rifiuti
+    en: Waste Room
+restrictions:
+  min_area: 6
+status: active

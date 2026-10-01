@@ -1,0 +1,147 @@
+id: pragmaticbim:workflow/qas-usage-agreement-verification
+code: QAS-USAGE-AGREEMENT
+sort_order: 94
+name:
+  de: Nutzungsvereinbarung Soll-Ist abgleichen
+  fr: Comparer les exigences et les valeurs effectives de la convention d'utilisation
+  it: Confrontare requisiti e valori effettivi della convenzione d'uso
+  en: Compare usage-agreement requirements with actual values
+description:
+  de: 'Vereinbarte Anforderungen und nachgewiesene Planungswerte je Raum vergleichen, damit Abweichungen in Tragwerk und Gebäudetechnik vor der Freigabe sichtbar werden.
+
+
+    **Ausgangslage**
+
+    - Sollwerte der Nutzungsvereinbarung und nachgewiesene Ist-Werte der Fachplanung werden häufig in getrennten Unterlagen geführt.
+
+    - Fehlende Nachweise oder ungenügende Planungswerte bleiben dadurch bis zur Freigabe oder Ausführung unentdeckt.
+
+
+    **Ziel & Nutzen**
+
+    - Vollständigkeit und Erfüllung der raumweisen Anforderungen für Tragwerk und Gebäudetechnik prüfen.
+
+    - Fehlende Ist-Werte und Abweichungen eindeutig dem betroffenen Raum und der geprüften Eigenschaft zuordnen.
+
+
+    **Ablauf**
+
+    1. Raummodell mit freigegebenen Sollwerten der Nutzungsvereinbarung bereitstellen.
+
+    2. Nachgewiesene Ist-Werte aus Tragwerks- und Gebäudetechnikplanung je Raum ergänzen.
+
+    3. Soll und Ist regelbasiert vergleichen, Abweichungen klären und den Prüfstand dokumentieren.
+
+
+    **Lieferergebnis**
+
+    - Raummodell mit getrennten, nachvollziehbaren Soll- und Ist-Werten
+
+    - Dokumentierter Soll-Ist-Abgleich mit geklärten oder offenen Abweichungen'
+  fr: 'Comparer par local les exigences convenues et les valeurs de projet justifiées afin de rendre visibles, avant validation, les écarts concernant la structure et les techniques du bâtiment.
+
+
+    **Situation de départ**
+
+    - Les valeurs cibles de la convention d''utilisation et les valeurs effectives justifiées par les mandataires spécialisés figurent souvent dans des documents distincts.
+
+    - Des justificatifs manquants ou des valeurs de projet insuffisantes restent ainsi inaperçus jusqu''à la validation ou à l''exécution.
+
+
+    **Objectif et bénéfice**
+
+    - Contrôler l''exhaustivité et le respect des exigences par local pour la structure et les techniques du bâtiment.
+
+    - Attribuer sans ambiguïté les valeurs effectives manquantes et les écarts au local et à la propriété concernés.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette des locaux avec les valeurs cibles validées de la convention d''utilisation.
+
+    2. Compléter par local les valeurs effectives justifiées issues des études de structure et des techniques du bâtiment.
+
+    3. Comparer les exigences et les valeurs effectives selon des règles, clarifier les écarts et documenter l''état du contrôle.
+
+
+    **Livrable**
+
+    - Maquette des locaux avec valeurs cibles et effectives séparées et traçables
+
+    - Comparaison documentée avec écarts clarifiés ou encore ouverts'
+  it: 'Confrontare per locale i requisiti concordati e i valori di progetto comprovati, affinché gli scostamenti relativi alle strutture e agli impianti siano visibili prima dell''approvazione.
+
+
+    **Situazione di partenza**
+
+    - I valori obiettivo della convenzione d''uso e i valori effettivi comprovati dai progettisti specialisti sono spesso riportati in documenti separati.
+
+    - Giustificativi mancanti o valori di progetto insufficienti rimangono così inosservati fino all''approvazione o all''esecuzione.
+
+
+    **Obiettivo e beneficio**
+
+    - Verificare la completezza e il rispetto dei requisiti per locale relativi alle strutture e agli impianti.
+
+    - Attribuire in modo univoco i valori effettivi mancanti e gli scostamenti al locale e alla proprietà interessati.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello dei locali con i valori obiettivo approvati della convenzione d''uso.
+
+    2. Completare per locale i valori effettivi comprovati della progettazione delle strutture e degli impianti.
+
+    3. Confrontare requisiti e valori effettivi mediante regole, chiarire gli scostamenti e documentare lo stato della verifica.
+
+
+    **Risultato della fornitura**
+
+    - Modello dei locali con valori obiettivo ed effettivi separati e tracciabili
+
+    - Confronto documentato con scostamenti chiariti o ancora aperti'
+  en: 'Compare agreed requirements and verified design values for each space so that structural and MEP deviations become visible before approval.
+
+
+    **Starting point**
+
+    - Target values from the usage agreement and actual values verified by the discipline designers are often maintained in separate documents.
+
+    - Missing evidence or insufficient design values therefore remain undetected until approval or construction.
+
+
+    **Goal & benefit**
+
+    - Check the completeness and fulfilment of room-based structural and MEP requirements.
+
+    - Assign missing actual values and deviations unambiguously to the affected space and property.
+
+
+    **Process**
+
+    1. Provide the space model with the approved target values from the usage agreement.
+
+    2. Add verified actual values from structural and MEP design for each space.
+
+    3. Compare requirements and actual values using rules, resolve deviations, and document the verification status.
+
+
+    **Deliverable**
+
+    - Space model with separate, traceable target and actual values
+
+    - Documented comparison with resolved or outstanding deviations'
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+comment: Compare properties with identical names between the Requirements and Actual property sets. Structural capacity and available airflow, occupancy, operating duration, and illuminance must meet or
+  exceed the requirement; verified temperature and humidity ranges must remain within the agreed limits. Vibration classes require an explicit ordered comparison. Missing actual values are reported as gaps,
+  not treated as compliant.
+countries:
+- CH

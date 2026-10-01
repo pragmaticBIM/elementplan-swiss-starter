@@ -1,0 +1,92 @@
+id: pragmaticbim:value/product-class-facade-covering
+code: PRODUCT-FACP
+name:
+  de: Europäische Fassadenbekleidungsprodukte
+  fr: European facade covering products
+  it: European facade covering products
+  en: European facade covering products
+description:
+  de: 'Produktklassen gemäss Europäische Fassadenbekleidungsprodukte. Quelle: https://schema.pragmaticbim.ch/classification/facade-covering-product.html'
+  fr: 'Classes de produits selon European facade covering products. Source : https://schema.pragmaticbim.ch/classification/facade-covering-product.html'
+  it: 'Classi di prodotto secondo European facade covering products. Fonte: https://schema.pragmaticbim.ch/classification/facade-covering-product.html'
+  en: 'Product classes according to European facade covering products. Source: https://schema.pragmaticbim.ch/classification/facade-covering-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Vorgehängte Keramikfliesenfassade
+  - Vorgehängte Natursteinfassade
+  - Stehfalz-Metallblechfassade
+  - Metallverbund-Fassadenpaneel (AVP)
+  - Holz-Vorgehängte Fassade
+  - Faserzement-Fassadensystem
+  - Putzsystem / WDVS-Fassade
+  - WDVS Daemm-Schicht
+  - WDVS Putz-Schicht
+  - Kunststoff-Vorgehängte Fassade
+  - Gebäudeintegrierte Photovoltaik-Fassade
+  - Vorgefertigtes modulares Holzfassaden-System
+  - Vorgefertigtes modulares Metallfassaden-System
+  - Aussenanstrich / Schutzanstrichsystem
+  - Sanierungsüberkleidungssystem (Verbund)
+  - HPL- / Kompaktplatten-Fassade
+  - Ziegelriemchen- / Klinker-Vorhangfassade
+  - Sonstige / unbekannte Fassadenbekleidung
+  fr:
+  - Ventilated ceramic tile system
+  - Ventilated natural stone cladding
+  - Metal sheet standing-seam facade
+  - Metal composite facade panel (ACP)
+  - Timber ventilated facade system
+  - Fibre-cement board facade
+  - Render / ETICS facade system
+  - ETICS insulation layer
+  - ETICS render finish layer
+  - Synthetic ventilated facade panel
+  - Building-integrated photovoltaic facade
+  - Prefabricated modular timber facade system
+  - Prefabricated modular metal facade system
+  - Exterior paint / protective coating finish
+  - Retrofit overcladding system (composite)
+  - HPL / compact laminate facade panel
+  - Brick slip / tile-hung ventilated facade
+  - Other / unknown facade covering
+  it:
+  - Ventilated ceramic tile system
+  - Ventilated natural stone cladding
+  - Metal sheet standing-seam facade
+  - Metal composite facade panel (ACP)
+  - Timber ventilated facade system
+  - Fibre-cement board facade
+  - Render / ETICS facade system
+  - ETICS insulation layer
+  - ETICS render finish layer
+  - Synthetic ventilated facade panel
+  - Building-integrated photovoltaic facade
+  - Prefabricated modular timber facade system
+  - Prefabricated modular metal facade system
+  - Exterior paint / protective coating finish
+  - Retrofit overcladding system (composite)
+  - HPL / compact laminate facade panel
+  - Brick slip / tile-hung ventilated facade
+  - Other / unknown facade covering
+  en:
+  - Ventilated ceramic tile system
+  - Ventilated natural stone cladding
+  - Metal sheet standing-seam facade
+  - Metal composite facade panel (ACP)
+  - Timber ventilated facade system
+  - Fibre-cement board facade
+  - Render / ETICS facade system
+  - ETICS insulation layer
+  - ETICS render finish layer
+  - Synthetic ventilated facade panel
+  - Building-integrated photovoltaic facade
+  - Prefabricated modular timber facade system
+  - Prefabricated modular metal facade system
+  - Exterior paint / protective coating finish
+  - Retrofit overcladding system (composite)
+  - HPL / compact laminate facade panel
+  - Brick slip / tile-hung ventilated facade
+  - Other / unknown facade covering

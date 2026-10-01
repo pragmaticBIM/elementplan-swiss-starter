@@ -2,183 +2,142 @@ id: pragmaticbim:workflow/des-sia416-area-verification
 code: DES-SIA416
 sort_order: 57
 name:
-  de: Flächennachweis nach SIA 416
-  fr: Justificatif de surfaces selon SIA 416
-  it: Verifica delle superfici secondo SIA 416
-  en: Area verification according to SIA 416
+  de: Flächen nach SIA 416 nachweisen
+  fr: Justifier les surfaces selon SIA 416
+  it: Giustificare le superfici secondo SIA 416
+  en: Verify areas to SIA 416
 description:
-  de: 'Flächennachweis nach SIA 416 aus dem Raummodell — Flächenklasse über Reference, Nutzung über LongName.
+  de: 'Den Flächennachweis nach SIA 416 aus dem Raummodell ableiten, damit Flächenklassen nachvollziehbar ausgewertet und geprüft werden können.
 
 
     **Ausgangslage**
 
     - Flächennachweise nach SIA 416 (HNF, NNF, VF, FF, KF sowie Aussenflächen) brauchen eine nachvollziehbare Zuordnung je Raum.
 
-    - Manuelle Listen oder parallele Klassifikationsattribute ausserhalb des Modells sind fehleranfällig.
+    - Separat gepflegte Klassifikationsattribute können nach einer Nutzungsänderung dem Raumnamen widersprechen.
 
 
     **Ziel & Nutzen**
 
-    - Innen- und Aussenräume mit Reference (SIA-416-Klasse) und LongName (Raumnutzung) führen.
+    - Innen- und Aussenräume mit einer standardisierten Raumnutzung in LongName führen.
 
-    - Flächenklassen direkt am Raum halten statt separat aus Listen abzugleichen.
+    - Die SIA-416-Klasse über eine eindeutige Zuordnung aus dem Raumnamen berechnen. Damit wird sie bei einer Nutzungsänderung automatisch nachgeführt und bleibt widerspruchsfrei.
 
 
     **Ablauf**
 
-    1. Innen- und Aussenräume als Volumen mit LongName und Reference (SIA-416-Code) bereitstellen.
+    1. Innen- und Aussenräume als Volumen mit standardisierter Raumnutzung in LongName bereitstellen.
 
     2. Nettoflächen je Raum aus dem Modell auswerten.
 
-    3. Flächen nach SIA 416 über Reference aggregieren.
+    3. Die SIA-416-Klasse aus LongName ableiten und die Flächen danach aggregieren.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Nachvollziehbarer Flächennachweis nach SIA 416 aus dem Modell.
+    - Raummodell mit standardisierter Raumnutzung und Nettofläche je Raum
 
-
-    **Lieferobjekte**
-
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Innenräume als IfcSpace (PredefinedType=INTERNAL) und Aussenräume als IfcSpace (PredefinedType=EXTERNAL)
-
-    - LongName gemäss https://schema.pragmaticbim.ch/classification/room-name.html
-
-    - Reference mit SIA-416-Code (z. B. `HNF`, `NNF`, `VF`, `FF`, `KF`, `AGF`, `UF`, `AVF`, `BUF`, `UUF`) — Mapping: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
-
-    - NetFloorArea je Raum'
-  fr: 'Justificatif de surfaces selon SIA 416 à partir du modèle spatial — classe de surface via Reference, usage via LongName.
+    - Flächennachweis nach SIA 416 mit nachvollziehbarer Zuordnung von Raumnutzung und Flächenklasse'
+  fr: 'Justificatif de surfaces selon SIA 416 à partir du modèle spatial – classe de surface déduite de l''usage normalisé du local.
 
 
     **Situation de départ**
 
     - Les justificatifs SIA 416 (HNF, NNF, VF, FF, KF et surfaces extérieures) exigent une affectation traçable par local.
 
-    - Les listes manuelles ou attributs de classification hors modèle sont sources d''erreurs.
+    - Des attributs de classification gérés séparément peuvent contredire le nom du local après un changement d''usage.
 
 
     **Objectif et bénéfice**
 
-    - Saisir les espaces intérieurs et extérieurs avec Reference (classe SIA 416) et LongName (usage du local).
+    - Saisir les espaces intérieurs et extérieurs avec un usage normalisé dans LongName.
 
-    - Maintenir les classes de surface directement sur le local plutôt que de les réconcilier via des listes.
+    - Calculer la classe SIA 416 par une correspondance univoque à partir du nom du local. Elle est ainsi mise à jour automatiquement lors d''un changement d''usage et reste cohérente.
 
 
     **Déroulement**
 
-    1. Fournir espaces intérieurs et extérieurs comme volumes avec LongName et Reference (code SIA 416).
+    1. Fournir les espaces intérieurs et extérieurs comme volumes avec un usage normalisé dans LongName.
 
     2. Évaluer les surfaces nettes par local à partir du modèle.
 
-    3. Agréger les surfaces selon SIA 416 via Reference.
+    3. Déduire la classe SIA 416 de LongName et agréger les surfaces selon cette classe.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Justificatif de surfaces SIA 416 traçable à partir du modèle.
+    - Maquette spatiale avec usage normalisé et surface nette par local
 
-
-    **Livrables**
-
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Espaces intérieurs comme IfcSpace (PredefinedType=INTERNAL) et espaces extérieurs comme IfcSpace (PredefinedType=EXTERNAL)
-
-    - LongName selon https://schema.pragmaticbim.ch/classification/room-name.html
-
-    - Reference avec code SIA 416 (p. ex. `HNF`, `NNF`, `VF`, `FF`, `KF`, `AGF`, `UF`, `AVF`, `BUF`, `UUF`) — mapping : https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
-
-    - NetFloorArea par local'
-  it: 'Verifica delle superfici secondo SIA 416 dal modello spaziale — classe di superficie tramite Reference, uso tramite LongName.
+    - Justificatif de surfaces SIA 416 avec correspondance traçable entre usage du local et classe de surface'
+  it: 'Verifica delle superfici secondo SIA 416 dal modello spaziale – classe di superficie derivata dall''uso normalizzato del locale.
 
 
     **Situazione di partenza**
 
     - Le verifiche SIA 416 (HNF, NNF, VF, FF, KF e superfici esterne) richiedono un''assegnazione tracciabile per locale.
 
-    - Elenchi manuali o attributi di classificazione fuori dal modello sono soggetti a errori.
+    - Attributi di classificazione gestiti separatamente possono contraddire il nome del locale dopo un cambiamento d''uso.
 
 
     **Obiettivo e beneficio**
 
-    - Gestire spazi interni ed esterni con Reference (classe SIA 416) e LongName (uso del locale).
+    - Gestire spazi interni ed esterni con un uso normalizzato in LongName.
 
-    - Mantenere le classi di superficie direttamente sul locale invece di riconciliarle tramite elenchi.
+    - Calcolare la classe SIA 416 tramite un''associazione univoca dal nome del locale. In questo modo viene aggiornata automaticamente in caso di cambiamento d''uso e rimane coerente.
 
 
     **Svolgimento**
 
-    1. Fornire spazi interni ed esterni come volumi con LongName e Reference (codice SIA 416).
+    1. Fornire spazi interni ed esterni come volumi con un uso normalizzato in LongName.
 
     2. Valutare le superfici nette per locale dal modello.
 
-    3. Aggregare le superfici secondo SIA 416 tramite Reference.
+    3. Derivare la classe SIA 416 da LongName e aggregare le superfici in base a tale classe.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Verifica delle superfici SIA 416 tracciabile dal modello.
+    - Modello spaziale con uso normalizzato e superficie netta per locale
 
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Spazi interni come IfcSpace (PredefinedType=INTERNAL) e spazi esterni come IfcSpace (PredefinedType=EXTERNAL)
-
-    - LongName secondo https://schema.pragmaticbim.ch/classification/room-name.html
-
-    - Reference con codice SIA 416 (p. es. `HNF`, `NNF`, `VF`, `FF`, `KF`, `AGF`, `UF`, `AVF`, `BUF`, `UUF`) — mapping: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
-
-    - NetFloorArea per locale'
-  en: 'SIA 416 area verification from the space model — area class via Reference, use via LongName.
+    - Verifica delle superfici SIA 416 con associazione tracciabile tra uso del locale e classe di superficie'
+  en: 'SIA 416 area verification from the space model – derive the area class from the standardized room use.
 
 
     **Starting point**
 
     - SIA 416 area verification (HNF, NNF, VF, FF, KF, and exterior areas) needs a traceable assignment per space.
 
-    - Manual lists or classification attributes outside the model are error-prone.
+    - Separately maintained classification attributes can contradict the room name after a change of use.
 
 
     **Goal & benefit**
 
-    - Carry interior and exterior spaces with Reference (SIA 416 class) and LongName (room use).
+    - Maintain interior and exterior spaces with a standardized room use in LongName.
 
-    - Keep area classes directly on the space instead of reconciling them via lists.
+    - Calculate the SIA 416 class through an unambiguous mapping from the room name. It is then updated automatically when the use changes and remains consistent.
 
 
     **Process**
 
-    1. Provide interior and exterior spaces as volumes with LongName and Reference (SIA 416 code).
+    1. Provide interior and exterior spaces as volumes with a standardized room use in LongName.
 
     2. Evaluate net areas per space from the model.
 
-    3. Aggregate areas according to SIA 416 via Reference.
+    3. Derive the SIA 416 class from LongName and aggregate the areas by that class.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Traceable SIA 416 area verification from the model.
+    - Space model with standardized room use and net area for each space
 
-
-    **Deliverables**
-
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Interior spaces as IfcSpace (PredefinedType=INTERNAL) and exterior spaces as IfcSpace (PredefinedType=EXTERNAL)
-
-    - LongName according to https://schema.pragmaticbim.ch/classification/room-name.html
-
-    - Reference with SIA 416 code (e.g. `HNF`, `NNF`, `VF`, `FF`, `KF`, `AGF`, `UF`, `AVF`, `BUF`, `UUF`) — mapping: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
-
-    - NetFloorArea per space'
-workflow_group: null
+    - SIA 416 area verification with a traceable mapping between room use and area class'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
+countries:
+- CH
 needed_in_domain:
 - pragmaticbim:domain/architecture
 comment: 'Reference carries the SIA 416 area class (shortcuts e.g. sia:HNF, sia:NNF, sia:VF, sia:FF, sia:KF, sia:AGF, sia:UF, sia:AVF, sia:BUF, sia:UUF). LongName remains the Building Space Name Classification

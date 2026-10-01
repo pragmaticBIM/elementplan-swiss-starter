@@ -1,0 +1,44 @@
+id: pragmaticbim:document/joint-layout-plans
+code: FUG
+sort_order: 117
+name:
+  de: Fugeneinteilungen
+  fr: Plans de joints
+  it: Piani dei giunti
+  en: Joint layouts
+definition:
+  de: Abgestimmte Einteilung der Bewegungs-, Rand- und Feldfugen im Bodenaufbau als Grundlage für Fussbodenheizung und Ausführung.
+  fr: Calepinage coordonné des joints de mouvement, de rive et de fractionnement du complexe de sol comme base pour le chauffage au sol et l'exécution.
+  it: Suddivisione coordinata dei giunti di movimento, perimetrali e di frazionamento della stratigrafia del pavimento come base per il riscaldamento a pavimento e l'esecuzione.
+  en: Coordinated layout of movement, perimeter, and bay joints in the floor build-up as a basis for underfloor heating and construction.
+description:
+  de: |-
+    - Lage und Art der Fugen
+    - Abstimmung mit Raumgrenzen, Bodenbelägen und Heizkreisen
+    - Berücksichtigung von Feldgrössen, Geometrie und Anschlüssen
+    - Plankopf, Massstab und Planungsstand
+  fr: |-
+    - Position et type des joints
+    - Coordination avec limites des locaux, revêtements et circuits de chauffage
+    - Prise en compte des dimensions de champs, de la géométrie et des raccords
+    - Cartouche, échelle et état de planification
+  it: |-
+    - Posizione e tipo dei giunti
+    - Coordinamento con limiti dei locali, pavimentazioni e circuiti di riscaldamento
+    - Considerazione delle dimensioni dei campi, della geometria e dei raccordi
+    - Cartiglio, scala e stato della progettazione
+  en: |-
+    - Joint locations and types
+    - Coordination with space boundaries, floor finishes, and heating circuits
+    - Consideration of bay sizes, geometry, and connections
+    - Title block, scale, and design status
+file_name:
+  de: '{Projektnummer}_ARC-FUG_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-FUG_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-FUG_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-FUG_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "51:M"
+  - "52:M"

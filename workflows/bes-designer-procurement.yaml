@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/bes-designer-procurement
+code: BES-DESIGNER-PROCUREMENT
+sort_order: 8
+name:
+  de: Fachlich und digital kompetente Planer beschaffen
+  fr: Mandater des planificateurs compétents sur les plans professionnel et numérique
+  it: Incaricare progettisti con competenze professionali e digitali
+  en: Procure designers who are capable in their discipline and digitally
+description:
+  de: 'Planungsleistungen anhand der benötigten Fähigkeiten, Ergebnisse und Datenlieferungen beschaffen, statt BIM pauschal als zusätzliche Arbeitsmethode zu bestellen.
+
+
+    **Ausgangslage**
+
+    - BIM wird entweder pauschal bestellt oder eine konventionelle Ausschreibung nachträglich mit umfangreichen BIM-Dokumenten ergänzt.
+
+    - Ausgeschriebene BIM-Anwendungsfälle wiederholen häufig ohnehin geschuldete Planungsleistungen mit einer anderen Methode; Grundleistungen und tatsächliche Zusatzleistungen bleiben dadurch unklar.
+
+    - Fehlende oder widersprüchliche Grundlagen zwingen Bietende zu Annahmen und Risikozuschlägen, während Softwarekenntnisse und Zertifikate allein keine verwendbaren Ergebnisse gewährleisten.
+
+
+    **Ziel & Nutzen**
+
+    - Das für die konkrete Aufgabe, die Projektziele und die Risiken am besten geeignete Planungsteam finden und beauftragen.
+
+    - Pauschale Mehrkosten für BIM vermeiden: Jeder angebotene Preis ist einer klar beschriebenen Planungsleistung, Datenlieferung oder projektspezifischen Zusatzleistung zugeordnet und dadurch nachvollziehbar.
+
+
+    **Ablauf**
+
+    1. Projektziele und Risiken bestimmen, unterstützende Anwendungsfälle auswählen und daraus erwartete Ergebnisse sowie Datenlieferungen ableiten.
+
+    2. Grundlagen mit Version und Freigabestand bereitstellen, insbesondere das strukturierte Raumprogramm, den verbindlichen räumlichen Bezug mit Referenzpunkten und Terrainoberfläche sowie zweckgerechte
+    Vermessungs- und Bestandsunterlagen.
+
+    3. Leistungsverzeichnis Planung mit phasenbezogenen Leistungen und klaren Zusatzleistungen erstellen und als Zuschlagskriterium eine Referenzperson sowie ein einseitiges Vorgehenskonzept beurteilen,
+    das zeigt, wie das Planungsteam BIM zum Erreichen der Bauherrenziele und zum Umgang mit den identifizierten Risiken einsetzt.
+
+
+    **Lieferergebnis**
+
+    - Vergabefähiges Leistungsverzeichnis Planung mit Leistungsumfang und Bewertungskriterien.
+
+    - Vergleichbare Angebote mit Referenzperson und einseitigem Vorgehenskonzept zum ziel- und risikobezogenen BIM-Einsatz des vorgesehenen Planungsteams.'
+  fr: 'Adjuger les prestations d''étude sur la base des compétences, résultats et livraisons de données requis, au lieu de commander globalement le BIM comme méthode de travail supplémentaire.
+
+
+    **Situation de départ**
+
+    - Le BIM est soit commandé globalement, soit ajouté après coup à un appel d''offres conventionnel au moyen de nombreux documents BIM.
+
+    - Les cas d''application BIM mis en soumission répètent souvent, avec une autre méthode, des prestations d''étude déjà dues; la distinction entre prestations de base et véritables prestations supplémentaires
+    reste alors floue.
+
+    - Des données de base manquantes ou contradictoires obligent les soumissionnaires à formuler des hypothèses et à inclure des suppléments de risque, tandis que les connaissances logicielles et les certificats
+    ne garantissent pas à eux seuls des résultats utilisables.
+
+
+    **Objectif et bénéfice**
+
+    - Identifier et mandater l’équipe de projet la mieux adaptée à la tâche concrète, aux objectifs du projet et aux risques.
+
+    - Éviter les suppléments forfaitaires pour le BIM : chaque prix offert est attribué à une prestation d’étude, une livraison de données ou une prestation supplémentaire propre au projet clairement décrite
+    et reste ainsi traçable.
+
+
+    **Déroulement**
+
+    1. Définir les objectifs et les risques du projet, choisir les cas d''application utiles et en déduire les résultats et livraisons de données attendus.
+
+    2. Fournir les données de base avec leur version et leur état de validation, notamment le programme structuré des locaux, la référence spatiale contraignante avec points de référence et surface du terrain
+    ainsi que les documents de mensuration et de l''existant adaptés à l''usage.
+
+    3. Établir le cahier des prestations de planification avec les prestations par phase et les prestations supplémentaires clairement identifiées, puis évaluer comme critère d''adjudication une personne
+    de référence et une note méthodologique d''une page montrant comment l''équipe emploiera le BIM pour atteindre les objectifs du maître d''ouvrage et maîtriser les risques identifiés.
+
+
+    **Livrable**
+
+    - Cahier des prestations de planification prêt à l''adjudication avec étendue des prestations et critères d''évaluation.
+
+    - Offres comparables comprenant une personne de référence et une note méthodologique d''une page sur l''emploi du BIM en fonction des objectifs et des risques par l''équipe de mandataires prévue.'
+  it: 'Affidare le prestazioni di progettazione in base alle competenze, ai risultati e alle forniture di dati necessari, anziché ordinare genericamente il BIM come metodo di lavoro supplementare.
+
+
+    **Situazione di partenza**
+
+    - Il BIM viene ordinato genericamente oppure aggiunto in un secondo momento a una gara convenzionale mediante numerosi documenti BIM.
+
+    - I casi d''uso BIM messi a concorso ripetono spesso, con un metodo diverso, prestazioni di progettazione già dovute; la distinzione tra prestazioni di base e vere prestazioni supplementari rimane quindi
+    poco chiara.
+
+    - Basi mancanti o contraddittorie obbligano gli offerenti a formulare ipotesi e includere supplementi per i rischi, mentre le conoscenze dei software e i certificati da soli non garantiscono risultati
+    utilizzabili.
+
+
+    **Obiettivo e beneficio**
+
+    - Individuare e incaricare il gruppo di progettazione più adatto al compito concreto, agli obiettivi del progetto e ai rischi.
+
+    - Evitare supplementi forfettari per il BIM: ogni prezzo offerto è associato a una prestazione di progettazione, una fornitura di dati o una prestazione supplementare specifica del progetto chiaramente
+    descritta ed è quindi tracciabile.
+
+
+    **Svolgimento**
+
+    1. Definire gli obiettivi e i rischi del progetto, scegliere i casi d''uso pertinenti e ricavarne i risultati e le forniture di dati attesi.
+
+    2. Fornire le basi con versione e stato di approvazione, in particolare il programma strutturato dei locali, il riferimento spaziale vincolante con punti di riferimento e superficie del terreno, nonché
+    i documenti di misurazione e dello stato di fatto adeguati allo scopo.
+
+    3. Redigere il capitolato delle prestazioni di progettazione con le prestazioni per fase e le prestazioni supplementari chiaramente identificate, quindi valutare come criterio di aggiudicazione una
+    persona di riferimento e un concetto operativo di una pagina che mostri come il gruppo impiegherà il BIM per raggiungere gli obiettivi del committente e gestire i rischi identificati.
+
+
+    **Risultato della fornitura**
+
+    - Capitolato delle prestazioni di progettazione pronto per l''aggiudicazione con estensione delle prestazioni e criteri di valutazione.
+
+    - Offerte comparabili con una persona di riferimento e un concetto operativo di una pagina sull''impiego del BIM in funzione degli obiettivi e dei rischi da parte del gruppo di progettazione previsto.'
+  en: 'Procure planning services against the required capabilities, results, and data deliveries instead of ordering BIM wholesale as an additional working method.
+
+
+    **Starting point**
+
+    - BIM is either ordered wholesale or added retrospectively to a conventional tender through extensive BIM documentation.
+
+    - Tendered BIM use cases often repeat planning services already owed using a different method, leaving basic services and genuine additional services unclear.
+
+    - Missing or contradictory foundations force bidders to make assumptions and add risk premiums, while software skills and certificates alone do not ensure usable results.
+
+
+    **Goal & benefit**
+
+    - Identify and appoint the design team best suited to the specific task, project goals, and risks.
+
+    - Avoid blanket BIM surcharges: every offered price is tied to a clearly described planning service, data delivery, or project-specific additional service and is therefore traceable.
+
+
+    **Process**
+
+    1. Define project goals and risks, select supporting use cases, and derive the expected results and data deliveries.
+
+    2. Provide foundations with their version and approval status, particularly the structured room programme, the binding spatial reference with reference points and terrain surface, and fit-for-purpose
+    survey and existing-condition information.
+
+    3. Prepare the planning services specification with phase-based services and clearly identified additional services, then assess as an award criterion a reference contact and a one-page approach showing
+    how the team will use BIM to achieve the client''s goals and manage the identified risks.
+
+
+    **Deliverable**
+
+    - Award-ready planning services specification with scope and evaluation criteria.
+
+    - Comparable offers containing a reference contact and a one-page approach to the proposed team''s goal- and risk-based use of BIM.'
+workflow_group: planungsteam
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/building-physics
+- pragmaticbim:domain/fire-protection
+- pragmaticbim:domain/surveyor
+- pragmaticbim:domain/infrastructure
+comment: Liefert pragmaticbim:document/planning-services-specification. Die vor der Planerbeschaffung bereitzustellenden Grundlagen werden durch pragmaticbim:workflow/bes-room-program-brief, pragmaticbim:workflow/bes-survey-existing-model-procurement
+  unterstützt.

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-shading
+code: EBKP-H-SHADING
+name:
+  de: eBKP-H Sonnenschutz
+  fr: eBKP-H protection solaire
+  it: eBKP-H protezione solare
+  en: eBKP-H sun protection
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): E03.04.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : E03.04.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): E03.04.'
+  en: 'Allowed eBKP-H codes (SN 506 511): E03.04.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - E03.04
+  fr:
+  - E03.04
+  it:
+  - E03.04
+  en:
+  - E03.04

@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/badezimmer
+code: RT-WH-07
+sort_order: 7
+name:
+  de: Badezimmer
+  fr: Salle de bain
+  it: Bagno
+  en: Bathroom
+definition:
+  de: Raum mit Bad, Dusche oder Körperpflege.
+  fr: Local avec bain, douche ou équipements d'hygiène.
+  it: Locale con vasca, doccia o impianti per l'igiene personale.
+  en: Room with bath, shower, or personal hygiene fixtures.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Badezimmer
+    fr: Salle de bain
+    it: Bagno
+    en: Bathroom
+restrictions:
+  min_area: 4
+status: active

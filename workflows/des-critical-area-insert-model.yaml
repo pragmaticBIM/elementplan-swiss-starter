@@ -1,0 +1,142 @@
+id: pragmaticbim:workflow/des-critical-area-insert-model
+code: DES-CRIT-INSERT
+sort_order: 77
+name:
+  de: Kritische Bereiche als Einsatzmodell führen
+  fr: Gérer les zones critiques dans une maquette d'intervention
+  it: Gestire le zone critiche in un modello di intervento
+  en: Keep critical areas as an insert model
+description:
+  de: 'Sicherheitskritische Bereiche nicht im föderierten Gesamtmodell ausarbeiten, sondern als separates Einsatzmodell mit restriktivem Zugriff führen.
+
+
+    **Ausgangslage**
+
+    - Sensible Raum- und Bauteilinformationen in der Gesamtkoordination erhöhen das Risiko unbefugter Einsicht und Verbreitung.
+
+    - Ein gemeinsames Gesamtmodell vermischt allgemein benötigte Geometrie mit schutzbedürftigen Details.
+
+
+    **Ziel & Nutzen**
+
+    - Im Gesamtmodell nur Abgrenzung und Platzhalter ohne sensible Detailgeometrie und Attribute führen.
+
+    - Kritische Inhalte in einem eigenen Einsatzmodell mit klar begrenztem Empfängerkreis halten.
+
+
+    **Ablauf**
+
+    1. Kritische Bereiche gemäss freigegebenem Sicherheitskonzept abgrenzen und festlegen, was im Gesamtmodell sichtbar bleiben darf.
+
+    2. Sensible Geometrie und Attribute nur im Einsatzmodell führen; Zugriffe und Austauschwege restriktiv regeln.
+
+    3. Abgleich zwischen Gesamtmodell-Platzhalter und Einsatzmodell dokumentieren und freigeben.
+
+
+    **Lieferergebnis**
+
+    - Gesamtmodell ohne sensible Detailinhalte der kritischen Bereiche
+
+    - Separates Einsatzmodell mit restriktivem Zugriff und nachvollziehbarem Abgleich'
+  fr: 'Ne pas élaborer les zones critiques pour la sécurité dans la maquette fédérée globale, mais les gérer dans une maquette d''intervention séparée à accès restreint.
+
+
+    **Situation de départ**
+
+    - Des informations sensibles sur les locaux et les éléments dans la coordination globale augmentent le risque de consultation et de diffusion non autorisées.
+
+    - Une maquette globale unique mélange la géométrie généralement nécessaire et des détails devant être protégés.
+
+
+    **Objectif et bénéfice**
+
+    - Ne conserver dans la maquette globale que le périmètre et des espaces réservés, sans géométrie ni attributs de détail sensibles.
+
+    - Maintenir les contenus critiques dans une maquette d''intervention dédiée avec un cercle de destinataires clairement limité.
+
+
+    **Déroulement**
+
+    1. Délimiter les zones critiques selon le concept de sécurité approuvé et définir ce qui peut rester visible dans la maquette globale.
+
+    2. Ne gérer la géométrie et les attributs sensibles que dans la maquette d''intervention; réglementer restrictivement les accès et les voies d''échange.
+
+    3. Documenter et valider le rapprochement entre les espaces réservés de la maquette globale et la maquette d''intervention.
+
+
+    **Livrable**
+
+    - Maquette globale sans contenus de détail sensibles des zones critiques
+
+    - Maquette d''intervention séparée à accès restreint avec rapprochement traçable'
+  it: 'Non elaborare le zone critiche per la sicurezza nel modello federato complessivo, bensì gestirle in un modello di intervento separato con accesso restrittivo.
+
+
+    **Situazione di partenza**
+
+    - Informazioni sensibili su locali e componenti nel coordinamento complessivo aumentano il rischio di consultazione e diffusione non autorizzate.
+
+    - Un unico modello complessivo mescola geometria generalmente necessaria e dettagli da proteggere.
+
+
+    **Obiettivo e beneficio**
+
+    - Nel modello complessivo mantenere solo perimetro e segnaposto, senza geometria e attributi di dettaglio sensibili.
+
+    - Conservare i contenuti critici in un modello di intervento dedicato con cerchia di destinatari chiaramente limitata.
+
+
+    **Svolgimento**
+
+    1. Delimitare le zone critiche secondo il concetto di sicurezza approvato e definire cosa può restare visibile nel modello complessivo.
+
+    2. Gestire geometria e attributi sensibili solo nel modello di intervento; regolamentare in modo restrittivo accessi e canali di scambio.
+
+    3. Documentare e approvare il confronto tra i segnaposto del modello complessivo e il modello di intervento.
+
+
+    **Risultato della fornitura**
+
+    - Modello complessivo senza contenuti di dettaglio sensibili delle zone critiche
+
+    - Modello di intervento separato con accesso restrittivo e confronto tracciabile'
+  en: 'Do not develop security-critical areas in the federated overall model; keep them in a separate insert model with restricted access.
+
+
+    **Starting point**
+
+    - Sensitive space and component information in overall coordination increases the risk of unauthorized viewing and distribution.
+
+    - A single overall model mixes generally needed geometry with details that must be protected.
+
+
+    **Goal & benefit**
+
+    - Keep only boundaries and placeholders in the overall model, without sensitive detail geometry and attributes.
+
+    - Hold critical content in a dedicated insert model with a clearly limited recipient circle.
+
+
+    **Process**
+
+    1. Delineate critical areas as set out in the approved security concept and define what may remain visible in the overall model.
+
+    2. Maintain sensitive geometry and attributes only in the insert model; restrict access and exchange paths.
+
+    3. Document and approve the alignment between overall-model placeholders and the insert model.
+
+
+    **Deliverable**
+
+    - Overall model without sensitive detail content of the critical areas
+
+    - Separate insert model with restricted access and traceable alignment'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Binding basis is the building security concept document. Critical spaces use SecurityZoneReference on IfcSpace; sensitive detail stays out of the federated coordination model and lives only in
+  the insert model.

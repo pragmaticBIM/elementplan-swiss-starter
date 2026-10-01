@@ -1,13 +1,13 @@
 id: pragmaticbim:workflow/con-logistics-fit-out
-code: CON-LOGISTICS-FITOUT
+code: CON-ROOM-LABEL
 sort_order: 21
 name:
-  de: Logistik für Ausbau
-  fr: Logistique d'aménagement
-  it: Logistica di finitura
-  en: Fit-out logistics
+  de: Räume auf der Baustelle kennzeichnen
+  fr: Marquer les locaux sur le chantier
+  it: Contrassegnare i locali in cantiere
+  en: Label rooms on the construction site
 description:
-  de: 'Raum-QR mit Raumname und Raumnummer drucken und in jedem Raum anbringen — für Orientierung, Logistik und Mängelmanagement im Ausbau.
+  de: 'Räume auf der Baustelle einheitlich aus dem Modell kennzeichnen, damit Orientierung, Lieferungen und Mängelmeldungen dieselbe Raumreferenz verwenden.
 
 
     **Ausgangslage**
@@ -33,17 +33,12 @@ description:
     3. Etiketten raumweise anbringen (z. B. am Fenster).
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Raumweise QR-Kennzeichnung für Ausbau-Logistik und Mängelmanagement.
+    - Raumdaten aus dem Architekturmodell mit eindeutiger Kennzeichnung und abgestimmter Ausbau-Checkliste.
 
-
-    **Lieferobjekte**
-
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Innenräume (IfcSpace): Name (technische Planungsraumnummer), LongName (Raumnutzung/-name), Checkliste (Ausbauarbeiten und Reihenfolge)'
-  fr: 'Imprimer un QR de local avec désignation et numéro et le poser dans chaque local — pour l''orientation, la logistique et la gestion des défauts en aménagement.
+    - QR-Etiketten je Raum mit dem Modell entsprechender Kennzeichnung.'
+  fr: 'Imprimer un QR de local avec désignation et numéro et le poser dans chaque local – pour l''orientation, la logistique et la gestion des défauts en aménagement.
 
 
     **Situation de départ**
@@ -69,17 +64,12 @@ description:
     3. Poser les étiquettes local par local (p. ex. à la fenêtre).
 
 
-    **Résultat**
+    **Livrable**
 
-    - Marquage QR par local pour la logistique d''aménagement et la gestion des défauts.
+    - Données des locaux issues de la maquette architecture avec identification claire et liste de contrôle coordonnée.
 
-
-    **Livrables**
-
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Locaux intérieurs (IfcSpace) : Name (numéro technique de planification), LongName (usage / désignation du local), Checkliste (travaux d''aménagement et ordre)'
-  it: 'Stampare un QR locale con denominazione e numero e affiggerlo in ogni locale — per orientamento, logistica e gestione dei difetti in finitura.
+    - Étiquettes QR par local avec identification conforme à la maquette.'
+  it: 'Stampare un QR locale con denominazione e numero e affiggerlo in ogni locale – per orientamento, logistica e gestione dei difetti in finitura.
 
 
     **Situazione di partenza**
@@ -105,17 +95,12 @@ description:
     3. Affiggere le etichette locale per locale (es. sulla finestra).
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Marcatura QR per locale per la logistica di finitura e la gestione dei difetti.
+    - Dati dei locali dal modello di architettura con identificazione univoca e lista di controllo coordinata.
 
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Locali interni (IfcSpace): Name (numero tecnico di pianificazione), LongName (uso / denominazione del locale), Checkliste (lavori di finitura e ordine)'
-  en: 'Print a room QR with room name and number and place it in every room — for orientation, logistics, and defect management during fit-out.
+    - Etichette QR per ogni locale con identificazione corrispondente al modello.'
+  en: 'Label rooms consistently on site from the model so that orientation, deliveries, and defect reports use the same room reference.
 
 
     **Starting point**
@@ -129,7 +114,7 @@ description:
 
     - Derive uniform on-site room labelling (e.g. on the window) from the model.
 
-    - QR scan for orientation and for logistics and defect capture on the same checkable room reference.
+    - QR scan for orientation and for logistics and defect capture on the same verifiable room reference.
 
 
     **Process**
@@ -141,20 +126,16 @@ description:
     3. Affix labels room by room (e.g. on the window).
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Room-wise QR labelling for fit-out logistics and defect management.
+    - Space data from the architecture model with clear identification and a coordinated fit-out checklist.
 
-
-    **Deliverables**
-
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Interior spaces (IfcSpace): Name (technical planning room number), LongName (room use / name), Checkliste (fit-out work and sequence)'
+    - QR labels for each space with identification matching the model.'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/con
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Construction-phase (typically SIA 51–53). QR encodes planning Name + LongName. Do not use SignageRoomNumber for this use case — that belongs to opr-signage-room-number.
+comment: Construction-phase (typically SIA 51–53). QR encodes planning Name + LongName. Do not use SignageRoomNumber for this use case – that belongs to opr-signage-room-number.

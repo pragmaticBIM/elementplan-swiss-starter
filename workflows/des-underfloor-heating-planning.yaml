@@ -1,0 +1,153 @@
+id: pragmaticbim:workflow/des-underfloor-heating-planning
+code: DES-UNDERFLOOR-HEATING
+sort_order: 53
+name:
+  de: Grundlagen für die Fussbodenheizung bereitstellen
+  fr: Fournir les bases pour le chauffage au sol
+  it: Fornire le basi per il riscaldamento a pavimento
+  en: Provide the basis for underfloor heating
+description:
+  de: 'Raum-, Bodenaufbau- und Heizlastangaben früh zusammenführen, damit die Fussbodenheizung nicht auf unvollständigen Annahmen geplant wird.
+
+
+    **Ausgangslage**
+
+    - Die Fussbodenheizung wird oft vernachlässigt, zu spät oder fehlerhaft geplant. Im schlimmsten Fall führt dies zu Behaglichkeitsproblemen oder bauphysikalischen Schäden.
+
+    - Das Zusammenspiel von Architektur, Heizlastberechnung, Bodenbelag und Bauleitung bei den Trocknungsfristen wird häufig unterschätzt. Fehlende Abstimmung verursacht Verzögerungen und kann Schäden zur
+    Folge haben.
+
+
+    **Ziel & Nutzen**
+
+    - Planungsgrundlagen früh und raumbezogen zusammenführen.
+
+    - Heizkreise, Bodenaufbauten, Fugen und Trocknungsfristen rechtzeitig aufeinander abstimmen.
+
+
+    **Ablauf**
+
+    1. Die Architektur stellt das Raummodell mit Raumnutzung, Bodenbelag und Aufbautyp bereit.
+
+    2. Die Gebäudetechnik liefert die raumweise Heizlastberechnung.
+
+    3. Die Bauleitung stimmt Bodenaufbau, Fugeneinteilung und Trocknungsfristen mit den Beteiligten ab.
+
+    4. Die Fussbodenheizungsplanung erfolgt auf dieser Grundlage, beispielsweise durch Planfabrik.
+
+
+    **Lieferergebnis**
+
+    - Ausführungspläne Heizung
+
+    - Fugeneinteilungen'
+  fr: 'Réunir tôt les données des locaux, des complexes de sol et des charges thermiques pour la planification du chauffage au sol.
+
+
+    **Situation de départ**
+
+    - Le chauffage au sol est souvent négligé, planifié trop tard ou de manière incorrecte. Dans le pire des cas, il en résulte des problèmes de confort ou des dommages relevant de la physique du bâtiment.
+
+    - L''interaction entre architecture, calcul des charges thermiques, revêtement de sol et direction des travaux pour les délais de séchage est souvent sous-estimée. Un manque de coordination entraîne
+    des retards et peut causer des dommages.
+
+
+    **Objectif et bénéfice**
+
+    - Réunir tôt et par local les bases de planification.
+
+    - Coordonner à temps circuits de chauffage, complexes de sol, joints et délais de séchage.
+
+
+    **Déroulement**
+
+    1. L''architecture fournit la maquette des locaux avec usage, revêtement et type de complexe de sol.
+
+    2. Les techniques du bâtiment fournissent le calcul des charges thermiques par local.
+
+    3. La direction des travaux coordonne le complexe de sol, le calepinage des joints et les délais de séchage avec les intervenants.
+
+    4. La planification du chauffage au sol est réalisée sur cette base, par exemple par Planfabrik.
+
+
+    **Livrable**
+
+    - Plans d''exécution du chauffage
+
+    - Plans de joints'
+  it: 'Riunire tempestivamente i dati relativi ai locali, alle stratigrafie del pavimento e ai carichi termici per la progettazione del riscaldamento a pavimento.
+
+
+    **Situazione di partenza**
+
+    - Il riscaldamento a pavimento viene spesso trascurato, progettato troppo tardi o in modo errato. Nel peggiore dei casi ciò causa problemi di comfort o danni di fisica edilizia.
+
+    - L''interazione tra architettura, calcolo dei carichi termici, pavimentazione e direzione lavori per i tempi di asciugatura è spesso sottovalutata. La mancanza di coordinamento provoca ritardi e può
+    causare danni.
+
+
+    **Obiettivo e beneficio**
+
+    - Riunire tempestivamente e per locale le basi di progettazione.
+
+    - Coordinare per tempo circuiti di riscaldamento, stratigrafie del pavimento, giunti e tempi di asciugatura.
+
+
+    **Svolgimento**
+
+    1. L''architettura fornisce il modello dei locali con uso, pavimentazione e tipo di stratigrafia.
+
+    2. Gli impianti forniscono il calcolo del carico termico per locale.
+
+    3. La direzione lavori coordina la stratigrafia, la suddivisione dei giunti e i tempi di asciugatura con i partecipanti.
+
+    4. La progettazione del riscaldamento a pavimento viene svolta su questa base, ad esempio da Planfabrik.
+
+
+    **Risultato della fornitura**
+
+    - Piani esecutivi del riscaldamento
+
+    - Piani dei giunti'
+  en: 'Bring together space, floor-build-up, and heating-load information early for underfloor-heating design.
+
+
+    **Starting point**
+
+    - Underfloor heating is often neglected, designed too late, or designed incorrectly. In the worst case, this causes comfort problems or building-physics damage.
+
+    - The interaction between architecture, heating-load calculations, floor finishes, and site management of drying periods is often underestimated. Poor coordination causes delays and can result in damage.
+
+
+    **Goal & benefit**
+
+    - Bring the design basis together early for each space.
+
+    - Coordinate heating circuits, floor build-ups, joints, and drying periods in good time.
+
+
+    **Process**
+
+    1. Architecture provides the space model with room use, floor finish, and build-up type.
+
+    2. MEP provides the heating-load calculation for each space.
+
+    3. Site management coordinates the floor build-up, joint layout, and drying periods with the participants.
+
+    4. The underfloor-heating design is prepared from this basis, for example by Planfabrik.
+
+
+    **Deliverable**
+
+    - Heating execution drawings
+
+    - Joint layouts'
+workflow_group: arbeitsvorbereitung
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: Coordinate space use, floor build-up, room heating load, joints, and drying periods before execution planning.

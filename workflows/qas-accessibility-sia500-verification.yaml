@@ -1,0 +1,183 @@
+id: pragmaticbim:workflow/qas-accessibility-sia500-verification
+code: QAS-ACCESS-SIA500
+sort_order: 89
+name:
+  de: Hindernisfreiheit nach SIA 500 nachweisen
+  fr: Justifier l'accessibilité selon la norme SIA 500
+  it: Dimostrare l'accessibilità secondo la norma SIA 500
+  en: Verify accessibility to SIA 500
+description:
+  de: 'Abweichungen von der hindernisfreien Route vor dem Baugesuch sichtbar machen, statt sie erst im Bewilligungsverfahren zu entdecken.
+
+
+    **Ausgangslage**
+
+    - Mindestbreiten und Raumabmessungen lassen sich oft direkt aus dem Modell prüfen; Bewegungs- und Manövrierflächen fehlen dort meist, weil sie nicht Teil der üblichen Modellierung sind.
+
+    - Ohne diese Flächen bleiben Verstösse gegen SIA 500 unsichtbar, bis die Fachstelle oder das Bewilligungsverfahren sie aufdeckt – dort kostet jede Korrektur Zeit.
+
+    - Handläufe, Bedienhöhen, Schwellen, Bodenbeläge und Signaletik lassen sich ohnehin nicht aus dem Modell ableiten und bleiben manuell zu prüfen.
+
+
+    **Ziel & Nutzen**
+
+    - Abweichungen vor der Einreichung erkennen, statt sie im Bewilligungsverfahren zu korrigieren.
+
+    - Türbreiten, Korridore, Rampen, Sanitärräume und Bewegungsflächen automatisiert statt mit dem Massstab am Plan prüfen.
+
+    - Die zugängliche Route direkt im Modell dokumentieren, statt sie nachträglich zu rekonstruieren.
+
+
+    **Ablauf**
+
+    1. Räume und Türen entlang der hindernisfreien Route kennzeichnen und lichte Türbreiten, Korridorbreiten, Rampengefälle und -breiten sowie Fläche und kleinste Raumseite der erforderlichen Sanitärräume
+    regelbasiert prüfen.
+
+    2. Wendeflächen von 1.40 × 1.70 m in Korridoren öffentlicher Bauten mindestens alle 15 m, Manövrierflächen von 1.40 × 1.40 m bei Richtungsänderungen über 45° und vor Aufzügen sowie Freiflächen neben
+    dem Schwenkbereich von Haus-, Wohnungs- und Parkgaragentüren mit vorzugsweise 0.60 m, mindestens aber 0.20 m Breite modellieren und auf Kollisionen prüfen.
+
+    3. Abweichungen dokumentieren, die zugängliche Raumfolge im Plan einfärben und die manuell zu prüfenden Anforderungen an Handläufe, Bedienhöhen von 0.80–1.10 m, Schwellen bis 25 mm, Bodenbeläge und
+    Signaletik ergänzen.
+
+
+    **Lieferergebnis**
+
+    - Eingefärbter Hindernisfreiheitsplan für Baugesuch und Abstimmung mit der Fachstelle.
+
+    - Regelprüfbericht für Türen und Räume.
+
+    - Kollisionsbericht für die Bewegungsflächen.'
+  fr: 'Rendre visibles les écarts par rapport au cheminement accessible avant la demande d''autorisation, au lieu de ne les découvrir que dans la procédure d''autorisation.
+
+
+    **Situation de départ**
+
+    - Les largeurs minimales et les dimensions des locaux peuvent souvent être contrôlées directement dans la maquette; les aires de mouvement et de manœuvre y manquent le plus souvent, parce qu''elles
+    ne font pas partie de la modélisation habituelle.
+
+    - Sans ces aires, les écarts par rapport à la norme SIA 500 restent invisibles jusqu''à ce que le service spécialisé ou la procédure d''autorisation les mette au jour – chaque correction y coûte du
+    temps.
+
+    - Les mains courantes, les hauteurs de commande, les seuils, les revêtements de sol et la signalétique ne peuvent de toute façon pas être déduits de la maquette et restent à contrôler manuellement.
+
+
+    **Objectif et bénéfice**
+
+    - Repérer les écarts avant le dépôt, au lieu de les corriger dans la procédure d''autorisation.
+
+    - Contrôler de manière automatisée les largeurs de portes, les couloirs, les rampes, les locaux sanitaires et les aires de mouvement, au lieu de les mesurer à l''échelle sur le plan.
+
+    - Documenter le cheminement accessible directement dans la maquette, au lieu de le reconstituer après coup.
+
+
+    **Déroulement**
+
+    1. Identifier les locaux et les portes le long du cheminement accessible et contrôler selon des règles les largeurs utiles des portes et des couloirs, la pente et la largeur des rampes ainsi que la
+    surface et le plus petit côté des locaux sanitaires requis.
+
+    2. Modéliser des aires de rotation de 1.40 × 1.70 m dans les couloirs des bâtiments publics au moins tous les 15 m, des aires de manœuvre de 1.40 × 1.40 m aux changements de direction supérieurs à 45°
+    et devant les ascenseurs, ainsi que des aires libres de préférence de 0.60 m, mais d''au moins 0.20 m de largeur, à côté du débattement des portes d''entrée des maisons, logements et parkings, puis
+    contrôler les collisions.
+
+    3. Documenter les écarts, colorier la suite de locaux accessibles sur le plan et compléter les exigences à contrôler manuellement concernant les mains courantes, les hauteurs de commande de 0.80–1.10
+    m, les seuils jusqu''à 25 mm, les revêtements de sol et la signalétique.
+
+
+    **Livrable**
+
+    - Plan d''accessibilité colorié pour la demande d''autorisation et la concertation avec le service spécialisé.
+
+    - Rapport de contrôle réglementaire pour les portes et les locaux.
+
+    - Rapport de collisions pour les aires de mouvement.'
+  it: 'Rendere visibili gli scostamenti dal percorso accessibile prima della domanda di costruzione, invece di scoprirli solo nella procedura di autorizzazione.
+
+
+    **Situazione di partenza**
+
+    - Le larghezze minime e le dimensioni dei locali possono spesso essere verificate direttamente nel modello; le aree di movimento e di manovra vi mancano per lo più, perché non fanno parte della modellazione
+    abituale.
+
+    - Senza queste aree, gli scostamenti dalla norma SIA 500 restano invisibili finché il servizio specializzato o la procedura di autorizzazione non li rileva – ogni correzione costa tempo.
+
+    - Corrimano, altezze dei comandi, soglie, pavimentazioni e segnaletica non possono comunque essere ricavati dal modello e restano da verificare manualmente.
+
+
+    **Obiettivo e beneficio**
+
+    - Individuare gli scostamenti prima della presentazione, invece di correggerli nella procedura di autorizzazione.
+
+    - Verificare in modo automatizzato larghezze delle porte, corridoi, rampe, locali sanitari e aree di movimento, invece di misurarli a scala sul piano.
+
+    - Documentare il percorso accessibile direttamente nel modello, invece di ricostruirlo in seguito.
+
+
+    **Svolgimento**
+
+    1. Contrassegnare locali e porte lungo il percorso accessibile e verificare mediante regole le larghezze libere di porte e corridoi, la pendenza e la larghezza delle rampe nonché la superficie e il
+    lato minore dei locali sanitari necessari.
+
+    2. Modellare aree di rotazione di 1.40 × 1.70 m nei corridoi degli edifici pubblici almeno ogni 15 m, aree di manovra di 1.40 × 1.40 m per cambi di direzione superiori a 45° e davanti agli ascensori,
+    nonché aree libere preferibilmente di 0.60 m, ma larghe almeno 0.20 m, accanto al raggio di apertura delle porte d''ingresso di edifici, appartamenti e autorimesse, e verificarne le interferenze.
+
+    3. Documentare gli scostamenti, colorare nel piano la sequenza dei locali accessibili e integrare i requisiti da verificare manualmente relativi a corrimano, altezze dei comandi di 0.80–1.10 m, soglie
+    fino a 25 mm, pavimentazioni e segnaletica.
+
+
+    **Risultato della fornitura**
+
+    - Piano dell''accessibilità colorato per la domanda di costruzione e il coordinamento con il servizio specializzato.
+
+    - Rapporto di verifica delle regole per porte e locali.
+
+    - Rapporto delle interferenze per le aree di movimento.'
+  en: 'Make deviations from the accessible route visible before the permit submission, instead of discovering them only during the permit procedure.
+
+
+    **Starting point**
+
+    - Minimum widths and room dimensions can often be checked directly from the model; movement and manoeuvring areas are usually missing there because they are not part of ordinary modelling.
+
+    - Without these areas, deviations from SIA 500 stay invisible until the specialist authority or the permit procedure uncovers them – every correction there costs time.
+
+    - Handrails, control heights, thresholds, floor surfaces, and signage cannot be derived from the model in any case and remain to be checked manually.
+
+
+    **Goal & benefit**
+
+    - Identify deviations before submission, instead of correcting them during the permit procedure.
+
+    - Check door widths, corridors, ramps, sanitary rooms, and movement areas automatically instead of with a scale ruler on the drawing.
+
+    - Document the accessible route directly in the model, instead of reconstructing it afterwards.
+
+
+    **Process**
+
+    1. Mark rooms and doors along the accessible route and use rules to check clear door and corridor widths, ramp gradients and widths, and the area and shortest side of the required sanitary rooms.
+
+    2. Model 1.40 × 1.70 m turning areas in public-building corridors at intervals of no more than 15 m, 1.40 × 1.40 m manoeuvring areas at direction changes exceeding 45° and in front of lifts, and clear
+    areas preferably 0.60 m but at least 0.20 m wide beside the swings of house, apartment, and parking-garage entrance doors, then check them for clashes.
+
+    3. Document deviations, colour the accessible room sequence in the plan, and add the requirements to be checked manually for handrails, control heights of 0.80–1.10 m, thresholds up to 25 mm, floor
+    surfaces, and signage.
+
+
+    **Deliverable**
+
+    - Coloured accessibility plan for the permit submission and consultation with the specialist authority.
+
+    - Rule-check report for doors and rooms.
+
+    - Clash report for the movement areas.'
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: SIA 500 proof uses rectangular wheelchair clearances rather than the circular turning-radius logic common in German DIN workflows. HandicapAccessible on spaces marks the accessible room sequence
+  for plan colouring. Thresholds, handrails, control heights, floor surfaces, and signage remain manual plan and specification checks.

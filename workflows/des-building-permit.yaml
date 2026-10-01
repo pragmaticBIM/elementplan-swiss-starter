@@ -2,12 +2,12 @@ id: pragmaticbim:workflow/des-building-permit
 code: DES-PERMIT
 sort_order: 65
 name:
-  de: Erstellen Baugesuch
+  de: Baugesuch erstellen
   fr: Établir la mise à l'enquête
   it: Predisporre la domanda edilizia
   en: Prepare the building application
 description:
-  de: 'Bewilligungspläne der Architektur und der TGA-Gewerke für das Baugesuch aus dem Planungsstand ableiten.
+  de: 'Das Baugesuch aus dem abgestimmten Planungsstand zusammenstellen, damit Formulare, Nachweise und Bewilligungspläne vollständig und konsistent sind.
 
 
     **Ausgangslage**
@@ -21,7 +21,7 @@ description:
 
     - Baugenehmigungspläne Architektur, Heizung, Kälte, Lüftung, Klima, Sanitär und Elektro aus dem Modell ableiten.
 
-    - Eine gemeinsame Gesuchsgrundlage statt paralleler 2D-Stände je Gewerk.
+    - Formulare, Berichte, Konzepte, Nachweise und Pläne zu einer prüfbaren Gesuchsgrundlage zusammenführen.
 
 
     **Ablauf**
@@ -30,22 +30,17 @@ description:
 
     2. Bewilligungspläne je Gewerk in der von der Behörde geforderten Darstellung ableiten.
 
-    3. Pläne mit Brandschutzkonzept, Gutachten und Gesuchsunterlagen abstimmen.
+    3. Pläne, Formulare, Berichte, Konzepte und Nachweise abstimmen und zum vollständigen Baugenehmigungsdossier zusammenstellen.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Abgestimmte Baugenehmigungspläne je Gewerk als Grundlage für das Baugesuch.
+    - Vollständiges Baugenehmigungsdossier gemäss Vorgaben der zuständigen Behörde
 
+    - Bewilligungspläne der Architektur und TGA-Fachrichtungen gemäss behördlichen Vorgaben
 
-    **Lieferobjekte**
-
-    - Baugenehmigungspläne Architektur, Heizung, Kälte, Lüftung, Klima, Sanitär und Elektro
-
-    - Architektur- und TGA-Modelle mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Keine zusätzlichen IFC-Attribute — Bewilligungspläne als Prozessergebnis'
-  fr: 'Obtenir les plans de permis de l''architecture et des métiers CVC pour la mise à l''enquête à partir de l''état de planification.
+    - Aktuelle, koordinierte Architektur- und TGA-Modelle als Grundlage der Planabgabe'
+  fr: 'Fournir un dossier complet de demande de permis avec formulaires, rapports, justificatifs et plans de l''architecture et des techniques du bâtiment.
 
 
     **Situation de départ**
@@ -59,7 +54,7 @@ description:
 
     - Obtenir les plans de permis architecture, chauffage, froid, ventilation, climatisation, sanitaire et électricité depuis la maquette.
 
-    - Une base d''enquête commune au lieu d''états 2D parallèles par métier.
+    - Réunir formulaires, rapports, concepts, justificatifs et plans dans un dossier contrôlable.
 
 
     **Déroulement**
@@ -68,22 +63,17 @@ description:
 
     2. Obtenir les plans de permis par métier dans la représentation exigée par l''autorité.
 
-    3. Aligner les plans avec le concept incendie, les expertises et le dossier d''enquête.
+    3. Coordonner plans, formulaires, rapports, concepts et justificatifs, puis constituer le dossier complet de demande de permis.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Plans de permis coordonnés par métier comme base pour la mise à l''enquête.
+    - Dossier complet de demande de permis conforme aux exigences de l''autorité compétente
 
+    - Plans de permis de l''architecture et des métiers CVC conformes aux exigences de l''autorité
 
-    **Livrables**
-
-    - Plans de permis architecture, chauffage, froid, ventilation, climatisation, sanitaire et électricité
-
-    - Maquettes architecture et CVC avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Pas d''attributs IFC supplémentaires — plans de permis comme résultat de processus'
-  it: 'Ottenere i piani di autorizzazione di architettura e impianti per la domanda edilizia dallo stato di pianificazione.
+    - Maquettes architecture et CVC actuelles et coordonnées comme base du dossier de plans'
+  it: 'Fornire un dossier completo della domanda di costruzione con formulari, rapporti, verifiche e piani di architettura e impianti.
 
 
     **Situazione di partenza**
@@ -97,7 +87,7 @@ description:
 
     - Ottenere i piani di autorizzazione architettura, riscaldamento, raffrescamento, ventilazione, climatizzazione, sanitario ed elettrica dal modello.
 
-    - Una base di domanda comune invece di stati 2D paralleli per mestiere.
+    - Riunire formulari, rapporti, concetti, verifiche e piani in una domanda verificabile.
 
 
     **Svolgimento**
@@ -106,22 +96,17 @@ description:
 
     2. Ottenere i piani di autorizzazione per mestiere nella rappresentazione richiesta dall''autorità.
 
-    3. Allineare i piani con il concetto antincendio, le perizie e gli atti di domanda.
+    3. Coordinare piani, formulari, rapporti, concetti e verifiche e comporre il dossier completo della domanda di costruzione.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Piani di autorizzazione coordinati per mestiere come base per la domanda edilizia.
+    - Dossier completo della domanda di costruzione conforme alle prescrizioni dell''autorità competente
 
+    - Piani di autorizzazione dell''architettura e degli impianti conformi alle prescrizioni dell''autorità
 
-    **Oggetti della fornitura**
-
-    - Piani di autorizzazione architettura, riscaldamento, raffrescamento, ventilazione, climatizzazione, sanitario ed elettrica
-
-    - Modelli di architettura e impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Nessun attributo IFC aggiuntivo — piani di autorizzazione come risultato di processo'
-  en: 'Derive architecture and MEP permit plans for the building application from the planning status.
+    - Modelli di architettura e impianti aggiornati e coordinati come base della consegna'
+  en: 'Compile the building application from the coordinated design state so that forms, evidence, and permit drawings are complete and consistent.
 
 
     **Starting point**
@@ -135,7 +120,7 @@ description:
 
     - Derive permit plans for architecture, heating, cooling, ventilation, air conditioning, plumbing, and electrical from the model.
 
-    - One shared application basis instead of parallel 2D statuses per trade.
+    - Assemble forms, reports, concepts, evidence, and plans into one verifiable application.
 
 
     **Process**
@@ -144,26 +129,24 @@ description:
 
     2. Derive permit plans per trade in the representation required by the authority.
 
-    3. Align the plans with the fire concept, expert reports, and application documents.
+    3. Coordinate plans, forms, reports, concepts, and evidence and assemble the complete building permit dossier.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Coordinated permit plans per trade as the basis for the building application.
+    - Complete building permit dossier meeting the requirements of the competent authority
 
+    - Permit plans for architecture and MEP disciplines meeting authority requirements
 
-    **Deliverables**
-
-    - Permit plans architecture, heating, cooling, ventilation, air conditioning, plumbing, and electrical
-
-    - Architecture and MEP models with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - No additional IFC attributes — permit plans as the process deliverable'
-workflow_group: null
+    - Current, coordinated architecture and MEP models as the basis for submission'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
+countries:
+- CH
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: One use case, seven permit-plan documents (BGA plus HKLKSE). No extra IFC attributes.
+comment: One use case with an umbrella building-permit dossier and seven permit-plan documents (BGA plus HKLKSE). No extra IFC attributes.

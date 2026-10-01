@@ -1,0 +1,168 @@
+id: pragmaticbim:workflow/bes-existing-building-point-cloud-procurement
+code: BES-EXISTING-POINT-CLOUD
+sort_order: 7
+name:
+  de: Gebäudebestand als Punktwolke aufnehmen
+  fr: Relever le bâtiment existant sous forme de nuage de points
+  it: Rilevare l’edificio esistente come nuvola di punti
+  en: Capture the existing building as a point cloud
+description:
+  de: 'Den gebauten Zustand früh als georeferenzierte Punktwolke aufnehmen, ohne vor Klärung der Konzeptrichtung ein vollständiges Bestandsmodell nachzubauen.
+
+
+    **Ausgangslage**
+
+    - Bestandspläne fehlen häufig, sind unvollständig oder bilden nachträgliche Umbauten nicht ab.
+
+    - Eine sofortige vollständige Nachmodellierung ist teuer und legt Erfassungstiefe und Annahmen fest, bevor bekannt ist, welche Bereiche das spätere Konzept tatsächlich betrifft.
+
+
+    **Ziel & Nutzen**
+
+    - Die sichtbare gebaute Situation als neutrale und überprüfbare Grundlage für Varianten, Umbau, Rückbau und Erweiterung erfassen.
+
+    - Die Nachmodellierung zeitlich und inhaltlich vom Aufmass trennen, damit sie später gezielt auf die gewählte Konzeptrichtung ausgerichtet werden kann.
+
+
+    **Ablauf**
+
+    1. Klären, wofür die Punktwolke gebraucht wird, welcher Aufnahmeperimeter gilt, was zugänglich ist und was verdeckt bleibt.
+
+    2. Klären, welcher Lage- und Höhenbezug gilt, wie er nachgewiesen wird, welche Genauigkeit und Punktdichte der Zweck braucht und wo bewusst gröber aufgenommen wird. Bei sicherheitsrelevanten Anlagen
+    klären, wo die Punktwolke berechnet wird.
+
+    3. Die Lieferung gegen diese Festlegung prüfen, Abdeckung, Bezug, Lesbarkeit sowie nicht oder nur teilweise erfasste Bereiche dokumentieren und die Punktwolke freigeben.
+
+
+    **Lieferergebnis**
+
+    - Freigegebene Punktwolke des vereinbarten Perimeters im vereinbarten Lage- und Höhenbezug, ohne undokumentierten Versatz, lesbar für den vereinbarten Zweck.
+
+    - Nachweis, den das Projektteam ohne Vermessungskenntnis prüfen kann: Aufnahmedatum, Gerät, Abdeckung, beanspruchte Genauigkeit, nicht oder nur teilweise erfasste Bereiche sowie neutrales Archivformat
+    und das Arbeitsformat der eingesetzten Werkzeuge.
+
+    - Vorhandene Bestandspläne als ergänzende, noch nicht bestätigte Grundlage; zeitlich unbeschränktes Nutzungsrecht der Bauherrschaft an Punktwolken, Bildern und Berichten, einschliesslich Weitergabe
+    und späterer Phasen.'
+  fr: 'Saisir suffisamment tôt la situation construite sous forme de nuage de points géoréférencé, sans reconstituer une maquette complète de l’existant avant que l’orientation du concept soit arrêtée.
+
+
+    **Situation de départ**
+
+    - Les plans de l’existant manquent souvent, sont incomplets ou ne tiennent pas compte de transformations ultérieures.
+
+    - Une modélisation complète immédiate est coûteuse et fixe la profondeur de saisie et les hypothèses avant de savoir quelles zones seront réellement concernées par le futur concept.
+
+
+    **Objectif et bénéfice**
+
+    - Relever la situation construite visible comme base neutre et contrôlable pour les variantes, la transformation, la déconstruction et l’extension.
+
+    - Séparer dans le temps et dans le contenu le relevé de la modélisation, afin de cibler celle-ci ultérieurement sur l’orientation retenue.
+
+
+    **Déroulement**
+
+    1. Clarifier à quoi sert le nuage de points, quel périmètre de relevé s’applique, ce qui est accessible et ce qui reste masqué.
+
+    2. Clarifier quel référentiel planimétrique et altimétrique s’applique, comment il est justifié, quelle précision et quelle densité de points l’usage exige et où le relevé reste volontairement plus
+    grossier. Pour les installations à caractère sécuritaire, clarifier où le nuage de points est calculé.
+
+    3. Contrôler la livraison par rapport à cette définition, documenter la couverture, le calage, la lisibilité ainsi que les zones non relevées ou seulement partiellement relevées, et valider le nuage
+    de points.
+
+
+    **Livrable**
+
+    - Nuage de points validé du périmètre convenu, dans le référentiel planimétrique et altimétrique convenu, sans décalage non documenté, lisible pour l’usage convenu.
+
+    - Justificatif que l’équipe de projet peut contrôler sans connaissances de mensuration: date du relevé, appareil, couverture, précision revendiquée, zones non relevées ou seulement partiellement relevées,
+    ainsi que format d’archivage neutre et format de travail des outils employés.
+
+    - Plans de l’existant disponibles comme base complémentaire, mais non encore confirmée; droit d’utilisation illimité dans le temps du maître d’ouvrage sur les nuages de points, images et rapports, y
+    compris remise et phases ultérieures.'
+  it: 'Acquisire tempestivamente la situazione costruita come nuvola di punti georiferita, senza ricostruire un modello completo dello stato di fatto prima che sia chiarito l’indirizzo del concetto.
+
+
+    **Situazione di partenza**
+
+    - I piani dello stato di fatto spesso mancano, sono incompleti o non riportano trasformazioni successive.
+
+    - Una modellazione completa immediata è costosa e fissa profondità di acquisizione e ipotesi prima che siano note le aree effettivamente interessate dal futuro concetto.
+
+
+    **Obiettivo e beneficio**
+
+    - Rilevare la situazione costruita visibile come base neutrale e verificabile per varianti, trasformazione, smantellamento e ampliamento.
+
+    - Separare temporalmente e nei contenuti il rilievo dalla modellazione, affinché quest’ultima possa essere mirata in seguito all’indirizzo scelto.
+
+
+    **Svolgimento**
+
+    1. Chiarire a che scopo serve la nuvola di punti, quale perimetro di rilievo vale, cosa è accessibile e cosa resta nascosto.
+
+    2. Chiarire quale riferimento planimetrico e altimetrico vale, come viene attestato, quale precisione e quale densità di punti richiede lo scopo e dove il rilievo resta volutamente più grossolano. Per
+    impianti rilevanti per la sicurezza chiarire dove viene calcolata la nuvola di punti.
+
+    3. Verificare la fornitura rispetto a questa definizione, documentare copertura, riferimento, leggibilità nonché le aree non rilevate o rilevate solo parzialmente e approvare la nuvola di punti.
+
+
+    **Risultato della fornitura**
+
+    - Nuvola di punti approvata del perimetro concordato, nel riferimento planimetrico e altimetrico concordato, senza scostamento non documentato, leggibile per lo scopo concordato.
+
+    - Attestato che il gruppo di progetto può verificare senza conoscenze di misurazione: data del rilievo, strumento, copertura, precisione dichiarata, aree non rilevate o rilevate solo parzialmente, nonché
+    formato di archivio neutro e formato di lavoro degli strumenti impiegati.
+
+    - Piani dello stato di fatto disponibili come base integrativa, ma non ancora confermata; diritto di utilizzo illimitato nel tempo del committente su nuvole di punti, immagini e rapporti, compresa la
+    trasmissione e le fasi successive.'
+  en: 'Capture the built condition early as a georeferenced point cloud without rebuilding a complete existing-condition model before the concept direction is clear.
+
+
+    **Starting point**
+
+    - Existing drawings are often missing, incomplete, or do not include later alterations.
+
+    - Immediate complete modelling is costly and fixes capture depth and assumptions before it is known which areas the eventual concept will affect.
+
+
+    **Goal & benefit**
+
+    - Capture the visible built condition as a neutral, verifiable basis for options, conversion, deconstruction, and extension.
+
+    - Separate survey from modelling in timing and scope so that modelling can later focus on the chosen concept direction.
+
+
+    **Process**
+
+    1. Clarify what the point cloud is needed for, which survey perimeter applies, what is accessible, and what remains obscured.
+
+    2. Clarify which position and elevation reference applies, how it is evidenced, which accuracy and point density the purpose requires, and where the survey is deliberately coarser. For security-relevant
+    facilities, clarify where the point cloud is processed.
+
+    3. Check the delivery against this definition, document coverage, reference, readability, and areas not or only partly captured, and approve the point cloud.
+
+
+    **Deliverable**
+
+    - Approved point cloud of the agreed perimeter in the agreed position and elevation reference, without an undocumented offset, readable for the agreed purpose.
+
+    - Evidence the project team can check without survey knowledge: capture date, instrument, coverage, claimed accuracy, areas not or only partly captured, plus a neutral archive format and the working
+    format of the tools in use.
+
+    - Available existing drawings as a supplementary, not yet confirmed basis; perpetual right of the client to use the point clouds, images, and reports, including passing them on and later phases.'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/surveyor
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+comment: 'Zweites Beschaffungspaket für Bestandsgrundlagen. Erfasst das Gebäude vor dem Konzeptentscheid als Punktwolke. Die konzeptbezogene Nachmodellierung ist ein nachgelagertes Beschaffungspaket. Aufnahmeverfahren,
+  HDR, Bereinigung und Registrierung bleiben bei der Vermessung. Nicht verbindliche Orientierung für die Bestellung: Fassaden 5-10 mm / LOA30; Innenräume und Tragwerk 3-6 mm / LOA30; Haustechnik und Anschlussdetails
+  2-3 mm / LOA30-40.'

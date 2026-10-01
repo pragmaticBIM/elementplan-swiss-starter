@@ -1,0 +1,152 @@
+id: pragmaticbim:workflow/des-arch-mep-coordination
+code: DES-ARCH-MEP-COORD
+sort_order: 74
+name:
+  de: Architektur und Gebäudetechnik koordinieren
+  fr: Coordonner l'architecture et les techniques du bâtiment
+  it: Coordinare architettura e impianti
+  en: Coordinate architecture and building services
+description:
+  de: 'Leitungsführungen, Geräte und Platzanforderungen der Gebäudetechnik mit der Architektur abstimmen und in beiden Fachmodellen konsistent nachführen.
+
+
+    **Ausgangslage**
+
+    - TGA-Trassen und Geräte kollidieren in der fortschreitenden Planung häufig mit Wänden, Decken, Schächten, Türen oder der vorgesehenen Raumnutzung.
+
+    - Werden Anpassungen nur in Sitzungen oder separaten Plänen festgehalten, bleiben widersprüchliche Modellstände und fehlende Öffnungen in nichttragenden Bauteilen bis zur Ausführung unentdeckt.
+
+
+    **Ziel & Nutzen**
+
+    - Lage und Platzbedarf von TGA-Trassen und Geräten mit Raumgeometrie, Ausbau und Zugänglichkeit abstimmen.
+
+    - Konflikte durch Verschieben, Anpassen oder Bündeln der TGA-Führung beziehungsweise durch architektonische Anpassungen lösen.
+
+    - Freigegebene Aussparungen in nichttragendem Mauerwerk, Trockenbau und weiteren architekturseitig verantworteten Bauteilen verbindlich im Architekturmodell führen.
+
+
+    **Ablauf**
+
+    1. Architektur- und TGA-Modelle mit dem vereinbarten Planungsstand sowie den erforderlichen Platz- und Zugänglichkeitsanforderungen bereitstellen.
+
+    2. Modelle auf räumliche Konflikte und erforderliche Öffnungen prüfen, Lösungsvarianten fachübergreifend abstimmen und Entscheide dokumentieren.
+
+    3. Freigegebene Anpassungen in den zuständigen Fachmodellen nachführen und den aktualisierten Stand erneut im Gesamtmodell prüfen.
+
+
+    **Lieferergebnis**
+
+    - Räumlich abgestimmtes Architektur- und TGA-Modell mit nachvollziehbar gelösten Konflikten.
+
+    - Architekturmodell mit den freigegebenen Aussparungen in nichttragenden, architekturseitig verantworteten Bauteilen.'
+  fr: 'Coordonner les cheminements, appareils et besoins d''espace des techniques du bâtiment avec l''architecture et tenir les deux maquettes métier à jour de manière cohérente.
+
+
+    **Situation de départ**
+
+    - Au fil de la planification, les réseaux et appareils CVC entrent souvent en conflit avec les parois, plafonds, gaines, portes ou l''utilisation prévue des locaux.
+
+    - Si les adaptations ne sont consignées que dans les séances ou sur des plans séparés, les états de maquette contradictoires et les ouvertures manquantes dans les éléments non porteurs ne sont découverts
+    qu''au moment de l''exécution.
+
+
+    **Objectif et bénéfice**
+
+    - Coordonner la position et l''encombrement des réseaux et appareils CVC avec la géométrie des locaux, l''aménagement et l''accessibilité.
+
+    - Résoudre les conflits en déplaçant, adaptant ou regroupant les réseaux CVC ou en modifiant l''architecture.
+
+    - Saisir de manière contraignante dans la maquette d''architecture les réservations validées dans la maçonnerie non porteuse, les cloisons légères et les autres éléments relevant de l''architecture.
+
+
+    **Déroulement**
+
+    1. Fournir les maquettes d''architecture et CVC dans l''état de planification convenu, avec les besoins d''espace et d''accessibilité requis.
+
+    2. Contrôler les conflits spatiaux et les ouvertures nécessaires, coordonner les variantes entre les disciplines et documenter les décisions.
+
+    3. Reporter les adaptations validées dans les maquettes métier compétentes et contrôler à nouveau l''état actualisé dans la maquette fédérée.
+
+
+    **Livrable**
+
+    - Maquettes d''architecture et CVC coordonnées spatialement, avec résolution traçable des conflits.
+
+    - Maquette d''architecture avec les réservations validées dans les éléments non porteurs relevant de l''architecture.'
+  it: 'Coordinare i tracciati, gli apparecchi e il fabbisogno di spazio degli impianti con l''architettura e aggiornare in modo coerente entrambi i modelli disciplinari.
+
+
+    **Situazione di partenza**
+
+    - Con l''avanzare della progettazione, tracciati e apparecchi impiantistici interferiscono spesso con pareti, soffitti, cavedi, porte o con l''uso previsto dei locali.
+
+    - Se le modifiche sono registrate solo nelle riunioni o su piani separati, stati di modello contraddittori e aperture mancanti negli elementi non portanti vengono scoperti soltanto durante l''esecuzione.
+
+
+    **Obiettivo e beneficio**
+
+    - Coordinare posizione e ingombro di tracciati e apparecchi impiantistici con geometria dei locali, finiture e accessibilità.
+
+    - Risolvere i conflitti spostando, adattando o raggruppando i tracciati impiantistici oppure modificando l''architettura.
+
+    - Gestire in modo vincolante nel modello architettonico i fori approvati nella muratura non portante, nelle pareti leggere e negli altri elementi di competenza dell''architettura.
+
+
+    **Svolgimento**
+
+    1. Fornire i modelli di architettura e impianti nello stato di progettazione concordato, con i necessari requisiti di spazio e accessibilità.
+
+    2. Verificare i conflitti spaziali e le aperture necessarie, coordinare le varianti tra le discipline e documentare le decisioni.
+
+    3. Aggiornare le modifiche approvate nei modelli disciplinari competenti e verificare nuovamente lo stato aggiornato nel modello federato.
+
+
+    **Risultato della fornitura**
+
+    - Modelli di architettura e impianti coordinati spazialmente, con risoluzione tracciabile dei conflitti.
+
+    - Modello architettonico con i fori approvati negli elementi non portanti di competenza dell''architettura.'
+  en: 'Coordinate MEP routes, equipment, and space requirements with architecture and update both discipline models consistently.
+
+
+    **Starting point**
+
+    - As design progresses, MEP routes and equipment often clash with walls, ceilings, shafts, doors, or the intended use of rooms.
+
+    - If adjustments are recorded only in meetings or separate drawings, contradictory model states and missing openings in non-load-bearing components remain undiscovered until construction.
+
+
+    **Goal & benefit**
+
+    - Coordinate the location and space requirements of MEP routes and equipment with room geometry, fit-out, and accessibility.
+
+    - Resolve conflicts by relocating, adjusting, or consolidating MEP routes or by adapting the architecture.
+
+    - Maintain approved openings in non-load-bearing masonry, lightweight partitions, and other architecture-owned components as binding objects in the architecture model.
+
+
+    **Process**
+
+    1. Provide architecture and MEP models at the agreed design state with the required space and accessibility requirements.
+
+    2. Check the models for spatial conflicts and required openings, coordinate options across disciplines, and document decisions.
+
+    3. Update approved adjustments in the responsible discipline models and check the updated state again in the federated model.
+
+
+    **Deliverable**
+
+    - Spatially coordinated architecture and MEP models with traceably resolved conflicts.
+
+    - Architecture model with approved openings in non-load-bearing, architecture-owned components.'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: Detailed architecture–MEP coordination. Architecture openings are binding only for architecture-owned hosts such as non-load-bearing masonry and lightweight partitions. Structural openings are
+  handled by des-struct-mep-opening-planning.

@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/gaestezimmer
+code: RT-WH-09
+sort_order: 9
+name:
+  de: Gaestezimmer
+  fr: Chambre d'amis
+  it: Camera ospiti
+  en: Guest Room
+definition:
+  de: Raum für über Nacht bleibende Gäste.
+  fr: Local pour les hôtes qui restent la nuit.
+  it: Locale per ospiti che pernottano.
+  en: Room for overnight guests.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Gaestezimmer
+    fr: Chambre d'amis
+    it: Camera ospiti
+    en: Guest Room
+restrictions:
+  min_area: 8
+status: active

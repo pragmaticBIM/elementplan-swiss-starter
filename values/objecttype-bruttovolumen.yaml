@@ -11,14 +11,14 @@ description:
   it: ObjectType per IfcSpace come volume lordo per piano per studi di massa.
   en: ObjectType for IfcSpace as storey-wise gross volume for mass studies.
 year: 2026
-norm_reference: IFC4
+norm_reference: IFC2x3
 status: active
 values:
   de:
   - Bruttovolumen
   fr:
-  - Bruttovolumen
+  - Volume brut
   it:
-  - Bruttovolumen
+  - Volume lordo
   en:
-  - Bruttovolumen
+  - Gross volume

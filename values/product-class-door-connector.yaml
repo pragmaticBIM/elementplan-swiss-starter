@@ -1,0 +1,52 @@
+id: pragmaticbim:value/product-class-door-connector
+code: PRODUCT-DCP
+name:
+  de: Abstrakte Tuer-Verbindungsprodukte
+  fr: Abstract door connector products
+  it: Abstract door connector products
+  en: Abstract door connector products
+description:
+  de: 'Produktklassen gemäss Abstrakte Tuer-Verbindungsprodukte. Quelle: https://schema.pragmaticbim.ch/classification/door-connector-product.html'
+  fr: 'Classes de produits selon Abstract door connector products. Source : https://schema.pragmaticbim.ch/classification/door-connector-product.html'
+  it: 'Classi di prodotto secondo Abstract door connector products. Fonte: https://schema.pragmaticbim.ch/classification/door-connector-product.html'
+  en: 'Product classes according to Abstract door connector products. Source: https://schema.pragmaticbim.ch/classification/door-connector-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Holztuer
+  - Metalltuer
+  - Holz-Metall-Tuer
+  - Kunststoff- / PVC-Tuer
+  - Glas- / Verglasungstuer
+  - Tor / Industrietuer
+  - Spezialtuer
+  - Sonstige / unbekannte Tuer
+  fr:
+  - Wood door system
+  - Metal door system
+  - Wood–metal composite door
+  - Plastic / PVC door system
+  - Glazed door system
+  - Gate / industrial door
+  - Special door system
+  - Other / unknown door
+  it:
+  - Wood door system
+  - Metal door system
+  - Wood–metal composite door
+  - Plastic / PVC door system
+  - Glazed door system
+  - Gate / industrial door
+  - Special door system
+  - Other / unknown door
+  en:
+  - Wood door system
+  - Metal door system
+  - Wood–metal composite door
+  - Plastic / PVC door system
+  - Glazed door system
+  - Gate / industrial door
+  - Special door system
+  - Other / unknown door

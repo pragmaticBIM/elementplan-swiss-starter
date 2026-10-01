@@ -1,0 +1,519 @@
+id: pragmaticbim:element/architecture-floor-covering-exterior
+code: ARC-FLOOR-COV-EXT
+sort_order: 52
+status: active
+name:
+  de: Bodenbelag Aussen
+  fr: Revêtement de sol extérieur
+  it: Pavimentazione esterna
+  en: Exterior floor covering
+definition:
+  de: 'Macht Aussenbeläge in der Detailplanung prüfbar für Mengen, Fugen und Ausschreibung. Frühe Planung ohne modelliertes Covering: FloorCovering (AOF) am Aussenraum.
+
+
+    **Beschreibung**
+
+    - Modellierter Aussenbelag (Wege, Plätze, Terrassen, befestigte Flächen) gemäss Aussenbodenflächen-Klassifikation (AOF).
+
+    - Ergänzt die Raumeigenschaft FloorCovering, sobald Aufbau und Fugen relevant werden.
+
+
+    **Modellierungshinweis**
+
+    - Als eine Schicht modellieren – nach Belagstyp trennen, nicht nach einzelnen Raumpolygonen.
+
+    - IsExternal=TRUE setzen; Finish mit AOF-Bezeichnung führen (Blatt bei bekanntem Belag, sonst Elternklasse).
+
+    - Keine Vegetation oder Retention hier modellieren – die gehören zu Landschaftselementen bzw. Raumeigenschaften.'
+  fr: 'Rend vérifiables les revêtements extérieurs en planification de détail pour quantités, joints et appel d''offres. Planification initiale sans covering modélisé : FloorCovering (AOF) sur l''espace
+    extérieur.
+
+
+    **Description**
+
+    - Revêtement extérieur modélisé (cheminements, places, terrasses, surfaces revêtues) selon la classification des surfaces de sol extérieures (AOF).
+
+    - Complète la propriété d''espace FloorCovering dès que le complexe et les joints deviennent pertinents.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme une seule couche – séparer par type de revêtement, pas par polygones de locaux.
+
+    - Fixer IsExternal=TRUE ; saisir Finish avec une désignation AOF (feuille si le revêtement est connu, sinon classe parente).
+
+    - Ne pas modéliser ici la végétation ni la rétention – elles appartiennent aux éléments de paysage ou aux propriétés d''espace.'
+  it: 'Rende verificabili le pavimentazioni esterne nella pianificazione di dettaglio per quantità, fughe e gara. Pianificazione iniziale senza covering modellato: FloorCovering (AOF) sullo spazio esterno.
+
+
+    **Descrizione**
+
+    - Pavimentazione esterna modellata (percorsi, piazze, terrazze, superfici rivestite) secondo la classificazione delle superfici di pavimento esterne (AOF).
+
+    - Integra la proprietà di spazio FloorCovering quando stratigrafia e fughe diventano rilevanti.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come uno strato unico – separare per tipo di pavimentazione, non per poligoni di locali.
+
+    - Impostare IsExternal=TRUE; gestire Finish con denominazione AOF (foglia se il rivestimento è noto, altrimenti classe genitore).
+
+    - Non modellare qui vegetazione o ritenzione – appartengono agli elementi di paesaggio o alle proprietà di spazio.'
+  en: 'Makes exterior finishes verifiable in detail design for quantities, joints, and tendering. Early planning without a modelled covering: FloorCovering (AOF) on the exterior space.
+
+
+    **Description**
+
+    - Modelled outdoor surfacing (paths, plazas, terraces, paved areas) according to the outdoor floor surface classification (AOF).
+
+    - Complements the space property FloorCovering once build-up and joints become relevant.
+
+
+    **Modelling guidelines**
+
+    - Model as one layer – split by finish type, not by individual space polygons.
+
+    - Set IsExternal=TRUE; carry Finish with an AOF name (leaf when the surface is known, otherwise the parent class).
+
+    - Do not model vegetation or retention here – those belong to landscape elements or space properties.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcCovering
+entity_ifc4: IfcCovering
+entity_ifc4_3: IfcCovering
+picture_link: architecture-floor-covering-exterior.png
+picture_print_link: architecture-floor-covering-exterior-print.tif
+attachment_link: architecture-floor-covering-exterior.ifc
+model_link: architecture-floor-covering-exterior.ifc
+applicability: entity_ifc4=IfcCovering AND PredefinedType=FLOORING AND IsExternal=TRUE
+attributes:
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Aussenbelag.
+
+
+      **Zulässige Werte**
+
+      - `FLOORING` — Bodenbelag'
+    fr: 'Identifie le revêtement de sol extérieur.
+
+
+      **Valeurs admises**
+
+      - `FLOORING` — revêtement de sol'
+    it: 'Identifica la pavimentazione esterna.
+
+
+      **Valori ammessi**
+
+      - `FLOORING` — pavimentazione'
+    en: 'Marks the exterior floor covering.
+
+
+      **Allowed values**
+
+      - `FLOORING` — floor covering'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-covering-flooring
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: true
+  status: active
+  sort_order: 1
+- name: IsExternal
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Kennzeichnet einen aussenliegenden Bodenbelag.
+
+
+      **Zulässige Werte**
+
+      - `TRUE` — Aussenbelag'
+    fr: 'Identifie un revêtement de sol extérieur.
+
+
+      **Valeurs admises**
+
+      - `TRUE` — revêtement extérieur'
+    it: 'Identifica una pavimentazione esterna.
+
+
+      **Valori ammessi**
+
+      - `TRUE` — pavimentazione esterna'
+    en: 'Marks an exterior floor covering.
+
+
+      **Allowed values**
+
+      - `TRUE` — exterior covering'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-true
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: Finish
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Aussenbodenfläche gemäss Abstrakte Aussenbodenflächen (AOF).
+
+      Blattbezeichnung bei bekanntem Belag; sonst die Elternklasse.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste [Abstrakte Aussenbodenflächen](https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html).'
+    fr: 'Surface de sol extérieur selon Abstract outdoor floor surfaces (AOF).
+
+      Désignation feuille si le revêtement est connu ; sinon la classe parente.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs [Abstract outdoor floor surfaces](https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html).'
+    it: 'Superficie di pavimento esterna secondo Abstract outdoor floor surfaces (AOF).
+
+      Denominazione foglia se il rivestimento è noto; altrimenti la classe genitore.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori [Abstract outdoor floor surfaces](https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html).'
+    en: 'Outdoor floor surface according to Abstract outdoor floor surfaces (AOF).
+
+      Leaf name when the surface is known; otherwise the parent class.
+
+
+      **Allowed values**
+
+      - See the [Abstract outdoor floor surfaces](https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html) value list.'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/outdoor-floor-surface
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: Status
+  pset: Pset_CoveringCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Component status for coordinating work in existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new build
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — demolition
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Component status for coordinating work in existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new build
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — demolition
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: AwardInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `421`, `273`.'
+    fr: 'Lot d''adjudication de l''élément – il permet de rendre visibles les interfaces entre les lots.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot d''adjudication. Le présent paquet suisse utilise des codes BKP à trois chiffres, p. ex. `421`, `273`.'
+    it: 'Lotto d''appalto del componente – rende visibili le interfacce tra i lotti.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Lotto d''appalto. Il pacchetto svizzero usa codici BKP a tre cifre, p. es. `421`, `273`.'
+    en: 'Procurement package of the component – making interfaces between contractor packages visible.
+
+
+      **Allowed values**
+
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `421`, `273`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-award-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-award-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: PlanningInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`.'
+    en: 'Planning interface of the component by three-digit BKP code.
+
+
+      **Allowed values**
+
+      - See the BKP planning package value list, e.g. `091`, `092`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-planning-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-planning-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: NetArea
+  pset: Qto_CoveringBaseQuantities
+  definition:
+    de: Nettofläche des modellierten Aussenbelags.
+    fr: Surface nette du revêtement extérieur modélisé.
+    it: Superficie netta della pavimentazione esterna modellata.
+    en: Net area of the modelled exterior floor covering.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 8

@@ -1,0 +1,152 @@
+id: pragmaticbim:workflow/qas-urban-ar-assessment
+code: QAS-URBAN-AR
+sort_order: 69
+name:
+  de: Städtebau vor Ort mit Augmented Reality beurteilen
+  fr: Évaluer l'urbanisme sur place avec la réalité augmentée
+  it: Valutare l'urbanistica sul posto con la realtà aumentata
+  en: Assess the urban design on site with augmented reality
+description:
+  de: 'Volumenmodell und geplante Bäume vor Ort mit AR-Brille beurteilen, damit städtebauliche Entscheide nicht am Schwarzplan ohne dritte Dimension und ohne Vegetationsvolumen getroffen werden.
+
+
+    **Ausgangslage**
+
+    - Städtebauliche Entscheide fallen oft am Schwarzplan. Ohne Höhen, Volumen und Baumkronen bleibt die Diskussion theoretisch.
+
+    - Ein zu detailliertes Modell lenkt von Masse, Höhe, Einordnung und Vegetation ab.
+
+    - Neupflanzungen und Fällungen sind vor Ort noch nicht sichtbar; der heutige Baumbestand täuscht die künftige Wirkung.
+
+
+    **Ziel & Nutzen**
+
+    - Die städtebauliche Wirkung an der realen Umgebung vor Ort beurteilen, nicht nur am Plan.
+
+    - Ein bewusst einfaches Volumenmodell samt vereinfachten Bäumen hält die Beurteilung bei Masse, Höhe und Vegetation.
+
+
+    **Ablauf**
+
+    1. Volumenmodell der Variante als Bruttovolumen und Bäume als vereinfachte Körper bereitstellen, ohne Fassaden- und Ausführungsdetail.
+
+    2. Modell vor Ort mit der AR-Brille lage- und höhenrichtig in die reale Umgebung einblenden.
+
+    3. Städtebauliche Wirkung inklusive Vegetation beurteilen und Entscheide sowie Vorbehalte dokumentieren.
+
+
+    **Lieferergebnis**
+
+    - Lage- und höhenrichtiges Volumenmodell mit den massgebenden Bäumen, ohne unnötiges Detail.
+
+    - Dokumentierte städtebauliche Beurteilung vor Ort.'
+  fr: 'Évaluer sur place, avec des lunettes de réalité augmentée, la maquette volumique et les arbres projetés, afin que les décisions urbanistiques ne se prennent pas sur un plan figure-fond sans troisième
+    dimension ni volume de végétation.
+
+
+    **Situation de départ**
+
+    - Les décisions urbanistiques se prennent souvent sur un plan figure-fond. Sans hauteurs, volumes ni houppiers, la discussion reste théorique.
+
+    - Une maquette trop détaillée détourne l''attention de la masse, de la hauteur, de l''insertion et de la végétation.
+
+    - Les nouvelles plantations et les abattages ne sont pas encore visibles sur place ; le peuplement actuel fausse l''effet futur.
+
+
+    **Objectif et bénéfice**
+
+    - Juger l''effet urbanistique sur place, dans l''environnement réel, et non seulement sur plan.
+
+    - Une maquette volumique volontairement simple, avec des arbres simplifiés, maintient l''évaluation sur la masse, la hauteur et la végétation.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette volumique de la variante en volumes bruts et les arbres comme corps simplifiés, sans détail de façade ni d''exécution.
+
+    2. Superposer la maquette sur place, avec les lunettes de réalité augmentée, à la bonne position et à la bonne altitude dans l''environnement réel.
+
+    3. Évaluer l''effet urbanistique, végétation comprise, et documenter les décisions ainsi que les réserves.
+
+
+    **Livrable**
+
+    - Maquette volumique positionnée correctement en plan et en altitude, avec les arbres déterminants, sans détail superflu.
+
+    - Évaluation urbanistique sur place documentée.'
+  it: 'Valutare sul posto, con occhiali di realtà aumentata, il modello volumetrico e gli alberi previsti, in modo che le decisioni urbanistiche non vengano prese su un piano figura-sfondo senza terza dimensione
+    né volume della vegetazione.
+
+
+    **Situazione di partenza**
+
+    - Le decisioni urbanistiche si prendono spesso sul piano figura-sfondo. Senza altezze, volumi e chiome la discussione resta teorica.
+
+    - Un modello troppo dettagliato distoglie da massa, altezza, inserimento e vegetazione.
+
+    - Nuove piantumazioni e abbattimenti non sono ancora visibili sul posto; il patrimonio attuale falsa l''effetto futuro.
+
+
+    **Obiettivo e beneficio**
+
+    - Giudicare l''effetto urbanistico sul posto, nell''ambiente reale, e non solo sulla carta.
+
+    - Un modello volumetrico volutamente semplice, con alberi semplificati, mantiene la valutazione su massa, altezza e vegetazione.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello volumetrico della variante come volumi lordi e gli alberi come corpi semplificati, senza dettagli di facciata o di esecuzione.
+
+    2. Sovrapporre il modello sul posto, con gli occhiali di realtà aumentata, in posizione e quota corrette nell''ambiente reale.
+
+    3. Valutare l''effetto urbanistico, vegetazione compresa, e documentare decisioni e riserve.
+
+
+    **Risultato della fornitura**
+
+    - Modello volumetrico posizionato correttamente in pianta e in quota, con gli alberi determinanti, senza dettagli superflui.
+
+    - Valutazione urbanistica sul posto documentata.'
+  en: 'Assess the volume model and the planned trees on site with AR glasses, so urban design decisions are not taken on a figure-ground plan that omits the third dimension and the vegetation volume.
+
+
+    **Starting point**
+
+    - Urban design decisions are often taken on a figure-ground plan. Without heights, volumes, and tree crowns, the discussion stays theoretical.
+
+    - A model that is too detailed draws attention away from mass, height, fit, and vegetation.
+
+    - New planting and removals are not yet visible on site; today''s tree stock misrepresents the future effect.
+
+
+    **Goal & benefit**
+
+    - Judge the urban effect on site, in the real surroundings, not only on the drawing.
+
+    - A deliberately simple volume model, together with simplified trees, keeps the assessment on mass, height, and vegetation.
+
+
+    **Process**
+
+    1. Provide the option as a volume model of gross volumes and the trees as simplified bodies, without facade or construction detail.
+
+    2. Overlay the model on site with AR glasses, in the correct position and height, onto the real surroundings.
+
+    3. Assess the urban effect, including vegetation, and document decisions and reservations.
+
+
+    **Deliverable**
+
+    - Volume model placed correctly in plan and height, with the trees that matter, without unnecessary detail.
+
+    - Documented on-site urban design assessment.'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: On-site AR review of urban massing. Minimum geometry is storey-wise gross volumes (same basis as DES-URBAN-MASS) plus simplified trees for planting, retention, and removal. Survey reference points
+  place the model on site. Surroundings that stay unchanged remain real and are not modelled. Not a tree-preservation proof (QAS-TREE-PRESERVE) and not a quantity take-off.

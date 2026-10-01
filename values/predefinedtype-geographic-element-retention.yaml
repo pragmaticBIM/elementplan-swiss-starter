@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-geographic-element-retention
+code: GEO-RETENTION
+name:
+  de: Retentionsvolumen-Typ
+  fr: Type de volume de rétention
+  it: Tipo di volume di ritenzione
+  en: Retention volume type
+description:
+  de: PredefinedType für IfcGeographicElement als Retentionsvolumen. USERDEFINED; die Art steht in ObjectType.
+  fr: PredefinedType pour IfcGeographicElement comme volume de rétention. USERDEFINED ; la nature figure dans ObjectType.
+  it: PredefinedType per IfcGeographicElement come volume di ritenzione. USERDEFINED; il tipo sta in ObjectType.
+  en: PredefinedType for IfcGeographicElement as a retention volume. USERDEFINED; the kind is in ObjectType.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - USERDEFINED
+  fr:
+  - USERDEFINED
+  it:
+  - USERDEFINED
+  en:
+  - USERDEFINED

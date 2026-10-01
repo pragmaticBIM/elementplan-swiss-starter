@@ -1,0 +1,56 @@
+id: pragmaticbim:value/name-planning-constraint
+code: NAME-CONSTRAINT
+name:
+  de: Name Rahmenbedingung
+  fr: Name condition-cadre
+  it: Name condizione quadro
+  en: Planning constraint name
+description:
+  de: Auswahlliste für die Bezeichnung (Name) von Rahmenbedingungen – Art der Vorgabe.
+  fr: Liste de choix pour la désignation (Name) des conditions-cadres – nature de la prescription.
+  it: Elenco di scelta per la denominazione (Name) delle condizioni quadro – tipo di prescrizione.
+  en: Value list for the designation (Name) of planning constraints – kind of requirement.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Flugschneise
+  - Überschwemmungsgebiet
+  - Eisenbahnkorridor
+  - Explosionsschutzgebiet
+  - Zone mit hoher Lärmbelastung
+  - Grundwasserschutzzone
+  - Gewässerraum
+  - Freileitungskorridor
+  - Naturgefahrenzone
+  fr:
+  - Couloir de vol
+  - Zone inondable
+  - Corridor ferroviaire
+  - Zone de protection contre les explosions
+  - Zone à forte charge sonore
+  - Zone de protection des eaux souterraines
+  - Espace réservé aux eaux
+  - Corridor de ligne aérienne
+  - Zone de dangers naturels
+  it:
+  - Corridoio di volo
+  - Zona alluvionale
+  - Corridoio ferroviario
+  - Zona di protezione contro le esplosioni
+  - Zona a elevato carico acustico
+  - Zona di protezione delle acque sotterranee
+  - Spazio riservato ai corsi d'acqua
+  - Corridoio di linea aerea
+  - Zona di pericolo naturale
+  en:
+  - Flight path
+  - Flood zone
+  - Railway corridor
+  - Explosion protection zone
+  - High noise exposure zone
+  - Groundwater protection zone
+  - Watercourse corridor
+  - Overhead line corridor
+  - Natural hazard zone

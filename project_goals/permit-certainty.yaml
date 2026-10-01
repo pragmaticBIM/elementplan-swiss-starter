@@ -1,0 +1,104 @@
+id: pragmaticbim:project-goal/permit-certainty
+sort_order: 50
+group: ziele
+code: PG-09
+name:
+  de: Bewilligungssicherheit
+  fr: Sécurité d'autorisation
+  it: Sicurezza dell'autorizzazione
+  en: Permit certainty
+tag:
+  de: Bewilligung
+  fr: Autorisation
+  it: Autorizzazione
+  en: Permit
+description:
+  de: |-
+    Ziel ist, dass Baugesuch und behördliche Nachweise ohne Überraschungen durchgehen. Vorgaben zu Parzellen, Verkehr, Parkierung, Hindernisfreiheit, Brandschutz und Baumbestand werden dafür früh im Modell sichtbar gemacht und laufend geprüft, ebenso die Nachweise für Fördermittel. Ohne diese Prüfungen zeigen sich Abweichungen erst im Bewilligungsverfahren, wo jede Korrektur Zeit kostet.
+  fr: |-
+    Cet objectif vise à ce que la demande d'autorisation et les justificatifs officiels passent sans surprise. Les prescriptions relatives aux parcelles, au trafic, au stationnement, à l'accessibilité, à la protection incendie et au patrimoine arboré sont rendues visibles tôt dans la maquette et contrôlées en continu, de même que les justificatifs de subventions.
+
+    Sans ces contrôles, les écarts n'apparaissent qu'au cours de la procédure d'autorisation, où chaque correction coûte du temps.
+  it: |-
+    Questo obiettivo mira a far sì che la domanda di costruzione e le verifiche delle autorità passino senza sorprese. Le prescrizioni su particelle, traffico, posteggi, accessibilità, protezione antincendio e patrimonio arboreo vengono rese visibili presto nel modello e controllate in continuo, così come le verifiche per gli incentivi.
+
+    Senza questi controlli, gli scostamenti emergono solo nella procedura di autorizzazione, dove ogni correzione costa tempo.
+  en: |-
+    The aim is that the building permit application and official evidence pass without surprises. Requirements for parcels, traffic, parking, accessibility, fire protection, and existing trees are made visible in the model early and checked continuously, as is the evidence for funding.
+
+    Without these checks, deviations appear only during the permit procedure, where every correction costs time.
+practice:
+  de:
+    title: Bewilligung vor dem Bauprojekt
+    body: |-
+      Bei einem Wohngebäude wurden das Baubewilligungsverfahren und mögliche Einsprachen als grösstes Terminrisiko erkannt. Um dieses Risiko gezielt zu steuern, kehrte das Projektteam die übliche Phasenreihenfolge um. Nach dem Vorprojekt wurde das Projekt stabilisiert und das Baugesuch eingereicht. Erst nachdem die Baubewilligung vorlag, stieg das Team in das Bauprojekt ein. Das Bauprojekt entsprach dadurch einer echten Arbeitsvorbereitung.
+    lesson: Die Phasenreihenfolge sollte dem grössten Projektrisiko folgen, nicht unbesehen einem Standardschema.
+  en:
+    title: Permit first, design development second
+    body: |-
+      On a residential building, the permit procedure and the objections it might attract were identified as the single largest risk to the schedule. To manage that risk head-on, the project team reversed the usual order of phases. After the preliminary design the project was stabilized and the permit application was filed. Only once the permit was granted did the team start design development – which then amounted to genuine work preparation.
+    lesson: The order of phases should follow the project's largest risk rather than a standard scheme applied without thinking.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (explizit, nicht kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/permit-low
+  code: BEW-01
+  sort_order: 1
+  name:
+    de: Gering
+    fr: Faible
+    it: Basso
+    en: Low
+  description:
+    de: Planungsrelevante Rahmenbedingungen und betroffene Parzellen als verbindliche Projektgrundlage im Modell.
+    fr: Contraintes de planification pertinentes et parcelles concernées comme base de projet contraignante dans la maquette.
+    it: Vincoli di progettazione pertinenti e particelle interessate come base vincolante del progetto nel modello.
+    en: Planning-relevant constraints and affected parcels as a binding project basis in the model.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-planning-constraints
+  - pragmaticbim:workflow/des-building-law-parcels
+  comment: Explicit set at level gering (sort_order 1); not cumulative.
+- id: pragmaticbim:project-goal-level/permit-medium
+  code: BEW-02
+  sort_order: 2
+  name:
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
+  description:
+    de: Parkplatznachweis, Überprüfung der Vorgaben aus dem Verkehrsgutachten, Nachweise der Hindernisfreiheit nach SIA 500 und der natürlichen Belichtung, städtebauliche Beurteilung mit Augmented Reality, Nachbarschafts- und Stakeholderdialog, digitale Anwohnerinformation sowie Erstellung des Baugesuchs.
+    fr: Justificatif de stationnement, contrôle des prescriptions de l'étude de trafic, justificatifs d'accessibilité selon la norme SIA 500 et d'éclairage naturel, appréciation urbanistique en réalité augmentée, dialogue de voisinage et avec les parties prenantes, information numérique aux riverains, ainsi qu'établissement de la demande d'autorisation.
+    it: Verifica dei posteggi, controllo delle prescrizioni dello studio del traffico, verifiche dell'accessibilità secondo la norma SIA 500 e dell'illuminazione naturale, valutazione urbanistica in realtà aumentata, dialogo di vicinato e con gli stakeholder, informazione digitale ai residenti, nonché redazione della domanda di costruzione.
+    en: Parking verification, verification of traffic-study requirements, accessibility verification according to SIA 500, daylight verification, an urban assessment with augmented reality, neighbourhood and stakeholder dialogue, digital resident information, and preparation of the building permit application.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-parking-verification
+  - pragmaticbim:workflow/des-traffic-study
+  - pragmaticbim:workflow/qas-accessibility-sia500-verification
+  - pragmaticbim:workflow/qas-daylight-area-verification
+  - pragmaticbim:workflow/qas-urban-ar-assessment
+  - pragmaticbim:workflow/qas-stakeholder-dialog
+  - pragmaticbim:workflow/qas-qr-stakeholder-info
+  - pragmaticbim:workflow/des-building-permit
+  comment: Explicit set at level mittel (sort_order 2); not cumulative.
+- id: pragmaticbim:project-goal-level/permit-high
+  code: BEW-03
+  sort_order: 3
+  name:
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
+  description:
+    de: Brandschutzkonzept, Nachweis des zu erhaltenden Baumbestands und Prüfung der Fördermittel.
+    fr: Concept de protection incendie, justificatif de conservation du patrimoine arboré et contrôle des subventions.
+    it: Concetto antincendio, verifica della conservazione del patrimonio arboreo e controllo degli incentivi.
+    en: A fire protection concept, verification of tree stock to be preserved, and funding verification.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-fire-protection-concept
+  - pragmaticbim:workflow/qas-tree-preservation-verification
+  - pragmaticbim:workflow/qas-funding-verification
+  comment: Explicit set at level hoch (sort_order 3); not cumulative.

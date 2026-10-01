@@ -6,10 +6,14 @@ name:
   it: Tipo di trave
   en: Beam type
 description:
-  de: PredefinedType für IfcBeam in der Tragwerksskizze.
-  fr: PredefinedType pour IfcBeam dans l'esquisse porteuse.
-  it: PredefinedType per IfcBeam nello schizzo strutturale.
-  en: PredefinedType for IfcBeam in the structural sketch.
+  de: PredefinedType für IfcBeam bei konzeptionellen Tragwerksbauteilen, deren Abmessungen mit dem Tragwerksplaner abgestimmt und im Architekturmodell übernommen werden; dabei werden die Tragwerkssperrzonen
+    geprüft.
+  fr: PredefinedType pour IfcBeam sur les éléments porteurs conceptuels dont les dimensions sont coordonnées avec l'ingénieur civil et reprises dans le modèle d'architecture ; les zones d'exclusion structurelles
+    sont également vérifiées.
+  it: PredefinedType per IfcBeam degli elementi strutturali concettuali le cui dimensioni sono coordinate con l'ingegnere strutturista e recepite nel modello architettonico; vengono inoltre verificate le
+    zone di esclusione strutturali.
+  en: PredefinedType for conceptual IfcBeam components whose dimensions are coordinated with the structural engineer and incorporated into the architectural model; structural exclusion zones are checked
+    in the process.
 year: 2026
 norm_reference: IFC4
 status: active

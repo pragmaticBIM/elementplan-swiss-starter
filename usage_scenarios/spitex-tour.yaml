@@ -1,0 +1,37 @@
+id: pragmaticbim:usage-scenario/spitex-tour
+code: US-WH-15
+sort_order: 15
+name:
+  de: Spitex-Tour
+  fr: Tournée de soins à domicile
+  it: Giro di cure a domicilio
+  en: Home-care visit
+description:
+  de: Die Spitex kommt über Eingangshalle und Aufzugszone in die Wohnung und erreicht Schlafzimmer und Bad auf kurzem Weg.
+  fr: Les soins à domicile arrivent par le hall d'entrée et le palier d'ascenseur dans le logement, puis rejoignent chambre et salle de bain sur un court trajet.
+  it: Le cure a domicilio arrivano dall'atrio e dalla zona ascensore nell'alloggio e raggiungono camera e bagno su un percorso breve.
+  en: Home-care staff arrive via the lobby and elevator lobby at the dwelling, then reach bedroom and bathroom on a short path.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/eingangshalle
+- pragmaticbim:room-type/aufzugszone
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/gang
+- pragmaticbim:room-type/schlafzimmer
+- pragmaticbim:room-type/badezimmer
+room_relationships:
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/aufzugszone
+- from_room_type: pragmaticbim:room-type/aufzugszone
+  to_room_type: pragmaticbim:room-type/wohnungseingang
+  max_distance: 15
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/gang
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/schlafzimmer
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/badezimmer
+  max_distance: 8

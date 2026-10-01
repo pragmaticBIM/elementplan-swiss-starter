@@ -33,16 +33,11 @@ description:
     3. Modell für Bestellung und Lieferplanung exportieren.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Eindeutig nummerierte Betonfertigteile als Grundlage für Bestellung und Lieferkoordination auf der Baustelle.
+    - Tragwerksmodell mit ausführungsgenauen Betonfertigteilen und eindeutiger Fertigteilnummer.
 
-
-    **Lieferobjekte**
-
-    - Tragwerksmodell mit IfcColumn, IfcBeam, IfcWall und IfcSlab
-
-    - Name mit Fertigteilnummer je Betonfertigteil (natives IFC-Attribut)'
+    - Bestell- und Lieferliste mit prüfbaren Mengen und Lieferetappen.'
   fr: 'Préparer les éléments préfabriqués en béton à partir du modèle structurel pour la commande et la planification des livraisons.
 
 
@@ -69,16 +64,11 @@ description:
     3. Exporter le modèle pour la commande et la planification des livraisons.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Éléments préfabriqués en béton numérotés de manière unique comme base pour la commande et la coordination des livraisons sur chantier.
+    - Maquette structure avec éléments préfabriqués conformes à l''exécution et numérotés de manière univoque.
 
-
-    **Livrables**
-
-    - Modèle structurel avec IfcColumn, IfcBeam, IfcWall et IfcSlab
-
-    - Name avec numéro de pièce préfabriquée par élément en béton (attribut IFC natif)'
+    - Liste de commande et de livraison avec quantités et étapes vérifiables.'
   it: 'Preparare gli elementi prefabbricati in calcestruzzo dal modello strutturale per l''ordine e la pianificazione delle consegne.
 
 
@@ -105,16 +95,11 @@ description:
     3. Esportare il modello per ordine e pianificazione delle consegne.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Elementi prefabbricati in calcestruzzo numerati in modo univoco come base per ordine e coordinamento delle consegne in cantiere.
+    - Modello strutturale con elementi prefabbricati esecutivi e numerati in modo univoco.
 
-
-    **Oggetti della fornitura**
-
-    - Modello strutturale con IfcColumn, IfcBeam, IfcWall e IfcSlab
-
-    - Name con numero di pezzo prefabbricato per ogni elemento in calcestruzzo (attributo IFC nativo)'
+    - Elenco per ordine e consegna con quantità e tappe verificabili.'
   en: 'Provide precast concrete parts from the structural model for ordering and delivery planning.
 
 
@@ -141,16 +126,11 @@ description:
     3. Export the model for ordering and delivery planning.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Uniquely numbered precast concrete parts as the basis for ordering and delivery coordination on site.
+    - Structural model with execution-accurate precast concrete parts and unique part numbers.
 
-
-    **Deliverables**
-
-    - Structural model with IfcColumn, IfcBeam, IfcWall, and IfcSlab
-
-    - Name with prefabricated part number per precast concrete part (native IFC attribute)'
+    - Order and delivery list with verifiable quantities and delivery stages.'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/con
 picture_link: null

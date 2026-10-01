@@ -1,0 +1,167 @@
+id: pragmaticbim:workflow/des-embed-reinforcement-coordination
+code: DES-EMBED-REINF
+sort_order: 75
+name:
+  de: Einlagen und Architekturbauteile mit Bewehrung koordinieren
+  fr: Coordonner incorporés et éléments d'architecture avec les armatures
+  it: Coordinare inserti ed elementi architettonici con l'armatura
+  en: Coordinate embeds and architectural components with reinforcement
+description:
+  de: 'Einlagen und eingelegte Architekturbauteile vor der Betonage mit der Bewehrung abstimmen und verbindlich im Schal- und Bewehrungsmodell führen.
+
+
+    **Ausgangslage**
+
+    - Einlagen wie Ankerschienen, Einlegeplatten, Hülsen und Befestigungspunkte werden häufig auf separaten Fach- und Unternehmerplänen geführt.
+
+    - Eingelegte Rinnen und andere Bauteile in der Verantwortung des Architekten bleiben oft auf Architekturplänen und fehlen in der Abstimmung mit der Bewehrung, obwohl sie ebenfalls in den Beton eingelegt
+    werden.
+
+    - Unkoordinierte oder verspätete Einlagen und eingelegte Bauteile kollidieren mit Bewehrungsstäben, verletzen Betondeckungen oder fehlen bei der Betonage und verursachen aufwendige Anpassungen auf der
+    Baustelle.
+
+
+    **Ziel & Nutzen**
+
+    - Lage, Abmessungen und Montageanforderungen aller Einlagen sowie der vom Architekten verantworteten eingelegten Bauteile rechtzeitig mit Tragwerk und Bewehrung abstimmen.
+
+    - Konflikte mit Bewehrungsführung, Betondeckung, Bauteilrändern und anderen Einlagen vor der Ausführung lösen.
+
+    - Freigegebene Einlagen und eingelegte Architekturbauteile als gemeinsame Grundlage für Schalung, Bewehrung und Betonage im Modell führen.
+
+
+    **Ablauf**
+
+    1. Position und Abmessungen der Einlagen und eingelegten Bauteile durch die Architektur bereitstellen.
+
+    2. Angaben durch die Tragwerksplanung in das Schal- und Bewehrungsmodell übernehmen und in der regelmässigen Koordination auf Änderungen prüfen.
+
+    3. Einlagen und eingelegte Bauteile vor Ort nach dem freigegebenen Modell der Tragwerksplanung ausführen.
+
+
+    **Lieferergebnis**
+
+    - Schal- und Bewehrungsmodell mit allen freigegebenen Einlagen und eingelegten Architekturbauteilen in abgestimmter Lage und Abmessung.
+
+    - Nachvollziehbare Freigabe und Zuordnung zu Architektur, Fachplanung oder Unternehmer.'
+  fr: 'Coordonner avant le bétonnage les incorporés et les éléments d''architecture noyés dans le béton avec les armatures, et les saisir de manière contraignante dans la maquette de coffrage et d''armatures.
+
+
+    **Situation de départ**
+
+    - Les incorporés tels que rails d''ancrage, plaques incorporées, douilles et points de fixation sont souvent gérés sur des plans séparés des mandataires et des entreprises.
+
+    - Les caniveaux incorporés et les autres éléments dont l''architecte est responsable restent souvent sur les plans d''architecture et manquent à la coordination avec les armatures, alors qu''ils sont
+    eux aussi noyés dans le béton.
+
+    - Des incorporés et éléments noyés non coordonnés ou tardifs entrent en conflit avec les barres d''armature, ne respectent pas l''enrobage ou manquent au bétonnage, ce qui entraîne des adaptations coûteuses
+    sur le chantier.
+
+
+    **Objectif et bénéfice**
+
+    - Coordonner à temps la position, les dimensions et les exigences de pose de tous les incorporés ainsi que des éléments noyés dont l''architecte est responsable, avec la structure et les armatures.
+
+    - Résoudre avant l''exécution les conflits avec le ferraillage, l''enrobage, les bords des éléments et les autres incorporés.
+
+    - Saisir les incorporés et éléments d''architecture validés dans la maquette comme base commune pour le coffrage, le ferraillage et le bétonnage.
+
+
+    **Déroulement**
+
+    1. Fournir par l''architecture la position et les dimensions des incorporés et des éléments noyés.
+
+    2. Reprendre ces indications dans la maquette de coffrage et d''armatures par l''ingénieur civil et contrôler leurs éventuelles modifications lors de la coordination régulière.
+
+    3. Réaliser sur place les incorporés et les éléments noyés selon la maquette validée de l''ingénieur civil.
+
+
+    **Livrable**
+
+    - Maquette de coffrage et d''armatures avec tous les incorporés et éléments d''architecture validés dans leur position et leurs dimensions coordonnées.
+
+    - Validation traçable et rattachement à l''architecture, au mandataire ou à l''entreprise.'
+  it: 'Coordinare prima del getto gli inserti e gli elementi architettonici annegati nel calcestruzzo con l''armatura, e gestirli in modo vincolante nel modello di casseratura e armatura.
+
+
+    **Situazione di partenza**
+
+    - Gli inserti come guide di ancoraggio, piastre, manicotti e punti di fissaggio sono spesso gestiti su piani separati dei progettisti e delle imprese.
+
+    - Le canalette incorporate e gli altri elementi di competenza dell''architetto restano spesso sui piani di architettura e mancano nel coordinamento con l''armatura, pur essendo anch''essi annegati nel
+    calcestruzzo.
+
+    - Inserti ed elementi annegati non coordinati o tardivi interferiscono con le barre d''armatura, non rispettano il copriferro o mancano al momento del getto, causando onerosi adattamenti in cantiere.
+
+
+    **Obiettivo e beneficio**
+
+    - Coordinare tempestivamente posizione, dimensioni e requisiti di posa di tutti gli inserti nonché degli elementi annegati di competenza dell''architetto con la struttura e l''armatura.
+
+    - Risolvere prima dell''esecuzione i conflitti con la disposizione dell''armatura, il copriferro, i bordi degli elementi e gli altri inserti.
+
+    - Gestire nel modello gli inserti e gli elementi architettonici approvati come base comune per casseratura, armatura e getto.
+
+
+    **Svolgimento**
+
+    1. Fornire da parte dell''architettura la posizione e le dimensioni degli inserti e degli elementi annegati.
+
+    2. Integrare queste indicazioni nel modello di casseratura e armatura da parte dell''ingegnere civile e verificarne le eventuali modifiche durante il coordinamento periodico.
+
+    3. Realizzare in cantiere gli inserti e gli elementi annegati secondo il modello approvato dell''ingegnere civile.
+
+
+    **Risultato della fornitura**
+
+    - Modello di casseratura e armatura con tutti gli inserti e gli elementi architettonici approvati in posizione e dimensioni coordinate.
+
+    - Approvazione tracciabile e attribuzione all''architettura, al progettista o all''impresa.'
+  en: 'Coordinate embeds and cast-in architectural components with reinforcement before concrete placement and maintain them as binding objects in the formwork and reinforcement model.
+
+
+    **Starting point**
+
+    - Embeds such as anchor channels, cast-in plates, sleeves, and fixing points are often maintained on separate discipline and contractor drawings.
+
+    - Cast-in channels and other components the architect is responsible for often remain on architecture drawings and are missing from reinforcement coordination, even though they are cast into the concrete
+    as well.
+
+    - Uncoordinated or late embeds and cast-in components clash with reinforcement bars, breach concrete cover, or are missing during concrete placement, causing costly site changes.
+
+
+    **Goal & benefit**
+
+    - Coordinate the location, dimensions, and installation requirements of all embeds and of the cast-in components the architect is responsible for with the structure and reinforcement in good time.
+
+    - Resolve conflicts with reinforcement layout, concrete cover, component edges, and other embeds before construction.
+
+    - Maintain approved embeds and cast-in architectural components in the model as the shared basis for formwork, reinforcement, and concrete placement.
+
+
+    **Process**
+
+    1. Provide the location and dimensions of embeds and cast-in components through architecture.
+
+    2. Incorporate this information into the formwork and reinforcement model through the structural engineer and check for changes during regular coordination.
+
+    3. Install embeds and cast-in components on site in accordance with the structural engineer''s approved model.
+
+
+    **Deliverable**
+
+    - Formwork and reinforcement model with all approved embeds and cast-in architectural components at coordinated locations and dimensions.
+
+    - Traceable approval and mapping to architecture, the specialist designer, or the contractor.'
+workflow_group: arbeitsvorbereitung
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
+comment: Planning workflow before concrete placement. Embed requirements may originate from specialist designers or contractors. Cast-in channels and other components cast into the concrete remain the architect's
+  responsibility and are in scope even when they are not labelled as embeds. The approved geometry is coordinated against formwork and reinforcement and incorporated into the structural formwork and reinforcement
+  model. A dedicated IFC element definition for embeds is still required.

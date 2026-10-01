@@ -1,0 +1,68 @@
+id: pragmaticbim:value/product-class-floor-covering
+code: PRODUCT-FCP
+name:
+  de: Abstrakte Bodenbelagsprodukte
+  fr: Abstract floor covering products
+  it: Abstract floor covering products
+  en: Abstract floor covering products
+description:
+  de: 'Produktklassen gemäss Abstrakte Bodenbelagsprodukte. Quelle: https://schema.pragmaticbim.ch/classification/floor-covering-product.html'
+  fr: 'Classes de produits selon Abstract floor covering products. Source : https://schema.pragmaticbim.ch/classification/floor-covering-product.html'
+  it: 'Classi di prodotto secondo Abstract floor covering products. Fonte: https://schema.pragmaticbim.ch/classification/floor-covering-product.html'
+  en: 'Product classes according to Abstract floor covering products. Source: https://schema.pragmaticbim.ch/classification/floor-covering-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Unterlagsboden / Ausgleichsschicht
+  - Fugenloser Kunstharzboden
+  - Textiler Teppichbelag
+  - Vinyl- / LVT-Bodenbelag
+  - Linoleum
+  - Naturstein-Bodenbelag
+  - Kunststein-Bodenbelag
+  - Keramik- / Feinsteinzeug-Bodenbelag
+  - Parkett / Mehrschicht-Holzboden
+  - Laminatboden
+  - Doppelboden / Hohlraumboden
+  - Sonstiger / unbekannter Bodenbelag
+  fr:
+  - Subfloor / leveling layer
+  - Seamless resin floor
+  - Textile carpet
+  - Vinyl / LVT floor
+  - Linoleum
+  - Natural stone flooring
+  - Artificial stone flooring
+  - Ceramic / porcelain tile floor
+  - Parquet / engineered wood floor
+  - Laminate flooring
+  - Raised / access floor
+  - Other / unknown floor covering
+  it:
+  - Subfloor / leveling layer
+  - Seamless resin floor
+  - Textile carpet
+  - Vinyl / LVT floor
+  - Linoleum
+  - Natural stone flooring
+  - Artificial stone flooring
+  - Ceramic / porcelain tile floor
+  - Parquet / engineered wood floor
+  - Laminate flooring
+  - Raised / access floor
+  - Other / unknown floor covering
+  en:
+  - Subfloor / leveling layer
+  - Seamless resin floor
+  - Textile carpet
+  - Vinyl / LVT floor
+  - Linoleum
+  - Natural stone flooring
+  - Artificial stone flooring
+  - Ceramic / porcelain tile floor
+  - Parquet / engineered wood floor
+  - Laminate flooring
+  - Raised / access floor
+  - Other / unknown floor covering

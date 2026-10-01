@@ -1,0 +1,13 @@
+# Spatial structure required in every IFC model deliverable and every use case.
+# Do not repeat these element IDs in models/documents that set
+# includes_spatial_baseline: true. List every active concrete workflow on the
+# baseline attributes (the editor does not accept needed_for_workflows: ["*"]).
+id: pragmaticbim:baseline/spatial-structure
+elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/site
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+  - pragmaticbim:element/survey-reference-point
+# "*" = every active concrete workflow (has parent_workflow, status active).
+applies_to_workflows: "*"

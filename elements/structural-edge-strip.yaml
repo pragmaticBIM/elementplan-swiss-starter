@@ -8,7 +8,7 @@ name:
   it: Fascia di bordo
   en: Edge strip
 definition:
-  de: 'Schalungsrandstreifen im Schal- und Bewehrungsmodell der Tragwerksplanung.
+  de: 'Sichert, dass Schalungsabschlüsse eindeutig ausgeschrieben, koordiniert und ausgeführt werden können.
 
 
     **Beschreibung**
@@ -18,10 +18,10 @@ definition:
     - Randabschluss-Typ (z. B. Einreihig, Stellplatte, Schalenstein) für Ausführung und NPK 211.5.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Als vereinfachtes Volumen oder Linienbauteil entlang der Randlinie mit ObjectType `Randstreifen` modellieren.'
-  fr: 'Bande de rive de coffrage dans le modèle de coffrage et d''armatures de l''ingénierie structurelle.
+  fr: 'Permet de définir sans ambiguïté les arrêts de coffrage pour l''appel d''offres, la coordination et l''exécution.
 
 
     **Description**
@@ -34,7 +34,7 @@ definition:
     **Directives de modélisation**
 
     - Modéliser comme volume simplifié ou élément linéaire le long de la ligne de rive avec ObjectType `Randstreifen`.'
-  it: 'Fascia di bordo di cassero nel modello di cassero e armatura dell''ingegneria strutturale.
+  it: 'Consente di definire senza ambiguità le chiusure del cassero per l''appalto, il coordinamento e l''esecuzione.
 
 
     **Descrizione**
@@ -47,7 +47,7 @@ definition:
     **Direttive di modellazione**
 
     - Modellare come volume semplificato o elemento lineare lungo la linea di bordo con ObjectType `Randstreifen`.'
-  en: 'Formwork edge strip in the structural formwork and reinforcement model.
+  en: 'Ensures formwork terminations can be specified, coordinated, and executed unambiguously.
 
 
     **Description**
@@ -67,7 +67,11 @@ entity_ifc4: IfcBuildingElementProxy
 entity_ifc4_3: IfcBuildingElementProxy
 picture_link: null
 model_link: null
-applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Randstreifen) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Randstreifen)
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Randstreifen) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Randstreifen)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Bande de rive") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Bande de rive")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Fascia di bordo") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Fascia di bordo")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Edge strip") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Edge strip")
 attributes:
 - name: PredefinedType
   pset: null

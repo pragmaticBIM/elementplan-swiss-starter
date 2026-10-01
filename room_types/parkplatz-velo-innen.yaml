@@ -1,0 +1,28 @@
+id: pragmaticbim:room-type/parkplatz-velo-innen
+code: RT-WH-22
+sort_order: 22
+name:
+  de: Parkplatz Velo Innen
+  fr: Place vélo intérieure
+  it: Posto bici interno
+  en: Interior Bicycle Parking
+definition:
+  de: Veloabstellplatz im Gebäude.
+  fr: Place pour vélos à l'intérieur du bâtiment.
+  it: Posto bici all'interno dell'edificio.
+  en: Bicycle parking space inside the building.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Parkplatz Velo Innen
+    fr: Place vélo intérieure
+    it: Posto bici interno
+    en: Interior Bicycle Parking
+status: active

@@ -1,0 +1,36 @@
+id: pragmaticbim:value/alteration-status
+code: ALT-STATUS
+name:
+  de: Status Umbauperimeter
+  fr: Statut du périmètre de transformation
+  it: Stato del perimetro di trasformazione
+  en: Alteration area status
+description:
+  de: Bearbeitungsstatus eines Umbauperimeters von der Planung bis zum abgeschlossenen Umbau.
+  fr: Statut de traitement d'un périmètre de transformation, de l'étude jusqu'à l'achèvement des travaux.
+  it: Stato di elaborazione di un perimetro di trasformazione, dalla progettazione al completamento dei lavori.
+  en: Status of an alteration area, from design through to completed alteration.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - PLANNED
+  - ACTIVE
+  - COMPLETED
+  - CANCELLED
+  fr:
+  - PLANNED
+  - ACTIVE
+  - COMPLETED
+  - CANCELLED
+  it:
+  - PLANNED
+  - ACTIVE
+  - COMPLETED
+  - CANCELLED
+  en:
+  - PLANNED
+  - ACTIVE
+  - COMPLETED
+  - CANCELLED

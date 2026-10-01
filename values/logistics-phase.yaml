@@ -1,0 +1,60 @@
+id: pragmaticbim:value/logistics-phase
+code: LOG-PHASE
+name:
+  de: Logistikphase
+  fr: Phase logistique
+  it: Fase logistica
+  en: Logistics phase
+description:
+  de: Nummerierte Logistikphase der Baustelleneinrichtung (1, 2, 3, …) – ohne Datums- oder Monatsangaben.
+  fr: Phase logistique numérotée de l'installation de chantier (1, 2, 3, …) – sans dates ni mois.
+  it: Fase logistica numerata dell'installazione di cantiere (1, 2, 3, …) – senza date o mesi.
+  en: Numbered logistics phase of the site setup (1, 2, 3, …) – without dates or months.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  fr:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  it:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  en:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'

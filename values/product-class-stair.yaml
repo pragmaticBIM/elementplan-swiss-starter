@@ -1,0 +1,36 @@
+id: pragmaticbim:value/product-class-stair
+code: PRODUCT-SRP
+name:
+  de: Abstrakte Treppenprodukte
+  fr: Abstract stair products
+  it: Abstract stair products
+  en: Abstract stair products
+description:
+  de: 'Produktklassen gemäss Abstrakte Treppenprodukte. Quelle: https://schema.pragmaticbim.ch/classification/stair-product.html'
+  fr: 'Classes de produits selon Abstract stair products. Source : https://schema.pragmaticbim.ch/classification/stair-product.html'
+  it: 'Classi di prodotto secondo Abstract stair products. Fonte: https://schema.pragmaticbim.ch/classification/stair-product.html'
+  en: 'Product classes according to Abstract stair products. Source: https://schema.pragmaticbim.ch/classification/stair-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Stahltreppe
+  - Holztreppe
+  - Stahlbetontreppe
+  - Andere oder unbekannte Treppe
+  fr:
+  - Steel stair
+  - Timber stair
+  - Reinforced concrete stair
+  - Other or unknown stair
+  it:
+  - Steel stair
+  - Timber stair
+  - Reinforced concrete stair
+  - Other or unknown stair
+  en:
+  - Steel stair
+  - Timber stair
+  - Reinforced concrete stair
+  - Other or unknown stair

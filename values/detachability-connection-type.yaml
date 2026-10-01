@@ -1,0 +1,40 @@
+id: pragmaticbim:value/detachability-connection-type
+code: DETACHABILITY-CONNECTION-TYPE
+name:
+  de: Fügeverfahren
+  fr: Type de connexion
+  it: Tipo di connessione
+  en: Connection type
+description:
+  de: Zulässige Werte für ePset_Circularity.Connection gemäss Madaster-Demontierbarkeitsmethode.
+  fr: Valeurs admises pour ePset_Circularity.Connection selon la méthode de démontabilité Madaster.
+  it: Valori ammessi per ePset_Circularity.Connection secondo il metodo di smontabilità Madaster.
+  en: Allowed values for ePset_Circularity.Connection according to the Madaster detachability method.
+year: 2026
+norm_reference: Madaster-/DGBC-Demontierbarkeitsmethode
+status: active
+values:
+  de:
+  - DryConnection
+  - AddedConnection
+  - DirectConnection
+  - SoftChemicalConnection
+  - HardChemicalConnection
+  fr:
+  - DryConnection
+  - AddedConnection
+  - DirectConnection
+  - SoftChemicalConnection
+  - HardChemicalConnection
+  it:
+  - DryConnection
+  - AddedConnection
+  - DirectConnection
+  - SoftChemicalConnection
+  - HardChemicalConnection
+  en:
+  - DryConnection
+  - AddedConnection
+  - DirectConnection
+  - SoftChemicalConnection
+  - HardChemicalConnection

@@ -1,0 +1,32 @@
+id: pragmaticbim:value/ebkp-h-stair
+code: EBKP-H-STAIR
+name:
+  de: eBKP-H Treppe
+  fr: eBKP-H escalier
+  it: eBKP-H scala
+  en: eBKP-H stair
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C01.04, C04.02, C04.06.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C01.04, C04.02, C04.06.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C01.04, C04.02, C04.06.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C01.04, C04.02, C04.06.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C01.04
+  - C04.02
+  - C04.06
+  fr:
+  - C01.04
+  - C04.02
+  - C04.06
+  it:
+  - C01.04
+  - C04.02
+  - C04.06
+  en:
+  - C01.04
+  - C04.02
+  - C04.06

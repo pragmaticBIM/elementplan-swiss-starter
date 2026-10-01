@@ -1,6 +1,6 @@
 id: pragmaticbim:document/reinforcement-plans
 code: BWP
-sort_order: 112
+sort_order: 108
 name:
   de: Bewehrungspläne
   fr: Plans d'armature
@@ -40,16 +40,12 @@ file_name:
   de: '{Projektnummer}_TRG-BWP_{Freitext}.{ext}'
   fr: '{NumeroProjet}_STR-BWP_{Libre}.{ext}'
   it: '{NumeroProgetto}_STR-BWP_{Libero}.{ext}'
-  en: '{ProjectNumber}_STR-BWP_{Free}.{ext}'
+  en: '{ProjectNumber}_STR-BWP_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/structural
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/structural-reinforcing-bar
   - pragmaticbim:element/structural-edge-strip
 scheduled_milestones:
-  - "51:beginning"
+  - "51:M"

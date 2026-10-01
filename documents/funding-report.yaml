@@ -1,0 +1,67 @@
+id: pragmaticbim:document/funding-report
+code: FMR
+sort_order: 116
+name:
+  de: Fördermittelreport
+  fr: Rapport des subventions
+  it: Rapporto sugli incentivi
+  en: Funding report
+definition:
+  de: Bericht über die Fördergesuche eines Bauprojekts mit zugehörigen Massnahmen, Prüfergebnissen, Beiträgen und Nachweisen. Grundlage für die Nachführung von der Antragstellung bis zur Auszahlung.
+  fr: Rapport sur les demandes de subvention d'un projet de construction, avec les mesures, résultats des contrôles, contributions et justificatifs correspondants. Base pour le suivi de la demande jusqu'au versement.
+  it: Rapporto sulle domande di incentivo di un progetto di costruzione con le relative misure, i risultati delle verifiche, i contributi e i giustificativi. Base per l'aggiornamento dalla presentazione della domanda fino al versamento.
+  en: Report on a construction project's funding applications with the associated measures, check results, contributions, and evidence. Basis for tracking from application through to payment.
+description:
+  de: |-
+    - Förderprogramm, Massnahmencode und dokumentierter Richtlinienstand je Fördergesuch
+    - Gesuchs- und Bewilligungsnummer, zuständige Stelle, Bearbeitungsstatus und Fristen
+    - Zuordnung jeder Fördermassnahme zu Gebäude, Einbauort und betroffenen Modellobjekten mit bezeichnetem Modellstand
+    - Förderfähige Mengen, technische Kennwerte, anrechenbare Kosten und Beitragsberechnung
+    - Beantragte, bewilligte und ausbezahlte Beiträge mit Höchstbeträgen und berücksichtigten Kumulationsregeln
+    - Abweichungen und offene Punkte sowie Verweise auf Gesuch, Förderentscheid, Offerten, Rechnungen, Fotos und Abschlussnachweise
+  fr: |-
+    - Programme de subvention, code de la mesure et état documenté des directives pour chaque demande
+    - Numéros de demande et de décision, service compétent, état de traitement et délais
+    - Attribution de chaque mesure au bâtiment, au lieu de pose et aux objets concernés de la maquette, avec indication de l'état de la maquette
+    - Quantités donnant droit à une subvention, valeurs techniques, coûts imputables et calcul de la contribution
+    - Contributions demandées, accordées et versées, avec plafonds et règles de cumul prises en compte
+    - Écarts et points en suspens ainsi que références à la demande, à la décision, aux offres, factures, photos et justificatifs de clôture
+  it: |-
+    - Programma di incentivazione, codice della misura e versione documentata delle direttive per ogni domanda
+    - Numeri della domanda e della decisione, servizio competente, stato di elaborazione e scadenze
+    - Assegnazione di ogni misura all'edificio, al luogo di posa e agli oggetti interessati del modello, con indicazione dello stato del modello
+    - Quantità incentivabili, valori tecnici, costi computabili e calcolo del contributo
+    - Contributi richiesti, approvati e versati, con importi massimi e regole di cumulo considerate
+    - Scostamenti e punti in sospeso nonché riferimenti alla domanda, alla decisione, alle offerte, alle fatture, alle foto e ai giustificativi finali
+  en: |-
+    - Funding programme, measure code, and documented guideline version for each application
+    - Application and approval numbers, responsible authority, status, and deadlines
+    - Assignment of each funded measure to the building, installation location, and affected model objects, with the model status identified
+    - Eligible quantities, technical values, allowable costs, and contribution calculation
+    - Applied-for, approved, and paid contributions, including caps and applicable cumulation rules
+    - Deviations and open items, with references to the application, funding decision, quotations, invoices, photographs, and close-out evidence
+file_name:
+  de: '{Projektnummer}_PRO-FMR_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-FMR_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-FMR_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-FMR_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/project
+  - pragmaticbim:element/building
+  - pragmaticbim:element/storey
+scheduled_milestones:
+  - "31:M"
+  - "33:M"
+  - "41:M"
+  - "52:M"
+  - "53:M"
+comment: >-
+  Cross-domain report coordinated in the architecture document catalogue.
+  Supports pragmaticbim:workflow/qas-funding-verification. One project can
+  contain multiple applications and each application multiple measures.
+  Affected components carry FundingApplication (comma-separated application
+  numbers) so quantities and costs can be filtered. Approval numbers, programme
+  rules, and evidence stay in the report. Eligibility is a versioned check
+  result, not a static product property.

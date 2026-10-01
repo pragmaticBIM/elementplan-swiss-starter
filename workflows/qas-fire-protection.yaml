@@ -2,168 +2,143 @@ id: pragmaticbim:workflow/qas-fire-protection
 code: QAS-FIRE
 sort_order: 78
 name:
-  de: QS Brandschutz Bauteilkennwerte
-  fr: AQ protection incendie — valeurs des composants
-  it: AQ protezione antincendio — valori dei componenti
-  en: QA fire protection component values
+  de: Feuerwiderstand an Bauteilen prüfen
+  fr: Contrôler la résistance au feu des éléments
+  it: Verificare la resistenza al fuoco dei componenti
+  en: Check fire resistance on components
 description:
-  de: 'Feuerwiderstandsklassen ab Ende Bauprojekt im Architekturmodell führen und gegen das Brandschutzkonzept prüfen.
+  de: 'Architekturmodell automatisiert gegen das freigegebene Brandschutz-Anforderungsmodell prüfen, damit Abweichungen nach jeder relevanten Planungsänderung sichtbar werden.
 
 
     **Ausgangslage**
 
-    - Brandschutzanforderungen an Wände, Decken, Öffnungen und Tragteile stehen oft nur in Berichten; im Modell fehlen die Kennwerte.
+    - Bei der manuellen Übernahme von Brandschutzanforderungen in das Architekturmodell entstehen Lücken, widersprüchliche Kennwerte und hoher Abstimmungsaufwand.
 
-    - Ohne einheitliche Bauteilangaben sind Nachweise und Ausschreibung fehleranfällig.
+    - Punktuelle Prüfungen bei Phasenabschlüssen oder auf Zuruf erkennen Abweichungen nach Planungsänderungen häufig erst spät.
 
 
     **Ziel & Nutzen**
 
-    - Architekt pflegt Feuerwiderstandsklassen (VKF) an den massgebenden Bauteilen.
+    - Sollanforderungen anhand der räumlichen Beziehungen automatisiert den Bauteilen des Architekturmodells gegenüberstellen.
 
-    - Brandschutzplanung kann Kennwerte und Lücken direkt am Modell prüfen.
+    - Fehlende, abweichende oder nicht eindeutig zuordenbare Angaben früh ausweisen und deren Bereinigung nachvollziehbar dokumentieren.
 
 
     **Ablauf**
 
-    1. Brandschutzkonzept und erforderliche Feuerwiderstandsklassen festlegen.
+    1. Freigegebenes Brandschutz-Anforderungsmodell und aktuelles Architekturmodell bereitstellen.
 
-    2. Architekt trägt FireRating, Status und PredefinedType an Wänden, Decken, Fenstern, Türen, Stützen und Unterzügen ein.
+    2. Räumliche Zuordnung und Feuerwiderstand der Bauteile automatisiert mit den Sollanforderungen vergleichen.
 
-    3. Kennwerte gegen Brandschutzkonzept und Bewilligungsunterlagen abgleichen.
-
-
-    **Ergebnis**
-
-    - Architekturmodell mit nachvollziehbaren Feuerwiderstandsangaben als Basis für QS Brandschutz.
+    3. Abweichungen dokumentieren, fachlich beurteilen und durch die zuständige Planung im Anforderungs- oder Architekturmodell bereinigen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Architekturmodell mit IfcWall (Aussen- und nichttragende Innenwände), IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn und IfcBeam
+    - Geprüftes Architekturmodell mit abgestimmten Brandschutzinformationen
 
-    - FireRating, Status und PredefinedType je Bauteil
-
-    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey'
-  fr: 'Saisir les classes de résistance au feu dans le modèle d''architecture dès la fin du projet de construction et les vérifier face au concept de protection incendie.
+    - Nachvollziehbarer Prüfbericht mit offenen, akzeptierten und bereinigten Abweichungen'
+  fr: 'Contrôler automatiquement la maquette d''architecture par rapport au modèle d''exigences de protection incendie approuvé, afin de rendre visibles les écarts après chaque modification déterminante
+    du projet.
 
 
     **Situation de départ**
 
-    - Les exigences incendie pour murs, dalles, ouvertures et éléments porteurs figurent souvent seulement dans des rapports ; les valeurs manquent dans le modèle.
+    - Le report manuel des exigences incendie dans la maquette d''architecture entraîne des lacunes, des valeurs contradictoires et un important travail de coordination.
 
-    - Sans indications homogènes sur les composants, justifications et appels d''offres sont sources d''erreurs.
+    - Les contrôles ponctuels en fin de phase ou sur demande détectent souvent trop tard les écarts dus aux modifications du projet.
 
 
     **Objectif et bénéfice**
 
-    - L''architecte renseigne les classes de résistance au feu (AEAI) sur les composants déterminants.
+    - Comparer automatiquement les exigences de référence aux éléments de la maquette d''architecture à partir des relations spatiales.
 
-    - La planification incendie peut contrôler valeurs et lacunes directement sur le modèle.
+    - Signaler rapidement les indications manquantes, divergentes ou non attribuables sans ambiguïté et documenter leur traitement de manière traçable.
 
 
     **Déroulement**
 
-    1. Fixer le concept de protection incendie et les classes de résistance requises.
+    1. Fournir le modèle d''exigences de protection incendie approuvé et la maquette d''architecture actuelle.
 
-    2. L''architecte saisit FireRating, Status et PredefinedType sur murs, dalles, fenêtres, portes, poteaux et poutres.
+    2. Comparer automatiquement l''attribution spatiale et la résistance au feu des éléments avec les exigences de référence.
 
-    3. Comparer les valeurs au concept de protection incendie et aux dossiers d''autorisation.
-
-
-    **Résultat**
-
-    - Modèle d''architecture avec indications de résistance au feu traçables comme base pour l''AQ incendie.
+    3. Documenter les écarts, les évaluer du point de vue spécialisé et les faire corriger par le mandataire responsable dans le modèle d''exigences ou la maquette d''architecture.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Modèle d''architecture avec IfcWall (murs extérieurs et cloisons non porteuses), IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn et IfcBeam
+    - Maquette d''architecture contrôlée avec des informations de protection incendie coordonnées
 
-    - FireRating, Status et PredefinedType par élément
-
-    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey'
-  it: 'Gestire le classi di resistenza al fuoco nel modello di architettura dalla fine del progetto di costruzione e verificarle rispetto al concetto antincendio.
+    - Rapport de contrôle traçable indiquant les écarts ouverts, acceptés et corrigés'
+  it: 'Verificare automaticamente il modello di architettura rispetto al modello dei requisiti antincendio approvato, affinché gli scostamenti siano visibili dopo ogni modifica rilevante del progetto.
 
 
     **Situazione di partenza**
 
-    - I requisiti antincendio per pareti, solette, aperture ed elementi portanti sono spesso solo nei rapporti; i valori mancano nel modello.
+    - Il trasferimento manuale dei requisiti antincendio nel modello di architettura causa lacune, valori contraddittori e un notevole onere di coordinamento.
 
-    - Senza indicazioni omogenee sui componenti, verifiche e gare sono soggette a errori.
+    - Le verifiche puntuali alla fine delle fasi o su richiesta individuano spesso troppo tardi gli scostamenti dovuti alle modifiche del progetto.
 
 
     **Obiettivo e beneficio**
 
-    - L''architetto inserisce le classi di resistenza al fuoco (AICAA) sui componenti rilevanti.
+    - Confrontare automaticamente i requisiti di riferimento con gli elementi del modello di architettura in base alle relazioni spaziali.
 
-    - La pianificazione antincendio può controllare valori e lacune direttamente sul modello.
+    - Evidenziare tempestivamente le informazioni mancanti, divergenti o non attribuibili in modo univoco e documentarne la risoluzione in modo tracciabile.
 
 
     **Svolgimento**
 
-    1. Definire il concetto antincendio e le classi di resistenza richieste.
+    1. Fornire il modello dei requisiti antincendio approvato e il modello di architettura aggiornato.
 
-    2. L''architetto inserisce FireRating, Status e PredefinedType su pareti, solette, finestre, porte, colonne e travi.
+    2. Confrontare automaticamente l''attribuzione spaziale e la resistenza al fuoco degli elementi con i requisiti di riferimento.
 
-    3. Confrontare i valori con il concetto antincendio e i documenti di autorizzazione.
-
-
-    **Risultato**
-
-    - Modello di architettura con indicazioni di resistenza al fuoco tracciabili come base per l''AQ antincendio.
+    3. Documentare gli scostamenti, valutarli dal punto di vista specialistico e farli correggere dal progettista responsabile nel modello dei requisiti o nel modello di architettura.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Modello di architettura con IfcWall (pareti esterne e interne non portanti), IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn e IfcBeam
+    - Modello di architettura verificato con informazioni antincendio coordinate
 
-    - FireRating, Status e PredefinedType per componente
-
-    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey'
-  en: 'Maintain fire resistance classes in the architecture model from the end of the building project phase and check them against the fire protection concept.
+    - Rapporto di verifica tracciabile con gli scostamenti aperti, accettati e risolti'
+  en: 'Automatically check the architecture model against the approved fire protection requirements model so deviations become visible after every relevant design change.
 
 
     **Starting point**
 
-    - Fire requirements for walls, slabs, openings, and load-bearing parts often exist only in reports; values are missing in the model.
+    - Manually transferring fire protection requirements to the architecture model creates gaps, conflicting values, and substantial coordination effort.
 
-    - Without consistent component data, verification and tendering are error-prone.
+    - Spot checks at phase completion or on request often detect deviations caused by design changes too late.
 
 
     **Goal & benefit**
 
-    - The architect enters fire resistance classes (VKF) on the governing components.
+    - Automatically compare target requirements with architecture components based on their spatial relationships.
 
-    - Fire protection planning can check values and gaps directly on the model.
+    - Identify missing, divergent, or ambiguous information early and document its resolution traceably.
 
 
     **Process**
 
-    1. Define the fire protection concept and required fire resistance classes.
+    1. Provide the approved fire protection requirements model and the current architecture model.
 
-    2. The architect enters FireRating, Status, and PredefinedType on walls, slabs, windows, doors, columns, and beams.
+    2. Automatically compare component location and fire resistance with the target requirements.
 
-    3. Align values with the fire protection concept and permit documents.
-
-
-    **Outcome**
-
-    - Architecture model with traceable fire resistance data as the basis for fire protection QA.
+    3. Document deviations, get a specialist assessment, and have the responsible designer resolve them in the requirements or architecture model.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture model with IfcWall (exterior and non-load-bearing interior walls), IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn, and IfcBeam
+    - Checked architecture model with coordinated fire protection information
 
-    - FireRating, Status, and PredefinedType per component
-
-    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey'
-workflow_group: null
+    - Traceable check report showing open, accepted, and resolved deviations'
+workflow_group: fachpruefung
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/fire-protection
-comment: Architect fills FireRating (VKF) from end of SIA phase 32; Status and PredefinedType required. No AcousticRating on columns/beams. Concept and plan produced by DES-FIRE-CONCEPT.
+comment: DES-FIRE-CONCEPT produces the requirements model from the approved BSK. QAS-FIRE compares its spatially assigned targets with FireRating (VKF), Status, and PredefinedType in the architecture model.
+  Non-load-bearing interior walls use EI; load-bearing interior walls use R/REI. The BSK and BSP remain the authoritative specialist documents.

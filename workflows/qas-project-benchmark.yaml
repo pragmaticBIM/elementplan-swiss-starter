@@ -1,0 +1,149 @@
+id: pragmaticbim:workflow/qas-project-benchmark
+code: QAS-BENCHMARK
+sort_order: 92
+name:
+  de: Benchmarking eines Projekts gegen vergleichbare Bauaufgaben
+  fr: Benchmarking d'un projet par rapport à des ouvrages comparables
+  it: Benchmarking di un progetto rispetto a opere comparabili
+  en: Benchmark a project against comparable building tasks
+description:
+  de: 'Projekt oder Varianten mit vergleichbaren Bauaufgaben abgleichen, damit Abweichungen vom Üblichen sichtbar werden.
+
+
+    **Ausgangslage**
+
+    - Kennwerte werden am eigenen Projekt gelesen. Ohne Vergleich mit ähnlichen Bauaufgaben bleibt offen, ob ein Wert gut oder schlecht ist.
+
+    - Einzelne Erfahrungswerte und Bauchgefühl im Büro ersetzen kein Benchmarking. Ein günstiger Flächenwert kann einen hohen Materialaufwand verdecken, ohne dass das auffällt.
+
+    - Entscheide zu Fläche, Volumen und Material werden getroffen, bevor eine Referenz zeigt, wo das Projekt aus dem Rahmen fällt.
+
+
+    **Ziel & Nutzen**
+
+    - Das Projekt oder seine Varianten an rund 250 Kennwerten mit vergleichbaren Bauaufgaben abgleichen.
+
+    - Abweichungen vom Üblichen kenntlich machen, solange das Projekt oder die Variante noch geändert werden kann.
+
+
+    **Ablauf**
+
+    1. Architekturmodell mit Räumen, Fenstern und Türen bereitstellen.
+
+    2. Bei abstract anfragen; passende Vergleichsprojekte vorschlagen lassen und in einem individuellen Angebot festlegen.
+
+    3. Projekt oder Varianten gegen diese Bauaufgaben auswerten und Abweichungen dokumentieren.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit Räumen, Fenstern und Türen
+
+    - Benchmark von Projekt oder Varianten gegen die vereinbarte Vergleichsgruppe, mit kenntlich gemachten Abweichungen'
+  fr: 'Confronter un projet ou des variantes à des ouvrages comparables sur la base d''indicateurs, afin de rendre visibles les écarts par rapport à l''usage.
+
+
+    **Situation de départ**
+
+    - Les indicateurs sont lus sur le projet lui-même. Sans comparaison avec des ouvrages similaires, on ne sait pas si une valeur est bonne ou mauvaise.
+
+    - Quelques valeurs d''expérience du bureau ne remplacent pas un ensemble de comparaison. Une surface favorable peut masquer un fort emploi de matériaux sans que cela apparaisse.
+
+    - Les décisions sur les surfaces, les volumes et les matériaux sont prises avant qu''une référence montre où le projet sort du cadre.
+
+
+    **Objectif et bénéfice**
+
+    - Confronter le projet ou ses variantes à des ouvrages comparables sur environ 250 indicateurs, et non sur une seule surface.
+
+    - Rendre les écarts par rapport à l''usage visibles, tant que le projet ou la variante peut encore être modifié.
+
+
+    **Déroulement**
+
+    1. Fournir une maquette d''architecture avec locaux, fenêtres et portes.
+
+    2. Adresser une demande à abstract ; faire proposer des projets de comparaison adaptés et les fixer dans une offre individuelle.
+
+    3. Évaluer le projet ou les variantes par rapport à ces ouvrages et documenter les écarts.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec locaux, fenêtres et portes
+
+    - Benchmark du projet ou des variantes par rapport au groupe de comparaison convenu, avec les écarts rendus visibles'
+  it: 'Confrontare il progetto o le varianti con opere comparabili sulla base di indicatori, in modo che gli scostamenti rispetto all''usuale diventino visibili.
+
+
+    **Situazione di partenza**
+
+    - Gli indicatori si leggono sul progetto stesso. Senza confronto con opere simili resta aperto se un valore sia buono o cattivo.
+
+    - Singoli valori di esperienza dello studio non sostituiscono un insieme di confronto. Una superficie favorevole può nascondere un forte impiego di materiale senza che ciò emerga.
+
+    - Le decisioni su superfici, volumi e materiali vengono prese prima che un riferimento mostri dove il progetto esce dal quadro.
+
+
+    **Obiettivo e beneficio**
+
+    - Confrontare il progetto o le sue varianti con opere comparabili su circa 250 indicatori, non su una sola superficie.
+
+    - Rendere visibili gli scostamenti rispetto all''usuale, finché il progetto o la variante può ancora essere modificato.
+
+
+    **Svolgimento**
+
+    1. Fornire un modello di architettura con locali, finestre e porte.
+
+    2. Rivolgere una richiesta ad abstract; farsi proporre progetti di confronto adatti e fissarli in un''offerta individuale.
+
+    3. Valutare il progetto o le varianti rispetto a queste opere e documentare gli scostamenti.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con locali, finestre e porte
+
+    - Benchmark del progetto o delle varianti rispetto al gruppo di confronto concordato, con scostamenti resi visibili'
+  en: 'Compare a project or its variants with comparable building tasks by indicators, so that deviations from the usual become visible.
+
+
+    **Starting point**
+
+    - Indicators are read on the project itself. Without a comparison with similar building tasks, it remains unclear whether a value is good or poor.
+
+    - A few in-house rules of thumb do not replace a comparison set. A favourable area figure can hide high material use without this showing.
+
+    - Decisions on area, volume, and material are taken before a reference shows where the project falls outside the range.
+
+
+    **Goal & benefit**
+
+    - Compare the project or its variants with comparable building tasks on about 250 indicators, not on a single area figure.
+
+    - Make deviations from the usual visible while the project or the variant can still be changed.
+
+
+    **Process**
+
+    1. Provide an architecture model with spaces, windows, and doors.
+
+    2. Enquire with abstract; have suitable comparison projects proposed and fix them in an individual offer.
+
+    3. Evaluate the project or variants against these building tasks and document the deviations.
+
+
+    **Deliverable**
+
+    - Architecture model with spaces, windows, and doors
+
+    - Benchmark of the project or variants against the agreed comparison group, with deviations made visible'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Comparison set is the abstractBIM stock of more than 3000 models. About 250 indicators can be calculated; the exact list is not pinned here. Minimum model: interior and exterior spaces (LongName,
+  IsExternal), windows, and doors. Distinct from DES-KV, which only derives construction volume.'

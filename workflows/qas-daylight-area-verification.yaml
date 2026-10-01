@@ -1,0 +1,150 @@
+id: pragmaticbim:workflow/qas-daylight-area-verification
+code: QAS-DAYLIGHT
+sort_order: 90
+name:
+  de: Belichtung über Glasflächen nachweisen
+  fr: Justifier l'éclairage naturel par les surfaces vitrées
+  it: Verificare l'illuminazione naturale mediante le superfici vetrate
+  en: Verify daylight provision using glazed areas
+description:
+  de: 'Die wirksame Glasfläche je Raum aus dem Architekturmodell berechnen, damit ungenügend belichtete Räume vor dem Baugesuch erkannt werden.
+
+
+    **Ausgangslage**
+
+    - Fensteröffnungen lassen sich nicht direkt als wirksame Glasflächen verwenden, weil Rahmen und opake Füllungen den transparenten Anteil verkleinern.
+
+    - Nachweise werden meist nur punktuell geführt.
+
+
+    **Ziel & Nutzen**
+
+    - Die Netto-Glasfläche je Raum nachvollziehbar der Raumgrundfläche gegenüberstellen.
+
+    - Abweichungen von den vereinbarten kantonalen oder projektspezifischen Grenzwerten früh sichtbar machen.
+
+
+    **Ablauf**
+
+    1. Innenräume mit stabiler Raumnummer und Nettofläche sowie Aussenfenster mit geometrisch getrennten, transparenten Glasflächen bereitstellen.
+
+    2. Jedes Aussenfenster dem geometrisch angrenzenden oder nächstgelegenen Innenraum zuordnen, die Raumreferenz zurückschreiben und die projizierte Netto-Glasfläche berechnen; fehlende oder mehrdeutige
+    Zuordnungen ausweisen.
+
+    3. Die Glasflächen je Raum summieren, durch die Netto-Raumgrundfläche teilen und den Quotienten gegen den für das Projekt konfigurierten Grenzwert prüfen.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit nachvollziehbarer Raumzuordnung und Netto-Glasfläche je Aussenfenster.
+
+    - Raumweiser Prüfbericht mit Glasfläche, Raumgrundfläche, Quotient, Grenzwert und Abweichungen.'
+  fr: 'Calculer la surface vitrée utile par local à partir de la maquette d''architecture afin de repérer les locaux insuffisamment éclairés avant la demande d''autorisation.
+
+
+    **Situation de départ**
+
+    - Les ouvertures de fenêtres ne peuvent pas être utilisées directement comme surfaces vitrées utiles, car les cadres et les remplissages opaques réduisent la part transparente.
+
+    - Sans rattachement univoque au local, les fenêtres risquent d''être attribuées au mauvais local ou comptées plusieurs fois.
+
+
+    **Objectif et bénéfice**
+
+    - Comparer de manière traçable la surface vitrée nette de chaque local à sa surface de plancher.
+
+    - Mettre en évidence suffisamment tôt les écarts par rapport aux valeurs limites cantonales ou propres au projet qui ont été convenues.
+
+
+    **Déroulement**
+
+    1. Fournir les locaux intérieurs avec un numéro stable et leur surface nette ainsi que les fenêtres extérieures dont les vitrages transparents sont séparés géométriquement.
+
+    2. Attribuer chaque fenêtre extérieure au local intérieur géométriquement adjacent ou le plus proche, inscrire la référence du local et calculer la surface vitrée nette projetée; signaler les attributions
+    manquantes ou ambiguës.
+
+    3. Additionner les surfaces vitrées par local, les diviser par la surface nette du local et comparer le quotient à la valeur limite configurée pour le projet.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec rattachement traçable au local et surface vitrée nette pour chaque fenêtre extérieure.
+
+    - Rapport de contrôle par local indiquant la surface vitrée, la surface de plancher, le quotient, la valeur limite et les écarts.'
+  it: 'Calcolare la superficie vetrata utile per locale dal modello architettonico, affinché i locali con illuminazione naturale insufficiente siano individuati prima della domanda di costruzione.
+
+
+    **Situazione di partenza**
+
+    - Le aperture delle finestre non possono essere utilizzate direttamente come superfici vetrate utili, poiché telai e pannelli opachi riducono la parte trasparente.
+
+    - Senza un''associazione univoca al locale, le finestre possono essere attribuite al locale sbagliato o conteggiate più volte.
+
+
+    **Obiettivo e beneficio**
+
+    - Confrontare in modo tracciabile la superficie vetrata netta di ogni locale con la sua superficie di pavimento.
+
+    - Evidenziare tempestivamente gli scostamenti dai valori limite cantonali o specifici del progetto concordati.
+
+
+    **Svolgimento**
+
+    1. Fornire i locali interni con numero stabile e superficie netta nonché le finestre esterne con le superfici vetrate trasparenti separate geometricamente.
+
+    2. Associare ogni finestra esterna al locale interno geometricamente adiacente o più vicino, registrare il riferimento del locale e calcolare la superficie vetrata netta proiettata; segnalare le associazioni
+    mancanti o ambigue.
+
+    3. Sommare le superfici vetrate per locale, dividerle per la superficie netta del locale e confrontare il quoziente con il valore limite configurato per il progetto.
+
+
+    **Risultato della fornitura**
+
+    - Modello architettonico con associazione tracciabile al locale e superficie vetrata netta per ogni finestra esterna.
+
+    - Rapporto di verifica per locale con superficie vetrata, superficie di pavimento, quoziente, valore limite e scostamenti.'
+  en: 'Calculate the effective glazed area for each space from the architectural model so that spaces with insufficient daylight are identified before the permit submission.
+
+
+    **Starting point**
+
+    - Window openings cannot be used directly as effective glazed areas because frames and opaque infill reduce the transparent portion.
+
+    - Without an unambiguous space assignment, windows can be allocated to the wrong space or counted more than once.
+
+
+    **Goal & benefit**
+
+    - Compare the net glazed area of each space with its floor area in a traceable manner.
+
+    - Identify deviations from the agreed cantonal or project-specific limits at an early stage.
+
+
+    **Process**
+
+    1. Provide interior spaces with stable room numbers and net areas, and exterior windows with geometrically separated transparent glazing.
+
+    2. Assign each exterior window to the geometrically adjacent or nearest interior space, write back the space reference, and calculate the projected net glazed area; report missing or ambiguous assignments.
+
+    3. Sum the glazed areas for each space, divide them by the net space floor area, and compare the ratio with the limit configured for the project.
+
+
+    **Deliverable**
+
+    - Architectural model with a traceable space assignment and net glazed area for each exterior window.
+
+    - Space-by-space verification report showing glazed area, floor area, ratio, limit, and deviations.'
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/building-physics
+comment: Classic IFC postprocessing workflow. For each exterior window, derive ePset_Daylight.DaylightSpaceReference from the Name of the geometrically adjacent interior space; use the nearest interior-space
+  volume only when no adjacency can be resolved. Calculate ePset_Daylight.GlazingArea as the projected net area of transparent glazing, excluding frames and opaque infill. Report missing or ambiguous assignments
+  instead of guessing. For each space, evaluate sum(GlazingArea) / Qto_SpaceBaseQuantities.NetFloorArea. The threshold is cantonal or project-specific configuration and is not fixed in the catalogue. Interior
+  windows and borrowed-light chains are out of scope.

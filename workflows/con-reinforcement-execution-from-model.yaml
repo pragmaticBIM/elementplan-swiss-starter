@@ -33,20 +33,9 @@ description:
     3. Modell für lageweise Filterung, Stahllisten und Ausführungsexport nutzen.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Etappen- und lageweise auswertbares Bewehrungsmodell inkl. Randstreifen für die Ausführung.
-
-
-    **Lieferobjekte**
-
-    - Bewehrungsmodell mit IfcReinforcingBar und Property Set AllplanAttributes
-
-    - Attribute Bewehrungsposition, Bewehrungsdurchmesser, Teilung, Stückzahl, Stahllistennummer
-
-    - Bewehrungslage über Layer (nicht als Attribut); Bewehrungslage muss filterbar sein
-
-    - Randstreifen (IfcBuildingElementProxy, ObjectType=Randstreifen) mit Attribut Randabschluss im Pset 211.5_Beton_und_Stahlbetonarbeiten'
+    - Etappenweise abgestimmtes, lageweise auswertbares Bewehrungsmodell mit vollständigen Angaben für Ausführung und Stahllisten.'
   fr: 'Préparer le ferraillage et les bandes de rive à partir du modèle de coffrage et d''armatures pour l''exécution.
 
 
@@ -73,20 +62,9 @@ description:
     3. Utiliser le modèle pour le filtrage par lit, les listes d''acier et l''export d''exécution.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Modèle d''armatures évaluable par étape et par lit, y compris bandes de rive, pour l''exécution.
-
-
-    **Livrables**
-
-    - Modèle d''armatures avec IfcReinforcingBar et jeu de propriétés AllplanAttributes
-
-    - Attributs Bewehrungsposition, Bewehrungsdurchmesser, Teilung, Stückzahl, Stahllistennummer
-
-    - Lit d''armatures via calques (pas comme attribut) ; le lit d''armatures doit être filtrable
-
-    - Bandes de rive (IfcBuildingElementProxy, ObjectType=Randstreifen) avec attribut Randabschluss dans le pset 211.5_Beton_und_Stahlbetonarbeiten'
+    - Modèle d''armatures coordonné par étape et exploitable par nappe, avec les données nécessaires à l''exécution et aux listes d''acier.'
   it: 'Preparare armatura e fasce di bordo dal modello di cassero e armatura per l''esecuzione.
 
 
@@ -113,20 +91,9 @@ description:
     3. Utilizzare il modello per filtro per strato, liste acciaio ed export di esecuzione.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Modello di armatura valutabile per tappa e per strato, comprese fasce di bordo, per l''esecuzione.
-
-
-    **Oggetti della fornitura**
-
-    - Modello di armatura con IfcReinforcingBar e property set AllplanAttributes
-
-    - Attributi Bewehrungsposition, Bewehrungsdurchmesser, Teilung, Stückzahl, Stahllistennummer
-
-    - Strato di armatura tramite layer (non come attributo); lo strato di armatura deve essere filtrabile
-
-    - Fasce di bordo (IfcBuildingElementProxy, ObjectType=Randstreifen) con attributo Randabschluss nel pset 211.5_Beton_und_Stahlbetonarbeiten'
+    - Modello delle armature coordinato per tappa e valutabile per strato, con i dati necessari all''esecuzione e alle liste dei ferri.'
   en: 'Prepare reinforcement and edge strips from the formwork and reinforcement model for construction execution.
 
 
@@ -153,20 +120,9 @@ description:
     3. Use the model for layer-wise filtering, steel schedules, and execution export.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - A reinforcement model evaluable by stage and layer, including edge strips, for execution.
-
-
-    **Deliverables**
-
-    - Reinforcement model with IfcReinforcingBar and property set AllplanAttributes
-
-    - Attributes Bewehrungsposition, Bewehrungsdurchmesser, Teilung, Stückzahl, Stahllistennummer
-
-    - Reinforcement layer via CAD layers (not as an attribute); reinforcement layer must be filterable
-
-    - Edge strips (IfcBuildingElementProxy, ObjectType=Randstreifen) with attribute Randabschluss in pset 211.5_Beton_und_Stahlbetonarbeiten'
+    - Reinforcement model coordinated by stage and readable layer by layer, with the information needed for execution and steel schedules.'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/con
 picture_link: null

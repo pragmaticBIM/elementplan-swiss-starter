@@ -1,0 +1,29 @@
+id: pragmaticbim:usage-scenario/post-anlieferung
+code: US-WH-05
+sort_order: 5
+name:
+  de: Post anlieferung
+  fr: Livraison du courrier
+  it: Consegna della posta
+  en: Mail delivery
+description:
+  de: Die Zustellung kommt von der Strasse in die Eingangshalle, legt Sendungen im Postraum ab und erreicht von dort die Wohnungseingänge.
+  fr: La distribution arrive de la rue dans le hall d'entrée, dépose le courrier au local courrier, puis rejoint les entrées des logements.
+  it: La consegna arriva dalla strada nell'atrio, deposita la posta nel locale posta e da lì raggiunge gli ingressi degli alloggi.
+  en: Delivery arrives from the street into the lobby, leaves mail in the mail room, and from there reaches the dwelling entries.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/strasse
+- pragmaticbim:room-type/eingangshalle
+- pragmaticbim:room-type/postraum
+- pragmaticbim:room-type/wohnungseingang
+room_relationships:
+- from_room_type: pragmaticbim:room-type/strasse
+  to_room_type: pragmaticbim:room-type/eingangshalle
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/postraum
+- from_room_type: pragmaticbim:room-type/postraum
+  to_room_type: pragmaticbim:room-type/wohnungseingang

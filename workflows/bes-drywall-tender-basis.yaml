@@ -1,0 +1,154 @@
+id: pragmaticbim:workflow/bes-drywall-tender-basis
+code: BES-DRYWALL-TENDER
+sort_order: 18
+name:
+  de: Grundlage für die Trockenbauausschreibung liefern
+  fr: Fournir la base pour l'appel d'offres de la construction à sec
+  it: Fornire la base per la gara delle costruzioni a secco
+  en: Provide the basis for the drywall tender
+description:
+  de: 'Innenwände und Verstärkungsbereiche im Architekturmodell als prüfbare Grundlage für Mengen und Trockenbauausschreibung bereitstellen.
+
+
+    **Ausgangslage**
+
+    - Wandtypen, Brand- und Schallschutzanforderungen sowie Verstärkungen werden für die Ausschreibung oft manuell aus Plänen, Konzepten und Listen zusammengetragen.
+
+    - Fehlende oder widersprüchliche Angaben führen zu falschen Mengen, Rückfragen und Nachträgen während der Ausführung.
+
+
+    **Ziel & Nutzen**
+
+    - Nichttragende Innenwände nach berechnetem Typ gruppieren und mit den freigegebenen Brand- und Schallschutzangaben auswerten.
+
+    - Verstärkungsbereiche vollständig und eindeutig den betroffenen Wänden zuordnen.
+
+    - Mengen und Anforderungen als nachvollziehbare Grundlage für Leistungsverzeichnis und Ausschreibungspläne bereitstellen.
+
+
+    **Ablauf**
+
+    1. Freigegebene nichttragende Innenwände und Verstärkungsbereiche mit eindeutigen Referenzen bereitstellen.
+
+    2. Berechnete Wandtypen, Feuerwiderstand, Schalldämmung und Verstärkungsanforderungen auf Vollständigkeit und Widersprüche prüfen.
+
+    3. Wandflächen nach Typ sowie Verstärkungsbereiche auswerten und mit Leistungsverzeichnis und Ausschreibungsplänen abstimmen.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit freigegebenen Innenwandtypen, Brand- und Schallschutzangaben sowie eindeutig zugeordneten Verstärkungsbereichen
+
+    - Prüfbare Typen-, Mengen- und Verstärkungsübersicht als Grundlage für die Trockenbauausschreibung'
+  fr: 'Mettre à disposition les cloisons intérieures et les zones de renfort dans la maquette d''architecture comme base vérifiable pour les quantités et l''appel d''offres de la construction à sec.
+
+
+    **Situation de départ**
+
+    - Les types de cloisons, les exigences incendie et acoustiques ainsi que les renforts sont souvent rassemblés manuellement à partir de plans, concepts et listes pour l''appel d''offres.
+
+    - Des indications manquantes ou contradictoires entraînent des quantités erronées, des questions et des avenants pendant l''exécution.
+
+
+    **Objectif et bénéfice**
+
+    - Regrouper les cloisons intérieures non porteuses selon leur type calculé et les quantifier avec les indications incendie et acoustiques validées.
+
+    - Rattacher toutes les zones de renfort sans ambiguïté aux cloisons concernées.
+
+    - Mettre à disposition les quantités et exigences comme base traçable pour le devis et les plans d''appel d''offres.
+
+
+    **Déroulement**
+
+    1. Fournir les cloisons intérieures non porteuses et les zones de renfort validées avec des références univoques.
+
+    2. Contrôler l''exhaustivité et la cohérence des types de cloisons calculés, de la résistance au feu, de l''isolation acoustique et des exigences de renfort.
+
+    3. Quantifier les surfaces de cloisons par type et les zones de renfort, puis les coordonner avec le devis et les plans d''appel d''offres.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec types de cloisons validés, indications incendie et acoustiques ainsi que zones de renfort rattachées sans ambiguïté
+
+    - Vue d''ensemble vérifiable des types, quantités et renforts comme base pour l''appel d''offres de la construction à sec'
+  it: 'Mettere a disposizione nel modello di architettura le pareti interne e le zone di rinforzo come base verificabile per le quantità e la gara delle costruzioni a secco.
+
+
+    **Situazione di partenza**
+
+    - I tipi di parete, i requisiti antincendio e acustici e i rinforzi vengono spesso raccolti manualmente da piani, concetti ed elenchi per la gara.
+
+    - Indicazioni mancanti o contraddittorie causano quantità errate, domande e varianti durante l''esecuzione.
+
+
+    **Obiettivo e beneficio**
+
+    - Raggruppare le pareti interne non portanti secondo il tipo calcolato e quantificarle con le indicazioni antincendio e acustiche approvate.
+
+    - Associare tutte le zone di rinforzo in modo univoco alle pareti interessate.
+
+    - Mettere a disposizione quantità e requisiti come base tracciabile per il capitolato e i piani di gara.
+
+
+    **Svolgimento**
+
+    1. Fornire le pareti interne non portanti e le zone di rinforzo approvate con riferimenti univoci.
+
+    2. Verificare completezza e coerenza dei tipi di parete calcolati, della resistenza al fuoco, dell''isolamento acustico e dei requisiti di rinforzo.
+
+    3. Quantificare le superfici delle pareti per tipo e le zone di rinforzo, quindi coordinarle con il capitolato e i piani di gara.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con tipi di parete approvati, indicazioni antincendio e acustiche e zone di rinforzo associate in modo univoco
+
+    - Quadro verificabile di tipi, quantità e rinforzi come base per la gara delle costruzioni a secco'
+  en: 'Provide interior partitions and reinforcement zones in the architecture model as a verifiable basis for quantities and drywall tendering.
+
+
+    **Starting point**
+
+    - Wall types, fire and acoustic requirements, and reinforcements are often compiled manually from drawings, concepts, and schedules for tendering.
+
+    - Missing or contradictory information leads to incorrect quantities, queries, and variations during construction.
+
+
+    **Goal & benefit**
+
+    - Group non-load-bearing interior walls by calculated type and quantify them with the approved fire and acoustic information.
+
+    - Assign all reinforcement zones unambiguously to the affected walls.
+
+    - Provide quantities and requirements as a traceable basis for the bill of quantities and tender drawings.
+
+
+    **Process**
+
+    1. Provide approved non-load-bearing interior walls and reinforcement zones with unambiguous references.
+
+    2. Check calculated wall types, fire resistance, sound insulation, and reinforcement requirements for completeness and contradictions.
+
+    3. Quantify wall areas by type and reinforcement zones, then coordinate them with the bill of quantities and tender drawings.
+
+
+    **Deliverable**
+
+    - Architecture model with approved interior wall types, fire and acoustic information, and unambiguously assigned reinforcement zones
+
+    - Verifiable overview of types, quantities, and reinforcements as the basis for the drywall tender'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/fire-protection
+- pragmaticbim:domain/building-physics
+comment: Tender preparation in SIA phase 41, not a complete contractor specification. Upstream inputs are DES-DRYWALL-REINF, BES-PRODUCT-TENDER, QAS-FIRE, and QAS-ACOUSTIC. The contractor remains responsible
+  for the detailed wall build-up, framing, board layers, and fixing capacity.

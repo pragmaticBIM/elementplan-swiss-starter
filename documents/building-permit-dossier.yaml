@@ -1,0 +1,56 @@
+id: pragmaticbim:document/building-permit-dossier
+code: BGD
+sort_order: 98
+name:
+  de: Baugenehmigungsdossier
+  fr: Dossier de demande de permis de construire
+  it: Dossier della domanda di costruzione
+  en: Building permit dossier
+definition:
+  de: Vollständiges, bei der Bewilligungsbehörde einzureichendes Baugesuch mit Formularen, Plänen, Berichten, Konzepten und projektspezifischen Nachweisen.
+  fr: Dossier complet à remettre à l'autorité compétente, comprenant formulaires, plans, rapports, concepts et justificatifs propres au projet.
+  it: Domanda di costruzione completa da inoltrare all'autorità competente, con formulari, piani, rapporti, concetti e verifiche specifiche del progetto.
+  en: Complete building application submitted to the permitting authority, including forms, plans, reports, concepts, and project-specific evidence.
+description:
+  de: |-
+    - Vollständig ausgefüllte und unterzeichnete Gesuchsformulare der zuständigen Behörde
+    - Situations-, Architektur- und Fachplanerpläne im geforderten Stand und Format
+    - Projektbeschrieb mit Nutzung, Kennzahlen, Flächen, Volumen, Erschliessung und Parkierung
+    - Erforderliche Berichte, Konzepte und Nachweise, insbesondere zu Brandschutz, Energie, Schall, Umwelt und Barrierefreiheit
+    - Eigentums-, Vollmachts- und Zustimmungsunterlagen sowie weitere gemeinde- oder kantonsspezifische Beilagen
+    - Inhaltsverzeichnis mit Dokumentversionen, Verantwortlichkeiten, Freigaben und Einreichungsstand
+  fr: |-
+    - Formulaires de demande de l'autorité compétente entièrement remplis et signés
+    - Plans de situation, d'architecture et des spécialistes dans l'état et le format exigés
+    - Descriptif du projet avec affectation, valeurs caractéristiques, surfaces, volumes, accès et stationnement
+    - Rapports, concepts et justificatifs requis, notamment pour la protection incendie, l'énergie, l'acoustique, l'environnement et l'accessibilité
+    - Documents relatifs à la propriété, procurations et accords ainsi que les autres annexes exigées par la commune ou le canton
+    - Table des matières avec versions des documents, responsabilités, validations et état du dépôt
+  it: |-
+    - Formulari di domanda dell'autorità competente compilati integralmente e firmati
+    - Piani di situazione, architettura e specialistici nello stato e nel formato richiesti
+    - Descrizione del progetto con destinazione d'uso, dati caratteristici, superfici, volumi, accessi e posteggi
+    - Rapporti, concetti e verifiche richiesti, in particolare per protezione antincendio, energia, acustica, ambiente e accessibilità
+    - Documenti relativi alla proprietà, procure e consensi nonché ulteriori allegati richiesti dal Comune o dal Cantone
+    - Indice con versioni dei documenti, responsabilità, approvazioni e stato dell'inoltro
+  en: |-
+    - Fully completed and signed application forms required by the competent authority
+    - Site, architecture, and specialist plans in the required status and format
+    - Project description covering use, key figures, areas, volumes, access, and parking
+    - Required reports, concepts, and evidence, particularly for fire safety, energy, acoustics, environment, and accessibility
+    - Ownership documents, powers of attorney, consents, and other municipal or cantonal attachments
+    - Contents register showing document versions, responsibilities, approvals, and submission status
+file_name:
+  de: '{Projektnummer}_ARC-BGD_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-BGD_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-BGD_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-BGD_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+- "33:M"
+comment: >-
+  Umbrella document for pragmaticbim:workflow/des-building-permit. It complements,
+  but does not replace, the separate architecture and MEP permit-plan documents.
+  Exact forms, reports, evidence, signatures, and submission formats follow the
+  competent municipality and canton.

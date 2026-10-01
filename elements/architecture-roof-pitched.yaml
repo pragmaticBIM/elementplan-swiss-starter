@@ -1,6 +1,6 @@
 id: pragmaticbim:element/architecture-roof-pitched
 code: ARC-ROOF-PITCH
-sort_order: 54
+sort_order: 30
 status: active
 name:
   de: Steildach (Grob)
@@ -8,7 +8,7 @@ name:
   it: Tetto inclinato (Indicativo)
   en: Pitched roof (Rough)
 definition:
-  de: 'Grobe Dimensionen gemäss Tragwerksplanung für Steildächer in Projektierung und Bewilligungsverfahren.
+  de: 'Macht Dachform und Tragkonzept früh räumlich prüfbar und unterstützt belastbare Bewilligungs- und Koordinationsentscheide.
 
 
     **Beschreibung**
@@ -18,18 +18,16 @@ definition:
     - Dient der Koordination zwischen Architektur und Tragwerksplanung, nicht der Ausführungsplanung.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Als vereinfachtes Volumen oder Dachfläche modellieren; Neigung gemäss Grobkonzept.
 
     - Keine Dachaufbauten, Eindeckungen oder Detailanschlüsse modellieren.
 
-    - Früh: Konzept über Skizzen als Tragwerksskizze im ARC-Modell; Sperrzonen vom Tragwerksplaner prüfen.
+    - In der Architekturkonzeption die Abmessungen der konzeptionellen Tragwerksbauteile mit dem Tragwerksplaner abstimmen und im Architekturmodell übernehmen.
 
-    - Später: Dieselben Bauteile mit Reference auch im Tragwerksmodell abstimmen.
-
-    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
-  fr: 'Dimensions approximatives selon la conception structurale pour toitures inclinées en phases de projet et de procédure d''autorisation.
+    - Geeignetes Material im Autorensystem verwenden und exportieren.'
+  fr: 'Permet de vérifier tôt dans l''espace la forme de la toiture et le concept porteur et étaye des décisions fiables pour l''autorisation et la coordination.
 
 
     **Description**
@@ -45,12 +43,10 @@ definition:
 
     - Ne pas modéliser superstructures, couverture ou raccords de détail.
 
-    - Tôt : concept par croquis comme esquisse porteuse dans le modèle d''architecture ; vérifier les zones d''exclusion de l''ingénieur structure.
+    - Lors de la conception architecturale, coordonner avec l''ingénieur civil les dimensions des éléments porteurs conceptuels et les reprendre dans le modèle d''architecture.
 
-    - Plus tard : harmoniser les mêmes éléments avec Reference dans le modèle structurel.
-
-    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
-  it: 'Dimensioni indicative secondo la progettazione strutturale per tetti inclinati nelle fasi di progettazione e procedura di autorizzazione.
+    - Utiliser et exporter le matériau approprié depuis le logiciel auteur.'
+  it: 'Consente di verificare tempestivamente nello spazio la forma della copertura e il concetto strutturale e supporta decisioni affidabili per l’autorizzazione e il coordinamento.
 
 
     **Descrizione**
@@ -66,12 +62,10 @@ definition:
 
     - Non modellare sovrastrutture, manto di copertura o giunti di dettaglio.
 
-    - Presto: concept tramite schizzi come schizzo strutturale nel modello di architettura; verificare le zone di esclusione dell''ingegnere strutturista.
+    - Durante la concezione architettonica, coordinare con l''ingegnere strutturista le dimensioni degli elementi strutturali concettuali e recepirle nel modello architettonico.
 
-    - Più tardi: allineare gli stessi elementi con Reference anche nel modello strutturale.
-
-    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
-  en: 'Rough dimensions according to structural engineering for pitched roofs in design development and permitting stages.
+    - Usare ed esportare il materiale appropriato dal software di modellazione.'
+  en: 'Makes the roof form and structural concept spatially verifiable early on and supports reliable permitting and coordination decisions.
 
 
     **Description**
@@ -87,20 +81,48 @@ definition:
 
     - Do not model roof build-ups, cladding, or detail connections.
 
-    - Early: concept via sketches as structural sketch in the architecture model; verify exclusion zones from the structural engineer.
+    - During conceptual architectural design, coordinate the dimensions of conceptual structural components with the structural engineer and adopt them in the architecture model.
 
-    - Later: align the same components with Reference in the structural model as well.
-
-    - Use an IfcMaterial that corresponds to the actual material class.'
+    - Use and export the appropriate material from the authoring system.'
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcRoof
 entity_ifc4: IfcRoof
 entity_ifc4_3: IfcRoof
-picture_link: null
-model_link: null
+picture_link: architecture-roof-pitched.png
+picture_print_link: architecture-roof-pitched-print.tif
+attachment_link: architecture-roof-pitched.ifc
+model_link: architecture-roof-pitched.ifc
 applicability: entity_ifc4=IfcRoof OR entity_ifc2x3=IfcRoof
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Steildachs gemäss Tragwerksplan.
+    fr: Désignation de la toiture inclinée selon le plan structurel.
+    it: Denominazione del tetto inclinato secondo il piano strutturale.
+    en: Pitched roof designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/qas-arch-structural-adoption
+  is_applicability: false
+  status: active
+  sort_order: 2
 - name: PredefinedType
   pset: null
   definition:
@@ -232,219 +254,17 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
-  status: active
-  sort_order: 1
-- name: ObjectType
-  pset: null
-  definition:
-    de: 'Form des Steildachs.
-
-
-      **Zulässige Werte**
-
-      - `SHED_ROOF` — Pultdach
-
-      - `GABLE_ROOF` — Satteldach
-
-      - `HIP_ROOF` — Walmdach
-
-      - `HIPPED_GABLE_ROOF` — Krüppelwalmdach
-
-      - `GAMBREL_ROOF` — Mansarddach
-
-      - `MANSARD_ROOF` — Mansartdach
-
-      - `BARREL_ROOF` — Tonnendach
-
-      - `RAINBOW_ROOF` — Regenbogen-Dach
-
-      - `BUTTERFLY_ROOF` — Schmetterlingsdach
-
-      - `PAVILION_ROOF` — Zeltdach
-
-      - `DOME_ROOF` — Kuppeldach
-
-      - `FREEFORM` — Freiform
-
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für PredefinedType.'
-    fr: 'Forme de la toiture inclinée.
-
-
-      **Valeurs admises**
-
-      - `SHED_ROOF` — toit monopente
-
-      - `GABLE_ROOF` — toit à deux pentes
-
-      - `HIP_ROOF` — toit en croupe
-
-      - `HIPPED_GABLE_ROOF` — toit croupe-jonction
-
-      - `GAMBREL_ROOF` — toit mansardé
-
-      - `MANSARD_ROOF` — toit mansart
-
-      - `BARREL_ROOF` — toit en berceau
-
-      - `RAINBOW_ROOF` — toit arc-en-ciel
-
-      - `BUTTERFLY_ROOF` — toit papillon
-
-      - `PAVILION_ROOF` — toit pavillon
-
-      - `DOME_ROOF` — toit dôme
-
-      - `FREEFORM` — forme libre
-
-
-      **Remarque**
-
-      - Substitut IFC2x3 de PredefinedType.'
-    it: 'Forma del tetto inclinato.
-
-
-      **Valori ammessi**
-
-      - `SHED_ROOF` — tetto a una falda
-
-      - `GABLE_ROOF` — tetto a due falde
-
-      - `HIP_ROOF` — tetto a padiglione
-
-      - `HIPPED_GABLE_ROOF` — tetto a padiglione con frontone
-
-      - `GAMBREL_ROOF` — tetto a mansarda
-
-      - `MANSARD_ROOF` — tetto mansart
-
-      - `BARREL_ROOF` — tetto a botte
-
-      - `RAINBOW_ROOF` — tetto arcobaleno
-
-      - `BUTTERFLY_ROOF` — tetto a farfalla
-
-      - `PAVILION_ROOF` — tetto piramidale
-
-      - `DOME_ROOF` — tetto a cupola
-
-      - `FREEFORM` — forma libera
-
-
-      **Nota**
-
-      - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Form of the pitched roof.
-
-
-      **Allowed values**
-
-      - `SHED_ROOF` — shed roof
-
-      - `GABLE_ROOF` — gable roof
-
-      - `HIP_ROOF` — hip roof
-
-      - `HIPPED_GABLE_ROOF` — hipped gable roof
-
-      - `GAMBREL_ROOF` — gambrel roof
-
-      - `MANSARD_ROOF` — mansard roof
-
-      - `BARREL_ROOF` — barrel roof
-
-      - `RAINBOW_ROOF` — rainbow roof
-
-      - `BUTTERFLY_ROOF` — butterfly roof
-
-      - `PAVILION_ROOF` — pavilion roof
-
-      - `DOME_ROOF` — dome roof
-
-      - `FREEFORM` — freeform'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-roof-pitched
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
-  status: active
-  sort_order: '2
-
-    **Note** - IFC2x3 substitute for PredefinedType.'
-- name: Name
-  pset: null
-  definition:
-    de: Bezeichnung des Steildachs gemäss Tragwerksplan.
-    fr: Désignation de la toiture inclinée selon le plan structurel.
-    it: Denominazione del tetto inclinato secondo il piano strutturale.
-    en: Pitched roof designation according to the structural plan.
-  datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/bes-timber-contractor-procurement
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/qas-arch-structural-adoption
   is_applicability: false
   status: active
   sort_order: 3
-- name: Reference
-  pset: Pset_RoofCommon
-  definition:
-    de: Referenz zur Zuordnung im Koordinationsmodell.
-    fr: Référence pour l'identification dans le modèle de coordination.
-    it: Riferimento per l'identificazione nel modello di coordinamento.
-    en: Reference used for identification in the coordination model.
-  datatype: IfcIdentifier
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
-  status: active
-  sort_order: 4
 - name: LoadBearing
   pset: Pset_RoofCommon
   definition:
@@ -471,7 +291,7 @@ attributes:
 
       **Allowed values**
 
-      - `TRUE` — load-bearing element'
+      - `TRUE` — load-bearing component'
   datatype: IfcBoolean
   allowed_values: pragmaticbim:value/boolean-true
   needed_in_phases:
@@ -489,41 +309,14 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
   - pragmaticbim:workflow/qas-arch-structural-coordination
   - pragmaticbim:workflow/des-ebkp-h-classification
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/qas-arch-structural-adoption
   is_applicability: false
   status: active
-  sort_order: 5
-- name: GrossArea
-  pset: Qto_RoofBaseQuantities
-  definition:
-    de: Bruttofläche des modellierten Steildachs.
-    fr: Surface brute de la toiture inclinée modélisée.
-    it: Superficie lorda del tetto inclinato modellato.
-    en: Gross area of the modelled pitched roof.
-  datatype: IfcAreaMeasure
-  unit: m²
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
-  status: active
-  sort_order: 6
+  sort_order: 4
 - name: Status
   pset: Pset_RoofCommon
   definition:
@@ -563,16 +356,16 @@ attributes:
       - `DEMOLISH` — da demolire
 
       - `TEMPORARY` — temporaneo'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary'
   datatype: IfcLabel
@@ -594,11 +387,41 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-structure-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-hazmat-check
+  - pragmaticbim:workflow/des-circularity
   is_applicability: false
   status: active
-  sort_order: 7
+  sort_order: 5
+- name: ThermalTransmittance
+  pset: Pset_RoofCommon
+  definition:
+    de: Wärmedurchgangskoeffizient U [W/(m²·K)] als Labor-/Katalogwert des Bauteils.
+    fr: Coefficient de transmission thermique U [W/(m²·K)] comme valeur de laboratoire/catalogue de l'élément.
+    it: Coefficiente di trasmittanza termica U [W/(m²·K)] come valore di laboratorio/catalogo del componente.
+    en: Thermal transmittance U [W/(m²·K)] as laboratory/catalogue value of the component.
+  datatype: IfcThermalTransmittanceMeasure
+  unit: W/(m²·K)
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  is_applicability: false
+  status: active
+  sort_order: 6
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
@@ -653,16 +476,16 @@ attributes:
       **Nota**
 
       - Sostituto IFC2x3 di Status.'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary
 
@@ -688,46 +511,47 @@ attributes:
   ifc_versions:
   - ifc2x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-structure-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-hazmat-check
   is_applicability: false
   status: active
-  sort_order: 8
+  sort_order: 7
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: 'Kostenschnittstelle des Bauteils — Grundausbau oder Mieterausbau.
+    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
 
 
       **Zulässige Werte**
 
       - `GAB` — Grundausbau (Bauherr / Vermieter)
 
-      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_Migros`'
-    fr: 'Interface de coûts de l''élément — aménagement de base ou aménagement locataire.
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
+    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
 
 
       **Valeurs admises**
 
       - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
 
-      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_Migros`'
-    it: 'Interfaccia di costo del componente — allestimento di base o allestimento locatario.
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
+    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
 
 
       **Valori ammessi**
 
       - `GAB` — allestimento di base (committente / locatore)
 
-      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_Migros`'
-    en: 'Cost interface of the component — base building or tenant fit-out.
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
+    en: 'Cost interface of the component – base building or tenant fit-out.
 
 
       **Allowed values**
 
       - `GAB` — base building (client / landlord)
 
-      - `MAB_{Mietername}` — tenant fit-out, e.g. `MAB_Migros`'
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
   datatype: IfcLabel
   needed_in_phases:
   - '32'
@@ -742,34 +566,61 @@ attributes:
   - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
   is_applicability: false
   status: active
+  sort_order: 8
+- name: FundingApplication
+  pset: ePset_Cost
+  definition:
+    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
+      demande.
+    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
+      to no application.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-funding-verification
+  is_applicability: false
+  status: active
   sort_order: 9
 - name: AwardInterface
   pset: ePset_Cost
   definition:
-    de: 'Vergabepaket des Bauteils nach BKP-3-Steller — damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Vergabepaket — z. B. `211`, `221`, `244`.'
-    fr: 'Lot d''adjudication de l''élément selon le BKP à trois chiffres — pour rendre visibles les interfaces entre lots d''entreprise.
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
+    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot d''adjudication BKP — p. ex. `211`, `221`, `244`.'
-    it: 'Lotto di aggiudicazione del componente secondo il BKP a tre cifre — per rendere visibili le interfacce tra lotti d''impresa.
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
+    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di aggiudicazione BKP — es. `211`, `221`, `244`.'
-    en: 'Award package of the component by three-digit BKP code — so interfaces between contractor packages become visible.
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
+    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
 
 
       **Allowed values**
 
-      - See value list BKP award package — e.g. `211`, `221`, `244`.'
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-award-package
   needed_in_phases:
@@ -789,30 +640,30 @@ attributes:
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
-    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller — damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Planungspaket — z. B. `091`, `092`, `094`.'
-    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres — pour rendre visibles les responsabilités entre disciplines de planification.
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot de planification BKP — p. ex. `091`, `092`, `094`.'
-    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre — per rendere visibili le responsabilità tra discipline di pianificazione.
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di pianificazione BKP — es. `091`, `092`, `094`.'
-    en: 'Planning interface of the component by three-digit BKP code — so responsibilities between planning disciplines become visible.
+      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
+    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
 
 
       **Allowed values**
 
-      - See value list BKP planning package — e.g. `091`, `092`, `094`.'
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-planning-package
   needed_in_phases:
@@ -856,14 +707,14 @@ attributes:
       - `TRUE` — sotto il livello del terreno
 
       - `FALSE` — sopra il livello del terreno'
-    en: 'Marks whether the component is below terrain.
+    en: 'Marks whether the component sits below ground level.
 
 
       **Allowed values**
 
-      - `TRUE` — below terrain
+      - `TRUE` — below ground
 
-      - `FALSE` — above terrain'
+      - `FALSE` — above ground'
   datatype: IfcBoolean
   allowed_values: pragmaticbim:value/boolean
   needed_in_phases:
@@ -880,28 +731,28 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 12
-- name: EbkpH
+- name: eBKP
   pset: ePset_Cost
   definition:
-    de: 'eBKP-H-Klassifizierung nach SN 506 511 — ableitbar aus IsExternal, LoadBearing und BelowTerrain.
+    de: 'eBKP-H-Klassifizierung nach SN 506 511 – ableitbar aus IsExternal, LoadBearing und BelowTerrain.
 
 
       **Zulässige Werte**
 
       - `C04.05` — Konstruktion geneigtes Dach'
-    fr: 'Classification eBKP-H selon SN 506 511 — déductible à partir de IsExternal, LoadBearing et BelowTerrain.
+    fr: 'Classification eBKP-H selon SN 506 511 – déductible à partir de IsExternal, LoadBearing et BelowTerrain.
 
 
       **Valeurs admises**
 
       - `C04.05` — construction de toiture inclinée'
-    it: 'Classificazione eBKP-H secondo SN 506 511 — ricavabile da IsExternal, LoadBearing e BelowTerrain.
+    it: 'Classificazione eBKP-H secondo SN 506 511 – ricavabile da IsExternal, LoadBearing e BelowTerrain.
 
 
       **Valori ammessi**
 
       - `C04.05` — costruzione di tetto inclinato'
-    en: 'eBKP-H classification according to SN 506 511 — derivable from IsExternal, LoadBearing, and BelowTerrain.
+    en: 'eBKP-H classification according to SN 506 511 – derivable from IsExternal, LoadBearing, and BelowTerrain.
 
 
       **Allowed values**
@@ -920,6 +771,582 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/des-ebkp-h-classification
+  - pragmaticbim:workflow/des-circularity
   is_applicability: false
   status: active
   sort_order: 13
+- name: ProductClass
+  pset: ePset_Cost
+  definition:
+    de: 'Produktklasse für Kosten- und Ausschreibungszuordnung. Die Zuordnung kann manuell erfolgen; für konsistente Ausschreibungsdaten sollte sie regelbasiert automatisiert oder KI-unterstützt aus den
+      Bauteileigenschaften abgeleitet werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste [Produktklasse](https://schema.pragmaticbim.ch/classification/roof-covering-product.html).'
+    fr: 'Classe de produit pour le rattachement aux coûts et à l''appel d''offres. L''attribution peut être manuelle ; pour garantir des données d''appel d''offres cohérentes, elle devrait être déduite
+      des propriétés de l''élément par des règles automatisées ou avec l''aide de l''IA.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs [Classe de produit](https://schema.pragmaticbim.ch/classification/roof-covering-product.html).'
+    it: 'Classe di prodotto per l''attribuzione a costi e gara. L''attribuzione può essere manuale; per garantire dati di gara coerenti, dovrebbe essere ricavata dalle proprietà del componente mediante
+      regole automatizzate o con il supporto dell''IA.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori [Classe di prodotto](https://schema.pragmaticbim.ch/classification/roof-covering-product.html).'
+    en: 'Product class for cost and tender assignment. It may be assigned manually; for consistent tender data, it should preferably be derived from component properties through deterministic automation
+      or AI-assisted mapping.
+
+
+      **Allowed values**
+
+      - See the [Product class](https://schema.pragmaticbim.ch/classification/roof-covering-product.html) value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/product-class-roof-covering
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
+  sort_order: 14
+- name: UnitPrice
+  pset: ePset_Cost
+  definition:
+    de: Projektspezifischer oder bürospezifischer Einheitspreis je Einheit der Referenzmenge für die Plausibilisierung der Bauteilkosten.
+    fr: Prix unitaire spécifique au projet ou au bureau par unité de la quantité de référence pour le contrôle de plausibilité des coûts de l’élément.
+    it: Prezzo unitario specifico del progetto o dello studio per unità della quantità di riferimento, utilizzato per la verifica di plausibilità dei costi del componente.
+    en: Project- or office-specific unit price per unit of the reference quantity, used to check component costs for plausibility.
+  datatype: IfcMonetaryMeasure
+  unit: CHF/m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
+  sort_order: 15
+- name: ReferenceQuantity
+  pset: ePset_Cost
+  definition:
+    de: 'Verbindliche Referenzmenge für den Einheitspreis: `Qto_RoofBaseQuantities.GrossArea`.'
+    fr: 'Quantité de référence faisant foi pour le prix unitaire : `Qto_RoofBaseQuantities.GrossArea`.'
+    it: 'Quantità di riferimento vincolante per il prezzo unitario: `Qto_RoofBaseQuantities.GrossArea`.'
+    en: 'Authoritative reference quantity used with UnitPrice: `Qto_RoofBaseQuantities.GrossArea`.'
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
+  sort_order: 16
+- name: Connection
+  pset: ePset_Circularity
+  definition:
+    de: 'Art der Verbindung für die Demontierbarkeit (Madaster).
+
+
+      **Zulässige Werte**
+
+      - `DryConnection` — trockene Verbindung
+
+      - `AddedConnection` — Verbindung mit Zusatzteilen
+
+      - `DirectConnection` — direkte integrale Verbindung
+
+      - `SoftChemicalConnection` — weiche chemische Verbindung
+
+      - `HardChemicalConnection` — harte chemische Verbindung'
+    fr: 'Type de connexion pour la démontabilité (Madaster).
+
+
+      **Valeurs admises**
+
+      - `DryConnection` — connexion sèche
+
+      - `AddedConnection` — connexion avec éléments ajoutés
+
+      - `DirectConnection` — connexion intégrale directe
+
+      - `SoftChemicalConnection` — liaison chimique souple
+
+      - `HardChemicalConnection` — liaison chimique dure'
+    it: 'Tipo di connessione per la smontabilità (Madaster).
+
+
+      **Valori ammessi**
+
+      - `DryConnection` — connessione a secco
+
+      - `AddedConnection` — connessione con elementi aggiunti
+
+      - `DirectConnection` — connessione integrale diretta
+
+      - `SoftChemicalConnection` — connessione chimica morbida
+
+      - `HardChemicalConnection` — connessione chimica dura'
+    en: 'Connection type for detachability (Madaster).
+
+
+      **Allowed values**
+
+      - `DryConnection` — dry connection
+
+      - `AddedConnection` — connection using added parts
+
+      - `DirectConnection` — direct integral connection
+
+      - `SoftChemicalConnection` — soft chemical connection
+
+      - `HardChemicalConnection` — hard chemical connection'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/detachability-connection-type
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 17
+- name: Accessibility
+  pset: ePset_Circularity
+  definition:
+    de: 'Zugänglichkeit der Verbindung ohne Zerstörung von Bauteil oder Umgebung (Madaster).
+
+
+      **Zulässige Werte**
+
+      - `Accessible` — frei zugänglich ohne Zusatzmassnahmen
+
+      - `PartialNoDamage` — zugänglich mit Massnahmen ohne Schaden
+
+      - `PartialWithRepairableDamage` — zugänglich mit vollständig reparierbarem Schaden
+
+      - `PartialWithDamage` — zugänglich mit teilweise reparierbarem Schaden
+
+      - `NotAccessible` — nicht zugänglich, irreparabler Schaden'
+    fr: 'Accessibilité de la connexion sans destruction de l''élément ou de l''entourage (Madaster).
+
+
+      **Valeurs admises**
+
+      - `Accessible` — librement accessible sans actions supplémentaires
+
+      - `PartialNoDamage` — accessible avec actions sans dommage
+
+      - `PartialWithRepairableDamage` — accessible avec dommage entièrement réparable
+
+      - `PartialWithDamage` — accessible avec dommage partiellement réparable
+
+      - `NotAccessible` — non accessible, dommage irréparable'
+    it: 'Accessibilità della connessione senza distruggere il componente o l''intorno (Madaster).
+
+
+      **Valori ammessi**
+
+      - `Accessible` — liberamente accessibile senza azioni aggiuntive
+
+      - `PartialNoDamage` — accessibile con azioni senza danno
+
+      - `PartialWithRepairableDamage` — accessibile con danno interamente riparabile
+
+      - `PartialWithDamage` — accessibile con danno parzialmente riparabile
+
+      - `NotAccessible` — non accessibile, danno irreparabile'
+    en: 'Accessibility of the connection without destroying the component or surroundings (Madaster).
+
+
+      **Allowed values**
+
+      - `Accessible` — freely accessible without additional actions
+
+      - `PartialNoDamage` — accessible with actions that cause no damage
+
+      - `PartialWithRepairableDamage` — accessible with fully repairable damage
+
+      - `PartialWithDamage` — accessible with partially repairable damage
+
+      - `NotAccessible` — not accessible; irreparable damage'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/detachability-accessibility
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 18
+- name: Reuse
+  pset: ePset_Circularity
+  definition:
+    de: Anteil bereits wiederverwendeten oder recycelten Materials am Bauteil (0.01–1.00, z. B. 0.80 = 80 %).
+    fr: Part de matériau déjà réemployé ou recyclé dans l'élément (0.01–1.00, p. ex. 0.80 = 80 %).
+    it: Quota di materiale già riusato o riciclato nel componente (0.01–1.00, es. 0.80 = 80 %).
+    en: Share of already reused or recycled material in the component (0.01–1.00, e.g. 0.80 = 80 %).
+  datatype: IfcReal
+  needed_in_phases:
+  - '11'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 19
+- name: MaterialOrProductId
+  pset: ePset_Circularity
+  definition:
+    de: Eindeutige ID des Materials oder Produkts in der verknüpften Datenbank (z. B. Madaster, baubook).
+    fr: Identifiant univoque du matériau ou du produit dans la base liée (p. ex. Madaster, baubook).
+    it: ID univoco del materiale o prodotto nella banca dati collegata (es. Madaster, baubook).
+    en: Unique ID of the material or product in the linked database (e.g. Madaster, baubook).
+  datatype: IfcText
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 20
+- name: WasteCodes
+  pset: ePset_Circularity
+  definition:
+    de: Abfallcodes für Rückbau und Entsorgung. Code nach VeVA (CH) bzw. EAK/AVV (EU); Format gemäss Madaster, z. B. `17 01:0.25:Inert:60:60;`.
+    fr: Codes déchets pour déconstruction et élimination. Code selon VeVA (CH) ou CED/AVV (EU) ; format Madaster, p. ex. `17 01:0.25:Inert:60:60;`.
+    it: Codici rifiuti per smantellamento e smaltimento. Codice secondo VeVA (CH) o CER/AVV (EU); formato Madaster, es. `17 01:0.25:Inert:60:60;`.
+    en: Waste codes for deconstruction and disposal. Code to VeVA (CH) or EWC/AVV (EU); format as used by Madaster, e.g. `17 01:0.25:Inert:60:60;`.
+  datatype: IfcText
+  needed_in_phases:
+  - '11'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 21
+- name: HazardType
+  pset: ePset_HazardousMaterial
+  definition:
+    de: 'Schadstoffart gemäss Gutachten am betroffenen Bestandsbauteil.
+
+
+      **Zulässige Werte**
+
+      - `Asbestos` — Asbest
+
+      - `PCB` — PCB
+
+      - `PAH` — PAK
+
+      - `PCP` — PCP
+
+      - `Lead` — Blei
+
+      - `None` — kein Schadstoff
+
+      - `Unknown` — unbekannt / nicht untersucht'
+    fr: 'Type de polluant selon l''expertise sur l''élément existant concerné.
+
+
+      **Valeurs admises**
+
+      - `Asbestos` — amiante
+
+      - `PCB` — PCB
+
+      - `PAH` — HAP
+
+      - `PCP` — PCP
+
+      - `Lead` — plomb
+
+      - `None` — aucun polluant
+
+      - `Unknown` — inconnu / non investigué'
+    it: 'Tipo di inquinante secondo la perizia sul componente esistente interessato.
+
+
+      **Valori ammessi**
+
+      - `Asbestos` — amianto
+
+      - `PCB` — PCB
+
+      - `PAH` — IPA
+
+      - `PCP` — PCP
+
+      - `Lead` — piombo
+
+      - `None` — nessun inquinante
+
+      - `Unknown` — sconosciuto / non indagato'
+    en: 'Type of hazardous material found by survey on the affected existing component.
+
+
+      **Allowed values**
+
+      - `Asbestos` — asbestos
+
+      - `PCB` — PCB
+
+      - `PAH` — PAH
+
+      - `PCP` — PCP
+
+      - `Lead` — lead
+
+      - `None` — no hazardous material
+
+      - `Unknown` — unknown / not investigated'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/hazard-type
+  needed_in_phases:
+  - '11'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/qas-hazmat-check
+  is_applicability: false
+  status: active
+  sort_order: 22
+- name: RemovalCategory
+  pset: ePset_HazardousMaterial
+  definition:
+    de: 'Sanierungsdringlichkeit / Handlungsbedarf gemäss Gutachten.
+
+
+      **Zulässige Werte**
+
+      - `Immediate` — sofortige Sanierung nötig
+
+      - `PriorToDemolition` — Sanierung vor Abbruch/Umbau
+
+      - `InSitu` — kann im Bestand verbleiben, Überwachung
+
+      - `None` — kein Handlungsbedarf'
+    fr: 'Urgence d''assainissement / besoin d''action selon l''expertise.
+
+
+      **Valeurs admises**
+
+      - `Immediate` — assainissement immédiat nécessaire
+
+      - `PriorToDemolition` — assainissement avant démolition/transformation
+
+      - `InSitu` — peut rester en place, surveillance
+
+      - `None` — aucune action requise'
+    it: 'Urgenza di bonifica / necessità di intervento secondo la perizia.
+
+
+      **Valori ammessi**
+
+      - `Immediate` — bonifica immediata necessaria
+
+      - `PriorToDemolition` — bonifica prima di demolizione/trasformazione
+
+      - `InSitu` — può restare in opera, sorveglianza
+
+      - `None` — nessun intervento richiesto'
+    en: 'Remediation urgency and action required, as determined by the survey.
+
+
+      **Allowed values**
+
+      - `Immediate` — remediate immediately
+
+      - `PriorToDemolition` — remediate before demolition or alteration
+
+      - `InSitu` — may remain in place, under monitoring
+
+      - `None` — no action required'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/removal-category
+  needed_in_phases:
+  - '11'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/qas-hazmat-check
+  is_applicability: false
+  status: active
+  sort_order: 23
+- name: GlobalTradeItemNumber
+  pset: Pset_ManufacturerTypeInformation
+  definition:
+    de: GTIN (Global Trade Item Number) des Produkttyps; je nach GS1-Struktur 8, 12, 13 oder 14 Stellen.
+    fr: GTIN (Global Trade Item Number) du type de produit ; selon la structure GS1, 8, 12, 13 ou 14 chiffres.
+    it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
+    en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 24
+- name: SerialNumber
+  pset: Pset_ManufacturerOccurrence
+  definition:
+    de: Vom Hersteller vergebene Seriennummer eines einzelnen Produkts; zusammen mit der GTIN Schlüssel für den objektspezifischen Produktpass.
+    fr: Numéro de série attribué par le fabricant à un produit individuel ; avec le GTIN, clé du passeport produit propre à l’objet.
+    it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
+    en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 25
+- name: GrossArea
+  pset: Qto_RoofBaseQuantities
+  definition:
+    de: Bruttofläche des modellierten Steildachs.
+    fr: Surface brute de la toiture inclinée modélisée.
+    it: Superficie lorda del tetto inclinato modellato.
+    en: Gross area of the modelled pitched roof.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/des-circularity
+  - pragmaticbim:workflow/qas-arch-structural-adoption
+  is_applicability: false
+  status: active
+  sort_order: 26

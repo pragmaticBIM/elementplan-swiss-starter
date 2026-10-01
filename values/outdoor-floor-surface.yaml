@@ -1,0 +1,56 @@
+id: pragmaticbim:value/outdoor-floor-surface
+code: AOF
+name:
+  de: Abstrakte Aussenbodenflächen
+  fr: Abstract outdoor floor surfaces
+  it: Abstract outdoor floor surfaces
+  en: Abstract outdoor floor surfaces
+description:
+  de: 'Klassifikation horizontaler Aussenflächen nach Durchlässigkeit und Oberflächencharakter (AOF). Quelle: https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html'
+  fr: 'Classification des surfaces extérieures horizontales selon perméabilité et caractère de surface (AOF). Source : https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html'
+  it: 'Classificazione delle superfici esterne orizzontali secondo permeabilità e carattere di superficie (AOF). Fonte: https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html'
+  en: 'Classification of outdoor horizontal surfaces by permeability and surface character (AOF). Source: https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract v1.0.2
+status: active
+values:
+  de:
+  - Versiegelt
+  - Asphalt
+  - Beton
+  - Teildurchlässig
+  - Pflaster mit Fugen
+  - Rasengittersteine
+  - wassergebundene Decke
+  - Durchlässig
+  - Kies
+  fr:
+  - Sealed
+  - Asphalt
+  - Concrete
+  - Partially permeable
+  - Paving with joints
+  - Grass pavers
+  - Water-bound surface
+  - Permeable
+  - Gravel
+  it:
+  - Sealed
+  - Asphalt
+  - Concrete
+  - Partially permeable
+  - Paving with joints
+  - Grass pavers
+  - Water-bound surface
+  - Permeable
+  - Gravel
+  en:
+  - Sealed
+  - Asphalt
+  - Concrete
+  - Partially permeable
+  - Paving with joints
+  - Grass pavers
+  - Water-bound surface
+  - Permeable
+  - Gravel

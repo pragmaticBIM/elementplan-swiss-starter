@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-geographic-element-vegetation
+code: GEO-VEGETATION
+name:
+  de: Vegetation-Typ
+  fr: Type de végétation
+  it: Tipo di vegetazione
+  en: Vegetation type
+description:
+  de: PredefinedType für IfcGeographicElement als Vegetation (Baum). VEGETATION ab IFC4.3; USERDEFINED für IFC4.
+  fr: PredefinedType pour IfcGeographicElement comme végétation (arbre). VEGETATION dès IFC4.3 ; USERDEFINED pour IFC4.
+  it: PredefinedType per IfcGeographicElement come vegetazione (albero). VEGETATION da IFC4.3; USERDEFINED per IFC4.
+  en: PredefinedType for IfcGeographicElement as vegetation (tree). VEGETATION from IFC4.3; USERDEFINED for IFC4.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - VEGETATION
+  - USERDEFINED
+  fr:
+  - VEGETATION
+  - USERDEFINED
+  it:
+  - VEGETATION
+  - USERDEFINED
+  en:
+  - VEGETATION
+  - USERDEFINED

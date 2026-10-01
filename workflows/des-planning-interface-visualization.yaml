@@ -5,9 +5,9 @@ name:
   de: Planungsschnittstellen visualisieren
   fr: Visualiser les interfaces de planification
   it: Visualizzare le interfacce di pianificazione
-  en: Visualize planning interfaces
+  en: Visualize design interfaces
 description:
-  de: 'Planungsverantwortung je Bauteil im Modell führen und kolorieren — vergessene Teile an den Planungsschnittstellen werden sichtbar.
+  de: 'Planungsverantwortung je Bauteil im Modell führen und kolorieren – vergessene Teile an den Planungsschnittstellen werden sichtbar.
 
 
     **Ausgangslage**
@@ -33,17 +33,12 @@ description:
     3. Visualisierung nach Planungspaket ableiten und Lücken prüfen.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Sichtbare Planungsschnittstellen; fehlende oder doppelte Planungszuständigkeiten sind erkennbar, bevor sie in die Ausführung gehen.
+    - Architektur- und TGA-Fachmodelle mit prüfbarer Zuordnung der Bauteile zu den vereinbarten Planungspaketen
 
-
-    **Lieferobjekte**
-
-    - Architektur- und TGA-Fachmodelle mit den modellierten Bauteilen
-
-    - PlanningInterface (ePset_Cost) mit BKP-3-Steller, z. B. `091`, `092`, `094`'
-  fr: 'Tenir la responsabilité de planification par élément dans la maquette et colorier les plans — les parties oubliées aux interfaces de planification deviennent visibles.
+    - Visualisierung fehlender oder mehrfacher Planungszuständigkeiten'
+  fr: 'Tenir la responsabilité de planification par élément dans la maquette et colorier les plans – les parties oubliées aux interfaces de planification deviennent visibles.
 
 
     **Situation de départ**
@@ -69,17 +64,12 @@ description:
     3. Déduire la visualisation par lot de planification et vérifier les lacunes.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Interfaces de planification visibles ; responsabilités manquantes ou doubles sont détectables avant l''exécution.
+    - Maquettes architecture et CVC avec attribution vérifiable des éléments aux lots de planification convenus
 
-
-    **Livrables**
-
-    - Maquettes architecture et CVC avec les éléments modélisés
-
-    - PlanningInterface (ePset_Cost) avec code BKP à trois chiffres, p. ex. `091`, `092`, `094`'
-  it: 'Assegnare la responsabilità di pianificazione per componente nel modello e colorare i piani — le parti dimenticate alle interfacce di pianificazione diventano visibili.
+    - Visualisation des responsabilités de planification manquantes ou multiples'
+  it: 'Assegnare la responsabilità di pianificazione per componente nel modello e colorare i piani – le parti dimenticate alle interfacce di pianificazione diventano visibili.
 
 
     **Situazione di partenza**
@@ -105,29 +95,24 @@ description:
     3. Ricavare la visualizzazione per lotto di pianificazione e verificare le lacune.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Interfacce di pianificazione visibili; responsabilità mancanti o doppie sono riconoscibili prima dell''esecuzione.
+    - Modelli di architettura e impianti con assegnazione verificabile degli elementi ai pacchetti di pianificazione concordati
 
-
-    **Oggetti della fornitura**
-
-    - Modelli di architettura e impianti con i componenti modellati
-
-    - PlanningInterface (ePset_Cost) con codice BKP a tre cifre, es. `091`, `092`, `094`'
-  en: 'Carry planning responsibility per component in the model and colour it — forgotten parts at planning interfaces become visible.
+    - Visualizzazione delle responsabilità di pianificazione mancanti o multiple'
+  en: 'Carry design responsibility per component in the model and colour it – forgotten parts at design interfaces become visible.
 
 
     **Starting point**
 
-    - Errors happen at the interfaces between planning disciplines; components without a clear planning owner are easily lost.
+    - Errors happen at the interfaces between design disciplines; components without clear design responsibility are easily lost.
 
-    - Lists and organigrams make gaps at planning interfaces hard to see.
+    - Lists and organigrams make gaps at design interfaces hard to see.
 
 
     **Goal & benefit**
 
-    - Assign every architecture and MEP component to a BKP planning package.
+    - Assign every architecture and MEP component to a BKP design package.
 
     - Coloured plans make missing assignments and overlaps at the interfaces visible.
 
@@ -136,27 +121,23 @@ description:
 
     1. Provide architecture and MEP components in the discipline model.
 
-    2. Set PlanningInterface to the three-digit BKP code of the planning position.
+    2. Set PlanningInterface to the three-digit BKP code of the design item.
 
-    3. Derive visualization by planning package and check for gaps.
-
-
-    **Outcome**
-
-    - Visible planning interfaces; missing or duplicate planning responsibilities are detectable before execution.
+    3. Derive visualization by design package and check for gaps.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture and MEP models with the modelled components
+    - Architecture and MEP models with verifiable element assignment to the agreed design packages
 
-    - PlanningInterface (ePset_Cost) with three-digit BKP code, e.g. `091`, `092`, `094`'
-workflow_group: null
+    - Visualization of missing or duplicated design responsibility'
+workflow_group: arbeitsvorbereitung
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: 'Custom property PlanningInterface in ePset_Cost (same pset as CostInterface and AwardInterface). Allowed values: three-digit BKP planning and incidental positions (CRB honoraria, permits, reserves).
-  Typical phases 32–41. Visualization to catch forgotten parts at planning-discipline interfaces.'
+comment: 'Custom property PlanningInterface in ePset_Cost (same pset as CostInterface and AwardInterface). Allowed values: three-digit BKP honoraria for the design discipline (091–096 and chapter codes
+  191–196, 291–296, …). Contractor packages stay on AwardInterface. Typical phases 32–41. Visualization to catch forgotten parts at design-discipline interfaces.'

@@ -2,12 +2,12 @@ id: pragmaticbim:workflow/qas-early-design-coordination
 code: QAS-EARLY-COORD
 sort_order: 71
 name:
-  de: Koordination in frühen Entwurfsphasen
-  fr: Coordination en phases de conception initiale
-  it: Coordinamento nelle fasi di progetto iniziale
-  en: Early design stage coordination
+  de: Architektur und Gebäudetechnik früh koordinieren
+  fr: Coordonner tôt l'architecture et les techniques du bâtiment
+  it: Coordinare architettura e impianti nella fase iniziale
+  en: Coordinate architecture and building services early
 description:
-  de: 'Konzept und Machbarkeit früh im Modell abstimmen — vergleichbar mit einem Strichkonzept, ohne Ausführungsdetail.
+  de: 'Konzept und Machbarkeit früh im Modell abstimmen – vergleichbar mit einem Strichkonzept, ohne Ausführungsdetail.
 
 
     **Ausgangslage**
@@ -26,30 +26,21 @@ description:
 
     **Ablauf**
 
-    1. Architektur- und Technikmodelle mit Volumen statt Ausführungsdetail bereitstellen.
+    1. Konzept in einer Besprechung anhand von Handskizzen in Grundriss und Schnitt erarbeiten: Gesamtgrundrisse der wichtigsten Geschosse, Schnitt durch einen Steigschacht und Schnitt im Massstab 1:20
+    durch Korridor und horizontale Verteilung.
 
-    2. Technikplatzbedarf (Elektro, Lüftung, Sanitär, Heizung, Kälte, Erzeuger) als Koordinationsgeometrie modellieren.
+    2. Technikmodelle mit Volumen statt Ausführungsdetail bereitstellen und den Technikplatzbedarf nachweisen. Fokus auf kritische Punkte wie Technikzentralen, Steigzonen und die horizontale Verteilung
+    im Mustergeschoss. Der Umfang ist projektspezifisch zu klären.
 
-    3. Fachübergreifend im Gesamtmodell auf Kollisionen, Mindesthöhen und Reserven prüfen.
-
-
-    **Ergebnis**
-
-    - Abgestimmtes Strichkonzept mit nachvollziehbarem Technikplatzbedarf als Basis für die weitere Planung.
+    3. Fachübergreifend im Gesamtmodell auf Kollisionen, Mindesthöhen, Wartungsfreiräume und Reserven prüfen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Koordinationsmodelle Architektur und Gebäudetechnik mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+    - Architektur-Koordinationsmodell mit vereinfachter Raum- und Bauteilgeometrie ohne Ausführungsdetail.
 
-    - IfcWall und IfcSlab (FLOOR) — Wände und Deckenplatten als Koordinationsgeometrie (ohne Ausführungsdetail)
-
-    - Schematische Hauptverteilungen: IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment mit Medium in Reference; Erzeugerplatz als IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
-
-    - Name und Reference je Element zur Zuordnung im Koordinationsmodell
-
-    - Leitungsquerschnitt (CrossSectionArea) als Grössenangabe für Machbarkeitsprüfung'
-  fr: 'Accorder concept et faisabilité tôt dans le modèle — comparable à une esquisse, sans détail d''exécution.
+    - TGA-Koordinationsmodell mit den erforderlichen Platz-, Medien- und Grösseninformationen für die Machbarkeitsprüfung.'
+  fr: 'Accorder concept et faisabilité tôt dans le modèle – comparable à une esquisse, sans détail d''exécution.
 
 
     **Situation de départ**
@@ -68,30 +59,21 @@ description:
 
     **Déroulement**
 
-    1. Fournir maquettes architecture et techniques en volumes plutôt qu''en détail d''exécution.
+    1. Élaborer le concept en séance à l''aide de croquis à main levée en plan et en coupe : plans d''ensemble des étages principaux, coupe par une gaine verticale et coupe au 1:20 du couloir avec distribution
+    horizontale.
 
-    2. Modéliser le besoin d''espace technique (électricité, ventilation, sanitaire, chauffage, froid, production) comme géométrie de coordination.
+    2. Fournir les maquettes d''architecture et techniques en volumes plutôt qu''en détail d''exécution et modéliser le besoin d''espace technique (électricité, ventilation, sanitaire, chauffage, froid,
+    production) comme géométrie de coordination.
 
-    3. Vérifier en modèle fédéré les collisions, hauteurs minimales et réserves.
-
-
-    **Résultat**
-
-    - Esquisse coordonnée avec besoin d''espace traçable comme base pour la suite de la planification.
+    3. Vérifier en modèle fédéré les collisions, hauteurs minimales, espaces de maintenance et réserves.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Maquettes de coordination architecture et CVC avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+    - Maquette de coordination d''architecture avec géométrie simplifiée des espaces et éléments, sans détail d''exécution.
 
-    - IfcWall et IfcSlab (FLOOR) — murs et dalles de plancher comme géométrie de coordination (sans détail d''exécution)
-
-    - Distributions principales schématiques : IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment avec fluide dans Reference ; espace générateurs comme IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
-
-    - Name et Reference par élément pour l''identification dans le modèle de coordination
-
-    - Section de canalisation (CrossSectionArea) comme indication de dimension pour la vérification de faisabilité'
-  it: 'Coordinare concept e fattibilità presto nel modello — comparabile a uno schizzo concettuale, senza dettaglio esecutivo.
+    - Maquette de coordination CVC avec les informations d''espace, de fluide et de dimension requises pour l''étude de faisabilité.'
+  it: 'Coordinare concept e fattibilità presto nel modello – comparabile a uno schizzo concettuale, senza dettaglio esecutivo.
 
 
     **Situazione di partenza**
@@ -110,30 +92,21 @@ description:
 
     **Svolgimento**
 
-    1. Fornire modelli di architettura e impianti come volumi anziché dettaglio esecutivo.
+    1. Elaborare il concept durante una riunione mediante schizzi a mano in pianta e sezione: piante d''insieme dei piani principali, sezione attraverso un cavedio verticale e sezione in scala 1:20 del
+    corridoio con distribuzione orizzontale.
 
-    2. Modellare il fabbisogno di spazio tecnico (elettrico, ventilazione, sanitario, riscaldamento, freddo, produzione) come geometria di coordinamento.
+    2. Fornire i modelli di architettura e impianti come volumi anziché dettaglio esecutivo e modellare il fabbisogno di spazio tecnico (elettrico, ventilazione, sanitario, riscaldamento, freddo, produzione)
+    come geometria di coordinamento.
 
-    3. Verificare nel modello federato collisioni, altezze minime e riserve.
-
-
-    **Risultato**
-
-    - Schizzo concettuale coordinato con fabbisogno di spazio tracciabile come base per la pianificazione successiva.
+    3. Verificare nel modello federato collisioni, altezze minime, spazi di manutenzione e riserve.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Modelli di coordinamento architettura e impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+    - Modello di coordinamento dell''architettura con geometria semplificata di spazi ed elementi, senza dettaglio esecutivo.
 
-    - IfcWall e IfcSlab (FLOOR) — pareti e solette di piano come geometria di coordinamento (senza dettaglio esecutivo)
-
-    - Distribuzioni principali schematiche: IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment con fluido in Reference; spazio generatori come IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
-
-    - Name e Reference per elemento per l''identificazione nel modello di coordinamento
-
-    - Sezione di condotta (CrossSectionArea) come indicazione dimensionale per la verifica di fattibilità'
-  en: 'Align concept and feasibility early in the model — comparable to a sketch design, without execution detail.
+    - Modello di coordinamento degli impianti con le informazioni di spazio, fluido e dimensione necessarie alla verifica di fattibilità.'
+  en: 'Align concept and feasibility early in the model – comparable to a sketch design, without execution detail.
 
 
     **Starting point**
@@ -152,35 +125,27 @@ description:
 
     **Process**
 
-    1. Provide architecture and services models as volumes rather than execution detail.
+    1. Develop the concept collaboratively in a meeting using hand sketches in plan and section: overall plans of the principal storeys, a section through a vertical riser, and a 1:20 section through the
+    corridor and horizontal distribution.
 
-    2. Model technical space requirements (electrical, ventilation, sanitary, heating, cooling, plant) as coordination geometry.
+    2. Provide building-services models using volumes rather than construction detail and demonstrate the required technical space. Focus on critical points such as plant rooms, risers, and horizontal distribution
+    on the typical storey. Define the scope for the specific project.
 
-    3. Check clashes, minimum heights, and reserves in the federated model.
-
-
-    **Outcome**
-
-    - Coordinated sketch design with traceable space requirements as the basis for further planning.
+    3. Check clashes, minimum heights, maintenance clearances, and reserves in the federated model.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Coordination models for architecture and MEP with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+    - Architecture coordination model with simplified space and component geometry without execution detail.
 
-    - IfcWall and IfcSlab (FLOOR) — walls and floor slabs as coordination geometry (without execution detail)
-
-    - Schematic main distributions: IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment with medium in Reference; equipment space as IfcBuildingElementProxy (ObjectType=Erzeugerplatz)
-
-    - Name and Reference per element for identification in the coordination model
-
-    - Route cross-section (CrossSectionArea) as a size indication for feasibility checking'
-workflow_group: null
+    - MEP coordination model with the space, medium, and size information required for feasibility checking.'
+workflow_group: entwurf
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: MEP–Architecture sketch coordination. Early phases use walls and floor slabs as coordination geometry plus schematic pipe/duct/tray/equipment-space with Reference medium; suspended ceilings are
-  not required here — see des-ceiling-mirror-planning.
+comment: MEP–Architecture sketch coordination. Early phases use walls and floor slabs as coordination geometry plus schematic pipe/duct/tray/equipment-space with Reference medium. From interior spaces only
+  Height is required (structural clear height); FinishCeilingHeight / suspended ceilings are not required here – see des-ceiling-mirror-planning.

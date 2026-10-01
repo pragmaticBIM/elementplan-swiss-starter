@@ -2,12 +2,12 @@ id: pragmaticbim:value/pipe-reference-schematic
 code: PIPE-REF-SCH
 name:
   de: Referenz Medium Rohrleitung (schematisch)
-  fr: Référence fluide canalisation (schématique)
+  fr: Référence de fluide des canalisations (schématique)
   it: Riferimento fluido condotta (schematica)
   en: Pipe medium reference (schematic)
 description:
   de: Medium-Kennung für schematische Rohrleitungen in der frühen Koordination.
-  fr: Code de fluide pour canalisations schématiques en coordination en phase initiale.
+  fr: Code de fluide des canalisations schématiques, pour la coordination en phase initiale.
   it: Codice fluido per condotte schematiche nel coordinamento in fase iniziale.
   en: Medium code for schematic piping in early coordination.
 year: 2026
@@ -26,7 +26,6 @@ values:
   - AW
   - WW
   - ENT
-  - FL
   fr:
   - HZ
   - VL-H
@@ -39,7 +38,6 @@ values:
   - AW
   - WW
   - ENT
-  - FL
   it:
   - HZ
   - VL-H
@@ -52,7 +50,6 @@ values:
   - AW
   - WW
   - ENT
-  - FL
   en:
   - HZ
   - VL-H
@@ -65,4 +62,3 @@ values:
   - AW
   - WW
   - ENT
-  - FL

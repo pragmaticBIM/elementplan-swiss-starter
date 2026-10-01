@@ -4,12 +4,12 @@ name:
   de: ObjectType Erzeugerplatz
   fr: ObjectType espace générateurs
   it: ObjectType spazio generatori
-  en: ObjectType equipment space
+  en: ObjectType plant space
 description:
   de: ObjectType für IfcBuildingElementProxy als schematischer Erzeuger-/Zentralenplatzbedarf.
   fr: ObjectType pour IfcBuildingElementProxy comme besoin d'espace schématique pour générateurs/centrales.
   it: ObjectType per IfcBuildingElementProxy come fabbisogno schematico di spazio per generatori/centrali.
-  en: ObjectType for IfcBuildingElementProxy as schematic plant/equipment space requirement.
+  en: ObjectType for IfcBuildingElementProxy as a schematic plant or central equipment space requirement.
 year: 2026
 norm_reference: IFC4
 status: active
@@ -17,8 +17,8 @@ values:
   de:
   - Erzeugerplatz
   fr:
-  - Erzeugerplatz
+  - Espace générateur
   it:
-  - Erzeugerplatz
+  - Spazio generatore
   en:
-  - Erzeugerplatz
+  - Plant space

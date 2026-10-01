@@ -1,0 +1,60 @@
+id: pragmaticbim:value/product-class-wall-covering
+code: PRODUCT-WCP
+name:
+  de: Abstrakte Wandbelagsprodukte
+  fr: Abstract wall covering products
+  it: Abstract wall covering products
+  en: Abstract wall covering products
+description:
+  de: 'Produktklassen gemäss Abstrakte Wandbelagsprodukte. Quelle: https://schema.pragmaticbim.ch/classification/wall-covering-product.html'
+  fr: 'Classes de produits selon Abstract wall covering products. Source : https://schema.pragmaticbim.ch/classification/wall-covering-product.html'
+  it: 'Classi di prodotto secondo Abstract wall covering products. Fonte: https://schema.pragmaticbim.ch/classification/wall-covering-product.html'
+  en: 'Product classes according to Abstract wall covering products. Source: https://schema.pragmaticbim.ch/classification/wall-covering-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Fugenlose Wandbeschichtung
+  - Tapete
+  - Naturstein-Wandverkleidung
+  - Kunststein-Wandverkleidung
+  - Keramik- / Feinsteinzeug-Wandfliese
+  - Holz-Wandverkleidung
+  - Textile Wandbekleidung
+  - Kunststoff-Wandverkleidung
+  - Innenanstrich
+  - Sonstiger / unbekannter Wandbelag
+  fr:
+  - Seamless wall coating
+  - Wallpaper
+  - Natural stone wall cladding
+  - Artificial stone wall cladding
+  - Ceramic / porcelain wall tile
+  - Wood wall panel
+  - Textile wall covering
+  - Synthetic wall panel
+  - Interior paint finish
+  - Other / unknown wall covering
+  it:
+  - Seamless wall coating
+  - Wallpaper
+  - Natural stone wall cladding
+  - Artificial stone wall cladding
+  - Ceramic / porcelain wall tile
+  - Wood wall panel
+  - Textile wall covering
+  - Synthetic wall panel
+  - Interior paint finish
+  - Other / unknown wall covering
+  en:
+  - Seamless wall coating
+  - Wallpaper
+  - Natural stone wall cladding
+  - Artificial stone wall cladding
+  - Ceramic / porcelain wall tile
+  - Wood wall panel
+  - Textile wall covering
+  - Synthetic wall panel
+  - Interior paint finish
+  - Other / unknown wall covering

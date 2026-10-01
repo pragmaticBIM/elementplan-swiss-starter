@@ -6,48 +6,48 @@ name:
   de: Erzeugerplatz (schematisch)
   fr: Espace générateurs (schématique)
   it: Spazio generatori (schematico)
-  en: Equipment space (schematic)
+  en: Plant space (schematic)
 definition:
-  de: 'Schematischer Platzbedarf für Erzeuger und Technikzentralen in der frühen Koordination.
+  de: 'Reserviert in der frühen Phase genügend Fläche für Technikzentralen und verhindert Nutzungskonflikte.
 
 
     **Beschreibung**
 
-    - Koordinationsvolumen für Technikzentralen, Hauszentralen und ähnliche Anlagen — kein Raumobjekt.
+    - Koordinationsvolumen für Technikzentralen, Hauszentralen und ähnliche Anlagen – kein Raumobjekt.
 
     - Dient der Machbarkeitsprüfung, nicht der Ausführungsplanung.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Als vereinfachten Proxy-Körper modellieren; Abmessungen gemäss Grobkonzept inklusive Wartungszone.
 
     - ObjectType = Erzeugerplatz; dem zugehörigen Geschoss zuweisen.
 
     - Keine einzelnen Geräte oder Anschlussdetails modellieren.'
-  fr: 'Besoin d''espace schématique pour générateurs et locaux techniques en coordination en phase initiale.
+  fr: 'Réserve en phase initiale une emprise suffisante pour les locaux techniques et évite les conflits d’usage.
 
 
     **Description**
 
-    - Volume de coordination pour centrales et locaux techniques — pas un objet local.
+    - Volume de coordination pour les centrales techniques et installations similaires – pas un objet de local.
 
-    - Sert à la faisabilité, pas à l''exécution.
+    - Sert à vérifier la faisabilité, pas à planifier l’exécution.
 
 
     **Directives de modélisation**
 
-    - Modéliser comme corps proxy simplifié; dimensions selon le concept d''ensemble incluant la zone de maintenance.
+    - Le modéliser en corps proxy simplifié ; dimensions selon l’esquisse, zone de maintenance comprise.
 
-    - ObjectType = Erzeugerplatz; rattacher à l''étage concerné.
+    - ObjectType = Erzeugerplatz ; le rattacher à l’étage concerné.
 
-    - Ne pas modéliser appareils individuels ni raccords de détail.'
-  it: 'Fabbisogno schematico di spazio per generatori e centrali nel coordinamento in fase iniziale.
+    - Ne pas modéliser les appareils individuels ni les détails de raccordement.'
+  it: 'Riserva già nella fase iniziale una superficie sufficiente per le centrali tecniche ed evita conflitti d’uso.
 
 
     **Descrizione**
 
-    - Volume di coordinamento per centrali tecniche — non un oggetto locale.
+    - Volume di coordinamento per centrali tecniche – non un oggetto locale.
 
     - Serve per la fattibilità, non per l''esecuzione.
 
@@ -59,12 +59,12 @@ definition:
     - ObjectType = Erzeugerplatz; assegnare al piano corrispondente.
 
     - Non modellare singoli apparecchi o dettagli di collegamento.'
-  en: 'Schematic space requirement for plant and technical rooms in early coordination.
+  en: 'Reserves sufficient plant-room space in the initial phase and prevents conflicts with other uses.
 
 
     **Description**
 
-    - Coordination volume for plant rooms and similar installations — not a space object.
+    - Coordination volume for plant rooms and similar installations – not a space object.
 
     - Used for feasibility checking, not for execution planning.
 
@@ -73,7 +73,7 @@ definition:
 
     - Model as a simplified proxy body; dimensions according to the sketch concept including maintenance clearance.
 
-    - ObjectType = Erzeugerplatz; assign to the matching storey.
+    - ObjectType = Plant space; assign to the matching storey.
 
     - Do not model individual appliances or connection details.'
 needed_in_domain:
@@ -83,7 +83,11 @@ entity_ifc4: IfcBuildingElementProxy
 entity_ifc4_3: IfcBuildingElementProxy
 picture_link: null
 model_link: null
-applicability: (entity_ifc4=IfcBuildingElementProxy AND ObjectType=Erzeugerplatz) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Erzeugerplatz)
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND ObjectType=Erzeugerplatz) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Erzeugerplatz)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND ObjectType="Espace générateur") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Espace générateur")
+  it: (entity_ifc4=IfcBuildingElementProxy AND ObjectType="Spazio generatore") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Spazio generatore")
+  en: (entity_ifc4=IfcBuildingElementProxy AND ObjectType="Plant space") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Plant space")
 attributes:
 - name: ObjectType
   pset: null
@@ -111,7 +115,7 @@ attributes:
 
       **Allowed values**
 
-      - `Erzeugerplatz` — schematic space requirement for plant / technical rooms'
+      - `Plant space` — schematic space requirement for plant and technical rooms'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/objecttype-equipment-space
   needed_in_phases:
@@ -223,16 +227,16 @@ attributes:
       - `DEMOLISH` — da demolire
 
       - `TEMPORARY` — temporaneo'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary'
   datatype: IfcLabel
@@ -254,8 +258,7 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-mep-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
   sort_order: 3
@@ -313,16 +316,16 @@ attributes:
       **Nota**
 
       - Sostituto IFC2x3 di Status.'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary
 
@@ -348,8 +351,7 @@ attributes:
   ifc_versions:
   - ifc2x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-mep-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
   sort_order: 4

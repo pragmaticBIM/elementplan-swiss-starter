@@ -1,0 +1,159 @@
+id: pragmaticbim:workflow/bes-site-wlan
+code: BES-SITE-WLAN
+sort_order: 24
+name:
+  de: Temporäres Baustellen-WLAN beschaffen
+  fr: Acquérir le Wi-Fi temporaire de chantier
+  it: Acquisire il Wi-Fi temporaneo di cantiere
+  en: Procure temporary site Wi-Fi
+description:
+  de: 'Temporäre WLAN-Verstärker so beschaffen, dass Tablets in allen Arbeitsbereichen die Projektplattform erreichen, auch in Untergeschossen ohne Mobilfunkempfang.
+
+
+    **Ausgangslage**
+
+    - Fehlender Mobilfunkempfang, insbesondere in Untergeschossen, verhindert die zuverlässige Nutzung von Tablets und digitalen Baustellenprozessen.
+
+    - Ohne festgelegte Abdeckung, Uplink und Abnahme bleiben Angebote für die temporäre WLAN-Anlage unvergleichbar.
+
+
+    **Ziel & Nutzen**
+
+    - WLAN-Verstärker wie Baustellenbeleuchtung und die Brandmeldeanlage für die Baustelle als geschlossene Unternehmerposition beschaffen.
+
+    - Eine tablet-taugliche Abdeckung in allen relevanten Arbeitsbereichen sicherstellen, einschliesslich der Untergeschosse.
+
+
+    **Ablauf**
+
+    1. Abdeckungsperimeter je Bauphase, Zahl der gleichzeitigen Geräte, Uplink und Abnahmekriterien mit der Bauleitung festlegen.
+
+    2. Baustellentaugliche WLAN-Verstärker als eine Position beschaffen: liefern, montieren, ab Baustrom speisen, an den Internetanschluss des Baubüros oder eine separate Zuleitung anbinden, betreiben,
+    unterhalten, mit dem Baufortschritt umsetzen und demontieren.
+
+    3. Abdeckung vor der Nutzung und nach wesentlicher Änderung des Bauzustands prüfen und Mängel beheben lassen.
+
+
+    **Lieferergebnis**
+
+    - Beschaffte Position für baustellentaugliche WLAN-Verstärker mit Abdeckung aller Arbeitsbereiche der jeweiligen Phase, einschliesslich der Untergeschosse, und mit Uplink zur Projektplattform.
+
+    - Geprüfte Abdeckung vor der Nutzung und nach wesentlicher Änderung des Bauzustands.
+
+    - Verantwortung für Störung, Umplatzierung und Rückbau bis Bauende beim Unternehmer; Tablets, Plan- und Modellboxen, das permanente Gebäudenetz und die Konten der Projektplattform liegen ausserhalb
+    dieser Position.'
+  fr: 'Acquérir des répéteurs Wi-Fi temporaires afin que les tablettes atteignent la plateforme de projet dans toutes les zones de travail, y compris dans les sous-sols sans couverture mobile.
+
+
+    **Situation de départ**
+
+    - L''absence de réseau mobile, notamment dans les sous-sols, empêche l''utilisation fiable des tablettes et des processus numériques de chantier.
+
+    - Sans couverture, liaison montante et critères de réception définis, les offres pour l''installation Wi-Fi temporaire ne sont pas comparables.
+
+
+    **Objectif et bénéfice**
+
+    - Acquérir les répéteurs Wi-Fi comme l''éclairage de chantier et l''installation de détection incendie de chantier, en une position d''entreprise fermée.
+
+    - Assurer une couverture adaptée aux tablettes dans toutes les zones de travail concernées, y compris dans les sous-sols.
+
+
+    **Déroulement**
+
+    1. Définir avec la direction des travaux le périmètre de couverture par phase, le nombre d''appareils simultanés, la liaison montante et les critères de réception.
+
+    2. Acquérir les répéteurs Wi-Fi adaptés au chantier en une seule position : fournir, monter, alimenter depuis le courant de chantier, raccorder à la connexion Internet du bureau de chantier ou à une
+    ligne séparée, exploiter, entretenir, déplacer avec l''avancement des travaux et démonter.
+
+    3. Contrôler la couverture avant utilisation et après tout changement important de l''état du chantier, puis faire corriger les défauts.
+
+
+    **Livrable**
+
+    - Position acquise pour des répéteurs Wi-Fi adaptés au chantier, avec couverture de toutes les zones de travail de la phase concernée, y compris les sous-sols, et avec liaison montante vers la plateforme
+    de projet.
+
+    - Couverture contrôlée avant utilisation et après tout changement important de l''état du chantier.
+
+    - Responsabilité de l''entrepreneur pour les pannes, les déplacements et le démontage jusqu''à la fin des travaux ; tablettes, bornes plans et maquettes, réseau permanent du bâtiment et comptes de la
+    plateforme de projet restent hors de cette position.'
+  it: 'Acquisire ripetitori Wi-Fi temporanei affinché i tablet raggiungano la piattaforma di progetto in tutte le aree di lavoro, compresi i piani interrati senza copertura mobile.
+
+
+    **Situazione di partenza**
+
+    - L''assenza di rete mobile, in particolare nei piani interrati, impedisce l''uso affidabile dei tablet e dei processi digitali di cantiere.
+
+    - Senza copertura, collegamento di risalita e criteri di collaudo definiti, le offerte per l''impianto Wi-Fi temporaneo non sono confrontabili.
+
+
+    **Obiettivo e beneficio**
+
+    - Acquisire i ripetitori Wi-Fi come l''illuminazione di cantiere e l''impianto di rivelazione incendi di cantiere, in un''unica posizione d''impresa.
+
+    - Garantire una copertura adatta ai tablet in tutte le aree di lavoro interessate, compresi i piani interrati.
+
+
+    **Svolgimento**
+
+    1. Definire con la direzione lavori il perimetro di copertura per ogni fase, il numero di apparecchi simultanei, il collegamento di risalita e i criteri di collaudo.
+
+    2. Acquisire i ripetitori Wi-Fi idonei al cantiere in un''unica posizione: fornire, montare, alimentare dalla corrente di cantiere, collegare alla connessione Internet dell''ufficio di cantiere o a
+    una linea separata, esercire, mantenere, spostare con l''avanzamento dei lavori e smontare.
+
+    3. Verificare la copertura prima dell''utilizzo e dopo ogni cambiamento rilevante dello stato del cantiere, quindi far eliminare le carenze.
+
+
+    **Risultato della fornitura**
+
+    - Posizione acquisita per ripetitori Wi-Fi idonei al cantiere, con copertura di tutte le aree di lavoro della fase interessata, compresi i piani interrati, e con collegamento di risalita verso la piattaforma
+    di progetto.
+
+    - Copertura verificata prima dell''utilizzo e dopo ogni cambiamento rilevante dello stato del cantiere.
+
+    - Responsabilità dell''impresa per guasti, spostamenti e smontaggio fino alla fine dei lavori; tablet, postazioni piani e modelli, rete permanente dell''edificio e account della piattaforma di progetto
+    restano fuori da questa posizione.'
+  en: 'Procure temporary Wi-Fi amplifiers so that tablets reach the project platform in every work area, including basements without mobile reception.
+
+
+    **Starting point**
+
+    - Missing mobile reception, especially in basements, prevents reliable use of tablets and digital site processes.
+
+    - Without defined coverage, uplink, and acceptance criteria, offers for the temporary Wi-Fi installation cannot be compared.
+
+
+    **Goal & benefit**
+
+    - Procure Wi-Fi amplifiers as a single contractor item, in the same way as site lighting and the temporary fire-alarm installation.
+
+    - Ensure tablet-suitable coverage in all relevant work areas, including basements.
+
+
+    **Process**
+
+    1. Define the coverage perimeter for each construction phase, the number of concurrent devices, the uplink, and the acceptance criteria with site management.
+
+    2. Procure site-rated Wi-Fi amplifiers as one item: supply, install, power from the temporary site supply, connect to the site-office internet connection or a separate line, operate, maintain, relocate
+    with construction progress, and remove.
+
+    3. Test coverage before use and after any material change in site conditions, then have deficiencies remedied.
+
+
+    **Deliverable**
+
+    - Procured item for site-rated Wi-Fi amplifiers with coverage of all work areas of the relevant phase, including basements, and with an uplink to the project platform.
+
+    - Verified coverage before use and after any material change in site conditions.
+
+    - Contractor responsibility for faults, relocation, and dismantling until the end of construction; tablets, plan and model stations, the permanent building network, and project-platform accounts lie
+    outside this item.'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Contractor site installation, procured like temporary lighting and temporary fire detection. Intentionally has no IFC element or attribute links.

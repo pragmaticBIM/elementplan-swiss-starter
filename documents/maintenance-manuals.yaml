@@ -1,0 +1,49 @@
+id: pragmaticbim:document/maintenance-manuals
+code: WHB
+sort_order: 145
+name:
+  de: Wartungshandbücher
+  fr: Manuels de maintenance
+  it: Manuali di manutenzione
+  en: Maintenance manuals
+definition:
+  de: Anlagenspezifische Unterlagen für sicheren Betrieb, Inspektion und Wartung.
+  fr: Documentation propre aux installations pour une exploitation, une inspection et une maintenance sûres.
+  it: Documentazione specifica degli impianti per esercizio, ispezione e manutenzione sicuri.
+  en: Asset-specific documentation for safe operation, inspection, and maintenance.
+description:
+  de: |-
+    - Betroffene Anlage und eindeutige Anlagenkennzeichnung
+    - Betriebs- und Sicherheitshinweise
+    - Wartungs- und Inspektionsarbeiten mit Intervallen
+    - Erforderliche Ersatz- und Verschleissteile
+    - Hersteller- und Servicestellen mit Kontaktdaten
+  fr: |-
+    - Installation concernée et identification univoque
+    - Consignes d'exploitation et de sécurité
+    - Travaux de maintenance et d'inspection avec périodicités
+    - Pièces de rechange et d'usure nécessaires
+    - Fabricant et services après-vente avec coordonnées
+  it: |-
+    - Impianto interessato e identificazione univoca
+    - Indicazioni per l'esercizio e la sicurezza
+    - Attività di manutenzione e ispezione con intervalli
+    - Ricambi e parti soggette a usura necessari
+    - Fabbricante e centri di assistenza con recapiti
+  en: |-
+    - Applicable asset and unique asset identification
+    - Operating and safety instructions
+    - Maintenance and inspection tasks with intervals
+    - Required spare and wear parts
+    - Manufacturer and service contacts
+file_name:
+  de: '{Projektnummer}_TGA-WHB_{Anlagenkennzeichnung}_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-WHB_{IdentificationInstallation}_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-WHB_{IdentificazioneImpianto}_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-WHB_{AssetIdentifier}_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+scheduled_milestones:
+  - "53:M"
+  - "61:M"
+  - "62:M"

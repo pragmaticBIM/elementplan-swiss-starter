@@ -1,0 +1,38 @@
+id: pragmaticbim:usage-scenario/wohnalltag
+code: US-WH-01
+sort_order: 1
+name:
+  de: Wohnalltag
+  fr: Vie quotidienne
+  it: Vita quotidiana
+  en: Daily living
+description:
+  de: Bewohnende betreten die Wohnung, erreichen über den Gang Wohnzimmer, Küche, Schlafzimmer und Bad und essen vom Kochbereich aus im Esszimmer.
+  fr: Les occupants entrent dans le logement, rejoignent séjour, cuisine, chambre et salle de bain par le couloir, et passent de la cuisine à la salle à manger.
+  it: Chi abita entra nell'alloggio, raggiunge soggiorno, cucina, camera e bagno dal corridoio e dalla cucina accede alla sala da pranzo.
+  en: Occupants enter the dwelling, reach living room, kitchen, bedroom, and bathroom from the hallway, and go from the kitchen to the dining room.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/gang
+- pragmaticbim:room-type/wohnzimmer
+- pragmaticbim:room-type/kueche
+- pragmaticbim:room-type/schlafzimmer
+- pragmaticbim:room-type/badezimmer
+- pragmaticbim:room-type/esszimmer
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/gang
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/wohnzimmer
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/kueche
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/schlafzimmer
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/badezimmer
+- from_room_type: pragmaticbim:room-type/kueche
+  to_room_type: pragmaticbim:room-type/esszimmer

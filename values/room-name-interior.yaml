@@ -1,0 +1,452 @@
+id: pragmaticbim:value/room-name-interior
+code: ROOM-NAME-INT
+name:
+  de: Raumbezeichnung Innenraum
+  fr: Désignation de local intérieur
+  it: Denominazione locale interno
+  en: Interior space name
+description:
+  de: 'Normalisierte Raumbezeichnungen für Innenräume gemäss laufend publiziertem Schema. Quelle: https://schema.pragmaticbim.ch/classification/room-name.html'
+  fr: 'Désignations normalisées issues du schéma publié en continu. Source : https://schema.pragmaticbim.ch/classification/room-name.html'
+  it: 'Denominazioni normalizzate dallo schema pubblicato continuamente. Fonte: https://schema.pragmaticbim.ch/classification/room-name.html'
+  en: 'Normalized space names for interior spaces, from the continuously published schema. Source: https://schema.pragmaticbim.ch/classification/room-name.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Schlafzimmer
+  - Wohnzimmer
+  - Esszimmer
+  - Arbeitszimmer
+  - Gaestezimmer
+  - Kueche
+  - Badezimmer
+  - Waschkueche
+  - Hauswirtschaftsraum
+  - Gang
+  - Wohnungseingang
+  - Abstellraum Wohnen
+  - Kellerabteil
+  - Entree
+  - Wohneinheit
+  - Buero
+  - Grossraumbuero
+  - Besprechungsraum
+  - Konferenzraum
+  - Pausenraum
+  - Empfang
+  - Flur
+  - Eingangshalle
+  - Vorraum
+  - Schleuse
+  - Treppenhaus
+  - Aufzugszone
+  - Rampe
+  - Herren-WC
+  - Damen-WC
+  - Barrierefreies WC
+  - Allgemeines WC
+  - Duschraum
+  - Umkleideraum
+  - Schliessfachraum
+  - Patientenzimmer
+  - Aufwachraum
+  - Behandlungsraum
+  - Operationssaal
+  - Eingriffsraum
+  - Untersuchungsraum
+  - Bildgebungsraum
+  - Medizinisches Labor
+  - Wartezimmer
+  - Pflegestationszimmer
+  - Klassenzimmer
+  - Hoersaal
+  - Seminarraum
+  - Computerraum
+  - Bibliotheksraum
+  - Lernraum
+  - Ausbildungswerkstatt
+  - Aula
+  - Kunstatelier
+  - Naturwissenschaftslabor
+  - Cafeteria
+  - Restaurant
+  - Bar
+  - Food-Court
+  - Verkaufsraum
+  - Verkaufsflaeche
+  - Kiosk
+  - Kundenbetreuungsbereich
+  - Ausstellungsraum
+  - Hotelzimmer
+  - Werkstatt
+  - Produktionshalle
+  - Montagebereich
+  - Verpackungsbereich
+  - Reinraum
+  - Lagerhalle
+  - Laderampe
+  - Qualitaetskontrollraum
+  - Wartungsbucht
+  - Ueberdachter Hof
+  - HLK-Zentralraum
+  - Pumpenraum
+  - Heizungsraum
+  - Kaelteraum
+  - Sprinklerraum
+  - Elektroraum
+  - Serverraum
+  - Generatorraum
+  - Transformatorenraum
+  - Kommunikationsraum
+  - Zaehlerraum
+  - Abfallraum
+  - Allgemeiner Lagerraum
+  - Materialraum
+  - Geraetelager
+  - Annahmelager
+  - Hauswarteschrank
+  - Archivraum
+  - Postraum
+  - Kuehlraum
+  - Laborlager
+  - Chemikalienlager
+  - Gefahrstofflager
+  - Probenlager
+  - Schacht
+  - Steigzone
+  - Installationszwischenraum
+  - Technikhohlraum
+  - Luftraum
+  - Parkplatz PKW Innen
+  - Parkplatz LKW Innen
+  - Parkplatz Velo Innen
+  - Parkplatz Motorrad Innen
+  fr:
+  - Chambre
+  - Séjour
+  - Salle à manger
+  - Bureau à domicile
+  - Chambre d'amis
+  - Cuisine
+  - Salle de bain
+  - Buanderie
+  - Local ménager
+  - Couloir
+  - Entrée du logement
+  - Débarras du logement
+  - Compartiment de cave
+  - Entrée
+  - Logement
+  - Bureau
+  - Bureau paysager
+  - Salle de réunion
+  - Salle de conférence
+  - Salle de pause
+  - Réception
+  - Couloir commun
+  - Hall d'entrée
+  - Vestibule
+  - Sas
+  - Cage d'escalier
+  - Palier d'ascenseur
+  - Rampe
+  - WC hommes
+  - WC femmes
+  - WC sans obstacle
+  - WC commun
+  - Local de douches
+  - Vestiaire
+  - Local à casiers
+  - Chambre de patient
+  - Salle de réveil
+  - Salle de soins
+  - Salle d'opération
+  - Salle d'intervention
+  - Salle d'examen
+  - Salle d'imagerie
+  - Laboratoire médical
+  - Salle d'attente
+  - Poste de soins
+  - Salle de classe
+  - Auditoire
+  - Salle de séminaire
+  - Salle informatique
+  - Salle de bibliothèque
+  - Salle d'étude
+  - Atelier de formation
+  - Aula
+  - Atelier d'arts
+  - Laboratoire de sciences
+  - Cafétéria
+  - Restaurant
+  - Bar
+  - Aire de restauration
+  - Local de vente
+  - Surface de vente
+  - Kiosque
+  - Accueil clientèle
+  - Salle d'exposition
+  - Chambre d'hôtel
+  - Atelier
+  - Halle de production
+  - Zone de montage
+  - Zone d'emballage
+  - Salle blanche
+  - Halle de stockage
+  - Quai de chargement
+  - Local de contrôle qualité
+  - Poste d'entretien
+  - Cour couverte
+  - Centrale CVC
+  - Local des pompes
+  - Chaufferie
+  - Local des groupes froids
+  - Local sprinklers
+  - Local électrique
+  - Local serveurs
+  - Local du groupe électrogène
+  - Local transformateur
+  - Local de communication
+  - Local des compteurs
+  - Local déchets
+  - Dépôt général
+  - Local à matériel
+  - Dépôt d'appareils
+  - Dépôt de réception
+  - Placard de conciergerie
+  - Archives
+  - Local courrier
+  - Chambre froide
+  - Dépôt de laboratoire
+  - Dépôt de produits chimiques
+  - Dépôt de matières dangereuses
+  - Dépôt d'échantillons
+  - Gaine
+  - Zone de colonnes
+  - Vide d'installations
+  - Vide technique
+  - Volume d'air
+  - Place voiture intérieure
+  - Place camion intérieure
+  - Place vélo intérieure
+  - Place moto intérieure
+  it:
+  - Camera da letto
+  - Soggiorno
+  - Sala da pranzo
+  - Studio
+  - Camera ospiti
+  - Cucina
+  - Bagno
+  - Lavanderia
+  - Locale di servizio
+  - Corridoio
+  - Ingresso dell'alloggio
+  - Ripostiglio dell'alloggio
+  - Comparto cantina
+  - Entrata
+  - Alloggio
+  - Ufficio
+  - Ufficio open space
+  - Sala riunioni
+  - Sala conferenze
+  - Sala pausa
+  - Ricezione
+  - Corridoio comune
+  - Atrio
+  - Vestibolo
+  - Bussola
+  - Vano scale
+  - Zona ascensore
+  - Rampa
+  - WC uomini
+  - WC donne
+  - WC privo di barriere
+  - WC comune
+  - Locale docce
+  - Spogliatoio
+  - Locale armadietti
+  - Camera di degenza
+  - Sala risveglio
+  - Sala di cura
+  - Sala operatoria
+  - Sala per interventi
+  - Sala visite
+  - Sala di diagnostica per immagini
+  - Laboratorio medico
+  - Sala d'attesa
+  - Locale del personale di cura
+  - Aula scolastica
+  - Aula magna
+  - Sala seminari
+  - Aula informatica
+  - Sala biblioteca
+  - Sala studio
+  - Officina di formazione
+  - Aula
+  - Atelier artistico
+  - Laboratorio scientifico
+  - Caffetteria
+  - Ristorante
+  - Bar
+  - Area ristorazione
+  - Locale di vendita
+  - Superficie di vendita
+  - Chiosco
+  - Area assistenza clienti
+  - Sala espositiva
+  - Camera d'albergo
+  - Officina
+  - Capannone di produzione
+  - Zona di montaggio
+  - Zona di imballaggio
+  - Camera bianca
+  - Magazzino
+  - Banchina di carico
+  - Locale controllo qualità
+  - Postazione di manutenzione
+  - Cortile coperto
+  - Centrale CVC
+  - Locale pompe
+  - Centrale termica
+  - Locale gruppi frigoriferi
+  - Locale sprinkler
+  - Locale elettrico
+  - Locale server
+  - Locale gruppo elettrogeno
+  - Locale trasformatore
+  - Locale comunicazioni
+  - Locale contatori
+  - Locale rifiuti
+  - Deposito generale
+  - Locale materiali
+  - Deposito apparecchi
+  - Deposito di ricezione
+  - Armadio del custode
+  - Archivio
+  - Locale posta
+  - Cella frigorifera
+  - Deposito di laboratorio
+  - Deposito prodotti chimici
+  - Deposito sostanze pericolose
+  - Deposito campioni
+  - Cavedio
+  - Zona montanti
+  - Intercapedine impianti
+  - Vuoto tecnico
+  - Volume d'aria
+  - Posto auto interno
+  - Posto camion interno
+  - Posto bici interno
+  - Posto moto interno
+  en:
+  - Bedroom
+  - Living Room
+  - Dining Room
+  - Home Study
+  - Guest Room
+  - Kitchen
+  - Bathroom
+  - Laundry Room
+  - Utility Room
+  - Hallway
+  - Residential Entry
+  - Residential Closet
+  - Cellar Compartment
+  - Entrance Hall
+  - Apartment Unit
+  - Office
+  - Open-Plan Office
+  - Meeting Room
+  - Conference Room
+  - Break Room
+  - Reception
+  - Corridor
+  - Lobby
+  - Vestibule
+  - Airlock
+  - Stairwell
+  - Elevator Lobby
+  - Ramp
+  - Male Toilet
+  - Female Toilet
+  - Accessible Toilet
+  - Unisex Toilet
+  - Shower Room
+  - Changing Room
+  - Locker Room
+  - Patient Room
+  - Recovery Room
+  - Treatment Room
+  - Operating Room
+  - Procedure Room
+  - Examination Room
+  - Imaging Room
+  - Medical Laboratory
+  - Waiting Room
+  - Nurses Station
+  - Classroom
+  - Lecture Hall
+  - Seminar Room
+  - Computer Lab
+  - Library Room
+  - Study Room
+  - Training Workshop
+  - Auditorium
+  - Art Studio
+  - Science Lab
+  - Cafeteria
+  - Restaurant
+  - Bar
+  - Food Court
+  - Retail Space
+  - Sales Floor
+  - Kiosk
+  - Customer Service Area
+  - Exhibition Space
+  - Hotel Room
+  - Workshop
+  - Production Hall
+  - Assembly Area
+  - Packaging Area
+  - Clean Room
+  - Warehouse
+  - Loading Dock
+  - Quality Control Room
+  - Maintenance Bay
+  - Covered Yard
+  - HVAC Plant Room
+  - Pump Room
+  - Boiler Room
+  - Chiller Room
+  - Sprinkler Room
+  - Electrical Room
+  - Server Room
+  - Generator Room
+  - Transformer Room
+  - Communications Room
+  - Meter Room
+  - Waste Room
+  - General Storage
+  - Supply Room
+  - Equipment Storage
+  - Unloading Storage
+  - Janitor Closet
+  - Archive Room
+  - Mail Room
+  - Cold Storage
+  - Laboratory Storage
+  - Chemical Storage
+  - Hazardous Material Storage
+  - Sample Storage
+  - Shaft
+  - Riser
+  - Plenum
+  - Mechanical Void
+  - Air Space
+  - Interior Car Parking
+  - Interior Truck Parking
+  - Interior Bicycle Parking
+  - Interior Motorcycle Parking

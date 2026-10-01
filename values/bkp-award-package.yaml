@@ -1,15 +1,15 @@
 id: pragmaticbim:value/bkp-award-package
 code: BKP-AWARD
 name:
-  de: BKP-Vergabepaket
-  fr: Lot d'adjudication BKP
-  it: Lotto di aggiudicazione BKP
-  en: BKP award package
+  de: Vergabepaket
+  fr: Lot d'adjudication
+  it: Lotto di aggiudicazione
+  en: Procurement package
 description:
-  de: Dreistellige BKP-Codes der Unternehmerlose für die Vergabeschnittstelle (ohne Position Übriges).
-  fr: Codes BKP à trois chiffres des lots d'entreprise pour l'interface d'adjudication (hors position Divers).
-  it: Codici BKP a tre cifre dei lotti d'impresa per l'interfaccia di aggiudicazione (esclusa la posizione Altro).
-  en: Three-digit BKP codes of contractor packages for the award interface (excluding miscellaneous positions).
+  de: Schweizer Ausprägung der Vergabepakete mit dreistelligen BKP-Codes der Unternehmerlose (ohne Position Übriges).
+  fr: Variante suisse des lots d'adjudication avec codes BKP à trois chiffres des lots d'entreprise (hors position Divers).
+  it: Variante svizzera dei lotti di aggiudicazione con codici BKP a tre cifre dei lotti d'impresa (esclusa la posizione Altro).
+  en: Swiss form of the procurement packages, using three-digit BKP codes for the contractor packages (excluding the miscellaneous item).
 year: 2026
 norm_reference: BKP CRB
 status: active

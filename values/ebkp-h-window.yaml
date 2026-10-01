@@ -1,0 +1,28 @@
+id: pragmaticbim:value/ebkp-h-window
+code: EBKP-H-WINDOW
+name:
+  de: eBKP-H Fenster
+  fr: eBKP-H fenêtre
+  it: eBKP-H finestra
+  en: eBKP-H window
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): E03.01, G01.04.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : E03.01, G01.04.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): E03.01, G01.04.'
+  en: 'Allowed eBKP-H codes (SN 506 511): E03.01, G01.04.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - E03.01
+  - G01.04
+  fr:
+  - E03.01
+  - G01.04
+  it:
+  - E03.01
+  - G01.04
+  en:
+  - E03.01
+  - G01.04

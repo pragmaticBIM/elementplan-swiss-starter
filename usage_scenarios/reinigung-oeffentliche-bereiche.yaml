@@ -1,0 +1,33 @@
+id: pragmaticbim:usage-scenario/reinigung-oeffentliche-bereiche
+code: US-WH-08
+sort_order: 8
+name:
+  de: Reinigung von öffentlichen Bereichen
+  fr: Nettoyage des parties communes
+  it: Pulizia delle parti comuni
+  en: Cleaning of common areas
+description:
+  de: Die Hauswartung holt Material im Hauswarteschrank und reinigt von der Eingangshalle aus Treppenhaus, Flur und Aufzugszone.
+  fr: La conciergerie prend le matériel au placard de conciergerie et nettoie, depuis le hall d'entrée, la cage d'escalier, le couloir commun et le palier d'ascenseur.
+  it: La custodia preleva il materiale nell'armadio del custode e pulisce, dall'atrio, vano scale, corridoio comune e zona ascensore.
+  en: Caretaking collects material from the janitor closet and cleans the stairwell, corridor, and elevator lobby from the lobby.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/hauswarteschrank
+- pragmaticbim:room-type/eingangshalle
+- pragmaticbim:room-type/treppenhaus
+- pragmaticbim:room-type/flur
+- pragmaticbim:room-type/aufzugszone
+room_relationships:
+- from_room_type: pragmaticbim:room-type/hauswarteschrank
+  to_room_type: pragmaticbim:room-type/eingangshalle
+  max_distance: 15
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/treppenhaus
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/flur
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/aufzugszone

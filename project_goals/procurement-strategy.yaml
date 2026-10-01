@@ -1,0 +1,110 @@
+id: pragmaticbim:project-goal/procurement-strategy
+sort_order: 15
+group: rahmenbedingungen
+code: PG-08
+name:
+  de: Vergabekonzept
+  fr: Stratégie d'adjudication
+  it: Strategia di aggiudicazione
+  en: Procurement strategy
+tag:
+  de: Vergabe
+  fr: Adjudication
+  it: Aggiudicazione
+  en: Procurement
+description:
+  de: |-
+    Festgelegt wird der Vergabeweg: Planerbeschaffung, Wettbewerb, Design-Build oder IPD. Jeder Weg stellt andere Anforderungen an Grundlagen, Modelle und Angebote. Das Vergabekonzept bestimmt deshalb die erforderlichen Angebotsmodelle und Beurteilungskriterien. Ohne diese Festlegung lassen sich Angebote kaum vergleichen, und Leistungen bleiben vertraglich unscharf.
+  fr: |-
+    Cette condition-cadre détermine si les prestations d'étude sont adjugées directement, si les solutions sont élaborées dans le cadre d'un concours, si les études et la réalisation sont adjugées conjointement sous forme de prestation conception-réalisation, ou si l'adjudication suit un modèle IPD.
+
+    La stratégie d'adjudication définit les bases, les maquettes d'offre et les critères d'évaluation nécessaires pour rendre les prestations et les offres comparables et contractuellement univoques.
+  it: |-
+    Questa condizione quadro stabilisce se le prestazioni di progettazione sono affidate direttamente, se le soluzioni sono elaborate mediante un concorso, se progettazione ed esecuzione sono aggiudicate congiuntamente come prestazione di progettazione e costruzione, oppure se l'aggiudicazione segue un modello IPD.
+
+    La strategia di aggiudicazione definisce le basi, i modelli d'offerta e i criteri di valutazione necessari affinché le prestazioni e le offerte siano confrontabili e contrattualmente univoche.
+  en: |-
+    This framework condition determines the procurement route: engaging designers directly, a competition, design-build, or IPD. Each route places different demands on foundations, models, and bids. The procurement strategy therefore sets the bid models and assessment criteria required.
+
+    Without it, bids are hard to compare and scopes stay contractually vague.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/procurement-designer
+  code: PROC-01
+  sort_order: 1
+  name:
+    de: Planerbeschaffung
+    fr: Acquisition des mandataires
+    it: Acquisizione dei progettisti
+    en: Designer procurement
+  description:
+    de: Planungsleistungen anhand der benötigten Fähigkeiten, Ergebnisse und Datenlieferungen beschaffen und Grundleistungen von projektspezifischen Zusatzleistungen abgrenzen.
+    fr: Adjuger les prestations d'étude sur la base des compétences, résultats et livraisons de données requis et distinguer les prestations de base des prestations supplémentaires propres au projet.
+    it: Affidare le prestazioni di progettazione in base alle competenze, ai risultati e alle forniture di dati necessari, distinguendo le prestazioni di base da quelle supplementari specifiche del progetto.
+    en: Procure design services against the required capabilities, results, and data deliveries, distinguishing basic services from project-specific additional services.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-designer-procurement
+  - pragmaticbim:workflow/bes-owner-cde-procurement
+  comment: Full set at level Planerbeschaffung (sort_order 1).
+- id: pragmaticbim:project-goal-level/procurement-competition
+  code: PROC-02
+  sort_order: 2
+  name:
+    de: Wettbewerb
+    fr: Concours
+    it: Concorso
+    en: Competition
+  description:
+    de: Wettbewerbsbeiträge mit einer schlanken, einheitlichen Modellanforderung vergleichbar auswerten und die Beurteilung auf die entscheidenden räumlichen und funktionalen Qualitäten konzentrieren.
+    fr: Évaluer les projets de concours de manière comparable au moyen d'une exigence de maquette légère et uniforme et concentrer le jugement sur les qualités spatiales et fonctionnelles déterminantes.
+    it: Valutare in modo confrontabile i progetti di concorso mediante un requisito di modello snello e uniforme, concentrando il giudizio sulle qualità spaziali e funzionali determinanti.
+    en: Assess competition entries comparably using a lean, consistent model requirement and focus the evaluation on the decisive spatial and functional qualities.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-designer-procurement
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-owner-cde-procurement
+  comment: Full set at level Wettbewerb (sort_order 2); includes lower levels.
+- id: pragmaticbim:project-goal-level/procurement-design-build
+  code: PROC-03
+  sort_order: 3
+  name:
+    de: Design-Build
+    fr: Conception-réalisation
+    it: Progettazione e costruzione
+    en: Design-build
+  description:
+    de: Planung und Ausführung gemeinsam auf funktional und qualitativ geklärten Grundlagen beschaffen und Lösung, Leistungsumfang sowie verbindlichen Angebotspreis nach einheitlichen Kriterien beurteilen.
+    fr: Adjuger conjointement les études et la réalisation sur des bases fonctionnelles et qualitatives clarifiées et évaluer la solution, l'étendue des prestations et le prix d'offre ferme selon des critères uniformes.
+    it: Affidare congiuntamente progettazione ed esecuzione su basi funzionali e qualitative chiarite e valutare soluzione, estensione delle prestazioni e prezzo d'offerta vincolante secondo criteri uniformi.
+    en: Procure design and construction together on clarified functional and quality foundations and assess the solution, scope, and binding offer price against consistent criteria.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-designer-procurement
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-owner-cde-procurement
+  comment: Full set at level Design-Build (sort_order 3); includes lower levels.
+- id: pragmaticbim:project-goal-level/procurement-ipd
+  code: PROC-04
+  sort_order: 4
+  name:
+    de: IPD
+    fr: IPD
+    it: IPD
+    en: IPD
+  description:
+    de: Planung und Ausführung in einem IPD-Modell auf funktionaler Grundreferenz und marktkonform indexierten Referenzkosten beschaffen und Honorare sowie Bonusabrechnung an dieselbe Referenz binden.
+    fr: Adjuger les études et la réalisation dans un modèle IPD sur une référence fonctionnelle de base et des coûts de référence indexés au marché, et rattacher honoraires et décompte des bonus à cette même référence.
+    it: Affidare progettazione ed esecuzione in un modello IPD su riferimento funzionale di base e costi di riferimento indicizzati al mercato, e vincolare onorari e consuntivo dei bonus allo stesso riferimento.
+    en: Procure design and construction under an IPD model against a functional base reference and market-indexed reference costs, and bind fees and bonus settlement to that same reference.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-designer-procurement
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/bes-owner-cde-procurement
+  comment: Full set at level IPD (sort_order 4); includes lower levels.

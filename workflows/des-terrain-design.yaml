@@ -1,0 +1,142 @@
+id: pragmaticbim:workflow/des-terrain-design
+code: DES-TERRAIN
+sort_order: 72
+name:
+  de: Gelände und Gebäudeanschlüsse prüfen
+  fr: Contrôler le terrain et les raccordements au bâtiment
+  it: Verificare il terreno e i raccordi all'edificio
+  en: Check the terrain and the building connections
+description:
+  de: 'Das projektierte Gelände im Modell abbilden, damit Anschlüsse, Entwässerung und Höhenbezüge zum Gebäude geprüft werden können.
+
+
+    **Ausgangslage**
+
+    - Gelände wird meist in 2D geplant.
+
+    - Probleme entstehen an der Schnittstelle zum Gebäude.
+
+
+    **Ziel & Nutzen**
+
+    - Bestand und Projekt gemeinsam prüfen.
+
+    - Anschlüsse ans Gebäude vor der Ausführung sichtbar machen.
+
+
+    **Ablauf**
+
+    1. Bestands- und projektiertes Gelände im Modell führen.
+
+    2. Anschlüsse ans Gebäude prüfen.
+
+    3. Mengen aus der Differenz ableiten.
+
+
+    **Lieferergebnis**
+
+    - Modell mit Bestands- und projektiertem Gelände
+
+    - Nachweis der Gebäudeanschlüsse'
+  fr: 'Saisir le terrain projeté dans la maquette afin de vérifier les raccordements au bâtiment.
+
+
+    **Situation de départ**
+
+    - Le terrain est le plus souvent planifié en 2D.
+
+    - Les problèmes apparaissent à l''interface avec le bâtiment.
+
+
+    **Objectif et bénéfice**
+
+    - Vérifier ensemble le terrain existant et le terrain projeté.
+
+    - Rendre les raccordements au bâtiment visibles avant l''exécution.
+
+
+    **Déroulement**
+
+    1. Saisir le terrain existant et le terrain projeté dans la maquette.
+
+    2. Vérifier les raccordements au bâtiment.
+
+    3. Déduire les quantités de la différence.
+
+
+    **Livrable**
+
+    - Maquette avec terrain existant et terrain projeté
+
+    - Contrôle des raccordements au bâtiment'
+  it: 'Tenere il terreno di progetto nel modello per verificare i raccordi con l''edificio.
+
+
+    **Situazione di partenza**
+
+    - Il terreno viene di solito pianificato in 2D.
+
+    - I problemi sorgono all''interfaccia con l''edificio.
+
+
+    **Obiettivo e beneficio**
+
+    - Verificare insieme terreno esistente e terreno di progetto.
+
+    - Rendere visibili i raccordi con l''edificio prima dell''esecuzione.
+
+
+    **Svolgimento**
+
+    1. Tenere nel modello il terreno esistente e quello di progetto.
+
+    2. Verificare i raccordi con l''edificio.
+
+    3. Ricavare le quantità dalla differenza.
+
+
+    **Risultato della fornitura**
+
+    - Modello con terreno esistente e terreno di progetto
+
+    - Verifica dei raccordi con l''edificio'
+  en: 'Represent the designed terrain in the model so that connections, drainage, and height references to the building can be checked.
+
+
+    **Starting point**
+
+    - Terrain is usually planned in 2D.
+
+    - Problems arise at the interface with the building.
+
+
+    **Goal & benefit**
+
+    - Check existing and designed terrain together.
+
+    - Make connections to the building visible before construction.
+
+
+    **Process**
+
+    1. Provide existing and designed terrain in the model.
+
+    2. Check connections to the building.
+
+    3. Derive quantities from the difference.
+
+
+    **Deliverable**
+
+    - Model with existing and designed terrain
+
+    - Check of the building connections'
+workflow_group: arbeitsvorbereitung
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Two surfaces on survey-surface-geometry: ElementStatus EXISTING and NEW. Do not use DEMOLISH on the surface as a stand-in for humus stripping. Quantities are the surface difference, not separate
+  cut/fill solids.'

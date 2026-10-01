@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-built-in-furniture
+code: OBJ-BUILT-IN-FURN
+name:
+  de: ObjectType Einbaumöbel
+  fr: ObjectType mobilier intégré
+  it: ObjectType arredo fisso
+  en: ObjectType built-in furniture
+description:
+  de: ObjectType für grob modellierte Einbaumöbel und Küchenblöcke.
+  fr: ObjectType pour le mobilier intégré et les blocs de cuisine modélisés sommairement.
+  it: ObjectType per arredi fissi e blocchi cucina modellati in modo indicativo.
+  en: ObjectType for coarsely modelled built-in furniture and kitchen units.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Einbaumöbel
+  fr:
+  - Mobilier intégré
+  it:
+  - Arredo fisso
+  en:
+  - Built-in furniture

@@ -2,175 +2,133 @@ id: pragmaticbim:workflow/des-parking-verification
 code: DES-PARKING
 sort_order: 53
 name:
-  de: Parkplatznachweis mittels Modell
-  fr: Justificatif de places de stationnement via le modèle
-  it: Verifica posti auto tramite modello
-  en: Parking verification from the model
+  de: Parkplätze nachweisen
+  fr: Justifier les places de stationnement
+  it: Giustificare i posti auto
+  en: Verify parking spaces
 description:
-  de: 'Parkplätze ab Bauprojekt als eigene Räume modellieren und Anzahl sowie Flächen direkt aus dem Modell auswerten.
+  de: 'Parkplätze im Modell abbilden und auswerten, damit der Parkplatznachweis laufend mit Planung und Verkehrsgutachten abgeglichen werden kann.
 
 
     **Ausgangslage**
 
     - Parkplatznachweise und Kennwerte brauchen eine nachvollziehbare Zählung und Flächenangabe.
 
-    - Manuelle Listen oder 2D-Auszüge sind fehleranfällig und schwer mit dem Modell abzugleichen.
+    - Manuelle Listen oder 2D-Auszüge sind fehleranfällig und veralten schnell. Dies ist ein Genehmigungsrisiko.
 
 
     **Ziel & Nutzen**
 
-    - Jeden Parkplatz als eigenen Raum führen und eindeutig nummerieren.
-
-    - Anzahl und Fläche der Parkplätze aus dem Modell ableiten.
+    - Jederzeit prüfen können, ob die Mindestanzahl eingehalten ist.
 
 
     **Ablauf**
 
     1. Ab Bauprojekt jeden Parkplatz als eigenen Raum mit Nummer und Fläche modellieren.
 
-    2. Parkplätze im Modell zählen und Flächen auswerten.
+    2. Prüfregel erstellen, um einen Soll-Ist-Abgleich machen zu können.
 
     3. Nachweis und Kennwerte aus dem Auszug ableiten.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Nachvollziehbarer Parkplatznachweis aus dem Modell — Anzahl und Fläche je Parkplatz.
+    - Architekturmodell mit eindeutig identifizierbaren und auswertbaren Parkplätzen
 
-
-    **Lieferobjekte**
-
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Parkplätze als modellierte IfcSpace-Volumen (PredefinedType=PARKING)
-
-    - Name mit eindeutiger Parkplatznummer (z. B. P0016)
-
-    - NetFloorArea je Parkplatz'
-  fr: 'Modéliser les places de stationnement comme locaux distincts dès le projet de construction et en extraire nombre et surfaces directement du modèle.
+    - Parkplatznachweis mit nachvollziehbarem Soll-Ist-Vergleich'
+  fr: 'Représenter et évaluer les places de stationnement dans la maquette, afin de tenir le justificatif aligné en continu avec le projet et l''étude de trafic.
 
 
     **Situation de départ**
 
     - Les justificatifs de places et les indicateurs exigent un dénombrement et des surfaces traçables.
 
-    - Les listes manuelles ou extractions 2D sont sources d''erreurs et difficiles à aligner avec le modèle.
+    - Les listes manuelles ou les extraits 2D sont sources d''erreurs et deviennent vite obsolètes. C''est un risque pour l''autorisation.
 
 
     **Objectif et bénéfice**
 
-    - Saisir chaque place comme local distinct et la numéroter de façon unique.
-
-    - Déduire nombre et surface des places à partir du modèle.
+    - Pouvoir vérifier à tout moment si le nombre minimal de places est respecté.
 
 
     **Déroulement**
 
     1. Dès le projet de construction, modéliser chaque place comme local distinct avec numéro et surface.
 
-    2. Compter les places dans le modèle et évaluer les surfaces.
+    2. Établir une règle de contrôle pour comparer l''exigence et le projet.
 
-    3. Déduire le justificatif et les indicateurs de l''extraction.
-
-
-    **Résultat**
-
-    - Justificatif de places traçable à partir du modèle — nombre et surface par place.
+    3. Déduire le justificatif et les indicateurs de l''extrait.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+    - Maquette d''architecture avec des places clairement identifiables et évaluables
 
-    - Places comme volumes IfcSpace modélisés (PredefinedType=PARKING)
-
-    - Name avec numéro de place unique (p. ex. P0016)
-
-    - NetFloorArea par place'
-  it: 'Modellare i posti auto come locali distinti dal progetto di costruzione ed estrarre numero e superfici direttamente dal modello.
+    - Justificatif de stationnement avec une comparaison traçable entre l''exigence et le projet'
+  it: 'Rappresentare e valutare i posti auto nel modello, così da tenere la verifica allineata in continuo con il progetto e lo studio del traffico.
 
 
     **Situazione di partenza**
 
     - Le verifiche dei posti e gli indicatori richiedono un conteggio e superfici tracciabili.
 
-    - Elenchi manuali o estratti 2D sono soggetti a errori e difficili da allineare al modello.
+    - Elenchi manuali o estratti 2D sono soggetti a errori e diventano presto obsoleti. Si tratta di un rischio per l''autorizzazione.
 
 
     **Obiettivo e beneficio**
 
-    - Gestire ogni posto come locale distinto e numerarlo in modo univoco.
-
-    - Ricavare numero e superficie dei posti dal modello.
+    - Poter verificare in ogni momento se il numero minimo di posti è rispettato.
 
 
     **Svolgimento**
 
-    1. Dal progetto di costruzione modellare ogni posto come locale distinto con numero e superficie.
+    1. Dal progetto di costruzione, modellare ogni posto come locale distinto con numero e superficie.
 
-    2. Contare i posti nel modello e valutare le superfici.
+    2. Definire una regola di controllo per confrontare il requisito con il progetto.
 
     3. Ricavare la verifica e gli indicatori dall''estratto.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Verifica dei posti tracciabile dal modello — numero e superficie per posto.
+    - Modello di architettura con posti auto identificabili in modo univoco e valutabili
 
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Posti auto come volumi IfcSpace modellati (PredefinedType=PARKING)
-
-    - Name con numero di posto univoco (p. es. P0016)
-
-    - NetFloorArea per posto'
-  en: 'Model parking spaces as dedicated spaces from building design onward and evaluate count and areas directly from the model.
+    - Verifica dei parcheggi con un confronto tracciabile tra requisito e progetto'
+  en: 'Represent and evaluate parking spaces in the model so that parking verification can be kept aligned with the design and traffic study.
 
 
     **Starting point**
 
-    - Parking verification and metrics need a traceable count and area statement.
+    - Parking verification and metrics require traceable counts and area information.
 
-    - Manual lists or 2D take-offs are error-prone and hard to align with the model.
+    - Manual lists or 2D extracts are error-prone and quickly become outdated. This is a permit risk.
 
 
     **Goal & benefit**
 
-    - Carry each parking bay as its own space with a unique number.
-
-    - Derive parking count and area from the model.
+    - Check at any time whether the minimum number of parking spaces is met.
 
 
     **Process**
 
-    1. From building design onward, model each parking bay as its own space with number and area.
+    1. From the building-design phase onward, model each parking space as a separate space with a number and area.
 
-    2. Count parking spaces in the model and evaluate areas.
+    2. Create a checking rule to compare the requirement with the design.
 
-    3. Derive the verification and metrics from the take-off.
-
-
-    **Outcome**
-
-    - Traceable parking verification from the model — count and area per bay.
+    3. Derive the verification and metrics from the extract.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+    - Architecture model with parking spaces that are unambiguously identifiable and ready to evaluate
 
-    - Parking spaces as modelled IfcSpace volumes (PredefinedType=PARKING)
-
-    - Name with unique parking number (e.g. P0016)
-
-    - NetFloorArea per parking space'
-workflow_group: null
+    - Parking verification with a traceable comparison of the requirement and design'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
+- pragmaticbim:domain/infrastructure
 comment: From SIA phase 32 (Bauprojekt) onward. One IfcSpace per parking bay; Name = P####; PredefinedType=PARKING; NetFloorArea for area take-off.

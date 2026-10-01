@@ -1,0 +1,171 @@
+id: pragmaticbim:workflow/bes-timber-contractor-procurement
+code: BES-TIMBER-CONTRACTOR
+sort_order: 18
+name:
+  de: Holzbauunternehmen vorgezogen beschaffen
+  fr: Acquérir par anticipation une entreprise de construction bois
+  it: Acquisire in anticipo un'impresa di costruzioni in legno
+  en: Procure the timber contractor early
+description:
+  de: 'Ein Holzbauunternehmen frühzeitig einbinden und die weitere Planung auf dessen Konstruktions- und Produktionssystem abstimmen.
+
+
+    **Ausgangslage**
+
+    - Im Holzbau wird die Konstruktion häufig zweimal geplant: zunächst systemneutral durch das Planungsteam und nach der Vergabe nochmals durch das ausführende Unternehmen.
+
+    - Die späte Systemwahl führt zu vermeidbarer Umplanung, widersprüchlichen Details und nicht optimalen Abläufen für Produktion und Montage.
+
+
+    **Ziel & Nutzen**
+
+    - Nach der Studie oder dem Vorprojekt, sobald das architektonische Konzept ausreichend geklärt ist, ein Holzbauunternehmen beschaffen und in die Planung einbinden.
+
+    - Die Architekturbauteile als geometrische Hüllkörper mit Anforderungen und Schnittstellen vorgeben; das Holzbauunternehmen entwickelt darin die Konstruktion passend zu seinem System.
+
+    - Doppelplanung reduzieren und System-, Produktions- und Montagewissen rechtzeitig nutzen.
+
+
+    **Ablauf**
+
+    1. Architekturmodell mit den relevanten Bauteilen als abgestimmte Hüllkörper sowie mit Öffnungen, Schnittstellen und Leistungsanforderungen bereitstellen.
+
+    2. Holzbauunternehmen auf dieser Grundlage evaluieren und die vorgeschlagene Konstruktion auf dessen Produktions- und Montagesystem optimieren.
+
+    3. Systementscheid, Bauteilaufbauten und Schnittstellen mit Architektur, Tragwerk, Bauphysik und Brandschutz abstimmen und freigeben.
+
+
+    **Hinweis:** Es ist möglich, das Holzbauunternehmen in zwei Stufen zu beauftragen und Planung von Ausführung zu trennen. Von einer neuen Ausschreibung nach der Unternehmerplanung soll abgesehen werden.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit prüfbaren Hüllkörpern, Öffnungen und Schnittstellen.
+
+    - Beschaffungsunterlagen mit Leistungsanforderungen, Zuständigkeiten und Beurteilungskriterien.
+
+    - Abgestimmtes Systemkonzept des Holzbauunternehmens mit Bauteilaufbauten sowie Produktions- und Montageprinzip.'
+  fr: 'Associer tôt une entreprise de construction bois et coordonner la suite des études avec son système constructif et de production.
+
+
+    **Situation de départ**
+
+    - Dans la construction bois, la structure est souvent étudiée deux fois : d''abord sans système spécifique par l''équipe de mandataires, puis une nouvelle fois par l''entreprise après l''adjudication.
+
+    - Le choix tardif du système entraîne des reprises d''études évitables, des détails contradictoires et des processus de production et de montage peu optimisés.
+
+
+    **Objectif et bénéfice**
+
+    - Acquérir et associer une entreprise de construction bois après l''étude ou l''avant-projet, dès que le concept architectural est suffisamment défini.
+
+    - Définir les éléments d''architecture comme volumes réservés géométriques avec exigences et interfaces ; l''entreprise développe la construction à l''intérieur selon son système.
+
+    - Réduire les études à double et intégrer à temps le savoir-faire relatif au système, à la production et au montage.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette d''architecture avec les éléments concernés sous forme de volumes réservés coordonnés, ainsi que les ouvertures, interfaces et exigences de performance.
+
+    2. Évaluer les entreprises de construction bois sur cette base et optimiser la construction proposée selon le système de production et de montage de l''entreprise.
+
+    3. Coordonner et valider le choix du système, les compositions d''éléments et les interfaces avec l''architecture, la structure, la physique du bâtiment et la protection incendie.
+
+
+    **Remarque:** Il est possible de mandater l''entreprise de construction bois en deux étapes et de séparer études et réalisation. Il convient de renoncer à un nouvel appel d''offres après les études
+    d''entreprise.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec volumes réservés, ouvertures et interfaces vérifiables.
+
+    - Dossier d''acquisition avec exigences de performance, responsabilités et critères d''évaluation.
+
+    - Concept de système coordonné de l''entreprise de construction bois avec compositions d''éléments et principes de production et de montage.'
+  it: 'Coinvolgere tempestivamente un''impresa di costruzioni in legno e coordinare la progettazione successiva con il suo sistema costruttivo e produttivo.
+
+
+    **Situazione di partenza**
+
+    - Nelle costruzioni in legno la struttura viene spesso progettata due volte: dapprima in modo indipendente dal sistema dal gruppo di progettazione e, dopo l''aggiudicazione, nuovamente dall''impresa
+    esecutrice.
+
+    - La scelta tardiva del sistema comporta riprogettazioni evitabili, dettagli contraddittori e processi di produzione e montaggio non ottimali.
+
+
+    **Obiettivo e beneficio**
+
+    - Acquisire e coinvolgere un''impresa di costruzioni in legno dopo lo studio o il progetto preliminare, non appena il concetto architettonico è sufficientemente definito.
+
+    - Definire gli elementi architettonici come volumi d''ingombro geometrici con requisiti e interfacce; l''impresa sviluppa al loro interno la costruzione adatta al proprio sistema.
+
+    - Ridurre la doppia progettazione e integrare tempestivamente le conoscenze relative a sistema, produzione e montaggio.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello architettonico con gli elementi interessati come volumi d''ingombro coordinati, nonché con aperture, interfacce e requisiti prestazionali.
+
+    2. Valutare su questa base le imprese di costruzioni in legno e ottimizzare la costruzione proposta in funzione del sistema di produzione e montaggio dell''impresa.
+
+    3. Coordinare e approvare la scelta del sistema, le stratigrafie degli elementi e le interfacce con architettura, struttura, fisica della costruzione e protezione antincendio.
+
+
+    **Nota:** È possibile incaricare l''impresa di costruzioni in legno in due fasi e separare progettazione ed esecuzione. Si rinuncia a una nuova gara dopo la progettazione dell''impresa.
+
+
+    **Risultato della fornitura**
+
+    - Modello architettonico con volumi d''ingombro, aperture e interfacce verificabili.
+
+    - Documentazione di acquisizione con requisiti prestazionali, responsabilità e criteri di valutazione.
+
+    - Concetto di sistema coordinato dell''impresa di costruzioni in legno con stratigrafie degli elementi e principi di produzione e montaggio.'
+  en: 'Engage a timber contractor early and coordinate further design with its construction and production system.
+
+
+    **Starting point**
+
+    - Timber construction is often designed twice: first on a system-neutral basis by the design team and then again by the contractor after award.
+
+    - Late system selection causes avoidable redesign, conflicting details, and production and assembly processes that are not fully optimized.
+
+
+    **Goal & benefit**
+
+    - Procure and engage a timber contractor after the study or preliminary design, once the architectural concept is sufficiently resolved.
+
+    - Define the architectural components as geometric envelope volumes with requirements and interfaces; the contractor develops the construction within them to suit its system.
+
+    - Reduce duplicate design and use system, production, and assembly expertise at the right time.
+
+
+    **Process**
+
+    1. Provide the architecture model with the relevant components as coordinated envelope volumes, together with openings, interfaces, and performance requirements.
+
+    2. Evaluate timber contractors on this basis and optimize the proposed construction for the contractor''s production and assembly system.
+
+    3. Coordinate and approve the system decision, component build-ups, and interfaces with architecture, structure, building physics, and fire safety.
+
+
+    **Note:** The timber contractor may be appointed in two stages, separating design from construction. A new tender after the contractor design should be avoided.
+
+
+    **Deliverable**
+
+    - Architecture model with verifiable envelope volumes, openings, and interfaces.
+
+    - Procurement documents with performance requirements, responsibilities, and evaluation criteria.
+
+    - Coordinated contractor system concept with component build-ups and production and assembly principles.'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Architecture components define the geometric envelope and interfaces; the contractor develops the system-specific construction within these constraints.

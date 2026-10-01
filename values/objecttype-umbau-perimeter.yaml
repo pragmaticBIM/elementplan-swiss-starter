@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-umbau-perimeter
+code: OBJ-UMBAU-PER
+name:
+  de: ObjectType Umbauperimeter
+  fr: ObjectType périmètre de transformation
+  it: ObjectType perimetro di trasformazione
+  en: ObjectType alteration area
+description:
+  de: ObjectType für IfcBuildingElementProxy als räumlich abgegrenzter Umbauperimeter.
+  fr: ObjectType pour IfcBuildingElementProxy comme périmètre de transformation délimité dans l'espace.
+  it: ObjectType per IfcBuildingElementProxy come perimetro di trasformazione delimitato nello spazio.
+  en: ObjectType for IfcBuildingElementProxy as a spatially defined alteration area.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Umbauperimeter
+  fr:
+  - Périmètre de transformation
+  it:
+  - Perimetro di trasformazione
+  en:
+  - Alteration area

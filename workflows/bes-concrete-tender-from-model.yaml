@@ -7,7 +7,7 @@ name:
   it: Gara lavori in calcestruzzo dal modello
   en: Concrete works tender from model
 description:
-  de: 'Beton- und Stahlbetonarbeiten aus dem Tragwerksmodell für die Ausschreibung vorbereiten.
+  de: 'Betonarbeiten im Tragwerksmodell mit ausschreibungsrelevanten Angaben abbilden, damit Mengen und Leistungsverzeichnis aus einer gemeinsamen Grundlage abgeleitet werden können.
 
 
     **Ausgangslage**
@@ -33,18 +33,9 @@ description:
     3. Modell für Mengenermittlung und Ausschreibungsunterlagen exportieren.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Attributierte Betonbauteile als Grundlage für Position 211.5 in der Ausschreibung.
-
-
-    **Lieferobjekte**
-
-    - Tragwerksmodell mit IfcFooting, IfcSlab, IfcRoof, IfcColumn und IfcBeam
-
-    - Name und GrossVolume je Betonbauteil
-
-    - Property Set 211.5 Beton- und Stahlbetonarbeiten mit Bewehrungsgehalt, Oberfläche und Betonqualität'
+    - Tragwerksmodell mit prüfbaren Mengen und ausschreibungsrelevanten Angaben zu Beton und Bewehrung.'
   fr: 'Préparer les travaux en béton et béton armé à partir du modèle structurel pour l''appel d''offres.
 
 
@@ -71,18 +62,9 @@ description:
     3. Exporter le modèle pour le métré et les documents d''appel d''offres.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Éléments en béton attribués comme base pour la position 211.5 dans l''appel d''offres.
-
-
-    **Livrables**
-
-    - Modèle structurel avec IfcFooting, IfcSlab, IfcRoof, IfcColumn et IfcBeam
-
-    - Name et GrossVolume par élément en béton
-
-    - Jeu de propriétés 211.5 Travaux en béton et béton armé avec teneur en armatures, surface et qualité du béton'
+    - Maquette structure avec quantités vérifiables et données sur le béton et les armatures utiles à l''appel d''offres.'
   it: 'Preparare i lavori in calcestruzzo e calcestruzzo armato dal modello strutturale per la gara.
 
 
@@ -109,19 +91,10 @@ description:
     3. Esportare il modello per computo metrico e documenti di gara.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Elementi in calcestruzzo attributati come base per la posizione 211.5 nella gara.
-
-
-    **Oggetti della fornitura**
-
-    - Modello strutturale con IfcFooting, IfcSlab, IfcRoof, IfcColumn e IfcBeam
-
-    - Name e GrossVolume per ogni elemento in calcestruzzo
-
-    - Property set 211.5 Lavori in calcestruzzo e calcestruzzo armato con contenuto di armatura, superficie e qualità del calcestruzzo'
-  en: 'Prepare concrete and reinforced concrete works from the structural model for tendering.
+    - Modello strutturale con quantità verificabili e dati su calcestruzzo e armature rilevanti per la gara.'
+  en: 'Represent concrete works in the structural model with tender-relevant information so that quantities and the specification can be derived from a common basis.
 
 
     **Starting point**
@@ -147,22 +120,13 @@ description:
     3. Export the model for quantity take-off and tender documents.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Attributed concrete components as the basis for position 211.5 in the tender.
-
-
-    **Deliverables**
-
-    - Structural model with IfcFooting, IfcSlab, IfcRoof, IfcColumn, and IfcBeam
-
-    - Name and GrossVolume per concrete component
-
-    - Property set 211.5 Concrete and reinforced concrete works with reinforcement content, surface, and concrete quality'
-workflow_group: null
+    - Structural model with verifiable quantities and tender-relevant concrete and reinforcement information.'
+workflow_group: ausschreibung
 parent_workflow: pragmaticbim:workflow/bes
 picture_link: null
 status: active
 needed_in_domain:
 - pragmaticbim:domain/structural
-comment: NPK position 211.5 — custom property set for concrete tendering from the structural model.
+comment: NPK position 211.5 – custom property set for concrete tendering from the structural model.

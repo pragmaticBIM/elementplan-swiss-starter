@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-construction-logistics
+code: OBJ-SITE-LOG
+name:
+  de: ObjectType Baustelleneinricht
+  fr: ObjectType installation de chantier
+  it: ObjectType installazione di cantiere
+  en: ObjectType site setup
+description:
+  de: ObjectType für IfcBuildingElementProxy als Baustelleneinrichtungsobjekt (Kran, Container, Reifenwaschanlage u. a.).
+  fr: ObjectType pour IfcBuildingElementProxy comme objet d'installation de chantier (grue, container, lave-roues, etc.).
+  it: ObjectType per IfcBuildingElementProxy come oggetto di installazione di cantiere (gru, container, lavaruote, ecc.).
+  en: ObjectType for IfcBuildingElementProxy as a site setup object (crane, container, wheel wash, etc.).
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Baustelleneinricht
+  fr:
+  - Installation de chantier
+  it:
+  - Installazione di cantiere
+  en:
+  - Site setup

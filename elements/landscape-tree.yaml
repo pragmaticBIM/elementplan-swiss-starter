@@ -1,0 +1,368 @@
+id: pragmaticbim:element/landscape-tree
+code: LAN-TREE
+sort_order: 60
+status: active
+name:
+  de: Baum
+  fr: Arbre
+  it: Albero
+  en: Tree
+definition:
+  de: 'Macht Schutz-, Fäll- und Neupflanzungsentscheide räumlich prüfbar, damit Bauwerk und Aussenraumplanung den Baumbestand berücksichtigen.
+
+
+    **Beschreibung**
+
+    - Einzelner Baum im Planungsperimeter mit Krone, Stamm und Wurzelraum.
+
+    - Dient dem Nachweis des zu erhaltenden Baumbestands und der Koordination mit Bauwerk und Aussenanlagen.
+
+
+    **Modellierungshinweis**
+
+    - Als vereinfachten Körper modellieren: Kugel für die Krone, Zylinder für den Stamm, Kugel für den Wurzelraum. Plausible Dimensionen mit dem Spezialisten abstimmen.
+
+    - Keine Detailgeometrie von Ästen oder Blättern modellieren.'
+  fr: 'Rend vérifiables dans l''espace les décisions de protection, d''abattage et de nouvelle plantation afin que le bâtiment et les aménagements extérieurs tiennent compte du patrimoine arboré.
+
+
+    **Description**
+
+    - Arbre individuel dans le périmètre de planification avec couronne, tronc et espace racinaire.
+
+    - Sert à la preuve du peuplement arboré à conserver et à la coordination avec le bâtiment et les aménagements extérieurs.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps simplifié : sphère pour la couronne, cylindre pour le tronc, sphère pour l''espace racinaire. Convenir de dimensions plausibles avec le spécialiste.
+
+    - Ne pas modéliser la géométrie détaillée des branches ou des feuilles.'
+  it: 'Rende verificabili nello spazio le decisioni di protezione, abbattimento e nuova piantumazione affinché l''edificio e le sistemazioni esterne tengano conto del patrimonio arboreo.
+
+
+    **Descrizione**
+
+    - Singolo albero nel perimetro di pianificazione con chioma, tronco e spazio radicale.
+
+    - Serve alla prova del patrimonio arboreo da conservare e al coordinamento con edificio e sistemazioni esterne.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo semplificato: sfera per la chioma, cilindro per il tronco, sfera per lo spazio radicale. Concordare dimensioni plausibili con lo specialista.
+
+    - Non modellare la geometria dettagliata di rami o foglie.'
+  en: 'Makes decisions on protection, removal, and new planting spatially verifiable so that the building and external works account for the tree inventory.
+
+
+    **Description**
+
+    - Individual tree in the planning perimeter with crown, trunk, and root zone.
+
+    - Used to verify the tree stock to be preserved and to coordinate with the building and external works.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified body: sphere for the crown, cylinder for the trunk, sphere for the root zone. Agree plausible dimensions with the specialist.
+
+    - Do not model detailed branch or leaf geometry.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcGeographicElement
+entity_ifc4_3: IfcGeographicElement
+picture_link: landscape-tree.png
+picture_print_link: landscape-tree-print.tif
+attachment_link: landscape-tree.ifc
+model_link: landscape-tree.ifc
+applicability:
+  de: (entity_ifc4_3=IfcGeographicElement AND PredefinedType=VEGETATION) OR (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Baum) OR (entity_ifc2x3=IfcBuildingElementProxy
+    AND ObjectType=Baum)
+  fr: (entity_ifc4_3=IfcGeographicElement AND PredefinedType=VEGETATION) OR (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Arbre) OR (entity_ifc2x3=IfcBuildingElementProxy
+    AND ObjectType=Arbre)
+  it: (entity_ifc4_3=IfcGeographicElement AND PredefinedType=VEGETATION) OR (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Albero) OR (entity_ifc2x3=IfcBuildingElementProxy
+    AND ObjectType=Albero)
+  en: (entity_ifc4_3=IfcGeographicElement AND PredefinedType=VEGETATION) OR (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Tree) OR (entity_ifc2x3=IfcBuildingElementProxy
+    AND ObjectType=Tree)
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Eindeutige Baumnummer nach dem Muster B gefolgt von einer vierstelligen Nummer (z. B. B0001).
+    fr: Numéro d'arbre unique selon le modèle B suivi d'un numéro à quatre chiffres (p. ex. B0001).
+    it: Numero d'albero univoco secondo il modello B seguito da un numero a quattro cifre (p. es. B0001).
+    en: Unique tree number in the pattern B followed by a four-digit number (e.g. B0001).
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-tree-preservation-verification
+  - pragmaticbim:workflow/qas-sponge-city
+  - pragmaticbim:workflow/qas-urban-ar-assessment
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet das Element als Vegetation.
+
+
+      **Zulässige Werte**
+
+      - `VEGETATION` — Vegetation / Baum (IFC4.3)
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType = Baum (IFC4)'
+    fr: 'Identifie l''élément comme végétation.
+
+
+      **Valeurs admises**
+
+      - `VEGETATION` — végétation / arbre (IFC4.3)
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType = Arbre (IFC4)'
+    it: 'Identifica l''elemento come vegetazione.
+
+
+      **Valori ammessi**
+
+      - `VEGETATION` — vegetazione / albero (IFC4.3)
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType = Albero (IFC4)'
+    en: 'Marks the element as vegetation.
+
+
+      **Allowed values**
+
+      - `VEGETATION` — vegetation / tree (IFC4.3)
+
+      - `USERDEFINED` — user-defined type; ObjectType = Tree (IFC4)'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-geographic-element-vegetation
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-tree-preservation-verification
+  - pragmaticbim:workflow/qas-urban-ar-assessment
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Elements als Baum.
+
+
+      **Zulässige Werte**
+
+      - `Baum` — Einzelbaum im Baumbestand'
+    fr: 'Nature de l''élément comme arbre.
+
+
+      **Valeurs admises**
+
+      - `Arbre` — arbre individuel du peuplement arboré'
+    it: 'Tipo dell''elemento come albero.
+
+
+      **Valori ammessi**
+
+      - `Albero` — albero singolo del patrimonio arboreo'
+    en: 'Kind of element as a tree.
+
+
+      **Allowed values**
+
+      - `Tree` — individual tree in the tree inventory'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-tree
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-tree-preservation-verification
+  - pragmaticbim:workflow/qas-urban-ar-assessment
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_GeographicElementCommon
+  definition:
+    de: Referenzbezeichnung des Baums gemäss Baumbestandsaufnahme oder Projektkatalog.
+    fr: Référence de l'arbre selon le relevé du peuplement arboré ou le catalogue de projet.
+    it: Riferimento dell'albero secondo il rilievo del patrimonio arboreo o il catalogo di progetto.
+    en: Tree reference according to the tree inventory survey or project catalogue.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-tree-preservation-verification
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: Status
+  pset: Pset_GeographicElementCommon
+  definition:
+    de: 'Status des Baums für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neupflanzung
+
+      - `EXISTING` — Bestand (zu erhalten)
+
+      - `DEMOLISH` — Fällung
+
+      - `TEMPORARY` — temporär'
+    fr: 'Statut de l''arbre pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — nouvelle plantation
+
+      - `EXISTING` — existant (à conserver)
+
+      - `DEMOLISH` — à abattre
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''albero per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuova piantumazione
+
+      - `EXISTING` — esistente (da conservare)
+
+      - `DEMOLISH` — da abbattere
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Tree status for coordination on existing assets.
+
+
+      **Allowed values**
+
+      - `NEW` — new planting
+
+      - `EXISTING` — existing (to preserve)
+
+      - `DEMOLISH` — to remove
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-tree-preservation-verification
+  - pragmaticbim:workflow/qas-urban-ar-assessment
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: Species
+  pset: Pset_GeographicElementCommon
+  definition:
+    de: Lateinischer Artname gemäss [Info Flora Checklist 2017](https://www.infoflora.ch/en/flora/taxonomy.html), z. B. `Acer platanoides`.
+    fr: Nom latin de l'espèce selon la [Checklist 2017 d'Info Flora](https://www.infoflora.ch/en/flora/taxonomy.html), p. ex. `Acer platanoides`.
+    it: Nome latino della specie secondo la [Checklist 2017 di Info Flora](https://www.infoflora.ch/en/flora/taxonomy.html), ad es. `Acer platanoides`.
+    en: Latin species name according to the [Info Flora Checklist 2017](https://www.infoflora.ch/en/flora/taxonomy.html), e.g. `Acer platanoides`.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-tree-preservation-verification
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 6

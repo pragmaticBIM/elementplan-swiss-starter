@@ -1,0 +1,28 @@
+id: pragmaticbim:room-type/spielplatz
+code: RT-WH-26
+sort_order: 26
+name:
+  de: Spielplatz
+  fr: Place de jeux
+  it: Parco giochi
+  en: Playground
+definition:
+  de: Spielfläche im Freien.
+  fr: Aire de jeux en plein air.
+  it: Area gioco all'aperto.
+  en: Outdoor play area.
+attribute_presets:
+- element: pragmaticbim:element/spaces-exterior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-exterior
+  name: IsExternal
+  value: true
+- element: pragmaticbim:element/spaces-exterior
+  name: LongName
+  value:
+    de: Spielplatz
+    fr: Place de jeux
+    it: Parco giochi
+    en: Playground
+status: active

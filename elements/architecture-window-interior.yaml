@@ -1,0 +1,1422 @@
+id: pragmaticbim:element/architecture-window-interior
+code: ARC-WINDOW-INT
+sort_order: 43
+status: active
+name:
+  de: Innenfenster
+  fr: Fenêtre intérieure
+  it: Finestra interna
+  en: Interior window
+definition:
+  de: 'Sichert Tageslichtbezüge zwischen Innenräumen und schafft eine prüfbare Grundlage für Raum- und Schallschutzplanung.
+
+
+    **Beschreibung**
+
+    - Innenfenster und Oberlichter zwischen Räumen (z. B. Entlehnung).
+
+    - Jedes Fenster ist einem Raum zugeordnet.
+
+    - Grundlage für Schallschutz- und Raumplanung.
+
+
+    **Modellierungshinweis**
+
+    - IsExternal=FALSE setzen.
+
+    - Glasanteil mit transparentem Material exportieren.
+
+    - Jedes Fenster einem Raum zuordnen.'
+  fr: 'Garantit les apports de lumière naturelle entre les locaux et fournit une base vérifiable pour l''étude des locaux et de l''acoustique.
+
+
+    **Description**
+
+    - Fenêtres intérieures et lanterneaux entre locaux (p. ex. emprunt de lumière).
+
+    - Chaque fenêtre est rattachée à un local.
+
+    - Base pour l''acoustique et la planification des locaux.
+
+
+    **Directives de modélisation**
+
+    - Définir IsExternal=FALSE.
+
+    - Exporter le vitrage avec un matériau transparent.
+
+    - Relier chaque fenêtre à un local.'
+  it: 'Garantisce l’apporto di luce naturale tra i locali e fornisce una base verificabile per la progettazione degli spazi e dell’acustica.
+
+
+    **Descrizione**
+
+    - Finestre interne e lucernari tra locali (p. es. luce di second''ordine).
+
+    - Ogni finestra è collegata a un locale.
+
+    - Base per acustica e pianificazione degli spazi.
+
+
+    **Direttive di modellazione**
+
+    - Impostare IsExternal=FALSE.
+
+    - Esportare la parte vetrata con materiale trasparente.
+
+    - Collegare ogni finestra a un locale.'
+  en: 'Ensures daylight transfer between interior spaces and provides a verifiable basis for spatial and acoustic design.
+
+
+    **Description**
+
+    - Interior windows and skylights between rooms (e.g. borrowed light).
+
+    - Each window is assigned to a space.
+
+    - Basis for acoustics and space planning.
+
+
+    **Modelling guidelines**
+
+    - Set IsExternal=FALSE.
+
+    - Export glazing with a transparent material.
+
+    - Relate each window to a space.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcWindow
+entity_ifc4: IfcWindow
+entity_ifc4_3: IfcWindow
+picture_link: architecture-window-interior.png
+picture_print_link: architecture-window-interior-print.tif
+attachment_link: architecture-window-interior.ifc
+model_link: architecture-window-interior.ifc
+applicability: (entity_ifc4=IfcWindow AND IsExternal=FALSE) OR (entity_ifc2x3=IfcWindow AND IsExternal=FALSE)
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Fensternummer gemäss Bürostandard.
+    fr: Numéro de fenêtre selon le standard du bureau.
+    it: Numero finestra secondo lo standard dello studio.
+    en: Window number according to the office standard.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-window-tender-basis
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/qas-contractor-design-verification
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/opr-building-performance-optimization
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art des Fensters.
+
+
+      **Zulässige Werte**
+
+      - `WINDOW` — Fenster
+
+      - `SKYLIGHT` — Oberlicht
+
+      - `LIGHTDOME` — Lichtkuppel'
+    fr: 'Type de fenêtre.
+
+
+      **Valeurs admises**
+
+      - `WINDOW` — fenêtre
+
+      - `SKYLIGHT` — lanterneau
+
+      - `LIGHTDOME` — coupole vitrée'
+    it: 'Tipo di finestra.
+
+
+      **Valori ammessi**
+
+      - `WINDOW` — finestra
+
+      - `SKYLIGHT` — lucernario
+
+      - `LIGHTDOME` — cupola luminosa'
+    en: 'Kind of window.
+
+
+      **Allowed values**
+
+      - `WINDOW` — window
+
+      - `SKYLIGHT` — skylight
+
+      - `LIGHTDOME` — light dome'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-window
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-window-tender-basis
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/qas-project-benchmark
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/des-drawing-derivation
+  - pragmaticbim:workflow/bes-timber-contractor-procurement
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: OverallWidth
+  pset: null
+  definition:
+    de: Lichte Breite der Fensteröffnung.
+    fr: Largeur nette de l'ouverture de fenêtre.
+    it: Larghezza netta dell'apertura della finestra.
+    en: Clear width of the window opening.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-window-tender-basis
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/qas-contractor-design-verification
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: OverallHeight
+  pset: null
+  definition:
+    de: Lichte Höhe der Fensteröffnung.
+    fr: Hauteur nette de l'ouverture de fenêtre.
+    it: Altezza netta dell'apertura della finestra.
+    en: Clear height of the window opening.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-window-tender-basis
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/qas-contractor-design-verification
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: IsExternal
+  pset: Pset_WindowCommon
+  definition:
+    de: 'Kennzeichnet ein Innenfenster.
+
+
+      **Zulässige Werte**
+
+      - `FALSE` — Innenfenster'
+    fr: 'Identifie une fenêtre intérieure.
+
+
+      **Valeurs admises**
+
+      - `FALSE` — fenêtre intérieure'
+    it: 'Identifica una finestra interna.
+
+
+      **Valori ammessi**
+
+      - `FALSE` — finestra interna'
+    en: 'Marks an interior window.
+
+
+      **Allowed values**
+
+      - `FALSE` — interior window'
+  datatype: IfcBoolean
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-window-tender-basis
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: true
+  status: active
+  sort_order: 5
+  allowed_values: pragmaticbim:value/boolean-false
+- name: Status
+  pset: Pset_WindowCommon
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo'
+    en: 'Component status for coordinating work in existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new build
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — demolition
+
+      - `TEMPORARY` — temporary'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-circularity
+  - pragmaticbim:workflow/qas-hazmat-check
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: FireRating
+  pset: Pset_WindowCommon
+  definition:
+    de: 'Feuerwiderstandsklasse des nichttragenden Fensters gemäss Brandschutzkonzept – Raumabschluss und Wärmedämmung (EI), ohne Tragfähigkeit.
+
+
+      **Zulässige Werte**
+
+      - `EI 30` — Raumabschluss und Wärmedämmung 30 min
+
+      - `EI 60` — Raumabschluss und Wärmedämmung 60 min
+
+      - `EI 90` — Raumabschluss und Wärmedämmung 90 min'
+    fr: 'Classe de résistance au feu de la fenêtre non porteuse selon le concept de protection incendie – étanchéité au feu et isolation thermique (EI), sans stabilité.
+
+
+      **Valeurs admises**
+
+      - `EI 30` — étanchéité au feu et isolation thermique 30 min
+
+      - `EI 60` — étanchéité au feu et isolation thermique 60 min
+
+      - `EI 90` — étanchéité au feu et isolation thermique 90 min'
+    it: 'Classe di resistenza al fuoco della finestra non portante secondo il concetto antincendio – tenuta al fuoco e isolamento termico (EI), senza capacità portante.
+
+
+      **Valori ammessi**
+
+      - `EI 30` — tenuta al fuoco e isolamento termico 30 min
+
+      - `EI 60` — tenuta al fuoco e isolamento termico 60 min
+
+      - `EI 90` — tenuta al fuoco e isolamento termico 90 min'
+    en: 'Fire resistance class of the non-load-bearing window according to the fire protection concept – integrity and insulation (EI), without load-bearing capacity.
+
+
+      **Allowed values**
+
+      - `EI 30` — integrity and insulation 30 min
+
+      - `EI 60` — integrity and insulation 60 min
+
+      - `EI 90` — integrity and insulation 90 min'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/fire-rating-ei
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/bes-window-tender-basis
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: AcousticRating
+  pset: Pset_WindowCommon
+  definition:
+    de: Bewertetes Schalldämm-Mass Rw [dB] als Labor-/Katalogwert – nicht R'w.
+    fr: Indice d'affaiblissement acoustique pondéré Rw [dB] comme valeur de laboratoire/catalogue – pas R'w.
+    it: Potere fonoisolante ponderato Rw [dB] come valore di laboratorio/catalogo – non R'w.
+    en: Weighted sound reduction index Rw [dB] as laboratory/catalogue value – not R'w.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/bes-window-tender-basis
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Component status for coordinating work in existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new build
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — demolition
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-circularity
+  - pragmaticbim:workflow/qas-hazmat-check
+  is_applicability: false
+  status: active
+  sort_order: 9
+- name: CostInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
+
+
+      **Zulässige Werte**
+
+      - `GAB` — Grundausbau (Bauherr / Vermieter)
+
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
+    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
+
+
+      **Valeurs admises**
+
+      - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
+
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
+    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
+
+
+      **Valori ammessi**
+
+      - `GAB` — allestimento di base (committente / locatore)
+
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
+    en: 'Cost interface of the component – base building or tenant fit-out.
+
+
+      **Allowed values**
+
+      - `GAB` — base building (client / landlord)
+
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  is_applicability: false
+  status: active
+  sort_order: 10
+- name: FundingApplication
+  pset: ePset_Cost
+  definition:
+    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
+      demande.
+    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
+      to no application.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-funding-verification
+  is_applicability: false
+  status: active
+  sort_order: 11
+- name: AwardInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
+    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
+    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
+
+
+      **Valori ammessi**
+
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
+    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
+
+
+      **Allowed values**
+
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-award-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-award-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 12
+- name: PlanningInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
+    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
+
+
+      **Allowed values**
+
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-planning-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-planning-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 13
+- name: eBKP
+  pset: ePset_Cost
+  definition:
+    de: 'eBKP-H-Klassifizierung nach SN 506 511.
+
+
+      **Zulässige Werte**
+
+      - `E03.01` — Aussenfenster
+
+      - `G01.04` — Innenfenster'
+    fr: 'Classification eBKP-H selon SN 506 511.
+
+
+      **Valeurs admises**
+
+      - `E03.01` — fenêtre extérieure
+
+      - `G01.04` — fenêtre intérieure'
+    it: 'Classificazione eBKP-H secondo SN 506 511.
+
+
+      **Valori ammessi**
+
+      - `E03.01` — finestra esterna
+
+      - `G01.04` — finestra interna'
+    en: 'eBKP-H classification according to SN 506 511.
+
+
+      **Allowed values**
+
+      - `E03.01` — exterior window
+
+      - `G01.04` — interior window'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/ebkp-h-window
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 14
+- name: CalculatedType
+  pset: ePset_Cost
+  definition:
+    de: 'Berechneter Typname für Kosten- und Mengengruppierung. Logik `FensterTypisierung`.
+
+      Beispiel: `Fenster_Innen_B=1.20m_H=1.40m_35`'
+    fr: 'Nom de type calculé pour le regroupement des coûts et des quantités. Logique `FensterTypisierung`.
+
+      Exemple: `Fenster_Innen_B=1.20m_H=1.40m_35`'
+    it: 'Nome di tipo calcolato per il raggruppamento di costi e quantità. Logica `FensterTypisierung`.
+
+      Esempio: `Fenster_Innen_B=1.20m_H=1.40m_35`'
+    en: 'Calculated type name for cost and quantity grouping. Logic `FensterTypisierung`.
+
+      Example: `Fenster_Innen_B=1.20m_H=1.40m_35`'
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  - pragmaticbim:workflow/bes-window-tender-basis
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
+  sort_order: 15
+- name: ProductClass
+  pset: ePset_Cost
+  definition:
+    de: 'Produktklasse für Kosten- und Ausschreibungszuordnung. Die Zuordnung kann manuell erfolgen; für konsistente Ausschreibungsdaten sollte sie regelbasiert automatisiert oder KI-unterstützt aus den
+      Bauteileigenschaften abgeleitet werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste [Produktklasse](https://schema.pragmaticbim.ch/classification/window-connector-product.html).'
+    fr: 'Classe de produit pour le rattachement aux coûts et à l''appel d''offres. L''attribution peut être manuelle ; pour garantir des données d''appel d''offres cohérentes, elle devrait être déduite
+      des propriétés de l''élément par des règles automatisées ou avec l''aide de l''IA.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs [Classe de produit](https://schema.pragmaticbim.ch/classification/window-connector-product.html).'
+    it: 'Classe di prodotto per l''attribuzione a costi e gara. L''attribuzione può essere manuale; per garantire dati di gara coerenti, dovrebbe essere ricavata dalle proprietà del componente mediante
+      regole automatizzate o con il supporto dell''IA.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori [Classe di prodotto](https://schema.pragmaticbim.ch/classification/window-connector-product.html).'
+    en: 'Product class for cost and tender assignment. It may be assigned manually; for consistent tender data, it should preferably be derived from component properties through deterministic automation
+      or AI-assisted mapping.
+
+
+      **Allowed values**
+
+      - See the [Product class](https://schema.pragmaticbim.ch/classification/window-connector-product.html) value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/product-class-window-connector
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
+  sort_order: 16
+- name: UnitPrice
+  pset: ePset_Cost
+  definition:
+    de: Projektspezifischer oder bürospezifischer Einheitspreis je Einheit der Referenzmenge für die Plausibilisierung der Bauteilkosten.
+    fr: Prix unitaire spécifique au projet ou au bureau par unité de la quantité de référence pour le contrôle de plausibilité des coûts de l’élément.
+    it: Prezzo unitario specifico del progetto o dello studio per unità della quantità di riferimento, utilizzato per la verifica di plausibilità dei costi del componente.
+    en: Project- or office-specific unit price per unit of the reference quantity, used to check component costs for plausibility.
+  datatype: IfcMonetaryMeasure
+  unit: CHF/m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  is_applicability: false
+  status: active
+  sort_order: 17
+- name: ReferenceQuantity
+  pset: ePset_Cost
+  definition:
+    de: 'Verbindliche Referenzmenge für den Einheitspreis: `Qto_WindowBaseQuantities.Area`.'
+    fr: 'Quantité de référence faisant foi pour le prix unitaire : `Qto_WindowBaseQuantities.Area`.'
+    it: 'Quantità di riferimento vincolante per il prezzo unitario: `Qto_WindowBaseQuantities.Area`.'
+    en: 'Authoritative reference quantity used with UnitPrice: `Qto_WindowBaseQuantities.Area`.'
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  is_applicability: false
+  status: active
+  sort_order: 18
+- name: Connection
+  pset: ePset_Circularity
+  definition:
+    de: 'Art der Verbindung für die Demontierbarkeit (Madaster).
+
+
+      **Zulässige Werte**
+
+      - `DryConnection` — trockene Verbindung
+
+      - `AddedConnection` — Verbindung mit Zusatzteilen
+
+      - `DirectConnection` — direkte integrale Verbindung
+
+      - `SoftChemicalConnection` — weiche chemische Verbindung
+
+      - `HardChemicalConnection` — harte chemische Verbindung'
+    fr: 'Type de connexion pour la démontabilité (Madaster).
+
+
+      **Valeurs admises**
+
+      - `DryConnection` — connexion sèche
+
+      - `AddedConnection` — connexion avec éléments ajoutés
+
+      - `DirectConnection` — connexion intégrale directe
+
+      - `SoftChemicalConnection` — liaison chimique souple
+
+      - `HardChemicalConnection` — liaison chimique dure'
+    it: 'Tipo di connessione per la smontabilità (Madaster).
+
+
+      **Valori ammessi**
+
+      - `DryConnection` — connessione a secco
+
+      - `AddedConnection` — connessione con elementi aggiunti
+
+      - `DirectConnection` — connessione integrale diretta
+
+      - `SoftChemicalConnection` — connessione chimica morbida
+
+      - `HardChemicalConnection` — connessione chimica dura'
+    en: 'Connection type for detachability (Madaster).
+
+
+      **Allowed values**
+
+      - `DryConnection` — dry connection
+
+      - `AddedConnection` — connection using added parts
+
+      - `DirectConnection` — direct integral connection
+
+      - `SoftChemicalConnection` — soft chemical connection
+
+      - `HardChemicalConnection` — hard chemical connection'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/detachability-connection-type
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 19
+- name: Accessibility
+  pset: ePset_Circularity
+  definition:
+    de: 'Zugänglichkeit der Verbindung ohne Zerstörung von Bauteil oder Umgebung (Madaster).
+
+
+      **Zulässige Werte**
+
+      - `Accessible` — frei zugänglich ohne Zusatzmassnahmen
+
+      - `PartialNoDamage` — zugänglich mit Massnahmen ohne Schaden
+
+      - `PartialWithRepairableDamage` — zugänglich mit vollständig reparierbarem Schaden
+
+      - `PartialWithDamage` — zugänglich mit teilweise reparierbarem Schaden
+
+      - `NotAccessible` — nicht zugänglich, irreparabler Schaden'
+    fr: 'Accessibilité de la connexion sans destruction de l''élément ou de l''entourage (Madaster).
+
+
+      **Valeurs admises**
+
+      - `Accessible` — librement accessible sans actions supplémentaires
+
+      - `PartialNoDamage` — accessible avec actions sans dommage
+
+      - `PartialWithRepairableDamage` — accessible avec dommage entièrement réparable
+
+      - `PartialWithDamage` — accessible avec dommage partiellement réparable
+
+      - `NotAccessible` — non accessible, dommage irréparable'
+    it: 'Accessibilità della connessione senza distruggere il componente o l''intorno (Madaster).
+
+
+      **Valori ammessi**
+
+      - `Accessible` — liberamente accessibile senza azioni aggiuntive
+
+      - `PartialNoDamage` — accessibile con azioni senza danno
+
+      - `PartialWithRepairableDamage` — accessibile con danno interamente riparabile
+
+      - `PartialWithDamage` — accessibile con danno parzialmente riparabile
+
+      - `NotAccessible` — non accessibile, danno irreparabile'
+    en: 'Accessibility of the connection without destroying the component or surroundings (Madaster).
+
+
+      **Allowed values**
+
+      - `Accessible` — freely accessible without additional actions
+
+      - `PartialNoDamage` — accessible with actions that cause no damage
+
+      - `PartialWithRepairableDamage` — accessible with fully repairable damage
+
+      - `PartialWithDamage` — accessible with partially repairable damage
+
+      - `NotAccessible` — not accessible; irreparable damage'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/detachability-accessibility
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 20
+- name: Reuse
+  pset: ePset_Circularity
+  definition:
+    de: Anteil bereits wiederverwendeten oder recycelten Materials am Bauteil (0.01–1.00, z. B. 0.80 = 80 %).
+    fr: Part de matériau déjà réemployé ou recyclé dans l'élément (0.01–1.00, p. ex. 0.80 = 80 %).
+    it: Quota di materiale già riusato o riciclato nel componente (0.01–1.00, es. 0.80 = 80 %).
+    en: Share of already reused or recycled material in the component (0.01–1.00, e.g. 0.80 = 80 %).
+  datatype: IfcReal
+  needed_in_phases:
+  - '11'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 21
+- name: MaterialOrProductId
+  pset: ePset_Circularity
+  definition:
+    de: Eindeutige ID des Materials oder Produkts in der verknüpften Datenbank (z. B. Madaster, baubook).
+    fr: Identifiant univoque du matériau ou du produit dans la base liée (p. ex. Madaster, baubook).
+    it: ID univoco del materiale o prodotto nella banca dati collegata (es. Madaster, baubook).
+    en: Unique ID of the material or product in the linked database (e.g. Madaster, baubook).
+  datatype: IfcText
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 22
+- name: WasteCodes
+  pset: ePset_Circularity
+  definition:
+    de: Abfallcodes für Rückbau und Entsorgung. Code nach VeVA (CH) bzw. EAK/AVV (EU); Format gemäss Madaster, z. B. `17 01:0.25:Inert:60:60;`.
+    fr: Codes déchets pour déconstruction et élimination. Code selon VeVA (CH) ou CED/AVV (EU) ; format Madaster, p. ex. `17 01:0.25:Inert:60:60;`.
+    it: Codici rifiuti per smantellamento e smaltimento. Codice secondo VeVA (CH) o CER/AVV (EU); formato Madaster, es. `17 01:0.25:Inert:60:60;`.
+    en: Waste codes for deconstruction and disposal. Code to VeVA (CH) or EWC/AVV (EU); format as used by Madaster, e.g. `17 01:0.25:Inert:60:60;`.
+  datatype: IfcText
+  needed_in_phases:
+  - '11'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/des-circularity
+  is_applicability: false
+  status: active
+  sort_order: 23
+- name: GlobalTradeItemNumber
+  pset: Pset_ManufacturerTypeInformation
+  definition:
+    de: GTIN (Global Trade Item Number) des Produkttyps; je nach GS1-Struktur 8, 12, 13 oder 14 Stellen.
+    fr: GTIN (Global Trade Item Number) du type de produit ; selon la structure GS1, 8, 12, 13 ou 14 chiffres.
+    it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
+    en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-circularity
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 24
+- name: HazardType
+  pset: ePset_HazardousMaterial
+  definition:
+    de: 'Schadstoffart gemäss Gutachten am betroffenen Bestandsbauteil.
+
+
+      **Zulässige Werte**
+
+      - `Asbestos` — Asbest
+
+      - `PCB` — PCB
+
+      - `PAH` — PAK
+
+      - `PCP` — PCP
+
+      - `Lead` — Blei
+
+      - `None` — kein Schadstoff
+
+      - `Unknown` — unbekannt / nicht untersucht'
+    fr: 'Type de polluant selon l''expertise sur l''élément existant concerné.
+
+
+      **Valeurs admises**
+
+      - `Asbestos` — amiante
+
+      - `PCB` — PCB
+
+      - `PAH` — HAP
+
+      - `PCP` — PCP
+
+      - `Lead` — plomb
+
+      - `None` — aucun polluant
+
+      - `Unknown` — inconnu / non investigué'
+    it: 'Tipo di inquinante secondo la perizia sul componente esistente interessato.
+
+
+      **Valori ammessi**
+
+      - `Asbestos` — amianto
+
+      - `PCB` — PCB
+
+      - `PAH` — IPA
+
+      - `PCP` — PCP
+
+      - `Lead` — piombo
+
+      - `None` — nessun inquinante
+
+      - `Unknown` — sconosciuto / non indagato'
+    en: 'Type of hazardous material found by survey on the affected existing component.
+
+
+      **Allowed values**
+
+      - `Asbestos` — asbestos
+
+      - `PCB` — PCB
+
+      - `PAH` — PAH
+
+      - `PCP` — PCP
+
+      - `Lead` — lead
+
+      - `None` — no hazardous material
+
+      - `Unknown` — unknown / not investigated'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/hazard-type
+  needed_in_phases:
+  - '11'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/qas-hazmat-check
+  is_applicability: false
+  status: active
+  sort_order: 25
+- name: RemovalCategory
+  pset: ePset_HazardousMaterial
+  definition:
+    de: 'Sanierungsdringlichkeit / Handlungsbedarf gemäss Gutachten.
+
+
+      **Zulässige Werte**
+
+      - `Immediate` — sofortige Sanierung nötig
+
+      - `PriorToDemolition` — Sanierung vor Abbruch/Umbau
+
+      - `InSitu` — kann im Bestand verbleiben, Überwachung
+
+      - `None` — kein Handlungsbedarf'
+    fr: 'Urgence d''assainissement / besoin d''action selon l''expertise.
+
+
+      **Valeurs admises**
+
+      - `Immediate` — assainissement immédiat nécessaire
+
+      - `PriorToDemolition` — assainissement avant démolition/transformation
+
+      - `InSitu` — peut rester en place, surveillance
+
+      - `None` — aucune action requise'
+    it: 'Urgenza di bonifica / necessità di intervento secondo la perizia.
+
+
+      **Valori ammessi**
+
+      - `Immediate` — bonifica immediata necessaria
+
+      - `PriorToDemolition` — bonifica prima di demolizione/trasformazione
+
+      - `InSitu` — può restare in opera, sorveglianza
+
+      - `None` — nessun intervento richiesto'
+    en: 'Remediation urgency and action required, as determined by the survey.
+
+
+      **Allowed values**
+
+      - `Immediate` — remediate immediately
+
+      - `PriorToDemolition` — remediate before demolition or alteration
+
+      - `InSitu` — may remain in place, under monitoring
+
+      - `None` — no action required'
+  datatype: IfcText
+  allowed_values: pragmaticbim:value/removal-category
+  needed_in_phases:
+  - '11'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/qas-hazmat-check
+  is_applicability: false
+  status: active
+  sort_order: 26
+- name: SerialNumber
+  pset: Pset_ManufacturerOccurrence
+  definition:
+    de: Vom Hersteller vergebene Seriennummer eines einzelnen Produkts; zusammen mit der GTIN Schlüssel für den objektspezifischen Produktpass.
+    fr: Numéro de série attribué par le fabricant à un produit individuel ; avec le GTIN, clé du passeport produit propre à l’objet.
+    it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
+    en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 27
+- name: Area
+  pset: Qto_WindowBaseQuantities
+  definition:
+    de: Fläche der Fensteröffnung.
+    fr: Surface de l’ouverture de fenêtre.
+    it: Superficie dell’apertura della finestra.
+    en: Area of the window opening.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/des-circularity
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  is_applicability: false
+  status: active
+  sort_order: 28

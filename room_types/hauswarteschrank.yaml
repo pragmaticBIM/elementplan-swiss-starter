@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/hauswarteschrank
+code: RT-WH-19
+sort_order: 19
+name:
+  de: Hauswarteschrank
+  fr: Placard de conciergerie
+  it: Armadio del custode
+  en: Janitor Closet
+definition:
+  de: Abstellraum der Hauswartung für Reinigung und Unterhalt.
+  fr: Local de conciergerie pour le nettoyage et l'entretien.
+  it: Locale di custodia per pulizia e manutenzione.
+  en: Caretaker storage for cleaning and maintenance.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Hauswarteschrank
+    fr: Placard de conciergerie
+    it: Armadio del custode
+    en: Janitor Closet
+restrictions:
+  min_area: 2
+status: active

@@ -1,16 +1,16 @@
 id: pragmaticbim:document/elevations
 code: ANS
-sort_order: 103
+sort_order: 96
 name:
   de: Ansichten
   fr: Élévations
   it: Prospetti
   en: Elevations
 definition:
-  de: Gebäudeansichten als geometrische und visuelle Planungsgrundlage. Sie dienen als Vollständigkeits-Check gegenüber dem IFC-Modell — Fassade, Öffnungen und Anschlüsse müssen im Plan lesbar sein.
-  fr: Élévations du bâtiment comme base géométrique et visuelle de planification. Elles servent de contrôle de complétude face à la maquette IFC — façade, ouvertures et raccords doivent être lisibles sur le plan.
-  it: Prospetti dell'edificio come base geometrica e visiva di pianificazione. Servono da controllo di completezza rispetto al modello IFC — facciata, aperture e raccordi devono essere leggibili sul disegno.
-  en: Building elevations as the geometric and visual planning basis. They act as a completeness check against the IFC model — facade, openings, and junctions must be readable on the drawing.
+  de: Gebäudeansichten als geometrische und visuelle Planungsgrundlage. Sie dienen als Vollständigkeits-Check gegenüber dem IFC-Modell – Fassade, Öffnungen und Anschlüsse müssen im Plan lesbar sein.
+  fr: Élévations du bâtiment comme base géométrique et visuelle de planification. Elles servent de contrôle de complétude face à la maquette IFC – façade, ouvertures et raccords doivent être lisibles sur le plan.
+  it: Prospetti dell'edificio come base geometrica e visiva di pianificazione. Servono da controllo di completezza rispetto al modello IFC – facciata, aperture e raccordi devono essere leggibili sul disegno.
+  en: Building elevations as the geometric and visual planning basis. They act as a completeness check against the IFC model – facade, openings, and junctions must be readable on the drawing.
 description:
   de: |-
     - Gebäudeansichten aller relevanten Fassaden
@@ -33,16 +33,16 @@ description:
     - Heights and materials readable
     - Dimensions, scale, and title block
 file_name:
-  de: '{Projektnummer}_ARX-ANS_{Freitext}.{ext}'
+  de: '{Projektnummer}_ARC-ANS_{Freitext}.{ext}'
   fr: '{NumeroProjet}_ARC-ANS_{Libre}.{ext}'
   it: '{NumeroProgetto}_ARC-ANS_{Libero}.{ext}'
-  en: '{ProjectNumber}_ARC-ANS_{Free}.{ext}'
+  en: '{ProjectNumber}_ARC-ANS_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/architecture
 scheduled_milestones:
-  - "31:beginning"
-  - "32:beginning"
-  - "33:beginning"
-  - "41:beginning"
-  - "51:beginning"
-  - "52:beginning"
+  - "31:M"
+  - "32:M"
+  - "33:M"
+  - "41:M"
+  - "51:M"
+  - "52:M"

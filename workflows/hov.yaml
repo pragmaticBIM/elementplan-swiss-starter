@@ -7,12 +7,20 @@ name:
   it: Consegna
   en: Handover
 description:
-  de: 'Fertigstellung, Abnahme und Übergabe des Bauwerks und der Dokumentation an Eigentümer oder Betreiber. Beispiele: Inbetriebnahme, FM-Datenlieferung, Betriebs- und Wartungsunterlagen, Gewährleistungsübergabe,
-    Betriebsübernahme.'
-  fr: 'Achèvement, réception et transfert de l''ouvrage et de la documentation au maître d''ouvrage ou exploitant. Exemples: mise en service, livraison de données FM, manuels d''exploitation, réception
-    avec garanties, reprise par l''exploitant.'
-  it: 'Completamento, collaudo e consegna dell''opera e della documentazione al committente o gestore. Esempi: messa in servizio, consegna dati FM, manuali O&M, consegna in garanzia, presa in carico dell''impianto.'
-  en: 'Completion, acceptance, and transfer of the asset and documentation to the owner or operator. Examples: commissioning, FM data delivery, O&M manuals, warranty handover, facility takeover.'
+  de: Bei der Übergabe fehlen der Betriebsorganisation häufig genau die Informationen, die sie für den Gebäudebetrieb benötigt. Sie beginnt zu improvisieren; Dokumentationskisten treffen Monate später ein
+    und bleiben ungenutzt, während Facility Manager das Gebäude nach Erfahrung statt nach dem Betriebskonzept führen. So bleibt der Performance Gap zwischen geplanter und tatsächlicher Nutzung, Behaglichkeit
+    und Energieperformance oft unerkannt. Eine wirksame Übergabe stellt deshalb vor dem Bezug geprüfte, nutzbare Betriebsinformationen bereit und regelt ihre Übernahme in die Prozesse des Betreibers.
+  fr: Lors de la remise, l'organisation d'exploitation ne dispose souvent pas des informations dont elle a précisément besoin pour exploiter le bâtiment. Elle improvise; des cartons de documentation arrivent
+    plusieurs mois plus tard et restent inutilisés, tandis que les responsables FM conduisent le bâtiment selon leur expérience plutôt que selon le concept d'exploitation. L'écart entre l'usage, le confort
+    et la performance énergétique prévus et réels reste ainsi souvent invisible. Une remise efficace fournit donc avant l'emménagement des informations d'exploitation contrôlées et utilisables, et règle
+    leur intégration dans les processus de l'exploitant.
+  it: Al momento della consegna, l'organizzazione responsabile dell'esercizio spesso non dispone proprio delle informazioni necessarie per gestire l'edificio. Inizia quindi a improvvisare; scatole di documentazione
+    arrivano mesi dopo e restano inutilizzate, mentre i responsabili FM conducono l'edificio in base all'esperienza anziché al concetto d'esercizio. Lo scarto tra uso, comfort e prestazione energetica previsti
+    ed effettivi rimane così spesso nascosto. Una consegna efficace mette quindi a disposizione, prima dell'occupazione, informazioni d'esercizio verificate e utilizzabili e ne regola l'integrazione nei
+    processi del gestore.
+  en: At handover, the operations organization often lacks the very information it needs to run the building. It starts improvising; boxes of documentation arrive months later and remain unused, while facility
+    managers operate the building from experience rather than according to the operating concept. The performance gap between planned and actual use, comfort, and energy performance therefore often remains
+    hidden. An effective handover provides checked, usable operational information before occupancy and establishes how it will be adopted into the operator's processes.
 workflow_group: null
 parent_workflow: null
 picture_link: null

@@ -1,0 +1,102 @@
+id: pragmaticbim:project-goal/decision-certainty
+sort_order: 45
+group: ziele
+code: PG-07
+name:
+  de: Entscheidungssicherheit
+  fr: Sécurité décisionnelle
+  it: Sicurezza decisionale
+  en: Decision certainty
+tag:
+  de: Entscheidung
+  fr: Décision
+  it: Decisione
+  en: Decision
+description:
+  de: |-
+    Ziel ist, strategische und gestalterische Entscheide früh, vergleichbar und nachvollziehbar zu treffen. Strukturierte Nutzungs- und Volumengrundlagen, Variantenvergleiche, Visualisierungen und dokumentierte Freigaben zeigen die Folgen eines Entscheids, solange das Projekt noch veränderbar ist. Ohne diese Grundlagen werden Varianten nach Bauchgefühl beurteilt oder Festlegungen erst revidiert, wenn Planung, Vergabe oder Ausführung bereits darauf aufbauen.
+  fr: |-
+    L'objectif est de prendre suffisamment tôt des décisions stratégiques et conceptuelles qui soient comparables et traçables. Des bases structurées concernant l'usage et les volumes, des comparaisons de variantes, des visualisations et des validations documentées montrent les conséquences d'une décision tant que le projet peut encore être adapté. Sans ces bases, les variantes sont appréciées de manière intuitive ou les choix ne sont révisés que lorsque les études, l'adjudication ou l'exécution en dépendent déjà.
+  it: |-
+    L'obiettivo è prendere tempestivamente decisioni strategiche e progettuali confrontabili e tracciabili. Basi strutturate relative all'uso e ai volumi, confronti tra varianti, visualizzazioni e approvazioni documentate mostrano le conseguenze di una decisione finché il progetto può ancora essere modificato. Senza queste basi, le varianti vengono valutate in modo intuitivo oppure le scelte vengono riviste solo quando la progettazione, l'aggiudicazione o l'esecuzione dipendono già da esse.
+  en: |-
+    The aim is to make strategic and design decisions early, comparably, and traceably. Structured use and massing foundations, option comparisons, visualizations, and documented approvals show the consequences of a decision while the project can still be changed. Without these foundations, options are assessed by instinct or decisions are revised only after design, procurement, or construction already depends on them.
+practice:
+  de:
+    title: Vorprojekt fürs Management verständlich gemacht
+    body: |-
+      Das Vorprojekt war sehr detailliert ausgearbeitet. Damit die Bauherrschaft und das Management trotzdem entscheiden konnten, verdichtete das Team die konzeptionellen Themen mit Screenshots und PowerPoint zu einem Foliensatz. Management erhielt damit eine Basis, die es verstand; die Planung gewann dadurch Freigaben und Stabilität, statt im Detail weiterzulaufen, ohne dass die Steuerung mitkam.
+    lesson: Entscheide brauchen eine Sprache, die Steuerung versteht – sonst bleibt Detailplanung ohne Freigabe und ohne Stabilität.
+  en:
+    title: Making the preliminary design legible to management
+    body: |-
+      The preliminary design had been worked out in great detail. So that the client and their management could still decide, the team boiled the conceptual questions down to a slide deck built from screenshots. Management finally had something it could read and act on; the design work gained approvals and stability instead of running further into detail while the people steering the project fell behind.
+    lesson: A decision needs to be put in language the people steering the project understand. Without that, detailed design continues without approval and without stability.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (explizit, nicht kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/decision-low
+  code: ENT-01
+  sort_order: 1
+  name:
+    de: Gering
+    fr: Faible
+    it: Basso
+    en: Low
+  description:
+    de: Nutzungs- und Funktionsannahmen strukturieren, ein verbindliches Raumprogramm bestellen und städtebauliche Volumenvarianten mit Kennzahlen vergleichen.
+    fr: Structurer les hypothèses d'usage et de fonctionnement, commander un programme des locaux contraignant et comparer les variantes volumétriques urbaines au moyen d'indicateurs.
+    it: Strutturare le ipotesi d'uso e funzionali, commissionare un programma degli spazi vincolante e confrontare le varianti volumetriche urbane mediante indicatori.
+    en: Structure use and functional assumptions, commission a binding room programme, and compare urban massing options using key figures.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-functional-brief-test-planning
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  comment: Explicit set at level gering (sort_order 1); not cumulative.
+- id: pragmaticbim:project-goal-level/decision-medium
+  code: ENT-02
+  sort_order: 2
+  name:
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
+  description:
+    de: Layout- und Programmvarianten abgleichen, Nutzer- und Wettbewerbsentscheide vorbereiten sowie Phasenfreigaben mit offenen Punkten und Verantwortlichkeiten dokumentieren.
+    fr: Comparer les variantes d'aménagement et de programme, préparer les décisions des utilisateurs et de concours, et documenter les validations de phase avec les points ouverts et les responsabilités.
+    it: Confrontare le varianti di layout e di programma, preparare le decisioni degli utenti e di concorso e documentare le approvazioni di fase con punti aperti e responsabilità.
+    en: Reconcile layout and programme options, prepare user and competition decisions, and document phase approvals with open points and responsibilities.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/qas-design-review
+  - pragmaticbim:workflow/qas-room-program-verification
+  - pragmaticbim:workflow/qas-special-room-user-coordination
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  comment: Explicit set at level mittel (sort_order 2); not cumulative.
+- id: pragmaticbim:project-goal-level/decision-high
+  code: ENT-03
+  sort_order: 3
+  name:
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
+  description:
+    de: Varianten mit Referenzprojekten, Simulationen und Visualisierungen absichern sowie städtebauliche Wirkung, Nutzungsvereinbarungen und Planungsschnittstellen als Entscheidungsgrundlage darstellen.
+    fr: Étayer les variantes par des projets de référence, des simulations et des visualisations, et représenter l'effet urbanistique, les conventions d'utilisation et les interfaces d'étude comme bases de décision.
+    it: Verificare le varianti mediante progetti di riferimento, simulazioni e visualizzazioni e rappresentare l'impatto urbanistico, gli accordi d'uso e le interfacce di progettazione come basi decisionali.
+    en: Support options with reference projects, simulations, and visualizations, and present urban impact, usage agreements, and design interfaces as decision-making foundations.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-project-benchmark
+  - pragmaticbim:workflow/qas-urban-ar-assessment
+  - pragmaticbim:workflow/qas-decision-impact-visualization
+  - pragmaticbim:workflow/des-model-based-visualization
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/des-mep-usage-agreement-visualization
+  - pragmaticbim:workflow/qas-usage-agreement-verification
+  - pragmaticbim:workflow/des-planning-interface-visualization
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  comment: Explicit set at level hoch (sort_order 3); not cumulative.

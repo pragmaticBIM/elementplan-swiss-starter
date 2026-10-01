@@ -1,0 +1,141 @@
+id: pragmaticbim:workflow/qas-fall-protection-verification
+code: QAS-FALL-PROTECTION
+sort_order: 90
+name:
+  de: Absturzsicherungen beurteilen
+  fr: Évaluer les protections contre les chutes
+  it: Valutare le protezioni anticaduta
+  en: Assess fall protection
+description:
+  de: 'Absturzsicherungen sind sicherheitskritische Bauteile und verlangen besondere Sorgfalt in Planung und Koordination. Lage, Höhe, Anschlüsse und durchgängige Abdeckung sind deshalb frühzeitig räumlich
+    zu beurteilen.
+
+
+    **Ausgangslage**
+
+    - Ein geeignetes Unternehmermodell steht für die Prüfung häufig nicht zur Verfügung.
+
+    - In komplexen Situationen reichen isolierte Montagepläne für eine zuverlässige Beurteilung oft nicht aus. Werden fehlende, falsch positionierte oder ungenügende Absturzsicherungen erst während der
+    Ausführung erkannt, wird auf der Baustelle häufig unter Zeitdruck improvisiert – mit unmittelbaren Risiken für Sicherheit und Qualität.
+
+
+    **Ziel & Nutzen**
+
+    - Absturzkanten und vorgesehene Sicherungen im Architekturmodell gemeinsam räumlich beurteilen.
+
+    - Fehlende oder widersprüchliche Positionen früh erkennen und Entscheide im Designreview nachvollziehbar dokumentieren.
+
+
+    **Ablauf**
+
+    1. Unternehmermodell bereitstellen oder Position, Länge und Höhe der Absturzsicherungen aus den Montageplänen als vereinfachte Geländer in das Architekturmodell übernehmen.
+
+    2. Lage, durchgängige Abdeckung und Höhe gegen die massgebenden Pläne und projektspezifischen Anforderungen beurteilen.
+
+    3. Abweichungen, Entscheide und erforderliche Anpassungen im Designreview protokollieren und nachverfolgen.
+
+
+    **Lieferergebnis**
+
+    - Beurteiltes Modell der Absturzsicherungen mit dokumentierten Abweichungen, Entscheiden und offenen Massnahmen.'
+  fr: 'Les protections contre les chutes sont des éléments critiques pour la sécurité et exigent une attention particulière lors de la planification et de la coordination. Leur emplacement, leur hauteur,
+    leurs raccords et la continuité de la protection doivent donc être évalués suffisamment tôt dans leur contexte spatial.
+
+
+    **Situation de départ**
+
+    - Une maquette appropriée de l''entrepreneur n''est souvent pas disponible pour le contrôle.
+
+    - Dans les situations complexes, des plans de montage isolés ne suffisent souvent pas à une évaluation fiable. Si des protections manquantes, mal placées ou insuffisantes ne sont détectées que pendant
+    l''exécution, des solutions sont souvent improvisées sur le chantier sous la pression des délais – avec des risques immédiats pour la sécurité et la qualité.
+
+
+    **Objectif et bénéfice**
+
+    - Évaluer en commun, dans la maquette d''architecture, les bords présentant un risque de chute et les protections prévues.
+
+    - Détecter rapidement les positions manquantes ou contradictoires et documenter les décisions de manière traçable lors de la revue de conception.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette de l''entrepreneur ou reprendre depuis les plans de montage l''emplacement, la longueur et la hauteur des protections sous forme de garde-corps simplifiés dans la maquette d''architecture.
+
+    2. Évaluer l''emplacement, la continuité de la protection et la hauteur par rapport aux plans déterminants et aux exigences propres au projet.
+
+    3. Consigner et suivre les écarts, les décisions et les adaptations nécessaires lors de la revue de conception.
+
+
+    **Livrable**
+
+    - Maquette évaluée des protections contre les chutes avec écarts, décisions et mesures ouvertes documentés.'
+  it: 'Le protezioni anticaduta sono elementi critici per la sicurezza e richiedono particolare cura nella progettazione e nel coordinamento. Posizione, altezza, raccordi e continuità della protezione devono
+    quindi essere valutati tempestivamente nel loro contesto spaziale.
+
+
+    **Situazione di partenza**
+
+    - Spesso non è disponibile un modello adeguato dell''impresa per la verifica.
+
+    - Nelle situazioni complesse, i soli piani di montaggio spesso non consentono una valutazione affidabile. Se protezioni mancanti, posizionate in modo errato o insufficienti vengono individuate solo
+    durante l''esecuzione, in cantiere si ricorre spesso a soluzioni improvvisate sotto pressione – con rischi immediati per la sicurezza e la qualità.
+
+
+    **Obiettivo e beneficio**
+
+    - Valutare congiuntamente nel modello di architettura i bordi con rischio di caduta e le protezioni previste.
+
+    - Individuare tempestivamente posizioni mancanti o contraddittorie e documentare le decisioni in modo tracciabile nel design review.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello dell''impresa oppure riprendere dai piani di montaggio posizione, lunghezza e altezza delle protezioni come parapetti semplificati nel modello di architettura.
+
+    2. Valutare la posizione, la continuità della protezione e l''altezza rispetto ai piani determinanti e ai requisiti specifici del progetto.
+
+    3. Registrare e monitorare gli scostamenti, le decisioni e gli adeguamenti necessari nel design review.
+
+
+    **Risultato della fornitura**
+
+    - Modello valutato delle protezioni anticaduta con scostamenti, decisioni e misure aperte documentati.'
+  en: 'Fall-protection systems are safety-critical components and require particular care in planning and coordination. Their location, height, connections, and continuous coverage must therefore be assessed
+    spatially at an early stage.
+
+
+    **Starting point**
+
+    - A suitable contractor model is often unavailable for verification.
+
+    - In complex situations, isolated installation drawings are often insufficient for a reliable assessment. If missing, misplaced, or inadequate fall protection is identified only during construction,
+    solutions are often improvised on site under time pressure – with immediate risks to safety and quality.
+
+
+    **Goal & benefit**
+
+    - Jointly assess fall edges and proposed protection spatially in the architecture model.
+
+    - Identify missing or contradictory positions early and document design-review decisions traceably.
+
+
+    **Process**
+
+    1. Provide the contractor model or transfer the location, length, and height of fall protection from installation drawings into the architecture model as simplified railings.
+
+    2. Assess location, continuous coverage, and height against the governing drawings and project-specific requirements.
+
+    3. Record and track deviations, decisions, and required adjustments in the design review.
+
+
+    **Deliverable**
+
+    - Assessed fall-protection model with documented deviations, decisions, and outstanding actions.'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Discipline assessment within the design-review process; a simplified architecture-model representation replaces the contractor model when none is available.

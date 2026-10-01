@@ -7,10 +7,19 @@ name:
   it: Esercizio
   en: Operation
 description:
-  de: 'Nutzung, Unterhalt und laufendes Management des Bauwerks während der Betriebsphase. Beispiele: Unterhaltspläne, Energiemonitoring, Flächenmanagement, laufende CAFM-Nutzung.'
+  de: 'In den wenigsten Fällen braucht der Betrieb ein 3D-Modell. Ein Datenmodell braucht er sehr wohl. Meistens geht es nur darum, die passende Information aus dem BIM zu extrahieren, damit sie im Betrieb
+    weiterverwendet werden kann.
+
+
+    Ausnahme sind komplexe Gebäude wie Labore, Fabriken oder Operationssäle, die häufig umgebaut werden und deren Betreiber eigene Prozesse haben, um solche Umbauten im Modell nachzuführen.'
   fr: 'Utilisation, maintenance et gestion courante de l''ouvrage pendant sa phase d''exploitation. Exemples: plans de maintenance, suivi énergétique, gestion des espaces, usage CAFM courant.'
   it: 'Utilizzo, manutenzione e gestione corrente dell''opera durante la fase di esercizio. Esempi: piani di manutenzione, monitoraggio energetico, gestione spazi, uso CAFM corrente.'
-  en: 'Use, maintenance, and ongoing management of the built asset during its operational life. Examples: maintenance plans, energy monitoring, space management, ongoing CAFM use.'
+  en: 'In very few cases does operation require a 3D model. It certainly requires a data model. Usually, it is simply a matter of extracting the appropriate information from BIM so that it can be reused
+    in operation.
+
+
+    Exceptions are complex buildings such as laboratories, factories, or operating theatres that are frequently altered and whose operators have their own processes for updating the model to reflect those
+    alterations.'
 workflow_group: null
 parent_workflow: null
 picture_link: null

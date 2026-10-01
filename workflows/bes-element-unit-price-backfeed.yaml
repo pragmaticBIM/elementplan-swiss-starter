@@ -1,0 +1,150 @@
+id: pragmaticbim:workflow/bes-element-unit-price-backfeed
+code: BES-UNIT-PRICE
+sort_order: 21
+name:
+  de: Einheitspreise nachkalkulieren und in die Kostendatenbank übernehmen
+  fr: Établir l'après-calcul des prix unitaires et les reprendre dans la base de données des coûts
+  it: Eseguire il consuntivo dei prezzi unitari e riprenderli nella banca dati dei costi
+  en: Post-calculate unit prices and transfer them into the cost database
+description:
+  de: 'Aus Kalkulation und Nachkalkulation belastbare Bauteil-Einheitspreise ableiten und für Folgeprojekte in der Kostendatenbank verfügbar machen.
+
+
+    **Ausgangslage**
+
+    - Büroeigene elementbasierte Einheitspreise fehlen oder sind veraltet; Plausibilisierung und frühe Bauteilkosten greifen dann nur auf Kennwerte mit Geschossflächen-/Geschossvolumen-Bezug zurück. Diese
+    sind gut zur Plausibilisierung, aber nicht für Kostenberechnungen.
+
+    - Klassische NPK-Ausschreibungen fassen Anforderungen über Bauteiltypen hinweg zusammen; bauteilspezifische Kennwerte lassen sich daraus nur mit extremem Aufwand ableiten.
+
+
+    **Ziel & Nutzen**
+
+    - Schnell belastbare Bauteil-EPs je Produktklasse und Typ erzeugen – über die Kalkulation einer Referenzmenge mit NPK-Positionen.
+
+    - Nachkalkulierte oder freigegebene EPs in die Kostendatenbank übernehmen und in anderen Projekten wiederverwenden.
+
+
+    **Ablauf**
+
+    1. Je Produktklasse und relevantem berechnetem Typ eine Referenzmenge (z. B. 1 m², 1 m, 1 Stk gemäss Mengenbezug) mit den zugehörigen NPK-Positionen kalkulieren und daraus den Bauteil-EP ableiten.
+
+    2. Nach Vergabe oder Ausführung Planer-EP, Offer-/Ist-Kosten und abgeleiteten Bauteil-EP je Typ und Produktklasse abgleichen und freigeben.
+
+    3. Freigegebene EPs in die Kostendatenbank (Kennwerttabelle) nach Produktklasse und Typ übernehmen.
+
+
+    **Lieferergebnis**
+
+    - Nachvollziehbarer Bauteil-EP je Produktklasse und Typ (NPK-Referenzeinheit und/oder Nachkalkulation)
+
+    - Aktualisierte Kostendatenbank für Folgeprojekte'
+  fr: 'Obtenir des prix unitaires d''éléments à partir du chiffrage CAN et de l''après-calcul, et les ancrer dans la base du bureau pour les projets suivants.
+
+
+    **Situation de départ**
+
+    - Les prix unitaires d''éléments propres au bureau manquent ou sont obsolètes ; le contrôle de plausibilité et les coûts d''éléments précoces ne s''appuient alors que sur des indicateurs liés aux surfaces/volumes
+    de plancher. Ceux-ci conviennent pour la plausibilité, mais pas pour les calculs de coûts.
+
+    - Les appels d''offres CAN classiques regroupent les exigences par-delà les types d''éléments ; en déduire des indicateurs propres à l''élément demande un effort extrême.
+
+
+    **Objectif et bénéfice**
+
+    - Produire rapidement des prix unitaires d''éléments fiables par classe de produit et type – en chiffrant une quantité de référence avec des positions CAN.
+
+    - Reprendre les prix après-calculés ou approuvés dans la base du bureau et les réutiliser dans d''autres projets.
+
+
+    **Déroulement**
+
+    1. Pour chaque classe de produit et type calculé pertinent, chiffrer une quantité de référence (p. ex. 1 m², 1 m, 1 pce selon la base de quantité) avec les positions CAN correspondantes et en déduire
+    le prix unitaire d''élément.
+
+    2. Après adjudication ou exécution, comparer et approuver prix du planificateur, coûts d''offre/réels et prix d''élément dérivé par type et classe de produit.
+
+    3. Reprendre les prix approuvés dans la base du bureau (tableau d''indicateurs) par classe de produit et type.
+
+
+    **Livrable**
+
+    - Prix unitaire d''élément traçable par classe de produit et type (unité de référence CAN et/ou après-calcul)
+
+    - Base du bureau actualisée pour les projets suivants'
+  it: 'Ottenere prezzi unitari per componente da calcolo CPN e consuntivo e ancorarli nella banca dati dello studio per i progetti successivi.
+
+
+    **Situazione di partenza**
+
+    - I prezzi unitari per elemento dello studio mancano o sono obsoleti; plausibilità e costi precoci dei componenti si basano allora solo su indici riferiti a superfici/volumi di piano. Questi sono adatti
+    alla plausibilità, ma non ai calcoli dei costi.
+
+    - Gli appalti CPN classici raggruppano i requisiti al di là dei tipi di componente; ricavarne indicatori specifici del componente richiede uno sforzo estremo.
+
+
+    **Obiettivo e beneficio**
+
+    - Produrre rapidamente prezzi unitari affidabili per classe di prodotto e tipo – calcolando una quantità di riferimento con posizioni CPN.
+
+    - Trasferire i prezzi consuntivati o approvati nella banca dati dello studio e riutilizzarli in altri progetti.
+
+
+    **Svolgimento**
+
+    1. Per ogni classe di prodotto e tipo calcolato rilevante, calcolare una quantità di riferimento (p. es. 1 m², 1 m, 1 pz secondo la base quantitativa) con le posizioni CPN corrispondenti e ricavarne
+    il prezzo unitario del componente.
+
+    2. Dopo aggiudicazione o esecuzione, confrontare e approvare prezzo del progettista, costi di offerta/effettivi e prezzo ricavato per tipo e classe di prodotto.
+
+    3. Trasferire i prezzi approvati nella banca dati dello studio (tabella indici) per classe di prodotto e tipo.
+
+
+    **Risultato della fornitura**
+
+    - Prezzo unitario per componente tracciabile per classe di prodotto e tipo (unità di riferimento CPN e/o consuntivo)
+
+    - Banca dati dello studio aggiornata per i progetti successivi'
+  en: 'Derive element unit prices from NPK costing and post-calculation, and anchor them in the cost database for follow-on projects.
+
+
+    **Starting point**
+
+    - Office element-based unit prices are missing or outdated; plausibility checks and early component costs then fall back only to floor-area/floor-volume benchmarks. These are suitable for plausibility
+    checks, but not for cost calculations.
+
+    - Classical NPK tenders bundle requirements across component types, so deriving component-specific indicators is extremely laborious.
+
+
+    **Goal & benefit**
+
+    - Quickly produce reliable component EPs per product class and type – by costing one reference quantity with NPK positions.
+
+    - Transfer post-calculated or approved EPs into the cost database and reuse them on other projects.
+
+
+    **Process**
+
+    1. For each product class and relevant calculated type, cost one reference quantity (e.g. 1 m², 1 m, 1 pc per quantity basis) with the matching NPK positions and derive the component EP.
+
+    2. After award or execution, reconcile and approve designer EP, offer/actual costs, and derived component EP per type and product class.
+
+    3. Transfer approved EPs into the cost database (benchmark table) keyed by product class and type.
+
+
+    **Deliverable**
+
+    - Traceable component EP per product class and type (NPK reference unit and/or post-calculation)
+
+    - Updated cost database for follow-on projects'
+workflow_group: nachkalkulation
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Produces office Kostendatenbank unit prices consumed by QAS-COST-PLAUS and early Bauteilkosten in BES-PRODUCT-TENDER. Keys: ePset_Cost.ProductClass, ePset_Cost.CalculatedType, ePset_Cost.ReferenceQuantity
+  / price_unit (1 m², 1 m, 1 Stk). NPK line items are the calculation method – not new IFC attributes. Approved EPs live outside IFC; the project model still carries ePset_Cost.UnitPrice. Upstream typing/product
+  mapping: BES-PRODUCT-TENDER. Distinct from QAS-COST-PLAUS (consumes office EPs; does not create them).'

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-building-law-parcel
+code: OBJ-BL-PARCEL
+name:
+  de: ObjectType Baurechtliche Parzelle
+  fr: ObjectType parcelle au sens du droit de la construction
+  it: ObjectType particella edilizia
+  en: ObjectType building-law parcel
+description:
+  de: ObjectType für IfcBuildingElementProxy als baurechtliche Parzelle zur Visualisierung der betroffenen Katasterparzellen.
+  fr: ObjectType pour IfcBuildingElementProxy comme parcelle au sens du droit de la construction pour visualiser les parcelles cadastrales concernées.
+  it: ObjectType per IfcBuildingElementProxy come particella edilizia per visualizzare le particelle catastali interessate.
+  en: ObjectType for IfcBuildingElementProxy as a building-law parcel, to visualize the affected cadastral parcels.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Baurechtliche Parzelle
+  fr:
+  - Parcelle au sens du droit de la construction
+  it:
+  - Particella edilizia
+  en:
+  - Building-law parcel

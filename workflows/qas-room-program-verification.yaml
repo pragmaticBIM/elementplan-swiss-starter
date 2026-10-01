@@ -1,0 +1,161 @@
+id: pragmaticbim:workflow/qas-room-program-verification
+code: QAS-ROOM-PROGRAM
+sort_order: 86
+name:
+  de: Raumprogramm mit dem Modell abgleichen
+  fr: Confronter le programme des locaux à la maquette
+  it: Confrontare il programma dei locali con il modello
+  en: Reconcile the room programme with the model
+description:
+  de: 'Bestelltes Raumprogramm laufend mit dem Modell abgleichen, damit jederzeit nachvollziehbar ist, ob die Raumbestellung erfüllt ist.
+
+
+    **Ausgangslage**
+
+    - Im Wettbewerb ist das Raumprogramm massgebend; sobald die Projektierung beginnt, ändern sich Flächen oft unbemerkt.
+
+    - Weil die Änderungen im Projektteam entstehen, bleiben Abweichungen für den Besteller leicht unsichtbar.
+
+    - Besteller bestellen Räume in einer bestimmten Qualität und brauchen Transparenz über den Erfüllungsgrad.
+
+
+    **Ziel & Nutzen**
+
+    - Immer wissen, ob die bestellten Räume (Nummer, Name, ggf. weitere Vorgaben) im Projekt noch erfüllt sind.
+
+    - Bei Bedarf Massnahmen ergreifen, um die bestellten Räume im Projekt noch zu bekommen.
+
+    **Ablauf**
+
+    1. Raumprogrammliste der Bestellung bereitstellen und in das fortgeschriebene Raumbuch übernehmen. Die technische Raumnummer dient als projektweit eindeutige, stabile ID; Raumtyp-Vorgaben und begründete
+    Instanzabweichungen werden im Raumbuch getrennt geführt.
+
+    2. Raumnummer und Raumname im Modell führen.
+
+    3. Abgleich zwischen Modell und Bestellung mit der Software der Wahl durchführen und Abweichungen dokumentieren.
+
+
+    **Lieferergebnis**
+
+    - Raumprogrammliste der Bestellung und fortgeschriebenes Raumbuch mit stabilen technischen Raumnummern, Typzuordnungen und dokumentierten Abweichungen
+
+    - Architekturmodell mit geführter Raumnummer und Raumnamen
+
+    - Dokumentierter Abgleich zwischen Bestellung und Modell'
+  fr: 'Mettre en concordance en continu le programme des locaux commandé et la maquette – pour qu''il soit toujours possible de vérifier si la commande de locaux est remplie.
+
+
+    **Situation de départ**
+
+    - En concours, le programme des locaux fait foi ; dès que l''étude commence, les surfaces changent souvent – parfois nettement.
+
+    - Comme les modifications naissent dans l''équipe de projet, les écarts restent facilement invisibles pour le maître d''ouvrage.
+
+    - Le maître d''ouvrage commande des locaux d''une qualité définie et a besoin de transparence sur le degré de réalisation.
+
+
+    **Objectif et bénéfice**
+
+    - Savoir en permanence si les locaux commandés (numéro, nom, éventuellement d''autres exigences) sont encore remplis dans la maquette.
+
+    - Rendre les écarts entre liste de programme et maquette visibles tôt et de façon traçable – base pour le carnet des locaux et les validations.
+
+
+    **Déroulement**
+
+    1. Mettre à disposition la liste du programme des locaux commandé et la reprendre dans le carnet des locaux tenu à jour. Le numéro technique sert d''identifiant univoque et stable pour l''ensemble du
+    projet ; les prescriptions du type et les écarts justifiés propres au local y sont gérés séparément.
+
+    2. Saisir numéro et nom de local dans la maquette.
+
+    3. Effectuer la concordance entre maquette et commande avec le logiciel de son choix et documenter les écarts.
+
+
+    **Livrable**
+
+    - Liste du programme des locaux commandé et carnet des locaux tenu à jour avec numéros techniques stables, attribution des types et écarts documentés
+
+    - Maquette d''architecture avec numéro et nom de local tenus à jour
+
+    - Concordance documentée entre commande et maquette'
+  it: 'Confrontare in continuo il programma dei locali ordinato con il modello – così è sempre verificabile se l''ordine dei locali è soddisfatto.
+
+
+    **Situazione di partenza**
+
+    - In concorso il programma dei locali è vincolante; non appena inizia la progettazione, le superfici cambiano spesso – a volte in modo netto.
+
+    - Poiché le modifiche nascono nel team di progetto, gli scostamenti restano facilmente invisibili per il committente.
+
+    - Il committente ordina locali di una qualità definita e necessita di trasparenza sul grado di adempimento.
+
+
+    **Obiettivo e beneficio**
+
+    - Sapere in ogni momento se i locali ordinati (numero, nome, eventualmente altri requisiti) sono ancora soddisfatti nel modello.
+
+    - Rendere visibili precocemente e in modo tracciabile gli scostamenti tra elenco del programma e modello – base per il registro dei locali e le approvazioni.
+
+
+    **Svolgimento**
+
+    1. Mettere a disposizione l''elenco del programma dei locali ordinato e riprenderlo nel registro dei locali aggiornato. Il numero tecnico funge da ID univoco e stabile per l''intero progetto; le prescrizioni
+    del tipo e gli scostamenti motivati del singolo locale vi sono gestiti separatamente.
+
+    2. Gestire numero e nome del locale nel modello.
+
+    3. Eseguire il confronto tra modello e ordine con il software scelto e documentare gli scostamenti.
+
+
+    **Risultato della fornitura**
+
+    - Elenco del programma dei locali ordinato e registro dei locali aggiornato con numeri tecnici stabili, assegnazioni dei tipi e scostamenti documentati
+
+    - Modello di architettura con numero e nome del locale gestiti
+
+    - Confronto documentato tra ordine e modello'
+  en: 'Continuously reconcile the ordered room programme with the model – so it is always clear whether the ordered rooms are still fulfilled.
+
+
+    **Starting point**
+
+    - The room programme is decisive in the competition; once design begins, areas often change unnoticed.
+
+    - Because changes arise within the project team, deviations easily stay invisible to the client.
+
+    - Clients order rooms of a defined quality and need to see how far that order is being met.
+
+
+    **Goal & benefit**
+
+    - Always know whether the ordered rooms (number, name, and any further requirements) are still fulfilled in the model.
+
+    - Take action where necessary to ensure that the ordered rooms are still delivered in the project.
+
+
+    **Process**
+
+    1. Provide the ordered room-programme list and carry it into the continuously maintained room book. The technical room number serves as the project-wide unique and stable ID; room-type requirements
+    and justified instance deviations are kept separately in the room book.
+
+    2. Maintain room number and room name in the model.
+
+    3. Reconcile model and order with the software of choice and document deviations.
+
+
+    **Deliverable**
+
+    - Ordered room-programme list and continuously maintained room book with stable technical room numbers, type assignments, and documented deviations
+
+    - Architecture model with maintained room number and room name
+
+    - Documented reconciliation between order and model'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Match the ordered room-programme list and room book to interior spaces via Name (stable technical room number / project ID) and LongName (standardized room use). Room-type assignments, requirements,
+  and instance deviations remain in the room book; comparison tool is free choice.

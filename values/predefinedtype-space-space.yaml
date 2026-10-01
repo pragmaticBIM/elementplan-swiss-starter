@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-space-space
+code: SPACE-SPACE
+name:
+  de: PredefinedType Raum
+  fr: PredefinedType espace
+  it: PredefinedType spazio
+  en: PredefinedType space
+description:
+  de: IfcSpace PredefinedType für Räume.
+  fr: PredefinedType IfcSpace pour les espaces.
+  it: PredefinedType IfcSpace per gli spazi.
+  en: IfcSpace PredefinedType for spaces.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - SPACE
+  fr:
+  - SPACE
+  it:
+  - SPACE
+  en:
+  - SPACE

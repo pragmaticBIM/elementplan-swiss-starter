@@ -1,0 +1,36 @@
+id: pragmaticbim:value/product-class-beam
+code: PRODUCT-BMP
+name:
+  de: Abstrakte Trägerprodukte
+  fr: Abstract beam products
+  it: Abstract beam products
+  en: Abstract beam products
+description:
+  de: 'Produktklassen gemäss Abstrakte Trägerprodukte. Quelle: https://schema.pragmaticbim.ch/classification/beam-product.html'
+  fr: 'Classes de produits selon Abstract beam products. Source : https://schema.pragmaticbim.ch/classification/beam-product.html'
+  it: 'Classi di prodotto secondo Abstract beam products. Fonte: https://schema.pragmaticbim.ch/classification/beam-product.html'
+  en: 'Product classes according to Abstract beam products. Source: https://schema.pragmaticbim.ch/classification/beam-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Stahlträger
+  - Holzträger
+  - Stahlbetonträger
+  - Anderer oder unbekannter Träger
+  fr:
+  - Steel beam
+  - Timber beam
+  - Reinforced concrete beam
+  - Other or unknown beam
+  it:
+  - Steel beam
+  - Timber beam
+  - Reinforced concrete beam
+  - Other or unknown beam
+  en:
+  - Steel beam
+  - Timber beam
+  - Reinforced concrete beam
+  - Other or unknown beam

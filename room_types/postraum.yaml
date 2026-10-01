@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/postraum
+code: RT-WH-14
+sort_order: 14
+name:
+  de: Postraum
+  fr: Local courrier
+  it: Locale posta
+  en: Mail Room
+definition:
+  de: Raum für die Annahme und Verteilung von Postsendungen.
+  fr: Local pour la réception et la distribution du courrier.
+  it: Locale per la ricezione e la distribuzione della posta.
+  en: Room for receiving and distributing mail.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Postraum
+    fr: Local courrier
+    it: Locale posta
+    en: Mail Room
+restrictions:
+  min_area: 4
+status: active

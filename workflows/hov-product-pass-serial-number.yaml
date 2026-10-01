@@ -1,0 +1,144 @@
+id: pragmaticbim:workflow/hov-product-pass-serial-number
+code: HOV-PRODUCT-PASS-SERIAL
+sort_order: 54
+name:
+  de: Produktpass über Seriennummer verknüpfen
+  fr: Relier le passeport produit via le numéro de série
+  it: Collegare il passaporto di prodotto tramite il numero di serie
+  en: Link the product passport via serial number
+description:
+  de: 'Produktpassinformationen über GTIN (Global Trade Item Number) und Seriennummer einem einzelnen verbauten Produkt zuordnen und dessen individuellen Lebenslauf nachvollziehbar halten.
+
+
+    **Ausgangslage**
+
+    - Eine GTIN unterscheidet keine einzelnen Produkte desselben Typs; objektspezifische Angaben zu Herstellung, Einbau, Wartung oder Wiederverwendung lassen sich damit nicht eindeutig zuordnen.
+
+    - Ohne abgestimmten Schlüssel bleiben Seriennummern in Unternehmerlisten vom Modell getrennt und die Historie eines konkreten Produkts ist nicht verlässlich auffindbar.
+
+
+    **Ziel & Nutzen**
+
+    - GTIN und Seriennummer als gemeinsamen Schlüssel zwischen Modell und separater Produktpassliste verwenden.
+
+    - Objektbezogene Produktpassinformationen in der Unternehmerliste führen und nur bei Bedarf ins Modell übernehmen.
+
+
+    **Ablauf**
+
+    1. Produktpassliste mit GTIN, Seriennummer und den vereinbarten Objektinformationen durch Unternehmer oder Lieferant bereitstellen.
+
+    2. GTIN und Seriennummer den entsprechenden Produkten im Modell zuweisen und den zusammengesetzten Schlüssel auf Vollständigkeit und Eindeutigkeit prüfen.
+
+    3. Objektspezifische Produktpassinformationen über den Schlüssel verknüpfen und bei Bedarf ins Modell einspielen.
+
+
+    **Lieferergebnis**
+
+    - Geprüfte Produktpassliste mit GTIN und Seriennummer als Schlüssel und nachvollziehbarer Zuordnung zu den einzelnen Produkten im Modell.
+
+    - Modell mit den vereinbarten Identifikatoren und objektspezifischen Produktpassinformationen.'
+  fr: 'Attribuer les informations du passeport produit à un produit posé déterminé au moyen du GTIN (Global Trade Item Number) et du numéro de série, afin de retracer son cycle de vie individuel.
+
+
+    **Situation de départ**
+
+    - Un GTIN ne distingue pas les produits individuels d''un même type ; les informations propres à la fabrication, à la pose, à la maintenance ou au réemploi ne peuvent donc pas être attribuées sans ambiguïté.
+
+    - Sans clé convenue, les numéros de série des listes de l''entreprise restent séparés de la maquette et l''historique d''un produit déterminé ne peut pas être retrouvé de manière fiable.
+
+
+    **Objectif et bénéfice**
+
+    - Utiliser le GTIN et le numéro de série comme clé commune entre la maquette et la liste séparée des passeports produits.
+
+    - Tenir les informations propres à chaque objet dans la liste de l''entreprise et ne les reprendre dans la maquette que si nécessaire.
+
+
+    **Déroulement**
+
+    1. Fournir, par l''entreprise ou le fournisseur, la liste des passeports produits avec le GTIN, le numéro de série et les informations convenues pour chaque objet.
+
+    2. Attribuer le GTIN et le numéro de série aux produits correspondants dans la maquette et contrôler que la clé composée est complète et univoque.
+
+    3. Relier les informations propres à chaque objet au moyen de cette clé et les importer dans la maquette si nécessaire.
+
+
+    **Livrable**
+
+    - Liste contrôlée des passeports produits utilisant le GTIN et le numéro de série comme clé, avec attribution traçable aux différents produits dans la maquette.
+
+    - Maquette avec les identifiants convenus et les informations du passeport produit propres à chaque objet.'
+  it: 'Assegnare le informazioni del passaporto di prodotto a un singolo prodotto installato tramite GTIN (Global Trade Item Number) e numero di serie, mantenendone tracciabile il ciclo di vita individuale.
+
+
+    **Situazione di partenza**
+
+    - Un GTIN non distingue i singoli prodotti dello stesso tipo; non consente quindi di assegnare in modo univoco le informazioni specifiche relative a produzione, posa, manutenzione o riuso.
+
+    - Senza una chiave concordata, i numeri di serie negli elenchi dell''impresa restano separati dal modello e lo storico di un prodotto concreto non è reperibile in modo affidabile.
+
+
+    **Obiettivo e beneficio**
+
+    - Utilizzare GTIN e numero di serie come chiave comune tra il modello e l''elenco separato dei passaporti di prodotto.
+
+    - Gestire nell''elenco dell''impresa le informazioni specifiche dell''oggetto e trasferirle nel modello solo se necessario.
+
+
+    **Svolgimento**
+
+    1. Fornire, a cura dell''impresa o del fornitore, l''elenco dei passaporti di prodotto con GTIN, numero di serie e le informazioni concordate per ogni oggetto.
+
+    2. Assegnare GTIN e numero di serie ai prodotti corrispondenti nel modello e verificare che la chiave composta sia completa e univoca.
+
+    3. Collegare tramite la chiave le informazioni specifiche dell''oggetto e importarle nel modello se necessario.
+
+
+    **Risultato della fornitura**
+
+    - Elenco verificato dei passaporti di prodotto con GTIN e numero di serie come chiave e assegnazione tracciabile ai singoli prodotti nel modello.
+
+    - Modello con gli identificatori concordati e le informazioni del passaporto di prodotto specifiche dell''oggetto.'
+  en: 'Assign product-passport information to an individual installed product by GTIN (Global Trade Item Number) and serial number, keeping its individual life cycle traceable.
+
+
+    **Starting point**
+
+    - A GTIN does not distinguish individual products of the same type, so occurrence-specific manufacturing, installation, maintenance, or reuse information cannot be assigned unambiguously.
+
+    - Without an agreed key, serial numbers in contractor lists remain separate from the model and the history of a particular product cannot be found reliably.
+
+
+    **Goal & benefit**
+
+    - Use the GTIN and serial number as the common key between the model and the separate product-passport list.
+
+    - Maintain occurrence-specific product-passport information in the contractor list and transfer it into the model only where needed.
+
+
+    **Process**
+
+    1. Provide the product-passport list with the GTIN, serial number, and agreed occurrence information through the contractor or supplier.
+
+    2. Assign the GTIN and serial number to the corresponding products in the model and check the composite key for completeness and uniqueness.
+
+    3. Link occurrence-specific product-passport information by this key and import it into the model where needed.
+
+
+    **Deliverable**
+
+    - Checked product-passport list using the GTIN and serial number as key, with traceable assignment to individual products in the model.
+
+    - Model containing the agreed identifiers and occurrence-specific product-passport information.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/hov
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+comment: 'Data is specified and collected during SIA 41–53, then checked and delivered in handover phases SIA 53–62. The contractor/supplier list remains authoritative. IFC4+: Pset_ManufacturerTypeInformation.GlobalTradeItemNumber
+  on IfcTypeObject and Pset_ManufacturerOccurrence.SerialNumber on the individual IfcObject occurrence. The composite GTIN + SerialNumber key identifies one manufactured occurrence.'

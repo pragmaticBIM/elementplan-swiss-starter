@@ -1,6 +1,6 @@
 id: pragmaticbim:document/fire-protection-concept
 code: BSK
-sort_order: 106
+sort_order: 112
 name:
   de: Brandschutzkonzept
   fr: Concept de protection incendie
@@ -34,15 +34,15 @@ description:
     - Protection goals
     - Fire compartments
     - Required fire-resistance classes
-    - Reference to the architecture planning status
+    - Reference to the architecture design status
     - Reference to the drawings
 file_name:
   de: '{Projektnummer}_BRS-BSK_{Freitext}.{ext}'
   fr: '{NumeroProjet}_INC-BSK_{Libre}.{ext}'
   it: '{NumeroProgetto}_ANT-BSK_{Libero}.{ext}'
-  en: '{ProjectNumber}_FIR-BSK_{Free}.{ext}'
+  en: '{ProjectNumber}_FIR-BSK_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/fire-protection
 scheduled_milestones:
-  - "31:beginning"
-  - "32:beginning"
+  - "31:M"
+  - "32:M"

@@ -1,0 +1,143 @@
+id: pragmaticbim:workflow/qas-building-security-verification
+code: QAS-BUILD-SEC
+sort_order: 95
+name:
+  de: Gebäudesicherheitsmassnahmen prüfen
+  fr: Contrôler les mesures de sécurité du bâtiment
+  it: Verificare le misure di sicurezza dell'edificio
+  en: Verify building security measures
+description:
+  de: 'Architekturmodell gegen das freigegebene Sicherheitskonzept prüfen, damit Sicherheitszonen, Schutzangaben und Einbruchwiderstand nachvollziehbar bleiben.
+
+
+    **Ausgangslage**
+
+    - Anforderungen an Zonen, Sicherheitsstufen, Schutzziele und Widerstandsklassen stehen oft nur im Bericht und werden unvollständig oder widersprüchlich ins Modell übernommen.
+
+    - Fehlende oder falsche Kennwerte an Räumen, Türen und Fassadenöffnungen fallen erst spät auf.
+
+
+    **Ziel & Nutzen**
+
+    - Räume und Öffnungen automatisiert auf Vollständigkeit und Widersprüche gegenüber dem Sicherheitskonzept prüfen.
+
+    - Abweichungen früh ausweisen und deren Bereinigung dokumentieren.
+
+
+    **Ablauf**
+
+    1. Freigegebenes Sicherheitskonzept und aktuelles Architekturmodell bereitstellen.
+
+    2. Sicherheitszonen, Sicherheitsstufen und Schutzziele der Räume sowie den Einbruchwiderstand von Türen und Fassadenöffnungen mit den Sollwerten vergleichen.
+
+    3. Abweichungen dokumentieren, fachlich beurteilen und durch die zuständige Planung bereinigen.
+
+
+    **Lieferergebnis**
+
+    - Geprüftes Architekturmodell mit abgestimmten Gebäudesicherheitsangaben
+
+    - Nachvollziehbarer Prüfbericht mit offenen, akzeptierten und bereinigten Abweichungen'
+  fr: 'Contrôler la maquette d''architecture par rapport au concept de sécurité approuvé, afin que les zones de sécurité, les indications de protection et la résistance à l''effraction restent traçables.
+
+
+    **Situation de départ**
+
+    - Les exigences relatives aux zones, niveaux de sécurité, objectifs de protection et classes de résistance figurent souvent uniquement dans le rapport et sont reprises de manière incomplète ou contradictoire
+    dans la maquette.
+
+    - Des valeurs manquantes ou erronées sur les locaux, portes et ouvertures de façade ne sont détectées que tardivement.
+
+
+    **Objectif et bénéfice**
+
+    - Contrôler automatiquement les locaux et ouvertures quant à leur exhaustivité et aux contradictions par rapport au concept de sécurité.
+
+    - Signaler tôt les écarts et documenter leur traitement.
+
+
+    **Déroulement**
+
+    1. Fournir le concept de sécurité approuvé et la maquette d''architecture actuelle.
+
+    2. Comparer les zones de sécurité, niveaux de sécurité et objectifs de protection des locaux ainsi que la résistance à l''effraction des portes et ouvertures de façade avec les valeurs de référence.
+
+    3. Documenter les écarts, les évaluer du point de vue spécialisé et les faire corriger par le mandataire responsable.
+
+
+    **Livrable**
+
+    - Maquette d''architecture contrôlée avec indications de sécurité du bâtiment coordonnées
+
+    - Rapport de contrôle traçable indiquant les écarts ouverts, acceptés et corrigés'
+  it: 'Verificare il modello di architettura rispetto al concetto di sicurezza approvato, affinché zone di sicurezza, indicazioni di protezione e resistenza all''effrazione restino tracciabili.
+
+
+    **Situazione di partenza**
+
+    - I requisiti relativi a zone, livelli di sicurezza, obiettivi di protezione e classi di resistenza compaiono spesso solo nel rapporto e vengono trasferiti nel modello in modo incompleto o contraddittorio.
+
+    - Valori mancanti o errati su locali, porte e aperture di facciata emergono solo tardi.
+
+
+    **Obiettivo e beneficio**
+
+    - Controllare automaticamente locali e aperture quanto a completezza e contraddizioni rispetto al concetto di sicurezza.
+
+    - Evidenziare tempestivamente gli scostamenti e documentarne la risoluzione.
+
+
+    **Svolgimento**
+
+    1. Fornire il concetto di sicurezza approvato e il modello di architettura aggiornato.
+
+    2. Confrontare zone di sicurezza, livelli di sicurezza e obiettivi di protezione dei locali nonché la resistenza all''effrazione di porte e aperture di facciata con i valori di riferimento.
+
+    3. Documentare gli scostamenti, valutarli dal punto di vista specialistico e farli correggere dal progettista responsabile.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura verificato con indicazioni di sicurezza dell''edificio coordinate
+
+    - Rapporto di verifica tracciabile con scostamenti aperti, accettati e risolti'
+  en: 'Check the architecture model against the approved security concept so that security zones, protection data, and burglary resistance remain traceable.
+
+
+    **Starting point**
+
+    - Requirements for zones, security levels, protection goals, and resistance classes often exist only in the report and are transferred incompletely or inconsistently into the model.
+
+    - Missing or wrong values on spaces, doors, and facade openings are noticed only late.
+
+
+    **Goal & benefit**
+
+    - Automatically check spaces and openings for completeness and contradictions against the security concept.
+
+    - Flag deviations early and document their resolution.
+
+
+    **Process**
+
+    1. Provide the approved security concept and the current architecture model.
+
+    2. Compare space security zones, security levels, protection goals, and the burglary resistance of doors and facade openings with the target values.
+
+    3. Document deviations, get a specialist assessment, and have the responsible designer resolve them.
+
+
+    **Deliverable**
+
+    - Checked architecture model with coordinated building-security information
+
+    - Traceable check report showing open, accepted, and resolved deviations'
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Binding basis is the building security concept. Spaces: SecurityZoneReference, SecurityLevel, ProtectionGoal (ePset_Space). Doors/windows: SecurityRating (Pset_DoorCommon / Pset_WindowCommon)
+  per EN 1627 RC1–RC6. No separate DES requirements model in v1.'

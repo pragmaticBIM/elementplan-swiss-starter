@@ -7,7 +7,7 @@ name:
   it: Fissaggi e sospensioni dal modello
   en: Fastening and suspension from model
 description:
-  de: 'Planung der Befestigungen und Aufhängungen ab Modell gemäss Anforderungen des Unternehmers.
+  de: 'Befestigungen und Aufhängungen auf Grundlage der koordinierten Tragwerks- und TGA-Modelle planen, damit sie nicht erst auf der Baustelle improvisiert werden müssen.
 
 
     **Ausgangslage**
@@ -33,20 +33,9 @@ description:
     3. Modell für Planung, Stücklisten und ggf. Absteckung der Befestigungspunkte nutzen.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Ausführbare Befestigungs- und Aufhängungsplanung ab Modell durch Unternehmer oder Lieferant.
-
-
-    **Lieferobjekte**
-
-    - Tragwerksmodell (Wirtsbauteile: Decken, Wände, Träger) und TGA-Modell (zu befestigende Systeme) mit Geometrie
-
-    - Gemeinsamer Modellbezug (Bezugspunkte)
-
-    - Weitere Attribute, Lasten, Materialien und Filterung gemäss Absprache mit dem Unternehmer
-
-    - Keine Elementplan-Definition von Produkt-Befestigungsmitteln (Schienen, Dübel, Hänger)'
+    - Koordiniertes Tragwerks- und TGA-Modell mit gemeinsamem Bezug und den vereinbarten Grundlagen für die Befestigungsplanung.'
   fr: 'Planification des fixations et suspensions à partir du modèle selon les exigences de l''entreprise.
 
 
@@ -73,20 +62,9 @@ description:
     3. Utiliser le modèle pour la planification, les listes de matériel et éventuellement l''implantation des points de fixation.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Planification exécutable des fixations et suspensions à partir du modèle par l''entreprise ou le fournisseur.
-
-
-    **Livrables**
-
-    - Modèle structure (supports hôtes : dalles, murs, poutres) et modèle CVC (systèmes à fixer) avec géométrie
-
-    - Référentiel modèle commun (points de référence)
-
-    - Autres attributs, charges, matériaux et filtrage selon accord avec l''entreprise
-
-    - Pas de définition Elementplan de moyens de fixation produits (rails, chevilles, suspentes)'
+    - Maquettes structure et CVC coordonnées avec référentiel commun et données convenues pour la planification des fixations.'
   it: 'Pianificazione di fissaggi e sospensioni dal modello secondo i requisiti dell''impresa.
 
 
@@ -113,21 +91,10 @@ description:
     3. Utilizzare il modello per pianificazione, elenchi materiali ed eventualmente tracciamento dei punti di fissaggio.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Pianificazione eseguibile di fissaggi e sospensioni dal modello da parte dell''impresa o del fornitore.
-
-
-    **Oggetti della fornitura**
-
-    - Modello strutturale (componenti ospiti: solette, pareti, travi) e modello MEP (sistemi da fissare) con geometria
-
-    - Riferimento modello comune (punti di riferimento)
-
-    - Ulteriori attributi, carichi, materiali e filtro secondo accordo con l''impresa
-
-    - Nessuna definizione Elementplan di mezzi di fissaggio di prodotto (binari, tasselli, sospensioni)'
-  en: 'Plan fastenings and suspensions from the model according to the contractor''s requirements.
+    - Modelli strutturale e degli impianti coordinati con riferimento comune e dati concordati per la pianificazione dei fissaggi.'
+  en: 'Plan fastenings and suspensions on the basis of the coordinated structural and MEP models so that they do not have to be improvised on site.
 
 
     **Starting point**
@@ -153,20 +120,9 @@ description:
     3. Use the model for planning, bills of materials, and where applicable layout of fastening points.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Executable fastening and suspension planning from the model by the contractor or supplier.
-
-
-    **Deliverables**
-
-    - Structural model (host components: slabs, walls, beams) and MEP model (systems to be fixed) with geometry
-
-    - Common model reference (reference points)
-
-    - Further attributes, loads, materials, and filtering as agreed with the contractor
-
-    - No Elementplan definition of product fastening means (channels, anchors, hangers)'
+    - Coordinated structural and MEP models with a common reference and the agreed basis for fastening planning.'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/con
 picture_link: null

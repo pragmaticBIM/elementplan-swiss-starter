@@ -1,0 +1,96 @@
+id: pragmaticbim:value/product-class-window-connector
+code: PRODUCT-WICP
+name:
+  de: Abstrakte Fenster-Verbindungsprodukte
+  fr: Abstract window connector products
+  it: Abstract window connector products
+  en: Abstract window connector products
+description:
+  de: 'Produktklassen gemäss Abstrakte Fenster-Verbindungsprodukte. Quelle: https://schema.pragmaticbim.ch/classification/window-connector-product.html'
+  fr: 'Classes de produits selon Abstract window connector products. Source : https://schema.pragmaticbim.ch/classification/window-connector-product.html'
+  it: 'Classi di prodotto secondo Abstract window connector products. Fonte: https://schema.pragmaticbim.ch/classification/window-connector-product.html'
+  en: 'Product classes according to Abstract window connector products. Source: https://schema.pragmaticbim.ch/classification/window-connector-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Holzfenster
+  - Holzfenster Rahmen-Schicht
+  - Holzfenster 2-fach Verglasung-Schicht
+  - Holz-Metall-Fenster
+  - Holz-Metall-Fenster Rahmen-Schicht
+  - Holz-Metall-Fenster 2-fach Verglasung-Schicht
+  - Kunststoff- / PVC-Fenster
+  - PVC-Fenster Rahmen-Schicht
+  - PVC-Fenster 2-fach Verglasung-Schicht
+  - Stahlfenster
+  - Stahlfenster Rahmen-Schicht
+  - Stahlfenster 2-fach Verglasung-Schicht
+  - Aluminiumfenster
+  - Aluminiumfenster Rahmen-Schicht
+  - Aluminiumfenster 2-fach Verglasung-Schicht
+  - Spezielles lichtdurchlaessiges Bauteil
+  - Dachfenster / Oberlicht
+  - Fassaden-Verglasungselement
+  - Sonstiges / unbekanntes Fenster
+  fr:
+  - Wood window system
+  - Wood window frame layer
+  - Wood window 2-pane glazing layer
+  - Wood–metal composite window
+  - Wood–metal window frame layer
+  - Wood–metal window 2-pane glazing layer
+  - Plastic / PVC window system
+  - PVC window frame layer
+  - PVC window 2-pane glazing layer
+  - Steel window system
+  - Steel window frame layer
+  - Steel window 2-pane glazing layer
+  - Aluminium window system
+  - Aluminium window frame layer
+  - Aluminium window 2-pane glazing layer
+  - Special transparent opening
+  - Roof window / skylight
+  - Facade glazing unit
+  - Other / unknown window
+  it:
+  - Wood window system
+  - Wood window frame layer
+  - Wood window 2-pane glazing layer
+  - Wood–metal composite window
+  - Wood–metal window frame layer
+  - Wood–metal window 2-pane glazing layer
+  - Plastic / PVC window system
+  - PVC window frame layer
+  - PVC window 2-pane glazing layer
+  - Steel window system
+  - Steel window frame layer
+  - Steel window 2-pane glazing layer
+  - Aluminium window system
+  - Aluminium window frame layer
+  - Aluminium window 2-pane glazing layer
+  - Special transparent opening
+  - Roof window / skylight
+  - Facade glazing unit
+  - Other / unknown window
+  en:
+  - Wood window system
+  - Wood window frame layer
+  - Wood window 2-pane glazing layer
+  - Wood–metal composite window
+  - Wood–metal window frame layer
+  - Wood–metal window 2-pane glazing layer
+  - Plastic / PVC window system
+  - PVC window frame layer
+  - PVC window 2-pane glazing layer
+  - Steel window system
+  - Steel window frame layer
+  - Steel window 2-pane glazing layer
+  - Aluminium window system
+  - Aluminium window frame layer
+  - Aluminium window 2-pane glazing layer
+  - Special transparent opening
+  - Roof window / skylight
+  - Facade glazing unit
+  - Other / unknown window

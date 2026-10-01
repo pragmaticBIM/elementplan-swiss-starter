@@ -1,0 +1,28 @@
+id: pragmaticbim:room-type/gartenflaeche
+code: RT-WH-25
+sort_order: 25
+name:
+  de: Gartenflaeche
+  fr: Jardin
+  it: Giardino
+  en: Garden Area
+definition:
+  de: Gartenfläche zum Aufenthalt und zur Pflege.
+  fr: Surface de jardin pour le séjour et l'entretien.
+  it: Superficie a giardino per la sosta e la cura.
+  en: Garden area for staying outdoors and for upkeep.
+attribute_presets:
+- element: pragmaticbim:element/spaces-exterior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-exterior
+  name: IsExternal
+  value: true
+- element: pragmaticbim:element/spaces-exterior
+  name: LongName
+  value:
+    de: Gartenflaeche
+    fr: Jardin
+    it: Giardino
+    en: Garden Area
+status: active

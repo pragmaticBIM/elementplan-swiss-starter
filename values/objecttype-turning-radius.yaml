@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-turning-radius
+code: OBJ-TURN-RAD
+name:
+  de: ObjectType Wenderadius
+  fr: ObjectType rayon de braquage
+  it: ObjectType raggio di manovra
+  en: ObjectType turning radius
+description:
+  de: ObjectType für IfcBuildingElementProxy als Wenderadius-Proxy zur Überprüfung der Vorgaben aus dem Verkehrsgutachten.
+  fr: ObjectType pour IfcBuildingElementProxy comme proxy de rayon de braquage pour le contrôle des prescriptions de l'étude de trafic.
+  it: ObjectType per IfcBuildingElementProxy come proxy di raggio di manovra per la verifica delle prescrizioni dello studio del traffico.
+  en: ObjectType for IfcBuildingElementProxy as a turning-radius proxy for verifying traffic study requirements.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Wenderadius
+  fr:
+  - Rayon de braquage
+  it:
+  - Raggio di manovra
+  en:
+  - Turning radius

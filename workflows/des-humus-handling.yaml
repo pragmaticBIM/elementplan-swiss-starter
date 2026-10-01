@@ -1,0 +1,135 @@
+id: pragmaticbim:workflow/des-humus-handling
+code: DES-HUMUS
+sort_order: 71
+name:
+  de: Humusmengen ermitteln
+  fr: Déterminer les quantités d'humus
+  it: Determinare le quantità di humus
+  en: Determine humus quantities
+description:
+  de: 'Humus als planbare Schicht abbilden, damit Abtrag, Einbau und Überschussmengen für Kosten und Bauablauf ausgewertet werden können.
+
+
+    **Ausgangslage**
+
+    - Humus ist kostenrelevant und muss geplant werden.
+
+
+    **Ziel & Nutzen**
+
+    - Mengen für Abtrag, Neueinbau, Zwischenlager und Überschuss nachvollziehbar aus dem Modell ableiten.
+
+
+    **Ablauf**
+
+    1. Humusschicht für Bestand, Abtrag und Neueinbau bereitstellen.
+
+    2. Zwischenlager als Baustelleneinrichtungsobjekt führen.
+
+    3. Mengen für die Kostenbilanz auswerten.
+
+
+    **Lieferergebnis**
+
+    - Landschaftsmodell mit der Humusschicht
+
+    - Zwischenlager im Logistikmodell
+
+    - Bilanz Abtrag = Einbau + Lager + Überschuss'
+  fr: 'Planifier l''humus comme couche, afin que déblai, remise en place et excédent servent au calcul des coûts.
+
+
+    **Situation de départ**
+
+    - L''humus est déterminant pour les coûts et doit être planifié.
+
+
+    **Objectif et bénéfice**
+
+    - Déduire du modèle les quantités de déblai, de remise en place, de dépôt intermédiaire et d''excédent.
+
+
+    **Déroulement**
+
+    1. Fournir la couche d''humus pour l''existant, le déblai et la remise en place.
+
+    2. Saisir le dépôt intermédiaire comme objet d''installation de chantier.
+
+    3. Évaluer les quantités pour le bilan des coûts.
+
+
+    **Livrable**
+
+    - Maquette de paysage avec la couche d''humus
+
+    - Dépôt intermédiaire dans la maquette logistique
+
+    - Bilan : déblai = remise en place + dépôt + excédent'
+  it: 'Pianificare l''humus come strato, così che scavo, ripristino ed eccedenza entrino nel calcolo dei costi.
+
+
+    **Situazione di partenza**
+
+    - L''humus è rilevante per i costi e va pianificato.
+
+
+    **Obiettivo e beneficio**
+
+    - Ricavare dal modello le quantità di scavo, ripristino, deposito intermedio ed eccedenza.
+
+
+    **Svolgimento**
+
+    1. Fornire lo strato di humus per esistente, scavo e ripristino.
+
+    2. Tenere il deposito intermedio come oggetto di installazione di cantiere.
+
+    3. Valutare le quantità per il bilancio dei costi.
+
+
+    **Risultato della fornitura**
+
+    - Modello di paesaggio con lo strato di humus
+
+    - Deposito intermedio nel modello logistico
+
+    - Bilancio: scavo = ripristino + deposito + eccedenza'
+  en: 'Represent humus as a layer that can be designed, so that stripping, reinstatement, and surplus quantities can be evaluated for cost and construction sequencing.
+
+
+    **Starting point**
+
+    - Humus is cost-relevant and must be planned.
+
+
+    **Goal & benefit**
+
+    - Derive quantities for stripping, reinstatement, intermediate storage, and surplus from the model.
+
+
+    **Process**
+
+    1. Provide the humus layer for existing, stripping, and reinstatement.
+
+    2. Keep the intermediate stockpile as a site-setup object.
+
+    3. Evaluate quantities for the cost balance.
+
+
+    **Deliverable**
+
+    - Landscape model with the humus layer
+
+    - Intermediate stockpile in the logistics model
+
+    - Balance: stripping = reinstatement + stockpile + surplus'
+workflow_group: konzept
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Humus layer only (EXISTING / DEMOLISH / NEW). Stockpile is a site-setup object Name=Humuszwischenlager, not a humus status. Surplus is calculated, not stored. Not the structural excavation model.

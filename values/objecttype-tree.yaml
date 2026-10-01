@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-tree
+code: OBJ-TREE
+name:
+  de: ObjectType Baum
+  fr: ObjectType arbre
+  it: ObjectType albero
+  en: ObjectType tree
+description:
+  de: ObjectType für IfcGeographicElement / IfcBuildingElementProxy als Baum.
+  fr: ObjectType pour IfcGeographicElement / IfcBuildingElementProxy comme arbre.
+  it: ObjectType per IfcGeographicElement / IfcBuildingElementProxy come albero.
+  en: ObjectType for IfcGeographicElement / IfcBuildingElementProxy as a tree.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Baum
+  fr:
+  - Arbre
+  it:
+  - Albero
+  en:
+  - Tree

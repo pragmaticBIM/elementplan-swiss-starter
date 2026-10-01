@@ -1,0 +1,144 @@
+id: pragmaticbim:workflow/qas-hazmat-check
+code: QAS-HAZMAT-CHECK
+sort_order: 88
+name:
+  de: Massnahmen für Schadstoffbefunde planen
+  fr: Planifier les mesures liées aux polluants
+  it: Pianificare le misure relative agli inquinanti
+  en: Plan measures for hazardous-material findings
+description:
+  de: 'Schadstoffbefunde den betroffenen Bestandsbauteilen zuordnen und als Grundlage für die Planung von Sanierungs-, Rückbau- und Schutzmassnahmen nutzen.
+
+
+    **Ausgangslage**
+
+    - Schadstoffgutachten liegen oft nur als Berichte oder Tabellen vor und lassen sich nur aufwendig mit den betroffenen Bauteilen und Bereichen abgleichen.
+
+    - Ohne räumliche Zuordnung fehlt eine verlässliche Grundlage, um Eingriffe, Schutzvorkehrungen und Sanierungsarbeiten aufeinander abzustimmen.
+
+
+    **Ziel & Nutzen**
+
+    - Schadstoffart, Lage und Sanierungsdringlichkeit im Bestandsmodell nachvollziehbar darstellen.
+
+    - Betroffene Bereiche früh erkennen und die erforderlichen Massnahmen vor Umbau oder Rückbau koordiniert planen.
+
+
+    **Ablauf**
+
+    1. Befunde aus dem Schadstoffgutachten den modellierten Bestandsbauteilen zuordnen.
+
+    2. Betroffene Bauteile nach Schadstoffart und Sanierungsdringlichkeit auswerten und visualisieren.
+
+    3. Sanierungs-, Rückbau- und Schutzmassnahmen sowie deren zeitliche Abfolge festlegen.
+
+
+    **Lieferergebnis**
+
+    - Bestandsmodell mit räumlich zugeordneten Schadstoffbefunden und Sanierungsdringlichkeiten
+
+    - Dokumentierte Grundlage für die Planung und Koordination der erforderlichen Massnahmen'
+  fr: 'Attribuer les constats de polluants aux éléments existants concernés et les utiliser comme base pour planifier les mesures d''assainissement, de déconstruction et de protection.
+
+
+    **Situation de départ**
+
+    - Les expertises polluants ne sont souvent disponibles que sous forme de rapports ou de tableaux et leur mise en relation avec les éléments et les zones concernés demande beaucoup de travail.
+
+    - Sans localisation précise, il manque une base fiable pour coordonner les interventions, les mesures de protection et les travaux d''assainissement.
+
+
+    **Objectif et bénéfice**
+
+    - Représenter de manière compréhensible le type de polluant, sa localisation et l''urgence d''assainissement dans la maquette de l''existant.
+
+    - Identifier suffisamment tôt les zones concernées et coordonner les mesures nécessaires avant la transformation ou la déconstruction.
+
+
+    **Déroulement**
+
+    1. Attribuer les constats de l''expertise polluants aux éléments existants modélisés.
+
+    2. Évaluer et visualiser les éléments concernés selon le type de polluant et l''urgence d''assainissement.
+
+    3. Définir les mesures d''assainissement, de déconstruction et de protection ainsi que leur enchaînement.
+
+
+    **Livrable**
+
+    - Maquette de l''existant avec constats de polluants localisés et degrés d''urgence d''assainissement
+
+    - Base documentée pour la planification et la coordination des mesures nécessaires'
+  it: 'Associare i riscontri di inquinanti ai componenti esistenti interessati e utilizzarli come base per pianificare le misure di bonifica, demolizione e protezione.
+
+
+    **Situazione di partenza**
+
+    - Le perizie sugli inquinanti sono spesso disponibili solo sotto forma di rapporti o tabelle e il confronto con i componenti e le zone interessate richiede molto lavoro.
+
+    - Senza un''attribuzione spaziale manca una base affidabile per coordinare gli interventi, le misure di protezione e i lavori di bonifica.
+
+
+    **Obiettivo e beneficio**
+
+    - Rappresentare in modo comprensibile nel modello dell''esistente il tipo di inquinante, la sua ubicazione e l''urgenza di bonifica.
+
+    - Individuare tempestivamente le zone interessate e pianificare in modo coordinato le misure necessarie prima della trasformazione o della demolizione.
+
+
+    **Svolgimento**
+
+    1. Associare i riscontri della perizia sugli inquinanti ai componenti esistenti modellati.
+
+    2. Valutare e visualizzare i componenti interessati secondo il tipo di inquinante e l''urgenza di bonifica.
+
+    3. Definire le misure di bonifica, demolizione e protezione e la loro sequenza temporale.
+
+
+    **Risultato della fornitura**
+
+    - Modello dell''esistente con riscontri di inquinanti localizzati e urgenze di bonifica
+
+    - Base documentata per la pianificazione e il coordinamento delle misure necessarie'
+  en: 'Assign hazardous-material findings to the affected existing components and use them as a basis for planning remediation, deconstruction, and protection measures.
+
+
+    **Starting point**
+
+    - Hazardous-material surveys often exist only as reports or tables and are difficult to relate to the affected components and areas.
+
+    - Without spatial assignment, there is no reliable basis for coordinating interventions, protective precautions, and remediation work.
+
+
+    **Goal & benefit**
+
+    - Show the hazardous-material type, location, and remediation urgency clearly in the existing-building model.
+
+    - Identify affected areas early and coordinate the required measures before alteration or deconstruction.
+
+
+    **Process**
+
+    1. Assign survey findings to the modelled existing components.
+
+    2. Evaluate and visualize affected components by hazardous-material type and remediation urgency.
+
+    3. Define remediation, deconstruction, and protection measures and their sequence.
+
+
+    **Deliverable**
+
+    - Existing-building model with spatially assigned hazardous-material findings and remediation urgencies
+
+    - Documented basis for planning and coordinating the required measures'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/building-physics
+comment: 'Minimal attribute set on affected EXISTING components (ARC-FLOOR-COV Bodenaufbau, ARC-ROOF-FLAT / ARC-ROOF-PITCH Dachaufbau, ARC-WALL-EXT / ARC-WALL-CLAD-EXT Fassade, WINDOW, DOOR, plus ARC-WALL-INT
+  / ARC-SLAB-FLOOR where relevant): ePset_HazardousMaterial.HazardType and RemovalCategory. Status EXISTING marks the existing stock. Colour filters typically by RemovalCategory (Immediate / PriorToDemolition
+  / InSitu / None). Delivered in ARC-GEB Bestand model.'

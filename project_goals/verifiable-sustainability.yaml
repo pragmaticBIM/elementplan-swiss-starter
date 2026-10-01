@@ -1,0 +1,104 @@
+id: pragmaticbim:project-goal/verifiable-sustainability
+sort_order: 60
+group: ziele
+code: PG-03
+name:
+  de: Nachweisbare Nachhaltigkeit
+  fr: Durabilité vérifiable
+  it: Sostenibilità verificabile
+  en: Verifiable sustainability
+tag:
+  de: Nachhaltigkeit
+  fr: Durabilité
+  it: Sostenibilità
+  en: Sustainability
+description:
+  de: |-
+    Ziel ist, Energie-, Material- und Lebenszyklusziele direkt am aktuellen Planungsstand zu prüfen. Gebäudesimulation und Ökobilanz brauchen dafür dieselben Grundlagen wie Kosten und Planung. Leben sie in einem parallelen Datensatz, bewerten sie einen Entwurf, der längst weiterentwickelt wurde, und Nachweise müssen am Ende von Hand nachgeführt werden. Ohne durchgängige Datengrundlage wird die Prüfung zudem leicht zur Verhandlungssache statt zur Faktenfrage.
+  fr: |-
+    Cet objectif rend vérifiables les énoncés énergétiques et de cycle de vie sur le modèle. La simulation du bâtiment et l'écobilan ont besoin des mêmes bases géométriques et matérielles que les coûts et la planification; elles ne doivent pas vivre dans un jeu de données parallèle.
+
+    Il aide à évaluer si les objectifs de durabilité peuvent être mesurés sur la planification réelle ou s'ils n'existent que comme intention.
+  it: |-
+    Questo obiettivo rende verificabili sul modello le affermazioni su energia e ciclo di vita. La simulazione dell'edificio e il bilancio ecologico richiedono le stesse basi geometriche e materiali di costi e progettazione; non devono vivere in un insieme di dati parallelo.
+
+    Aiuta a valutare se gli obiettivi di sostenibilità possono essere misurati sulla progettazione effettiva o se esistono solo come intenzione.
+  en: |-
+    The aim is to check energy, material, and life-cycle targets directly against the current design status. Building simulation and life-cycle assessment need the same foundations as cost planning and design. If they live in a parallel dataset, they assess a design that has long since moved on, and the evidence has to be brought up to date by hand at the end.
+
+    Without a continuous data basis, the check also slips easily from a question of fact into a matter of negotiation.
+practice:
+  de:
+    title: Ökobilanz auf der Kostenberechnungstypisierung
+    body: |-
+      Statt für die Ökobilanz ein eigenes Berechnungsmodell aufzubauen, übernahm der Nachhaltigkeitsexperte die bestehende Kostenberechnungstypisierung und ergänzte sie um die Einheitswerte für Nachhaltigkeit. Mengen und Bauteiltypen mussten damit nicht ein zweites Mal erfasst werden; jede Änderung an der Kostenberechnung floss automatisch auch in die Ökobilanz ein.
+    lesson: Gemeinsame Grundlagen optimieren den Gesamtaufwand. Getrennte Arbeitspakete optimieren die einzelne Honorarforderung.
+  en:
+    title: Life cycle assessment on the cost calculation typing
+    body: |-
+      Rather than building a separate calculation model for the life cycle assessment, the sustainability consultant took over the existing cost calculation typing and added the unit values for sustainability to it. Quantities and component types did not have to be captured a second time, and every change to the cost calculation fed straight through into the life cycle assessment.
+    lesson: Shared foundations optimize the total effort. Separate work packages optimize the individual fee.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/sustainability-low
+  code: SUS-01
+  sort_order: 1
+  name:
+    de: Gering
+    fr: Faible
+    it: Basso
+    en: Low
+  description:
+    de: Keine zusätzlichen Workflows über die Basisanforderungen hinaus.
+    fr: Aucun workflow supplémentaire au-delà des exigences de base.
+    it: Nessun workflow aggiuntivo oltre ai requisiti di base.
+    en: No additional workflows beyond baseline requirements.
+  status: active
+  activated_workflows: []
+  comment: Full set at level gering (sort_order 1); empty.
+- id: pragmaticbim:project-goal-level/sustainability-medium
+  code: SUS-02
+  sort_order: 2
+  name:
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
+  description:
+    de: Konstruktionsvolumen aus dem Raummodell, Grundlagen für den Energienachweis nach SIA 380 auf Basis von abstractBIM sowie Überprüfung und Optimierung der Energieperformance in den ersten Betriebsjahren.
+    fr: Volume de construction à partir de la maquette spatiale, données de base du justificatif énergétique selon SIA 380 obtenues avec abstractBIM ainsi que contrôle et optimisation de la performance énergétique durant les premières années d'exploitation.
+    it: Volume di costruzione dal modello degli spazi, dati di base per la verifica energetica secondo SIA 380 ottenuti con abstractBIM nonché verifica e ottimizzazione della prestazione energetica nei primi anni d'esercizio.
+    en: Construction volume from the space model, the basis for energy verification according to SIA 380 using abstractBIM, and verification and optimization of energy performance during the first years of operation.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-construction-volume
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/opr-building-performance-optimization
+  comment: Full set at level mittel (sort_order 2); includes lower levels.
+- id: pragmaticbim:project-goal-level/sustainability-high
+  code: SUS-03
+  sort_order: 3
+  name:
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
+  description:
+    de: Konstruktionsvolumen aus dem Raummodell, überprüfte Energieperformance in den ersten Betriebsjahren, Lebenszyklusberechnung (Ökobilanz), Demontierbarkeit und Materialpass aus dem Modell sowie Nachweis des Schwammstadtprinzips im Aussenraum.
+    fr: Volume de construction à partir du modèle spatial, performance énergétique contrôlée durant les premières années d'exploitation, calcul du cycle de vie (ACV), démontabilité et passeport matériaux à partir de la maquette ainsi que justificatif du principe de ville-éponge dans l'espace extérieur.
+    it: Volume di costruzione dal modello spaziale, prestazione energetica verificata nei primi anni d'esercizio, calcolo del ciclo di vita (LCA), smontabilità e passaporto materiali dal modello nonché verifica del principio di città spugna nello spazio esterno.
+    en: Construction volume from the space model, verified energy performance during the first years of operation, full life-cycle calculation (LCA), disassembly potential, and a material passport derived from the model, plus sponge-city proof in the outdoor area.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-construction-volume
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/opr-building-performance-optimization
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-circularity
+  - pragmaticbim:workflow/des-environmental-impact-assessment
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  - pragmaticbim:workflow/qas-sponge-city
+  comment: Full set at level hoch (sort_order 3); includes lower levels.

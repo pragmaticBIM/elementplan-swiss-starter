@@ -1,0 +1,57 @@
+id: pragmaticbim:document/apartment-schedule
+code: WSP
+sort_order: 148
+name:
+  de: Wohnungsspiegel
+  fr: Tableau des logements
+  it: Elenco degli appartamenti
+  en: Apartment schedule
+definition:
+  de: Auswertung je Wohnung mit Anzahl, Typ sowie Brutto- und Nettowohnfläche. Wird aus Bruttovolumen und Nettoräumen abgeleitet und bei Planungsänderungen nachgeführt.
+  fr: Relevé par logement avec nombre, type ainsi que surfaces brute et nette. Il est déduit des volumes bruts et des locaux nets et tenu à jour lors des modifications du projet.
+  it: Riepilogo per appartamento con numero, tipo nonché superfici lorda e netta. Si ricava dai volumi lordi e dai locali netti e si aggiorna in caso di modifiche del progetto.
+  en: Schedule per apartment with count, type, and gross and net residential area. Derived from gross volumes and net rooms and kept current when the design changes.
+description:
+  de: |-
+    - Jede Wohnung mit stabiler Wohnungsnummer und Wohnungstyp
+    - Bruttowohnfläche
+    - Nettowohnfläche
+    - Nachvollziehbare Zuordnung der zugehörigen Nettoräume
+    - Stand der Flächenberechnung
+  fr: |-
+    - Chaque logement avec numéro stable et type de logement
+    - Surface brute du logement
+    - Surface nette du logement
+    - Attribution vérifiable des locaux nets correspondants
+    - État du calcul des surfaces
+  it: |-
+    - Ogni appartamento con numero stabile e tipo di appartamento
+    - Superficie lorda dell'appartamento
+    - Superficie netta dell'appartamento
+    - Assegnazione verificabile dei locali netti corrispondenti
+    - Stato del calcolo delle superfici
+  en: |-
+    - Each apartment with a stable apartment number and apartment type
+    - Gross residential area
+    - Net residential area
+    - Traceable assignment of the related net rooms
+    - Status of the area calculation
+file_name:
+  de: '{Projektnummer}_ARC-WSP_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-WSP_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-WSP_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-WSP_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/spaces-gross-volume
+  - pragmaticbim:element/spaces-interior
+scheduled_milestones:
+  - "21:M"
+  - "22:M"
+  - "31:M"
+  - "32:M"
+  - "33:M"
+comment: >-
+  Lieferergebnis der Wohnungsspiegel-Erstellung. Die Flächen stammen aus dem
+  Geschossvolumen und den Innenräumen, nicht aus einer parallelen Tabelle.

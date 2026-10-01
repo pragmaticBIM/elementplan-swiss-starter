@@ -1,0 +1,64 @@
+id: pragmaticbim:value/product-class-wall-separator
+code: PRODUCT-SWP
+name:
+  de: Abstrakte Wand-Trennelementprodukte
+  fr: Abstract wall separator products
+  it: Abstract wall separator products
+  en: Abstract wall separator products
+description:
+  de: 'Produktklassen gemäss Abstrakte Wand-Trennelementprodukte. Quelle: https://schema.pragmaticbim.ch/classification/wall-separator-product.html'
+  fr: 'Classes de produits selon Abstract wall separator products. Source : https://schema.pragmaticbim.ch/classification/wall-separator-product.html'
+  it: 'Classi di prodotto secondo Abstract wall separator products. Fonte: https://schema.pragmaticbim.ch/classification/wall-separator-product.html'
+  en: 'Product classes according to Abstract wall separator products. Source: https://schema.pragmaticbim.ch/classification/wall-separator-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Ortbeton-Wand
+  - Mauerwerk-Wand
+  - Lehmstampf-Wand
+  - Leichtbeton-Tafel-Wand (BLT)
+  - Element-Wand Beton
+  - Stahl-Wand
+  - Holz-Wand
+  - Leichtbauwand
+  - Vorhangfassade
+  - Trockenbau- / Elementtrennwand
+  - Sonstige / unbekannte Wand
+  fr:
+  - In-situ concrete wall
+  - Masonry wall
+  - Rammed earth wall
+  - Lightweight concrete panel (BLT) wall
+  - Prefabricated concrete wall
+  - Steel frame wall
+  - Timber frame wall
+  - Lightweight construction wall
+  - Curtain wall / facade system
+  - Drywall / element partition wall
+  - Other / unknown wall separator
+  it:
+  - In-situ concrete wall
+  - Masonry wall
+  - Rammed earth wall
+  - Lightweight concrete panel (BLT) wall
+  - Prefabricated concrete wall
+  - Steel frame wall
+  - Timber frame wall
+  - Lightweight construction wall
+  - Curtain wall / facade system
+  - Drywall / element partition wall
+  - Other / unknown wall separator
+  en:
+  - In-situ concrete wall
+  - Masonry wall
+  - Rammed earth wall
+  - Lightweight concrete panel (BLT) wall
+  - Prefabricated concrete wall
+  - Steel frame wall
+  - Timber frame wall
+  - Lightweight construction wall
+  - Curtain wall / facade system
+  - Drywall / element partition wall
+  - Other / unknown wall separator

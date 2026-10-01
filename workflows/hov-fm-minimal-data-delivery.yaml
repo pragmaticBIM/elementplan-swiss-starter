@@ -2,176 +2,137 @@ id: pragmaticbim:workflow/hov-fm-minimal-data-delivery
 code: HOV-FM-MIN
 sort_order: 51
 name:
-  de: FM — Minimale Datenlieferung
-  fr: FM — Livraison de données minimale
-  it: FM — Consegna dati minimale
-  en: FM — Minimal data delivery
+  de: Minimale Betriebsdaten als Listen übergeben
+  fr: Remettre les données d'exploitation minimales sous forme de listes
+  it: Consegnare i dati di esercizio minimi come elenchi
+  en: Hand over minimal operational data as lists
 description:
-  de: 'Raum- und Türlisten sowie FM-relevante Gebäudetechnik als strukturierte Daten zur Übergabe an den Betreiber liefern — ohne vollständige 3D-Anlagenmodellierung.
+  de: 'Raum-, Tür- und Fensterlisten sowie FM-relevante Gebäudetechnik als strukturierte Daten zur Übergabe an den Betreiber liefern – ohne vollständige 3D-Anlagenmodellierung.
 
 
     **Ausgangslage**
 
-    - Zur Übergabe braucht der Betreiber belastbare Listen zu Räumen und Türen; vollständige TGA-3D-Modelle sind oft noch nicht verfügbar oder nicht gefordert.
+    - Zur Übergabe braucht der Betreiber belastbare Listen zu Räumen, Türen und Fenstern. Vollständige TGA-3D-Modelle sind oft nicht verfügbar oder nicht gefordert; zudem fehlen häufig die Mittel für ihre
+    Nachführung. Ein klar gegliederter Übergabeordner ist deshalb oft mehr wert als ein perfektes 3D-Modell, das erst sechs Monate nach der Übergabe vorliegt.
 
     - Fehlende oder inkonsistente Stammdaten erschweren die FM-Datenübergabe.
 
 
     **Ziel & Nutzen**
 
-    - Eine prüfbare Raumliste und Türliste aus dem Modell ableiten und übergeben.
+    - Prüfbare Raum-, Tür- und Fensterlisten aus dem Modell ableiten und übergeben.
 
-    - Gebäudetechnik nur in dem Umfang liefern, den das verwendete FM-System verlangt — Umfang mit Betreiber klären, kein festes TGA-Elementpaket.
+    - Gebäudetechnik nur in dem Umfang liefern, den das verwendete FM-System verlangt – Umfang mit Betreiber klären, kein festes TGA-Elementpaket.
 
 
     **Ablauf**
 
-    1. Innenräume und Türen mit den geforderten Stammdaten und Mengen im Modell führen.
+    1. Innenräume, Türen und Fenster mit den geforderten Stammdaten und Mengen im Modell führen.
 
     2. Listen und Kennwerte aus dem Modell ausziehen und mit den Übergabeanforderungen des FM-Systems abgleichen.
 
     3. TGA-Attribute und Objekte nach den Anforderungen des eingesetzten FM-Systems ergänzen und übergeben.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Minimale, listenfähige FM-Datenübergabe — Räume, Türen und FM-systemspezifische Gebäudetechnik.
-
-
-    **Lieferobjekte**
-
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Innenräume (IfcSpace): Name, LongName, PredefinedType, Reference, NetFloorArea, Height
-
-    - Türen (IfcDoor): Name (Türnummer), Area, OverallWidth, OverallHeight, PredefinedType
-
-    - Gebäudetechnik nach Anforderungen des verwendeten FM-Systems'
-  fr: 'Livrer des listes de locaux et de portes ainsi que la technique du bâtiment pertinente pour le FM lors de la réception — sans modélisation 3D complète des installations.
+    - FM-Übergabedaten mit prüfbaren Raum-, Tür- und Fensterlisten sowie der vereinbarten Gebäudetechnik.'
+  fr: 'Livrer des listes de locaux, de portes et de fenêtres ainsi que la technique du bâtiment pertinente pour le FM lors de la réception – sans modélisation 3D complète des installations.
 
 
     **Situation de départ**
 
-    - À la réception, l''exploitant a besoin de listes fiables de locaux et de portes ; les maquettes TGA 3D complètes ne sont souvent pas encore disponibles ou pas exigées.
+    - À la réception, l''exploitant a besoin de listes fiables de locaux, de portes et de fenêtres. Les maquettes CVC 3D complètes ne sont souvent ni disponibles ni exigées ; les moyens nécessaires à leur
+    mise à jour font en outre fréquemment défaut. Un dossier de remise clairement structuré a donc souvent plus de valeur qu''une maquette 3D parfaite livrée six mois après la réception.
 
     - Des données de base manquantes ou incohérentes compliquent la livraison des données FM.
 
 
     **Objectif et bénéfice**
 
-    - Déduire du modèle et remettre une liste de locaux et une liste de portes vérifiables.
+    - Déduire de la maquette et remettre des listes vérifiables de locaux, de portes et de fenêtres.
 
-    - Technique du bâtiment uniquement dans la mesure exigée par le système FM — clarifier le périmètre avec l''exploitant, pas de catalogue CVC fixe.
+    - Technique du bâtiment uniquement dans la mesure exigée par le système FM – clarifier le périmètre avec l''exploitant, pas de catalogue CVC fixe.
 
 
     **Déroulement**
 
-    1. Saisir dans le modèle les locaux intérieurs et les portes avec les données de base et quantités requises.
+    1. Saisir dans la maquette les locaux intérieurs, les portes et les fenêtres avec les données de base et quantités requises.
 
     2. Extraire listes et indicateurs du modèle et les aligner avec les exigences de réception du système FM.
 
-    3. Compléter attributs et objets TGA selon les exigences du système FM utilisé, puis livrer.
+    3. Compléter les attributs et objets CVC selon les exigences du système FM utilisé, puis les livrer.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Livraison FM minimale sous forme de listes — locaux, portes et technique du bâtiment spécifique au système FM.
-
-
-    **Livrables**
-
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Locaux intérieurs (IfcSpace) : Name, LongName, PredefinedType, Reference, NetFloorArea, Height
-
-    - Portes (IfcDoor) : Name (numéro de porte), Area, OverallWidth, OverallHeight, PredefinedType
-
-    - Technique du bâtiment selon les exigences du système FM utilisé'
-  it: 'Consegnare elenchi di locali e porte nonché impianti rilevanti per il FM in fase di consegna all''esercizio — senza modellazione 3D completa degli impianti.
+    - Données de remise FM avec listes vérifiables des locaux, des portes et des fenêtres ainsi que la technique du bâtiment convenue.'
+  it: 'Consegnare elenchi di locali, porte e finestre nonché impianti rilevanti per il FM in fase di consegna all''esercizio – senza modellazione 3D completa degli impianti.
 
 
     **Situazione di partenza**
 
-    - Alla consegna il gestore necessita di elenchi affidabili di locali e porte; modelli TGA 3D completi spesso non sono ancora disponibili o non richiesti.
+    - Alla consegna il gestore necessita di elenchi affidabili di locali, porte e finestre. Modelli 3D completi degli impianti spesso non sono disponibili o richiesti; inoltre mancano frequentemente le
+    risorse per mantenerli aggiornati. Una cartella di consegna chiaramente strutturata vale quindi spesso più di un modello 3D perfetto fornito sei mesi dopo la consegna.
 
     - Dati anagrafici mancanti o incoerenti ostacolano la consegna dei dati FM.
 
 
     **Obiettivo e beneficio**
 
-    - Ricavare dal modello e consegnare un elenco locali e un elenco porte verificabili.
+    - Ricavare dal modello e consegnare elenchi verificabili di locali, porte e finestre.
 
-    - Consegnare gli impianti solo nella misura richiesta dal sistema FM — chiarire il perimetro con il gestore, nessun catalogo impianti fisso.
+    - Consegnare gli impianti solo nella misura richiesta dal sistema FM – chiarire il perimetro con il gestore, nessun catalogo impianti fisso.
 
 
     **Svolgimento**
 
-    1. Gestire nel modello locali interni e porte con i dati anagrafici e le quantità richieste.
+    1. Gestire nel modello locali interni, porte e finestre con i dati anagrafici e le quantità richieste.
 
     2. Estrarre elenchi e indicatori dal modello e allinearli ai requisiti di consegna del sistema FM.
 
-    3. Completare attributi e oggetti TGA secondo i requisiti del sistema FM usato e consegnarli.
+    3. Completare attributi e oggetti degli impianti secondo i requisiti del sistema FM usato e consegnarli.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Consegna FM minimale utilizzabile come elenco — locali, porte e impianti specifici del sistema FM.
-
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Locali interni (IfcSpace): Name, LongName, PredefinedType, Reference, NetFloorArea, Height
-
-    - Porte (IfcDoor): Name (numero porta), Area, OverallWidth, OverallHeight, PredefinedType
-
-    - Impianti secondo i requisiti del sistema FM utilizzato'
-  en: 'Deliver space and door lists plus FM-relevant building services as structured data at handover to the operator — without full 3D plant modelling.
+    - Dati di consegna FM con elenchi verificabili di locali, porte e finestre nonché gli impianti concordati.'
+  en: 'Deliver space, door, and window lists plus FM-relevant building services as structured data at handover to the operator – without full 3D plant modelling.
 
 
     **Starting point**
 
-    - At handover, the operator needs reliable space and door lists; full MEP 3D models are often not yet available or not required.
+    - At handover, the operator needs reliable space, door, and window lists. Full MEP 3D models are often unavailable or not required, and the resources to maintain them are frequently missing. A clearly
+    structured handover folder is therefore often more valuable than a perfect 3D model delivered six months after handover.
 
     - Missing or inconsistent master data makes FM data handover harder.
 
 
     **Goal & benefit**
 
-    - Derive and hand over a checkable space list and door list from the model.
+    - Derive and hand over verifiable space, door, and window lists from the model.
 
-    - Deliver building services only to the extent required by the FM system — agree scope with the operator; no fixed MEP element pack.
+    - Deliver building services only to the extent required by the FM system – agree scope with the operator; no fixed MEP element pack.
 
 
     **Process**
 
-    1. Maintain interior spaces and doors in the model with the required master data and quantities.
+    1. Maintain interior spaces, doors, and windows in the model with the required master data and quantities.
 
     2. Extract lists and metrics from the model and align them with the FM system''s handover requirements.
 
-    3. Add MEP attributes and objects according to the requirements of the FM system used, then hand over.
+    3. Add MEP attributes and objects to the requirements of the FM system in use, then hand over.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Minimal, list-ready FM data handover — spaces, doors, and FM-system-specific building services.
-
-
-    **Deliverables**
-
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Interior spaces (IfcSpace): Name, LongName, PredefinedType, Reference, NetFloorArea, Height
-
-    - Doors (IfcDoor): Name (door number), Area, OverallWidth, OverallHeight, PredefinedType
-
-    - Building services according to the requirements of the FM system in use'
+    - FM handover data with verifiable space, door, and window lists and the agreed building services information.'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/hov
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: Minimal FM handover (Übergabe). MEP scope is project- and CAFM-specific — not fixed in this workflow. Phases typically 51–62.
+comment: Minimal FM handover (Übergabe). MEP scope is project- and CAFM-specific – not fixed in this workflow. Phases typically 51–62.

@@ -1,0 +1,139 @@
+id: pragmaticbim:project-goal/costs-quantities
+sort_order: 30
+group: ziele
+code: PG-01
+name:
+  de: Kostensicherheit
+  fr: Coûts et quantités
+  it: Costi e quantità
+  en: Costs & quantities
+tag:
+  de: Kosten
+  fr: Coûts
+  it: Costi
+  en: Costs
+description:
+  de: |-
+    Ziel ist nicht ein bestimmter Betrag, sondern eine verlässliche Kostenprognose. Sie beginnt mit nachvollziehbaren Mengen. Geprüft wird, ob Flächen und Volumen belastbar ermittelt, Bauteile einer Kostenstruktur zugeordnet und Vergabepakete eindeutig abgegrenzt werden können. Ohne diese Prüfung bleiben Kostenschätzungen Meinungen: Mengen stimmen nicht, Schnittstellen gehören niemandem, und Nachträge entstehen an den Übergängen zwischen Planung, Vergabe und Ausführung.
+  fr: |-
+    Cet objectif est pertinent lorsque quantités, coûts et adjudications doivent être déduits de manière contraignante à partir du modèle. Il rend visible si les surfaces et volumes sont traçables, si les éléments peuvent être classés pour la structure des coûts et si les lots d'appel d'offres ainsi que les interfaces de coûts entre aménagement de base et aménagement locataire sont clairs.
+
+    Sans cette vérification, les estimations de coûts restent des opinions: les quantités ne correspondent pas, les interfaces n'appartiennent à personne, les avenants naissent aux passages entre planification, adjudication et réalisation.
+  it: |-
+    Questo obiettivo è rilevante quando quantità, costi e gare devono essere ricavati in modo vincolante dal modello. Rende visibile se superfici e volumi sono ricostruibili, se i componenti possono essere classificati per la struttura dei costi e se i lotti di gara nonché le interfacce di costo tra allestimento di base e allestimento locatario sono chiari.
+
+    Senza questa verifica, le stime di costo restano opinioni: le quantità non coincidono, le interfacce non appartengono a nessuno, le varianti nascono ai passaggi tra progettazione, gara e esecuzione.
+  en: |-
+    The aim is not a particular figure but a cost forecast you can rely on. It starts with traceable quantities. The check establishes whether areas and volumes can be determined robustly, components can be assigned to a cost structure, and procurement packages can be delineated unambiguously.
+
+    Without that check, cost estimates stay opinions: quantities do not add up, no one owns the interfaces, and change orders appear at the transitions between design, procurement, and construction.
+practice:
+  de:
+    title: Mehrfamilienhaus in einer Woche zum TU-Angebot
+    body: |-
+      Für ein Mehrfamilienhaus lag ein Baubeschrieb vor, aber noch kein detailliertes Modell – und das Angebot eines Totalunternehmers brauchte belastbare Mengen. Statt Bauteile von Hand nachzumodellieren, übersetzte das Team den Baubeschrieb innerhalb einer Woche in rund 50 Regeln, etwa: Wände um das Treppenhaus in Beton, Wände um Badezimmer als Trockenbau 12,5 cm. Parallel entstand ein einfaches Raummodell. Daraus erzeugte abstractBIM ein Bauteilmodell und reicherte es regelbasiert mit den Eigenschaften aus dem Baubeschrieb an. Das Ergebnis waren alle Mengen für das TU-Angebot – in derselben Woche, in der die Regeln entstanden.
+
+      Beim nächsten vergleichbaren Projekt greifen dieselben Regeln erneut. Was beim ersten Mal eine Woche kostete, läuft dann in Minuten: Raummodell liefern, Regeln anwenden, Mengen ausgeben.
+    lesson: Der Aufwand steckt einmal in den Regeln, nicht in jedem Projekt erneut im Nachbauen. Regelbasiert wird aus einer einmaligen Übersetzung wiederholbare Angebotsarbeit.
+  en:
+    title: From building specification to a general contractor bid in a week
+    body: |-
+      An apartment building had a written building specification but no detailed model – and a general contractor bid needed reliable quantities. Rather than remodel every component by hand, the team turned the specification into some fifty rules within a week: walls around the stairwell in concrete, walls around bathrooms in 12.5 cm drywall, and so on. A simple space model was built alongside it. From that, abstractBIM generated a component model and enriched it rule by rule with the properties from the specification. The result was every quantity the general contractor bid needed – in the same week the rules were written.
+
+      On the next comparable project the same rules run again. What took a week the first time then takes minutes: deliver the space model, apply the rules, export the quantities.
+    lesson: The effort goes once into the rules, not into rebuilding every project by hand. With a rule-based approach, a one-off translation becomes repeatable bidding work.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/costs-low
+  code: COST-01
+  sort_order: 1
+  name:
+    de: Niedrig
+    fr: Faible
+    it: Basso
+    en: Low
+  description:
+    de: Flächennachweise nach SIA 416 und SIA D0165, Geschossfläche am Modell, städtebauliche Massenstudie mit Bruttovolumen sowie Wohnungsspiegel mit Brutto- und Nettowohnflächen.
+    fr: Justificatifs de surfaces selon SIA 416 et SIA D0165, surface de plancher sur la maquette, étude de masse urbanistique avec volumes bruts et tableau des logements avec surfaces brutes et nettes.
+    it: Verifiche delle superfici secondo SIA 416 e SIA D0165, superficie di piano sul modello, studio di massa urbanistica con volumi lordi ed elenco degli appartamenti con superfici lorde e nette.
+    en: Area verification according to SIA 416 and SIA D0165, floor area from the model, urban design mass study with gross volumes, and apartment schedule with gross and net areas.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/des-floor-area-from-model
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-apartment-schedule
+  comment: Full set at level niedrig (sort_order 1).
+- id: pragmaticbim:project-goal-level/costs-medium
+  code: COST-02
+  sort_order: 2
+  name:
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
+  description:
+    de: Elementbasierte Kostenermittlung und Kostenplausibilisierung mit Modellmengen, automatisierte eBKP-H-Klassifizierung, geplante Humusmengen, Visualisierung der Planungsschnittstellen und vergleichbare Wettbewerbsauswertung.
+    fr: Calcul et contrôle de plausibilité des coûts par élément à partir des quantités de la maquette, classification eBKP-H automatisée, quantités d'humus planifiées, visualisation des interfaces de planification et évaluation comparable des concours.
+    it: Calcolo e verifica della plausibilità dei costi per componente dalle quantità del modello, classificazione eBKP-H automatica, quantità di humus pianificate, visualizzazione delle interfacce di pianificazione e valutazione comparabile dei concorsi.
+    en: Element-based cost calculation and plausibility checking from model quantities, automated eBKP-H classification, planned humus quantities, visualization of planning interfaces, and comparable competition evaluation.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/des-floor-area-from-model
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-apartment-schedule
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  - pragmaticbim:workflow/des-humus-handling
+  - pragmaticbim:workflow/des-planning-interface-visualization
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  comment: Full set at level mittel (sort_order 2); includes lower levels.
+- id: pragmaticbim:project-goal-level/costs-high
+  code: COST-03
+  sort_order: 3
+  name:
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
+  description:
+    de: Design-Build-Beschaffung mit verbindlichem Angebot, modellbasierte Ausschreibungsgrundlagen für Beton-, Mauerwerks-, Bodenbelags-, Platten-, Maler-, Tür-, Fenster-, Trockenbau-, Brandschott- und Stahlbauarbeiten, Visualisierung der Vergabe- und Kostenschnittstellen (Grundausbau/Mieterausbau) sowie modellbasiertes Schlussausmass für Unternehmerabrechnungen.
+    fr: Acquisition en conception-réalisation avec offre ferme, bases d'appel d'offres issues de la maquette pour les travaux de béton, maçonnerie, revêtements de sol, carrelages, peinture, portes, fenêtres, construction à sec, obturations coupe-feu et construction métallique, visualisation des interfaces d'adjudication et de coûts (aménagement de base/aménagement locataire), ainsi que métré définitif basé sur la maquette pour les décomptes d'entreprise.
+    it: Acquisizione di progettazione e costruzione con offerta vincolante, basi di gara dal modello per lavori in calcestruzzo, muratura, pavimentazioni, piastrelle, pittura, porte, finestre, costruzioni a secco, sigillature antincendio e carpenteria metallica, visualizzazione delle interfacce di aggiudicazione e di costo (allestimento di base/allestimento locatario), nonché misurazione finale basata sul modello per i consuntivi delle imprese.
+    en: Design-build procurement with a binding offer, model-based tender bases for concrete, masonry, flooring, tiling, painting, door, window, drywall, firestop and steelwork packages, visualization of award and cost interfaces (base building/tenant fit-out), and model-based final quantities for contractor accounts.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/des-floor-area-from-model
+  - pragmaticbim:workflow/des-urban-design-mass-study
+  - pragmaticbim:workflow/des-apartment-schedule
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  - pragmaticbim:workflow/des-humus-handling
+  - pragmaticbim:workflow/des-planning-interface-visualization
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  - pragmaticbim:workflow/bes-masonry-tender-basis
+  - pragmaticbim:workflow/bes-flooring-tender-basis
+  - pragmaticbim:workflow/bes-tiling-tender-basis
+  - pragmaticbim:workflow/bes-painting-tender-basis
+  - pragmaticbim:workflow/bes-door-tender-basis
+  - pragmaticbim:workflow/bes-drywall-tender-basis
+  - pragmaticbim:workflow/bes-window-tender-basis
+  - pragmaticbim:workflow/bes-firestop-tender-basis
+  - pragmaticbim:workflow/bes-steelwork-tender-basis
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/bes-award-interface-visualization
+  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  - pragmaticbim:workflow/con-final-measurement-from-model
+  comment: Full set at level hoch (sort_order 3); includes lower levels.

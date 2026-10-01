@@ -2,175 +2,150 @@ id: pragmaticbim:workflow/des-building-physics-concept
 code: DES-PHYSICS
 sort_order: 64
 name:
-  de: Erstellen Bauphysikkonzept
-  fr: Établir le concept de physique du bâtiment
-  it: Elaborare il concetto di fisica della costruzione
-  en: Create the building physics concept
+  de: Bauphysik-Anforderungsmodell erstellen
+  fr: Établir le modèle d'exigences de physique du bâtiment
+  it: Elaborare il modello dei requisiti di fisica della costruzione
+  en: Create the building physics requirements model
 description:
-  de: 'Bauphysik-Bauteilkatalog mit Kennwerten der Hülle und der trennenden Bauteile festlegen.
+  de: 'Das freigegebene Bauphysikkonzept in ein räumlich zugeordnetes Anforderungsmodell übersetzen, damit Schall- und Wärmeschutz im Architekturmodell eindeutig und laufend geprüft werden können.
 
 
     **Ausgangslage**
 
-    - Hüllen- und Trennkennwerte stehen oft nur in Berichten; Varianten und Nachweise sind schwer mit dem Modell abzugleichen.
+    - Schall- und Wärmeschutzanforderungen stehen oft in separaten Berichten, Nachweisen und Bauteilkatalogen; ihr Bezug zu Räumen und Bauteilen ist nicht durchgängig.
 
-    - Ohne Katalogwerte fehlen Architektur und Fachplanung eine gemeinsame Grundlage.
+    - Bei der manuellen Übernahme in das Architekturmodell entstehen Mehrfachpflege, Auslegungsspielräume und spät erkannte Abweichungen.
 
 
     **Ziel & Nutzen**
 
-    - Bauteilkatalog der Bauphysik verbindlich führen.
+    - Die Bauphysik übersetzt das freigegebene Konzept in nachvollziehbare Regeln und ein verbindliches fachliches Sollmodell.
 
-    - Nachweise, Varianten und Abstimmung mit Architektur und Fachplanung auf denselben Kennwerten aufbauen.
+    - Anforderungen anhand von Raumnutzungen, Nachbarschaften und Gebäudehülle eindeutig räumlich zuordnen.
+
+    - Den Bauphysik-Bauteilkatalog als abgestimmte Grundlage für Sollwerte, Varianten und Nachweise führen.
 
 
     **Ablauf**
 
-    1. Architekturmodell mit Hülle und trennenden Bauteilen bereitstellen.
+    1. Architekturmodell mit eindeutig begrenzten Räumen und vollständiger Hülle sowie das freigegebene Bauphysikkonzept bereitstellen.
 
-    2. Bauteilkatalog mit Kennwerten der Hülle und der Trennbauteile festlegen.
+    2. Schall- und Wärmeschutzanforderungen in Regeln übersetzen, räumlich zuordnen und mit den Sollwerten des Bauphysik-Bauteilkatalogs verknüpfen.
 
-    3. Katalog mit Architektur, Fachplanung und Nachweisunterlagen abstimmen.
-
-
-    **Ergebnis**
-
-    - Abgestimmter Bauphysik-Bauteilkatalog als Grundlage für Nachweise und QS Akustik / Bauphysik.
+    3. Anforderungsmodell mit Nachweisen und aktuellem Planstand abstimmen, als Prüfreferenz freigeben und bei fachlichen Änderungen nachführen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Bauphysik Bauteilkatalog
+    - Freigegebenes Bauphysik-Anforderungsmodell mit nachvollziehbaren Regeln, räumlich zugeordneten Sollanforderungen und Bezug zum Planstand
 
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Hülle und Trennbauteile IfcWall, IfcSlab (FLOOR), IfcRoof, IfcWindow und IfcDoor
-
-    - Keine zusätzlichen Rw-Attribute — Kennwerte prüft QS Akustik / Bauphysik'
-  fr: 'Fixer le catalogue des composants de physique du bâtiment avec les valeurs de l''enveloppe et des éléments de séparation.
+    - Abgestimmter Bauphysik-Bauteilkatalog mit den erforderlichen Schall- und Wärmeschutzwerten'
+  fr: 'Traduire le concept de physique du bâtiment approuvé en un modèle d''exigences attribuées spatialement, afin de contrôler de manière univoque et continue l''isolation phonique et thermique dans la
+    maquette d''architecture.
 
 
     **Situation de départ**
 
-    - Les valeurs d''enveloppe et de séparation figurent souvent seulement dans des rapports ; variantes et justifications sont difficiles à caler sur la maquette.
+    - Les exigences d''isolation phonique et thermique figurent souvent dans des rapports, justificatifs et catalogues d''éléments séparés ; leur lien avec les locaux et les éléments n''est pas continu.
 
-    - Sans valeurs de catalogue, architecture et spécialistes n''ont pas de base commune.
+    - Leur report manuel dans la maquette d''architecture entraîne des saisies multiples, des marges d''interprétation et des écarts détectés tardivement.
 
 
     **Objectif et bénéfice**
 
-    - Tenir de façon contraignante le catalogue des composants de physique du bâtiment.
+    - Le spécialiste en physique du bâtiment traduit le concept approuvé en règles traçables et en un modèle de référence contraignant.
 
-    - Fonder justifications, variantes et coordination sur les mêmes valeurs.
+    - Attribuer spatialement les exigences à partir des usages des locaux, des relations de voisinage et de l''enveloppe du bâtiment.
+
+    - Tenir le catalogue des éléments de physique du bâtiment comme base coordonnée pour les valeurs de référence, les variantes et les justificatifs.
 
 
     **Déroulement**
 
-    1. Fournir la maquette d''architecture avec enveloppe et éléments de séparation.
+    1. Fournir la maquette d''architecture avec des locaux clairement délimités et une enveloppe complète ainsi que le concept de physique du bâtiment approuvé.
 
-    2. Fixer le catalogue avec les valeurs de l''enveloppe et des éléments de séparation.
+    2. Traduire les exigences d''isolation phonique et thermique en règles, les attribuer spatialement et les relier aux valeurs de référence du catalogue des éléments.
 
-    3. Aligner le catalogue avec architecture, spécialistes et dossiers de justification.
-
-
-    **Résultat**
-
-    - Catalogue des composants de physique du bâtiment aligné comme base pour justifications et AQ acoustique / physique du bâtiment.
+    3. Coordonner le modèle d''exigences avec les justificatifs et l''état actuel du projet, l''approuver comme référence de contrôle et le mettre à jour lors de modifications spécialisées.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Catalogue des composants — physique du bâtiment
+    - Modèle d''exigences de physique du bâtiment approuvé, comprenant des règles traçables, des exigences de référence attribuées spatialement et la référence à l''état du projet
 
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Enveloppe et éléments de séparation IfcWall, IfcSlab (FLOOR), IfcRoof, IfcWindow et IfcDoor
-
-    - Pas d''attributs Rw supplémentaires — les valeurs sont contrôlées par l''AQ acoustique / physique du bâtiment'
-  it: 'Definire il catalogo componenti di fisica della costruzione con i valori dell''involucro e degli elementi di separazione.
+    - Catalogue coordonné des éléments de physique du bâtiment avec les valeurs d''isolation phonique et thermique requises'
+  it: 'Tradurre il concetto di fisica della costruzione approvato in un modello dei requisiti attribuiti spazialmente, affinché l''isolamento acustico e termico possa essere verificato nel modello di architettura
+    in modo univoco e continuo.
 
 
     **Situazione di partenza**
 
-    - I valori di involucro e separazione sono spesso solo nei rapporti; varianti e verifiche sono difficili da allineare al modello.
+    - I requisiti di isolamento acustico e termico figurano spesso in rapporti, verifiche e cataloghi degli elementi separati; il loro riferimento a locali ed elementi non è continuo.
 
-    - Senza valori di catalogo, architettura e specialisti non hanno una base comune.
+    - Il trasferimento manuale nel modello di architettura causa inserimenti multipli, margini d''interpretazione e scostamenti individuati tardivamente.
 
 
     **Obiettivo e beneficio**
 
-    - Tenere in modo vincolante il catalogo componenti di fisica della costruzione.
+    - Lo specialista in fisica della costruzione traduce il concetto approvato in regole tracciabili e in un modello di riferimento vincolante.
 
-    - Fondare verifiche, varianti e coordinamento sugli stessi valori.
+    - Attribuire spazialmente i requisiti in base agli usi dei locali, alle relazioni di adiacenza e all''involucro dell''edificio.
+
+    - Gestire il catalogo degli elementi di fisica della costruzione come base coordinata per valori di riferimento, varianti e verifiche.
 
 
     **Svolgimento**
 
-    1. Fornire il modello di architettura con involucro ed elementi di separazione.
+    1. Fornire il modello di architettura con locali chiaramente delimitati e involucro completo, nonché il concetto di fisica della costruzione approvato.
 
-    2. Definire il catalogo con i valori dell''involucro e degli elementi di separazione.
+    2. Tradurre in regole i requisiti di isolamento acustico e termico, attribuirli spazialmente e collegarli ai valori di riferimento del catalogo degli elementi.
 
-    3. Allineare il catalogo con architettura, specialisti e documenti di verifica.
-
-
-    **Risultato**
-
-    - Catalogo componenti di fisica della costruzione allineato come base per verifiche e AQ acustica / fisica edilizia.
+    3. Coordinare il modello dei requisiti con le verifiche e lo stato attuale del progetto, approvarlo come riferimento di controllo e aggiornarlo in caso di modifiche specialistiche.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Catalogo componenti di fisica della costruzione
+    - Modello dei requisiti di fisica della costruzione approvato con regole tracciabili, requisiti di riferimento attribuiti spazialmente e riferimento allo stato del progetto
 
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Involucro ed elementi di separazione IfcWall, IfcSlab (FLOOR), IfcRoof, IfcWindow e IfcDoor
-
-    - Nessun attributo Rw aggiuntivo — i valori sono verificati dall''AQ acustica / fisica edilizia'
-  en: 'Set the building physics component catalogue with values for the envelope and separating components.
+    - Catalogo coordinato degli elementi di fisica della costruzione con i valori di isolamento acustico e termico richiesti'
+  en: 'Translate the approved building physics concept into a spatially assigned requirements model so sound and thermal insulation can be checked unambiguously and continuously in the architecture model.
 
 
     **Starting point**
 
-    - Envelope and separation values often exist only in reports; variants and verification are hard to align with the model.
+    - Sound and thermal insulation requirements often appear in separate reports, verification documents, and component catalogues; their relationship to spaces and components is not continuous.
 
-    - Without catalogue values, architecture and specialists lack a shared basis.
+    - Manually transferring them to the architecture model creates duplicate maintenance, room for interpretation, and deviations that are detected late.
 
 
     **Goal & benefit**
 
-    - Maintain the building physics component catalogue bindingly.
+    - The building physics specialist translates the approved concept into traceable rules and a binding discipline requirements model.
 
-    - Base verification, variants, and coordination on the same values.
+    - Spatially assign requirements based on space uses, adjacency, and the building envelope.
+
+    - Maintain the building physics component catalogue as the coordinated basis for target values, options, and verification.
 
 
     **Process**
 
-    1. Provide the architecture model with envelope and separating components.
+    1. Provide the architecture model with clearly bounded spaces and a complete envelope together with the approved building physics concept.
 
-    2. Define the catalogue with envelope and separating-component values.
+    2. Translate sound and thermal insulation requirements into rules, assign them spatially, and link them to the target values in the component catalogue.
 
-    3. Align the catalogue with architecture, specialists, and verification documents.
-
-
-    **Outcome**
-
-    - Aligned building physics component catalogue as the basis for verification and QA acoustics / building physics.
+    3. Coordinate the requirements model with verification documents and the current design status, approve it as the check reference, and update it when discipline requirements change.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Building physics component catalogue
+    - Approved building physics requirements model with traceable rules, spatially assigned target requirements, and a reference to the design status
 
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Envelope and separating components IfcWall, IfcSlab (FLOOR), IfcRoof, IfcWindow, and IfcDoor
-
-    - No additional Rw attributes — values are checked by QA acoustics / building physics'
-workflow_group: null
+    - Coordinated building physics component catalogue with the required sound and thermal insulation values'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
 needed_in_domain:
 - pragmaticbim:domain/building-physics
-comment: Produces BPK. QAS-ACOUSTIC remains the Rw check; DES-ABSTRACTBIM-BPS remains simulation.
+comment: Produces the building physics requirements model; the BPK remains its component catalogue and the authoritative specialist basis. Spatial rules use room use, adjacency, and envelope topology. QAS-ACOUSTIC
+  compares AcousticRating and ThermalTransmittance against this model; DES-ABSTRACTBIM-BPS remains simulation.

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-movement-clearance
+code: OBJ-MOVEMENT-CLEARANCE
+name:
+  de: ObjectType Bewegungsfläche
+  fr: ObjectType aire de mouvement
+  it: ObjectType area di movimento
+  en: ObjectType movement clearance
+description:
+  de: ObjectType für IfcBuildingElementProxy als rechteckige, freizuhaltende Bewegungsfläche für den Nachweis der Hindernisfreiheit.
+  fr: ObjectType pour IfcBuildingElementProxy comme aire de mouvement rectangulaire à maintenir libre pour la justification de l'accessibilité.
+  it: ObjectType per IfcBuildingElementProxy come area di movimento rettangolare da mantenere libera per la verifica dell'accessibilità.
+  en: ObjectType for IfcBuildingElementProxy as a rectangular movement clearance kept free for accessibility verification.
+year: 2026
+norm_reference: SIA 500
+status: active
+values:
+  de:
+  - Bewegungsfläche
+  fr:
+  - Aire de mouvement
+  it:
+  - Area di movimento
+  en:
+  - Movement clearance

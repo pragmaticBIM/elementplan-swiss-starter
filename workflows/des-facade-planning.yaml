@@ -2,200 +2,145 @@ id: pragmaticbim:workflow/des-facade-planning
 code: DES-FACADE
 sort_order: 49
 name:
-  de: Fassadenplanung
-  fr: Planification de façade
-  it: Pianificazione della facciata
-  en: Facade planning
+  de: Fassade im Modell führen
+  fr: Tenir la façade dans la maquette
+  it: Tenere la facciata nel modello
+  en: Maintain the facade in the model
 description:
-  de: 'Gebäudehülle im Modell führen — von der frühen Mehrschichtkonstruktion bis zur ausführungsreifen Fassadenschicht für Mengenauszug und Bauphysik.
+  de: 'Gebäudehülle im Modell führen – einfache Aufbauten als mehrschichtiger Bauteil, komplexe Aufbauten mit einzeln konstruierten Fassadenschichten.
 
 
     **Ausgangslage**
 
-    - Fassaden werden oft erst spät detailliert; Mengen und Bauphysik basieren auf Schätzungen.
+    - Mehrschichtbauteile sind in den Autorenwerkzeugen auf die Plangrafik optimiert; für Mengenauszug und konstruktive Details sind sie nur bedingt brauchbar.
 
-    - CAD-Tools unterstützen Mehrschichtbauteile unterschiedlich; komplexe Aufbauten lassen sich nicht immer in einer Wand abbilden.
+    - Bei einfachen Gebäuden reicht das vollkommen aus. Bei komplexeren Situationen – etwa einem innenliegenden Dämmstreifen, einer Unterkonstruktion oder wechselnden Bekleidungen – lässt sich der Aufbau
+    nicht mehr sauber in einer Wand abbilden.
 
 
     **Ziel & Nutzen**
 
-    - Einfache Fassaden in frühen Phasen als mehrschichtiger Bauteil (Aussenwand) modellieren.
+    - Den Fassadenaufbau mit einer seiner konstruktiven Komplexität angemessenen Modellierungstiefe darstellen.
 
-    - Bei Tool-Limitierung oder höherer Komplexität als separate Fassadenschicht führen.
+    - Eine verlässliche und nachvollziehbare Grundlage für Plangrafik, Mengenermittlung, Bauphysik und Detailplanung schaffen.
 
-    - Fassadenflächen und Öffnungen für Mengenauszug und Koordination aus dem Modell ableiten.
+    - Manuelle Flächenschätzungen und widersprüchliche Angaben zu Schichten, Anschlüssen und Öffnungen vermeiden.
 
 
     **Ablauf**
 
     1. Aussenwände, Fenster und Türen bereitstellen.
 
-    2. Fassadenaufbau als Mehrschichtbauteil oder als separate Schicht modellieren — je nach Phase und Komplexität.
+    2. Aufbau entscheiden: einfacher Aufbau als Mehrschichtbauteil, komplexer Aufbau mit einzeln konstruierten Schichten.
 
     3. Fassadenflächen und Öffnungsanteile aus dem Modell für Mengenauszug und Bauphysik ableiten.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Koordinationsfähige Gebäudehülle von der frühen Phase bis zur ausschreibungsreifen Fassadenplanung.
-
-
-    **Lieferobjekte**
-
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - IfcWall mit IsExternal=TRUE — Aussenwand als Mehrschichtbauteil (frühe Phasen, einfache Fassaden)
-
-    - IfcCovering mit PredefinedType=CLADDING und IsExternal=TRUE — separate Fassadenschicht bei höherer Komplexität oder Tool-Limitierung
-
-    - IfcWindow und IfcDoor — Öffnungen in der Fassade mit IsExternal=TRUE
-
-    - IfcCovering mit PredefinedType=CEILING und IsExternal=TRUE — aussenliegende Abhangdecke als modellierte Schicht
-
-    - Gelände als Oberflächengeometrie (IfcGeographicElement TERRAIN)'
-  fr: 'Mener l''enveloppe du bâtiment dans le modèle — de la construction multicouche en phase initiale à la couche de façade prête à l''exécution pour le métré et la physique du bâtiment.
+    - Architekturmodell mit Fassadenaufbau, Öffnungen und daraus ableitbaren Mengen'
+  fr: 'Tenir l''enveloppe du bâtiment dans la maquette – les constructions simples comme élément multicouche, les constructions complexes avec des couches de façade modélisées individuellement.
 
 
     **Situation de départ**
 
-    - Les façades sont souvent détaillées tard ; métré et physique du bâtiment reposent sur des estimations.
+    - Les éléments multicouches des logiciels de modélisation sont optimisés pour le graphisme des plans ; pour le métré et les détails constructifs, ils ne servent que de façon limitée.
 
-    - Les outils CAO supportent les composants multicouches de manière inégale ; les complexes d''enveloppe ne tiennent pas toujours dans un seul mur.
+    - Pour les bâtiments simples, cela suffit largement. Dans les situations plus complexes – par exemple une bande isolante intérieure, une ossature secondaire ou des revêtements changeants – la construction
+    ne tient plus proprement dans un seul mur.
 
 
     **Objectif et bénéfice**
 
-    - Modéliser les façades simples en phases initiales comme composant multicouche (mur extérieur).
+    - Représenter la composition de façade avec un niveau de détail adapté à sa complexité constructive.
 
-    - Mener une couche de façade séparée en cas de limite d''outil ou de complexité accrue.
+    - Créer une base fiable et traçable pour le graphisme des plans, le métré, la physique du bâtiment et la planification des détails.
 
-    - Déduire surfaces de façade et ouvertures depuis le modèle pour métré et coordination.
+    - Éviter les estimations manuelles de surfaces et les indications contradictoires sur les couches, les raccords et les ouvertures.
 
 
     **Déroulement**
 
     1. Fournir murs extérieurs, fenêtres et portes.
 
-    2. Modéliser l''ossature de façade comme composant multicouche ou couche séparée — selon la phase et la complexité.
+    2. Décider de la construction : construction simple comme élément multicouche, construction complexe avec des couches modélisées individuellement.
 
-    3. Déduire surfaces de façade et parts d''ouvertures depuis le modèle pour métré et physique du bâtiment.
-
-
-    **Résultat**
-
-    - Enveloppe coordonnable dans le modèle — de la phase initiale à la planification de façade prête pour l''appel d''offres.
+    3. Déduire surfaces de façade et parts d''ouvertures de la maquette pour le métré et la physique du bâtiment.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - IfcWall avec IsExternal=TRUE — mur extérieur comme composant multicouche (phases initiales, façades simples)
-
-    - IfcCovering avec PredefinedType=CLADDING et IsExternal=TRUE — couche de façade séparée en cas de complexité accrue ou limite d''outil
-
-    - IfcWindow et IfcDoor — ouvertures dans la façade avec IsExternal=TRUE
-
-    - IfcCovering avec PredefinedType=CEILING et IsExternal=TRUE — plafond suspendu extérieur comme couche modélisée
-
-    - Terrain comme géométrie de surface (IfcGeographicElement TERRAIN)'
-  it: 'Gestire l''involucro nel modello — dalla costruzione multistrato nelle fasi iniziali alla stratigrafia di facciata esecutiva per computo metrico e fisica edilizia.
+    - Maquette architecture avec la construction de façade, les ouvertures et les quantités qui en découlent'
+  it: 'Tenere l''involucro nel modello – stratigrafie semplici come componente multistrato, stratigrafie complesse con i singoli strati di facciata modellati separatamente.
 
 
     **Situazione di partenza**
 
-    - Le facciate sono spesso dettagliate tardi; computo metrico e fisica edilizia si basano su stime.
+    - I componenti multistrato negli strumenti di modellazione sono ottimizzati per la grafica dei piani; per il computo metrico e i dettagli costruttivi sono utilizzabili solo in parte.
 
-    - I CAD supportano i componenti multistrato in modo diverso; gli stratigrafici complessi non stanno sempre in un unico muro.
+    - Per edifici semplici questo basta ampiamente. In situazioni più complesse – per esempio una fascia isolante interna, una sottostruttura o rivestimenti variabili – la stratigrafia non sta più in modo
+    pulito in un unico muro.
 
 
     **Obiettivo e beneficio**
 
-    - Modellare facciate semplici nelle fasi iniziali come componente multistrato (parete esterna).
+    - Rappresentare la stratigrafia della facciata con un livello di dettaglio adeguato alla sua complessità costruttiva.
 
-    - Gestire uno strato di facciata separato in caso di limiti dello strumento o maggiore complessità.
+    - Creare una base affidabile e tracciabile per la grafica dei piani, il computo metrico, la fisica della costruzione e la progettazione dei dettagli.
 
-    - Ricavare superfici di facciata e aperture dal modello per computo metrico e coordinamento.
+    - Evitare stime manuali delle superfici e indicazioni contraddittorie su strati, raccordi e aperture.
 
 
     **Svolgimento**
 
     1. Fornire pareti esterne, finestre e porte.
 
-    2. Modellare la stratigrafia di facciata come componente multistrato o strato separato — a seconda della fase e della complessità.
+    2. Decidere la stratigrafia: stratigrafia semplice come componente multistrato, stratigrafia complessa con i singoli strati modellati separatamente.
 
     3. Ricavare superfici di facciata e quote di aperture dal modello per computo metrico e fisica edilizia.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Involucro coordinabile nel modello — dalle fasi iniziali alla pianificazione di facciata pronta per la gara.
-
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - IfcWall con IsExternal=TRUE — parete esterna come componente multistrato (fasi iniziali, facciate semplici)
-
-    - IfcCovering con PredefinedType=CLADDING e IsExternal=TRUE — strato di facciata separato in caso di maggiore complessità o limiti dello strumento
-
-    - IfcWindow e IfcDoor — aperture nella facciata con IsExternal=TRUE
-
-    - IfcCovering con PredefinedType=CEILING e IsExternal=TRUE — controsoffitto esterno come strato modellato
-
-    - Terreno come geometria di superficie (IfcGeographicElement TERRAIN)'
-  en: 'Maintain the building envelope in the model — from early multi-layer construction through execution-grade facade layers for quantity take-off and building physics.
+    - Modello di architettura con la stratigrafia di facciata, le aperture e le quantità che ne derivano'
+  en: 'Maintain the building envelope in the model – simple build-ups as a multi-layer component, complex build-ups with individually modelled facade layers.
 
 
     **Starting point**
 
-    - Facades are often detailed late; quantities and building physics rely on estimates.
+    - Multi-layer components in authoring tools are optimized for drawing graphics; for quantity take-off and constructive details they are only of limited use.
 
-    - CAD tools support multi-layer components inconsistently; complex build-ups do not always fit in a single wall.
+    - For simple buildings this is entirely sufficient. In more complex situations – an internal insulation strip, a substructure, or changing claddings – the build-up can no longer be represented cleanly
+    in a single wall.
 
 
     **Goal & benefit**
 
-    - Model simple facades in early phases as a multi-layer component (exterior wall).
+    - Represent the facade build-up at a level of detail appropriate to its construction complexity.
 
-    - Maintain a separate facade layer when tool limits apply or higher complexity is required.
+    - Create a reliable and traceable basis for drawing graphics, quantity take-off, building physics, and detail design.
 
-    - Derive facade areas and openings from the model for quantity take-off and coordination.
+    - Avoid manual area estimates and inconsistent information about layers, junctions, and openings.
 
 
     **Process**
 
     1. Provide exterior walls, windows, and doors.
 
-    2. Model the facade build-up as a multi-layer component or separate layer — depending on phase and complexity.
+    2. Decide on the build-up: simple build-up as a multi-layer component, complex build-up with individually modelled layers.
 
     3. Derive facade areas and opening ratios from the model for quantity take-off and building physics.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Coordination-ready building envelope in the model — from early phase through tender-ready facade planning.
-
-
-    **Deliverables**
-
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - IfcWall with IsExternal=TRUE — exterior wall as multi-layer component (early phases, simple facades)
-
-    - IfcCovering with PredefinedType=CLADDING and IsExternal=TRUE — separate facade layer when complexity or tool limits require it
-
-    - IfcWindow and IfcDoor — openings in the facade with IsExternal=TRUE
-
-    - IfcCovering with PredefinedType=CEILING and IsExternal=TRUE — exterior suspended ceiling as a modelled layer
-
-    - Terrain as surface geometry (IfcGeographicElement TERRAIN)'
-workflow_group: null
+    - Architecture model with the facade build-up, openings, and the quantities derived from them'
+workflow_group: arbeitsvorbereitung
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Early/simple facades — model the full build-up as a multi-layer IfcWall when the authoring tool supports it. Use a separate IfcCovering layer when the tool does not support multi-layer components
-  or when facade complexity requires independent layer modelling (e.g. substructure, insulation strips, multiple cladding types).
+comment: Multi-layer IfcWall layer sets are graphics-driven in the authoring tools – fine for simple build-ups, but they do not carry reliable quantities or junction geometry. Model the relevant layers
+  as separate elements (IfcCovering or own components) as soon as the build-up becomes constructively relevant (e.g. internal insulation strips, substructure, multiple cladding types).

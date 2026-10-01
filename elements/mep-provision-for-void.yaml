@@ -8,7 +8,7 @@ name:
   it: Richiesta di riserva
   en: Provision for void
 definition:
-  de: 'Forderung der Gebäudetechnik für einen Durchbruch oder eine Aussparung im Tragwerk — Grundlage für die Freigabe durch die Tragwerksplanung.
+  de: 'Reserviert Durchbrüche rechtzeitig, damit Tragwerk und TGA ohne nachträgliche Kernbohrungen koordiniert werden können.
 
 
     **Beschreibung**
@@ -18,14 +18,14 @@ definition:
     - Dient der Koordination; wird erst nach Freigabe im Tragwerksmodell als verbindliche Öffnung umgesetzt.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Als vereinfachten Proxy-Körper im TGA-Modell modellieren; Abmessungen = gewünschte lichte Öffnung inklusive Toleranz gemäss Projektvereinbarung.
 
     - Dem zugehörigen Geschoss zuweisen; kein tragendes Bauteil durchschneiden und keine Öffnung am Tragwerk selbst modellieren.
 
     - Name und Reference so setzen, dass die spätere Tragwerksöffnung eindeutig zugeordnet werden kann.'
-  fr: 'Exigence des techniques du bâtiment pour un percement ou une réservation dans la structure — base pour la validation par l''ingénierie structurelle.
+  fr: 'Réserve les percements à temps afin de coordonner la structure porteuse et les techniques du bâtiment sans carottages ultérieurs.
 
 
     **Description**
@@ -42,7 +42,7 @@ definition:
     - Rattacher à l''étage concerné; ne pas découper de composant porteur ni modéliser d''ouverture sur la structure elle-même.
 
     - Définir Name et Reference de façon à pouvoir rattacher sans ambiguïté l''ouverture structurelle ultérieure.'
-  it: 'Richiesta degli impianti per un foro o una riserva nella struttura — base per l''approvazione da parte dell''ingegneria strutturale.
+  it: 'Riserva tempestivamente le aperture per coordinare la struttura portante e gli impianti senza carotaggi successivi.
 
 
     **Descrizione**
@@ -59,7 +59,7 @@ definition:
     - Assegnare al piano corrispondente; non tagliare componenti portanti né modellare aperture sulla struttura stessa.
 
     - Impostare Name e Reference in modo da poter collegare in modo univoco la successiva apertura strutturale.'
-  en: 'MEP request for an opening or recess in the structure — basis for approval by structural engineering.
+  en: 'Reserves penetrations in time so structure and building services can be coordinated without later core drilling.
 
 
     **Description**
@@ -83,8 +83,34 @@ entity_ifc4: IfcBuildingElementProxy
 entity_ifc4_3: IfcBuildingElementProxy
 picture_link: null
 model_link: null
-applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=PROVISIONFORVOID) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=PROVISIONFORVOID)
+applicability: entity_ifc4=IfcBuildingElementProxy AND PredefinedType=PROVISIONFORVOID
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Aussparungsanforderung zur Zuordnung zu Leitung, Gerät oder Tragwerksöffnung.
+    fr: Désignation de l'exigence de réservation pour rattachement à réseau, appareil ou ouverture structurelle.
+    it: Denominazione della richiesta di riserva per collegamento a rete, apparecchio o apertura strutturale.
+    en: Provision-for-void designation for assignment to service, equipment, or structural opening.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-struct-mep-opening-planning
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
@@ -127,101 +153,10 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
-  is_applicability: true
-  status: active
-  sort_order: 1
-- name: ObjectType
-  pset: null
-  definition:
-    de: 'Art des Proxy-Elements.
-
-
-      **Zulässige Werte**
-
-      - `PROVISIONFORVOID` — Forderung für Durchbruch oder Aussparung im Tragwerk (noch nicht als Öffnung umgesetzt)
-
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für PredefinedType.'
-    fr: 'Nature de l''élément proxy.
-
-
-      **Valeurs admises**
-
-      - `PROVISIONFORVOID` — exigence de percement ou réservation dans la structure (pas encore mise en œuvre comme ouverture)
-
-
-      **Remarque**
-
-      - Substitut IFC2x3 de PredefinedType.'
-    it: 'Tipo dell''elemento proxy.
-
-
-      **Valori ammessi**
-
-      - `PROVISIONFORVOID` — richiesta di foro o riserva nella struttura (non ancora implementata come apertura)
-
-
-      **Nota**
-
-      - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Kind of proxy element.
-
-
-      **Allowed values**
-
-      - `PROVISIONFORVOID` — request for an opening or recess in the structure (not yet implemented as an opening)
-
-
-      **Note**
-
-      - IFC2x3 substitute for PredefinedType.'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/objecttype-provision-for-void
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  - pragmaticbim:workflow/des-struct-mep-opening-planning
   is_applicability: true
   status: active
   sort_order: 2
-- name: Name
-  pset: null
-  definition:
-    de: Bezeichnung der Aussparungsanforderung zur Zuordnung zu Leitung, Gerät oder Tragwerksöffnung.
-    fr: Désignation de l'exigence de réservation pour rattachement à réseau, appareil ou ouverture structurelle.
-    it: Denominazione della richiesta di riserva per collegamento a rete, apparecchio o apertura strutturale.
-    en: Provision-for-void designation for assignment to service, equipment, or structural opening.
-  datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
-  is_applicability: false
-  status: active
-  sort_order: 3
 - name: Reference
   pset: Pset_BuildingElementProxyCommon
   definition:
@@ -244,7 +179,7 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-arch-mep-coordination-openings
+  - pragmaticbim:workflow/des-struct-mep-opening-planning
   is_applicability: false
   status: active
-  sort_order: 4
+  sort_order: 3

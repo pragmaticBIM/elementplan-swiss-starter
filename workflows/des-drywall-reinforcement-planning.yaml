@@ -1,0 +1,143 @@
+id: pragmaticbim:workflow/des-drywall-reinforcement-planning
+code: DES-DRYWALL-REINF
+sort_order: 20
+name:
+  de: Trockenbauverstärkungen planen
+  fr: Planifier les renforts des cloisons légères
+  it: Pianificare i rinforzi delle pareti a secco
+  en: Plan drywall reinforcement
+description:
+  de: 'Verstärkungen für wandmontierte Einbauten bewusst planen, damit sie ausgeschrieben und vor dem Schliessen der Trockenbauwände ausgeführt werden.
+
+
+    **Ausgangslage**
+
+    - Erforderliche Verstärkungen, Traversen oder zusätzliche Unterkonstruktionen werden in der Ausschreibung häufig nur geschätzt oder vergessen.
+
+    - Der Bedarf wird deshalb oft erst bei der Montage erkannt und als Regiearbeit ausgeführt; Mehrkosten, Terminverzug und ungeeignete Befestigungen sind die Folge.
+
+
+    **Ziel & Nutzen**
+
+    - Verstärkungsbereiche aus Hängeschränken und weiteren wandmontierten Einbauten manuell festlegen oder regelbasiert erzeugen.
+
+    - Lage, Ausdehnung und Anforderung rechtzeitig mit der Trockenbauwand abstimmen und als prüfbare Mengenbasis für Ausschreibung und Ausführung bereitstellen.
+
+
+    **Ablauf**
+
+    1. Wandmontierte Einbauten mit Lage, Abmessungen, Montagehöhe und Befestigungsanforderung sowie die zugehörigen Trockenbauwände bereitstellen.
+
+    2. Je Einbau den erforderlichen Verstärkungsbereich manuell modellieren oder nach vereinbarten Regeln erzeugen und eindeutig dem auslösenden Einbau und der betroffenen Wand zuordnen.
+
+    3. Bereiche auf Vollständigkeit, Überschneidungen und Ausführbarkeit prüfen, freigeben und nach Anzahl, Abmessung und Anforderung für Ausschreibung und Ausführung auswerten.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit freigegebenen und eindeutig zugeordneten Verstärkungsbereichen in Trockenbauwänden
+
+    - Prüfbare Verstärkungsliste als Mengen- und Ausführungsgrundlage'
+  fr: 'Planifier explicitement les renforts destinés aux équipements fixés aux cloisons afin de les intégrer à l''appel d''offres et de les poser avant la fermeture des cloisons légères.
+
+
+    **Situation de départ**
+
+    - Les renforts, traverses ou ossatures complémentaires nécessaires sont souvent estimés sommairement ou oubliés dans l''appel d''offres.
+
+    - Le besoin n''est alors constaté qu''au montage et les travaux sont exécutés en régie, avec pour conséquences des coûts supplémentaires, des retards et des fixations inadaptées.
+
+
+    **Objectif et bénéfice**
+
+    - Définir manuellement ou générer selon des règles les zones de renfort requises par les meubles suspendus et les autres équipements fixés aux cloisons.
+
+    - Coordonner à temps leur position, leur étendue et leurs exigences avec la cloison légère, puis fournir une base quantitative vérifiable pour l''appel d''offres et l''exécution.
+
+
+    **Déroulement**
+
+    1. Fournir les équipements fixés aux cloisons avec leur position, leurs dimensions, leur hauteur de montage et leurs exigences de fixation, ainsi que les cloisons légères concernées.
+
+    2. Modéliser manuellement ou générer selon les règles convenues la zone de renfort nécessaire pour chaque équipement, puis la rattacher sans ambiguïté à l''équipement déclencheur et à la cloison concernée.
+
+    3. Contrôler l''exhaustivité, les chevauchements et la faisabilité des zones, les valider et les quantifier par nombre, dimensions et exigence pour l''appel d''offres et l''exécution.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec zones de renfort validées et rattachées sans ambiguïté aux cloisons légères
+
+    - Liste vérifiable des renforts comme base quantitative et d''exécution'
+  it: 'Pianificare in modo esplicito i rinforzi per gli elementi fissati alle pareti, affinché siano inclusi nella gara e posati prima della chiusura delle pareti a secco.
+
+
+    **Situazione di partenza**
+
+    - I rinforzi, le traverse o le sottostrutture supplementari necessarie sono spesso stimati sommariamente o dimenticati nella documentazione di gara.
+
+    - Il fabbisogno viene quindi rilevato solo durante il montaggio e i lavori sono eseguiti a regia, con conseguenti costi aggiuntivi, ritardi e fissaggi inadeguati.
+
+
+    **Obiettivo e beneficio**
+
+    - Definire manualmente o generare secondo regole le zone di rinforzo richieste da pensili e altri elementi fissati alle pareti.
+
+    - Coordinare tempestivamente posizione, estensione e requisiti con la parete a secco e fornire una base quantitativa verificabile per la gara e l''esecuzione.
+
+
+    **Svolgimento**
+
+    1. Fornire gli elementi fissati alle pareti con posizione, dimensioni, altezza di montaggio e requisiti di fissaggio, nonché le pareti a secco interessate.
+
+    2. Modellare manualmente o generare secondo le regole concordate la zona di rinforzo necessaria per ogni elemento e associarla in modo univoco all''elemento che la richiede e alla parete interessata.
+
+    3. Verificare completezza, sovrapposizioni e fattibilità delle zone, approvarle e quantificarle per numero, dimensioni e requisito ai fini della gara e dell''esecuzione.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con zone di rinforzo approvate e associate in modo univoco alle pareti a secco
+
+    - Elenco verificabile dei rinforzi come base quantitativa ed esecutiva'
+  en: 'Plan reinforcement for wall-mounted fixtures explicitly so it can be tendered and installed before drywall partitions are closed.
+
+
+    **Starting point**
+
+    - Required backing, rails, or additional framing is often estimated roughly or omitted from the tender.
+
+    - The need is then identified only during installation and completed as daywork, resulting in extra cost, delays, and unsuitable fixings.
+
+
+    **Goal & benefit**
+
+    - Define reinforcement zones manually or generate them by rule from wall cabinets and other wall-mounted fixtures.
+
+    - Coordinate location, extent, and requirements with the drywall partition in good time and provide a verifiable quantity basis for tendering and construction.
+
+
+    **Process**
+
+    1. Provide wall-mounted fixtures with location, dimensions, mounting height, and fixing requirements together with the affected drywall partitions.
+
+    2. Model the required reinforcement zone manually or generate it to agreed rules for each fixture, and assign it unambiguously to the triggering fixture and affected wall.
+
+    3. Check the zones for completeness, overlaps, and constructability, approve them, and quantify them by count, dimensions, and requirement for tendering and construction.
+
+
+    **Deliverable**
+
+    - Architecture model with approved reinforcement zones unambiguously assigned to drywall partitions
+
+    - Verifiable reinforcement schedule as a quantity and construction basis'
+workflow_group: arbeitsvorbereitung
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Tender preparation and construction planning, typically SIA phases 41 and 51. Model the required reinforcement extent, not the contractor's detailed board, rail, or stud solution. Reinforcement
+  zones may be generated from wall-mounted furniture and fixtures using project-specific clearance and load rules. Keep a stable relationship to both the triggering object and the host wall; the responsible
+  contractor confirms the final construction and fixing capacity.

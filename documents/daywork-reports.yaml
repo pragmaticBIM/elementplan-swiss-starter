@@ -1,6 +1,6 @@
 id: pragmaticbim:document/daywork-reports
 code: RGR
-sort_order: 138
+sort_order: 135
 name:
   de: Regierapporte
   fr: Rapports en régie
@@ -40,7 +40,7 @@ file_name:
   de: '{Projektnummer}_PRO-RGR_{Freitext}.{ext}'
   fr: '{NumeroProjet}_PRO-RGR_{Libre}.{ext}'
   it: '{NumeroProgetto}_PRO-RGR_{Libero}.{ext}'
-  en: '{ProjectNumber}_PRO-RGR_{Free}.{ext}'
+  en: '{ProjectNumber}_PRO-RGR_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/architecture
 included_elements:
@@ -49,4 +49,4 @@ included_elements:
   - pragmaticbim:element/building
   - pragmaticbim:element/storey
 scheduled_milestones:
-  - "52:beginning"
+  - "52:M"

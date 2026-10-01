@@ -5,7 +5,7 @@ name:
   de: Erarbeiten Brandfallsteuermatrix
   fr: Élaborer la matrice de commande incendie
   it: Elaborare la matrice di comando antincendio
-  en: Develop the fire-case control matrix
+  en: Develop the fire cause-and-effect matrix
 description:
   de: 'Brandfallsteuermatrix für Melder, Klappen, Antriebe und Löscheinrichtungen vor der Ausführung formal absegnen.
 
@@ -33,20 +33,11 @@ description:
     3. Matrix formal freigeben als Grundlage für die Ausführung.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Formal abgesegnete Brandfallsteuermatrix als Grundlage für die TGA-Ausführung.
+    - Freigegebene Brandfallsteuermatrix mit der erforderlichen Steuerungslogik
 
-
-    **Lieferobjekte**
-
-    - Brandfallsteuermatrix
-
-    - TGA-Modell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - IfcAlarm, IfcSensor, IfcActuator, IfcDamper, IfcFireSuppressionTerminal und IfcSwitchingDevice
-
-    - Keine zusätzlichen Steuerungs-Attribute — Matrix als Prozessergebnis'
+    - Koordiniertes TGA-Modell mit eindeutig zugeordneten brandschutzrelevanten Geräten'
   fr: 'Approuver formellement avant l''exécution la matrice de commande incendie pour détecteurs, clapets, actionneurs et installations d''extinction.
 
 
@@ -73,20 +64,11 @@ description:
     3. Approuver formellement la matrice comme base pour l''exécution.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Matrice de commande incendie formellement approuvée comme base pour l''exécution CVC.
+    - Matrice de commande incendie approuvée avec la logique de commande requise
 
-
-    **Livrables**
-
-    - Matrice de commande incendie
-
-    - Maquette CVC avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - IfcAlarm, IfcSensor, IfcActuator, IfcDamper, IfcFireSuppressionTerminal et IfcSwitchingDevice
-
-    - Pas d''attributs de commande supplémentaires — matrice comme résultat de processus'
+    - Maquette CVC coordonnée avec les appareils concernés affectés sans équivoque'
   it: 'Approvare formalmente prima dell''esecuzione la matrice di comando antincendio per rivelatori, serrande, attuatori e impianti di spegnimento.
 
 
@@ -113,26 +95,17 @@ description:
     3. Approvare formalmente la matrice come base per l''esecuzione.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Matrice di comando antincendio formalmente approvata come base per l''esecuzione impianti.
+    - Matrice di comando antincendio approvata con la logica di comando necessaria
 
-
-    **Oggetti della fornitura**
-
-    - Matrice di comando antincendio
-
-    - Modello impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - IfcAlarm, IfcSensor, IfcActuator, IfcDamper, IfcFireSuppressionTerminal e IfcSwitchingDevice
-
-    - Nessun attributo di comando aggiuntivo — matrice come risultato di processo'
-  en: 'Formally approve the fire-case control matrix for detectors, dampers, actuators, and suppression equipment before construction.
+    - Modello impianti coordinato con gli apparecchi interessati assegnati in modo univoco'
+  en: 'Formally approve the fire cause-and-effect matrix for detectors, dampers, actuators, and suppression equipment before construction.
 
 
     **Starting point**
 
-    - Fire-case control logic often exists only in tables without a link to MEP devices in the model.
+    - Fire cause-and-effect logic often exists only in tables without a link to MEP devices in the model.
 
     - Without formal matrix approval, execution lacks binding safety logic.
 
@@ -148,29 +121,22 @@ description:
 
     1. Provide the MEP model with detectors, dampers, actuators, and suppression equipment.
 
-    2. Develop the fire-case control matrix and align it with fire planning and MEP.
+    2. Develop the fire cause-and-effect matrix and align it with fire planning and MEP.
 
     3. Formally approve the matrix as the basis for execution.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Formally approved fire-case control matrix as the basis for MEP execution.
+    - Approved fire cause-and-effect matrix with the required control logic
 
-
-    **Deliverables**
-
-    - Fire-case control matrix
-
-    - MEP model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - IfcAlarm, IfcSensor, IfcActuator, IfcDamper, IfcFireSuppressionTerminal, and IfcSwitchingDevice
-
-    - No additional control attributes — matrix as the process deliverable'
-workflow_group: null
+    - Coordinated MEP model with the relevant devices unambiguously assigned'
+workflow_group: arbeitsvorbereitung
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+countries:
+- CH
 needed_in_domain:
 - pragmaticbim:domain/mep
-comment: Produces BSM. Distinct from DES-FIRE-CONCEPT (architecture concept/plan vs MEP safety matrix).
+comment: Produces BSM. Distinct from DES-FIRE-CONCEPT (architecture fire concept vs MEP safety matrix).

@@ -2,19 +2,19 @@ id: pragmaticbim:workflow/des-door-planning
 code: DES-DOOR
 sort_order: 52
 name:
-  de: Grundlagen für Türplanung aus dem Modell ableiten
-  fr: Bases de planification des portes à partir du modèle
-  it: Basi per la pianificazione delle porte dal modello
-  en: Derive door planning foundations from the model
+  de: Grundlagen für die Türplanung ableiten
+  fr: Déduire les bases pour la planification des portes
+  it: Ricavare le basi per la pianificazione delle porte
+  en: Derive the basis for door planning
 description:
-  de: 'Türplanungsgrundlagen aus dem Modell ableiten — Abmessungen, Türart und Öffnungsrichtung für Türlisten und Koordination.
+  de: 'Türplanungsgrundlagen aus dem Modell ableiten, damit Türlisten und Fachkoordination nicht auf verstreuten Einzelangaben beruhen.
 
 
     **Ausgangslage**
 
     - Nach der Layoutentscheidung fehlen oft strukturierte Türangaben für Türlisten, Mengen und Koordination.
 
-    - Türen werden häufig erst in 2D geplant; Abmessungen und Öffnungsrichtung sind im Modell nicht nachvollziehbar.
+    - Türen sind das komplexeste zu planende Bauteil. Sehr viele Fachspezialisten müssen ihre Informationen dazu beitragen – Fehler in der Türplanung sind kosten- und terminkritisch.
 
 
     **Ziel & Nutzen**
@@ -26,26 +26,17 @@ description:
 
     **Ablauf**
 
-    1. Raumlayout und symbolische Türen aus der Layoutplanung bereitstellen.
+    1. Raumlayout und Türen aus der Layoutplanung bereitstellen.
 
-    2. Türen mit OverallWidth, OverallHeight, PredefinedType und OperationType ergänzen.
+    2. Eine stabile Türnummer als Datenschlüssel zum Verknüpfen von Daten definieren. Türlisten aus dem Modell ableiten.
 
-    3. Türlisten und Planungsgrundlagen aus dem Modell ableiten und abstimmen.
-
-
-    **Ergebnis**
-
-    - Abgestimmte Türplanungsgrundlagen aus dem Modell — ohne ausführungsreife Bauteildetails.
+    3. Die Türliste durch Fachplaner mit Informationen ergänzen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Innenräume als modellierte IfcSpace-Volumen (PredefinedType=INTERNAL)
-
-    - IfcDoor mit PredefinedType, OverallWidth, OverallHeight und OperationType (Öffnungsrichtung)'
-  fr: 'Déduire les bases de planification des portes à partir du modèle — dimensions, type de porte et sens d''ouverture pour listes et coordination.
+    - Architekturmodell mit korrekt zugeordneten Türen und den erforderlichen Türplanungsinformationen'
+  fr: 'Déduire les bases de planification des portes à partir du modèle – dimensions, type de porte et sens d''ouverture pour listes et coordination.
 
 
     **Situation de départ**
@@ -71,19 +62,10 @@ description:
     3. Déduire et coordonner listes de portes et bases de planification à partir du modèle.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Bases de planification des portes coordonnées à partir du modèle — sans détail d''exécution des composants.
-
-
-    **Livrables**
-
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Locaux intérieurs comme volumes IfcSpace modélisés (PredefinedType=INTERNAL)
-
-    - IfcDoor avec PredefinedType, OverallWidth, OverallHeight et OperationType (sens d''ouverture)'
-  it: 'Ricavare le basi per la pianificazione delle porte dal modello — dimensioni, tipo di porta e senso di apertura per elenchi e coordinamento.
+    - Maquette architecture avec portes correctement affectées et les informations requises pour leur planification'
+  it: 'Ricavare le basi per la pianificazione delle porte dal modello – dimensioni, tipo di porta e senso di apertura per elenchi e coordinamento.
 
 
     **Situazione di partenza**
@@ -109,26 +91,17 @@ description:
     3. Ricavare e coordinare elenchi porte e basi di pianificazione dal modello.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Basi di pianificazione delle porte coordinate dal modello — senza dettaglio esecutivo dei componenti.
-
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Locali interni come volumi IfcSpace modellati (PredefinedType=INTERNAL)
-
-    - IfcDoor con PredefinedType, OverallWidth, OverallHeight e OperationType (senso di apertura)'
-  en: 'Derive door planning foundations from the model — dimensions, door type, and opening direction for door schedules and coordination.
+    - Modello di architettura con porte correttamente assegnate e le informazioni necessarie per la loro pianificazione'
+  en: 'Derive the door-design basis from the model so that door schedules and discipline coordination do not rely on scattered individual details.
 
 
     **Starting point**
 
     - After layout decisions, structured door data is often missing for schedules, quantities, and coordination.
 
-    - Doors are frequently planned in 2D; dimensions and opening direction are not traceable in the model.
+    - Doors are the most complex components to design. Many specialists must contribute information, and door-design errors are critical to cost and schedule.
 
 
     **Goal & benefit**
@@ -142,27 +115,19 @@ description:
 
     1. Provide the spatial layout and symbolic doors from layout planning.
 
-    2. Add OverallWidth, OverallHeight, PredefinedType, and OperationType on doors.
+    2. Define a stable door number as the data key for linking information; add OverallWidth, OverallHeight, PredefinedType, and OperationType to the doors.
 
     3. Derive and align door schedules and planning foundations from the model.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Coordinated door planning foundations from the model — without execution-grade component detail.
-
-
-    **Deliverables**
-
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Interior spaces as modelled IfcSpace volumes (PredefinedType=INTERNAL)
-
-    - IfcDoor with PredefinedType, OverallWidth, OverallHeight, and OperationType (opening direction)'
-workflow_group: null
+    - Architecture model with correctly assigned doors and the required door-planning information'
+workflow_group: arbeitsvorbereitung
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Follows layout planning. Doors carry PredefinedType, OverallWidth, OverallHeight, and OperationType — sufficient for door schedules and coordination, not execution-grade component modelling.
+comment: Follows layout planning. Doors carry PredefinedType, OverallWidth, OverallHeight, and OperationType – sufficient for door schedules and coordination, not execution-grade component modelling.

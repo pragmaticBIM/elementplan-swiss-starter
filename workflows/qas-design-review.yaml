@@ -2,17 +2,19 @@ id: pragmaticbim:workflow/qas-design-review
 code: QAS-DESIGN-REVIEW
 sort_order: 83
 name:
-  de: Designreview am Phasenende
-  fr: Revue de conception en fin de phase
-  it: Revisione di progetto a fine fase
-  en: End-of-phase design review
+  de: Designreview am Phasenende durchführen
+  fr: Effectuer la revue de conception en fin de phase
+  it: Eseguire la revisione di progetto a fine fase
+  en: Carry out the design review at the end of the phase
 description:
-  de: 'Designreview am Abschluss jeder Projektphase — Qualität und Reife der Planung prüfen, offene Punkte festhalten und die Freigabe für die nächste Phase dokumentieren.
+  de: 'Designreview am Abschluss jeder Projektphase – Qualität und Reife der Planung prüfen, offene Punkte festhalten und die Freigabe für die nächste Phase dokumentieren.
 
 
     **Ausgangslage**
 
     - Ohne strukturierte Phasenabschlüsse gehen offene Punkte, Risiken und Abstimmungslücken in die nächste Phase.
+
+    - BIM-Koordination wird häufig mit der fachlichen Koordination der Gewerke gleichgesetzt, obwohl sie nicht automatisch über das dafür notwendige Fachwissen, Mandat oder die Entscheidungskompetenz verfügt.
 
     - Späte Korrekturen kosten Zeit und verzögern nachfolgende Disziplinen und Termine.
 
@@ -21,106 +23,100 @@ description:
 
     - Planungsstand und Koordination am Phasenende gemeinsam bewerten.
 
-    - Go/No-go und offene Punkte für die nächste Phase verbindlich festhalten.
+    - Modelle, Visualisierungen und Prüfresultate in der regulären Projektbesprechung nutzen, um Entscheide schneller und nachvollziehbar herbeizuführen.
 
-    - Qualitätssicherung als Prozess, unabhängig von modellbasierten Datenanforderungen.
+    - Fachliche Beurteilung, Qualitätssicherung und Phasenfreigabe eindeutig den zuständigen Rollen zuordnen.
 
 
     **Ablauf**
 
-    1. Relevante Planungsunterlagen und Modelle für die abgeschlossene Phase zusammenstellen.
+    1. Relevante Planungsunterlagen, Modellansichten und Prüfresultate zusammenstellen; die BIM-Koordination unterstützt bei formalen Prüfungen und der visuellen Aufbereitung.
 
-    2. Designreview mit Projektleitung und Fachplanern durchführen.
+    2. Designreview als reguläre Projektbesprechung mit Projektleitung und zuständigen Fachplanenden durchführen; fachlich Verantwortliche beurteilen die Planung und treffen die erforderlichen Entscheide.
 
-    3. Protokoll mit Entscheiden, offenen Punkten und Freigabe für die nächste Phase erstellen.
-
-
-    **Ergebnis**
-
-    - Dokumentiertes Designreview-Protokoll als Nachweis der Phasenfreigabe und der verbleibenden Aufgaben.
+    3. Entscheide, offene Punkte, Verantwortlichkeiten und Phasenfreigabe protokollieren und nachverfolgen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Keine zusätzlichen IFC-Entitäten oder Attribute — Review-Protokoll als Prozessergebnis.'
-  fr: 'Revue de conception à la clôture de chaque phase de projet — contrôler la qualité et la maturité de la planification, consigner les points ouverts et documenter la libération pour la phase suivante.
+    - Review-Protokoll mit Entscheiden, offenen Punkten, Verantwortlichkeiten und Go/No-go für die nächste Phase.'
+  fr: 'Revue de conception à la clôture de chaque phase de projet – contrôler la qualité et la maturité des études, consigner les points ouverts et documenter la validation du passage à la phase suivante.
 
 
     **Situation de départ**
 
-    - Sans clôtures de phase structurées, points ouverts, risques et lacunes de coordination passent à la phase suivante.
+    - Sans clôture structurée, les points ouverts, les risques et les lacunes de coordination passent à la phase suivante.
 
-    - Des corrections tardives coûtent du temps et retardent les disciplines et les délais suivants.
+    - La coordination BIM est souvent assimilée à la coordination technique des disciplines, alors qu''elle ne dispose pas automatiquement des connaissances métier, du mandat ou du pouvoir de décision nécessaires.
+
+    - Les corrections tardives prennent du temps et retardent les disciplines qui interviennent ensuite.
 
 
     **Objectif et bénéfice**
 
-    - Évaluer ensemble l''état de planification et de coordination en fin de phase.
+    - Évaluer en commun l''état des études et de la coordination à la fin de la phase.
 
-    - Fixer de manière contraignante go/no-go et points ouverts pour la phase suivante.
+    - Utiliser les maquettes, les visualisations et les résultats de contrôle dans la séance de projet ordinaire afin de prendre plus rapidement des décisions traçables.
 
-    - Assurance qualité comme processus, indépendamment des exigences de données modélisées.
+    - Attribuer clairement l''évaluation technique, l''assurance qualité et la validation de la phase aux rôles compétents.
 
 
     **Déroulement**
 
-    1. Rassembler les documents et maquettes pertinents pour la phase clôturée.
+    1. Rassembler les documents d''étude, les vues de maquette et les résultats de contrôle pertinents; la coordination BIM apporte son soutien pour les contrôles formels et la préparation visuelle.
 
-    2. Conduire la revue de conception avec la direction de projet et les spécialistes.
+    2. Mener la revue de conception dans le cadre d''une séance de projet ordinaire avec la direction de projet et les spécialistes responsables; les responsables métier évaluent les études et prennent
+    les décisions nécessaires.
 
-    3. Rédiger un procès-verbal avec décisions, points ouverts et libération pour la phase suivante.
-
-
-    **Résultat**
-
-    - Procès-verbal de revue de conception documenté comme preuve de libération de phase et de tâches restantes.
+    3. Consigner et suivre les décisions, les points ouverts, les responsabilités et la validation de la phase.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Aucune entité ou attribut IFC supplémentaire — procès-verbal de revue comme résultat de processus.'
-  it: 'Design review alla chiusura di ogni fase di progetto — verificare qualità e maturità della pianificazione, registrare i punti aperti e documentare il rilascio per la fase successiva.
+    - Procès-verbal de revue avec décisions, points ouverts, responsabilités et décision de passage à la phase suivante.'
+  it: 'Design review alla chiusura di ogni fase di progetto – verificare la qualità e il grado di maturità della progettazione, registrare i punti aperti e documentare l''approvazione del passaggio alla
+    fase successiva.
 
 
     **Situazione di partenza**
 
-    - Senza chiusure di fase strutturate, punti aperti, rischi e lacune di coordinamento passano alla fase successiva.
+    - Senza una chiusura strutturata, i punti aperti, i rischi e le lacune di coordinamento passano alla fase successiva.
 
-    - Correzioni tardive costano tempo e ritardano discipline e tempi successivi.
+    - Il coordinamento BIM viene spesso equiparato al coordinamento tecnico delle discipline, sebbene non disponga automaticamente delle conoscenze specialistiche, del mandato o del potere decisionale necessari.
+
+    - Le correzioni tardive richiedono tempo e ritardano le discipline che intervengono successivamente.
 
 
     **Obiettivo e beneficio**
 
-    - Valutare congiuntamente lo stato di pianificazione e coordinamento a fine fase.
+    - Valutare congiuntamente lo stato della progettazione e del coordinamento alla fine della fase.
 
-    - Definire in modo vincolante go/no-go e punti aperti per la fase successiva.
+    - Utilizzare modelli, visualizzazioni e risultati delle verifiche nella riunione di progetto ordinaria per giungere più rapidamente a decisioni tracciabili.
 
-    - Assicurazione qualità come processo, indipendentemente dai requisiti dati del modello.
+    - Attribuire chiaramente la valutazione tecnica, l''assicurazione qualità e l''approvazione della fase ai ruoli competenti.
 
 
     **Svolgimento**
 
-    1. Raccogliere documenti e modelli pertinenti per la fase conclusa.
+    1. Raccogliere i documenti di progetto, le viste dei modelli e i risultati delle verifiche pertinenti; il coordinamento BIM supporta le verifiche formali e la preparazione visiva.
 
-    2. Condurre il design review con direzione di progetto e specialisti.
+    2. Svolgere il design review nell''ambito di una riunione di progetto ordinaria con la direzione di progetto e i progettisti responsabili; i responsabili delle discipline valutano la progettazione e
+    prendono le decisioni necessarie.
 
-    3. Redigere un verbale con decisioni, punti aperti e rilascio per la fase successiva.
-
-
-    **Risultato**
-
-    - Verbale di design review documentato come prova del rilascio di fase e dei compiti rimanenti.
+    3. Registrare e monitorare le decisioni, i punti aperti, le responsabilità e l''approvazione della fase.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Nessuna entità o attributo IFC aggiuntivo — verbale di review come risultato di processo.'
-  en: 'Design review at the end of each project phase — check planning quality and maturity, record open points, and document release for the next phase.
+    - Verbale di revisione con decisioni, punti aperti, responsabilità e decisione sul passaggio alla fase successiva.'
+  en: 'Design review at the end of each project phase – check planning quality and maturity, record open points, and document release for the next phase.
 
 
     **Starting point**
 
     - Without structured phase closures, open points, risks, and coordination gaps carry into the next phase.
+
+    - BIM coordination is often equated with technical coordination between disciplines, although it does not automatically have the required discipline expertise, mandate, or decision-making authority.
 
     - Late corrections cost time and delay follow-on disciplines and schedules.
 
@@ -129,33 +125,29 @@ description:
 
     - Jointly assess planning and coordination status at phase end.
 
-    - Record go/no-go and open points for the next phase in a binding way.
+    - Use models, visualizations, and check results in the regular project meeting to reach traceable decisions more quickly.
 
-    - Quality assurance as a process, independent of model-based data requirements.
+    - Clearly assign technical assessment, quality assurance, and phase approval to the responsible roles.
 
 
     **Process**
 
-    1. Assemble relevant planning documents and models for the completed phase.
+    1. Assemble relevant planning documents, model views, and check results; BIM coordination supports formal checks and visual preparation.
 
-    2. Conduct the design review with project management and discipline leads.
+    2. Conduct the design review as a regular project meeting with project management and the responsible discipline leads; those with discipline responsibility assess the design and make the required decisions.
 
-    3. Create minutes with decisions, open points, and release for the next phase.
-
-
-    **Outcome**
-
-    - Documented design review minutes as evidence of phase release and remaining tasks.
+    3. Record and track decisions, open points, responsibilities, and phase approval.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - No additional IFC entities or attributes — review minutes as the process deliverable.'
-workflow_group: null
+    - Review minutes with decisions, open points, responsibilities, and the go/no-go decision for the next phase.'
+workflow_group: fachpruefung
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
+service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: End-of-phase design review as a QA process; no additional IFC data requirements.
+comment: End-of-phase design review as a QA process. Minimum IFC requirement is the Project (Name and Phase).

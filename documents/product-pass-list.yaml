@@ -1,0 +1,68 @@
+id: pragmaticbim:document/product-pass-list
+code: PPL
+sort_order: 130
+name:
+  de: Produktpassliste
+  fr: Liste des passeports produits
+  it: Elenco dei passaporti di prodotto
+  en: Product-passport list
+definition:
+  de: Liste der verbauten Produkte mit GTIN und bei Bedarf Seriennummer als Schlüssel zum jeweiligen digitalen Produktpass. Der Unternehmer oder Lieferant pflegt und aktualisiert die Angaben.
+  fr: Liste des produits posés avec le GTIN et, si nécessaire, le numéro de série comme clé du passeport numérique correspondant. L'entreprise ou le fournisseur tient les données à jour.
+  it: Elenco dei prodotti installati con GTIN e, se necessario, numero di serie come chiave del relativo passaporto digitale. L'impresa o il fornitore gestisce e aggiorna i dati.
+  en: List of installed products using the GTIN and, where needed, the serial number as the key to the corresponding digital product passport. The contractor or supplier maintains and updates the data.
+description:
+  de: |-
+    - Produkttyp mit GTIN (Global Trade Item Number) als eindeutiger Schlüssel
+    - Hersteller, Produktbezeichnung sowie Modell- oder Artikelnummer
+    - Aufrufbarer Link zum digitalen Produktpass mit Version, Gültigkeit und Aktualisierungsstand
+    - Bei objektspezifischer Führung Seriennummer oder Chargennummer und Herstellungsdatum
+    - Zuordnung zu Projekt, Modellobjekt und Einbauort
+    - Zuständiger Unternehmer oder Lieferant sowie Liefer-, Prüf- und Revisionsstand
+  fr: |-
+    - Type de produit avec GTIN (Global Trade Item Number) comme clé univoque
+    - Fabricant, désignation du produit ainsi que numéro de modèle ou d'article
+    - Lien accessible vers le passeport numérique avec version, validité et état de mise à jour
+    - Pour une tenue propre à chaque objet, numéro de série ou de lot et date de fabrication
+    - Attribution au projet, à l'objet de la maquette et au lieu de pose
+    - Entreprise ou fournisseur responsable ainsi qu'état de livraison, de contrôle et de révision
+  it: |-
+    - Tipo di prodotto con GTIN (Global Trade Item Number) come chiave univoca
+    - Fabbricante, denominazione del prodotto nonché numero di modello o articolo
+    - Link accessibile al passaporto digitale con versione, validità e stato di aggiornamento
+    - Per la gestione specifica dell'oggetto, numero di serie o di lotto e data di produzione
+    - Assegnazione al progetto, all'oggetto del modello e al luogo di posa
+    - Impresa o fornitore responsabile nonché stato di consegna, verifica e revisione
+  en: |-
+    - Product type with GTIN (Global Trade Item Number) as unique key
+    - Manufacturer, product designation, and model or article number
+    - Accessible link to the digital product passport with version, validity, and update status
+    - For occurrence-specific records, serial or batch number and manufacturing date
+    - Assignment to the project, model object, and installation location
+    - Responsible contractor or supplier and delivery, verification, and revision status
+file_name:
+  de: '{Projektnummer}_ALL-PPL_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ALL-PPL_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ALL-PPL_{Libero}.{ext}'
+  en: '{ProjectNumber}_ALL-PPL_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+- "53:M"
+- "61:M"
+- "62:M"
+comment: >-
+  Cross-domain contractor/supplier delivery coordinated in the architecture
+  document catalogue. Supports pragmaticbim:workflow/hov-product-pass-gtin and
+  pragmaticbim:workflow/hov-product-pass-serial-number. Proposed IFC4+ minimum:
+  product type identity on IfcTypeObject with Name and Description;
+  Pset_ManufacturerTypeInformation.GlobalTradeItemNumber, Manufacturer,
+  ModelReference, ArticleNumber, and ModelLabel. Link the type to occurrences
+  with IfcRelDefinesByType. Where occurrence-level tracking is required, use
+  Pset_ManufacturerOccurrence.SerialNumber, BatchReference, and ManufacturingDate.
+  Resolve the installation location through IfcRelContainedInSpatialStructure.
+  Link the digital product passport using IfcRelAssociatesDocument and
+  IfcDocumentReference.Identification, Name, Description, and Location; Location
+  carries the resolvable URI. Product classification and material composition
+  remain associated through IfcRelAssociatesClassification and
+  IfcRelAssociatesMaterial.

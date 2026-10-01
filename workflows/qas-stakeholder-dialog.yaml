@@ -1,0 +1,163 @@
+id: pragmaticbim:workflow/qas-stakeholder-dialog
+code: COM-STAKEHOLDER-DIALOG
+sort_order: 68
+name:
+  de: Nachbarschafts- und Stakeholderdialog
+  fr: Dialogue de voisinage et avec les parties prenantes
+  it: Dialogo di vicinato e con gli stakeholder
+  en: Neighbourhood and stakeholder dialogue
+description:
+  de: 'Betroffene Nachbarn und Behördenvertreter vor der Einreichung strukturiert einbeziehen, damit Einwände früh sichtbar werden statt erst im Einspracheverfahren.
+
+
+    **Ausgangslage**
+
+    - Einsprachen sind eines der grössten Terminrisiken im Bewilligungsverfahren.
+
+    - Planende scheuen frühe Information, weil sie befürchten, dadurch erst Widerstand zu erzeugen.
+
+    - Unstrukturierte oder zu späte Kommunikation lässt Bedenken unsortiert und emotional eskalieren statt sachlich bearbeitbar zu machen.
+
+
+    **Ziel & Nutzen**
+
+    - Betroffene und ihre Anliegen identifizieren, bevor das Projekt öffentlich oder behördlich sichtbar wird.
+
+    - Sachargumente gezielt vorbereiten und Einwände in einer kontrollierten, moderierten Situation bearbeiten – wer zuerst mit Fakten und klarer Haltung kommt, bestimmt den Rahmen; wer bis zur Auflage
+    wartet, überlässt das Framing den Gegnern.
+
+
+    **Ablauf**
+
+    1. Betroffene Parzellen und Nachbarn über das Modell identifizieren (DES-PARCELS, Umgebungsbauten) und nach Betroffenheit und Einfluss priorisieren.
+
+    2. Argumente je Anliegen mit Modellvisualisierungen vorbereiten und Einzelgespräche vor Gruppenveranstaltungen führen.
+
+    3. Anliegen protokollieren und Ergebnisse ins Bewilligungsargumentarium sowie gegebenenfalls ins Projekt zurückspielen.
+
+
+    **Lieferergebnis**
+
+    - Stakeholderanalyse nach Betroffenheit und Einfluss je Nachbar, Amt und Verband
+
+    - Dokumentierte Gesprächsprotokolle mit Zusagen, offenen Punkten und Eskalationsrisiken
+
+    - Argumentarium je Anliegen, gestützt auf Modelldaten (Schattenwurf, Sichtachsen, Verkehr, Baumbestand)'
+  fr: 'Associer de manière structurée les voisins concernés et les représentants des autorités avant le dépôt, afin que les objections apparaissent tôt plutôt que seulement dans la procédure d''opposition.
+
+
+    **Situation de départ**
+
+    - Les oppositions comptent parmi les plus grands risques de délai dans la procédure d''autorisation.
+
+    - Les planificateurs hésitent à informer tôt, de crainte de susciter eux-mêmes des résistances.
+
+    - Une communication non structurée ou trop tardive laisse les préoccupations s''accumuler de façon désordonnée et émotionnelle au lieu de les traiter sur le fond.
+
+
+    **Objectif et bénéfice**
+
+    - Identifier les personnes concernées et leurs préoccupations avant que le projet ne soit visible publiquement ou auprès des autorités.
+
+    - Préparer des arguments factuels ciblés et traiter les objections dans un cadre contrôlé et modéré – qui arrive d''abord avec des faits et une position claire fixe le cadre; qui attend la mise à l''enquête
+    laisse le cadrage aux opposants.
+
+
+    **Déroulement**
+
+    1. Identifier les parcelles et voisins concernés via la maquette (DES-PARCELS, constructions environnantes) et les prioriser selon l''affectation et l''influence.
+
+    2. Préparer les arguments par préoccupation à l''aide de visualisations de maquette et conduire des entretiens individuels avant les réunions de groupe.
+
+    3. Protocoler les préoccupations et réinjecter les résultats dans l''argumentaire d''autorisation ainsi que, le cas échéant, dans le projet.
+
+
+    **Livrable**
+
+    - Analyse des parties prenantes selon l''affectation et l''influence, par voisin, service et association
+
+    - Procès-verbaux documentés avec engagements, points ouverts et risques d''escalade
+
+    - Argumentaire par préoccupation, étayé par des données de maquette (ombre portée, axes de vue, trafic, peuplement arboré)'
+  it: 'Coinvolgere in modo strutturato i vicini interessati e i rappresentanti delle autorità prima dell''inoltro, affinché le obiezioni emergano presto e non solo nella procedura di opposizione.
+
+
+    **Situazione di partenza**
+
+    - Le opposizioni sono tra i maggiori rischi di termine nella procedura di autorizzazione.
+
+    - I progettisti esitano a informare presto, temendo di suscitare essi stessi resistenze.
+
+    - Una comunicazione non strutturata o troppo tardiva lascia le preoccupazioni accumularsi in modo disordinato ed emotivo invece di renderle trattabili nel merito.
+
+
+    **Obiettivo e beneficio**
+
+    - Identificare gli interessati e le loro preoccupazioni prima che il progetto sia visibile pubblicamente o alle autorità.
+
+    - Preparare argomenti fattuali mirati e trattare le obiezioni in una situazione controllata e moderata – chi arriva per primo con fatti e una posizione chiara determina il quadro; chi attende l''allestimento
+    pubblico lascia il framing agli oppositori.
+
+
+    **Svolgimento**
+
+    1. Identificare le particelle e i vicini interessati tramite il modello (DES-PARCELS, edifici circostanti) e prioritizzarli secondo interessamento e influenza.
+
+    2. Preparare gli argomenti per ogni preoccupazione con visualizzazioni del modello e condurre colloqui individuali prima degli incontri di gruppo.
+
+    3. Verbalizzare le preoccupazioni e reinserire i risultati nell''argomentario di autorizzazione e, se del caso, nel progetto.
+
+
+    **Risultato della fornitura**
+
+    - Analisi degli stakeholder secondo interessamento e influenza per vicino, ufficio e associazione
+
+    - Verbali documentati con impegni, punti aperti e rischi di escalation
+
+    - Argomentario per ogni preoccupazione, basato su dati di modello (ombra portata, assi visuali, traffico, patrimonio arboreo)'
+  en: 'Involve affected neighbours and authority representatives in a structured way before submission, so objections surface early rather than only in the formal objection procedure.
+
+
+    **Starting point**
+
+    - Objections are among the largest schedule risks in the permit procedure.
+
+    - Designers shy away from early information because they fear creating resistance that was not there.
+
+    - Unstructured or too-late communication lets concerns escalate unsorted and emotionally instead of being addressed on substance.
+
+
+    **Goal & benefit**
+
+    - Identify stakeholders and their concerns before the project becomes publicly or officially visible.
+
+    - Prepare targeted factual arguments and address objections in a controlled, moderated setting – whoever arrives first with facts and a clear stance sets the frame; whoever waits for the public notice
+    period leaves the framing to opponents.
+
+
+    **Process**
+
+    1. Identify affected parcels and neighbours via the model (DES-PARCELS, surrounding buildings) and prioritize by impact and influence.
+
+    2. Prepare arguments per concern with model visualizations and hold one-to-one talks before group events.
+
+    3. Minute the concerns and feed results back into the permit argumentarium and, where needed, into the project.
+
+
+    **Deliverable**
+
+    - Stakeholder analysis by impact and influence for each neighbour, authority, and association
+
+    - Documented meeting minutes with commitments, open points, and escalation risks
+
+    - Argumentarium per concern, supported by model data (shadow cast, sight lines, traffic, tree stock)'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Draft ID COM-STAKEHOLDER-DIALOG kept as public code; parent is QAS (risk / quality for client and project management). Uses DES-PARCELS and ARC-UMG-NEIGHBOR (Umgebungsbauten in UMG) to identify
+  and prioritise affected neighbours; project massing via SPACE-GROSS in GVM for shadow / sight-line argumentation; may also draw on QAS-URBAN-AR. Neighbour volumes stay gross (footprint × height) – same
+  volume/height/location rule as QAS-URBAN-AR. Deliverables are analysis, minutes, and argumentarium. Typical containers: ARC-GEB, UMG, GVM, BGD.'

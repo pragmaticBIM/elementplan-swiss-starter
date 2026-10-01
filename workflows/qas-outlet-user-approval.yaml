@@ -1,0 +1,143 @@
+id: pragmaticbim:workflow/qas-outlet-user-approval
+code: QAS-OUTLET-USER
+sort_order: 76
+name:
+  de: Steckdosentypen mit Nutzenden freigeben
+  fr: Faire valider les types de prises par les utilisateurs
+  it: Far approvare i tipi di prese dagli utenti
+  en: Obtain user approval for outlet types
+description:
+  de: 'Wiederkehrende Steckdosentypen und ihre typischen Positionen mit den Nutzenden abstimmen, damit die Elektroplanung auf klaren Entscheiden beruht, ohne jede einzelne Steckdose freigeben zu lassen.
+
+
+    **Ausgangslage**
+
+    - Nutzende müssen Anordnung und Ausstattung der Anschlusspunkte beurteilen können, eine Freigabe jeder einzelnen Steckdose ist jedoch aufwändig und fehleranfällig.
+
+    - Ohne definierte Typen werden Rückmeldungen uneinheitlich in die Planung übertragen; fehlende oder ungeeignete Anschlüsse fallen oft erst bei der Einrichtung auf.
+
+
+    **Ziel & Nutzen**
+
+    - Wiederkehrende Steckdosen- und Datendosentypen mit typischen Positionen und Einsatzregeln festlegen.
+
+    - Nur die entscheidungsrelevanten Typen und Sonderfälle anhand von Skizzen oder Modellausschnitten mit den Nutzenden prüfen und nachvollziehbar freigeben.
+
+
+    **Ablauf**
+
+    1. Raumtypen, Nutzungen und die vorgesehenen Steckdosen- und Datendosentypen mit typischen Positionen und Montagehöhen bereitstellen.
+
+    2. Typen als verständliche Skizzen oder Modellausschnitte aufbereiten, mit den Nutzenden prüfen und freigegebene Lösungen sowie Abweichungen dokumentieren.
+
+    3. Freigegebene Typen regelbasiert auf die Räume anwenden, Sonderfälle kennzeichnen und die vollständige Elektroplanung fachlich prüfen.
+
+
+    **Lieferergebnis**
+
+    - Freigegebener Typenkatalog mit typischen Positionen, Montagehöhen, Einsatzregeln und dokumentierten Sonderfällen.
+
+    - Elektromodell mit nachvollziehbar angewendeten Steckdosen- und Datendosentypen.'
+  fr: 'Coordonner avec les utilisateurs les types récurrents de prises et leurs positions usuelles afin que l''étude électrique repose sur des décisions claires, sans devoir faire valider chaque prise séparément.
+
+
+    **Situation de départ**
+
+    - Les utilisateurs doivent pouvoir évaluer la disposition et l''équipement des points de raccordement, mais la validation de chaque prise est lourde et source d''erreurs.
+
+    - Sans types définis, les remarques sont reportées de manière inégale dans l''étude; les raccordements manquants ou inadaptés ne sont souvent constatés qu''au moment de l''aménagement.
+
+
+    **Objectif et bénéfice**
+
+    - Définir des types récurrents de prises électriques et de prises data avec leurs positions usuelles et leurs règles d''utilisation.
+
+    - Présenter aux utilisateurs uniquement les types déterminants et les cas particuliers au moyen d''esquisses ou d''extraits de maquette, puis documenter leur validation.
+
+
+    **Déroulement**
+
+    1. Fournir les types de locaux, les usages et les types prévus de prises électriques et data avec leurs positions usuelles et leurs hauteurs de montage.
+
+    2. Présenter les types sous forme d''esquisses compréhensibles ou d''extraits de maquette, les contrôler avec les utilisateurs et documenter les solutions validées ainsi que les écarts.
+
+    3. Appliquer les types validés aux locaux selon les règles convenues, signaler les cas particuliers et faire contrôler l''ensemble de l''étude électrique par le mandataire compétent.
+
+
+    **Livrable**
+
+    - Catalogue de types validé avec positions usuelles, hauteurs de montage, règles d''utilisation et cas particuliers documentés.
+
+    - Maquette électrique dans laquelle les types de prises électriques et data sont appliqués de manière traçable.'
+  it: 'Coordinare con gli utenti i tipi ricorrenti di prese e le relative posizioni tipiche, affinché la progettazione elettrica si basi su decisioni chiare senza dover far approvare ogni singola presa.
+
+
+    **Situazione di partenza**
+
+    - Gli utenti devono poter valutare la disposizione e la dotazione dei punti di allacciamento, ma l''approvazione di ogni singola presa è onerosa e soggetta a errori.
+
+    - Senza tipi definiti, le osservazioni vengono riportate in modo disomogeneo nella progettazione; allacciamenti mancanti o inadeguati vengono spesso rilevati solo al momento dell''allestimento.
+
+
+    **Obiettivo e beneficio**
+
+    - Definire tipi ricorrenti di prese elettriche e dati con posizioni tipiche e regole di impiego.
+
+    - Sottoporre agli utenti soltanto i tipi rilevanti per la decisione e i casi particolari mediante schizzi o estratti del modello e documentarne l''approvazione.
+
+
+    **Svolgimento**
+
+    1. Fornire i tipi di locale, gli usi e i tipi previsti di prese elettriche e dati con le relative posizioni tipiche e altezze di montaggio.
+
+    2. Rappresentare i tipi mediante schizzi comprensibili o estratti del modello, verificarli con gli utenti e documentare le soluzioni approvate e gli scostamenti.
+
+    3. Applicare i tipi approvati ai locali secondo le regole concordate, contrassegnare i casi particolari e sottoporre l''intera progettazione elettrica alla verifica specialistica.
+
+
+    **Risultato della fornitura**
+
+    - Catalogo dei tipi approvato con posizioni tipiche, altezze di montaggio, regole di impiego e casi particolari documentati.
+
+    - Modello elettrico con applicazione tracciabile dei tipi di prese elettriche e dati.'
+  en: 'Coordinate recurring outlet types and their typical locations with users so electrical design is based on clear decisions without requiring approval for every individual outlet.
+
+
+    **Starting point**
+
+    - Users need to assess the arrangement and provision of connection points, but approving every individual outlet is time-consuming and error-prone.
+
+    - Without defined types, feedback is transferred inconsistently into the design; missing or unsuitable connections are often discovered only during fit-out.
+
+
+    **Goal & benefit**
+
+    - Define recurring power and data outlet types with typical locations and rules for their use.
+
+    - Present only decision-relevant types and exceptions to users through sketches or model views and document their approval.
+
+
+    **Process**
+
+    1. Provide room types, uses, and the intended power and data outlet types with their typical locations and mounting heights.
+
+    2. Present the types as clear sketches or model views, review them with users, and document approved solutions and deviations.
+
+    3. Apply the approved types to rooms to the agreed rules, mark exceptions, and have the complete electrical design checked by the responsible specialist.
+
+
+    **Deliverable**
+
+    - Approved type catalogue with typical locations, mounting heights, rules for use, and documented exceptions.
+
+    - Electrical model with traceably applied power and data outlet types.'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: User approval is type-based, not an approval of every outlet occurrence. Representative sketches or model views define typical positions and mounting heights. The electrical designer remains responsible
+  for the complete technical design and for documenting project-specific exceptions.

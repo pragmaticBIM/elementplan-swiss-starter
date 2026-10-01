@@ -1,0 +1,23 @@
+id: pragmaticbim:usage-scenario/wohnen-im-freien
+code: US-WH-07
+sort_order: 7
+name:
+  de: Wohnen im Freien
+  fr: Habiter dehors
+  it: Abitare all'aperto
+  en: Living outdoors
+description:
+  de: Bewohnende gehen vom Wohnzimmer direkt auf den Balkon.
+  fr: Les occupants passent du séjour directement au balcon.
+  it: Chi abita passa dal soggiorno direttamente al balcone.
+  en: Occupants go from the living room directly onto the balcony.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnzimmer
+- pragmaticbim:room-type/balkon
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnzimmer
+  to_room_type: pragmaticbim:room-type/balkon

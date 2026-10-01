@@ -1,0 +1,52 @@
+id: pragmaticbim:value/product-class-ceiling-covering
+code: PRODUCT-CCP
+name:
+  de: Abstrakte Deckenbekleidungsprodukte
+  fr: Abstract ceiling covering products
+  it: Abstract ceiling covering products
+  en: Abstract ceiling covering products
+description:
+  de: 'Produktklassen gemäss Abstrakte Deckenbekleidungsprodukte. Quelle: https://schema.pragmaticbim.ch/classification/ceiling-covering-product.html'
+  fr: 'Classes de produits selon Abstract ceiling covering products. Source : https://schema.pragmaticbim.ch/classification/ceiling-covering-product.html'
+  it: 'Classi di prodotto secondo Abstract ceiling covering products. Fonte: https://schema.pragmaticbim.ch/classification/ceiling-covering-product.html'
+  en: 'Product classes according to Abstract ceiling covering products. Source: https://schema.pragmaticbim.ch/classification/ceiling-covering-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Metallblech-Deckenbekleidung
+  - Gipskarton-Decke
+  - Mineralfaser-Akustikdecke
+  - Holz-Deckenbekleidung
+  - Kunststoff-Deckenbekleidung
+  - Metallpaneel-Decke
+  - Metallraster-Decke
+  - Sonstige / unbekannte Deckenbekleidung
+  fr:
+  - Metal sheet ceiling
+  - Gypsum board ceiling
+  - Mineral-fibre acoustic ceiling
+  - Wood ceiling lining
+  - Synthetic ceiling lining
+  - Metal panel ceiling
+  - Metal grid ceiling
+  - Other / unknown ceiling covering
+  it:
+  - Metal sheet ceiling
+  - Gypsum board ceiling
+  - Mineral-fibre acoustic ceiling
+  - Wood ceiling lining
+  - Synthetic ceiling lining
+  - Metal panel ceiling
+  - Metal grid ceiling
+  - Other / unknown ceiling covering
+  en:
+  - Metal sheet ceiling
+  - Gypsum board ceiling
+  - Mineral-fibre acoustic ceiling
+  - Wood ceiling lining
+  - Synthetic ceiling lining
+  - Metal panel ceiling
+  - Metal grid ceiling
+  - Other / unknown ceiling covering

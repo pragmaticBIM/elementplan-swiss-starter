@@ -1,0 +1,55 @@
+id: pragmaticbim:document/room-program
+code: RPG
+sort_order: 134
+name:
+  de: Raumprogramm
+  fr: Programme des locaux
+  it: Programma dei locali
+  en: Room programme
+definition:
+  de: Strukturierte Liste der zu einem vereinbarten Stand bestellten Räume mit stabiler technischer Raumnummer, Bestellraumtyp und Gruppierungen. Verbindliche Grundlage für Planerbeschaffung, Wettbewerb und den Abgleich mit dem Modell.
+  fr: Liste structurée des locaux commandés à un état convenu, avec numéro technique stable, type de local commandé et regroupements. Base contraignante pour l'acquisition des mandataires, le concours et la comparaison avec la maquette.
+  it: Elenco strutturato dei locali ordinati a uno stato concordato, con numero tecnico stabile, tipo di locale ordinato e raggruppamenti. Base vincolante per l'acquisizione dei progettisti, il concorso e il confronto con il modello.
+  en: Structured list of the rooms ordered at an agreed status, with a stable technical room number, ordered room type, and groupings. Binding basis for designer procurement, competition, and comparison with the model.
+description:
+  de: |-
+    - Jede Rauminstanz mit stabiler technischer Raumnummer und Bezeichnung
+    - Zugeordneter Bestellraumtyp mit den bestellten funktionalen, räumlichen und technischen Anforderungen
+    - Nutzungseinheiten, Abteilungen und weitere vereinbarte Gruppierungen
+    - Bestellte Fläche oder weitere Kennwerte je Raum
+    - Version und Freigabestand der Bestellung
+  fr: |-
+    - Chaque local avec numéro technique stable et désignation
+    - Type de local commandé attribué, avec les exigences fonctionnelles, spatiales et techniques commandées
+    - Unités d'utilisation, départements et autres regroupements convenus
+    - Surface commandée ou autres valeurs caractéristiques par local
+    - Version et état de validation de la commande
+  it: |-
+    - Ogni locale con numero tecnico stabile e denominazione
+    - Tipo di locale ordinato assegnato, con i requisiti funzionali, spaziali e tecnici ordinati
+    - Unità di utilizzazione, reparti e ulteriori raggruppamenti concordati
+    - Superficie ordinata o altri valori caratteristici per locale
+    - Versione e stato di approvazione dell'ordine
+  en: |-
+    - Each room instance with a stable technical room number and name
+    - Assigned ordered room type with the ordered functional, spatial, and technical requirements
+    - Usage units, departments, and other agreed groupings
+    - Ordered area or further metrics per room
+    - Version and approval status of the order
+file_name:
+  de: '{Projektnummer}_PRO-RPG_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-RPG_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-RPG_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-RPG_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/spaces-interior
+scheduled_milestones:
+  - "11:M"
+  - "21:M"
+  - "22:M"
+comment: >-
+  Bestellliste zu einem vereinbarten Stand, nicht das modellierte Raumlayout
+  und nicht das fortgeschriebene Raumbuch. Der Abgleich mit den Innenräumen
+  erfolgt über Name als stabile technische Raumnummer.

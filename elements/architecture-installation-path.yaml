@@ -1,6 +1,6 @@
 id: pragmaticbim:element/architecture-installation-path
-code: ARCH-INSTALL-PATH
-sort_order: 59
+code: ARC-INSTALL-PATH
+sort_order: 72
 status: active
 name:
   de: Einbringweg
@@ -8,7 +8,7 @@ name:
   it: Percorso di trasporto
   en: Installation access path
 definition:
-  de: 'Freizuhaltender Einbringweg für den Kollisionsnachweis.
+  de: 'Sichert, dass grosse Geräte ohne Kollisionen bis an ihren Einbauort transportiert werden können.
 
 
     **Beschreibung**
@@ -18,14 +18,14 @@ definition:
     - Dient der Koordination und dem Nachweis, nicht der Ausführungsplanung einzelner Bauteile.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Als vereinfachten Proxy-Körper modellieren; Abmessungen gemäss benötigtem Freiraum.
 
     - Dem zugehörigen Geschoss zuweisen; ObjectType = Einbringweg.
 
     - Keine Bauteile, Geräte oder Ausbau innerhalb des Volumens modellieren.'
-  fr: 'Voie d''apport à maintenir libre pour la preuve de collision.
+  fr: 'Garantit que les grands équipements peuvent être acheminés jusqu''à leur lieu de montage sans collision.
 
 
     **Description**
@@ -42,7 +42,7 @@ definition:
     - Rattacher à l''étage concerné ; ObjectType = Einbringweg.
 
     - Ne pas modéliser éléments, appareils ou finitions à l''intérieur du volume.'
-  it: 'Percorso di trasporto da mantenere libero per la prova di collisione.
+  it: 'Garantisce che le grandi apparecchiature possano essere trasportate fino al luogo di montaggio senza collisioni.
 
 
     **Descrizione**
@@ -59,7 +59,7 @@ definition:
     - Assegnare al piano corrispondente; ObjectType = Einbringweg.
 
     - Non modellare componenti, apparecchi o finiture all''interno del volume.'
-  en: 'Clear installation access path for clash verification.
+  en: 'Ensures large equipment can be transported to its installation location without clashes.
 
 
     **Description**
@@ -82,10 +82,43 @@ needed_in_domain:
 entity_ifc2x3: IfcBuildingElementProxy
 entity_ifc4: IfcBuildingElementProxy
 entity_ifc4_3: IfcBuildingElementProxy
-picture_link: null
-model_link: null
-applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Einbringweg) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Einbringweg)
+picture_link: architecture-installation-path.png
+attachment_link: architecture-installation-path.ifc
+picture_print_link: architecture-installation-path-print.tif
+model_link: architecture-installation-path.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Einbringweg) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Einbringweg)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Voie d'apport") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Voie d'apport")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Percorso di trasporto") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Percorso di trasporto")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Installation path") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Installation path")
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Einbringwegs.
+    fr: Désignation de la voie d'apport.
+    it: Denominazione del percorso di trasporto.
+    en: Installation access path designation.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-installation-path-verification
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
@@ -132,7 +165,7 @@ attributes:
   - pragmaticbim:workflow/qas-installation-path-verification
   is_applicability: true
   status: active
-  sort_order: 1
+  sort_order: 2
 - name: ObjectType
   pset: null
   definition:
@@ -179,32 +212,5 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/qas-installation-path-verification
   is_applicability: true
-  status: active
-  sort_order: 2
-- name: Name
-  pset: null
-  definition:
-    de: Bezeichnung des Einbringwegs.
-    fr: Désignation de la voie d'apport.
-    it: Denominazione del percorso di trasporto.
-    en: Installation access path designation.
-  datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-installation-path-verification
-  is_applicability: false
   status: active
   sort_order: 3

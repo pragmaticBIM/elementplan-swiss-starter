@@ -1,0 +1,40 @@
+id: pragmaticbim:value/detachability-accessibility
+code: DETACHABILITY-ACCESSIBILITY
+name:
+  de: Zugänglichkeit der Verbindung
+  fr: Accessibilité de la connexion
+  it: Accessibilità della connessione
+  en: Accessibility of the connection
+description:
+  de: Zulässige Werte für ePset_Circularity.Accessibility gemäss Madaster-Demontierbarkeitsmethode.
+  fr: Valeurs admises pour ePset_Circularity.Accessibility selon la méthode de démontabilité Madaster.
+  it: Valori ammessi per ePset_Circularity.Accessibility secondo il metodo di smontabilità Madaster.
+  en: Allowed values for ePset_Circularity.Accessibility according to the Madaster detachability method.
+year: 2026
+norm_reference: Madaster-/DGBC-Demontierbarkeitsmethode
+status: active
+values:
+  de:
+  - Accessible
+  - PartialNoDamage
+  - PartialWithRepairableDamage
+  - PartialWithDamage
+  - NotAccessible
+  fr:
+  - Accessible
+  - PartialNoDamage
+  - PartialWithRepairableDamage
+  - PartialWithDamage
+  - NotAccessible
+  it:
+  - Accessible
+  - PartialNoDamage
+  - PartialWithRepairableDamage
+  - PartialWithDamage
+  - NotAccessible
+  en:
+  - Accessible
+  - PartialNoDamage
+  - PartialWithRepairableDamage
+  - PartialWithDamage
+  - NotAccessible

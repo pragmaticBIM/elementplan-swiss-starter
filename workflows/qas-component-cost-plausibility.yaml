@@ -1,0 +1,146 @@
+id: pragmaticbim:workflow/qas-component-cost-plausibility
+code: QAS-COST-PLAUS
+sort_order: 91
+name:
+  de: Bauteilkosten plausibilisieren
+  fr: Contrôle de plausibilité des coûts des éléments
+  it: Verifica della plausibilità dei costi dei componenti
+  en: Component cost plausibility check
+description:
+  de: 'Einheitspreise je Produktklasse und Typ plausibilisieren, damit auffällige Kostenansätze vor Kostenschätzung und Ausschreibung erkannt werden.
+
+
+    **Ausgangslage**
+
+    - Planer-Einheitspreise, publizierte Schema-Richtwerte und büroeigene Kennwerte liegen oft unverbunden; Abweichungen bleiben lange unentdeckt.
+
+    - Ohne gemeinsamen Schlüssel (Produktklasse, Typ, Mengenbezug) sind Vergleiche zwischen Projekten und Quellen nicht belastbar.
+
+
+    **Ziel & Nutzen**
+
+    - Dreifachen Abgleich Planer-EP vs. Schema-Liste vs. Kostendatenbank früh und nachvollziehbar machen.
+
+    - Auffällige Kostenansätze vor Kostenschätzung und Ausschreibung kenntlich machen.
+
+
+    **Ablauf**
+
+    1. Kostenrelevante Bauteile mit Produktklasse, berechnetem Typ, Referenzmenge, Modellmenge und Planer-Einheitspreis auf einheitlichem Kostenstand bereitstellen.
+
+    2. Planer-EP je Produktklasse (und Typ, wo nötig) mit den versionierten Schema-Richtwerten und den Kennwerten der Kostendatenbank vergleichen.
+
+    3. Abweichungen prüfen, die massgebende Referenz dokumentieren und Annahmen festhalten.
+
+
+    **Lieferergebnis**
+
+    - Kostenauszug nach Produktklasse und Typ mit Mengenbezug und dokumentiertem Kostenstand
+
+    - Plausibilitätsprüfung mit kenntlich gemachten Abweichungen und nachvollziehbarer Referenzwahl'
+  fr: 'Vérifier les prix unitaires du planificateur par rapport à schema.pragmaticbim.ch et à la base du bureau – par classe de produit et type.
+
+
+    **Situation de départ**
+
+    - Prix unitaires du planificateur, valeurs schema publiées et indicateurs du bureau restent souvent déconnectés ; les écarts passent longtemps inaperçus.
+
+    - Sans clé commune (classe de produit, type, base de quantité), les comparaisons entre projets et sources ne sont pas fiables.
+
+
+    **Objectif et bénéfice**
+
+    - Rendre tôt et traçable le triple contrôle prix planificateur vs liste schema vs base du bureau.
+
+    - Signaler les prix atypiques avant l''estimation des coûts et l''appel d''offres.
+
+
+    **Déroulement**
+
+    1. Fournir les éléments déterminants avec classe de produit, type calculé, quantité de référence, quantité maquette et prix unitaire du planificateur, sur une même base de prix.
+
+    2. Comparer le prix unitaire du planificateur, par classe de produit (et type si besoin), aux valeurs schema versionnées et aux indicateurs de la base du bureau.
+
+    3. Vérifier les écarts, documenter la référence retenue et consigner les hypothèses.
+
+
+    **Livrable**
+
+    - Extrait des coûts par classe de produit et type, avec base de quantité et base de prix documentée
+
+    - Contrôle de plausibilité signalant les écarts et le choix de référence'
+  it: 'Confrontare i prezzi unitari del progettista con schema.pragmaticbim.ch e con la banca dati dello studio – per classe di prodotto e tipo.
+
+
+    **Situazione di partenza**
+
+    - Prezzi unitari del progettista, valori schema pubblicati e indici dello studio restano spesso scollegati; gli scostamenti restano a lungo inosservati.
+
+    - Senza chiave comune (classe di prodotto, tipo, base quantitativa) i confronti tra progetti e fonti non sono affidabili.
+
+
+    **Obiettivo e beneficio**
+
+    - Rendere precoce e tracciabile il confronto triplo prezzo progettista vs elenco schema vs banca dati dello studio.
+
+    - Evidenziare prezzi anomali prima della stima dei costi e della gara.
+
+
+    **Svolgimento**
+
+    1. Fornire i componenti rilevanti con classe di prodotto, tipo calcolato, quantità di riferimento, quantità dal modello e prezzo unitario del progettista, sulla stessa base di prezzi.
+
+    2. Confrontare il prezzo unitario del progettista, per classe di prodotto (e tipo se necessario), con i valori schema versionati e con gli indici della banca dati dello studio.
+
+    3. Verificare gli scostamenti, documentare il riferimento adottato e fissare le ipotesi.
+
+
+    **Risultato della fornitura**
+
+    - Estratto costi per classe di prodotto e tipo, con base quantitativa e base prezzi documentata
+
+    - Verifica di plausibilità con scostamenti evidenziati e scelta del riferimento'
+  en: 'Check the designer''s unit prices against schema.pragmaticbim.ch and the cost database – by product class and type.
+
+
+    **Starting point**
+
+    - Designer unit prices, published schema benchmarks, and office rates often remain disconnected; deviations stay hidden for too long.
+
+    - Without a common key (product class, type, quantity basis), comparisons across projects and sources are not reliable.
+
+
+    **Goal & benefit**
+
+    - Make the three-way check – designer EP vs schema list vs cost database – early and traceable.
+
+    - Flag unusual cost assumptions before cost estimate and tendering.
+
+
+    **Process**
+
+    1. Provide cost-relevant components with product class, calculated type, reference quantity, model quantity, and designer unit price on a consistent price basis.
+
+    2. Compare the designer unit price per product class (and type where needed) with versioned schema benchmarks and the cost database rates.
+
+    3. Review deviations, document which reference was adopted, and record assumptions.
+
+
+    **Deliverable**
+
+    - Cost extract by product class and type, with quantity basis and documented price basis
+
+    - Plausibility check with highlighted deviations and traceable reference choice'
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: special
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Three-way EP check keyed by ePset_Cost.ProductClass (and CalculatedType where useful). Project rate: ePset_Cost.UnitPrice. Quantity pointer: ePset_Cost.ReferenceQuantity. Component cost = referenced
+  model quantity × project unit price. Compare against (a) versioned schema.pragmaticbim.ch product EP / ranges and (b) office Kostendatenbank fed by BES-UNIT-PRICE. Align currency, price date, quality
+  standard, and included scope before comparing. Schema and office rates are external benchmarks, not IFC attributes. ProductClass and CalculatedType are derived in BES-PRODUCT-TENDER (logic in book Anhang
+  D, Bauteiltypisierung); office EPs come from BES-UNIT-PRICE.'

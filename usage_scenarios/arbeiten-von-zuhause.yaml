@@ -1,0 +1,26 @@
+id: pragmaticbim:usage-scenario/arbeiten-von-zuhause
+code: US-WH-02
+sort_order: 2
+name:
+  de: Arbeiten von Zuhause
+  fr: Travail à domicile
+  it: Lavoro da casa
+  en: Working from home
+description:
+  de: Bewohnende betreten die Wohnung und gehen über den Gang ins Arbeitszimmer, ohne den Wohnbereich zu durchqueren.
+  fr: Les occupants entrent dans le logement et rejoignent le bureau à domicile par le couloir, sans traverser le séjour.
+  it: Chi abita entra nell'alloggio e raggiunge lo studio dal corridoio, senza attraversare il soggiorno.
+  en: Occupants enter the dwelling and reach the home study from the hallway, without crossing the living room.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/gang
+- pragmaticbim:room-type/arbeitszimmer
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/gang
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/arbeitszimmer

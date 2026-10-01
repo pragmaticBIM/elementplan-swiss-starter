@@ -1,0 +1,32 @@
+id: pragmaticbim:usage-scenario/ankommen
+code: US-WH-18
+sort_order: 18
+name:
+  de: Ankommen
+  fr: Arriver
+  it: Arrivare
+  en: Arriving home
+description:
+  de: Bewohnende kommen von der Strasse in die Eingangshalle, treten in die Wohnung und legen im Entree ab, bevor der Gang die Wohnung erschliesst.
+  fr: Les occupants arrivent de la rue dans le hall d'entrée, entrent dans le logement et déposent leurs affaires dans l'entrée, avant que le couloir desserve le logement.
+  it: Chi abita arriva dalla strada nell'atrio, entra nell'alloggio e depone nell'entrata, prima che il corridoio distribuisca l'alloggio.
+  en: Occupants arrive from the street into the lobby, enter the dwelling, and drop belongings in the entrance hall before the hallway serves the rooms.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/strasse
+- pragmaticbim:room-type/eingangshalle
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/entree
+- pragmaticbim:room-type/gang
+room_relationships:
+- from_room_type: pragmaticbim:room-type/strasse
+  to_room_type: pragmaticbim:room-type/eingangshalle
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/wohnungseingang
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/entree
+- from_room_type: pragmaticbim:room-type/entree
+  to_room_type: pragmaticbim:room-type/gang

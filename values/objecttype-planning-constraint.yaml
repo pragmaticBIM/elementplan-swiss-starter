@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-planning-constraint
+code: OBJ-CONSTRAINT
+name:
+  de: ObjectType Rahmenbedingung
+  fr: ObjectType condition-cadre
+  it: ObjectType condizione quadro
+  en: ObjectType planning constraint
+description:
+  de: ObjectType für IfcBuildingElementProxy als planungsrelevante Rahmenbedingung.
+  fr: ObjectType pour IfcBuildingElementProxy comme condition-cadre pertinente pour la planification.
+  it: ObjectType per IfcBuildingElementProxy come condizione quadro rilevante per la pianificazione.
+  en: ObjectType for IfcBuildingElementProxy as a planning-relevant constraint.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Rahmenbedingung
+  fr:
+  - Condition-cadre
+  it:
+  - Condizione quadro
+  en:
+  - Planning constraint

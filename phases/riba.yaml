@@ -1,0 +1,280 @@
+id: pragmaticbim:phase/riba
+name:
+  de: RIBA Plan of Work
+  fr: RIBA Plan of Work
+  it: RIBA Plan of Work
+  en: RIBA Plan of Work
+values:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+milestones:
+  - id: 'riba:0:B'
+    code: B
+    sort_order: 1
+    name:
+      de: Beginn 0 (Strategische Definition)
+      fr: Début 0 (Définition stratégique)
+      it: Inizio 0 (Definizione strategica)
+      en: Beginning 0 (Strategic Definition)
+    status: active
+    phase: '0'
+    kind: beginning
+  - id: 'riba:0:M'
+    code: M
+    sort_order: 2
+    name:
+      de: Mitte 0 (Strategische Definition)
+      fr: Milieu 0 (Définition stratégique)
+      it: Metà 0 (Definizione strategica)
+      en: Mid Phase 0 (Strategic Definition)
+    status: active
+    phase: '0'
+    kind: custom
+  - id: 'riba:0:E'
+    code: E
+    sort_order: 3
+    name:
+      de: Ende 0 (Strategische Definition)
+      fr: Fin 0 (Définition stratégique)
+      it: Fine 0 (Definizione strategica)
+      en: End Phase 0 (Strategic Definition)
+    status: active
+    phase: '0'
+    kind: end
+  - id: 'riba:1:B'
+    code: B
+    sort_order: 4
+    name:
+      de: Beginn 1 (Vorbereitung und Briefing)
+      fr: Début 1 (Préparation et briefing)
+      it: Inizio 1 (Preparazione e briefing)
+      en: Beginning 1 (Preparation and Briefing)
+    status: active
+    phase: '1'
+    kind: beginning
+  - id: 'riba:1:M'
+    code: M
+    sort_order: 5
+    name:
+      de: Mitte 1 (Vorbereitung und Briefing)
+      fr: Milieu 1 (Préparation et briefing)
+      it: Metà 1 (Preparazione e briefing)
+      en: Mid Phase 1 (Preparation and Briefing)
+    status: active
+    phase: '1'
+    kind: custom
+  - id: 'riba:1:E'
+    code: E
+    sort_order: 6
+    name:
+      de: Ende 1 (Vorbereitung und Briefing)
+      fr: Fin 1 (Préparation et briefing)
+      it: Fine 1 (Preparazione e briefing)
+      en: End Phase 1 (Preparation and Briefing)
+    status: active
+    phase: '1'
+    kind: end
+  - id: 'riba:2:B'
+    code: B
+    sort_order: 7
+    name:
+      de: Beginn 2 (Konzeptentwurf)
+      fr: Début 2 (Conception conceptuelle)
+      it: Inizio 2 (Progetto concettuale)
+      en: Beginning 2 (Concept Design)
+    status: active
+    phase: '2'
+    kind: beginning
+  - id: 'riba:2:M'
+    code: M
+    sort_order: 8
+    name:
+      de: Mitte 2 (Konzeptentwurf)
+      fr: Milieu 2 (Conception conceptuelle)
+      it: Metà 2 (Progetto concettuale)
+      en: Mid Phase 2 (Concept Design)
+    status: active
+    phase: '2'
+    kind: custom
+  - id: 'riba:2:E'
+    code: E
+    sort_order: 9
+    name:
+      de: Ende 2 (Konzeptentwurf)
+      fr: Fin 2 (Conception conceptuelle)
+      it: Fine 2 (Progetto concettuale)
+      en: End Phase 2 (Concept Design)
+    status: active
+    phase: '2'
+    kind: end
+  - id: 'riba:3:B'
+    code: B
+    sort_order: 10
+    name:
+      de: Beginn 3 (Räumliche Koordination)
+      fr: Début 3 (Coordination spatiale)
+      it: Inizio 3 (Coordinamento spaziale)
+      en: Beginning 3 (Spatial Coordination)
+    status: active
+    phase: '3'
+    kind: beginning
+  - id: 'riba:3:M'
+    code: M
+    sort_order: 11
+    name:
+      de: Mitte 3 (Räumliche Koordination)
+      fr: Milieu 3 (Coordination spatiale)
+      it: Metà 3 (Coordinamento spaziale)
+      en: Mid Phase 3 (Spatial Coordination)
+    status: active
+    phase: '3'
+    kind: custom
+  - id: 'riba:3:E'
+    code: E
+    sort_order: 12
+    name:
+      de: Ende 3 (Räumliche Koordination)
+      fr: Fin 3 (Coordination spatiale)
+      it: Fine 3 (Coordinamento spaziale)
+      en: End Phase 3 (Spatial Coordination)
+    status: active
+    phase: '3'
+    kind: end
+  - id: 'riba:4:B'
+    code: B
+    sort_order: 13
+    name:
+      de: Beginn 4 (Technischer Entwurf)
+      fr: Début 4 (Conception technique)
+      it: Inizio 4 (Progetto tecnico)
+      en: Beginning 4 (Technical Design)
+    status: active
+    phase: '4'
+    kind: beginning
+  - id: 'riba:4:M'
+    code: M
+    sort_order: 14
+    name:
+      de: Mitte 4 (Technischer Entwurf)
+      fr: Milieu 4 (Conception technique)
+      it: Metà 4 (Progetto tecnico)
+      en: Mid Phase 4 (Technical Design)
+    status: active
+    phase: '4'
+    kind: custom
+  - id: 'riba:4:E'
+    code: E
+    sort_order: 15
+    name:
+      de: Ende 4 (Technischer Entwurf)
+      fr: Fin 4 (Conception technique)
+      it: Fine 4 (Progetto tecnico)
+      en: End Phase 4 (Technical Design)
+    status: active
+    phase: '4'
+    kind: end
+  - id: 'riba:5:B'
+    code: B
+    sort_order: 16
+    name:
+      de: Beginn 5 (Fertigung und Bau)
+      fr: Début 5 (Fabrication et construction)
+      it: Inizio 5 (Produzione e costruzione)
+      en: Beginning 5 (Manufacturing and Construction)
+    status: active
+    phase: '5'
+    kind: beginning
+  - id: 'riba:5:M'
+    code: M
+    sort_order: 17
+    name:
+      de: Mitte 5 (Fertigung und Bau)
+      fr: Milieu 5 (Fabrication et construction)
+      it: Metà 5 (Produzione e costruzione)
+      en: Mid Phase 5 (Manufacturing and Construction)
+    status: active
+    phase: '5'
+    kind: custom
+  - id: 'riba:5:E'
+    code: E
+    sort_order: 18
+    name:
+      de: Ende 5 (Fertigung und Bau)
+      fr: Fin 5 (Fabrication et construction)
+      it: Fine 5 (Produzione e costruzione)
+      en: End Phase 5 (Manufacturing and Construction)
+    status: active
+    phase: '5'
+    kind: end
+  - id: 'riba:6:B'
+    code: B
+    sort_order: 19
+    name:
+      de: Beginn 6 (Übergabe)
+      fr: Début 6 (Remise)
+      it: Inizio 6 (Consegna)
+      en: Beginning 6 (Handover)
+    status: active
+    phase: '6'
+    kind: beginning
+  - id: 'riba:6:M'
+    code: M
+    sort_order: 20
+    name:
+      de: Mitte 6 (Übergabe)
+      fr: Milieu 6 (Remise)
+      it: Metà 6 (Consegna)
+      en: Mid Phase 6 (Handover)
+    status: active
+    phase: '6'
+    kind: custom
+  - id: 'riba:6:E'
+    code: E
+    sort_order: 21
+    name:
+      de: Ende 6 (Übergabe)
+      fr: Fin 6 (Remise)
+      it: Fine 6 (Consegna)
+      en: End Phase 6 (Handover)
+    status: active
+    phase: '6'
+    kind: end
+  - id: 'riba:7:B'
+    code: B
+    sort_order: 22
+    name:
+      de: Beginn 7 (Nutzung)
+      fr: Début 7 (Utilisation)
+      it: Inizio 7 (Uso)
+      en: Beginning 7 (Use)
+    status: active
+    phase: '7'
+    kind: beginning
+  - id: 'riba:7:M'
+    code: M
+    sort_order: 23
+    name:
+      de: Mitte 7 (Nutzung)
+      fr: Milieu 7 (Utilisation)
+      it: Metà 7 (Uso)
+      en: Mid Phase 7 (Use)
+    status: active
+    phase: '7'
+    kind: custom
+  - id: 'riba:7:E'
+    code: E
+    sort_order: 24
+    name:
+      de: Ende 7 (Nutzung)
+      fr: Fin 7 (Utilisation)
+      it: Fine 7 (Uso)
+      en: End Phase 7 (Use)
+    status: active
+    phase: '7'
+    kind: end

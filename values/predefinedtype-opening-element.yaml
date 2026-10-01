@@ -1,0 +1,28 @@
+id: pragmaticbim:value/predefinedtype-opening-element
+code: OPENING-TYPE
+name:
+  de: PredefinedType Öffnung
+  fr: PredefinedType ouverture
+  it: PredefinedType apertura
+  en: PredefinedType opening
+description:
+  de: IfcOpeningElement PredefinedType für Durchbruch und Aussparung.
+  fr: PredefinedType IfcOpeningElement pour percement et réservation.
+  it: PredefinedType IfcOpeningElement per foro e riserva.
+  en: IfcOpeningElement PredefinedType for opening and recess.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - OPENING
+  - RECESS
+  fr:
+  - OPENING
+  - RECESS
+  it:
+  - OPENING
+  - RECESS
+  en:
+  - OPENING
+  - RECESS

@@ -1,6 +1,6 @@
 id: pragmaticbim:document/environmental-impact-assessment
 code: UVP
-sort_order: 110
+sort_order: 143
 name:
   de: Umweltverträglichkeitsprüfung
   fr: Étude d'impact sur l'environnement
@@ -36,16 +36,20 @@ file_name:
   de: '{Projektnummer}_PRO-UVP_{Freitext}.{ext}'
   fr: '{NumeroProjet}_PRO-UVP_{Libre}.{ext}'
   it: '{NumeroProgetto}_PRO-UVP_{Libero}.{ext}'
-  en: '{ProjectNumber}_PRO-UVP_{Free}.{ext}'
+  en: '{ProjectNumber}_PRO-UVP_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/architecture
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
+  - pragmaticbim:element/spaces-gross-volume
+  - pragmaticbim:element/architecture-building-law-parcel
+  - pragmaticbim:element/architecture-planning-constraint
+  - pragmaticbim:element/survey-surface-geometry
+  - pragmaticbim:element/landscape-tree
+  - pragmaticbim:element/landscape-humus
+  - pragmaticbim:element/architecture-construction-logistics
 scheduled_milestones:
-  - "22:beginning"
-  - "31:beginning"
-  - "32:beginning"
-  - "33:beginning"
+  - "22:M"
+  - "31:M"
+  - "32:M"
+  - "33:M"

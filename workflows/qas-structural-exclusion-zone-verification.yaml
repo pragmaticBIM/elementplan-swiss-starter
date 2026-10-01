@@ -2,176 +2,132 @@ id: pragmaticbim:workflow/qas-structural-exclusion-zone-verification
 code: QAS-EXCL-ZONE
 sort_order: 73
 name:
-  de: Kontrolle Sperrzonen und Tragwerksskizze
-  fr: Contrôle zones d'exclusion et esquisse porteuse
-  it: Controllo zone di esclusione e schizzo strutturale
-  en: Control of exclusion zones and structural sketch
+  de: Sperrzonen definieren
+  fr: Définir les zones d'exclusion
+  it: Definire le zone di esclusione
+  en: Define exclusion zones
 description:
-  de: 'Sperrzonenmodell und Tragwerksskizze im Gesamtmodell prüfen — bevor Planung in gesperrte Zonen läuft.
+  de: 'Verbindliche Sperrzonen der Tragwerksplanung als Planungsgrenzen führen, damit Architektur und Gebäudetechnik diese Bereiche freihalten.
 
 
     **Ausgangslage**
 
-    - Der Tragwerksplaner liefert das Tragwerkskonzept als Skizze, nicht als Modell; der Architekt braucht dennoch belastbare Tragwerksgeometrie im Architekturmodell.
+    - Tragende Bereiche wie Stützenachsen, Trägerzonen und Aussparungsreserven werden oft erst spät als Konflikte sichtbar.
 
-    - Ohne verbindliche Sperrzonen und frühe Prüfung werden Bauteile in No-go-Zonen geplant — mit teuren Folgeänderungen.
+    - Ohne verbindliche Sperrzonen planen Architektur und Gebäudetechnik in Volumen, die das Tragwerk benötigt.
 
 
     **Ziel & Nutzen**
 
-    - Tragwerkskonzept als grobe Tragwerksskizze im Architekturmodell führen und als tragend kennzeichnen.
+    - Benötigte Tragwerksbereiche früh als No-go-Zonen festlegen.
 
-    - Sperrzonenmodell vom Tragwerksplaner als verbindliche Planungsgrenze prüfen und den Nachweis dokumentieren.
+    - Kollisionen mit Architektur und Gebäudetechnik gegen diese Grenzen prüfen.
 
 
     **Ablauf**
 
-    1. Tragwerksplaner liefert Sperrzonenmodell; Architekt führt Tragwerkskonzept als grobe Skizze im Architekturmodell (LoadBearing=TRUE).
+    1. Sperrzonen gemäss Tragwerkskonzept als vereinfachte Volumen bereitstellen.
 
-    2. Beide Modelle im Gesamtmodell zusammenführen.
+    2. Architektur und weitere Disziplinen gegen die Sperrzonen prüfen.
 
-    3. Prüfen, dass Architektur-Geometrie und weitere Disziplinen die Sperrzonen nicht verletzen; Nachweis dokumentieren.
-
-
-    **Ergebnis**
-
-    - Nachgewiesene Einhaltung der Sperrzonen als Planungsgrundlage für Projektierung und Bewilligungsverfahren.
+    3. Abweichungen dokumentieren und die geprüften Zonen nachführen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Architekturmodell mit Tragwerksskizze als IfcFooting, IfcSlab, IfcRoof, IfcColumn und IfcBeam mit LoadBearing=TRUE
-
-    - Sperrzonenmodell Tragwerksplanung als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Sperrzone
-
-    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey in beiden Modellen
-
-    - Name und Reference je Element'
-  fr: 'Vérifier le modèle de zones d''exclusion et l''esquisse porteuse en maquette fédérée — avant que la planification n''empiète sur les zones interdites.
+    - Sperrzonenmodell der Tragwerksplanung mit verbindlichen Planungsgrenzen.'
+  fr: 'Tenir les zones d''exclusion contraignantes de la structure comme limites de planification, afin que l''architecture et les techniques du bâtiment les laissent libres.
 
 
     **Situation de départ**
 
-    - L''ingénieur structure fournit le concept porteur sous forme de croquis, pas de modèle ; l''architecte a néanmoins besoin d''une géométrie porteuse fiable dans le modèle d''architecture.
+    - Les volumes porteurs tels qu''axes de poteaux, zones de poutres et réserves de réservation n''apparaissent souvent comme conflits que tardivement.
 
-    - Sans zones d''exclusion contraignantes et contrôle en phase initiale, des composants sont planifiés dans des no-go zones — avec des modifications coûteuses en cascade.
+    - Sans zones d''exclusion contraignantes, l''architecture et les techniques du bâtiment planifient dans des volumes dont la structure a besoin.
 
 
     **Objectif et bénéfice**
 
-    - Saisir le concept porteur comme esquisse porteuse grossière dans le modèle d''architecture et le marquer comme porteur.
+    - Fixer tôt les volumes nécessaires à la structure comme zones interdites.
 
-    - Vérifier le modèle de zones d''exclusion de l''ingénieur structure comme limite de planification contraignante et documenter la preuve.
+    - Contrôler les collisions avec l''architecture et les techniques du bâtiment par rapport à ces limites.
 
 
     **Déroulement**
 
-    1. L''ingénieur structure fournit le modèle de zones d''exclusion ; l''architecte reprend le concept porteur comme esquisse grossière dans le modèle d''architecture (LoadBearing=TRUE).
+    1. Fournir les zones d''exclusion selon le concept porteur comme volumes simplifiés.
 
-    2. Fusionner les deux modèles en maquette fédérée.
+    2. Contrôler l''architecture et les autres disciplines par rapport aux zones d''exclusion.
 
-    3. Vérifier que la géométrie d''architecture et les autres disciplines ne violent pas les zones d''exclusion ; documenter la preuve.
-
-
-    **Résultat**
-
-    - Respect des zones d''exclusion prouvé comme base de planification pour le projet et la procédure d''autorisation.
+    3. Documenter les écarts et tenir à jour les zones contrôlées.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Modèle d''architecture avec esquisse porteuse comme IfcFooting, IfcSlab, IfcRoof, IfcColumn et IfcBeam avec LoadBearing=TRUE
-
-    - Modèle de zones d''exclusion de l''ingénierie structurelle comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Sperrzone
-
-    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey dans les deux modèles
-
-    - Name et Reference par élément'
-  it: 'Verificare il modello delle zone di esclusione e lo schizzo strutturale nel modello federato — prima che la pianificazione invada zone vietate.
+    - Maquette des zones d''exclusion de l''ingénieur structure avec limites de planification contraignantes.'
+  it: 'Tenere le zone di esclusione vincolanti della struttura come limiti di pianificazione, affinché architettura e impianti le lascino libere.
 
 
     **Situazione di partenza**
 
-    - L''ingegnere strutturista consegna il concept strutturale come schizzo, non come modello; l''architetto necessita comunque di una geometria portante affidabile nel modello di architettura.
+    - I volumi portanti come assi di colonna, zone di trave e riserve di foro emergono spesso come interferenze solo tardi.
 
-    - Senza zone di esclusione vincolanti e verifica in fase iniziale, componenti vengono pianificati in no-go zone — con costose modifiche a catena.
+    - Senza zone di esclusione vincolanti, architettura e impianti pianificano in volumi di cui la struttura ha bisogno.
 
 
     **Obiettivo e beneficio**
 
-    - Gestire il concept strutturale come schizzo strutturale grossolano nel modello di architettura e contrassegnarlo come portante.
+    - Fissare presto i volumi necessari alla struttura come zone vietate.
 
-    - Verificare il modello delle zone di esclusione dell''ingegnere strutturista come limite vincolante di pianificazione e documentare la prova.
+    - Verificare le interferenze con architettura e impianti rispetto a questi limiti.
 
 
     **Svolgimento**
 
-    1. L''ingegnere strutturista consegna il modello delle zone di esclusione; l''architetto riprende il concept strutturale come schizzo grossolano nel modello di architettura (LoadBearing=TRUE).
+    1. Fornire le zone di esclusione secondo il concept strutturale come volumi semplificati.
 
-    2. Unire entrambi i modelli nel modello federato.
+    2. Verificare l''architettura e le altre discipline rispetto alle zone di esclusione.
 
-    3. Verificare che la geometria architettonica e le altre discipline non violino le zone di esclusione; documentare la prova.
-
-
-    **Risultato**
-
-    - Rispetto delle zone di esclusione dimostrato come base di pianificazione per progettazione e procedura di autorizzazione.
+    3. Documentare gli scostamenti e tenere aggiornate le zone verificate.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Modello di architettura con schizzo strutturale come IfcFooting, IfcSlab, IfcRoof, IfcColumn e IfcBeam con LoadBearing=TRUE
-
-    - Modello delle zone di esclusione dell''ingegneria strutturale come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Sperrzone
-
-    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey in entrambi i modelli
-
-    - Name e Reference per elemento'
-  en: 'Verify the exclusion zone model and structural sketch in the federated model — before planning runs into restricted zones.
+    - Modello delle zone di esclusione dell''ingegnere strutturista con limiti vincolanti di pianificazione.'
+  en: 'Keep the structural engineer''s binding exclusion zones as planning boundaries so that architecture and building services leave those volumes clear.
 
 
     **Starting point**
 
-    - The structural engineer delivers the structural concept as a sketch, not a model; the architect still needs reliable structural geometry in the architecture model.
+    - Load-bearing volumes such as column axes, beam zones, and opening reserves often show up as clashes only late.
 
-    - Without binding exclusion zones and early checks, components get planned in no-go zones — leading to costly follow-up changes.
+    - Without binding exclusion zones, architecture and building services plan inside volumes the structure needs.
 
 
     **Goal & benefit**
 
-    - Maintain the structural concept as a rough structural sketch in the architecture model and mark it as load-bearing.
+    - Fix required structural volumes early as no-go zones.
 
-    - Verify the structural engineer''s exclusion zone model as a binding planning boundary and document the proof.
+    - Check clashes with architecture and building services against these boundaries.
 
 
     **Process**
 
-    1. The structural engineer delivers the exclusion zone model; the architect transfers the structural concept as a rough sketch into the architecture model (LoadBearing=TRUE).
+    1. Provide exclusion zones as set out in the structural concept as simplified volumes.
 
-    2. Merge both models in the federated model.
+    2. Check architecture and other disciplines against the exclusion zones.
 
-    3. Verify that architecture geometry and other disciplines do not violate the exclusion zones; document the proof.
-
-
-    **Outcome**
-
-    - Verified compliance with exclusion zones as the planning basis for design development and permitting.
+    3. Document deviations and keep the checked zones current.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture model with structural sketch as IfcFooting, IfcSlab, IfcRoof, IfcColumn, and IfcBeam with LoadBearing=TRUE
-
-    - Structural engineering exclusion zone model as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Sperrzone
-
-    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey in both models
-
-    - Name and Reference per element'
+    - Structural exclusion zone model with binding planning boundaries.'
 workflow_group: null
-parent_workflow: pragmaticbim:workflow/qas
+parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
-- pragmaticbim:domain/architecture
 - pragmaticbim:domain/structural
-comment: Early QS. Structural concept via sketches in architecture model (LoadBearing); structural engineer delivers exclusion zone model only. ObjectType=Sperrzone on IfcBuildingElementProxy.
+comment: Structural deliverable for a later structural volume. Exclusion zones as IfcBuildingElementProxy with ObjectType=Sperrzone. Not part of the architecture book.

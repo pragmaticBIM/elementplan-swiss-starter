@@ -1,16 +1,30 @@
 id: pragmaticbim:workflow/qas
 code: QAS
-sort_order: 70
+sort_order: 20
 name:
   de: Qualitätssicherung
   fr: Assurance qualité
   it: Assicurazione qualità
   en: Quality assurance
 description:
-  de: 'Prüfung, Kontrolle und Nachweis der Einhaltung von Planungsdaten, Modellen und Ausführung. Beispiele: Modellprüfungen, Kollisionsprüfung, Prüfprotokolle, Auditberichte.'
-  fr: 'Vérification, contrôle et conformité des données de conception, modèles et exécution. Exemples: contrôle de maquettes, détection de conflits, protocoles d''essai, rapports d''audit.'
-  it: 'Verifica, ispezione e controllo di conformità di dati, modelli ed esecuzione. Esempi: verifica modelli, clash detection, protocolli di prova, rapporti di audit.'
-  en: 'Verification, inspection, and compliance checking of design data, models, and execution. Examples: model checks, clash detection, test protocols, audit reports.'
+  de: 'Die Anwendungsfälle der Qualitätssicherung sind für nahezu alle Projektrollen relevant. Aus Sicht der Bauherrschaft sollte BIM in erster Linie als Instrument der Qualitätssicherung und des Risikomanagements
+    verstanden werden. Zu häufig wird BIM jedoch lediglich als Anforderung an die Planenden weitergegeben – als etwas, das andere erledigen.
+
+
+    Qualitätssicherung ist jedoch eine grundlegende Aufgabe des Managements und der Projektsteuerung. Sie betrifft deshalb die Bauherrschaft ebenso wie Projektleitungen, Architektinnen und Architekten,
+    Generalplanende und Modellierende – jeweils auf einer der Rolle entsprechenden Ebene. Bauherrschaften können damit die Erfüllung ihrer Bestellung überprüfen und Projektrisiken frühzeitig erkennen. Projektleitungen
+    und Planende wiederum unterstützt sie bei der systematischen Prüfung und der Vier-Augen-Kontrolle ihrer eigenen Arbeitsergebnisse.'
+  fr: Les cas d'application de l'assurance qualité concernent presque tous les rôles. Les maîtres d'ouvrage peuvent s'en servir pour vérifier le respect de leur commande et poser les bases d'une gestion
+    des risques du projet. Il en va de même pour les directions de projet et les planificateurs, auxquels ils facilitent le contrôle à quatre yeux de leurs propres résultats.
+  it: I casi d'uso di assicurazione qualità interessano quasi tutti i ruoli. I committenti possono utilizzarli per verificare il rispetto della propria commessa e porre le basi per una gestione dei rischi
+    di progetto. Lo stesso vale per le direzioni di progetto e i progettisti, ai quali semplificano il controllo a quattro occhi dei propri risultati.
+  en: 'Quality assurance use cases are relevant to almost every project role. From the client’s perspective, BIM should primarily be understood as a quality assurance and risk management tool. Too often,
+    however, BIM is merely passed on as a requirement for the designers – as something for others to handle.
+
+
+    Quality assurance is a fundamental management and project-control task. It therefore concerns clients, project managers, architects, lead designers, and modellers alike, each at a level appropriate
+    to their role. Clients can use it to check how far their brief has been met and identify project risks early. In turn, it supports project managers and designers in systematically checking their own
+    work through a four-eyes review.'
 workflow_group: null
 parent_workflow: null
 picture_link: null

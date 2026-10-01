@@ -1,0 +1,468 @@
+id: pragmaticbim:element/spaces-elevator
+code: SPACE-ELEVATOR
+sort_order: 13
+status: active
+name:
+  de: Aufzug / Lift
+  fr: Ascenseur / Lift
+  it: Ascensore / Lift
+  en: Lift
+definition:
+  de: 'Ermöglicht die geschossweise Zuordnung der belegten Fläche, damit Flächennachweise korrekt geführt werden können.
+
+
+    **Beschreibung**
+
+    - Das Aufzugsraumobjekt beschreibt den vom Aufzug belegten Raum je Geschoss, nicht das physische Fördermittel.
+
+    - Die geschossweise Trennung ermöglicht eine korrekte Klassifizierung der Flächen, z. B. nach SIA 416 oder DIN 277.
+
+
+    **Modellierungshinweis**
+
+    - Mit dem Raumwerkzeug je Geschoss als getrenntes Volumen modellieren; keine geschossübergreifenden Raumobjekte.
+
+    - Name je Geschoss eindeutig vergeben, LongName = Aufzug setzen und Reference mit der Flächenklasse führen (z. B. `VF` bzw. `VF-9`).'
+  fr: 'Permet d''attribuer la surface occupée à chaque étage afin de tenir correctement les justificatifs de surfaces.
+
+
+    **Description**
+
+    - L''objet local d''ascenseur décrit l''espace occupé par l''ascenseur à chaque étage, et non l''appareil élévateur physique.
+
+    - La séparation par étage permet une classification correcte des surfaces, p. ex. selon SIA 416 ou DIN 277.
+
+
+    **Directives de modélisation**
+
+    - Modéliser un volume distinct avec l''outil local à chaque étage ; ne pas créer d''objet local traversant plusieurs étages.
+
+    - Attribuer un Name univoque par étage, renseigner LongName = Ascenseur et indiquer la classe de surface dans Reference (p. ex. `VF` ou `VF-9`).'
+  it: 'Consente di attribuire la superficie occupata a ogni piano per gestire correttamente le verifiche delle superfici.
+
+
+    **Descrizione**
+
+    - L''oggetto locale ascensore descrive lo spazio occupato dall''ascensore a ogni piano, non l''impianto elevatore fisico.
+
+    - La separazione per piano consente una corretta classificazione delle superfici, ad es. secondo SIA 416 o DIN 277.
+
+
+    **Direttive di modellazione**
+
+    - Modellare con lo strumento locale un volume separato per ogni piano; non creare oggetti locali che attraversano più piani.
+
+    - Assegnare un Name univoco per piano, impostare LongName = Ascensore e indicare la classe di superficie in Reference (p. es. `VF` o `VF-9`).'
+  en: 'Enables the occupied area to be assigned by storey so that area verification can be maintained correctly.
+
+
+    **Description**
+
+    - The elevator space object describes the space occupied by the elevator on each storey, not the physical lifting equipment.
+
+    - Storey-by-storey separation enables correct area classification, e.g. according to SIA 416 or DIN 277.
+
+
+    **Modelling guidelines**
+
+    - Model a separate volume with the space tool on each storey; do not create a space object spanning several storeys.
+
+    - Assign a unique Name on each storey, set LongName = Elevator, and record the area class in Reference (e.g. `VF` or `VF-9`).'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcSpace
+entity_ifc4: IfcSpace
+entity_ifc4_3: IfcSpace
+picture_link: spaces-elevator.png
+picture_print_link: spaces-elevator-print.tif
+attachment_link: spaces-elevator.ifc
+model_link: spaces-elevator.ifc
+applicability:
+  de: (entity_ifc4=IfcSpace AND PredefinedType=SPACE AND Pset_SpaceCommon.IsExternal=FALSE AND LongName=Aufzug) OR (entity_ifc2x3=IfcSpace AND InteriorOrExteriorSpace=INTERNAL AND Pset_SpaceCommon.IsExternal=FALSE
+    AND LongName=Aufzug)
+  fr: (entity_ifc4=IfcSpace AND PredefinedType=SPACE AND Pset_SpaceCommon.IsExternal=FALSE AND LongName=Ascenseur) OR (entity_ifc2x3=IfcSpace AND InteriorOrExteriorSpace=INTERNAL AND Pset_SpaceCommon.IsExternal=FALSE
+    AND LongName=Ascenseur)
+  it: (entity_ifc4=IfcSpace AND PredefinedType=SPACE AND Pset_SpaceCommon.IsExternal=FALSE AND LongName=Ascensore) OR (entity_ifc2x3=IfcSpace AND InteriorOrExteriorSpace=INTERNAL AND Pset_SpaceCommon.IsExternal=FALSE
+    AND LongName=Ascensore)
+  en: (entity_ifc4=IfcSpace AND PredefinedType=SPACE AND Pset_SpaceCommon.IsExternal=FALSE AND LongName=Elevator) OR (entity_ifc2x3=IfcSpace AND InteriorOrExteriorSpace=INTERNAL AND Pset_SpaceCommon.IsExternal=FALSE
+    AND LongName=Elevator)
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Eindeutige technische Bezeichnung des Aufzugsraumobjekts je Geschoss.
+    fr: Désignation technique univoque de l'objet local d'ascenseur à chaque étage.
+    it: Denominazione tecnica univoca dell'oggetto locale ascensore per ogni piano.
+    en: Unique technical designation of the elevator space object on each storey.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-elevator-early-procurement
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/des-sia416-area-verification
+  is_applicability: false
+  status: active
+  sort_order: 2
+- name: LongName
+  pset: null
+  definition:
+    de: 'Festgelegte Nutzung des Raumobjekts.
+
+
+      **Zulässige Werte**
+
+      - `Aufzug` — geschossweises Aufzugsraumobjekt'
+    fr: 'Usage fixé de l''objet local.
+
+
+      **Valeurs admises**
+
+      - `Ascenseur` — objet local d''ascenseur par étage'
+    it: 'Uso fisso dell''oggetto locale.
+
+
+      **Valori ammessi**
+
+      - `Ascensore` — oggetto locale ascensore per piano'
+    en: 'Fixed use of the space object.
+
+
+      **Allowed values**
+
+      - `Elevator` — storey-by-storey elevator space object'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/longname-space-elevator
+  needed_in_phases:
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-elevator-early-procurement
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/des-sia416-area-verification
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet das Objekt als Raum.
+
+
+      **Zulässige Werte**
+
+      - `SPACE` — Raum
+
+
+      **Hinweis**
+
+      - Die ebenfalls möglichen Werte `INTERNAL` und `EXTERNAL` vermischen Raumtyp und Lage und sind seit IFC4.3_ADD2 als veraltet gekennzeichnet. Daher wird empfohlen, bereits jetzt `SPACE` zu verwenden
+      und innen beziehungsweise aussen über IsExternal abzubilden.'
+    fr: 'Indique que l''objet est un espace.
+
+
+      **Valeurs admises**
+
+      - `SPACE` — espace
+
+
+      **Remarque**
+
+      - Les valeurs également possibles `INTERNAL` et `EXTERNAL` confondent le type d''espace et sa situation et sont signalées comme obsolètes depuis IFC4.3_ADD2. Il est donc recommandé d''utiliser dès
+      maintenant `SPACE` et d''indiquer le caractère intérieur ou extérieur au moyen de IsExternal.'
+    it: 'Indica che l''oggetto è uno spazio.
+
+
+      **Valori ammessi**
+
+      - `SPACE` — spazio
+
+
+      **Nota**
+
+      - I valori anch''essi possibili `INTERNAL` ed `EXTERNAL` confondono il tipo di spazio con la sua posizione e sono contrassegnati come obsoleti a partire da IFC4.3_ADD2. Si raccomanda pertanto di utilizzare
+      fin d''ora `SPACE` e di indicare se lo spazio è interno o esterno mediante IsExternal.'
+    en: 'Marks the object as a space.
+
+
+      **Allowed values**
+
+      - `SPACE` — space
+
+
+      **Note**
+
+      - The also permitted values `INTERNAL` and `EXTERNAL` conflate space type and location and have been deprecated since IFC4.3_ADD2. Therefore, use `SPACE` now and specify interior or exterior status
+      using IsExternal.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-space-space
+  needed_in_phases:
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-elevator-early-procurement
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/des-sia416-area-verification
+  is_applicability: true
+  status: active
+  sort_order: 4
+- name: InteriorOrExteriorSpace
+  pset: null
+  definition:
+    de: 'Kennzeichnet das Aufzugsraumobjekt als Innenraum.
+
+
+      **Zulässige Werte**
+
+      - `INTERNAL` — Innenraum
+
+
+      **Hinweis**
+
+      - Zusätzliche IFC2x3-Klassifikation; die Innenkennzeichnung erfolgt versionsübergreifend über IsExternal.'
+    fr: 'Identifie l''objet local d''ascenseur comme espace intérieur.
+
+
+      **Valeurs admises**
+
+      - `INTERNAL` — espace intérieur
+
+
+      **Remarque**
+
+      - Classification IFC2x3 complémentaire ; l''indication comme espace intérieur s''effectue pour toutes les versions au moyen de IsExternal.'
+    it: 'Identifica l''oggetto locale ascensore come spazio interno.
+
+
+      **Valori ammessi**
+
+      - `INTERNAL` — spazio interno
+
+
+      **Nota**
+
+      - Classificazione IFC2x3 aggiuntiva; l''indicazione come spazio interno avviene per tutte le versioni mediante IsExternal.'
+    en: 'Marks the elevator space object as an interior space.
+
+
+      **Allowed values**
+
+      - `INTERNAL` — interior space
+
+
+      **Note**
+
+      - Additional IFC2x3 classification; interior status is specified across all versions using IsExternal.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/interiororexteriorspace-internal
+  needed_in_phases:
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-elevator-early-procurement
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  is_applicability: true
+  status: active
+  sort_order: 5
+- name: Reference
+  pset: Pset_SpaceCommon
+  definition:
+    de: 'Flächenklasse des Aufzugsraumobjekts nach SIA 416 oder SIA D0165.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste [Raumreferenz Innenraum SIA 416 / D0165](https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html) – z. B. `VF` (SIA 416) oder `VF-9` (D0165).'
+    fr: 'Classe de surface de l''objet local d''ascenseur selon SIA 416 ou SIA D0165.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs [Référence de local intérieur SIA 416 / D0165](https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html) – p. ex. `VF` (SIA 416) ou `VF-9` (D0165).'
+    it: 'Classe di superficie dell''oggetto locale ascensore secondo SIA 416 o SIA D0165.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori [Riferimento locale interno SIA 416 / D0165](https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html) – p. es. `VF` (SIA 416) o `VF-9` (D0165).'
+    en: 'Area class of the elevator space object according to SIA 416 or SIA D0165.
+
+
+      **Allowed values**
+
+      - See the [Space reference interior SIA 416 / D0165](https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html) value list, e.g. `VF` (SIA 416) or `VF-9` (D0165).'
+  datatype: IfcIdentifier
+  allowed_values: pragmaticbim:value/space-reference-interior-sia416-d0165
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: IsExternal
+  pset: Pset_SpaceCommon
+  definition:
+    de: 'Kennzeichnet das Aufzugsraumobjekt als Innenraum.
+
+
+      **Zulässige Werte**
+
+      - `FALSE` — Innenraum'
+    fr: 'Indique que l''objet local d''ascenseur est un espace intérieur.
+
+
+      **Valeurs admises**
+
+      - `FALSE` — espace intérieur'
+    it: 'Indica che l''oggetto locale ascensore è uno spazio interno.
+
+
+      **Valori ammessi**
+
+      - `FALSE` — spazio interno'
+    en: 'Marks the elevator space object as an interior space.
+
+
+      **Allowed values**
+
+      - `FALSE` — interior space'
+  datatype: IfcBoolean
+  allowed_values: pragmaticbim:value/boolean-false
+  needed_in_phases:
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-elevator-early-procurement
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/des-sia416-area-verification
+  is_applicability: true
+  status: active
+  sort_order: 7
+- name: NetFloorArea
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Nettogeschossfläche des modellierten Aufzugsraumobjekts.
+    fr: Surface nette de l'objet local d'ascenseur modélisé.
+    it: Superficie netta dell'oggetto locale ascensore modellato.
+    en: Net floor area of the modelled elevator space object.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/des-sia416-area-verification
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: GrossVolume
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Bruttovolumen des modellierten Aufzugsraumobjekts.
+    fr: Volume brut de l'objet local d'ascenseur modélisé.
+    it: Volume lordo dell'oggetto locale ascensore modellato.
+    en: Gross volume of the modelled elevator space object.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  is_applicability: false
+  status: active
+  sort_order: 9

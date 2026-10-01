@@ -1,0 +1,130 @@
+id: pragmaticbim:project-goal/schedule-coordination
+sort_order: 40
+group: ziele
+code: PG-05
+name:
+  de: Terminsicherheit
+  fr: Délais et coordination
+  it: Tempi e coordinamento
+  en: Schedule & coordination
+tag:
+  de: Termin
+  fr: Délais
+  it: Tempi
+  en: Schedule
+description:
+  de: |-
+    Ziel ist nicht ein bestimmtes Datum, sondern ein Terminplan, der hält. Terminsicherheit entsteht durch rechtzeitige Koordination. Dazu gehören die räumliche Abstimmung zwischen Architektur, Tragwerk und Gebäudetechnik, verbindliche Aussparungen und Koordinationszonen sowie später ausführungsnahe Nachweise. Ohne diese Koordination werden Konflikte erst auf der Baustelle sichtbar, wo jede Lösung Zeit kostet.
+  fr: |-
+    Cet objectif concerne la coordination qui protège le délai. L'alignement spatial entre architecture, structure et techniques du bâtiment, les réservations contraignantes, les zones de coordination et plus tard les preuves proches de l'exécution empêchent que les conflits n'apparaissent que sur le chantier.
+
+    Il aide à évaluer si le calendrier repose sur des interfaces clarifiées et une coordination vérifiable, ou sur l'espoir.
+  it: |-
+    Questo obiettivo riguarda il coordinamento che protegge i tempi. L'allineamento spaziale tra architettura, struttura e impianti, i fori vincolanti, le zone di coordinamento e in seguito le verifiche vicine all'esecuzione impediscono che i conflitti diventino visibili solo in cantiere.
+
+    Aiuta a valutare se il programma poggia su interfacce chiarite e un coordinamento verificabile, o sulla speranza.
+  en: |-
+    The aim is not a particular date but a schedule that holds. Schedule certainty comes from coordinating in good time. That means spatial coordination between architecture, structural engineering, and building services, binding openings and coordination zones, and later construction-level verification.
+
+    Without that coordination, conflicts surface only on site, where every solution costs time.
+practice:
+  de:
+    title: Hochhaus ohne Gerüst
+    body: |-
+      Das Hochhaus wurde ohne Fassadengerüst erstellt. Das Betonieren der Kerne und parallel dazu das Einbringen der Fertigteildecken und der Fassadenelemente stellte hohe Anforderungen an Logistik und Bausicherheit. Mit 3D-Sequenzen liess sich die Abfolge mit den Beteiligten besprechen, und eine Lösung konnte einfach gemeinsam erarbeitet werden.
+    lesson: Wo die Ausführung vom Üblichen abweicht, ist die Simulation keine Spielerei, sondern Risikomanagement.
+  en:
+    title: A high-rise without scaffolding
+    body: |-
+      The high-rise was built without facade scaffolding. Casting the cores while precast slabs and facade units went in alongside placed heavy demands on logistics and site safety. 3D sequences made it possible to talk the order of operations through with everyone involved, and a workable solution was found quickly.
+    lesson: Where construction departs from the usual, simulation is not a gimmick. It is risk management.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/schedule-low
+  code: SCH-01
+  sort_order: 1
+  name:
+    de: Gering
+    fr: Faible
+    it: Basso
+    en: Low
+  description:
+    de: Tragwerksplanung ins Architekturmodell übernehmen und die abgestimmten Abmessungen der groben Tragwerksbauteile führen, solange noch kein detailliertes Tragwerksmodell vorliegt.
+    fr: Reprendre la planification structurelle dans la maquette d'architecture et tenir les dimensions coordonnées des éléments porteurs grossiers, tant qu'une maquette structure détaillée n'existe pas encore.
+    it: Integrare la pianificazione strutturale nel modello di architettura e tenere le dimensioni concordate dei componenti strutturali indicativi, finché non esiste ancora un modello strutturale dettagliato.
+    en: Adopt structural design in the architecture model and keep the coordinated dimensions of the coarse structural components while no detailed structural model exists yet.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-arch-structural-adoption
+  comment: Full set at level gering (sort_order 1).
+- id: pragmaticbim:project-goal-level/schedule-medium
+  code: SCH-02
+  sort_order: 2
+  name:
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
+  description:
+    de: Räumliche Koordination von Architektur und Gebäudetechnik, verbindliche Übernahme der TGA-Aussparungen und des Baumeister-Mauerwerks ins Tragwerksmodell, Planung der Koordinationszonen und TGA-Schemata sowie frühzeitige Beschaffung von Aufzugsanlage und Holzbauunternehmen.
+    fr: Coordination spatiale de l'architecture et des techniques du bâtiment, reprise contraignante des réservations CVC et de la maçonnerie du gros œuvre dans la maquette structurelle, planification des zones de coordination et des schémas CVC, ainsi que commande anticipée de l'ascenseur et de l'entreprise de construction bois.
+    it: Coordinamento spaziale di architettura e impianti, integrazione vincolante dei fori impianti e delle murature dell'impresa di costruzioni nel modello strutturale, pianificazione delle zone di coordinamento e degli schemi impianti, nonché approvvigionamento anticipato dell'ascensore e dell'impresa di costruzioni in legno.
+    en: Spatial coordination of architecture and MEP, binding adoption of MEP openings and builder-executed masonry in the structural model, planning of coordination zones and MEP schematics, plus early procurement of the elevator installation and timber contractor.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-arch-structural-adoption
+  - pragmaticbim:workflow/des-arch-mep-coordination
+  - pragmaticbim:workflow/des-struct-mep-opening-planning
+  - pragmaticbim:workflow/des-struct-masonry-adoption
+  - pragmaticbim:workflow/qas-coordination-zone-planning
+  - pragmaticbim:workflow/des-mep-schematics
+  - pragmaticbim:workflow/bes-elevator-early-procurement
+  - pragmaticbim:workflow/bes-timber-contractor-procurement
+  comment: Full set at level mittel (sort_order 2); includes lower levels.
+- id: pragmaticbim:project-goal-level/schedule-high
+  code: SCH-03
+  sort_order: 3
+  name:
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
+  description:
+    de: >-
+      Vertiefte Koordination und Ausführungsvorbereitung: frühe Fachkoordination, Einlagen–Bewehrung und Schalungsplan-Koordination, TGA-Detail, Einbringwege, Wartungsräume, komplexe Montagen, Baustellenlogistik sowie modellgestützte Ausführungs- und Fertigungsprozesse.
+    fr: >-
+      Coordination approfondie et préparation de l'exécution: coordination spécialisée précoce, coordination incorporés–armatures et plans de coffrage, détail CVC, voies d'apport, espaces de maintenance, montages complexes, logistique de chantier ainsi que processus d'exécution et de fabrication fondés sur la maquette.
+    it: >-
+      Coordinamento approfondito e preparazione dell'esecuzione: coordinamento specialistico iniziale, coordinamento inserti–armatura e piani di casseratura, dettaglio impianti, vie di introduzione, spazi di manutenzione, montaggi complessi, logistica di cantiere nonché processi di esecuzione e fabbricazione basati sul modello.
+    en: >-
+      Deeper coordination and construction preparation: early multidisciplinary coordination, embed–reinforcement and formwork coordination, MEP detail, installation paths, maintenance spaces, complex assembly, site logistics, and model-supported construction and fabrication processes.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-arch-mep-coordination
+  - pragmaticbim:workflow/des-struct-mep-opening-planning
+  - pragmaticbim:workflow/des-struct-masonry-adoption
+  - pragmaticbim:workflow/qas-coordination-zone-planning
+  - pragmaticbim:workflow/des-mep-schematics
+  - pragmaticbim:workflow/bes-elevator-early-procurement
+  - pragmaticbim:workflow/bes-timber-contractor-procurement
+  - pragmaticbim:workflow/des-embed-reinforcement-coordination
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/qas-arch-structural-adoption
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/qas-mep-detail-coordination
+  - pragmaticbim:workflow/des-fire-control-matrix
+  - pragmaticbim:workflow/qas-installation-path-verification
+  - pragmaticbim:workflow/qas-maintenance-space-verification
+  - pragmaticbim:workflow/bes-plan-model-box
+  - pragmaticbim:workflow/bes-site-wlan
+  - pragmaticbim:workflow/con-logistics-fit-out
+  - pragmaticbim:workflow/con-formwork-reinforcement-plans
+  - pragmaticbim:workflow/con-reinforcement-execution-from-model
+  - pragmaticbim:workflow/con-fastening-suspension-from-model
+  - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+  - pragmaticbim:workflow/des-flooring-planning
+  - pragmaticbim:workflow/qas-construction-site-logistics
+  - pragmaticbim:workflow/con-robotic-floor-layout
+  - pragmaticbim:workflow/des-complex-assembly-planning
+  comment: Full set at level hoch (sort_order 3); includes lower levels.

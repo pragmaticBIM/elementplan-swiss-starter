@@ -1,6 +1,6 @@
 id: pragmaticbim:element/architecture-detail-reference
 code: ARC-DET-REF
-sort_order: 58
+sort_order: 71
 status: active
 name:
   de: Detailverweis
@@ -8,7 +8,7 @@ name:
   it: Riferimento al dettaglio
   en: Detail reference
 definition:
-  de: 'Volumenkörper in der Detailverweisübersicht, der analog zum 2D-Detailverweis angibt, wo welches Standarddetail gilt.
+  de: 'Macht räumlich prüfbar, wo Standarddetails gelten, und deckt fehlende oder widersprüchliche Detailzuordnungen früh auf.
 
 
     **Beschreibung**
@@ -18,14 +18,14 @@ definition:
     - Ermöglicht die Erkennung von Planungslücken und fehlenden Detailzuordnungen im Modell.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Als vereinfachtes Volumen modellieren; Umfang gemäss Gültigkeitsbereich des Standarddetails.
 
     - Dem zugehörigen Geschoss zuweisen.
 
     - Keine Ausführungsgeometrie oder Schichtaufbauten modellieren.'
-  fr: 'Volume dans la vue d''ensemble des renvois de détail indiquant, comme un renvoi de détail 2D, où s''applique chaque détail type.
+  fr: 'Permet de vérifier spatialement où les détails types s''appliquent et révèle tôt les attributions manquantes ou contradictoires.
 
 
     **Description**
@@ -42,7 +42,7 @@ definition:
     - Rattacher à l''étage concerné.
 
     - Ne pas modéliser géométrie d''exécution ni compositions de couches.'
-  it: 'Volume nella panoramica dei riferimenti al dettaglio che indica, come un riferimento al dettaglio 2D, dove vale ciascun dettaglio standard.
+  it: 'Consente di verificare nello spazio dove si applicano i dettagli standard e rileva tempestivamente assegnazioni mancanti o contraddittorie.
 
 
     **Descrizione**
@@ -59,7 +59,7 @@ definition:
     - Assegnare al piano corrispondente.
 
     - Non modellare geometria esecutiva o composizioni stratificate.'
-  en: 'Volume in the detail reference overview that indicates, like a 2D detail reference, where each standard detail applies.
+  en: 'Makes it spatially verifiable where standard details apply and reveals missing or conflicting detail assignments early.
 
 
     **Description**
@@ -81,10 +81,42 @@ needed_in_domain:
 entity_ifc2x3: IfcBuildingElementProxy
 entity_ifc4: IfcBuildingElementProxy
 entity_ifc4_3: IfcBuildingElementProxy
-picture_link: null
-model_link: null
-applicability: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Detailverweis) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Detailverweis)
+picture_link: architecture-detail-reference.png
+picture_print_link: architecture-detail-reference-print.tif
+attachment_link: architecture-detail-reference.ifc
+model_link: architecture-detail-reference.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Detailverweis) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Detailverweis)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Renvoi de détail") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Renvoi de détail")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Riferimento al dettaglio") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Riferimento al dettaglio")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Detail reference") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Detail reference")
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Standarddetails, dem der Detailverweis zugeordnet ist.
+    fr: Désignation du détail type auquel le renvoi de détail est affecté.
+    it: Designazione del dettaglio standard a cui è associato il riferimento.
+    en: Name of the standard detail this reference is assigned to.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-detail-reference-model
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
@@ -130,7 +162,7 @@ attributes:
   - pragmaticbim:workflow/qas-detail-reference-model
   is_applicability: true
   status: active
-  sort_order: 1
+  sort_order: 2
 - name: ObjectType
   pset: null
   definition:
@@ -176,31 +208,5 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/qas-detail-reference-model
   is_applicability: true
-  status: active
-  sort_order: 2
-- name: Name
-  pset: null
-  definition:
-    de: Bezeichnung des Standarddetails für die Zuordnung in der Detailverweisübersicht.
-    fr: Désignation du détail type pour l'affectation dans la vue d'ensemble des renvois.
-    it: Designazione del dettaglio standard per l'assegnazione nella panoramica dei riferimenti.
-    en: Standard detail designation for assignment in the detail reference overview.
-  datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-detail-reference-model
-  is_applicability: false
   status: active
   sort_order: 3

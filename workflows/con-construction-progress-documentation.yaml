@@ -1,0 +1,157 @@
+id: pragmaticbim:workflow/con-construction-progress-documentation
+code: CON-PROGRESS-DOC
+sort_order: 29
+name:
+  de: Baufortschritt mit 360°-Aufnahmen dokumentieren
+  fr: Documenter l'avancement des travaux par des relevés à 360°
+  it: Documentare l'avanzamento dei lavori con rilievi a 360°
+  en: Document construction progress with 360° captures
+description:
+  de: 'Den Baufortschritt mit einem wöchentlich wiederholten Rundgang aufnehmen und mit dem Terminplan vergleichen.
+
+
+    **Ausgangslage**
+
+    - Der Terminplan legt fest, welche Arbeiten in welchem Raum bis wann fertig sein sollen. Einzelne Baustellenfotos ohne festgelegten Aufnahmeweg lassen sich diesem Soll nicht zuordnen.
+
+    - Wechselnde Rundgänge erzeugen Lücken. Rückstand und Vorlauf bleiben unsichtbar, bis der Gesamttermin bereits gefährdet ist.
+
+
+    **Ziel & Nutzen**
+
+    - Den festgelegten Rundgang in einem Dienst für 360°-Baufortschritt aufnehmen, die Aufnahmen im Modell verorten und den Ist-Stand mit den Vorgängen des Terminplans vergleichen.
+
+    - Rückstand und Vorlauf je Raum früh erkennen, solange der Terminplan noch angepasst werden kann.
+
+
+    **Ablauf**
+
+    1. Rundgangspfad, Aufnahmepunkte, wöchentlichen Rhythmus und Verantwortlichkeit festlegen, die massgebenden Vorgänge des Terminplans zuordnen und Innenräume mit technischer Raumnummer (Name) und Raumnutzung
+    (LongName) bereitstellen.
+
+    2. Während des Ausbaus A4-Raumkennzeichnungen mit QR-Code gemäss Ausbau-Logistik anbringen und den festgelegten Rundgang wöchentlich im Dienst für 360°-Baufortschritt aufnehmen.
+
+    3. Aufnahmen mit Raum, Aufnahmepunkt und Datum verknüpft ablegen, den Ist-Stand gegen die Vorgänge des Terminplans prüfen und Abweichungen sowie Lücken zeitnah nachführen.
+
+
+    **Lieferergebnis**
+
+    - Dokumentierter Rundgangspfad mit festgelegten Aufnahmepunkten, Rhythmus, Verantwortlichkeit und Bezug zu den Vorgängen des Terminplans.
+
+    - Wöchentliche, räumlich zugeordnete 360°-Aufnahmen mit dokumentiertem Vergleich zum Terminplan.
+
+    - Nachweis der festgestellten Abweichungen und der nachgeführten Lücken.'
+  fr: 'Relever l''avancement des travaux au moyen d''un parcours répété chaque semaine et le comparer au calendrier.
+
+
+    **Situation de départ**
+
+    - Le calendrier fixe quels travaux doivent être achevés dans quel local et à quelle échéance. Des photos de chantier isolées, prises sans parcours défini, ne peuvent pas être rapprochées de cet objectif.
+
+    - Des parcours variables créent des lacunes. Retard et avance restent invisibles jusqu''à ce que le délai global soit déjà menacé.
+
+
+    **Objectif et bénéfice**
+
+    - Relever le parcours défini dans un service de suivi de l''avancement à 360°, situer les relevés dans la maquette et comparer l''état réel aux activités du calendrier.
+
+    - Détecter à temps le retard et l''avance par local, tant que le calendrier peut encore être adapté.
+
+
+    **Déroulement**
+
+    1. Définir le parcours, les points de relevé, le rythme hebdomadaire et les responsabilités, attribuer les activités déterminantes du calendrier, puis fournir les locaux intérieurs avec numéro technique
+    (Name) et usage du local (LongName).
+
+    2. Poser pendant l''aménagement des feuilles A4 d''identification des locaux avec code QR conformément à la logistique d''aménagement, puis effectuer chaque semaine le parcours défini dans le service
+    de suivi de l''avancement à 360°.
+
+    3. Classer les relevés en les reliant au local, au point de relevé et à la date, comparer l''état réel aux activités du calendrier, puis traiter rapidement les écarts et les lacunes.
+
+
+    **Livrable**
+
+    - Parcours documenté avec points de relevé, rythme, responsabilités et lien vers les activités du calendrier.
+
+    - Relevés à 360° hebdomadaires, attribués dans l''espace, avec comparaison documentée au calendrier.
+
+    - Justificatif des écarts constatés et des lacunes traitées.'
+  it: 'Rilevare l''avanzamento dei lavori con un percorso ripetuto ogni settimana e confrontarlo con il cronoprogramma.
+
+
+    **Situazione di partenza**
+
+    - Il cronoprogramma stabilisce quali lavori devono essere conclusi in quale locale e entro quale scadenza. Singole fotografie di cantiere scattate senza un percorso definito non possono essere confrontate
+    con questo obiettivo.
+
+    - Percorsi variabili causano lacune. Ritardo e anticipo restano invisibili finché il termine complessivo è già a rischio.
+
+
+    **Obiettivo e beneficio**
+
+    - Eseguire il percorso definito in un servizio di monitoraggio dell''avanzamento a 360°, collocare i rilievi nel modello e confrontare lo stato effettivo con le attività del cronoprogramma.
+
+    - Riconoscere per tempo ritardo e anticipo per locale, finché il cronoprogramma può ancora essere adeguato.
+
+
+    **Svolgimento**
+
+    1. Definire percorso, punti di rilievo, frequenza settimanale e responsabilità, assegnare le attività determinanti del cronoprogramma e mettere a disposizione i locali interni con numero tecnico (Name)
+    e uso del locale (LongName).
+
+    2. Durante le finiture affiggere fogli A4 di identificazione dei locali con codice QR secondo la logistica di finitura ed eseguire ogni settimana il percorso definito nel servizio di monitoraggio dell''avanzamento
+    a 360°.
+
+    3. Archiviare i rilievi collegandoli al locale, al punto di rilievo e alla data, confrontare lo stato effettivo con le attività del cronoprogramma e colmare tempestivamente scostamenti e lacune.
+
+
+    **Risultato della fornitura**
+
+    - Percorso documentato con punti di rilievo, frequenza, responsabilità e riferimento alle attività del cronoprogramma.
+
+    - Rilievi a 360° settimanali, attribuiti nello spazio, con confronto documentato rispetto al cronoprogramma.
+
+    - Attestazione degli scostamenti rilevati e delle lacune colmate.'
+  en: 'Record construction progress on a route repeated every week and compare it with the schedule.
+
+
+    **Starting point**
+
+    - The schedule states which work must be complete in which space by which date. Isolated site photographs taken without a defined capture route cannot be matched to that target.
+
+    - Changing routes create gaps. Delay and advance stay invisible until the overall deadline is already at risk.
+
+
+    **Goal & benefit**
+
+    - Capture the defined route in a 360° progress service, locate the captures in the model, and compare actual progress with the schedule activities.
+
+    - Detect delay and advance per space early, while the schedule can still be adjusted.
+
+
+    **Process**
+
+    1. Define the route, capture points, weekly frequency, and responsibilities, assign the relevant schedule activities, and provide interior spaces with a technical room number (Name) and room use (LongName).
+
+    2. During fit-out, display A4 space labels with QR codes in accordance with fit-out logistics and follow the defined route weekly in the 360° progress service.
+
+    3. File captures linked to the space, capture point, and date, compare actual progress with the schedule activities, and promptly follow up deviations and gaps.
+
+
+    **Deliverable**
+
+    - Documented route with defined capture points, frequency, responsibilities, and a link to the schedule activities.
+
+    - Weekly, spatially assigned 360° captures with a documented comparison to the schedule.
+
+    - Record of identified deviations and of gaps that were followed up.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/con
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Construction-phase use case, typically SIA 51–53. Weekly 360° route compared with the schedule. Name the capture category (360° progress service) without product names. Interior spaces use Name
+  as the stable technical room number and LongName as the room use. A4 QR room labels can reuse CON-ROOM-LABEL; this workflow adds the defined capture route, weekly recurrence, spatial assignment, schedule
+  comparison, and gap follow-up.

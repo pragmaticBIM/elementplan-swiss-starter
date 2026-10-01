@@ -1,0 +1,32 @@
+id: pragmaticbim:value/objection-risk
+code: OBJ-RISK
+name:
+  de: EinspracheRisiko
+  fr: Risque d'opposition
+  it: Rischio di opposizione
+  en: Objection risk
+description:
+  de: Einschätzung, wie wahrscheinlich Einwände von einem Umgebungsbau bzw. Grundstück kommen.
+  fr: Estimation de la probabilité d'objections provenant d'une construction environnante ou d'une parcelle.
+  it: Stima della probabilità di obiezioni provenienti da un edificio circostante o da un fondo.
+  en: Assessment of how likely objections from a surrounding building or plot are.
+year: 2026
+norm_reference: project-specific
+status: active
+values:
+  de:
+  - HOCH
+  - MITTEL
+  - TIEF
+  fr:
+  - HOCH
+  - MITTEL
+  - TIEF
+  it:
+  - HOCH
+  - MITTEL
+  - TIEF
+  en:
+  - HOCH
+  - MITTEL
+  - TIEF

@@ -1,0 +1,169 @@
+id: pragmaticbim:workflow/bes-survey-existing-model-procurement
+code: BES-EXISTING-SITE
+sort_order: 6
+name:
+  de: Lagebezug und Gelände beschaffen
+  fr: Commander le référentiel spatial et le terrain
+  it: Affidare il riferimento spaziale e il terreno
+  en: Procure the spatial reference and terrain
+description:
+  de: 'Lagebezug und Gelände als verbindliche Planungsgrundlage bestellen, damit alle Fachmodelle auf denselben Koordinaten, Höhen und Grundstücksinformationen aufbauen.
+
+
+    **Ausgangslage**
+
+    - Die meisten Koordinationsfehler entstehen, weil verbindlich eingemessene Bezugspunkte fehlen und Fachmodelle deshalb nicht auf denselben räumlichen Bezug ausgerichtet sind.
+
+    - Unterschiedliche Nullpunkte, Drehungen und Höhenbezüge erfordern später aufwendige Modellkorrekturen und können Inkonsistenzen bis in die Ausführung verursachen.
+
+
+    **Ziel & Nutzen**
+
+    - Den verbindlichen Lage- und Höhenbezug sowie die benötigte Geländeaufnahme vor Beginn der Planung eindeutig festlegen.
+
+    - Vergleichbare Angebote und eine gegen definierte Abnahmekriterien prüfbare Lieferung erhalten.
+
+
+    **Ablauf**
+
+    1. Klären, wofür Gelände und Lagebezug gebraucht werden, welcher Perimeter gilt und welcher amtliche Lage- und Höhenbezug für alle Fachmodelle verbindlich ist.
+
+    2. Klären, wie der Bezug dauerhaft auffindbar und kontrollierbar bleibt, wo Vegetation, Flugbeschränkungen oder Verdeckungen den Boden unsichtbar machen und welche Grundstücks- und Baugrundinformationen
+    der Zweck braucht.
+
+    3. Prüfen, ob die Fachmodelle denselben Bezug verwenden, und die Lieferung gegen die Abnahmekriterien freigeben.
+
+
+    **Lieferergebnis**
+
+    - Dauerhaft auffindbare, kontrolliert eingemessene Bezugspunkte im vereinbarten amtlichen Lage- und Höhenbezug, dokumentiert mit Koordinaten, Vermarkung und Fotos.
+
+    - Geländeaufnahme des vereinbarten Perimeters, aus der Boden, Vegetation und Gebäude unterscheidbar sind und der Boden unter Vegetation dort enthalten ist, wo er für die Planung gebraucht wird; daraus
+    nachvollziehbar abgeleitetes Geländemodell und Orthofoto sowie die vereinbarten Grundstücks- und Baugrundinformationen.
+
+    - Dokumentierter Perimeter, Genauigkeitsnachweis, Lieferformat, Freigabe und zeitlich unbeschränktes Nutzungsrecht der Bauherrschaft an Punktwolken, Bildern und Berichten, einschliesslich Weitergabe
+    und späterer Phasen.'
+  fr: 'Commander le référentiel spatial et le terrain comme base contraignante des études afin que toutes les maquettes métiers reposent sur les mêmes coordonnées, altitudes et informations parcellaires.
+
+
+    **Situation de départ**
+
+    - La plupart des erreurs de coordination surviennent parce qu’il manque des points de référence mesurés et contraignants et que les maquettes métiers ne sont donc pas calées sur le même référentiel
+    spatial.
+
+    - Des origines, rotations et références altimétriques différentes imposent ensuite de lourdes corrections et peuvent entraîner des incohérences jusque dans la réalisation.
+
+
+    **Objectif et bénéfice**
+
+    - Fixer sans ambiguïté le référentiel planimétrique et altimétrique ainsi que le relevé du terrain requis avant le début des études.
+
+    - Obtenir des offres comparables et une livraison contrôlable selon des critères de réception définis.
+
+
+    **Déroulement**
+
+    1. Clarifier à quoi servent le terrain et le référentiel, quel périmètre s’applique et quel référentiel planimétrique et altimétrique officiel est contraignant pour toutes les maquettes métiers.
+
+    2. Clarifier comment le référentiel reste durablement trouvable et contrôlable, où la végétation, les restrictions de vol ou les masques rendent le sol invisible et quelles informations parcellaires
+    et géotechniques l’usage exige.
+
+    3. Contrôler que les maquettes métiers reposent sur le même référentiel et valider la livraison selon les critères de réception.
+
+
+    **Livrable**
+
+    - Points de référence pérennes, contrôlés et documentés dans le référentiel planimétrique et altimétrique officiel convenu, avec coordonnées, matérialisation et photos.
+
+    - Relevé du terrain du périmètre convenu, dans lequel sol, végétation et bâtiments sont distinguables et le sol sous végétation est effectivement présent là où les études en ont besoin; modèle de terrain
+    et orthophoto obtenus de manière traçable à partir de ce relevé, ainsi que les informations parcellaires et géotechniques convenues.
+
+    - Périmètre, justificatif de précision, format de livraison, validation et droit d’utilisation illimité dans le temps du maître d’ouvrage sur les nuages de points, images et rapports, y compris remise
+    et phases ultérieures.'
+  it: 'Affidare il riferimento spaziale e il terreno come base vincolante della progettazione, affinché tutti i modelli disciplinari utilizzino le stesse coordinate, quote e informazioni particellari.
+
+
+    **Situazione di partenza**
+
+    - La maggior parte degli errori di coordinamento nasce perché mancano punti di riferimento misurati e vincolanti e i modelli disciplinari non sono quindi allineati allo stesso riferimento spaziale.
+
+    - Origini, rotazioni e riferimenti altimetrici diversi richiedono in seguito correzioni onerose e possono causare incoerenze fino alla costruzione.
+
+
+    **Obiettivo e beneficio**
+
+    - Definire in modo univoco il riferimento planimetrico e altimetrico e il rilievo del terreno necessari prima dell’inizio della progettazione.
+
+    - Ottenere offerte comparabili e una fornitura verificabile rispetto a criteri di collaudo definiti.
+
+
+    **Svolgimento**
+
+    1. Chiarire a che scopo servono terreno e riferimento, quale perimetro vale e quale riferimento planimetrico e altimetrico ufficiale è vincolante per tutti i modelli disciplinari.
+
+    2. Chiarire come il riferimento resta durevolmente rintracciabile e controllabile, dove vegetazione, restrizioni di volo o occlusione rendono il suolo invisibile e quali informazioni catastali e geotecniche
+    richiede lo scopo.
+
+    3. Verificare che i modelli disciplinari usino lo stesso riferimento e approvare la fornitura rispetto ai criteri di collaudo.
+
+
+    **Risultato della fornitura**
+
+    - Punti di riferimento permanenti, controllati e documentati nel sistema planimetrico e altimetrico ufficiale concordato, con coordinate, materializzazione e foto.
+
+    - Rilievo del terreno del perimetro concordato, dal quale suolo, vegetazione ed edifici sono distinguibili e il suolo sotto vegetazione è effettivamente presente dove serve alla progettazione; modello
+    del terreno e ortofoto ricavati in modo tracciabile da questo rilievo, nonché le informazioni catastali e geotecniche concordate.
+
+    - Perimetro, attestato di precisione, formato di consegna, approvazione e diritto di utilizzo illimitato nel tempo del committente su nuvole di punti, immagini e rapporti, compresa la trasmissione e
+    le fasi successive.'
+  en: 'Procure the spatial reference and terrain as a binding design basis so that every discipline model uses the same coordinates, elevations, and parcel information.
+
+
+    **Starting point**
+
+    - Most coordination errors occur because binding surveyed reference points are missing and discipline models are therefore not aligned to the same spatial reference.
+
+    - Different origins, rotations, and elevation references later require costly model corrections and can cause inconsistencies through to construction.
+
+
+    **Goal & benefit**
+
+    - Define the binding position and elevation reference and the required terrain survey unambiguously before design starts.
+
+    - Obtain comparable bids and a delivery that can be checked against defined acceptance criteria.
+
+
+    **Process**
+
+    1. Clarify what the terrain and spatial reference are needed for, which perimeter applies, and which official position and elevation reference is binding for every discipline model.
+
+    2. Clarify how the reference stays permanently identifiable and checkable, where vegetation, flight restrictions, or concealment hide the ground, and which parcel and ground information the purpose
+    requires.
+
+    3. Check that the discipline models use the same reference, and approve the delivery against the acceptance criteria.
+
+
+    **Deliverable**
+
+    - Permanently identifiable, checked reference points in the agreed official position and elevation reference, documented with coordinates, monumentation, and photos.
+
+    - Terrain survey of the agreed perimeter from which ground, vegetation, and buildings can be distinguished and the ground under vegetation is present where design needs it; a terrain model and orthophoto
+    derived traceably from that survey, plus the agreed parcel and ground information.
+
+    - Documented perimeter, accuracy evidence, delivery format, approval, and perpetual right of the client to use the point clouds, images, and reports, including passing them on and later phases.'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/surveyor
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/infrastructure
+comment: 'Erstes Beschaffungspaket für Bestandsgrundlagen. Mindestumfang: Referenzpunkte, Lage- und Höhenbezug sowie Gelände. Danach folgen Gebäude-Punktwolke, konzeptbezogene Nachmodellierung sowie bei
+  Bedarf Ausbau und TGA. Aufnahmeverfahren, Befliegung, LiDAR und terrestrische Ergänzung bleiben bei der Vermessung; zu klären ist, ob der Boden unter Vegetation für die Planung gebraucht wird. Nicht verbindliche
+  Orientierung: LAS/LAZ 1.4, ASPRS mindestens Boden, Vegetation und Gebäude, 400 Punkte/m² oder 2-5 cm bei LOA20.'

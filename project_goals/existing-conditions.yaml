@@ -1,0 +1,92 @@
+id: pragmaticbim:project-goal/existing-conditions
+sort_order: 10
+group: rahmenbedingungen
+code: PG-06
+name:
+  de: Umgang mit Bestand
+  fr: Gestion de l'existant
+  it: Gestione dell'esistente
+  en: Working with existing buildings
+tag:
+  de: Bestand
+  fr: Existant
+  it: Esistente
+  en: Existing
+description:
+  de: |-
+    Festgelegt wird, welche Bestandsgrundlagen beschafft werden: nur Lagebezug und Gelände, zusätzlich Gebäudekörper und Rohbau oder Rohbau, Ausbau und TGA. Die Bestellung definiert das erwartete Ergebnis und begrenzt Aufnahme und Modellierung auf den projektrelevanten Umfang. Ohne diese Festlegung wird entweder zu wenig aufgenommen und später teuer nachgemessen, oder der Bestand wird vollständig modelliert, obwohl nur ein Teil davon gebraucht wird.
+  fr: |-
+    Cette condition-cadre détermine quelles bases de l’existant sont commandées: référentiel spatial et terrain, en plus bâtiment et gros œuvre, ou gros œuvre, aménagements et installations techniques.
+
+    La commande définit le résultat attendu et limite le relevé et la modélisation à l’étendue pertinente pour le projet.
+  it: |-
+    Questa condizione quadro stabilisce quali basi dello stato di fatto vengono affidate: riferimento spaziale e terreno, inoltre edificio e struttura grezza, oppure struttura grezza, finiture e impianti.
+
+    L’incarico definisce il risultato atteso e limita rilievo e modellazione all’estensione pertinente per il progetto.
+  en: |-
+    This framework condition determines which existing-condition information is procured: spatial reference and terrain only; those plus the building mass and structural shell; or structural shell, fit-out, and MEP. The brief defines the expected result and limits surveying and modelling to the scope the project actually needs.
+
+    Without it, either too little is surveyed and has to be measured again later at cost, or the existing fabric is modelled in full when only part of it is needed.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ). Aufwandstiefe projektspezifisch.'
+levels:
+- id: pragmaticbim:project-goal-level/existing-spatial-reference
+  code: EXIST-01
+  sort_order: 1
+  name:
+    de: Lagebezug und Gelände
+    fr: Référentiel spatial et terrain
+    it: Riferimento spaziale e terreno
+    en: Spatial reference and terrain
+  description:
+    de: Referenzpunkte sowie Lage- und Höhenbezug, Gelände und erforderliche Vermessungsunterlagen beschaffen.
+    fr: Commander les points de référence, le référentiel planimétrique et altimétrique, le terrain et les documents de mensuration requis.
+    it: Affidare i punti di riferimento, il riferimento planimetrico e altimetrico, il terreno e i documenti di misurazione necessari.
+    en: Procure reference points, position and elevation reference, terrain, and the required survey documents.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-survey-existing-model-procurement
+  comment: Full set at level Lagebezug und Gelände (sort_order 1).
+- id: pragmaticbim:project-goal-level/existing-structural-shell
+  code: EXIST-02
+  sort_order: 2
+  name:
+    de: Gebäudekörper und Rohbau
+    fr: Bâtiment et gros œuvre
+    it: Edificio e struttura grezza
+    en: Building and structural shell
+  description:
+    de: Den Gebäudebestand zuerst als Punktwolke aufnehmen und Gebäudekörper sowie Rohbau nach Klärung der Konzeptrichtung gezielt nachmodellieren.
+    fr: Relever d’abord le bâtiment existant sous forme de nuage de points, puis modéliser de manière ciblée le bâtiment et le gros œuvre une fois l’orientation du concept arrêtée.
+    it: Rilevare dapprima l’edificio esistente come nuvola di punti e modellare in modo mirato l’edificio e la struttura grezza dopo aver chiarito l’indirizzo del concetto.
+    en: First capture the existing building as a point cloud, then selectively model the building and structural shell once the concept direction is clear.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-survey-existing-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-point-cloud-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/qas-hazmat-check
+  comment: Full set at level Gebäudekörper und Rohbau (sort_order 2); includes lower levels.
+- id: pragmaticbim:project-goal-level/existing-building-mep
+  code: EXIST-03
+  sort_order: 3
+  name:
+    de: Rohbau, Ausbau und TGA
+    fr: Gros œuvre, aménagements et installations techniques
+    it: Struttura grezza, finiture e impianti
+    en: Structural shell, fit-out, and MEP
+  description:
+    de: Zusätzlich ein koordiniertes Bestandsmodell von Rohbau, Ausbau und TGA für Umbau oder Umnutzung beschaffen.
+    fr: Commander en plus une maquette coordonnée de l’existant du gros œuvre, des aménagements et des installations pour transformation ou changement d’affectation.
+    it: Affidare inoltre un modello coordinato dello stato di fatto di struttura grezza, finiture e impianti per trasformazione o cambio d’uso.
+    en: Additionally procure a coordinated existing-condition model of the structural shell, fit-out, and MEP for conversion or change of use.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-survey-existing-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-point-cloud-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-circularity-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-hazmat-check
+  comment: Full set at level Rohbau, Ausbau und TGA (sort_order 3); includes lower levels.

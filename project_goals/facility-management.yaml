@@ -1,0 +1,105 @@
+id: pragmaticbim:project-goal/facility-management
+sort_order: 25
+group: rahmenbedingungen
+code: PG-04
+name:
+  de: Bewirtschaftung
+  fr: Gestion immobilière
+  it: Gestione immobiliare
+  en: Facility management
+tag:
+  de: Betrieb
+  fr: Exploitation
+  it: Esercizio
+  en: Operation
+description:
+  de: |-
+    Festgelegt wird, wer das Gebäude betreibt und mit welchen Systemen: ob der Betreiber Raum- und Anlagenlisten braucht, bewirtschaftete Objekte im 3D-Modell oder einen Import über COBie. Davon hängt ab, welche Informationen am Projektende übergeben werden müssen. Ohne diese Festlegung werden Betriebsdaten am Projektende nacherfasst, oft als kostentreibender Nachtrag.
+  fr: |-
+    Cette condition-cadre fixe qui exploite le bâtiment et avec quels systèmes: listes de locaux et d'installations, objets gérés dans la maquette 3D ou import COBie. Elle détermine quelles informations doivent être remises à la fin du projet.
+
+    Sans cette décision, les données d'exploitation sont saisies après coup, souvent par un avenant coûteux.
+  it: |-
+    Questa condizione quadro stabilisce chi gestisce l'edificio e con quali sistemi: elenchi di locali e impianti, oggetti gestiti nel modello 3D oppure importazione COBie. Ne dipende quali informazioni devono essere consegnate alla fine del progetto.
+
+    Senza questa decisione, i dati di esercizio vengono rilevati a posteriori, spesso come variante costosa.
+  en: |-
+    This framework condition determines who operates the building and with which systems: space and equipment lists, managed objects in the 3D model, or a COBie import. That decision determines which information must be handed over at the end of the project.
+
+    Without it, operations data is captured afterwards, often as a costly change order.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (explizit, nicht kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/facility-management-lists
+  code: OPS-01
+  sort_order: 1
+  name:
+    de: Listen
+    fr: Listes
+    it: Elenchi
+    en: Lists
+  description:
+    de: Raum-, Anlagen- und Brandschottlisten sowie Signaletik-Raumnummern für den Betrieb übergeben und aktuell halten.
+    fr: Remettre et tenir à jour pour l'exploitation les listes de locaux, d'installations et d'obturations coupe-feu ainsi que les numéros de local pour la signalétique.
+    it: Consegnare e mantenere aggiornati per l'esercizio gli elenchi di locali, impianti e sigillature antincendio nonché i numeri locale per la segnaletica.
+    en: Hand over and maintain space, equipment, and firestop schedules and signage room numbers for operations.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/hov-fm-minimal-data-delivery
+  - pragmaticbim:workflow/opr-signage-room-number
+  - pragmaticbim:workflow/opr-firestop-maintenance
+  comment: Explicit set at level Listen (sort_order 1); not cumulative.
+- id: pragmaticbim:project-goal-level/facility-management-3d
+  code: OPS-02
+  sort_order: 2
+  name:
+    de: 3D-Übergabe
+    fr: Remise 3D
+    it: Consegna 3D
+    en: 3D handover
+  description:
+    de: Bewirtschaftete Objekte im 3D-Modell übergeben, wahlweise auf Basis des Architekturmodells oder einer klassifizierten Punktwolke, einschliesslich nativer Modelle.
+    fr: Remettre les objets gérés dans la maquette 3D, au choix sur la base de la maquette d'architecture ou d'un nuage de points classifié, y compris les maquettes natives.
+    it: Consegnare gli oggetti gestiti nel modello 3D, a scelta sulla base del modello architettonico o di una nuvola di punti classificata, compresi i modelli nativi.
+    en: Hand over managed objects in the 3D model, based either on the architectural model or a classified point cloud, including native models.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/opr-facility-management-architecture-model
+  - pragmaticbim:workflow/opr-facility-management-point-cloud
+  - pragmaticbim:workflow/hov-native-model-handover
+  comment: Explicit set at level 3D-Übergabe (sort_order 2); not cumulative.
+- id: pragmaticbim:project-goal-level/facility-management-cobie
+  code: OPS-03
+  sort_order: 3
+  name:
+    de: COBie
+    fr: COBie
+    it: COBie
+    en: COBie
+  description:
+    de: Betriebsdaten im COBie-Format für den Import übergeben.
+    fr: Remettre les données d'exploitation au format COBie pour l'import.
+    it: Consegnare i dati di esercizio in formato COBie per l'importazione.
+    en: Hand over operations data in COBie format for import.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  comment: Explicit set at level COBie (sort_order 3); not cumulative.
+- id: pragmaticbim:project-goal-level/facility-management-optimization
+  code: OPS-04
+  sort_order: 4
+  name:
+    de: Betriebsoptimierung
+    fr: Optimisation de l'exploitation
+    it: Ottimizzazione dell'esercizio
+    en: Operational optimization
+  description:
+    de: Den Gebäudebetrieb in den ersten Jahren mit realen Nutzungs- und Messdaten begleiten, Abweichungen von den Planungszielen auswerten und die Wirkung von Optimierungsmassnahmen nachweisen.
+    fr: Accompagner l'exploitation du bâtiment durant les premières années à l'aide de données réelles d'usage et de mesure, évaluer les écarts par rapport aux objectifs de l'étude et démontrer l'effet des mesures d'optimisation.
+    it: Accompagnare l'esercizio dell'edificio nei primi anni con dati reali d'uso e di misura, valutare gli scostamenti rispetto agli obiettivi di progetto e dimostrare l'effetto delle misure di ottimizzazione.
+    en: Support building operation during the first years with actual use and measurement data, evaluate deviations from the design targets, and demonstrate the effect of optimization measures.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/opr-building-performance-optimization
+  comment: Explicit set at level Betriebsoptimierung (sort_order 4); not cumulative.

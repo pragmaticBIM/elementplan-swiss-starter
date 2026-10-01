@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-humus
+code: OBJ-HUMUS
+name:
+  de: ObjectType Humus
+  fr: ObjectType humus
+  it: ObjectType humus
+  en: ObjectType topsoil
+description:
+  de: ObjectType für IfcGeographicElement / IfcBuildingElementProxy als Humusschicht.
+  fr: ObjectType pour IfcGeographicElement / IfcBuildingElementProxy comme couche d'humus.
+  it: ObjectType per IfcGeographicElement / IfcBuildingElementProxy come strato di humus.
+  en: ObjectType for IfcGeographicElement / IfcBuildingElementProxy as a topsoil layer.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Humus
+  fr:
+  - Terre végétale
+  it:
+  - Terra vegetale
+  en:
+  - Topsoil

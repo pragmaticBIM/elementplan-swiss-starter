@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/aufzugszone
+code: RT-WH-13
+sort_order: 13
+name:
+  de: Aufzugszone
+  fr: Palier d'ascenseur
+  it: Zona ascensore
+  en: Elevator Lobby
+definition:
+  de: Vorzone vor dem Lift auf einem Geschoss.
+  fr: Palier devant l'ascenseur à un étage.
+  it: Zona antistante l'ascensore a un piano.
+  en: Landing in front of the lift on a storey.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Aufzugszone
+    fr: Palier d'ascenseur
+    it: Zona ascensore
+    en: Elevator Lobby
+restrictions:
+  min_area: 6
+status: active

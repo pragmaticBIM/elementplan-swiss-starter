@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/balkon
+code: RT-WH-15
+sort_order: 15
+name:
+  de: Balkon
+  fr: Balcon
+  it: Balcone
+  en: Balcony
+definition:
+  de: Offener Aussenraum an der Wohnung.
+  fr: Espace extérieur ouvert attenant au logement.
+  it: Spazio esterno aperto attiguo all'alloggio.
+  en: Open exterior space attached to the dwelling.
+attribute_presets:
+- element: pragmaticbim:element/spaces-exterior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-exterior
+  name: IsExternal
+  value: true
+- element: pragmaticbim:element/spaces-exterior
+  name: LongName
+  value:
+    de: Balkon
+    fr: Balcon
+    it: Balcone
+    en: Balcony
+restrictions:
+  min_area: 4
+status: active

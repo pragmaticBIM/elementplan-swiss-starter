@@ -2,26 +2,24 @@ id: pragmaticbim:workflow/des-usage-agreement-visualization
 code: DES-USAGE-AGREEMENT
 sort_order: 56
 name:
-  de: Visualisierungen für Nutzungsvereinbarungen ab Modell
-  fr: Visualisations pour conventions d'utilisation à partir du modèle
-  it: Visualizzazioni per convenzioni d'uso dal modello
-  en: Visualizations for usage agreements from the model
+  de: Nutzungsvereinbarung Tragwerk raumweise visualisieren
+  fr: Visualiser par local la convention d'utilisation de la structure
+  it: Visualizzare per locale la convenzione d'uso delle strutture
+  en: Visualize the structural usage agreement room by room
 description:
-  de: 'Nutzungsanforderungen der Nutzungsvereinbarung raumweise im Modell führen und daraus lesbare Visualisierungen ableiten.
+  de: 'Nutzungs- und Tragwerksanforderungen der Nutzungsvereinbarung raumweise im Modell führen und daraus lesbare Visualisierungen ableiten.
 
 
     **Ausgangslage**
 
-    - Flächenlasten, Punktlasten und Schwingungsanforderungen werden oft nur in Tabellen oder kolorierten Plänen geführt — schwer mit dem Raummodell abzugleichen.
+    - Flächenlasten, Punktlasten und Schwingungsanforderungen werden oft nur in Tabellen oder kolorierten Plänen geführt.
 
-    - Änderungen der Raumnutzung oder der Lastannahmen gehen in der Dokumentation leicht verloren.
-
-    - Bauherrschaft und Fachplaner brauchen eine gemeinsame, raumbezogene Lesart der vereinbarten Werte.
+    - Änderungen der Raumnutzung oder der Lastannahmen gehen in der Dokumentation verloren.
 
 
     **Ziel & Nutzen**
 
-    - Soll-Werte der Nutzungsvereinbarung direkt an Innen- und Aussenräumen im Modell halten.
+    - Soll-Werte der Nutzungsvereinbarung Tragwerk direkt an Innen- und Aussenräumen im Modell führen.
 
     - Kolorierte Pläne und Visualisierungen aus dem Modell erzeugen statt paralleler Listenpflege.
 
@@ -32,42 +30,27 @@ description:
 
     2. Je Raum Flächenlast Soll, Punktlast Soll und Schwingungsanforderungen erfassen.
 
-    3. Visualisierungen und Pläne aus dem Modell ableiten und mit der Nutzungsvereinbarung abstimmen.
+    3. Visualisierungen und Pläne aus dem Modell ableiten.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Nachvollziehbare, raumbezogene Darstellung der vereinbarten Nutzungsanforderungen als Basis für Nutzungsvereinbarung und Projektbasis.
+    - Raummodell mit prüfbaren Nutzungs- und Tragwerksanforderungen je Raum
 
-
-    **Lieferobjekte**
-
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Innenräume als IfcSpace (PredefinedType=INTERNAL) und Aussenräume als IfcSpace (PredefinedType=EXTERNAL)
-
-    - LongName mit Nutzung; Name optional
-
-    - DesignAreaLoad (Flächenlast Soll) in kN/m²
-
-    - DesignPointLoad (Punktlast Soll) in kN
-
-    - VibrationRequirements (Schwingungsanforderungen) als ISO Workshop … VC-E'
-  fr: 'Saisir les exigences d''utilisation de la convention d''utilisation par local dans la maquette et en déduire des visualisations lisibles.
+    - Raumbezogene Visualisierungen gemäss Nutzungsvereinbarung Tragwerk und Projektbasis'
+  fr: 'Saisir par local dans la maquette les exigences d''utilisation et les exigences structurelles de la convention d''utilisation et en déduire des visualisations lisibles.
 
 
     **Situation de départ**
 
-    - Charges surfaciques, charges ponctuelles et exigences vibratoires sont souvent tenues seulement dans des tableaux ou plans colorés — difficiles à aligner avec le modèle spatial.
+    - Charges surfaciques, charges ponctuelles et exigences vibratoires ne sont souvent tenues que dans des tableaux ou des plans colorés.
 
-    - Les changements d''usage ou d''hypothèses de charge se perdent facilement dans la documentation.
-
-    - Maître d''ouvrage et spécialistes ont besoin d''une lecture commune, liée aux locaux, des valeurs convenues.
+    - Les changements d''usage des locaux ou des hypothèses de charge se perdent dans la documentation.
 
 
     **Objectif et bénéfice**
 
-    - Maintenir les valeurs cibles de la convention d''utilisation directement sur les espaces intérieurs et extérieurs dans le modèle.
+    - Saisir les valeurs cibles de la convention d''utilisation de la structure directement sur les espaces intérieurs et extérieurs dans la maquette.
 
     - Produire plans colorés et visualisations à partir du modèle plutôt que de listes parallèles.
 
@@ -78,42 +61,27 @@ description:
 
     2. Saisir par local charge surfacique cible, charge ponctuelle cible et exigences vibratoires.
 
-    3. Déduire visualisations et plans du modèle et les aligner avec la convention d''utilisation.
+    3. Déduire les visualisations et les plans de la maquette.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Représentation traçable, liée aux locaux, des exigences d''utilisation convenues comme base pour la convention d''utilisation et la base de projet.
+    - Maquette spatiale avec exigences d''utilisation et structurelles vérifiables par local
 
-
-    **Livrables**
-
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Espaces intérieurs comme IfcSpace (PredefinedType=INTERNAL) et espaces extérieurs comme IfcSpace (PredefinedType=EXTERNAL)
-
-    - LongName avec usage ; Name facultatif
-
-    - DesignAreaLoad (charge surfacique cible) en kN/m²
-
-    - DesignPointLoad (charge ponctuelle cible) en kN
-
-    - VibrationRequirements (exigences vibratoires) comme ISO Workshop … VC-E'
-  it: 'Tenere i requisiti d''uso della convenzione d''uso per locale nel modello e ricavarne visualizzazioni leggibili.
+    - Visualisations par local conformes à la convention d''utilisation de la structure et à la base du projet'
+  it: 'Gestire per locale nel modello i requisiti d''uso e strutturali della convenzione d''uso e ricavarne visualizzazioni leggibili.
 
 
     **Situazione di partenza**
 
-    - Carichi areali, carichi puntuali e requisiti di vibrazione sono spesso gestiti solo in tabelle o planimetrie colorate — difficili da allineare con il modello spaziale.
+    - Carichi areali, carichi puntuali e requisiti di vibrazione sono spesso tenuti solo in tabelle o planimetrie colorate.
 
-    - Le modifiche d''uso o delle ipotesi di carico si perdono facilmente nella documentazione.
-
-    - Committenza e specialisti necessitano di una lettura comune, legata ai locali, dei valori concordati.
+    - Le modifiche dell''uso dei locali o delle ipotesi di carico si perdono nella documentazione.
 
 
     **Obiettivo e beneficio**
 
-    - Mantenere i valori obiettivo della convenzione d''uso direttamente sugli spazi interni ed esterni nel modello.
+    - Gestire i valori obiettivo della convenzione d''uso delle strutture direttamente sugli spazi interni ed esterni nel modello.
 
     - Produrre planimetrie colorate e visualizzazioni dal modello invece di elenchi paralleli.
 
@@ -124,42 +92,27 @@ description:
 
     2. Registrare per locale carico areale obiettivo, carico puntuale obiettivo e requisiti di vibrazione.
 
-    3. Ricavare visualizzazioni e planimetrie dal modello e allinearle con la convenzione d''uso.
+    3. Ricavare visualizzazioni e planimetrie dal modello.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Rappresentazione tracciabile, legata ai locali, dei requisiti d''uso concordati come base per la convenzione d''uso e la base di progetto.
+    - Modello spaziale con requisiti d''uso e strutturali verificabili per locale
 
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Spazi interni come IfcSpace (PredefinedType=INTERNAL) e spazi esterni come IfcSpace (PredefinedType=EXTERNAL)
-
-    - LongName con uso; Name facoltativo
-
-    - DesignAreaLoad (carico areale obiettivo) in kN/m²
-
-    - DesignPointLoad (carico puntuale obiettivo) in kN
-
-    - VibrationRequirements (requisiti di vibrazione) come ISO Workshop … VC-E'
-  en: 'Hold usage-agreement requirements per space in the model and derive readable visualizations from them.
+    - Visualizzazioni per locale conformi alla convenzione d''uso delle strutture e alla base del progetto'
+  en: 'Record usage and structural requirements from the usage agreement per space in the model and derive readable visualizations from them.
 
 
     **Starting point**
 
-    - Area loads, point loads, and vibration requirements are often kept only in tables or coloured plans — hard to align with the space model.
+    - Area loads, point loads, and vibration requirements are often kept only in tables or coloured plans.
 
     - Changes to room use or load assumptions are easily lost in documentation.
-
-    - Client and specialists need a shared, space-based reading of the agreed values.
 
 
     **Goal & benefit**
 
-    - Keep design target values of the usage agreement directly on interior and exterior spaces in the model.
+    - Record design target values of the structural usage agreement directly on interior and exterior spaces in the model.
 
     - Produce coloured plans and visualizations from the model instead of parallel list maintenance.
 
@@ -170,32 +123,23 @@ description:
 
     2. Capture design area load, design point load, and vibration requirements per space.
 
-    3. Derive visualizations and plans from the model and align them with the usage agreement.
+    3. Derive visualizations and plans from the model.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Traceable, space-based representation of the agreed usage requirements as a basis for the usage agreement and design basis.
+    - Space model with verifiable usage and structural requirements for each space
 
-
-    **Deliverables**
-
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Interior spaces as IfcSpace (PredefinedType=INTERNAL) and exterior spaces as IfcSpace (PredefinedType=EXTERNAL)
-
-    - LongName with use; Name optional
-
-    - DesignAreaLoad (design area load) in kN/m²
-
-    - DesignPointLoad (design point load) in kN
-
-    - VibrationRequirements (vibration requirements) as ISO Workshop … VC-E'
-workflow_group: null
+    - Space-based visualizations aligned with the structural usage agreement and design basis'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/structural
-comment: SIA 260 Nutzungsvereinbarung — agreed design loads and vibration criteria on spaces for coloured plan/visualization output. Custom ePset_SpaceUsageAgreement (no standard IFC pset for these values).
+comment: SIA 260 Nutzungsvereinbarung Tragwerk – agreed design loads and vibration criteria are held in ePset_SpaceRequirement for coloured plan/visualization output. Verified values are held separately
+  in ePset_Space and used by QAS-USAGE-AGREEMENT. The stable workflow id and code are retained for compatibility.
+countries:
+- CH

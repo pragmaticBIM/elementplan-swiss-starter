@@ -1,0 +1,36 @@
+id: pragmaticbim:value/product-class-column
+code: PRODUCT-CLP
+name:
+  de: Abstrakte Stützenprodukte
+  fr: Abstract column products
+  it: Abstract column products
+  en: Abstract column products
+description:
+  de: 'Produktklassen gemäss Abstrakte Stützenprodukte. Quelle: https://schema.pragmaticbim.ch/classification/column-product.html'
+  fr: 'Classes de produits selon Abstract column products. Source : https://schema.pragmaticbim.ch/classification/column-product.html'
+  it: 'Classi di prodotto secondo Abstract column products. Fonte: https://schema.pragmaticbim.ch/classification/column-product.html'
+  en: 'Product classes according to Abstract column products. Source: https://schema.pragmaticbim.ch/classification/column-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Stahlstütze
+  - Holzstütze
+  - Stahlbetonstütze
+  - Andere oder unbekannte Stütze
+  fr:
+  - Steel column
+  - Timber column
+  - Reinforced concrete column
+  - Other or unknown column
+  it:
+  - Steel column
+  - Timber column
+  - Reinforced concrete column
+  - Other or unknown column
+  en:
+  - Steel column
+  - Timber column
+  - Reinforced concrete column
+  - Other or unknown column

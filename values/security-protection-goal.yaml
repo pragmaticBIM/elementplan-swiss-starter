@@ -1,0 +1,36 @@
+id: pragmaticbim:value/security-protection-goal
+code: SEC-GOAL
+name:
+  de: Schutzziel
+  fr: Objectif de protection
+  it: Obiettivo di protezione
+  en: Protection goal
+description:
+  de: Schutzziel eines Raums gemäss Sicherheitskonzept.
+  fr: Objectif de protection d'un local selon le concept de sécurité.
+  it: Obiettivo di protezione di un locale secondo il concetto di sicurezza.
+  en: Protection goal of a space according to the security concept.
+year: 2026
+norm_reference: project-specific
+status: active
+values:
+  de:
+  - Einbruch
+  - Sabotage
+  - Spionage
+  - Vandalismus
+  fr:
+  - Effraction
+  - Sabotage
+  - Espionnage
+  - Vandalisme
+  it:
+  - Effrazione
+  - Sabotaggio
+  - Spionaggio
+  - Vandalismo
+  en:
+  - Burglary
+  - Sabotage
+  - Espionage
+  - Vandalism

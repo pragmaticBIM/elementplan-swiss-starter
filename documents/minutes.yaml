@@ -1,52 +1,60 @@
 id: pragmaticbim:document/minutes
 code: PRT
-sort_order: 137
+sort_order: 132
 name:
   de: Protokolle
   fr: Procès-verbaux
   it: Verbali
   en: Minutes
 definition:
-  de: Sitzungs- und Entscheidprotokolle. Verknüpfen organisatorische Meilensteine und Entscheide direkt mit dem technischen Planungsstand.
-  fr: Procès-verbaux de séances et de décisions. Ils relient jalons organisationnels et décisions à l'état technique de la planification.
-  it: Verbali di seduta e di decisione. Collegano i traguardi organizzativi e le decisioni direttamente allo stato tecnico della pianificazione.
-  en: Meeting and decision minutes. They link organisational milestones and decisions directly to the technical planning status.
+  de: Sitzungs- und Entscheidprotokolle werden vorzugsweise als fortlaufendes, lebendiges Dokument geführt. Aktuelle Besprechungspunkte werden für eine einfache Orientierung hervorgehoben; so lassen sich Widersprüche frühzeitig erkennen und Inhalte aus Projekthandbuch oder BAP direkt behandeln und laufend nachführen.
+  fr: Les procès-verbaux de séances et de décisions sont de préférence tenus dans un document continu et évolutif. Les points actuels sont mis en évidence pour faciliter l'orientation ; les contradictions peuvent ainsi être détectées rapidement et les contenus du manuel de projet ou du BAP traités directement et mis à jour en continu.
+  it: I verbali delle riunioni e delle decisioni sono preferibilmente tenuti in un documento continuo e aggiornato nel tempo. I punti di discussione attuali sono evidenziati per facilitare l'orientamento; in questo modo le contraddizioni possono essere individuate tempestivamente e i contenuti del manuale di progetto o del BAP trattati direttamente e aggiornati con continuità.
+  en: Meeting and decision minutes are preferably maintained as one continuous, living document. Current discussion items are highlighted for easy orientation, enabling contradictions to be identified early and content from the project handbook or BEP to be addressed directly and kept up to date.
 description:
   de: |-
-    - Datum und Teilnehmende
-    - Entscheide
-    - Pendenzen bzw. Aufgaben
+    - Fortlaufende chronologische Einträge mit Datum und Teilnehmenden
+    - Hervorgehobene aktuelle Besprechungspunkte
+    - Entscheide mit Entscheidungsdatum
+    - Pendenzen mit Zuständigkeiten und Terminen
     - Bezug zum Planungsstand
+    - Im Protokoll nachgeführte Inhalte aus Projekthandbuch oder BAP
   fr: |-
-    - Date et personnes présentes
-    - Décisions
-    - Tâches restantes
+    - Entrées chronologiques continues avec date et personnes présentes
+    - Points actuels mis en évidence
+    - Décisions avec date de décision
+    - Tâches en suspens avec responsables et délais
     - Référence à l'état de planification
+    - Contenus du manuel de projet ou du BAP mis à jour dans le procès-verbal
   it: |-
-    - Data e partecipanti
-    - Decisioni
-    - Compiti rimanenti
+    - Registrazioni cronologiche continue con data e partecipanti
+    - Punti di discussione attuali evidenziati
+    - Decisioni con relativa data
+    - Compiti in sospeso con responsabili e scadenze
     - Riferimento allo stato di pianificazione
+    - Contenuti del manuale di progetto o del BAP aggiornati nel verbale
   en: |-
-    - Date and attendees
-    - Decisions
-    - Remaining tasks
-    - Reference to the planning status
+    - Continuous chronological entries with date and attendees
+    - Highlighted current discussion items
+    - Decisions with decision dates
+    - Outstanding tasks with responsibilities and deadlines
+    - Reference to the design status
+    - Project handbook or BEP content updated within the minutes
 file_name:
   de: '{Projektnummer}_PRO-PRT_{Freitext}.{ext}'
   fr: '{NumeroProjet}_PRO-PRT_{Libre}.{ext}'
   it: '{NumeroProgetto}_PRO-PRT_{Libero}.{ext}'
-  en: '{ProjectNumber}_PRO-PRT_{Free}.{ext}'
+  en: '{ProjectNumber}_PRO-PRT_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/architecture
 scheduled_milestones:
-  - "11:beginning"
-  - "21:beginning"
-  - "22:beginning"
-  - "31:beginning"
-  - "32:beginning"
-  - "33:beginning"
-  - "41:beginning"
-  - "51:beginning"
-  - "52:beginning"
-  - "53:beginning"
+  - "11:M"
+  - "21:M"
+  - "22:M"
+  - "31:M"
+  - "32:M"
+  - "33:M"
+  - "41:M"
+  - "51:M"
+  - "52:M"
+  - "53:M"

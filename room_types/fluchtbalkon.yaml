@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/fluchtbalkon
+code: RT-WH-27
+sort_order: 27
+name:
+  de: Fluchtbalkon
+  fr: Balcon de fuite
+  it: Balcone di fuga
+  en: Escape Balcony
+definition:
+  de: Balkon als zweiter Rettungsweg.
+  fr: Balcon servant de second chemin de fuite.
+  it: Balcone come seconda via di fuga.
+  en: Balcony used as a second means of escape.
+attribute_presets:
+- element: pragmaticbim:element/spaces-exterior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-exterior
+  name: IsExternal
+  value: true
+- element: pragmaticbim:element/spaces-exterior
+  name: LongName
+  value:
+    de: Fluchtbalkon
+    fr: Balcon de fuite
+    it: Balcone di fuga
+    en: Escape Balcony
+restrictions:
+  min_area: 2
+status: active

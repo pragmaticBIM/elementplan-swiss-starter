@@ -2,167 +2,141 @@ id: pragmaticbim:workflow/des-traffic-study
 code: DES-TRAFFIC
 sort_order: 68
 name:
-  de: Erstellen Verkehrsgutachten
-  fr: Établir l'étude de trafic
-  it: Predisporre lo studio del traffico
-  en: Prepare the traffic study
+  de: Vorgaben aus dem Verkehrsgutachten prüfen
+  fr: Contrôler les prescriptions de l'étude de trafic
+  it: Verificare le prescrizioni dello studio del traffico
+  en: Check the requirements from the traffic study
 description:
-  de: 'Verkehrsgutachten für Erschliessung, Parkierung und Netzauswirkungen als Grundlage für das Baugesuch erarbeiten.
+  de: 'Vorgaben aus dem Verkehrsgutachten am Modell laufend prüfen – Parkierung und Wenderadien bleiben mit dem Planungsstand abgestimmt.
 
 
     **Ausgangslage**
 
-    - Bewilligungsbehörden verlangen oft ein Verkehrsgutachten; Annahmen zu Erschliessung und Parkierung sind im Projekt verstreut.
+    - Verkehrsgutachten setzen Anforderungen an Parkierung und Erschliessung; ohne Modellbezug veralten sie bei Planungsänderungen.
 
-    - Ohne gebündeltes Gutachten fehlen Gesuch und Fachplanung eine gemeinsame Lesart.
+    - Fehlende Soll-Ist-Abgleiche und unklare Wenderadien führen zu Bewilligungs- und Ausführungskonflikten.
 
 
     **Ziel & Nutzen**
 
-    - Erschliessung, Parkierung und Auswirkungen auf das umliegende Netz nachvollziehbar belegen.
+    - Parkplätze und Wenderadien am Modell mit den Gutachtenvorgaben abgleichen.
 
-    - Gutachten mit Planungsstand und Bewilligungsunterlagen abstimmen — ergänzend zum Parkplatznachweis am Modell.
+    - Abweichungen früh sichtbar machen und mit Prüfregeln nachweisen.
 
 
     **Ablauf**
 
-    1. Lage, Erschliessung und Parkierung aus dem aktuellen Planungsstand zusammenstellen.
+    1. Parkplätze als eigene Räume führen und Soll-Ist mit den Gutachtenvorgaben abgleichen.
 
-    2. Verkehrsgutachten erarbeiten und mit Behörde und Fachplanung abstimmen.
+    2. Erforderliche Wenderadien als Proxy-Volumen modellieren.
 
-    3. Gutachten als Grundlage für das Baugesuch freigeben.
-
-
-    **Ergebnis**
-
-    - Abgestimmtes Verkehrsgutachten als Grundlage für das Baugesuch.
+    3. Prüfregeln erstellen und den Abgleich bei Planungsänderungen wiederholen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Verkehrsgutachten
+    - Modell mit nachvollziehbarem Parkplatz-Soll-Ist und modellierten Wenderadien
 
-    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey als räumlicher Bezug
-
-    - Keine zusätzlichen IFC-Attribute — Gutachten als Prozessergebnis'
-  fr: 'Établir l''étude de trafic pour desserte, stationnement et effets sur le réseau comme base pour la mise à l''enquête.
+    - Dokumentierte Prüfregeln zum laufenden Abgleich mit dem Verkehrsgutachten'
+  fr: 'Contrôler en continu les prescriptions de l''étude de trafic dans le modèle – stationnement et rayons de braquage restent alignés avec l''état de planification.
 
 
     **Situation de départ**
 
-    - Les autorités exigent souvent une étude de trafic ; les hypothèses de desserte et de stationnement sont dispersées dans le projet.
+    - Les études de trafic fixent des exigences de stationnement et de desserte ; sans lien au modèle, elles deviennent obsolètes lors des modifications de projet.
 
-    - Sans étude regroupée, enquête et spécialistes n''ont pas de lecture commune.
+    - L''absence de comparaison prescrit/réalisé et des rayons de braquage flous entraînent des conflits d''autorisation et d''exécution.
 
 
     **Objectif et bénéfice**
 
-    - Justifier de façon traçable desserte, stationnement et effets sur le réseau environnant.
+    - Aligner places de stationnement et rayons de braquage dans le modèle avec les prescriptions de l''étude.
 
-    - Aligner l''étude avec l''état de planification et les dossiers d''autorisation — en complément du justificatif de places via le modèle.
+    - Rendre les écarts visibles tôt et les prouver avec des règles de contrôle.
 
 
     **Déroulement**
 
-    1. Rassembler situation, desserte et stationnement à partir de l''état actuel de planification.
+    1. Saisir les places comme locaux distincts et comparer prescrit/réalisé avec les prescriptions de l''étude.
 
-    2. Établir l''étude de trafic et l''aligner avec autorité et spécialistes.
+    2. Modéliser les rayons de braquage requis comme volumes proxy.
 
-    3. Approuver l''étude comme base pour la mise à l''enquête.
-
-
-    **Résultat**
-
-    - Étude de trafic alignée comme base pour la mise à l''enquête.
+    3. Établir des règles de contrôle et répéter la comparaison lors des modifications de projet.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Étude de trafic
+    - Maquette avec comparaison prescrit/réalisé traçable des places et rayons de braquage modélisés
 
-    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey comme référence spatiale
-
-    - Pas d''attributs IFC supplémentaires — étude comme résultat de processus'
-  it: 'Predisporre lo studio del traffico per accesso, parcheggio ed effetti sulla rete come base per la domanda edilizia.
+    - Règles de contrôle documentées pour l''alignement continu avec l''étude de trafic'
+  it: 'Verificare in continuo nel modello le prescrizioni dello studio del traffico – parcheggi e raggi di manovra restano allineati allo stato di pianificazione.
 
 
     **Situazione di partenza**
 
-    - Le autorità richiedono spesso uno studio del traffico; le ipotesi su accesso e parcheggio sono sparse nel progetto.
+    - Gli studi del traffico fissano requisiti su parcheggio e accesso; senza collegamento al modello diventano obsoleti al variare del progetto.
 
-    - Senza studio raggruppato, domanda e specialisti non hanno una lettura comune.
+    - L''assenza di confronti prescritto/realizzato e raggi di manovra poco chiari causano conflitti di autorizzazione e di esecuzione.
 
 
     **Obiettivo e beneficio**
 
-    - Documentare in modo tracciabile accesso, parcheggio ed effetti sulla rete circostante.
+    - Allineare posti auto e raggi di manovra nel modello alle prescrizioni dello studio.
 
-    - Allineare lo studio con lo stato di pianificazione e gli atti di autorizzazione — in complementarità alla verifica posti auto dal modello.
+    - Rendere visibili presto gli scostamenti e dimostrarli con regole di verifica.
 
 
     **Svolgimento**
 
-    1. Raccogliere situazione, accesso e parcheggio dallo stato attuale di pianificazione.
+    1. Gestire i posti auto come locali distinti e confrontare prescritto/realizzato con le prescrizioni dello studio.
 
-    2. Predisporre lo studio del traffico e allinearlo con autorità e specialisti.
+    2. Modellare i raggi di manovra richiesti come volumi proxy.
 
-    3. Approvare lo studio come base per la domanda edilizia.
-
-
-    **Risultato**
-
-    - Studio del traffico allineato come base per la domanda edilizia.
+    3. Creare regole di verifica e ripetere il confronto a ogni modifica di progetto.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Studio del traffico
+    - Modello con confronto prescritto/realizzato tracciabile dei posti auto e raggi di manovra modellati
 
-    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey come riferimento spaziale
-
-    - Nessun attributo IFC aggiuntivo — studio come risultato di processo'
-  en: 'Prepare the traffic study for access, parking, and network effects as the basis for the building application.
+    - Regole di verifica documentate per l''allineamento continuo con lo studio del traffico'
+  en: 'Continuously check traffic study requirements against the model – parking and turning radii stay aligned with the planning status.
 
 
     **Starting point**
 
-    - Authorities often require a traffic study; assumptions on access and parking are scattered across the project.
+    - Traffic studies set requirements for parking and access; without a model link they become outdated when the design changes.
 
-    - Without a bundled study, the application and specialists lack a shared reading.
+    - Missing requirement-vs-design checks and unclear turning radii cause permit and execution conflicts.
 
 
     **Goal & benefit**
 
-    - Evidence access, parking, and effects on the surrounding network traceably.
+    - Align parking spaces and turning radii in the model with the study requirements.
 
-    - Align the study with planning status and permit documents — complementary to parking verification from the model.
+    - Make deviations visible early and prove them with verification rules.
 
 
     **Process**
 
-    1. Assemble site, access, and parking from the current planning status.
+    1. Maintain parking bays as dedicated spaces and compare required vs designed against the study requirements.
 
-    2. Prepare the traffic study and align it with the authority and specialists.
+    2. Model required turning radii as proxy volumes.
 
-    3. Release the study as the basis for the building application.
-
-
-    **Outcome**
-
-    - Aligned traffic study as the basis for the building application.
+    3. Create verification rules and repeat the check when the design changes.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Traffic study
+    - Model with a traceable parking required-vs-designed check and modelled turning radii
 
-    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey as spatial reference
-
-    - No additional IFC attributes — study as the process deliverable'
-workflow_group: null
+    - Documented verification rules for ongoing alignment with the traffic study'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Produces VKG. Complements DES-PARKING (model parking verification); does not replace it.
+- pragmaticbim:domain/infrastructure
+comment: Checks VKG requirements against the model (parking Soll-Ist + turning-radius proxies + verification rules). Complements DES-PARKING; does not replace producing the traffic study document itself.

@@ -2,167 +2,148 @@ id: pragmaticbim:workflow/qas-furnishability-verification
 code: QAS-FURNISHABILITY
 sort_order: 84
 name:
-  de: Nachweis der Möblierbarkeit
-  fr: Preuve de meublabilité
-  it: Prova di arredabilità
-  en: Furnishability verification
+  de: Möblierbarkeit nachweisen
+  fr: Justifier la meublabilité
+  it: Giustificare l'arredabilità
+  en: Verify furnishability
 description:
-  de: 'Möblierbarkeit von Innenräumen im Modell nachweisen — bevor Wände und Öffnungen die Nutzung einschränken.
+  de: 'Möblierbarkeit von Innenräumen so nachweisen, dass Besteller ohne Planlesekompetenz entscheiden und freigeben können.
 
 
     **Ausgangslage**
 
-    - Ohne Möbel im Modell bleibt unklar, ob Räume mit der geplanten Nutzung wirklich möblierbar sind.
+    - Laien können oft keine Pläne lesen, wodurch die tatsächliche Möblierbarkeit für den Besteller unsichtbar bleibt.
 
-    - Späte Konflikte mit Wänden, Türen und Erschliessung führen zu Umbauten oder unbrauchbaren Grundrissen.
+    - Möbel werden in Plänen oft in der bestmöglichen Anordnung eingezeichnet und verschleiern so schlechte Raumzuschnitte.
+
+    - Schlechte Raumzuschnitte erzeugen im Ergebnis Räume mit versteckter Verkehrsfläche.
 
 
     **Ziel & Nutzen**
 
-    - Möbel als vereinfachte Körper mit realen Abmessungen im Modell führen.
+    - Möblierbarkeit in laienverständlicher Sprache im Modell nachweisen.
 
-    - Passung und Bewegungsflächen gegen Raum und Bauwerk prüfen und den Nachweis dokumentieren.
+    - Grundriss auf Basis des Nachweises optimieren und mit dem Besteller freigeben.
 
 
     **Ablauf**
 
     1. Innenräume mit Nutzung und Abmessungen bereitstellen.
 
-    2. Möbel schematisch mit realem Grundriss und Höhe platzieren.
+    2. Möbel schematisch mit realen Abmessungen platzieren und Passung sowie Bewegungsflächen prüfen.
 
-    3. Passung und Kollisionen prüfen und den Nachweis dokumentieren.
-
-
-    **Ergebnis**
-
-    - Nachgewiesene Möblierbarkeit als Planungsgrundlage — bevor der Grundriss verbindlich wird.
+    3. Möglichkeiten mit dem Besteller prüfen und Freigabe herbeiführen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+    - Architekturmodell mit nachgewiesen möblierbaren Räumen.
 
-    - Innenräume als modellierte IfcSpace-Volumen (PredefinedType=INTERNAL); LongName mit Nutzung; NetFloorArea als Abmessungsangabe
-
-    - IfcFurniture mit Name und PredefinedType (IFC4+) bzw. IfcFurnishingElement mit ObjectType (IFC2x3); schematische Geometrie mit realem Grundriss'
-  fr: 'Prouver dans le modèle que les locaux intérieurs restent meublables — avant que murs et ouvertures ne limitent l''usage.
+    - Dokumentierte Besteller-Freigabe der gewählten Möblierungsvariante.'
+  fr: 'Prouver la meublabilité des locaux intérieurs de façon que le maître d''ouvrage puisse décider et valider sans savoir lire les plans.
 
 
     **Situation de départ**
 
-    - Sans mobilier dans le modèle, il reste incertain que les locaux avec l''usage prévu soient réellement meublables.
+    - Les non-spécialistes ne savent souvent pas lire les plans, ce qui rend la meublabilité réelle invisible pour le maître d''ouvrage.
 
-    - Des conflits tardifs avec murs, portes et desserte entraînent des transformations ou des plans inutilisables.
+    - Sur les plans, le mobilier est souvent dessiné dans la disposition la plus favorable et masque ainsi de mauvais découpages de locaux.
+
+    - De mauvais découpages produisent au final des locaux avec une surface de circulation cachée.
 
 
     **Objectif et bénéfice**
 
-    - Saisir le mobilier comme corps simplifiés avec dimensions réelles dans le modèle.
+    - Prouver la meublabilité dans la maquette, dans un langage compréhensible pour des non-spécialistes.
 
-    - Vérifier l''ajustement et les surfaces de circulation contre local et bâtiment et documenter la preuve.
+    - Optimiser le plan sur la base de cette preuve et le faire valider par le maître d''ouvrage.
 
 
     **Déroulement**
 
     1. Fournir les locaux intérieurs avec usage et dimensions.
 
-    2. Placer le mobilier de façon schématique avec emprise et hauteur réelles.
+    2. Placer le mobilier de façon schématique avec dimensions réelles et vérifier l''ajustement ainsi que les surfaces de circulation.
 
-    3. Vérifier ajustement et collisions et documenter la preuve.
-
-
-    **Résultat**
-
-    - Ameublement prouvé comme base de planification — avant que le plan ne devienne contraignant.
+    3. Examiner les possibilités avec le maître d''ouvrage et obtenir la validation.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+    - Maquette d''architecture avec locaux dont la meublabilité est prouvée.
 
-    - Locaux intérieurs comme volumes IfcSpace modélisés (PredefinedType=INTERNAL) ; LongName avec usage ; NetFloorArea comme indication dimensionnelle
-
-    - IfcFurniture avec Name et PredefinedType (IFC4+) ou IfcFurnishingElement avec ObjectType (IFC2x3) ; géométrie schématique avec emprise réelle'
-  it: 'Dimostrare nel modello che i locali interni restano arredabili — prima che pareti e aperture limitino l''uso.
+    - Validation documentée du maître d''ouvrage pour la variante d''ameublement retenue.'
+  it: 'Dimostrare l''arredabilità dei locali interni in modo che il committente possa decidere e approvare senza saper leggere i piani.
 
 
     **Situazione di partenza**
 
-    - Senza arredi nel modello resta incerto se i locali con l''uso previsto siano realmente arredabili.
+    - I non addetti ai lavori spesso non sanno leggere i piani, per cui l''arredabilità reale resta invisibile per il committente.
 
-    - Conflitti tardivi con pareti, porte e distribuzione causano trasformazioni o piante inutilizzabili.
+    - Nei piani gli arredi sono spesso disegnati nella disposizione più favorevole e mascherano così cattivi tagli dei locali.
+
+    - Cattivi tagli producono di conseguenza locali con superficie di circolazione nascosta.
 
 
     **Obiettivo e beneficio**
 
-    - Gestire gli arredi come corpi semplificati con dimensioni reali nel modello.
+    - Dimostrare l''arredabilità nel modello in un linguaggio comprensibile ai non addetti ai lavori.
 
-    - Verificare adattamento e superfici di circolazione contro locale ed edificio e documentare la prova.
+    - Ottimizzare la pianta sulla base della prova e farla approvare dal committente.
 
 
     **Svolgimento**
 
     1. Fornire i locali interni con uso e dimensioni.
 
-    2. Posizionare gli arredi in modo schematico con ingombro e altezza reali.
+    2. Posizionare gli arredi in modo schematico con dimensioni reali e verificare adattamento nonché superfici di circolazione.
 
-    3. Verificare adattamento e collisioni e documentare la prova.
-
-
-    **Risultato**
-
-    - Arredabilità dimostrata come base di pianificazione — prima che la pianta diventi vincolante.
+    3. Esaminare le possibilità con il committente e ottenere l''approvazione.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+    - Modello di architettura con locali la cui arredabilità è dimostrata.
 
-    - Locali interni come volumi IfcSpace modellati (PredefinedType=INTERNAL); LongName con uso; NetFloorArea come indicazione dimensionale
-
-    - IfcFurniture con Name e PredefinedType (IFC4+) o IfcFurnishingElement con ObjectType (IFC2x3); geometria schematica con ingombro reale'
-  en: 'Prove in the model that interior rooms remain furnishable — before walls and openings lock in the use.
+    - Approvazione documentata del committente per la variante di arredo scelta.'
+  en: 'Prove furnishability of interior rooms so clients can decide and approve without being able to read plans.
 
 
     **Starting point**
 
-    - Without furniture in the model, it stays unclear whether rooms with the intended use can actually be furnished.
+    - Laypeople often cannot read plans, so actual furnishability stays invisible to the client.
 
-    - Late conflicts with walls, doors, and circulation lead to rebuilds or unusable layouts.
+    - Furniture on drawings is often shown in the most favourable layout and thus conceals poor room proportions.
+
+    - Poor room proportions result in rooms with hidden circulation area.
 
 
     **Goal & benefit**
 
-    - Maintain furniture as simplified bodies with real dimensions in the model.
+    - Prove furnishability in the model in language laypeople understand.
 
-    - Check fit and circulation against room and building and document the verification.
+    - Optimize the layout on the basis of that verification and obtain client approval.
 
 
     **Process**
 
     1. Provide interior spaces with use and dimensions.
 
-    2. Place furniture schematically with real footprint and height.
+    2. Place furniture schematically with real dimensions and check fit and circulation.
 
-    3. Check fit and clashes and document the verification.
-
-
-    **Outcome**
-
-    - Verified furnishability as the planning basis — before the layout becomes binding.
+    3. Discuss the options with the client and obtain approval.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+    - Architecture model with rooms whose furnishability is proven.
 
-    - Interior spaces as modelled IfcSpace volumes (PredefinedType=INTERNAL); LongName with use; NetFloorArea as size indication
-
-    - IfcFurniture with Name and PredefinedType (IFC4+) or IfcFurnishingElement with ObjectType (IFC2x3); schematic geometry with real footprint'
-workflow_group: null
+    - Documented client approval of the chosen furnishing option.'
+workflow_group: entwurf
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 comment: Schematic IfcFurniture (IFC4+) or IfcFurnishingElement (IFC2x3) with real footprint for clash/fit checks against interior spaces and building. Distinct from des-furniture-planning (layout lists)

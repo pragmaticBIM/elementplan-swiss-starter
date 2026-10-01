@@ -1,0 +1,191 @@
+id: pragmaticbim:workflow/opr-facility-management-point-cloud
+code: OPR-FM-PC
+sort_order: 63
+name:
+  de: Klassifizierte Punktwolke im FM nutzen
+  fr: Utiliser un nuage de points classifié pour le FM
+  it: Utilizzare una nuvola di punti classificata per il FM
+  en: FM with a classified point cloud
+description:
+  de: 'Das fertiggestellte Bauwerk als klassifizierte Punktwolke erfassen und direkt für FM-Prozesse nutzen – ohne ein vollständiges Bestandsmodell nachzuführen.
+
+
+    **Ausgangslage**
+
+    - Für den Betrieb fehlen insbesondere bei Bestandsgebäuden häufig aktuelle und verlässliche Modelle.
+
+    - Eine vollständige Nachmodellierung ist oft teurer als eine Punktwolkenaufnahme und liefert mehr Geometrie, als das FM tatsächlich benötigt.
+
+    - Ohne eindeutige Klassifizierung und Datenbankbezug bleiben erkannte Bauteile in der Punktwolke für Wartung, Inspektion und Flächenmanagement kaum nutzbar.
+
+
+    **Ziel & Nutzen**
+
+    - FM-relevante Bauteile direkt in der Punktwolke erkennen, klassifizieren und mit den zugehörigen Datensätzen der FM-Datenbank verknüpfen.
+
+    - Eine kostengünstige, räumlich nachvollziehbare Betriebsgrundlage schaffen, die in FM-Prozessen anstelle eines vollständigen Bestandsmodells verwendet werden kann.
+
+
+    **Ablauf**
+
+    1. Bauwerk als georeferenzierte Punktwolke erfassen und die für den Betrieb erforderliche Aufnahmequalität und Aktualisierung festlegen.
+
+    2. FM-relevante Bauteile erkennen und klassifizieren sowie über stabile Kennzeichnungen mit den Datensätzen der FM-Datenbank verknüpfen.
+
+    3. Vollständigkeit, Lage, Klassifizierung und Datenbankverknüpfungen stichprobenartig prüfen, Abweichungen dokumentieren und die freigegebene Punktwolke in die vereinbarten FM-Prozesse einbinden.
+
+
+    **Lieferergebnis**
+
+    - Freigegebene, georeferenzierte Punktwolke mit FM-relevanten Bauteilen, klassifiziert nach einer mit dem Betrieb vereinbarten Klassenliste und in der Punktwolke abgelegt, nicht nur im Viewer.
+
+    - Nachvollziehbare Verknüpfung der erkannten Bauteile mit der FM-Datenbank.
+
+    - Aufnahmedatum als Metadatum; Nachaufnahmen ersetzen den bisherigen Stand als neue Version in der CDE.
+
+    - Festgelegte Aktualisierungsauslöser, zum Beispiel nach Umbauten oder Mieterwechseln, sowie dokumentierte Qualitätsprüfung.
+
+
+    **Nutzungsrechte**
+
+    - Die Bauherrschaft erhält an sämtlichen gelieferten Punktwolken, Bildern und Berichten ein zeitlich unbeschränktes Nutzungsrecht, einschliesslich der Weitergabe an alle Projektbeteiligten sowie der
+    Verwendung in späteren Projektphasen und im Betrieb.'
+  fr: 'Saisir l’ouvrage achevé sous forme de nuage de points classifié et l’utiliser directement pour les processus FM, sans tenir à jour une maquette complète de l’existant.
+
+
+    **Situation de départ**
+
+    - Pour l’exploitation, des maquettes actuelles et fiables manquent souvent, en particulier dans les bâtiments existants.
+
+    - Une modélisation complète coûte souvent plus cher qu’un relevé par nuage de points et fournit plus de géométrie que le FM n’en a réellement besoin.
+
+    - Sans classification univoque ni lien vers la base de données, les éléments reconnus dans le nuage de points restent peu utilisables pour la maintenance, l’inspection et la gestion des surfaces.
+
+
+    **Objectif et bénéfice**
+
+    - Reconnaître et classer les éléments déterminants pour le FM directement dans le nuage de points et les relier aux enregistrements correspondants de la base FM.
+
+    - Constituer une base d’exploitation économique et spatialement traçable, utilisable dans les processus FM à la place d’une maquette complète de l’existant.
+
+
+    **Déroulement**
+
+    1. Relever l’ouvrage comme nuage de points géoréférencé et fixer la qualité de relevé ainsi que la mise à jour nécessaires à l’exploitation.
+
+    2. Reconnaître et classer les éléments déterminants pour le FM et les relier, par des identifiants stables, aux enregistrements de la base FM.
+
+    3. Contrôler par sondage l’exhaustivité, la position, la classification et les liens vers la base, documenter les écarts et intégrer le nuage de points validé dans les processus FM convenus.
+
+
+    **Livrable**
+
+    - Nuage de points validé et géoréférencé, dont les éléments déterminants pour le FM sont classés selon une liste de classes convenue avec l’exploitant et enregistrée dans le nuage de points, et non
+    seulement dans la visionneuse.
+
+    - Lien traçable entre les éléments reconnus et la base de données FM.
+
+    - Date du relevé comme métadonnée; les relevés ultérieurs remplacent l’état précédent comme nouvelle version dans la CDE.
+
+    - Déclencheurs de mise à jour définis, par exemple après des transformations ou des changements de locataire, et contrôle qualité documenté.
+
+
+    **Droits d’utilisation**
+
+    - Le maître d’ouvrage obtient sur l’ensemble des nuages de points, images et rapports livrés un droit d’utilisation illimité dans le temps, y compris la remise à tous les intervenants du projet et l’utilisation
+    dans les phases ultérieures ainsi qu’en exploitation.'
+  it: 'Acquisire l’opera completata come nuvola di punti classificata e utilizzarla direttamente per i processi FM, senza tenere aggiornato un modello completo dello stato di fatto.
+
+
+    **Situazione di partenza**
+
+    - Per l’esercizio mancano spesso modelli attuali e affidabili, in particolare negli edifici esistenti.
+
+    - Una modellazione completa costa spesso più di un rilievo mediante nuvola di punti e fornisce più geometria di quanta il FM ne necessiti.
+
+    - Senza una classificazione univoca e un collegamento alla banca dati, i componenti riconosciuti nella nuvola di punti restano poco utilizzabili per manutenzione, ispezione e gestione delle superfici.
+
+
+    **Obiettivo e beneficio**
+
+    - Riconoscere e classificare i componenti rilevanti per il FM direttamente nella nuvola di punti e collegarli ai record corrispondenti della banca dati FM.
+
+    - Creare una base di esercizio economica e spazialmente tracciabile, utilizzabile nei processi FM al posto di un modello completo dello stato di fatto.
+
+
+    **Svolgimento**
+
+    1. Rilevare l’opera come nuvola di punti georiferita e definire la qualità di rilievo e l’aggiornamento necessari per l’esercizio.
+
+    2. Riconoscere e classificare i componenti rilevanti per il FM e collegarli ai record della banca dati FM mediante identificativi stabili.
+
+    3. Verificare a campione completezza, posizione, classificazione e collegamenti alla banca dati, documentare gli scostamenti e integrare la nuvola di punti approvata nei processi FM concordati.
+
+
+    **Risultato della fornitura**
+
+    - Nuvola di punti approvata e georiferita, con i componenti rilevanti per il FM classificati secondo un elenco di classi concordato con il gestore e registrato nella nuvola di punti, non solo nel visualizzatore.
+
+    - Collegamento tracciabile tra i componenti riconosciuti e la banca dati FM.
+
+    - Data del rilievo come metadato; i rilievi successivi sostituiscono lo stato precedente come nuova versione nella CDE.
+
+    - Eventi che impongono l’aggiornamento, per esempio dopo trasformazioni o cambi di locatario, e controllo qualità documentato.
+
+
+    **Diritti di utilizzo**
+
+    - Il committente ottiene su tutte le nuvole di punti, le immagini e i rapporti consegnati un diritto di utilizzo illimitato nel tempo, compresa la trasmissione a tutti i partecipanti al progetto nonché
+    l’uso nelle fasi successive e nell’esercizio.'
+  en: 'Capture the completed asset as a classified point cloud and use it directly for FM processes – without maintaining a complete existing-condition model.
+
+
+    **Starting point**
+
+    - Current, reliable models are often unavailable for operation, particularly for existing buildings.
+
+    - Complete remodelling is often more expensive than a point-cloud survey and provides more geometry than FM actually requires.
+
+    - Without unambiguous classification and database links, identified components in the point cloud are of little use for maintenance, inspection, and space management.
+
+
+    **Goal & benefit**
+
+    - Identify and classify FM-relevant components directly in the point cloud and link them to the corresponding records in the FM database.
+
+    - Create a cost-effective, spatially traceable basis for operation that can be used in FM processes instead of a complete existing-condition model.
+
+
+    **Process**
+
+    1. Capture the asset as a georeferenced point cloud and define the capture quality and update process required for operation.
+
+    2. Identify and classify FM-relevant components and link them to records in the FM database using stable identifiers.
+
+    3. Sample-check completeness, location, classification, and database links, document deviations, and integrate the approved point cloud into the agreed FM processes.
+
+
+    **Deliverable**
+
+    - Approved, georeferenced point cloud with FM-relevant components classified against a class list agreed with operations and stored in the point cloud, not only in the viewer.
+
+    - Traceable links between the identified components and the FM database.
+
+    - Capture date as metadata; resurveys replace the previous state as a new version in the CDE.
+
+    - Defined update triggers, for example after alterations or tenant changes, and a documented quality check.
+
+
+    **Usage rights**
+
+    - The client receives a perpetual right to use all delivered point clouds, images, and reports, including passing them on to everyone involved in the project and using them in later project phases and
+    in operation.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/opr
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Die Punktwolke ist die räumliche FM-Grundlage und ersetzt in diesem Workflow ein vollständig nachgeführtes Bestandsmodell. Klassifikationsumfang, stabile Kennzeichnungen, Datenbankschnittstelle,
+  Prüfstichprobe, Verantwortlichkeiten und Aktualisierungsrhythmus sind projektspezifisch mit dem Betreiber festzulegen.

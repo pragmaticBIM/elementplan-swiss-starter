@@ -1,0 +1,29 @@
+id: pragmaticbim:usage-scenario/gaeste-uebernachten
+code: US-WH-03
+sort_order: 3
+name:
+  de: Gäste übernachten
+  fr: Hôtes qui restent la nuit
+  it: Ospiti che pernottano
+  en: Overnight guests
+description:
+  de: Gäste betreten die Wohnung, erreichen über den Gang das Gästezimmer und von dort das Bad.
+  fr: Les hôtes entrent dans le logement, rejoignent la chambre d'amis par le couloir, puis la salle de bain.
+  it: Gli ospiti entrano nell'alloggio, raggiungono la camera ospiti dal corridoio e da lì il bagno.
+  en: Guests enter the dwelling, reach the guest room from the hallway, and from there the bathroom.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/gang
+- pragmaticbim:room-type/gaestezimmer
+- pragmaticbim:room-type/badezimmer
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/gang
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/gaestezimmer
+- from_room_type: pragmaticbim:room-type/gaestezimmer
+  to_room_type: pragmaticbim:room-type/badezimmer

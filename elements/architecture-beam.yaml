@@ -1,6 +1,6 @@
 id: pragmaticbim:element/architecture-beam
 code: ARC-BEAM
-sort_order: 56
+sort_order: 32
 status: active
 name:
   de: Unterzug / Überzug (Grob)
@@ -8,7 +8,7 @@ name:
   it: Trave / travetto (Indicativo)
   en: Beam / girder (Rough)
 definition:
-  de: 'Grobe Dimensionen gemäss Tragwerksplanung für Träger, Unterzüge und Überzüge in Projektierung und Bewilligungsverfahren.
+  de: 'Macht Lastabtragungsräume früh sichtbar und verhindert Konflikte zwischen Tragwerk, Raumkonzept und Gebäudetechnik.
 
 
     **Beschreibung**
@@ -18,18 +18,16 @@ definition:
     - Dient der Koordination zwischen Architektur und Tragwerksplanung, nicht der Ausführungsplanung.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
-    - Als vereinfachtes Volumen modellieren; Abmessungen gemäss Tragwerksentwurf.
+    - Als vereinfachtes Volumen mit den abgestimmten Abmessungen modellieren.
 
     - Keine Bewehrung, Einbauteile oder Anschlussdetails modellieren.
 
-    - Früh: Konzept über Skizzen als Tragwerksskizze im ARC-Modell; Sperrzonen vom Tragwerksplaner prüfen.
+    - In der Architekturkonzeption die Abmessungen der konzeptionellen Tragwerksbauteile mit dem Tragwerksplaner abstimmen und im Architekturmodell übernehmen.
 
-    - Später: Dieselben Bauteile mit Reference auch im Tragwerksmodell abstimmen.
-
-    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
-  fr: 'Dimensions approximatives selon la conception structurale pour poutres et solives en phases de projet et de procédure d''autorisation.
+    - Geeignetes Material im Autorensystem verwenden und exportieren.'
+  fr: 'Rend visibles tôt les volumes nécessaires à la reprise des charges et évite les conflits entre structure, concept spatial et techniques du bâtiment.
 
 
     **Description**
@@ -41,16 +39,14 @@ definition:
 
     **Directives de modélisation**
 
-    - Modéliser comme volume simplifié ; dimensions selon l''esquisse structurelle.
+    - Modéliser comme volume simplifié avec les dimensions convenues.
 
     - Ne pas modéliser armatures, inserts ou raccords de détail.
 
-    - Tôt : concept par croquis comme esquisse porteuse dans le modèle d''architecture ; vérifier les zones d''exclusion de l''ingénieur structure.
+    - Lors de la conception architecturale, coordonner avec l''ingénieur civil les dimensions des éléments porteurs conceptuels et les reprendre dans le modèle d''architecture.
 
-    - Plus tard : harmoniser les mêmes éléments avec Reference dans le modèle structurel.
-
-    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
-  it: 'Dimensioni indicative secondo la progettazione strutturale per travi e travetti nelle fasi di progettazione e procedura di autorizzazione.
+    - Utiliser et exporter le matériau approprié depuis le logiciel auteur.'
+  it: 'Rende visibili tempestivamente gli spazi necessari alla trasmissione dei carichi ed evita conflitti tra struttura, concetto spaziale e impianti.
 
 
     **Descrizione**
@@ -62,16 +58,14 @@ definition:
 
     **Direttive di modellazione**
 
-    - Modellare come volume semplificato; dimensioni secondo lo schizzo strutturale.
+    - Modellare come volume semplificato con le dimensioni concordate.
 
     - Non modellare armature, inserti o giunti di dettaglio.
 
-    - Presto: concept tramite schizzi come schizzo strutturale nel modello di architettura; verificare le zone di esclusione dell''ingegnere strutturista.
+    - Durante la concezione architettonica, coordinare con l''ingegnere strutturista le dimensioni degli elementi strutturali concettuali e recepirle nel modello architettonico.
 
-    - Più tardi: allineare gli stessi elementi con Reference anche nel modello strutturale.
-
-    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
-  en: 'Rough dimensions according to structural engineering for beams and girders in design development and permitting stages.
+    - Usare ed esportare il materiale appropriato dal software di modellazione.'
+  en: 'Makes load-transfer zones visible early and prevents conflicts between the structure, spatial concept, and building services.
 
 
     **Description**
@@ -83,24 +77,53 @@ definition:
 
     **Modelling guidelines**
 
-    - Model as a simplified volume; dimensions according to the structural sketch.
+    - Model as a simplified volume using the coordinated dimensions.
 
     - Do not model reinforcement, inserts, or detail connections.
 
-    - Early: concept via sketches as structural sketch in the architecture model; verify exclusion zones from the structural engineer.
+    - During conceptual architectural design, coordinate the dimensions of conceptual structural components with the structural engineer and adopt them in the architecture model.
 
-    - Later: align the same components with Reference in the structural model as well.
-
-    - Use an IfcMaterial that corresponds to the actual material class.'
+    - Use and export the appropriate material from the authoring system.'
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcBeam
 entity_ifc4: IfcBeam
 entity_ifc4_3: IfcBeam
-picture_link: null
-model_link: null
+picture_link: architecture-beam.png
+picture_print_link: architecture-beam-print.tif
+attachment_link: architecture-beam.ifc
+model_link: architecture-beam.ifc
 applicability: entity_ifc4=IfcBeam AND LoadBearing=TRUE
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Trägers gemäss Tragwerksplan.
+    fr: Désignation de la poutre selon le plan structurel.
+    it: Denominazione della trave secondo il piano strutturale.
+    en: Beam designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/bes-timber-contractor-procurement
+  - pragmaticbim:workflow/qas-arch-structural-adoption
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
@@ -160,149 +183,18 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
+  - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/qas-arch-structural-coordination
   - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/qas-arch-structural-adoption
   is_applicability: false
   status: active
-  sort_order: 1
-- name: ObjectType
-  pset: null
-  definition:
-    de: 'Art des Trägers.
-
-
-      **Zulässige Werte**
-
-      - `BEAM` — Träger / Überzug
-
-      - `GIRDER` — Unterzug
-
-      - `JOIST` — Joist
-
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für PredefinedType.'
-    fr: 'Type de poutre.
-
-
-      **Valeurs admises**
-
-      - `BEAM` — poutre / solive
-
-      - `GIRDER` — poutre principale
-
-      - `JOIST` — solive
-
-
-      **Remarque**
-
-      - Substitut IFC2x3 de PredefinedType.'
-    it: 'Tipo di trave.
-
-
-      **Valori ammessi**
-
-      - `BEAM` — trave / travetto
-
-      - `GIRDER` — trave principale
-
-      - `JOIST` — travetto
-
-
-      **Nota**
-
-      - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Kind of beam.
-
-
-      **Allowed values**
-
-      - `BEAM` — beam / girder
-
-      - `GIRDER` — main girder
-
-      - `JOIST` — joist'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-beam
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  - pragmaticbim:workflow/qas-fire-protection
-  is_applicability: false
-  status: active
-  sort_order: '2
-
-    **Note** - IFC2x3 substitute for PredefinedType.'
-- name: Name
-  pset: null
-  definition:
-    de: Bezeichnung des Trägers gemäss Tragwerksplan.
-    fr: Désignation de la poutre selon le plan structurel.
-    it: Denominazione della trave secondo il piano strutturale.
-    en: Beam designation according to the structural plan.
-  datatype: IfcLabel
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
-  status: active
-  sort_order: 3
-- name: Reference
-  pset: Pset_BeamCommon
-  definition:
-    de: Referenz zur Zuordnung im Koordinationsmodell.
-    fr: Référence pour l'identification dans le modèle de coordination.
-    it: Riferimento per l'identificazione nel modello di coordinamento.
-    en: Reference used for identification in the coordination model.
-  datatype: IfcIdentifier
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
-  status: active
-  sort_order: 4
+  sort_order: 2
 - name: LoadBearing
   pset: Pset_BeamCommon
   definition:
@@ -329,7 +221,7 @@ attributes:
 
       **Allowed values**
 
-      - `TRUE` — load-bearing element'
+      - `TRUE` — load-bearing component'
   datatype: IfcBoolean
   allowed_values: pragmaticbim:value/boolean-true
   needed_in_phases:
@@ -347,40 +239,13 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
   - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/qas-arch-structural-adoption
   is_applicability: true
   status: active
-  sort_order: 5
-- name: GrossVolume
-  pset: Qto_BeamBaseQuantities
-  definition:
-    de: Bruttovolumen des modellierten Trägers.
-    fr: Volume brut de la poutre modélisée.
-    it: Volume lordo della trave modellata.
-    en: Gross volume of the modelled beam.
-  datatype: IfcVolumeMeasure
-  unit: m³
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/qas-structural-exclusion-zone-verification
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  is_applicability: false
-  status: active
-  sort_order: 6
+  sort_order: 3
 - name: Status
   pset: Pset_BeamCommon
   definition:
@@ -420,16 +285,16 @@ attributes:
       - `DEMOLISH` — da demolire
 
       - `TEMPORARY` — temporaneo'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary'
   datatype: IfcLabel
@@ -451,107 +316,12 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-structure-survey
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   - pragmaticbim:workflow/qas-fire-protection
-  - pragmaticbim:workflow/des-managing-existing-with-models
   is_applicability: false
   status: active
-  sort_order: 7
-- name: ElementStatus
-  pset: ePset_ElementStatus
-  definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
-
-      **Zulässige Werte**
-
-      - `NEW` — Neubau
-
-      - `EXISTING` — Bestand
-
-      - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär
-
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für Status.'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
-
-      **Valeurs admises**
-
-      - `NEW` — neuf
-
-      - `EXISTING` — existant
-
-      - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire
-
-
-      **Remarque**
-
-      - Substitut IFC2x3 de Status.'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
-
-      **Valori ammessi**
-
-      - `NEW` — nuovo
-
-      - `EXISTING` — esistente
-
-      - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo
-
-
-      **Nota**
-
-      - Sostituto IFC2x3 di Status.'
-    en: 'Element status for coordination on existing buildings.
-
-
-      **Allowed values**
-
-      - `NEW` — new
-
-      - `EXISTING` — existing
-
-      - `DEMOLISH` — to demolish
-
-      - `TEMPORARY` — temporary
-
-
-      **Note**
-
-      - IFC2x3 substitute for Status.'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-structure-survey
-  - pragmaticbim:workflow/qas-fire-protection
-  - pragmaticbim:workflow/des-managing-existing-with-models
-  is_applicability: false
-  status: active
-  sort_order: 8
+  sort_order: 4
 - name: FireRating
   pset: Pset_BeamCommon
   definition:
@@ -660,44 +430,123 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/bes-model-based-tendering
   is_applicability: false
   status: active
-  sort_order: 9
+  sort_order: 5
+- name: Profilname
+  pset: ePset_Cost
+  definition:
+    de: Profilbezeichnung für den berechneten Typnamen, z. B. HEA200.
+    fr: Désignation du profil pour le nom de type calculé, p. ex. HEA200.
+    it: Denominazione del profilo per il nome del tipo calcolato, ad es. HEA200.
+    en: Profile designation for the calculated type name, e.g. HEA200.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: Width
+  pset: ePset_Cost
+  definition:
+    de: Breite des modellierten Trägerquerschnitts.
+    fr: Largeur de la section de la poutre modélisée.
+    it: Larghezza della sezione della trave modellata.
+    en: Width of the modelled beam cross-section.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: Height
+  pset: ePset_Cost
+  definition:
+    de: Höhe des modellierten Trägerquerschnitts.
+    fr: Hauteur de la section de la poutre modélisée.
+    it: Altezza della sezione della trave modellata.
+    en: Height of the modelled beam cross-section.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 8
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: 'Kostenschnittstelle des Bauteils — Grundausbau oder Mieterausbau.
+    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
 
 
       **Zulässige Werte**
 
       - `GAB` — Grundausbau (Bauherr / Vermieter)
 
-      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_Migros`'
-    fr: 'Interface de coûts de l''élément — aménagement de base ou aménagement locataire.
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
+    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
 
 
       **Valeurs admises**
 
       - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
 
-      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_Migros`'
-    it: 'Interfaccia di costo del componente — allestimento di base o allestimento locatario.
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
+    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
 
 
       **Valori ammessi**
 
       - `GAB` — allestimento di base (committente / locatore)
 
-      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_Migros`'
-    en: 'Cost interface of the component — base building or tenant fit-out.
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
+    en: 'Cost interface of the component – base building or tenant fit-out.
 
 
       **Allowed values**
 
       - `GAB` — base building (client / landlord)
 
-      - `MAB_{Mietername}` — tenant fit-out, e.g. `MAB_Migros`'
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
   datatype: IfcLabel
   needed_in_phases:
   - '32'
@@ -710,36 +559,64 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  is_applicability: false
+  status: active
+  sort_order: 9
+- name: FundingApplication
+  pset: ePset_Cost
+  definition:
+    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
+      demande.
+    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
+      to no application.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-funding-verification
   is_applicability: false
   status: active
   sort_order: 10
 - name: AwardInterface
   pset: ePset_Cost
   definition:
-    de: 'Vergabepaket des Bauteils nach BKP-3-Steller — damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Vergabepaket — z. B. `211`, `221`, `244`.'
-    fr: 'Lot d''adjudication de l''élément selon le BKP à trois chiffres — pour rendre visibles les interfaces entre lots d''entreprise.
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
+    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot d''adjudication BKP — p. ex. `211`, `221`, `244`.'
-    it: 'Lotto di aggiudicazione del componente secondo il BKP a tre cifre — per rendere visibili le interfacce tra lotti d''impresa.
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
+    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di aggiudicazione BKP — es. `211`, `221`, `244`.'
-    en: 'Award package of the component by three-digit BKP code — so interfaces between contractor packages become visible.
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
+    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
 
 
       **Allowed values**
 
-      - See value list BKP award package — e.g. `211`, `221`, `244`.'
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-award-package
   needed_in_phases:
@@ -759,30 +636,30 @@ attributes:
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
-    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller — damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Planungspaket — z. B. `091`, `092`, `094`.'
-    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres — pour rendre visibles les responsabilités entre disciplines de planification.
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot de planification BKP — p. ex. `091`, `092`, `094`.'
-    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre — per rendere visibili le responsabilità tra discipline di pianificazione.
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di pianificazione BKP — es. `091`, `092`, `094`.'
-    en: 'Planning interface of the component by three-digit BKP code — so responsibilities between planning disciplines become visible.
+      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
+    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
 
 
       **Allowed values**
 
-      - See value list BKP planning package — e.g. `091`, `092`, `094`.'
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-planning-package
   needed_in_phases:
@@ -799,3 +676,333 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 12
+- name: eBKP
+  pset: ePset_Cost
+  definition:
+    de: 'eBKP-H-Klassifizierung nach SN 506 511 gemäss CRB-IFC-Regelsatz.
+
+
+      **Zulässige Werte**
+
+      - `C04.01` — Geschossdecke'
+    fr: 'Classification eBKP-H selon SN 506 511 conformément au jeu de règles IFC du CRB.
+
+
+      **Valeurs admises**
+
+      - `C04.01` — dalle de plancher'
+    it: 'Classificazione eBKP-H secondo SN 506 511 conformemente al set di regole IFC del CRB.
+
+
+      **Valori ammessi**
+
+      - `C04.01` — solaio di piano'
+    en: 'eBKP-H classification according to SN 506 511 and the CRB IFC ruleset.
+
+
+      **Allowed values**
+
+      - `C04.01` — floor slab'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/ebkp-h-beam
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-ebkp-h-classification
+  is_applicability: false
+  status: active
+  sort_order: 13
+- name: CalculatedType
+  pset: ePset_Cost
+  definition:
+    de: 'Berechneter Typname für Kosten- und Mengengruppierung. Logik `TraegerTypisierung`.
+
+      Beispiel: `Träger_Stahl_HEA200_200x400_5.20m`'
+    fr: 'Nom de type calculé pour le regroupement des coûts et des quantités. Logique `TraegerTypisierung`.
+
+      Exemple: `Träger_Stahl_HEA200_200x400_5.20m`'
+    it: 'Nome di tipo calcolato per il raggruppamento di costi e quantità. Logica `TraegerTypisierung`.
+
+      Esempio: `Träger_Stahl_HEA200_200x400_5.20m`'
+    en: 'Calculated type name for cost and quantity grouping. Logic `TraegerTypisierung`.
+
+      Example: `Träger_Stahl_HEA200_200x400_5.20m`'
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
+  sort_order: 14
+- name: ProductClass
+  pset: ePset_Cost
+  definition:
+    de: 'Produktklasse für Kosten- und Ausschreibungszuordnung. Die Zuordnung kann manuell erfolgen; für konsistente Ausschreibungsdaten sollte sie regelbasiert automatisiert oder KI-unterstützt aus den
+      Bauteileigenschaften abgeleitet werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste [Produktklasse](https://schema.pragmaticbim.ch/classification/beam-product.html).'
+    fr: 'Classe de produit pour le rattachement aux coûts et à l''appel d''offres. L''attribution peut être manuelle ; pour garantir des données d''appel d''offres cohérentes, elle devrait être déduite
+      des propriétés de l''élément par des règles automatisées ou avec l''aide de l''IA.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs [Classe de produit](https://schema.pragmaticbim.ch/classification/beam-product.html).'
+    it: 'Classe di prodotto per l''attribuzione a costi e gara. L''attribuzione può essere manuale; per garantire dati di gara coerenti, dovrebbe essere ricavata dalle proprietà del componente mediante
+      regole automatizzate o con il supporto dell''IA.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori [Classe di prodotto](https://schema.pragmaticbim.ch/classification/beam-product.html).'
+    en: 'Product class for cost and tender assignment. It may be assigned manually; for consistent tender data, it should preferably be derived from component properties through deterministic automation
+      or AI-assisted mapping.
+
+
+      **Allowed values**
+
+      - See the [Product class](https://schema.pragmaticbim.ch/classification/beam-product.html) value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/product-class-beam
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
+  sort_order: 15
+- name: UnitPrice
+  pset: ePset_Cost
+  definition:
+    de: Projektspezifischer oder bürospezifischer Einheitspreis je Einheit der Referenzmenge für die Plausibilisierung der Bauteilkosten.
+    fr: Prix unitaire spécifique au projet ou au bureau par unité de la quantité de référence pour le contrôle de plausibilité des coûts de l’élément.
+    it: Prezzo unitario specifico del progetto o dello studio per unità della quantità di riferimento, utilizzato per la verifica di plausibilità dei costi del componente.
+    en: Project- or office-specific unit price per unit of the reference quantity, used to check component costs for plausibility.
+  datatype: IfcMonetaryMeasure
+  unit: CHF/m
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  is_applicability: false
+  status: active
+  sort_order: 16
+- name: ReferenceQuantity
+  pset: ePset_Cost
+  definition:
+    de: 'Verbindliche Referenzmenge für den Einheitspreis: `Qto_BeamBaseQuantities.Length`.'
+    fr: 'Quantité de référence faisant foi pour le prix unitaire : `Qto_BeamBaseQuantities.Length`.'
+    it: 'Quantità di riferimento vincolante per il prezzo unitario: `Qto_BeamBaseQuantities.Length`.'
+    en: 'Authoritative reference quantity used with UnitPrice: `Qto_BeamBaseQuantities.Length`.'
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/bes-element-unit-price-backfeed
+  is_applicability: false
+  status: active
+  sort_order: 17
+- name: ElementStatus
+  pset: ePset_ElementStatus
+  definition:
+    de: 'Bauteilstatus für Koordination im Bestand.
+
+
+      **Zulässige Werte**
+
+      - `NEW` — Neubau
+
+      - `EXISTING` — Bestand
+
+      - `DEMOLISH` — Abbruch
+
+      - `TEMPORARY` — Temporär
+
+
+      **Hinweis**
+
+      - IFC2x3-Ersatz für Status.'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
+
+
+      **Valeurs admises**
+
+      - `NEW` — neuf
+
+      - `EXISTING` — existant
+
+      - `DEMOLISH` — à démolir
+
+      - `TEMPORARY` — temporaire
+
+
+      **Remarque**
+
+      - Substitut IFC2x3 de Status.'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
+
+
+      **Valori ammessi**
+
+      - `NEW` — nuovo
+
+      - `EXISTING` — esistente
+
+      - `DEMOLISH` — da demolire
+
+      - `TEMPORARY` — temporaneo
+
+
+      **Nota**
+
+      - Sostituto IFC2x3 di Status.'
+    en: 'Component status for coordinating work in existing buildings.
+
+
+      **Allowed values**
+
+      - `NEW` — new build
+
+      - `EXISTING` — existing
+
+      - `DEMOLISH` — demolition
+
+      - `TEMPORARY` — temporary
+
+
+      **Note**
+
+      - IFC2x3 substitute for Status.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/element-status
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-fire-protection
+  is_applicability: false
+  status: active
+  sort_order: 18
+- name: GrossVolume
+  pset: Qto_BeamBaseQuantities
+  definition:
+    de: Bruttovolumen des modellierten Trägers.
+    fr: Volume brut de la poutre modélisée.
+    it: Volume lordo della trave modellata.
+    en: Gross volume of the modelled beam.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/qas-arch-structural-adoption
+  is_applicability: false
+  status: active
+  sort_order: 19
+- name: Length
+  pset: Qto_BeamBaseQuantities
+  definition:
+    de: Länge des modellierten Trägers.
+    fr: Longueur de la poutre modélisée.
+    it: Lunghezza della trave modellata.
+    en: Length of the modelled beam.
+  datatype: IfcLengthMeasure
+  unit: m
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 20

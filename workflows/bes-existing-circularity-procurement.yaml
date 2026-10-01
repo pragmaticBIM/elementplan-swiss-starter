@@ -1,0 +1,144 @@
+id: pragmaticbim:workflow/bes-existing-circularity-procurement
+code: BES-EXISTING-CIRCULARITY
+sort_order: 9
+name:
+  de: Kreislaufwirtschaftliche Bestandsinformationen beschaffen
+  fr: Commander les informations sur l’existant pour l’économie circulaire
+  it: Affidare le informazioni sullo stato di fatto per l’economia circolare
+  en: Procure existing-condition information for circularity
+description:
+  de: 'Kreislaufwirtschaftliche Angaben als gezielte Ergänzung des Bestandsmodells bestellen, damit Wiederverwendung, Sanierung und Verwertung früh beurteilt werden können.
+
+
+    **Ausgangslage**
+
+    - Bestandsmodelle enthalten meist keine verlässlichen Angaben zu Wiederverwendung, Entsorgungswegen und Schadstoffen.
+
+    - Ohne klar bestellte Bauteilaufnahme werden Reuse-Potenziale zu spät erkannt oder ungeprüft angenommen.
+
+
+    **Ziel & Nutzen**
+
+    - Festlegen, für welche Bestandsbauteile welche Angaben zu Wiederverwendung, Verwertung und Schadstoffen benötigt werden.
+
+    - Eine prüfbare Grundlage für Reuse-, Rückbau-, Sanierungs- und Entsorgungsentscheide erhalten.
+
+
+    **Ablauf**
+
+    1. Verwendungszweck, massgebende Bauteile, Aufnahmebereiche und benötigte Angaben festlegen und die Leistung bestellen.
+
+    2. Bestandsbauteile vor Ort aufnehmen und begehen; Fachabklärungen und Nachweise erheben.
+
+    3. Vereinbarte Angaben im Bestandsmodell einpflegen und die Lieferung freigeben.
+
+
+    **Lieferergebnis**
+
+    - Bestandsmodell mit den vereinbarten bauteilbezogenen Angaben zu Wiederverwendung, Entsorgungswegen und Schadstoffen.
+
+    - Nachvollziehbare Auswertung als Grundlage für Reuse-, Rückbau-, Sanierungs- und Verwertungsentscheide.'
+  fr: 'Commander les indications relatives à l’économie circulaire comme complément ciblé de la maquette de l’existant afin d’évaluer suffisamment tôt le réemploi, l’assainissement et la valorisation.
+
+
+    **Situation de départ**
+
+    - Les maquettes de l’existant ne contiennent généralement pas d’indications fiables sur le réemploi, les filières d’élimination et les polluants.
+
+    - Sans relevé des éléments clairement commandé, les potentiels de réemploi sont identifiés trop tard ou supposés sans contrôle.
+
+
+    **Objectif et bénéfice**
+
+    - Définir pour quels éléments existants quelles indications sur le réemploi, la valorisation et les polluants sont requises.
+
+    - Obtenir une base contrôlable pour les décisions de réemploi, déconstruction, assainissement et élimination.
+
+
+    **Déroulement**
+
+    1. Définir l’usage, les éléments déterminants, les zones à relever et les indications requises, puis commander la prestation.
+
+    2. Relever et inspecter les éléments existants sur place; mener les investigations spécialisées et collecter les justificatifs.
+
+    3. Saisir les indications convenues dans la maquette de l’existant et valider la livraison.
+
+
+    **Livrable**
+
+    - Maquette de l’existant avec les indications convenues par élément sur le réemploi, les filières d’élimination et les polluants.
+
+    - Évaluation traçable comme base des décisions de réemploi, déconstruction, assainissement et valorisation.'
+  it: 'Affidare le indicazioni sull’economia circolare come integrazione mirata del modello dello stato di fatto, affinché riuso, bonifica e recupero possano essere valutati tempestivamente.
+
+
+    **Situazione di partenza**
+
+    - I modelli dello stato di fatto generalmente non contengono indicazioni affidabili su riuso, percorsi di smaltimento e sostanze nocive.
+
+    - Senza un rilievo dei componenti chiaramente commissionato, i potenziali di riuso vengono identificati troppo tardi o ipotizzati senza verifica.
+
+
+    **Obiettivo e beneficio**
+
+    - Definire per quali componenti esistenti sono necessarie quali indicazioni su riuso, recupero e sostanze nocive.
+
+    - Ottenere una base verificabile per le decisioni di riuso, smantellamento, bonifica e smaltimento.
+
+
+    **Svolgimento**
+
+    1. Definire lo scopo d’uso, i componenti determinanti, le zone da rilevare e le indicazioni richieste, quindi affidare la prestazione.
+
+    2. Rilevare e ispezionare in loco i componenti esistenti; eseguire gli accertamenti specialistici e raccogliere gli attestati.
+
+    3. Inserire le indicazioni concordate nel modello dello stato di fatto e approvare la fornitura.
+
+
+    **Risultato della fornitura**
+
+    - Modello dello stato di fatto con le indicazioni concordate per componente su riuso, percorsi di smaltimento e sostanze nocive.
+
+    - Valutazione tracciabile come base per le decisioni di riuso, smantellamento, bonifica e recupero.'
+  en: 'Procure circularity information as a targeted extension of the existing-condition model so that reuse, remediation, and recovery can be assessed early.
+
+
+    **Starting point**
+
+    - Existing-condition models usually contain no reliable information on reuse, disposal routes, and hazardous materials.
+
+    - Without a clearly commissioned component survey, reuse potential is identified too late or assumed without verification.
+
+
+    **Goal & benefit**
+
+    - Define which information on reuse, recovery, and hazardous materials is required for which existing components.
+
+    - Obtain a verifiable basis for reuse, deconstruction, remediation, and disposal decisions.
+
+
+    **Process**
+
+    1. Define the intended use, governing components, survey areas, and required information, and procure the service.
+
+    2. Survey and walk through the existing components on site; carry out specialist investigations and collect evidence.
+
+    3. Enter the agreed information into the existing-condition model and approve the delivery.
+
+
+    **Deliverable**
+
+    - Existing-condition model with the agreed component-related information on reuse, disposal routes, and hazardous materials.
+
+    - Traceable evaluation as the basis for reuse, deconstruction, remediation, and recovery decisions.'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/building-physics
+comment: Optionales Beschaffungspaket zu den drei Stufen der Bestandsgrundlagen. Bestellt die kreislaufwirtschaftlichen und schadstoffbezogenen Zusatzangaben an den massgebenden Bestandsbauteilen.

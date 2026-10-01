@@ -1,0 +1,168 @@
+id: pragmaticbim:workflow/qas-qr-stakeholder-info
+code: COM-QR-STAKEHOLDER-INFO
+sort_order: 67
+name:
+  de: Digitale Anwohnerinformation
+  fr: Information numérique aux riverains
+  it: Informazione digitale ai residenti
+  en: Digital resident information
+description:
+  de: 'Anwohner über Brief oder Aushang mit QR-Code laufend über Massnahmen und Baustelleninstallation informieren, damit Betroffene sich selbst informieren können statt zu mutmassen oder sich zu beschweren.
+
+
+    **Ausgangslage**
+
+    - Lärm, Staub und Verkehr während der Bauzeit werden von Anwohnern oft als unkontrolliert wahrgenommen, wenn sie nicht wissen, was gerade passiert und warum.
+
+    - Ein statischer Aushang veraltet schnell und wird nach kurzer Zeit ignoriert.
+
+    - Ohne laufende Information landen Fragen und Frust direkt bei der Bauleitung – mehr Aufwand für beide Seiten als eine vorbereitete Antwort.
+
+
+    **Ziel & Nutzen**
+
+    - Anwohner können sich jederzeit selbständig informieren, ohne anzurufen oder vorbeizugehen.
+
+    - Transparenz über laufende Massnahmen senkt Beschwerdeaufkommen und Eskalationsdruck.
+
+    - Aktuelle Information statt Gerücht – reduziert Stress auf beiden Seiten.
+
+
+    **Ablauf**
+
+    1. Landingpage und Redaktionsprozess mit fester Verantwortlichkeit für die Aktualisierung einrichten.
+
+    2. Brief oder Aushang mit QR-Code an betroffene Anwohner verteilen (Post, Quartieraushang).
+
+    3. Massnahmen und Baustelleninstallation auf der Landingpage laufend mit aktuellen Texten und Bildern nachführen.
+
+
+    **Lieferergebnis**
+
+    - Brief oder Aushang mit QR-Code, verteilt an betroffene Anwohner
+
+    - Landingpage mit aktuellen Massnahmen und Bildern der Baustelleninstallation
+
+    - Redaktionsprozess mit fester Verantwortlichkeit für die Aktualisierung'
+  fr: 'Informer les riverains en continu, par lettre ou affichage avec code QR, sur les mesures et l''installation de chantier, afin qu''ils puissent s''informer eux-mêmes plutôt que de spéculer ou de se
+    plaindre.
+
+
+    **Situation de départ**
+
+    - Bruit, poussière et trafic pendant les travaux sont souvent perçus comme incontrôlés lorsque les riverains ignorent ce qui se passe et pourquoi.
+
+    - Un affichage statique se périme vite et est bientôt ignoré.
+
+    - Sans information continue, questions et frustration aboutissent directement à la direction des travaux – plus d''effort pour les deux parties qu''une réponse préparée.
+
+
+    **Objectif et bénéfice**
+
+    - Les riverains peuvent s''informer de manière autonome à tout moment, sans appeler ni passer sur place.
+
+    - La transparence sur les mesures en cours réduit le volume de plaintes et la pression d''escalade.
+
+    - Une information à jour plutôt que la rumeur – moins de stress des deux côtés.
+
+
+    **Déroulement**
+
+    1. Mettre en place la page d''accueil et le processus éditorial avec une responsabilité claire pour la mise à jour.
+
+    2. Distribuer lettre ou affichage avec code QR aux riverains concernés (courrier, affichage de quartier).
+
+    3. Tenir à jour mesures et installation de chantier sur la page d''accueil avec textes et images actuels.
+
+
+    **Livrable**
+
+    - Lettre ou affichage avec code QR, distribué aux riverains concernés
+
+    - Page d''accueil avec mesures actuelles et images de l''installation de chantier
+
+    - Processus éditorial avec responsabilité claire pour la mise à jour'
+  it: 'Informare i residenti in modo continuo, tramite lettera o avviso con codice QR, su misure e installazione di cantiere, affinché gli interessati possano informarsi da soli invece di fare ipotesi o
+    presentare reclami.
+
+
+    **Situazione di partenza**
+
+    - Rumore, polvere e traffico durante i lavori sono spesso percepiti come incontrollati se i residenti non sanno cosa succede e perché.
+
+    - Un avviso statico invecchia in fretta e viene presto ignorato.
+
+    - Senza informazione continua, domande e frustrazione arrivano direttamente alla direzione lavori – più impegno per entrambe le parti di una risposta preparata.
+
+
+    **Obiettivo e beneficio**
+
+    - I residenti possono informarsi autonomamente in qualsiasi momento, senza chiamare né passare di persona.
+
+    - La trasparenza sulle misure in corso riduce il volume di reclami e la pressione di escalation.
+
+    - Informazione aggiornata invece di voci – meno stress per entrambe le parti.
+
+
+    **Svolgimento**
+
+    1. Allestire la landing page e il processo redazionale con responsabilità fissa per l''aggiornamento.
+
+    2. Distribuire lettera o avviso con codice QR ai residenti interessati (posta, avviso di quartiere).
+
+    3. Aggiornare continuamente misure e installazione di cantiere sulla landing page con testi e immagini attuali.
+
+
+    **Risultato della fornitura**
+
+    - Lettera o avviso con codice QR, distribuito ai residenti interessati
+
+    - Landing page con misure attuali e immagini dell''installazione di cantiere
+
+    - Processo redazionale con responsabilità fissa per l''aggiornamento'
+  en: 'Keep residents informed continuously via letter or notice with a QR code about measures and site installation, so those affected can inform themselves instead of guessing or complaining.
+
+
+    **Starting point**
+
+    - Noise, dust, and traffic during construction are often perceived as uncontrolled when residents do not know what is happening and why.
+
+    - A static notice ages quickly and is soon ignored.
+
+    - Without ongoing information, questions and frustration land directly with the site management – more effort for both sides than a prepared answer.
+
+
+    **Goal & benefit**
+
+    - Residents can inform themselves at any time without calling or visiting.
+
+    - Transparency about ongoing measures reduces complaints and escalation pressure.
+
+    - Current information instead of rumour – less stress on both sides.
+
+
+    **Process**
+
+    1. Set up the landing page and editorial process with clear responsibility for updates.
+
+    2. Distribute a letter or notice with QR code to affected residents (mail, neighbourhood notice).
+
+    3. Keep measures and site installation on the landing page up to date with current text and images.
+
+
+    **Deliverable**
+
+    - Letter or notice with QR code, distributed to affected residents
+
+    - Landing page with current measures and images of the site installation
+
+    - Editorial process with clear responsibility for updates'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Draft ID COM-QR-Stakehodlerinfo normalised to COM-QR-STAKEHOLDER-INFO; parent is QAS. Construction-phase companion to COM-STAKEHOLDER-DIALOG. Landing-page visuals draw on Baustelleneinrichtung
+  (BEL) via ARC-SITE-LOG attributes (Name, PredefinedType, ObjectType, LogisticsPhase). Typical container: BEL.'

@@ -1,0 +1,159 @@
+id: pragmaticbim:workflow/bes-room-program-brief
+code: BES-ROOM-PROGRAM
+sort_order: 9
+name:
+  de: Raumprogramm für Planerbeschaffung und Wettbewerb formulieren
+  fr: Formuler le programme des locaux pour l'acquisition de mandataires et le concours
+  it: Formulare il programma dei locali per l'acquisizione dei progettisti e il concorso
+  en: Formulate the room programme for designer procurement and competition
+description:
+  de: 'Räume und ihre Anforderungen bereits mit der Bestellung strukturiert definieren, damit alle Planenden vom ersten Tag an dieselbe stabile Datengrundlage verwenden.
+
+
+    **Ausgangslage**
+
+    - Bauherrschaften bestellen Raumprogramme häufig als Grafisch formatierte Listen oder Dokumenten, in denen Raumtypen, einzelne Räume, Anforderungen und übergeordnete Gruppierungen nicht eindeutig voneinander
+    getrennt sind.
+
+    - Planende übertragen diese Angaben mehrfach manuell in ihre Software. Dabei entstehen unterschiedliche Bezeichnungen, fehlende Zuordnungen und schwer erkennbare Abweichungen.
+
+
+    **Ziel & Nutzen**
+
+    - Mehrfache manuelle Erfassung und die daraus entstehenden widersprüchlichen Bezeichnungen und Zuordnungen vermeiden.
+
+    - Allen Fachplanenden ab Tag 1 eine eindeutige, gemeinsame Bestellgrundlage geben.
+
+    - Änderungen und Abweichungen zwischen Bestellung und Planung nachvollziehbar und automatisiert prüfbar machen.
+
+
+    **Ablauf**
+
+    1. Raumtypen mit den wiederkehrenden funktionalen, räumlichen und technischen Anforderungen sowie benötigte Nutzungseinheiten, Abteilungen und weitere vereinbarte Gruppierungen definieren.
+
+    2. Einzelne Räume mit einer über die Planungsphase stabilen technischen Raumnummer anlegen und dem passenden Raumtyp sowie den zutreffenden Gruppierungen zuweisen.
+
+    3. Strukturiertes Raumprogramm als verbindliche Grundlage der Planerbeschaffung oder des Wettbewerbs bereitstellen und als Referenz für den Soll-Ist-Abgleich verwenden.
+
+
+    **Lieferergebnis**
+
+    - Eindeutiger Raumtypenkatalog mit den bestellten Anforderungen.
+
+    - Eindeutige Gliederung der bestellten Nutzungseinheiten, Abteilungen und weiteren vereinbarten Gruppierungen.
+
+    - Raumprogrammliste mit jeder Rauminstanz, stabiler technischer Raumnummer, zugewiesenem Raumtyp und den zutreffenden Gruppierungen.'
+  fr: 'Définir les locaux et leurs exigences sous une forme structurée dès la commande, afin que tous les mandataires travaillent dès le premier jour sur la même base de données stable.
+
+
+    **Situation de départ**
+
+    - Les maîtres d''ouvrage commandent souvent les programmes des locaux sous forme de listes regroupées, sans distinction claire entre types de locaux, locaux individuels, exigences et regroupements de
+    niveau supérieur.
+
+    - Les mandataires ressaisissent plusieurs fois ces données dans leurs logiciels. Il en résulte des désignations divergentes, des attributions manquantes et des écarts difficiles à repérer.
+
+
+    **Objectif et bénéfice**
+
+    - Éviter les saisies manuelles répétées ainsi que les désignations et attributions contradictoires qui en résultent.
+
+    - Fournir à tous les mandataires spécialisés une base de commande univoque et commune dès le premier jour.
+
+    - Permettre un contrôle traçable et automatisable des modifications et des écarts entre commande et projet.
+
+
+    **Déroulement**
+
+    1. Définir les types de locaux avec leurs exigences fonctionnelles, spatiales et techniques récurrentes, ainsi que les unités d''usage, services et autres regroupements convenus nécessaires.
+
+    2. Saisir chaque local avec un numéro technique stable pendant toute la phase de planification et lui attribuer le type ainsi que les regroupements applicables.
+
+    3. Mettre le programme structuré des locaux à disposition comme base contraignante pour l''acquisition des mandataires ou le concours et l''utiliser comme référence pour la comparaison prescrit/réalisé.
+
+
+    **Livrable**
+
+    - Catalogue univoque des types de locaux avec les exigences commandées.
+
+    - Structure univoque des unités d''usage, services et autres regroupements convenus commandés.
+
+    - Liste du programme comprenant chaque local, son numéro technique stable, le type qui lui est attribué et les regroupements applicables.'
+  it: 'Definire in modo strutturato i locali e i relativi requisiti già al momento dell''incarico, affinché tutti i progettisti utilizzino fin dal primo giorno la stessa base dati stabile.
+
+
+    **Situazione di partenza**
+
+    - I committenti ordinano spesso i programmi dei locali sotto forma di elenchi aggregati, nei quali tipi di locale, singoli locali, requisiti e raggruppamenti sovraordinati non sono distinti chiaramente.
+
+    - I progettisti reinseriscono più volte questi dati nei propri software. Ne derivano denominazioni discordanti, associazioni mancanti e scostamenti difficili da individuare.
+
+
+    **Obiettivo e beneficio**
+
+    - Evitare inserimenti manuali ripetuti e le conseguenti denominazioni e associazioni contraddittorie.
+
+    - Fornire a tutti i progettisti specialisti una base d''ordine univoca e comune fin dal primo giorno.
+
+    - Rendere tracciabile e automatizzabile il controllo delle modifiche e degli scostamenti tra ordine e progetto.
+
+
+    **Svolgimento**
+
+    1. Definire i tipi di locale con i requisiti funzionali, spaziali e tecnici ricorrenti, nonché le unità d''uso, i reparti e gli altri raggruppamenti concordati necessari.
+
+    2. Registrare i singoli locali con un numero tecnico stabile durante tutta la fase di progettazione e assegnarli al tipo e ai raggruppamenti pertinenti.
+
+    3. Mettere a disposizione il programma strutturato dei locali come base vincolante per l''acquisizione dei progettisti o il concorso e utilizzarlo come riferimento per il confronto prescritto/realizzato.
+
+
+    **Risultato della fornitura**
+
+    - Catalogo univoco dei tipi di locale con i requisiti ordinati.
+
+    - Struttura univoca delle unità d''uso, dei reparti e degli altri raggruppamenti concordati oggetto dell''ordine.
+
+    - Elenco del programma comprendente ogni locale, il suo numero tecnico stabile, il tipo assegnato e i raggruppamenti pertinenti.'
+  en: 'Define rooms and their requirements in a structured form as part of the order so that every designer works from the same stable data basis from day one.
+
+
+    **Starting point**
+
+    - Clients often order room programmes as graphically formatted lists or documents that do not clearly distinguish room types, individual rooms, requirements, and higher-level groupings.
+
+    - Designers repeatedly re-enter this information into their software. This creates inconsistent names, missing assignments, and deviations that are difficult to detect.
+
+
+    **Goal & benefit**
+
+    - Avoid repeated manual entry and the resulting contradictory names and assignments.
+
+    - Give all discipline designers an unambiguous, shared basis for the order from day one.
+
+    - Make changes and deviations between the order and the design traceable and suitable for automated checking.
+
+
+    **Process**
+
+    1. Define room types with their recurring functional, spatial, and technical requirements, together with the required usage units, departments, and other agreed groupings.
+
+    2. Create individual rooms with a technical room number that remains stable throughout design and assign each room to the appropriate type and applicable groupings.
+
+    3. Provide the structured room programme as the binding basis for designer procurement or the competition and use it as the reference for the required-versus-actual check.
+
+
+    **Deliverable**
+
+    - Unambiguous room-type catalogue containing the ordered requirements.
+
+    - Unambiguous structure of the ordered usage units, departments, and other agreed groupings.
+
+    - Room-programme list containing every room instance, its stable technical room number, assigned room type, and applicable groupings.'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Room instances use Name as their stable technical room number and LongName as their standardized room use. UsageUnitReference carries a usage-unit assignment. The project-specific room-type assignment
+  and detailed type requirements remain in the structured room program and the continuously maintained room book; no additional IFC type-reference attribute is required.

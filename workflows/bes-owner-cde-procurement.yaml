@@ -1,0 +1,160 @@
+id: pragmaticbim:workflow/bes-owner-cde-procurement
+code: BES-OWNER-CDE
+sort_order: 5
+name:
+  de: CDE durch die Bauherrschaft beschaffen
+  fr: Acquérir la CDE par le maître d'ouvrage
+  it: Acquisire il CDE da parte della committenza
+  en: Procure the CDE through the client
+description:
+  de: 'Die gemeinsame Datenumgebung direkt durch die Bauherrschaft beschaffen, damit Datenhoheit und Projektzugang auch bei Konkurs oder Streit erhalten bleiben. Die Pflege der Gesamtleitung übertragen.
+
+
+    **Ausgangslage**
+
+    - Projektplattformen werden teilweise über Druckkosten abgerechnet oder durch GP beziehungsweise TU bereitgestellt; Vertrag, Datenzugriff und Herausgaberechte liegen dadurch nicht immer bei der Bauherrschaft.
+
+    - Bei Konkurs eines Auftragnehmers oder im Streitfall kann der Zugang gesperrt werden. Im schlechtesten Fall sind Projektdaten Teil der Konkursmasse oder für die Bauherrschaft nicht mehr nutzbar.
+
+
+    **Ziel & Nutzen**
+
+    - CDE-Vertrag, Mandant und Verfügungsrechte direkt bei der Bauherrschaft halten; Betrieb und laufende Pflege können GP oder Gesamtleitung übernehmen.
+
+    - Rollen, Zugriffe, Datensicherung, vollständigen Export, Aufbewahrung und Anbieterwechsel vor Projektbeginn vertraglich regeln.
+
+    - Projektdaten unabhängig von einzelnen Planern oder Unternehmern jederzeit zugänglich, exportierbar und weiterverwendbar halten.
+
+
+    **Ablauf**
+
+    1. Anforderungen an Datenstandort, Zugriffsrechte, Versionierung, Sicherung, Exportformate, Aufbewahrung, Kosten und Projektabschluss festlegen.
+
+    2. CDE durch die Bauherrschaft beschaffen und Mandant sowie Vertrag auf sie führen.
+
+    3. GP oder Gesamtleitung mit Administration und Pflege beauftragen.
+
+
+    **Lieferergebnis**
+
+    - Direktvertrag der Bauherrschaft für die CDE mit geregelten Verfügungs-, Zugriffs-, Export- und Herausgaberechten.
+
+    - Betriebskonzept mit administrativer Verantwortung der Gesamtleitung sowie geprüftem Sicherungs-, Exit- und Übergabeprozess.'
+  fr: 'Acquérir l''environnement commun de données directement par le maître d''ouvrage afin de préserver la maîtrise des données et l''accès au projet même en cas de faillite ou de litige. En confier la
+    gestion à la direction générale.
+
+
+    **Situation de départ**
+
+    - Les plateformes de projet sont parfois facturées avec les frais d''impression ou mises à disposition par l''entreprise générale ou totale ; le contrat, l''accès aux données et les droits de restitution
+    ne relèvent alors pas toujours du maître d''ouvrage.
+
+    - En cas de faillite d''un mandataire ou de litige, l''accès peut être bloqué. Dans le pire des cas, les données du projet entrent dans la masse en faillite ou ne sont plus utilisables par le maître
+    d''ouvrage.
+
+
+    **Objectif et bénéfice**
+
+    - Maintenir le contrat CDE, l''espace client et les droits de disposition directement auprès du maître d''ouvrage ; l''entreprise générale ou la direction générale peut assurer l''exploitation et la
+    gestion courante.
+
+    - Régler contractuellement avant le début du projet les rôles, les accès, la sauvegarde, l''export complet, la conservation et le changement de fournisseur.
+
+    - Garantir que les données du projet restent accessibles, exportables et réutilisables indépendamment des mandataires ou entreprises.
+
+
+    **Déroulement**
+
+    1. Définir les exigences relatives au lieu de stockage, aux droits d''accès, au versionnement, aux sauvegardes, aux formats d''export, à la conservation, aux coûts et à la clôture du projet.
+
+    2. Acquérir la CDE par le maître d''ouvrage et établir l''espace client et le contrat à son nom.
+
+    3. Confier l''administration et la gestion à l''entreprise générale ou à la direction générale.
+
+
+    **Livrable**
+
+    - Contrat direct du maître d''ouvrage pour la CDE avec droits de disposition, d''accès, d''export et de restitution clairement réglés.
+
+    - Concept d''exploitation attribuant la responsabilité administrative à la direction générale et comprenant des procédures contrôlées de sauvegarde, de sortie et de remise.'
+  it: 'Acquisire l''ambiente comune di dati direttamente da parte della committenza, affinché il controllo sui dati e l''accesso al progetto siano garantiti anche in caso di fallimento o controversia. Affidarne
+    la gestione alla direzione generale.
+
+
+    **Situazione di partenza**
+
+    - Le piattaforme di progetto sono talvolta fatturate tramite i costi di stampa oppure messe a disposizione dall''impresa generale o totale; di conseguenza contratto, accesso ai dati e diritti di restituzione
+    non fanno sempre capo alla committenza.
+
+    - In caso di fallimento di un mandatario o di controversia, l''accesso può essere bloccato. Nel peggiore dei casi, i dati di progetto rientrano nella massa fallimentare o non sono più utilizzabili dalla
+    committenza.
+
+
+    **Obiettivo e beneficio**
+
+    - Mantenere il contratto CDE, lo spazio cliente e i diritti di disposizione direttamente presso la committenza; l''impresa generale o la direzione generale può occuparsi dell''esercizio e della gestione
+    corrente.
+
+    - Regolare contrattualmente prima dell''avvio del progetto ruoli, accessi, salvataggi, esportazione completa, conservazione e cambio di fornitore.
+
+    - Garantire che i dati di progetto restino sempre accessibili, esportabili e riutilizzabili indipendentemente dai singoli progettisti o dalle imprese.
+
+
+    **Svolgimento**
+
+    1. Definire i requisiti relativi a ubicazione dei dati, diritti di accesso, versionamento, salvataggi, formati di esportazione, conservazione, costi e chiusura del progetto.
+
+    2. Acquisire il CDE da parte della committenza e intestare a essa lo spazio cliente e il contratto.
+
+    3. Affidare amministrazione e gestione all''impresa generale o alla direzione generale.
+
+
+    **Risultato della fornitura**
+
+    - Contratto diretto della committenza per il CDE con diritti di disposizione, accesso, esportazione e restituzione chiaramente regolati.
+
+    - Concetto di esercizio con responsabilità amministrativa della direzione generale e procedure verificate di salvataggio, uscita e consegna.'
+  en: 'Procure the common data environment directly through the client so that control of the data and project access remain intact in the event of insolvency or dispute. Delegate its administration to
+    the project lead.
+
+
+    **Starting point**
+
+    - Project platforms are sometimes charged through printing costs or provided by the general or total contractor; the contract, data access, and retrieval rights may therefore not be held by the client.
+
+    - If a contractor becomes insolvent or a dispute arises, access may be blocked. In the worst case, project data forms part of the insolvency estate or can no longer be used by the client.
+
+
+    **Goal & benefit**
+
+    - Keep the CDE contract, tenant, and disposition rights directly with the client; the general contractor or project lead may operate and administer it.
+
+    - Contractually define roles, access, backups, complete exports, retention, and provider migration before the project starts.
+
+    - Keep project data accessible, exportable, and reusable at all times, independently of individual designers or contractors.
+
+
+    **Process**
+
+    1. Define requirements for data location, access rights, versioning, backups, export formats, retention, costs, and project close-out.
+
+    2. Procure the CDE through the client and hold the tenant and contract in the client''s name.
+
+    3. Appoint the general contractor or project lead to administer and maintain it.
+
+
+    **Deliverable**
+
+    - Direct client contract for the CDE with defined disposition, access, export, and retrieval rights.
+
+    - Operating concept assigning administrative responsibility to the project lead, with tested backup, exit, and handover procedures.'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+comment: The client holds the platform contract and tenant. Day-to-day administration may be delegated to the GP or overall project lead without transferring data control. Contractual review must cover
+  access continuity, machine-readable complete exports, backups, retention, termination assistance, and release of data during insolvency or disputes.

@@ -3,7 +3,7 @@
 
 Reads ../elementplan_pragmaticbim_swiss_data_add_ons/distribution.yaml (or
 --addons-dir), slices free.workflows (+ parents), copies free.include folders
-wholesale, and rewrites this template's entity folders.
+and files wholesale, and rewrites this template's entity folders.
 
 Does not touch project.yaml, README.md, LICENSE, or .github/.
 

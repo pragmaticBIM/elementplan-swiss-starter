@@ -7,27 +7,79 @@ name:
   it: Contesto
   en: Surroundings
 definition:
-  de: "Bestand, Nachbarbebauung und Terrain als räumlicher Kontext — nicht die gestaltete Landschaftsplanung. Fachmodelle nach Status trennen (B Bestand, A Abbruch, N Neubau, T temporär). Die Trennung macht Modelle schnell lesbar und erlaubt, Neubau und Abbruch gezielt ein- und auszublenden."
-  fr: "Existant, constructions voisines et terrain comme contexte spatial — distinct de l'aménagement paysager. Séparer les maquettes par statut (E existant, D démolition, N neuf, T temporaire). La séparation rend les maquettes rapidement lisibles et permet d'afficher ou de masquer ce qui est neuf et ce qui est retiré."
-  it: "Esistente, edificato limitrofo e terreno come contesto spaziale — distinto dalla progettazione paesaggistica. Separare i modelli per stato (E esistente, D demolizione, N nuovo, T temporaneo). La separazione rende i modelli rapidamente comprensibili e permette di visualizzare o nascondere ciò che è nuovo e ciò che viene rimosso."
-  en: "Existing stock, neighbouring buildings, and terrain as spatial context — not designed landscape works. Split models by status (E existing, D demolish, N new, T temporary). The split makes models readable at a glance and lets you toggle what is new versus what is removed."
+  de: |-
+    Bestand, Nachbarbebauung und Terrain als räumlicher Kontext – nicht die gestaltete Landschaftsplanung. Fachmodelle nach Status trennen (B Bestand, A Abbruch, N Neubau, T temporär).
+
+    **Was führen**
+    - Fussabdruck und Gebäudehöhe (Traufe/First) der Nachbarbauten, lage- und höhenrichtig
+    - Nutzungstyp grob (Wohnen/Gewerbe), wenn er für Schattenwurf- oder Immissionsargumente relevant ist
+    - Bestehende Bäume/Vegetation auf Nachbargrundstücken, sofern sie Sichtachsen oder Schattenwurf beeinflussen
+
+    **Was übertrieben ist**
+    - Fassadenmaterial, Fensteraufteilung, Balkone, Dachdetails – für Sichtachsen und Schattenwurf irrelevant
+    - Innenraumaufteilung der Nachbargebäude
+    - Exakte Vegetationsgeometrie statt vereinfachter Kronen (wie LAN-TREE)
+
+    Massgebend ist dieselbe Regel wie bei der städtebaulichen AR-Beurteilung: Volumen, Höhe, Lage – nicht Detail. Ein zu genaues Nachbarmodell lenkt vom Zweck ab und suggeriert eine Genauigkeit, die im Streitfall angreifbar wird.
+  fr: |-
+    Existant, constructions voisines et terrain comme contexte spatial – distinct de l'aménagement paysager. Séparer les maquettes par statut (E existant, D démolition, N neuf, T temporaire).
+
+    **Que saisir**
+    - Emprise et hauteur (égout/faîte) des constructions voisines, correctement positionnées
+    - Type d'affectation approximatif (habitat/activités), s'il est pertinent pour l'ombre portée ou les immissions
+    - Arbres/végétation existants sur les parcelles voisines s'ils influencent les axes de vue ou l'ombre portée
+
+    **Ce qui est excessif**
+    - Matériau de façade, composition des fenêtres, balcons, détails de toiture – sans pertinence pour les axes de vue et l'ombre
+    - Organisation intérieure des bâtiments voisins
+    - Géométrie végétale exacte au lieu de houppiers simplifiés (comme LAN-TREE)
+
+    La règle est la même que pour l'appréciation urbanistique en réalité augmentée : volume, hauteur, position – pas le détail. Une maquette voisine trop précise détourne du but et suggère une précision contestable en cas de litige.
+  it: |-
+    Esistente, edificato limitrofo e terreno come contesto spaziale – distinto dalla progettazione paesaggistica. Separare i modelli per stato (E esistente, D demolizione, N nuovo, T temporaneo).
+
+    **Cosa gestire**
+    - Impronta e altezza (gronda/colmo) degli edifici vicini, correttamente posizionati
+    - Tipo di uso approssimativo (abitazione/attività), se rilevante per ombra portata o immissioni
+    - Alberi/vegetazione esistenti sui fondi vicini se influenzano assi visuali o ombra portata
+
+    **Cosa è eccessivo**
+    - Materiale di facciata, composizione delle finestre, balconi, dettagli di copertura – irrilevanti per assi visuali e ombra
+    - Distribuzione interna degli edifici vicini
+    - Geometria vegetale esatta invece di chiome semplificate (come LAN-TREE)
+
+    Vale la stessa regola della valutazione urbanistica in realtà aumentata: volume, altezza, posizione – non il dettaglio. Un modello vicino troppo preciso distoglie dallo scopo e suggerisce una precisione contestabile in caso di controversia.
+  en: |-
+    Existing buildings, neighbouring buildings, and terrain as spatial context – not designed landscape works. Split models by status (E existing, D demolish, N new, T temporary).
+
+    **What to carry**
+    - Footprint and building height (eaves/ridge) of neighbouring buildings, correctly placed in plan and height
+    - Coarse use type (residential/commercial) when relevant for shadow or immission arguments
+    - Existing trees/vegetation on neighbouring plots where they affect sight lines or shadow cast
+
+    **What is overdone**
+    - Facade material, window layout, balconies, roof details – irrelevant for sight lines and shadow
+    - Interior layout of neighbouring buildings
+    - Exact vegetation geometry instead of simplified crowns (as with LAN-TREE)
+
+    The same rule applies as for on-site urban AR assessment: volume, height, location – not detail. An overly precise neighbour model distracts from the purpose and suggests an accuracy that becomes contestable in a dispute.
 file_name:
-  de: '{Projektnummer}_{B|A|N|T}_ARX-UMG_{Freitext}.{ext}'
+  de: '{Projektnummer}_{B|A|N|T}_ARC-UMG_{Freitext}.{ext}'
   fr: '{NumeroProjet}_{E|D|N|T}_ARC-UMG_{Libre}.{ext}'
   it: '{NumeroProgetto}_{E|D|N|T}_ARC-UMG_{Libero}.{ext}'
-  en: '{ProjectNumber}_{E|D|N|T}_ARC-UMG_{Free}.{ext}'
+  en: '{ProjectNumber}_{B|A|N|T}_ARC-UMG_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/architecture
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/survey-surface-geometry
+  - pragmaticbim:element/architecture-building-law-parcel
+  - pragmaticbim:element/architecture-surrounding-building
+  - pragmaticbim:element/architecture-planning-constraint
+  - pragmaticbim:element/landscape-tree
 scheduled_milestones:
-  - "21:beginning"
-  - "22:beginning"
-  - "31:beginning"
-  - "32:beginning"
-  - "33:beginning"
+  - "21:M"
+  - "22:M"
+  - "31:M"
+  - "32:M"
+  - "33:M"

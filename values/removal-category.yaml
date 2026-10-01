@@ -1,0 +1,68 @@
+id: pragmaticbim:value/removal-category
+code: REMOVAL-CATEGORY
+name:
+  de: Sanierungsdringlichkeit
+  fr: Urgence d'assainissement
+  it: Urgenza di bonifica
+  en: Remediation urgency
+description:
+  de: 'Zulässige Werte für ePset_HazardousMaterial.RemovalCategory.
+
+    - `Immediate` — sofortige Sanierung nötig
+
+    - `PriorToDemolition` — Sanierung vor Abbruch/Umbau
+
+    - `InSitu` — kann im Bestand verbleiben, Überwachung
+
+    - `None` — kein Handlungsbedarf'
+  fr: 'Valeurs admises pour ePset_HazardousMaterial.RemovalCategory.
+
+    - `Immediate` — assainissement immédiat nécessaire
+
+    - `PriorToDemolition` — assainissement avant démolition/transformation
+
+    - `InSitu` — peut rester en place, surveillance
+
+    - `None` — aucune action requise'
+  it: 'Valori ammessi per ePset_HazardousMaterial.RemovalCategory.
+
+    - `Immediate` — bonifica immediata necessaria
+
+    - `PriorToDemolition` — bonifica prima di demolizione/trasformazione
+
+    - `InSitu` — può restare in opera, sorveglianza
+
+    - `None` — nessun intervento richiesto'
+  en: 'Allowed values for ePset_HazardousMaterial.RemovalCategory.
+
+    - `Immediate` — immediate remediation required
+
+    - `PriorToDemolition` — remediate before demolition/alteration
+
+    - `InSitu` — may remain in place, monitoring
+
+    - `None` — no action required'
+year: 2026
+norm_reference: ePset_HazardousMaterial
+status: active
+values:
+  de:
+  - Immediate
+  - PriorToDemolition
+  - InSitu
+  - None
+  fr:
+  - Immediate
+  - PriorToDemolition
+  - InSitu
+  - None
+  it:
+  - Immediate
+  - PriorToDemolition
+  - InSitu
+  - None
+  en:
+  - Immediate
+  - PriorToDemolition
+  - InSitu
+  - None

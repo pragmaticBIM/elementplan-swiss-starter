@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-decision-volume
+code: OBJ-DEC-VOL
+name:
+  de: ObjectType Entscheidungskörper
+  fr: ObjectType volume de décision
+  it: ObjectType volume decisionale
+  en: ObjectType decision volume
+description:
+  de: ObjectType für IfcBuildingElementProxy als räumlicher Gültigkeitsbereich eines Entscheids.
+  fr: ObjectType pour IfcBuildingElementProxy représentant la zone de validité spatiale d'une décision.
+  it: ObjectType per IfcBuildingElementProxy quale ambito di validità spaziale di una decisione.
+  en: ObjectType for IfcBuildingElementProxy representing the spatial validity area of a decision.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Entscheidungskörper
+  fr:
+  - Volume de décision
+  it:
+  - Volume decisionale
+  en:
+  - Decision volume

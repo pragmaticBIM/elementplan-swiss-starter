@@ -1,0 +1,32 @@
+id: pragmaticbim:value/decision-status
+code: DEC-STATUS
+name:
+  de: Entscheidungsstatus
+  fr: État de la décision
+  it: Stato della decisione
+  en: Decision status
+description:
+  de: Status eines Entscheids von der offenen Pendenz bis zur Freigabe oder Ablösung.
+  fr: État d'une décision, du point en suspens à la validation ou au remplacement.
+  it: Stato di una decisione, dal punto in sospeso all'approvazione o alla sostituzione.
+  en: Status of a decision from an open item through approval or supersession.
+year: 2026
+norm_reference: project-specific
+status: active
+values:
+  de:
+  - OPEN
+  - APPROVED
+  - SUPERSEDED
+  fr:
+  - OPEN
+  - APPROVED
+  - SUPERSEDED
+  it:
+  - OPEN
+  - APPROVED
+  - SUPERSEDED
+  en:
+  - OPEN
+  - APPROVED
+  - SUPERSEDED

@@ -1,0 +1,126 @@
+id: pragmaticbim:workflow/qas-tree-preservation-verification
+code: QAS-TREE-PRESERVE
+sort_order: 85
+name:
+  de: Zu erhaltenden Baumbestand nachweisen
+  fr: Justifier le peuplement arboré à conserver
+  it: Giustificare il patrimonio arboreo da conservare
+  en: Verify tree stock to be preserved
+description:
+  de: 'Zu erhaltende Bäume mit Krone und Wurzelraum im Modell abbilden und auf Konflikte prüfen, bevor Bauarbeiten Bestand oder Bewilligung gefährden.
+
+
+    **Ausgangslage**
+
+    - Beschädigte Bäume können ein Genehmigungs- und Strafzahlungsrisiko sein.
+
+    - Späte Konflikte mit Baugrube, Leitungen oder Aussenanlagen führen zu Fällungen oder Wurzelverletzungen.
+
+
+    **Ziel & Nutzen**
+
+    - Im Modell prüfen, ob ein Baum im Wurzelbereich oder an der Krone durch Bauarbeiten gefährdet sein könnte.
+
+
+    **Ablauf**
+
+    1. Bestehende und geplante Bäume als vereinfachte Körper (Krone, Stamm, Wurzelraum) im Landschaftsmodell führen.
+
+    2. Baumbestand im Gesamtmodell gegen Bauwerk, Baugrube und Leitungen auf Konflikte prüfen.
+
+    3. Nachweis der zu erhaltenden Bäume dokumentieren.
+
+
+    **Lieferergebnis**
+
+    - Landschaftsmodell mit dem Baumbestand und den erforderlichen Geometrie-, Identifikations- und Statusinformationen.'
+  fr: 'Saisir dans la maquette les arbres à conserver avec une couronne et un rayon racinaire approximatifs et démontrer théoriquement qu’aucun dommage n’est à prévoir.
+
+
+    **Situation de départ**
+
+    - Des arbres endommagés peuvent constituer un risque d’autorisation et d’amende.
+
+    - Des conflits tardifs avec fouille, réseaux ou aménagements extérieurs entraînent abattages ou blessures racinaires.
+
+
+    **Objectif et bénéfice**
+
+    - Vérifier dans la maquette si des travaux pourraient menacer les racines ou la couronne d’un arbre.
+
+
+    **Déroulement**
+
+    1. Saisir les arbres existants et projetés comme corps simplifiés (couronne, tronc, espace racinaire) dans le modèle de paysage.
+
+    2. Vérifier le peuplement arboré en maquette fédérée contre bâtiment, fouille et réseaux.
+
+    3. Documenter la preuve des arbres à conserver.
+
+
+    **Livrable**
+
+    - Maquette paysagère du peuplement arboré avec les informations requises sur la géométrie, l''identification et le statut.'
+  it: 'Gestire nel modello gli alberi da conservare con chioma e raggio radicale approssimativi e dimostrare teoricamente che non sono prevedibili danni.
+
+
+    **Situazione di partenza**
+
+    - Alberi danneggiati possono costituire un rischio di autorizzazione e di sanzioni.
+
+    - Conflitti tardivi con scavo, reti o sistemazioni esterne causano abbattimenti o lesioni radicali.
+
+
+    **Obiettivo e beneficio**
+
+    - Verificare nel modello se i lavori potrebbero mettere a rischio le radici o la chioma di un albero.
+
+
+    **Svolgimento**
+
+    1. Gestire alberi esistenti e previsti come corpi semplificati (chioma, tronco, spazio radicale) nel modello di paesaggio.
+
+    2. Verificare il patrimonio arboreo nel modello federato contro edificio, scavo e reti.
+
+    3. Documentare la prova degli alberi da conservare.
+
+
+    **Risultato della fornitura**
+
+    - Modello paesaggistico del patrimonio arboreo con le informazioni necessarie su geometria, identificazione e stato.'
+  en: 'Represent trees to be preserved in the model with their crowns and root zones and check for conflicts before construction work puts the existing trees or the permit at risk.
+
+
+    **Starting point**
+
+    - Damaged trees can pose a permit and fine risk.
+
+    - Late conflicts with excavation, services, or external works lead to removals or root damage.
+
+
+    **Goal & benefit**
+
+    - Check in the model whether construction work could endanger a tree’s root zone or crown.
+
+
+    **Process**
+
+    1. Maintain existing and planned trees as simplified bodies (crown, trunk, root zone) in the landscape model.
+
+    2. Check the tree inventory against building, excavation, and services in the federated model.
+
+    3. Document verification of trees to preserve.
+
+
+    **Deliverable**
+
+    - Landscape model of the tree stock with the required geometry, identification, and status information.'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Trees as IfcGeographicElement; PredefinedType VEGETATION (IFC4.3) or USERDEFINED (IFC4). ObjectType is language-specific (Baum / Arbre / Albero / Tree). IFC2x3 uses IfcBuildingElementProxy. Status
+  EXISTING marks trees to preserve; DEMOLISH marks felling. Species uses Latin binomials from the tree-species value list.

@@ -1,6 +1,6 @@
 id: pragmaticbim:element/spaces-exterior
 code: SPACE-EXT
-sort_order: 20
+sort_order: 12
 status: active
 name:
   de: Aussenräume
@@ -8,7 +8,7 @@ name:
   it: Spazi esterni
   en: Exterior spaces
 definition:
-  de: 'Aussenliegende, nutzbare Raumvolumen am Gebäude.
+  de: 'Macht nutzbare Aussenflächen für Flächennachweise, Nutzungsplanung und die Abstimmung von Gebäude und Umgebung auswertbar.
 
 
     **Beschreibung**
@@ -18,31 +18,37 @@ definition:
     - Raumnutzung wird über LongName geführt; Name kann die Raumnummer tragen.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
-    - Als Volumen ausserhalb des Gebäudes modellieren.
+    - Als Volumen ausserhalb des Gebäudes modellieren – von der Aussenkante des Gebäudes bis zur Grundstücksgrenze bzw. Grenze des Bearbeitungsperimeters.
 
     - Balkone und Terrassen dem jeweiligen Geschoss zuweisen.
 
-    - Empfehlung: Aussenräume nur 1 m hoch modellieren, um Innen- und Aussenräume in der Ansicht schnell zu unterscheiden.'
-  fr: 'Volumes de locaux utilisables à l''extérieur du bâtiment.
+    - Empfehlung: Aussenräume nur 1 m hoch modellieren, um Innen- und Aussenräume in der Ansicht schnell zu unterscheiden.
+
+    - Werden diese Konventionen zur Benennung und Höhe der Räume konsequent eingehalten, lässt sich die Zuweisung von `TRUE` für IsExternal einfach automatisieren. Dadurch werden Fehlerpotenzial und Aufwand
+    weiter reduziert.'
+  fr: 'Rend les surfaces extérieures utilisables exploitables pour les justificatifs de surfaces, la planification des usages et la coordination entre bâtiment et abords.
 
 
     **Description**
 
     - Espaces extérieurs tels que balcons, terrasses et abords aménagés.
 
-    - L''usage du local est porté par LongName; Name peut porter le numéro de local.
+    - L''usage du local est saisi dans LongName ; Name peut contenir le numéro de local.
 
 
     **Directives de modélisation**
 
-    - Modéliser comme volume à l''extérieur du bâtiment.
+    - Modéliser comme volume à l''extérieur du bâtiment – de la face extérieure du bâtiment jusqu''à la limite parcellaire ou à la limite du périmètre d''intervention.
 
     - Attribuer balcons et terrasses à l''étage concerné.
 
-    - Recommandation : modéliser les espaces extérieurs sur 1 m de hauteur seulement, pour les distinguer visuellement des espaces intérieurs.'
-  it: 'Volumi di locali utilizzabili all''esterno dell''edificio.
+    - Recommandation : modéliser les espaces extérieurs sur 1 m de hauteur seulement, pour les distinguer visuellement des espaces intérieurs.
+
+    - Si ces conventions de désignation des locaux et de hauteur sont appliquées systématiquement, l''attribution de `TRUE` à IsExternal peut être automatisée facilement. Le risque d''erreur et le travail
+    nécessaire sont ainsi encore réduits.'
+  it: 'Rende valutabili le superfici esterne utilizzabili per le verifiche delle superfici, la pianificazione degli usi e il coordinamento tra edificio e sistemazioni esterne.
 
 
     **Descrizione**
@@ -54,12 +60,15 @@ definition:
 
     **Direttive di modellazione**
 
-    - Modellare come volume all''esterno dell''edificio.
+    - Modellare come volume all''esterno dell''edificio – dal filo esterno dell''edificio fino al confine della particella o al limite del perimetro d''intervento.
 
     - Attribuire balconi e terrazze al piano corrispondente.
 
-    - Raccomandazione: modellare gli spazi esterni con altezza di soli 1 m, per distinguerli visivamente dagli spazi interni.'
-  en: 'Usable room volumes located outside the building.
+    - Raccomandazione: modellare gli spazi esterni con altezza di soli 1 m, per distinguerli visivamente dagli spazi interni.
+
+    - Se queste convenzioni per la denominazione e l''altezza dei locali vengono applicate sistematicamente, l''assegnazione di `TRUE` a IsExternal può essere automatizzata facilmente. In questo modo si
+    riducono ulteriormente il rischio di errori e l''onere.'
+  en: 'Makes usable exterior areas measurable for area verification, use planning, and coordination between the building and its surroundings.
 
 
     **Description**
@@ -71,49 +80,156 @@ definition:
 
     **Modelling guidelines**
 
-    - Model as a volume outside the building.
+    - Model as a volume outside the building – from the building''s outer face to the property boundary or the boundary of the project area.
 
     - Assign balconies and terraces to the matching storey.
 
-    - Best practice: model exterior spaces only 1 m high to visually distinguish them from interior spaces quickly.'
+    - Best practice: model exterior spaces only 1 m high to visually distinguish them from interior spaces quickly.
+
+    - If these room-naming and height conventions are followed consistently, assigning `TRUE` to IsExternal can be automated easily. This further reduces the potential for errors and the effort required.'
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcSpace
 entity_ifc4: IfcSpace
 entity_ifc4_3: IfcSpace
-picture_link: null
-model_link: null
-applicability: (entity_ifc4=IfcSpace AND PredefinedType=EXTERNAL AND Pset_SpaceCommon.IsExternal=TRUE) OR (entity_ifc2x3=IfcSpace AND InteriorOrExteriorSpace=EXTERNAL)
+picture_link: spaces-exterior.png
+picture_print_link: spaces-exterior-print.tif
+attachment_link: spaces-exterior.ifc
+model_link: spaces-exterior.ifc
+applicability: (entity_ifc4=IfcSpace AND PredefinedType=SPACE AND Pset_SpaceCommon.IsExternal=TRUE) OR (entity_ifc2x3=IfcSpace AND InteriorOrExteriorSpace=EXTERNAL AND Pset_SpaceCommon.IsExternal=TRUE)
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: 'Eindeutige technische Raumnummer für die Planung. Sie dient Fachplanenden als stabile ID, um ihre Daten dauerhaft mit dem Raum zu verknüpfen und massgebende Änderungen schnell zu erkennen. Sie
+      soll gleichbleiben, solange:
+
+      - der Raum die Grösse nicht wesentlich ändert (z. B. von 12 m² Büro auf 25 m² Grossraumbüro)
+
+      - die Funktion nicht wesentlich ändert (z. B. von Büro auf Sitzungszimmer)
+
+      - und die Ausrichtung nicht wechselt (z. B. von Süd- auf Ostausrichtung)
+
+
+      Nicht für die Signaletik verwenden – Signaletik-Raumnummern ändern sich häufig und gehören in SignageRoomNumber.'
+    fr: 'Numéro technique de local unique pour la planification. Il sert d''identifiant stable aux mandataires spécialisés pour rattacher durablement leurs données au local et repérer rapidement les modifications
+      déterminantes. Il doit rester inchangé tant que :
+
+      - la surface du local ne change pas substantiellement (p. ex. de 12 m² bureau à 25 m² bureau paysager)
+
+      - la fonction ne change pas substantiellement (p. ex. de bureau à salle de réunion)
+
+      - et l''orientation ne change pas (p. ex. du sud à l''est)
+
+
+      Ne pas utiliser pour la signalétique – les numéros de signalétique changent souvent et appartiennent à SignageRoomNumber.'
+    it: 'Numero tecnico univoco del locale per la progettazione. Funge da identificativo stabile per consentire ai progettisti specialisti di collegare durevolmente i propri dati al locale e individuare
+      rapidamente le modifiche determinanti. Deve restare invariato finché:
+
+      - la superficie del locale non cambia sostanzialmente (es. da 12 m² ufficio a 25 m² open space)
+
+      - la funzione non cambia sostanzialmente (es. da ufficio a sala riunioni)
+
+      - e l''orientamento non cambia (es. da sud a est)
+
+
+      Non usare per la segnaletica – i numeri di segnaletica cambiano spesso e appartengono a SignageRoomNumber.'
+    en: 'Unique technical room number for planning. It provides discipline designers with a stable ID for linking their data permanently to the space and identifying significant changes quickly. It should
+      stay stable as long as:
+
+      - the room size does not change substantially (e.g. from 12 m² office to 25 m² open-plan office)
+
+      - the function does not change substantially (e.g. from office to meeting room)
+
+      - and the orientation does not change (e.g. from south to east facing)
+
+
+      Do not use for signage – signage room numbers change often and belong in SignageRoomNumber.'
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/des-abstractbim-element-based-cost
+  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/qas-usage-agreement-verification
+  - pragmaticbim:workflow/opr-signage-room-number
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
-    de: 'Kennzeichnet den Raum als Aussenraum.
+    de: 'Kennzeichnet das Objekt als Raum.
 
 
       **Zulässige Werte**
 
-      - `EXTERNAL` — Aussenraum'
-    fr: 'Identifie l''espace comme extérieur.
+      - `SPACE` — Raum
+
+
+      **Hinweis**
+
+      - Die ebenfalls möglichen Werte `INTERNAL` und `EXTERNAL` vermischen Raumtyp und Lage und sind seit IFC4.3_ADD2 als veraltet gekennzeichnet. Daher wird empfohlen, bereits jetzt `SPACE` zu verwenden
+      und innen beziehungsweise aussen über IsExternal abzubilden.'
+    fr: 'Indique que l''objet est un espace.
 
 
       **Valeurs admises**
 
-      - `EXTERNAL` — espace extérieur'
-    it: 'Identifica lo spazio come esterno.
+      - `SPACE` — espace
+
+
+      **Remarque**
+
+      - Les valeurs également possibles `INTERNAL` et `EXTERNAL` confondent le type d''espace et sa situation et sont signalées comme obsolètes depuis IFC4.3_ADD2. Il est donc recommandé d''utiliser dès
+      maintenant `SPACE` et d''indiquer le caractère intérieur ou extérieur au moyen de IsExternal.'
+    it: 'Indica che l''oggetto è uno spazio.
 
 
       **Valori ammessi**
 
-      - `EXTERNAL` — spazio esterno'
-    en: 'Marks the space as exterior.
+      - `SPACE` — spazio
+
+
+      **Nota**
+
+      - I valori anch''essi possibili `INTERNAL` ed `EXTERNAL` confondono il tipo di spazio con la sua posizione e sono contrassegnati come obsoleti a partire da IFC4.3_ADD2. Si raccomanda pertanto di utilizzare
+      fin d''ora `SPACE` e di indicare se lo spazio è interno o esterno mediante IsExternal.'
+    en: 'Marks the object as a space.
 
 
       **Allowed values**
 
-      - `EXTERNAL` — exterior space'
+      - `SPACE` — space
+
+
+      **Note**
+
+      - The also permitted values `INTERNAL` and `EXTERNAL` conflate space type and location and have been deprecated since IFC4.3_ADD2. Therefore, use `SPACE` now and specify interior or exterior status
+      using IsExternal.'
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-space-external
+  allowed_values: pragmaticbim:value/predefinedtype-space-space
   needed_in_phases:
   - '11'
   - '21'
@@ -131,18 +247,21 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-room-program-brief
   - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
   - pragmaticbim:workflow/des-basic-piping-planning
-  - pragmaticbim:workflow/des-layout-planning
   - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/qas-usage-agreement-verification
   - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
-  - pragmaticbim:workflow/qas-early-design-coordination
   is_applicability: true
   status: active
-  sort_order: 1
+  sort_order: 2
 - name: InteriorOrExteriorSpace
   pset: null
   definition:
@@ -156,7 +275,7 @@ attributes:
 
       **Hinweis**
 
-      - IFC2x3-Ersatz für PredefinedType und IsExternal.'
+      - Zusätzliche IFC2x3-Klassifikation; die Aussenkennzeichnung erfolgt versionsübergreifend über IsExternal.'
     fr: 'Identifie l''espace comme extérieur.
 
 
@@ -167,7 +286,7 @@ attributes:
 
       **Remarque**
 
-      - Substitut IFC2x3 de PredefinedType et IsExternal.'
+      - Classification IFC2x3 complémentaire ; l''indication comme espace extérieur s''effectue pour toutes les versions au moyen de IsExternal.'
     it: 'Identifica lo spazio come esterno.
 
 
@@ -178,7 +297,7 @@ attributes:
 
       **Nota**
 
-      - Sostituto IFC2x3 di PredefinedType e IsExternal.'
+      - Classificazione IFC2x3 aggiuntiva; l''indicazione come spazio esterno avviene per tutte le versioni mediante IsExternal.'
     en: 'Marks the space as exterior.
 
 
@@ -189,7 +308,7 @@ attributes:
 
       **Note**
 
-      - IFC2x3 substitute for PredefinedType and IsExternal.'
+      - Additional IFC2x3 classification; exterior status is specified across all versions using IsExternal.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/interiororexteriorspace-external
   needed_in_phases:
@@ -208,66 +327,49 @@ attributes:
   ifc_versions:
   - ifc2x3
   needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-room-program-brief
   - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
-  - pragmaticbim:workflow/des-layout-planning
   - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/qas-usage-agreement-verification
   - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
-  - pragmaticbim:workflow/qas-early-design-coordination
   is_applicability: true
   status: active
-  sort_order: 2
+  sort_order: 3
 - name: LongName
   pset: null
   definition:
-    de: 'Normalisierte Raumnutzung für Aussenräume gemäss Pragmatic BIM Building Space Name Classification v0.2.0.
-
-
-      **Quelle**
-
-      - https://schema.pragmaticbim.ch/classification/room-name.html
+    de: 'Normalisierte Raumnutzung für Aussenräume.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste Raumbezeichnung Aussenraum v0.2.0 — RN-Notation.'
-    fr: 'Usage normalisé du local extérieur selon Pragmatic BIM Building Space Name Classification v0.2.0.
-
-
-      **Source**
-
-      - https://schema.pragmaticbim.ch/classification/room-name.html
+      - Siehe Werteliste [Raumbezeichnung Aussenraum](https://schema.pragmaticbim.ch/classification/room-name.html).'
+    fr: 'Usage normalisé du local extérieur.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Désignation de local extérieur v0.2.0 — notation RN.'
-    it: 'Uso normalizzato del locale esterno secondo Pragmatic BIM Building Space Name Classification v0.2.0.
-
-
-      **Fonte**
-
-      - https://schema.pragmaticbim.ch/classification/room-name.html
+      - Voir la liste de valeurs [Désignation de local extérieur](https://schema.pragmaticbim.ch/classification/room-name.html).'
+    it: 'Uso normalizzato del locale esterno.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Denominazione locale esterno v0.2.0 — notazione RN.'
-    en: 'Normalized room use for exterior spaces according to Pragmatic BIM Building Space Name Classification v0.2.0.
-
-
-      **Source**
-
-      - https://schema.pragmaticbim.ch/classification/room-name.html
+      - Vedere l''elenco valori [Denominazione locale esterno](https://schema.pragmaticbim.ch/classification/room-name.html).'
+    en: 'Normalized room use for exterior spaces.
 
 
       **Allowed values**
 
-      - See value list Room name exterior space v0.2.0 — RN notation.'
+      - See the [Exterior space name](https://schema.pragmaticbim.ch/classification/room-name.html) value list.'
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/room-name-exterior-v0.2.0
+  allowed_values: pragmaticbim:value/room-name-exterior
   needed_in_phases:
   - '11'
   - '21'
@@ -286,166 +388,53 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-room-program-brief
   - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
   - pragmaticbim:workflow/des-abstractbim-element-based-cost
   - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
-  - pragmaticbim:workflow/des-layout-planning
   - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/qas-usage-agreement-verification
   - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
-  is_applicability: false
-  status: active
-  sort_order: 3
-- name: Name
-  pset: null
-  definition:
-    de: 'Eindeutige technische Raumnummer für die Planung. Sie soll gleichbleiben, solange:
-
-      - der Raum die Grösse nicht wesentlich ändert (z. B. von 12 m² Büro auf 25 m² Grossraumbüro)
-
-      - die Funktion nicht wesentlich ändert (z. B. von Büro auf Sitzungszimmer)
-
-      - und die Ausrichtung nicht wechselt (z. B. von Süd- auf Ostausrichtung)
-
-
-      Nicht für die Signaletik verwenden — Signaletik-Raumnummern ändern sich häufig und gehören in SignageRoomNumber.'
-    fr: 'Numéro technique de local unique pour la planification. Il doit rester inchangé tant que :
-
-      - la surface du local ne change pas substantiellement (p. ex. de 12 m² bureau à 25 m² bureau paysager)
-
-      - la fonction ne change pas substantiellement (p. ex. de bureau à salle de réunion)
-
-      - et l''orientation ne change pas (p. ex. du sud à l''est)
-
-
-      Ne pas utiliser pour la signalétique — les numéros de signalétique changent souvent et appartiennent à SignageRoomNumber.'
-    it: 'Numero tecnico del locale univoco per la pianificazione. Deve restare invariato finché:
-
-      - la superficie del locale non cambia sostanzialmente (es. da 12 m² ufficio a 25 m² open space)
-
-      - la funzione non cambia sostanzialmente (es. da ufficio a sala riunioni)
-
-      - e l''orientamento non cambia (es. da sud a est)
-
-
-      Non usare per la segnaletica — i numeri di segnaletica cambiano spesso e appartengono a SignageRoomNumber.'
-    en: 'Unique technical room number for planning. It should stay stable as long as:
-
-      - the room size does not change substantially (e.g. from 12 m² office to 25 m² open-plan office)
-
-      - the function does not change substantially (e.g. from office to meeting room)
-
-      - and the orientation does not change (e.g. from south to east facing)
-
-
-      Do not use for signage — signage room numbers change often and belong in SignageRoomNumber.'
-  datatype: IfcIdentifier
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/bes-abstractbim-competition-evaluation
-  - pragmaticbim:workflow/des-abstractbim-element-based-cost
-  - pragmaticbim:workflow/des-abstractbim-building-performance-simulation
-  - pragmaticbim:workflow/des-layout-planning
-  - pragmaticbim:workflow/des-usage-agreement-visualization
-  - pragmaticbim:workflow/opr-signage-room-number
+  - pragmaticbim:workflow/qas-project-benchmark
+  - pragmaticbim:workflow/qas-sponge-city
   is_applicability: false
   status: active
   sort_order: 4
-- name: SignageRoomNumber
-  pset: ePset_SpaceSignage
-  definition:
-    de: Raumnummer für die Signaletik (Beschriftung, Wegführung). Separat von der technischen Planungsraumnummer (Name), weil Signaletik-Nummern sich häufig ändern und somit kein stabiler Identifikator
-      für die Planung und Betrieb sind.
-    fr: Numéro de local pour la signalétique (marquage, orientation). Séparé du numéro technique de planification (Name), car les numéros de signalétique changent souvent et divergent souvent du numéro
-      de planification.
-    it: Numero locale per la segnaletica (etichettatura, orientamento). Separato dal numero tecnico di pianificazione (Name), perché i numeri di segnaletica cambiano spesso e spesso differiscono dal numero
-      di pianificazione.
-    en: Room number for wayfinding signage (labelling, orientation). Separate from the technical planning room number (Name), because signage numbers often change and frequently differ from the planning
-      number.
-  datatype: IfcIdentifier
-  needed_in_phases:
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/opr-signage-room-number
-  is_applicability: false
-  status: active
-  sort_order: 5
 - name: Reference
   pset: Pset_SpaceCommon
   definition:
     de: 'Flächenklasse des Aussenraums nach SIA 416 oder SIA D0165.
 
 
-      **Quelle**
-
-      - SIA 416: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
-
-      - SIA D0165: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
-
-
       **Zulässige Werte**
 
-      - Siehe Werteliste Raumreferenz Aussenraum SIA 416 / D0165 — z. B. `AGF`, `AVF`, `BUF`, `UUF` (SIA 416) oder `BUF-10`, `AVF`, `AFF`, `ANF` (D0165).'
+      - Siehe Werteliste [Raumreferenz Aussenraum SIA 416 / D0165](https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html) – z. B. `AGF`, `AVF`, `BUF`, `UUF` (SIA 416) oder `BUF-10`,
+      `AVF`, `AFF`, `ANF` (D0165).'
     fr: 'Classe de surface de l''espace extérieur selon SIA 416 ou SIA D0165.
-
-
-      **Source**
-
-      - SIA 416 : https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
-
-      - SIA D0165 : https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Référence de local extérieur SIA 416 / D0165 — p. ex. `AGF`, `AVF`, `BUF`, `UUF` (SIA 416) ou `BUF-10`, `AVF`, `AFF`, `ANF` (D0165).'
+      - Voir la liste de valeurs [Référence de local extérieur SIA 416 / D0165](https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html) – p. ex. `AGF`, `AVF`, `BUF`, `UUF` (SIA
+      416) ou `BUF-10`, `AVF`, `AFF`, `ANF` (D0165).'
     it: 'Classe di superficie dello spazio esterno secondo SIA 416 o SIA D0165.
-
-
-      **Fonte**
-
-      - SIA 416: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
-
-      - SIA D0165: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Riferimento locale esterno SIA 416 / D0165 — p. es. `AGF`, `AVF`, `BUF`, `UUF` (SIA 416) o `BUF-10`, `AVF`, `AFF`, `ANF` (D0165).'
+      - Vedere l''elenco valori [Riferimento locale esterno SIA 416 / D0165](https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html) – p. es. `AGF`, `AVF`, `BUF`, `UUF` (SIA
+      416) o `BUF-10`, `AVF`, `AFF`, `ANF` (D0165).'
     en: 'Area class of the exterior space according to SIA 416 or SIA D0165.
-
-
-      **Source**
-
-      - SIA 416: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html
-
-      - SIA D0165: https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-d0165.html
 
 
       **Allowed values**
 
-      - See value list Space reference exterior SIA 416 / D0165 — e.g. `AGF`, `AVF`, `BUF`, `UUF` (SIA 416) or `BUF-10`, `AVF`, `AFF`, `ANF` (D0165).'
+      - See the [Space reference exterior SIA 416 / D0165](https://schema.pragmaticbim.ch/classification/mapping-room-activity-to-sia416.html) value list, e.g. `AGF`, `AVF`, `BUF`, `UUF` (SIA 416) or `BUF-10`,
+      `AVF`, `AFF`, `ANF` (D0165).'
   datatype: IfcIdentifier
   allowed_values: pragmaticbim:value/space-reference-exterior-sia416-d0165
   needed_in_phases:
@@ -466,12 +455,10 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-sia416-area-verification
   - pragmaticbim:workflow/des-d0165-area-verification
-  - pragmaticbim:workflow/qas-early-design-coordination
   is_applicability: false
   status: active
-  sort_order: 6
+  sort_order: 5
 - name: IsExternal
   pset: Pset_SpaceCommon
   definition:
@@ -519,17 +506,18 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-early-design-coordination
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-project-benchmark
   is_applicability: true
   status: active
   sort_order: 6
-- name: NetFloorArea
-  pset: Qto_SpaceBaseQuantities
+- name: NetPlannedArea
+  pset: Pset_SpaceCommon
   definition:
-    de: Nettogeschossfläche des modellierten Aussenraums.
-    fr: Surface nette de l'espace extérieur modélisé.
-    it: Superficie netta dello spazio esterno modellato.
-    en: Net floor area of the modelled exterior space.
+    de: Bestellte Soll-Nettofläche des Aussenraums.
+    fr: Surface nette cible commandée pour l'espace extérieur.
+    it: Superficie netta obiettivo ordinata per lo spazio esterno.
+    en: Ordered target net area of the exterior space.
   datatype: IfcAreaMeasure
   unit: m²
   needed_in_phases:
@@ -546,17 +534,42 @@ attributes:
   - '61'
   - '62'
   ifc_versions:
+  - ifc2x3
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-layout-planning
-  - pragmaticbim:workflow/des-sia416-area-verification
-  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
   is_applicability: false
   status: active
   sort_order: 7
+- name: SignageRoomNumber
+  pset: ePset_Space
+  definition:
+    de: Raumnummer für die Signaletik (Beschriftung, Wegführung). Separat von der technischen Planungsraumnummer (Name), weil Signaletik-Nummern sich häufig ändern und somit kein stabiler Identifikator
+      für die Planung und Betrieb sind.
+    fr: Numéro de local pour la signalétique (marquage, orientation). Séparé du numéro technique de planification (Name), car les numéros de signalétique changent souvent et divergent souvent du numéro
+      de planification.
+    it: Numero locale per la segnaletica (etichettatura, orientamento). Separato dal numero tecnico di pianificazione (Name), perché i numeri di segnaletica cambiano spesso e spesso differiscono dal numero
+      di pianificazione.
+    en: Room number for wayfinding signage (labelling, orientation). Separate from the technical planning room number (Name), because signage numbers often change and are therefore not stable identifiers
+      for planning and operation.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/opr-signage-room-number
+  is_applicability: false
+  status: active
+  sort_order: 8
 - name: DesignAreaLoad
-  pset: ePset_SpaceUsageAgreement
+  pset: ePset_SpaceRequirement
   definition:
     de: Vereinbarte Flächenlast Soll für die Nutzungsvereinbarung.
     fr: Charge surfacique cible convenue pour la convention d'utilisation.
@@ -579,12 +592,13 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
+  - pragmaticbim:workflow/qas-usage-agreement-verification
   - pragmaticbim:workflow/des-usage-agreement-visualization
   is_applicability: false
   status: active
-  sort_order: 10
+  sort_order: 9
 - name: DesignPointLoad
-  pset: ePset_SpaceUsageAgreement
+  pset: ePset_SpaceRequirement
   definition:
     de: Vereinbarte Punktlast Soll für die Nutzungsvereinbarung.
     fr: Charge ponctuelle cible convenue pour la convention d'utilisation.
@@ -607,25 +621,26 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
+  - pragmaticbim:workflow/qas-usage-agreement-verification
   - pragmaticbim:workflow/des-usage-agreement-visualization
   is_applicability: false
   status: active
-  sort_order: 11
+  sort_order: 10
 - name: VibrationRequirements
-  pset: ePset_SpaceUsageAgreement
+  pset: ePset_SpaceRequirement
   definition:
-    de: 'Vereinbarte Schwingungsanforderungen für die Nutzungsvereinbarung nach ISO-Schwingungskriterien und Vibration Criterion (VC) nach IEST.
+    de: 'Vereinbarte Schwingungsanforderungen Soll für die Nutzungsvereinbarung nach ISO-Schwingungskriterien und Vibration Criterion (VC) nach IEST.
 
 
       **Zulässige Werte**
 
-      - `ISO Workshop` — 800 µm/s (32.000 µin/s): Werkstätten, grobe Fertigungsbereiche, Maschinenschutzzonen
+      - `ISO Workshop` — 800 µm/s (32''000 µin/s): Werkstätten, grobe Fertigungsbereiche, Maschinenschutzzonen
 
-      - `ISO Office` — 400 µm/s (16.000 µin/s): Büroräume, Kontrollräume, allgemeine Verwaltungsbereiche
+      - `ISO Office` — 400 µm/s (16''000 µin/s): Büroräume, Kontrollräume, allgemeine Verwaltungsbereiche
 
-      - `ISO Residential (Night)` — 200 µm/s (8.000 µin/s): Wohnbereiche (Nacht), leichte PC-Arbeitsplätze, Mikroskope <40×
+      - `ISO Residential (Night)` — 200 µm/s (8''000 µin/s): Wohnbereiche (Nacht), leichte PC-Arbeitsplätze, Mikroskope <40×
 
-      - `ISO Operating Theatre (OT)` — 100 µm/s (4.000 µin/s): Basislinie (Base Curve): Operationssäle, allgemeine Labore, Mikroskope bis 100×
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4''000 µin/s): Basislinie (Base Curve): Operationssäle, allgemeine Labore, Mikroskope bis 100×
 
       - `VC-A` — Vibration Criterion A nach IEST
 
@@ -636,18 +651,18 @@ attributes:
       - `VC-D` — Vibration Criterion D nach IEST
 
       - `VC-E` — Vibration Criterion E nach IEST'
-    fr: 'Exigences vibratoires convenues pour la convention d''utilisation selon les critères vibratoires ISO et le Vibration Criterion (VC) selon IEST.
+    fr: 'Exigences vibratoires cibles convenues pour la convention d''utilisation selon les critères vibratoires ISO et le Vibration Criterion (VC) selon IEST.
 
 
       **Valeurs admises**
 
-      - `ISO Workshop` — 800 µm/s (32 000 µin/s) : ateliers, zones de fabrication grossière, zones de protection des machines
+      - `ISO Workshop` — 800 µm/s (32''000 µin/s) : ateliers, zones de fabrication grossière, zones de protection des machines
 
-      - `ISO Office` — 400 µm/s (16 000 µin/s) : bureaux, salles de contrôle, locaux administratifs généraux
+      - `ISO Office` — 400 µm/s (16''000 µin/s) : bureaux, salles de contrôle, locaux administratifs généraux
 
-      - `ISO Residential (Night)` — 200 µm/s (8 000 µin/s) : locaux d''habitation (nuit), postes de travail PC légers, microscopes <40×
+      - `ISO Residential (Night)` — 200 µm/s (8''000 µin/s) : locaux d''habitation (nuit), postes de travail PC légers, microscopes <40×
 
-      - `ISO Operating Theatre (OT)` — 100 µm/s (4 000 µin/s) : courbe de base (Base Curve) : salles d''opération, laboratoires généraux, microscopes jusqu''à 100×
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4''000 µin/s) : courbe de base (Base Curve) : salles d''opération, laboratoires généraux, microscopes jusqu''à 100×
 
       - `VC-A` — Vibration Criterion A selon IEST
 
@@ -658,18 +673,18 @@ attributes:
       - `VC-D` — Vibration Criterion D selon IEST
 
       - `VC-E` — Vibration Criterion E selon IEST'
-    it: 'Requisiti di vibrazione concordati per la convenzione d''uso secondo i criteri di vibrazione ISO e il Vibration Criterion (VC) secondo IEST.
+    it: 'Requisiti di vibrazione obiettivo concordati per la convenzione d''uso secondo i criteri di vibrazione ISO e il Vibration Criterion (VC) secondo IEST.
 
 
       **Valori ammessi**
 
-      - `ISO Workshop` — 800 µm/s (32.000 µin/s): officine, aree di produzione grezza, zone di protezione macchine
+      - `ISO Workshop` — 800 µm/s (32''000 µin/s): officine, aree di produzione grezza, zone di protezione macchine
 
-      - `ISO Office` — 400 µm/s (16.000 µin/s): uffici, sale di controllo, aree amministrative generali
+      - `ISO Office` — 400 µm/s (16''000 µin/s): uffici, sale di controllo, aree amministrative generali
 
-      - `ISO Residential (Night)` — 200 µm/s (8.000 µin/s): aree residenziali (notte), postazioni PC leggere, microscopi <40×
+      - `ISO Residential (Night)` — 200 µm/s (8''000 µin/s): aree residenziali (notte), postazioni PC leggere, microscopi <40×
 
-      - `ISO Operating Theatre (OT)` — 100 µm/s (4.000 µin/s): curva di base (Base Curve): sale operatorie, laboratori generali, microscopi fino a 100×
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4''000 µin/s): curva di base (Base Curve): sale operatorie, laboratori generali, microscopi fino a 100×
 
       - `VC-A` — Vibration Criterion A secondo IEST
 
@@ -680,18 +695,18 @@ attributes:
       - `VC-D` — Vibration Criterion D secondo IEST
 
       - `VC-E` — Vibration Criterion E secondo IEST'
-    en: 'Agreed vibration requirements for the usage agreement according to ISO vibration criteria and Vibration Criterion (VC) per IEST.
+    en: 'Agreed target vibration requirements for the usage agreement according to ISO vibration criteria and Vibration Criterion (VC) per IEST.
 
 
       **Allowed values**
 
-      - `ISO Workshop` — 800 µm/s (32,000 µin/s): workshops, coarse manufacturing areas, machine protection zones
+      - `ISO Workshop` — 800 µm/s (32''000 µin/s): workshops, coarse manufacturing areas, machine protection zones
 
-      - `ISO Office` — 400 µm/s (16,000 µin/s): offices, control rooms, general administrative areas
+      - `ISO Office` — 400 µm/s (16''000 µin/s): offices, control rooms, general administrative areas
 
-      - `ISO Residential (Night)` — 200 µm/s (8,000 µin/s): residential areas (night), light PC workplaces, microscopes <40×
+      - `ISO Residential (Night)` — 200 µm/s (8''000 µin/s): residential areas (night), light PC workplaces, microscopes <40×
 
-      - `ISO Operating Theatre (OT)` — 100 µm/s (4,000 µin/s): baseline (Base Curve): operating theatres, general laboratories, microscopes up to 100×
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4''000 µin/s): baseline (Base Curve): operating theatres, general laboratories, microscopes up to 100×
 
       - `VC-A` — Vibration Criterion A per IEST
 
@@ -719,7 +734,349 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
+  - pragmaticbim:workflow/qas-usage-agreement-verification
   - pragmaticbim:workflow/des-usage-agreement-visualization
   is_applicability: false
   status: active
+  sort_order: 11
+- name: DesignAreaLoadActual
+  pset: ePset_Space
+  definition:
+    de: Nachgewiesene Flächenlast Ist für den Abgleich mit der Nutzungsvereinbarung.
+    fr: Charge surfacique effective justifiée pour la comparaison avec la convention d'utilisation.
+    it: Carico areale effettivo comprovato per il confronto con la convenzione d'uso.
+    en: Verified actual area load for comparison with the usage agreement.
+  datatype: IfcReal
+  unit: kN/m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-usage-agreement-verification
+  is_applicability: false
+  status: active
   sort_order: 12
+- name: DesignPointLoadActual
+  pset: ePset_Space
+  definition:
+    de: Nachgewiesene Punktlast Ist für den Abgleich mit der Nutzungsvereinbarung.
+    fr: Charge ponctuelle effective justifiée pour la comparaison avec la convention d'utilisation.
+    it: Carico puntuale effettivo comprovato per il confronto con la convenzione d'uso.
+    en: Verified actual point load for comparison with the usage agreement.
+  datatype: IfcReal
+  unit: kN
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-usage-agreement-verification
+  is_applicability: false
+  status: active
+  sort_order: 13
+- name: VibrationRequirementsActual
+  pset: ePset_Space
+  definition:
+    de: 'Nachgewiesene Schwingungsklasse Ist für den Abgleich mit der Nutzungsvereinbarung nach ISO-Schwingungskriterien und Vibration Criterion (VC) nach IEST.
+
+
+      **Zulässige Werte**
+
+      - `ISO Workshop` — 800 µm/s (32''000 µin/s): Werkstätten, grobe Fertigungsbereiche, Maschinenschutzzonen
+
+      - `ISO Office` — 400 µm/s (16''000 µin/s): Büroräume, Kontrollräume, allgemeine Verwaltungsbereiche
+
+      - `ISO Residential (Night)` — 200 µm/s (8''000 µin/s): Wohnbereiche (Nacht), leichte PC-Arbeitsplätze, Mikroskope <40×
+
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4''000 µin/s): Basislinie (Base Curve): Operationssäle, allgemeine Labore, Mikroskope bis 100×
+
+      - `VC-A` — Vibration Criterion A nach IEST
+
+      - `VC-B` — Vibration Criterion B nach IEST
+
+      - `VC-C` — Vibration Criterion C nach IEST
+
+      - `VC-D` — Vibration Criterion D nach IEST
+
+      - `VC-E` — Vibration Criterion E nach IEST'
+    fr: 'Classe vibratoire effective justifiée pour la comparaison avec la convention d''utilisation selon les critères vibratoires ISO et le Vibration Criterion (VC) selon IEST.
+
+
+      **Valeurs admises**
+
+      - `ISO Workshop` — 800 µm/s (32''000 µin/s) : ateliers, zones de fabrication grossière, zones de protection des machines
+
+      - `ISO Office` — 400 µm/s (16''000 µin/s) : bureaux, salles de contrôle, locaux administratifs généraux
+
+      - `ISO Residential (Night)` — 200 µm/s (8''000 µin/s) : locaux d''habitation (nuit), postes de travail PC légers, microscopes <40×
+
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4''000 µin/s) : courbe de base (Base Curve) : salles d''opération, laboratoires généraux, microscopes jusqu''à 100×
+
+      - `VC-A` — Vibration Criterion A selon IEST
+
+      - `VC-B` — Vibration Criterion B selon IEST
+
+      - `VC-C` — Vibration Criterion C selon IEST
+
+      - `VC-D` — Vibration Criterion D selon IEST
+
+      - `VC-E` — Vibration Criterion E selon IEST'
+    it: 'Classe di vibrazione effettiva comprovata per il confronto con la convenzione d''uso secondo i criteri di vibrazione ISO e il Vibration Criterion (VC) secondo IEST.
+
+
+      **Valori ammessi**
+
+      - `ISO Workshop` — 800 µm/s (32''000 µin/s): officine, aree di produzione grezza, zone di protezione macchine
+
+      - `ISO Office` — 400 µm/s (16''000 µin/s): uffici, sale di controllo, aree amministrative generali
+
+      - `ISO Residential (Night)` — 200 µm/s (8''000 µin/s): aree residenziali (notte), postazioni PC leggere, microscopi <40×
+
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4''000 µin/s): curva di base (Base Curve): sale operatorie, laboratori generali, microscopi fino a 100×
+
+      - `VC-A` — Vibration Criterion A secondo IEST
+
+      - `VC-B` — Vibration Criterion B secondo IEST
+
+      - `VC-C` — Vibration Criterion C secondo IEST
+
+      - `VC-D` — Vibration Criterion D secondo IEST
+
+      - `VC-E` — Vibration Criterion E secondo IEST'
+    en: 'Verified actual vibration class for comparison with the usage agreement according to ISO vibration criteria and Vibration Criterion (VC) per IEST.
+
+
+      **Allowed values**
+
+      - `ISO Workshop` — 800 µm/s (32''000 µin/s): workshops, coarse manufacturing areas, machine protection zones
+
+      - `ISO Office` — 400 µm/s (16''000 µin/s): offices, control rooms, general administrative areas
+
+      - `ISO Residential (Night)` — 200 µm/s (8''000 µin/s): residential areas (night), light PC workplaces, microscopes <40×
+
+      - `ISO Operating Theatre (OT)` — 100 µm/s (4''000 µin/s): baseline (Base Curve): operating theatres, general laboratories, microscopes up to 100×
+
+      - `VC-A` — Vibration Criterion A per IEST
+
+      - `VC-B` — Vibration Criterion B per IEST
+
+      - `VC-C` — Vibration Criterion C per IEST
+
+      - `VC-D` — Vibration Criterion D per IEST
+
+      - `VC-E` — Vibration Criterion E per IEST'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/vibration-criterion
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-usage-agreement-verification
+  is_applicability: false
+  status: active
+  sort_order: 14
+- name: UsageUnitReference
+  pset: ePset_Space
+  definition:
+    de: 'Stabile Referenz der Nutzungseinheit, zu welcher der Aussenraum gehört, zum Beispiel Wohnung, Büro- oder Gewerbeeinheit.
+
+
+      **Hinweis**
+
+      - Alternativ können die Räume einer Nutzungseinheit über `IfcZone` gruppiert werden.'
+    fr: 'Référence stable de l''unité d''usage à laquelle appartient l''espace extérieur, par exemple logement, unité de bureaux ou surface commerciale.
+
+
+      **Remarque**
+
+      - Les espaces d''une unité d''usage peuvent aussi être regroupés au moyen d''une `IfcZone`.'
+    it: 'Riferimento stabile dell''unità d''uso a cui appartiene lo spazio esterno, per esempio appartamento, unità per uffici o unità commerciale.
+
+
+      **Nota**
+
+      - In alternativa, gli spazi di un''unità d''uso possono essere raggruppati mediante una `IfcZone`.'
+    en: 'Stable reference of the usage unit to which the exterior space belongs, for example an apartment, office unit, or commercial unit.
+
+
+      **Note**
+
+      - Alternatively, the spaces of a usage unit can be grouped using `IfcZone`.'
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  is_applicability: false
+  status: active
+  sort_order: 15
+- name: FloorCovering
+  pset: Pset_SpaceCoveringRequirements
+  definition:
+    de: 'Aussenbodenfläche für die frühe Planung – nur als Raumeigenschaft, ohne modelliertes Covering.
+
+      Blattbezeichnung (z. B. `Kies`) bei bekanntem Belag; sonst die Elternklasse
+
+      (z. B. `Versiegelt`, `Teildurchlässig`, `Durchlässig`).
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste [Abstrakte Aussenbodenflächen](https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html).'
+    fr: 'Surface de sol extérieur pour la planification en phase initiale – uniquement comme propriété de l''espace, sans covering modélisé.
+
+      Désignation feuille (p. ex. `Gravel`) si le revêtement est connu ; sinon la classe parente
+
+      (p. ex. `Sealed`, `Partially permeable`, `Permeable`).
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs [Abstract outdoor floor surfaces](https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html).'
+    it: 'Superficie di pavimento esterna per la pianificazione in fase iniziale – solo come proprietà dello spazio, senza covering modellato.
+
+      Denominazione foglia (p. es. `Gravel`) se il rivestimento è noto; altrimenti la classe genitore
+
+      (p. es. `Sealed`, `Partially permeable`, `Permeable`).
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori [Abstract outdoor floor surfaces](https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html).'
+    en: 'Outdoor floor surface for early planning – as a space property only, without a modelled covering.
+
+      Leaf name (e.g. `Gravel`) when the surface material is known; otherwise the parent class
+
+      (e.g. `Sealed`, `Partially permeable`, `Permeable`).
+
+
+      **Allowed values**
+
+      - See the [Abstract outdoor floor surfaces](https://schema.pragmaticbim.ch/classification/outdoor-floor-surface.html) value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/outdoor-floor-surface
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 16
+- name: Checkliste
+  pset: ePset_Space
+  definition:
+    de: Freitext-Beschreibung der Ausbauarbeiten im Aussenraum inkl. Reihenfolge – damit Unternehmen vor Ort sehen, was zu tun ist.
+    fr: Description en texte libre des travaux d'aménagement dans l'espace extérieur, y compris l'ordre – pour que les entreprises voient sur place ce qu'il faut faire.
+    it: Descrizione in testo libero dei lavori di finitura nello spazio esterno, compreso l'ordine – così le imprese vedono in loco cosa va fatto.
+    en: Free-text description of fit-out work in the exterior space including sequence – so contractors on site can see what needs to be done.
+  datatype: IfcText
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/con-logistics-fit-out
+  is_applicability: false
+  status: active
+  sort_order: 17
+- name: NetFloorArea
+  pset: Qto_SpaceBaseQuantities
+  definition:
+    de: Nettogeschossfläche des modellierten Aussenraums.
+    fr: Surface nette de l'espace extérieur modélisé.
+    it: Superficie netta dello spazio esterno modellato.
+    en: Net floor area of the modelled exterior space.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/des-sia416-area-verification
+  - pragmaticbim:workflow/des-d0165-area-verification
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 18

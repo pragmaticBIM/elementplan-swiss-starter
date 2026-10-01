@@ -1,0 +1,172 @@
+id: pragmaticbim:workflow/opr-building-performance-optimization
+code: OPR-BUILDING-PERFORMANCE
+sort_order: 65
+name:
+  de: Gebäudebetrieb in den ersten Jahren optimieren
+  fr: Optimiser l'exploitation du bâtiment durant les premières années
+  it: Ottimizzare l'esercizio dell'edificio nei primi anni
+  en: Optimize building operation during the first years
+description:
+  de: 'Den Gebäudebetrieb in den ersten Jahren mit realen Nutzungs- und Messdaten begleiten, damit Abweichungen vom Betriebskonzept erkannt und wirksame Optimierungen nachgewiesen werden.
+
+
+    **Ausgangslage**
+
+    - Nach dem Bezug wird das Gebäude häufig nach Erfahrung betrieben, ohne die tatsächliche Nutzung, Behaglichkeit und Energieperformance mit den Planungszielen zu vergleichen.
+
+    - Belegung, Betriebszeiten und Nutzerverhalten weichen von den Planungsannahmen ab.
+
+    - Eine Planungssimulation kann als Referenz dienen, wird aber selten mit den realen Nutzungsprofilen wiederholt. Der Performance Gap bleibt dadurch unerklärt.
+
+
+    **Ziel & Nutzen**
+
+    - Raumbezogene Soll- und Ist-Werte für Nutzung, Behaglichkeit und Energieperformance periodisch vergleichen.
+
+    - Betriebsparameter und einfache organisatorische oder technische Massnahmen auf Basis gemessener Wirkung optimieren.
+
+    - Planungsannahmen überprüfen und bei Bedarf die Simulation mit realer Belegung und realen Betriebszeiten wiederholen.
+
+
+    **Ablauf**
+
+    1. Betriebskonzept, Zielwerte und optional die Planungssimulation als Referenz sichern sowie Räume, Fenster, Türen und Messpunkte eindeutig zuordnen.
+
+    2. Belegung, CO₂, Temperatur, Betriebszeiten und wenige vereinbarte Energiekennwerte periodisch erfassen, plausibilisieren und raumbezogen mit den Zielwerten vergleichen.
+
+    3. Abweichungen priorisieren, Betriebsparameter oder Massnahmen anpassen, bei Bedarf die Simulation mit realen Nutzungsprofilen wiederholen und die Wirkung im nächsten Messzeitraum prüfen.
+
+
+    **Lieferergebnis**
+
+    - Freigegebene Betriebsbaseline mit Zielwerten, räumlicher Zuordnung und dokumentierten Planungsannahmen.
+
+    - Periodische Soll-Ist-Auswertung mit erklärten Abweichungen bei Nutzung, Behaglichkeit und Energieperformance.
+
+    - Nachgeführtes Optimierungsprotokoll mit Massnahmen, Verantwortlichkeiten und gemessener Wirkung.'
+  fr: 'Accompagner l''exploitation du bâtiment durant les premières années à l''aide de données réelles d''usage et de mesure afin d''identifier les écarts par rapport au concept d''exploitation et de démontrer
+    l''effet des optimisations.
+
+
+    **Situation de départ**
+
+    - Après l''emménagement, le bâtiment est souvent exploité selon l''expérience des responsables, sans comparer l''usage, le confort et la performance énergétique réels avec les objectifs de l''étude.
+
+    - L''occupation, les horaires d''exploitation et le comportement des usagers diffèrent des hypothèses de l''étude.
+
+    - Une simulation réalisée lors de l''étude peut servir de référence, mais elle est rarement recalculée avec les profils d''usage réels. L''écart de performance reste ainsi inexpliqué.
+
+
+    **Objectif et bénéfice**
+
+    - Comparer périodiquement, par local, les valeurs cibles et mesurées relatives à l''usage, au confort et à la performance énergétique.
+
+    - Optimiser les paramètres d''exploitation et des mesures organisationnelles ou techniques simples sur la base de leur effet mesuré.
+
+    - Vérifier les hypothèses de l''étude et, si nécessaire, recalculer la simulation avec l''occupation et les horaires d''exploitation réels.
+
+
+    **Déroulement**
+
+    1. Conserver comme référence le concept d''exploitation, les valeurs cibles et, le cas échéant, la simulation de l''étude, puis attribuer sans ambiguïté les locaux, fenêtres, portes et points de mesure.
+
+    2. Relever périodiquement l''occupation, le CO₂, la température, les horaires d''exploitation et quelques indicateurs énergétiques convenus, en contrôler la plausibilité et les comparer par local aux
+    valeurs cibles.
+
+    3. Prioriser les écarts, adapter les paramètres d''exploitation ou les mesures, recalculer si nécessaire la simulation avec les profils d''usage réels et vérifier l''effet durant la période de mesure
+    suivante.
+
+
+    **Livrable**
+
+    - État de référence validé pour l''exploitation, comprenant les valeurs cibles, l''attribution spatiale et les hypothèses de l''étude documentées.
+
+    - Évaluation périodique des valeurs cibles et mesurées, avec explication des écarts relatifs à l''usage, au confort et à la performance énergétique.
+
+    - Journal d''optimisation tenu à jour avec les mesures, les responsabilités et l''effet mesuré.'
+  it: 'Accompagnare l''esercizio dell''edificio nei primi anni con dati reali d''uso e di misura, per riconoscere gli scostamenti rispetto al concetto d''esercizio e dimostrare l''efficacia delle ottimizzazioni.
+
+
+    **Situazione di partenza**
+
+    - Dopo l''occupazione, l''edificio viene spesso gestito in base all''esperienza, senza confrontare l''uso, il comfort e la prestazione energetica effettivi con gli obiettivi di progetto.
+
+    - Occupazione, orari d''esercizio e comportamento degli utenti differiscono dalle ipotesi di progetto.
+
+    - Una simulazione di progetto può fungere da riferimento, ma raramente viene ripetuta con i profili d''uso reali. Lo scarto di prestazione rimane quindi senza spiegazione.
+
+
+    **Obiettivo e beneficio**
+
+    - Confrontare periodicamente, per locale, i valori obiettivo ed effettivi relativi a uso, comfort e prestazione energetica.
+
+    - Ottimizzare i parametri d''esercizio e semplici misure organizzative o tecniche in base all''effetto misurato.
+
+    - Verificare le ipotesi di progetto e, se necessario, ripetere la simulazione con l''occupazione e gli orari d''esercizio reali.
+
+
+    **Svolgimento**
+
+    1. Conservare come riferimento il concetto d''esercizio, i valori obiettivo e, se disponibile, la simulazione di progetto, quindi assegnare in modo univoco locali, finestre, porte e punti di misura.
+
+    2. Rilevare periodicamente occupazione, CO₂, temperatura, orari d''esercizio e pochi indicatori energetici concordati, verificarne la plausibilità e confrontarli per locale con i valori obiettivo.
+
+    3. Definire le priorità degli scostamenti, adeguare i parametri d''esercizio o le misure, ripetere se necessario la simulazione con i profili d''uso reali e verificare l''effetto nel periodo di misura
+    successivo.
+
+
+    **Risultato della fornitura**
+
+    - Stato di riferimento approvato per l''esercizio, con valori obiettivo, assegnazione spaziale e ipotesi di progetto documentate.
+
+    - Valutazione periodica dei valori obiettivo ed effettivi con spiegazione degli scostamenti relativi a uso, comfort e prestazione energetica.
+
+    - Registro di ottimizzazione aggiornato con misure, responsabilità ed effetto misurato.'
+  en: 'Support building operation during the first years with actual use and measurement data so deviations from the operating concept are identified and effective optimizations are demonstrated.
+
+
+    **Starting point**
+
+    - After occupancy, the building is often operated from experience without comparing actual use, comfort, and energy performance with the design targets.
+
+    - Occupancy, operating hours, and user behaviour differ from the design assumptions.
+
+    - A design simulation can serve as a reference but is rarely rerun with actual use profiles. The performance gap therefore remains unexplained.
+
+
+    **Goal & benefit**
+
+    - Periodically compare space-based target and actual values for use, comfort, and energy performance.
+
+    - Optimize operating parameters and simple organizational or technical measures based on their measured effect.
+
+    - Check design assumptions and, where needed, rerun the simulation with actual occupancy and operating hours.
+
+
+    **Process**
+
+    1. Retain the operating concept, target values, and optionally the design simulation as the reference, and assign spaces, windows, doors, and measurement points unambiguously.
+
+    2. Periodically capture occupancy, CO₂, temperature, operating hours, and a small set of agreed energy metrics, validate them, and compare them by space with the target values.
+
+    3. Prioritize deviations, adjust operating parameters or measures, rerun the simulation with actual use profiles where needed, and verify the effect in the next measurement period.
+
+
+    **Deliverable**
+
+    - Approved operational baseline with target values, spatial assignment, and documented design assumptions.
+
+    - Periodic target-versus-actual evaluation with explained deviations in use, comfort, and energy performance.
+
+    - Maintained optimization log with measures, responsibilities, and measured effects.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/opr
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/building-physics
+comment: Operational time-series data remains in the agreed monitoring or FM system. The element links define stable spatial and asset references only; they do not store measurements as static IFC properties.
+  A design simulation is an optional baseline and is recalculated only where it helps explain a material performance gap.

@@ -1,0 +1,145 @@
+id: pragmaticbim:workflow/des-building-law-parcels
+code: DES-PARCELS
+sort_order: 45
+name:
+  de: Betroffene Parzellen sichtbar machen
+  fr: Rendre visibles les parcelles concernées
+  it: Rendere visibili le particelle interessate
+  en: Make the affected parcels visible
+description:
+  de: 'Baurechtlich relevante Parzellen im Modell abbilden, damit Grenzen, Dienstbarkeiten und Katasterbezüge jederzeit überprüfbar bleiben.
+
+
+    **Ausgangslage**
+
+    - Projekte tangieren oft mehrere Katasterparzellen; ohne Modellbezug bleibt unklar, welche betroffen sind.
+
+    - 2D-Katasterpläne allein erschweren den Abgleich mit Varianten und dem Planungsperimeter.
+
+
+    **Ziel & Nutzen**
+
+    - Visualisieren, welche baurechtlichen Parzellen wie vom Projekt betroffen sind.
+
+    - Parzellennummern und volumetrische Lage früh und gemeinsam im Modell führen.
+
+
+    **Ablauf**
+
+    1. Katasterplan als Grundlage (z. B. DWG) einholen.
+
+    2. Parzellen als Proxy-Volumen modellieren und mit der Parzellennummer benennen.
+
+    3. Parzellenvolumen mit dem Planungsperimeter und den Varianten visualisieren.
+
+
+    **Lieferergebnis**
+
+    - Modell mit baurechtlichen Parzellen als Proxy-Volumen und Katasternummer im Name
+
+    - Nachvollziehbare Visualisierung der vom Projekt betroffenen Parzellen'
+  fr: 'Rendre visibles dans la maquette les parcelles concernées au sens du droit de la construction – le lien au cadastre reste traçable.
+
+
+    **Situation de départ**
+
+    - Les projets touchent souvent plusieurs parcelles cadastrales ; sans lien à la maquette, on ignore lesquelles sont concernées.
+
+    - Les plans cadastraux 2D seuls compliquent l''alignement avec les variantes et le périmètre de planification.
+
+
+    **Objectif et bénéfice**
+
+    - Visualiser quelles parcelles au sens du droit de la construction sont concernées par le projet, et comment.
+
+    - Tenir tôt dans la maquette les numéros de parcelle et leur position volumétrique.
+
+
+    **Déroulement**
+
+    1. Obtenir le plan cadastral comme base (p. ex. DWG).
+
+    2. Modéliser les parcelles comme volumes proxy et les nommer avec le numéro de parcelle.
+
+    3. Visualiser les volumes de parcelle avec le périmètre de planification et les variantes.
+
+
+    **Livrable**
+
+    - Maquette avec parcelles au sens du droit de la construction comme volumes proxy et numéro cadastral dans Name
+
+    - Visualisation traçable des parcelles concernées par le projet'
+  it: 'Rendere visibili nel modello le particelle edilizie interessate – il collegamento al catasto resta tracciabile.
+
+
+    **Situazione di partenza**
+
+    - I progetti toccano spesso più particelle catastali; senza collegamento al modello non è chiaro quali siano interessate.
+
+    - I piani catastali 2D da soli complicano l''allineamento con le varianti e il perimetro di pianificazione.
+
+
+    **Obiettivo e beneficio**
+
+    - Visualizzare quali particelle edilizie sono interessate dal progetto e in che modo.
+
+    - Gestire presto nel modello i numeri di particella e la loro posizione volumetrica.
+
+
+    **Svolgimento**
+
+    1. Procurarsi il piano catastale come base (p. es. DWG).
+
+    2. Modellare le particelle come volumi proxy e denominarle con il numero di particella.
+
+    3. Visualizzare i volumi di particella con il perimetro di pianificazione e le varianti.
+
+
+    **Risultato della fornitura**
+
+    - Modello con particelle edilizie come volumi proxy e numero catastale in Name
+
+    - Visualizzazione tracciabile delle particelle interessate dal progetto'
+  en: 'Represent parcels relevant to building law in the model so that boundaries, easements, and cadastral references remain verifiable at all times.
+
+
+    **Starting point**
+
+    - Projects often touch several cadastral parcels; without a model link it stays unclear which are affected.
+
+    - 2D cadastral plans alone make alignment with options and the planning perimeter difficult.
+
+
+    **Goal & benefit**
+
+    - Visualize which building-law parcels the project affects, and how.
+
+    - Maintain parcel numbers and volumetric location early and shared in the model.
+
+
+    **Process**
+
+    1. Obtain the cadastral plan as a basis (e.g. DWG).
+
+    2. Model parcels as proxy volumes and name them with the parcel number.
+
+    3. Visualize parcel volumes with the planning perimeter and design options.
+
+
+    **Deliverable**
+
+    - Model with building-law parcels as proxy volumes and the cadastral number in Name
+
+    - Traceable visualization of the parcels affected by the project'
+workflow_group: konzept
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/surveyor
+comment: Cadastral DWG is an external input, not a separate Elementplan document type. Parcels are IfcBuildingElementProxy with ObjectType Baurechtliche Parzelle; Name holds the cadastral number only. Complements
+  IfcSite (Planungsperimeter), which may contain several parcels.

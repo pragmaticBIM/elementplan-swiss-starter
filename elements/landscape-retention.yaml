@@ -1,0 +1,281 @@
+id: pragmaticbim:element/landscape-retention
+code: LAN-RETENTION
+sort_order: 63
+status: active
+name:
+  de: Retentionsvolumen
+  fr: Volume de rétention
+  it: Volume di ritenzione
+  en: Retention volume
+definition:
+  de: 'Macht Retentionsvolumen den Einzugsflächen zuordenbar und die Bemessung gegen Starkregen nachvollziehbar.
+
+
+    **Beschreibung**
+
+    - Speichervolumen für Regenwasser im Aussenraum (Mulde, unterirdischer Speicher, absenkbare Fläche).
+
+    - Dient dem Schwammstadtnachweis und der Zuordnung zu den angeschlossenen Aussenraumflächen.
+
+
+    **Modellierungshinweis**
+
+    - Als vereinfachtes Speichervolumen modellieren; Bemessungsereignis und Einzugsbezug führen.
+
+    - Keine Detailgeometrie von Armaturen, Filtern oder Notüberläufen modellieren.'
+  fr: 'Rend le volume de rétention attribuable aux bassins versants et le dimensionnement contre les fortes pluies traçable.
+
+
+    **Description**
+
+    - Volume de stockage des eaux pluviales dans l''espace extérieur (noue, stockage souterrain, surface abaissable).
+
+    - Sert au justificatif ville-éponge et à l''attribution aux surfaces extérieures raccordées.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume de stockage simplifié; saisir l''événement de dimensionnement et le rattachement au bassin versant.
+
+    - Ne pas modéliser la géométrie détaillée des accessoires, des filtres ni des trop-pleins de sécurité.'
+  it: 'Rende il volume di ritenzione assegnabile ai bacini di raccolta e il dimensionamento contro le piogge intense tracciabile.
+
+
+    **Descrizione**
+
+    - Volume di accumulo dell''acqua piovana nello spazio esterno (depressione, serbatoio sotterraneo, superficie abbassabile).
+
+    - Serve alla verifica città spugna e all''assegnazione alle superfici esterne collegate.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume di accumulo semplificato; gestire l''evento di dimensionamento e il riferimento al bacino.
+
+    - Non modellare la geometria dettagliata di armature, filtri o sfioratori di emergenza.'
+  en: 'Makes retention volume assignable to catchments and the sizing against heavy rain traceable.
+
+
+    **Description**
+
+    - Storage volume for rainwater in the outdoor area (swale, underground storage, surface designed to flood).
+
+    - Used for sponge-city proof and assignment to the connected outdoor surfaces.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified storage volume; carry the design event and catchment reference.
+
+    - Do not model detailed geometry of fittings, filters, or emergency overflows.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcGeographicElement
+entity_ifc4_3: IfcGeographicElement
+picture_link: landscape-retention.png
+picture_print_link: landscape-retention-print.tif
+attachment_link: landscape-retention.ifc
+model_link: landscape-retention.ifc
+applicability:
+  de: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Retentionsvolumen) OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Retentionsvolumen)
+    OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Retentionsvolumen)
+  fr: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Volume de rétention") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Volume
+    de rétention") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Volume de rétention")
+  it: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Volume di ritenzione") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Volume
+    di ritenzione") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Volume di ritenzione")
+  en: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Retention volume") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Retention
+    volume") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Retention volume")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Retentionsvolumens (z. B. RET-01).
+    fr: Désignation du volume de rétention (p. ex. RET-01).
+    it: Denominazione del volume di ritenzione (p. es. RET-01).
+    en: Designation of the retention volume (e.g. RET-01).
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet das Element als Retentionsvolumen.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType = Retentionsvolumen'
+    fr: 'Identifie l''élément comme volume de rétention.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType = Volume de rétention'
+    it: 'Identifica l''elemento come volume di ritenzione.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType = Volume di ritenzione'
+    en: 'Marks the element as a retention volume.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType = Retention volume'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-geographic-element-retention
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Elements als Retentionsvolumen.
+
+
+      **Zulässige Werte**
+
+      - `Retentionsvolumen` — Speichervolumen für Regenwasser'
+    fr: 'Nature de l''élément comme volume de rétention.
+
+
+      **Valeurs admises**
+
+      - `Volume de rétention` — volume de stockage des eaux pluviales'
+    it: 'Tipo dell''elemento come volume di ritenzione.
+
+
+      **Valori ammessi**
+
+      - `Volume di ritenzione` — volume di accumulo dell''acqua piovana'
+    en: 'Kind of element as a retention volume.
+
+
+      **Allowed values**
+
+      - `Retention volume` — storage volume for rainwater'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-retention
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: DesignEvent
+  pset: ePset_Retention
+  definition:
+    de: Bemessungsereignis für das Retentionsvolumen, z. B. `T=10a` oder `n15`.
+    fr: Événement de dimensionnement du volume de rétention, p. ex. `T=10a` ou `n15`.
+    it: Evento di dimensionamento del volume di ritenzione, p. es. `T=10a` o `n15`.
+    en: Design event for the retention volume, e.g. `T=10a` or `n15`.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: CatchmentReference
+  pset: ePset_Retention
+  definition:
+    de: Verweis auf die zugeordneten Einzugsflächen (Raumnummern oder Flächenbezeichnungen).
+    fr: Référence aux surfaces de bassin versant attribuées (numéros de local ou désignations de surface).
+    it: Riferimento alle superfici di bacino assegnate (numeri di locale o denominazioni di superficie).
+    en: Reference to the assigned catchment surfaces (space numbers or surface designations).
+  datatype: IfcText
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: NetVolume
+  pset: Qto_GeographicElementBaseQuantities
+  definition:
+    de: Nettovolumen des modellierten Retentionsvolumens.
+    fr: Volume net du volume de rétention modélisé.
+    it: Volume netto del volume di ritenzione modellato.
+    en: Net volume of the modelled retention volume.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 6

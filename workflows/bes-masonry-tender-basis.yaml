@@ -1,0 +1,154 @@
+id: pragmaticbim:workflow/bes-masonry-tender-basis
+code: BES-MASONRY-TENDER
+sort_order: 19
+name:
+  de: Grundlage für die Mauerwerksausschreibung liefern
+  fr: Fournir la base pour l'appel d'offres de la maçonnerie
+  it: Fornire la base per la gara delle opere in muratura
+  en: Provide the basis for the masonry tender
+description:
+  de: 'Mauerwerkswände im Architekturmodell als prüfbare Grundlage für Mengen und Ausschreibung bereitstellen.
+
+
+    **Ausgangslage**
+
+    - Mauerwerksarten, Wanddicken, Öffnungen sowie Brand- und Schallschutzanforderungen werden für die Ausschreibung oft manuell aus Plänen und Bauteillisten zusammengetragen.
+
+    - Uneinheitliche Typen oder nicht berücksichtigte Öffnungen führen zu falschen Mengen, Rückfragen und Nachträgen.
+
+
+    **Ziel & Nutzen**
+
+    - Tragende und nichttragende Wände über die Produktklasse eindeutig als Mauerwerk abgrenzen.
+
+    - Berechnete Wandtypen und Nettoflächen als gemeinsame Mengenbasis verwenden.
+
+    - Brand- und Schallschutzangaben mit den Fachkonzepten abgestimmt in die Ausschreibungsgrundlage übernehmen.
+
+
+    **Ablauf**
+
+    1. Freigegebene Wände mit Produktklasse, berechnetem Typ, Dicke, Nettofläche sowie Brand- und Schallschutzangaben bereitstellen.
+
+    2. Mauerwerksumfang, Wandtypen, Öffnungsabzüge und Anforderungen auf Vollständigkeit und Widersprüche prüfen.
+
+    3. Wandflächen nach Typ auswerten und mit Leistungsverzeichnis und Ausschreibungsplänen abstimmen.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit eindeutig abgegrenzten Mauerwerkswänden und freigegebenen Typ- und Fachangaben
+
+    - Prüfbare Typen- und Mengenübersicht als Grundlage für die Mauerwerksausschreibung'
+  fr: 'Mettre à disposition les murs en maçonnerie dans la maquette d''architecture comme base vérifiable pour les quantités et l''appel d''offres.
+
+
+    **Situation de départ**
+
+    - Les types de maçonnerie, épaisseurs, ouvertures ainsi que les exigences incendie et acoustiques sont souvent rassemblés manuellement à partir des plans et catalogues d''éléments.
+
+    - Des types incohérents ou des ouvertures non prises en compte entraînent des quantités erronées, des questions et des avenants.
+
+
+    **Objectif et bénéfice**
+
+    - Délimiter sans ambiguïté les murs porteurs et non porteurs en maçonnerie au moyen de la classe de produit.
+
+    - Utiliser les types de murs calculés et les surfaces nettes comme base quantitative commune.
+
+    - Reprendre dans la base d''appel d''offres les indications incendie et acoustiques coordonnées avec les concepts spécialisés.
+
+
+    **Déroulement**
+
+    1. Fournir les murs validés avec classe de produit, type calculé, épaisseur, surface nette ainsi qu''indications incendie et acoustiques.
+
+    2. Contrôler l''exhaustivité et la cohérence du périmètre de maçonnerie, des types de murs, des déductions d''ouvertures et des exigences.
+
+    3. Quantifier les surfaces de murs par type et les coordonner avec le devis et les plans d''appel d''offres.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec murs en maçonnerie clairement délimités et indications de type et techniques validées
+
+    - Vue d''ensemble vérifiable des types et quantités comme base pour l''appel d''offres de la maçonnerie'
+  it: 'Mettere a disposizione nel modello di architettura le pareti in muratura come base verificabile per le quantità e la gara.
+
+
+    **Situazione di partenza**
+
+    - Tipi di muratura, spessori, aperture e requisiti antincendio e acustici vengono spesso raccolti manualmente da piani e cataloghi dei componenti.
+
+    - Tipi incoerenti o aperture non considerate causano quantità errate, domande e varianti.
+
+
+    **Obiettivo e beneficio**
+
+    - Delimitare in modo univoco le pareti portanti e non portanti in muratura mediante la classe di prodotto.
+
+    - Utilizzare i tipi di parete calcolati e le superfici nette come base quantitativa comune.
+
+    - Integrare nella base di gara le indicazioni antincendio e acustiche coordinate con i concetti specialistici.
+
+
+    **Svolgimento**
+
+    1. Fornire le pareti approvate con classe di prodotto, tipo calcolato, spessore, superficie netta e indicazioni antincendio e acustiche.
+
+    2. Verificare completezza e coerenza del perimetro delle murature, dei tipi di parete, delle deduzioni per aperture e dei requisiti.
+
+    3. Quantificare le superfici delle pareti per tipo e coordinarle con il capitolato e i piani di gara.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con pareti in muratura chiaramente delimitate e indicazioni di tipo e tecniche approvate
+
+    - Quadro verificabile di tipi e quantità come base per la gara delle opere in muratura'
+  en: 'Provide masonry walls in the architecture model as a verifiable basis for quantities and tendering.
+
+
+    **Starting point**
+
+    - Masonry types, wall thicknesses, openings, and fire and acoustic requirements are often compiled manually from drawings and component schedules.
+
+    - Inconsistent types or openings that are not accounted for lead to incorrect quantities, queries, and variations.
+
+
+    **Goal & benefit**
+
+    - Delimit load-bearing and non-load-bearing masonry walls unambiguously through the product class.
+
+    - Use calculated wall types and net areas as a shared quantity basis.
+
+    - Include fire and acoustic information coordinated with the discipline concepts in the tender basis.
+
+
+    **Process**
+
+    1. Provide approved walls with product class, calculated type, thickness, net area, and fire and acoustic information.
+
+    2. Check the masonry scope, wall types, opening deductions, and requirements for completeness and contradictions.
+
+    3. Quantify wall areas by type and coordinate them with the bill of quantities and tender drawings.
+
+
+    **Deliverable**
+
+    - Architecture model with clearly delimited masonry walls and approved type and discipline information
+
+    - Verifiable overview of types and quantities as the basis for the masonry tender'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/fire-protection
+- pragmaticbim:domain/building-physics
+comment: Tender preparation in SIA phase 41, not a complete masonry specification. Include wall occurrences assigned to ProductClass Mauerwerk-Wand. CalculatedType provides the grouping key; NetSideArea
+  provides the opening-adjusted quantity.

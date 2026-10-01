@@ -1,0 +1,157 @@
+id: pragmaticbim:workflow/qas-decision-impact-visualization
+code: QAS-DECISION-VIS
+sort_order: 77
+name:
+  de: Entscheide und Auswirkungen visualisieren
+  fr: Visualiser les décisions et leurs conséquences
+  it: Visualizzare le decisioni e le loro conseguenze
+  en: Visualize decisions and their impacts
+description:
+  de: 'Visualisierungen helfen Planungsteams, Entscheide und ihre Auswirkungen räumlich verständlich zu machen und rechtzeitig verbindlich herbeizuführen.
+
+
+    **Ausgangslage**
+
+    - Entscheide herbeizuführen ist eine Schlüsselaufgabe von Planungsteams, mit der viele Teams Mühe haben.
+
+    - Entscheidungsgrundlagen sind oft auf Protokolle, Berechnungen und Einzelpläne verteilt; dadurch bleiben Varianten, Auswirkungen, räumliche Geltung und offene Punkte schwer verständlich.
+
+
+    **Ziel & Nutzen**
+
+    - Varianten, Auswirkungen, Gültigkeitsbereiche und Status im Modell und in daraus abgeleiteten Ansichten oder Übersichtsplänen sichtbar machen.
+
+    - Eine gemeinsame Grundlage schaffen, damit Bauherrschaft, Nutzende und Fachplanende Folgen abwägen und fundiert entscheiden können.
+
+
+    **Ablauf**
+
+    1. Anstehenden Entscheid, Varianten, Kriterien, Abhängigkeiten, Zuständigkeit und Termin klären und den betroffenen räumlichen Bereich mit eindeutiger Referenz und Status kennzeichnen.
+
+    2. Varianten und ihre Auswirkungen im Modell sowie in Ansichten oder Übersichtsplänen visualisieren und je nach Entscheid mit Berechnungen, Schemas oder Handmustern ergänzen, etwa bei Materialien und
+    Farben.
+
+    3. Varianten mit Bauherrschaft, Nutzenden und Fachplanenden abwägen und den Entscheid sowie offene Punkte mit Gültigkeitsbereich, Zuständigkeit und Termin in der Entscheidungsliste nachführen.
+
+
+    **Lieferergebnis**
+
+    - Verständliche Visualisierungen der Varianten, Auswirkungen und räumlichen Gültigkeitsbereiche.
+
+    - Modellansichten oder Übersichtspläne mit eindeutigen Entscheidungsreferenzen und erkennbarem Status.
+
+    - Aktuelle Entscheidungsliste mit gefällten Entscheiden, offenen Punkten, Zuständigkeiten und Terminen.'
+  fr: 'Les visualisations aident les équipes de mandataires à rendre les décisions et leurs conséquences compréhensibles dans l''espace et à obtenir des choix contraignants en temps utile.
+
+
+    **Situation de départ**
+
+    - Obtenir des décisions est une tâche essentielle des équipes de mandataires, qui pose des difficultés à nombre d''entre elles.
+
+    - Les bases de décision sont souvent réparties entre procès-verbaux, calculs et plans séparés; les variantes, leurs conséquences, leur champ d''application spatial et les points en suspens restent alors
+    difficiles à comprendre.
+
+
+    **Objectif et bénéfice**
+
+    - Rendre visibles les variantes, leurs conséquences, leurs zones de validité et leur état dans la maquette ainsi que dans les vues ou plans synoptiques qui en sont issus.
+
+    - Créer une base commune permettant au maître d''ouvrage, aux utilisateurs et aux mandataires spécialisés de soupeser les conséquences et de prendre des décisions fondées.
+
+
+    **Déroulement**
+
+    1. Clarifier la décision à prendre, les variantes, les critères, les dépendances, la responsabilité et le délai, puis identifier la zone concernée au moyen d''une référence et d''un état univoques.
+
+    2. Visualiser les variantes et leurs conséquences dans la maquette ainsi que dans des vues ou plans synoptiques et, selon la décision, les compléter par des calculs, des schémas ou des échantillons
+    physiques, par exemple pour les matériaux et les couleurs.
+
+    3. Évaluer les variantes avec le maître d''ouvrage, les utilisateurs et les mandataires spécialisés, puis tenir à jour la décision et les points en suspens avec leur zone de validité, leur responsable
+    et leur délai dans la liste des décisions.
+
+
+    **Livrable**
+
+    - Visualisations compréhensibles des variantes, de leurs conséquences et de leurs zones de validité.
+
+    - Vues de la maquette ou plans synoptiques avec références de décision univoques et état identifiable.
+
+    - Liste des décisions à jour avec décisions prises, points en suspens, responsables et délais.'
+  it: 'Le visualizzazioni aiutano i gruppi di progettazione a rendere comprensibili nello spazio le decisioni e le loro conseguenze e a giungere tempestivamente a scelte vincolanti.
+
+
+    **Situazione di partenza**
+
+    - Giungere a decisioni è un compito fondamentale dei gruppi di progettazione, che crea difficoltà a molti di essi.
+
+    - Le basi decisionali sono spesso distribuite tra verbali, calcoli e singoli disegni; le varianti, le loro conseguenze, l''ambito di validità spaziale e i punti in sospeso restano quindi difficili da
+    comprendere.
+
+
+    **Obiettivo e beneficio**
+
+    - Rendere visibili nel modello e nelle viste o nei piani sinottici da esso ricavati le varianti, le loro conseguenze, gli ambiti di validità e lo stato.
+
+    - Creare una base comune affinché la committenza, gli utenti e i progettisti specialisti possano ponderare le conseguenze e prendere decisioni fondate.
+
+
+    **Svolgimento**
+
+    1. Chiarire la decisione da prendere, le varianti, i criteri, le dipendenze, la responsabilità e la scadenza e contrassegnare la zona interessata con un riferimento e uno stato univoci.
+
+    2. Visualizzare le varianti e le loro conseguenze nel modello e nelle viste o nei piani sinottici e, a seconda della decisione, integrarle con calcoli, schemi o campioni fisici, ad esempio per materiali
+    e colori.
+
+    3. Valutare le varianti con la committenza, gli utenti e i progettisti specialisti e aggiornare la decisione e i punti in sospeso con ambito di validità, responsabile e scadenza nell''elenco delle decisioni.
+
+
+    **Risultato della fornitura**
+
+    - Visualizzazioni comprensibili delle varianti, delle loro conseguenze e degli ambiti di validità.
+
+    - Viste del modello o piani sinottici con riferimenti decisionali univoci e stato riconoscibile.
+
+    - Elenco aggiornato delle decisioni con decisioni prese, punti in sospeso, responsabili e scadenze.'
+  en: 'Visualizations help design teams make decisions and their impacts spatially understandable and reach binding decisions in good time.
+
+
+    **Starting point**
+
+    - Reaching decisions is a key responsibility of design teams, and many teams struggle with it.
+
+    - Decision-making information is often scattered across minutes, calculations, and separate drawings, making options, impacts, spatial scope, and open items difficult to understand.
+
+
+    **Goal & benefit**
+
+    - Make options, impacts, validity areas, and status visible in the model and in views or overview plans derived from it.
+
+    - Create a shared basis on which clients, users, and specialist designers can weigh the consequences and make informed decisions.
+
+
+    **Process**
+
+    1. Clarify the pending decision, options, criteria, dependencies, responsibility, and due date, and mark the affected spatial area with an unambiguous reference and status.
+
+    2. Visualize the options and their impacts in the model and in views or overview plans, supplementing them with calculations, diagrams, or physical samples where appropriate, for example for materials
+    and colours.
+
+    3. Weigh the options with clients, users, and specialist designers, and maintain the decision and open items with their validity area, responsibility, and due date in the decision list.
+
+
+    **Deliverable**
+
+    - Understandable visualizations of the options, impacts, and spatial validity areas.
+
+    - Model views or overview plans with unambiguous decision references and visible status.
+
+    - Current decision list with decisions made, open items, responsibilities, and due dates.'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Decisions are tracked in the decision list and spatially referenced by decision volumes in the architecture model. The same references identify overview-plan markings, visualizations, and supporting
+  decision information.

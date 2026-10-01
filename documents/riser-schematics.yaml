@@ -1,6 +1,6 @@
 id: pragmaticbim:document/riser-schematics
 code: STG
-sort_order: 122
+sort_order: 140
 name:
   de: Strangschemata / Steigzonen
   fr: Schémas de colonnes / gaines techniques
@@ -36,22 +36,18 @@ file_name:
   de: '{Projektnummer}_TGA-STG_{Freitext}.{ext}'
   fr: '{NumeroProjet}_CVC-STG_{Libre}.{ext}'
   it: '{NumeroProgetto}_IMP-STG_{Libero}.{ext}'
-  en: '{ProjectNumber}_MEP-STG_{Free}.{ext}'
+  en: '{ProjectNumber}_MEP-STG_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/mep
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/architecture-installation-path
   - pragmaticbim:element/mep-schematic-pipe
   - pragmaticbim:element/mep-schematic-duct
   - pragmaticbim:element/mep-schematic-tray
   - pragmaticbim:element/mep-downpipe
 scheduled_milestones:
-  - "32:beginning"
-  - "33:beginning"
-  - "41:beginning"
-  - "51:beginning"
+  - "32:M"
+  - "33:M"
+  - "41:M"
+  - "51:M"

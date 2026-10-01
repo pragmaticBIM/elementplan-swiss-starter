@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/waschkueche
+code: RT-WH-17
+sort_order: 17
+name:
+  de: Waschkueche
+  fr: Buanderie
+  it: Lavanderia
+  en: Laundry Room
+definition:
+  de: Waschküche innerhalb einer Wohneinheit.
+  fr: Buanderie à l'intérieur d'un logement.
+  it: Lavanderia all'interno di un'unità abitativa.
+  en: Laundry room within a dwelling unit.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Waschkueche
+    fr: Buanderie
+    it: Lavanderia
+    en: Laundry Room
+restrictions:
+  min_area: 4
+status: active

@@ -1,0 +1,111 @@
+id: pragmaticbim:project-goal/planning-certainty
+sort_order: 55
+group: ziele
+code: PG-10
+name:
+  de: Planungssicherheit
+  fr: Sécurité de planification
+  it: Sicurezza della progettazione
+  en: Design certainty
+tag:
+  de: Planung
+  fr: Planification
+  it: Pianificazione
+  en: Design
+description:
+  de: |-
+    Ziel ist eine Planung, die die Bedürfnisse der Bauherrschaft erfüllt, in sich stimmig und ausführungsreif ist. Designreviews, Nachweise zu Brand-, Schall- und Wärmeschutz, Absturzsicherungen und geprüfte Details machen die Qualität über alle Phasen wiederholbar prüfbar. Ohne diese Prüfungen zeigen sich Mängel erst bei der Ausschreibung, auf der Baustelle oder bei der Abnahme.
+  fr: |-
+    Cet objectif vise une planification cohérente et prête pour l'exécution. Les revues de conception, les justificatifs de protection incendie, acoustique et thermique, les sécurités antichute et les détails contrôlés rendent la qualité vérifiable de manière répétable à toutes les phases.
+
+    Sans ces contrôles, les défauts n'apparaissent qu'à l'appel d'offres, sur le chantier ou à la réception.
+  it: |-
+    Questo obiettivo mira a una progettazione coerente e pronta per l'esecuzione. Revisioni di progetto, verifiche di protezione antincendio, acustica e termica, sicurezze anticaduta e dettagli controllati rendono la qualità verificabile in modo ripetibile in tutte le fasi.
+
+    Senza questi controlli, i difetti emergono solo in gara, in cantiere o al collaudo.
+  en: |-
+    The aim is a design that meets the client's needs, is internally consistent, and is ready for construction. Design reviews, evidence of fire, acoustic, and thermal protection, fall protection, and checked details make quality repeatably verifiable across all phases.
+
+    Without these checks, defects appear only at tender, on site, or at handover.
+practice:
+  de:
+    title: Brandschutz per GUID-Liste
+    body: |-
+      Ein Brandschutzplaner sollte seine Anforderungen im Architekturmodell über GUID-Listen pflegen – bei jedem Upload erneut, während sich das Modell weiter änderte. Wände kamen und gingen; seine Einträge waren laufend zunichte.
+
+      Für eine laufende Prüfung übersetzt er das freigegebene Konzept stattdessen in Regeln und ein fachliches Anforderungsmodell. Die Architektur übernimmt die Anforderungen; der Brandschutzplaner pflegt keine GUID-Liste im Architekturmodell.
+    lesson: Ein fachliches Anforderungsmodell macht Brandschutzanforderungen automatisiert prüfbar, ohne dass der Brandschutzplaner laufend ein fremdes Architekturmodell nachführen muss.
+  en:
+    title: Fire protection by GUID list
+    body: |-
+      A fire protection engineer was required to maintain his requirements inside the architecture model through GUID lists – again with every upload, while the model kept changing. Walls came and went; his entries were wiped out as he went.
+
+      For continuous checking he instead translates the approved concept into rules and a discipline requirements model. Architecture adopts the requirements; he maintains no GUID list inside the architecture model.
+    lesson: A discipline requirements model makes fire protection requirements automatically verifiable without the fire protection engineer having to keep updating somebody else's architecture model.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (explizit, nicht kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/planning-low
+  code: PLN-01
+  sort_order: 1
+  name:
+    de: Gering
+    fr: Faible
+    it: Basso
+    en: Low
+  description:
+    de: Lagebezug und Gelände durch die Bauherrschaft beschaffen sowie fachlich und digital kompetente Planer beauftragen.
+    fr: Acquérir le référentiel spatial et le terrain par le maître d'ouvrage et mandater des concepteurs compétents sur le plan technique et numérique.
+    it: Acquisire il riferimento spaziale e il terreno da parte della committenza e incaricare progettisti competenti sul piano tecnico e digitale.
+    en: Procure the spatial reference and terrain through the client, and commission designers who are competent both technically and digitally.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-survey-existing-model-procurement
+  - pragmaticbim:workflow/bes-designer-procurement
+  comment: Explicit set at level gering (sort_order 1); not cumulative.
+- id: pragmaticbim:project-goal-level/planning-medium
+  code: PLN-02
+  sort_order: 2
+  name:
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
+  description:
+    de: Designreview am Abschluss jeder Projektphase und laufender Abgleich des Raumprogramms mit dem Modell.
+    fr: Revue de conception à la clôture de chaque phase de projet et concordance continue du programme des locaux avec la maquette.
+    it: Revisione di progetto alla conclusione di ogni fase e confronto continuo del programma dei locali con il modello.
+    en: An end-of-phase design review and continuous reconciliation of the room programme with the model.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-design-review
+  - pragmaticbim:workflow/qas-room-program-verification
+  comment: Explicit set at level mittel (sort_order 2); not cumulative.
+- id: pragmaticbim:project-goal-level/planning-high
+  code: PLN-03
+  sort_order: 3
+  name:
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
+  description:
+    de: Fachanforderungsmodelle und Nachweise zu Brand-, Schall- und Wärmeschutz, zusammengeführte Wandanforderungen, Absturzsicherungen, Vorsatzschalen, Standarddetails, Werk- und Montageplanung, Geländeanschlüsse, Benchmarking, wöchentlicher Abgleich des Baufortschritts mit dem Terminplan sowie räumlich eindeutiges Mängelmanagement.
+    fr: Modèles d'exigences spécialisées et justificatifs de protection incendie, acoustique et thermique, exigences regroupées relatives aux murs, sécurités antichute, contre-cloisons, détails standard, plans d'atelier et de montage, raccordements au terrain, benchmarking, comparaison hebdomadaire de l'avancement avec le calendrier et gestion des défauts avec attribution spatiale univoque.
+    it: Modelli dei requisiti specialistici e verifiche di protezione antincendio, acustica e termica, requisiti integrati delle pareti, sicurezze anticaduta, contropareti, dettagli standard, piani d'officina e di montaggio, raccordi al terreno, benchmarking, confronto settimanale dell'avanzamento con il cronoprogramma e gestione dei difetti con attribuzione spaziale univoca.
+    en: Discipline requirements models and evidence for fire, sound, and thermal protection, combined wall requirements, fall protection, facing shells, standard details, shop and installation design, terrain connections, benchmarking, weekly comparison of construction progress with the schedule, and spatially unambiguous defect management.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/qas-facing-shell-area-verification
+  - pragmaticbim:workflow/qas-fall-protection-verification
+  - pragmaticbim:workflow/qas-fire-protection
+  - pragmaticbim:workflow/qas-acoustic-building-physics
+  - pragmaticbim:workflow/des-wall-requirements-from-space-use
+  - pragmaticbim:workflow/qas-project-benchmark
+  - pragmaticbim:workflow/qas-detail-reference-model
+  - pragmaticbim:workflow/qas-contractor-design-verification
+  - pragmaticbim:workflow/des-terrain-design
+  - pragmaticbim:workflow/con-construction-progress-documentation
+  - pragmaticbim:workflow/con-defect-management
+  - pragmaticbim:workflow/des-building-physics-concept
+  comment: Explicit set at level hoch (sort_order 3); not cumulative.

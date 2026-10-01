@@ -1,0 +1,145 @@
+id: pragmaticbim:workflow/qas-construction-site-logistics
+code: QAS-SITE-LOGISTICS
+sort_order: 89
+name:
+  de: Baustellenlogistik über die Bauphasen prüfen
+  fr: Contrôler la logistique de chantier sur les phases de construction
+  it: Verificare la logistica di cantiere nelle fasi di costruzione
+  en: Check site logistics across the construction phases
+description:
+  de: 'Baustellenlogistik volumetrisch planen und über die Phasen nachführen – bevor Rampen, Gefälle und Platzbedarf auf der Baustelle überraschen.
+
+
+    **Ausgangslage**
+
+    - Baustelleneinrichtungspläne zeigen oft nur einen Bauzustand und müssen bei grösseren Projekten wiederholt angepasst werden.
+
+    - 2D-Pläne lassen Rahmenbedingungen aus der dritten Dimension aus (Rampen, Gefälle, Freiräume, Kranreichweiten & Höhen).
+
+
+    **Ziel & Nutzen**
+
+    - Logistik früh als Gesprächsgrundlage mit Behörden und Unternehmen abstimmen.
+
+    - Platzbedarf und Konflikte im Modell sichtbar machen und über die Logistikphasen nachführen.
+
+
+    **Ablauf**
+
+    1. Erstes Logistikkonzept als Proxy-Volumen modellieren (Kran, Zaun, Lagerfläche, Container u. a.).
+
+    2. Mit Behörden und Unternehmen abstimmen und das Konzept verfeinern (inkl. Höhen, Rampen und Freiräumen).
+
+    3. Logistikphasen im Modell nachführen und Abweichungen dokumentieren.
+
+
+    **Lieferergebnis**
+
+    - Modell mit Baustelleneinrichtungsobjekten als Proxy-Volumen und aktueller Phasenlage.
+
+    - Dokumentierte Abstimmung als Gesprächsgrundlage für Behörden und Unternehmer.'
+  fr: 'Planifier volumétriquement la logistique de chantier et la tenir à jour sur les phases – avant que rampes, pentes et besoins d''espace ne surprennent sur le chantier.
+
+
+    **Situation de départ**
+
+    - Les plans d''installation de chantier ne montrent souvent qu''un seul état de construction et doivent, sur les grands projets, être adaptés à plusieurs reprises.
+
+    - Les plans 2D omettent les conditions-cadres issues de la troisième dimension (rampes, pentes, dégagements, portées de grue).
+
+
+    **Objectif et bénéfice**
+
+    - Coordonner tôt la logistique comme base de discussion avec autorités et entreprises.
+
+    - Rendre visibles dans la maquette les besoins d''espace et les conflits, et les tenir à jour sur les phases logistiques.
+
+
+    **Déroulement**
+
+    1. Modéliser un premier concept logistique comme volumes proxy (grue, clôture, surface de stockage, container, etc.).
+
+    2. Coordonner avec autorités et entreprises et affiner le concept (y compris hauteurs, rampes et dégagements).
+
+    3. Tenir à jour les phases logistiques dans la maquette et documenter les écarts.
+
+
+    **Livrable**
+
+    - Maquette avec objets d''installation de chantier comme volumes proxy et état de phase actuel.
+
+    - Coordination documentée comme base de discussion pour autorités et entrepreneurs.'
+  it: 'Pianificare volumetricamente la logistica di cantiere e aggiornarla sulle fasi – prima che rampe, pendenze e fabbisogno di spazio sorprendano in cantiere.
+
+
+    **Situazione di partenza**
+
+    - I piani di installazione di cantiere mostrano spesso un solo stato costruttivo e, nei progetti più grandi, devono essere adattati ripetutamente.
+
+    - I piani 2D omettono condizioni quadro della terza dimensione (rampe, pendenze, spazi liberi, raggi d''azione delle gru).
+
+
+    **Obiettivo e beneficio**
+
+    - Coordinare presto la logistica come base di discussione con autorità e imprese.
+
+    - Rendere visibili nel modello fabbisogno di spazio e conflitti e aggiornarli sulle fasi logistiche.
+
+
+    **Svolgimento**
+
+    1. Modellare un primo concetto logistico come volumi proxy (gru, recinzione, area di stoccaggio, container, ecc.).
+
+    2. Coordinare con autorità e imprese e raffinare il concetto (comprese altezze, rampe e spazi liberi).
+
+    3. Aggiornare le fasi logistiche nel modello e documentare gli scostamenti.
+
+
+    **Risultato della fornitura**
+
+    - Modello con oggetti di installazione di cantiere come volumi proxy e stato di fase aggiornato.
+
+    - Coordinamento documentato come base di discussione per autorità e imprese.'
+  en: 'Plan site logistics volumetrically and keep them current across phases – before ramps, slopes, and space needs surprise on site.
+
+
+    **Starting point**
+
+    - Site setup plans often show only one construction state and, on larger projects, must be revised repeatedly.
+
+    - 2D plans omit third-dimension constraints (ramps, slopes, clearances, crane reaches).
+
+
+    **Goal & benefit**
+
+    - Align logistics early as a discussion basis with authorities and contractors.
+
+    - Make space needs and conflicts visible in the model and keep them current across logistics phases.
+
+
+    **Process**
+
+    1. Model a first logistics concept as proxy volumes (crane, fence, storage area, container, etc.).
+
+    2. Align with authorities and contractors and refine the concept (including heights, ramps, and clearances).
+
+    3. Keep logistics phases current in the model and document deviations.
+
+
+    **Deliverable**
+
+    - Model with site setup objects as proxy volumes and current phase state.
+
+    - Documented alignment as a discussion basis for authorities and contractors.'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/infrastructure
+comment: Proxy IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Baustelleneinricht. Name is the setup kind from the value list (Kran, Container, Reifenwaschanlage, …). LogisticsPhase
+  in ePset_SiteLogistics is the numbered logistics stage (1, 2, 3, …) – not dates. Complements CON-ROOM-LABEL (room QR for fit-out); this workflow covers site setup and logistics phases.

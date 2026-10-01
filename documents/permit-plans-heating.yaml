@@ -1,10 +1,10 @@
 id: pragmaticbim:document/permit-plans-heating
 code: BGH
-sort_order: 115
+sort_order: 101
 name:
   de: Baugenehmigungspläne Heizung
-  fr: Plans de permis — chauffage
-  it: Piani di autorizzazione — riscaldamento
+  fr: Plans de permis – chauffage
+  it: Piani di autorizzazione – riscaldamento
   en: Permit plans heating
 definition:
   de: Baugenehmigungspläne Heizung für das Baugesuch. Darstellung der Heizungsanlagen in der für die Bewilligungsbehörde erforderlichen Form.
@@ -36,8 +36,8 @@ file_name:
   de: '{Projektnummer}_TGA-BGH_{Freitext}.{ext}'
   fr: '{NumeroProjet}_CVC-BGH_{Libre}.{ext}'
   it: '{NumeroProgetto}_IMP-BGH_{Libero}.{ext}'
-  en: '{ProjectNumber}_MEP-BGH_{Free}.{ext}'
+  en: '{ProjectNumber}_MEP-BGH_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/mep
 scheduled_milestones:
-  - "33:beginning"
+  - "33:M"

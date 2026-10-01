@@ -1,0 +1,80 @@
+id: pragmaticbim:value/product-class-slab-separator
+code: PRODUCT-SSP
+name:
+  de: Abstrakte Deckenplatten-Trennelementprodukte
+  fr: Abstract slab separator products
+  it: Abstract slab separator products
+  en: Abstract slab separator products
+description:
+  de: 'Produktklassen gemäss Abstrakte Deckenplatten-Trennelementprodukte. Quelle: https://schema.pragmaticbim.ch/classification/slab-separator-product.html'
+  fr: 'Classes de produits selon Abstract slab separator products. Source : https://schema.pragmaticbim.ch/classification/slab-separator-product.html'
+  it: 'Classi di prodotto secondo Abstract slab separator products. Fonte: https://schema.pragmaticbim.ch/classification/slab-separator-product.html'
+  en: 'Product classes according to Abstract slab separator products. Source: https://schema.pragmaticbim.ch/classification/slab-separator-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Ortbeton-Decke / -Platte
+  - Elementdecke / -platte Beton
+  - Stahlverbunddecke
+  - Stahltrapezprofil-Schicht
+  - Stahlverbunddecke Betonauflage-Schicht
+  - Holzdecke / -platte
+  - Brettsperrholz-Decke / -Platte (CLT)
+  - Holz-Beton-Verbunddecke (HBV)
+  - HBV Holztragwerk-Schicht
+  - HBV Betonauflage-Schicht
+  - Holz-Lehm-Decke
+  - Holz-Lehm-Decke Holzschicht
+  - Holz-Lehm-Decke Lehmschicht
+  - Leichtbau-Decke / -Platte
+  - Sonstige / unbekannte Decke / Platte
+  fr:
+  - In-situ concrete slab
+  - Prefabricated concrete slab
+  - Steel deck / composite slab
+  - Steel deck layer
+  - Composite slab concrete topping layer
+  - Timber slab / deck
+  - Cross-laminated timber (CLT) slab
+  - Timber–concrete composite slab (HBV)
+  - HBV timber base layer
+  - HBV concrete topping layer
+  - Timber–clay slab / deck
+  - Timber–clay slab timber layer
+  - Timber–clay slab clay infill layer
+  - Lightweight slab system
+  - Other / unknown slab separator
+  it:
+  - In-situ concrete slab
+  - Prefabricated concrete slab
+  - Steel deck / composite slab
+  - Steel deck layer
+  - Composite slab concrete topping layer
+  - Timber slab / deck
+  - Cross-laminated timber (CLT) slab
+  - Timber–concrete composite slab (HBV)
+  - HBV timber base layer
+  - HBV concrete topping layer
+  - Timber–clay slab / deck
+  - Timber–clay slab timber layer
+  - Timber–clay slab clay infill layer
+  - Lightweight slab system
+  - Other / unknown slab separator
+  en:
+  - In-situ concrete slab
+  - Prefabricated concrete slab
+  - Steel deck / composite slab
+  - Steel deck layer
+  - Composite slab concrete topping layer
+  - Timber slab / deck
+  - Cross-laminated timber (CLT) slab
+  - Timber–concrete composite slab (HBV)
+  - HBV timber base layer
+  - HBV concrete topping layer
+  - Timber–clay slab / deck
+  - Timber–clay slab timber layer
+  - Timber–clay slab clay infill layer
+  - Lightweight slab system
+  - Other / unknown slab separator

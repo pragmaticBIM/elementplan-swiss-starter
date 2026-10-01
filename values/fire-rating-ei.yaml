@@ -1,0 +1,32 @@
+id: pragmaticbim:value/fire-rating-ei
+code: FIRE-RATING-EI
+name:
+  de: Feuerwiderstand EI
+  fr: Résistance au feu EI
+  it: Resistenza al fuoco EI
+  en: Fire rating EI
+description:
+  de: Feuerwiderstandsklassen für nichttragende Bauteile mit Raumabschluss gemäss VKF-Brandschutzvorschriften.
+  fr: Classes de résistance au feu pour éléments non porteurs avec étanchéité au feu selon les prescriptions AEAI.
+  it: Classi di resistenza al fuoco per componenti non portanti con compartimentazione secondo le prescrizioni AICAA.
+  en: Fire resistance classes for non-load-bearing components with integrity and insulation according to VKF fire protection regulations.
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - EI 30
+  - EI 60
+  - EI 90
+  fr:
+  - EI 30
+  - EI 60
+  - EI 90
+  it:
+  - EI 30
+  - EI 60
+  - EI 90
+  en:
+  - EI 30
+  - EI 60
+  - EI 90

@@ -1,0 +1,44 @@
+id: pragmaticbim:document/heating-execution-plans
+code: APH
+sort_order: 97
+name:
+  de: Ausführungspläne Heizung
+  fr: Plans d'exécution du chauffage
+  it: Piani esecutivi del riscaldamento
+  en: Heating execution drawings
+definition:
+  de: Ausführungspläne der Heizungsanlagen mit den für die Ausführung erforderlichen Leitungsführungen, Heizkreisen, Dimensionen und Anschlüssen.
+  fr: Plans d'exécution des installations de chauffage avec les tracés, circuits, dimensions et raccordements nécessaires à la réalisation.
+  it: Piani esecutivi degli impianti di riscaldamento con tracciati, circuiti, dimensioni e collegamenti necessari alla realizzazione.
+  en: Heating-system execution drawings with the routes, circuits, dimensions, and connections required for construction.
+description:
+  de: |-
+    - Heizkreise und Leitungsführungen
+    - Dimensionen, Verteiler und Anschlüsse
+    - Raumbezug und Abstimmung mit Bodenaufbau und Fugen
+    - Plankopf, Massstab und Planungsstand
+  fr: |-
+    - Circuits de chauffage et tracés
+    - Dimensions, collecteurs et raccordements
+    - Rattachement aux locaux et coordination avec le complexe de sol et les joints
+    - Cartouche, échelle et état de planification
+  it: |-
+    - Circuiti di riscaldamento e tracciati
+    - Dimensioni, collettori e collegamenti
+    - Riferimento ai locali e coordinamento con stratigrafia e giunti
+    - Cartiglio, scala e stato della progettazione
+  en: |-
+    - Heating circuits and routes
+    - Dimensions, manifolds, and connections
+    - Space reference and coordination with floor build-up and joints
+    - Title block, scale, and design status
+file_name:
+  de: '{Projektnummer}_TGA-APH_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_CVC-APH_{Libre}.{ext}'
+  it: '{NumeroProgetto}_IMP-APH_{Libero}.{ext}'
+  en: '{ProjectNumber}_MEP-APH_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+scheduled_milestones:
+  - "51:M"
+  - "52:M"

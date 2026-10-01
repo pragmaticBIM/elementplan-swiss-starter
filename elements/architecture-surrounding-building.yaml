@@ -1,0 +1,290 @@
+id: pragmaticbim:element/architecture-surrounding-building
+code: ARC-UMG-NEIGHBOR
+sort_order: 62
+status: active
+name:
+  de: Umgebungsbauten
+  fr: Constructions environnantes
+  it: Edifici circostanti
+  en: Surrounding buildings
+definition:
+  de: 'Bildet Nachbargebäude als einfache Volumen ab, damit einsprache-relevante Wirkungen (Schatten, Sicht, Abstand) geprüft und im Stakeholderdialog dokumentiert werden können.
+
+
+    **Beschreibung**
+
+    - Vereinfachte Volumen der Nachbarbebauung mit lage- und höhenrichtigem Fussabdruck sowie Gebäudehöhe (Traufe/First).
+
+    - Dient Schattenwurf-, Sichtachsen- und Abstandsprüfungen sowie dem Argumentarium im Nachbarschaftsdialog – nicht der detailgetreuen Abbildung der Nachbarfassaden.
+
+
+    **Modellierungshinweis**
+
+    - Als Bruttovolumen modellieren: Fussabdruck × Höhe, ohne Fassaden-, Fenster-, Balkon- oder Dachdetails.
+
+    - Lage und Höhe gemäss Vermessung oder amtlichem Übersichtsplan; ObjectType = Umgebungsbau.
+
+    - Name = Nummer nach dem Muster N gefolgt von dreistelliger Zahl (z. B. N001); keine Personennamen und keine Adressen mit Rückschluss auf Eigentümer.
+
+    - Nutzungstyp (Wohnen/Gewerbe) nur führen, wenn er für Schattenwurf- oder Immissionsargumente relevant ist – nicht als Fassaden- oder Innenraumdetail.
+
+    - Bestehende Bäume auf Nachbargrundstücken als vereinfachte Kronen (LAN-TREE), sofern sie Sichtachsen oder Schattenwurf beeinflussen.'
+  fr: 'Représente les bâtiments voisins comme volumes simples, afin que les effets pertinents pour les oppositions (ombre, vue, distance) puissent être contrôlés et documentés dans le dialogue avec les
+    parties prenantes.
+
+
+    **Description**
+
+    - Volumes simplifiés du bâti voisin avec emprise et hauteur (égout/faîte) correctement positionnées.
+
+    - Sert aux études d''ombre portée, d''axes de vue et de distances ainsi qu''à l''argumentaire du dialogue de voisinage – pas à une représentation détaillée des façades voisines.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume brut : emprise × hauteur, sans détail de façade, de fenêtres, de balcons ni de toiture.
+
+    - Position et hauteur selon levé ou plan d''ensemble officiel ; ObjectType = Construction environnante.
+
+    - Name = numéro selon le modèle N suivi de trois chiffres (p. ex. N001) ; pas de noms de personnes ni d''adresses permettant d''identifier les propriétaires.
+
+    - Ne renseigner le type d''affectation (habitat/activités) que s''il est pertinent pour l''ombre portée ou les immissions – pas comme détail de façade ou d''intérieur.
+
+    - Arbres existants sur les parcelles voisines comme houppiers simplifiés (LAN-TREE) s''ils influencent les axes de vue ou l''ombre portée.'
+  it: 'Rappresenta gli edifici vicini come volumi semplici, affinché gli effetti rilevanti per le opposizioni (ombra, vista, distanza) possano essere verificati e documentati nel dialogo con gli stakeholder.
+
+
+    **Descrizione**
+
+    - Volumi semplificati dell''edificato limitrofo con impronta e altezza (gronda/colmo) correttamente posizionati.
+
+    - Serve a verifiche di ombra portata, assi visuali e distanze nonché all''argomentario del dialogo di vicinato – non a una rappresentazione dettagliata delle facciate vicine.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume lordo: impronta × altezza, senza dettagli di facciata, finestre, balconi o copertura.
+
+    - Posizione e altezza secondo rilievo o piano d''insieme ufficiale; ObjectType = Edificio circostante.
+
+    - Name = numero secondo il modello N seguito da tre cifre (p. es. N001); niente nomi di persone né indirizzi da cui dedurre i proprietari.
+
+    - Indicare il tipo di uso (abitazione/attività) solo se rilevante per ombra portata o immissioni – non come dettaglio di facciata o di interni.
+
+    - Alberi esistenti sui fondi vicini come chiome semplificate (LAN-TREE) se influenzano assi visuali o ombra portata.'
+  en: 'Represents neighbouring buildings as simple volumes so objection-relevant effects (shadow, views, setbacks) can be checked and documented in the stakeholder dialogue.
+
+
+    **Description**
+
+    - Simplified volumes of neighbouring buildings with footprint and building height (eaves/ridge) placed correctly in plan and height.
+
+    - Used for shadow, sight-line, and setback checks and for the neighbourhood dialogue argumentarium – not for a detailed depiction of neighbouring facades.
+
+
+    **Modelling guidelines**
+
+    - Model as a gross volume: footprint × height, without facade, window, balcony, or roof detail.
+
+    - Position and height according to survey or official overview plan; ObjectType = Surrounding building.
+
+    - Name = number in the pattern N followed by a three-digit number (e.g. N001); no personal names and no addresses that identify owners.
+
+    - Record use type (residential/commercial) only when relevant for shadow or immission arguments – not as facade or interior detail.
+
+    - Existing trees on neighbouring plots as simplified crowns (LAN-TREE) where they affect sight lines or shadow cast.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/surveyor
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-surrounding-building.png
+attachment_link: architecture-surrounding-building.ifc
+picture_print_link: architecture-surrounding-building-print.tif
+model_link: architecture-surrounding-building.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Umgebungsbau) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Umgebungsbau)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Construction environnante") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Construction environnante")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Edificio circostante") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Edificio circostante")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Surrounding building") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Surrounding building")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Nummer der Umgebungsbaute nach dem Muster N gefolgt von dreistelliger Zahl (z. B. N001). Keine Personennamen und keine Adressen mit Rückschluss auf Eigentümer – das Modell wird oft weitergegeben.
+    fr: Numéro de la construction environnante selon le modèle N suivi de trois chiffres (p. ex. N001). Pas de noms de personnes ni d'adresses permettant d'identifier les propriétaires – la maquette est
+      souvent transmise.
+    it: Numero dell'edificio circostante secondo il modello N seguito da tre cifre (p. es. N001). Niente nomi di persone né indirizzi da cui dedurre i proprietari – il modello viene spesso condiviso.
+    en: Surrounding-building number in the pattern N followed by a three-digit number (e.g. N001). No personal names and no addresses that identify owners – the model is often shared.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-stakeholder-dialog
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-stakeholder-dialog
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Umgebungsbau` — Umgebungsbau'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Construction environnante` — construction environnante'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Edificio circostante` — edificio circostante'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Surrounding building` — surrounding building'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-surrounding-building
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-stakeholder-dialog
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: EinspracheRisiko
+  pset: Pset_UmgebungCommon
+  definition:
+    de: 'Einschätzung, wie wahrscheinlich Einwände von diesem Gebäude bzw. Grundstück kommen.
+
+
+      **Zulässige Werte**
+
+      - `HOCH` — Einwände wahrscheinlich
+
+      - `MITTEL` — Einwände möglich
+
+      - `TIEF` — Einwände unwahrscheinlich'
+    fr: 'Estimation de la probabilité d''objections provenant de ce bâtiment ou de cette parcelle.
+
+
+      **Valeurs admises**
+
+      - `HOCH` — objections probables
+
+      - `MITTEL` — objections possibles
+
+      - `TIEF` — objections improbables'
+    it: 'Stima della probabilità di obiezioni provenienti da questo edificio o fondo.
+
+
+      **Valori ammessi**
+
+      - `HOCH` — obiezioni probabili
+
+      - `MITTEL` — obiezioni possibili
+
+      - `TIEF` — obiezioni improbabili'
+    en: 'Assessment of how likely objections from this building or plot are.
+
+
+      **Allowed values**
+
+      - `HOCH` — objections likely
+
+      - `MITTEL` — objections possible
+
+      - `TIEF` — objections unlikely'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objection-risk
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-stakeholder-dialog
+  is_applicability: false
+  status: active
+  sort_order: 4

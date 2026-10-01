@@ -1,0 +1,100 @@
+id: pragmaticbim:value/room-name-exterior
+code: ROOM-NAME-EXT
+name:
+  de: Raumbezeichnung Aussenraum
+  fr: Désignation de local extérieur
+  it: Denominazione locale esterno
+  en: Exterior space name
+description:
+  de: 'Normalisierte Raumbezeichnungen für Aussenräume gemäss laufend publiziertem Schema. Quelle: https://schema.pragmaticbim.ch/classification/room-name.html'
+  fr: 'Désignations normalisées issues du schéma publié en continu. Source : https://schema.pragmaticbim.ch/classification/room-name.html'
+  it: 'Denominazioni normalizzate dallo schema pubblicato continuamente. Fonte: https://schema.pragmaticbim.ch/classification/room-name.html'
+  en: 'Normalized space names for exterior spaces, from the continuously published schema. Source: https://schema.pragmaticbim.ch/classification/room-name.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Balkon
+  - Terrasse
+  - Innenhof
+  - Fluchtbalkon
+  - Dachterrasse
+  - Wartungsdach
+  - Technikaufstellflaeche
+  - Gruendach
+  - Gartenflaeche
+  - Spielplatz
+  - Beckenflaeche
+  - Retentionsflaeche
+  - Ueberdachter Fussweg
+  - Portikus
+  - Aussentreppe
+  - Strasse
+  - Parkplatz PKW Aussen
+  - Parkplatz LKW Aussen
+  - Parkplatz Velo Aussen
+  - Parkplatz Motorrad Aussen
+  fr:
+  - Balcon
+  - Terrasse
+  - Cour intérieure
+  - Balcon de fuite
+  - Terrasse de toit
+  - Toiture d'entretien
+  - Aire technique
+  - Toiture végétalisée
+  - Jardin
+  - Place de jeux
+  - Aire de bassin
+  - Aire de rétention
+  - Passage couvert
+  - Portique
+  - Escalier extérieur
+  - Rue
+  - Place voiture extérieure
+  - Place camion extérieure
+  - Place vélo extérieure
+  - Place moto extérieure
+  it:
+  - Balcone
+  - Terrazza
+  - Corte interna
+  - Balcone di fuga
+  - Terrazza sul tetto
+  - Copertura di manutenzione
+  - Area tecnica
+  - Tetto verde
+  - Giardino
+  - Parco giochi
+  - Area vasca
+  - Area di ritenzione
+  - Passaggio coperto
+  - Portico
+  - Scala esterna
+  - Strada
+  - Posto auto esterno
+  - Posto camion esterno
+  - Posto bici esterno
+  - Posto moto esterno
+  en:
+  - Balcony
+  - Terrace
+  - Patio
+  - Escape Balcony
+  - Roof Terrace
+  - Maintenance Roof
+  - Technical Plant Pad
+  - Green Roof
+  - Garden Area
+  - Playground
+  - Pool Area
+  - Retention Area
+  - Covered Walkway
+  - Portico
+  - Exterior Stair
+  - Street
+  - Exterior Car Parking
+  - Exterior Truck Parking
+  - Exterior Bicycle Parking
+  - Exterior Motorcycle Parking

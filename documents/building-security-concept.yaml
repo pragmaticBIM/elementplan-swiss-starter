@@ -1,0 +1,48 @@
+id: pragmaticbim:document/building-security-concept
+code: GSK
+sort_order: 139
+name:
+  de: Sicherheitskonzept
+  fr: Concept de sécurité
+  it: Concetto di sicurezza
+  en: Building security concept
+definition:
+  de: Sicherheitskonzept mit Sicherheitszonen, Sicherheitsstufen, Schutzzielen und erforderlichen Einbruchwiderstandsklassen. Verbindliche Grundlage für Modellkennwerte und Einsatzmodelle kritischer Bereiche.
+  fr: Concept de sécurité avec zones de sécurité, niveaux de sécurité, objectifs de protection et classes de résistance à l'effraction requises. Base contraignante pour les valeurs du modèle et les maquettes d'intervention des zones critiques.
+  it: Concetto di sicurezza con zone di sicurezza, livelli di sicurezza, obiettivi di protezione e classi di resistenza all'effrazione richieste. Base vincolante per i valori del modello e i modelli di intervento delle zone critiche.
+  en: Security concept with security zones, security levels, protection goals, and required burglary resistance classes. Binding basis for model values and insert models of critical areas.
+description:
+  de: |-
+    - Sicherheitszonen mit stabiler Bezeichnung
+    - Sicherheitsstufen der Räume
+    - Schutzziele der Räume bzw. Zonen
+    - Erforderliche Einbruchwiderstandsklassen für Türen und Fassadenöffnungen
+    - Bezug zum Planstand Architektur
+  fr: |-
+    - Zones de sécurité avec désignation stable
+    - Niveaux de sécurité des locaux
+    - Objectifs de protection des locaux ou zones
+    - Classes de résistance à l'effraction requises pour portes et ouvertures de façade
+    - Référence à l'état de planification architecture
+  it: |-
+    - Zone di sicurezza con designazione stabile
+    - Livelli di sicurezza dei locali
+    - Obiettivi di protezione dei locali o delle zone
+    - Classi di resistenza all'effrazione richieste per porte e aperture di facciata
+    - Riferimento allo stato di pianificazione architettura
+  en: |-
+    - Security zones with a stable designation
+    - Security levels of the spaces
+    - Protection goals of the spaces or zones
+    - Required burglary resistance classes for doors and facade openings
+    - Reference to the architecture design status
+file_name:
+  de: '{Projektnummer}_SIC-GSK_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_SEC-GSK_{Libre}.{ext}'
+  it: '{NumeroProgetto}_SIC-GSK_{Libero}.{ext}'
+  en: '{ProjectNumber}_SEC-GSK_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "31:M"
+  - "32:M"

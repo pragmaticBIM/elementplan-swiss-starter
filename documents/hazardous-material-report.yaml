@@ -1,0 +1,56 @@
+id: pragmaticbim:document/hazardous-material-report
+code: SGG
+sort_order: 136
+name:
+  de: Schadstoffgutachten
+  fr: Diagnostic des polluants
+  it: Perizia sulle sostanze nocive
+  en: Hazardous-material report
+definition:
+  de: Gutachten zu Schadstoffbefunden im Bestand. Daraus werden die bauteilbezogenen Angaben zu Art und Sanierungsdringlichkeit ins Bestandsmodell übernommen.
+  fr: Diagnostic des polluants dans l'existant. Les indications par élément sur la nature et l'urgence de l'assainissement en sont reprises dans la maquette de l'existant.
+  it: Perizia sui rinvenimenti di sostanze nocive nell'esistente. Da essa si riportano nel modello dell'esistente le indicazioni per componente su tipo e urgenza di bonifica.
+  en: Report of hazardous-material findings in the existing building. Component-level type and remediation urgency are taken from it into the existing-building model.
+description:
+  de: |-
+    - Untersuchte Bereiche und nicht zugängliche Stellen
+    - Betroffene Bauteile oder Schichten mit Lage
+    - Schadstoffart
+    - Sanierungsdringlichkeit
+    - Empfohlene Massnahmen vor Umbau oder Abbruch
+    - Datum, Verfasser und Untersuchungsstand
+  fr: |-
+    - Zones investiguées et endroits non accessibles
+    - Éléments ou couches concernés avec localisation
+    - Nature du polluant
+    - Urgence de l'assainissement
+    - Mesures recommandées avant transformation ou démolition
+    - Date, auteur et état de l'investigation
+  it: |-
+    - Ambiti indagati e punti non accessibili
+    - Componenti o strati interessati con ubicazione
+    - Tipo di sostanza nociva
+    - Urgenza della bonifica
+    - Misure raccomandate prima di trasformazione o demolizione
+    - Data, autore e stato dell'indagine
+  en: |-
+    - Areas investigated and places that were not accessible
+    - Affected components or layers with location
+    - Hazardous-material type
+    - Remediation urgency
+    - Recommended measures before alteration or demolition
+    - Date, author, and investigation status
+file_name:
+  de: '{Projektnummer}_PRO-SGG_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-SGG_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-SGG_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-SGG_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "11:M"
+  - "21:M"
+  - "31:M"
+comment: >-
+  Quellenbericht. Im Modell stehen nur die übernommenen Bauteilangaben, nicht
+  das Gutachten selbst.

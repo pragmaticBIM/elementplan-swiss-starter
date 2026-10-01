@@ -1,0 +1,44 @@
+id: pragmaticbim:value/fire-rating-r-rei
+code: FIRE-RATING-R-REI
+name:
+  de: Feuerwiderstand R / REI
+  fr: Résistance au feu R / REI
+  it: Resistenza al fuoco R / REI
+  en: Fire rating R / REI
+description:
+  de: Feuerwiderstandsklassen für tragende Bauteile gemäss VKF-Brandschutzvorschriften – R (Tragfähigkeit) bzw. REI (Tragfähigkeit und Raumabschluss).
+  fr: Classes de résistance au feu pour éléments porteurs selon les prescriptions AEAI – R (stabilité) ou REI (stabilité et étanchéité).
+  it: Classi di resistenza al fuoco per componenti portanti secondo le prescrizioni AICAA – R (capacità portante) ovvero REI (portanza e compartimentazione).
+  en: Fire resistance classes for load-bearing components according to VKF fire protection regulations – R (load-bearing) or REI (load-bearing, integrity and insulation).
+year: 2026
+norm_reference: VKF
+status: active
+values:
+  de:
+  - R 30
+  - R 60
+  - R 90
+  - REI 30
+  - REI 60
+  - REI 90
+  fr:
+  - R 30
+  - R 60
+  - R 90
+  - REI 30
+  - REI 60
+  - REI 90
+  it:
+  - R 30
+  - R 60
+  - R 90
+  - REI 30
+  - REI 60
+  - REI 90
+  en:
+  - R 30
+  - R 60
+  - R 90
+  - REI 30
+  - REI 60
+  - REI 90

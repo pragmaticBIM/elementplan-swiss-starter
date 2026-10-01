@@ -6,10 +6,10 @@ name:
   it: Qualità rivestimento murale
   en: Wall surface quality
 description:
-  de: Oberflächenqualität der Wandbekleidung gemäss Bauteilkatalog.
-  fr: Qualité de surface du revêtement mural selon le catalogue de composants.
-  it: Qualità superficiale del rivestimento murale secondo il catalogo componenti.
-  en: Surface quality of the wall cladding according to the component catalogue.
+  de: Oberflächenqualität der Wandbekleidung Innen gemäss Bauteilkatalog.
+  fr: Qualité de surface du revêtement mural intérieur selon le catalogue de composants.
+  it: Qualità superficiale del rivestimento murale interno secondo il catalogo componenti.
+  en: Surface quality of the interior wall cladding according to the component catalogue.
 year: 2026
 norm_reference: null
 status: active

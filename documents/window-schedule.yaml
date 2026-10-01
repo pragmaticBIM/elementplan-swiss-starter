@@ -1,0 +1,60 @@
+id: pragmaticbim:document/window-schedule
+code: FEN
+sort_order: 115
+name:
+  de: Fensterliste
+  fr: Liste des fenêtres
+  it: Elenco finestre
+  en: Window schedule
+definition:
+  de: Liste der Fenster mit Fensternummer, Typ und Abmessungen als Grundlage für Ausschreibung, Koordination und Übergabe an den Betrieb.
+  fr: Liste des fenêtres avec numéro, type et dimensions comme base pour l'appel d'offres, la coordination et la remise à l'exploitation.
+  it: Elenco delle finestre con numero, tipo e dimensioni come base per la gara, il coordinamento e la consegna all'esercizio.
+  en: Schedule of windows with window number, type, and dimensions as the basis for tender, coordination, and handover to operation.
+description:
+  de: |-
+    - Sämtliche Fenster mit eindeutiger Fensternummer und Lage
+    - Fenstertyp und Aussenbezug
+    - Lichte Breite und Höhe
+    - Feuerwiderstand und Schalldämmung
+    - Öffnungsart
+    - Freigabestand für Ausschreibung, Fertigung und Übergabe
+  fr: |-
+    - Toutes les fenêtres avec numéro univoque et localisation
+    - Type de fenêtre et relation avec l'extérieur
+    - Largeur et hauteur de passage
+    - Résistance au feu et isolation acoustique
+    - Type d'ouverture
+    - État d'approbation pour appel d'offres, fabrication et remise
+  it: |-
+    - Tutte le finestre con numero univoco e ubicazione
+    - Tipo di finestra e relazione con l'esterno
+    - Larghezza e altezza nette
+    - Resistenza al fuoco e isolamento acustico
+    - Tipo di apertura
+    - Stato di approvazione per gara, produzione e consegna
+  en: |-
+    - All windows with a unique window number and location
+    - Window type and external exposure
+    - Clear width and height
+    - Fire resistance and sound insulation
+    - Opening type
+    - Approval status for tender, fabrication, and handover
+file_name:
+  de: '{Projektnummer}_ARC-FEN_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-FEN_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-FEN_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-FEN_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/architecture-window-exterior
+  - pragmaticbim:element/architecture-window-interior
+scheduled_milestones:
+  - "32:M"
+  - "41:M"
+  - "51:M"
+  - "53:M"
+comment: >-
+  Entspricht der Türliste für Fenster. Die Fensternummer verknüpft Liste und
+  Modell; die Liste ist keine vollständige Fensterausschreibung.

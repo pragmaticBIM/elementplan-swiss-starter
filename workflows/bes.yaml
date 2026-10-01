@@ -2,15 +2,19 @@ id: pragmaticbim:workflow/bes
 code: BES
 sort_order: 10
 name:
-  de: Bestellen
+  de: Bestellung
   fr: Commande
   it: Commessa
   en: Ordering
 description:
-  de: 'Auftraggeberseitige Vergabe, Beschaffung und Beauftragung von Planungs- und Bauleistungen. Beispiele: Ausschreibungsunterlagen, Bauherrnanforderungen, Zuschlag.'
+  de: 'Das Bestellen gehört zu den Kernkompetenzen der Bauherrschaft, aber auch andere bestellen. Im Informationsmanagement wird jede Rolle zur bestellenden Instanz, sobald sie Daten anderer Beteiligter
+    für ihre eigenen Prozesse benötigt. Hilfreicher als das hierarchische Bild einer zentral bestellenden Bauherrschaft ist daher die aus dem Lean Management bekannte Perspektive: Jeder nachgelagerte Prozess
+    ist Kunde des vorgelagerten Prozesses und muss seinen Informationsbedarf klar formulieren – oder damit rechnen, erheblichen manuellen Aufwand in das Aufbereiten der Unterlagen stecken zu müssen.'
   fr: 'Mise en concours, passation de marchés et commande des prestations de planification et de construction. Exemples: dossiers d''appel d''offres, programme du maître d''ouvrage, adjudication.'
   it: 'Affidamento, approvvigionamento e incarico delle prestazioni di progettazione e costruzione. Esempi: documenti di gara, capitolato committente, aggiudicazione.'
-  en: 'Client commissioning, procurement, and placement of planning and construction services. Examples: tender documents, employer requirements, contract award.'
+  en: 'Ordering is one of the client’s core competencies, but others place orders too. In information management, every role becomes an ordering party as soon as it needs data from other participants for
+    its own processes. The Lean Management perspective is therefore more helpful than the hierarchical image of a single commissioning client: every downstream process is the customer of the upstream process
+    and must clearly state its information needs – or expect to spend considerable manual effort preparing the documents.'
 workflow_group: null
 parent_workflow: null
 picture_link: null

@@ -1,0 +1,143 @@
+id: pragmaticbim:workflow/con-robotic-floor-layout
+code: CON-ROBOT-LAYOUT
+sort_order: 28
+name:
+  de: Ausbau robotisch auf der Rohdecke abstecken
+  fr: Implanter l'aménagement par robot sur le plancher brut
+  it: Tracciare la finitura con robot sul solaio grezzo
+  en: Set out the fit-out robotically on the structural slab
+description:
+  de: 'Layout-Datei für die robotische Absteckung direkt aus dem Architekturmodell ableiten und auf die Rohdecke drucken – damit Ausbau ohne manuelle Absteckfehler starten kann.
+
+
+    **Ausgangslage**
+
+    - Wandachsen, Türöffnungen und Raumbezüge werden oft noch mit Bandmass und Schlagschnur abgesteckt; Abweichungen vom Planung entstehen leicht und verzögern den Ausbau.
+
+    - Pläne durch Handwerker auf der Baustelle managen zu lassen ist keine Wertschöpfende Arbeit.
+
+
+    **Ziel & Nutzen**
+
+    - Geschossweise Layout-Datei (Linien und Kurztexte) aus dem aktuellen Architekturmodell ableiten.
+
+    - Roboter druckt Wandlinien, Öffnungen, kurze Wandtyp-Referenzen, Raum- und Türnummern massstäblich auf die Rohdecke.
+
+
+    **Ablauf**
+
+    1. Architekturmodell mit nichttragenden Innenwänden, Türen und Innenräumen bereitstellen – inkl. Wandtyp-Referenz, Raumnummer und Türnummer.
+
+    2. Layout-Datei geschossweise aus dem Modell ableiten (Wandlinien, Öffnungen, Kurztexte; bekannte Hindernisse und Kontrollpunkte mitführen).
+
+    3. Layout-Datei mit dem Absteckroboter auf die Rohdecke drucken.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit prüfbaren Wand-, Tür- und Raumangaben als Absteckgrundlage
+
+    - Geschossweise, aus dem Modell abgeleitete Layout-Datei für den Roboterdruck auf der Rohdecke'
+  fr: 'Déduire du modèle d''architecture le fichier de layout pour l''implantation robotisée et l''imprimer sur le plancher brut – pour démarrer l''aménagement sans erreurs d''implantation manuelle.
+
+
+    **Situation de départ**
+
+    - Axes de cloisons, baies de portes et références de locaux sont encore souvent implantés au mètre et au cordeau ; les écarts par rapport à la maquette naissent facilement et retardent l''aménagement.
+
+    - Des plans d''implantation 2D tenus en parallèle sans obtention depuis la maquette sont sources d''erreurs et vieillissent vite.
+
+
+    **Objectif et bénéfice**
+
+    - Déduire étage par étage un fichier de layout (lignes et textes courts) de la maquette d''architecture actuelle.
+
+    - Le robot imprime à l''échelle sur le plancher brut les lignes de cloisons, les ouvertures, les références courtes de type de cloison, ainsi que les numéros de locaux et de portes.
+
+
+    **Déroulement**
+
+    1. Fournir la maquette d''architecture avec cloisons intérieures non porteuses, portes et locaux intérieurs – y compris référence de type de cloison, numéro de local et numéro de porte.
+
+    2. Déduire le fichier de layout étage par étage à partir de la maquette (lignes de cloisons, ouvertures, textes courts ; y compris obstacles connus et points de contrôle).
+
+    3. Imprimer le fichier de layout avec le robot d''implantation sur le plancher brut et le confronter à l''état de la maquette.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec données vérifiables de cloisons, portes et locaux comme base d''implantation
+
+    - Fichier de layout par étage, déduit de la maquette, pour l''impression robotisée sur le plancher brut'
+  it: 'Ricavare dal modello di architettura il file di layout per il tracciamento robotizzato e stamparlo sul solaio grezzo – così la finitura parte senza errori di tracciamento manuale.
+
+
+    **Situazione di partenza**
+
+    - Assi delle pareti, aperture delle porte e riferimenti dei locali vengono ancora spesso tracciati con metro e cordino; gli scostamenti dal modello nascono facilmente e ritardano la finitura.
+
+    - Piani di tracciamento 2D gestiti in parallelo senza ottenimento dal modello sono soggetti a errori e invecchiano in fretta.
+
+
+    **Obiettivo e beneficio**
+
+    - Ricavare piano per piano un file di layout (linee e testi brevi) dal modello di architettura aggiornato.
+
+    - Il robot stampa in scala sul solaio grezzo le linee delle pareti, le aperture, i riferimenti brevi del tipo di parete nonché i numeri di locale e di porta.
+
+
+    **Svolgimento**
+
+    1. Fornire il modello di architettura con pareti interne non portanti, porte e locali interni – inclusi riferimento del tipo di parete, numero di locale e numero di porta.
+
+    2. Ricavare il file di layout piano per piano dal modello (linee di parete, aperture, testi brevi; includere ostacoli noti e punti di controllo).
+
+    3. Stampare il file di layout con il robot di tracciamento sul solaio grezzo e confrontarlo con lo stato del modello.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con dati verificabili di pareti, porte e locali come base di tracciamento
+
+    - File di layout per piano, ricavato dal modello, per la stampa robotizzata sul solaio grezzo'
+  en: 'Derive the layout file for robotic slab marking directly from the architecture model and print it on the structural slab – so fit-out can start without manual layout errors.
+
+
+    **Starting point**
+
+    - Wall lines, door openings, and room references are still often set out with tape and chalk line; deviations from the model arise easily and delay fit-out.
+
+    - Having trades manage drawings on site is not value-adding work.
+
+
+    **Goal & benefit**
+
+    - Derive a storey-wise layout file (lines and short texts) from the current architecture model.
+
+    - The robot prints wall lines, openings, short wall-type references, and room and door numbers at full scale on the structural slab.
+
+
+    **Process**
+
+    1. Provide the architecture model with non-load-bearing interior walls, doors, and interior spaces – including wall-type reference, room number, and door number.
+
+    2. Derive the layout file storey by storey from the model (wall lines, openings, short texts; include known obstacles and control points).
+
+    3. Print the layout file on the structural slab with the layout robot.
+
+
+    **Deliverable**
+
+    - Architecture model with verifiable wall, door, and space data as the setting-out basis
+
+    - Storey-wise layout file derived from the model for robotic printing on the structural slab'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/con
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Construction phases SIA 51–53. Layout file (typically DXF) is derived from the IFC/architecture model – not authored in parallel 2D. Print content: non-load-bearing wall lines (IsExternal=FALSE,
+  LoadBearing=FALSE), openings, short wall Reference (not full CalculatedType), space Name (room number), door Name (door number). Control points and known obstacles (columns, shafts) belong in the derived
+  layout file. Distinct from des-drawing-derivation (paper/PDF completeness check).'

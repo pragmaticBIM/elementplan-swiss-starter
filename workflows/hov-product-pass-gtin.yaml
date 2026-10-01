@@ -1,0 +1,154 @@
+id: pragmaticbim:workflow/hov-product-pass-gtin
+code: HOV-PRODUCT-PASS-GTIN
+sort_order: 53
+name:
+  de: Produktpass über GTIN verknüpfen
+  fr: Relier le passeport produit via le GTIN
+  it: Collegare il passaporto di prodotto tramite GTIN
+  en: Link the product passport via GTIN
+description:
+  de: 'Produktpassinformationen über die GTIN eindeutig mit den verbauten Produkttypen verknüpfen, ohne die vollständigen Herstellerdaten im Modell doppelt zu führen.
+
+
+    **Ausgangslage**
+
+    - Produktpassinformationen werden vom Unternehmer oder Lieferanten ausserhalb des Modells gepflegt; ohne gemeinsamen Schlüssel ist die Zuordnung zu den modellierten Produkttypen nicht prüfbar.
+
+    - Werden Produktdaten in Liste und Modell parallel gepflegt, entstehen veraltete oder widersprüchliche Angaben.
+
+
+    **Ziel & Nutzen**
+
+    - Die GTIN als gemeinsamen Schlüssel zwischen Modell und separater Produktpassliste verwenden.
+
+    - Die Produktpassliste als führende Quelle erhalten und nur projektbezogen benötigte Informationen ins Modell übernehmen.
+
+
+    **Ablauf**
+
+    1. Als Planer die Datenlieferung für den Produktpass in der Ausschreibung als Aufgabe des Unternehmers oder Lieferanten festlegen und den Erfassungsworkflow als Excel-Vorlage oder Tool bereitstellen.
+
+    2. Produktpassliste mit GTIN und den vereinbarten Produktinformationen durch Unternehmer oder Lieferant im vorgegebenen Workflow pflegen.
+
+    3. GTIN den entsprechenden Produkttypen im Modell zuweisen, die Zuordnung auf Vollständigkeit und Eindeutigkeit prüfen und benötigte Produktpassinformationen bei Bedarf ins Modell einspielen.
+
+
+    **Lieferergebnis**
+
+    - Ausschreibung mit definierter Datenlieferung und bereitgestelltem Erfassungsworkflow.
+
+    - Geprüfte Produktpassliste mit GTIN als Schlüssel und nachvollziehbarer Zuordnung zu den Produkttypen im Modell.
+
+    - Modell mit GTIN und den für das Projekt vereinbarten Produktpassinformationen.'
+  fr: 'Relier sans ambiguïté les informations du passeport produit aux types de produits posés au moyen du GTIN, sans tenir à double l''ensemble des données fabricant dans la maquette.
+
+
+    **Situation de départ**
+
+    - L''entreprise ou le fournisseur tient les informations du passeport produit hors de la maquette ; sans clé commune, l''attribution aux types de produits modélisés ne peut pas être contrôlée.
+
+    - Lorsque les données produit sont tenues en parallèle dans la liste et dans la maquette, des informations périmées ou contradictoires apparaissent.
+
+
+    **Objectif et bénéfice**
+
+    - Utiliser le GTIN comme clé commune entre la maquette et la liste séparée des passeports produits.
+
+    - Conserver la liste des passeports produits comme source de référence et ne reprendre dans la maquette que les informations requises pour le projet.
+
+
+    **Déroulement**
+
+    1. En tant que mandataire, définir dans l''appel d''offres la livraison des données du passeport produit comme tâche de l''entreprise ou du fournisseur et mettre à disposition le processus de saisie
+    sous forme de modèle Excel ou d''outil.
+
+    2. Tenir, par l''entreprise ou le fournisseur, la liste des passeports produits avec le GTIN et les informations convenues selon le processus prescrit.
+
+    3. Attribuer le GTIN aux types de produits correspondants dans la maquette, contrôler que l''attribution est complète et univoque et importer les informations requises dans la maquette si nécessaire.
+
+
+    **Livrable**
+
+    - Appel d''offres avec livraison des données définie et processus de saisie mis à disposition.
+
+    - Liste contrôlée des passeports produits avec le GTIN comme clé et attribution traçable aux types de produits dans la maquette.
+
+    - Maquette avec le GTIN et les informations du passeport produit convenues pour le projet.'
+  it: 'Collegare in modo univoco le informazioni del passaporto di prodotto ai tipi di prodotti installati tramite GTIN, senza gestire due volte nel modello tutti i dati del fabbricante.
+
+
+    **Situazione di partenza**
+
+    - L''impresa o il fornitore gestisce le informazioni del passaporto di prodotto al di fuori del modello; senza una chiave comune non è possibile verificare l''assegnazione ai tipi di prodotti modellati.
+
+    - Se i dati di prodotto sono gestiti in parallelo nell''elenco e nel modello, si creano informazioni obsolete o contraddittorie.
+
+
+    **Obiettivo e beneficio**
+
+    - Utilizzare il GTIN come chiave comune tra il modello e l''elenco separato dei passaporti di prodotto.
+
+    - Mantenere l''elenco dei passaporti di prodotto come fonte di riferimento e trasferire nel modello solo le informazioni richieste dal progetto.
+
+
+    **Svolgimento**
+
+    1. Come progettista, definire nel capitolato la consegna dei dati del passaporto di prodotto come compito dell''impresa o del fornitore e mettere a disposizione il processo di registrazione sotto forma
+    di modello Excel o strumento.
+
+    2. Gestire, a cura dell''impresa o del fornitore, l''elenco dei passaporti di prodotto con GTIN e le informazioni concordate secondo il processo prestabilito.
+
+    3. Assegnare il GTIN ai tipi di prodotti corrispondenti nel modello, verificare che l''assegnazione sia completa e univoca e importare nel modello le informazioni richieste se necessario.
+
+
+    **Risultato della fornitura**
+
+    - Capitolato con consegna dei dati definita e processo di registrazione messo a disposizione.
+
+    - Elenco verificato dei passaporti di prodotto con GTIN come chiave e assegnazione tracciabile ai tipi di prodotti nel modello.
+
+    - Modello con GTIN e le informazioni del passaporto di prodotto concordate per il progetto.'
+  en: 'Link product-passport information unambiguously to installed product types by GTIN without duplicating the complete manufacturer data in the model.
+
+
+    **Starting point**
+
+    - The contractor or supplier maintains product-passport information outside the model; without a common key, its assignment to modelled product types cannot be checked.
+
+    - Maintaining product data in both the list and the model leads to outdated or conflicting information.
+
+
+    **Goal & benefit**
+
+    - Use the GTIN as the common key between the model and the separate product-passport list.
+
+    - Keep the product-passport list as the authoritative source and transfer only project-required information into the model.
+
+
+    **Process**
+
+    1. As the designer, define product-passport data delivery in the tender as a contractor or supplier task and provide the capture workflow as an Excel template or tool.
+
+    2. Have the contractor or supplier maintain the product-passport list with the GTIN and agreed product information using the prescribed workflow.
+
+    3. Assign the GTIN to the corresponding product types in the model, check the assignment for completeness and uniqueness, and import required product-passport information into the model where needed.
+
+
+    **Deliverable**
+
+    - Tender with defined data delivery and a provided capture workflow.
+
+    - Checked product-passport list using the GTIN as key, with traceable assignment to product types in the model.
+
+    - Model containing the GTIN and the product-passport information agreed for the project.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/hov
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+comment: 'Data is specified and collected during SIA 41–53, then checked and delivered in handover phases SIA 53–62. The contractor/supplier list remains authoritative. IFC4+: Pset_ManufacturerTypeInformation.GlobalTradeItemNumber
+  on IfcTypeObject. The GTIN identifies a trade-item type; DPP data is joined by GTIN and copied into the model only where contractually required.'

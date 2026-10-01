@@ -1,0 +1,48 @@
+id: pragmaticbim:value/hazard-type
+code: HAZARD-TYPE
+name:
+  de: Schadstoffart
+  fr: Type de polluant
+  it: Tipo di inquinante
+  en: Hazard type
+description:
+  de: Zulässige Werte für ePset_HazardousMaterial.HazardType.
+  fr: Valeurs admises pour ePset_HazardousMaterial.HazardType.
+  it: Valori ammessi per ePset_HazardousMaterial.HazardType.
+  en: Allowed values for ePset_HazardousMaterial.HazardType.
+year: 2026
+norm_reference: ePset_HazardousMaterial
+status: active
+values:
+  de:
+  - Asbestos
+  - PCB
+  - PAH
+  - PCP
+  - Lead
+  - None
+  - Unknown
+  fr:
+  - Asbestos
+  - PCB
+  - PAH
+  - PCP
+  - Lead
+  - None
+  - Unknown
+  it:
+  - Asbestos
+  - PCB
+  - PAH
+  - PCP
+  - Lead
+  - None
+  - Unknown
+  en:
+  - Asbestos
+  - PCB
+  - PAH
+  - PCP
+  - Lead
+  - None
+  - Unknown

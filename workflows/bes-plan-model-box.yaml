@@ -1,0 +1,129 @@
+id: pragmaticbim:workflow/bes-plan-model-box
+code: BES-PLAN-BOX
+sort_order: 23
+name:
+  de: Plan- und Modellboxen beschaffen
+  fr: Acquérir les bornes plans et maquettes
+  it: Acquisire le postazioni piani e modelli
+  en: Procure plan and model stations
+description:
+  de: 'Aktuelle Pläne, Modelle und Projektdaten auf jedem aktiven Geschoss direkt am Arbeitsort nutzbar machen.
+
+
+    **Ausgangslage**
+
+    - Digitale Projektinformationen sind auf der Baustelle oft nur im Baubüro verfügbar; weite Wege und Medienbrüche führen dazu, dass vor Ort mit veralteten Unterlagen gearbeitet wird.
+
+
+    **Ziel & Nutzen**
+
+    - Pro aktivem Geschoss eine geschützte Plan- und Modellbox mit Zugriff auf die aktuellen Projektinformationen beschaffen.
+
+
+    **Ablauf**
+
+    1. Bedarf, Standorte, Stromversorgung und Schutz je Bauphase mit der Bauleitung festlegen und im Baustellenlogistikmodell als Baustelleneinrichtungsobjekt führen.
+
+    2. Plan- und Modellboxen beschaffen, installieren und für den Zugriff auf die Projektplattform einrichten.
+
+    3. Zugriff vor der Nutzung und bei veränderter Baustellensituation geschossweise prüfen und Mängel beheben.
+
+
+    **Lieferergebnis**
+
+    - Betriebsbereite, geschützte Plan- und Modellbox pro aktivem Geschoss mit Zugriff auf aktuelle Pläne, Modelle und Projektdaten.
+
+    - Geklärte Verantwortung für Betrieb, Aktualisierung und Unterstützung während der Ausführung.'
+  fr: 'Rendre les plans, maquettes et données de projet à jour directement utilisables sur chaque étage actif, à l''endroit du travail.
+
+
+    **Situation de départ**
+
+    - Sur le chantier, les informations numériques du projet ne sont souvent disponibles qu''au bureau de chantier ; les longs déplacements et les ruptures de support conduisent à travailler sur place avec
+    des documents périmés.
+
+
+    **Objectif et bénéfice**
+
+    - Acquérir à chaque étage actif une borne protégée pour la consultation des plans et de la maquette, avec accès aux informations de projet à jour.
+
+
+    **Déroulement**
+
+    1. Définir avec la direction des travaux les besoins, emplacements, alimentations électriques et protections pour chaque phase de chantier et les saisir dans le modèle de logistique de chantier comme
+    objet d''installation de chantier.
+
+    2. Acquérir, installer et configurer les bornes plans et maquettes pour l''accès à la plateforme de projet.
+
+    3. Contrôler l''accès par étage avant utilisation et après tout changement de la situation du chantier, puis corriger les défauts.
+
+
+    **Livrable**
+
+    - Borne plans et maquettes opérationnelle et protégée à chaque étage actif, avec accès aux plans, maquettes et données de projet à jour.
+
+    - Responsabilité définie pour l''exploitation, la mise à jour et l''assistance pendant la réalisation.'
+  it: 'Rendere direttamente utilizzabili a ogni piano attivo, sul luogo di lavoro, piani, modelli e dati di progetto aggiornati.
+
+
+    **Situazione di partenza**
+
+    - In cantiere le informazioni digitali di progetto sono spesso disponibili solo nell''ufficio di cantiere; lunghi spostamenti e cambi di supporto portano a lavorare sul posto con documenti non aggiornati.
+
+
+    **Obiettivo e beneficio**
+
+    - Acquisire a ogni piano attivo una postazione protetta per la consultazione di piani e modello, con accesso alle informazioni di progetto aggiornate.
+
+
+    **Svolgimento**
+
+    1. Definire con la direzione lavori fabbisogno, ubicazioni, alimentazione elettrica e protezione per ogni fase di cantiere e gestirli nel modello di logistica di cantiere come oggetto di installazione
+    di cantiere.
+
+    2. Acquistare, installare e configurare le postazioni piani e modelli per l''accesso alla piattaforma di progetto.
+
+    3. Verificare l''accesso per ogni piano prima dell''utilizzo e dopo cambiamenti della situazione di cantiere, quindi eliminare le carenze.
+
+
+    **Risultato della fornitura**
+
+    - Postazione piani e modelli operativa e protetta a ogni piano attivo, con accesso a piani, modelli e dati di progetto aggiornati.
+
+    - Responsabilità definita per l''esercizio, l''aggiornamento e il supporto durante l''esecuzione.'
+  en: 'Make current drawings, models, and project data directly usable on every active storey, at the place of work.
+
+
+    **Starting point**
+
+    - Digital project information is often available only in the site office; long walks and changes of medium lead to outdated documents being used at the workface.
+
+
+    **Goal & benefit**
+
+    - Procure a protected plan and model station on every active storey with access to current project information.
+
+
+    **Process**
+
+    1. Define requirements, locations, power supply, and protection for each construction phase with site management and record them in the site-logistics model as site-setup objects.
+
+    2. Procure, install, and configure the plan and model stations for access to the project platform.
+
+    3. Test access by storey before use and after changes to site conditions, then remedy deficiencies.
+
+
+    **Deliverable**
+
+    - Operational, protected plan and model station on every active storey with access to current drawings, models, and project data.
+
+    - Clear responsibility for operation, updates, and support during construction.'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Separately agreed procurement of plan and model stations on site; not a contractor site installation. Locations are modelled as site-setup objects (Name = Plan- und Modellbox) in the construction
+  logistics model.

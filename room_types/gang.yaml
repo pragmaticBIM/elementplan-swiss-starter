@@ -1,0 +1,28 @@
+id: pragmaticbim:room-type/gang
+code: RT-WH-02
+sort_order: 2
+name:
+  de: Gang
+  fr: Couloir
+  it: Corridoio
+  en: Hallway
+definition:
+  de: Erschliessungsgang innerhalb einer Wohneinheit.
+  fr: Circulation intérieure d'un logement.
+  it: Disimpegno interno a un'unità abitativa.
+  en: Circulation passage within a dwelling unit.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Gang
+    fr: Couloir
+    it: Corridoio
+    en: Hallway
+status: active

@@ -1,0 +1,28 @@
+id: pragmaticbim:room-type/eingangshalle
+code: RT-WH-12
+sort_order: 12
+name:
+  de: Eingangshalle
+  fr: Hall d'entrée
+  it: Atrio
+  en: Lobby
+definition:
+  de: Gemeinsamer Eingangsraum des Gebäudes.
+  fr: Hall commun d'entrée du bâtiment.
+  it: Atrio comune d'ingresso dell'edificio.
+  en: Shared entrance hall of the building.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Eingangshalle
+    fr: Hall d'entrée
+    it: Atrio
+    en: Lobby
+status: active

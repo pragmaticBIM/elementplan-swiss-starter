@@ -2,12 +2,12 @@ id: pragmaticbim:workflow/qas-mep-detail-coordination
 code: QAS-MEP-DETAIL
 sort_order: 72
 name:
-  de: Detailkoordination Gebäudetechnik
-  fr: Coordination détaillée CVC
-  it: Coordinamento dettagliato impianti
-  en: MEP detail coordination
+  de: Koordination Architektur - Gebäudetechnik in späten Entwurfsphasen
+  fr: Coordination architecture - techniques du bâtiment en phases de conception avancées
+  it: Coordinamento architettura - impianti nelle fasi di progetto avanzate
+  en: Architecture - building services coordination in late design stages
 description:
-  de: 'Gebäudetechnik ab Bauprojekt mit IFC-Entitäten und PredefinedType koordinieren — nicht mehr nur schematisch.
+  de: 'Die Gebäudetechnik ab dem Bauprojekt ausführungsnah koordinieren, damit Kollisionen, Anschlüsse und Platzverhältnisse vor der Ausführung geprüft werden können.
 
 
     **Ausgangslage**
@@ -33,19 +33,10 @@ description:
     3. Status führen, wo Bestand und Neubau gemischt sind.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Koordinierbares Detailmodell der Gebäudetechnik mit prüfbaren Entitäten und Typen.
-
-
-    **Lieferobjekte**
-
-    - Gebäudetechnikmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Relevante IFC-TGA-Entitäten (Erzeuger, Terminals, Armaturen, u. a.) mit PredefinedType
-
-    - Status gemäss Pset_*Common wo Bestandskoordination nötig: NEW, EXISTING, DEMOLISH, TEMPORARY'
-  fr: 'Coordonner les techniques du bâtiment dès le projet de construction avec entités IFC et PredefinedType — plus seulement schématique.
+    - TGA-Detailmodell mit den erforderlichen Funktions-, Lage-, Anschluss- und Statusinformationen.'
+  fr: 'Coordonner les techniques du bâtiment dès le projet de construction avec entités IFC et PredefinedType – plus seulement schématique.
 
 
     **Situation de départ**
@@ -71,19 +62,10 @@ description:
     3. Saisir le statut lorsque existant et neuf se mêlent.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Maquette détaillée CVC coordonnable avec entités et types vérifiables.
-
-
-    **Livrables**
-
-    - Maquette techniques avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Entités IFC CVC pertinentes (générateurs, terminaux, armatures, etc.) avec PredefinedType
-
-    - Statut selon Pset_*Common si coordination existant : NEW, EXISTING, DEMOLISH, TEMPORARY'
-  it: 'Coordinare gli impianti dal progetto di costruzione con entità IFC e PredefinedType — non più solo schematico.
+    - Maquette détaillée CVC avec les informations requises sur la fonction, la position, les raccordements et l''état.'
+  it: 'Coordinare gli impianti dal progetto di costruzione con entità IFC e PredefinedType – non più solo schematico.
 
 
     **Situazione di partenza**
@@ -109,19 +91,10 @@ description:
     3. Gestire lo stato dove esistente e nuovo si mescolano.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Modello di dettaglio impianti coordinabile con entità e tipi verificabili.
-
-
-    **Oggetti della fornitura**
-
-    - Modello impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Entità IFC impianti rilevanti (generatori, terminali, armature, ecc.) con PredefinedType
-
-    - Stato secondo Pset_*Common se serve coordinamento sull''esistente: NEW, EXISTING, DEMOLISH, TEMPORARY'
-  en: 'Coordinate building services from construction project phase with IFC entities and PredefinedType — no longer schematic only.
+    - Modello di dettaglio degli impianti con le informazioni necessarie su funzione, posizione, collegamenti e stato.'
+  en: 'Coordinate building services in construction-ready detail from the building-design phase onward so that clashes, connections, and spatial conditions can be checked before construction.
 
 
     **Starting point**
@@ -147,19 +120,10 @@ description:
     3. Carry Status where existing and new work are mixed.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Coordinatable detailed MEP model with checkable entities and types.
-
-
-    **Deliverables**
-
-    - MEP model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Relevant IFC MEP entities (plant, terminals, fittings, etc.) with PredefinedType
-
-    - Status per Pset_*Common where existing-stock coordination is needed: NEW, EXISTING, DEMOLISH, TEMPORARY'
-workflow_group: null
+    - Detailed MEP model with the required function, location, connection, and status information.'
+workflow_group: entwurf
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active

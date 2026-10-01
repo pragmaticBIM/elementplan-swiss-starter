@@ -1,6 +1,6 @@
 id: pragmaticbim:element/furniture
 code: FURN
-sort_order: 41
+sort_order: 54
 status: active
 name:
   de: Möbel
@@ -8,31 +8,31 @@ name:
   it: Arredo
   en: Furniture
 definition:
-  de: 'Möbel für den Nachweis der Möblierbarkeit und die Möblierungsplanung.
+  de: 'Macht früh sichtbar, ob Räume mit der vorgesehenen Nutzung tatsächlich möblierbar und ausreichend dimensioniert sind.
 
 
     **Beschreibung**
 
     - Bewegliche oder fest eingebaute Möbelstücke in Innenräumen.
 
-    - Dienen der Prüfung, ob Räume möblierbar bleiben, und der Lage- und Typenplanung — nicht der Produktkatalog- oder Ausführungsdetailierung.
+    - Dienen der Prüfung, ob Räume möblierbar bleiben, und der Lage- und Typenplanung – nicht der Produktkatalog- oder Ausführungsdetailierung.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Als vereinfachten Körper mit realen Grundrissabmessungen und Höhe modellieren.
 
     - Dem zugehörigen Geschoss zuweisen.
 
     - Keine Herstellerprodukte, Leitungen oder Ausbau innerhalb des Möbelkörpers modellieren.'
-  fr: 'Mobilier pour la preuve de meublabilité et la planification du mobilier.
+  fr: 'Permet de vérifier tôt si les locaux peuvent réellement être meublés selon l''usage prévu et s''ils sont suffisamment dimensionnés.
 
 
     **Description**
 
     - Pièces de mobilier mobiles ou fixes dans les locaux intérieurs.
 
-    - Servent à vérifier que les locaux restent meublables et à planifier position et type — pas au catalogue produits ni au détail d''exécution.
+    - Servent à vérifier que les locaux restent meublables et à planifier position et type – pas au catalogue produits ni au détail d''exécution.
 
 
     **Directives de modélisation**
@@ -42,14 +42,14 @@ definition:
     - Rattacher à l''étage concerné.
 
     - Ne pas modéliser produits fabricant, réseaux ou finitions à l''intérieur du corps de mobilier.'
-  it: 'Arredi per la prova di arredabilità e la pianificazione dell''arredo.
+  it: 'Permette di verificare tempestivamente se i locali sono effettivamente arredabili secondo l''uso previsto e sufficientemente dimensionati.
 
 
     **Descrizione**
 
     - Pezzi di arredo mobili o fissi nei locali interni.
 
-    - Servono a verificare che i locali restino arredabili e a pianificare posizione e tipo — non al catalogo prodotti né al dettaglio esecutivo.
+    - Servono a verificare che i locali restino arredabili e a pianificare posizione e tipo – non al catalogo prodotti né al dettaglio esecutivo.
 
 
     **Direttive di modellazione**
@@ -59,14 +59,14 @@ definition:
     - Assegnare al piano corrispondente.
 
     - Non modellare prodotti del produttore, reti o finiture all''interno del corpo d''arredo.'
-  en: 'Furniture for furnishability verification and furniture planning.
+  en: 'Reveals early whether spaces can actually be furnished for their intended use and are adequately sized.
 
 
     **Description**
 
     - Movable or built-in furniture pieces in interior rooms.
 
-    - Used to check that rooms remain furnishable and to plan location and type — not product catalogues or execution detailing.
+    - Used to check that rooms remain furnishable and to plan location and type – not product catalogues or execution detailing.
 
 
     **Modelling guidelines**
@@ -81,237 +81,12 @@ needed_in_domain:
 entity_ifc2x3: IfcFurnishingElement
 entity_ifc4: IfcFurniture
 entity_ifc4_3: IfcFurniture
-picture_link: null
-model_link: null
+picture_link: furniture.png
+picture_print_link: furniture-print.tif
+attachment_link: furniture.ifc
+model_link: furniture.ifc
 applicability: entity_ifc4=IfcFurniture OR entity_ifc2x3=IfcFurnishingElement
 attributes:
-- name: PredefinedType
-  pset: null
-  definition:
-    de: 'Art des Möbels.
-
-
-      **Zulässige Werte**
-
-      - `CHAIR` — Stuhl
-
-      - `TABLE` — Tisch
-
-      - `DESK` — Schreibtisch
-
-      - `BED` — Bett
-
-      - `FILECABINET` — Aktenschrank
-
-      - `SHELF` — Regal
-
-      - `SOFA` — Sofa
-
-      - `USERDEFINED` — benutzerdefiniert'
-    fr: 'Type de mobilier.
-
-
-      **Valeurs admises**
-
-      - `CHAIR` — chaise
-
-      - `TABLE` — table
-
-      - `DESK` — bureau
-
-      - `BED` — lit
-
-      - `FILECABINET` — armoire à dossiers
-
-      - `SHELF` — étagère
-
-      - `SOFA` — canapé
-
-      - `USERDEFINED` — défini par l''utilisateur'
-    it: 'Tipo di arredo.
-
-
-      **Valori ammessi**
-
-      - `CHAIR` — sedia
-
-      - `TABLE` — tavolo
-
-      - `DESK` — scrivania
-
-      - `BED` — letto
-
-      - `FILECABINET` — schedario
-
-      - `SHELF` — scaffale
-
-      - `SOFA` — divano
-
-      - `USERDEFINED` — definito dall''utente'
-    en: 'Kind of furniture.
-
-
-      **Allowed values**
-
-      - `CHAIR` — chair
-
-      - `TABLE` — table
-
-      - `DESK` — desk
-
-      - `BED` — bed
-
-      - `FILECABINET` — file cabinet
-
-      - `SHELF` — shelf
-
-      - `SOFA` — sofa
-
-      - `USERDEFINED` — user-defined'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-furniture
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-furnishability-verification
-  - pragmaticbim:workflow/des-furniture-planning
-  is_applicability: false
-  status: active
-  sort_order: 1
-- name: ObjectType
-  pset: null
-  definition:
-    de: 'Art des Möbels.
-
-
-      **Zulässige Werte**
-
-      - `CHAIR` — Stuhl
-
-      - `TABLE` — Tisch
-
-      - `DESK` — Schreibtisch
-
-      - `BED` — Bett
-
-      - `FILECABINET` — Aktenschrank
-
-      - `SHELF` — Regal
-
-      - `SOFA` — Sofa
-
-      - `USERDEFINED` — benutzerdefiniert
-
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für PredefinedType.'
-    fr: 'Type de mobilier.
-
-
-      **Valeurs admises**
-
-      - `CHAIR` — chaise
-
-      - `TABLE` — table
-
-      - `DESK` — bureau
-
-      - `BED` — lit
-
-      - `FILECABINET` — armoire à dossiers
-
-      - `SHELF` — étagère
-
-      - `SOFA` — canapé
-
-      - `USERDEFINED` — défini par l''utilisateur
-
-
-      **Remarque**
-
-      - Substitut IFC2x3 de PredefinedType.'
-    it: 'Tipo di arredo.
-
-
-      **Valori ammessi**
-
-      - `CHAIR` — sedia
-
-      - `TABLE` — tavolo
-
-      - `DESK` — scrivania
-
-      - `BED` — letto
-
-      - `FILECABINET` — schedario
-
-      - `SHELF` — scaffale
-
-      - `SOFA` — divano
-
-      - `USERDEFINED` — definito dall''utente
-
-
-      **Nota**
-
-      - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Kind of furniture.
-
-
-      **Allowed values**
-
-      - `CHAIR` — chair
-
-      - `TABLE` — table
-
-      - `DESK` — desk
-
-      - `BED` — bed
-
-      - `FILECABINET` — file cabinet
-
-      - `SHELF` — shelf
-
-      - `SOFA` — sofa
-
-      - `USERDEFINED` — user-defined
-
-
-      **Note**
-
-      - IFC2x3 substitute for PredefinedType.'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-furniture
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-furnishability-verification
-  - pragmaticbim:workflow/des-furniture-planning
-  is_applicability: false
-  status: active
-  sort_order: 2
 - name: Name
   pset: null
   definition:
@@ -339,42 +114,154 @@ attributes:
   - pragmaticbim:workflow/des-furniture-planning
   is_applicability: false
   status: active
-  sort_order: 3
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Art des Möbels.
+
+
+      **Zulässige Werte**
+
+      - `CHAIR` — Stuhl
+
+      - `TABLE` — Tisch
+
+      - `DESK` — Schreibtisch
+
+      - `BED` — Bett
+
+      - `FILECABINET` — Aktenschrank
+
+      - `SHELF` — Regal
+
+      - `SOFA` — Sofa
+
+      - `USERDEFINED` — benutzerdefiniert
+
+      - `NOTDEFINED` — nicht definiert'
+    fr: 'Type de mobilier.
+
+
+      **Valeurs admises**
+
+      - `CHAIR` — chaise
+
+      - `TABLE` — table
+
+      - `DESK` — bureau
+
+      - `BED` — lit
+
+      - `FILECABINET` — armoire à dossiers
+
+      - `SHELF` — étagère
+
+      - `SOFA` — canapé
+
+      - `USERDEFINED` — défini par l''utilisateur
+
+      - `NOTDEFINED` — non défini'
+    it: 'Tipo di arredo.
+
+
+      **Valori ammessi**
+
+      - `CHAIR` — sedia
+
+      - `TABLE` — tavolo
+
+      - `DESK` — scrivania
+
+      - `BED` — letto
+
+      - `FILECABINET` — schedario
+
+      - `SHELF` — scaffale
+
+      - `SOFA` — divano
+
+      - `USERDEFINED` — definito dall''utente
+
+      - `NOTDEFINED` — non definito'
+    en: 'Kind of furniture.
+
+
+      **Allowed values**
+
+      - `CHAIR` — chair
+
+      - `TABLE` — table
+
+      - `DESK` — desk
+
+      - `BED` — bed
+
+      - `FILECABINET` — file cabinet
+
+      - `SHELF` — shelf
+
+      - `SOFA` — sofa
+
+      - `USERDEFINED` — user-defined
+
+      - `NOTDEFINED` — not defined'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-furniture
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-furnishability-verification
+  - pragmaticbim:workflow/des-furniture-planning
+  is_applicability: false
+  status: active
+  sort_order: 2
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: 'Kostenschnittstelle des Bauteils — Grundausbau oder Mieterausbau.
+    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
 
 
       **Zulässige Werte**
 
       - `GAB` — Grundausbau (Bauherr / Vermieter)
 
-      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_Migros`'
-    fr: 'Interface de coûts de l''élément — aménagement de base ou aménagement locataire.
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
+    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
 
 
       **Valeurs admises**
 
       - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
 
-      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_Migros`'
-    it: 'Interfaccia di costo del componente — allestimento di base o allestimento locatario.
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
+    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
 
 
       **Valori ammessi**
 
       - `GAB` — allestimento di base (committente / locatore)
 
-      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_Migros`'
-    en: 'Cost interface of the component — base building or tenant fit-out.
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
+    en: 'Cost interface of the component – base building or tenant fit-out.
 
 
       **Allowed values**
 
       - `GAB` — base building (client / landlord)
 
-      - `MAB_{Mietername}` — tenant fit-out, e.g. `MAB_Migros`'
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
   datatype: IfcLabel
   needed_in_phases:
   - '32'
@@ -389,34 +276,61 @@ attributes:
   - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
   is_applicability: false
   status: active
+  sort_order: 3
+- name: FundingApplication
+  pset: ePset_Cost
+  definition:
+    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
+      demande.
+    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
+      to no application.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-funding-verification
+  is_applicability: false
+  status: active
   sort_order: 4
 - name: AwardInterface
   pset: ePset_Cost
   definition:
-    de: 'Vergabepaket des Bauteils nach BKP-3-Steller — damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Vergabepaket — z. B. `211`, `221`, `244`.'
-    fr: 'Lot d''adjudication de l''élément selon le BKP à trois chiffres — pour rendre visibles les interfaces entre lots d''entreprise.
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
+    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot d''adjudication BKP — p. ex. `211`, `221`, `244`.'
-    it: 'Lotto di aggiudicazione del componente secondo il BKP a tre cifre — per rendere visibili le interfacce tra lotti d''impresa.
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
+    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di aggiudicazione BKP — es. `211`, `221`, `244`.'
-    en: 'Award package of the component by three-digit BKP code — so interfaces between contractor packages become visible.
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
+    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
 
 
       **Allowed values**
 
-      - See value list BKP award package — e.g. `211`, `221`, `244`.'
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-award-package
   needed_in_phases:
@@ -436,30 +350,30 @@ attributes:
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
-    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller — damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Planungspaket — z. B. `091`, `092`, `094`.'
-    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres — pour rendre visibles les responsabilités entre disciplines de planification.
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot de planification BKP — p. ex. `091`, `092`, `094`.'
-    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre — per rendere visibili le responsabilità tra discipline di pianificazione.
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di pianificazione BKP — es. `091`, `092`, `094`.'
-    en: 'Planning interface of the component by three-digit BKP code — so responsibilities between planning disciplines become visible.
+      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
+    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
 
 
       **Allowed values**
 
-      - See value list BKP planning package — e.g. `091`, `092`, `094`.'
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-planning-package
   needed_in_phases:

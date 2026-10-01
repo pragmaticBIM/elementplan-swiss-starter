@@ -1,0 +1,27 @@
+id: pragmaticbim:usage-scenario/velo-abstellen
+code: US-WH-12
+sort_order: 12
+name:
+  de: Velo abstellen
+  fr: Ranger le vélo
+  it: Depositare la bici
+  en: Parking the bicycle
+description:
+  de: Bewohnende verlassen die Wohnung, gehen über das Treppenhaus und stellen das Velo im Innenbereich ab.
+  fr: Les occupants quittent le logement, empruntent la cage d'escalier et rangent le vélo à l'intérieur du bâtiment.
+  it: Chi abita esce dall'alloggio, percorre il vano scale e deposita la bici all'interno dell'edificio.
+  en: Occupants leave the dwelling, use the stairwell, and park the bicycle inside the building.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/treppenhaus
+- pragmaticbim:room-type/parkplatz-velo-innen
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/treppenhaus
+- from_room_type: pragmaticbim:room-type/treppenhaus
+  to_room_type: pragmaticbim:room-type/parkplatz-velo-innen
+  max_distance: 30

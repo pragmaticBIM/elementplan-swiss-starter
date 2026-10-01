@@ -33,20 +33,11 @@ description:
     3. Schemata formal freigeben als Grundlage für Ausführung und Detailkoordination.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Formal abgesegnete System- und Strangschemata als Grundlage für TGA-Ausführung.
+    - Freigegebene System-, Anlagen- und Strangschemata mit prüfbarem Systemaufbau und Verbindungen
 
-
-    **Lieferobjekte**
-
-    - System- und Anlageschemata (HLKSE) und Strangschemata / Steigzonen
-
-    - TGA-Modell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Schematische Leitungen, Kanäle und Trassen (IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment)
-
-    - Anlagenräume und Steigzonen (IfcBuildingElementProxy), Fallleitungen (IfcPipeSegment)'
+    - TGA-Modell mit räumlich abgestimmter schematischer Verteilung zum Abgleich mit den Schemata'
   fr: 'Élaborer les schémas de système et de colonnes des techniques du bâtiment et les approuver formellement avant l''exécution.
 
 
@@ -73,20 +64,11 @@ description:
     3. Approuver formellement les schémas comme base pour exécution et coordination détaillée.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Schémas de système et de colonnes formellement approuvés comme base pour l''exécution CVC.
+    - Schémas approuvés de système, d''installation et de colonnes avec structure et raccordements vérifiables
 
-
-    **Livrables**
-
-    - Schémas de système et d''installation (CVC) et schémas de colonnes / gaines techniques
-
-    - Maquette CVC avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Conduites, gaines et chemins de câbles schématiques (IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment)
-
-    - Locaux techniques et gaines (IfcBuildingElementProxy), colonnes de descente (IfcPipeSegment)'
+    - Maquette CVC avec distribution schématique coordonnée dans l''espace pour comparaison avec les schémas'
   it: 'Elaborare gli schemi di sistema e delle colonne impianti e approvarli formalmente prima dell''esecuzione.
 
 
@@ -113,20 +95,11 @@ description:
     3. Approvare formalmente gli schemi come base per esecuzione e coordinamento di dettaglio.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Schemi di sistema e delle colonne formalmente approvati come base per l''esecuzione impianti.
+    - Schemi approvati di sistema, d''impianto e delle colonne con struttura e collegamenti verificabili
 
-
-    **Oggetti della fornitura**
-
-    - Schemi di sistema e d''impianto e schemi delle colonne montanti / cavedi
-
-    - Modello impianti con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Condotte, canali e passerelle schematiche (IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment)
-
-    - Locali tecnici e cavedi (IfcBuildingElementProxy), colonne di scarico (IfcPipeSegment)'
+    - Modello impianti con distribuzione schematica coordinata nello spazio per il confronto con gli schemi'
   en: 'Develop MEP system and riser schematics and formally approve them before construction.
 
 
@@ -153,21 +126,12 @@ description:
     3. Formally approve the schematics as the basis for execution and detail coordination.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Formally approved system and riser schematics as the basis for MEP execution.
+    - Approved system, plant, and riser schematics with verifiable system structure and connections
 
-
-    **Deliverables**
-
-    - System and plant schematics (MEP) and riser schematics / shafts
-
-    - MEP model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Schematic pipes, ducts, and trays (IfcPipeSegment, IfcDuctSegment, IfcCableCarrierSegment)
-
-    - Equipment spaces and shafts (IfcBuildingElementProxy), downpipes (IfcPipeSegment)'
-workflow_group: null
+    - MEP model with spatially coordinated schematic distribution for comparison with the schematics'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active

@@ -1,0 +1,24 @@
+id: pragmaticbim:value/longname-space-elevator
+code: LONGNAME-SPACE-ELEVATOR
+name:
+  de: LongName Aufzugsraumobjekt
+  fr: LongName objet local d'ascenseur
+  it: LongName oggetto locale ascensore
+  en: LongName elevator space object
+description:
+  de: Festgelegte Raumnutzung für das geschossweise Aufzugsraumobjekt.
+  fr: Usage fixé pour l'objet local d'ascenseur saisi par étage.
+  it: Uso fisso per l'oggetto locale ascensore gestito per piano.
+  en: Fixed space use for the storey-by-storey elevator space object.
+year: 2026
+norm_reference: Projektkonvention
+status: active
+values:
+  de:
+  - Aufzug
+  fr:
+  - Ascenseur
+  it:
+  - Ascensore
+  en:
+  - Elevator

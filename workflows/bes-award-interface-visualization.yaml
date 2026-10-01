@@ -1,13 +1,13 @@
 id: pragmaticbim:workflow/bes-award-interface-visualization
 code: BES-AWARD-INTERFACE
-sort_order: 14
+sort_order: 2
 name:
   de: Vergabeschnittstellen visualisieren
   fr: Visualiser les interfaces d'adjudication
   it: Visualizzare le interfacce di aggiudicazione
   en: Visualize award interfaces
 description:
-  de: 'Vergabepakete je Bauteil im Modell führen und kolorieren — vergessene Teile an den Unternehmerschnittstellen werden sichtbar.
+  de: 'Vergabepakete je Bauteil im Modell führen und einfärben – vergessene Bauteile an den Unternehmerschnittstellen werden sichtbar.
 
 
     **Ausgangslage**
@@ -19,31 +19,26 @@ description:
 
     **Ziel & Nutzen**
 
-    - Jedes Architektur- und TGA-Bauteil einem BKP-Vergabepaket zuweisen.
+    - Jedes Architektur- und TGA-Bauteil einem Vergabepaket zuweisen.
 
-    - Kolorierte Pläne machen fehlende Zuordnungen und Überschneidungen an den Schnittstellen sichtbar.
+    - Farbige Pläne machen fehlende Zuordnungen und Überschneidungen an den Schnittstellen sichtbar.
 
 
     **Ablauf**
 
     1. Architektur- und TGA-Bauteile im Fachmodell bereitstellen.
 
-    2. AwardInterface mit dem BKP-3-Steller des Unternehmerloses setzen.
+    2. AwardInterface gemäss der vereinbarten Vergabegliederung setzen, z. B. nach BKP.
 
     3. Visualisierung nach Vergabepaket ableiten und Lücken prüfen.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Sichtbare Vergabeschnittstellen; fehlende oder doppelte Loszuordnungen sind erkennbar, bevor sie in die Ausschreibung gehen.
+    - Architektur- und TGA-Fachmodelle mit eindeutiger Zuordnung der relevanten Bauteile zu den Vergabepaketen.
 
-
-    **Lieferobjekte**
-
-    - Architektur- und TGA-Fachmodelle mit den modellierten Bauteilen
-
-    - AwardInterface (ePset_Cost) mit BKP-3-Steller, z. B. `211`, `221`, `244`'
-  fr: 'Tenir les lots d''adjudication par élément dans la maquette et les colorier — les parties oubliées aux interfaces entre entreprises deviennent visibles.
+    - Kolorierte Auswertung der Vergabepakete mit sichtbaren Zuordnungslücken und Überschneidungen.'
+  fr: 'Tenir les lots d''adjudication par élément dans la maquette et les colorier – les parties oubliées aux interfaces entre entreprises deviennent visibles.
 
 
     **Situation de départ**
@@ -55,7 +50,7 @@ description:
 
     **Objectif et bénéfice**
 
-    - Affecter chaque élément d''architecture et CVC à un lot d''adjudication BKP.
+    - Affecter chaque élément d''architecture et CVC à un lot d''adjudication.
 
     - Les plans colorés rendent visibles les affectations manquantes et les chevauchements aux interfaces.
 
@@ -64,22 +59,17 @@ description:
 
     1. Fournir les éléments d''architecture et CVC dans la maquette de discipline.
 
-    2. Définir AwardInterface avec le code BKP à trois chiffres du lot d''entreprise.
+    2. Définir AwardInterface selon la structure d''adjudication convenue, p. ex. BKP.
 
     3. Déduire la visualisation par lot d''adjudication et vérifier les lacunes.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Interfaces d''adjudication visibles ; affectations manquantes ou doubles sont détectables avant l''appel d''offres.
+    - Maquettes architecture et CVC avec affectation claire des éléments pertinents aux lots d''adjudication.
 
-
-    **Livrables**
-
-    - Maquettes architecture et CVC avec les éléments modélisés
-
-    - AwardInterface (ePset_Cost) avec code BKP à trois chiffres, p. ex. `211`, `221`, `244`'
-  it: 'Gestire i lotti di aggiudicazione per componente nel modello e colorare i piani — le parti dimenticate alle interfacce tra imprese diventano visibili.
+    - Évaluation coloriée des lots d''adjudication faisant apparaître les lacunes et les chevauchements.'
+  it: 'Gestire i lotti di aggiudicazione per componente nel modello e colorare i piani – le parti dimenticate alle interfacce tra imprese diventano visibili.
 
 
     **Situazione di partenza**
@@ -91,7 +81,7 @@ description:
 
     **Obiettivo e beneficio**
 
-    - Assegnare ogni componente di architettura e impianti a un lotto di aggiudicazione BKP.
+    - Assegnare ogni componente di architettura e impianti a un lotto di aggiudicazione.
 
     - Le planimetrie colorate rendono visibili assegnazioni mancanti e sovrapposizioni alle interfacce.
 
@@ -100,22 +90,17 @@ description:
 
     1. Fornire i componenti di architettura e impianti nel modello di disciplina.
 
-    2. Impostare AwardInterface con il codice BKP a tre cifre del lotto d''impresa.
+    2. Impostare AwardInterface secondo la struttura di aggiudicazione concordata, ad es. BKP.
 
     3. Ricavare la visualizzazione per lotto di aggiudicazione e verificare le lacune.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Interfacce di aggiudicazione visibili; assegnazioni mancanti o doppie sono riconoscibili prima della gara.
+    - Modelli di architettura e impianti con assegnazione chiara degli elementi rilevanti ai lotti di aggiudicazione.
 
-
-    **Oggetti della fornitura**
-
-    - Modelli di architettura e impianti con i componenti modellati
-
-    - AwardInterface (ePset_Cost) con codice BKP a tre cifre, es. `211`, `221`, `244`'
-  en: 'Carry award packages per component in the model and colour them — forgotten parts at contractor interfaces become visible.
+    - Valutazione colorata dei lotti di aggiudicazione con evidenza di lacune e sovrapposizioni.'
+  en: 'Carry procurement packages per component in the model and colour them – forgotten parts at contractor interfaces become visible.
 
 
     **Starting point**
@@ -127,7 +112,7 @@ description:
 
     **Goal & benefit**
 
-    - Assign every architecture and MEP component to a BKP award package.
+    - Assign every architecture and MEP component to a procurement package.
 
     - Coloured plans make missing assignments and overlaps at the interfaces visible.
 
@@ -136,25 +121,21 @@ description:
 
     1. Provide architecture and MEP components in the discipline model.
 
-    2. Set AwardInterface to the three-digit BKP code of the contractor package.
+    2. Set AwardInterface to the agreed procurement breakdown, e.g. by BKP.
 
-    3. Derive visualization by award package and check for gaps.
-
-
-    **Outcome**
-
-    - Visible award interfaces; missing or duplicate package assignments are detectable before they enter the tender.
+    3. Derive visualization by procurement package and check for gaps.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture and MEP models with the modelled components
+    - Architecture and MEP models with relevant components clearly assigned to procurement packages.
 
-    - AwardInterface (ePset_Cost) with three-digit BKP code, e.g. `211`, `221`, `244`'
-workflow_group: null
+    - Coloured award-package evaluation showing assignment gaps and overlaps.'
+workflow_group: ausschreibung
 parent_workflow: pragmaticbim:workflow/bes
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep

@@ -1,6 +1,6 @@
 id: pragmaticbim:element/architecture-ceiling-suspended
 code: ARC-CEILING
-sort_order: 41
+sort_order: 50
 status: active
 name:
   de: Abhangdecke
@@ -8,7 +8,7 @@ name:
   it: Controsoffitto
   en: Suspended ceiling
 definition:
-  de: 'Abhangdecke als modellierte Schicht für Deckenspiegelplanung und GT-Koordination.
+  de: 'Sichert die gemeinsame Abstimmung von Raumhöhe, Deckengestaltung und Gebäudetechnik.
 
 
     **Beschreibung**
@@ -18,16 +18,18 @@ definition:
     - Schliesst Revisionsöffnungen und Aussparungen für Gebäudetechnik ein.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
+
+    - In frühen Phasen nur in Ausnahmefällen modellieren; besser das Attribut im Raum führen (`FinishCeilingHeight`).
 
     - Als eine Schicht mit finaler Oberfläche modellieren.
 
-    - Dicke inkl. Unterkonstruktion modellieren — nicht nur die Gipskartonplatte (z. B. nicht 2 cm, sondern ca. 7 cm mit Unterkonstruktion).
+    - Dicke inkl. Unterkonstruktion modellieren – nicht nur die Gipskartonplatte (z. B. nicht 2 cm, sondern ca. 7 cm mit Unterkonstruktion).
 
     - Revisionsöffnungen als IfcDoor mit PredefinedType=TRAPDOOR in der Decke modellieren.
 
-    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
-  fr: 'Plafond suspendu comme couche modélisée pour le plan de plafond et la coordination CVC.
+    - Geeignetes Material im Autorensystem verwenden und exportieren.'
+  fr: 'Garantit la coordination conjointe de la hauteur des locaux, du calepinage des plafonds et des techniques du bâtiment.
 
 
     **Description**
@@ -39,14 +41,16 @@ definition:
 
     **Directives de modélisation**
 
+    - En phase initiale, ne modéliser que dans des cas exceptionnels ; tenir plutôt l''attribut sur le local (`FinishCeilingHeight`).
+
     - Modéliser comme couche unique avec finition.
 
-    - Modéliser l''épaisseur y compris la sous-structure — pas seulement la plaque de plâtre (p. ex. pas 2 cm, mais environ 7 cm avec sous-structure).
+    - Modéliser l''épaisseur y compris la sous-structure – pas seulement la plaque de plâtre (p. ex. pas 2 cm, mais environ 7 cm avec sous-structure).
 
     - Modéliser les trappes comme IfcDoor avec PredefinedType=TRAPDOOR dans le plafond.
 
-    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
-  it: 'Controsoffitto come strato modellato per la pianificazione piano del soffitto e il coordinamento impianti.
+    - Utiliser et exporter le matériau approprié depuis le logiciel auteur.'
+  it: 'Garantisce il coordinamento congiunto dell’altezza dei locali, della configurazione dei soffitti e degli impianti.
 
 
     **Descrizione**
@@ -58,14 +62,16 @@ definition:
 
     **Direttive di modellazione**
 
+    - Nella fase iniziale, modellare solo in casi eccezionali; tenere piuttosto l''attributo sul locale (`FinishCeilingHeight`).
+
     - Modellare come strato unico con finitura.
 
-    - Modellare lo spessore inclusa la sottostruttura — non solo la lastra di cartongesso (es. non 2 cm, ma circa 7 cm con sottostruttura).
+    - Modellare lo spessore inclusa la sottostruttura – non solo la lastra di cartongesso (es. non 2 cm, ma circa 7 cm con sottostruttura).
 
     - Modellare le botole come IfcDoor con PredefinedType=TRAPDOOR nel soffitto.
 
-    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
-  en: 'Suspended ceiling as a modelled layer for ceiling mirror planning and MEP coordination.
+    - Usare ed esportare il materiale appropriato dal software di modellazione.'
+  en: 'Ensures coordinated room heights, ceiling design, and building services.
 
 
     **Description**
@@ -77,20 +83,24 @@ definition:
 
     **Modelling guidelines**
 
+    - In early phases, model only in exceptional cases; record the attribute on the space instead (`FinishCeilingHeight`).
+
     - Model as one layer with final surface.
 
-    - Model thickness including the substructure — not only the gypsum board (e.g. not 2 cm, but about 7 cm with substructure).
+    - Model thickness including the substructure – not only the gypsum board (e.g. not 2 cm, but about 7 cm with substructure).
 
     - Model access openings as IfcDoor with PredefinedType=TRAPDOOR in the ceiling.
 
-    - Use an IfcMaterial that corresponds to the actual material class.'
+    - Use and export the appropriate material from the authoring system.'
 needed_in_domain:
 - pragmaticbim:domain/architecture
 entity_ifc2x3: IfcCovering
 entity_ifc4: IfcCovering
 entity_ifc4_3: IfcCovering
-picture_link: null
-model_link: null
+picture_link: architecture-ceiling-suspended.png
+picture_print_link: architecture-ceiling-suspended-print.tif
+attachment_link: architecture-ceiling-suspended.ifc
+model_link: architecture-ceiling-suspended.ifc
 applicability: entity_ifc4=IfcCovering AND PredefinedType=CEILING
 attributes:
 - name: PredefinedType
@@ -135,74 +145,16 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
+  - pragmaticbim:workflow/bes-design-build-procurement
   - pragmaticbim:workflow/des-ceiling-mirror-planning
   - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-ipd-procurement
+  - pragmaticbim:workflow/des-lighting-design-coordination
   is_applicability: true
   status: active
   sort_order: 1
-- name: ObjectType
-  pset: null
-  definition:
-    de: 'Kennzeichnet die Abhangdecke.
-
-
-      **Zulässige Werte**
-
-      - `CEILING` — Abhangdecke
-
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für PredefinedType.'
-    fr: 'Identifie le plafond suspendu.
-
-
-      **Valeurs admises**
-
-      - `CEILING` — plafond suspendu
-
-
-      **Remarque**
-
-      - Substitut IFC2x3 de PredefinedType.'
-    it: 'Identifica il controsoffitto.
-
-
-      **Valori ammessi**
-
-      - `CEILING` — controsoffitto
-
-
-      **Nota**
-
-      - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Marks the suspended ceiling.
-
-
-      **Allowed values**
-
-      - `CEILING` — suspended ceiling'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-covering-ceiling
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-ceiling-mirror-planning
-  - pragmaticbim:workflow/des-facade-planning
-  is_applicability: true
-  status: active
-  sort_order: '2
-
-    **Note** - IFC2x3 substitute for PredefinedType.'
 - name: IsExternal
   pset: Pset_CoveringCommon
   definition:
@@ -258,7 +210,7 @@ attributes:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
   status: active
-  sort_order: 3
+  sort_order: 2
 - name: Status
   pset: Pset_CoveringCommon
   definition:
@@ -298,16 +250,16 @@ attributes:
       - `DEMOLISH` — da demolire
 
       - `TEMPORARY` — temporaneo'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary'
   datatype: IfcLabel
@@ -331,11 +283,11 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/des-ceiling-mirror-planning
   - pragmaticbim:workflow/des-facade-planning
-  - pragmaticbim:workflow/des-existing-structure-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
-  sort_order: 4
+  sort_order: 3
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
@@ -390,16 +342,16 @@ attributes:
       **Nota**
 
       - Sostituto IFC2x3 di Status.'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary
 
@@ -427,73 +379,46 @@ attributes:
   needed_for_workflows:
   - pragmaticbim:workflow/des-ceiling-mirror-planning
   - pragmaticbim:workflow/des-facade-planning
-  - pragmaticbim:workflow/des-existing-structure-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
-  sort_order: 5
-- name: NetArea
-  pset: Qto_CoveringBaseQuantities
-  definition:
-    de: Nettofläche der modellierten Abhangdecke.
-    fr: Surface nette du plafond suspendu modélisé.
-    it: Superficie netta del controsoffitto modellato.
-    en: Net area of the modelled suspended ceiling.
-  datatype: IfcAreaMeasure
-  unit: m²
-  needed_in_phases:
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/des-ceiling-mirror-planning
-  - pragmaticbim:workflow/des-facade-planning
-  is_applicability: false
-  status: active
-  sort_order: 6
+  sort_order: 4
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: 'Kostenschnittstelle des Bauteils — Grundausbau oder Mieterausbau.
+    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
 
 
       **Zulässige Werte**
 
       - `GAB` — Grundausbau (Bauherr / Vermieter)
 
-      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_Migros`'
-    fr: 'Interface de coûts de l''élément — aménagement de base ou aménagement locataire.
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
+    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
 
 
       **Valeurs admises**
 
       - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
 
-      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_Migros`'
-    it: 'Interfaccia di costo del componente — allestimento di base o allestimento locatario.
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
+    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
 
 
       **Valori ammessi**
 
       - `GAB` — allestimento di base (committente / locatore)
 
-      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_Migros`'
-    en: 'Cost interface of the component — base building or tenant fit-out.
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
+    en: 'Cost interface of the component – base building or tenant fit-out.
 
 
       **Allowed values**
 
       - `GAB` — base building (client / landlord)
 
-      - `MAB_{Mietername}` — tenant fit-out, e.g. `MAB_Migros`'
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
   datatype: IfcLabel
   needed_in_phases:
   - '32'
@@ -508,34 +433,61 @@ attributes:
   - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
   is_applicability: false
   status: active
-  sort_order: 7
+  sort_order: 5
+- name: FundingApplication
+  pset: ePset_Cost
+  definition:
+    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
+      demande.
+    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
+      to no application.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-funding-verification
+  is_applicability: false
+  status: active
+  sort_order: 6
 - name: AwardInterface
   pset: ePset_Cost
   definition:
-    de: 'Vergabepaket des Bauteils nach BKP-3-Steller — damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Vergabepaket — z. B. `211`, `221`, `244`.'
-    fr: 'Lot d''adjudication de l''élément selon le BKP à trois chiffres — pour rendre visibles les interfaces entre lots d''entreprise.
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
+    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot d''adjudication BKP — p. ex. `211`, `221`, `244`.'
-    it: 'Lotto di aggiudicazione del componente secondo il BKP a tre cifre — per rendere visibili le interfacce tra lotti d''impresa.
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
+    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di aggiudicazione BKP — es. `211`, `221`, `244`.'
-    en: 'Award package of the component by three-digit BKP code — so interfaces between contractor packages become visible.
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
+    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
 
 
       **Allowed values**
 
-      - See value list BKP award package — e.g. `211`, `221`, `244`.'
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-award-package
   needed_in_phases:
@@ -551,34 +503,34 @@ attributes:
   - pragmaticbim:workflow/bes-award-interface-visualization
   is_applicability: false
   status: active
-  sort_order: 8
+  sort_order: 7
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
-    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller — damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Planungspaket — z. B. `091`, `092`, `094`.'
-    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres — pour rendre visibles les responsabilités entre disciplines de planification.
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot de planification BKP — p. ex. `091`, `092`, `094`.'
-    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre — per rendere visibili le responsabilità tra discipline di pianificazione.
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di pianificazione BKP — es. `091`, `092`, `094`.'
-    en: 'Planning interface of the component by three-digit BKP code — so responsibilities between planning disciplines become visible.
+      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
+    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
 
 
       **Allowed values**
 
-      - See value list BKP planning package — e.g. `091`, `092`, `094`.'
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-planning-package
   needed_in_phases:
@@ -594,7 +546,7 @@ attributes:
   - pragmaticbim:workflow/des-planning-interface-visualization
   is_applicability: false
   status: active
-  sort_order: 9
+  sort_order: 8
 - name: BelowTerrain
   pset: ePset_Cost
   definition:
@@ -622,14 +574,14 @@ attributes:
       - `TRUE` — sotto il livello del terreno
 
       - `FALSE` — sopra il livello del terreno'
-    en: 'Marks whether the component is below terrain.
+    en: 'Marks whether the component sits below ground level.
 
 
       **Allowed values**
 
-      - `TRUE` — below terrain
+      - `TRUE` — below ground
 
-      - `FALSE` — above terrain'
+      - `FALSE` — above ground'
   datatype: IfcBoolean
   allowed_values: pragmaticbim:value/boolean
   needed_in_phases:
@@ -645,29 +597,29 @@ attributes:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
   status: active
-  sort_order: 10
-- name: EbkpH
+  sort_order: 9
+- name: eBKP
   pset: ePset_Cost
   definition:
-    de: 'eBKP-H-Klassifizierung nach SN 506 511 — ableitbar aus IsExternal, LoadBearing und BelowTerrain.
+    de: 'eBKP-H-Klassifizierung nach SN 506 511 – ableitbar aus IsExternal, LoadBearing und BelowTerrain.
 
 
       **Zulässige Werte**
 
       - `G04.02` — Deckenbekleidung'
-    fr: 'Classification eBKP-H selon SN 506 511 — déductible à partir de IsExternal, LoadBearing et BelowTerrain.
+    fr: 'Classification eBKP-H selon SN 506 511 – déductible à partir de IsExternal, LoadBearing et BelowTerrain.
 
 
       **Valeurs admises**
 
       - `G04.02` — revêtement de plafond'
-    it: 'Classificazione eBKP-H secondo SN 506 511 — ricavabile da IsExternal, LoadBearing e BelowTerrain.
+    it: 'Classificazione eBKP-H secondo SN 506 511 – ricavabile da IsExternal, LoadBearing e BelowTerrain.
 
 
       **Valori ammessi**
 
       - `G04.02` — rivestimento di soffitto'
-    en: 'eBKP-H classification according to SN 506 511 — derivable from IsExternal, LoadBearing, and BelowTerrain.
+    en: 'eBKP-H classification according to SN 506 511 – derivable from IsExternal, LoadBearing, and BelowTerrain.
 
 
       **Allowed values**
@@ -688,4 +640,180 @@ attributes:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
   status: active
+  sort_order: 10
+- name: ProductClass
+  pset: ePset_Cost
+  definition:
+    de: 'Produktklasse für Kosten- und Ausschreibungszuordnung. Die Zuordnung kann manuell erfolgen; für konsistente Ausschreibungsdaten sollte sie regelbasiert automatisiert oder KI-unterstützt aus den
+      Bauteileigenschaften abgeleitet werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste [Produktklasse](https://schema.pragmaticbim.ch/classification/ceiling-covering-product.html).'
+    fr: 'Classe de produit pour le rattachement aux coûts et à l''appel d''offres. L''attribution peut être manuelle ; pour garantir des données d''appel d''offres cohérentes, elle devrait être déduite
+      des propriétés de l''élément par des règles automatisées ou avec l''aide de l''IA.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs [Classe de produit](https://schema.pragmaticbim.ch/classification/ceiling-covering-product.html).'
+    it: 'Classe di prodotto per l''attribuzione a costi e gara. L''attribuzione può essere manuale; per garantire dati di gara coerenti, dovrebbe essere ricavata dalle proprietà del componente mediante
+      regole automatizzate o con il supporto dell''IA.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori [Classe di prodotto](https://schema.pragmaticbim.ch/classification/ceiling-covering-product.html).'
+    en: 'Product class for cost and tender assignment. It may be assigned manually; for consistent tender data, it should preferably be derived from component properties through deterministic automation
+      or AI-assisted mapping.
+
+
+      **Allowed values**
+
+      - See the [Product class](https://schema.pragmaticbim.ch/classification/ceiling-covering-product.html) value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/product-class-ceiling-covering
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-model-based-tendering
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
   sort_order: 11
+- name: UnitPrice
+  pset: ePset_Cost
+  definition:
+    de: Projektspezifischer oder bürospezifischer Einheitspreis je Einheit der Referenzmenge für die Plausibilisierung der Bauteilkosten.
+    fr: Prix unitaire spécifique au projet ou au bureau par unité de la quantité de référence pour le contrôle de plausibilité des coûts de l’élément.
+    it: Prezzo unitario specifico del progetto o dello studio per unità della quantità di riferimento, utilizzato per la verifica di plausibilità dei costi del componente.
+    en: Project- or office-specific unit price per unit of the reference quantity, used to check component costs for plausibility.
+  datatype: IfcMonetaryMeasure
+  unit: CHF/m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
+  sort_order: 12
+- name: ReferenceQuantity
+  pset: ePset_Cost
+  definition:
+    de: 'Verbindliche Referenzmenge für den Einheitspreis: `Qto_CoveringBaseQuantities.NetArea`.'
+    fr: 'Quantité de référence faisant foi pour le prix unitaire : `Qto_CoveringBaseQuantities.NetArea`.'
+    it: 'Quantità di riferimento vincolante per il prezzo unitario: `Qto_CoveringBaseQuantities.NetArea`.'
+    en: 'Authoritative reference quantity used with UnitPrice: `Qto_CoveringBaseQuantities.NetArea`.'
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  is_applicability: false
+  status: active
+  sort_order: 13
+- name: GlobalTradeItemNumber
+  pset: Pset_ManufacturerTypeInformation
+  definition:
+    de: GTIN (Global Trade Item Number) des Produkttyps; je nach GS1-Struktur 8, 12, 13 oder 14 Stellen.
+    fr: GTIN (Global Trade Item Number) du type de produit ; selon la structure GS1, 8, 12, 13 ou 14 chiffres.
+    it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
+    en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 14
+- name: SerialNumber
+  pset: Pset_ManufacturerOccurrence
+  definition:
+    de: Vom Hersteller vergebene Seriennummer eines einzelnen Produkts; zusammen mit der GTIN Schlüssel für den objektspezifischen Produktpass.
+    fr: Numéro de série attribué par le fabricant à un produit individuel ; avec le GTIN, clé du passeport produit propre à l’objet.
+    it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
+    en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 15
+- name: NetArea
+  pset: Qto_CoveringBaseQuantities
+  definition:
+    de: Nettofläche der modellierten Abhangdecke.
+    fr: Surface nette du plafond suspendu modélisé.
+    it: Superficie netta del controsoffitto modellato.
+    en: Net area of the modelled suspended ceiling.
+  datatype: IfcAreaMeasure
+  unit: m²
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-component-cost-plausibility
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-model-based-tendering
+  is_applicability: false
+  status: active
+  sort_order: 16

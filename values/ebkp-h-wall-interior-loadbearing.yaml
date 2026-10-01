@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-wall-interior-loadbearing
+code: EBKP-H-WALL-INT-LB
+name:
+  de: eBKP-H Tragende Innenwand
+  fr: eBKP-H mur intérieur porteur
+  it: eBKP-H parete interna portante
+  en: eBKP-H load-bearing interior wall
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C02.02.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C02.02.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C02.02.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C02.02.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C02.02
+  fr:
+  - C02.02
+  it:
+  - C02.02
+  en:
+  - C02.02

@@ -1,0 +1,79 @@
+id: pragmaticbim:project-goal/construction-method-prefabrication
+sort_order: 12
+group: rahmenbedingungen
+code: PG-11
+name:
+  de: Bauweise & Vorfertigung
+  fr: Mode de construction et préfabrication
+  it: Metodo costruttivo e prefabbricazione
+  en: Construction method & prefabrication
+tag:
+  de: Bauweise
+  fr: Construction
+  it: Costruzione
+  en: Construction
+description:
+  de: |-
+    Festgelegt wird, ob die Bauweise systemoffen bleibt, konventionell geplant wird oder auf einen hohen Vorfertigungsgrad in Holz, Stahl oder Beton ausgerichtet ist. Diese Festlegung bestimmt, wann Unternehmen eingebunden, Schnittstellen geklärt sowie Werk-, Produktions- und Montageinformationen bereitgestellt werden müssen. Ohne sie werden Produktionssysteme zu spät gewählt und bereits ausgearbeitete Lösungen müssen für Fertigung und Montage umgeplant werden.
+  fr: |-
+    Cette condition-cadre détermine si le mode de construction reste ouvert, s'il est planifié de manière conventionnelle ou s'il vise un degré élevé de préfabrication en bois, en acier ou en béton. Ce choix détermine à quel moment les entreprises doivent être associées, les interfaces clarifiées et les informations d'atelier, de production et de montage mises à disposition. Sans cette définition, les systèmes de production sont choisis trop tard et des solutions déjà élaborées doivent être remaniées pour la fabrication et le montage.
+  it: |-
+    Questa condizione quadro stabilisce se il metodo costruttivo rimane aperto, se viene progettato in modo convenzionale oppure se è orientato a un elevato grado di prefabbricazione in legno, acciaio o calcestruzzo. La scelta determina quando coinvolgere le imprese, chiarire le interfacce e mettere a disposizione le informazioni per officina, produzione e montaggio. Senza questa definizione, i sistemi produttivi vengono scelti troppo tardi e soluzioni già sviluppate devono essere riprogettate per la fabbricazione e il montaggio.
+  en: |-
+    This framework condition determines whether the construction method remains open, is designed conventionally, or targets a high degree of prefabrication in timber, steel, or concrete. This choice determines when contractors must be involved, interfaces resolved, and shop, production, and assembly information provided. Without it, production systems are selected too late and developed solutions must be redesigned for fabrication and assembly.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (explizit, nicht kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/construction-method-none
+  code: BAW-01
+  sort_order: 1
+  name:
+    de: Keine Vorgaben
+    fr: Aucune prescription
+    it: Nessuna prescrizione
+    en: No requirements
+  description:
+    de: Keine Vorgabe zur Bauweise oder zum Vorfertigungsgrad; es werden keine zusätzlichen bauweisenspezifischen Workflows aktiviert.
+    fr: Aucune prescription concernant le mode de construction ou le degré de préfabrication; aucun workflow supplémentaire propre au mode de construction n'est activé.
+    it: Nessuna prescrizione relativa al metodo costruttivo o al grado di prefabbricazione; non vengono attivati workflow supplementari specifici.
+    en: No requirement for the construction method or degree of prefabrication; no additional construction-method-specific workflows are activated.
+  status: active
+  activated_workflows: []
+  comment: Explicit set at level keine Vorgaben (sort_order 1); empty.
+- id: pragmaticbim:project-goal-level/construction-method-conventional
+  code: BAW-02
+  sort_order: 2
+  name:
+    de: Konventionell
+    fr: Conventionnel
+    it: Convenzionale
+    en: Conventional
+  description:
+    de: Konventionelle Bauweise ohne besondere Anforderungen an industrielle Vorfertigung; es werden keine zusätzlichen Vorfertigungs-Workflows aktiviert.
+    fr: Mode de construction conventionnel sans exigences particulières en matière de préfabrication industrielle; aucun workflow supplémentaire de préfabrication n'est activé.
+    it: Metodo costruttivo convenzionale senza requisiti particolari di prefabbricazione industriale; non vengono attivati workflow supplementari di prefabbricazione.
+    en: Conventional construction without specific requirements for industrial prefabrication; no additional prefabrication workflows are activated.
+  status: active
+  activated_workflows: []
+  comment: Explicit set at level konventionell (sort_order 2); empty.
+- id: pragmaticbim:project-goal-level/construction-method-high-prefab
+  code: BAW-03
+  sort_order: 3
+  name:
+    de: Hoher Vorfertigungsgrad (Holz, Stahl, Betonfertigteile)
+    fr: Degré élevé de préfabrication (bois, acier, éléments préfabriqués en béton)
+    it: Elevato grado di prefabbricazione (legno, acciaio, elementi prefabbricati in calcestruzzo)
+    en: High degree of prefabrication (timber, steel, precast concrete)
+  description:
+    de: Unternehmen und Produktionssysteme früh einbinden, Ausschreibungs- und Bestellgrundlagen aus den Modellen ableiten sowie Werk-, Montage- und Zwischenbauzustände vor der Fertigung prüfen.
+    fr: Associer tôt les entreprises et les systèmes de production, déduire des maquettes les bases d'appel d'offres et de commande, et contrôler les études d'atelier et de montage ainsi que les états intermédiaires avant la fabrication.
+    it: Coinvolgere tempestivamente le imprese e i sistemi produttivi, ricavare dai modelli le basi per gara e ordinazione e verificare i piani d'officina e di montaggio nonché gli stati intermedi prima della fabbricazione.
+    en: Engage contractors and production systems early, derive tendering and ordering foundations from the models, and verify shop, assembly, and intermediate states before fabrication.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-timber-contractor-procurement
+  - pragmaticbim:workflow/bes-steelwork-tender-basis
+  - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+  - pragmaticbim:workflow/qas-contractor-design-verification
+  - pragmaticbim:workflow/des-complex-assembly-planning
+  comment: Explicit set at level hoher Vorfertigungsgrad (sort_order 3); not cumulative.

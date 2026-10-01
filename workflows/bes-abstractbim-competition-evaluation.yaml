@@ -2,191 +2,173 @@ id: pragmaticbim:workflow/bes-abstractbim-competition-evaluation
 code: BES-ABSTRACTBIM-COMP
 sort_order: 15
 name:
-  de: Wettbewerbsauswertung mit abstractBIM
-  fr: Évaluation de concours avec abstractBIM
-  it: Valutazione di concorsi con abstractBIM
-  en: Competition evaluation with abstractBIM
+  de: Wettbewerbsbeiträge mit Raummodell auswerten
+  fr: Évaluer les projets de concours avec une maquette des locaux
+  it: Valutare i progetti di concorso con un modello dei locali
+  en: Evaluate competition entries with a room model
 description:
-  de: 'Wettbewerbsbeiträge vergleichbar auswerten — unabhängig von Modellierstil und Software der Verfasser.
+  de: 'Wettbewerbsbeiträge mit möglichst geringem Modellierungsaufwand vergleichbar auswerten und die Vertiefung auf eine für die Aufgabe entscheidende Stelle konzentrieren.
 
 
     **Ausgangslage**
 
-    - Wettbewerbsbeiträge kommen aus unterschiedlichen Tools und Modellierweisen; Mengen und Kennwerte sind kaum direkt vergleichbar.
+    - Manuell geführte Flächenlisten sind oft falsch und schwer zu prüfen.
 
-    - Manuelle Vereinheitlichung für die Jury ist aufwendig und fehleranfällig — oft fehlen belastbare Flächen- und Volumenvergleiche.
+    - Wettbewerbsentscheide werden wesentlich durch Städtebau, Volumetrie und die grundsätzliche Organisation geprägt.
+
+    - Fassaden und innere Organisation werden im Vorprojekt häufig umfassend überarbeitet. Flächendeckend modellierte Türen, Fenster und Bauteile erzeugen deshalb hohen Aufwand und täuschen eine für den
+    Wettbewerb unangemessene Planungsgenauigkeit vor.
 
 
     **Ziel & Nutzen**
 
-    - Alle Beiträge auf eine konsistente geometrische Basis bringen.
+    - Den Aufwand für Teilnehmende und Prüfung reduzieren, ohne die Beurteilung von Städtebau, Raumprogramm und grundsätzlicher Funktion einzuschränken.
 
-    - Objektive Kennwerte und Mengen für Jury und Bauherrschaft bereitstellen.
+    - An einer projektspezifischen Schlüsselaufgabe erkennen, ob der Beitrag funktioniert und das Team die anspruchsvolle Aufgabe planerisch bewältigen kann.
 
 
     **Ablauf**
 
-    1. Architekturmodell jedes Beitrags mit den Mindestanforderungen bereitstellen (gleiche geometrische Basis wie DES-ABSTRACTBIM-COST).
+    1. Für das Gesamtprojekt nur Gebäudestruktur und geschlossene, dem Raumprogramm zugeordnete Raumvolumen verlangen; Türen und Fenster sind nicht Bestandteil der Modellanforderung.
 
-    2. Bei abstractBIM.com hochladen — daraus entsteht ein vergleichbares Mengen- und Raummodell.
+    2. Eine für die konkrete Aufgabe wichtige Stelle bestimmen, beispielsweise einen Wohnungstyp oder den Eingangsbereich, und deren vertiefte Ausarbeitung als Funktions- und Kompetenznachweis verlangen.
 
-    3. Modelle herunterladen und Kennwerte der Beiträge systematisch vergleichen.
-
-
-    **Ergebnis**
-
-    - Gebäudevolumen und Bruttogeschossfläche.
-
-    - Innen- und Aussenwände mit eindeutiger Zuordnung zu ein oder zwei Räumen.
-
-    - Decken, Dächer und Bodenplatten.
-
-    - Fenster, Türen und Bekleidungen mit Raumbezug und Richtung.
+    3. Ist-Raumbuch mit Soll-Raumbuch abgleichen für die technische Vorprüfung.
 
 
-    **Lieferobjekte**
+    **Hinweis:** Sind weitere Bauteilmengen für Auswertungen notwendig, können diese mit abstractBIM berechnet werden.
 
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow und IfcDoor
 
-    - Raumname in LongName, optionale Raumnummer in Name
+    **Lieferergebnis**
 
-    - abstractBIM-Mengen und Kennwerte als Grundlage für den Beitragsvergleich'
-  fr: 'Évaluer les projets de concours de manière comparable — indépendamment du style de modélisation et du logiciel des auteurs.
+    - Schlankes Raummodell jedes Beitrags mit Gebäudestruktur und zugeordneten Raumvolumen für das Gesamtprojekt.
+
+    - Vertiefte Darstellung der vorgegebenen projektspezifischen Schlüsselaufgabe.
+
+    - Abgleich von Ist- und Soll-Raumbuch als Grundlage der technischen Vorprüfung.'
+  fr: 'Évaluer les projets de concours de manière comparable avec un effort de modélisation minimal et concentrer l''approfondissement sur un point déterminant pour la tâche.
 
 
     **Situation de départ**
 
-    - Les projets de concours proviennent d''outils et de pratiques de modélisation différents ; quantités et indicateurs sont difficilement comparables directement.
+    - Les listes de surfaces tenues manuellement sont souvent erronées et difficiles à vérifier.
 
-    - L''harmonisation manuelle pour le jury est laborieuse et sujette aux erreurs — des comparaisons fiables de surfaces et de volumes manquent souvent.
+    - Les décisions de concours reposent principalement sur l''urbanisme, la volumétrie et l''organisation générale.
+
+    - Les façades et l''organisation intérieure sont souvent largement remaniées durant l''avant-projet. La modélisation généralisée des portes, fenêtres et éléments représente donc un travail important
+    et suggère un degré de précision inadapté au concours.
 
 
     **Objectif et bénéfice**
 
-    - Placer tous les projets sur une base géométrique cohérente.
+    - Réduire le travail des participants et du contrôle sans limiter l''évaluation de l''urbanisme, du programme des locaux et du fonctionnement général.
 
-    - Fournir des indicateurs et quantités objectifs pour le jury et le maître d''ouvrage.
+    - Vérifier, au moyen d''un point clé propre au projet, si la proposition fonctionne et si l''équipe est capable de maîtriser la tâche exigeante.
 
 
     **Déroulement**
 
-    1. Fournir la maquette architecture de chaque projet répondant aux exigences minimales (même base géométrique que DES-ABSTRACTBIM-COST).
+    1. Exiger pour l''ensemble du projet uniquement la structure du bâtiment et des volumes de locaux fermés rattachés au programme; les portes et fenêtres ne font pas partie des exigences de la maquette.
 
-    2. Téléverser sur abstractBIM.com — un modèle de quantités et d''espaces comparable en résulte.
+    2. Définir un point important pour la tâche concrète, par exemple un type de logement ou la zone d''entrée, et demander son approfondissement comme preuve de fonctionnement et de compétence.
 
-    3. Télécharger les modèles et comparer systématiquement les indicateurs des projets.
-
-
-    **Résultat**
-
-    - Volume du bâtiment et surface brute de plancher.
-
-    - Murs intérieurs et extérieurs avec rattachement clair à un ou deux locaux.
-
-    - Dalles, toitures et dalles de fondation.
-
-    - Fenêtres, portes et revêtements avec rattachement au local et orientation.
+    3. Comparer le carnet des locaux réel avec le carnet des locaux cible pour le contrôle technique préalable.
 
 
-    **Livrables**
+    **Remarque :** Si d''autres quantités d''éléments sont nécessaires pour les évaluations, elles peuvent être calculées avec abstractBIM.
 
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow et IfcDoor
 
-    - Nom du local dans LongName, numéro de local facultatif dans Name
+    **Livrable**
 
-    - Quantités et indicateurs abstractBIM comme base de comparaison des projets'
-  it: 'Valutare i contributi di concorso in modo confrontabile — indipendentemente dallo stile di modellazione e dal software degli autori.
+    - Maquette légère de chaque projet comprenant la structure du bâtiment et les volumes de locaux attribués pour l''ensemble du projet.
+
+    - Représentation approfondie du point clé propre au projet imposé par le programme du concours.
+
+    - Comparaison du carnet des locaux réel et cible comme base du contrôle technique préalable.'
+  it: 'Valutare i progetti di concorso in modo confrontabile con il minimo impegno di modellazione e concentrare l''approfondimento su un aspetto determinante per il compito.
 
 
     **Situazione di partenza**
 
-    - I contributi di concorso provengono da strumenti e pratiche di modellazione diversi; quantità e indicatori sono difficilmente confrontabili direttamente.
+    - Le liste delle superfici gestite manualmente sono spesso errate e difficili da verificare.
 
-    - L''armonizzazione manuale per la giuria è onerosa e soggetta a errori — spesso mancano confronti affidabili di superfici e volumi.
+    - Le decisioni di concorso dipendono in misura rilevante dall''impianto urbanistico, dalla volumetria e dall''organizzazione generale.
+
+    - Le facciate e l''organizzazione interna sono spesso ampiamente rielaborate nell''avamprogetto. La modellazione estesa di porte, finestre e componenti comporta quindi un onere elevato e suggerisce
+    un grado di precisione inadeguato al concorso.
 
 
     **Obiettivo e beneficio**
 
-    - Portare tutti i contributi su una base geometrica coerente.
+    - Ridurre l''onere per i partecipanti e per la verifica senza limitare la valutazione dell''impianto urbanistico, del programma dei locali e del funzionamento generale.
 
-    - Fornire indicatori e quantità oggettivi per giuria e committenza.
+    - Verificare, mediante un aspetto chiave specifico del progetto, se la proposta funziona e se il gruppo è in grado di affrontare il compito più impegnativo.
 
 
     **Svolgimento**
 
-    1. Fornire il modello architettonico di ogni contributo che soddisfi i requisiti minimi (stessa base geometrica di DES-ABSTRACTBIM-COST).
+    1. Richiedere per l''intero progetto soltanto la struttura dell''edificio e volumi dei locali chiusi associati al programma; porte e finestre non fanno parte dei requisiti del modello.
 
-    2. Caricare su abstractBIM.com — ne deriva un modello di quantità e spazi confrontabile.
+    2. Definire un aspetto importante per il compito specifico, per esempio un tipo di appartamento o la zona d''ingresso, e richiederne l''approfondimento come prova di funzionalità e competenza.
 
-    3. Scaricare i modelli e confrontare sistematicamente gli indicatori dei contributi.
-
-
-    **Risultato**
-
-    - Volume dell''edificio e superficie lorda di pavimento.
-
-    - Pareti interne ed esterne con chiara assegnazione a uno o due locali.
-
-    - Solette, coperture e platee di fondazione.
-
-    - Finestre, porte e rivestimenti con collegamento al locale e orientamento.
+    3. Confrontare il libro dei locali effettivo con il libro dei locali previsto per la verifica tecnica preliminare.
 
 
-    **Oggetti della fornitura**
+    **Nota:** Se sono necessarie ulteriori quantità di componenti per le valutazioni, queste possono essere calcolate con abstractBIM.
 
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow e IfcDoor
 
-    - Nome del locale in LongName, numero locale facoltativo in Name
+    **Risultato della fornitura**
 
-    - Quantità e indicatori abstractBIM come base per il confronto dei contributi'
-  en: 'Evaluate competition entries on a comparable basis — independent of each author''s modelling style and software.
+    - Modello leggero di ogni progetto con struttura dell''edificio e volumi dei locali associati per l''intero progetto.
+
+    - Rappresentazione approfondita dell''aspetto chiave specifico indicato nel programma di concorso.
+
+    - Confronto tra libro dei locali effettivo e previsto come base della verifica tecnica preliminare.'
+  en: 'Evaluate competition entries comparably with minimal modelling effort and focus detailed development on one aspect that is critical to the brief.
 
 
     **Starting point**
 
-    - Competition entries come from different tools and modelling practices; quantities and metrics are rarely directly comparable.
+    - Manually maintained area schedules are often wrong and hard to verify.
 
-    - Manual harmonisation for the jury is labor-intensive and error-prone — reliable area and volume comparisons are often missing.
+    - Competition decisions are largely shaped by urban design, massing, and the overall organization.
+
+    - Facades and internal organization are often substantially revised during preliminary design. Modelling doors, windows, and components throughout therefore creates excessive effort and suggests a level
+    of precision that is inappropriate for a competition.
 
 
     **Goal & benefit**
 
-    - Bring all entries onto a consistent geometric basis.
+    - Reduce the effort required from entrants and reviewers without limiting the assessment of urban design, the room programme, and basic functionality.
 
-    - Provide objective metrics and quantities for jury and client.
+    - Use a project-specific key aspect to determine whether the proposal works and whether the team can resolve the demanding part of the brief.
 
 
     **Process**
 
-    1. Provide each entry''s architecture model meeting the minimum requirements (same geometric basis as DES-ABSTRACTBIM-COST).
+    1. Require only the building structure and enclosed room volumes assigned to the room programme for the overall project; doors and windows are not part of the model requirement.
 
-    2. Upload to abstractBIM.com to build a comparable quantity and space model.
+    2. Define one aspect that is important to the specific brief, such as an apartment type or entrance area, and require its detailed development as evidence of functionality and capability.
 
-    3. Download the models and systematically compare entry metrics.
-
-
-    **Outcome**
-
-    - Building volume and gross floor area.
-
-    - Interior and exterior walls with a clear relation to one or two spaces.
-
-    - Slabs, roofs, and base slabs.
-
-    - Windows, doors, and coverings with space relation and direction.
+    3. Compare the as-built room book with the target room book for the technical pre-check.
 
 
-    **Deliverables**
+    **Note:** If further component quantities are needed for evaluations, they can be calculated with abstractBIM.
 
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow, and IfcDoor
 
-    - Room name in LongName, optional room number in Name
+    **Deliverable**
 
-    - abstractBIM quantities and metrics as the basis for entry comparison'
-workflow_group: null
+    - Lean room model for each entry with building structure and assigned room volumes for the overall project.
+
+    - Detailed representation of the specified project-specific key aspect.
+
+    - Comparison of as-built and target room books as the basis for the technical pre-check.'
+workflow_group: planungsteam
 parent_workflow: pragmaticbim:workflow/bes
 picture_link: null
 status: active
+service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: abstractBIM workflow. Same geometric minimum as DES-ABSTRACTBIM-COST. Normalises heterogeneous competition IFCs for comparable metrics.
+comment: Schlanke Wettbewerbsanforderung aus Gebäudestruktur und Raumvolumen ohne Türen und Fenster. Nur eine projektspezifische Schlüsselaufgabe wird so weit vertieft, dass Funktion und planerische Kompetenz
+  beurteilt werden können.

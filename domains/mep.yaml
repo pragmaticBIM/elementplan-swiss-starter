@@ -12,44 +12,44 @@ definition:
 
     - Bestandsmodellierung: Status und PredefinedType an den modellierten TGA-Objekten; Tiefe projektspezifisch.
 
-    - Frühe Koordination: wenige schematische Hauptverteilungen (Rohr, Luft, Trasse, Erzeugerplatz) — Medium in Reference.
+    - Frühe Koordination: wenige schematische Hauptverteilungen (Rohr, Luft, Trasse, Erzeugerplatz) – Medium in Reference.
 
     - Detailplanung: relevante IFC-TGA-Entitäten mit PredefinedType und Status.
 
-    - FM: kein festes TGA-Elementpaket — mit Betreiber klären, welche Objekte tatsächlich bewirtschaftet werden.'
+    - FM: kein festes TGA-Elementpaket – mit Betreiber klären, welche Objekte tatsächlich bewirtschaftet werden.'
   fr: 'Livrables des techniques du bâtiment (chauffage, ventilation, climatisation, sanitaire, électricité, automatisation).
 
 
     - Existant: Status et PredefinedType sur les objets CVC modélisés ; profondeur spécifique au projet.
 
-    - Coordination en phase initiale : peu de distributions principales schématiques (canalisation, air, chemin de câbles, espace générateurs) — fluide dans Reference.
+    - Coordination en phase initiale : peu de distributions principales schématiques (canalisation, air, chemin de câbles, espace générateurs) – fluide dans Reference.
 
     - Projet détaillé: entités IFC CVC pertinentes avec PredefinedType et Status.
 
-    - FM: pas de catalogue CVC fixe — clarifier avec l''exploitant les objets réellement gérés.'
+    - FM: pas de catalogue CVC fixe – clarifier avec l''exploitant les objets réellement gérés.'
   it: 'Consegne degli impianti (riscaldamento, ventilazione, climatizzazione, idraulica, elettrica, automazione).
 
 
     - Esistente: Status e PredefinedType sugli oggetti impianti modellati; profondità specifica del progetto.
 
-    - Coordinamento in fase iniziale: poche distribuzioni principali schematiche (condotta, aria, canalina, spazio generatori) — fluido in Reference.
+    - Coordinamento in fase iniziale: poche distribuzioni principali schematiche (condotta, aria, canalina, spazio generatori) – fluido in Reference.
 
     - Progetto di dettaglio: entità IFC impianti rilevanti con PredefinedType e Status.
 
-    - FM: nessun catalogo impianti fisso — chiarire con il gestore quali oggetti sono effettivamente gestiti.'
-  en: 'Deliverables from building services (heating, ventilation, air conditioning, plumbing, electrical, automation).
+    - FM: nessun catalogo impianti fisso – chiarire con il gestore quali oggetti sono effettivamente gestiti.'
+  en: 'Building services deliverables (heating, ventilation, air conditioning, plumbing, electrical, automation).
 
 
-    - Existing stock: Status and PredefinedType on modelled MEP objects; depth project-specific.
+    - Modelling existing fabric: Status and PredefinedType on modelled MEP objects; depth project-specific.
 
-    - Early coordination: few schematic main distributions (pipe, duct, tray, equipment space) — medium in Reference.
+    - Early coordination: few schematic main distributions (pipe, duct, tray, equipment space) – medium in Reference.
 
     - Detailed design: relevant IFC MEP entities with PredefinedType and Status.
 
-    - FM: no fixed MEP element pack — agree with the operator which objects they actually manage.'
+    - FM: no fixed MEP element pack – agree with the operator which objects they actually manage.'
 file_name:
   de: '{Projekt}_{Phase}_TGA_{Freitext}'
   fr: '{Projet}_{Phase}_CVC_{Libre}'
   it: '{Progetto}_{Fase}_IMP_{Libero}'
-  en: '{Project}_{Phase}_MEP_{Free}'
+  en: '{Project}_{Phase}_MEP_{FreeText}'
 status: active

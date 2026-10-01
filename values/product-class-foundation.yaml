@@ -1,0 +1,64 @@
+id: pragmaticbim:value/product-class-foundation
+code: PRODUCT-FDP
+name:
+  de: Abstrakte Fundamentprodukte
+  fr: Abstract foundation products
+  it: Abstract foundation products
+  en: Abstract foundation products
+description:
+  de: 'Produktklassen gemäss Abstrakte Fundamentprodukte. Quelle: https://schema.pragmaticbim.ch/classification/foundation-product.html'
+  fr: 'Classes de produits selon Abstract foundation products. Source : https://schema.pragmaticbim.ch/classification/foundation-product.html'
+  it: 'Classi di prodotto secondo Abstract foundation products. Fonte: https://schema.pragmaticbim.ch/classification/foundation-product.html'
+  en: 'Product classes according to Abstract foundation products. Source: https://schema.pragmaticbim.ch/classification/foundation-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Platten- / Bodenplattenfundament
+  - Plattenfundament Waermedaemmschicht
+  - Streifenfundament
+  - Einzelfundament / Fundamentplatte
+  - Pfahlgruendung
+  - Mikropfahl / Bodenverbesserung
+  - Keller- / Stuetzwandfundament
+  - Keller- / Stuetzwand Daemmschicht
+  - Fundament- / Kellerabdichtung
+  - Fundamententwaesserung und -schutz
+  - Sonstiges / unbekanntes Fundament
+  fr:
+  - Raft / base slab foundation
+  - Raft foundation thermal insulation layer
+  - Strip footing foundation
+  - Pad / isolated footing
+  - Driven / bored pile foundation
+  - Micropile / ground improvement
+  - Basement / retaining foundation wall
+  - Basement / retaining wall insulation layer
+  - Foundation waterproofing / tanking
+  - Foundation drainage and protection
+  - Other / unknown foundation
+  it:
+  - Raft / base slab foundation
+  - Raft foundation thermal insulation layer
+  - Strip footing foundation
+  - Pad / isolated footing
+  - Driven / bored pile foundation
+  - Micropile / ground improvement
+  - Basement / retaining foundation wall
+  - Basement / retaining wall insulation layer
+  - Foundation waterproofing / tanking
+  - Foundation drainage and protection
+  - Other / unknown foundation
+  en:
+  - Raft / base slab foundation
+  - Raft foundation thermal insulation layer
+  - Strip footing foundation
+  - Pad / isolated footing
+  - Driven / bored pile foundation
+  - Micropile / ground improvement
+  - Basement / retaining foundation wall
+  - Basement / retaining wall insulation layer
+  - Foundation waterproofing / tanking
+  - Foundation drainage and protection
+  - Other / unknown foundation

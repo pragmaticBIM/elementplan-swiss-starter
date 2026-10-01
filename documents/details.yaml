@@ -1,6 +1,6 @@
 id: pragmaticbim:document/details
 code: DET
-sort_order: 104
+sort_order: 114
 name:
   de: Details
   fr: Détails
@@ -33,21 +33,17 @@ description:
     - Dimensions and material notes
     - Reference to the parent drawing or component
 file_name:
-  de: '{Projektnummer}_ARX-DET_{Freitext}.{ext}'
+  de: '{Projektnummer}_ARC-DET_{Freitext}.{ext}'
   fr: '{NumeroProjet}_ARC-DET_{Libre}.{ext}'
   it: '{NumeroProgetto}_ARC-DET_{Libero}.{ext}'
-  en: '{ProjectNumber}_ARC-DET_{Free}.{ext}'
+  en: '{ProjectNumber}_ARC-DET_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/architecture
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/architecture-detail-reference
 scheduled_milestones:
-  - "32:beginning"
-  - "33:beginning"
-  - "41:beginning"
-  - "51:beginning"
+  - "32:M"
+  - "33:M"
+  - "41:M"
+  - "51:M"

@@ -1,6 +1,6 @@
 id: pragmaticbim:workflow/con-formwork-reinforcement-plans
 code: CON-SHL-BWP
-sort_order: 26
+sort_order: 27
 name:
   de: Erstellen Schal- und Bewehrungspläne
   fr: Établir les plans de coffrage et d'armature
@@ -21,7 +21,7 @@ description:
 
     - Schalpläne mit Abmessungen und Anschlüssen sowie Bewehrungspläne mit Stäben, Lagen und Positionen aus dem Modell ableiten.
 
-    - Pläne für die Baustelle lesbar machen — ergänzend zur lageweisen Modellauswertung der Ausführung.
+    - Pläne für die Baustelle lesbar machen – ergänzend zur lageweisen Modellauswertung der Ausführung.
 
 
     **Ablauf**
@@ -33,22 +33,11 @@ description:
     3. Lesbarkeit für die Baustelle prüfen und Pläne freigeben.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Abgestimmte Schal- und Bewehrungspläne als Grundlage für die Betonausführung.
+    - Ausführungsreife Schal- und Bewehrungspläne mit prüfbaren Abmessungen, Anschlüssen und Bewehrungslagen.
 
-
-    **Lieferobjekte**
-
-    - Schalpläne und Bewehrungspläne
-
-    - Tragwerksmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Betonbauteile IfcFooting, IfcWall, IfcSlab, IfcColumn, IfcBeam, IfcStair und IfcRamp
-
-    - Bewehrung IfcReinforcingBar; Randstreifen (IfcBuildingElementProxy)
-
-    - Keine zusätzlichen Allplan-Attribute — lageweise Auswertung bleibt Ausführung Bewehrung ab Modell'
+    - Aktuelles Tragwerks- und Bewehrungsmodell als Grundlage der Pläne.'
   fr: 'Obtenir les plans de coffrage et d''armature pour l''exécution du béton à partir du modèle de structure.
 
 
@@ -63,7 +52,7 @@ description:
 
     - Obtenir les plans de coffrage avec dimensions et raccords ainsi que les plans d''armature avec barres, nappes et positions.
 
-    - Rendre les plans lisibles pour le chantier — en complément de l''évaluation par lit du modèle d''exécution.
+    - Rendre les plans lisibles pour le chantier – en complément de l''évaluation par lit du modèle d''exécution.
 
 
     **Déroulement**
@@ -75,22 +64,11 @@ description:
     3. Contrôler la lisibilité pour le chantier et approuver les plans.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Plans de coffrage et d''armature coordonnés comme base pour l''exécution du béton.
+    - Plans de coffrage et d''armature prêts à l''exécution, avec dimensions, raccords et nappes vérifiables.
 
-
-    **Livrables**
-
-    - Plans de coffrage et plans d''armature
-
-    - Maquette structure avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Éléments en béton IfcFooting, IfcWall, IfcSlab, IfcColumn, IfcBeam, IfcStair et IfcRamp
-
-    - Armatures IfcReinforcingBar ; bandes de rive (IfcBuildingElementProxy)
-
-    - Pas d''attributs Allplan supplémentaires — l''évaluation par lit reste l''exécution du ferraillage à partir du modèle'
+    - Maquettes structure et armatures à jour servant de base aux plans.'
   it: 'Ottenere i piani di casseratura e delle armature per l''esecuzione del calcestruzzo dal modello strutturale.
 
 
@@ -105,7 +83,7 @@ description:
 
     - Ottenere i piani di casseratura con dimensioni e raccordi nonché i piani delle armature con barre, strati e posizioni.
 
-    - Rendere i piani leggibili per il cantiere — in complementarità alla valutazione per strato del modello di esecuzione.
+    - Rendere i piani leggibili per il cantiere – in complementarità alla valutazione per strato del modello di esecuzione.
 
 
     **Svolgimento**
@@ -117,22 +95,11 @@ description:
     3. Verificare la leggibilità per il cantiere e approvare i piani.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Piani di casseratura e delle armature coordinati come base per l''esecuzione del calcestruzzo.
+    - Piani di casseratura e delle armature esecutivi, con dimensioni, raccordi e strati di armatura verificabili.
 
-
-    **Oggetti della fornitura**
-
-    - Piani di casseratura e piani delle armature
-
-    - Modello strutturale con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Componenti in calcestruzzo IfcFooting, IfcWall, IfcSlab, IfcColumn, IfcBeam, IfcStair e IfcRamp
-
-    - Armatura IfcReinforcingBar; fasce di bordo (IfcBuildingElementProxy)
-
-    - Nessun attributo Allplan aggiuntivo — la valutazione per strato resta l''esecuzione dell''armatura dal modello'
+    - Modelli strutturale e delle armature aggiornati come base per i piani.'
   en: 'Derive formwork and reinforcement plans for concrete execution from the structural model.
 
 
@@ -147,7 +114,7 @@ description:
 
     - Derive formwork plans with dimensions and junctions and reinforcement plans with bars, layers, and positions from the model.
 
-    - Make the plans readable for site — complementary to layer-wise model evaluation for execution.
+    - Make the plans readable for site – complementary to layer-wise model evaluation for execution.
 
 
     **Process**
@@ -159,22 +126,11 @@ description:
     3. Check readability for site and release the plans.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Coordinated formwork and reinforcement plans as the basis for concrete execution.
+    - Execution-ready formwork and reinforcement plans with verifiable dimensions, junctions, and reinforcement layers.
 
-
-    **Deliverables**
-
-    - Formwork plans and reinforcement plans
-
-    - Structural model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Concrete components IfcFooting, IfcWall, IfcSlab, IfcColumn, IfcBeam, IfcStair, and IfcRamp
-
-    - Reinforcement IfcReinforcingBar; edge strips (IfcBuildingElementProxy)
-
-    - No additional Allplan attributes — layer-wise evaluation remains reinforcement execution from model'
+    - Current structural and reinforcement models forming the basis of the plans.'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/con
 picture_link: null

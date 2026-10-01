@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/esszimmer
+code: RT-WH-04
+sort_order: 4
+name:
+  de: Esszimmer
+  fr: Salle à manger
+  it: Sala da pranzo
+  en: Dining Room
+definition:
+  de: Raum für Mahlzeiten.
+  fr: Local pour les repas.
+  it: Locale per i pasti.
+  en: Room for eating meals.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Esszimmer
+    fr: Salle à manger
+    it: Sala da pranzo
+    en: Dining Room
+restrictions:
+  min_area: 8
+status: active

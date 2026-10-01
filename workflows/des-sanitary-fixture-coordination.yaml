@@ -1,0 +1,155 @@
+id: pragmaticbim:workflow/des-sanitary-fixture-coordination
+code: DES-SANITARY-FIXTURE-COORD
+sort_order: 54
+name:
+  de: Sanitärobjekte koordinieren
+  fr: Coordonner les appareils sanitaires
+  it: Coordinare gli apparecchi sanitari
+  en: Coordinate sanitary fixtures
+description:
+  de: 'Sanitärobjekte von der ersten Platzierung bis zur detaillierten Sanitärplanung gemeinsam abstimmen, damit Anschlüsse und Vorsatzschalen zu den freigegebenen Positionen und Abmessungen passen.
+
+
+    **Ausgangslage**
+
+    - Zwischen Architektur und Sanitärplanung ist oft unklar, wer die Positionen und Abmessungen der Sanitärobjekte festlegt.
+
+    - Ohne klare Abstimmung werden Anschlüsse, Vorsatzschalen oder Sanitärobjekte am falschen Ort geplant oder montiert.
+
+
+    **Ziel & Nutzen**
+
+    - Architektur und Sanitärplanung legen gemeinsam fest, wer die Sanitärobjekte plant und freigibt.
+
+    - Klare und freigegebene Angaben vermeiden Fehler bei der Ausführung auf der Baustelle.
+
+    - Typ, genaue Lage, Abmessungen und Anschlüsse gemeinsam freigeben und die betroffenen Vorsatzschalen rechtzeitig darauf abstimmen.
+
+
+    **Ablauf**
+
+    1. Die Architektur stellt Raumlayout und Platzhalter mit vorgesehener Position sowie den räumlichen und gestalterischen Anforderungen bereit.
+
+    2. Die Sanitärplanung konkretisiert die Objekte im Sanitärmodell mit Typ, genauer Lage, Abmessungen und Anschlüssen und prüft die technische Machbarkeit.
+
+    3. Architektur und Sanitärplanung stimmen Bedienflächen, Anschlüsse und Vorsatzschalen ab, geben den Stand frei und führen ihn in den zuständigen Fachmodellen nach.
+
+
+    **Lieferergebnis**
+
+    - Freigegebenes Sanitärmodell mit den Sanitärobjekten in genauer Lage und Abmessung sowie mit abgestimmten Anschlüssen.
+
+    - Architekturmodell mit den koordinierten Vorsatzschalen und dem freigegebenen Raumlayout als Grundlage für die Ausschreibung.'
+  fr: 'Coordonner les appareils sanitaires depuis leur implantation architecturale jusqu''à l''étude sanitaire détaillée, afin que les raccordements et les contre-cloisons reposent sur des positions et
+    dimensions validées.
+
+
+    **Situation de départ**
+
+    - Il est souvent peu clair, entre l''architecture et l''étude sanitaire, qui fixe les positions et les dimensions des appareils sanitaires.
+
+    - Sans coordination claire, les raccordements, les contre-cloisons ou les appareils sanitaires sont étudiés ou montés au mauvais endroit.
+
+
+    **Objectif et bénéfice**
+
+    - L''architecture et l''étude sanitaire conviennent ensemble de qui étudie et valide les appareils sanitaires.
+
+    - Des indications claires et validées évitent les erreurs d''exécution sur le chantier.
+
+    - Valider ensemble le type, la position exacte, les dimensions et les raccordements, et coordonner à temps les contre-cloisons concernées.
+
+
+    **Déroulement**
+
+    1. L''architecture fournit l''aménagement des locaux et les objets provisoires avec leur position prévue ainsi que les exigences spatiales et architecturales.
+
+    2. Le mandataire sanitaire précise les appareils dans la maquette sanitaire avec leur type, position exacte, dimensions et raccordements, puis contrôle la faisabilité technique.
+
+    3. L''architecture et le mandataire sanitaire coordonnent les espaces d''utilisation, les raccordements et les contre-cloisons, valident l''état obtenu et le mettent à jour dans les maquettes métier
+    concernées.
+
+
+    **Livrable**
+
+    - Maquette sanitaire validée avec les appareils dans leur position et leurs dimensions exactes ainsi que les raccordements coordonnés.
+
+    - Maquette d''architecture avec les contre-cloisons coordonnées et l''aménagement des locaux validé comme base de l''appel d''offres.'
+  it: 'Coordinare gli apparecchi sanitari dall''impostazione architettonica fino alla progettazione impiantistica di dettaglio, affinché allacciamenti e contropareti si basino su posizioni e dimensioni
+    approvate.
+
+
+    **Situazione di partenza**
+
+    - Spesso non è chiaro, tra architettura e progettazione sanitaria, chi definisce posizioni e dimensioni degli apparecchi sanitari.
+
+    - Senza un coordinamento chiaro, allacciamenti, contropareti o apparecchi sanitari vengono progettati o montati nel posto sbagliato.
+
+
+    **Obiettivo e beneficio**
+
+    - Architettura e progettazione sanitaria stabiliscono insieme chi progetta e approva gli apparecchi sanitari.
+
+    - Indicazioni chiare e approvate evitano errori di esecuzione in cantiere.
+
+    - Approvare insieme tipo, posizione esatta, dimensioni e allacciamenti e coordinare per tempo le contropareti interessate.
+
+
+    **Svolgimento**
+
+    1. L''architettura fornisce il layout dei locali e gli oggetti provvisori con la posizione prevista nonché i requisiti spaziali e architettonici.
+
+    2. Il progettista degli impianti sanitari precisa gli apparecchi nel modello sanitario con tipo, posizione esatta, dimensioni e allacciamenti e ne verifica la fattibilità tecnica.
+
+    3. L''architettura e il progettista degli impianti sanitari coordinano gli spazi di utilizzo, gli allacciamenti e le contropareti, approvano lo stato ottenuto e lo aggiornano nei rispettivi modelli
+    disciplinari.
+
+
+    **Risultato della fornitura**
+
+    - Modello sanitario approvato con gli apparecchi nella posizione e nelle dimensioni esatte e con gli allacciamenti coordinati.
+
+    - Modello di architettura con le contropareti coordinate e il layout dei locali approvato come base per la gara.'
+  en: 'Coordinate sanitary fixtures jointly, from first placement through to detailed plumbing design, so that connections and service linings match the approved locations and dimensions.
+
+
+    **Starting point**
+
+    - It is often unclear between architecture and plumbing design who sets the locations and dimensions of the sanitary fixtures.
+
+    - Without clear coordination, connections, service linings, or sanitary fixtures are designed or installed in the wrong place.
+
+
+    **Goal & benefit**
+
+    - Architecture and plumbing design agree between them who designs and approves the sanitary fixtures.
+
+    - Clear, approved information prevents mistakes during work on site.
+
+    - Jointly approve the type, exact location, dimensions, and connections, and coordinate the affected service linings with them in good time.
+
+
+    **Process**
+
+    1. Architecture provides the room layout and placeholders with their intended locations and the spatial and design requirements.
+
+    2. The plumbing designer develops the fixtures in the plumbing model with their type, exact location, dimensions, and connections and checks technical feasibility.
+
+    3. Architecture and the plumbing designer coordinate operating clearances, connections, and service linings, approve the result, and update the responsible discipline models.
+
+
+    **Deliverable**
+
+    - Approved plumbing model with sanitary fixtures at their exact locations and dimensions and with coordinated connections.
+
+    - Architecture model with coordinated service linings and the approved room layout as a basis for tendering.'
+workflow_group: arbeitsvorbereitung
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: Architecture places the initial fixtures as placeholders and owns room layout and service linings. The plumbing designer owns the authoritative detailed fixture geometry and connections. After
+  handover, architecture placeholders must not remain as competing authoritative objects.

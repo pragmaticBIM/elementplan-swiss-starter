@@ -1,0 +1,27 @@
+id: pragmaticbim:usage-scenario/abfall-entsorgen
+code: US-WH-04
+sort_order: 4
+name:
+  de: Abfall entsorgen
+  fr: Évacuation des déchets
+  it: Conferimento dei rifiuti
+  en: Taking out waste
+description:
+  de: Bewohnende verlassen die Wohnung, gehen über das Treppenhaus und geben den Abfall im Abfallraum ab.
+  fr: Les occupants quittent le logement, empruntent la cage d'escalier et déposent les déchets au local déchets.
+  it: Chi abita esce dall'alloggio, percorre il vano scale e conferisce i rifiuti nel locale rifiuti.
+  en: Occupants leave the dwelling, use the stairwell, and drop waste in the waste room.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/treppenhaus
+- pragmaticbim:room-type/abfallraum
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/treppenhaus
+- from_room_type: pragmaticbim:room-type/treppenhaus
+  to_room_type: pragmaticbim:room-type/abfallraum
+  max_distance: 30

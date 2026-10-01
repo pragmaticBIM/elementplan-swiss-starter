@@ -1,0 +1,147 @@
+id: pragmaticbim:workflow/des-circularity
+code: DES-MATERIAL-PASS
+sort_order: 55
+name:
+  de: Materialpass für Urban Mining erstellen
+  fr: Établir le passeport matériaux pour l'urban mining
+  it: Elaborare il passaporto materiali per l'urban mining
+  en: Create the material passport for urban mining
+description:
+  de: 'Materialien, Trennbarkeit und Wiederverwendungspotenzial im Modell verankern – damit Gebäude-Materialpässe und Ökobilanzen ohne manuelles Nacherfassen möglich sind.
+
+
+    **Ausgangslage**
+
+    - Materialpässe und Zirkularitätsnachweise (z. B. Madaster) verlangen Material, Mengen, Klassifikation und Demontierbarkeit; diese Angaben fehlen oft im Modell und werden nachträglich manuell erfasst.
+
+    - Ohne einheitliche Bauteilinformationen entstehen Doppelarbeit, Abweichungen zwischen Modell und Materialpass und verzögerte Entscheide zu Wiederverwendung und Rückbau.
+
+
+    **Ziel & Nutzen**
+
+    - Materialien, Fügeverfahren und Wiederverwendungspotenzial direkt an den massgebenden Bauteilen führen.
+
+    - Automatisierte Materialpässe und Ökobilanzen aus dem Modell ableiten – so wenig wie möglich, so viel wie nötig.
+
+
+    **Ablauf**
+
+    1. Massgebende Bauteile mit Material, Status, eBKP-H und BaseQuantities im Modell bereitstellen.
+
+    2. Erweiterte Zirkularitätsangaben (Trennbarkeit, Re-Use-Anteil, Produkt-ID, GTIN, Abfallcodes) am Bauteil setzen.
+
+    3. Modell in die Materialpass-/Ökobilanz-Werkzeuge übernehmen und Ergebnisse prüfen.
+
+
+    **Lieferergebnis**
+
+    - Architektur- und Tragwerksmodell mit den für Materialpass und Zirkularität erforderlichen Bauteilinformationen
+
+    - Zum Modell rückverfolgbarer Datensatz für Gebäude-Materialpass und Ökobilanz'
+  fr: 'Ancrer matériaux, séparabilité et potentiel de réemploi dans la maquette – pour permettre passeports matériaux et ACV sans ressaisie manuelle.
+
+
+    **Situation de départ**
+
+    - Les passeports matériaux et les preuves de circularité (p. ex. Madaster) exigent matériaux, quantités, classification et démontabilité ; ces données manquent souvent dans la maquette et sont saisies
+    après coup.
+
+    - Sans informations d''éléments homogènes, on multiplie les reprises, les écarts entre maquette et passeport et les retards sur réemploi et déconstruction.
+
+
+    **Objectif et bénéfice**
+
+    - Tenir matériaux, modes d''assemblage et potentiel de réemploi directement sur les éléments déterminants.
+
+    - Déduire passeports matériaux et ACV automatisés de la maquette – aussi peu que possible, autant que nécessaire.
+
+
+    **Déroulement**
+
+    1. Fournir dans la maquette les éléments déterminants avec matériau, statut, eBKP-H et BaseQuantities.
+
+    2. Renseigner les données de circularité étendues (démontabilité, part de réemploi, ID produit, GTIN, codes déchets) sur l''élément.
+
+    3. Transférer la maquette dans les outils de passeport matériaux / ACV et contrôler les résultats.
+
+
+    **Livrable**
+
+    - Maquettes architecture et structure avec les informations d''éléments requises pour passeport matériaux et circularité
+
+    - Jeu de données traçable jusqu''à la maquette pour passeport matériaux et ACV'
+  it: 'Ancorare materiali, separabilità e potenziale di riuso nel modello – per consentire passaporti materiali e LCA senza ricattura manuale.
+
+
+    **Situazione di partenza**
+
+    - Passaporti materiali e prove di circularità (p. es. Madaster) richiedono materiale, quantità, classificazione e smontabilità; queste informazioni spesso mancano nel modello e vengono inserite a posteriori.
+
+    - Senza informazioni coerenti sui componenti si moltiplicano doppi lavori, scostamenti tra modello e passaporto e ritardi su riuso e smantellamento.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire materiali, tipi di giunzione e potenziale di riuso direttamente sui componenti rilevanti.
+
+    - Ricavare passaporti materiali e LCA automatici dal modello – il meno possibile, quanto necessario.
+
+
+    **Svolgimento**
+
+    1. Fornire nel modello i componenti rilevanti con materiale, stato, eBKP-H e BaseQuantities.
+
+    2. Impostare le indicazioni di circularità estese (smontabilità, quota di riuso, ID prodotto, GTIN, codici rifiuti) sul componente.
+
+    3. Trasferire il modello negli strumenti di passaporto materiali / LCA e verificarne i risultati.
+
+
+    **Risultato della fornitura**
+
+    - Modelli di architettura e struttura con le informazioni sui componenti necessarie per passaporto materiali e circularità
+
+    - Set di dati tracciabile fino al modello per passaporto materiali e LCA'
+  en: 'Anchor materials, detachability, and reuse potential in the model – so building material passports and LCAs are possible without manual re-entry.
+
+
+    **Starting point**
+
+    - Material passports and circularity evidence (e.g. Madaster) need material, quantities, classification, and detachability; these are often missing in the model and re-entered by hand.
+
+    - Without consistent component data, rework, passport drift, and delayed reuse or deconstruction decisions follow.
+
+
+    **Goal & benefit**
+
+    - Carry materials, connection methods, and reuse potential directly on governing components.
+
+    - Derive automated material passports and LCAs from the model – as little as possible, as much as necessary.
+
+
+    **Process**
+
+    1. Provide governing components with material, status, eBKP-H, and base quantities in the model.
+
+    2. Set extended circularity data (detachability, reuse share, product ID, GTIN, waste codes) on the component.
+
+    3. Transfer the model into material-passport / LCA tools and check the results.
+
+
+    **Deliverable**
+
+    - Architecture and structural models with the component information required for material passport and circularity
+
+    - Dataset traceable to the model for building material passport and LCA'
+workflow_group: konzept
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/building-physics
+comment: 'Material passport / circularity (e.g. Madaster). Minimal IFC basis: GUID, IfcMaterial, eBKP-H (IfcClassification or ePset_Cost.eBKP), BaseQuantities, Status (NEW/EXISTING/DEMOLISH). IFC4+: Pset_ManufacturerTypeInformation.GlobalTradeItemNumber
+  identifies the product type. Circularity data without a semantically equivalent IFC4.3 property remains in the neutral ePset_Circularity: Connection, Accessibility, Reuse, MaterialOrProductId, WasteCodes.
+  Enum tokens follow Madaster detachability methodology (DGBC). WasteCodes: Madaster format code:percentage[:nature[:cw-outcome[:oo-outcome]]]; VeVA (CH) / EAK-AVV (EU) codes in the code field. Complements
+  DES-LCA; does not replace it.'

@@ -1,0 +1,314 @@
+id: pragmaticbim:phase/hoai
+name:
+  de: HOAI Leistungsphasen
+  fr: Phases de prestations HOAI
+  it: Fasi di prestazione HOAI
+  en: HOAI service phases
+values:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+milestones:
+  - id: 'hoai:1:B'
+    code: B
+    sort_order: 1
+    name:
+      de: Beginn 1 (Grundlagenermittlung)
+      fr: Début 1 (Études préliminaires)
+      it: Inizio 1 (Rilevamento delle basi)
+      en: Beginning 1 (Basic evaluation)
+    status: active
+    phase: '1'
+    kind: beginning
+  - id: 'hoai:1:M'
+    code: M
+    sort_order: 2
+    name:
+      de: Mitte 1 (Grundlagenermittlung)
+      fr: Milieu 1 (Études préliminaires)
+      it: Metà 1 (Rilevamento delle basi)
+      en: Mid Phase 1 (Basic evaluation)
+    status: active
+    phase: '1'
+    kind: custom
+  - id: 'hoai:1:E'
+    code: E
+    sort_order: 3
+    name:
+      de: Ende 1 (Grundlagenermittlung)
+      fr: Fin 1 (Études préliminaires)
+      it: Fine 1 (Rilevamento delle basi)
+      en: End Phase 1 (Basic evaluation)
+    status: active
+    phase: '1'
+    kind: end
+  - id: 'hoai:2:B'
+    code: B
+    sort_order: 4
+    name:
+      de: Beginn 2 (Vorplanung)
+      fr: Début 2 (Avant-projet sommaire)
+      it: Inizio 2 (Progettazione preliminare)
+      en: Beginning 2 (Preliminary design)
+    status: active
+    phase: '2'
+    kind: beginning
+  - id: 'hoai:2:M'
+    code: M
+    sort_order: 5
+    name:
+      de: Mitte 2 (Vorplanung)
+      fr: Milieu 2 (Avant-projet sommaire)
+      it: Metà 2 (Progettazione preliminare)
+      en: Mid Phase 2 (Preliminary design)
+    status: active
+    phase: '2'
+    kind: custom
+  - id: 'hoai:2:E'
+    code: E
+    sort_order: 6
+    name:
+      de: Ende 2 (Vorplanung)
+      fr: Fin 2 (Avant-projet sommaire)
+      it: Fine 2 (Progettazione preliminare)
+      en: End Phase 2 (Preliminary design)
+    status: active
+    phase: '2'
+    kind: end
+  - id: 'hoai:3:B'
+    code: B
+    sort_order: 7
+    name:
+      de: Beginn 3 (Entwurfsplanung)
+      fr: Début 3 (Avant-projet détaillé)
+      it: Inizio 3 (Progettazione definitiva)
+      en: Beginning 3 (Design planning)
+    status: active
+    phase: '3'
+    kind: beginning
+  - id: 'hoai:3:M'
+    code: M
+    sort_order: 8
+    name:
+      de: Mitte 3 (Entwurfsplanung)
+      fr: Milieu 3 (Avant-projet détaillé)
+      it: Metà 3 (Progettazione definitiva)
+      en: Mid Phase 3 (Design planning)
+    status: active
+    phase: '3'
+    kind: custom
+  - id: 'hoai:3:E'
+    code: E
+    sort_order: 9
+    name:
+      de: Ende 3 (Entwurfsplanung)
+      fr: Fin 3 (Avant-projet détaillé)
+      it: Fine 3 (Progettazione definitiva)
+      en: End Phase 3 (Design planning)
+    status: active
+    phase: '3'
+    kind: end
+  - id: 'hoai:4:B'
+    code: B
+    sort_order: 10
+    name:
+      de: Beginn 4 (Genehmigungsplanung)
+      fr: Début 4 (Projet d'autorisation)
+      it: Inizio 4 (Progetto di autorizzazione)
+      en: Beginning 4 (Approval planning)
+    status: active
+    phase: '4'
+    kind: beginning
+  - id: 'hoai:4:M'
+    code: M
+    sort_order: 11
+    name:
+      de: Mitte 4 (Genehmigungsplanung)
+      fr: Milieu 4 (Projet d'autorisation)
+      it: Metà 4 (Progetto di autorizzazione)
+      en: Mid Phase 4 (Approval planning)
+    status: active
+    phase: '4'
+    kind: custom
+  - id: 'hoai:4:E'
+    code: E
+    sort_order: 12
+    name:
+      de: Ende 4 (Genehmigungsplanung)
+      fr: Fin 4 (Projet d'autorisation)
+      it: Fine 4 (Progetto di autorizzazione)
+      en: End Phase 4 (Approval planning)
+    status: active
+    phase: '4'
+    kind: end
+  - id: 'hoai:5:B'
+    code: B
+    sort_order: 13
+    name:
+      de: Beginn 5 (Ausführungsplanung)
+      fr: Début 5 (Projet d'exécution)
+      it: Inizio 5 (Progettazione esecutiva)
+      en: Beginning 5 (Execution planning)
+    status: active
+    phase: '5'
+    kind: beginning
+  - id: 'hoai:5:M'
+    code: M
+    sort_order: 14
+    name:
+      de: Mitte 5 (Ausführungsplanung)
+      fr: Milieu 5 (Projet d'exécution)
+      it: Metà 5 (Progettazione esecutiva)
+      en: Mid Phase 5 (Execution planning)
+    status: active
+    phase: '5'
+    kind: custom
+  - id: 'hoai:5:E'
+    code: E
+    sort_order: 15
+    name:
+      de: Ende 5 (Ausführungsplanung)
+      fr: Fin 5 (Projet d'exécution)
+      it: Fine 5 (Progettazione esecutiva)
+      en: End Phase 5 (Execution planning)
+    status: active
+    phase: '5'
+    kind: end
+  - id: 'hoai:6:B'
+    code: B
+    sort_order: 16
+    name:
+      de: Beginn 6 (Vorbereitung der Vergabe)
+      fr: Début 6 (Préparation de l'adjudication)
+      it: Inizio 6 (Preparazione dell'appalto)
+      en: Beginning 6 (Preparation of tender)
+    status: active
+    phase: '6'
+    kind: beginning
+  - id: 'hoai:6:M'
+    code: M
+    sort_order: 17
+    name:
+      de: Mitte 6 (Vorbereitung der Vergabe)
+      fr: Milieu 6 (Préparation de l'adjudication)
+      it: Metà 6 (Preparazione dell'appalto)
+      en: Mid Phase 6 (Preparation of tender)
+    status: active
+    phase: '6'
+    kind: custom
+  - id: 'hoai:6:E'
+    code: E
+    sort_order: 18
+    name:
+      de: Ende 6 (Vorbereitung der Vergabe)
+      fr: Fin 6 (Préparation de l'adjudication)
+      it: Fine 6 (Preparazione dell'appalto)
+      en: End Phase 6 (Preparation of tender)
+    status: active
+    phase: '6'
+    kind: end
+  - id: 'hoai:7:B'
+    code: B
+    sort_order: 19
+    name:
+      de: Beginn 7 (Mitwirkung bei der Vergabe)
+      fr: Début 7 (Participation à l'adjudication)
+      it: Inizio 7 (Partecipazione all'appalto)
+      en: Beginning 7 (Participation in tender)
+    status: active
+    phase: '7'
+    kind: beginning
+  - id: 'hoai:7:M'
+    code: M
+    sort_order: 20
+    name:
+      de: Mitte 7 (Mitwirkung bei der Vergabe)
+      fr: Milieu 7 (Participation à l'adjudication)
+      it: Metà 7 (Partecipazione all'appalto)
+      en: Mid Phase 7 (Participation in tender)
+    status: active
+    phase: '7'
+    kind: custom
+  - id: 'hoai:7:E'
+    code: E
+    sort_order: 21
+    name:
+      de: Ende 7 (Mitwirkung bei der Vergabe)
+      fr: Fin 7 (Participation à l'adjudication)
+      it: Fine 7 (Partecipazione all'appalto)
+      en: End Phase 7 (Participation in tender)
+    status: active
+    phase: '7'
+    kind: end
+  - id: 'hoai:8:B'
+    code: B
+    sort_order: 22
+    name:
+      de: Beginn 8 (Objektüberwachung)
+      fr: Début 8 (Surveillance des travaux)
+      it: Inizio 8 (Direzione dei lavori)
+      en: Beginning 8 (Construction supervision)
+    status: active
+    phase: '8'
+    kind: beginning
+  - id: 'hoai:8:M'
+    code: M
+    sort_order: 23
+    name:
+      de: Mitte 8 (Objektüberwachung)
+      fr: Milieu 8 (Surveillance des travaux)
+      it: Metà 8 (Direzione dei lavori)
+      en: Mid Phase 8 (Construction supervision)
+    status: active
+    phase: '8'
+    kind: custom
+  - id: 'hoai:8:E'
+    code: E
+    sort_order: 24
+    name:
+      de: Ende 8 (Objektüberwachung)
+      fr: Fin 8 (Surveillance des travaux)
+      it: Fine 8 (Direzione dei lavori)
+      en: End Phase 8 (Construction supervision)
+    status: active
+    phase: '8'
+    kind: end
+  - id: 'hoai:9:B'
+    code: B
+    sort_order: 25
+    name:
+      de: Beginn 9 (Objektbetreuung)
+      fr: Début 9 (Assistance à l'objet)
+      it: Inizio 9 (Assistenza all'opera)
+      en: Beginning 9 (Project supervision)
+    status: active
+    phase: '9'
+    kind: beginning
+  - id: 'hoai:9:M'
+    code: M
+    sort_order: 26
+    name:
+      de: Mitte 9 (Objektbetreuung)
+      fr: Milieu 9 (Assistance à l'objet)
+      it: Metà 9 (Assistenza all'opera)
+      en: Mid Phase 9 (Project supervision)
+    status: active
+    phase: '9'
+    kind: custom
+  - id: 'hoai:9:E'
+    code: E
+    sort_order: 27
+    name:
+      de: Ende 9 (Objektbetreuung)
+      fr: Fin 9 (Assistance à l'objet)
+      it: Fine 9 (Assistenza all'opera)
+      en: End Phase 9 (Project supervision)
+    status: active
+    phase: '9'
+    kind: end

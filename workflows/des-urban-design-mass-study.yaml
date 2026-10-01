@@ -2,12 +2,12 @@ id: pragmaticbim:workflow/des-urban-design-mass-study
 code: DES-URBAN-MASS
 sort_order: 44
 name:
-  de: Städtebauliche Massenstudie
-  fr: Étude de masse urbanistique
-  it: Studio di massa urbanistica
-  en: Urban design mass study
+  de: Städtebauliche Massenstudie erstellen
+  fr: Établir l'étude de masse urbanistique
+  it: Elaborare lo studio di massa urbanistica
+  en: Create the urban design mass study
 description:
-  de: 'Bruttovolumen geschossweise modellieren und Mengen für die urbanistische Massenstudie auswerten.
+  de: 'Geschossweise Bruttovolumen modellieren und auswerten, damit städtebauliche Varianten und Kennzahlen direkt verglichen werden können.
 
 
     **Ausgangslage**
@@ -26,29 +26,18 @@ description:
 
     **Ablauf**
 
-    1. Bruttovolumen je Geschoss gemäss Modellierungsrichtlinie bereitstellen.
+    1. Bruttovolumen je Geschoss gemäss Modellierungshinweis bereitstellen.
 
     2. Optional nach Wohnungen, Einheiten oder Allgemeinflächen trennen und in LongName gemäss Programm benennen.
 
     3. Geschossweise Flächen, Volumen und Höhen auswerten und Varianten vergleichen.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Nachvollziehbare Bruttomengen je Geschoss und Nutzungsanteil als Grundlage für die Massenstudie.
+    - Massenmodell mit prüfbaren Bruttovolumen je Geschoss und Nutzungsanteil gemäss Modellierungshinweis
 
-
-    **Lieferobjekte**
-
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Bruttovolumen je Geschoss als modellierte IfcSpace-Volumen mit PredefinedType=USERDEFINED und ObjectType=Bruttovolumen
-
-    - Untergeschoss von Unterkante Bodenplatte bis Oberkante Fertigboden; Obergeschosse von Oberkante Fertigboden bis Oberkante nächster Fertigboden bzw. Dach
-
-    - LongName mit Einheits- oder Nutzungsbezeichnung gemäss Programm; optionale Trennung nach Wohnungen, Einheiten oder Allgemeinflächen
-
-    - GrossFloorArea, GrossVolume und Height je Bruttovolumen'
+    - Mengenauswertung je Geschoss und Nutzungsanteil für den Variantenvergleich'
   fr: 'Modéliser les volumes bruts par étage et en extraire les quantités pour l''étude de masse urbanistique.
 
 
@@ -75,22 +64,11 @@ description:
     3. Évaluer surfaces, volumes et hauteurs par étage et comparer les variantes.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Quantités brutes traçables par étage et part de programme comme base de l''étude de masse.
+    - Maquette de masse avec volumes bruts vérifiables par étage et part de programme selon la directive de modélisation
 
-
-    **Livrables**
-
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Volumes bruts par étage modélisés comme IfcSpace avec PredefinedType=USERDEFINED et ObjectType=Bruttovolumen
-
-    - Sous-sol : de la face inférieure de la dalle de fondation au dessus du sol fini ; étages supérieurs : du dessus du sol fini au dessus du sol fini suivant ou à la toiture
-
-    - LongName avec désignation d''unité ou d''usage selon le programme ; séparation facultative par logements, unités ou espaces communs
-
-    - GrossFloorArea, GrossVolume et Height par volume brut'
+    - Métré par étage et part de programme pour comparer les variantes'
   it: 'Modellare i volumi lordi per piano ed estrarre le quantità per lo studio di massa urbanistica.
 
 
@@ -117,24 +95,12 @@ description:
     3. Valutare superfici, volumi e altezze per piano e confrontare le varianti.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Quantità lorde tracciabili per piano e quota di programma come base per lo studio di massa.
+    - Modello delle masse con volumi lordi verificabili per piano e quota di programma secondo la direttiva di modellazione
 
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Volumi lordi per piano modellati come IfcSpace con PredefinedType=USERDEFINED e ObjectType=Bruttovolumen
-
-    - Sotterraneo: dal bordo inferiore della soletta di fondazione al bordo superiore del pavimento finito; piani superiori: dal bordo superiore del pavimento finito al bordo superiore del pavimento finito
-    successivo o alla copertura
-
-    - LongName con denominazione di unità o uso secondo il programma; separazione facoltativa per alloggi, unità o spazi comuni
-
-    - GrossFloorArea, GrossVolume e Height per ogni volume lordo'
-  en: 'Model gross volumes per storey and extract quantities for the urban design mass study.
+    - Computo delle quantità per piano e quota di programma per confrontare le varianti'
+  en: 'Model and evaluate gross volumes by storey so that urban design options and metrics can be compared directly.
 
 
     **Starting point**
@@ -153,33 +119,23 @@ description:
 
     **Process**
 
-    1. Provide gross volumes per storey according to the modelling guideline.
+    1. Provide gross volumes per storey as set out in the modelling guideline.
 
-    2. Optionally separate by flats, units, or public space and set LongName according to the brief.
+    2. Optionally separate by flats, units, or public space and set LongName from the brief.
 
     3. Evaluate areas, volumes, and heights per storey and compare options.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Traceable gross quantities per storey and programme share as the basis for the mass study.
+    - Massing model with verifiable gross volumes by storey and programme share, following the modelling guideline
 
-
-    **Deliverables**
-
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Gross volumes per storey modelled as IfcSpace with PredefinedType=USERDEFINED and ObjectType=Bruttovolumen
-
-    - Basement from underside of base slab to top of finished floor; upper storeys from top of finished floor to top of next finished floor or roof
-
-    - LongName with unit or use designation according to the brief; optional separation by flats, units, or public space
-
-    - GrossFloorArea, GrossVolume, and Height per gross volume'
-workflow_group: null
+    - Quantity take-off by storey and programme share for comparing options'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 comment: Early-phase mass study. Gross-volume spaces use storey-height modelling; replace with net interior spaces in later design workflows.

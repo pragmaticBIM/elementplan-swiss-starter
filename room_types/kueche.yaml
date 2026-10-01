@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/kueche
+code: RT-WH-05
+sort_order: 5
+name:
+  de: Kueche
+  fr: Cuisine
+  it: Cucina
+  en: Kitchen
+definition:
+  de: Raum für Speisezubereitung.
+  fr: Local pour la préparation des repas.
+  it: Locale per la preparazione dei pasti.
+  en: Room for food preparation.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Kueche
+    fr: Cuisine
+    it: Cucina
+    en: Kitchen
+restrictions:
+  min_area: 8
+status: active

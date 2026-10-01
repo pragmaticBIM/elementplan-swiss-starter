@@ -1,0 +1,157 @@
+id: pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+code: BES-EXISTING-BUILDING-MEP
+sort_order: 9
+name:
+  de: Bestandsmodell von Rohbau, Ausbau und TGA beschaffen
+  fr: Commander la maquette de l’existant du gros œuvre, des aménagements et des installations
+  it: Affidare il modello dello stato di fatto di struttura grezza, finiture e impianti
+  en: Procure the existing structural shell, fit-out, and MEP model
+description:
+  de: 'Ein koordiniertes Bestandsmodell von Rohbau, Ausbau und TGA bestellen, damit Umbau und Umnutzung auf bekannten Bauteilen, Anlagen und Leitungswegen beruhen.
+
+
+    **Ausgangslage**
+
+    - Technikpläne und Anlagenlisten sind häufig unvollständig oder stimmen nicht mit der gebauten Situation überein.
+
+    - Verdeckte Leitungen, unklare Systemzusammenhänge und uneinheitliche Aufnahmebereiche führen zu Annahmen, Doppelaufnahmen und Nachträgen.
+
+
+    **Ziel & Nutzen**
+
+    - Rohbau, Ausbau und relevante TGA-Systeme mit einer projektspezifischen Erfassungstiefe als abgestimmte Bestandsgrundlage bestellen.
+
+    - Klar festlegen, welche Anlagen, Geräte und Leitungsnetze geometrisch, systemisch oder nur dokumentarisch zu erfassen sind.
+
+
+    **Ablauf**
+
+    1. Verwendungszweck, Aufnahmebereiche und benötigte Bauteile, Anlagen, Geräte und Leitungsnetze festlegen.
+
+    2. Geometrie, Systemzugehörigkeit, Status, Erfassungstiefe, Zugänglichkeit, Punktwolkenabgleich, Formate und Abnahmekriterien ausschreiben.
+
+    3. Angebote vergleichen, Leistung vergeben und fachübergreifende Prüfung, Abweichungsdokumentation sowie Freigabe vereinbaren.
+
+
+    **Lieferergebnis**
+
+    - Georeferenziertes und koordiniertes Bestandsmodell von Rohbau, Ausbau und TGA mit den vereinbarten Geometrie-, System- und Statusinformationen.
+
+    - Dokumentierte Aufnahmebereiche, nicht zugängliche Stellen, Annahmen, Erfassungstiefe, Genauigkeit und Modellfreigabe.
+
+    - Nach Bestand, Abbruch, Neubau und temporären Bauteilen eindeutig unterscheidbare Liefermodelle, soweit für den Verwendungszweck erforderlich.'
+  fr: 'Commander une maquette coordonnée de l’existant du gros œuvre, des aménagements et des installations afin que transformation et changement d’affectation reposent sur des éléments, équipements et
+    réseaux connus.
+
+
+    **Situation de départ**
+
+    - Les plans techniques et listes d’équipements sont souvent incomplets ou ne correspondent pas à la situation construite.
+
+    - Les réseaux cachés, les liens fonctionnels incertains et les périmètres de relevé incohérents entraînent des hypothèses, des relevés redondants et des avenants.
+
+
+    **Objectif et bénéfice**
+
+    - Commander le gros œuvre, les aménagements et les installations déterminantes comme base coordonnée, avec une profondeur de saisie propre au projet.
+
+    - Définir clairement quels équipements, appareils et réseaux doivent être saisis géométriquement, fonctionnellement ou uniquement dans la documentation.
+
+
+    **Déroulement**
+
+    1. Définir l’usage, les zones à relever et les éléments, équipements, appareils et réseaux requis.
+
+    2. Mettre en soumission la géométrie, l’appartenance aux systèmes, le statut, la profondeur de saisie, l’accessibilité, le calage sur le nuage de points, les formats et les critères de réception.
+
+    3. Comparer les offres, adjuger la prestation et convenir du contrôle interdisciplinaire, de la documentation des écarts et de la validation.
+
+
+    **Livrable**
+
+    - Maquette géoréférencée et coordonnée de l’existant du gros œuvre, des aménagements et des installations avec les informations convenues sur la géométrie, les systèmes et le statut.
+
+    - Zones relevées, endroits inaccessibles, hypothèses, profondeur de saisie, précision et validation de la maquette documentés.
+
+    - Maquettes livrées distinguant clairement existant, démolition, neuf et temporaire lorsque l’usage l’exige.'
+  it: 'Affidare un modello coordinato dello stato di fatto di struttura grezza, finiture e impianti, affinché trasformazione e cambio d’uso si basino su componenti, apparecchiature e reti conosciuti.
+
+
+    **Situazione di partenza**
+
+    - I piani tecnici e gli elenchi delle apparecchiature sono spesso incompleti o non corrispondono alla situazione costruita.
+
+    - Reti nascoste, relazioni funzionali incerte e perimetri di rilievo incoerenti causano ipotesi, doppi rilievi e prestazioni supplementari.
+
+
+    **Obiettivo e beneficio**
+
+    - Affidare l’acquisizione di struttura grezza, finiture e impianti rilevanti come base coordinata, con una profondità specifica del progetto.
+
+    - Stabilire chiaramente quali impianti, apparecchiature e reti devono essere rilevati geometricamente, per sistema o soltanto nella documentazione.
+
+
+    **Svolgimento**
+
+    1. Definire lo scopo d’uso, le zone da rilevare e i componenti, impianti, apparecchiature e reti necessari.
+
+    2. Mettere a gara geometria, appartenenza ai sistemi, stato, profondità di acquisizione, accessibilità, allineamento alla nuvola di punti, formati e criteri di collaudo.
+
+    3. Confrontare le offerte, affidare la prestazione e concordare verifica interdisciplinare, documentazione degli scostamenti e approvazione.
+
+
+    **Risultato della fornitura**
+
+    - Modello georiferito e coordinato dello stato di fatto di struttura grezza, finiture e impianti con le informazioni concordate su geometria, sistemi e stato.
+
+    - Zone rilevate, punti non accessibili, ipotesi, profondità di acquisizione, precisione e approvazione del modello documentati.
+
+    - Modelli forniti che distinguono chiaramente esistente, demolizione, nuovo e temporaneo, se richiesto dallo scopo d’uso.'
+  en: 'Procure a coordinated existing-condition model of the structural shell, fit-out, and MEP so that conversion and change of use rely on known components, equipment, and networks.
+
+
+    **Starting point**
+
+    - MEP drawings and equipment lists are often incomplete or differ from the built condition.
+
+    - Concealed services, unclear system relationships, and inconsistent survey areas lead to assumptions, duplicate surveys, and variations.
+
+
+    **Goal & benefit**
+
+    - Procure the structural shell, fit-out, and governing MEP systems as a coordinated existing basis with a project-specific capture depth.
+
+    - State clearly which systems, equipment, and networks must be captured geometrically, by system, or only in documentation.
+
+
+    **Process**
+
+    1. Define the intended use, survey areas, and required components, systems, equipment, and networks.
+
+    2. Tender the geometry, system assignment, status, capture depth, accessibility, point-cloud reconciliation, formats, and acceptance criteria.
+
+    3. Compare bids, award the service, and agree interdisciplinary checking, deviation records, and approval.
+
+
+    **Deliverable**
+
+    - Georeferenced and coordinated existing-condition model of the structural shell, fit-out, and MEP with the agreed geometry, system, and status information.
+
+    - Documented survey areas, inaccessible locations, assumptions, capture depth, accuracy, and model approval.
+
+    - Delivered models that clearly distinguish existing, demolition, new, and temporary components where required by the intended use.'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: special
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/surveyor
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+comment: 'Viertes Beschaffungspaket für Bestandsgrundlagen. Ergänzt Lagebezug, Gelände, Gebäude-Punktwolke sowie Gebäudekörper und Rohbau um Ausbau und TGA. Attribute pack: Status/ElementStatus, PredefinedType,
+  LoadBearing and ProductClass where defined (inherited from Rohbau), plus reference BaseQuantities; on TGA additionally PredefinedType and available Qto_ (e.g. GrossCrossSectionArea); on spaces NetFloorArea
+  / GrossVolume.'

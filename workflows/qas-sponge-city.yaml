@@ -1,0 +1,184 @@
+id: pragmaticbim:workflow/qas-sponge-city
+code: LAN-SPONGE-CITY
+sort_order: 86
+name:
+  de: Schwammstadtprinzip nachweisen
+  fr: Justifier le principe de ville-éponge
+  it: Verificare il principio di città spugna
+  en: Verify the sponge-city principle
+description:
+  de: 'Wurzelraum, Versickerung und Retention im Aussenraum modellieren, damit Regenwasser vor Ort bleibt statt in die Kanalisation abzufliessen, und Bäume einen Wurzelraum bekommen, der sie über die Standzeit
+    trägt.
+
+
+    **Ausgangslage**
+
+    - Bäume werden oft nur als Krone modelliert; der Wurzelraum bleibt unbeachtet und ist in der Realität meist zu klein oder verdichtet – Ausfälle zeigen sich erst Jahre nach Pflanzung.
+
+    - Versiegelte Flächen ohne Versickerungsnachweis überlasten bei Starkregen die Kanalisation; das zeigt sich erst im Betrieb, wenn Nachrüstung teuer ist.
+
+    - Retentionsmassnahmen werden oft erst in der Werkplanung nachträglich eingefügt, statt von Anfang an mit den Aussenraumflächen koordiniert zu sein.
+
+
+    **Ziel & Nutzen**
+
+    - Wurzelraum je Baum nachweisen (Mindestvolumen, unverdichtetes Substrat), bevor die Pflanzung als gesichert gilt.
+
+    - Anteil versickerungsfähiger Fläche am Gesamtaussenraum ausweisen und gegen behördliche Vorgaben prüfen.
+
+    - Retentionsvolumen den angeschlossenen Flächen zuordnen und die Bemessung nachvollziehbar dokumentieren.
+
+    - Mehrzweckflächen mit geplanter Retentionsfunktion (z. B. absenkbarer Platz) als solche kennzeichnen, statt sie erst beim Starkregenereignis zu improvisieren.
+
+
+    **Ablauf**
+
+    1. Baumstandorte mit Baumgruben verknüpfen und das Wurzelraumvolumen je Standort nach Artansprüchen festlegen; Aussenraumflächen nach Aussenraum-Oberflächenklassifikation (AOF) einteilen und den versickerungsfähigen
+    Anteil ableiten.
+
+    2. Retentionsvolumen den zugeordneten Einzugsflächen zuweisen, gegen die Regenspende bemessen und Flächen mit geplanter Retentionsfunktion im Alltag als Retentionsfläche kennzeichnen.
+
+    3. Nachweis dokumentieren: Wurzelraumvolumen je Baum, Versickerungsanteil nach AOF-Klasse, Retentionsvolumen je Bemessungsereignis.
+
+
+    **Lieferergebnis**
+
+    - Landschaftsmodell mit Baumgruben, Versickerungsflächen und Retentionsvolumen
+
+    - Nachweis Wurzelraumvolumen je Baum sowie versickerungsfähiger Flächenanteil nach AOF
+
+    - Retentionsvolumen je Bemessungsereignis, inkl. gekennzeichneter Multifunktionsflächen'
+  fr: 'Modéliser l''espace racinaire, l''infiltration et la rétention dans l''espace extérieur afin que l''eau de pluie reste sur place au lieu de rejoindre le réseau, et que les arbres disposent d''un
+    volume racinaire durable.
+
+
+    **Situation de départ**
+
+    - Les arbres sont souvent modélisés uniquement comme houppier; l''espace racinaire est ignoré et, en réalité, trop petit ou compacté – les échecs n''apparaissent que des années après la plantation.
+
+    - Des surfaces scellées sans justificatif d''infiltration surchargeent le réseau lors des fortes pluies; le constat n''arrive qu''en exploitation, quand le rattrapage est coûteux.
+
+    - Les mesures de rétention sont souvent ajoutées tardivement en exécution au lieu d''être coordonnées dès le début avec les surfaces extérieures.
+
+
+    **Objectif et bénéfice**
+
+    - Justifier l''espace racinaire par arbre (volume minimal, substrat non compacté) avant de considérer la plantation comme assurée.
+
+    - Indiquer la part de surface infiltrable dans l''espace extérieur total et la vérifier par rapport aux exigences des autorités.
+
+    - Attribuer le volume de rétention aux surfaces raccordées et documenter le dimensionnement de façon traçable.
+
+    - Marquer les surfaces polyvalentes à fonction de rétention prévue (p. ex. place abaissable) comme telles, au lieu de les improviser lors de l''orage.
+
+
+    **Déroulement**
+
+    1. Relier les emplacements d''arbres aux fosses de plantation et fixer le volume racinaire selon les exigences de l''espèce; classer les espaces extérieurs selon la classification des surfaces extérieures
+    (AOF) et en déduire la part infiltrable.
+
+    2. Attribuer le volume de rétention aux bassins versants, le dimensionner selon l''intensité de pluie et marquer les surfaces à fonction de rétention quotidienne comme surface de rétention.
+
+    3. Documenter la preuve: volume racinaire par arbre, part d''infiltration selon classe AOF, volume de rétention par événement de dimensionnement.
+
+
+    **Livrable**
+
+    - Maquette paysagère avec fosses de plantation, surfaces d''infiltration et volumes de rétention
+
+    - Preuve du volume racinaire par arbre et de la part de surface infiltrable selon AOF
+
+    - Volume de rétention par événement de dimensionnement, y compris surfaces multifonctionnelles marquées'
+  it: 'Modellare spazio radicale, infiltrazione e ritenzione nello spazio esterno affinché l''acqua piovana resti in loco invece di defluire in fognatura, e gli alberi ricevano uno spazio radicale che li
+    sostenga per tutta la durata di vita.
+
+
+    **Situazione di partenza**
+
+    - Gli alberi sono spesso modellati solo come chioma; lo spazio radicale resta ignorato e nella realtà è troppo piccolo o compattato – i fallimenti emergono solo anni dopo la piantumazione.
+
+    - Superfici impermeabilizzate senza prova di infiltrazione sovraccaricano la fognatura in caso di piogge intense; il problema emerge solo in esercizio, quando il ripristino è costoso.
+
+    - Le misure di ritenzione sono spesso inserite tardivamente nella progettazione di dettaglio invece di essere coordinate fin dall''inizio con le superfici esterne.
+
+
+    **Obiettivo e beneficio**
+
+    - Verificare lo spazio radicale per albero (volume minimo, substrato non compattato) prima di considerare la piantumazione come assicurata.
+
+    - Indicare la quota di superficie infiltrabile sullo spazio esterno totale e verificarla rispetto ai requisiti delle autorità.
+
+    - Assegnare il volume di ritenzione alle superfici collegate e documentare il dimensionamento in modo tracciabile.
+
+    - Contrassegnare le superfici polifunzionali con funzione di ritenzione prevista (p. es. piazza abbassabile) come tali, invece di improvvisarle solo in occasione dell''evento di pioggia intensa.
+
+
+    **Svolgimento**
+
+    1. Collegare le posizioni degli alberi alle fosse di piantumazione e fissare il volume radicale secondo le esigenze della specie; classificare gli spazi esterni secondo la classificazione delle superfici
+    esterne (AOF) e ricavarne la quota infiltrabile.
+
+    2. Assegnare il volume di ritenzione ai bacini di raccolta, dimensionarlo secondo l''intensità di pioggia e contrassegnare le superfici con funzione di ritenzione quotidiana come superficie di ritenzione.
+
+    3. Documentare la prova: volume radicale per albero, quota di infiltrazione per classe AOF, volume di ritenzione per evento di dimensionamento.
+
+
+    **Risultato della fornitura**
+
+    - Modello paesaggistico con fosse di piantumazione, superfici di infiltrazione e volumi di ritenzione
+
+    - Prova del volume radicale per albero e della quota di superficie infiltrabile secondo AOF
+
+    - Volume di ritenzione per evento di dimensionamento, comprese superfici multifunzionali contrassegnate'
+  en: 'Model root space, infiltration, and retention in the outdoor area so rainwater stays on site instead of flowing into the sewer, and trees receive a root volume that sustains them over their standing
+    life.
+
+
+    **Starting point**
+
+    - Trees are often modelled as crowns only; the root space is ignored and in reality is usually too small or compacted – failures appear only years after planting.
+
+    - Sealed surfaces without an infiltration proof overload the sewer in heavy rain; this shows up only in operation, when retrofit is expensive.
+
+    - Retention measures are often inserted late in detailed design instead of being coordinated with outdoor surfaces from the start.
+
+
+    **Goal & benefit**
+
+    - Prove root space per tree (minimum volume, uncompacted substrate) before planting is treated as secured.
+
+    - Report the share of permeable surface within the total outdoor space and check it against authority requirements.
+
+    - Assign retention volume to the connected catchment areas and document the sizing traceably.
+
+    - Mark multipurpose surfaces with a planned retention function (e.g. a plaza designed to flood) as such, instead of improvising them only during the storm event.
+
+
+    **Process**
+
+    1. Link tree locations to tree pits and set the root volume per location to the requirements of the species; classify outdoor spaces by the outdoor-surface classification (AOF) and derive the permeable
+    share.
+
+    2. Assign retention volume to the related catchments, size it against rainfall intensity, and mark everyday surfaces with a planned retention function as retention area.
+
+    3. Document the proof: root volume per tree, infiltration share by AOF class, retention volume per design event.
+
+
+    **Deliverable**
+
+    - Landscape model with tree pits, infiltration surfaces, and retention volumes
+
+    - Proof of root volume per tree and permeable surface share by AOF
+
+    - Retention volume per design event, including marked multifunctional surfaces'
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/infrastructure
+comment: 'Public code LAN-SPONGE-CITY; parent is QAS (verification / proof). Elements: LAN-TREE linked to LAN-TREEPIT (NetVolume = root volume); exterior IfcSpace (SPACE-EXT / RN-11) with LongName and FloorCovering
+  (AOF names from outdoor-floor-surface / schema v1.0.2) for permeable share; LAN-RETENTION NetVolume per design event; multifunctional everyday retention surfaces as LongName Retentionsflaeche (RN-11-20-04).
+  Outdoor floor materials: early on the space via FloorCovering (AOF); detail via ARC-FLOOR-COV-EXT (IsExternal=TRUE, Finish=AOF). Interior covering remains ARC-FLOOR-COV. Typical containers: LAN, UMG.'

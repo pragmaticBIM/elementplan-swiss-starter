@@ -1,0 +1,154 @@
+id: pragmaticbim:workflow/opr-facility-management-architecture-model
+code: OPR-FM-ARCH
+sort_order: 62
+name:
+  de: IFC-Modelle bei Umbauten nachführen
+  fr: Tenir à jour les maquettes IFC lors de transformations
+  it: Aggiornare i modelli IFC durante le trasformazioni
+  en: Maintain IFC models during alterations
+description:
+  de: 'Umbauperimeter kontrolliert aus dem freigegebenen IFC-Gesamtmodell ausgliedern und nach Abschluss wieder einsetzen – ohne Lücken, Dubletten oder widersprüchliche Modellstände.
+
+
+    **Ausgangslage**
+
+    - Umbauten werden häufig in separaten Projekten geplant, während das Gesamtmodell unverändert weiterverwendet wird.
+
+    - Werden Bauteile geometrisch am Perimetervolumen abgeschnitten oder nach Abschluss unkontrolliert zurückkopiert, entstehen doppelte, fehlende oder falsch zugeordnete Bauteile.
+
+    - Ohne verbindlichen Ausgangsstand, gemeinsamen Raumbezug und geregelte Freigabe ist nicht nachvollziehbar, welches Modell den gültigen Bestand abbildet.
+
+
+    **Ziel & Nutzen**
+
+    - Den gültigen Architektur- und HLKS-Bestand nach Umbauten ohne Lücken, Dubletten und widersprüchliche Modellstände nachführen.
+
+    - Das Gesamtmodell während paralleler Umbauprojekte weiter nutzbar halten und nach Ausführung wieder als einen verbindlichen Gesamtstand führen.
+
+
+    **Ablauf**
+
+    1. Projektperimeter als Volumen im Bestandsmodell modellieren, mit der Projektnummer bezeichnen und die Bauteile herauslösen.
+
+    2. Betroffene Bauteile elementbasiert in ein separates Umbauprojekt mit unverändertem Raumbezug übernehmen, Bauteile an der Perimetergrenze ausdrücklich zuordnen und die Planung nach Status führen.
+
+    3. Modell nach Ausführung wieder zusammenführen; bei Einzelmodellen eine Viewerstrategie festlegen, sodass der aktuelle Stand einfach sichtbar gemacht werden kann.
+
+
+    **Lieferergebnis**
+
+    - Freigegebenes Umbauprojekt mit eindeutigem Perimeter, gemeinsamem Raumbezug und dokumentierter Behandlung der Perimetergrenze.
+
+    - Konsolidierte Architektur- und HLKS-Modelle mit integriertem ausgeführtem Umbau und nachvollziehbarem Gesamtstand.'
+  fr: 'Extraire de manière contrôlée le périmètre de transformation de la maquette IFC globale validée et le réinsérer à la fin – sans lacunes, doublons ni états contradictoires.
+
+
+    **Situation de départ**
+
+    - Les transformations sont souvent étudiées dans des projets séparés tandis que la maquette globale continue d’être utilisée sans modification.
+
+    - Si les éléments sont découpés géométriquement au droit du volume ou recopiés sans contrôle à la fin, des éléments manquent, sont présents à double ou sont mal attribués.
+
+    - Sans état initial contraignant, référentiel spatial commun et validation réglée, il n’est pas possible de déterminer quelle maquette représente l’état valable.
+
+
+    **Objectif et bénéfice**
+
+    - Tenir à jour l’existant architecture et CVC après transformation, sans lacunes, doublons ni états de maquette contradictoires.
+
+    - Conserver la maquette globale utilisable pendant des projets de transformation parallèles et la ramener après exécution à un état global contraignant.
+
+
+    **Déroulement**
+
+    1. Modéliser le périmètre de projet comme volume dans la maquette d’existant, le désigner par le numéro de projet et en extraire les éléments.
+
+    2. Reprendre les éléments concernés dans un projet de transformation séparé en conservant le référentiel spatial, attribuer explicitement les éléments à la limite du périmètre et gérer l’étude selon
+    leur statut.
+
+    3. Réintégrer la maquette après exécution ; pour des maquettes séparées, définir une stratégie de visualisation permettant de rendre l’état actuel facilement visible.
+
+
+    **Livrable**
+
+    - Projet de transformation validé avec périmètre clair, référentiel spatial commun et traitement documenté de la limite du périmètre.
+
+    - Maquettes architecture et CVC consolidées avec la transformation exécutée intégrée et un état global traçable.'
+  it: 'Estrarre in modo controllato il perimetro di trasformazione dal modello IFC complessivo approvato e reinserirlo al termine – senza lacune, duplicati o stati contraddittori.
+
+
+    **Situazione di partenza**
+
+    - Le trasformazioni sono spesso progettate separatamente mentre il modello complessivo continua a essere utilizzato senza modifiche.
+
+    - Se i componenti vengono tagliati geometricamente in corrispondenza del volume o ricopiati senza controllo al termine, si generano componenti doppi, mancanti o assegnati in modo errato.
+
+    - Senza uno stato iniziale vincolante, un riferimento spaziale comune e un’approvazione regolamentata, non è possibile stabilire quale modello rappresenti lo stato valido.
+
+
+    **Obiettivo e beneficio**
+
+    - Aggiornare l’esistente architettonico e impianti dopo le trasformazioni senza lacune, duplicati né stati di modello contraddittori.
+
+    - Mantenere utilizzabile il modello complessivo durante progetti di trasformazione paralleli e riportarlo dopo l’esecuzione a uno stato complessivo vincolante.
+
+
+    **Svolgimento**
+
+    1. Modellare il perimetro di progetto come volume nel modello dell’esistente, designarlo con il numero di progetto e estrarne i componenti.
+
+    2. Trasferire i componenti interessati in un progetto di trasformazione separato mantenendo invariato il riferimento spaziale, assegnare esplicitamente i componenti al limite del perimetro e gestire
+    il progetto secondo il loro stato.
+
+    3. Reintegrare il modello dopo l’esecuzione; per modelli singoli separati, definire una strategia di visualizzazione che renda facilmente visibile lo stato attuale.
+
+
+    **Risultato della fornitura**
+
+    - Progetto di trasformazione approvato con perimetro chiaro, riferimento spaziale comune e gestione documentata del limite del perimetro.
+
+    - Modelli di architettura e impianti consolidati con la trasformazione eseguita integrata e uno stato complessivo tracciabile.'
+  en: 'Extract an alteration area from the approved overall IFC model in a controlled manner and reinsert it after completion – without gaps, duplicates, or conflicting model revisions.
+
+
+    **Starting point**
+
+    - Alterations are often designed in separate projects while the overall model continues to be used unchanged.
+
+    - Geometrically clipping elements at the boundary volume or copying them back after completion without checks creates duplicate, missing, or incorrectly assigned elements.
+
+    - Without a binding baseline, shared spatial reference, and controlled approval, it is unclear which model represents the valid existing condition.
+
+
+    **Goal & benefit**
+
+    - Keep the valid architectural and MEP existing condition up to date after alterations without gaps, duplicates, or conflicting model revisions.
+
+    - Keep the overall model usable during parallel alteration projects and restore it after execution as one binding overall revision.
+
+
+    **Process**
+
+    1. Model the project perimeter as a volume in the existing-condition model, label it with the project number, and extract the elements.
+
+    2. Transfer affected elements into a separate alteration project while retaining the spatial reference, explicitly assign elements crossing the boundary, and manage the design by status.
+
+    3. Merge the model again after execution; for separate single models, define a viewer strategy so the current state can be made visible easily.
+
+
+    **Deliverable**
+
+    - Approved alteration project with a clear boundary, shared spatial reference, and documented handling of boundary elements.
+
+    - Consolidated architectural and MEP models containing the integrated as-built alteration and a traceable overall revision.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/opr
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: The organisation must define the authoritative overall IFC model and the controlled extraction, replacement, validation, and archiving process. Extract complete elements by spatial selection; do
+  not create clipped element fragments at the perimeter boundary. Preserve the shared spatial reference and stable identifiers for unchanged elements. Apply the same process to architectural and MEP (HLKS)
+  models. If models stay separate, agree a viewer strategy that shows the current overall state.

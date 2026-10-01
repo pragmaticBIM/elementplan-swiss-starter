@@ -23,6 +23,7 @@ values:
   - SHELF
   - SOFA
   - USERDEFINED
+  - NOTDEFINED
   fr:
   - CHAIR
   - TABLE
@@ -32,6 +33,7 @@ values:
   - SHELF
   - SOFA
   - USERDEFINED
+  - NOTDEFINED
   it:
   - CHAIR
   - TABLE
@@ -41,6 +43,7 @@ values:
   - SHELF
   - SOFA
   - USERDEFINED
+  - NOTDEFINED
   en:
   - CHAIR
   - TABLE
@@ -50,3 +53,4 @@ values:
   - SHELF
   - SOFA
   - USERDEFINED
+  - NOTDEFINED

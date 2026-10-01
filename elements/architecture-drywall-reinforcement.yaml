@@ -1,0 +1,220 @@
+id: pragmaticbim:element/architecture-drywall-reinforcement
+code: ARC-DRYWALL-REINF
+sort_order: 78
+status: active
+name:
+  de: Verstärkungsbereich Trockenbau
+  fr: Zone de renfort de cloison légère
+  it: Zona di rinforzo per parete a secco
+  en: Drywall reinforcement zone
+definition:
+  de: 'Macht benötigte Befestigungsgründe vor Ausschreibung und Ausführung räumlich prüfbar und verhindert nachträgliche Regiearbeiten.
+
+
+    **Beschreibung**
+
+    - Vereinfachter Anforderungskörper für Lage und Ausdehnung einer Verstärkung innerhalb einer Trockenbauwand.
+
+    - Wird beispielsweise durch einen Hängeschrank, einen Sanitärapparat oder ein anderes wandmontiertes Bauteil ausgelöst; der konkrete Aufbau bleibt Teil der Ausführungsplanung des Trockenbauunternehmers.
+
+
+    **Modellierungshinweis**
+
+    - Als flachen Proxy-Körper innerhalb der betroffenen Trockenbauwand mit der erforderlichen Breite und Höhe modellieren.
+
+    - Dem auslösenden Bauteil, der betroffenen Wand und dem zugehörigen Geschoss eindeutig zuordnen; ObjectType = Trockenbauverstärkung.
+
+    - Überlappende Anforderungen zusammenführen, sofern Befestigungsanforderung und Ausführungslösung übereinstimmen.'
+  fr: 'Rend les supports de fixation requis vérifiables spatialement avant l''appel d''offres et l''exécution et évite des travaux en régie ultérieurs.
+
+
+    **Description**
+
+    - Corps d''exigence simplifié représentant la position et l''étendue d''un renfort à l''intérieur d''une cloison légère.
+
+    - Est requis, par exemple, par un meuble suspendu, un appareil sanitaire ou un autre élément fixé à la cloison ; la composition concrète relève des études d''exécution de l''entreprise de plâtrerie-construction
+    à sec.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy mince à l''intérieur de la cloison légère concernée, avec la largeur et la hauteur requises.
+
+    - Le rattacher sans ambiguïté à l''élément déclencheur, à la cloison concernée et à l''étage correspondant ; ObjectType = Renfort de cloison légère.
+
+    - Regrouper les exigences qui se chevauchent lorsque les exigences de fixation et la solution d''exécution concordent.'
+  it: 'Rende i supporti di fissaggio necessari verificabili spazialmente prima della gara e dell''esecuzione, evitando successivi lavori a regia.
+
+
+    **Descrizione**
+
+    - Corpo semplificato che rappresenta posizione ed estensione di un rinforzo all''interno di una parete a secco.
+
+    - È richiesto, ad esempio, da un pensile, un apparecchio sanitario o un altro componente fissato alla parete; la soluzione costruttiva concreta rimane parte della progettazione esecutiva dell''impresa
+    di costruzioni a secco.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy sottile all''interno della parete a secco interessata, con la larghezza e l''altezza necessarie.
+
+    - Associarlo in modo univoco al componente che lo richiede, alla parete interessata e al piano corrispondente; ObjectType = Rinforzo per parete a secco.
+
+    - Unire le esigenze sovrapposte quando i requisiti di fissaggio e la soluzione esecutiva coincidono.'
+  en: 'Makes required fixing support spatially checkable before tendering and construction and prevents subsequent daywork.
+
+
+    **Description**
+
+    - Simplified requirement body representing the location and extent of reinforcement within a drywall partition.
+
+    - Triggered, for example, by a wall cabinet, sanitary appliance, or another wall-mounted component; the specific build-up remains part of the drywall contractor''s construction design.
+
+
+    **Modelling guidelines**
+
+    - Model as a thin proxy body within the affected drywall partition using the required width and height.
+
+    - Assign it unambiguously to the triggering component, affected wall, and matching storey; ObjectType = Drywall reinforcement.
+
+    - Merge overlapping requirements where their fixing requirement and construction solution match.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-drywall-reinforcement.png
+picture_print_link: architecture-drywall-reinforcement-print.tif
+attachment_link: architecture-drywall-reinforcement.ifc
+model_link: architecture-drywall-reinforcement.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Trockenbauverstärkung) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Trockenbauverstärkung)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Renfort de cloison légère") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Renfort de cloison légère")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Rinforzo per parete a secco") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Rinforzo per parete a secco")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Drywall reinforcement") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Drywall reinforcement")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Eindeutige Bezeichnung des Verstärkungsbereichs und seines Auslösers.
+    fr: Désignation univoque de la zone de renfort et de l'élément qui la requiert.
+    it: Denominazione univoca della zona di rinforzo e del componente che la richiede.
+    en: Unambiguous designation of the reinforcement zone and its triggering component.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-drywall-reinforcement-planning
+  - pragmaticbim:workflow/bes-drywall-tender-basis
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente; ObjectType precisa il tipo'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-drywall-reinforcement-planning
+  - pragmaticbim:workflow/bes-drywall-tender-basis
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste ObjectType Trockenbauverstärkung.'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs ObjectType renfort de cloison légère.'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - Vedi elenco valori ObjectType rinforzo per parete a secco.'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - See the ObjectType drywall reinforcement value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-drywall-reinforcement
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-drywall-reinforcement-planning
+  - pragmaticbim:workflow/bes-drywall-tender-basis
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: Reference
+  pset: Pset_BuildingElementProxyCommon
+  definition:
+    de: Eindeutige Referenz des Verstärkungsbereichs für Modellprüfung, Liste und Ausführung.
+    fr: Référence univoque de la zone de renfort pour le contrôle de la maquette, la liste et l'exécution.
+    it: Riferimento univoco della zona di rinforzo per la verifica del modello, l'elenco e l'esecuzione.
+    en: Unambiguous reinforcement-zone reference for model checking, scheduling, and construction.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-drywall-reinforcement-planning
+  - pragmaticbim:workflow/bes-drywall-tender-basis
+  is_applicability: false
+  status: active
+  sort_order: 4

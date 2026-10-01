@@ -1,0 +1,314 @@
+id: pragmaticbim:phase/lm-vm
+name:
+  de: LM.VM Leistungsphasen
+  fr: Phases de prestations LM.VM
+  it: Fasi di prestazione LM.VM
+  en: LM.VM service phases
+values:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+milestones:
+  - id: 'lm-vm:1:B'
+    code: B
+    sort_order: 1
+    name:
+      de: Beginn 1 (Grundlagenanalyse)
+      fr: Début 1 (Analyse des bases)
+      it: Inizio 1 (Analisi delle basi)
+      en: Beginning 1 (Basic analysis)
+    status: active
+    phase: '1'
+    kind: beginning
+  - id: 'lm-vm:1:M'
+    code: M
+    sort_order: 2
+    name:
+      de: Mitte 1 (Grundlagenanalyse)
+      fr: Milieu 1 (Analyse des bases)
+      it: Metà 1 (Analisi delle basi)
+      en: Mid Phase 1 (Basic analysis)
+    status: active
+    phase: '1'
+    kind: custom
+  - id: 'lm-vm:1:E'
+    code: E
+    sort_order: 3
+    name:
+      de: Ende 1 (Grundlagenanalyse)
+      fr: Fin 1 (Analyse des bases)
+      it: Fine 1 (Analisi delle basi)
+      en: End Phase 1 (Basic analysis)
+    status: active
+    phase: '1'
+    kind: end
+  - id: 'lm-vm:2:B'
+    code: B
+    sort_order: 4
+    name:
+      de: Beginn 2 (Vorentwurf)
+      fr: Début 2 (Avant-projet)
+      it: Inizio 2 (Avamprogetto)
+      en: Beginning 2 (Preliminary design)
+    status: active
+    phase: '2'
+    kind: beginning
+  - id: 'lm-vm:2:M'
+    code: M
+    sort_order: 5
+    name:
+      de: Mitte 2 (Vorentwurf)
+      fr: Milieu 2 (Avant-projet)
+      it: Metà 2 (Avamprogetto)
+      en: Mid Phase 2 (Preliminary design)
+    status: active
+    phase: '2'
+    kind: custom
+  - id: 'lm-vm:2:E'
+    code: E
+    sort_order: 6
+    name:
+      de: Ende 2 (Vorentwurf)
+      fr: Fin 2 (Avant-projet)
+      it: Fine 2 (Avamprogetto)
+      en: End Phase 2 (Preliminary design)
+    status: active
+    phase: '2'
+    kind: end
+  - id: 'lm-vm:3:B'
+    code: B
+    sort_order: 7
+    name:
+      de: Beginn 3 (Entwurf)
+      fr: Début 3 (Projet)
+      it: Inizio 3 (Progetto)
+      en: Beginning 3 (Design)
+    status: active
+    phase: '3'
+    kind: beginning
+  - id: 'lm-vm:3:M'
+    code: M
+    sort_order: 8
+    name:
+      de: Mitte 3 (Entwurf)
+      fr: Milieu 3 (Projet)
+      it: Metà 3 (Progetto)
+      en: Mid Phase 3 (Design)
+    status: active
+    phase: '3'
+    kind: custom
+  - id: 'lm-vm:3:E'
+    code: E
+    sort_order: 9
+    name:
+      de: Ende 3 (Entwurf)
+      fr: Fin 3 (Projet)
+      it: Fine 3 (Progetto)
+      en: End Phase 3 (Design)
+    status: active
+    phase: '3'
+    kind: end
+  - id: 'lm-vm:4:B'
+    code: B
+    sort_order: 10
+    name:
+      de: Beginn 4 (Einreichplanung)
+      fr: Début 4 (Projet de dépôt)
+      it: Inizio 4 (Progetto di presentazione)
+      en: Beginning 4 (Permit planning)
+    status: active
+    phase: '4'
+    kind: beginning
+  - id: 'lm-vm:4:M'
+    code: M
+    sort_order: 11
+    name:
+      de: Mitte 4 (Einreichplanung)
+      fr: Milieu 4 (Projet de dépôt)
+      it: Metà 4 (Progetto di presentazione)
+      en: Mid Phase 4 (Permit planning)
+    status: active
+    phase: '4'
+    kind: custom
+  - id: 'lm-vm:4:E'
+    code: E
+    sort_order: 12
+    name:
+      de: Ende 4 (Einreichplanung)
+      fr: Fin 4 (Projet de dépôt)
+      it: Fine 4 (Progetto di presentazione)
+      en: End Phase 4 (Permit planning)
+    status: active
+    phase: '4'
+    kind: end
+  - id: 'lm-vm:5:B'
+    code: B
+    sort_order: 13
+    name:
+      de: Beginn 5 (Ausführungsplanung)
+      fr: Début 5 (Projet d'exécution)
+      it: Inizio 5 (Progettazione esecutiva)
+      en: Beginning 5 (Execution planning)
+    status: active
+    phase: '5'
+    kind: beginning
+  - id: 'lm-vm:5:M'
+    code: M
+    sort_order: 14
+    name:
+      de: Mitte 5 (Ausführungsplanung)
+      fr: Milieu 5 (Projet d'exécution)
+      it: Metà 5 (Progettazione esecutiva)
+      en: Mid Phase 5 (Execution planning)
+    status: active
+    phase: '5'
+    kind: custom
+  - id: 'lm-vm:5:E'
+    code: E
+    sort_order: 15
+    name:
+      de: Ende 5 (Ausführungsplanung)
+      fr: Fin 5 (Projet d'exécution)
+      it: Fine 5 (Progettazione esecutiva)
+      en: End Phase 5 (Execution planning)
+    status: active
+    phase: '5'
+    kind: end
+  - id: 'lm-vm:6:B'
+    code: B
+    sort_order: 16
+    name:
+      de: Beginn 6 (Ausschreibung und Mitwirkung an der Vergabe)
+      fr: Début 6 (Appel d'offres et participation à l'adjudication)
+      it: Inizio 6 (Gara e partecipazione all'appalto)
+      en: Beginning 6 (Tender and award participation)
+    status: active
+    phase: '6'
+    kind: beginning
+  - id: 'lm-vm:6:M'
+    code: M
+    sort_order: 17
+    name:
+      de: Mitte 6 (Ausschreibung und Mitwirkung an der Vergabe)
+      fr: Milieu 6 (Appel d'offres et participation à l'adjudication)
+      it: Metà 6 (Gara e partecipazione all'appalto)
+      en: Mid Phase 6 (Tender and award participation)
+    status: active
+    phase: '6'
+    kind: custom
+  - id: 'lm-vm:6:E'
+    code: E
+    sort_order: 18
+    name:
+      de: Ende 6 (Ausschreibung und Mitwirkung an der Vergabe)
+      fr: Fin 6 (Appel d'offres et participation à l'adjudication)
+      it: Fine 6 (Gara e partecipazione all'appalto)
+      en: End Phase 6 (Tender and award participation)
+    status: active
+    phase: '6'
+    kind: end
+  - id: 'lm-vm:7:B'
+    code: B
+    sort_order: 19
+    name:
+      de: Beginn 7 (Begleitung der Bauausführung)
+      fr: Début 7 (Accompagnement de l'exécution)
+      it: Inizio 7 (Accompagnamento dell'esecuzione)
+      en: Beginning 7 (Construction accompaniment)
+    status: active
+    phase: '7'
+    kind: beginning
+  - id: 'lm-vm:7:M'
+    code: M
+    sort_order: 20
+    name:
+      de: Mitte 7 (Begleitung der Bauausführung)
+      fr: Milieu 7 (Accompagnement de l'exécution)
+      it: Metà 7 (Accompagnamento dell'esecuzione)
+      en: Mid Phase 7 (Construction accompaniment)
+    status: active
+    phase: '7'
+    kind: custom
+  - id: 'lm-vm:7:E'
+    code: E
+    sort_order: 21
+    name:
+      de: Ende 7 (Begleitung der Bauausführung)
+      fr: Fin 7 (Accompagnement de l'exécution)
+      it: Fine 7 (Accompagnamento dell'esecuzione)
+      en: End Phase 7 (Construction accompaniment)
+    status: active
+    phase: '7'
+    kind: end
+  - id: 'lm-vm:8:B'
+    code: B
+    sort_order: 22
+    name:
+      de: Beginn 8 (Örtliche Bauaufsicht)
+      fr: Début 8 (Surveillance locale des travaux)
+      it: Inizio 8 (Direzione locale dei lavori)
+      en: Beginning 8 (Site supervision)
+    status: active
+    phase: '8'
+    kind: beginning
+  - id: 'lm-vm:8:M'
+    code: M
+    sort_order: 23
+    name:
+      de: Mitte 8 (Örtliche Bauaufsicht)
+      fr: Milieu 8 (Surveillance locale des travaux)
+      it: Metà 8 (Direzione locale dei lavori)
+      en: Mid Phase 8 (Site supervision)
+    status: active
+    phase: '8'
+    kind: custom
+  - id: 'lm-vm:8:E'
+    code: E
+    sort_order: 24
+    name:
+      de: Ende 8 (Örtliche Bauaufsicht)
+      fr: Fin 8 (Surveillance locale des travaux)
+      it: Fine 8 (Direzione locale dei lavori)
+      en: End Phase 8 (Site supervision)
+    status: active
+    phase: '8'
+    kind: end
+  - id: 'lm-vm:9:B'
+    code: B
+    sort_order: 25
+    name:
+      de: Beginn 9 (Objektbetreuung)
+      fr: Début 9 (Assistance à l'objet)
+      it: Inizio 9 (Assistenza all'opera)
+      en: Beginning 9 (Project supervision)
+    status: active
+    phase: '9'
+    kind: beginning
+  - id: 'lm-vm:9:M'
+    code: M
+    sort_order: 26
+    name:
+      de: Mitte 9 (Objektbetreuung)
+      fr: Milieu 9 (Assistance à l'objet)
+      it: Metà 9 (Assistenza all'opera)
+      en: Mid Phase 9 (Project supervision)
+    status: active
+    phase: '9'
+    kind: custom
+  - id: 'lm-vm:9:E'
+    code: E
+    sort_order: 27
+    name:
+      de: Ende 9 (Objektbetreuung)
+      fr: Fin 9 (Assistance à l'objet)
+      it: Fine 9 (Assistenza all'opera)
+      en: End Phase 9 (Project supervision)
+    status: active
+    phase: '9'
+    kind: end

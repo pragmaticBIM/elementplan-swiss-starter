@@ -1,0 +1,32 @@
+id: pragmaticbim:value/name-movement-clearance
+code: NAME-MOVEMENT-CLEARANCE
+name:
+  de: Name Bewegungsfläche
+  fr: Name aire de mouvement
+  it: Name area di movimento
+  en: Movement clearance name
+description:
+  de: Auswahlliste für die Art der rechteckigen Bewegungsfläche nach SIA 500.
+  fr: Liste de choix pour le type d'aire de mouvement rectangulaire selon la norme SIA 500.
+  it: Elenco di scelta per il tipo di area di movimento rettangolare secondo la norma SIA 500.
+  en: Value list for the kind of rectangular movement clearance according to SIA 500.
+year: 2026
+norm_reference: SIA 500
+status: active
+values:
+  de:
+  - Wendefläche
+  - Manövrierfläche
+  - Freifläche
+  fr:
+  - Aire de rotation
+  - Aire de manœuvre
+  - Aire libre
+  it:
+  - Area di rotazione
+  - Area di manovra
+  - Area libera
+  en:
+  - Turning area
+  - Manoeuvring area
+  - Clear area

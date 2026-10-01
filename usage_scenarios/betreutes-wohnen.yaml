@@ -1,0 +1,37 @@
+id: pragmaticbim:usage-scenario/betreutes-wohnen
+code: US-WH-06
+sort_order: 6
+name:
+  de: Betreutes Wohnen
+  fr: Habitat accompagné
+  it: Abitare assistito
+  en: Assisted living
+description:
+  de: Bewohnende mit Unterstützungsbedarf kommen über die Eingangshalle und die Aufzugszone zur Wohnung und erreichen von dort Wohnzimmer und Bad auf kurzem Weg.
+  fr: Les occupants qui ont besoin d'accompagnement arrivent par le hall d'entrée et le palier d'ascenseur au logement, puis rejoignent séjour et salle de bain sur un court trajet.
+  it: Chi abita e necessita di accompagnamento arriva dall'atrio e dalla zona ascensore all'alloggio, poi raggiunge soggiorno e bagno su un percorso breve.
+  en: Occupants who need support arrive via the lobby and elevator lobby at the dwelling, then reach living room and bathroom on a short path.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/eingangshalle
+- pragmaticbim:room-type/aufzugszone
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/gang
+- pragmaticbim:room-type/wohnzimmer
+- pragmaticbim:room-type/badezimmer
+room_relationships:
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/aufzugszone
+- from_room_type: pragmaticbim:room-type/aufzugszone
+  to_room_type: pragmaticbim:room-type/wohnungseingang
+  max_distance: 15
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/gang
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/wohnzimmer
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/badezimmer
+  max_distance: 8

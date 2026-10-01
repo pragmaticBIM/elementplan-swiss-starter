@@ -1,0 +1,256 @@
+id: pragmaticbim:element/landscape-tree-pit
+code: LAN-TREEPIT
+sort_order: 62
+status: active
+name:
+  de: Baumgrube
+  fr: Fosse de plantation
+  it: Fossa di piantumazione
+  en: Tree pit
+definition:
+  de: 'Macht das Wurzelraumvolumen je Baumstandort prüfbar, bevor die Pflanzung als gesichert gilt.
+
+
+    **Beschreibung**
+
+    - Unverdichtetes Substratvolumen der Baumgrube am geplanten oder bestehenden Baumstandort.
+
+    - Dient dem Schwammstadt- und Baumstandortnachweis und der Verknüpfung mit dem Baum (LAN-TREE).
+
+
+    **Modellierungshinweis**
+
+    - Als vereinfachtes Volumen der Baumgrube modellieren und dem zugehörigen Baumstandort zuweisen.
+
+    - Nettovolumen als massgebendes Wurzelraumvolumen führen; keine Feinwurzeln oder Substratschichten modellieren.'
+  fr: 'Rend vérifiable le volume racinaire de chaque emplacement d''arbre avant de considérer la plantation comme assurée.
+
+
+    **Description**
+
+    - Volume de substrat non compacté de la fosse de plantation à l''emplacement d''arbre projeté ou existant.
+
+    - Sert au justificatif ville-éponge et d''emplacement d''arbre ainsi qu''au lien avec l''arbre (LAN-TREE).
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volume simplifié de la fosse et le rattacher à l''emplacement d''arbre concerné.
+
+    - Saisir le volume net comme volume racinaire déterminant ; ne pas modéliser de racines fines ni de couches de substrat.'
+  it: 'Rende verificabile il volume radicale per ogni posizione d''albero prima di considerare la piantumazione come assicurata.
+
+
+    **Descrizione**
+
+    - Volume di substrato non compattato della fossa di piantumazione nella posizione d''albero prevista o esistente.
+
+    - Serve alla verifica città spugna e di posizione d''albero nonché al collegamento con l''albero (LAN-TREE).
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume semplificato della fossa e assegnarlo alla posizione d''albero corrispondente.
+
+    - Gestire il volume netto come volume radicale determinante; non modellare radici fini né strati di substrato.'
+  en: 'Makes the root volume per tree location verifiable before planting is treated as secured.
+
+
+    **Description**
+
+    - Uncompacted substrate volume of the tree pit at the planned or existing tree location.
+
+    - Used for sponge-city and tree-location proof and for linking to the tree (LAN-TREE).
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified tree-pit volume and assign it to the related tree location.
+
+    - Carry net volume as the authoritative root volume; do not model fine roots or substrate layers.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcGeographicElement
+entity_ifc4_3: IfcGeographicElement
+picture_link: landscape-tree-pit.png
+picture_print_link: landscape-tree-pit-print.tif
+attachment_link: landscape-tree-pit.ifc
+model_link: landscape-tree-pit.ifc
+applicability:
+  de: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Baumgrube) OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType=Baumgrube) OR (entity_ifc2x3=IfcBuildingElementProxy
+    AND ObjectType=Baumgrube)
+  fr: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Fosse de plantation") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Fosse de
+    plantation") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Fosse de plantation")
+  it: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Fossa di piantumazione") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Fossa
+    di piantumazione") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Fossa di piantumazione")
+  en: (entity_ifc4=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Tree pit") OR (entity_ifc4_3=IfcGeographicElement AND PredefinedType=USERDEFINED AND ObjectType="Tree pit") OR (entity_ifc2x3=IfcBuildingElementProxy
+    AND ObjectType="Tree pit")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Baumgrube, abgestimmt auf die Baumnummer (z. B. BG0001 zu B0001).
+    fr: Désignation de la fosse de plantation, alignée sur le numéro d'arbre (p. ex. BG0001 pour B0001).
+    it: Denominazione della fossa di piantumazione, allineata al numero d'albero (p. es. BG0001 per B0001).
+    en: Tree-pit designation aligned with the tree number (e.g. BG0001 for B0001).
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet das Element als Baumgrube.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType = Baumgrube'
+    fr: 'Identifie l''élément comme fosse de plantation.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType = Fosse de plantation'
+    it: 'Identifica l''elemento come fossa di piantumazione.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType = Fossa di piantumazione'
+    en: 'Marks the element as a tree pit.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType = Tree pit'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-geographic-element-tree-pit
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Elements als Baumgrube.
+
+
+      **Zulässige Werte**
+
+      - `Baumgrube` — Substratvolumen am Baumstandort'
+    fr: 'Nature de l''élément comme fosse de plantation.
+
+
+      **Valeurs admises**
+
+      - `Fosse de plantation` — volume de substrat à l''emplacement d''arbre'
+    it: 'Tipo dell''elemento come fossa di piantumazione.
+
+
+      **Valori ammessi**
+
+      - `Fossa di piantumazione` — volume di substrato nella posizione d''albero'
+    en: 'Kind of element as a tree pit.
+
+
+      **Allowed values**
+
+      - `Tree pit` — substrate volume at the tree location'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-tree-pit
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: TreeReference
+  pset: ePset_TreePit
+  definition:
+    de: Verweis auf die Baumnummer (`Name` des zugehörigen LAN-TREE), z. B. B0001.
+    fr: Référence au numéro d'arbre (`Name` du LAN-TREE associé), p. ex. B0001.
+    it: Riferimento al numero d'albero (`Name` del LAN-TREE associato), p. es. B0001.
+    en: Reference to the tree number (`Name` of the related LAN-TREE), e.g. B0001.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: NetVolume
+  pset: Qto_GeographicElementBaseQuantities
+  definition:
+    de: Nettovolumen des unverdichteten Wurzelraumsubstrats der Baumgrube.
+    fr: Volume net du substrat racinaire non compacté de la fosse de plantation.
+    it: Volume netto del substrato radicale non compattato della fossa di piantumazione.
+    en: Net volume of the uncompacted root substrate of the tree pit.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-sponge-city
+  is_applicability: false
+  status: active
+  sort_order: 5

@@ -1,0 +1,28 @@
+id: pragmaticbim:room-type/parkplatz-pkw-innen
+code: RT-WH-23
+sort_order: 23
+name:
+  de: Parkplatz PKW Innen
+  fr: Place voiture intérieure
+  it: Posto auto interno
+  en: Interior Car Parking
+definition:
+  de: PKW-Parkplatz im Gebäude, typisch in der Tiefgarage.
+  fr: Place de stationnement voiture à l'intérieur du bâtiment, typiquement en parking souterrain.
+  it: Posto auto all'interno dell'edificio, di regola in autorimessa.
+  en: Car parking space inside the building, typically in the basement garage.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Parkplatz PKW Innen
+    fr: Place voiture intérieure
+    it: Posto auto interno
+    en: Interior Car Parking
+status: active

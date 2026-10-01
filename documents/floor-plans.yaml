@@ -1,52 +1,55 @@
 id: pragmaticbim:document/floor-plans
 code: GRD
-sort_order: 101
+sort_order: 119
 name:
   de: Grundrisse
   fr: Plans des étages
   it: Planimetrie
   en: Floor plans
 definition:
-  de: Geschossgrundrisse als geometrische und visuelle Planungsgrundlage. Sie dienen als Vollständigkeits-Check gegenüber dem IFC-Modell — das Modell wird via IDS geprüft, die Pläne zeigen, ob der Stand vollständig und lesbar ist.
-  fr: Plans des étages comme base géométrique et visuelle de planification. Ils servent de contrôle de complétude face à la maquette IFC — la maquette est vérifiée via IDS, les plans montrent si l'état est complet et lisible.
-  it: Planimetrie di piano come base geometrica e visiva di pianificazione. Servono da controllo di completezza rispetto al modello IFC — il modello è verificato via IDS, le planimetrie mostrano se lo stato è completo e leggibile.
-  en: Storey floor plans as the geometric and visual planning basis. They act as a completeness check against the IFC model — the model is validated via IDS, the plans show whether the status is complete and readable.
+  de: Geschossgrundrisse als geometrische und visuelle Planungsgrundlage, typisch im Massstab 1:50. Sie dienen als Vollständigkeits-Check gegenüber dem IFC-Modell – das Modell wird via IDS geprüft, die Pläne zeigen, ob der Stand vollständig und lesbar ist.
+  fr: Plans des étages comme base géométrique et visuelle de planification, typiquement à l'échelle 1:50. Ils servent de contrôle de complétude face à la maquette IFC – la maquette est vérifiée via IDS, les plans montrent si l'état est complet et lisible.
+  it: Planimetrie di piano come base geometrica e visiva di pianificazione, tipicamente in scala 1:50. Servono da controllo di completezza rispetto al modello IFC – il modello è verificato via IDS, le planimetrie mostrano se lo stato è completo e leggibile.
+  en: Storey floor plans as the geometric and visual planning basis, typically at scale 1:50. They act as a completeness check against the IFC model – the model is validated via IDS, the plans show whether the status is complete and readable.
 description:
   de: |-
     - Geschossgrundrisse aller relevanten Geschosse
     - Räume, Wände und Öffnungen lesbar
     - Raumbezeichnungen
     - Wesentliche Massketten auf Achsen oder andere Fixpunkte bezogen
-    - Nordpfeil, Massstab und Plankopf
+    - Nordpfeil, Massstab, Plankopf und Legende
+    - Materialien durch Schraffuren dargestellt
   fr: |-
     - Plans de tous les étages pertinents
     - Locaux, murs et ouvertures lisibles
     - Désignations des locaux
     - Chaînes de cotes essentielles rapportées aux axes ou à d'autres points fixes
-    - Nord, échelle et cartouche
+    - Nord, échelle, cartouche et légende
+    - Matériaux représentés par des hachures
   it: |-
     - Planimetrie di tutti i piani pertinenti
     - Locali, pareti e aperture leggibili
     - Denominazioni dei locali
     - Catene di quote essenziali riferite agli assi o ad altri punti fissi
-    - Nord, scala e cartiglio
+    - Nord, scala, cartiglio e legenda
+    - Materiali rappresentati mediante retini
   en: |-
     - Storey plans of all relevant storeys
     - Rooms, walls, and openings readable
     - Room names
     - Essential dimension chains related to axes or other fixed points
-    - North arrow, scale, and title block
+    - North arrow, scale, title block, and legend
+    - Materials indicated by hatching
 file_name:
-  de: '{Projektnummer}_ARX-GRD_{Freitext}.{ext}'
+  de: '{Projektnummer}_ARC-GRD_{Freitext}.{ext}'
   fr: '{NumeroProjet}_ARC-GRD_{Libre}.{ext}'
   it: '{NumeroProgetto}_ARC-GRD_{Libero}.{ext}'
-  en: '{ProjectNumber}_ARC-GRD_{Free}.{ext}'
+  en: '{ProjectNumber}_ARC-GRD_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/architecture
 scheduled_milestones:
-  - "31:beginning"
-  - "32:beginning"
-  - "33:beginning"
-  - "41:beginning"
-  - "51:beginning"
-  - "52:beginning"
+  - "32:M"
+  - "33:M"
+  - "41:M"
+  - "51:M"
+  - "52:M"

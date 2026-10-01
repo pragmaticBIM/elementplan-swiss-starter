@@ -1,16 +1,16 @@
 id: pragmaticbim:document/fire-control-matrix
 code: BSM
-sort_order: 123
+sort_order: 111
 name:
   de: Brandfallsteuermatrix
   fr: Matrice de commande incendie
   it: Matrice di comando antincendio
-  en: Fire-case control matrix
+  en: Fire cause-and-effect matrix
 definition:
   de: Brandfallsteuermatrix für Melder, Klappen, Antriebe und Löscheinrichtungen. Stellt sicher, dass die Sicherheits-Matrix vor der Ausführung formal abgesegnet ist.
   fr: Matrice de commande en cas d'incendie pour détecteurs, clapets, actionneurs et installations d'extinction. Elle garantit que la matrice de sécurité est formellement approuvée avant l'exécution.
   it: Matrice di comando antincendio per rivelatori, serrande, attuatori e impianti di spegnimento. Garantisce che la matrice di sicurezza sia formalmente approvata prima dell'esecuzione.
-  en: Fire-case control matrix for detectors, dampers, actuators, and suppression equipment. It ensures the safety matrix is formally approved before construction.
+  en: Fire cause-and-effect matrix for detectors, dampers, actuators, and suppression equipment. It ensures the safety matrix is formally approved before construction.
 description:
   de: |-
     - Melder, Klappen, Antriebe und Löscheinrichtungen
@@ -36,15 +36,11 @@ file_name:
   de: '{Projektnummer}_TGA-BSM_{Freitext}.{ext}'
   fr: '{NumeroProjet}_CVC-BSM_{Libre}.{ext}'
   it: '{NumeroProgetto}_IMP-BSM_{Libero}.{ext}'
-  en: '{ProjectNumber}_MEP-BSM_{Free}.{ext}'
+  en: '{ProjectNumber}_MEP-BSM_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/mep
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/mep-alarm
   - pragmaticbim:element/mep-sensor
   - pragmaticbim:element/mep-actuator
@@ -52,7 +48,7 @@ included_elements:
   - pragmaticbim:element/mep-fire-suppression-terminal
   - pragmaticbim:element/mep-switching-device
 scheduled_milestones:
-  - "32:beginning"
-  - "33:beginning"
-  - "41:beginning"
-  - "51:beginning"
+  - "32:M"
+  - "33:M"
+  - "41:M"
+  - "51:M"

@@ -1,0 +1,51 @@
+id: pragmaticbim:document/ipd-base-reference
+code: IGR
+sort_order: 121
+name:
+  de: IPD-Grundreferenz
+  fr: Référence de base IPD
+  it: Riferimento di base IPD
+  en: IPD base reference
+definition:
+  de: Vertragsfähige funktionale Grundreferenz mit auf Marktpreise indexierten Referenzkosten als Basis für IPD-Vergabe, Honorarberechnung und Bonusabrechnung.
+  fr: Référence fonctionnelle contractuelle avec coûts de référence indexés sur les prix du marché, servant de base à l'adjudication IPD, au calcul des honoraires et au décompte des bonus.
+  it: Riferimento funzionale contrattuale con costi di riferimento indicizzati ai prezzi di mercato, quale base per l'aggiudicazione IPD, il calcolo degli onorari e il consuntivo dei bonus.
+  en: Contract-ready functional base reference with market-indexed reference costs as the basis for IPD award, fee calculation, and bonus settlement.
+description:
+  de: |-
+    - Funktionale Anforderungen, Qualitäten und Richtmengen der Grundreferenz
+    - Referenzkosten nach vereinbarter Kostenstruktur mit Preisstand und Indexierungsregel
+    - Abgrenzung von Leistungsumfang, Annahmen und Ausschlüssen
+    - Honorarberechnungsgrundlage abgeleitet aus der Referenz
+    - Bonus- und Ausgleichsregeln für Abweichungen Ist versus Referenz nach Projektabschluss
+  fr: |-
+    - Exigences fonctionnelles, qualités et quantités indicatives de la référence de base
+    - Coûts de référence selon la structure de coûts convenue, avec état des prix et règle d'indexation
+    - Délimitation de l'étendue des prestations, des hypothèses et des exclusions
+    - Base de calcul des honoraires déduite de la référence
+    - Règles de bonus et de compensation pour les écarts entre résultat réel et référence après achèvement du projet
+  it: |-
+    - Requisiti funzionali, qualità e quantità indicative del riferimento di base
+    - Costi di riferimento secondo la struttura dei costi concordata, con stato dei prezzi e regola di indicizzazione
+    - Delimitazione dell'estensione delle prestazioni, delle ipotesi e delle esclusioni
+    - Base di calcolo degli onorari ricavata dal riferimento
+    - Regole di bonus e di compensazione per gli scostamenti tra risultato effettivo e riferimento dopo il completamento del progetto
+  en: |-
+    - Functional requirements, qualities, and indicative quantities of the base reference
+    - Reference costs by the agreed cost structure with price basis and indexation rule
+    - Delimitation of scope, assumptions, and exclusions
+    - Fee calculation basis derived from the reference
+    - Bonus and settlement rules for actual-versus-reference deviations after project completion
+file_name:
+  de: '{Projektnummer}_PRO-IGR_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-IGR_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-IGR_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-IGR_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "22:M"
+comment: >-
+  Auftraggeberseitige Vertragsgrundlage für IPD-Vergaben. Referenzkosten und
+  Indexierung werden hier geführt; das schlanke Raummodell liefert Mengen und
+  funktionale Ableitungen, nicht den Marktpreis selbst.

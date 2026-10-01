@@ -1,0 +1,40 @@
+id: pragmaticbim:value/predefinedtype-shading-device
+code: SHADING-TYPE
+name:
+  de: Sonnenschutztyp
+  fr: Type de protection solaire
+  it: Tipo di protezione solare
+  en: Shading-device type
+description:
+  de: PredefinedType für IfcShadingDevice.
+  fr: PredefinedType pour IfcShadingDevice.
+  it: PredefinedType per IfcShadingDevice.
+  en: PredefinedType for IfcShadingDevice.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - JALOUSIE
+  - SHUTTER
+  - AWNING
+  - USERDEFINED
+  - NOTDEFINED
+  fr:
+  - JALOUSIE
+  - SHUTTER
+  - AWNING
+  - USERDEFINED
+  - NOTDEFINED
+  it:
+  - JALOUSIE
+  - SHUTTER
+  - AWNING
+  - USERDEFINED
+  - NOTDEFINED
+  en:
+  - JALOUSIE
+  - SHUTTER
+  - AWNING
+  - USERDEFINED
+  - NOTDEFINED

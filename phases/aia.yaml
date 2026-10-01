@@ -1,0 +1,246 @@
+id: pragmaticbim:phase/aia
+name:
+  de: AIA Phasen
+  fr: Phases AIA
+  it: Fasi AIA
+  en: AIA phases
+values:
+  - 'PD'
+  - 'SD'
+  - 'DD'
+  - 'CD'
+  - 'PR'
+  - 'CA'
+  - 'PO'
+milestones:
+  - id: 'PD:B'
+    code: B
+    sort_order: 1
+    name:
+      de: Beginn PD (Vorplanung / Programmierung)
+      fr: Début PD (Préconception / programmation)
+      it: Inizio PD (Predesign / programmazione)
+      en: Beginning PD (Predesign / Programming)
+    status: active
+    phase: 'PD'
+    kind: beginning
+  - id: 'PD:M'
+    code: M
+    sort_order: 2
+    name:
+      de: Mitte PD (Vorplanung / Programmierung)
+      fr: Milieu PD (Préconception / programmation)
+      it: Metà PD (Predesign / programmazione)
+      en: Mid Phase PD (Predesign / Programming)
+    status: active
+    phase: 'PD'
+    kind: custom
+  - id: 'PD:E'
+    code: E
+    sort_order: 3
+    name:
+      de: Ende PD (Vorplanung / Programmierung)
+      fr: Fin PD (Préconception / programmation)
+      it: Fine PD (Predesign / programmazione)
+      en: End Phase PD (Predesign / Programming)
+    status: active
+    phase: 'PD'
+    kind: end
+  - id: 'SD:B'
+    code: B
+    sort_order: 4
+    name:
+      de: Beginn SD (Schematischer Entwurf)
+      fr: Début SD (Conception schématique)
+      it: Inizio SD (Progetto schematico)
+      en: Beginning SD (Schematic Design)
+    status: active
+    phase: 'SD'
+    kind: beginning
+  - id: 'SD:M'
+    code: M
+    sort_order: 5
+    name:
+      de: Mitte SD (Schematischer Entwurf)
+      fr: Milieu SD (Conception schématique)
+      it: Metà SD (Progetto schematico)
+      en: Mid Phase SD (Schematic Design)
+    status: active
+    phase: 'SD'
+    kind: custom
+  - id: 'SD:E'
+    code: E
+    sort_order: 6
+    name:
+      de: Ende SD (Schematischer Entwurf)
+      fr: Fin SD (Conception schématique)
+      it: Fine SD (Progetto schematico)
+      en: End Phase SD (Schematic Design)
+    status: active
+    phase: 'SD'
+    kind: end
+  - id: 'DD:B'
+    code: B
+    sort_order: 7
+    name:
+      de: Beginn DD (Entwurfsvertiefung)
+      fr: Début DD (Développement du projet)
+      it: Inizio DD (Sviluppo del progetto)
+      en: Beginning DD (Design Development)
+    status: active
+    phase: 'DD'
+    kind: beginning
+  - id: 'DD:M'
+    code: M
+    sort_order: 8
+    name:
+      de: Mitte DD (Entwurfsvertiefung)
+      fr: Milieu DD (Développement du projet)
+      it: Metà DD (Sviluppo del progetto)
+      en: Mid Phase DD (Design Development)
+    status: active
+    phase: 'DD'
+    kind: custom
+  - id: 'DD:E'
+    code: E
+    sort_order: 9
+    name:
+      de: Ende DD (Entwurfsvertiefung)
+      fr: Fin DD (Développement du projet)
+      it: Fine DD (Sviluppo del progetto)
+      en: End Phase DD (Design Development)
+    status: active
+    phase: 'DD'
+    kind: end
+  - id: 'CD:B'
+    code: B
+    sort_order: 10
+    name:
+      de: Beginn CD (Ausführungsunterlagen)
+      fr: Début CD (Documents de construction)
+      it: Inizio CD (Documenti costruttivi)
+      en: Beginning CD (Construction Documents)
+    status: active
+    phase: 'CD'
+    kind: beginning
+  - id: 'CD:M'
+    code: M
+    sort_order: 11
+    name:
+      de: Mitte CD (Ausführungsunterlagen)
+      fr: Milieu CD (Documents de construction)
+      it: Metà CD (Documenti costruttivi)
+      en: Mid Phase CD (Construction Documents)
+    status: active
+    phase: 'CD'
+    kind: custom
+  - id: 'CD:E'
+    code: E
+    sort_order: 12
+    name:
+      de: Ende CD (Ausführungsunterlagen)
+      fr: Fin CD (Documents de construction)
+      it: Fine CD (Documenti costruttivi)
+      en: End Phase CD (Construction Documents)
+    status: active
+    phase: 'CD'
+    kind: end
+  - id: 'PR:B'
+    code: B
+    sort_order: 13
+    name:
+      de: Beginn PR (Vergabe)
+      fr: Début PR (Passation des marchés)
+      it: Inizio PR (Appalto)
+      en: Beginning PR (Procurement)
+    status: active
+    phase: 'PR'
+    kind: beginning
+  - id: 'PR:M'
+    code: M
+    sort_order: 14
+    name:
+      de: Mitte PR (Vergabe)
+      fr: Milieu PR (Passation des marchés)
+      it: Metà PR (Appalto)
+      en: Mid Phase PR (Procurement)
+    status: active
+    phase: 'PR'
+    kind: custom
+  - id: 'PR:E'
+    code: E
+    sort_order: 15
+    name:
+      de: Ende PR (Vergabe)
+      fr: Fin PR (Passation des marchés)
+      it: Fine PR (Appalto)
+      en: End Phase PR (Procurement)
+    status: active
+    phase: 'PR'
+    kind: end
+  - id: 'CA:B'
+    code: B
+    sort_order: 16
+    name:
+      de: Beginn CA (Bauleitung)
+      fr: Début CA (Administration de la construction)
+      it: Inizio CA (Amministrazione della costruzione)
+      en: Beginning CA (Construction Administration)
+    status: active
+    phase: 'CA'
+    kind: beginning
+  - id: 'CA:M'
+    code: M
+    sort_order: 17
+    name:
+      de: Mitte CA (Bauleitung)
+      fr: Milieu CA (Administration de la construction)
+      it: Metà CA (Amministrazione della costruzione)
+      en: Mid Phase CA (Construction Administration)
+    status: active
+    phase: 'CA'
+    kind: custom
+  - id: 'CA:E'
+    code: E
+    sort_order: 18
+    name:
+      de: Ende CA (Bauleitung)
+      fr: Fin CA (Administration de la construction)
+      it: Fine CA (Amministrazione della costruzione)
+      en: End Phase CA (Construction Administration)
+    status: active
+    phase: 'CA'
+    kind: end
+  - id: 'PO:B'
+    code: B
+    sort_order: 19
+    name:
+      de: Beginn PO (Nachnutzung)
+      fr: Début PO (Post-occupation)
+      it: Inizio PO (Post-occupazione)
+      en: Beginning PO (Post Occupancy)
+    status: active
+    phase: 'PO'
+    kind: beginning
+  - id: 'PO:M'
+    code: M
+    sort_order: 20
+    name:
+      de: Mitte PO (Nachnutzung)
+      fr: Milieu PO (Post-occupation)
+      it: Metà PO (Post-occupazione)
+      en: Mid Phase PO (Post Occupancy)
+    status: active
+    phase: 'PO'
+    kind: custom
+  - id: 'PO:E'
+    code: E
+    sort_order: 21
+    name:
+      de: Ende PO (Nachnutzung)
+      fr: Fin PO (Post-occupation)
+      it: Fine PO (Post-occupazione)
+      en: End Phase PO (Post Occupancy)
+    status: active
+    phase: 'PO'
+    kind: end

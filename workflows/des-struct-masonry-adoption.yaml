@@ -1,0 +1,156 @@
+id: pragmaticbim:workflow/des-struct-masonry-adoption
+code: DES-STRUCT-MASONRY
+sort_order: 76
+name:
+  de: Baumeister-Mauerwerk ins Tragwerksmodell übernehmen
+  fr: Reprendre la maçonnerie du gros œuvre dans la maquette structurelle
+  it: Integrare le murature dell'impresa di costruzioni nel modello strutturale
+  en: Adopt main-contractor masonry in the structural model
+description:
+  de: 'Nichttragende Innenwände aus Mauerwerk, die der Baumeister ausführt, mit der Tragwerksplanung abstimmen und verbindlich ins Tragwerksmodell übernehmen.
+
+
+    **Ausgangslage**
+
+    - Die nichttragenden Innenwände werden durch die Architektur geplant, gehören bei Mauerwerksausführung jedoch häufig zum Leistungsumfang des Baumeisters.
+
+    - Bleiben diese Wände nur im Architekturmodell, enthält das für den Baumeister massgebende Modell nicht alle von ihm auszuführenden Arbeiten; Abweichungen zu Plänen und Mengen können erst auf der Baustelle
+    sichtbar werden.
+
+
+    **Ziel & Nutzen**
+
+    - Die vom Baumeister auszuführenden nichttragenden Mauerwerkswände eindeutig vom übrigen Innenausbau abgrenzen.
+
+    - Lage, Abmessungen, Wandtyp und Öffnungen zwischen Architektur- und Tragwerksplanung abstimmen.
+
+    - Die abgestimmten Wände im Tragwerksmodell als vollständige Grundlage für Planung und Ausführung des Baumeisterumfangs führen.
+
+
+    **Ablauf**
+
+    1. Nichttragende Innenwände aus Mauerwerk mit Lage, Abmessungen, Wandtyp und eindeutiger Kennzeichnung im Architekturmodell bereitstellen.
+
+    2. Baumeisterumfang, Anschlüsse und Öffnungen durch die Tragwerksplanung prüfen und Abweichungen mit der Architektur bereinigen.
+
+    3. Abgestimmte Mauerwerkswände ins Tragwerksmodell übernehmen und ihre Übereinstimmung mit dem Architekturmodell im Gesamtmodell prüfen.
+
+
+    **Lieferergebnis**
+
+    - Tragwerksmodell mit allen abgestimmten nichttragenden Mauerwerkswänden im Leistungsumfang des Baumeisters.
+
+    - Nachvollziehbare Zuordnung zwischen den bereitgestellten Architekturwänden und den übernommenen Wänden.'
+  fr: 'Coordonner avec l''ingénierie structurelle les cloisons intérieures non porteuses en maçonnerie exécutées par l''entreprise de gros œuvre et les reprendre de manière contraignante dans la maquette
+    structurelle.
+
+
+    **Situation de départ**
+
+    - Les cloisons intérieures non porteuses sont étudiées par l''architecture mais, lorsqu''elles sont réalisées en maçonnerie, elles font souvent partie des prestations de l''entreprise de gros œuvre.
+
+    - Si ces cloisons restent uniquement dans la maquette d''architecture, la maquette déterminante pour l''entreprise ne contient pas tous ses travaux; les écarts avec les plans et les quantités risquent
+    de n''apparaître que sur le chantier.
+
+
+    **Objectif et bénéfice**
+
+    - Distinguer clairement les cloisons non porteuses en maçonnerie exécutées par l''entreprise de gros œuvre des autres travaux d''aménagement intérieur.
+
+    - Coordonner la position, les dimensions, le type de paroi et les ouvertures entre l''architecture et l''ingénierie structurelle.
+
+    - Saisir les parois coordonnées dans la maquette structurelle afin de disposer d''une base complète pour l''étude et l''exécution du gros œuvre.
+
+
+    **Déroulement**
+
+    1. Fournir dans la maquette d''architecture les cloisons intérieures non porteuses en maçonnerie avec leur position, leurs dimensions, leur type et une désignation univoque.
+
+    2. Contrôler les prestations du gros œuvre, les raccords et les ouvertures par l''ingénierie structurelle et régler les écarts avec l''architecture.
+
+    3. Reprendre les parois en maçonnerie coordonnées dans la maquette structurelle et contrôler leur concordance avec la maquette d''architecture dans la maquette fédérée.
+
+
+    **Livrable**
+
+    - Maquette structurelle comprenant toutes les parois non porteuses en maçonnerie coordonnées qui relèvent des prestations de l''entreprise de gros œuvre.
+
+    - Correspondance traçable entre les parois fournies par l''architecture et celles reprises dans la maquette structurelle.'
+  it: 'Coordinare con l''ingegneria strutturale le pareti interne non portanti in muratura eseguite dall''impresa di costruzioni e integrarle in modo vincolante nel modello strutturale.
+
+
+    **Situazione di partenza**
+
+    - Le pareti interne non portanti sono progettate dall''architettura ma, se realizzate in muratura, rientrano spesso nelle prestazioni dell''impresa di costruzioni.
+
+    - Se queste pareti rimangono soltanto nel modello architettonico, il modello determinante per l''impresa non comprende tutti i lavori da eseguire; eventuali divergenze rispetto ai piani e alle quantità
+    possono emergere soltanto in cantiere.
+
+
+    **Obiettivo e beneficio**
+
+    - Distinguere chiaramente le pareti non portanti in muratura eseguite dall''impresa di costruzioni dalle altre opere di finitura interna.
+
+    - Coordinare posizione, dimensioni, tipo di parete e aperture tra architettura e ingegneria strutturale.
+
+    - Gestire le pareti coordinate nel modello strutturale come base completa per la progettazione e l''esecuzione delle opere dell''impresa di costruzioni.
+
+
+    **Svolgimento**
+
+    1. Fornire nel modello architettonico le pareti interne non portanti in muratura con posizione, dimensioni, tipo e identificazione univoca.
+
+    2. Verificare le prestazioni dell''impresa di costruzioni, i raccordi e le aperture da parte dell''ingegneria strutturale e risolvere le divergenze con l''architettura.
+
+    3. Integrare le pareti in muratura coordinate nel modello strutturale e verificarne la corrispondenza con il modello architettonico nel modello federato.
+
+
+    **Risultato della fornitura**
+
+    - Modello strutturale con tutte le pareti non portanti in muratura coordinate comprese nelle prestazioni dell''impresa di costruzioni.
+
+    - Corrispondenza tracciabile tra le pareti fornite dall''architettura e quelle integrate nel modello strutturale.'
+  en: 'Coordinate non-load-bearing interior masonry walls executed by the main contractor with structural engineering and adopt them as binding objects in the structural model.
+
+
+    **Starting point**
+
+    - Non-load-bearing interior walls are designed by architecture but, when built in masonry, are often part of the main contractor''s scope.
+
+    - If these walls remain only in the architecture model, the model governing the main contractor''s work does not contain all work to be executed; discrepancies with drawings and quantities may only
+    become visible on site.
+
+
+    **Goal & benefit**
+
+    - Clearly distinguish non-load-bearing masonry walls executed by the main contractor from the remaining interior fit-out.
+
+    - Coordinate location, dimensions, wall type, and openings between architecture and structural engineering.
+
+    - Maintain the coordinated walls in the structural model as a complete basis for planning and executing the main contractor''s scope.
+
+
+    **Process**
+
+    1. Provide non-load-bearing interior masonry walls with location, dimensions, wall type, and an unambiguous identifier in the architecture model.
+
+    2. Check the main contractor''s scope, junctions, and openings through structural engineering and resolve discrepancies with architecture.
+
+    3. Adopt the coordinated masonry walls in the structural model and check their agreement with the architecture model in the federated model.
+
+
+    **Deliverable**
+
+    - Structural model containing all coordinated non-load-bearing masonry walls within the main contractor''s scope.
+
+    - Traceable mapping between the walls provided by architecture and those adopted in the structural model.'
+workflow_group: arbeitsvorbereitung
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+comment: Architecture authors the non-load-bearing masonry walls. Structural engineering adopts the coordinated main-contractor-scope walls into its model. Match Name/Reference between source and adopted
+  wall; IsExternal=FALSE and LoadBearing=FALSE remain authoritative.

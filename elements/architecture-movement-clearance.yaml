@@ -1,0 +1,221 @@
+id: pragmaticbim:element/architecture-movement-clearance
+code: ARC-MOVEMENT-CLEARANCE
+sort_order: 76
+status: active
+name:
+  de: Bewegungsfläche
+  fr: Aire de mouvement
+  it: Area di movimento
+  en: Movement clearance
+definition:
+  de: 'Macht die für die Hindernisfreiheit freizuhaltenden Flächen räumlich prüfbar, damit Konflikte mit Bauteilen und Möblierung vor dem Baugesuch erkannt werden.
+
+
+    **Beschreibung**
+
+    - Rechteckige Fläche für Wenden, Manövrieren oder den freien Zugang bei Türen und Aufzügen.
+
+    - Dient dem Kollisionsnachweis nach SIA 500, nicht der Darstellung eines Fahrwegs.
+
+
+    **Modellierungshinweis**
+
+    - Als flachen rechteckigen Proxy-Körper mit den erforderlichen lichten Abmessungen modellieren; keine kreisförmigen Wenderadien verwenden.
+
+    - Wendeflächen für 180° mit 1.40 × 1.70 m und Manövrierflächen für Richtungsänderungen von mehr als 45° mit 1.40 × 1.40 m modellieren.
+
+    - Freiflächen gemäss Prüfsituation modellieren, dem zugehörigen Geschoss zuweisen und ObjectType = Bewegungsfläche setzen.'
+  fr: 'Rend vérifiables dans l''espace les surfaces à maintenir libres pour l''accessibilité afin de détecter avant la demande d''autorisation les conflits avec les éléments de construction et le mobilier.
+
+
+    **Description**
+
+    - Aire rectangulaire destinée à la rotation, à la manœuvre ou au libre accès devant les portes et les ascenseurs.
+
+    - Sert au contrôle des collisions selon la norme SIA 500, et non à représenter un cheminement.
+
+
+    **Directives de modélisation**
+
+    - Modéliser un corps proxy rectangulaire et plat avec les dimensions libres requises; ne pas utiliser de rayons de rotation circulaires.
+
+    - Modéliser les aires de rotation à 180° avec 1.40 × 1.70 m et les aires de manœuvre lors de changements de direction supérieurs à 45° avec 1.40 × 1.40 m.
+
+    - Modéliser les aires libres selon la situation contrôlée, les rattacher à l''étage concerné et renseigner ObjectType = Aire de mouvement.'
+  it: 'Rende verificabili nello spazio le superfici da mantenere libere per l''accessibilità, affinché i conflitti con elementi costruttivi e arredi siano rilevati prima della domanda di costruzione.
+
+
+    **Descrizione**
+
+    - Area rettangolare per la rotazione, la manovra o il libero accesso presso porte e ascensori.
+
+    - Serve alla verifica delle interferenze secondo la norma SIA 500, non alla rappresentazione di un percorso.
+
+
+    **Direttive di modellazione**
+
+    - Modellare un corpo proxy rettangolare e piatto con le dimensioni libere richieste; non utilizzare raggi di rotazione circolari.
+
+    - Modellare le aree di rotazione a 180° con 1.40 × 1.70 m e le aree di manovra per cambi di direzione superiori a 45° con 1.40 × 1.40 m.
+
+    - Modellare le aree libere secondo la situazione da verificare, assegnarle al piano corrispondente e impostare ObjectType = Area di movimento.'
+  en: 'Makes the areas that must remain clear for accessibility spatially verifiable so conflicts with building elements and furniture are found before the permit submission.
+
+
+    **Description**
+
+    - Rectangular area for turning, manoeuvring, or clear access at doors and lifts.
+
+    - Used for clash verification according to SIA 500, not to represent a travel path.
+
+
+    **Modelling guidelines**
+
+    - Model as a flat rectangular proxy body with the required clear dimensions; do not use circular turning radii.
+
+    - Model 180° turning areas at 1.40 × 1.70 m and manoeuvring areas for direction changes exceeding 45° at 1.40 × 1.40 m.
+
+    - Model clear areas according to the check situation, assign them to the matching storey, and set ObjectType = Movement clearance.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-movement-clearance.png
+attachment_link: architecture-movement-clearance.ifc
+picture_print_link: architecture-movement-clearance-print.tif
+model_link: architecture-movement-clearance.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Bewegungsfläche) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Bewegungsfläche)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Aire de mouvement") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Aire de mouvement")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Area di movimento") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Area di movimento")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Movement clearance") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Movement clearance")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: 'Art der Bewegungsfläche.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Name Bewegungsfläche.'
+    fr: 'Type d''aire de mouvement.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Name aire de mouvement.'
+    it: 'Tipo di area di movimento.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Name area di movimento.'
+    en: 'Kind of movement clearance.
+
+
+      **Allowed values**
+
+      - See the Movement clearance name value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/name-movement-clearance
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-accessibility-sia500-verification
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-accessibility-sia500-verification
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste ObjectType Bewegungsfläche.'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs ObjectType aire de mouvement.'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori ObjectType area di movimento.'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - See the ObjectType movement clearance value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-movement-clearance
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-accessibility-sia500-verification
+  is_applicability: true
+  status: active
+  sort_order: 3

@@ -1,0 +1,141 @@
+id: pragmaticbim:workflow/des-model-based-visualization
+code: DES-MODEL-VIS
+sort_order: 45
+name:
+  de: Visualisierungen aus dem Modell erstellen
+  fr: Établir des visualisations à partir de la maquette
+  it: Elaborare visualizzazioni dal modello
+  en: Create visualizations from the model
+description:
+  de: 'Visualisierungen manuell oder mit generativer KI aus einer angemessenen geometrischen Grundlage erstellen, ohne das Planungs- und Ausführungsmodell mit rein visuellen Details zu überladen.
+
+
+    **Ausgangslage**
+
+    - Planungsmodelle werden häufig nur für Visualisierungen zu detailliert modelliert; dies erhöht Modellierungs- und Pflegeaufwand und erschwert die weitere Bearbeitung.
+
+    - Generative KI kann bereits aus einfachen Geometrien überzeugende Bilder erzeugen, bildet den Planungsstand jedoch ohne Kontrolle nicht verlässlich ab.
+
+
+    **Ziel & Nutzen**
+
+    - Nur die für Perspektive, Proportionen und räumliche Wirkung erforderliche Geometrie bereitstellen; je nach Darstellung können Bruttovolumen genügen.
+
+    - Visualisierungsspezifische Details in einem separaten, temporären Modell ergänzen und das Planungs- und Ausführungsmodell schlank halten.
+
+
+    **Ablauf**
+
+    1. Geometrie im erforderlichen Detaillierungsgrad bereitstellen und prüfen, ob Bruttovolumen als Grundlage genügen.
+
+    2. Benötigte Oberflächen, Ausstattung und weitere Details in einem separaten Visualisierungsmodell ergänzen.
+
+    3. Visualisierungen manuell oder mit generativer KI erstellen und gegen den freigegebenen Planungsstand prüfen.
+
+
+    **Lieferergebnis**
+
+    - Angemessene geometrische Grundlage mit nachvollziehbarem Bezug zum Planungsstand
+
+    - Geprüfte Visualisierungen und, sofern erforderlich, separates temporäres Visualisierungsmodell'
+  fr: 'Produire des visualisations manuellement ou par IA générative à partir d''une base géométrique adaptée, sans surcharger les maquettes de conception et d''exécution de détails purement visuels.
+
+
+    **Situation de départ**
+
+    - Les maquettes sont souvent détaillées à l''excès uniquement pour la visualisation, ce qui augmente le travail de modélisation et de mise à jour et complique leur utilisation ultérieure.
+
+    - L''IA générative peut produire des images convaincantes à partir de géométries simples, mais sans contrôle elle ne restitue pas fidèlement l''état du projet.
+
+
+    **Objectif et bénéfice**
+
+    - Fournir uniquement la géométrie nécessaire à la perspective, aux proportions et à la perception spatiale ; selon la représentation, les volumes bruts peuvent suffire.
+
+    - Ajouter les détails propres à la visualisation dans une maquette temporaire séparée et conserver des maquettes de conception et d''exécution légères.
+
+
+    **Déroulement**
+
+    1. Fournir la géométrie au niveau de détail requis et vérifier si les volumes bruts suffisent comme base.
+
+    2. Ajouter les surfaces, l''aménagement et les autres détails nécessaires dans une maquette de visualisation séparée.
+
+    3. Produire les visualisations manuellement ou par IA générative et les contrôler par rapport à l''état validé du projet.
+
+
+    **Livrable**
+
+    - Base géométrique adaptée avec un lien traçable vers l''état du projet
+
+    - Visualisations contrôlées et, si nécessaire, maquette de visualisation temporaire séparée'
+  it: 'Creare visualizzazioni manualmente o con l''IA generativa a partire da una base geometrica adeguata, senza sovraccaricare i modelli di progettazione ed esecuzione con dettagli puramente visivi.
+
+
+    **Situazione di partenza**
+
+    - I modelli di progettazione vengono spesso dettagliati eccessivamente solo per le visualizzazioni; ciò aumenta l''onere di modellazione e aggiornamento e ne ostacola l''uso successivo.
+
+    - L''IA generativa può produrre immagini convincenti a partire da geometrie semplici, ma senza controllo non rappresenta in modo affidabile lo stato del progetto.
+
+
+    **Obiettivo e beneficio**
+
+    - Fornire solo la geometria necessaria per prospettiva, proporzioni e percezione spaziale; a seconda della rappresentazione possono bastare i volumi lordi.
+
+    - Aggiungere i dettagli specifici in un modello di visualizzazione temporaneo e separato, mantenendo snelli i modelli di progettazione ed esecuzione.
+
+
+    **Svolgimento**
+
+    1. Fornire la geometria con il livello di dettaglio necessario e verificare se i volumi lordi sono sufficienti come base.
+
+    2. Aggiungere superfici, arredi e altri dettagli necessari in un modello di visualizzazione separato.
+
+    3. Creare le visualizzazioni manualmente o con l''IA generativa e verificarle rispetto allo stato approvato del progetto.
+
+
+    **Risultato della fornitura**
+
+    - Base geometrica adeguata con riferimento tracciabile allo stato del progetto
+
+    - Visualizzazioni verificate e, se necessario, modello di visualizzazione temporaneo separato'
+  en: 'Create visualizations manually or with generative AI from a fit-for-purpose geometric basis without overloading the design and construction models with purely visual detail.
+
+
+    **Starting point**
+
+    - Design models are often detailed excessively just for visualization, increasing modelling and maintenance effort and making further use more difficult.
+
+    - Generative AI can produce convincing images from simple geometry, but without review it does not represent the design reliably.
+
+
+    **Goal & benefit**
+
+    - Provide only the geometry needed for perspective, proportions, and spatial effect; depending on the representation, gross volumes may be sufficient.
+
+    - Add visualization-specific detail in a separate, temporary model and keep the design and construction models lean.
+
+
+    **Process**
+
+    1. Provide geometry at the required level of detail and check whether gross volumes are sufficient as the basis.
+
+    2. Add the required surfaces, furnishings, and other details in a separate visualization model.
+
+    3. Create visualizations manually or with generative AI and check them against the approved design state.
+
+
+    **Deliverable**
+
+    - Fit-for-purpose geometric basis with a traceable relationship to the design state
+
+    - Reviewed visualizations and, where required, a separate temporary visualization model'
+workflow_group: konzept
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Visualization-specific enrichment belongs in a separate derivative model. Gross-volume spaces are the minimum geometric option when their level of detail is sufficient.

@@ -1,0 +1,132 @@
+id: pragmaticbim:workflow/bes-firestop-tender-basis
+code: BES-FIRESTOP-TENDER
+sort_order: 13
+name:
+  de: Grundlage für die Brandschott-Ausschreibung liefern
+  fr: Fournir la base pour l'appel d'offres des obturations coupe-feu
+  it: Fornire la base per la gara delle sigillature antincendio
+  en: Provide the basis for the firestop tender
+description:
+  de: 'Brandschutzrelevante Durchbrüche mit Anforderungen, Typen und Flächen erfassen, damit Brandschotte belastbar ausgeschrieben werden können.
+
+
+    **Ausgangslage**
+
+    - Brandschotte werden im Kostenvoranschlag oft nur als Prozentsatz der Baukosten berücksichtigt; fehlende Mengen und Typen führen regelmässig zu Mehrkosten, besonders bei komplexen Projekten.
+
+
+    **Ziel & Nutzen**
+
+    - Brandschutzrelevante Architektur- und Tragwerksdurchbrüche eindeutig kennzeichnen und Feuerwiderstand, vorgesehenen Brandschotttyp sowie Öffnungsfläche als prüfbare Ausschreibungsgrundlage führen.
+
+    - Eine Brandschottliste für Mengen und Leistungsverzeichnis ableiten.
+
+
+    **Ablauf**
+
+    1. Koordinierte Durchbrüche mit stabiler Referenz, Brandschutzrelevanz, gefordertem Feuerwiderstand, vorgesehenem Brandschotttyp und Öffnungsfläche bereitstellen.
+
+    2. Brandschottliste nach Typ, Feuerwiderstand und Fläche auswerten und gegen Brandschutzkonzept und Pläne prüfen.
+
+    3. Mengen und Typen mit dem Leistungsverzeichnis abstimmen.
+
+
+    **Lieferergebnis**
+
+    - Geprüfte Brandschottliste mit eindeutiger Zuordnung zu den Durchbrüchen als Grundlage für Mengen und Ausschreibung.'
+  fr: 'Saisir les percements soumis à des exigences incendie avec leurs exigences, types et surfaces afin d''établir un appel d''offres fiable pour les obturations coupe-feu.
+
+
+    **Situation de départ**
+
+    - Dans le devis, les obturations coupe-feu sont souvent prises en compte uniquement sous forme de pourcentage des coûts de construction ; l''absence de quantités et de types entraîne régulièrement des
+    surcoûts, surtout dans les projets complexes.
+
+
+    **Objectif et bénéfice**
+
+    - Identifier sans ambiguïté les percements architecturaux et structurels soumis à des exigences incendie et saisir la résistance au feu, le type d''obturation prévu et la surface d''ouverture comme
+    base vérifiable de l''appel d''offres.
+
+    - Déduire une liste des obturations pour les quantités et le descriptif des travaux.
+
+
+    **Déroulement**
+
+    1. Fournir les percements coordonnés avec une référence stable, l''indication de l''exigence incendie, la résistance au feu requise, le type d''obturation prévu et la surface d''ouverture.
+
+    2. Évaluer la liste des obturations par type, résistance au feu et surface et la contrôler par rapport au concept et aux plans de protection incendie.
+
+    3. Accorder les quantités et les types avec le descriptif des travaux.
+
+
+    **Livrable**
+
+    - Liste contrôlée des obturations coupe-feu avec attribution univoque aux percements comme base pour les quantités et l''appel d''offres.'
+  it: 'Registrare i fori soggetti a requisiti antincendio con requisiti, tipi e superfici, affinché le sigillature antincendio possano essere messe a gara su basi affidabili.
+
+
+    **Situazione di partenza**
+
+    - Nel preventivo le sigillature antincendio sono spesso considerate soltanto come percentuale dei costi di costruzione; la mancanza di quantità e tipi causa regolarmente costi supplementari, soprattutto
+    nei progetti complessi.
+
+
+    **Obiettivo e beneficio**
+
+    - Identificare in modo univoco i fori architettonici e strutturali soggetti a requisiti antincendio e gestire la resistenza al fuoco, il tipo di sigillatura previsto e la superficie del foro come base
+    verificabile per la gara.
+
+    - Ricavare un elenco delle sigillature per quantità e capitolato.
+
+
+    **Svolgimento**
+
+    1. Fornire i fori coordinati con riferimento stabile, indicazione del requisito antincendio, resistenza al fuoco richiesta, tipo di sigillatura previsto e superficie del foro.
+
+    2. Valutare l''elenco delle sigillature per tipo, resistenza al fuoco e superficie e verificarlo rispetto al concetto e ai piani antincendio.
+
+    3. Coordinare quantità e tipi con il capitolato.
+
+
+    **Risultato della fornitura**
+
+    - Elenco verificato delle sigillature antincendio con assegnazione univoca ai fori come base per quantità e gara.'
+  en: 'Capture fire-rated penetrations with their requirements, types, and areas so that firestops can be tendered reliably.
+
+
+    **Starting point**
+
+    - Firestops are often allowed for in the cost estimate only as a percentage of construction cost; missing quantities and types regularly cause additional costs, especially on complex projects.
+
+
+    **Goal & benefit**
+
+    - Identify fire-rated architectural and structural openings unambiguously and maintain the required fire resistance, intended firestop type, and opening area as a verifiable tender basis.
+
+    - Derive a firestop schedule for quantities and the specification.
+
+
+    **Process**
+
+    1. Provide coordinated openings with a stable reference, firestopping requirement, required fire resistance, intended firestop type, and opening area.
+
+    2. Evaluate the firestop schedule by type, fire resistance, and area and check it against the fire protection concept and drawings.
+
+    3. Coordinate quantities and types with the specification.
+
+
+    **Deliverable**
+
+    - Checked firestop schedule with unambiguous assignment to the openings as the basis for quantities and tendering.'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/fire-protection
+comment: Tender basis for firestops in SIA phase 41. The opening Reference is the stable key shared by the model and the firestop schedule.

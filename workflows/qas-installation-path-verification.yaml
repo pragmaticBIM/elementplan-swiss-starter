@@ -2,19 +2,18 @@ id: pragmaticbim:workflow/qas-installation-path-verification
 code: QAS-INSTALL-PATH
 sort_order: 80
 name:
-  de: Kontrolle und Nachweis von Einbringwegen
-  fr: Contrôle et preuve des voies d'apport
-  it: Controllo e prova dei percorsi di trasporto
-  en: Control and verification of installation access paths
+  de: Einbringwege nachweisen
+  fr: Justifier les voies d'apport
+  it: Giustificare i percorsi di trasporto
+  en: Verify installation access paths
 description:
-  de: 'Freizuhaltende Einbringwege im Modell führen und kollisionsfrei nachweisen — bevor grosse Geräte oder Bauteile nicht mehr einbringbar sind.
-
+  de: 'Freizuhaltende Einbringwege im Modell führen und Einbringbarkeit nachweisen – bevor grosse Geräte oder Bauteile zu um- und Rückbauten führen.
 
     **Ausgangslage**
 
-    - Ohne freigehaltene Einbringwege kollidieren grosse Geräte und Bauteile mit Bauwerk oder Gebäudetechnik.
+    - Fehlen freigehaltene Wege, folgen Kollisionen mit Bauwerk oder TGA und teure Umbauten, Sondertransporte oder nicht einbringbare Anlagen.
 
-    - Späte Konflikte führen zu teuren Umbauten, Sondertransporten oder nicht einbringbaren Anlagen.
+    - Dies kann zu teuren Umbauten und Einschränkungen im Betrieb führen.
 
 
     **Ziel & Nutzen**
@@ -30,29 +29,20 @@ description:
 
     2. Einbringwege im Gesamtmodell gegen Bauwerk und Gebäudetechnik auf Kollisionen prüfen.
 
-    3. Kollisionsnachweis dokumentieren und freigegebene Wege verbindlich halten.
+    3. Kollisionsnachweis dokumentieren und Massnahmen bei Einschränkung ergreifen.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Nachgewiesene, kollisionsfreie Einbringwege als Planungsgrundlage für Einbau und Koordination.
-
-
-    **Lieferobjekte**
-
-    - Freizuhaltende Einbringwege als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Einbringweg
-
-    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Name je Element'
-  fr: 'Saisir les voies d''apport à maintenir libres dans le modèle et prouver l''absence de collisions — avant que grands appareils ou éléments ne deviennent intransportables.
+    - Koordinationsmodell mit den erforderlichen Lage- und Grösseninformationen zu freizuhaltenden Einbringwegen.'
+  fr: 'Saisir les voies d''apport à maintenir libres dans le modèle et prouver l''absence de collisions – avant que grands appareils ou éléments ne deviennent intransportables.
 
 
     **Situation de départ**
 
-    - Sans voies d''apport réservées, grands appareils et éléments entrent en collision avec le bâtiment ou les techniques.
+    - Sans voies réservées, suivent collisions avec le bâtiment ou les CVC et transformations coûteuses, transports spéciaux ou installations non apportables.
 
-    - Des conflits tardifs entraînent des transformations coûteuses, des transports spéciaux ou des installations non apportables.
+    - Cela peut entraîner des transformations coûteuses et des restrictions d''exploitation.
 
 
     **Objectif et bénéfice**
@@ -68,29 +58,20 @@ description:
 
     2. Vérifier les collisions des voies d''apport en maquette fédérée contre bâtiment et techniques du bâtiment.
 
-    3. Documenter la preuve de collision et tenir les voies approuvées comme contraignantes.
+    3. Documenter la preuve de collision et prendre des mesures en cas de restriction.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Voies d''apport prouvées sans collision comme base de planification pour pose et coordination.
-
-
-    **Livrables**
-
-    - Voies d''apport à maintenir libres comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Einbringweg
-
-    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Name par élément'
-  it: 'Gestire nel modello i percorsi di trasporto da mantenere liberi e dimostrare l''assenza di collisioni — prima che grandi apparecchi o componenti non siano più trasportabili.
+    - Maquette de coordination avec les informations de position et de dimension requises sur les voies d''apport à maintenir libres.'
+  it: 'Gestire nel modello i percorsi di trasporto da mantenere liberi e dimostrare l''assenza di collisioni – prima che grandi apparecchi o componenti non siano più trasportabili.
 
 
     **Situazione di partenza**
 
-    - Senza percorsi di trasporto riservati, grandi apparecchi e componenti collidono con edificio o impianti.
+    - Senza percorsi riservati seguono collisioni con edificio o impianti e trasformazioni costose, trasporti speciali o impianti non trasportabili.
 
-    - Conflitti tardivi causano trasformazioni costose, trasporti speciali o impianti non trasportabili.
+    - Ciò può portare a trasformazioni costose e a limitazioni nell''esercizio.
 
 
     **Obiettivo e beneficio**
@@ -106,29 +87,20 @@ description:
 
     2. Verificare collisioni dei percorsi nel modello federato contro edificio e impianti.
 
-    3. Documentare la prova di collisione e mantenere vincolanti i percorsi approvati.
+    3. Documentare la prova di collisione e adottare misure in caso di limitazione.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Percorsi di trasporto dimostrati senza collisione come base di pianificazione per montaggio e coordinamento.
-
-
-    **Oggetti della fornitura**
-
-    - Percorsi di trasporto da mantenere liberi come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Einbringweg
-
-    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Name per elemento'
-  en: 'Maintain clear installation access paths in the model and prove them clash-free — before large equipment or components can no longer be brought in.
+    - Modello di coordinamento con le informazioni necessarie su posizione e dimensioni dei percorsi di trasporto da mantenere liberi.'
+  en: 'Carry the installation access paths to be kept clear in the model and prove that equipment can be brought in – before large plant or components force alterations and deconstruction.
 
 
     **Starting point**
 
-    - Without reserved access paths, large equipment and components clash with the building or building services.
+    - Without reserved paths, clashes with building or MEP follow – and costly rebuilds, special transports, or equipment that cannot be delivered.
 
-    - Late conflicts lead to costly rebuilds, special transports, or equipment that cannot be delivered.
+    - This can lead to costly rebuilds and restrictions in operation.
 
 
     **Goal & benefit**
@@ -144,25 +116,17 @@ description:
 
     2. Check access paths for clashes against building and building services in the federated model.
 
-    3. Document the clash verification and keep approved paths binding.
+    3. Document the clash verification and take measures if access is restricted.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Verified clash-free installation access paths as the planning basis for installation and coordination.
-
-
-    **Deliverables**
-
-    - Clear installation access paths as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Einbringweg
-
-    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Name per element'
-workflow_group: null
+    - Coordination model with the required location and size information for clear installation access paths.'
+workflow_group: entwurf
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep

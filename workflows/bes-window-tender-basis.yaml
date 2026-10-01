@@ -1,0 +1,147 @@
+id: pragmaticbim:workflow/bes-window-tender-basis
+code: BES-WINDOW-TENDER
+sort_order: 16
+name:
+  de: Grundlage für die Fensterausschreibung liefern
+  fr: Fournir la base pour l'appel d'offres des fenêtres
+  it: Fornire la base per la gara delle finestre
+  en: Provide the basis for the window tender
+description:
+  de: 'Fensterangaben im Architekturmodell als prüfbare Grundlage für Mengen und Ausschreibung bereitstellen.
+
+
+    **Ausgangslage**
+
+    - Fenstertypen, Öffnungsmasse, Feuerwiderstand, Schalldämmung und Sonnenschutzart werden für die Ausschreibung oft manuell aus Plänen zusammengestellt.
+
+    - Fehlende oder uneinheitliche Fensterangaben führen zu Rückfragen, falschen Mengen und Nachträgen.
+
+
+    **Ziel & Nutzen**
+
+    - Fenstertypen und Öffnungsmasse im Architekturmodell führen; zusätzliche Fachangaben wie Feuerwiderstand und Schalldämmung können alternativ in einer über die Fensternummer verknüpften Liste nachgeführt
+    werden.
+
+    - Eine nachvollziehbare Fensterliste als Grundlage für Mengen und Ausschreibungsunterlagen ableiten.
+
+
+    **Ablauf**
+
+    1. Fenster mit eindeutiger Fensternummer und räumlicher Zuordnung bereitstellen.
+
+    2. Fenstertyp, Aussenbezug, Öffnungsbreite und -höhe, Feuerwiderstand, Schalldämmung und Sonnenschutzart im Modell oder in einer verknüpften Liste erfassen.
+
+    3. Im Team festlegen, wo die Angaben führend gepflegt und wie sie synchronisiert und geprüft werden. Pragmatisch kann dies beispielsweise eine gemeinsam bearbeitete Excel-Datei in SharePoint oder Teams
+    sein.
+
+    4. Fensterliste nach berechnetem Bauteiltyp und Abmessungen ableiten und mit den Ausschreibungsplänen abstimmen.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell und über die Fensternummer verknüpfte Fensterliste mit den erforderlichen Grund- und Fachangaben.'
+  fr: 'Mettre à disposition les données des fenêtres dans la maquette d''architecture comme base vérifiable pour les quantités et l''appel d''offres.
+
+
+    **Situation de départ**
+
+    - Les types de fenêtres, dimensions des ouvertures, résistances au feu, performances acoustiques et type de protection solaire sont souvent relevés manuellement sur les plans pour l''appel d''offres.
+
+    - Des données manquantes ou incohérentes entraînent des questions, des quantités erronées et des avenants.
+
+
+    **Objectif et bénéfice**
+
+    - Saisir les types de fenêtres et dimensions des ouvertures dans la maquette d''architecture ; les données techniques complémentaires telles que la résistance au feu et la performance acoustique peuvent
+    aussi être tenues dans une liste reliée par le numéro de fenêtre.
+
+    - Déduire une liste de fenêtres traçable comme base pour les quantités et le dossier d''appel d''offres.
+
+
+    **Déroulement**
+
+    1. Fournir les fenêtres avec un numéro univoque et leur rattachement spatial.
+
+    2. Saisir le type de fenêtre, le rapport à l''extérieur, la largeur et la hauteur de l''ouverture, la résistance au feu, la performance acoustique et le type de protection solaire dans la maquette ou
+    dans une liste reliée.
+
+    3. Définir en équipe où les données de référence sont tenues ainsi que leur synchronisation et leur contrôle. Une solution pragmatique peut être un fichier Excel collaboratif dans SharePoint ou Teams.
+
+    4. Déduire la liste par type calculé et dimensions et l''accorder avec les plans d''appel d''offres.
+
+
+    **Livrable**
+
+    - Maquette d''architecture et liste de fenêtres reliée par le numéro de fenêtre avec les données de base et techniques requises.'
+  it: 'Mettere a disposizione i dati delle finestre nel modello di architettura come base verificabile per quantità e gara.
+
+
+    **Situazione di partenza**
+
+    - I tipi di finestra, le dimensioni delle aperture, la resistenza al fuoco, le prestazioni acustiche e il tipo di protezione solare vengono spesso ricavati manualmente dai piani per la gara.
+
+    - Dati mancanti o incoerenti causano domande, quantità errate e varianti.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire tipi di finestra e dimensioni delle aperture nel modello di architettura; i dati specialistici aggiuntivi, come resistenza al fuoco e prestazione acustica, possono essere mantenuti anche in
+    un elenco collegato tramite il numero della finestra.
+
+    - Ricavare un elenco finestre tracciabile come base per quantità e documenti di gara.
+
+
+    **Svolgimento**
+
+    1. Fornire le finestre con numero univoco e assegnazione spaziale.
+
+    2. Registrare il tipo di finestra, il rapporto con l''esterno, larghezza e altezza dell''apertura, resistenza al fuoco, prestazione acustica e tipo di protezione solare nel modello o in un elenco collegato.
+
+    3. Definire nel team dove vengono gestiti i dati di riferimento e come vengono sincronizzati e verificati. Una soluzione pragmatica può essere un file Excel collaborativo in SharePoint o Teams.
+
+    4. Ricavare l''elenco per tipo calcolato e dimensioni e coordinarlo con i piani di gara.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura ed elenco finestre collegato tramite il numero della finestra con i dati di base e specialistici necessari.'
+  en: 'Provide window information in the architecture model as a verifiable basis for quantities and tendering.
+
+
+    **Starting point**
+
+    - Window types, opening dimensions, fire resistance, acoustic ratings, and sun-protection type are often compiled manually from drawings for tendering.
+
+    - Missing or inconsistent window information leads to queries, incorrect quantities, and variations.
+
+
+    **Goal & benefit**
+
+    - Maintain window types and opening dimensions in the architecture model; additional specialist information such as fire resistance and acoustic rating may instead be maintained in a schedule linked
+    by the window number.
+
+    - Derive a traceable window schedule as the basis for quantities and tender documents.
+
+
+    **Process**
+
+    1. Provide windows with a unique window number and spatial assignment.
+
+    2. Capture window type, exterior relationship, opening width, opening height, fire resistance, acoustic rating, and sun-protection type in the model or in a linked schedule.
+
+    3. Agree within the team where the authoritative information is maintained and how it is synchronized and checked. A pragmatic solution can be a collaboratively edited Excel file in SharePoint or Teams.
+
+    4. Derive the schedule by calculated component type and dimensions and coordinate it with the tender drawings.
+
+
+    **Deliverable**
+
+    - Architecture model and window schedule linked by the window number with the required basic and specialist information.'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Tender basis only, not a complete window specification. Technical mappings are defined on the window element attributes.

@@ -1,0 +1,121 @@
+id: pragmaticbim:project-goal/fit-out-standard
+sort_order: 5
+group: rahmenbedingungen
+code: PG-02
+name:
+  de: Nutzung & Ausbaustandard
+  fr: Usage et standard d'aménagement
+  it: Uso e standard di finitura
+  en: Use & fit-out standard
+tag:
+  de: Ausbau
+  fr: Aménagement
+  it: Finiture
+  en: Fit-out
+description:
+  de: |-
+    Festgelegt wird, welche Nutzungen das Gebäude aufnimmt und welcher Ausbaustandard für welche Räume gilt. Diese Festlegung ist die Grundlage, um Räume entsprechend ihrer Nutzung zu planen und die vereinbarten Anforderungen nachvollziehbar zu prüfen. Ohne sie lassen sich Raumprogramm, Möblierbarkeit und Ausbau nicht gegen vereinbarte Anforderungen abgleichen; Abweichungen zeigen sich erst bei der Nutzerabstimmung oder im Betrieb.
+  fr: |-
+    Cet objectif détermine la profondeur de planification et de justification des locaux. Il va du programme des locaux structuré et de l'obtention des plans à partir du modèle jusqu'à l'agencement, les portes, la façade, les plans de plafonds et le mobilier, et jusqu'aux visualisations pour les conventions d'utilisation.
+
+    Il aide à évaluer si un local n'est pas seulement dessiné, mais utilisable, meublable et aligné sur les prescriptions convenues pour les locaux spéciaux.
+  it: |-
+    Questo obiettivo determina la profondità con cui i locali sono pianificati e verificati. Va dal programma dei locali strutturato e dall'ottenimento dei disegni dal modello fino a layout, porte, facciata, piani dei soffitti e arredi, e fino alle visualizzazioni per le convenzioni d'uso.
+
+    Aiuta a valutare se un locale non è solo disegnato, ma utilizzabile, arredabile e allineato alle prescrizioni convenute per i locali speciali.
+  en: |-
+    This framework condition determines which uses the building accommodates and which fit-out standard applies to which spaces. It is the basis for designing spaces to suit their use and for checking the agreed requirements traceably.
+
+    Without it, the room programme, whether spaces can actually be furnished, and the fit-out cannot be reconciled against the agreed requirements; deviations surface only during user consultation or in operation.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/fit-out-standard
+  code: FIT-01
+  sort_order: 1
+  name:
+    de: Standard
+    fr: Standard
+    it: Standard
+    en: Standard
+  description:
+    de: Betriebs- und Funktionsgrundlagen aus Testplanung, strukturiertes Raumprogramm und Planableitung aus dem 3D-Modell.
+    fr: Bases d'exploitation et fonctionnelles issues d'une étude test, programme des locaux structuré et obtention des plans à partir du modèle 3D.
+    it: Basi operative e funzionali da uno studio di fattibilità, programma dei locali strutturato e ottenimento dei disegni dal modello 3D.
+    en: Operational and functional foundations from test planning, a structured room programme, and drawing derivation from the 3D model.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-functional-brief-test-planning
+  - pragmaticbim:workflow/des-drawing-derivation
+  comment: Full set at level Standard (sort_order 1).
+- id: pragmaticbim:project-goal-level/fit-out-elevated
+  code: FIT-02
+  sort_order: 2
+  name:
+    de: Gehoben
+    fr: Élevé
+    it: Elevato
+    en: Elevated
+  description:
+    de: Erweiterte Planung auf Raumebene – schematische Grundrisse aus dem Raummodell, Türen, Fassade, Deckenspiegel, koordiniertes Leuchtenkonzept und Leuchtenplanung, Grundleitungen, Fussbodenheizung, koordinierte Sanitärobjekte und Vorsatzschalen, Nutzerfreigabe typisierter Steckdosen, räumliche Visualisierung von Entscheiden und ihren Auswirkungen, Grundlagen für die Möblierungsausschreibung, Nachweis der Möblierbarkeit und Nutzerabstimmung mit groben Skizzen für Spezialräume.
+    fr: Planification étendue au niveau des locaux – plans d'étages schématiques à partir du modèle de locaux, portes, façade, plans de plafonds, concept et étude d'éclairage coordonnés, conduites enterrées, chauffage au sol, appareils sanitaires et contre-cloisons coordonnés, validation par les utilisateurs de types de prises, représentation spatiale des décisions et de leurs conséquences, bases pour l’appel d'offres du mobilier, contrôle de l’ameublement possible et coordination avec les utilisateurs au moyen d’esquisses sommaires pour les locaux spéciaux.
+    it: Pianificazione estesa al livello dei locali – planimetrie schematiche dal modello dei locali, porte, facciata, piani dei soffitti, concetto e progettazione illuminotecnica coordinati, condotte interrate, riscaldamento a pavimento, apparecchi sanitari e contropareti coordinati, approvazione da parte degli utenti di tipi di prese, visualizzazione spaziale delle decisioni e delle loro conseguenze, basi per l’appalto degli arredi, verifica dell’arredabilità e coordinamento con gli utenti mediante schizzi sommari per i locali speciali.
+    en: Extended room-level planning – schematic floor plans from the space model, doors, facade, reflected ceiling plans, coordinated lighting concept and fixture design, underground services, underfloor heating, coordinated sanitary fixtures and service linings, user approval of outlet types, spatial visualization of decisions and their impacts, basis for furniture tendering, furnishability verification, and user coordination using rough sketches for special-purpose rooms.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-functional-brief-test-planning
+  - pragmaticbim:workflow/des-drawing-derivation
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-door-planning
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-lighting-design-coordination
+  - pragmaticbim:workflow/des-drywall-reinforcement-planning
+  - pragmaticbim:workflow/des-basic-piping-planning
+  - pragmaticbim:workflow/des-sanitary-fixture-coordination
+  - pragmaticbim:workflow/des-underfloor-heating-planning
+  - pragmaticbim:workflow/des-furniture-planning
+  - pragmaticbim:workflow/qas-furnishability-verification
+  - pragmaticbim:workflow/qas-special-room-user-coordination
+  - pragmaticbim:workflow/qas-outlet-user-approval
+  - pragmaticbim:workflow/qas-decision-impact-visualization
+  comment: Full set at level gehoben (sort_order 2); includes lower levels.
+- id: pragmaticbim:project-goal-level/fit-out-premium
+  code: FIT-03
+  sort_order: 3
+  name:
+    de: Premium
+    fr: Premium
+    it: Premium
+    en: Premium
+  description:
+    de: Visualisierungen für Nutzungsvereinbarungen ab Modell.
+    fr: Visualisations pour conventions d'utilisation à partir du modèle.
+    it: Visualizzazioni per convenzioni d'uso dal modello.
+    en: Visualizations for usage agreements from the model.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/bes-room-program-brief
+  - pragmaticbim:workflow/bes-functional-brief-test-planning
+  - pragmaticbim:workflow/des-drawing-derivation
+  - pragmaticbim:workflow/des-layout-planning
+  - pragmaticbim:workflow/des-door-planning
+  - pragmaticbim:workflow/des-facade-planning
+  - pragmaticbim:workflow/des-ceiling-mirror-planning
+  - pragmaticbim:workflow/des-lighting-design-coordination
+  - pragmaticbim:workflow/des-drywall-reinforcement-planning
+  - pragmaticbim:workflow/des-basic-piping-planning
+  - pragmaticbim:workflow/des-sanitary-fixture-coordination
+  - pragmaticbim:workflow/des-underfloor-heating-planning
+  - pragmaticbim:workflow/des-furniture-planning
+  - pragmaticbim:workflow/qas-furnishability-verification
+  - pragmaticbim:workflow/qas-special-room-user-coordination
+  - pragmaticbim:workflow/qas-outlet-user-approval
+  - pragmaticbim:workflow/qas-decision-impact-visualization
+  - pragmaticbim:workflow/des-model-based-visualization
+  - pragmaticbim:workflow/des-usage-agreement-visualization
+  - pragmaticbim:workflow/des-mep-usage-agreement-visualization
+  - pragmaticbim:workflow/qas-usage-agreement-verification
+  comment: Full set at level Premium (sort_order 3); includes lower levels.

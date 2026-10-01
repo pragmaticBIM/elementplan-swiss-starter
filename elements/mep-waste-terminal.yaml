@@ -8,19 +8,25 @@ name:
   it: Scarico / terminale acque reflue
   en: Waste terminal
 definition:
-  de: '**Beschreibung**
+  de: 'Legt die Entwässerungspunkte fest, damit Gefälle, Leitungsführung und Sanitärapparate koordiniert werden können.
+
+
+    **Beschreibung**
 
     - Entwässerungsanschluss für Schmutz- und Abwasser im Gebäude.
 
     - Bodenablauf; Spülbeckenablauf; WC-Ablauf.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Als Geräteobjekt mit Abmessungen und Lage modellieren.
 
     - Dem zugehörigen Geschoss und dem System zuweisen.'
-  fr: '**Description**
+  fr: 'Fixe les points d’évacuation afin de coordonner les pentes, le tracé des conduites et les appareils sanitaires.
+
+
+    **Description**
 
     - Point d''évacuation des eaux usées dans le bâtiment.
 
@@ -32,7 +38,10 @@ definition:
     - Modéliser comme appareil avec dimensions et position.
 
     - Rattacher à l''étage et à la zone technique ou d''usage.'
-  it: '**Descrizione**
+  it: 'Definisce i punti di scarico per coordinare le pendenze, il tracciato delle condotte e gli apparecchi sanitari.
+
+
+    **Descrizione**
 
     - Punto di scarico delle acque reflue nell''edificio.
 
@@ -44,7 +53,10 @@ definition:
     - Modellare come apparecchio con dimensioni e posizione.
 
     - Assegnare al piano e alla zona tecnica o d''uso.'
-  en: '**Description**
+  en: 'Fixes drainage points so falls, pipe routes, and sanitary fixtures can be coordinated.
+
+
+    **Description**
 
     - Wastewater outlet or drain terminal in the building.
 
@@ -153,6 +165,7 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
   is_applicability: false
   status: active
   sort_order: 1
@@ -171,10 +184,10 @@ attributes:
 
 
       Se manca uno standard di progetto, proposta: `{Edificio}-{Piano}-{Disciplina}-{Tipo impianto}-{nnn}` (p. es. `B01-02-H-RLT-003`).'
-    en: 'Plant identification (AKS) according to the client standard.
+    en: 'Plant identification (AKS) to the client standard.
 
 
-      If no project-specific standard exists, suggestion: `{Building}-{Storey}-{Trade}-{Plant type}-{nnn}` (e.g. `B01-02-H-RLT-003`).'
+      Where no project-specific standard applies, we suggest `{Building}-{Storey}-{Trade}-{PlantType}-{nnn}` (e.g. `B01-02-H-RLT-003`).'
   datatype: IfcIdentifier
   needed_in_phases:
   - '51'
@@ -188,52 +201,10 @@ attributes:
   - ifc4x3
   needed_for_workflows:
   - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
   is_applicability: false
   status: active
   sort_order: 2
-- name: WarrantyEndDate
-  pset: Pset_Warranty
-  definition:
-    de: Datum des Garantieendes — vom Unternehmer zu liefern.
-    fr: Date de fin de garantie — à fournir par l'entrepreneur.
-    it: Data di fine garanzia — da fornire dall'impresa.
-    en: Warranty end date — to be provided by the contractor.
-  datatype: IfcDate
-  needed_in_phases:
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/hov-fm-3d-information-delivery
-  is_applicability: false
-  status: active
-  sort_order: 3
-- name: DatasheetLink
-  pset: ePset_ProductData
-  definition:
-    de: Link (URI) zum Produktdatenblatt.
-    fr: Lien (URI) vers la fiche technique du produit.
-    it: Link (URI) alla scheda tecnica del prodotto.
-    en: Link (URI) to the product datasheet.
-  datatype: IfcURIReference
-  needed_in_phases:
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/hov-fm-3d-information-delivery
-  is_applicability: false
-  status: active
-  sort_order: 4
 - name: Status
   pset: Pset_WasteTerminalTypeCommon
   definition:
@@ -273,16 +244,16 @@ attributes:
       - `DEMOLISH` — da demolire
 
       - `TEMPORARY` — temporaneo'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary'
   datatype: IfcLabel
@@ -304,46 +275,90 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-mep-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  is_applicability: false
+  status: active
+  sort_order: 3
+- name: WarrantyEndDate
+  pset: Pset_Warranty
+  definition:
+    de: Datum des Garantieendes – vom Unternehmer zu liefern.
+    fr: Date de fin de garantie – à fournir par l'entrepreneur.
+    it: Data di fine garanzia – da fornire dall'impresa.
+    en: Warranty end date – to be provided by the contractor.
+  datatype: IfcDate
+  needed_in_phases:
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: DatasheetLink
+  pset: ePset_ProductData
+  definition:
+    de: Link (URI) zum Produktdatenblatt.
+    fr: Lien (URI) vers la fiche technique du produit.
+    it: Link (URI) alla scheda tecnica del prodotto.
+    en: Link (URI) to the product datasheet.
+  datatype: IfcURIReference
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-fm-3d-information-delivery
+  - pragmaticbim:workflow/hov-cobie-data-delivery
   is_applicability: false
   status: active
   sort_order: 5
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: 'Kostenschnittstelle des Bauteils — Grundausbau oder Mieterausbau.
+    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
 
 
       **Zulässige Werte**
 
       - `GAB` — Grundausbau (Bauherr / Vermieter)
 
-      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_Migros`'
-    fr: 'Interface de coûts de l''élément — aménagement de base ou aménagement locataire.
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
+    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
 
 
       **Valeurs admises**
 
       - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
 
-      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_Migros`'
-    it: 'Interfaccia di costo del componente — allestimento di base o allestimento locatario.
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
+    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
 
 
       **Valori ammessi**
 
       - `GAB` — allestimento di base (committente / locatore)
 
-      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_Migros`'
-    en: 'Cost interface of the component — base building or tenant fit-out.
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
+    en: 'Cost interface of the component – base building or tenant fit-out.
 
 
       **Allowed values**
 
       - `GAB` — base building (client / landlord)
 
-      - `MAB_{Mietername}` — tenant fit-out, e.g. `MAB_Migros`'
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
   datatype: IfcLabel
   needed_in_phases:
   - '32'
@@ -359,33 +374,60 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 6
+- name: FundingApplication
+  pset: ePset_Cost
+  definition:
+    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
+      demande.
+    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
+      to no application.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-funding-verification
+  is_applicability: false
+  status: active
+  sort_order: 7
 - name: AwardInterface
   pset: ePset_Cost
   definition:
-    de: 'Vergabepaket des Bauteils nach BKP-3-Steller — damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Vergabepaket — z. B. `211`, `221`, `244`.'
-    fr: 'Lot d''adjudication de l''élément selon le BKP à trois chiffres — pour rendre visibles les interfaces entre lots d''entreprise.
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
+    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot d''adjudication BKP — p. ex. `211`, `221`, `244`.'
-    it: 'Lotto di aggiudicazione del componente secondo il BKP a tre cifre — per rendere visibili le interfacce tra lotti d''impresa.
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
+    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di aggiudicazione BKP — es. `211`, `221`, `244`.'
-    en: 'Award package of the component by three-digit BKP code — so interfaces between contractor packages become visible.
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
+    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
 
 
       **Allowed values**
 
-      - See value list BKP award package — e.g. `211`, `221`, `244`.'
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-award-package
   needed_in_phases:
@@ -401,34 +443,34 @@ attributes:
   - pragmaticbim:workflow/bes-award-interface-visualization
   is_applicability: false
   status: active
-  sort_order: 7
+  sort_order: 8
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
-    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller — damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Planungspaket — z. B. `091`, `092`, `094`.'
-    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres — pour rendre visibles les responsabilités entre disciplines de planification.
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot de planification BKP — p. ex. `091`, `092`, `094`.'
-    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre — per rendere visibili le responsabilità tra discipline di pianificazione.
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di pianificazione BKP — es. `091`, `092`, `094`.'
-    en: 'Planning interface of the component by three-digit BKP code — so responsibilities between planning disciplines become visible.
+      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
+    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
 
 
       **Allowed values**
 
-      - See value list BKP planning package — e.g. `091`, `092`, `094`.'
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-planning-package
   needed_in_phases:
@@ -444,7 +486,7 @@ attributes:
   - pragmaticbim:workflow/des-planning-interface-visualization
   is_applicability: false
   status: active
-  sort_order: 8
+  sort_order: 9
 - name: BelowTerrain
   pset: ePset_Cost
   definition:
@@ -472,14 +514,14 @@ attributes:
       - `TRUE` — sotto il livello del terreno
 
       - `FALSE` — sopra il livello del terreno'
-    en: 'Marks whether the component is below terrain.
+    en: 'Marks whether the component sits below ground level.
 
 
       **Allowed values**
 
-      - `TRUE` — below terrain
+      - `TRUE` — below ground
 
-      - `FALSE` — above terrain'
+      - `FALSE` — above ground'
   datatype: IfcBoolean
   allowed_values: pragmaticbim:value/boolean
   needed_in_phases:
@@ -495,29 +537,29 @@ attributes:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
   status: active
-  sort_order: 9
-- name: EbkpH
+  sort_order: 10
+- name: eBKP
   pset: ePset_Cost
   definition:
-    de: 'eBKP-H-Klassifizierung nach SN 506 511 — ableitbar aus Elementtyp, Medium und BelowTerrain.
+    de: 'eBKP-H-Klassifizierung nach SN 506 511 – ableitbar aus Elementtyp, Medium und BelowTerrain.
 
 
       **Zulässige Werte**
 
       - `D09.05` — Abwasser: Armatur, Apparat'
-    fr: 'Classification eBKP-H selon SN 506 511 — déductible à partir du type d''élément, du fluide et de BelowTerrain.
+    fr: 'Classification eBKP-H selon SN 506 511 – déductible à partir du type d''élément, du fluide et de BelowTerrain.
 
 
       **Valeurs admises**
 
       - `D09.05` — eaux usées: robinetterie, appareil'
-    it: 'Classificazione eBKP-H secondo SN 506 511 — ricavabile da tipo di elemento, fluido e BelowTerrain.
+    it: 'Classificazione eBKP-H secondo SN 506 511 – ricavabile da tipo di elemento, fluido e BelowTerrain.
 
 
       **Valori ammessi**
 
       - `D09.05` — acque reflue: rubinetteria, apparecchio'
-    en: 'eBKP-H classification according to SN 506 511 — derivable from element type, medium, and BelowTerrain.
+    en: 'eBKP-H classification according to SN 506 511 – derivable from element type, medium, and BelowTerrain.
 
 
       **Allowed values**
@@ -538,4 +580,49 @@ attributes:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
   status: active
-  sort_order: 10
+  sort_order: 11
+- name: GlobalTradeItemNumber
+  pset: Pset_ManufacturerTypeInformation
+  definition:
+    de: GTIN (Global Trade Item Number) des Produkttyps; je nach GS1-Struktur 8, 12, 13 oder 14 Stellen.
+    fr: GTIN (Global Trade Item Number) du type de produit ; selon la structure GS1, 8, 12, 13 ou 14 chiffres.
+    it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
+    en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 12
+- name: SerialNumber
+  pset: Pset_ManufacturerOccurrence
+  definition:
+    de: Vom Hersteller vergebene Seriennummer eines einzelnen Produkts; zusammen mit der GTIN Schlüssel für den objektspezifischen Produktpass.
+    fr: Numéro de série attribué par le fabricant à un produit individuel ; avec le GTIN, clé du passeport produit propre à l’objet.
+    it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
+    en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 13

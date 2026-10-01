@@ -2,177 +2,141 @@ id: pragmaticbim:workflow/qas-arch-structural-coordination
 code: QAS-ARCH-STRUCT-COORD
 sort_order: 74
 name:
-  de: Koordination Architektur – Tragwerk
-  fr: Coordination architecture – structure
-  it: Coordinamento architettura – struttura
-  en: Architecture–structural coordination
+  de: Architektur und Tragwerk koordinieren
+  fr: Coordonner l'architecture et la structure
+  it: Coordinare architettura e struttura
+  en: Coordinate architecture and structure
 description:
-  de: 'Tragende Bauteile zwischen Architektur- und Tragwerksmodell abstimmen — wie bisher auf Betonierplänen, jetzt im Modell.
+  de: 'Tragende Bauteile zwischen Architektur- und Tragwerksmodell abstimmen, damit Geometrieabweichungen vor der Ausführung erkannt und nicht doppelt nachgeführt werden müssen.
 
 
     **Ausgangslage**
 
-    - Die Abstimmung zwischen Architektur und Tragwerksplanung erfolgte bisher auf 2D-Betonierplänen.
+    - Die Abstimmung zwischen Architektur und Tragwerksplanung erfolgte bisher auf 2D-Schalplänen.
 
-    - Ohne Modellabgleich entstehen Abweichungen zwischen Architektur- und Tragwerksgeometrie — mit Folgen für Schalung, Mengen und Koordination.
+    - Architektur- und Tragwerksgeometrie mussten aufwendig gegeneinander geprüft und Abweichungen manuell nachgeführt werden.
 
 
     **Ziel & Nutzen**
 
-    - Dieselben tragenden Bauteile in beiden Fachmodellen mit abgestimmtem Name führen.
+    - Probleme und Abweichungen zwischen Architektur und Tragwerk vor der Ausführung erkennen.
 
-    - Fachübergreifend auf Abweichungen, Kollisionen und fehlende Zuordnungen prüfen.
+    - Prüfung und Bearbeitung der festgestellten Abweichungen nachvollziehbar dokumentieren.
 
 
     **Ablauf**
 
-    1. Architekt und Tragwerksplaner modellieren dieselben Bauteile in ihren Fachmodellen (Architektur grob, Tragwerk ausführungsnah).
+    1. Architektur- und Tragwerksmodelle im zu prüfenden Stand bereitstellen.
 
-    2. Name je Element abstimmen und Modelle im Gesamtmodell zusammenführen.
+    2. Modelle gegeneinander auf Abweichungen und Kollisionen prüfen.
 
-    3. Auf Abweichungen, Kollisionen und fehlende Zuordnungen prüfen; Ergebnis verbindlich freigeben.
-
-
-    **Ergebnis**
-
-    - Abgestimmte Architektur- und Tragwerksmodelle als verbindliche Planungsgrundlage für Bauprojekt und Ausführung.
+    3. Geprüfte Modellstände und festgestellte Abweichungen dokumentieren, beispielsweise als BCF-Aufgaben.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Architekturmodell mit groben tragenden Bauteilen als IfcFooting, IfcSlab, IfcColumn, IfcBeam und IfcRoof (geneigt) mit LoadBearing=TRUE
+    - Architektur- und Tragwerksmodelle im geprüften Stand.
 
-    - Tragwerksmodell mit denselben Bauteiltypen als IfcFooting, IfcSlab, IfcColumn und IfcBeam (ausführungsnah)
-
-    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey in beiden Modellen
-
-    - Name je Element, übereinstimmend zwischen beiden Fachmodellen'
-  fr: 'Harmoniser les éléments porteurs entre les modèles d''architecture et de structure — comme auparavant sur les plans de coulage, désormais en maquette.
+    - Prüfprotokoll mit geprüften Modellständen und BCF-Aufgaben.'
+  fr: 'Harmoniser les éléments porteurs entre les modèles d''architecture et de structure – comme auparavant sur les plans de coffrage, désormais en maquette.
 
 
     **Situation de départ**
 
-    - L''harmonisation entre architecture et ingénierie structurelle se faisait auparavant sur des plans de coulage 2D.
+    - L''harmonisation entre architecture et ingénierie structurelle se faisait auparavant sur des plans de coffrage 2D.
 
-    - Sans alignement de maquettes, des écarts apparaissent entre géométrie d''architecture et structure — avec conséquences pour coffrage, quantités et coordination.
+    - Les géométries d''architecture et de structure devaient être comparées laborieusement et les écarts reportés manuellement.
 
 
     **Objectif et bénéfice**
 
-    - Saisir les mêmes éléments porteurs dans les deux maquettes disciplinaires avec Name harmonisé.
+    - Détecter les problèmes et écarts entre architecture et structure avant la réalisation.
 
-    - Vérifier entre disciplines écarts, collisions et assignations manquantes.
+    - Documenter de manière traçable le contrôle et le traitement des écarts constatés.
 
 
     **Déroulement**
 
-    1. Architecte et ingénieur structure modélisent les mêmes éléments dans leurs maquettes (architecture grossière, structure proche de l''exécution).
+    1. Fournir les maquettes d''architecture et de structure dans l''état à contrôler.
 
-    2. Harmoniser Name par élément et fusionner les maquettes en maquette fédérée.
+    2. Comparer les maquettes pour détecter les écarts et collisions.
 
-    3. Vérifier écarts, collisions et assignations manquantes ; valider le résultat de façon contraignante.
-
-
-    **Résultat**
-
-    - Maquettes d''architecture et structure harmonisées comme base contraignante pour projet de construction et exécution.
+    3. Documenter les versions contrôlées et les écarts constatés, par exemple sous forme de tâches BCF.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Modèle d''architecture avec éléments porteurs grossiers comme IfcFooting, IfcSlab, IfcColumn, IfcBeam et IfcRoof (incliné) avec LoadBearing=TRUE
+    - Maquettes d''architecture et de structure dans l''état contrôlé.
 
-    - Modèle structurel avec les mêmes types d''éléments comme IfcFooting, IfcSlab, IfcColumn et IfcBeam (proche de l''exécution)
-
-    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey dans les deux modèles
-
-    - Name par élément, cohérent entre les deux maquettes disciplinaires'
-  it: 'Allineare gli elementi portanti tra modello di architettura e modello strutturale — come in passato sui piani di getto, ora nel modello.
+    - Rapport de contrôle avec versions contrôlées et tâches BCF.'
+  it: 'Allineare gli elementi portanti tra modello di architettura e modello strutturale – come in passato sui piani delle casseforme, ora nel modello.
 
 
     **Situazione di partenza**
 
-    - L''allineamento tra architettura e ingegneria strutturale avveniva finora su piani di getto 2D.
+    - L''allineamento tra architettura e ingegneria strutturale avveniva finora su piani delle casseforme 2D.
 
-    - Senza confronto tra modelli sorgono scostamenti tra geometria architettonica e strutturale — con conseguenze per casseri, quantità e coordinamento.
+    - Le geometrie architettoniche e strutturali dovevano essere confrontate con grande dispendio e gli scostamenti aggiornati manualmente.
 
 
     **Obiettivo e beneficio**
 
-    - Gestire gli stessi elementi portanti in entrambi i modelli disciplinari con Name allineato.
+    - Rilevare problemi e scostamenti tra architettura e struttura prima dell''esecuzione.
 
-    - Verificare tra discipline scostamenti, collisioni e assegnazioni mancanti.
+    - Documentare in modo tracciabile la verifica e la gestione degli scostamenti rilevati.
 
 
     **Svolgimento**
 
-    1. Architetto e ingegnere strutturista modellano gli stessi elementi nei rispettivi modelli (architettura grossolana, struttura prossima all''esecuzione).
+    1. Fornire i modelli di architettura e struttura nello stato da verificare.
 
-    2. Allineare Name per elemento e unire i modelli nel modello federato.
+    2. Confrontare i modelli per rilevare scostamenti e collisioni.
 
-    3. Verificare scostamenti, collisioni e assegnazioni mancanti; approvare il risultato in modo vincolante.
-
-
-    **Risultato**
-
-    - Modelli di architettura e struttura allineati come base vincolante per progetto esecutivo ed esecuzione.
+    3. Documentare le versioni verificate e gli scostamenti rilevati, ad esempio come attività BCF.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Modello di architettura con elementi portanti grossolani come IfcFooting, IfcSlab, IfcColumn, IfcBeam e IfcRoof (inclinato) con LoadBearing=TRUE
+    - Modelli di architettura e struttura nello stato verificato.
 
-    - Modello strutturale con gli stessi tipi di elementi come IfcFooting, IfcSlab, IfcColumn e IfcBeam (prossimo all''esecuzione)
-
-    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey in entrambi i modelli
-
-    - Name per elemento, coerente tra i due modelli disciplinari'
-  en: 'Align load-bearing components between architecture and structural models — as previously done on 2D concrete pouring plans, now in the model.
+    - Rapporto di verifica con versioni controllate e attività BCF.'
+  en: 'Coordinate load-bearing components between the architecture and structural models so that geometric deviations are detected before construction and do not have to be maintained twice.
 
 
     **Starting point**
 
-    - Alignment between architecture and structural engineering previously happened on 2D concrete pouring plans.
+    - Alignment between architecture and structural engineering previously happened on 2D formwork plans.
 
-    - Without model alignment, deviations arise between architecture and structural geometry — affecting formwork, quantities, and coordination.
+    - Architecture and structural geometry had to be compared laboriously, with deviations tracked manually.
 
 
     **Goal & benefit**
 
-    - Carry the same load-bearing components in both discipline models with aligned Name.
+    - Detect problems and deviations between architecture and structure before construction.
 
-    - Check across disciplines for deviations, clashes, and missing assignments.
+    - Document the check and resolution of identified deviations traceably.
 
 
     **Process**
 
-    1. Architect and structural engineer model the same components in their discipline models (architecture rough, structure near-execution).
+    1. Provide the architecture and structural models in the versions to be checked.
 
-    2. Align Name per element and merge models in the federated model.
+    2. Check the models against each other for deviations and clashes.
 
-    3. Check for deviations, clashes, and missing assignments; approve the result bindingly.
-
-
-    **Outcome**
-
-    - Aligned architecture and structural models as the binding planning basis for construction project and execution.
+    3. Document the checked model versions and identified deviations, for example as BCF issues.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture model with rough load-bearing components as IfcFooting, IfcSlab, IfcColumn, IfcBeam, and IfcRoof (pitched) with LoadBearing=TRUE
+    - Architecture and structural models in the checked versions.
 
-    - Structural model with the same component types as IfcFooting, IfcSlab, IfcColumn, and IfcBeam (near-execution)
-
-    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey in both models
-
-    - Name per element, consistent across both discipline models'
-workflow_group: null
+    - Review report with checked model versions and BCF issues.'
+workflow_group: entwurf
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/structural
-comment: Schalungsplan/Betonierplan-style coordination. Same load-bearing components in both models; match Name across architecture (rough, LoadBearing) and structural (near-execution) discipline models.
-  Pitched roof ARC-only.
+comment: Formwork-plan-style coordination. Compare architecture and structural model versions; document checked versions and deviations as BCF issues. Pitched roof ARC-only.

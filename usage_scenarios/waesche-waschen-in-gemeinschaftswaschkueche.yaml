@@ -1,0 +1,27 @@
+id: pragmaticbim:usage-scenario/waesche-waschen-in-gemeinschaftswaschkueche
+code: US-WH-10
+sort_order: 10
+name:
+  de: Wäsche waschen in Gemeinschaftswaschküche
+  fr: Lessive à la buanderie commune
+  it: Bucato in lavanderia comune
+  en: Laundry in the communal laundry
+description:
+  de: Bewohnende verlassen die Wohnung, gehen über das Treppenhaus und waschen in der gemeinsamen Waschküche.
+  fr: Les occupants quittent le logement, empruntent la cage d'escalier et font la lessive à la buanderie commune.
+  it: Chi abita esce dall'alloggio, percorre il vano scale e lava nella lavanderia comune.
+  en: Occupants leave the dwelling, use the stairwell, and wash in the shared laundry.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/treppenhaus
+- pragmaticbim:room-type/gemeinschaftswaschkueche
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/treppenhaus
+- from_room_type: pragmaticbim:room-type/treppenhaus
+  to_room_type: pragmaticbim:room-type/gemeinschaftswaschkueche
+  max_distance: 30

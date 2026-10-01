@@ -1,0 +1,147 @@
+id: pragmaticbim:workflow/qas-planning-constraints
+code: QAS-CONSTRAINT
+sort_order: 87
+name:
+  de: Planungsrelevante Rahmenbedingungen im Modell darstellen
+  fr: Représenter les conditions-cadres pertinentes pour la planification dans la maquette
+  it: Rappresentare le condizioni quadro rilevanti per la pianificazione nel modello
+  en: Represent planning-relevant constraints in the model
+description:
+  de: 'Verbindliche äussere Vorgaben früh im Modell sichtbar machen und den Entwurf dagegen prüfen – bevor Varianten festgefahren sind.
+
+
+    **Ausgangslage**
+
+    - Maximale Bauvolumen, Flugschneisen, Überschwemmungsgebiete, Bahnkorridore und ähnliche Vorgaben liegen oft nur in 2D-Plänen, GIS-Daten oder Fachstellen-Unterlagen.
+
+    - Ohne volumetrischen Bezug im Modell werden Konflikte mit Höhe, Lage und Varianten erst spät erkannt.
+
+
+    **Ziel & Nutzen**
+
+    - Grundlagen als Rahmenbedingungen im Modell führen und visualisieren.
+
+    - Regelprüfungen und Abgleiche gegen den Entwurf nachvollziehbar machen.
+
+
+    **Ablauf**
+
+    1. Grundlagen bei Fachstellen und aus Gutachten einholen (z. B. maximales Bauvolumen, Flugschneise, Überschwemmungsgebiet, Eisenbahnkorridor).
+
+    2. Rahmenbedingungen als Proxy-Volumen modellieren und die Art in Name setzen.
+
+    3. Entwurf und Varianten gegen die Rahmenbedingungen visualisieren und Regelprüfungen dokumentieren.
+
+
+    **Lieferergebnis**
+
+    - Modell mit planungsrelevanten Rahmenbedingungen als Proxy-Volumen.
+
+    - Dokumentierte Visualisierung und Regelprüfung gegenüber dem Entwurf.'
+  fr: 'Rendre visibles tôt dans la maquette les prescriptions externes contraignantes et contrôler le projet par rapport à elles – avant que les variantes ne soient figées.
+
+
+    **Situation de départ**
+
+    - Volumes constructibles maximaux, couloirs de vol, zones inondables, corridors ferroviaires et prescriptions similaires ne figurent souvent que sur des plans 2D ou dans des documents de services spécialisés.
+
+    - Sans lien volumétrique dans la maquette, les conflits de hauteur, de position et de variantes ne sont détectés que tard.
+
+
+    **Objectif et bénéfice**
+
+    - Tenir et visualiser les bases comme conditions-cadres dans la maquette.
+
+    - Rendre traçables les contrôles réglementaires et les alignements par rapport au projet.
+
+
+    **Déroulement**
+
+    1. Obtenir les bases auprès des services spécialisés et des expertises (p. ex. volume constructible maximal, couloir de vol, zone inondable, corridor ferroviaire).
+
+    2. Modéliser les conditions-cadres comme volumes proxy et renseigner la nature dans Name.
+
+    3. Visualiser le projet et les variantes par rapport aux conditions-cadres et documenter les contrôles réglementaires.
+
+
+    **Livrable**
+
+    - Maquette avec conditions-cadres pertinentes pour la planification comme volumes proxy.
+
+    - Visualisation et contrôle réglementaire documentés par rapport au projet.'
+  it: 'Rendere visibili presto nel modello le prescrizioni esterne vincolanti e verificare il progetto rispetto a esse – prima che le varianti siano consolidate.
+
+
+    **Situazione di partenza**
+
+    - Volumi edificabili massimi, corridoi di volo, zone alluvionali, corridoi ferroviari e prescrizioni simili spesso esistono solo in piani 2D o documenti di uffici specializzati.
+
+    - Senza collegamento volumetrico nel modello, i conflitti di altezza, posizione e varianti emergono tardi.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire e visualizzare le basi come condizioni quadro nel modello.
+
+    - Rendere tracciabili i controlli normativi e gli allineamenti rispetto al progetto.
+
+
+    **Svolgimento**
+
+    1. Procurarsi le basi presso uffici specializzati e perizie (p. es. volume edificabile massimo, corridoio di volo, zona alluvionale, corridoio ferroviario).
+
+    2. Modellare le condizioni quadro come volumi proxy e impostare il tipo in Name.
+
+    3. Visualizzare progetto e varianti rispetto alle condizioni quadro e documentare i controlli normativi.
+
+
+    **Risultato della fornitura**
+
+    - Modello con condizioni quadro rilevanti per la pianificazione come volumi proxy.
+
+    - Visualizzazione e controllo normativo documentati rispetto al progetto.'
+  en: 'Make binding external requirements visible early in the model and check the design against them – before options become locked in.
+
+
+    **Starting point**
+
+    - Maximum buildable volumes, flight corridors, flood zones, railway corridors and similar requirements often exist only in 2D plans or specialist authority documents.
+
+    - Without a volumetric link in the model, conflicts of height, location, and options are found late.
+
+
+    **Goal & benefit**
+
+    - Maintain and visualize base data as planning constraints in the model.
+
+    - Make rule checks and alignment against the design traceable.
+
+
+    **Process**
+
+    1. Obtain base data from specialist authorities and reports (e.g. maximum buildable volume, flight corridor, flood zone, railway corridor).
+
+    2. Model constraints as proxy volumes and set the kind in Name.
+
+    3. Visualize the design and options against the constraints and document the rule checks.
+
+
+    **Deliverable**
+
+    - Model with planning-relevant constraints as proxy volumes.
+
+    - Documented visualization and rule check against the design.'
+workflow_group: grundlagen
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/surveyor
+- pragmaticbim:domain/infrastructure
+comment: Proxy IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Rahmenbedingung. Name is the constraint kind from the value list (Flugschneise, Überschwemmungsgebiet, Eisenbahnkorridor,
+  Explosionsschutzgebiet, Zone mit hoher Lärmbelastung, Grundwasserschutzzone, Gewässerraum, Freileitungskorridor, Naturgefahrenzone). Complements baurechtliche Parzellen (DES-PARCELS) and surroundings
+  context; not a legal boundary determination.

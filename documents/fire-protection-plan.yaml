@@ -1,6 +1,6 @@
 id: pragmaticbim:document/fire-protection-plan
 code: BSP
-sort_order: 105
+sort_order: 113
 name:
   de: Brandschutzplan
   fr: Plan de protection incendie
@@ -40,22 +40,21 @@ file_name:
   de: '{Projektnummer}_BRS-BSP_{Freitext}.{ext}'
   fr: '{NumeroProjet}_INC-BSP_{Libre}.{ext}'
   it: '{NumeroProgetto}_ANT-BSP_{Libero}.{ext}'
-  en: '{ProjectNumber}_FIR-BSP_{Free}.{ext}'
+  en: '{ProjectNumber}_FIR-BSP_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/fire-protection
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/architecture-wall-exterior
+  - pragmaticbim:element/architecture-wall-interior-loadbearing
   - pragmaticbim:element/architecture-wall-interior
   - pragmaticbim:element/architecture-slab-floor
   - pragmaticbim:element/architecture-column
   - pragmaticbim:element/architecture-beam
-  - pragmaticbim:element/windows
-  - pragmaticbim:element/doors
+  - pragmaticbim:element/architecture-window-exterior
+  - pragmaticbim:element/architecture-window-interior
+  - pragmaticbim:element/architecture-door-exterior
+  - pragmaticbim:element/architecture-door-interior
 scheduled_milestones:
-  - "32:beginning"
-  - "33:beginning"
+  - "32:M"
+  - "33:M"

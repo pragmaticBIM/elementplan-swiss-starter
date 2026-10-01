@@ -1,9 +1,9 @@
 id: pragmaticbim:document/building-physics-component-catalogue
 code: BPK
-sort_order: 145
+sort_order: 106
 name:
   de: Bauphysik Bauteilkatalog
-  fr: Catalogue des composants — physique du bâtiment
+  fr: Catalogue des composants – physique du bâtiment
   it: Catalogo componenti di fisica della costruzione
   en: Building physics component catalogue
 definition:
@@ -36,22 +36,21 @@ file_name:
   de: '{Projektnummer}_BPH-BPK_{Freitext}.{ext}'
   fr: '{NumeroProjet}_PHY-BPK_{Libre}.{ext}'
   it: '{NumeroProgetto}_FIS-BPK_{Libero}.{ext}'
-  en: '{ProjectNumber}_PHY-BPK_{Free}.{ext}'
+  en: '{ProjectNumber}_PHY-BPK_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/building-physics
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/architecture-wall-exterior
+  - pragmaticbim:element/architecture-wall-interior-loadbearing
   - pragmaticbim:element/architecture-wall-interior
   - pragmaticbim:element/architecture-slab-floor
   - pragmaticbim:element/architecture-slab-flat-roof
   - pragmaticbim:element/architecture-roof-pitched
-  - pragmaticbim:element/windows
-  - pragmaticbim:element/doors
+  - pragmaticbim:element/architecture-window-exterior
+  - pragmaticbim:element/architecture-window-interior
+  - pragmaticbim:element/architecture-door-exterior
+  - pragmaticbim:element/architecture-door-interior
 scheduled_milestones:
-  - "32:beginning"
-  - "33:beginning"
+  - "32:M"
+  - "33:M"

@@ -12,23 +12,19 @@ definition:
   it: "Volume lordo per piano per studi di massa, indicatori e verifiche urbanistiche. Separare i modelli per stato (E esistente, D demolizione, N nuovo, T temporaneo). La separazione rende i modelli rapidamente comprensibili e permette di visualizzare o nascondere ciò che è nuovo e ciò che viene rimosso."
   en: "Gross volume per storey for massing studies, metrics, and urban-design verification. Split models by status (E existing, D demolish, N new, T temporary). The split makes models readable at a glance and lets you toggle what is new versus what is removed."
 file_name:
-  de: '{Projektnummer}_{B|A|N|T}_ARX-GVM_{Freitext}.{ext}'
+  de: '{Projektnummer}_{B|A|N|T}_ARC-GVM_{Freitext}.{ext}'
   fr: '{NumeroProjet}_{E|D|N|T}_ARC-GVM_{Libre}.{ext}'
   it: '{NumeroProgetto}_{E|D|N|T}_ARC-GVM_{Libero}.{ext}'
-  en: '{ProjectNumber}_{E|D|N|T}_ARC-GVM_{Free}.{ext}'
+  en: '{ProjectNumber}_{B|A|N|T}_ARC-GVM_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/architecture
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/spaces-gross-volume
   - pragmaticbim:element/spaces-luftraum
 scheduled_milestones:
-  - "21:beginning"
-  - "22:beginning"
-  - "31:beginning"
-  - "32:beginning"
-  - "33:beginning"
+  - "21:M"
+  - "22:M"
+  - "31:M"
+  - "32:M"
+  - "33:M"

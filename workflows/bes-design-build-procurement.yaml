@@ -1,0 +1,157 @@
+id: pragmaticbim:workflow/bes-design-build-procurement
+code: BES-DESIGN-BUILD
+sort_order: 16
+name:
+  de: Design-Build-Leistung mit verbindlichem Preis beschaffen
+  fr: Acquérir une prestation conception-réalisation avec une offre ferme
+  it: Acquisire una prestazione di progettazione e costruzione con offerta vincolante
+  en: Procure design-build services with a binding offer
+description:
+  de: 'Planung und Ausführung auf einer funktional geklärten Grundlage gemeinsam beschaffen und Lösung, Leistung sowie Angebotspreis vergleichbar beurteilen.
+
+
+    **Ausgangslage**
+
+    - Pauschale Bestellungen wie «ein Stück Krankenhaus» lassen Betrieb, Funktionen und Qualitätsanforderungen offen; Bietende kalkulieren unterschiedliche Annahmen oder beschränken ihre Leistung auf das
+    vertragliche Minimum.
+
+    - Ein für Wettbewerbe ausreichendes Raummodell bildet kosten- und leistungsbestimmende Bauteile nicht ab; bei einem verbindlichen Design-Build-Angebot führen solche Lücken zu unterschiedlichen Kalkulationsgrundlagen,
+    Risikozuschlägen oder späteren Nachträgen.
+
+
+    **Ziel & Nutzen**
+
+    - Vergleichbare Lösungsvorschläge mit nachvollziehbarem Leistungsumfang und verbindlichem Angebotspreis erhalten.
+
+    - Anforderungen und Richtmengen für die funktionale Ausschreibung aus einem schlanken Modell ableiten, ohne grossen Aufwand in die Modellierung der kostenbestimmenden Bauteile stecken zu müssen.
+
+
+    **Ablauf**
+
+    1. Freigegebene Betriebs- und Funktionsgrundlagen, Raumprogramm, Qualitätsanforderungen, Vertragsbedingungen und Kostenabgrenzung bereitstellen.
+
+    2. Mit abstractBIM aus dem schlanken Raummodell Anforderungen und Richtmengen für die funktionale Ausschreibung ableiten.
+
+    3. Angebote mit verbindlichem Preis, Annahmen und Ausschlüssen einfordern und Funktionserfüllung, Mengen, Qualitäten sowie Angebotspreis nach denselben Kriterien prüfen.
+
+
+    **Lieferergebnis**
+
+    - Funktionale Ausschreibungsgrundlage mit abgeleiteten Anforderungen und Richtmengen.
+
+    - Verbindliches Angebot mit Leistungsumfang, Preis, Terminen, Annahmen und Ausschlüssen.
+
+    - Bewertete und vertraglich festgehaltene Design-Build-Lösung mit Abnahmekriterien und Änderungsregeln.'
+  fr: 'Acquérir conjointement les études et la réalisation sur une base fonctionnelle clarifiée et évaluer de manière comparable la solution, les prestations et le prix offert.
+
+
+    **Situation de départ**
+
+    - Des commandes générales telles que «construire une partie d''hôpital» laissent ouverts l''exploitation, les fonctions et les exigences de qualité; les soumissionnaires chiffrent des hypothèses différentes
+    ou limitent leur prestation au minimum contractuel.
+
+    - Une maquette des locaux suffisante pour un concours ne représente pas les éléments déterminants pour les prestations et les coûts; dans une offre ferme de conception-réalisation, ces lacunes entraînent
+    des bases de calcul différentes, des suppléments de risque ou des avenants ultérieurs.
+
+
+    **Objectif et bénéfice**
+
+    - Obtenir des propositions comparables avec une étendue des prestations traçable et un prix d''offre ferme.
+
+    - Déduire les exigences et les quantités indicatives pour l''appel d''offres fonctionnel à partir d''une maquette légère, sans investir un effort important dans la modélisation des éléments déterminants
+    pour les coûts.
+
+
+    **Déroulement**
+
+    1. Fournir les bases d''exploitation et fonctionnelles validées, le programme des locaux, les exigences de qualité, les conditions contractuelles et la délimitation du prix.
+
+    2. Déduire avec abstractBIM, à partir de la maquette légère des locaux, les exigences et les quantités indicatives pour l''appel d''offres fonctionnel.
+
+    3. Exiger des offres avec prix ferme, hypothèses et exclusions, puis vérifier le respect des fonctions, les quantités, les qualités et le prix offert selon les mêmes critères.
+
+
+    **Livrable**
+
+    - Base d''appel d''offres fonctionnel avec exigences et quantités indicatives déduites.
+
+    - Offre ferme avec étendue des prestations, prix, délais, hypothèses et exclusions.
+
+    - Solution conception-réalisation évaluée et contractualisée avec critères de réception et règles de modification.'
+  it: 'Acquisire congiuntamente progettazione ed esecuzione su una base funzionale chiarita e valutare in modo comparabile soluzione, prestazioni e prezzo offerto.
+
+
+    **Situazione di partenza**
+
+    - Ordinazioni generiche come «costruire una parte di ospedale» lasciano aperti esercizio, funzioni e requisiti qualitativi; gli offerenti calcolano ipotesi diverse o limitano la prestazione al minimo
+    contrattuale.
+
+    - Un modello dei locali sufficiente per un concorso non rappresenta i componenti determinanti per le prestazioni e i costi; in un''offerta vincolante di progettazione e costruzione, queste lacune comportano
+    basi di calcolo diverse, supplementi per i rischi o successive pretese aggiuntive.
+
+
+    **Obiettivo e beneficio**
+
+    - Ottenere proposte confrontabili con un''estensione delle prestazioni tracciabile e un prezzo d''offerta vincolante.
+
+    - Ricavare requisiti e quantità indicative per l''appalto funzionale da un modello leggero, senza investire un notevole impegno nella modellazione dei componenti determinanti per i costi.
+
+
+    **Svolgimento**
+
+    1. Fornire le basi operative e funzionali approvate, il programma dei locali, i requisiti qualitativi, le condizioni contrattuali e la delimitazione del prezzo.
+
+    2. Ricavare con abstractBIM dal modello leggero dei locali i requisiti e le quantità indicative per l''appalto funzionale.
+
+    3. Richiedere offerte con prezzo vincolante, ipotesi ed esclusioni e verificare l''adempimento funzionale, le quantità, le qualità e il prezzo offerto secondo gli stessi criteri.
+
+
+    **Risultato della fornitura**
+
+    - Base di appalto funzionale con requisiti e quantità indicative ricavati.
+
+    - Offerta vincolante con estensione delle prestazioni, prezzo, termini, ipotesi ed esclusioni.
+
+    - Soluzione di progettazione e costruzione valutata e contrattualizzata con criteri di collaudo e regole per le modifiche.'
+  en: 'Procure design and construction together on a functionally clarified basis and compare the proposed solution, scope, and offer price consistently.
+
+
+    **Starting point**
+
+    - Blanket orders such as “build part of a hospital” leave operations, functions, and quality requirements open; bidders price different assumptions or limit delivery to the contractual minimum.
+
+    - A room model sufficient for a competition does not represent the elements that determine scope and cost; in a binding design-build bid, these gaps lead to different pricing bases, risk premiums, or
+    later change claims.
+
+
+    **Goal & benefit**
+
+    - Obtain comparable proposals with a traceable scope and binding offer price.
+
+    - Derive requirements and indicative quantities for the functional tender from a lean model, without investing heavy effort in modelling the cost-determining elements.
+
+
+    **Process**
+
+    1. Provide the approved operational and functional foundations, room programme, quality requirements, contract conditions, and price boundaries.
+
+    2. Use abstractBIM to derive requirements and indicative quantities for the functional tender from the lean room model.
+
+    3. Require bids with a binding price, assumptions, and exclusions, then check functional compliance, quantities, qualities, and offer price against the same criteria.
+
+
+    **Deliverable**
+
+    - Functional tender basis with derived requirements and indicative quantities.
+
+    - Binding offer stating scope, price, programme, assumptions, and exclusions.
+
+    - Evaluated and contracted design-build solution with acceptance criteria and change rules.'
+workflow_group: planungsteam
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Deliverable document: pragmaticbim:document/design-build-tender-basis (DBA). Die verbindliche Preiswirkung entsteht aus Angebot und Vertrag, nicht aus dem Modell allein. abstractBIM liefert aus
+  dem schlanken Raummodell Anforderungen und Richtmengen für die funktionale Ausschreibung; die Lösung selbst bleibt Aufgabe der Design-Build-Anbietenden.'

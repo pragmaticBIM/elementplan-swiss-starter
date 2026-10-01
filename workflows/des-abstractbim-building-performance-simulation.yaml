@@ -2,184 +2,166 @@ id: pragmaticbim:workflow/des-abstractbim-building-performance-simulation
 code: DES-ABSTRACTBIM-BPS
 sort_order: 43
 name:
-  de: Gebäudesimulation auf Basis von abstractBIM
-  fr: Simulation de performance du bâtiment à partir d'abstractBIM
-  it: Simulazione delle prestazioni dell'edificio da abstractBIM
-  en: Building performance simulation based on abstractBIM
+  de: Grundlagen für den Heizwärmenachweis nach SIA 380/1 aus dem Modell ableiten
+  fr: Déduire de la maquette les données de base du justificatif des besoins de chaleur selon SIA 380/1
+  it: Ricavare dal modello le basi per la verifica del fabbisogno termico secondo SIA 380/1
+  en: Derive the basis for heating demand verification to SIA 380/1 from the model
 description:
-  de: 'Gebäudesimulation vorbereiten, ohne das Architekturmodell manuell für Simulations-Tools nachzubauen.
+  de: 'Die Grundlagen für den Heizwärmenachweis nach SIA 380/1 aus dem Architekturmodell ableiten, ohne die thermische Gebäudehülle manuell nachzumodellieren.
 
 
     **Ausgangslage**
 
-    - Architekturmodelle sind für energetische und raumklimatische Simulation oft zu detailliert oder widersprüchlich.
+    - Flächen und Bauteilmengen für den Heizwärmenachweis werden häufig separat ermittelt und stimmen nach Planungsänderungen nicht mehr mit dem Modell überein.
 
-    - Die manuelle Aufbereitung für Tools wie IDA ICE, Lesosai oder andere gbXML-basierte Software kann über 50 % des Simulationsaufwands ausmachen.
-
-    - Simulationen verbessern Energieverbrauch und Komfort deutlich — der Modellaufwand bremst sie aber häufig aus.
+    - Die Energiebezugsfläche ist nicht identisch mit der Summe aller Raumflächen: Entscheidend sind Nutzung und Lage innerhalb der thermischen Gebäudehülle; unter Schrägdächern zählen Flächenteile mit
+    weniger als 1,0 m lichter Höhe nicht dazu.
 
 
     **Ziel & Nutzen**
 
-    - Architekturmodelle mit minimalem Aufwand so aufbereiten, dass abstractBIM daraus simulationstaugliche Modelle erzeugt.
+    - Energiebezugsfläche und Gebäudehüllflächen nachvollziehbar aus demselben Planungsstand ermitteln.
 
-    - Frühere, wiederholbare Simulationen statt späten Einzelaufwänden.
+    - Geometrie- und Mengendaten für die Weiterberechnung in einer geeigneten Nachweis- oder Simulationssoftware bereitstellen.
 
 
     **Ablauf**
 
-    1. Architekturmodell mit den Mindestanforderungen bereitstellen (gleiche geometrische Basis wie DES-ABSTRACTBIM-COST).
+    1. Architekturmodell mit derselben geometrischen Mindestgrundlage wie für Kosten und Wettbewerb bereitstellen – Räume, Fenster und Türen – und die thermische Gebäudehülle abstimmen.
 
-    2. Bei abstractBIM.com hochladen und verarbeiten lassen.
+    2. Energiebezugsfläche und Hüllflächen nach SIA 416/1 aus dem Modell ermitteln und als Grundlage für den Heizwärmenachweis nach SIA 380/1 prüfen.
 
-    3. Simulationsmodell herunterladen — IFC für IDA ICE oder gbXML für weitere Tools.
-
-
-    **Ergebnis**
-
-    - gbXML mit Wänden, Decken, Räumen, Dächern, Fenstern und Türen.
-
-    - Alternativ IFC für IDA ICE mit Wänden, Decken, Fenstern, Türen und BuildingBody.
+    3. Geometrie- oder Mengendaten ausgeben und damit den Heizwärmenachweis in der gewählten Software erstellen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow und IfcDoor
+    - Nachvollziehbar abgegrenzte Energiebezugsfläche und Gebäudehüllflächen
 
-    - Raumname in LongName, optionale Raumnummer in Name
+    - Austauschmodell oder Mengenaufstellung als Berechnungsgrundlage für den Heizwärmenachweis
 
-    - Vereinfachtes Simulationsmodell (z. B. gbXML) aus abstractBIM'
-  fr: 'Préparer la simulation du bâtiment sans reconstruire manuellement la maquette architecture pour les outils de simulation.
+
+    **Hinweis:** Mit abstractBIM kann aus Räumen, Fenstern und Türen eine gbXML-Datei für die energetische Simulation erzeugt werden. Sonnenschutz und Umgebungsbauten sind in diesem Export nicht enthalten;
+    sie werden wie zusätzlicher Kontext von Hand ins Simulationsmodell übernommen. Die Art des Sonnenschutzes bleibt am Aussenfenster unter `SunProtection` geführt, damit Ausschreibung und Simulation übereinstimmen,
+    wenn die Geometrie separat ergänzt wird.'
+  fr: 'Obtenir à partir de la maquette d''architecture les données de base du justificatif des besoins de chaleur selon SIA 380/1, sans remodéliser manuellement l''enveloppe thermique.
 
 
     **Situation de départ**
 
-    - Les maquettes architecture sont souvent trop détaillées ou incohérentes pour la simulation énergétique et climatique.
+    - Les surfaces et quantités nécessaires au justificatif des besoins de chaleur sont souvent calculées séparément et ne correspondent plus à la maquette après une modification du projet.
 
-    - La préparation manuelle pour des outils comme IDA ICE, Lesosai ou d''autres logiciels basés sur gbXML peut représenter plus de 50 % de l''effort de simulation.
-
-    - Les simulations améliorent nettement la consommation d''énergie et le confort — mais la préparation du modèle les freine souvent.
+    - La surface de référence énergétique ne correspond pas à la somme de toutes les surfaces de locaux : l''affectation et la situation à l''intérieur de l''enveloppe thermique sont déterminantes ; sous
+    une toiture inclinée, les parties dont la hauteur libre est inférieure à 1,0 m n''en font pas partie.
 
 
     **Objectif et bénéfice**
 
-    - Préparer les maquettes architecture avec un effort minimal pour qu''abstractBIM produise des modèles prêts pour la simulation.
+    - Calculer de manière traçable la surface de référence énergétique et les surfaces de l''enveloppe à partir du même état de planification.
 
-    - Permettre des simulations plus tôt et reproductibles plutôt que des reprises tardives ponctuelles.
+    - Mettre à disposition les données géométriques et quantitatives nécessaires à la suite du calcul dans le logiciel de justification ou de simulation choisi.
 
 
     **Déroulement**
 
-    1. Fournir une maquette architecture répondant aux exigences minimales (même base géométrique que DES-ABSTRACTBIM-COST).
+    1. Fournir la maquette d''architecture avec la même base géométrique minimale que pour les coûts et les concours – locaux, fenêtres et portes – et convenir de l''enveloppe thermique.
 
-    2. Téléverser et traiter sur abstractBIM.com.
+    2. Calculer à partir de la maquette la surface de référence énergétique et les surfaces de l''enveloppe selon SIA 416/1, puis les contrôler comme base du justificatif selon SIA 380/1.
 
-    3. Télécharger le modèle de simulation — IFC pour IDA ICE ou gbXML pour d''autres outils.
-
-
-    **Résultat**
-
-    - gbXML avec murs, dalles, espaces, toitures, fenêtres et portes.
-
-    - Alternativement, IFC pour IDA ICE avec murs, dalles, fenêtres, portes et BuildingBody.
+    3. Exporter les données géométriques ou quantitatives et établir le justificatif des besoins de chaleur dans le logiciel choisi.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow et IfcDoor
+    - Surface de référence énergétique et surfaces de l''enveloppe délimitées de manière traçable
 
-    - Nom du local dans LongName, numéro de local facultatif dans Name
+    - Maquette d''échange ou métré servant de base au justificatif des besoins de chaleur
 
-    - Modèle de simulation simplifié (p. ex. gbXML) issu d''abstractBIM'
-  it: 'Preparare la simulazione dell''edificio senza ricostruire manualmente il modello architettonico per gli strumenti di simulazione.
+
+    **Remarque :** abstractBIM permet de générer, à partir des locaux, fenêtres et portes, un fichier gbXML destiné à la simulation énergétique. La protection solaire et les constructions environnantes
+    ne figurent pas dans cet export ; elles sont intégrées manuellement dans le modèle de simulation comme contexte supplémentaire. Le type de protection solaire reste saisi sur la fenêtre extérieure sous
+    `SunProtection`, afin que l''appel d''offres et la simulation restent cohérents lorsque la géométrie est ajoutée séparément.'
+  it: 'Ricavare dal modello di architettura le basi per la verifica del fabbisogno termico secondo SIA 380/1, senza rimodellare manualmente l''involucro termico.
 
 
     **Situazione di partenza**
 
-    - I modelli architettonici sono spesso troppo dettagliati o incoerenti per la simulazione energetica e climatica.
+    - Le superfici e le quantità necessarie per la verifica del fabbisogno termico sono spesso calcolate separatamente e, dopo una modifica del progetto, non corrispondono più al modello.
 
-    - La preparazione manuale per strumenti come IDA ICE, Lesosai o altri software basati su gbXML può assorbire oltre il 50 % dell''efforto di simulazione.
-
-    - Le simulazioni migliorano nettamente consumo energetico e comfort — ma la preparazione del modello le rallenta spesso.
+    - La superficie di riferimento energetico non corrisponde alla somma di tutte le superfici dei locali: sono determinanti l''uso e la posizione all''interno dell''involucro termico; sotto un tetto inclinato
+    non si conteggiano le parti con altezza libera inferiore a 1,0 m.
 
 
     **Obiettivo e beneficio**
 
-    - Preparare i modelli architettonici con sforzo minimo affinché abstractBIM produca modelli pronti per la simulazione.
+    - Calcolare in modo tracciabile la superficie di riferimento energetico e le superfici dell''involucro dallo stesso stato di progettazione.
 
-    - Consentire simulazioni più precoci e ripetibili invece di rielaborazioni tardive una tantum.
+    - Mettere a disposizione i dati geometrici e quantitativi per il calcolo nel software di verifica o simulazione scelto.
 
 
     **Svolgimento**
 
-    1. Fornire un modello architettonico che soddisfi i requisiti minimi (stessa base geometrica di DES-ABSTRACTBIM-COST).
+    1. Fornire il modello di architettura con la stessa base geometrica minima prevista per costi e concorsi – locali, finestre e porte – e concordare l''involucro termico.
 
-    2. Caricare ed elaborare su abstractBIM.com.
+    2. Calcolare dal modello la superficie di riferimento energetico e le superfici dell''involucro secondo SIA 416/1 e verificarle quale base per la verifica secondo SIA 380/1.
 
-    3. Scaricare il modello di simulazione — IFC per IDA ICE o gbXML per altri strumenti.
-
-
-    **Risultato**
-
-    - gbXML con pareti, solai, spazi, coperture, finestre e porte.
-
-    - In alternativa, IFC per IDA ICE con pareti, solai, finestre, porte e BuildingBody.
+    3. Esportare i dati geometrici o quantitativi e redigere la verifica del fabbisogno termico nel software scelto.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow e IfcDoor
+    - Superficie di riferimento energetico e superfici dell''involucro delimitate in modo tracciabile
 
-    - Nome del locale in LongName, numero locale facoltativo in Name
+    - Modello di scambio o computo quale base per la verifica del fabbisogno termico
 
-    - Modello di simulazione semplificato (p. es. gbXML) da abstractBIM'
-  en: 'Prepare building simulation without manually rebuilding the architecture model for simulation tools.
+
+    **Nota:** abstractBIM consente di generare dai locali, dalle finestre e dalle porte un file gbXML per la simulazione energetica. Protezione solare e costruzioni circostanti non sono comprese in questo
+    export; vanno integrate a mano nel modello di simulazione come contesto aggiuntivo. Il tipo di protezione solare resta gestito sulla finestra esterna in `SunProtection`, così gara e simulazione restano
+    allineate quando la geometria è aggiunta a parte.'
+  en: 'Derive the basis for heating demand verification to SIA 380/1 from the architecture model without manually remodelling the thermal envelope.
 
 
     **Starting point**
 
-    - Architecture models are often too detailed or inconsistent for energy and indoor-climate simulation.
+    - Areas and quantities for heating demand verification are often calculated separately and no longer match the model after design changes.
 
-    - Manual rework for tools such as IDA ICE, Lesosai, or other gbXML-based software can account for more than 50% of simulation effort.
-
-    - Simulations significantly improve energy use and comfort — but model preparation often slows them down.
+    - The energy reference area is not the sum of all room areas: use and location within the thermal envelope determine inclusion; beneath pitched roofs, areas with less than 1.0 m clear height are excluded.
 
 
     **Goal & benefit**
 
-    - Prepare architecture models with minimal effort so abstractBIM can produce simulation-ready outputs.
+    - Determine the energy reference area and thermal-envelope areas traceably from the same design state.
 
-    - Enable earlier, repeatable simulations instead of late one-off rework.
+    - Provide geometry and quantity data for subsequent calculation in the selected verification or simulation software.
 
 
     **Process**
 
-    1. Provide an architecture model meeting the minimum requirements (same geometric basis as DES-ABSTRACTBIM-COST).
+    1. Provide the architecture model with the same geometric minimum used for cost and competition workflows – spaces, windows, and doors – and agree the thermal envelope.
 
-    2. Upload and process at abstractBIM.com.
+    2. Determine the energy reference area and envelope areas to SIA 416/1 from the model and check them as the basis for verification to SIA 380/1.
 
-    3. Download the simulation model — IFC for IDA ICE or gbXML for other tools.
-
-
-    **Outcome**
-
-    - gbXML with walls, slabs, spaces, roofs, windows, and doors.
-
-    - Alternatively, IFC for IDA ICE with walls, slabs, windows, doors, and BuildingBody.
+    3. Export the geometry or quantity data and prepare the heating demand verification in the selected software.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow, and IfcDoor
+    - Traceably delimited energy reference area and thermal-envelope areas
 
-    - Room name in LongName, optional room number in Name
+    - Exchange model or quantity schedule as the basis for heating demand verification
 
-    - Simplified simulation model (for example gbXML) from abstractBIM'
-workflow_group: null
+
+    **Note:** abstractBIM can generate a gbXML file for energy simulation from spaces, windows, and doors. Sun protection and surrounding buildings are not in that export; merge them by hand into the simulation
+    model as additional context. The sun-protection type stays on the exterior window under `SunProtection` so the tender and simulation list remain consistent when geometry is merged separately.'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
-- pragmaticbim:domain/mep
-comment: abstractBIM workflow. Same geometric minimum as BES-ABSTRACTBIM-COMP and DES-ABSTRACTBIM-COST. ThermalTransmittance on windows supports early simulation.
+- pragmaticbim:domain/building-physics
+comment: Tool-independent workflow. abstractBIM can generate a gbXML file for energy simulation from spaces, windows, and doors. Shading devices and surrounding buildings are not in that export; merge them
+  by hand into the simulation model as additional context. Exterior windows keep SunProtection so the tender and simulation list stay consistent when geometry is merged separately. Same geometric minimum
+  as BES-ABSTRACTBIM-COMP and DES-ABSTRACTBIM-COST. The energy-reference area is delimited according to SIA 416/1 and measured gross; floor-area portions below 1.0 m clear height are excluded beneath pitched
+  roofs. Envelope ThermalTransmittance (walls, roofs, windows, doors) supports the subsequent SIA 380/1 calculation.

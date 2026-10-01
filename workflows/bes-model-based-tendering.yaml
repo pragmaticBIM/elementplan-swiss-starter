@@ -1,0 +1,158 @@
+id: pragmaticbim:workflow/bes-model-based-tendering
+code: BES-PRODUCT-TENDER
+sort_order: 14
+name:
+  de: Bauteilkosten und Ausschreibung über Produkttypen verbinden
+  fr: Relier les coûts des éléments et l'appel d'offres par les types de produit
+  it: Collegare i costi dei componenti e la gara tramite i tipi di prodotto
+  en: Link component costs and tendering through product types
+description:
+  de: 'Planung, Leistungsverzeichnis und Bauteilkosten über gemeinsame Produkt- und Typangaben verbinden, damit Mengen, Texte und Einheitspreise nachvollziehbar zusammenpassen.
+
+
+    **Ausgangslage**
+
+    - Leistungsverzeichnisse werden häufig losgelöst von der Planung erstellt; der Bezug zwischen Positionen, Plänen und Modell ist schwer herzustellen und zu plausibilisieren.
+
+    - In Ausschreibungen werden Leistungen von unterschiedlichen Bauteilen meist zusammengezogen, wodurch die Nachkalkulation von Bauteilkennwerten aufwendig wird.
+
+
+    **Ziel & Nutzen**
+
+    - Unternehmern eine vollständige, kalkulierbare Grundlage mit nachvollziehbaren Mengen und Leistungen bereitstellen.
+
+    - Frühe Bauteilkosten (Menge × Einheitspreis je Produktklasse/Typ) als Kalkulations- und Vergleichsgrundlage neben dem LV führen.
+
+
+    **Ablauf**
+
+    1. Bauteile im Modell mit ausschreibungsrelevanten Leistungsmerkmalen und Einheitspreis bereitstellen; Bauteiltyp aus den Bauteileigenschaften berechnen und Produktklasse regelbasiert oder unterstützt
+    zuweisen.
+
+    2. Funktionalen Produktbeschrieb der Produktklasse aus schema.pragmaticBIM.ch, Bauteiltyp und Leistungsmerkmale wie Feuerwiderstand, Schallschutz und Wärmeschutz zu einem NPK- oder funktionalen Leistungsbeschrieb
+    zusammenführen; Bauteilkosten aus Modellmenge × Einheitspreis je Produktklasse/Typ ableiten.
+
+    3. Modell, Ausschreibungspläne, Leistungsverzeichnis und Kostenauszug gemeinsam mit eindeutiger Typ- und Produktreferenz abgeben.
+
+
+    **Lieferergebnis**
+
+    - Geprüftes Modell mit berechneten Bauteiltypen, Produktklassen und nachvollziehbaren Mengen
+
+    - Typ- und produktbezogenes Leistungsverzeichnis sowie Bauteilkostenauszug als gemeinsame Kalkulationsgrundlage'
+  fr: 'Relier les descriptifs fonctionnels des produits issus de [schema.pragmaticBIM.ch](https://schema.pragmaticbim.ch), le type d''élément, les performances et les quantités au devis et aux coûts d''éléments
+    en phase initiale.
+
+
+    **Situation de départ**
+
+    - Les descriptifs sont souvent établis indépendamment des études ; le lien entre articles, plans et maquette est difficile à établir et à contrôler.
+
+    - Dans les appels d''offres, les prestations de différents éléments sont souvent regroupées, ce qui rend le recalcul des valeurs caractéristiques des éléments laborieux.
+
+
+    **Objectif et bénéfice**
+
+    - Fournir aux entreprises un dossier complet, facile à chiffrer, avec quantités et prestations traçables.
+
+    - Tenir des coûts d''éléments précoces (quantité × prix unitaire par classe de produit/type) comme base de chiffrage et de comparaison à côté du devis.
+
+
+    **Déroulement**
+
+    1. Fournir dans la maquette les éléments avec performances d''appel d''offres et prix unitaire ; calculer le type d''élément à partir de ses propriétés et attribuer la classe de produit par des règles
+    ou de manière assistée.
+
+    2. Réunir le descriptif fonctionnel de la classe de produit issu de schema.pragmaticBIM.ch, le type d''élément et les performances telles que la résistance au feu, l''isolation acoustique et l''isolation
+    thermique en un descriptif CAN ou fonctionnel ; déduire les coûts d''éléments de quantité maquette × prix unitaire par classe de produit/type.
+
+    3. Remettre ensemble maquette, plans d''appel d''offres, devis et extrait de coûts, avec référence univoque de type et de produit.
+
+
+    **Livrable**
+
+    - Maquette contrôlée avec types calculés, classes de produit et quantités traçables
+
+    - Descriptif par type et produit ainsi qu''extrait des coûts d''éléments comme base de chiffrage commune'
+  it: 'Collegare le descrizioni funzionali dei prodotti tratte da [schema.pragmaticBIM.ch](https://schema.pragmaticbim.ch), il tipo di componente, le prestazioni e le quantità al capitolato e ai costi dei
+    componenti nella fase iniziale.
+
+
+    **Situazione di partenza**
+
+    - I capitolati vengono spesso elaborati separatamente dalla progettazione; il rapporto tra posizioni, piani e modello è difficile da ricostruire e verificare.
+
+    - Nei capitolati le prestazioni di componenti diversi vengono spesso raggruppate, rendendo oneroso il ricalcolo dei valori caratteristici dei componenti.
+
+
+    **Obiettivo e beneficio**
+
+    - Fornire alle imprese una documentazione completa e facile da calcolare, con quantità e prestazioni tracciabili.
+
+    - Gestire costi precoci dei componenti (quantità × prezzo unitario per classe di prodotto/tipo) come base di calcolo e confronto accanto al capitolato.
+
+
+    **Svolgimento**
+
+    1. Fornire nel modello i componenti con prestazioni rilevanti per la gara e prezzo unitario; calcolare il tipo di componente dalle sue proprietà e assegnare la classe di prodotto con regole o in modo
+    assistito.
+
+    2. Riunire la descrizione funzionale della classe di prodotto tratta da schema.pragmaticBIM.ch, il tipo di componente e le prestazioni quali resistenza al fuoco, isolamento acustico e isolamento termico
+    in un descrittivo CPN o funzionale; ricavare i costi dei componenti da quantità modello × prezzo unitario per classe di prodotto/tipo.
+
+    3. Consegnare congiuntamente modello, piani di gara, capitolato ed estratto costi, con riferimento univoco a tipo e prodotto.
+
+
+    **Risultato della fornitura**
+
+    - Modello verificato con tipi calcolati, classi di prodotto e quantità tracciabili
+
+    - Capitolato per tipo e prodotto nonché estratto costi dei componenti come base comune di calcolo'
+  en: 'Connect the design, bill of quantities, and component costs through shared product and type information so that quantities, descriptions, and unit prices align traceably.
+
+
+    **Starting point**
+
+    - Specifications are often prepared separately from the design; the relationship between items, drawings, and the model is difficult to establish and verify.
+
+    - Tender specifications often combine the scope of different components, which makes recalculating component characteristic values laborious.
+
+
+    **Goal & benefit**
+
+    - Provide contractors with a complete, easy-to-price basis containing traceable quantities and scope.
+
+    - Carry early component costs (quantity × unit price per product class/type) as a pricing and comparison basis alongside the bill of quantities.
+
+
+    **Process**
+
+    1. Provide model components with tender-relevant performance attributes and unit price; calculate the component type from its properties and assign the product class by rules or assisted mapping.
+
+    2. Combine the product class''s functional description from schema.pragmaticBIM.ch, component type, and performance attributes such as fire resistance, acoustic insulation, and thermal performance into
+    an NPK-based or functional specification; derive component costs from model quantity × unit price per product class/type.
+
+    3. Issue model, tender drawings, specification, and cost extract together with an unambiguous type and product reference.
+
+
+    **Deliverable**
+
+    - Checked model with calculated types, product classes, and traceable quantities
+
+    - Type- and product-based specification plus component cost extract as a common pricing basis'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'ePset_Cost.ProductClass links the component to the descriptions published by schema.pragmaticbim.ch. ProductClass, ePset_Cost.CalculatedType, and the component''s performance attributes form the
+  structured input for type-based NPK or functional specifications. Early Bauteilkosten = model quantity × ePset_Cost.UnitPrice (or office/schema EP for that ProductClass) – formal EP plausibility is QAS-COST-PLAUS;
+  office EPs are produced by BES-UNIT-PRICE. CalculatedType remains the common reference between model, quantities, tender drawings, and specifications. The model supplements rather than replaces the written
+  tender documents. Typing is derived here, not in a separate workflow. CalculatedType is the grouping token – not the schema product description. DMN/FEEL lives in book Anhang D (Bauteiltypisierung), not
+  in this description or on attribute definitions. Attributes keep a short meaning, logic name, and example only (no Anhang pointer – must work in the webapp). Type tokens are German by design (Swiss LV/KVA).
+  Do not store the result in occurrence Name. Logic names: FundamentTypisierung, WandTypisierung, PlattenTypisierung, StuetzeTypisierung, TraegerTypisierung, TreppeTypisierung, TuerTypisierung, FensterTypisierung.
+  Inputs in metres; omit empty segments; separator _. Downstream: QAS-COST-PLAUS, BES-UNIT-PRICE, trade tender bases, DES-LCA.'

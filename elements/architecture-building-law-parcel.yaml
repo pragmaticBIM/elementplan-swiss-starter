@@ -1,0 +1,222 @@
+id: pragmaticbim:element/architecture-building-law-parcel
+code: ARC-PARCEL
+sort_order: 61
+status: active
+name:
+  de: Baurechtliche Parzellen
+  fr: Parcelles au sens du droit de la construction
+  it: Particelle edilizie
+  en: Building-law parcels
+definition:
+  de: 'Zeigt früh, welche Katasterparzellen vom Vorhaben betroffen sind, und unterstützt die Abstimmung von Planungsperimeter und Bewilligung.
+
+
+    **Beschreibung**
+
+    - Volumen, das die Lage und Ausdehnung einer baurechtlichen Parzelle gemäss Kataster abbildet.
+
+    - Dient der Übersicht, welche Parzellen vom Projekt betroffen sind – nicht der rechtlichen Grenzfeststellung.
+
+
+    **Modellierungshinweis**
+
+    - Als horizontale Proxy-Volumen modellieren; Grundrisse gemäss Katasterplan, vertikale Ausdehnung von −10 m bis +10 m.
+
+    - Dem Planungsperimeter zuweisen; ObjectType = Baurechtliche Parzelle.
+
+    - Name = Parzellennummer gemäss Kataster.
+
+    - Keine Gebäude, Gelände oder Ausbau innerhalb des Parzellenvolumens modellieren.'
+  fr: 'Montre tôt quelles parcelles cadastrales sont concernées par le projet et facilite la coordination du périmètre d''étude avec la procédure d''autorisation.
+
+
+    **Description**
+
+    - Volume représentant la position et l''étendue d''une parcelle au sens du droit de la construction selon le cadastre.
+
+    - Sert à voir quelles parcelles sont concernées par le projet – pas à fixer juridiquement les limites.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme volumes proxy horizontaux ; emprises selon le plan cadastral, étendue verticale de −10 m à +10 m.
+
+    - Rattacher au périmètre de planification ; ObjectType = Parcelle au sens du droit de la construction.
+
+    - Name = numéro de parcelle selon le cadastre.
+
+    - Ne pas modéliser bâtiments, terrain ou finitions à l''intérieur du volume de parcelle.'
+  it: 'Mostra tempestivamente quali particelle catastali sono interessate dal progetto e facilita il coordinamento del perimetro di progettazione con la procedura di autorizzazione.
+
+
+    **Descrizione**
+
+    - Volume che rappresenta posizione ed estensione di una particella edilizia secondo il catasto.
+
+    - Serve a vedere quali particelle sono interessate dal progetto – non a fissare giuridicamente i confini.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volumi proxy orizzontali; impronte secondo il piano catastale, estensione verticale da −10 m a +10 m.
+
+    - Assegnare al perimetro di pianificazione; ObjectType = Particella edilizia.
+
+    - Name = numero di particella secondo il catasto.
+
+    - Non modellare edifici, terreno o finiture all''interno del volume della particella.'
+  en: 'Shows early which cadastral parcels the project affects and supports alignment of the planning perimeter and permitting process.
+
+
+    **Description**
+
+    - Volume representing the location and extent of a building-law parcel according to the cadastre.
+
+    - Used to see which parcels the project affects – not for legal boundary determination.
+
+
+    **Modelling guidelines**
+
+    - Model as horizontal proxy volumes; footprints according to the cadastral plan, extending vertically from −10 m to +10 m.
+
+    - Assign to the planning perimeter; ObjectType = Building-law parcel.
+
+    - Name = parcel number according to the cadastre.
+
+    - Do not model buildings, terrain, or finishes inside the parcel volume.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/surveyor
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-building-law-parcel.png
+attachment_link: architecture-building-law-parcel.ifc
+picture_print_link: architecture-building-law-parcel-print.tif
+model_link: architecture-building-law-parcel.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Baurechtliche Parzelle") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Baurechtliche Parzelle")
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Parcelle au sens du droit de la construction") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Parcelle
+    au sens du droit de la construction")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Particella edilizia") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Particella edilizia")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Building-law parcel") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Building-law parcel")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Parzellennummer gemäss Kataster.
+    fr: Numéro de parcelle selon le cadastre.
+    it: Numero di particella secondo il catasto.
+    en: Parcel number according to the cadastre.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-building-law-parcels
+  - pragmaticbim:workflow/qas-stakeholder-dialog
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/des-building-law-parcels
+  - pragmaticbim:workflow/bes-ipd-procurement
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Baurechtliche Parzelle` — baurechtliche Parzelle'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Baurechtliche Parzelle` — parcelle au sens du droit de la construction'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Baurechtliche Parzelle` — particella edilizia'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Baurechtliche Parzelle` — building-law parcel'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-building-law-parcel
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-building-law-parcels
+  is_applicability: true
+  status: active
+  sort_order: 3

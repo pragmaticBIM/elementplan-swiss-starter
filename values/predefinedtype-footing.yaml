@@ -6,10 +6,14 @@ name:
   it: Tipo di fondazione
   en: Footing type
 description:
-  de: PredefinedType für IfcFooting in der Tragwerksskizze.
-  fr: PredefinedType pour IfcFooting dans l'esquisse porteuse.
-  it: PredefinedType per IfcFooting nello schizzo strutturale.
-  en: PredefinedType for IfcFooting in the structural sketch.
+  de: PredefinedType für IfcFooting bei konzeptionellen Tragwerksbauteilen, deren Abmessungen mit dem Tragwerksplaner abgestimmt und im Architekturmodell übernommen werden; dabei werden die Tragwerkssperrzonen
+    geprüft.
+  fr: PredefinedType pour IfcFooting sur les éléments porteurs conceptuels dont les dimensions sont coordonnées avec l'ingénieur civil et reprises dans le modèle d'architecture ; les zones d'exclusion structurelles
+    sont également vérifiées.
+  it: PredefinedType per IfcFooting degli elementi strutturali concettuali le cui dimensioni sono coordinate con l'ingegnere strutturista e recepite nel modello architettonico; vengono inoltre verificate
+    le zone di esclusione strutturali.
+  en: PredefinedType for conceptual IfcFooting components whose dimensions are coordinated with the structural engineer and incorporated into the architectural model; structural exclusion zones are checked
+    in the process.
 year: 2026
 norm_reference: IFC4
 status: active
@@ -18,15 +22,19 @@ values:
   - STRIP_FOOTING
   - PAD_FOOTING
   - PILE_CAP
+  - USERDEFINED
   fr:
   - STRIP_FOOTING
   - PAD_FOOTING
   - PILE_CAP
+  - USERDEFINED
   it:
   - STRIP_FOOTING
   - PAD_FOOTING
   - PILE_CAP
+  - USERDEFINED
   en:
   - STRIP_FOOTING
   - PAD_FOOTING
   - PILE_CAP
+  - USERDEFINED

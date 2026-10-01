@@ -2,12 +2,12 @@ id: pragmaticbim:workflow/des-drawing-derivation
 code: DES-DRAWINGS
 sort_order: 62
 name:
-  de: Planableitung aus dem 3D-Modell
-  fr: Obtention des plans à partir du modèle 3D
-  it: Ottenimento dei disegni dal modello 3D
-  en: Drawing derivation from the 3D model
+  de: Pläne aus dem Modell ableiten
+  fr: Déduire les plans à partir de la maquette
+  it: Ricavare i piani dal modello
+  en: Derive plans from the model
 description:
-  de: 'Pläne aus dem 3D-Modell ableiten und als Vollständigkeits-Check gegen das IFC-Modell lesen.
+  de: 'Pläne aus dem 3D-Modell ableiten und damit prüfen, ob Geometrie und Bauteile vollständig und planungskonsistent sind.
 
 
     **Ausgangslage**
@@ -33,16 +33,11 @@ description:
     3. Lesbarkeit und Vollständigkeit gegenüber dem Modell prüfen.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Abgestimmte Grundrisse, Schnitte, Ansichten und Details als geometrische Planungsgrundlage.
+    - Aktuelles Architekturmodell als gemeinsame Plangrundlage
 
-
-    **Lieferobjekte**
-
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Grundrisse, Schnitte, Ansichten und Details'
+    - Vollständige, mit dem Modell abgestimmte Planableitungen'
   fr: 'Obtenir les plans à partir du modèle 3D et les lire comme contrôle de complétude face à la maquette IFC.
 
 
@@ -69,16 +64,11 @@ description:
     3. Contrôler lisibilité et complétude face à la maquette.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Plans des étages, coupes, élévations et détails coordonnés comme base géométrique de planification.
+    - Maquette architecture actuelle comme base commune des plans
 
-
-    **Livrables**
-
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Plans des étages, coupes, élévations et détails'
+    - Plans complets et concordants avec la maquette'
   it: 'Ottenere i disegni dal modello 3D e leggerli come controllo di completezza rispetto al modello IFC.
 
 
@@ -105,17 +95,12 @@ description:
     3. Verificare leggibilità e completezza rispetto al modello.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Planimetrie, sezioni, prospetti e dettagli coordinati come base geometrica di pianificazione.
+    - Modello di architettura aggiornato come base comune dei disegni
 
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Planimetrie, sezioni, prospetti e dettagli'
-  en: 'Derive drawings from the 3D model and read them as a completeness check against the IFC model.
+    - Disegni completi e coerenti con il modello'
+  en: 'Derive drawings from the 3D model and use them to check that geometry and components are complete and consistent with the design.
 
 
     **Starting point**
@@ -141,20 +126,16 @@ description:
     3. Check readability and completeness against the model.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Coordinated floor plans, sections, elevations, and details as the geometric planning basis.
+    - Current architecture model as the common drawing basis
 
-
-    **Deliverables**
-
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Floor plans, sections, elevations, and details'
-workflow_group: null
+    - Complete drawings consistent with the model'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: 2D drawing derivation as completeness check vs IFC. Distinct from QAS-DET-REF (3D detail references).
+comment: 2D drawing derivation as completeness check vs IFC (GRD, SCT, ANS, DET). Distinct from des-layout-planning (schematic GRS from spaces only) and QAS-DET-REF (3D detail references).

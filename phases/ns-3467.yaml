@@ -1,0 +1,348 @@
+id: pragmaticbim:phase/ns-3467
+name:
+  de: NS 3467 Phasen
+  fr: Phases NS 3467
+  it: Fasi NS 3467
+  en: NS 3467 stages
+values:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+milestones:
+  - id: 'ns-3467:1:B'
+    code: B
+    sort_order: 1
+    name:
+      de: Beginn 1 (Idee und Bedarfsidentifikation)
+      fr: Début 1 (Idée et identification des besoins)
+      it: Inizio 1 (Idea e identificazione dei bisogni)
+      en: Beginning 1 (Ideation and needs identification)
+    status: active
+    phase: '1'
+    kind: beginning
+  - id: 'ns-3467:1:M'
+    code: M
+    sort_order: 2
+    name:
+      de: Mitte 1 (Idee und Bedarfsidentifikation)
+      fr: Milieu 1 (Idée et identification des besoins)
+      it: Metà 1 (Idea e identificazione dei bisogni)
+      en: Mid Phase 1 (Ideation and needs identification)
+    status: active
+    phase: '1'
+    kind: custom
+  - id: 'ns-3467:1:E'
+    code: E
+    sort_order: 3
+    name:
+      de: Ende 1 (Idee und Bedarfsidentifikation)
+      fr: Fin 1 (Idée et identification des besoins)
+      it: Fine 1 (Idea e identificazione dei bisogni)
+      en: End Phase 1 (Ideation and needs identification)
+    status: active
+    phase: '1'
+    kind: end
+  - id: 'ns-3467:2:B'
+    code: B
+    sort_order: 4
+    name:
+      de: Beginn 2 (Projekteinrahmung)
+      fr: Début 2 (Cadrage du projet)
+      it: Inizio 2 (Inquadramento del progetto)
+      en: Beginning 2 (Project framing)
+    status: active
+    phase: '2'
+    kind: beginning
+  - id: 'ns-3467:2:M'
+    code: M
+    sort_order: 5
+    name:
+      de: Mitte 2 (Projekteinrahmung)
+      fr: Milieu 2 (Cadrage du projet)
+      it: Metà 2 (Inquadramento del progetto)
+      en: Mid Phase 2 (Project framing)
+    status: active
+    phase: '2'
+    kind: custom
+  - id: 'ns-3467:2:E'
+    code: E
+    sort_order: 6
+    name:
+      de: Ende 2 (Projekteinrahmung)
+      fr: Fin 2 (Cadrage du projet)
+      it: Fine 2 (Inquadramento del progetto)
+      en: End Phase 2 (Project framing)
+    status: active
+    phase: '2'
+    kind: end
+  - id: 'ns-3467:3:B'
+    code: B
+    sort_order: 7
+    name:
+      de: Beginn 3 (Programmierung und Untersuchung)
+      fr: Début 3 (Programmation et étude)
+      it: Inizio 3 (Programmazione e indagine)
+      en: Beginning 3 (Programming and investigation)
+    status: active
+    phase: '3'
+    kind: beginning
+  - id: 'ns-3467:3:M'
+    code: M
+    sort_order: 8
+    name:
+      de: Mitte 3 (Programmierung und Untersuchung)
+      fr: Milieu 3 (Programmation et étude)
+      it: Metà 3 (Programmazione e indagine)
+      en: Mid Phase 3 (Programming and investigation)
+    status: active
+    phase: '3'
+    kind: custom
+  - id: 'ns-3467:3:E'
+    code: E
+    sort_order: 9
+    name:
+      de: Ende 3 (Programmierung und Untersuchung)
+      fr: Fin 3 (Programmation et étude)
+      it: Fine 3 (Programmazione e indagine)
+      en: End Phase 3 (Programming and investigation)
+    status: active
+    phase: '3'
+    kind: end
+  - id: 'ns-3467:4:B'
+    code: B
+    sort_order: 10
+    name:
+      de: Beginn 4 (Skizzenprojektierung)
+      fr: Début 4 (Esquisse)
+      it: Inizio 4 (Progettazione di schizzo)
+      en: Beginning 4 (Sketch design)
+    status: active
+    phase: '4'
+    kind: beginning
+  - id: 'ns-3467:4:M'
+    code: M
+    sort_order: 11
+    name:
+      de: Mitte 4 (Skizzenprojektierung)
+      fr: Milieu 4 (Esquisse)
+      it: Metà 4 (Progettazione di schizzo)
+      en: Mid Phase 4 (Sketch design)
+    status: active
+    phase: '4'
+    kind: custom
+  - id: 'ns-3467:4:E'
+    code: E
+    sort_order: 12
+    name:
+      de: Ende 4 (Skizzenprojektierung)
+      fr: Fin 4 (Esquisse)
+      it: Fine 4 (Progettazione di schizzo)
+      en: End Phase 4 (Sketch design)
+    status: active
+    phase: '4'
+    kind: end
+  - id: 'ns-3467:5:B'
+    code: B
+    sort_order: 13
+    name:
+      de: Beginn 5 (Vorprojektierung)
+      fr: Début 5 (Avant-projet)
+      it: Inizio 5 (Progettazione preliminare)
+      en: Beginning 5 (Preliminary design)
+    status: active
+    phase: '5'
+    kind: beginning
+  - id: 'ns-3467:5:M'
+    code: M
+    sort_order: 14
+    name:
+      de: Mitte 5 (Vorprojektierung)
+      fr: Milieu 5 (Avant-projet)
+      it: Metà 5 (Progettazione preliminare)
+      en: Mid Phase 5 (Preliminary design)
+    status: active
+    phase: '5'
+    kind: custom
+  - id: 'ns-3467:5:E'
+    code: E
+    sort_order: 15
+    name:
+      de: Ende 5 (Vorprojektierung)
+      fr: Fin 5 (Avant-projet)
+      it: Fine 5 (Progettazione preliminare)
+      en: End Phase 5 (Preliminary design)
+    status: active
+    phase: '5'
+    kind: end
+  - id: 'ns-3467:6:B'
+    code: B
+    sort_order: 16
+    name:
+      de: Beginn 6 (Detailprojektierung)
+      fr: Début 6 (Projet détaillé)
+      it: Inizio 6 (Progettazione di dettaglio)
+      en: Beginning 6 (Detailed design)
+    status: active
+    phase: '6'
+    kind: beginning
+  - id: 'ns-3467:6:M'
+    code: M
+    sort_order: 17
+    name:
+      de: Mitte 6 (Detailprojektierung)
+      fr: Milieu 6 (Projet détaillé)
+      it: Metà 6 (Progettazione di dettaglio)
+      en: Mid Phase 6 (Detailed design)
+    status: active
+    phase: '6'
+    kind: custom
+  - id: 'ns-3467:6:E'
+    code: E
+    sort_order: 18
+    name:
+      de: Ende 6 (Detailprojektierung)
+      fr: Fin 6 (Projet détaillé)
+      it: Fine 6 (Progettazione di dettaglio)
+      en: End Phase 6 (Detailed design)
+    status: active
+    phase: '6'
+    kind: end
+  - id: 'ns-3467:7:B'
+    code: B
+    sort_order: 19
+    name:
+      de: Beginn 7 (Produktion und Lieferungen)
+      fr: Début 7 (Production et livraisons)
+      it: Inizio 7 (Produzione e consegne)
+      en: Beginning 7 (Production and deliveries)
+    status: active
+    phase: '7'
+    kind: beginning
+  - id: 'ns-3467:7:M'
+    code: M
+    sort_order: 20
+    name:
+      de: Mitte 7 (Produktion und Lieferungen)
+      fr: Milieu 7 (Production et livraisons)
+      it: Metà 7 (Produzione e consegne)
+      en: Mid Phase 7 (Production and deliveries)
+    status: active
+    phase: '7'
+    kind: custom
+  - id: 'ns-3467:7:E'
+    code: E
+    sort_order: 21
+    name:
+      de: Ende 7 (Produktion und Lieferungen)
+      fr: Fin 7 (Production et livraisons)
+      it: Fine 7 (Produzione e consegne)
+      en: End Phase 7 (Production and deliveries)
+    status: active
+    phase: '7'
+    kind: end
+  - id: 'ns-3467:8:B'
+    code: B
+    sort_order: 22
+    name:
+      de: Beginn 8 (Übergabe und Inbetriebnahme)
+      fr: Début 8 (Remise et mise en service)
+      it: Inizio 8 (Consegna e messa in servizio)
+      en: Beginning 8 (Handover and commissioning)
+    status: active
+    phase: '8'
+    kind: beginning
+  - id: 'ns-3467:8:M'
+    code: M
+    sort_order: 23
+    name:
+      de: Mitte 8 (Übergabe und Inbetriebnahme)
+      fr: Milieu 8 (Remise et mise en service)
+      it: Metà 8 (Consegna e messa in servizio)
+      en: Mid Phase 8 (Handover and commissioning)
+    status: active
+    phase: '8'
+    kind: custom
+  - id: 'ns-3467:8:E'
+    code: E
+    sort_order: 24
+    name:
+      de: Ende 8 (Übergabe und Inbetriebnahme)
+      fr: Fin 8 (Remise et mise en service)
+      it: Fine 8 (Consegna e messa in servizio)
+      en: End Phase 8 (Handover and commissioning)
+    status: active
+    phase: '8'
+    kind: end
+  - id: 'ns-3467:9:B'
+    code: B
+    sort_order: 25
+    name:
+      de: Beginn 9 (Nutzung und Betrieb)
+      fr: Début 9 (Utilisation et exploitation)
+      it: Inizio 9 (Uso e gestione)
+      en: Beginning 9 (Use and operation)
+    status: active
+    phase: '9'
+    kind: beginning
+  - id: 'ns-3467:9:M'
+    code: M
+    sort_order: 26
+    name:
+      de: Mitte 9 (Nutzung und Betrieb)
+      fr: Milieu 9 (Utilisation et exploitation)
+      it: Metà 9 (Uso e gestione)
+      en: Mid Phase 9 (Use and operation)
+    status: active
+    phase: '9'
+    kind: custom
+  - id: 'ns-3467:9:E'
+    code: E
+    sort_order: 27
+    name:
+      de: Ende 9 (Nutzung und Betrieb)
+      fr: Fin 9 (Utilisation et exploitation)
+      it: Fine 9 (Uso e gestione)
+      en: End Phase 9 (Use and operation)
+    status: active
+    phase: '9'
+    kind: end
+  - id: 'ns-3467:10:B'
+    code: B
+    sort_order: 28
+    name:
+      de: Beginn 10 (Rückbau oder Wiederverwendung)
+      fr: Début 10 (Démolition ou réutilisation)
+      it: Inizio 10 (Dismissione o riuso)
+      en: Beginning 10 (Deconstruction or reuse)
+    status: active
+    phase: '10'
+    kind: beginning
+  - id: 'ns-3467:10:M'
+    code: M
+    sort_order: 29
+    name:
+      de: Mitte 10 (Rückbau oder Wiederverwendung)
+      fr: Milieu 10 (Démolition ou réutilisation)
+      it: Metà 10 (Dismissione o riuso)
+      en: Mid Phase 10 (Deconstruction or reuse)
+    status: active
+    phase: '10'
+    kind: custom
+  - id: 'ns-3467:10:E'
+    code: E
+    sort_order: 30
+    name:
+      de: Ende 10 (Rückbau oder Wiederverwendung)
+      fr: Fin 10 (Démolition ou réutilisation)
+      it: Fine 10 (Dismissione o riuso)
+      en: End Phase 10 (Deconstruction or reuse)
+    status: active
+    phase: '10'
+    kind: end

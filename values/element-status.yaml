@@ -4,12 +4,12 @@ name:
   de: Bauteilstatus
   fr: Statut de l'élément
   it: Stato dell'elemento
-  en: Element status
+  en: Component status
 description:
   de: Status gemäss Pset_*Common für Bauen im Bestand.
   fr: Statut selon Pset_*Common pour l'intervention dans l'existant.
   it: Stato secondo Pset_*Common per interventi sull'esistente.
-  en: Status according to Pset_*Common for work on existing assets.
+  en: Status to Pset_*Common for building in existing fabric.
 year: 2026
 norm_reference: IFC4
 status: active

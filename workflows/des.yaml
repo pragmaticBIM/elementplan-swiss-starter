@@ -1,16 +1,24 @@
 id: pragmaticbim:workflow/des
 code: DES
-sort_order: 40
+sort_order: 30
 name:
-  de: Entwurf
+  de: Planung
   fr: Conception
   it: Progettazione
   en: Design
 description:
-  de: 'Planung und Ausarbeitung des Bauwerks und seiner Anlagen. Beispiele: Vorprojekt, Ausführungsplanung, Koordinationsmodelle.'
+  de: 'Wer an BIM denkt, verbindet damit häufig Planungsanwendungsfälle – insbesondere die räumliche Koordination. Wie die Anwendungsfälle zeigen, bietet BIM jedoch weit mehr.
+
+
+    In meinen Kursen sagen Planende regelmässig: «Wir haben Modelle, aber die Unternehmer wissen damit ohnehin nichts anzufangen.» Die Unternehmer sagen das Gegenteil: «Wir sind bereit, bekommen aber nichts
+    Brauchbares.» Die Wahrheit liegt wahrscheinlich dazwischen. Deutlich wird vor allem, dass die Beteiligten nicht miteinander sprechen.'
   fr: 'Études et développement du projet du bâtiment et de ses installations. Exemples: avant-projet, projet d''exécution, maquettes de coordination.'
   it: 'Progettazione e sviluppo dell''edificio e dei suoi impianti. Esempi: studio di fattibilità, progetto esecutivo, modelli di coordinamento.'
-  en: 'Planning and design development of the built asset and its systems. Examples: concept design, detailed design, coordination models.'
+  en: 'When people think of BIM, they often associate it with design use cases – especially spatial coordination. As these use cases show, however, BIM offers much more.
+
+
+    In my courses, designers regularly say: “We have models, but contractors cannot do anything with them anyway.” Contractors say the opposite: “We are ready, but we receive nothing usable.” The truth
+    probably lies somewhere in between. Above all, it is clear that the participants are not talking to each other.'
 workflow_group: null
 parent_workflow: null
 picture_link: null

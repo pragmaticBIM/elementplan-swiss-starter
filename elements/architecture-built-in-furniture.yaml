@@ -1,0 +1,340 @@
+id: pragmaticbim:element/architecture-built-in-furniture
+code: ARC-FURN-BUILTIN
+sort_order: 55
+status: active
+name:
+  de: Einbaumöbel / Küche (Grob)
+  fr: Mobilier intégré / cuisine (Sommaire)
+  it: Arredo fisso / cucina (Indicativo)
+  en: Built-in furniture / kitchen (Rough)
+definition:
+  de: 'Zeigt früh, wie viel Platz Küche und Einbauschränke brauchen und wo die Anschlüsse sitzen. Werk- und Montageplanung können Masse und Anschlüsse daran prüfen.
+
+
+    **Beschreibung**
+
+    - Fest eingebaute Möbel und Küchenblöcke in Innenräumen.
+
+    - Dienen als Blackbox für Lage, Abmessungen, Zugänglichkeit und Schnittstellen – nicht als detailliertes Küchen- oder Fabrikationsmodell.
+
+
+    **Modellierungshinweis**
+
+    - Hochschränke, Unterschränke, Oberschränke und Arbeitsplatten als getrennte vereinfachte Körper mit realen Aussenabmessungen modellieren.
+
+    - Blöcke eindeutig bezeichnen und dem zugehörigen Geschoss zuweisen.
+
+    - Keine Herstellerprodukte, Beschläge, Leitungen oder inneren Möbelaufbauten modellieren.'
+  fr: 'Montre tôt combien de place exigent la cuisine et les armoires intégrées, et où se situent les raccordements. Les plans d''atelier et de montage peuvent y vérifier cotes et raccordements.
+
+
+    **Description**
+
+    - Mobilier fixe et blocs de cuisine dans les locaux intérieurs.
+
+    - Servent de boîte noire pour la position, les dimensions, l''accessibilité et les interfaces – pas de maquette détaillée de cuisine ou de fabrication.
+
+
+    **Directives de modélisation**
+
+    - Modéliser séparément les armoires hautes, meubles bas, meubles muraux et plans de travail sous forme de corps simplifiés aux dimensions hors tout réelles.
+
+    - Désigner clairement les blocs et les rattacher à l''étage concerné.
+
+    - Ne pas modéliser les produits fabricant, ferrures, réseaux ou aménagements intérieurs des meubles.'
+  it: 'Mostra tempestivamente quanto spazio richiedono cucina e armadi a incasso e dove si trovano i collegamenti. I piani d''officina e di montaggio possono verificarvi misure e collegamenti.
+
+
+    **Descrizione**
+
+    - Arredi fissi e blocchi cucina negli spazi interni.
+
+    - Fungono da black box per posizione, dimensioni, accessibilità e interfacce – non da modello dettagliato della cucina o di fabbricazione.
+
+
+    **Direttive di modellazione**
+
+    - Modellare separatamente colonne, basi, pensili e piani di lavoro come corpi semplificati con dimensioni d''ingombro reali.
+
+    - Denominare chiaramente i blocchi e assegnarli al piano corrispondente.
+
+    - Non modellare prodotti del fabbricante, ferramenta, impianti o allestimenti interni dei mobili.'
+  en: 'Shows early how much space the kitchen and built-in cabinets need and where the connections sit. Shop and installation design can check dimensions and connections against this.
+
+
+    **Description**
+
+    - Permanently installed furniture and kitchen blocks in interior spaces.
+
+    - Used as a black box for location, dimensions, accessibility, and interfaces – not as a detailed kitchen or fabrication model.
+
+
+    **Modelling guidelines**
+
+    - Model tall units, base units, wall units, and worktops as separate simplified bodies with real overall dimensions.
+
+    - Name blocks unambiguously and assign them to the matching storey.
+
+    - Do not model manufacturer products, fittings, services, or internal furniture construction.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcFurnishingElement
+entity_ifc4: IfcFurniture
+entity_ifc4_3: IfcFurniture
+picture_link: architecture-built-in-furniture.png
+picture_print_link: architecture-built-in-furniture-print.tif
+attachment_link: architecture-built-in-furniture.ifc
+model_link: architecture-built-in-furniture.ifc
+applicability:
+  de: (entity_ifc4=IfcFurniture AND PredefinedType=USERDEFINED AND ObjectType=Einbaumöbel) OR (entity_ifc2x3=IfcFurnishingElement AND ObjectType=Einbaumöbel)
+  fr: (entity_ifc4=IfcFurniture AND PredefinedType=USERDEFINED AND ObjectType="Mobilier intégré") OR (entity_ifc2x3=IfcFurnishingElement AND ObjectType="Mobilier intégré")
+  it: (entity_ifc4=IfcFurniture AND PredefinedType=USERDEFINED AND ObjectType="Arredo fisso") OR (entity_ifc2x3=IfcFurnishingElement AND ObjectType="Arredo fisso")
+  en: (entity_ifc4=IfcFurniture AND PredefinedType=USERDEFINED AND ObjectType="Built-in furniture") OR (entity_ifc2x3=IfcFurnishingElement AND ObjectType="Built-in furniture")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Eindeutige Bezeichnung des Küchen- oder Einbaumöbelblocks.
+    fr: Désignation univoque du bloc de cuisine ou de mobilier intégré.
+    it: Denominazione univoca del blocco cucina o dell'arredo fisso.
+    en: Unambiguous designation of the kitchen or built-in furniture block.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-contractor-design-verification
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet das Möbel als benutzerdefiniertes Einbaumöbel.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefiniert'
+    fr: 'Indique que le mobilier est un mobilier intégré défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — défini par l''utilisateur'
+    it: 'Indica che l''arredo è un arredo fisso definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — definito dall''utente'
+    en: 'Marks the furniture as user-defined built-in furniture.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-built-in-furniture
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-design-build-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-contractor-design-verification
+  - pragmaticbim:workflow/bes-ipd-procurement
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des benutzerdefinierten Möbels.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste ObjectType Einbaumöbel.'
+    fr: 'Type de mobilier défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs ObjectType mobilier intégré.'
+    it: 'Tipo di arredo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - Vedi elenco valori ObjectType arredo fisso.'
+    en: 'Kind of user-defined furniture.
+
+
+      **Allowed values**
+
+      - See the ObjectType built-in furniture value list.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-built-in-furniture
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  - pragmaticbim:workflow/qas-contractor-design-verification
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: CostInterface
+  pset: ePset_Cost
+  definition:
+    de: Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
+    fr: Interface de coûts de l'élément – aménagement de base ou aménagement locataire.
+    it: Interfaccia di costo del componente – allestimento di base o allestimento locatario.
+    en: Cost interface of the component – base building or tenant fit-out.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-cost-interface-tenant-fitout
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: FundingApplication
+  pset: ePset_Cost
+  definition:
+    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
+      demande.
+    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
+      to no application.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-funding-verification
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: AwardInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Vergabepaket des Einbaumöbels – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
+    fr: 'Lot d’adjudication du mobilier intégré – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
+    it: 'Lotto d’appalto dell’arredo fisso – rende visibili le interfacce tra i lotti assegnati alle imprese.
+
+
+      **Valori ammessi**
+
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
+    en: 'Procurement package of the built-in furniture – making interfaces between contractor packages visible.
+
+
+      **Allowed values**
+
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-award-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-award-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: PlanningInterface
+  pset: ePset_Cost
+  definition:
+    de: 'Planungsschnittstelle des Einbaumöbels nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+
+
+      **Zulässige Werte**
+
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification du mobilier intégré selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
+
+
+      **Valeurs admises**
+
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione dell''arredo fisso secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
+
+
+      **Valori ammessi**
+
+      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
+    en: 'Planning interface of the built-in furniture by three-digit BKP code – so responsibilities between planning disciplines become visible.
+
+
+      **Allowed values**
+
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/bkp-planning-package
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-planning-interface-visualization
+  is_applicability: false
+  status: active
+  sort_order: 7

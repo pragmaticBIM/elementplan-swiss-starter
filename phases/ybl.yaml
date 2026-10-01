@@ -1,0 +1,314 @@
+id: pragmaticbim:phase/ybl
+name:
+  de: YBL Phasen
+  fr: Phases YBL
+  it: Fasi YBL
+  en: YBL phases
+values:
+  - '1.1'
+  - '1.2'
+  - '3.1'
+  - '3.2'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+milestones:
+  - id: 'ybl:1.1:B'
+    code: B
+    sort_order: 1
+    name:
+      de: Beginn 1.1 (Ideenentwurf)
+      fr: Début 1.1 (Esquisse d'idée)
+      it: Inizio 1.1 (Bozza di idea)
+      en: Beginning 1.1 (Idea brief)
+    status: active
+    phase: '1.1'
+    kind: beginning
+  - id: 'ybl:1.1:M'
+    code: M
+    sort_order: 2
+    name:
+      de: Mitte 1.1 (Ideenentwurf)
+      fr: Milieu 1.1 (Esquisse d'idée)
+      it: Metà 1.1 (Bozza di idea)
+      en: Mid Phase 1.1 (Idea brief)
+    status: active
+    phase: '1.1'
+    kind: custom
+  - id: 'ybl:1.1:E'
+    code: E
+    sort_order: 3
+    name:
+      de: Ende 1.1 (Ideenentwurf)
+      fr: Fin 1.1 (Esquisse d'idée)
+      it: Fine 1.1 (Bozza di idea)
+      en: End Phase 1.1 (Idea brief)
+    status: active
+    phase: '1.1'
+    kind: end
+  - id: 'ybl:1.2:B'
+    code: B
+    sort_order: 4
+    name:
+      de: Beginn 1.2 (Bauprogramm)
+      fr: Début 1.2 (Programme de construction)
+      it: Inizio 1.2 (Programma edilizio)
+      en: Beginning 1.2 (Building programme)
+    status: active
+    phase: '1.2'
+    kind: beginning
+  - id: 'ybl:1.2:M'
+    code: M
+    sort_order: 5
+    name:
+      de: Mitte 1.2 (Bauprogramm)
+      fr: Milieu 1.2 (Programme de construction)
+      it: Metà 1.2 (Programma edilizio)
+      en: Mid Phase 1.2 (Building programme)
+    status: active
+    phase: '1.2'
+    kind: custom
+  - id: 'ybl:1.2:E'
+    code: E
+    sort_order: 6
+    name:
+      de: Ende 1.2 (Bauprogramm)
+      fr: Fin 1.2 (Programme de construction)
+      it: Fine 1.2 (Programma edilizio)
+      en: End Phase 1.2 (Building programme)
+    status: active
+    phase: '1.2'
+    kind: end
+  - id: 'ybl:3.1:B'
+    code: B
+    sort_order: 7
+    name:
+      de: Beginn 3.1 (Dispositionsvorschlag)
+      fr: Début 3.1 (Proposition de disposition)
+      it: Inizio 3.1 (Proposta di disposizione)
+      en: Beginning 3.1 (Outline proposal)
+    status: active
+    phase: '3.1'
+    kind: beginning
+  - id: 'ybl:3.1:M'
+    code: M
+    sort_order: 8
+    name:
+      de: Mitte 3.1 (Dispositionsvorschlag)
+      fr: Milieu 3.1 (Proposition de disposition)
+      it: Metà 3.1 (Proposta di disposizione)
+      en: Mid Phase 3.1 (Outline proposal)
+    status: active
+    phase: '3.1'
+    kind: custom
+  - id: 'ybl:3.1:E'
+    code: E
+    sort_order: 9
+    name:
+      de: Ende 3.1 (Dispositionsvorschlag)
+      fr: Fin 3.1 (Proposition de disposition)
+      it: Fine 3.1 (Proposta di disposizione)
+      en: End Phase 3.1 (Outline proposal)
+    status: active
+    phase: '3.1'
+    kind: end
+  - id: 'ybl:3.2:B'
+    code: B
+    sort_order: 10
+    name:
+      de: Beginn 3.2 (Projektvorschlag)
+      fr: Début 3.2 (Proposition de projet)
+      it: Inizio 3.2 (Proposta di progetto)
+      en: Beginning 3.2 (Project proposal)
+    status: active
+    phase: '3.2'
+    kind: beginning
+  - id: 'ybl:3.2:M'
+    code: M
+    sort_order: 11
+    name:
+      de: Mitte 3.2 (Projektvorschlag)
+      fr: Milieu 3.2 (Proposition de projet)
+      it: Metà 3.2 (Proposta di progetto)
+      en: Mid Phase 3.2 (Project proposal)
+    status: active
+    phase: '3.2'
+    kind: custom
+  - id: 'ybl:3.2:E'
+    code: E
+    sort_order: 12
+    name:
+      de: Ende 3.2 (Projektvorschlag)
+      fr: Fin 3.2 (Proposition de projet)
+      it: Fine 3.2 (Proposta di progetto)
+      en: End Phase 3.2 (Project proposal)
+    status: active
+    phase: '3.2'
+    kind: end
+  - id: 'ybl:4:B'
+    code: B
+    sort_order: 13
+    name:
+      de: Beginn 4 (Behördenprojekt)
+      fr: Début 4 (Projet d'autorisation)
+      it: Inizio 4 (Progetto per le autorità)
+      en: Beginning 4 (Authority project)
+    status: active
+    phase: '4'
+    kind: beginning
+  - id: 'ybl:4:M'
+    code: M
+    sort_order: 14
+    name:
+      de: Mitte 4 (Behördenprojekt)
+      fr: Milieu 4 (Projet d'autorisation)
+      it: Metà 4 (Progetto per le autorità)
+      en: Mid Phase 4 (Authority project)
+    status: active
+    phase: '4'
+    kind: custom
+  - id: 'ybl:4:E'
+    code: E
+    sort_order: 15
+    name:
+      de: Ende 4 (Behördenprojekt)
+      fr: Fin 4 (Projet d'autorisation)
+      it: Fine 4 (Progetto per le autorità)
+      en: End Phase 4 (Authority project)
+    status: active
+    phase: '4'
+    kind: end
+  - id: 'ybl:5:B'
+    code: B
+    sort_order: 16
+    name:
+      de: Beginn 5 (Ausschreibungsprojekt)
+      fr: Début 5 (Projet d'appel d'offres)
+      it: Inizio 5 (Progetto di gara)
+      en: Beginning 5 (Tender project)
+    status: active
+    phase: '5'
+    kind: beginning
+  - id: 'ybl:5:M'
+    code: M
+    sort_order: 17
+    name:
+      de: Mitte 5 (Ausschreibungsprojekt)
+      fr: Milieu 5 (Projet d'appel d'offres)
+      it: Metà 5 (Progetto di gara)
+      en: Mid Phase 5 (Tender project)
+    status: active
+    phase: '5'
+    kind: custom
+  - id: 'ybl:5:E'
+    code: E
+    sort_order: 18
+    name:
+      de: Ende 5 (Ausschreibungsprojekt)
+      fr: Fin 5 (Projet d'appel d'offres)
+      it: Fine 5 (Progetto di gara)
+      en: End Phase 5 (Tender project)
+    status: active
+    phase: '5'
+    kind: end
+  - id: 'ybl:6:B'
+    code: B
+    sort_order: 19
+    name:
+      de: Beginn 6 (Ausführungsprojekt)
+      fr: Début 6 (Projet d'exécution)
+      it: Inizio 6 (Progetto esecutivo)
+      en: Beginning 6 (Execution project)
+    status: active
+    phase: '6'
+    kind: beginning
+  - id: 'ybl:6:M'
+    code: M
+    sort_order: 20
+    name:
+      de: Mitte 6 (Ausführungsprojekt)
+      fr: Milieu 6 (Projet d'exécution)
+      it: Metà 6 (Progetto esecutivo)
+      en: Mid Phase 6 (Execution project)
+    status: active
+    phase: '6'
+    kind: custom
+  - id: 'ybl:6:E'
+    code: E
+    sort_order: 21
+    name:
+      de: Ende 6 (Ausführungsprojekt)
+      fr: Fin 6 (Projet d'exécution)
+      it: Fine 6 (Progetto esecutivo)
+      en: End Phase 6 (Execution project)
+    status: active
+    phase: '6'
+    kind: end
+  - id: 'ybl:7:B'
+    code: B
+    sort_order: 22
+    name:
+      de: Beginn 7 (Ausführung)
+      fr: Début 7 (Exécution)
+      it: Inizio 7 (Esecuzione)
+      en: Beginning 7 (Construction)
+    status: active
+    phase: '7'
+    kind: beginning
+  - id: 'ybl:7:M'
+    code: M
+    sort_order: 23
+    name:
+      de: Mitte 7 (Ausführung)
+      fr: Milieu 7 (Exécution)
+      it: Metà 7 (Esecuzione)
+      en: Mid Phase 7 (Construction)
+    status: active
+    phase: '7'
+    kind: custom
+  - id: 'ybl:7:E'
+    code: E
+    sort_order: 24
+    name:
+      de: Ende 7 (Ausführung)
+      fr: Fin 7 (Exécution)
+      it: Fine 7 (Esecuzione)
+      en: End Phase 7 (Construction)
+    status: active
+    phase: '7'
+    kind: end
+  - id: 'ybl:8:B'
+    code: B
+    sort_order: 25
+    name:
+      de: Beginn 8 (Übergabe)
+      fr: Début 8 (Remise)
+      it: Inizio 8 (Consegna)
+      en: Beginning 8 (Handover)
+    status: active
+    phase: '8'
+    kind: beginning
+  - id: 'ybl:8:M'
+    code: M
+    sort_order: 26
+    name:
+      de: Mitte 8 (Übergabe)
+      fr: Milieu 8 (Remise)
+      it: Metà 8 (Consegna)
+      en: Mid Phase 8 (Handover)
+    status: active
+    phase: '8'
+    kind: custom
+  - id: 'ybl:8:E'
+    code: E
+    sort_order: 27
+    name:
+      de: Ende 8 (Übergabe)
+      fr: Fin 8 (Remise)
+      it: Fine 8 (Consegna)
+      en: End Phase 8 (Handover)
+    status: active
+    phase: '8'
+    kind: end

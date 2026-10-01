@@ -1,0 +1,27 @@
+id: pragmaticbim:usage-scenario/kellerabteil-nutzen
+code: US-WH-11
+sort_order: 11
+name:
+  de: Kellerabteil nutzen
+  fr: Utiliser le compartiment de cave
+  it: Usare il comparto cantina
+  en: Using the cellar compartment
+description:
+  de: Bewohnende verlassen die Wohnung, gehen über das Treppenhaus und holen oder bringen Güter im Kellerabteil.
+  fr: Les occupants quittent le logement, empruntent la cage d'escalier et déposent ou reprennent des biens au compartiment de cave.
+  it: Chi abita esce dall'alloggio, percorre il vano scale e deposita o riprende beni nel comparto cantina.
+  en: Occupants leave the dwelling, use the stairwell, and fetch or store goods in the cellar compartment.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/treppenhaus
+- pragmaticbim:room-type/kellerabteil
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/treppenhaus
+- from_room_type: pragmaticbim:room-type/treppenhaus
+  to_room_type: pragmaticbim:room-type/kellerabteil
+  max_distance: 40

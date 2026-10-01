@@ -1,0 +1,56 @@
+id: pragmaticbim:value/product-class-railing
+code: PRODUCT-RAP
+name:
+  de: Abstrakte Geländerprodukte
+  fr: Abstract railing products
+  it: Abstract railing products
+  en: Abstract railing products
+description:
+  de: 'Produktklassen gemäss Abstrakte Geländerprodukte. Quelle: https://schema.pragmaticbim.ch/classification/railing-product.html'
+  fr: 'Classes de produits selon Abstract railing products. Source : https://schema.pragmaticbim.ch/classification/railing-product.html'
+  it: 'Classi di prodotto secondo Abstract railing products. Fonte: https://schema.pragmaticbim.ch/classification/railing-product.html'
+  en: 'Product classes according to Abstract railing products. Source: https://schema.pragmaticbim.ch/classification/railing-product.html'
+year: 2026
+norm_reference: Pragmatic BIM Data Contract (latest)
+status: active
+values:
+  de:
+  - Staketengeländer
+  - VSG-Geländer gerahmt
+  - VSG-Geländer punktgehalten
+  - Lochblech- oder Streckmetallgeländer
+  - Drahtseil- oder Netzgeländer
+  - Holzgeländer
+  - Massive Brüstung
+  - Handlauf
+  - Anderes oder unbekanntes Geländer
+  fr:
+  - Metal baluster railing
+  - Framed laminated glass railing
+  - Point-fixed structural glass railing
+  - Perforated or expanded metal railing
+  - Cable or mesh infill railing
+  - Timber railing
+  - Solid parapet
+  - Handrail only
+  - Other or unknown railing
+  it:
+  - Metal baluster railing
+  - Framed laminated glass railing
+  - Point-fixed structural glass railing
+  - Perforated or expanded metal railing
+  - Cable or mesh infill railing
+  - Timber railing
+  - Solid parapet
+  - Handrail only
+  - Other or unknown railing
+  en:
+  - Metal baluster railing
+  - Framed laminated glass railing
+  - Point-fixed structural glass railing
+  - Perforated or expanded metal railing
+  - Cable or mesh infill railing
+  - Timber railing
+  - Solid parapet
+  - Handrail only
+  - Other or unknown railing

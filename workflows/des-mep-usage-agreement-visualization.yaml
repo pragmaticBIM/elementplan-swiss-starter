@@ -1,0 +1,148 @@
+id: pragmaticbim:workflow/des-mep-usage-agreement-visualization
+code: DES-MEP-USAGE-AGREEMENT
+sort_order: 57
+name:
+  de: Nutzungsvereinbarung Gebäudetechnik raumweise visualisieren
+  fr: Visualiser par local la convention d'utilisation des techniques du bâtiment
+  it: Visualizzare per locale la convenzione d'uso degli impianti
+  en: Visualize the MEP usage agreement room by room
+description:
+  de: 'Vereinbarte Raumkonditionen und Nutzungsannahmen im Modell führen und als verständliche Themenpläne visualisieren.
+
+
+    **Ausgangslage**
+
+    - Sollwerte für Raumklima, Lüftung, Belegung und Beleuchtung werden oft in getrennten Tabellen geführt und bei Nutzungsänderungen nicht konsistent nachgeführt.
+
+    - Fehlende oder widersprüchliche Anforderungen werden dadurch erst bei der Dimensionierung der Gebäudetechnik erkannt.
+
+
+    **Ziel & Nutzen**
+
+    - Vereinbarte Sollwerte je Innenraum eindeutig zuordnen und zwischen Bauherrschaft, Architektur und Gebäudetechnik abstimmen.
+
+    - Fehlende Angaben, Ausreisser und Räume mit besonderen Anforderungen in kolorierten Plänen sichtbar machen.
+
+
+    **Ablauf**
+
+    1. Innenräume mit Nutzung und stabiler Raumnummer bereitstellen.
+
+    2. Temperatur- und Feuchtebereiche, Aussenluftmenge, Spitzenbelegung, tägliche Nutzungsdauer und Beleuchtungsstärke je Raum vereinbaren.
+
+    3. Themenpläne ableiten, Lücken und Widersprüche prüfen und die Sollwerte in der Nutzungsvereinbarung freigeben.
+
+
+    **Lieferergebnis**
+
+    - Raummodell mit abgestimmten, prüfbaren Soll-Raumkonditionen und Nutzungsannahmen
+
+    - Raumbezogene Themenpläne als Bestandteil der Nutzungsvereinbarung Gebäudetechnik'
+  fr: 'Saisir dans la maquette les conditions ambiantes et les hypothèses d''utilisation convenues et les représenter dans des plans thématiques lisibles.
+
+
+    **Situation de départ**
+
+    - Les valeurs cibles relatives au climat intérieur, à la ventilation, à l''occupation et à l''éclairage sont souvent consignées dans des tableaux distincts et ne sont pas mises à jour de manière cohérente
+    lors d''un changement d''affectation.
+
+    - Les exigences manquantes ou contradictoires ne sont ainsi détectées qu''au moment du dimensionnement des techniques du bâtiment.
+
+
+    **Objectif et bénéfice**
+
+    - Attribuer clairement les valeurs cibles convenues à chaque local intérieur et les coordonner entre la maîtrise d''ouvrage, l''architecture et les techniques du bâtiment.
+
+    - Rendre visibles dans des plans coloriés les données manquantes, les valeurs atypiques et les locaux soumis à des exigences particulières.
+
+
+    **Déroulement**
+
+    1. Fournir les locaux intérieurs avec leur usage et un numéro de local stable.
+
+    2. Convenir par local des plages de température et d''humidité, du débit d''air extérieur, de l''occupation maximale, de la durée quotidienne d''utilisation et de l''éclairement.
+
+    3. Déduire les plans thématiques, contrôler les lacunes et les contradictions, puis valider les valeurs cibles dans la convention d''utilisation.
+
+
+    **Livrable**
+
+    - Maquette des locaux avec conditions ambiantes cibles et hypothèses d''utilisation coordonnées et vérifiables
+
+    - Plans thématiques par local faisant partie de la convention d''utilisation des techniques du bâtiment'
+  it: 'Gestire nel modello le condizioni ambientali e le ipotesi d''uso concordate e rappresentarle in tavole tematiche leggibili.
+
+
+    **Situazione di partenza**
+
+    - I valori obiettivo relativi al clima interno, alla ventilazione, all''occupazione e all''illuminazione sono spesso riportati in tabelle separate e non vengono aggiornati in modo coerente quando cambia
+    l''uso.
+
+    - Requisiti mancanti o contraddittori vengono quindi rilevati solo durante il dimensionamento degli impianti.
+
+
+    **Obiettivo e beneficio**
+
+    - Attribuire in modo univoco i valori obiettivo concordati a ogni locale interno e coordinarli tra committenza, architettura e progettazione degli impianti.
+
+    - Rendere visibili nelle planimetrie colorate i dati mancanti, i valori anomali e i locali con requisiti particolari.
+
+
+    **Svolgimento**
+
+    1. Fornire i locali interni con l''uso e un numero locale stabile.
+
+    2. Concordare per ogni locale gli intervalli di temperatura e umidità, la portata d''aria esterna, l''occupazione massima, la durata giornaliera d''uso e l''illuminamento.
+
+    3. Ricavare le tavole tematiche, verificare lacune e contraddizioni e approvare i valori obiettivo nella convenzione d''uso.
+
+
+    **Risultato della fornitura**
+
+    - Modello dei locali con condizioni ambientali obiettivo e ipotesi d''uso coordinate e verificabili
+
+    - Tavole tematiche per locale come parte della convenzione d''uso degli impianti'
+  en: 'Record agreed room conditions and usage assumptions in the model and present them in readable thematic plans.
+
+
+    **Starting point**
+
+    - Target values for indoor climate, ventilation, occupancy, and lighting are often maintained in separate tables and are not updated consistently when room use changes.
+
+    - Missing or contradictory requirements are therefore only discovered when the building services are sized.
+
+
+    **Goal & benefit**
+
+    - Assign agreed target values unambiguously to each interior space and coordinate them between the client, architecture, and MEP design.
+
+    - Make missing information, outliers, and spaces with special requirements visible in coloured plans.
+
+
+    **Process**
+
+    1. Provide interior spaces with their use and a stable room number.
+
+    2. Agree temperature and humidity ranges, outdoor airflow, peak occupancy, daily operating hours, and illuminance for each space.
+
+    3. Derive thematic plans, check gaps and contradictions, and approve the target values in the usage agreement.
+
+
+    **Deliverable**
+
+    - Space model with coordinated, verifiable target room conditions and usage assumptions
+
+    - Space-based thematic plans forming part of the MEP usage agreement'
+workflow_group: konzept
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+comment: Raumbezogene Sollwerte der Nutzungsvereinbarung Gebäudetechnik. Die versionsübergreifend stabilen Eigenschaften werden im benutzerdefinierten ePset_SpaceRequirement geführt. Nachgewiesene Werte
+  werden getrennt in ePset_Space geführt und durch QAS-USAGE-AGREEMENT verglichen. Die Eigenschaften entsprechen inhaltlich insbesondere Pset_SpaceThermalRequirements (IFC4), Pset_SpaceHVACDesign (IFC4.3),
+  Pset_SpaceOccupancyRequirements und Pset_SpaceLightingDesign. Berechnete Heiz- und Kühllasten sowie Bauteil- oder Apparateinventare sind nicht Bestandteil dieses AWF.
+countries:
+- CH

@@ -2,175 +2,160 @@ id: pragmaticbim:workflow/des-fire-protection-concept
 code: DES-FIRE-CONCEPT
 sort_order: 63
 name:
-  de: Erarbeiten Brandschutzkonzept
-  fr: Élaborer le concept de protection incendie
-  it: Elaborare il concetto di protezione antincendio
-  en: Develop the fire protection concept
+  de: Brandschutz-Anforderungsmodell erstellen
+  fr: Établir le modèle d'exigences de protection incendie
+  it: Elaborare il modello dei requisiti antincendio
+  en: Create the fire protection requirements model
 description:
-  de: 'Brandschutzkonzept und Brandschutzplan erarbeiten als verbindliche Grundlage für Bewilligung und Modellkennwerte.
+  de: 'Das freigegebene Brandschutzkonzept in ein regelbasiertes Anforderungsmodell übersetzen, damit Anforderungen eindeutig zugeordnet und bei Planungsänderungen laufend geprüft werden können.
 
 
     **Ausgangslage**
 
-    - Schutzziele, Brandabschnitte und Feuerwiderstandsklassen stehen oft nur in lose abgestimmten Berichten.
+    - Schutzziele, Brandabschnitte und erforderliche Feuerwiderstandsklassen stehen oft in lose abgestimmten Berichten und separaten Plänen; auf der Baustelle müssen mehrere Dokumente als Referenz herangezogen
+    werden.
 
-    - Ohne verbindliches Konzept fehlen Plan und Modell eine gemeinsame Lesart für Bewilligung und QS.
+    - In BIM-Projekten überträgt die Architektur die Anforderungen häufig manuell auf die Bauteile. Dies verursacht Mehraufwand und unterschiedliche Auslegungen, während die Brandschutzplanung meist nur
+    bei Phasenabschlüssen oder auf Zuruf prüft.
 
 
     **Ziel & Nutzen**
 
-    - Schutzziele, Brandabschnitte und erforderliche Feuerwiderstandsklassen verbindlich festlegen.
+    - Die Brandschutzplanung übersetzt das freigegebene Konzept in nachvollziehbare Regeln und ein verbindliches fachliches Sollmodell.
 
-    - Brandschutzplan mit Fluchtwegen und massgebenden Bauteilen auf das Konzept abstimmen.
+    - Anforderungen anhand von Räumen, Brandabschnitten und räumlichen Beziehungen eindeutig den betroffenen Bauteilen zuordnen.
+
+    - Auswirkungen von Planungsänderungen durch den automatisierten Vergleich mit dem Architekturmodell früh erkennen.
 
 
     **Ablauf**
 
-    1. Architekturmodell mit Räumen, Hülle und Öffnungen bereitstellen.
+    1. Architekturmodell mit eindeutig begrenzten Räumen sowie das freigegebene Brandschutzkonzept bereitstellen.
 
-    2. Brandschutzkonzept mit Schutzzielen, Abschnitten und Feuerwiderstandsklassen festlegen.
+    2. Schutzziele, Brandabschnitte und Feuerwiderstandsanforderungen in Regeln übersetzen und im Brandschutz-Anforderungsmodell räumlich zuordnen.
 
-    3. Brandschutzplan ableiten und mit Konzept und Bewilligungsunterlagen abstimmen.
-
-
-    **Ergebnis**
-
-    - Verbindliches Brandschutzkonzept und abgestimmter Brandschutzplan als Grundlage für Bewilligung und QS Brandschutz.
+    3. Anforderungsmodell mit dem aktuellen Planstand abstimmen, als Prüfreferenz freigeben und bei fachlichen Änderungen nachführen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Brandschutzkonzept und Brandschutzplan
+    - Freigegebenes Brandschutz-Anforderungsmodell mit nachvollziehbaren Regeln, räumlich zugeordneten Sollanforderungen und Bezug zum Planstand
 
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
-
-    - Massgebende Bauteile IfcWall, IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn und IfcBeam
-
-    - Keine zusätzlichen Brandschutz-Attribute — Kennwerte prüft QS Brandschutz Bauteilkennwerte'
-  fr: 'Élaborer le concept et le plan de protection incendie comme base contraignante pour l''autorisation et les valeurs du modèle.
+    - Räume mit eindeutiger Brandabschnittszuordnung gemäss Brandschutzkonzept'
+  fr: 'Traduire le concept de protection incendie approuvé en un modèle d''exigences fondé sur des règles, afin d''attribuer clairement les exigences et de les contrôler en continu lors des modifications
+    du projet.
 
 
     **Situation de départ**
 
-    - Objectifs de protection, compartiments et classes de résistance figurent souvent seulement dans des rapports peu alignés.
+    - Les objectifs de protection, les compartiments coupe-feu et les classes de résistance au feu requises figurent souvent dans des rapports peu coordonnés et des plans séparés ; plusieurs documents doivent
+    servir de référence sur le chantier.
 
-    - Sans concept contraignant, plan et maquette n''ont pas de lecture commune pour autorisation et AQ.
+    - Dans les projets BIM, l''architecture reporte souvent manuellement les exigences sur les éléments. Il en résulte un travail supplémentaire et des interprétations divergentes, tandis que le spécialiste
+    incendie ne contrôle généralement qu''en fin de phase ou sur demande.
 
 
     **Objectif et bénéfice**
 
-    - Fixer de façon contraignante objectifs, compartiments et classes de résistance au feu requises.
+    - Le spécialiste incendie traduit le concept approuvé en règles traçables et en un modèle de référence contraignant.
 
-    - Aligner le plan incendie — voies d''évacuation et éléments déterminants — sur le concept.
+    - Attribuer clairement les exigences aux éléments concernés à partir des locaux, des compartiments coupe-feu et des relations spatiales.
+
+    - Détecter rapidement les effets des modifications du projet grâce à la comparaison automatisée avec la maquette d''architecture.
 
 
     **Déroulement**
 
-    1. Fournir la maquette d''architecture avec locaux, enveloppe et ouvertures.
+    1. Fournir la maquette d''architecture avec des locaux clairement délimités ainsi que le concept de protection incendie approuvé.
 
-    2. Fixer le concept de protection incendie avec objectifs, compartiments et classes de résistance.
+    2. Traduire les objectifs de protection, les compartiments coupe-feu et les exigences de résistance au feu en règles, puis les attribuer spatialement dans le modèle d''exigences.
 
-    3. Obtenir le plan incendie et l''aligner sur le concept et les dossiers d''autorisation.
-
-
-    **Résultat**
-
-    - Concept de protection incendie contraignant et plan incendie aligné comme base pour autorisation et AQ incendie.
+    3. Coordonner le modèle d''exigences avec l''état actuel du projet, l''approuver comme référence de contrôle et le mettre à jour lors de modifications spécialisées.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Concept de protection incendie et plan de protection incendie
+    - Modèle d''exigences de protection incendie approuvé, comprenant des règles traçables, des exigences de référence attribuées spatialement et la référence à l''état du projet
 
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
-
-    - Éléments déterminants IfcWall, IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn et IfcBeam
-
-    - Pas d''attributs incendie supplémentaires — les valeurs sont contrôlées par l''AQ protection incendie'
-  it: 'Elaborare concetto e piano di protezione antincendio come base vincolante per autorizzazione e valori del modello.
+    - Locaux avec attribution univoque au compartiment coupe-feu selon le concept de protection incendie'
+  it: 'Tradurre il concetto antincendio approvato in un modello dei requisiti basato su regole, affinché i requisiti siano attribuiti in modo univoco e possano essere verificati continuamente in caso di
+    modifiche del progetto.
 
 
     **Situazione di partenza**
 
-    - Obiettivi di protezione, compartimenti e classi di resistenza sono spesso solo in rapporti poco allineati.
+    - Gli obiettivi di protezione, i compartimenti antincendio e le classi di resistenza al fuoco richieste figurano spesso in rapporti poco coordinati e in piani separati; in cantiere occorre consultare
+    più documenti di riferimento.
 
-    - Senza concetto vincolante, piano e modello non hanno una lettura comune per autorizzazione e AQ.
+    - Nei progetti BIM l''architettura trasferisce spesso manualmente i requisiti sugli elementi. Ne derivano un maggiore onere e interpretazioni divergenti, mentre lo specialista antincendio verifica generalmente
+    solo alla fine delle fasi o su richiesta.
 
 
     **Obiettivo e beneficio**
 
-    - Fissare in modo vincolante obiettivi, compartimenti e classi di resistenza al fuoco richieste.
+    - Lo specialista antincendio traduce il concetto approvato in regole tracciabili e in un modello di riferimento vincolante.
 
-    - Allineare il piano antincendio — vie di fuga e componenti determinanti — al concetto.
+    - Attribuire in modo univoco i requisiti agli elementi interessati in base ai locali, ai compartimenti antincendio e alle relazioni spaziali.
+
+    - Individuare tempestivamente gli effetti delle modifiche del progetto mediante il confronto automatizzato con il modello di architettura.
 
 
     **Svolgimento**
 
-    1. Fornire il modello di architettura con locali, involucro e aperture.
+    1. Fornire il modello di architettura con locali chiaramente delimitati e il concetto antincendio approvato.
 
-    2. Definire il concetto antincendio con obiettivi, compartimenti e classi di resistenza.
+    2. Tradurre in regole gli obiettivi di protezione, i compartimenti antincendio e i requisiti di resistenza al fuoco, quindi attribuirli spazialmente nel modello dei requisiti.
 
-    3. Ottenere il piano antincendio e allinearlo al concetto e agli atti di autorizzazione.
-
-
-    **Risultato**
-
-    - Concetto antincendio vincolante e piano antincendio allineato come base per autorizzazione e AQ antincendio.
+    3. Coordinare il modello dei requisiti con lo stato attuale del progetto, approvarlo come riferimento di controllo e aggiornarlo in caso di modifiche specialistiche.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Concetto di protezione antincendio e piano di protezione antincendio
+    - Modello dei requisiti antincendio approvato con regole tracciabili, requisiti di riferimento attribuiti spazialmente e riferimento allo stato del progetto
 
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
-
-    - Componenti determinanti IfcWall, IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn e IfcBeam
-
-    - Nessun attributo antincendio aggiuntivo — i valori sono verificati dall''AQ protezione antincendio'
-  en: 'Develop the fire protection concept and fire plan as the binding basis for permit and model values.
+    - Locali con assegnazione univoca al compartimento antincendio secondo il concetto antincendio'
+  en: 'Translate the approved fire protection concept into a rule-based requirements model so requirements can be assigned unambiguously and continuously checked as the design changes.
 
 
     **Starting point**
 
-    - Protection goals, compartments, and fire-resistance classes often exist only in loosely aligned reports.
+    - Protection goals, fire compartments, and required fire-resistance classes often appear in loosely coordinated reports and separate drawings; several reference documents must be consulted on site.
 
-    - Without a binding concept, plan and model lack a shared reading for permit and QA.
+    - On BIM projects, architects often transfer requirements to components manually. This creates additional effort and divergent interpretations, while the fire protection specialist usually checks only
+    at phase completion or on request.
 
 
     **Goal & benefit**
 
-    - Set protection goals, compartments, and required fire-resistance classes bindingly.
+    - The fire protection specialist translates the approved concept into traceable rules and a binding discipline requirements model.
 
-    - Align the fire plan — escape routes and governing components — with the concept.
+    - Assign requirements unambiguously to the affected components based on spaces, fire compartments, and spatial relationships.
+
+    - Detect the effects of design changes early through automated comparison with the architecture model.
 
 
     **Process**
 
-    1. Provide the architecture model with spaces, envelope, and openings.
+    1. Provide the architecture model with clearly bounded spaces and the approved fire protection concept.
 
-    2. Define the fire protection concept with goals, compartments, and fire-resistance classes.
+    2. Translate protection goals, fire compartments, and fire-resistance requirements into rules and assign them spatially in the fire protection requirements model.
 
-    3. Derive the fire plan and align it with the concept and permit documents.
-
-
-    **Outcome**
-
-    - Binding fire protection concept and aligned fire plan as the basis for permit and fire QA.
+    3. Coordinate the requirements model with the current design status, approve it as the check reference, and update it when discipline requirements change.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Fire protection concept and fire protection plan
+    - Approved fire protection requirements model with traceable rules, spatially assigned target requirements, and a reference to the design status
 
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
-
-    - Governing components IfcWall, IfcSlab (FLOOR), IfcWindow, IfcDoor, IfcColumn, and IfcBeam
-
-    - No additional fire attributes — values are checked by QA fire protection component values'
-workflow_group: null
+    - Spaces with an unambiguous fire-compartment assignment as set out in the fire protection concept'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: special
+countries:
+- CH
 needed_in_domain:
 - pragmaticbim:domain/fire-protection
-comment: Produces BSK and BSP. QAS-FIRE remains the FireRating check against the concept.
+comment: Produces the fire protection requirements model from the approved BSK; the BSK and BSP remain the authoritative specialist documents. Spatial rules use rooms, FireCompartmentReference, and adjacency
+  to assign requirements. QAS-FIRE compares the architecture model against this requirements model.

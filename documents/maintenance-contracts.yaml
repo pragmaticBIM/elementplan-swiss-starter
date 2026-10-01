@@ -1,0 +1,53 @@
+id: pragmaticbim:document/maintenance-contracts
+code: WVT
+sort_order: 146
+name:
+  de: Wartungsverträge
+  fr: Contrats de maintenance
+  it: Contratti di manutenzione
+  en: Maintenance contracts
+definition:
+  de: Verträge für die vereinbarte Wartung von Anlagen während einer festgelegten Laufzeit.
+  fr: Contrats portant sur la maintenance convenue des installations pendant une durée déterminée.
+  it: Contratti per la manutenzione concordata degli impianti durante un periodo definito.
+  en: Contracts for agreed asset maintenance over a defined term.
+description:
+  de: |-
+    - Unternehmer mit Vertrags- und Notfallkontakt
+    - Vertragsbeginn, Vertragsende und Kündigungsfristen
+    - Betroffene Anlagen und Leistungsumfang
+    - Wartungs- und Inspektionsintervalle
+    - Reaktionszeiten und Kontaktweg für Störungen
+    - Garantiebezug mit Garantieende, soweit vereinbart
+  fr: |-
+    - Entrepreneur avec contacts contractuel et d'urgence
+    - Début et fin du contrat ainsi que délais de résiliation
+    - Installations concernées et étendue des prestations
+    - Périodicités de maintenance et d'inspection
+    - Délais d'intervention et canal de contact en cas de panne
+    - Référence à la garantie avec échéance, si convenue
+  it: |-
+    - Impresa con contatto contrattuale e di emergenza
+    - Inizio e fine del contratto e termini di disdetta
+    - Impianti interessati ed estensione delle prestazioni
+    - Intervalli di manutenzione e ispezione
+    - Tempi di intervento e canale di contatto in caso di guasto
+    - Riferimento alla garanzia con relativa scadenza, se concordata
+  en: |-
+    - Contractor with contract and emergency contacts
+    - Contract start, contract end, and notice periods
+    - Applicable assets and scope of services
+    - Maintenance and inspection intervals
+    - Response times and contact channel for faults
+    - Warranty reference with warranty end, where agreed
+file_name:
+  de: '{Projektnummer}_TGA-WVT_{Anlagenkennzeichnung}_{Unternehmer}.{ext}'
+  fr: '{NumeroProjet}_CVC-WVT_{IdentificationInstallation}_{Entrepreneur}.{ext}'
+  it: '{NumeroProgetto}_IMP-WVT_{IdentificazioneImpianto}_{Impresa}.{ext}'
+  en: '{ProjectNumber}_MEP-WVT_{AssetIdentifier}_{Contractor}.{ext}'
+status: active
+domain: pragmaticbim:domain/mep
+scheduled_milestones:
+  - "41:M"
+  - "51:M"
+  - "61:M"

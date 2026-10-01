@@ -1,0 +1,30 @@
+id: pragmaticbim:usage-scenario/parkieren
+code: US-WH-13
+sort_order: 13
+name:
+  de: Parkieren
+  fr: Stationner
+  it: Parcheggiare
+  en: Parking the car
+description:
+  de: Bewohnende kommen von der Strasse auf den Innenparkplatz, erreichen die Aufzugszone und von dort die Eingangshalle.
+  fr: Les occupants arrivent de la rue à la place intérieure, rejoignent le palier d'ascenseur, puis le hall d'entrée.
+  it: Chi abita arriva dalla strada al posto auto interno, raggiunge la zona ascensore e da lì l'atrio.
+  en: Occupants arrive from the street at the interior parking space, reach the elevator lobby, and from there the lobby.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/strasse
+- pragmaticbim:room-type/parkplatz-pkw-innen
+- pragmaticbim:room-type/aufzugszone
+- pragmaticbim:room-type/eingangshalle
+room_relationships:
+- from_room_type: pragmaticbim:room-type/strasse
+  to_room_type: pragmaticbim:room-type/parkplatz-pkw-innen
+- from_room_type: pragmaticbim:room-type/parkplatz-pkw-innen
+  to_room_type: pragmaticbim:room-type/aufzugszone
+  max_distance: 40
+- from_room_type: pragmaticbim:room-type/aufzugszone
+  to_room_type: pragmaticbim:room-type/eingangshalle

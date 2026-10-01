@@ -1,0 +1,304 @@
+id: pragmaticbim:element/architecture-planning-constraint
+code: ARC-CONSTRAINT
+sort_order: 74
+status: active
+name:
+  de: Rahmenbedingung
+  fr: Condition-cadre
+  it: Condizione quadro
+  en: Planning constraint
+definition:
+  de: 'Macht externe Vorgaben früh räumlich prüfbar und unterstützt die Qualitätssicherung beim Abgleich des Entwurfs mit Schutz-, Gefahren- und Bewilligungsanforderungen.
+
+
+    **Beschreibung**
+
+    - Volumen, das eine verbindliche oder massgebende äussere Vorgabe abbildet (z. B. Flugschneise, Überschwemmungsgebiet, Eisenbahnkorridor).
+
+    - Dient dem frühen Abgleich des Entwurfs mit Grundlagen und Gefahren-/Schutzräumen – nicht der rechtlichen Grenzfeststellung.
+
+
+    **Modellierungshinweis**
+
+    - Als vereinfachten Proxy-Körper modellieren; Grundriss und Höhe gemäss Grundlagen (Kataster, Fachstellen, Gutachten).
+
+    - Dem Planungsperimeter bzw. zugehörigen Geschoss zuweisen; ObjectType = Rahmenbedingung.
+
+    - Name = Art der Vorgabe aus der Auswahlliste.
+
+    - Keine Gebäude, Gelände oder Ausbau innerhalb des Volumens modellieren.'
+  fr: 'Rend les prescriptions externes vérifiables spatialement dès la phase initiale et facilite le contrôle qualité du projet au regard des exigences de protection, de danger et d''autorisation.
+
+
+    **Description**
+
+    - Volume représentant une prescription externe contraignante ou déterminante (p. ex. couloir de vol, zone inondable, corridor ferroviaire).
+
+    - Sert à aligner tôt le projet avec les bases et les espaces de danger/protection – pas à fixer juridiquement les limites.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy simplifié ; emprise et hauteur selon les bases (cadastre, services spécialisés, expertises).
+
+    - Rattacher au périmètre de planification ou à l''étage concerné ; ObjectType = Condition-cadre.
+
+    - Name = nature de la prescription selon la liste de choix.
+
+    - Ne pas modéliser bâtiments, terrain ou finitions à l''intérieur du volume.'
+  it: 'Rende le prescrizioni esterne verificabili spazialmente sin dalla fase iniziale e supporta il controllo qualità del progetto rispetto ai requisiti di protezione, pericolo e autorizzazione.
+
+
+    **Descrizione**
+
+    - Volume che rappresenta una prescrizione esterna vincolante o determinante (p. es. corridoio di volo, zona alluvionale, corridoio ferroviario).
+
+    - Serve ad allineare presto il progetto con le basi e gli spazi di pericolo/protezione – non a fissare giuridicamente i confini.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy semplificato; impronta e altezza secondo le basi (catasto, uffici specializzati, perizie).
+
+    - Assegnare al perimetro di pianificazione o al piano corrispondente; ObjectType = Condizione quadro.
+
+    - Name = tipo di prescrizione secondo l''elenco di scelta.
+
+    - Non modellare edifici, terreno o finiture all''interno del volume.'
+  en: 'Makes external requirements spatially verifiable from an early stage and supports quality assurance when checking the design against protection, hazard, and permitting requirements.
+
+
+    **Description**
+
+    - Volume representing a binding or governing external requirement (e.g. flight corridor, flood zone, railway corridor).
+
+    - Used for early alignment of the design with base data and hazard/protection spaces – not for legal boundary determination.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified proxy body; footprint and height according to base data (cadastre, specialist authorities, reports).
+
+    - Assign to the planning perimeter or matching storey; ObjectType = Planning constraint.
+
+    - Name = kind of requirement from the value list.
+
+    - Do not model buildings, terrain, or finishes inside the volume.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/surveyor
+- pragmaticbim:domain/infrastructure
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-planning-constraint.png
+attachment_link: architecture-planning-constraint.ifc
+picture_print_link: architecture-planning-constraint-print.tif
+model_link: architecture-planning-constraint.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Rahmenbedingung) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Rahmenbedingung)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Condition-cadre") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Condition-cadre")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Condizione quadro") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Condizione quadro")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Planning constraint") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Planning constraint")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: 'Art der planungsrelevanten Rahmenbedingung.
+
+
+      **Zulässige Werte**
+
+      - `Flugschneise` — Hindernisbegrenzungsflächen / Anflugsektoren
+
+      - `Überschwemmungsgebiet` — hochwassergefährdeter Bereich
+
+      - `Eisenbahnkorridor` — Bahnbetriebs- und Schutzbereich
+
+      - `Explosionsschutzgebiet` — Störfall- / Explosionsschutzperimeter
+
+      - `Zone mit hoher Lärmbelastung` — lärmbelasteter Bereich gemäss Grundlage
+
+      - `Grundwasserschutzzone` — Schutzzone S1–S3 o. ä.
+
+      - `Gewässerraum` — gesetzlicher Gewässerraum / Abstand
+
+      - `Freileitungskorridor` — Schutz- und Annäherungsbereich Freileitung
+
+      - `Naturgefahrenzone` — weitere Naturgefahren (Hangrutsch, Steinschlag, Lawine u. a.)'
+    fr: 'Nature de la condition-cadre pertinente pour la planification.
+
+
+      **Valeurs admises**
+
+      - `Couloir de vol` — surfaces de limitation d''obstacles / secteurs d''approche
+
+      - `Zone inondable` — secteur exposé aux crues
+
+      - `Corridor ferroviaire` — domaine d''exploitation et de protection ferroviaire
+
+      - `Zone de protection contre les explosions` — périmètre accidents majeurs / explosions
+
+      - `Zone à forte charge sonore` — secteur exposé au bruit selon la base
+
+      - `Zone de protection des eaux souterraines` — zone de protection S1–S3 ou équivalent
+
+      - `Espace réservé aux eaux` — espace réservé aux eaux / distance légale
+
+      - `Corridor de ligne aérienne` — domaine de protection et d''approche d''une ligne aérienne
+
+      - `Zone de dangers naturels` — autres dangers naturels (glissement, chute de pierres, avalanche, etc.)'
+    it: 'Tipo di condizione quadro rilevante per la pianificazione.
+
+
+      **Valori ammessi**
+
+      - `Corridoio di volo` — superfici di limitazione degli ostacoli / settori di avvicinamento
+
+      - `Zona alluvionale` — area esposta a piena
+
+      - `Corridoio ferroviario` — ambito di esercizio e protezione ferroviaria
+
+      - `Zona di protezione contro le esplosioni` — perimetro incidenti rilevanti / esplosioni
+
+      - `Zona a elevato carico acustico` — area esposta al rumore secondo la base
+
+      - `Zona di protezione delle acque sotterranee` — zona di protezione S1–S3 o equivalente
+
+      - `Spazio riservato ai corsi d''acqua` — spazio riservato ai corsi d''acqua / distanza legale
+
+      - `Corridoio di linea aerea` — ambito di protezione e avvicinamento di una linea aerea
+
+      - `Zona di pericolo naturale` — altri pericoli naturali (frana, caduta massi, valanga, ecc.)'
+    en: 'Kind of planning-relevant constraint.
+
+
+      **Allowed values**
+
+      - `Flight corridor` — obstacle limitation surfaces / approach sectors
+
+      - `Flood zone` — area at risk of flooding
+
+      - `Railway corridor` — railway operations and protection area
+
+      - `Explosion protection zone` — major-accident / explosion protection perimeter
+
+      - `High noise exposure zone` — noise-exposed area according to base data
+
+      - `Groundwater protection zone` — protection zone S1–S3 or equivalent
+
+      - `Watercourse space` — statutory watercourse space / setback
+
+      - `Overhead line corridor` — protection and approach area of an overhead line
+
+      - `Natural hazard zone` — other natural hazards (landslide, rockfall, avalanche, etc.)'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/name-planning-constraint
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-planning-constraints
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente ; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-planning-constraints
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Rahmenbedingung` — planungsrelevante äussere Vorgabe (Flugschneise, Überschwemmungsgebiet u. a.)'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Condition-cadre` — prescription externe pertinente pour la planification (couloir de vol, zone inondable, etc.)'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Condizione quadro` — prescrizione esterna rilevante per la pianificazione (corridoio di volo, zona alluvionale, ecc.)'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Planning constraint` — planning-relevant external requirement (flight corridor, flood zone, etc.)'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-planning-constraint
+  needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-planning-constraints
+  is_applicability: true
+  status: active
+  sort_order: 3

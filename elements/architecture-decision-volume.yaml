@@ -1,0 +1,296 @@
+id: pragmaticbim:element/architecture-decision-volume
+code: ARC-DEC-VOL
+sort_order: 72
+status: active
+name:
+  de: Entscheidungskörper
+  fr: Volume de décision
+  it: Volume decisionale
+  en: Decision volume
+definition:
+  de: 'Macht räumlich prüfbar, wo ein Entscheid gilt und ob er noch offen, freigegeben oder abgelöst ist.
+
+
+    **Beschreibung**
+
+    - Räumlicher Gültigkeitsbereich eines Entscheids aus der fortlaufenden Entscheidungsliste.
+
+    - Verknüpft Modell, Übersichtsplan, Visualisierung und weitere Entscheidungsgrundlagen über dieselbe Entscheidungsreferenz.
+
+
+    **Modellierungshinweis**
+
+    - Als vereinfachtes Volumen mit dem tatsächlichen räumlichen Gültigkeitsbereich modellieren und dem zugehörigen Geschoss zuweisen.
+
+    - Eindeutige Entscheidungsreferenz und aktuellen Status führen; offene und freigegebene Körper unterscheidbar darstellen.
+
+    - Keine Bauteilgeometrie, Materialschichten oder rein grafischen Ausschmückungen modellieren.'
+  fr: 'Permet de vérifier spatialement où une décision s''applique et si elle est encore ouverte, validée ou remplacée.
+
+
+    **Description**
+
+    - Zone de validité spatiale d''une décision issue de la liste continue des décisions.
+
+    - Relie la maquette, le plan synoptique, la visualisation et les autres bases de décision au moyen de la même référence de décision.
+
+
+    **Directives de modélisation**
+
+    - Modéliser un volume simplifié correspondant à la zone de validité réelle et le rattacher à l''étage concerné.
+
+    - Saisir une référence de décision univoque et l''état actuel; représenter les volumes ouverts et validés de manière distincte.
+
+    - Ne pas modéliser de géométrie constructive, de couches de matériaux ni d''éléments purement décoratifs.'
+  it: 'Consente di verificare nello spazio dove si applica una decisione e se è ancora aperta, approvata o sostituita.
+
+
+    **Descrizione**
+
+    - Ambito di validità spaziale di una decisione contenuta nell''elenco continuo delle decisioni.
+
+    - Collega modello, piano sinottico, visualizzazione e altre basi decisionali mediante lo stesso riferimento decisionale.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come volume semplificato corrispondente all''effettivo ambito di validità e assegnarlo al piano pertinente.
+
+    - Gestire un riferimento decisionale univoco e lo stato attuale; rappresentare in modo distinguibile i volumi aperti e quelli approvati.
+
+    - Non modellare geometria costruttiva, strati di materiale o elementi puramente decorativi.'
+  en: 'Makes it spatially verifiable where a decision applies and whether it is still open, approved, or superseded.
+
+
+    **Description**
+
+    - Spatial validity area of a decision from the continuously maintained decision list.
+
+    - Links the model, overview plan, visualization, and other decision-making information through the same decision reference.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified volume matching the actual validity area and assign it to the relevant storey.
+
+    - Maintain a unique decision reference and current status; display open and approved volumes distinctly.
+
+    - Do not model construction geometry, material layers, or purely decorative content.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-decision-volume.png
+attachment_link: architecture-decision-volume.ifc
+picture_print_link: architecture-decision-volume-print.tif
+model_link: architecture-decision-volume.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Entscheidungskörper) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Entscheidungskörper)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Volume de décision") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Volume de décision")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Volume decisionale") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Volume decisionale")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Decision volume") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Decision volume")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Kurzbezeichnung des Entscheids für Modellansicht und Übersichtsplan.
+    fr: Désignation courte de la décision pour la vue de maquette et le plan synoptique.
+    it: Denominazione breve della decisione per la vista del modello e il piano sinottico.
+    en: Short decision name for model views and overview plans.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-decision-impact-visualization
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente; ObjectType precisa la natura'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-decision-impact-visualization
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Entscheidungskörper` — räumlicher Gültigkeitsbereich eines Entscheids'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Volume de décision` — zone de validité spatiale d''une décision'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Volume decisionale` — ambito di validità spaziale di una decisione'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Decision volume` — spatial validity area of a decision'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-decision-volume
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-decision-impact-visualization
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: DecisionReference
+  pset: ePset_Decision
+  definition:
+    de: Eindeutige Referenz auf den zugehörigen Eintrag in der Entscheidungsliste.
+    fr: Référence univoque à l'entrée correspondante dans la liste des décisions.
+    it: Riferimento univoco alla voce corrispondente nell'elenco delle decisioni.
+    en: Unique reference to the corresponding entry in the decision list.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-decision-impact-visualization
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: DecisionStatus
+  pset: ePset_Decision
+  definition:
+    de: 'Aktueller Status des Entscheids.
+
+
+      **Zulässige Werte**
+
+      - `OPEN` — Entscheid ausstehend
+
+      - `APPROVED` — Entscheid freigegeben
+
+      - `SUPERSEDED` — durch einen neueren Entscheid abgelöst'
+    fr: 'État actuel de la décision.
+
+
+      **Valeurs admises**
+
+      - `OPEN` — décision en suspens
+
+      - `APPROVED` — décision validée
+
+      - `SUPERSEDED` — remplacée par une décision plus récente'
+    it: 'Stato attuale della decisione.
+
+
+      **Valori ammessi**
+
+      - `OPEN` — decisione in sospeso
+
+      - `APPROVED` — decisione approvata
+
+      - `SUPERSEDED` — sostituita da una decisione più recente'
+    en: 'Current status of the decision.
+
+
+      **Allowed values**
+
+      - `OPEN` — decision outstanding
+
+      - `APPROVED` — decision approved
+
+      - `SUPERSEDED` — replaced by a newer decision'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/decision-status
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-decision-impact-visualization
+  is_applicability: false
+  status: active
+  sort_order: 5

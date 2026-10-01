@@ -8,7 +8,7 @@ name:
   it: Canalina (schematica)
   en: Cable tray (schematic)
 definition:
-  de: 'Schematische Elektrotrasse für die frühe Koordination — Medium in Reference.
+  de: 'Reserviert in der frühen Phase die Haupttrassen der Elektroanlagen und reduziert spätere Kollisionen.
 
 
     **Beschreibung**
@@ -18,31 +18,31 @@ definition:
     - Dient der Machbarkeits- und Kollisionsprüfung, nicht der Ausführungsplanung.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Als Volumen oder vereinfachtes Segment modellieren; Querschnitt gemäss Grobkonzept.
 
     - Medium über Reference setzen (z. B. EL).
 
     - Keine Kabel, Detailarmaturen oder Schächte modellieren.'
-  fr: 'Chemin de câbles schématique pour la coordination en phase initiale — fluide dans Reference.
+  fr: 'Réserve en phase initiale les tracés principaux des installations électriques et réduit les collisions ultérieures.
 
 
     **Description**
 
-    - Segment ou volume simplifié pour tracés principaux et cages.
+    - Segment ou volume simplifié pour les tracés principaux et les gaines techniques.
 
-    - Sert à la faisabilité et aux collisions, pas à l''exécution.
+    - Sert à vérifier la faisabilité et les collisions, pas à planifier l’exécution.
 
 
     **Directives de modélisation**
 
-    - Modéliser comme volume ou segment simplifié; section selon le concept d''ensemble.
+    - Le modéliser en volume ou en segment simplifié ; section selon l’esquisse.
 
-    - Indiquer le fluide dans Reference (p. ex. EL).
+    - Renseigner le fluide dans Reference (p. ex. EL).
 
-    - Ne pas modéliser câbles, armatures de détail ou fourreaux.'
-  it: 'Canalina schematica per il coordinamento in fase iniziale — fluido in Reference.
+    - Ne pas modéliser les câbles, les accessoires de détail ni les gaines.'
+  it: 'Riserva già nella fase iniziale i tracciati principali degli impianti elettrici e riduce le interferenze successive.
 
 
     **Descrizione**
@@ -59,7 +59,7 @@ definition:
     - Impostare il fluido in Reference (p. es. EL).
 
     - Non modellare cavi, armature di dettaglio o canaline secondarie.'
-  en: 'Schematic cable tray for early coordination — medium in Reference.
+  en: 'Reserves main electrical routes in the initial phase and reduces later clashes.
 
 
     **Description**
@@ -174,16 +174,16 @@ attributes:
       - `DEMOLISH` — da demolire
 
       - `TEMPORARY` — temporaneo'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary'
   datatype: IfcLabel
@@ -205,8 +205,7 @@ attributes:
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-mep-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
   sort_order: 2
@@ -264,16 +263,16 @@ attributes:
       **Nota**
 
       - Sostituto IFC2x3 di Status.'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary
 
@@ -299,46 +298,45 @@ attributes:
   ifc_versions:
   - ifc2x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-mep-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
   sort_order: 3
 - name: CostInterface
   pset: ePset_Cost
   definition:
-    de: 'Kostenschnittstelle des Bauteils — Grundausbau oder Mieterausbau.
+    de: 'Kostenschnittstelle des Bauteils – Grundausbau oder Mieterausbau.
 
 
       **Zulässige Werte**
 
       - `GAB` — Grundausbau (Bauherr / Vermieter)
 
-      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_Migros`'
-    fr: 'Interface de coûts de l''élément — aménagement de base ou aménagement locataire.
+      - `MAB_{Mietername}` — Mieterausbau, z. B. `MAB_MieterA`'
+    fr: 'Interface de coûts de l''élément – aménagement de base ou aménagement locataire.
 
 
       **Valeurs admises**
 
       - `GAB` — aménagement de base (maître d''ouvrage / bailleur)
 
-      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_Migros`'
-    it: 'Interfaccia di costo del componente — allestimento di base o allestimento locatario.
+      - `MAB_{nom du locataire}` — aménagement locataire, p. ex. `MAB_MieterA`'
+    it: 'Interfaccia di costo del componente – allestimento di base o allestimento locatario.
 
 
       **Valori ammessi**
 
       - `GAB` — allestimento di base (committente / locatore)
 
-      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_Migros`'
-    en: 'Cost interface of the component — base building or tenant fit-out.
+      - `MAB_{nome locatario}` — allestimento locatario, es. `MAB_MieterA`'
+    en: 'Cost interface of the component – base building or tenant fit-out.
 
 
       **Allowed values**
 
       - `GAB` — base building (client / landlord)
 
-      - `MAB_{Mietername}` — tenant fit-out, e.g. `MAB_Migros`'
+      - `MAB_{TenantName}` — tenant fit-out, e.g. `MAB_TenantA`'
   datatype: IfcLabel
   needed_in_phases:
   - '32'
@@ -354,33 +352,60 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 4
+- name: FundingApplication
+  pset: ePset_Cost
+  definition:
+    de: Gesuchsnummer der Förderung, damit Mengen und Kosten nach Gesuch filterbar sind. Mehrere Nummern kommagetrennt, z. B. `2024-0142, 2024-0188`. Leer, wenn das Bauteil keinem Gesuch zugeordnet ist.
+    fr: Numéro de la demande de subvention, pour filtrer quantités et coûts par demande. Plusieurs numéros séparés par des virgules, p. ex. `2024-0142, 2024-0188`. Vide si l'élément n'est attribué à aucune
+      demande.
+    it: Numero della domanda di incentivo, per filtrare quantità e costi per domanda. Più numeri separati da virgole, p. es. `2024-0142, 2024-0188`. Vuoto se il componente non è assegnato ad alcuna domanda.
+    en: Number of the funding application, so quantities and costs can be filtered by application. Separate several numbers with commas, e.g. `2024-0142, 2024-0188`. Leave empty when the component belongs
+      to no application.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-funding-verification
+  is_applicability: false
+  status: active
+  sort_order: 5
 - name: AwardInterface
   pset: ePset_Cost
   definition:
-    de: 'Vergabepaket des Bauteils nach BKP-3-Steller — damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
+    de: 'Vergabepaket des Bauteils – damit Schnittstellen zwischen Unternehmerlosen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Vergabepaket — z. B. `211`, `221`, `244`.'
-    fr: 'Lot d''adjudication de l''élément selon le BKP à trois chiffres — pour rendre visibles les interfaces entre lots d''entreprise.
+      - Siehe Werteliste Vergabepaket. Das vorliegende Schweizer Datenpaket verwendet dreistellige BKP-Codes, z. B. `211`, `221`, `244`.'
+    fr: 'Lot d’adjudication de l’élément – il permet de rendre visibles les interfaces entre les lots confiés aux entreprises.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot d''adjudication BKP — p. ex. `211`, `221`, `244`.'
-    it: 'Lotto di aggiudicazione del componente secondo il BKP a tre cifre — per rendere visibili le interfacce tra lotti d''impresa.
+      - Voir la liste de valeurs Lot d’adjudication. Le présent paquet de données suisse utilise des codes BKP à trois chiffres, p. ex. `211`, `221`, `244`.'
+    it: 'Lotto d’appalto del componente – rende visibili le interfacce tra i lotti assegnati alle imprese.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di aggiudicazione BKP — es. `211`, `221`, `244`.'
-    en: 'Award package of the component by three-digit BKP code — so interfaces between contractor packages become visible.
+      - Vedere l’elenco di valori Lotto d’appalto. Il presente pacchetto di dati svizzero utilizza codici BKP a tre cifre, ad es. `211`, `221`, `244`.'
+    en: 'Procurement package of the component, so interfaces between contractor packages become visible.
 
 
       **Allowed values**
 
-      - See value list BKP award package — e.g. `211`, `221`, `244`.'
+      - See the Procurement package value list. This Swiss data package uses three-digit BKP codes, e.g. `211`, `221`, `244`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-award-package
   needed_in_phases:
@@ -396,34 +421,34 @@ attributes:
   - pragmaticbim:workflow/bes-award-interface-visualization
   is_applicability: false
   status: active
-  sort_order: 5
+  sort_order: 6
 - name: PlanningInterface
   pset: ePset_Cost
   definition:
-    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller — damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
+    de: 'Planungsschnittstelle des Bauteils nach BKP-3-Steller – damit Zuständigkeiten zwischen Planungsdisziplinen sichtbar werden.
 
 
       **Zulässige Werte**
 
-      - Siehe Werteliste BKP-Planungspaket — z. B. `091`, `092`, `094`.'
-    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres — pour rendre visibles les responsabilités entre disciplines de planification.
+      - Siehe Werteliste BKP-Planungspaket – z. B. `091`, `092`, `094`.'
+    fr: 'Interface de planification de l''élément selon le BKP à trois chiffres – pour rendre visibles les responsabilités entre disciplines de planification.
 
 
       **Valeurs admises**
 
-      - Voir la liste de valeurs Lot de planification BKP — p. ex. `091`, `092`, `094`.'
-    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre — per rendere visibili le responsabilità tra discipline di pianificazione.
+      - Voir la liste de valeurs Lot de planification BKP – p. ex. `091`, `092`, `094`.'
+    it: 'Interfaccia di pianificazione del componente secondo il BKP a tre cifre – per rendere visibili le responsabilità tra discipline di pianificazione.
 
 
       **Valori ammessi**
 
-      - Vedere l''elenco valori Lotto di pianificazione BKP — es. `091`, `092`, `094`.'
-    en: 'Planning interface of the component by three-digit BKP code — so responsibilities between planning disciplines become visible.
+      - Vedere l''elenco valori Lotto di pianificazione BKP – es. `091`, `092`, `094`.'
+    en: 'Planning interface of the component as a three-digit BKP code, so responsibilities between design disciplines become visible.
 
 
       **Allowed values**
 
-      - See value list BKP planning package — e.g. `091`, `092`, `094`.'
+      - See the BKP planning package value list, e.g. `091`, `092`, `094`.'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/bkp-planning-package
   needed_in_phases:
@@ -439,7 +464,7 @@ attributes:
   - pragmaticbim:workflow/des-planning-interface-visualization
   is_applicability: false
   status: active
-  sort_order: 6
+  sort_order: 7
 - name: BelowTerrain
   pset: ePset_Cost
   definition:
@@ -467,14 +492,14 @@ attributes:
       - `TRUE` — sotto il livello del terreno
 
       - `FALSE` — sopra il livello del terreno'
-    en: 'Marks whether the component is below terrain.
+    en: 'Marks whether the component sits below ground level.
 
 
       **Allowed values**
 
-      - `TRUE` — below terrain
+      - `TRUE` — below ground
 
-      - `FALSE` — above terrain'
+      - `FALSE` — above ground'
   datatype: IfcBoolean
   allowed_values: pragmaticbim:value/boolean
   needed_in_phases:
@@ -490,11 +515,11 @@ attributes:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
   status: active
-  sort_order: 7
-- name: EbkpH
+  sort_order: 8
+- name: eBKP
   pset: ePset_Cost
   definition:
-    de: 'eBKP-H-Klassifizierung nach SN 506 511 — ableitbar aus Elementtyp, Medium und BelowTerrain.
+    de: 'eBKP-H-Klassifizierung nach SN 506 511 – ableitbar aus Elementtyp, Medium und BelowTerrain.
 
 
       **Zulässige Werte**
@@ -502,7 +527,7 @@ attributes:
       - `D01.04` — Installation Starkstrom
 
       - `D01.10` — Installation Schwachstrom'
-    fr: 'Classification eBKP-H selon SN 506 511 — déductible à partir du type d''élément, du fluide et de BelowTerrain.
+    fr: 'Classification eBKP-H selon SN 506 511 – déductible à partir du type d''élément, du fluide et de BelowTerrain.
 
 
       **Valeurs admises**
@@ -510,7 +535,7 @@ attributes:
       - `D01.04` — installation courant fort
 
       - `D01.10` — installation courant faible'
-    it: 'Classificazione eBKP-H secondo SN 506 511 — ricavabile da tipo di elemento, fluido e BelowTerrain.
+    it: 'Classificazione eBKP-H secondo SN 506 511 – ricavabile da tipo di elemento, fluido e BelowTerrain.
 
 
       **Valori ammessi**
@@ -518,7 +543,7 @@ attributes:
       - `D01.04` — installazione corrente forte
 
       - `D01.10` — installazione corrente debole'
-    en: 'eBKP-H classification according to SN 506 511 — derivable from element type, medium, and BelowTerrain.
+    en: 'eBKP-H classification according to SN 506 511 – derivable from element type, medium, and BelowTerrain.
 
 
       **Allowed values**
@@ -541,4 +566,4 @@ attributes:
   - pragmaticbim:workflow/des-ebkp-h-classification
   is_applicability: false
   status: active
-  sort_order: 8
+  sort_order: 9

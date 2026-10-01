@@ -2,10 +2,10 @@ id: pragmaticbim:workflow/des-abstractbim-element-based-cost
 code: DES-ABSTRACTBIM-COST
 sort_order: 42
 name:
-  de: Elementbasierte Kostenermittlung mit abstractBIM-Mengen
-  fr: Calcul des coûts par élément à partir des quantités abstractBIM
-  it: Calcolo dei costi per elemento dalle quantità abstractBIM
-  en: Element-based cost calculation from abstractBIM quantities
+  de: Kosten elementbasiert mit abstractBIM ermitteln
+  fr: Déterminer les coûts par élément avec abstractBIM
+  it: Determinare i costi per elemento con abstractBIM
+  en: Determine element-based costs with abstractBIM
 description:
   de: 'Mengen früh im Entwurf ermitteln und Kosten iterativ mit dem Modell mitentwickeln.
 
@@ -14,7 +14,7 @@ description:
 
     - Architekturmodelle sind auf Pläne und Darstellung optimiert, nicht auf Mengenermittlung.
 
-    - Die Aufbereitung für Kostenauswertungen ist aufwendig und erfolgt oft zu spät — wenn wesentliche Entscheide bereits gefallen sind.
+    - Die Aufbereitung für Kostenauswertungen ist aufwendig und erfolgt oft zu spät – wenn wesentliche Entscheide bereits gefallen sind.
 
 
     **Ziel & Nutzen**
@@ -26,31 +26,18 @@ description:
 
     **Ablauf**
 
-    1. Architekturmodell mit den Mindestanforderungen bereitstellen.
+    1. Architekturmodell mit den Mindestanforderungen bereitstellen (IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow und IfcDoor).
 
-    2. Bei abstractBIM.com hochladen — daraus entsteht ein konsistentes Mengenmodell.
+    2. Bei abstractBIM.com hochladen – daraus entsteht ein konsistentes Mengenmodell.
 
-    3. Modell herunterladen und für automatisierte Ausmasserhebung nutzen.
-
-
-    **Ergebnis**
-
-    - Gebäudevolumen und Bruttogeschossfläche.
-
-    - Innen- und Aussenwände mit eindeutiger Zuordnung zu ein oder zwei Räumen.
-
-    - Decken, Dächer und Bodenplatten.
-
-    - Fenster, Türen und Bekleidungen mit Raumbezug und Richtung.
+    3. Modell herunterladen und für Mengenberechnung und damit verknüpft die Kostenberechnung nutzen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Architekturmodell mit IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow und IfcDoor
+    - Architekturmodell mit den erforderlichen Raum- und Öffnungsinformationen für die Mengenermittlung
 
-    - Raumname in LongName, optionale Raumnummer in Name
-
-    - abstractBIM-Mengen als Grundlage für Kostenschätzung und Variantenvergleich'
+    - Mengenauszug aus abstractBIM für Kostenschätzung und Variantenvergleich'
   fr: 'Déterminer les quantités tôt en conception et faire évoluer les coûts de manière itérative avec le modèle.
 
 
@@ -58,7 +45,7 @@ description:
 
     - Les maquettes architecture sont optimisées pour les plans et la présentation, pas pour le métré.
 
-    - La préparation pour l''évaluation des coûts est laborieuse et intervient souvent trop tard — lorsque les décisions majeures sont déjà prises.
+    - La préparation pour l''évaluation des coûts est laborieuse et intervient souvent trop tard – lorsque les décisions majeures sont déjà prises.
 
 
     **Objectif et bénéfice**
@@ -72,29 +59,16 @@ description:
 
     1. Fournir une maquette architecture répondant aux exigences minimales.
 
-    2. Téléverser sur abstractBIM.com — un modèle de quantités cohérent en résulte.
+    2. Téléverser sur abstractBIM.com – un modèle de quantités cohérent en résulte.
 
     3. Télécharger le modèle et l''utiliser pour le métré automatisé.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Volume du bâtiment et surface brute de plancher.
+    - Maquette architecture avec les informations requises sur les locaux et les ouvertures pour le métré
 
-    - Murs intérieurs et extérieurs avec rattachement clair à un ou deux locaux.
-
-    - Dalles, toitures et dalles de fondation.
-
-    - Fenêtres, portes et revêtements avec rattachement au local et orientation.
-
-
-    **Livrables**
-
-    - Maquette architecture avec IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow et IfcDoor
-
-    - Nom du local dans LongName, numéro de local facultatif dans Name
-
-    - Quantités abstractBIM comme base d''estimation et de comparaison de variantes'
+    - Métré issu d''abstractBIM pour l''estimation des coûts et la comparaison de variantes'
   it: 'Determinare le quantità in fase di progettazione iniziale e sviluppare i costi in modo iterativo con il modello.
 
 
@@ -102,7 +76,7 @@ description:
 
     - I modelli architettonici sono ottimizzati per planimetrie e presentazione, non per il computo metrico.
 
-    - La preparazione per la valutazione dei costi è onerosa e avviene spesso troppo tardi — quando le decisioni principali sono già state prese.
+    - La preparazione per la valutazione dei costi è onerosa e avviene spesso troppo tardi – quando le decisioni principali sono già state prese.
 
 
     **Obiettivo e beneficio**
@@ -116,37 +90,24 @@ description:
 
     1. Fornire un modello architettonico che soddisfi i requisiti minimi.
 
-    2. Caricare su abstractBIM.com — ne deriva un modello di quantità coerente.
+    2. Caricare su abstractBIM.com – ne deriva un modello di quantità coerente.
 
     3. Scaricare il modello e utilizzarlo per il computo metrico automatizzato.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Volume dell''edificio e superficie lorda di pavimento.
+    - Modello di architettura con le informazioni necessarie su locali e aperture per il computo metrico
 
-    - Pareti interne ed esterne con chiara assegnazione a uno o due locali.
-
-    - Solette, coperture e platee di fondazione.
-
-    - Finestre, porte e rivestimenti con collegamento al locale e orientamento.
-
-
-    **Oggetti della fornitura**
-
-    - Modello di architettura con IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow e IfcDoor
-
-    - Nome del locale in LongName, numero locale facoltativo in Name
-
-    - Quantità abstractBIM come base per stima e confronto di varianti'
+    - Computo metrico da abstractBIM per la stima dei costi e il confronto delle varianti'
   en: 'Extract quantities early in design and iterate cost alongside the model.
 
 
     **Starting point**
 
-    - Architecture models are optimized for drawings and presentation, not quantity takeoff.
+    - Architecture models are optimized for drawings and presentation, not quantity take-off.
 
-    - Preparing them for cost evaluation is labor-intensive and often happens too late — after major decisions are fixed.
+    - Preparing them for cost evaluation is labor-intensive and often happens too late – after major decisions are fixed.
 
 
     **Goal & benefit**
@@ -158,35 +119,23 @@ description:
 
     **Process**
 
-    1. Provide an architecture model meeting the minimum requirements.
+    1. Provide an architecture model with the minimum requirements (IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow, and IfcDoor).
 
     2. Upload to abstractBIM.com to build a consistent quantity model.
 
-    3. Download the model and use it for automated quantity takeoff.
+    3. Download the model and use it for quantity calculation and the associated cost calculation.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Building volume and gross floor area.
+    - Architecture model with the required space and opening information for quantity take-off
 
-    - Interior and exterior walls with a clear relation to one or two spaces.
-
-    - Slabs, roofs, and base slabs.
-
-    - Windows, doors, and coverings with space relation and direction.
-
-
-    **Deliverables**
-
-    - Architecture model with IfcProject, IfcSite, IfcBuilding, IfcBuildingStorey, IfcSpace, IfcWindow, and IfcDoor
-
-    - Room name in LongName, optional room number in Name
-
-    - abstractBIM quantities as the basis for cost estimates and option comparison'
-workflow_group: null
+    - Quantity take-off from abstractBIM for cost estimates and option comparison'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
 comment: abstractBIM workflow. Requires a clean architectural IFC with modelled spaces. abstractBIM provides metrics; unit rates stay external.

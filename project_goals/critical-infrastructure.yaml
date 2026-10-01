@@ -1,0 +1,76 @@
+id: pragmaticbim:project-goal/critical-infrastructure
+sort_order: 18
+group: rahmenbedingungen
+code: PG-12
+name:
+  de: Sicherheit / kritische Infrastruktur
+  fr: Sécurité / infrastructures critiques
+  it: Sicurezza / infrastrutture critiche
+  en: Security / critical infrastructure
+tag:
+  de: Sicherheit
+  fr: Sécurité
+  it: Sicurezza
+  en: Security
+description:
+  de: |-
+    Festgelegt wird, wie streng Informations- und Gebäudesicherheit wegen kritischer Infrastruktur gehandhabt werden: welche CDE zulässig ist und ob sicherheitskritische Bereiche sowie Gebäudesicherheitsmassnahmen modellbasiert geführt und geprüft werden müssen. Ohne diese Festlegung landen sensible Projektdaten in ungeeigneten Plattformen und sicherheitsrelevante Anforderungen bleiben ungeprüft.
+  fr: |-
+    Cette condition-cadre fixe le degré d'exigence en matière de sécurité de l'information et du bâtiment pour des infrastructures critiques: quelles CDE sont admises et si les zones critiques ainsi que les mesures de sécurité du bâtiment doivent être gérées et contrôlées sur la base de maquettes. Sans cette décision, des données sensibles aboutissent sur des plateformes inadaptées et les exigences de sécurité restent non vérifiées.
+  it: |-
+    Questa condizione quadro stabilisce quanto rigorosamente gestire la sicurezza delle informazioni e dell'edificio in presenza di infrastrutture critiche: quali CDE sono ammessi e se le zone critiche nonché le misure di sicurezza dell'edificio devono essere gestite e verificate sulla base di modelli. Senza questa decisione, dati sensibili finiscono su piattaforme inadatte e i requisiti di sicurezza restano non verificati.
+  en: |-
+    This framework condition determines how strictly information and building security are handled for critical infrastructure: which CDEs are allowed and whether security-critical areas and building security measures must be managed and checked on a model basis. Without it, sensitive project data ends up on unsuitable platforms and security requirements remain unchecked.
+status: active
+comment: 'Kickoff / Konfigurator: Goal × Level → Workflow (explizit, nicht kumulativ).'
+levels:
+- id: pragmaticbim:project-goal-level/critical-infrastructure-low
+  code: SIC-01
+  sort_order: 1
+  name:
+    de: Gering
+    fr: Faible
+    it: Basso
+    en: Low
+  description:
+    de: Keine besondere kritische Infrastruktur; jede CDE darf verwendet werden. Es werden keine zusätzlichen Sicherheits-Workflows aktiviert.
+    fr: Pas d'infrastructure critique particulière; toute CDE peut être utilisée. Aucun workflow de sécurité supplémentaire n'est activé.
+    it: Nessuna infrastruttura critica particolare; qualsiasi CDE può essere utilizzato. Non vengono attivati workflow di sicurezza supplementari.
+    en: No particular critical infrastructure; any CDE may be used. No additional security workflows are activated.
+  status: active
+  activated_workflows: []
+  comment: Explicit set at level gering (sort_order 1); empty.
+- id: pragmaticbim:project-goal-level/critical-infrastructure-medium
+  code: SIC-02
+  sort_order: 2
+  name:
+    de: Mittel
+    fr: Moyen
+    it: Medio
+    en: Medium
+  description:
+    de: Erhöhte Anforderungen an die Informationssicherheit; nur CDE mit Datenhaltung in Europa sind zulässig. Es werden keine zusätzlichen Modell-Workflows aktiviert.
+    fr: Exigences accrues en matière de sécurité de l'information; seules les CDE avec stockage des données en Europe sont admises. Aucun workflow de maquette supplémentaire n'est activé.
+    it: Requisiti più elevati di sicurezza delle informazioni; sono ammessi solo CDE con memorizzazione dei dati in Europa. Non vengono attivati workflow di modello supplementari.
+    en: Elevated information-security requirements; only CDEs with data storage in Europe are allowed. No additional model workflows are activated.
+  status: active
+  activated_workflows: []
+  comment: Explicit set at level mittel (sort_order 2); empty.
+- id: pragmaticbim:project-goal-level/critical-infrastructure-high
+  code: SIC-03
+  sort_order: 3
+  name:
+    de: Hoch
+    fr: Élevé
+    it: Alto
+    en: High
+  description:
+    de: Kritische Infrastruktur mit eigenen isolierten Arbeitsbereichen ohne Internetzugang; sicherheitskritische Bereiche als separates Einsatzmodell führen und Gebäudesicherheitsmassnahmen am Modell prüfen.
+    fr: Infrastructures critiques avec espaces de travail isolés sans accès Internet; gérer les zones critiques dans une maquette d'intervention séparée et contrôler les mesures de sécurité du bâtiment sur le modèle.
+    it: Infrastrutture critiche con ambienti di lavoro isolati senza accesso a Internet; gestire le zone critiche in un modello di intervento separato e verificare le misure di sicurezza dell'edificio sul modello.
+    en: Critical infrastructure with dedicated isolated workspaces without internet access; keep security-critical areas in a separate insert model and verify building security measures against the model.
+  status: active
+  activated_workflows:
+  - pragmaticbim:workflow/des-critical-area-insert-model
+  - pragmaticbim:workflow/qas-building-security-verification
+  comment: Explicit set at level hoch (sort_order 3); not cumulative.

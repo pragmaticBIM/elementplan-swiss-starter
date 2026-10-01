@@ -1,0 +1,133 @@
+id: pragmaticbim:workflow/des-flooring-planning
+code: DES-FLOORING
+sort_order: 50
+name:
+  de: Bodenaufbauten planen
+  fr: Planifier les complexes de sol
+  it: Pianificare le stratigrafie di pavimento
+  en: Plan floor build-ups
+description:
+  de: 'Bodenaufbauten flächig im Modell abbilden, damit Belag, Unterlagsboden, Fugen und Mengen für die Ausführung zuverlässig ausgewertet werden können.
+
+
+    **Ausgangslage**
+
+    - Bodenbelagsarbeiten brauchen klare Aufbautypen, Flächen und Fugen; reine Raumeigenschaften reichen nicht.
+
+    - Gerade die Fugenplanung von Unterlagsböden (in Deutschland Estrich) wird oft vergessen und muss ad hoc auf der Baustelle gelöst werden. Dies ist besonders bei Fussbodenheizungen wichtig!
+
+
+    **Ziel & Nutzen**
+
+    - Bodenaufbau nach Aufbautyp modellieren und mit Finish sowie SubfloorType attributieren.
+
+    - Nettoflächen und Aufbautypen direkt aus dem Modell für Ausführung und Mengenauszug nutzen.
+
+
+    **Ablauf**
+
+    1. Bodenaufbau als modellierte Schicht nach Aufbautyp bereitstellen.
+
+    2. Finish (Bodenbelagstyp) und SubfloorType (Unterlagsboden) erfassen; Fugen bei Bedarf modellieren.
+
+    3. Modell für Ausführung, Filterung nach Aufbautyp und Mengenauszug nutzen.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit flächig modellierten Bodenaufbauten und vollständigen Angaben für Ausführung und Mengenermittlung.'
+  fr: 'Représenter les complexes de sol en surface dans la maquette, afin que revêtement, chape, joints et quantités soient évaluables de façon fiable pour l''exécution.
+
+
+    **Situation de départ**
+
+    - Les travaux de revêtements exigent des types d''aufbau clairs, des surfaces et des joints ; les seules propriétés de local ne suffisent pas.
+
+    - Le calepinage des joints de chape est souvent oublié et doit alors être résolu dans l''urgence sur le chantier. C''est particulièrement important en présence d''un chauffage au sol.
+
+
+    **Objectif et bénéfice**
+
+    - Modéliser le complexe de sol par type d''aufbau et l''attribuer avec Finish et SubfloorType.
+
+    - Utiliser surfaces nettes et types d''aufbau directement depuis la maquette pour l''exécution et le métré.
+
+
+    **Déroulement**
+
+    1. Fournir le complexe de sol comme couche modélisée par type d''aufbau.
+
+    2. Saisir Finish (type de revêtement) et SubfloorType (chape) ; modéliser les joints si besoin.
+
+    3. Utiliser la maquette pour l''exécution, le filtrage par type d''aufbau et le métré.
+
+
+    **Livrable**
+
+    - Maquette architecture avec complexes de sol modélisés en surface et données complètes pour l''exécution et le métré.'
+  it: 'Rappresentare le stratigrafie di pavimento in superficie nel modello, così che rivestimento, sottofondo, fughe e quantità siano valutabili in modo affidabile per l''esecuzione.
+
+
+    **Situazione di partenza**
+
+    - I lavori di pavimentazione richiedono tipi di stratigrafia chiari, superfici e fughe; le sole proprietà di locale non bastano.
+
+    - La pianificazione delle fughe del sottofondo viene spesso dimenticata e va poi risolta in cantiere all''ultimo momento. Questo è particolarmente importante in presenza di riscaldamento a pavimento.
+
+
+    **Obiettivo e beneficio**
+
+    - Modellare la stratigrafia per tipo e attributarla con Finish e SubfloorType.
+
+    - Usare superfici nette e tipi di stratigrafia direttamente dal modello per esecuzione e computo.
+
+
+    **Svolgimento**
+
+    1. Fornire la stratigrafia come strato modellato per tipo.
+
+    2. Registrare Finish (tipo di pavimentazione) e SubfloorType (sottofondo); modellare le fughe se necessario.
+
+    3. Usare il modello per esecuzione, filtro per tipo di stratigrafia e computo metrico.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con stratigrafie di pavimento modellate per superficie e dati completi per esecuzione e computo.'
+  en: 'Model floor build-ups as areas so finish, subfloor, joints, and quantities can be evaluated reliably for execution.
+
+
+    **Starting point**
+
+    - Flooring works need clear build-up types, areas, and joints; space properties alone are not enough.
+
+    - Joint planning for subfloors is often forgotten and then has to be solved ad hoc on site. This is particularly important with underfloor heating.
+
+
+    **Goal & benefit**
+
+    - Model floor build-up by type and attribute it with Finish and SubfloorType.
+
+    - Use net areas and build-up types directly from the model for execution and quantity take-off.
+
+
+    **Process**
+
+    1. Provide floor build-up as a modelled layer by build-up type.
+
+    2. Capture Finish (floor covering type) and SubfloorType (subfloor); model joints where needed.
+
+    3. Use the model for execution, filtering by build-up type, and quantity take-off.
+
+
+    **Deliverable**
+
+    - Architecture model with area-based floor build-ups and complete information for execution and quantity take-off.'
+workflow_group: arbeitsvorbereitung
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Design. Modelled IfcCovering FLOORING split by build-up type. Early tender basis without modelled covering: bes-flooring-tender-basis (space FloorCovering).'

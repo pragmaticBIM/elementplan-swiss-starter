@@ -1,0 +1,167 @@
+id: pragmaticbim:workflow/hov-native-model-handover
+code: HOV-NATIVE
+sort_order: 53
+name:
+  de: Native Modelle langfristig nutzbar übergeben
+  fr: Remettre des maquettes natives utilisables à long terme
+  it: Consegnare modelli nativi utilizzabili a lungo termine
+  en: Hand over native models for long-term use
+description:
+  de: 'Native Fachmodelle so paketieren und prüfen, dass sie auch nach Jahren geöffnet, exportiert und bei Bedarf weitergeführt werden können.
+
+
+    **Ausgangslage**
+
+    - Revit-, Archicad- oder Vectorworks-Dateien werden oft ohne Verknüpfungen, Bibliotheken, Plugins und Softwarestand archiviert und lassen sich später nicht zuverlässig öffnen oder exportieren.
+
+    - Native Dateien erhalten die Bearbeitbarkeit, garantieren aber weder unabhängigen Langzeitzugriff noch einen funktionierenden FM-Prozess.
+
+
+    **Ziel & Nutzen**
+
+    - Benötigte Informationen bleiben auch bei einem Wechsel der Autorensoftware oder Softwareversion zugänglich.
+
+    - Native Modelle erhalten die vereinbarte Bearbeitbarkeit und können bei vorgesehenem FM-Einsatz kontrolliert weitergeführt werden.
+
+    - Ein Wiederherstellungs- und Exporttest macht fehlende Abhängigkeiten und Informationsverluste vor der Übergabe sichtbar.
+
+
+    **Ablauf**
+
+    1. Verwendungszweck, Formate, Aufbewahrungsdauer und Verantwortung für Migration und Betrieb festlegen.
+
+    2. Native Fachmodelle mit zulässigen Verknüpfungen, Bibliotheken, Plugins, Exportkonfigurationen und einem Softwaremanifest paketieren; vereinbarte IFC-, PDF- und Datenauszüge erzeugen.
+
+    3. Paket in der Zielumgebung wiederherstellen, Modelle öffnen und Informationen erneut exportieren; Vollständigkeit und Abweichungen prüfen, Ergebnis protokollieren und freigegebenen Stand archivieren.
+
+
+    **Lieferergebnis**
+
+    - Natives Modellpaket mit Manifest der Softwarestände, Abhängigkeiten und Verknüpfungen.
+
+    - Geprüfte offene Referenzmodelle und vereinbarte strukturierte Informationsauszüge.
+
+    - Protokollierter Öffnungs-, Wiederherstellungs- und Exporttest mit geregelter Verantwortung für Aufbewahrung, Migration oder Nachführung.'
+  fr: 'Remettre les maquettes métier natives de sorte que les informations nécessaires restent accessibles après plusieurs années ou que les maquettes puissent être tenues à jour de manière ciblée pendant
+    l''exploitation.
+
+
+    **Situation de départ**
+
+    - À la fin du projet, les fichiers Revit, Archicad ou Vectorworks sont souvent archivés sans fichiers liés, bibliothèques, extensions ni indication de la version du logiciel. Ils ne peuvent ensuite
+    plus être ouverts complètement ni exportés de manière fiable.
+
+    - Un fichier natif conserve les possibilités de modification propres au logiciel, mais ne garantit à lui seul ni un accès pérenne indépendant ni un processus FM opérationnel.
+
+
+    **Objectif et bénéfice**
+
+    - Les informations nécessaires restent accessibles même en cas de changement de logiciel de conception ou de version.
+
+    - Les maquettes natives conservent les possibilités de modification convenues et peuvent être tenues à jour de manière contrôlée lorsqu''un usage FM est prévu.
+
+    - Un test de restauration et d''export met en évidence les dépendances manquantes et les pertes d''informations avant la remise.
+
+
+    **Déroulement**
+
+    1. Définir l''usage prévu, les formats, la durée de conservation ainsi que la responsabilité de la migration et de l''exploitation.
+
+    2. Regrouper les maquettes métier natives avec les liens, bibliothèques, extensions et configurations d''export autorisés ainsi qu''un manifeste des versions logicielles utilisées ; produire les fichiers
+    IFC, PDF et extractions de données convenus.
+
+    3. Restaurer le paquet dans l''environnement cible prévu, ouvrir les maquettes natives et exporter à nouveau les informations convenues ; contrôler l''exhaustivité et les écarts, consigner le résultat
+    et archiver l''état validé.
+
+
+    **Livrable**
+
+    - Paquet complet de maquettes natives avec manifeste des versions logicielles, dépendances et liens.
+
+    - Maquettes de référence ouvertes contrôlées et extractions d''informations structurées convenues.
+
+    - Test documenté d''ouverture, de restauration et d''export avec responsabilité définie pour la conservation, la migration ou la mise à jour pendant l''exploitation.'
+  it: 'Consegnare i modelli specialistici nativi in modo che le informazioni necessarie rimangano accessibili anche dopo anni o che i modelli possano essere aggiornati in modo mirato durante l''esercizio.
+
+
+    **Situazione di partenza**
+
+    - Al termine del progetto, i file Revit, Archicad o Vectorworks vengono spesso archiviati senza file collegati, librerie, plugin o indicazioni sulla versione del software. In seguito non possono più
+    essere aperti integralmente né esportati in modo affidabile.
+
+    - Un file nativo conserva le possibilità di modifica specifiche del software, ma da solo non garantisce né un accesso indipendente a lungo termine né un processo FM funzionante.
+
+
+    **Obiettivo e beneficio**
+
+    - Le informazioni necessarie rimangono accessibili anche in caso di cambio del software di authoring o della versione.
+
+    - I modelli nativi conservano le possibilità di modifica concordate e possono essere aggiornati in modo controllato quando è previsto l''uso nel FM.
+
+    - Un test di ripristino ed esportazione rende visibili prima della consegna le dipendenze mancanti e le perdite di informazioni.
+
+
+    **Svolgimento**
+
+    1. Definire con il proprietario e il gestore lo scopo d''uso, i formati nativi e aperti necessari, la durata di conservazione e la responsabilità per l''esercizio e le migrazioni.
+
+    2. Raggruppare i modelli specialistici nativi con collegamenti, librerie, plugin e configurazioni di esportazione consentiti nonché un manifesto delle versioni software utilizzate; produrre i file IFC,
+    PDF e le estrazioni di dati concordati.
+
+    3. Ripristinare il pacchetto nell''ambiente di destinazione previsto, aprire i modelli nativi ed esportare nuovamente le informazioni concordate; verificare completezza e scostamenti, verbalizzare il
+    risultato e archiviare lo stato approvato.
+
+
+    **Risultato della fornitura**
+
+    - Pacchetto completo dei modelli nativi con manifesto delle versioni software, delle dipendenze e dei collegamenti.
+
+    - Modelli di riferimento aperti verificati ed estrazioni strutturate delle informazioni concordate.
+
+    - Test documentato di apertura, ripristino ed esportazione con responsabilità definite per conservazione, migrazione o aggiornamento durante l''esercizio.'
+  en: 'Package and check native discipline models so that they can still be opened, exported, and, where required, maintained years later.
+
+
+    **Starting point**
+
+    - At project close-out, Revit, Archicad, or Vectorworks files are often archived without linked files, libraries, plugins, or software version details. They can later no longer be opened completely
+    or exported reliably.
+
+    - A native file retains software-specific editing capabilities, but on its own provides neither independent long-term access nor a functioning FM process.
+
+
+    **Goal & benefit**
+
+    - Required information remains accessible even when the authoring software or software version changes.
+
+    - Native models retain the agreed editing capability and can be maintained in a controlled manner when FM use is intended.
+
+    - A restoration and export test reveals missing dependencies and information loss before handover.
+
+
+    **Process**
+
+    1. Define the intended use, formats, retention period, and responsibility for migration and operation.
+
+    2. Package native discipline models with permitted links, libraries, plugins, export configurations, and a manifest of the software versions used; produce the agreed IFC, PDF, and data extracts.
+
+    3. Restore the package in the intended target environment, open the native models, and export the agreed information again; check completeness and deviations, record the result, and archive the approved
+    revision.
+
+
+    **Deliverable**
+
+    - Complete native model package with a manifest of software versions, dependencies, and links.
+
+    - Checked open reference models and agreed structured information extracts.
+
+    - Documented opening, restoration, and export test with defined responsibility for retention, migration, or operational maintenance.'
+workflow_group: null
+parent_workflow: pragmaticbim:workflow/hov
+picture_link: null
+status: active
+service_kind: special
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Linked only to IfcProject Name: the deliverable is the native package, not element attributes. The native package complements rather than replaces checked open reference formats. Scope and retention
+  period are project-specific; licensing may restrict redistribution of libraries or plugins.'

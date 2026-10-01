@@ -1,0 +1,53 @@
+id: pragmaticbim:document/flooring-schedule
+code: BBO
+sort_order: 109
+name:
+  de: Bodenbelagsübersicht
+  fr: Récapitulatif des revêtements de sol
+  it: Riepilogo dei rivestimenti di pavimento
+  en: Flooring schedule
+definition:
+  de: Raumliste nach Belagstyp, Fläche und Umfang als prüfbare Grundlage für die Bodenbelagsausschreibung. Die Angaben stammen aus den Innenräumen, nicht aus einer separaten Mengenermittlung.
+  fr: Liste des locaux par type de revêtement, surface et périmètre, comme base vérifiable pour l'appel d'offres des revêtements de sol. Les indications proviennent des locaux, et non d'un métré séparé.
+  it: Elenco dei locali per tipo di rivestimento, superficie e perimetro, come base verificabile per la gara dei rivestimenti di pavimento. Le indicazioni provengono dai locali, non da un computo separato.
+  en: Room list by covering type, area, and perimeter as a verifiable basis for the flooring tender. The figures come from the interior spaces, not from a separate quantity take-off.
+description:
+  de: |-
+    - Raumnummer und Nutzung
+    - Vorgesehener Bodenbelag je Raum
+    - Ausschreibungsrelevante Fläche und Umfanglänge je Raum
+    - Summen nach Belagstyp
+    - Bezug zum massgebenden Modellstand
+  fr: |-
+    - Numéro et affectation du local
+    - Revêtement de sol prévu par local
+    - Surface et longueur de périmètre déterminantes pour l'appel d'offres par local
+    - Totaux par type de revêtement
+    - Référence à l'état de maquette déterminant
+  it: |-
+    - Numero e destinazione del locale
+    - Rivestimento di pavimento previsto per locale
+    - Superficie e lunghezza di perimetro rilevanti per la gara per locale
+    - Totali per tipo di rivestimento
+    - Riferimento allo stato di modello determinante
+  en: |-
+    - Room number and use
+    - Intended floor covering per room
+    - Tender-relevant area and perimeter length per room
+    - Totals by covering type
+    - Reference to the governing model status
+file_name:
+  de: '{Projektnummer}_ARC-BBO_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_ARC-BBO_{Libre}.{ext}'
+  it: '{NumeroProgetto}_ARC-BBO_{Libero}.{ext}'
+  en: '{ProjectNumber}_ARC-BBO_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+included_elements:
+  - pragmaticbim:element/spaces-interior
+scheduled_milestones:
+  - "32:M"
+  - "41:M"
+comment: >-
+  Ausschreibungsgrundlage ohne modellierten Bodenaufbau. Der modellierte
+  Aufbau bleibt Gegenstand der Bodenaufbauplanung.

@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/gemeinschaftswaschkueche
+code: RT-WH-18
+sort_order: 18
+name:
+  de: Gemeinschaftswaschkueche
+  fr: Buanderie commune
+  it: Lavanderia comune
+  en: Communal laundry
+definition:
+  de: Gemeinsame Waschküche für mehrere Wohneinheiten.
+  fr: Buanderie commune à plusieurs logements.
+  it: Lavanderia comune a più unità abitative.
+  en: Shared laundry for several dwelling units.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Waschkueche
+    fr: Buanderie
+    it: Lavanderia
+    en: Laundry Room
+restrictions:
+  min_area: 12
+status: active

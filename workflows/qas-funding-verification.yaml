@@ -1,0 +1,147 @@
+id: pragmaticbim:workflow/qas-funding-verification
+code: QAS-FUND
+sort_order: 93
+name:
+  de: Fördermittel prüfen und nachweisen
+  fr: Contrôler et justifier les subventions
+  it: Verificare e giustificare gli incentivi
+  en: Check and verify funding
+description:
+  de: 'Förderfähige Massnahmen früh erkennen und die Nachweise bis zur Auszahlung nachvollziehbar führen.
+
+
+    **Ausgangslage**
+
+    - Förderbedingungen, Fristen und Nachweise sind über Richtlinien und Projektunterlagen verteilt; dadurch werden Fördermöglichkeiten übersehen oder Auszahlungen gefährdet.
+
+    - Bei mehreren Gesuchen und Planungsänderungen sind die Zuordnung zu Bauteilen sowie die beantragten und ausgeführten Mengen schwer nachzuvollziehen.
+
+
+    **Ziel & Nutzen**
+
+    - Förderfähige Massnahmen anhand versionierter Programmbedingungen sowie aktueller Modellmengen und technischer Kennwerte vorprüfen.
+
+    - Gesuche über Planung und Ausführung nachführen, Abweichungen sichtbar machen und Abschlussnachweise rechtzeitig vervollständigen.
+
+
+    **Ablauf**
+
+    1. Aktuelle Fachmodelle, Bauteilkatalog, Kostenberechnung und massgebende Förderbedingungen bereitstellen.
+
+    2. Gesuchsnummer an den betroffenen Bauteilen führen, mehrere Nummern kommagetrennt, und Mengen, Kennwerte sowie Kosten gegen den dokumentierten Richtlinienstand prüfen.
+
+    3. Prüfung nach Planungs- und Ausführungsänderungen aktualisieren und Status, Fristen, Abweichungen sowie Belege im Fördermittelreport zusammenführen.
+
+
+    **Lieferergebnis**
+
+    - Fördermittelreport mit Gesuchen, Massnahmen, Berechnungen, Bearbeitungsstand und offenen Punkten
+
+    - Nachvollziehbare Modellbezüge und vollständige Nachweise für Antrag, Bewilligung und Abschluss'
+  fr: 'Identifier tôt les mesures donnant droit à une subvention et assurer la traçabilité des justificatifs jusqu''au versement.
+
+
+    **Situation de départ**
+
+    - Les conditions, délais et justificatifs sont répartis entre directives et documents du projet ; des possibilités de subvention sont ainsi omises ou des versements compromis.
+
+    - Avec plusieurs demandes et des modifications de projet, l''attribution aux éléments ainsi que les quantités demandées et exécutées sont difficiles à retracer.
+
+
+    **Objectif et bénéfice**
+
+    - Effectuer un contrôle préalable des mesures donnant droit à une subvention à partir des conditions versionnées du programme, des quantités actuelles de la maquette et des valeurs techniques.
+
+    - Tenir les demandes à jour pendant les études et l''exécution, signaler les écarts et compléter à temps les justificatifs de clôture.
+
+
+    **Déroulement**
+
+    1. Fournir les maquettes métiers actuelles, le catalogue des éléments, le calcul des coûts et les conditions de subvention déterminantes.
+
+    2. Saisir le numéro de demande sur les éléments concernés, plusieurs numéros séparés par des virgules, puis contrôler quantités, valeurs et coûts par rapport à l''état documenté des directives.
+
+    3. Actualiser le contrôle après les modifications des études et de l''exécution, puis réunir état, délais, écarts et pièces justificatives dans le rapport des subventions.
+
+
+    **Livrable**
+
+    - Rapport des subventions avec demandes, mesures, calculs, état de traitement et points en suspens
+
+    - Références traçables aux objets de la maquette et justificatifs complets pour la demande, la décision et la clôture'
+  it: 'Individuare tempestivamente le misure incentivabili e garantire la tracciabilità dei giustificativi fino al versamento.
+
+
+    **Situazione di partenza**
+
+    - Condizioni, scadenze e giustificativi sono distribuiti tra direttive e documenti di progetto; di conseguenza si tralasciano possibilità di incentivazione o si compromettono i versamenti.
+
+    - In presenza di più domande e modifiche di progetto, è difficile ricostruire l''assegnazione ai componenti nonché le quantità richieste ed eseguite.
+
+
+    **Obiettivo e beneficio**
+
+    - Verificare preliminarmente le misure incentivabili in base alle condizioni versionate del programma, alle quantità aggiornate del modello e ai valori tecnici.
+
+    - Aggiornare le domande durante la progettazione e l''esecuzione, evidenziare gli scostamenti e completare per tempo i giustificativi finali.
+
+
+    **Svolgimento**
+
+    1. Mettere a disposizione i modelli disciplinari aggiornati, il catalogo dei componenti, il calcolo dei costi e le condizioni determinanti per gli incentivi.
+
+    2. Indicare il numero della domanda sui componenti interessati, più numeri separati da virgole, e verificare quantità, valori e costi rispetto alla versione documentata delle direttive.
+
+    3. Aggiornare la verifica dopo le modifiche di progettazione e di esecuzione e riunire stato, scadenze, scostamenti e giustificativi nel rapporto sugli incentivi.
+
+
+    **Risultato della fornitura**
+
+    - Rapporto sugli incentivi con domande, misure, calcoli, stato di elaborazione e punti in sospeso
+
+    - Riferimenti tracciabili agli oggetti del modello e giustificativi completi per domanda, decisione e chiusura'
+  en: 'Identify eligible measures early and maintain traceable evidence through to payment.
+
+
+    **Starting point**
+
+    - Funding conditions, deadlines, and evidence are distributed across guidelines and project documents; funding opportunities are therefore missed or payments put at risk.
+
+    - With multiple applications and design changes, assignments to components and the applied-for and executed quantities are difficult to trace.
+
+
+    **Goal & benefit**
+
+    - Pre-check eligible measures against versioned programme conditions, current model quantities, and technical values.
+
+    - Keep applications current throughout design and construction, expose deviations, and complete close-out evidence on time.
+
+
+    **Process**
+
+    1. Provide current discipline models, the component catalogue, cost calculation, and applicable funding conditions.
+
+    2. Enter the application number on the affected components, several numbers separated by commas, and check quantities, values, and costs against the documented guideline version.
+
+    3. Update the check after design and construction changes and consolidate status, deadlines, deviations, and evidence in the funding report.
+
+
+    **Deliverable**
+
+    - Funding report with applications, measures, calculations, status, and open items
+
+    - Traceable model references and complete evidence for application, approval, and close-out'
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: special
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/building-physics
+comment: 'FundingApplication in ePset_Cost is the filter key: one or more application numbers, comma-separated. Empty means the component is not assigned. Programme rules, decisions, deadlines, invoices,
+  payments, signatures, and evidence remain in the funding report. Eligibility against the documented programme version is a check result in that report, not a boolean on the object. Inputs include the
+  building-physics component catalogue and cost calculation; quantities and technical values come from the current discipline models.'

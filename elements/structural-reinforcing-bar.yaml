@@ -8,7 +8,7 @@ name:
   it: Armatura
   en: Reinforcement
 definition:
-  de: 'Bewehrungselemente im Schal- und Bewehrungsmodell für die Ausführung.
+  de: 'Ermöglicht eindeutige Stahllisten und Verlegeinformationen für eine fehlerarme Ausführung.
 
 
     **Beschreibung**
@@ -18,12 +18,12 @@ definition:
     - Dient der lageweisen Filterung, Stahllisten und Ausführung auf der Baustelle.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Pro Etappe im Schal- und Bewehrungsmodell führen.
 
     - Bewehrungslage über Layer steuern (nicht als Attribut); Bewehrungslage muss filterbar sein.'
-  fr: 'Éléments d''armature dans le modèle de coffrage et d''armatures pour l''exécution.
+  fr: 'Permet d''établir des listes d''acier et des indications de pose univoques pour limiter les erreurs d''exécution.
 
 
     **Description**
@@ -38,7 +38,7 @@ definition:
     - Gérer par étape dans le modèle de coffrage et d''armatures.
 
     - Contrôler le lit d''armatures via les calques (pas comme attribut) ; le lit d''armatures doit être filtrable.'
-  it: 'Elementi di armatura nel modello di cassero e armatura per l''esecuzione.
+  it: 'Consente di ricavare liste dei ferri e indicazioni di posa univoche, riducendo gli errori in fase esecutiva.
 
 
     **Descrizione**
@@ -53,7 +53,7 @@ definition:
     - Gestire per tappa nel modello di cassero e armatura.
 
     - Controllare lo strato di armatura tramite layer (non come attributo); lo strato di armatura deve essere filtrabile.'
-  en: 'Reinforcement elements in the formwork and reinforcement model for execution.
+  en: 'Provides unambiguous steel schedules and placing information to reduce execution errors.
 
 
     **Description**
@@ -190,3 +190,48 @@ attributes:
   is_applicability: false
   status: active
   sort_order: 5
+- name: GlobalTradeItemNumber
+  pset: Pset_ManufacturerTypeInformation
+  definition:
+    de: GTIN (Global Trade Item Number) des Produkttyps; je nach GS1-Struktur 8, 12, 13 oder 14 Stellen.
+    fr: GTIN (Global Trade Item Number) du type de produit ; selon la structure GS1, 8, 12, 13 ou 14 chiffres.
+    it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
+    en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 6
+- name: SerialNumber
+  pset: Pset_ManufacturerOccurrence
+  definition:
+    de: Vom Hersteller vergebene Seriennummer eines einzelnen Produkts; zusammen mit der GTIN Schlüssel für den objektspezifischen Produktpass.
+    fr: Numéro de série attribué par le fabricant à un produit individuel ; avec le GTIN, clé du passeport produit propre à l’objet.
+    it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
+    en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 7

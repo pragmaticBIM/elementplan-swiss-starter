@@ -1,0 +1,24 @@
+id: pragmaticbim:value/ebkp-h-slab-balcony
+code: EBKP-H-SLAB-BALCONY
+name:
+  de: eBKP-H Balkon
+  fr: eBKP-H balcon
+  it: eBKP-H balcone
+  en: eBKP-H balcony
+description:
+  de: 'Zulässige eBKP-H-Codes (SN 506 511): C04.07.'
+  fr: 'Codes eBKP-H admis (SN 506 511) : C04.07.'
+  it: 'Codici eBKP-H ammessi (SN 506 511): C04.07.'
+  en: 'Allowed eBKP-H codes (SN 506 511): C04.07.'
+year: 2026
+norm_reference: SN 506 511
+status: active
+values:
+  de:
+  - C04.07
+  fr:
+  - C04.07
+  it:
+  - C04.07
+  en:
+  - C04.07

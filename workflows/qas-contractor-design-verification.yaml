@@ -1,0 +1,142 @@
+id: pragmaticbim:workflow/qas-contractor-design-verification
+code: QAS-CONTRACTOR-DESIGN
+sort_order: 91
+name:
+  de: Werk- und Montageplanung prüfen
+  fr: Contrôler les plans d'atelier et de montage
+  it: Verificare i piani d'officina e di montaggio
+  en: Verify shop and installation design
+description:
+  de: 'Werk- und Montageplanungen gegen die vereinbarten planungsrelevanten Schnittstellen prüfen, ohne die Unternehmerlösung im Architekturmodell nachzumodellieren.
+
+
+    **Ausgangslage**
+
+    - Unternehmen liefern ihre Planung häufig als 2D-Pläne und zunehmend auch als Modelle.
+
+    - Wird die Unternehmerlösung im Architekturmodell detailliert nachgeführt, entstehen doppelte Daten, unklare Verantwortlichkeiten und unnötiger Pflegeaufwand.
+
+    - Ohne eindeutige Soll-Vorgaben bleiben Abweichungen bei Lage, Abmessungen, Anschlüssen, Freiräumen und Leistungsanforderungen schwer prüfbar.
+
+
+    **Ziel & Nutzen**
+
+    - Die verbindlichen Schnittstellen als einfache Bauteile oder Platzhalter im Architektur- und Tragwerksmodell führen.
+
+    - 2D-Pläne oder Unternehmermodelle gegen dieselben Soll-Vorgaben prüfen und Abweichungen nachvollziehbar freigeben oder zurückweisen.
+
+
+    **Ablauf**
+
+    1. Planungsrelevante Schnittstellen mit eindeutiger Bezeichnung, Lage, Aussenabmessungen, Anschlüssen, Freiräumen und erforderlichen Leistungen bereitstellen.
+
+    2. Gelieferte Werk- und Montagepläne oder Unternehmermodelle gegen diese Rahmenbedingungen fachlich und geometrisch prüfen.
+
+    3. Abweichungen, Entscheide, Verantwortlichkeiten und Freigabestatus dokumentieren und bis zur Bereinigung nachverfolgen.
+
+
+    **Lieferergebnis**
+
+    - Geprüfte Werk- und Montageplanung mit dokumentierten Abweichungen, Entscheiden und Freigabestatus.'
+  fr: 'Contrôler les plans d''atelier et de montage par rapport aux interfaces déterminantes convenues, sans reproduire en détail la solution de l''entreprise dans la maquette d''architecture.
+
+
+    **Situation de départ**
+
+    - Les entreprises livrent souvent leurs études sous forme de plans 2D et, de plus en plus, de maquettes.
+
+    - La reprise détaillée de la solution de l''entreprise dans la maquette d''architecture crée des données à double, des responsabilités floues et un entretien inutile.
+
+    - Sans données de référence univoques, les écarts de position, de dimensions, de raccordements, de dégagements et de performances sont difficiles à contrôler.
+
+
+    **Objectif et bénéfice**
+
+    - Saisir les interfaces contraignantes dans les maquettes d''architecture et de structure au moyen d''éléments simples ou de volumes réservés.
+
+    - Contrôler les plans 2D ou les maquettes d''entreprise par rapport aux mêmes données de référence et valider ou refuser les écarts de manière traçable.
+
+
+    **Déroulement**
+
+    1. Fournir les interfaces déterminantes avec désignation, position, dimensions hors tout, raccordements, dégagements et performances requises.
+
+    2. Contrôler techniquement et géométriquement les plans d''atelier et de montage ou les maquettes d''entreprise par rapport à ces conditions-cadres.
+
+    3. Consigner les écarts, les décisions, les responsabilités et l''état de validation, puis les suivre jusqu''à leur résolution.
+
+
+    **Livrable**
+
+    - Plans d''atelier et de montage contrôlés avec écarts, décisions et état de validation documentés.'
+  it: 'Verificare i piani d''officina e di montaggio rispetto alle interfacce progettuali concordate, senza riprodurre in dettaglio la soluzione dell''impresa nel modello di architettura.
+
+
+    **Situazione di partenza**
+
+    - Le imprese consegnano spesso la propria progettazione sotto forma di piani 2D e, sempre più, anche di modelli.
+
+    - Riportare in dettaglio la soluzione dell''impresa nel modello di architettura crea dati duplicati, responsabilità poco chiare e un inutile onere di aggiornamento.
+
+    - Senza riferimenti univoci, gli scostamenti relativi a posizione, dimensioni, collegamenti, spazi liberi e prestazioni sono difficili da verificare.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire le interfacce vincolanti nei modelli di architettura e strutturale mediante componenti semplici o ingombri.
+
+    - Verificare i piani 2D o i modelli dell''impresa rispetto agli stessi riferimenti e approvare o respingere gli scostamenti in modo tracciabile.
+
+
+    **Svolgimento**
+
+    1. Fornire le interfacce progettuali con designazione, posizione, dimensioni d''ingombro, collegamenti, spazi liberi e prestazioni richieste.
+
+    2. Verificare dal punto di vista tecnico e geometrico i piani d''officina e di montaggio o i modelli dell''impresa rispetto a queste condizioni quadro.
+
+    3. Registrare gli scostamenti, le decisioni, le responsabilità e lo stato di approvazione e seguirli fino alla risoluzione.
+
+
+    **Risultato della fornitura**
+
+    - Piani d''officina e di montaggio verificati con scostamenti, decisioni e stato di approvazione documentati.'
+  en: 'Verify shop and installation design against the agreed design-relevant interfaces without remodelling the contractor''s solution in detail in the architecture model.
+
+
+    **Starting point**
+
+    - Contractors often deliver their design as 2D drawings and increasingly as models.
+
+    - Reproducing the contractor''s solution in detail in the architecture model creates duplicate data, unclear responsibilities, and unnecessary maintenance.
+
+    - Without unambiguous target requirements, deviations in location, dimensions, connections, clearances, and performance are difficult to verify.
+
+
+    **Goal & benefit**
+
+    - Maintain the binding interfaces as simple components or placeholders in the architecture and structural models.
+
+    - Verify 2D drawings or contractor models against the same target requirements and approve or reject deviations traceably.
+
+
+    **Process**
+
+    1. Provide the design-relevant interfaces with unambiguous designation, location, overall dimensions, connections, clearances, and required performance.
+
+    2. Verify the delivered shop and installation drawings or contractor models technically and geometrically against these constraints.
+
+    3. Record deviations, decisions, responsibilities, and approval status and track them until resolved.
+
+
+    **Deliverable**
+
+    - Verified shop and installation design with documented deviations, decisions, and approval status.'
+workflow_group: fachpruefung
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+comment: 'Black-box verification: the design models retain only the binding planning interfaces and placeholders. The contractor''s detailed solution remains in the submitted 2D drawings or contractor model.'

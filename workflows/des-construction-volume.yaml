@@ -1,0 +1,143 @@
+id: pragmaticbim:workflow/des-construction-volume
+code: DES-KV
+sort_order: 55
+name:
+  de: Konstruktionsvolumen ermitteln
+  fr: Déterminer le volume de construction
+  it: Determinare il volume di costruzione
+  en: Determine the construction volume
+description:
+  de: 'Konstruktionsvolumen aus Bruttovolumen, Nettoräumen und Lufträumen ableiten, damit der Materialaufwand schon in frühen Phasen vergleichbar wird.
+
+
+    **Ausgangslage**
+
+    - Die Konstruktionsfläche gilt als Wirtschaftlichkeitskennwert, zeigt aber keine dicken Decken oder hohen Bodenaufbauten.
+
+    - Ein Hochhaus kann bei der Fläche gut und beim Volumen schlecht dastehen; der Mehrverbrauch an Material bleibt unsichtbar, solange nur die Fläche gilt.
+
+
+    **Ziel & Nutzen**
+
+    - Den Materialaufwand als Volumen mit vergleichbaren Projekten abgleichen, sobald Bruttovolumen und Nettoräume in frühen Phasen modelliert sind.
+
+    - Dafür reichen die Raumvolumen; ein Bauteilmodell oder eine parallele Mengenermittlung ist nicht nötig.
+
+
+    **Ablauf**
+
+    1. Bruttovolumen, Nettoräume und nicht nutzbare Lufträume gemäss Modellierungsrichtlinie bereitstellen.
+
+    2. Konstruktionsvolumen als Bruttovolumen minus Volumen der Nettoräume minus Lufträume auswerten.
+
+    3. Den Kennwert mit vergleichbaren Projekten abgleichen; Abweichungen durch dicke Decken werden sichtbar, die in der Konstruktionsfläche nicht erscheinen.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit Bruttovolumen, Nettoräumen und Lufträumen
+
+    - Auswertbares Konstruktionsvolumen für den Vergleich mit anderen Projekten'
+  fr: 'Obtenir le volume de construction à partir du volume brut, des locaux nets et des volumes d''air, afin de comparer l''emploi de matériaux dès les phases initiales.
+
+
+    **Situation de départ**
+
+    - La surface de construction sert d''indicateur économique, mais ne montre ni les dalles épaisses ni les complexes de sol importants.
+
+    - Un immeuble de grande hauteur peut être favorable en surface et défavorable en volume ; le surcroît de matériau reste invisible tant que seule la surface compte.
+
+
+    **Objectif et bénéfice**
+
+    - Confronter l''emploi de matériaux comme volume à des projets comparables, dès que volumes bruts et locaux nets sont saisis dans les phases initiales.
+
+    - Les volumes de locaux suffisent ; une maquette d''éléments ou un métré parallèle n''est pas nécessaire.
+
+
+    **Déroulement**
+
+    1. Fournir volumes bruts, locaux nets et volumes d''air non utilisables selon la directive de modélisation.
+
+    2. Évaluer le volume de construction comme volume brut moins le volume des locaux nets moins les volumes d''air.
+
+    3. Confronter l''indicateur à des projets comparables ; les écarts dus à des dalles épaisses deviennent visibles, alors qu''ils n''apparaissent pas dans la surface de construction.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec volumes bruts, locaux nets et volumes d''air
+
+    - Volume de construction évaluable pour la comparaison avec d''autres projets'
+  it: 'Ricavare il volume di costruzione da volume lordo, locali netti e volumi d''aria, per rendere confrontabile l''impiego di materiale già nelle fasi iniziali.
+
+
+    **Situazione di partenza**
+
+    - La superficie di costruzione vale come indicatore economico, ma non mostra solai spessi né pacchetti di pavimento alti.
+
+    - Un edificio a torre può risultare favorevole in superficie e sfavorevole in volume; il maggiore impiego di materiale resta invisibile finché conta solo la superficie.
+
+
+    **Obiettivo e beneficio**
+
+    - Confrontare l''impiego di materiale come volume con progetti comparabili, non appena volumi lordi e locali netti sono modellati nelle fasi iniziali.
+
+    - Bastano i volumi dei locali; non servono un modello dei componenti né un computo parallelo.
+
+
+    **Svolgimento**
+
+    1. Fornire volumi lordi, locali netti e volumi d''aria non utilizzabili secondo la direttiva di modellazione.
+
+    2. Valutare il volume di costruzione come volume lordo meno il volume dei locali netti meno i volumi d''aria.
+
+    3. Confrontare l''indicatore con progetti comparabili; gli scostamenti dovuti a solai spessi diventano visibili, mentre non compaiono nella superficie di costruzione.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con volumi lordi, locali netti e volumi d''aria
+
+    - Volume di costruzione valutabile per il confronto con altri progetti'
+  en: 'Derive construction volume from gross volume, net spaces, and air spaces so material use can be compared already in early phases.
+
+
+    **Starting point**
+
+    - Construction area is treated as an economic indicator, but it does not show thick slabs or deep floor build-ups.
+
+    - A high-rise can look favourable by area and unfavourable by volume; the extra material stays invisible as long as only the area counts.
+
+
+    **Goal & benefit**
+
+    - Compare material use as volume with similar projects as soon as gross volumes and net spaces are modelled in early phases.
+
+    - The space volumes are enough; a component model or a parallel quantity take-off is not required.
+
+
+    **Process**
+
+    1. Provide gross volumes, net spaces, and non-occupiable air spaces as set out in the modelling guideline.
+
+    2. Evaluate construction volume as gross volume minus the volume of net spaces minus air spaces.
+
+    3. Compare the indicator with similar projects; deviations caused by thick slabs become visible, which do not appear in the construction area.
+
+
+    **Deliverable**
+
+    - Architecture model with gross volumes, net spaces, and air spaces
+
+    - Evaluable construction volume for comparison with other projects'
+workflow_group: konzept
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Construction volume = gross volume − net-room volume − air-space volume (Qto_SpaceBaseQuantities.GrossVolume on spaces-gross-volume and spaces-luftraum, NetVolume on spaces-interior). Comparable
+  across projects that follow the same modelling guideline; not a formal SIA 416 verification, because gross volume extends to the outer facade edge rather than the insulation edge. Elevator shafts and
+  parking bays are not deducted: elevator volume is only required from phase 51, and parking bays from Bauprojekt would otherwise double-count interior spaces.'

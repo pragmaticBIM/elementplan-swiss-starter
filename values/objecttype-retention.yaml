@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-retention
+code: OBJ-RETENTION
+name:
+  de: ObjectType Retentionsvolumen
+  fr: ObjectType volume de rétention
+  it: ObjectType volume di ritenzione
+  en: ObjectType retention volume
+description:
+  de: ObjectType für IfcGeographicElement / IfcBuildingElementProxy als Retentionsvolumen.
+  fr: ObjectType pour IfcGeographicElement / IfcBuildingElementProxy comme volume de rétention.
+  it: ObjectType per IfcGeographicElement / IfcBuildingElementProxy come volume di ritenzione.
+  en: ObjectType for IfcGeographicElement / IfcBuildingElementProxy as a retention volume.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Retentionsvolumen
+  fr:
+  - Volume de rétention
+  it:
+  - Volume di ritenzione
+  en:
+  - Retention volume

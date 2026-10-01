@@ -1,0 +1,246 @@
+id: pragmaticbim:phase/abstract
+name:
+  de: Abstrakte Phasen
+  fr: Phases abstraites
+  it: Fasi astratte
+  en: Abstract phases
+values:
+  - 'Brief'
+  - 'Concept'
+  - 'PreConstruction'
+  - 'Construction'
+  - 'Handover'
+  - 'Use'
+  - 'Demolish'
+milestones:
+  - id: 'Brief:B'
+    code: B
+    sort_order: 1
+    name:
+      de: Beginn Brief (Briefing)
+      fr: Début Brief (Brief)
+      it: Inizio Brief (Brief)
+      en: Beginning Brief (Brief)
+    status: active
+    phase: 'Brief'
+    kind: beginning
+  - id: 'Brief:M'
+    code: M
+    sort_order: 2
+    name:
+      de: Mitte Brief (Briefing)
+      fr: Milieu Brief (Brief)
+      it: Metà Brief (Brief)
+      en: Mid Phase Brief (Brief)
+    status: active
+    phase: 'Brief'
+    kind: custom
+  - id: 'Brief:E'
+    code: E
+    sort_order: 3
+    name:
+      de: Ende Brief (Briefing)
+      fr: Fin Brief (Brief)
+      it: Fine Brief (Brief)
+      en: End Phase Brief (Brief)
+    status: active
+    phase: 'Brief'
+    kind: end
+  - id: 'Concept:B'
+    code: B
+    sort_order: 4
+    name:
+      de: Beginn Concept (Konzept)
+      fr: Début Concept (Concept)
+      it: Inizio Concept (Concetto)
+      en: Beginning Concept (Concept)
+    status: active
+    phase: 'Concept'
+    kind: beginning
+  - id: 'Concept:M'
+    code: M
+    sort_order: 5
+    name:
+      de: Mitte Concept (Konzept)
+      fr: Milieu Concept (Concept)
+      it: Metà Concept (Concetto)
+      en: Mid Phase Concept (Concept)
+    status: active
+    phase: 'Concept'
+    kind: custom
+  - id: 'Concept:E'
+    code: E
+    sort_order: 6
+    name:
+      de: Ende Concept (Konzept)
+      fr: Fin Concept (Concept)
+      it: Fine Concept (Concetto)
+      en: End Phase Concept (Concept)
+    status: active
+    phase: 'Concept'
+    kind: end
+  - id: 'PreConstruction:B'
+    code: B
+    sort_order: 7
+    name:
+      de: Beginn PreConstruction (Ausführungsvorbereitung)
+      fr: Début PreConstruction (Préparation à la construction)
+      it: Inizio PreConstruction (Preparazione alla costruzione)
+      en: Beginning PreConstruction (PreConstruction)
+    status: active
+    phase: 'PreConstruction'
+    kind: beginning
+  - id: 'PreConstruction:M'
+    code: M
+    sort_order: 8
+    name:
+      de: Mitte PreConstruction (Ausführungsvorbereitung)
+      fr: Milieu PreConstruction (Préparation à la construction)
+      it: Metà PreConstruction (Preparazione alla costruzione)
+      en: Mid Phase PreConstruction (PreConstruction)
+    status: active
+    phase: 'PreConstruction'
+    kind: custom
+  - id: 'PreConstruction:E'
+    code: E
+    sort_order: 9
+    name:
+      de: Ende PreConstruction (Ausführungsvorbereitung)
+      fr: Fin PreConstruction (Préparation à la construction)
+      it: Fine PreConstruction (Preparazione alla costruzione)
+      en: End Phase PreConstruction (PreConstruction)
+    status: active
+    phase: 'PreConstruction'
+    kind: end
+  - id: 'Construction:B'
+    code: B
+    sort_order: 10
+    name:
+      de: Beginn Construction (Ausführung)
+      fr: Début Construction (Construction)
+      it: Inizio Construction (Costruzione)
+      en: Beginning Construction (Construction)
+    status: active
+    phase: 'Construction'
+    kind: beginning
+  - id: 'Construction:M'
+    code: M
+    sort_order: 11
+    name:
+      de: Mitte Construction (Ausführung)
+      fr: Milieu Construction (Construction)
+      it: Metà Construction (Costruzione)
+      en: Mid Phase Construction (Construction)
+    status: active
+    phase: 'Construction'
+    kind: custom
+  - id: 'Construction:E'
+    code: E
+    sort_order: 12
+    name:
+      de: Ende Construction (Ausführung)
+      fr: Fin Construction (Construction)
+      it: Fine Construction (Costruzione)
+      en: End Phase Construction (Construction)
+    status: active
+    phase: 'Construction'
+    kind: end
+  - id: 'Handover:B'
+    code: B
+    sort_order: 13
+    name:
+      de: Beginn Handover (Übergabe)
+      fr: Début Handover (Remise)
+      it: Inizio Handover (Consegna)
+      en: Beginning Handover (Handover)
+    status: active
+    phase: 'Handover'
+    kind: beginning
+  - id: 'Handover:M'
+    code: M
+    sort_order: 14
+    name:
+      de: Mitte Handover (Übergabe)
+      fr: Milieu Handover (Remise)
+      it: Metà Handover (Consegna)
+      en: Mid Phase Handover (Handover)
+    status: active
+    phase: 'Handover'
+    kind: custom
+  - id: 'Handover:E'
+    code: E
+    sort_order: 15
+    name:
+      de: Ende Handover (Übergabe)
+      fr: Fin Handover (Remise)
+      it: Fine Handover (Consegna)
+      en: End Phase Handover (Handover)
+    status: active
+    phase: 'Handover'
+    kind: end
+  - id: 'Use:B'
+    code: B
+    sort_order: 16
+    name:
+      de: Beginn Use (Nutzung)
+      fr: Début Use (Utilisation)
+      it: Inizio Use (Uso)
+      en: Beginning Use (Use)
+    status: active
+    phase: 'Use'
+    kind: beginning
+  - id: 'Use:M'
+    code: M
+    sort_order: 17
+    name:
+      de: Mitte Use (Nutzung)
+      fr: Milieu Use (Utilisation)
+      it: Metà Use (Uso)
+      en: Mid Phase Use (Use)
+    status: active
+    phase: 'Use'
+    kind: custom
+  - id: 'Use:E'
+    code: E
+    sort_order: 18
+    name:
+      de: Ende Use (Nutzung)
+      fr: Fin Use (Utilisation)
+      it: Fine Use (Uso)
+      en: End Phase Use (Use)
+    status: active
+    phase: 'Use'
+    kind: end
+  - id: 'Demolish:B'
+    code: B
+    sort_order: 19
+    name:
+      de: Beginn Demolish (Rückbau)
+      fr: Début Demolish (Démolition)
+      it: Inizio Demolish (Demolizione)
+      en: Beginning Demolish (Demolish)
+    status: active
+    phase: 'Demolish'
+    kind: beginning
+  - id: 'Demolish:M'
+    code: M
+    sort_order: 20
+    name:
+      de: Mitte Demolish (Rückbau)
+      fr: Milieu Demolish (Démolition)
+      it: Metà Demolish (Demolizione)
+      en: Mid Phase Demolish (Demolish)
+    status: active
+    phase: 'Demolish'
+    kind: custom
+  - id: 'Demolish:E'
+    code: E
+    sort_order: 21
+    name:
+      de: Ende Demolish (Rückbau)
+      fr: Fin Demolish (Démolition)
+      it: Fine Demolish (Demolizione)
+      en: End Phase Demolish (Demolish)
+    status: active
+    phase: 'Demolish'
+    kind: end

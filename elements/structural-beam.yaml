@@ -8,7 +8,7 @@ name:
   it: Trave / travetto dettagliata
   en: Beam / girder detailed
 definition:
-  de: 'Tragwerkselement für Träger, Unterzüge und Überzüge im Tragwerksmodell.
+  de: 'Ermöglicht die verlässliche Abstimmung von Lastabtragung, Durchbrüchen und Anschlüssen bis zur Ausführung.
 
 
     **Beschreibung**
@@ -18,14 +18,14 @@ definition:
     - Massgebendes Fachmodell für Ausführungsplanung, Mengenermittlung und Koordination.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - So modellieren, wie gebaut wird.
 
     - Bauteilgrenzen und Zuordnung zu Geschoss und Tragwerksteil einhalten.
 
-    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
-  fr: 'Élément porteur pour poutres et solives dans le modèle structurel.
+    - Geeignetes Material im Autorensystem verwenden und exportieren.'
+  fr: 'Permet de coordonner de manière fiable la descente de charges, les percements et les raccords jusqu''à l''exécution.
 
 
     **Description**
@@ -41,8 +41,8 @@ definition:
 
     - Respecter les limites de composants et l''attribution à l''étage et à la partie porteuse.
 
-    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
-  it: 'Elemento strutturale per travi e travetti nel modello strutturale.
+    - Utiliser et exporter le matériau approprié depuis le logiciel auteur.'
+  it: 'Consente di coordinare in modo affidabile la trasmissione dei carichi, i passaggi e i raccordi fino all''esecuzione.
 
 
     **Descrizione**
@@ -58,8 +58,8 @@ definition:
 
     - Rispettare i confini dei componenti e l''assegnazione a piano e parte strutturale.
 
-    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
-  en: 'Structural element for beams and girders in the structural model.
+    - Usare ed esportare il materiale appropriato dal software di modellazione.'
+  en: 'Enables reliable coordination of load transfer, penetrations, and connections through to execution.
 
 
     **Description**
@@ -75,7 +75,7 @@ definition:
 
     - Maintain component boundaries and assignment to storey and structural part.
 
-    - Use an IfcMaterial that corresponds to the actual material class.'
+    - Use and export the appropriate material from the authoring system.'
 needed_in_domain:
 - pragmaticbim:domain/structural
 entity_ifc2x3: IfcBeam
@@ -85,6 +85,29 @@ picture_link: null
 model_link: null
 applicability: entity_ifc4=IfcBeam OR entity_ifc2x3=IfcBeam
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung des Trägers gemäss Tragwerksplan.
+    fr: Désignation de la poutre selon le plan structurel.
+    it: Denominazione della trave secondo il piano strutturale.
+    en: Beam designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-arch-structural-coordination
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
@@ -141,125 +164,82 @@ attributes:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
   status: active
-  sort_order: 1
-- name: ObjectType
-  pset: null
+  sort_order: 2
+- name: Status
+  pset: Pset_BeamCommon
   definition:
-    de: 'Art des Trägers.
+    de: 'Bauteilstatus für Koordination im Bestand.
 
 
       **Zulässige Werte**
 
-      - `BEAM` — Träger / Überzug
+      - `NEW` — Neubau
 
-      - `GIRDER` — Unterzug
+      - `EXISTING` — Bestand
 
-      - `JOIST` — Joist
+      - `DEMOLISH` — Abbruch
 
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für PredefinedType.'
-    fr: 'Type de poutre.
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
 
 
       **Valeurs admises**
 
-      - `BEAM` — poutre / solive
+      - `NEW` — neuf
 
-      - `GIRDER` — poutre principale
+      - `EXISTING` — existant
 
-      - `JOIST` — solive
+      - `DEMOLISH` — à démolir
 
-
-      **Remarque**
-
-      - Substitut IFC2x3 de PredefinedType.'
-    it: 'Tipo di trave.
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
 
 
       **Valori ammessi**
 
-      - `BEAM` — trave / travetto
+      - `NEW` — nuovo
 
-      - `GIRDER` — trave principale
+      - `EXISTING` — esistente
 
-      - `JOIST` — travetto
+      - `DEMOLISH` — da demolire
 
-
-      **Nota**
-
-      - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Kind of beam.
+      - `TEMPORARY` — temporaneo'
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `BEAM` — beam / girder
+      - `NEW` — new build
 
-      - `GIRDER` — main girder
+      - `EXISTING` — existing
 
-      - `JOIST` — joist'
+      - `DEMOLISH` — demolition
+
+      - `TEMPORARY` — temporary'
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-beam
+  allowed_values: pragmaticbim:value/element-status
   needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
   - '32'
   - '33'
   - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
   ifc_versions:
-  - ifc2x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/bes-concrete-tender-from-model
-  is_applicability: false
-  status: active
-  sort_order: '2
-
-    **Note** - IFC2x3 substitute for PredefinedType.'
-- name: Name
-  pset: null
-  definition:
-    de: Bezeichnung des Trägers gemäss Tragwerksplan.
-    fr: Désignation de la poutre selon le plan structurel.
-    it: Denominazione della trave secondo il piano strutturale.
-    en: Beam designation according to the structural plan.
-  datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc2x3
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/qas-arch-structural-coordination
-  - pragmaticbim:workflow/bes-concrete-tender-from-model
-  - pragmaticbim:workflow/con-precast-concrete-ordering-from-model
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
   sort_order: 3
-- name: GrossVolume
-  pset: Qto_BeamBaseQuantities
-  definition:
-    de: Bruttovolumen des modellierten Trägers.
-    fr: Volume brut de la poutre modélisée.
-    it: Volume lordo della trave modellata.
-    en: Gross volume of the modelled beam.
-  datatype: IfcVolumeMeasure
-  unit: m³
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-full-life-cycle-calculation
-  - pragmaticbim:workflow/bes-concrete-tender-from-model
-  is_applicability: false
-  status: active
-  sort_order: 5
 - name: Bewehrungsgehalt
   pset: 211.5_Beton_und_Stahlbetonarbeiten
   definition:
@@ -280,7 +260,7 @@ attributes:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
   status: active
-  sort_order: 6
+  sort_order: 4
 - name: Oberfläche
   pset: 211.5_Beton_und_Stahlbetonarbeiten
   definition:
@@ -301,7 +281,7 @@ attributes:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
   status: active
-  sort_order: 7
+  sort_order: 5
 - name: Betonqualität
   pset: 211.5_Beton_und_Stahlbetonarbeiten
   definition:
@@ -430,82 +410,7 @@ attributes:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
   status: active
-  sort_order: 8
-- name: Status
-  pset: Pset_BeamCommon
-  definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
-
-      **Zulässige Werte**
-
-      - `NEW` — Neubau
-
-      - `EXISTING` — Bestand
-
-      - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
-
-      **Valeurs admises**
-
-      - `NEW` — neuf
-
-      - `EXISTING` — existant
-
-      - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
-
-      **Valori ammessi**
-
-      - `NEW` — nuovo
-
-      - `EXISTING` — esistente
-
-      - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Element status for coordination on existing buildings.
-
-
-      **Allowed values**
-
-      - `NEW` — new
-
-      - `EXISTING` — existing
-
-      - `DEMOLISH` — to demolish
-
-      - `TEMPORARY` — temporary'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-structure-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
-  is_applicability: false
-  status: active
-  sort_order: 9
+  sort_order: 6
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
@@ -560,16 +465,16 @@ attributes:
       **Nota**
 
       - Sostituto IFC2x3 di Status.'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary
 
@@ -595,8 +500,75 @@ attributes:
   ifc_versions:
   - ifc2x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-structure-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: GlobalTradeItemNumber
+  pset: Pset_ManufacturerTypeInformation
+  definition:
+    de: GTIN (Global Trade Item Number) des Produkttyps; je nach GS1-Struktur 8, 12, 13 oder 14 Stellen.
+    fr: GTIN (Global Trade Item Number) du type de produit ; selon la structure GS1, 8, 12, 13 ou 14 chiffres.
+    it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
+    en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: SerialNumber
+  pset: Pset_ManufacturerOccurrence
+  definition:
+    de: Vom Hersteller vergebene Seriennummer eines einzelnen Produkts; zusammen mit der GTIN Schlüssel für den objektspezifischen Produktpass.
+    fr: Numéro de série attribué par le fabricant à un produit individuel ; avec le GTIN, clé du passeport produit propre à l’objet.
+    it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
+    en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 9
+- name: GrossVolume
+  pset: Qto_BeamBaseQuantities
+  definition:
+    de: Bruttovolumen des modellierten Trägers.
+    fr: Volume brut de la poutre modélisée.
+    it: Volume lordo della trave modellata.
+    en: Gross volume of the modelled beam.
+  datatype: IfcVolumeMeasure
+  unit: m³
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/des-full-life-cycle-calculation
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
   status: active
   sort_order: 10

@@ -1,0 +1,54 @@
+id: pragmaticbim:document/cost-calculation
+code: KBE
+sort_order: 122
+name:
+  de: Kostenberechnung
+  fr: Calcul des coûts
+  it: Calcolo dei costi
+  en: Cost calculation
+definition:
+  de: Die Kostenberechnung verfeinert und detailliert den Kostenvoranschlag entsprechend dem fortgeschrittenen technischen Planungsstand und der präzisierten bauteilbezogenen Mengengrundlage.
+  fr: Le calcul des coûts affine et détaille le devis estimatif en fonction de l'avancement technique de la planification et des quantités par élément précisées.
+  it: Il calcolo dei costi affina e dettaglia il preventivo in base allo stato tecnico più avanzato della progettazione e alle quantità per elemento precisate.
+  en: The cost calculation refines and details the cost estimate in line with the advanced technical design status and the more precise element-based quantity basis.
+description:
+  de: |-
+    - Detaillierte Kostenstruktur nach Bauteilen
+    - Bezug zum Planungsstand
+    - Präzisierte bauteilbezogene Mengen und Kostenansätze
+    - Nachgeführte Annahmen, Reserven und Teuerung
+    - Abweichungen gegenüber dem Kostenvoranschlag
+    - Aktualisierte Gesamtkosten mit Kostenstand
+  fr: |-
+    - Structure détaillée des coûts par élément
+    - Référence à l'état de planification
+    - Quantités par élément et coûts unitaires précisés
+    - Mise à jour des hypothèses, des réserves et du renchérissement
+    - Écarts par rapport au devis estimatif
+    - Coût total actualisé avec état des prix
+  it: |-
+    - Struttura dettagliata dei costi per elemento
+    - Riferimento allo stato di pianificazione
+    - Quantità per elemento e costi unitari precisati
+    - Aggiornamento delle ipotesi, delle riserve e del rincaro
+    - Scostamenti rispetto al preventivo
+    - Costo complessivo aggiornato con data di riferimento dei prezzi
+  en: |-
+    - Detailed element-based cost structure
+    - Reference to the design status
+    - Refined element-based quantities and unit costs
+    - Updated assumptions, contingencies and escalation
+    - Variances from the cost estimate
+    - Updated total cost with price basis date
+file_name:
+  de: '{Projektnummer}_PRO-KBE_{Freitext}.{ext}'
+  fr: '{NumeroProjet}_PRO-KBE_{Libre}.{ext}'
+  it: '{NumeroProgetto}_PRO-KBE_{Libero}.{ext}'
+  en: '{ProjectNumber}_PRO-KBE_{FreeText}.{ext}'
+status: active
+domain: pragmaticbim:domain/architecture
+scheduled_milestones:
+  - "31:M"
+  - "32:M"
+  - "33:M"
+  - "41:M"

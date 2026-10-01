@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/kellerabteil
+code: RT-WH-21
+sort_order: 21
+name:
+  de: Kellerabteil
+  fr: Compartiment de cave
+  it: Comparto cantina
+  en: Cellar Compartment
+definition:
+  de: Zugeordnetes Kellerabteil einer Wohneinheit.
+  fr: Compartiment de cave attribué à un logement.
+  it: Comparto cantina assegnato a un'unità abitativa.
+  en: Assigned cellar storage compartment for a dwelling.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Kellerabteil
+    fr: Compartiment de cave
+    it: Comparto cantina
+    en: Cellar Compartment
+restrictions:
+  min_area: 4
+status: active

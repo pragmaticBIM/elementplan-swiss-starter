@@ -1,0 +1,152 @@
+id: pragmaticbim:workflow/bes-painting-tender-basis
+code: BES-PAINTING-TENDER
+sort_order: 22
+name:
+  de: Grundlage für die Malerausschreibung liefern
+  fr: Fournir la base pour l'appel d'offres des travaux de peinture
+  it: Fornire la base per la gara delle opere da pittore
+  en: Provide the basis for the painting tender
+description:
+  de: 'Wandoberflächen und Flächen raumweise als wiederverwendbare Grundlage für Malerausschreibung und Rechnungsprüfung bereitstellen.
+
+
+    **Ausgangslage**
+
+    - Malerflächen werden für Ausschreibung und Rechnungsprüfung häufig zweimal von Hand ausgemessen.
+
+    - Abzüge für Türen und Fenster sowie wechselnde Oberflächenqualitäten führen dabei zu schwer nachvollziehbaren Abweichungen.
+
+
+    **Ziel & Nutzen**
+
+    - Wandoberflächen je Raum führen und Brutto- sowie Nettowandflächen gemeinsam auswerten.
+
+    - Tür- und Fensteröffnungen über die Nettowandfläche abziehen und eine vereinbarte Modellunschärfe bewusst akzeptieren.
+
+    - Bei unterschiedlichen Oberflächen oder geometrisch anspruchsvollen Bereichen separate Wandbekleidungen für genauere Mengen modellieren.
+
+
+    **Ablauf**
+
+    1. Innenräume mit Raumnummer, Wandoberfläche sowie Brutto- und Nettowandfläche bereitstellen.
+
+    2. Öffnungsabzüge und Oberflächenzuordnung prüfen und bei ungenügender Genauigkeit separate Wandbekleidungselemente modellieren.
+
+    3. Malerflächen nach Oberflächenart und Raum auswerten und dieselbe Mengenbasis für Ausschreibung und Rechnungsprüfung verwenden.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit raumbezogenen Wandoberflächen sowie prüfbaren Brutto- und Nettowandflächen
+
+    - Mengenübersicht nach Oberflächenart und Raum als gemeinsame Grundlage für Malerausschreibung und Rechnungsprüfung'
+  fr: 'Mettre à disposition les finitions murales et les surfaces par local comme base réutilisable pour l''appel d''offres des travaux de peinture et le contrôle des factures.
+
+
+    **Situation de départ**
+
+    - Les surfaces à peindre sont souvent mesurées deux fois à la main, pour l''appel d''offres puis pour le contrôle des factures.
+
+    - Les déductions des portes et fenêtres ainsi que les changements de qualité de surface entraînent des écarts difficiles à retracer.
+
+
+    **Objectif et bénéfice**
+
+    - Saisir les finitions murales par local et quantifier ensemble les surfaces murales brutes et nettes.
+
+    - Déduire les baies de portes et fenêtres au moyen de la surface murale nette et accepter consciemment l''imprécision convenue de la maquette.
+
+    - Modéliser des revêtements muraux distincts en cas de finitions différentes ou de zones géométriquement complexes qui exigent des quantités plus précises.
+
+
+    **Déroulement**
+
+    1. Fournir les locaux intérieurs avec numéro, finition murale ainsi que surfaces murales brutes et nettes.
+
+    2. Contrôler les déductions d''ouvertures et l''attribution des finitions et, si la précision est insuffisante, modéliser des revêtements muraux distincts.
+
+    3. Quantifier les surfaces à peindre par type de finition et par local, puis utiliser la même base pour l''appel d''offres et le contrôle des factures.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec finitions murales par local et surfaces murales brutes et nettes vérifiables
+
+    - Vue d''ensemble des quantités par type de finition et local comme base commune pour l''appel d''offres des travaux de peinture et le contrôle des factures'
+  it: 'Mettere a disposizione finiture e superfici delle pareti per locale come base riutilizzabile per la gara delle opere da pittore e il controllo delle fatture.
+
+
+    **Situazione di partenza**
+
+    - Le superfici da pitturare vengono spesso misurate due volte a mano, per la gara e per il controllo delle fatture.
+
+    - Le deduzioni per porte e finestre e i cambiamenti di qualità superficiale causano scostamenti difficili da ricostruire.
+
+
+    **Obiettivo e beneficio**
+
+    - Gestire le finiture delle pareti per locale e quantificare insieme le superfici lorde e nette.
+
+    - Dedurre le aperture di porte e finestre mediante la superficie netta delle pareti e accettare consapevolmente l''imprecisione concordata del modello.
+
+    - Modellare rivestimenti murali separati in caso di finiture diverse o zone geometricamente complesse che richiedono quantità più precise.
+
+
+    **Svolgimento**
+
+    1. Fornire gli spazi interni con numero, finitura delle pareti e superfici lorde e nette.
+
+    2. Verificare le deduzioni per aperture e l''assegnazione delle finiture e, se la precisione è insufficiente, modellare rivestimenti murali separati.
+
+    3. Quantificare le superfici da pitturare per tipo di finitura e locale e utilizzare la stessa base per la gara e il controllo delle fatture.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con finiture delle pareti per locale e superfici lorde e nette verificabili
+
+    - Quadro delle quantità per tipo di finitura e locale come base comune per la gara delle opere da pittore e il controllo delle fatture'
+  en: 'Provide wall finishes and areas by space as a reusable basis for the painting tender and invoice checking.
+
+
+    **Starting point**
+
+    - Painting areas are often measured manually twice, first for tendering and again for invoice checking.
+
+    - Deductions for doors and windows and changes in surface quality lead to discrepancies that are difficult to trace.
+
+
+    **Goal & benefit**
+
+    - Maintain wall finishes by space and evaluate gross and net wall areas together.
+
+    - Deduct door and window openings through the net wall area and consciously accept the agreed model uncertainty.
+
+    - Model separate wall coverings for differing finishes or geometrically complex areas that require more accurate quantities.
+
+
+    **Process**
+
+    1. Provide interior spaces with room number, wall finish, and gross and net wall areas.
+
+    2. Check opening deductions and finish assignment, and model separate wall-covering elements where accuracy is insufficient.
+
+    3. Quantify painting areas by finish type and space and use the same quantity basis for tendering and invoice checking.
+
+
+    **Deliverable**
+
+    - Architecture model with wall finishes by space and verifiable gross and net wall areas
+
+    - Quantity overview by finish type and space as the shared basis for the painting tender and invoice checking'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Tender preparation in SIA phase 41. The pragmatic room-based method uses WallCovering, GrossWallArea, and NetWallArea; NetWallArea accounts for door and window openings as exported by the authoring
+  system. Accept the agreed quantity tolerance; where this is insufficient, model architecture-wall-cladding-interior elements.

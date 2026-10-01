@@ -8,7 +8,7 @@ name:
   it: Scala dettagliata
   en: Stair detailed
 definition:
-  de: 'Tragwerkselement für Treppen im Tragwerksmodell.
+  de: 'Sichert die frühzeitige Abstimmung von Tragwerk, Höhenanschlüssen und nutzbarer Laufgeometrie.
 
 
     **Beschreibung**
@@ -18,14 +18,14 @@ definition:
     - Massgebendes Fachmodell für Ausführungsplanung, Mengenermittlung und Koordination.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
     - Mit korrektem Steigungsverhältnis und Plattenstärke so modellieren, wie gebaut wird.
 
     - Zuordnung zu Geschoss und Tragwerksteil einhalten.
 
-    - IfcMaterial verwenden, das der tatsächlichen Materialklasse entspricht.'
-  fr: 'Élément porteur pour escaliers dans le modèle structurel.
+    - Geeignetes Material im Autorensystem verwenden und exportieren.'
+  fr: 'Assure la coordination en amont de la structure, des raccords altimétriques et de la géométrie utile des volées.
 
 
     **Description**
@@ -41,8 +41,8 @@ definition:
 
     - Respecter l''attribution à l''étage et à la partie porteuse.
 
-    - Utiliser un IfcMaterial correspondant à la classe de matériau réelle.'
-  it: 'Elemento strutturale per scale nel modello strutturale.
+    - Utiliser et exporter le matériau approprié depuis le logiciel auteur.'
+  it: 'Garantisce il coordinamento tempestivo della struttura, dei raccordi altimetrici e della geometria utile delle rampe.
 
 
     **Descrizione**
@@ -58,8 +58,8 @@ definition:
 
     - Rispettare l''assegnazione a piano e parte strutturale.
 
-    - Usare un IfcMaterial corrispondente alla classe di materiale effettiva.'
-  en: 'Structural element for stairs in the structural model.
+    - Usare ed esportare il materiale appropriato dal software di modellazione.'
+  en: 'Ensures early coordination of the structure, level transitions, and usable flight geometry.
 
 
     **Description**
@@ -75,7 +75,7 @@ definition:
 
     - Maintain assignment to storey and structural part.
 
-    - Use an IfcMaterial that corresponds to the actual material class.'
+    - Use and export the appropriate material from the authoring system.'
 needed_in_domain:
 - pragmaticbim:domain/structural
 entity_ifc2x3: IfcStair
@@ -85,6 +85,27 @@ picture_link: null
 model_link: null
 applicability: entity_ifc4=IfcStair OR entity_ifc2x3=IfcStair
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Bezeichnung der Treppe gemäss Tragwerksplan.
+    fr: Désignation de l'escalier selon le plan structurel.
+    it: Denominazione della scala secondo il piano strutturale.
+    en: Stair designation according to the structural plan.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '32'
+  - '33'
+  - '41'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
@@ -229,189 +250,79 @@ attributes:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
   status: active
-  sort_order: 1
-- name: ObjectType
-  pset: null
+  sort_order: 2
+- name: Status
+  pset: Pset_StairCommon
   definition:
-    de: 'Form der Treppe.
+    de: 'Bauteilstatus für Koordination im Bestand.
 
 
       **Zulässige Werte**
 
-      - `STRAIGHT_RUN_STAIR` — einläufige gerade Treppe
+      - `NEW` — Neubau
 
-      - `TWO_STRAIGHT_RUN_STAIR` — einläufige gerade Treppe mit Podest
+      - `EXISTING` — Bestand
 
-      - `QUARTER_WINDING_STAIR` — viertelgewendete Treppe
+      - `DEMOLISH` — Abbruch
 
-      - `QUARTER_TURN_STAIR` — zweiläufige gerade Treppe mit Viertelpodest
-
-      - `HALF_WINDING_STAIR` — halbgewendelte Treppe
-
-      - `HALF_TURN_STAIR` — zweiläufige gerade Treppe mit Podest
-
-      - `TWO_QUARTER_WINDING_STAIR` — zweimal viertelgewendelte Treppe mit Podest
-
-      - `TWO_QUARTER_TURN_STAIR` — dreiläufige gerade Treppe mit Viertelpodest
-
-      - `THREE_QUARTER_WINDING_STAIR` — dreimal viertelgewendelte Treppe
-
-      - `THREE_QUARTER_TURN_STAIR` — vierläufige gerade Treppe mit Viertelpodest
-
-      - `SPIRAL_STAIR` — Spindeltreppe
-
-      - `DOUBLE_RETURN_STAIR` — dreiläufig mit Podest
-
-      - `CURVED_RUN_STAIR` — Bogentreppe
-
-      - `TWO_CURVED_RUN_STAIR` — Bogentreppe mit Podest
-
-
-      **Hinweis**
-
-      - IFC2x3-Ersatz für PredefinedType.'
-    fr: 'Forme de l''escalier.
+      - `TEMPORARY` — Temporär'
+    fr: 'Statut de l''élément pour la coordination dans l''existant.
 
 
       **Valeurs admises**
 
-      - `STRAIGHT_RUN_STAIR` — escalier droit à un volée
+      - `NEW` — neuf
 
-      - `TWO_STRAIGHT_RUN_STAIR` — escalier droit à un volée avec palier
+      - `EXISTING` — existant
 
-      - `QUARTER_WINDING_STAIR` — escalier tournant quart de tour
+      - `DEMOLISH` — à démolir
 
-      - `QUARTER_TURN_STAIR` — escalier droit à deux volées avec palier quart de tour
-
-      - `HALF_WINDING_STAIR` — escalier tournant demi-tour
-
-      - `HALF_TURN_STAIR` — escalier droit à deux volées avec palier
-
-      - `TWO_QUARTER_WINDING_STAIR` — escalier tournant deux fois quart de tour avec palier
-
-      - `TWO_QUARTER_TURN_STAIR` — escalier droit à trois volées avec palier quart de tour
-
-      - `THREE_QUARTER_WINDING_STAIR` — escalier tournant trois fois quart de tour
-
-      - `THREE_QUARTER_TURN_STAIR` — escalier droit à quatre volées avec palier quart de tour
-
-      - `SPIRAL_STAIR` — escalier en colimaçon
-
-      - `DOUBLE_RETURN_STAIR` — escalier à trois volées avec palier
-
-      - `CURVED_RUN_STAIR` — escalier courbe
-
-      - `TWO_CURVED_RUN_STAIR` — escalier courbe avec palier
-
-
-      **Remarque**
-
-      - Substitut IFC2x3 de PredefinedType.'
-    it: 'Forma della scala.
+      - `TEMPORARY` — temporaire'
+    it: 'Stato dell''elemento per il coordinamento sull''esistente.
 
 
       **Valori ammessi**
 
-      - `STRAIGHT_RUN_STAIR` — scala retta a una rampa
+      - `NEW` — nuovo
 
-      - `TWO_STRAIGHT_RUN_STAIR` — scala retta a una rampa con pianerottolo
+      - `EXISTING` — esistente
 
-      - `QUARTER_WINDING_STAIR` — scala a un quarto di giro
+      - `DEMOLISH` — da demolire
 
-      - `QUARTER_TURN_STAIR` — scala retta a due rampe con pianerottolo a un quarto
-
-      - `HALF_WINDING_STAIR` — scala a mezzo giro
-
-      - `HALF_TURN_STAIR` — scala retta a due rampe con pianerottolo
-
-      - `TWO_QUARTER_WINDING_STAIR` — scala a due quarti di giro con pianerottolo
-
-      - `TWO_QUARTER_TURN_STAIR` — scala retta a tre rampe con pianerottolo a un quarto
-
-      - `THREE_QUARTER_WINDING_STAIR` — scala a tre quarti di giro
-
-      - `THREE_QUARTER_TURN_STAIR` — scala retta a quattro rampe con pianerottolo a un quarto
-
-      - `SPIRAL_STAIR` — scala a chiocciola
-
-      - `DOUBLE_RETURN_STAIR` — scala a tre rampe con pianerottolo
-
-      - `CURVED_RUN_STAIR` — scala curva
-
-      - `TWO_CURVED_RUN_STAIR` — scala curva con pianerottolo
-
-
-      **Nota**
-
-      - Sostituto IFC2x3 di PredefinedType.'
-    en: 'Form of the stair.
+      - `TEMPORARY` — temporaneo'
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `STRAIGHT_RUN_STAIR` — single straight flight
+      - `NEW` — new build
 
-      - `TWO_STRAIGHT_RUN_STAIR` — single straight flight with landing
+      - `EXISTING` — existing
 
-      - `QUARTER_WINDING_STAIR` — quarter-turn winding stair
+      - `DEMOLISH` — demolition
 
-      - `QUARTER_TURN_STAIR` — two straight flights with quarter-turn landing
-
-      - `HALF_WINDING_STAIR` — half-turn winding stair
-
-      - `HALF_TURN_STAIR` — two straight flights with landing
-
-      - `TWO_QUARTER_WINDING_STAIR` — two quarter-turn winding flights with landing
-
-      - `TWO_QUARTER_TURN_STAIR` — three straight flights with quarter-turn landing
-
-      - `THREE_QUARTER_WINDING_STAIR` — three quarter-turn winding stair
-
-      - `THREE_QUARTER_TURN_STAIR` — four straight flights with quarter-turn landing
-
-      - `SPIRAL_STAIR` — spiral stair
-
-      - `DOUBLE_RETURN_STAIR` — three flights with landing
-
-      - `CURVED_RUN_STAIR` — curved stair
-
-      - `TWO_CURVED_RUN_STAIR` — curved stair with landing
-
-
-      **Note**
-
-      - IFC2x3 substitute for PredefinedType.'
+      - `TEMPORARY` — temporary'
   datatype: IfcLabel
-  allowed_values: pragmaticbim:value/predefinedtype-stair
+  allowed_values: pragmaticbim:value/element-status
   needed_in_phases:
+  - '11'
+  - '21'
+  - '22'
+  - '31'
   - '32'
   - '33'
   - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
   ifc_versions:
-  - ifc2x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/bes-concrete-tender-from-model
-  is_applicability: false
-  status: active
-  sort_order: 2
-- name: Name
-  pset: null
-  definition:
-    de: Bezeichnung der Treppe gemäss Tragwerksplan.
-    fr: Désignation de l'escalier selon le plan structurel.
-    it: Denominazione della scala secondo il piano strutturale.
-    en: Stair designation according to the structural plan.
-  datatype: IfcLabel
-  needed_in_phases:
-  - '32'
-  - '33'
-  - '41'
-  ifc_versions:
-  - ifc2x3
   - ifc4
   - ifc4x3
   needed_for_workflows:
-  - pragmaticbim:workflow/bes-concrete-tender-from-model
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
   is_applicability: false
   status: active
   sort_order: 3
@@ -435,7 +346,7 @@ attributes:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
   status: active
-  sort_order: 5
+  sort_order: 4
 - name: Oberfläche
   pset: 211.5_Beton_und_Stahlbetonarbeiten
   definition:
@@ -456,7 +367,7 @@ attributes:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
   status: active
-  sort_order: 6
+  sort_order: 5
 - name: Betonqualität
   pset: 211.5_Beton_und_Stahlbetonarbeiten
   definition:
@@ -585,82 +496,7 @@ attributes:
   - pragmaticbim:workflow/bes-concrete-tender-from-model
   is_applicability: false
   status: active
-  sort_order: 7
-- name: Status
-  pset: Pset_StairCommon
-  definition:
-    de: 'Bauteilstatus für Koordination im Bestand.
-
-
-      **Zulässige Werte**
-
-      - `NEW` — Neubau
-
-      - `EXISTING` — Bestand
-
-      - `DEMOLISH` — Abbruch
-
-      - `TEMPORARY` — Temporär'
-    fr: 'Statut de l''élément pour la coordination dans l''existant.
-
-
-      **Valeurs admises**
-
-      - `NEW` — neuf
-
-      - `EXISTING` — existant
-
-      - `DEMOLISH` — à démolir
-
-      - `TEMPORARY` — temporaire'
-    it: 'Stato dell''elemento per il coordinamento sull''esistente.
-
-
-      **Valori ammessi**
-
-      - `NEW` — nuovo
-
-      - `EXISTING` — esistente
-
-      - `DEMOLISH` — da demolire
-
-      - `TEMPORARY` — temporaneo'
-    en: 'Element status for coordination on existing buildings.
-
-
-      **Allowed values**
-
-      - `NEW` — new
-
-      - `EXISTING` — existing
-
-      - `DEMOLISH` — to demolish
-
-      - `TEMPORARY` — temporary'
-  datatype: IfcLabel
-  allowed_values: pragmaticbim:value/element-status
-  needed_in_phases:
-  - '11'
-  - '21'
-  - '22'
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-structure-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
-  is_applicability: false
-  status: active
-  sort_order: 8
+  sort_order: 6
 - name: ElementStatus
   pset: ePset_ElementStatus
   definition:
@@ -715,16 +551,16 @@ attributes:
       **Nota**
 
       - Sostituto IFC2x3 di Status.'
-    en: 'Element status for coordination on existing buildings.
+    en: 'Component status for coordinating work in existing buildings.
 
 
       **Allowed values**
 
-      - `NEW` — new
+      - `NEW` — new build
 
       - `EXISTING` — existing
 
-      - `DEMOLISH` — to demolish
+      - `DEMOLISH` — demolition
 
       - `TEMPORARY` — temporary
 
@@ -750,8 +586,53 @@ attributes:
   ifc_versions:
   - ifc2x3
   needed_for_workflows:
-  - pragmaticbim:workflow/des-existing-structure-survey
-  - pragmaticbim:workflow/des-managing-existing-with-models
+  - pragmaticbim:workflow/bes-existing-structure-model-procurement
+  - pragmaticbim:workflow/bes-existing-building-mep-model-procurement
+  is_applicability: false
+  status: active
+  sort_order: 7
+- name: GlobalTradeItemNumber
+  pset: Pset_ManufacturerTypeInformation
+  definition:
+    de: GTIN (Global Trade Item Number) des Produkttyps; je nach GS1-Struktur 8, 12, 13 oder 14 Stellen.
+    fr: GTIN (Global Trade Item Number) du type de produit ; selon la structure GS1, 8, 12, 13 ou 14 chiffres.
+    it: GTIN (Global Trade Item Number) del tipo di prodotto; secondo la struttura GS1, 8, 12, 13 o 14 cifre.
+    en: GTIN (Global Trade Item Number) of the product type; 8, 12, 13, or 14 digits depending on the GS1 structure.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-gtin
+  - pragmaticbim:workflow/hov-product-pass-serial-number
+  is_applicability: false
+  status: active
+  sort_order: 8
+- name: SerialNumber
+  pset: Pset_ManufacturerOccurrence
+  definition:
+    de: Vom Hersteller vergebene Seriennummer eines einzelnen Produkts; zusammen mit der GTIN Schlüssel für den objektspezifischen Produktpass.
+    fr: Numéro de série attribué par le fabricant à un produit individuel ; avec le GTIN, clé du passeport produit propre à l’objet.
+    it: Numero di serie assegnato dal fabbricante a un singolo prodotto; insieme al GTIN costituisce la chiave del passaporto di prodotto specifico dell’oggetto.
+    en: Serial number the manufacturer assigns to an individual product; with the GTIN it identifies the product passport for that specific item.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/hov-product-pass-serial-number
   is_applicability: false
   status: active
   sort_order: 9

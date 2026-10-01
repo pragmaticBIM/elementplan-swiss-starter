@@ -1,0 +1,26 @@
+id: pragmaticbim:usage-scenario/paket-entgegennehmen
+code: US-WH-14
+sort_order: 14
+name:
+  de: Paket entgegennehmen
+  fr: Réception d'un colis
+  it: Ritiro di un pacco
+  en: Receiving a parcel
+description:
+  de: Die Zustellung kommt von der Strasse in die Eingangshalle und übergibt das Paket am Wohnungseingang, ohne den Postraum.
+  fr: La livraison arrive de la rue dans le hall d'entrée et remet le colis à l'entrée du logement, sans passer par le local courrier.
+  it: La consegna arriva dalla strada nell'atrio e consegna il pacco all'ingresso dell'alloggio, senza il locale posta.
+  en: Delivery arrives from the street into the lobby and hands over the parcel at the dwelling entry, without the mail room.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/strasse
+- pragmaticbim:room-type/eingangshalle
+- pragmaticbim:room-type/wohnungseingang
+room_relationships:
+- from_room_type: pragmaticbim:room-type/strasse
+  to_room_type: pragmaticbim:room-type/eingangshalle
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/wohnungseingang

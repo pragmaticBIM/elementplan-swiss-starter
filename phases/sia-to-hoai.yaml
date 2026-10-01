@@ -1,0 +1,134 @@
+id: pragmaticbim:phase-mapping/sia-to-hoai
+source: pragmaticbim:phase/sia
+target: pragmaticbim:phase/hoai
+status: active
+name:
+  de: SIA → HOAI Leistungsphasen
+  fr: SIA → phases HOAI
+  it: SIA → fasi HOAI
+  en: SIA → HOAI service phases
+comment:
+  de: Ungefähre Leistungsphasen-Entsprechung (Anzeige). Kein rechtliches Leistungsbild-Mapping.
+  en: Approximate service-phase equivalence for display. Not a legal Leistungsbild mapping.
+phases:
+  - source: '11'
+    target: '1'
+  - source: '21'
+    target: '2'
+  - source: '22'
+    target: '2'
+  - source: '31'
+    target: '2'
+    also:
+      - '3'
+  - source: '32'
+    target: '3'
+  - source: '33'
+    target: '4'
+  - source: '41'
+    target: '6'
+    also:
+      - '7'
+  - source: '51'
+    target: '5'
+  - source: '52'
+    target: '8'
+  - source: '53'
+    target: '8'
+    also:
+      - '9'
+  - source: '61'
+    target: '9'
+  - source: '62'
+    target: '9'
+milestones:
+  - source: '11:B'
+    target: 'hoai:1:B'
+  - source: '11:M'
+    target: 'hoai:1:M'
+  - source: '11:E'
+    target: 'hoai:1:E'
+  - source: '21:B'
+    target: 'hoai:2:B'
+  - source: '21:M'
+    target: 'hoai:2:M'
+  - source: '21:E'
+    target: 'hoai:2:E'
+  - source: '22:B'
+    target: 'hoai:2:B'
+  - source: '22:M'
+    target: 'hoai:2:M'
+  - source: '22:E'
+    target: 'hoai:2:E'
+  - source: '31:B'
+    target: 'hoai:2:B'
+    also:
+      - 'hoai:3:B'
+  - source: '31:M'
+    target: 'hoai:2:M'
+    also:
+      - 'hoai:3:M'
+  - source: '31:E'
+    target: 'hoai:2:E'
+    also:
+      - 'hoai:3:E'
+  - source: '32:B'
+    target: 'hoai:3:B'
+  - source: '32:M'
+    target: 'hoai:3:M'
+  - source: '32:E'
+    target: 'hoai:3:E'
+  - source: '33:B'
+    target: 'hoai:4:B'
+  - source: '33:M'
+    target: 'hoai:4:M'
+  - source: '33:E'
+    target: 'hoai:4:E'
+  - source: '41:B'
+    target: 'hoai:6:B'
+    also:
+      - 'hoai:7:B'
+  - source: '41:M'
+    target: 'hoai:6:M'
+    also:
+      - 'hoai:7:M'
+  - source: '41:E'
+    target: 'hoai:6:E'
+    also:
+      - 'hoai:7:E'
+  - source: '51:B'
+    target: 'hoai:5:B'
+  - source: '51:M'
+    target: 'hoai:5:M'
+  - source: '51:E'
+    target: 'hoai:5:E'
+  - source: '52:B'
+    target: 'hoai:8:B'
+  - source: '52:M'
+    target: 'hoai:8:M'
+  - source: '52:E'
+    target: 'hoai:8:E'
+  - source: '53:B'
+    target: 'hoai:8:B'
+    also:
+      - 'hoai:9:B'
+  - source: '53:M'
+    target: 'hoai:8:M'
+    also:
+      - 'hoai:9:M'
+  - source: '53:E'
+    target: 'hoai:8:E'
+    also:
+      - 'hoai:9:E'
+  - source: '61:B'
+    target: 'hoai:9:B'
+  - source: '61:M'
+    target: 'hoai:9:M'
+  - source: '61:E'
+    target: 'hoai:9:E'
+  - source: '62:B'
+    target: 'hoai:9:B'
+  - source: '62:M'
+    target: 'hoai:9:M'
+  - source: '62:E'
+    target: 'hoai:9:E'

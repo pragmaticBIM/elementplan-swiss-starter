@@ -1,0 +1,150 @@
+id: pragmaticbim:workflow/des-struct-mep-opening-planning
+code: DES-STRUCT-MEP-OPENINGS
+sort_order: 75
+name:
+  de: TGA-Aussparungen im Tragwerksmodell übernehmen
+  fr: Reprendre les réservations CVC dans la maquette structurelle
+  it: Integrare i fori impianti nel modello strutturale
+  en: Adopt MEP openings in the structural model
+description:
+  de: 'TGA-Aussparungen mit der Tragwerksplanung abstimmen und nach Freigabe verbindlich in das Tragwerksmodell übernehmen.
+
+
+    **Ausgangslage**
+
+    - Aussparungen im Tragwerk werden auf der Baustelle häufig anhand mehrerer, teilweise widersprüchlicher Schal- und gewerkspezifischer Aussparungspläne ausgeführt.
+
+    - Werden freigegebene Aussparungen nicht in das Tragwerksmodell übernommen, entstehen Abweichungen zwischen TGA-Modell, Schalplänen und gebautem Tragwerk.
+
+
+    **Ziel & Nutzen**
+
+    - TGA-Aussparungsanforderungen hinsichtlich Tragfähigkeit, Lage und Ausführbarkeit prüfen und freigeben.
+
+    - Anpassungen oder Zusammenfassungen von Aussparungen vor der Ausführung fachübergreifend abstimmen.
+
+    - Freigegebene Aussparungen verbindlich im Tragwerksmodell führen und Schal- sowie Aussparungspläne aus einem konsistenten Modellstand ableiten.
+
+
+    **Ablauf**
+
+    1. Aussparungsanforderungen mit Lage, Abmessungen und eindeutiger Kennzeichnung im TGA-Modell bereitstellen.
+
+    2. Anforderungen durch die Tragwerksplanung prüfen, bei Bedarf Anpassungen oder Zusammenfassungen vorschlagen und offene Punkte iterativ mit der Gebäudetechnik abstimmen.
+
+    3. Freigegebene Aussparungen im Tragwerksmodell übernehmen und die Übereinstimmung mit den Anforderungen im Gesamtmodell prüfen.
+
+
+    **Lieferergebnis**
+
+    - Tragwerksmodell mit allen freigegebenen Aussparungen in tragenden Bauteilen.
+
+    - Nachvollziehbare Zuordnung zwischen TGA-Anforderung und übernommener Tragwerksöffnung.'
+  fr: 'Coordonner les réservations CVC avec l''ingénierie structurelle et, après validation, les reprendre de manière contraignante dans la maquette structurelle.
+
+
+    **Situation de départ**
+
+    - Sur le chantier, les réservations dans la structure sont souvent exécutées à partir de plusieurs plans de coffrage et de réservations propres aux différents corps de métier, parfois contradictoires.
+
+    - Si les réservations validées ne sont pas reprises dans la maquette structurelle, des écarts apparaissent entre la maquette CVC, les plans de coffrage et la structure réalisée.
+
+
+    **Objectif et bénéfice**
+
+    - Contrôler et valider les exigences de réservation CVC quant à la stabilité, à la position et à la faisabilité.
+
+    - Coordonner entre les disciplines les adaptations ou regroupements de réservations avant l''exécution.
+
+    - Saisir les réservations validées de manière contraignante dans la maquette structurelle et déduire les plans de coffrage et de réservations d''un état de maquette cohérent.
+
+
+    **Déroulement**
+
+    1. Fournir dans la maquette CVC les exigences de réservation avec position, dimensions et désignation univoque.
+
+    2. Contrôler les exigences par l''ingénierie structurelle, proposer si nécessaire des adaptations ou regroupements et coordonner les points ouverts de manière itérative avec les techniques du bâtiment.
+
+    3. Reprendre les réservations validées dans la maquette structurelle et vérifier leur concordance avec les exigences dans la maquette fédérée.
+
+
+    **Livrable**
+
+    - Maquette structurelle avec toutes les réservations validées dans les éléments porteurs.
+
+    - Correspondance traçable entre l''exigence CVC et l''ouverture structurelle reprise.'
+  it: 'Coordinare i fori richiesti dagli impianti con l''ingegneria strutturale e, dopo l''approvazione, integrarli in modo vincolante nel modello strutturale.
+
+
+    **Situazione di partenza**
+
+    - In cantiere i fori nella struttura sono spesso eseguiti sulla base di diversi piani di casseratura e dei fori specifici delle singole categorie d''opera, talvolta contraddittori.
+
+    - Se i fori approvati non vengono integrati nel modello strutturale, sorgono divergenze tra modello impianti, piani di casseratura e struttura realizzata.
+
+
+    **Obiettivo e beneficio**
+
+    - Verificare e approvare le richieste di fori degli impianti in relazione a capacità portante, posizione e fattibilità.
+
+    - Coordinare tra le discipline eventuali modifiche o raggruppamenti dei fori prima dell''esecuzione.
+
+    - Gestire i fori approvati in modo vincolante nel modello strutturale e ricavare i piani di casseratura e dei fori da uno stato coerente del modello.
+
+
+    **Svolgimento**
+
+    1. Fornire nel modello impianti le richieste di fori con posizione, dimensioni e identificazione univoca.
+
+    2. Verificare le richieste da parte dell''ingegneria strutturale, proporre se necessario modifiche o raggruppamenti e coordinare iterativamente i punti aperti con gli impianti.
+
+    3. Integrare i fori approvati nel modello strutturale e verificarne la corrispondenza con le richieste nel modello federato.
+
+
+    **Risultato della fornitura**
+
+    - Modello strutturale con tutti i fori approvati negli elementi portanti.
+
+    - Corrispondenza tracciabile tra richiesta degli impianti e apertura strutturale integrata.'
+  en: 'Coordinate MEP opening requirements with structural engineering and, once approved, adopt them as binding openings in the structural model.
+
+
+    **Starting point**
+
+    - Structural openings are often built from several, sometimes contradictory formwork and trade-specific opening drawings.
+
+    - If approved openings are not adopted in the structural model, the MEP model, formwork drawings, and built structure diverge.
+
+
+    **Goal & benefit**
+
+    - Check and approve MEP opening requirements for structural integrity, location, and constructability.
+
+    - Coordinate adjustments or consolidation of openings across disciplines before construction.
+
+    - Maintain approved openings as binding objects in the structural model and derive formwork and opening drawings from a consistent model state.
+
+
+    **Process**
+
+    1. Provide opening requirements with location, dimensions, and an unambiguous identifier in the MEP model.
+
+    2. Check the requirements through structural engineering, propose adjustments or consolidation where needed, and iteratively coordinate open points with MEP.
+
+    3. Adopt approved openings in the structural model and verify their agreement with the requirements in the federated model.
+
+
+    **Deliverable**
+
+    - Structural model with all approved openings in load-bearing components.
+
+    - Traceable mapping between each MEP requirement and its adopted structural opening.'
+workflow_group: entwurf
+parent_workflow: pragmaticbim:workflow/qas
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
+comment: MEP requests voids as IfcBuildingElementProxy (PredefinedType=PROVISIONFORVOID; IFC2x3 ObjectType=PROVISIONFORVOID). Approved openings land as IfcOpeningElement in the structural model. Match Name/Reference
+  across the request and structural opening.

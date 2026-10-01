@@ -1,10 +1,10 @@
 id: pragmaticbim:document/permit-plans-architecture
 code: BGA
-sort_order: 114
+sort_order: 99
 name:
   de: Baugenehmigungspläne Architektur
-  fr: Plans de permis — architecture
-  it: Piani di autorizzazione — architettura
+  fr: Plans de permis – architecture
+  it: Piani di autorizzazione – architettura
   en: Permit plans architecture
 definition:
   de: Baugenehmigungspläne der Architektur für das Baugesuch. Grundrisse, Schnitte und Ansichten in der für die Bewilligungsbehörde erforderlichen Darstellung.
@@ -33,11 +33,11 @@ description:
     - Dimensions and notes required for the building application
     - Title block and scale
 file_name:
-  de: '{Projektnummer}_ARX-BGA_{Freitext}.{ext}'
+  de: '{Projektnummer}_ARC-BGA_{Freitext}.{ext}'
   fr: '{NumeroProjet}_ARC-BGA_{Libre}.{ext}'
   it: '{NumeroProgetto}_ARC-BGA_{Libero}.{ext}'
-  en: '{ProjectNumber}_ARC-BGA_{Free}.{ext}'
+  en: '{ProjectNumber}_ARC-BGA_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/architecture
 scheduled_milestones:
-  - "33:beginning"
+  - "33:M"

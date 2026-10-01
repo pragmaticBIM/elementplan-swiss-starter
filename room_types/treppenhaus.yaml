@@ -1,0 +1,28 @@
+id: pragmaticbim:room-type/treppenhaus
+code: RT-WH-10
+sort_order: 10
+name:
+  de: Treppenhaus
+  fr: Cage d'escalier
+  it: Vano scale
+  en: Stairwell
+definition:
+  de: Vertikale Erschliessung zwischen den Geschossen.
+  fr: Circulation verticale entre les étages.
+  it: Circolazione verticale tra i piani.
+  en: Vertical circulation between storeys.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Treppenhaus
+    fr: Cage d'escalier
+    it: Vano scale
+    en: Stairwell
+status: active

@@ -1,6 +1,6 @@
 id: pragmaticbim:document/usage-agreement-mep
 code: NVG
-sort_order: 133
+sort_order: 128
 name:
   de: Nutzungsvereinbarung Gebäudetechnik
   fr: Convention d'utilisation CVC
@@ -10,7 +10,7 @@ definition:
   de: Nutzungsvereinbarung Gebäudetechnik. Verknüpft vereinbarte raumweise Anforderungen an Heizung, Lüftung, Klima, Sanitär und Elektro mit dem technischen Planungsstand.
   fr: Convention d'utilisation des techniques du bâtiment. Elle relie les exigences convenues par local pour chauffage, ventilation, climatisation, sanitaire et électricité à l'état technique de la planification.
   it: Convenzione d'uso impianti. Collega i requisiti concordati per locale per riscaldamento, ventilazione, climatizzazione, idraulica ed elettrica allo stato tecnico della pianificazione.
-  en: MEP usage agreement. It links agreed room-wise requirements for heating, ventilation, air conditioning, plumbing, and electrical to the technical planning status.
+  en: MEP usage agreement. It links agreed room-by-room requirements for heating, ventilation, air conditioning, plumbing, and electrical to the technical design status.
 description:
   de: |-
     - Raumweise Anforderungen Heizung
@@ -34,27 +34,23 @@ description:
     - Requisiti per locale per l'elettrica
     - Protezione dal surriscaldamento estivo con diversi scenari climatici
   en: |-
-    - Room-wise requirements for heating
-    - Room-wise requirements for ventilation
-    - Room-wise requirements for air conditioning
-    - Room-wise requirements for plumbing
-    - Room-wise requirements for electrical
+    - Room-by-room requirements for heating
+    - Room-by-room requirements for ventilation
+    - Room-by-room requirements for air conditioning
+    - Room-by-room requirements for plumbing
+    - Room-by-room requirements for electrical
     - Summer thermal protection with different climate scenarios
 file_name:
   de: '{Projektnummer}_TGA-NVG_{Freitext}.{ext}'
   fr: '{NumeroProjet}_CVC-NVG_{Libre}.{ext}'
   it: '{NumeroProgetto}_IMP-NVG_{Libero}.{ext}'
-  en: '{ProjectNumber}_MEP-NVG_{Free}.{ext}'
+  en: '{ProjectNumber}_MEP-NVG_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/mep
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/spaces-interior
   - pragmaticbim:element/spaces-exterior
 scheduled_milestones:
-  - "31:beginning"
-  - "32:beginning"
+  - "31:M"
+  - "32:M"

@@ -7,21 +7,21 @@ name:
   it: Pianificare le zone di coordinamento
   en: Plan coordination zones
 description:
-  de: 'Welche Bereiche in welchem Koordinationsmeeting abgestimmt werden — statt alles gegen alles.
+  de: 'Koordinationszonen im Modell festlegen und Meetings zuordnen, damit nicht alle Modelle gegen alle geprüft werden müssen.
 
 
     **Ausgangslage**
 
     - Auf grossen Projekten skaliert die Koordination aller Modelle gegen alle Modelle nicht; der Aufwand explodiert und der Nutzen sinkt.
 
-    - Ohne geplante Koordinationszonen fehlen klare Meeting-Scopes und Verbindlichkeiten.
+    - Ohne geplante Koordinationszonen fehlen klare Besprechungsziele und Verbindlichkeiten.
 
 
     **Ziel & Nutzen**
 
     - Koordinationsprogramm volumetrisch im Modell führen: jeder Bereich ist einem benannten Meeting zugeordnet.
 
-    - Scope und Priorität der Koordination für alle Disziplinen nachvollziehbar machen.
+    - Umfang und Priorität der Koordination für alle Disziplinen nachvollziehbar machen.
 
 
     **Ablauf**
@@ -30,22 +30,13 @@ description:
 
     2. Zonen als Proxy-Volumen modellieren und den Meeting-Namen im Name setzen.
 
-    3. Modell als Grundlage für Koordinationsplan und Meeting-Scopes nutzen.
+    3. Modell als Grundlage für Koordinationsplan und Besprechungsziele nutzen.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Volumetrisches Modell, das zeigt, welcher Bereich zu welchem Koordinationsmeeting gehört.
-
-
-    **Lieferobjekte**
-
-    - Koordinationszonenmodell als IfcBuildingElementProxy mit PredefinedType=USERDEFINED und ObjectType=Koordinationszone
-
-    - Name je Zone = Bezeichnung des Koordinationsmeetings
-
-    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey; Zonen dem zugehörigen Geschoss zuweisen'
-  fr: 'Quels secteurs sont coordonnés dans quelle réunion de coordination — au lieu de tout contre tout.
+    - Koordinationszonenmodell mit geschossbezogenen Zonen und Zuordnung zum zuständigen Koordinationsmeeting.'
+  fr: 'Quels secteurs sont coordonnés dans quelle réunion de coordination – au lieu de tout contre tout.
 
 
     **Situation de départ**
@@ -71,19 +62,10 @@ description:
     3. Utiliser le modèle comme base pour le plan de coordination et les périmètres de réunion.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Modèle volumétrique indiquant quel secteur appartient à quelle réunion de coordination.
-
-
-    **Livrables**
-
-    - Modèle de zones de coordination comme IfcBuildingElementProxy avec PredefinedType=USERDEFINED et ObjectType=Koordinationszone
-
-    - Name par zone = désignation de la réunion de coordination
-
-    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey ; rattacher les zones à l''étage concerné'
-  it: 'Quali ambiti sono coordinati in quale riunione di coordinamento — invece di tutto contro tutto.
+    - Maquette des zones de coordination rattachées aux étages et aux séances de coordination compétentes.'
+  it: 'Quali ambiti sono coordinati in quale riunione di coordinamento – invece di tutto contro tutto.
 
 
     **Situazione di partenza**
@@ -109,19 +91,10 @@ description:
     3. Usare il modello come base per il piano di coordinamento e gli ambiti delle riunioni.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Modello volumetrico che mostra quale ambito appartiene a quale riunione di coordinamento.
-
-
-    **Oggetti della fornitura**
-
-    - Modello delle zone di coordinamento come IfcBuildingElementProxy con PredefinedType=USERDEFINED e ObjectType=Koordinationszone
-
-    - Name per zona = denominazione della riunione di coordinamento
-
-    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey; assegnare le zone al piano corrispondente'
-  en: 'Which areas are coordinated in which coordination meeting — instead of everything against everything.
+    - Modello delle zone di coordinamento assegnate ai piani e alle riunioni di coordinamento competenti.'
+  en: 'Define coordination zones in the model and assign them to meetings so that not every model has to be checked against every other model.
 
 
     **Starting point**
@@ -147,22 +120,14 @@ description:
     3. Use the model as the basis for the coordination plan and meeting scopes.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Volumetric model showing which area belongs to which coordination meeting.
-
-
-    **Deliverables**
-
-    - Coordination zone model as IfcBuildingElementProxy with PredefinedType=USERDEFINED and ObjectType=Koordinationszone
-
-    - Name per zone = coordination meeting designation
-
-    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey; assign zones to the matching storey'
-workflow_group: null
+    - Coordination zone model with zones assigned to their storeys and responsible coordination meetings.'
+workflow_group: entwurf
 parent_workflow: pragmaticbim:workflow/qas
 picture_link: null
 status: active
+service_kind: basic
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep

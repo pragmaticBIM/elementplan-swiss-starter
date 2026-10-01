@@ -2,12 +2,12 @@ id: pragmaticbim:workflow/des-environmental-impact-assessment
 code: DES-UVP
 sort_order: 69
 name:
-  de: Erstellen Umweltverträglichkeitsprüfung
-  fr: Établir l'étude d'impact sur l'environnement
-  it: Predisporre la valutazione d'impatto ambientale
-  en: Prepare the environmental impact assessment
+  de: Umweltverträglichkeitsbericht erarbeiten
+  fr: Élaborer le rapport d'impact sur l'environnement
+  it: Elaborare il rapporto di impatto ambientale
+  en: Develop the environmental impact report
 description:
-  de: 'Umweltverträglichkeitsprüfung mit Auswirkungen des Vorhabens auf Umwelt und Umfeld als Grundlage für das Baugesuch erarbeiten.
+  de: 'Die Umweltverträglichkeitsprüfung aus dem aktuellen Planungsstand erarbeiten, damit Auswirkungen für Behörden und Baugesuch konsistent nachgewiesen werden können.
 
 
     **Ausgangslage**
@@ -33,18 +33,11 @@ description:
     3. Prüfung als Grundlage für das Baugesuch freigeben.
 
 
-    **Ergebnis**
+    **Lieferergebnis**
 
-    - Abgestimmte Umweltverträglichkeitsprüfung als Grundlage für das Baugesuch.
+    - Umweltverträglichkeitsprüfung mit den erforderlichen Beurteilungs- und Massnahmeninformationen
 
-
-    **Lieferobjekte**
-
-    - Umweltverträglichkeitsprüfung
-
-    - IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey als räumlicher Bezug
-
-    - Keine zusätzlichen IFC-Attribute — Prüfung als Prozessergebnis'
+    - Aktuelles Planungsmodell als räumlicher Bezug der Beurteilung'
   fr: 'Établir l''étude d''impact sur l''environnement avec les effets du projet sur l''environnement et le voisinage comme base pour la mise à l''enquête.
 
 
@@ -71,18 +64,11 @@ description:
     3. Approuver l''étude comme base pour la mise à l''enquête.
 
 
-    **Résultat**
+    **Livrable**
 
-    - Étude d''impact sur l''environnement alignée comme base pour la mise à l''enquête.
+    - Étude d''impact sur l''environnement avec les informations requises sur l''évaluation et les mesures
 
-
-    **Livrables**
-
-    - Étude d''impact sur l''environnement
-
-    - IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey comme référence spatiale
-
-    - Pas d''attributs IFC supplémentaires — étude comme résultat de processus'
+    - Maquette de planification actuelle comme référence spatiale de l''évaluation'
   it: 'Predisporre la valutazione d''impatto ambientale con gli effetti del progetto su ambiente e contesto come base per la domanda edilizia.
 
 
@@ -109,19 +95,12 @@ description:
     3. Approvare la valutazione come base per la domanda edilizia.
 
 
-    **Risultato**
+    **Risultato della fornitura**
 
-    - Valutazione d''impatto ambientale allineata come base per la domanda edilizia.
+    - Valutazione d''impatto ambientale con le informazioni necessarie sulla valutazione e sulle misure
 
-
-    **Oggetti della fornitura**
-
-    - Valutazione d''impatto ambientale
-
-    - IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey come riferimento spaziale
-
-    - Nessun attributo IFC aggiuntivo — valutazione come risultato di processo'
-  en: 'Prepare the environmental impact assessment of the project''s effects on the environment and surroundings as the basis for the building application.
+    - Modello di progettazione aggiornato come riferimento spaziale della valutazione'
+  en: 'Prepare the environmental impact assessment from the current design state so that impacts can be demonstrated consistently to authorities and in the building application.
 
 
     **Starting point**
@@ -147,22 +126,16 @@ description:
     3. Release the assessment as the basis for the building application.
 
 
-    **Outcome**
+    **Deliverable**
 
-    - Aligned environmental impact assessment as the basis for the building application.
+    - Environmental impact assessment with the required assessment and mitigation information
 
-
-    **Deliverables**
-
-    - Environmental impact assessment
-
-    - IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey as spatial reference
-
-    - No additional IFC attributes — assessment as the process deliverable'
-workflow_group: null
+    - Current planning model as the spatial reference for the assessment'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
-comment: Produces UVP. Process deliverable for permit; no additional IFC attributes.
+comment: Produces UVP. Spatial reference is spaces-gross-volume (Name, PredefinedType, ObjectType).

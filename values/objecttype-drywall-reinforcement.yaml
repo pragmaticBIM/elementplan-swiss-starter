@@ -1,0 +1,24 @@
+id: pragmaticbim:value/objecttype-drywall-reinforcement
+code: OBJ-DRYWALL-REINF
+name:
+  de: ObjectType Trockenbauverstärkung
+  fr: ObjectType renfort de cloison légère
+  it: ObjectType rinforzo per parete a secco
+  en: ObjectType drywall reinforcement
+description:
+  de: ObjectType für einen Proxy-Körper, der den erforderlichen Verstärkungsbereich in einer Trockenbauwand bezeichnet.
+  fr: ObjectType pour un corps proxy représentant la zone de renfort requise dans une cloison légère.
+  it: ObjectType per un corpo proxy che rappresenta la zona di rinforzo necessaria in una parete a secco.
+  en: ObjectType for a proxy body representing the required reinforcement zone in a drywall partition.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - Trockenbauverstärkung
+  fr:
+  - Renfort de cloison légère
+  it:
+  - Rinforzo per parete a secco
+  en:
+  - Drywall reinforcement

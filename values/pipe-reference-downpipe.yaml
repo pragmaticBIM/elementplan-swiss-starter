@@ -2,14 +2,14 @@ id: pragmaticbim:value/pipe-reference-downpipe
 code: PIPE-REF-FL
 name:
   de: Referenz Fallleitung
-  fr: Référence descente
+  fr: Référence de la descente
   it: Riferimento pluviale
   en: Downpipe reference
 description:
-  de: Referenzkennung für Fallleitungen in der Koordination.
-  fr: Code de référence pour les descentes en coordination.
-  it: Codice di riferimento per pluviali nel coordinamento.
-  en: Reference code for downpipes in coordination.
+  de: Referenzkennung der Fallleitung ab dem Bauprojekt.
+  fr: Code de référence de la descente, dès le projet de construction.
+  it: Codice di riferimento del pluviale dal progetto di costruzione.
+  en: Reference code of the downpipe from the construction project onward.
 year: 2026
 norm_reference: IFC4
 status: active

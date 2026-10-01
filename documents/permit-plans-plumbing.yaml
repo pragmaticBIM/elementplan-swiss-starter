@@ -1,10 +1,10 @@
 id: pragmaticbim:document/permit-plans-plumbing
 code: BGS
-sort_order: 119
+sort_order: 105
 name:
   de: Baugenehmigungspläne Sanitär
-  fr: Plans de permis — sanitaire
-  it: Piani di autorizzazione — sanitario
+  fr: Plans de permis – sanitaire
+  it: Piani di autorizzazione – sanitario
   en: Permit plans plumbing
 definition:
   de: Baugenehmigungspläne Sanitär für das Baugesuch. Darstellung der Sanitäranlagen in der für die Bewilligungsbehörde erforderlichen Form.
@@ -36,8 +36,8 @@ file_name:
   de: '{Projektnummer}_TGA-BGS_{Freitext}.{ext}'
   fr: '{NumeroProjet}_CVC-BGS_{Libre}.{ext}'
   it: '{NumeroProgetto}_IMP-BGS_{Libero}.{ext}'
-  en: '{ProjectNumber}_MEP-BGS_{Free}.{ext}'
+  en: '{ProjectNumber}_MEP-BGS_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/mep
 scheduled_milestones:
-  - "33:beginning"
+  - "33:M"

@@ -2,168 +2,145 @@ id: pragmaticbim:workflow/des-full-life-cycle-calculation
 code: DES-LCA
 sort_order: 55
 name:
-  de: Lebenszyklusberechnung (Ökobilanz) aus dem Modell
-  fr: Calcul du cycle de vie (ACV) à partir du modèle
-  it: Calcolo del ciclo di vita (LCA) dal modello
-  en: Full life-cycle calculation (LCA) from the model
+  de: Ökobilanz berechnen
+  fr: Calculer l'écobilan
+  it: Calcolare l'ecobilancio
+  en: Calculate the life-cycle assessment
 description:
-  de: 'Bauteilmengen und Materialien so im Modell führen, dass eine Ökobilanz ohne parallele Mengenlisten möglich wird.
+  de: 'Bauteilmengen, Materialien und Produktklasse so führen, dass Ökobilanz und graue Energie über KBOB ohne parallele Mengenermittlung möglich werden.
 
 
     **Ausgangslage**
 
-    - Lebenszyklusbewertungen brauchen belastbare Mengen und Materialangaben; diese fehlen im Modell oft oder liegen nur in Tabellen.
+    - Lebenszyklusbewertungen brauchen belastbare Mengen und Materialangaben; diese werden oft separat manuell ermittelt.
 
-    - Manuelle Nachpflege für SNBS, KBOB oder LCA-Tools ist fehleranfällig und verzögert Entscheide.
+    - Manuelle Nachpflege für SNBS, KBOB oder LCA-Tools ist fehleranfällig und verzögert Entscheide – der Produkt-zu-KBOB-Bezug fehlt oft im Modell.
 
 
     **Ziel & Nutzen**
 
-    - Architektur- und Tragwerksbauteile mit Material und Mengen als Grundlage für die Ökobilanz bereitstellen.
+    - Frühere, wiederholbare Lebenszyklus- und Graue-Energie-Berechnungen statt später Einmalaufwände.
 
-    - Frühere, wiederholbare Lebenszyklusberechnungen statt später Einmalaufwände.
+    - KBOB-Kennwerte über die Produktklasse am Bauteil auflösen statt Materialien von Hand nachzuschlüsseln.
 
 
     **Ablauf**
 
-    1. Massgebende Bauteile mit Geometrie und Materialangabe im Modell führen.
+    1. Massgebende Bauteile mit Geometrie, Materialangabe und Produktklasse im Modell führen.
 
-    2. Mengen (Volumen, Flächen) und Materialkennwerte aus dem Modell ausziehen.
+    2. Mengen ausziehen und KBOB-Codes (inkl. verwandter Codes) über die Produktklasse aus dem Produktkatalog auflösen.
 
-    3. Daten in die LCA-/Zertifizierungswerkzeuge übernehmen und Varianten vergleichen.
-
-
-    **Ergebnis**
-
-    - Modellgestützte Eingangsdaten für die vollständige Lebenszyklusberechnung (Ökobilanz).
+    3. Daten in die LCA-/KBOB-Werkzeuge übernehmen und Varianten (graue Energie, GWP) vergleichen.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Architektur- und Tragwerksmodell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+    - Architektur- und Tragwerksmodell mit Material-, Mengen- und Produktklasseninformationen
 
-    - Massgebende Bauteile (Wände, Decken, Dächer, Stützen, Träger, Fundamente, Fassaden- und Ausbauelemente) mit Material
-
-    - Mengenattribute (z. B. GrossVolume, GrossSideArea, GrossFloorArea) je Bauteil'
-  fr: 'Saisir quantités et matériaux dans le modèle pour permettre une ACV sans listes de quantités parallèles.
+    - Zum Modell rückverfolgbarer Datensatz für Ökobilanz, graue Energie und Variantenvergleich'
+  fr: 'Tenir quantités, matériaux et classe de produit dans le modèle pour permettre ACV et énergie grise via KBOB sans métrés parallèles.
 
 
     **Situation de départ**
 
-    - Les évaluations du cycle de vie exigent des quantités et matériaux fiables ; le modèle en manque souvent ou ils n''existent qu''en tableaux.
+    - Les évaluations du cycle de vie exigent des quantités et matériaux fiables ; ils sont souvent établis manuellement à part.
 
-    - La reprise manuelle pour SNBS, KBOB ou outils ACV est source d''erreurs et retarde les décisions.
+    - La reprise manuelle pour SNBS, KBOB ou outils ACV est source d''erreurs et retarde les décisions – le lien produit→KBOB manque souvent dans la maquette.
 
 
     **Objectif et bénéfice**
 
-    - Fournir les éléments architecture et structure avec matériau et quantités comme base d''ACV.
+    - Calculs de cycle de vie et d''énergie grise plus précoces et reproductibles plutôt que des reprises tardives.
 
-    - Permettre des calculs de cycle de vie plus tôt et reproductibles plutôt que des reprises tardives.
+    - Résoudre les indicateurs KBOB via la classe de produit sur l''élément au lieu de reclasser les matériaux à la main.
 
 
     **Déroulement**
 
-    1. Saisir les éléments déterminants avec géométrie et matériau dans le modèle.
+    1. Tenir les éléments déterminants avec géométrie, matériau et classe de produit dans la maquette.
 
-    2. Extraire quantités (volumes, surfaces) et indicateurs matériaux du modèle.
+    2. Extraire les quantités et résoudre les codes KBOB (y compris codes liés) via la classe de produit du catalogue produits.
 
-    3. Transférer les données dans les outils ACV/certification et comparer les variantes.
-
-
-    **Résultat**
-
-    - Données d''entrée basées sur le modèle pour le calcul complet du cycle de vie (ACV).
+    3. Transférer les données dans les outils ACV/KBOB et comparer les variantes (énergie grise, GWP).
 
 
-    **Livrables**
+    **Livrable**
 
-    - Maquette architecture et structure avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+    - Maquettes architecture et structure avec informations matériaux, quantités et classe de produit
 
-    - Composants déterminants (murs, dalles, toitures, poteaux, poutres, fondations, façade et finitions) avec matériau
-
-    - Attributs de quantité (p. ex. GrossVolume, GrossSideArea, GrossFloorArea) par élément'
-  it: 'Gestire quantità e materiali nel modello per consentire un LCA senza elenchi quantità paralleli.
+    - Jeu de données traçable jusqu''aux maquettes pour ACV, énergie grise et comparaison de variantes'
+  it: 'Gestire quantità, materiali e classe di prodotto nel modello per consentire LCA ed energia grigia via KBOB senza computi paralleli.
 
 
     **Situazione di partenza**
 
-    - Le valutazioni del ciclo di vita richiedono quantità e materiali affidabili; nel modello spesso mancano o esistono solo in tabelle.
+    - Le valutazioni del ciclo di vita richiedono quantità e materiali affidabili; spesso vengono rilevati manualmente a parte.
 
-    - Il ripristino manuale per SNBS, KBOB o strumenti LCA è soggetto a errori e ritarda le decisioni.
+    - Il ripristino manuale per SNBS, KBOB o strumenti LCA è soggetto a errori e ritarda le decisioni – il collegamento prodotto→KBOB spesso manca nel modello.
 
 
     **Obiettivo e beneficio**
 
-    - Fornire componenti di architettura e struttura con materiale e quantità come base per l''LCA.
+    - Calcoli di ciclo di vita ed energia grigia più precoci e ripetibili invece di riprese tardive.
 
-    - Consentire calcoli del ciclo di vita più precoci e ripetibili invece di riprese tardive.
+    - Risolvere gli indicatori KBOB tramite la classe di prodotto sul componente invece di riclassificare i materiali a mano.
 
 
     **Svolgimento**
 
-    1. Gestire i componenti rilevanti con geometria e materiale nel modello.
+    1. Gestire i componenti rilevanti con geometria, materiale e classe di prodotto nel modello.
 
-    2. Estrarre quantità (volumi, superfici) e indicatori di materiale dal modello.
+    2. Estrarre le quantità e risolvere i codici KBOB (inclusi i codici correlati) tramite la classe di prodotto del catalogo prodotti.
 
-    3. Trasferire i dati negli strumenti LCA/certificazione e confrontare le varianti.
-
-
-    **Risultato**
-
-    - Dati di input basati sul modello per il calcolo completo del ciclo di vita (LCA).
+    3. Trasferire i dati negli strumenti LCA/KBOB e confrontare le varianti (energia grigia, GWP).
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Modello di architettura e struttura con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+    - Modelli di architettura e struttura con informazioni su materiali, quantità e classe di prodotto
 
-    - Componenti rilevanti (pareti, solai, tetti, colonne, travi, fondazioni, facciata e finiture) con materiale
-
-    - Attributi di quantità (p. es. GrossVolume, GrossSideArea, GrossFloorArea) per componente'
-  en: 'Carry component quantities and materials in the model so a full LCA is possible without parallel quantity lists.
+    - Set di dati tracciabile fino ai modelli per LCA, energia grigia e confronto delle varianti'
+  en: 'Carry component quantities, materials, and product class so LCA and grey energy via KBOB are possible without parallel quantity lists.
 
 
     **Starting point**
 
-    - Life-cycle assessments need reliable quantities and material data; these are often missing in the model or only live in spreadsheets.
+    - Life-cycle assessments need reliable quantities and material data; these are often taken off manually in parallel.
 
-    - Manual rework for SNBS, KBOB, or LCA tools is error-prone and delays decisions.
+    - Manual rework for SNBS, KBOB, or LCA tools is error-prone and delays decisions – the product→KBOB link is often missing in the model.
 
 
     **Goal & benefit**
 
-    - Provide architecture and structural components with material and quantities as the LCA basis.
+    - Earlier, repeatable life-cycle and grey-energy calculations instead of late one-off rework.
 
-    - Enable earlier, repeatable life-cycle calculations instead of late one-off rework.
+    - Resolve KBOB indicators via the product class on the component instead of re-keying materials by hand.
 
 
     **Process**
 
-    1. Carry governing components with geometry and material in the model.
+    1. Carry governing components with geometry, material, and product class in the model.
 
-    2. Extract quantities (volumes, areas) and material indicators from the model.
+    2. Extract quantities and resolve KBOB codes (including related codes) via the product class from the product catalogue.
 
-    3. Transfer the data into LCA/certification tools and compare variants.
-
-
-    **Outcome**
-
-    - Model-based input data for a full life-cycle calculation (LCA).
+    3. Transfer the data into LCA/KBOB tools and compare variants (grey energy, GWP).
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Architecture and structural model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+    - Architecture and structural models with material, quantity, and product-class information
 
-    - Governing components (walls, slabs, roofs, columns, beams, foundations, facade and fit-out elements) with material
-
-    - Quantity attributes (e.g. GrossVolume, GrossSideArea, GrossFloorArea) per component'
-workflow_group: null
+    - Dataset traceable to the models for LCA, grey energy, and option comparison'
+workflow_group: konzept
 parent_workflow: pragmaticbim:workflow/des
 picture_link: null
 status: active
+service_kind: special
+countries:
+- CH
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/structural
-comment: Environmental LCA (Ökobilanz), not lifecycle costing. Material attribute required on governing building elements.
+comment: 'Environmental LCA (Ökobilanz), not lifecycle costing. Material attribute and ePset_Cost.ProductClass required on governing building elements. Resolve KBOB / kbob_related from the product catalogue
+  bridge (book product- classifications.yaml / schema.pragmaticbim.ch), not as a separate IFC attribute. Distinct from DES-MATERIAL-PASS: ePset_Circularity.MaterialOrProductId is a Madaster/baubook ID space,
+  not schema ProductClass. ProductClass assignment upstream: BES-PRODUCT-TENDER.'

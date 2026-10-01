@@ -1,0 +1,26 @@
+id: pragmaticbim:usage-scenario/waesche-waschen-in-wohnung
+code: US-WH-09
+sort_order: 9
+name:
+  de: Wäsche waschen in Wohnung
+  fr: Lessive dans le logement
+  it: Bucato in alloggio
+  en: Laundry in the dwelling
+description:
+  de: Bewohnende gehen vom Wohnungseingang über den Gang in die Waschküche der Wohnung.
+  fr: Les occupants vont de l'entrée du logement au couloir, puis à la buanderie du logement.
+  it: Chi abita va dall'ingresso dell'alloggio al corridoio, poi alla lavanderia dell'alloggio.
+  en: Occupants go from the dwelling entry through the hallway to the in-unit laundry.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/gang
+- pragmaticbim:room-type/waschkueche
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/gang
+- from_room_type: pragmaticbim:room-type/gang
+  to_room_type: pragmaticbim:room-type/waschkueche

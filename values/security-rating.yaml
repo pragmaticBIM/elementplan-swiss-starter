@@ -1,0 +1,44 @@
+id: pragmaticbim:value/security-rating
+code: SEC-RATING
+name:
+  de: Einbruchwiderstand
+  fr: Résistance à l'effraction
+  it: Resistenza all'effrazione
+  en: Burglary resistance
+description:
+  de: Widerstandsklassen gegen Einbruch gemäss EN 1627 für Türen und Fassadenöffnungen.
+  fr: Classes de résistance à l'effraction selon EN 1627 pour portes et ouvertures de façade.
+  it: Classi di resistenza all'effrazione secondo EN 1627 per porte e aperture di facciata.
+  en: Burglary resistance classes according to EN 1627 for doors and facade openings.
+year: 2026
+norm_reference: EN 1627
+status: active
+values:
+  de:
+  - RC1
+  - RC2
+  - RC3
+  - RC4
+  - RC5
+  - RC6
+  fr:
+  - RC1
+  - RC2
+  - RC3
+  - RC4
+  - RC5
+  - RC6
+  it:
+  - RC1
+  - RC2
+  - RC3
+  - RC4
+  - RC5
+  - RC6
+  en:
+  - RC1
+  - RC2
+  - RC3
+  - RC4
+  - RC5
+  - RC6

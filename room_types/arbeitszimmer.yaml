@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/arbeitszimmer
+code: RT-WH-08
+sort_order: 8
+name:
+  de: Arbeitszimmer
+  fr: Bureau à domicile
+  it: Studio
+  en: Home Study
+definition:
+  de: Wohnlicher Raum für Arbeit oder Studium.
+  fr: Local d'habitation pour le travail ou l'étude.
+  it: Locale abitativo per il lavoro o lo studio.
+  en: Residential room for study or home office work.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Arbeitszimmer
+    fr: Bureau à domicile
+    it: Studio
+    en: Home Study
+restrictions:
+  min_area: 8
+status: active

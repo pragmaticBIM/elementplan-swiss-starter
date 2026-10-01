@@ -1,0 +1,136 @@
+id: pragmaticbim:workflow/bes-steelwork-tender-basis
+code: BES-STEELWORK-TENDER
+sort_order: 20
+name:
+  de: Grundlage für die Stahlbauausschreibung liefern
+  fr: Fournir la base pour l'appel d'offres des travaux de construction métallique
+  it: Fornire la base per la gara delle opere di carpenteria metallica
+  en: Provide the basis for steelwork tendering
+description:
+  de: 'Lage und Hauptabmessungen von Stahlbauteilen im Modell als prüfbare Grundlage für Mengen und Ausschreibung bereitstellen.
+
+
+    **Ausgangslage**
+
+    - Angaben zu Stahlbauteilen werden für die Ausschreibung oft manuell aus Modellen, Plänen und Listen zusammengetragen.
+
+    - Eine zu frühe Detailmodellierung von Geländern, Anschlüssen und Befestigungen bindet Aufwand, obwohl die genaue Konstruktion meist erst in Detail-, Werkstatt- oder Montageplänen festgelegt wird.
+
+
+    **Ziel & Nutzen**
+
+    - Eindeutige Bezeichnungen, Lage und ausschreibungsrelevante Hauptabmessungen mit geringem Modellierungsaufwand bereitstellen.
+
+    - Mengen und Positionen nachvollziehbar prüfen, ohne die Werkstattplanung vorwegzunehmen.
+
+
+    **Ablauf**
+
+    1. Stahlbauteile mit eindeutiger Bezeichnung, räumlicher Zuordnung und den erforderlichen Hauptabmessungen bereitstellen.
+
+    2. Modellangaben mit den Ausschreibungs- und Detailplänen abstimmen und fehlende oder widersprüchliche Positionen klären.
+
+    3. Mengen und Bauteilliste ableiten und mit dem Leistungsverzeichnis abgleichen.
+
+
+    **Lieferergebnis**
+
+    - Abgestimmtes Modell und Bauteilliste als nachvollziehbare Grundlage für Mengen und Ausschreibung.'
+  fr: 'Mettre à disposition l''emplacement et les dimensions principales des éléments métalliques dans la maquette comme base vérifiable pour les quantités et l''appel d''offres.
+
+
+    **Situation de départ**
+
+    - Les données relatives aux éléments métalliques sont souvent rassemblées manuellement depuis les maquettes, plans et listes pour l''appel d''offres.
+
+    - Une modélisation détaillée trop précoce des garde-corps, raccords et fixations mobilise des ressources alors que la construction précise n''est généralement définie que dans les plans de détail, d''atelier
+    ou de montage.
+
+
+    **Objectif et bénéfice**
+
+    - Fournir des désignations univoques, l''emplacement et les dimensions principales nécessaires à l''appel d''offres avec un effort de modélisation limité.
+
+    - Contrôler les quantités et les positions de manière traçable sans anticiper les études d''atelier.
+
+
+    **Déroulement**
+
+    1. Fournir les éléments métalliques avec une désignation univoque, leur rattachement spatial et les dimensions principales requises.
+
+    2. Accorder les données de la maquette avec les plans d''appel d''offres et de détail et clarifier les positions manquantes ou contradictoires.
+
+    3. Déduire les quantités et la liste des éléments et les comparer au descriptif des prestations.
+
+
+    **Livrable**
+
+    - Maquette et liste d''éléments coordonnées comme base traçable pour les quantités et l''appel d''offres.'
+  it: 'Mettere a disposizione nel modello la posizione e le dimensioni principali degli elementi in acciaio come base verificabile per quantità e gara.
+
+
+    **Situazione di partenza**
+
+    - Per la gara, i dati degli elementi in acciaio vengono spesso raccolti manualmente da modelli, piani ed elenchi.
+
+    - Una modellazione dettagliata troppo precoce di parapetti, raccordi e fissaggi richiede risorse, anche se la costruzione precisa viene generalmente definita solo nei piani di dettaglio, d''officina
+    o di montaggio.
+
+
+    **Obiettivo e beneficio**
+
+    - Fornire denominazioni univoche, posizione e dimensioni principali necessarie alla gara con un impegno di modellazione limitato.
+
+    - Verificare quantità e posizioni in modo tracciabile senza anticipare la progettazione d''officina.
+
+
+    **Svolgimento**
+
+    1. Fornire gli elementi in acciaio con una denominazione univoca, l''assegnazione spaziale e le dimensioni principali richieste.
+
+    2. Coordinare i dati del modello con i piani di gara e di dettaglio e chiarire le posizioni mancanti o contraddittorie.
+
+    3. Ricavare le quantità e l''elenco degli elementi e confrontarli con il capitolato.
+
+
+    **Risultato della fornitura**
+
+    - Modello ed elenco degli elementi coordinati come base tracciabile per quantità e gara.'
+  en: 'Provide the location and principal dimensions of steelwork components in the model as a verifiable basis for quantities and tendering.
+
+
+    **Starting point**
+
+    - Steelwork information is often compiled manually from models, drawings, and schedules for tendering.
+
+    - Detailing railings, connections, and fixings too early consumes effort even though the exact construction is usually defined later in detail, shop, or installation drawings.
+
+
+    **Goal & benefit**
+
+    - Provide unique designations, locations, and tender-relevant principal dimensions with limited modelling effort.
+
+    - Check quantities and positions traceably without pre-empting shop design.
+
+
+    **Process**
+
+    1. Provide steelwork components with unique designations, spatial assignment, and the required principal dimensions.
+
+    2. Coordinate model information with tender and detail drawings and resolve missing or contradictory positions.
+
+    3. Derive quantities and the component schedule and compare them with the bill of quantities.
+
+
+    **Deliverable**
+
+    - Coordinated model and component schedule as a traceable basis for quantities and tendering.'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/structural
+comment: Tender basis only; exact fabrication, connection, and fixing details remain in detail, shop, or installation drawings.

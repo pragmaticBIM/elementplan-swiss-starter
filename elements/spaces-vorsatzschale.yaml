@@ -1,79 +1,81 @@
 id: pragmaticbim:element/spaces-vorsatzschale
 code: SPACE-VORSATZ
-sort_order: 17
+sort_order: 16
 status: active
 name:
   de: Vorsatzschale (nutzbarer Raum)
   fr: Contre-cloison (espace utile)
   it: Controparete (spazio utile)
-  en: Facing shell (usable space)
+  en: Wall lining (usable space)
 definition:
-  de: 'Nutzbaren Raum der Vorsatzschale modellieren — ohne Konstruktion, nur das lichte Volumen für den Nachweis von Platzbedarf und Flächenauswirkung.
+  de: 'Macht den Platz- und Flächenverlust früh prüfbar, damit insbesondere Nassräume ausreichend gross geplant werden.
 
 
     **Beschreibung**
 
     - Lichter nutzbarer Raum innerhalb bzw. infolge einer Vorsatzschale (z. B. Installationsvorsatzschale im Bad).
 
-    - Dient dem Nachweis, wie viel Fläche und Raum die Vorsatzschale beansprucht — oft werden Nasszellen dadurch zu klein.
+    - Bildet den Platzbedarf der Vorsatzschale ab. Bleibt dieser unberücksichtigt, werden insbesondere Nasszellen häufig zu klein geplant; die erforderliche Korrektur verursacht späte und mitunter weitreichende
+    Planungsänderungen.
 
 
-    **Modellierungsrichtlinie**
+    **Modellierungshinweis**
 
-    - Als Raumvolumen modellieren; Geometrie bis zu den inneren, lichten Begrenzungen — Konstruktion (Platten, Profile, Bekleidung) nicht mitmodellieren.
+    - Als Raumvolumen modellieren; Geometrie bis zu den inneren, lichten Begrenzungen – Konstruktion (Platten, Profile, Bekleidung) nicht mitmodellieren.
 
     - Dem zugehörigen Geschoss zuweisen; ObjectType = Vorsatzschale.
 
     - Keine Überlappung mit dem nutzbaren Innenraum des angrenzenden Raums; NetFloorArea für die Flächenauswirkung auswerten.'
-  fr: 'Modéliser l''espace utile de la contre-cloison — hors construction, uniquement le volume libre pour prouver le besoin d''espace et l''impact sur les surfaces.
+  fr: 'Permet de vérifier tôt la perte d''espace et de surface afin de dimensionner suffisamment les locaux, notamment les locaux sanitaires.
 
 
     **Description**
 
     - Espace utile libre à l''intérieur ou du fait d''une contre-cloison (p. ex. contre-cloison technique dans une salle d''eau).
 
-    - Sert à prouver combien de surface et d''espace la contre-cloison occupe — les salles d''eau deviennent souvent trop petites.
+    - Représente l''emprise de la contre-cloison. Si celle-ci n''est pas prise en compte, les locaux sanitaires sont souvent sous-dimensionnés et leur correction entraîne tardivement des modifications de
+    projet parfois importantes.
 
 
     **Directives de modélisation**
 
-    - Modéliser comme volume de local ; géométrie jusqu''aux limites intérieures libres — ne pas inclure la construction (plaques, profilés, revêtement).
+    - Modéliser comme volume de local ; géométrie jusqu''aux limites intérieures libres – ne pas inclure la construction (plaques, profilés, revêtement).
 
     - Rattacher à l''étage concerné ; ObjectType = Vorsatzschale.
 
     - Pas de chevauchement avec le local intérieur utilisable adjacent ; évaluer NetFloorArea pour l''impact sur les surfaces.'
-  it: 'Modellare lo spazio utile della controparete — senza costruzione, solo il volume libero per la prova del fabbisogno di spazio e dell''impatto sulle superfici.
+  it: 'Permette di verificare tempestivamente la perdita di spazio e superficie per dimensionare adeguatamente soprattutto i locali sanitari.
 
 
     **Descrizione**
 
     - Spazio utile libero all''interno o a causa di una controparete (p. es. controparete impianti in bagno).
 
-    - Serve a dimostrare quanta superficie e spazio occupa la controparete — i locali umidi diventano spesso troppo piccoli.
+    - Rappresenta l''ingombro della controparete. Se non viene considerato, i locali sanitari sono spesso sottodimensionati e la correzione richiede modifiche tardive e talvolta sostanziali al progetto.
 
 
     **Direttive di modellazione**
 
-    - Modellare come volume di locale; geometria fino ai limiti interni liberi — non includere la costruzione (lastre, profili, rivestimento).
+    - Modellare come volume di locale; geometria fino ai limiti interni liberi – non includere la costruzione (lastre, profili, rivestimento).
 
     - Assegnare al piano corrispondente; ObjectType = Vorsatzschale.
 
     - Nessuna sovrapposizione con il locale interno utilizzabile adiacente; valutare NetFloorArea per l''impatto sulle superfici.'
-  en: 'Model the usable space of the facing shell — excluding construction, only the clear volume for verifying space demand and floor-area impact.
+  en: 'Makes space and floor-area loss verifiable early so that rooms, especially sanitary spaces, can be sized adequately.
 
 
     **Description**
 
-    - Clear usable space within or due to a facing shell (e.g. plumbing lining in a bathroom).
+    - Clear usable space within or resulting from a wall lining (e.g. a service wall lining in a bathroom).
 
-    - Used to prove how much area and space the facing shell occupies — wet rooms often become too small.
+    - Represents the space required by the wall lining. If this is overlooked, sanitary rooms are often undersized, requiring late and sometimes far-reaching design changes.
 
 
     **Modelling guidelines**
 
-    - Model as a space volume; geometry to the inner clear boundaries — do not include construction (boards, profiles, cladding).
+    - Model as a space volume; geometry to the inner clear boundaries – do not include construction (boards, profiles, cladding).
 
-    - Assign to the matching storey; ObjectType = Vorsatzschale.
+    - Assign to the matching storey; ObjectType = Wall lining.
 
     - No overlap with the usable interior space of the adjacent room; evaluate NetFloorArea for floor-area impact.'
 needed_in_domain:
@@ -81,10 +83,43 @@ needed_in_domain:
 entity_ifc2x3: IfcSpace
 entity_ifc4: IfcSpace
 entity_ifc4_3: IfcSpace
-picture_link: null
-model_link: null
-applicability: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType=Vorsatzschale) OR (entity_ifc2x3=IfcSpace AND ObjectType=Vorsatzschale)
+picture_link: spaces-vorsatzschale.png
+picture_print_link: spaces-vorsatzschale-print.tif
+attachment_link: spaces-vorsatzschale.ifc
+model_link: spaces-vorsatzschale.ifc
+applicability:
+  de: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType=Vorsatzschale) OR (entity_ifc2x3=IfcSpace AND ObjectType=Vorsatzschale)
+  fr: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType=Contre-cloison) OR (entity_ifc2x3=IfcSpace AND ObjectType=Contre-cloison)
+  it: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType=Controparete) OR (entity_ifc2x3=IfcSpace AND ObjectType=Controparete)
+  en: (entity_ifc4=IfcSpace AND PredefinedType=USERDEFINED AND ObjectType="Wall lining") OR (entity_ifc2x3=IfcSpace AND ObjectType="Wall lining")
 attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Optionale Bezeichnung oder Nummer des Vorsatzschalen-Raums gemäss Projekt.
+    fr: Désignation ou numéro facultatif de l'espace de contre-cloison selon le projet.
+    it: Denominazione o numero facoltativo dello spazio controparete secondo il progetto.
+    en: Optional designation or number of the wall-lining space according to the project.
+  datatype: IfcIdentifier
+  needed_in_phases:
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/qas-facing-shell-area-verification
+  is_applicability: false
+  status: active
+  sort_order: 1
 - name: PredefinedType
   pset: null
   definition:
@@ -111,7 +146,7 @@ attributes:
 
       **Allowed values**
 
-      - `USERDEFINED` — user-defined type; ObjectType = Vorsatzschale'
+      - `USERDEFINED` — user-defined type; ObjectType = Wall lining'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/predefinedtype-space-userdefined
   needed_in_phases:
@@ -131,7 +166,7 @@ attributes:
   - pragmaticbim:workflow/qas-facing-shell-area-verification
   is_applicability: true
   status: active
-  sort_order: 1
+  sort_order: 2
 - name: ObjectType
   pset: null
   definition:
@@ -158,7 +193,7 @@ attributes:
 
       **Allowed values**
 
-      - `Vorsatzschale` — usable space of a facing shell excluding construction'
+      - `Wall lining` — usable space occupied by a wall lining, excluding its construction'
   datatype: IfcLabel
   allowed_values: pragmaticbim:value/objecttype-vorsatzschale
   needed_in_phases:
@@ -179,33 +214,6 @@ attributes:
   - pragmaticbim:workflow/qas-facing-shell-area-verification
   is_applicability: true
   status: active
-  sort_order: 2
-- name: Name
-  pset: null
-  definition:
-    de: Optionale Bezeichnung oder Nummer des Vorsatzschalen-Raums gemäss Projekt.
-    fr: Désignation ou numéro facultatif de l'espace de contre-cloison selon le projet.
-    it: Denominazione o numero facoltativo dello spazio controparete secondo il progetto.
-    en: Optional designation or number of the facing-shell space according to the project.
-  datatype: IfcIdentifier
-  needed_in_phases:
-  - '31'
-  - '32'
-  - '33'
-  - '41'
-  - '51'
-  - '52'
-  - '53'
-  - '61'
-  - '62'
-  ifc_versions:
-  - ifc2x3
-  - ifc4
-  - ifc4x3
-  needed_for_workflows:
-  - pragmaticbim:workflow/qas-facing-shell-area-verification
-  is_applicability: false
-  status: active
   sort_order: 3
 - name: NetFloorArea
   pset: Qto_SpaceBaseQuantities
@@ -213,7 +221,7 @@ attributes:
     de: Nettogeschossfläche des modellierten nutzbaren Vorsatzschalen-Raums.
     fr: Surface nette de plancher de l'espace utile de contre-cloison modélisé.
     it: Superficie netta di piano dello spazio utile di controparete modellato.
-    en: Net floor area of the modelled usable facing-shell space.
+    en: Net floor area of the modelled usable wall-lining space.
   datatype: IfcAreaMeasure
   unit: m²
   needed_in_phases:

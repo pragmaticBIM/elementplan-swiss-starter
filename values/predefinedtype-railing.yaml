@@ -1,0 +1,40 @@
+id: pragmaticbim:value/predefinedtype-railing
+code: RAILING-TYPE
+name:
+  de: Geländertyp
+  fr: Type de garde-corps
+  it: Tipo di parapetto
+  en: Railing type
+description:
+  de: PredefinedType für IfcRailing.
+  fr: PredefinedType pour IfcRailing.
+  it: PredefinedType per IfcRailing.
+  en: PredefinedType for IfcRailing.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - BALUSTRADE
+  - GUARDRAIL
+  - HANDRAIL
+  - USERDEFINED
+  - NOTDEFINED
+  fr:
+  - BALUSTRADE
+  - GUARDRAIL
+  - HANDRAIL
+  - USERDEFINED
+  - NOTDEFINED
+  it:
+  - BALUSTRADE
+  - GUARDRAIL
+  - HANDRAIL
+  - USERDEFINED
+  - NOTDEFINED
+  en:
+  - BALUSTRADE
+  - GUARDRAIL
+  - HANDRAIL
+  - USERDEFINED
+  - NOTDEFINED

@@ -1,0 +1,30 @@
+id: pragmaticbim:room-type/wohnungseingang
+code: RT-WH-01
+sort_order: 1
+name:
+  de: Wohnungseingang
+  fr: Entrée du logement
+  it: Ingresso dell'alloggio
+  en: Residential Entry
+definition:
+  de: Eingangsbereich innerhalb einer Wohneinheit.
+  fr: Zone d'entrée à l'intérieur d'un logement.
+  it: Zona d'ingresso all'interno di un'unità abitativa.
+  en: Entry space within a dwelling unit.
+attribute_presets:
+- element: pragmaticbim:element/spaces-interior
+  name: PredefinedType
+  value: SPACE
+- element: pragmaticbim:element/spaces-interior
+  name: IsExternal
+  value: false
+- element: pragmaticbim:element/spaces-interior
+  name: LongName
+  value:
+    de: Wohnungseingang
+    fr: Entrée du logement
+    it: Ingresso dell'alloggio
+    en: Residential Entry
+restrictions:
+  min_area: 2
+status: active

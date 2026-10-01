@@ -1,0 +1,24 @@
+id: pragmaticbim:value/predefinedtype-space-gfa
+code: SPACE-GFA
+name:
+  de: PredefinedType Bruttogeschossfläche
+  fr: PredefinedType surface brute de plancher
+  it: PredefinedType superficie lorda di piano
+  en: PredefinedType gross floor area
+description:
+  de: IfcSpace PredefinedType für geschossweise Bruttogeschossflächen.
+  fr: PredefinedType IfcSpace pour les surfaces brutes de plancher par étage.
+  it: PredefinedType IfcSpace per le superfici lorde di piano.
+  en: IfcSpace PredefinedType for gross floor area spaces by storey.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - GFA
+  fr:
+  - GFA
+  it:
+  - GFA
+  en:
+  - GFA

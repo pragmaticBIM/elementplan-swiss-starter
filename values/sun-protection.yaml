@@ -1,0 +1,40 @@
+id: pragmaticbim:value/sun-protection
+code: SUN-PROTECTION
+name:
+  de: Sonnenschutzart
+  fr: Type de protection solaire
+  it: Tipo di protezione solare
+  en: Sun-protection type
+description:
+  de: Sonnenschutzart am Aussenfenster, an IFC IfcShadingDevice.PredefinedType angelehnt, zuzüglich NONE.
+  fr: Type de protection solaire sur la fenêtre extérieure, aligné sur IfcShadingDevice.PredefinedType, plus NONE.
+  it: Tipo di protezione solare sulla finestra esterna, allineato a IfcShadingDevice.PredefinedType, più NONE.
+  en: Sun-protection type on the exterior window, aligned with IfcShadingDevice.PredefinedType, plus NONE.
+year: 2026
+norm_reference: IFC4
+status: active
+values:
+  de:
+  - NONE
+  - JALOUSIE
+  - SHUTTER
+  - AWNING
+  - USERDEFINED
+  fr:
+  - NONE
+  - JALOUSIE
+  - SHUTTER
+  - AWNING
+  - USERDEFINED
+  it:
+  - NONE
+  - JALOUSIE
+  - SHUTTER
+  - AWNING
+  - USERDEFINED
+  en:
+  - NONE
+  - JALOUSIE
+  - SHUTTER
+  - AWNING
+  - USERDEFINED

@@ -2,168 +2,147 @@ id: pragmaticbim:workflow/hov-fm-3d-information-delivery
 code: HOV-FM-3D
 sort_order: 52
 name:
-  de: FM — Lieferung von 3D-Informationen
-  fr: FM — Livraison d'informations 3D
-  it: FM — Consegna di informazioni 3D
-  en: FM — Delivery of 3D information
+  de: Bewirtschaftete Objekte im 3D-Modell übergeben
+  fr: Remettre les objets gérés dans la maquette 3D
+  it: Consegnare gli oggetti gestiti nel modello 3D
+  en: Hand over managed objects in the 3D model
 description:
-  de: 'Mit dem Betreiber klären, welche Objekte er tatsächlich bewirtschaftet — und nur diese mit den vereinbarten Stammdaten im 3D-Modell übergeben.
+  de: 'Mit dem Betreiber klären, welche Objekte er tatsächlich bewirtschaftet – und nur diese mit den vereinbarten Stammdaten und Dokumenten im 3D-Modell übergeben.
 
 
     **Ausgangslage**
 
     - Ein festes TGA-Elementpaket trifft selten die reale FM-Bewirtschaftung.
 
-    - Ohne Abstimmung entstehen zu viele oder falsche Objekte in der Übergabe.
+    - Ein raumbasiertes Aufzugsobjekt beschreibt den Aufzugsraum je Geschoss, nicht das physische Fördermittel; ohne diese Abgrenzung werden Garantiedaten falsch zugeordnet.
 
 
     **Ziel & Nutzen**
 
     - Übergabeumfang gemeinsam mit FM/Betreiber festlegen.
 
-    - Nur vereinbarte Objekte mit vereinbarten Attributen (z. B. Kennzeichnung, Garantie, Dokumente) liefern.
+    - Aufzugsraumobjekte geschossweise und eindeutig benannt übergeben; Wartungshandbuch und Wartungsvertrag nachvollziehbar verknüpfen.
 
 
     **Ablauf**
 
     1. Mit FM/Betreiber die bewirtschafteten Objektarten und Pflichtattribute festlegen.
 
-    2. Diese Objekte im Modell führen und Stammdaten gemäss Vereinbarung setzen.
+    2. Aufzugsraumobjekt je Geschoss führen und Wartungshandbuch sowie Wartungsvertrag über IfcRelAssociatesDocument mit IfcDocumentReference verknüpfen.
 
-    3. Übergabe prüfen und an den Betreiber ausliefern.
-
-
-    **Ergebnis**
-
-    - Projektspezifische 3D-FM-Übergabe — ohne generisches TGA-Pflichtkatalog.
+    3. Garantieende und Unternehmer beim raumbasierten Ansatz im Wartungsvertrag oder dessen Dokumentmetadaten prüfen; WarrantyEndDate nur an einem vorhandenen physischen IfcTransportElement mit PredefinedType=ELEVATOR
+    führen und die Übergabe ausliefern.
 
 
-    **Lieferobjekte**
+    **Lieferergebnis**
 
-    - Modell mit IfcProject, IfcSite, IfcBuilding und IfcBuildingStorey
+    - 3D-FM-Modell mit vereinbarten Objekten und Stammdaten.
 
-    - Objektarten und Attribute gemäss schriftlicher Vereinbarung mit FM/Betreiber
-
-    - Kein festes Elementplan-TGA-Elementpaket für diesen Anwendungsfall'
-  fr: 'Clarifier avec l''exploitant les objets qu''il gère réellement — et ne livrer que ceux-ci avec les données convenues dans la maquette 3D.
+    - Verknüpfte Wartungshandbücher und Wartungsverträge.'
+  fr: 'Clarifier avec l''exploitant les objets qu''il gère réellement – et ne livrer que ceux-ci avec les données et documents convenus dans la maquette 3D.
 
 
     **Situation de départ**
 
     - Un catalogue CVC fixe correspond rarement à la gestion FM réelle.
 
-    - Sans accord, la livraison contient trop d''objets ou les mauvais.
+    - Un objet local d''ascenseur décrit l''espace de l''ascenseur par étage, et non l''appareil élévateur physique ; sans cette distinction, les données de garantie sont attribuées au mauvais objet.
 
 
     **Objectif et bénéfice**
 
     - Définir le périmètre de livraison avec le FM / l''exploitant.
 
-    - Livrer uniquement les objets convenus avec les attributs convenus (p. ex. identification, garantie, documents).
+    - Livrer les objets locaux d''ascenseur par étage avec une désignation univoque et relier clairement le manuel et le contrat de maintenance.
 
 
     **Déroulement**
 
     1. Définir avec le FM / l''exploitant les types d''objets gérés et les attributs obligatoires.
 
-    2. Saisir ces objets dans le modèle et renseigner les données selon l''accord.
+    2. Saisir un objet local d''ascenseur par étage et relier le manuel ainsi que le contrat de maintenance au moyen d''IfcRelAssociatesDocument avec IfcDocumentReference.
 
-    3. Contrôler la livraison et la remettre à l''exploitant.
-
-
-    **Résultat**
-
-    - Livraison FM 3D spécifique au projet — sans catalogue CVC générique obligatoire.
+    3. Contrôler, pour l''approche basée sur les locaux, la fin de garantie et l''entrepreneur dans le contrat de maintenance ou ses métadonnées ; renseigner WarrantyEndDate uniquement sur un IfcTransportElement
+    physique existant avec PredefinedType=ELEVATOR, puis remettre la livraison à l''exploitant.
 
 
-    **Livrables**
+    **Livrable**
 
-    - Maquette avec IfcProject, IfcSite, IfcBuilding et IfcBuildingStorey
+    - Maquette FM 3D avec les objets et données de base convenus.
 
-    - Types d''objets et attributs selon accord écrit avec FM / exploitant
-
-    - Pas de paquet d''éléments CVC Elementplan fixe pour ce cas d''usage'
-  it: 'Chiarire con il gestore quali oggetti gestisce davvero — e consegnare solo quelli con i dati anagrafici concordati nel modello 3D.
+    - Manuels et contrats de maintenance liés.'
+  it: 'Chiarire con il gestore quali oggetti gestisce davvero – e consegnare solo quelli con i dati e i documenti concordati nel modello 3D.
 
 
     **Situazione di partenza**
 
     - Un catalogo impianti fisso raramente corrisponde alla gestione FM reale.
 
-    - Senza accordo la consegna contiene troppi oggetti o quelli sbagliati.
+    - Un oggetto locale ascensore descrive lo spazio dell''ascensore per piano, non l''impianto elevatore fisico; senza questa distinzione i dati di garanzia vengono attribuiti all''oggetto sbagliato.
 
 
     **Obiettivo e beneficio**
 
     - Definire il perimetro di consegna con FM / gestore.
 
-    - Consegnare solo gli oggetti concordati con gli attributi concordati (p. es. identificazione, garanzia, documenti).
+    - Consegnare gli oggetti locali ascensore piano per piano con una denominazione univoca e collegare chiaramente il manuale e il contratto di manutenzione.
 
 
     **Svolgimento**
 
     1. Definire con FM / gestore i tipi di oggetti gestiti e gli attributi obbligatori.
 
-    2. Gestire questi oggetti nel modello e impostare i dati secondo l''accordo.
+    2. Gestire un oggetto locale ascensore per piano e collegare il manuale e il contratto di manutenzione tramite IfcRelAssociatesDocument con IfcDocumentReference.
 
-    3. Verificare la consegna e consegnarla al gestore.
-
-
-    **Risultato**
-
-    - Consegna FM 3D specifica del progetto — senza catalogo impianti generico obbligatorio.
+    3. Verificare, per l''approccio basato sui locali, la fine della garanzia e l''impresa nel contratto di manutenzione o nei relativi metadati; indicare WarrantyEndDate solo su un IfcTransportElement
+    fisico esistente con PredefinedType=ELEVATOR, quindi consegnare al gestore.
 
 
-    **Oggetti della fornitura**
+    **Risultato della fornitura**
 
-    - Modello con IfcProject, IfcSite, IfcBuilding e IfcBuildingStorey
+    - Modello FM 3D con gli oggetti e i dati anagrafici concordati.
 
-    - Tipi di oggetto e attributi secondo accordo scritto con FM / gestore
-
-    - Nessun pacchetto elementi impianti Elementplan fisso per questo caso d''uso'
-  en: 'Agree with the operator which objects they actually manage — and hand over only those with the agreed master data in the 3D model.
+    - Manuali e contratti di manutenzione collegati.'
+  en: 'Agree with the operator which objects they actually manage – and hand over only those with the agreed master data and documents in the 3D model.
 
 
     **Starting point**
 
     - A fixed MEP element pack rarely matches real FM asset management.
 
-    - Without agreement, handover includes too many or the wrong objects.
+    - A space-based elevator object describes the elevator space on each storey, not the physical lifting equipment; without this distinction, warranty data is assigned to the wrong object.
 
 
     **Goal & benefit**
 
     - Set handover scope together with FM / the operator.
 
-    - Deliver only agreed objects with agreed attributes (e.g. identification, warranty, documents).
+    - Deliver uniquely named elevator space objects storey by storey and clearly link the maintenance manual and maintenance contract.
 
 
     **Process**
 
     1. Define with FM / the operator the managed object kinds and mandatory attributes.
 
-    2. Carry those objects in the model and set master data per the agreement.
+    2. Maintain one elevator space object per storey and associate the maintenance manual and maintenance contract through IfcRelAssociatesDocument with IfcDocumentReference.
 
-    3. Check the handover and deliver it to the operator.
-
-
-    **Outcome**
-
-    - Project-specific 3D FM handover — without a generic mandatory MEP catalogue.
+    3. For the space-based approach, check warranty end and contractor in the maintenance contract or its document metadata; use WarrantyEndDate only on an existing physical IfcTransportElement with PredefinedType=ELEVATOR,
+    then deliver the handover to the operator.
 
 
-    **Deliverables**
+    **Deliverable**
 
-    - Model with IfcProject, IfcSite, IfcBuilding, and IfcBuildingStorey
+    - 3D FM model with agreed objects and master data.
 
-    - Object kinds and attributes according to a written agreement with FM / the operator
-
-    - No fixed Elementplan MEP element pack for this use case'
+    - Linked maintenance manuals and maintenance contracts.'
 workflow_group: null
 parent_workflow: pragmaticbim:workflow/hov
 picture_link: null
 status: active
+service_kind: special
 needed_in_domain:
 - pragmaticbim:domain/architecture
 - pragmaticbim:domain/mep
-comment: FM handover. No fixed MEP element attribute pack — scope agreed with operator. Phases typically 51–62.
+comment: FM handover. No fixed MEP element attribute pack – scope agreed with operator. WarrantyEndDate in Pset_Warranty applies only to IfcElement/IfcElementType, not IfcSpace. For the space-based elevator
+  approach, warranty end and contractor belong in the linked maintenance contract or its metadata. If a physical IfcTransportElement with PredefinedType=ELEVATOR is delivered, Pset_Warranty may be used
+  there; this workflow does not require creating that physical element. Phases typically 51–62.

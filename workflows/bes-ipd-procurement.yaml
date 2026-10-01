@@ -1,0 +1,155 @@
+id: pragmaticbim:workflow/bes-ipd-procurement
+code: BES-IPD
+sort_order: 17
+name:
+  de: IPD-Leistung über funktionale Grundreferenz und Referenzkosten beschaffen
+  fr: Acquérir une prestation IPD sur une référence fonctionnelle et des coûts de référence
+  it: Acquisire una prestazione IPD su riferimento funzionale e costi di riferimento
+  en: Procure IPD services against a functional base reference and reference costs
+description:
+  de: 'Planung und Ausführung in einem IPD-Modell auf einer gemeinsamen funktionalen Grundreferenz und marktkonform indexierten Referenzkosten beschaffen, Honorare daran ausrichten und bessere Ergebnisse
+    nach Abschluss gegen die Referenz ausgleichen.
+
+
+    **Ausgangslage**
+
+    - Fixpreis- oder Design-Build-Vergaben ohne gemeinsame Referenz belohnen Risikozuschläge und lassen Honorare sowie Bonuszahlungen gegenüber dem tatsächlichen Projektergebnis nicht nachvollziehbar verrechnen.
+
+    - Ohne indexierte, an realistische Marktpreise gebundene Referenzkosten fehlen vergleichbare Kalkulationsgrundlagen; Abweichungen werden erst spät und streitig sichtbar.
+
+
+    **Ziel & Nutzen**
+
+    - Vergleichbare IPD-Vergabe auf einer freigegebenen funktionalen und kostenmässigen Referenz erhalten.
+
+    - Honorarberechnung und Bonusabrechnung an dieselbe Referenz binden, sodass bessere Ergebnisse nach Projektabschluss transparent gegen die Referenzwerte aufgerechnet werden können.
+
+
+    **Ablauf**
+
+    1. Freigegebene Betriebs- und Funktionsgrundlagen, Raumprogramm, Qualitätsanforderungen und ein schlankes Raummodell bereitstellen.
+
+    2. Funktionale Grundreferenz festlegen und Referenzkosten aus realistischen Marktpreisen mit Preisstand und Indexierungsregel ableiten.
+
+    3. Angebote auf diese Referenz ausrichten und Honorar- sowie Bonusregeln vertraglich verankern.
+
+
+    **Lieferergebnis**
+
+    - Freigegebene IPD-Grundreferenz mit funktionalen Anforderungen und indexierten Referenzkosten.
+
+    - IPD-Vertrag mit Honorarbasis und Bonusregeln gegenüber der Referenz.
+
+    - Abrechnungslogik für Ist-Ergebnis versus Referenz nach Projektabschluss.'
+  fr: 'Acquérir les études et la réalisation dans un modèle IPD sur une référence fonctionnelle commune et des coûts de référence indexés au marché, y rattacher les honoraires et compenser après achèvement
+    les meilleurs résultats par rapport à cette référence.
+
+
+    **Situation de départ**
+
+    - Les adjudications à prix ferme ou en conception-réalisation sans référence commune favorisent les suppléments de risque et rendent les honoraires ainsi que les bonus non traçables face au résultat
+    réel du projet.
+
+    - Sans coûts de référence indexés sur des prix de marché réalistes, les bases de calcul ne sont pas comparables; les écarts n''apparaissent que tardivement et de manière litigieuse.
+
+
+    **Objectif et bénéfice**
+
+    - Obtenir une adjudication IPD comparable sur une référence fonctionnelle et financière validée.
+
+    - Lier le calcul des honoraires et le décompte des bonus à la même référence, afin que les meilleurs résultats puissent être compensés de manière transparente après l''achèvement du projet.
+
+
+    **Déroulement**
+
+    1. Fournir les bases d''exploitation et fonctionnelles validées, le programme des locaux, les exigences de qualité et une maquette légère des locaux.
+
+    2. Établir la référence fonctionnelle de base et déduire les coûts de référence à partir de prix de marché réalistes, avec état des prix et règle d''indexation.
+
+    3. Aligner les offres sur cette référence et ancrer contractuellement les règles d''honoraires et de bonus.
+
+
+    **Livrable**
+
+    - Référence IPD validée avec exigences fonctionnelles et coûts de référence indexés.
+
+    - Contrat IPD avec base d''honoraires et règles de bonus par rapport à la référence.
+
+    - Logique de décompte du résultat réel versus la référence après achèvement du projet.'
+  it: 'Acquisire progettazione ed esecuzione in un modello IPD su un riferimento funzionale comune e costi di riferimento indicizzati al mercato, ancorare gli onorari a tale riferimento e compensare dopo
+    il completamento i risultati migliori rispetto al riferimento.
+
+
+    **Situazione di partenza**
+
+    - Le aggiudicazioni a prezzo fisso o di progettazione e costruzione senza riferimento comune premiano i supplementi di rischio e rendono onorari e bonus non tracciabili rispetto al risultato effettivo
+    del progetto.
+
+    - Senza costi di riferimento indicizzati a prezzi di mercato realistici mancano basi di calcolo confrontabili; gli scostamenti emergono solo tardi e in modo contestato.
+
+
+    **Obiettivo e beneficio**
+
+    - Ottenere un''aggiudicazione IPD confrontabile su un riferimento funzionale e di costo approvato.
+
+    - Vincolare il calcolo degli onorari e il consuntivo dei bonus allo stesso riferimento, affinché i risultati migliori possano essere compensati in modo trasparente dopo il completamento del progetto.
+
+
+    **Svolgimento**
+
+    1. Fornire le basi operative e funzionali approvate, il programma dei locali, i requisiti qualitativi e un modello leggero dei locali.
+
+    2. Stabilire il riferimento funzionale di base e ricavare i costi di riferimento da prezzi di mercato realistici, con stato dei prezzi e regola di indicizzazione.
+
+    3. Allineare le offerte a questo riferimento e ancorare contrattualmente le regole di onorario e di bonus.
+
+
+    **Risultato della fornitura**
+
+    - Riferimento IPD approvato con requisiti funzionali e costi di riferimento indicizzati.
+
+    - Contratto IPD con base di onorario e regole di bonus rispetto al riferimento.
+
+    - Logica di consuntivo del risultato effettivo versus il riferimento dopo il completamento del progetto.'
+  en: 'Procure design and construction under an IPD model against a shared functional base reference and market-indexed reference costs, tie fees to that reference, and settle outperformance against it
+    after project completion.
+
+
+    **Starting point**
+
+    - Fixed-price or design-build awards without a shared reference reward risk premiums and leave fees and bonus payments unverifiable against the actual project outcome.
+
+    - Without indexed reference costs tied to realistic market prices, pricing bases are not comparable; deviations become visible only late and in dispute.
+
+
+    **Goal & benefit**
+
+    - Obtain a comparable IPD award on an approved functional and cost reference.
+
+    - Bind fee calculation and bonus settlement to the same reference so that better outcomes can be settled transparently against the reference values after project completion.
+
+
+    **Process**
+
+    1. Provide the approved operational and functional foundations, room programme, quality requirements, and a lean room model.
+
+    2. Establish the functional base reference and derive reference costs from realistic market prices with a price basis and indexation rule.
+
+    3. Align bids to that reference and contractualize the fee and bonus rules.
+
+
+    **Deliverable**
+
+    - Approved IPD base reference with functional requirements and indexed reference costs.
+
+    - IPD contract with fee basis and bonus rules against the reference.
+
+    - Settlement logic for actual outcome versus reference after project completion.'
+workflow_group: planungsteam
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: 'Deliverable document: pragmaticbim:document/ipd-base-reference (IGR). Reference costs, price basis and indexation live in the document, not as new IFC attributes. Model minimum matches bes-design-build-procurement
+  (lean room model); quantities can feed des-abstractbim-element-based-cost. Distinct from design-build: shared reference and bonus settlement instead of a binding offer price alone.'

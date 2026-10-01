@@ -3,7 +3,7 @@ name:
   de: SIA Phasen
   fr: Phases SIA
   it: Fasi SIA
-  en: SIA Phases
+  en: SIA phases
 values:
   - '11'
   - '21'
@@ -18,8 +18,8 @@ values:
   - '61'
   - '62'
 milestones:
-  - id: '11:beginning'
-    code: beginning
+  - id: '11:B'
+    code: B
     sort_order: 1
     name:
       de: Beginn 11 (Strategische Planung)
@@ -29,20 +29,31 @@ milestones:
     status: active
     phase: '11'
     kind: beginning
-  - id: '11:end'
-    code: end
+  - id: '11:M'
+    code: M
     sort_order: 2
+    name:
+      de: Mitte 11 (Strategische Planung)
+      fr: Milieu 11 (Planification stratégique)
+      it: Metà 11 (Pianificazione strategica)
+      en: Mid Phase 11 (Strategic planning)
+    status: active
+    phase: '11'
+    kind: custom
+  - id: '11:E'
+    code: E
+    sort_order: 3
     name:
       de: Ende 11 (Strategische Planung)
       fr: Fin 11 (Planification stratégique)
       it: Fine 11 (Pianificazione strategica)
-      en: End 11 (Strategic planning)
+      en: End Phase 11 (Strategic planning)
     status: active
     phase: '11'
     kind: end
-  - id: '21:beginning'
-    code: beginning
-    sort_order: 3
+  - id: '21:B'
+    code: B
+    sort_order: 4
     name:
       de: Beginn 21 (Vorstudien)
       fr: Début 21 (Études préliminaires)
@@ -51,20 +62,31 @@ milestones:
     status: active
     phase: '21'
     kind: beginning
-  - id: '21:end'
-    code: end
-    sort_order: 4
+  - id: '21:M'
+    code: M
+    sort_order: 5
+    name:
+      de: Mitte 21 (Vorstudien)
+      fr: Milieu 21 (Études préliminaires)
+      it: Metà 21 (Studi preliminari)
+      en: Mid Phase 21 (Preliminary studies)
+    status: active
+    phase: '21'
+    kind: custom
+  - id: '21:E'
+    code: E
+    sort_order: 6
     name:
       de: Ende 21 (Vorstudien)
       fr: Fin 21 (Études préliminaires)
       it: Fine 21 (Studi preliminari)
-      en: End 21 (Preliminary studies)
+      en: End Phase 21 (Preliminary studies)
     status: active
     phase: '21'
     kind: end
-  - id: '22:beginning'
-    code: beginning
-    sort_order: 5
+  - id: '22:B'
+    code: B
+    sort_order: 7
     name:
       de: Beginn 22 (Vorstudien Verfahren)
       fr: Début 22 (Études préliminaires, procédure)
@@ -73,20 +95,31 @@ milestones:
     status: active
     phase: '22'
     kind: beginning
-  - id: '22:end'
-    code: end
-    sort_order: 6
+  - id: '22:M'
+    code: M
+    sort_order: 8
+    name:
+      de: Mitte 22 (Vorstudien Verfahren)
+      fr: Milieu 22 (Études préliminaires, procédure)
+      it: Metà 22 (Studi preliminari, procedura)
+      en: Mid Phase 22 (Preliminary studies, procedure)
+    status: active
+    phase: '22'
+    kind: custom
+  - id: '22:E'
+    code: E
+    sort_order: 9
     name:
       de: Ende 22 (Vorstudien Verfahren)
       fr: Fin 22 (Études préliminaires, procédure)
       it: Fine 22 (Studi preliminari, procedura)
-      en: End 22 (Preliminary studies, procedure)
+      en: End Phase 22 (Preliminary studies, procedure)
     status: active
     phase: '22'
     kind: end
-  - id: '31:beginning'
-    code: beginning
-    sort_order: 7
+  - id: '31:B'
+    code: B
+    sort_order: 10
     name:
       de: Beginn 31 (Vorprojekt)
       fr: Début 31 (Avant-projet)
@@ -95,20 +128,31 @@ milestones:
     status: active
     phase: '31'
     kind: beginning
-  - id: '31:end'
-    code: end
-    sort_order: 8
+  - id: '31:M'
+    code: M
+    sort_order: 11
+    name:
+      de: Mitte 31 (Vorprojekt)
+      fr: Milieu 31 (Avant-projet)
+      it: Metà 31 (Avamprogetto)
+      en: Mid Phase 31 (Preliminary design)
+    status: active
+    phase: '31'
+    kind: custom
+  - id: '31:E'
+    code: E
+    sort_order: 12
     name:
       de: Ende 31 (Vorprojekt)
       fr: Fin 31 (Avant-projet)
       it: Fine 31 (Avamprogetto)
-      en: End 31 (Preliminary design)
+      en: End Phase 31 (Preliminary design)
     status: active
     phase: '31'
     kind: end
-  - id: '32:beginning'
-    code: beginning
-    sort_order: 9
+  - id: '32:B'
+    code: B
+    sort_order: 13
     name:
       de: Beginn 32 (Bauprojekt)
       fr: Début 32 (Projet de construction)
@@ -117,20 +161,31 @@ milestones:
     status: active
     phase: '32'
     kind: beginning
-  - id: '32:end'
-    code: end
-    sort_order: 10
+  - id: '32:M'
+    code: M
+    sort_order: 14
+    name:
+      de: Mitte 32 (Bauprojekt)
+      fr: Milieu 32 (Projet de construction)
+      it: Metà 32 (Progetto di costruzione)
+      en: Mid Phase 32 (Construction project)
+    status: active
+    phase: '32'
+    kind: custom
+  - id: '32:E'
+    code: E
+    sort_order: 15
     name:
       de: Ende 32 (Bauprojekt)
       fr: Fin 32 (Projet de construction)
       it: Fine 32 (Progetto di costruzione)
-      en: End 32 (Construction project)
+      en: End Phase 32 (Construction project)
     status: active
     phase: '32'
     kind: end
-  - id: '33:beginning'
-    code: beginning
-    sort_order: 11
+  - id: '33:B'
+    code: B
+    sort_order: 16
     name:
       de: Beginn 33 (Bewilligungsverfahren)
       fr: Début 33 (Procédure d'autorisation)
@@ -139,20 +194,31 @@ milestones:
     status: active
     phase: '33'
     kind: beginning
-  - id: '33:end'
-    code: end
-    sort_order: 12
+  - id: '33:M'
+    code: M
+    sort_order: 17
+    name:
+      de: Mitte 33 (Bewilligungsverfahren)
+      fr: Milieu 33 (Procédure d'autorisation)
+      it: Metà 33 (Procedura di autorizzazione)
+      en: Mid Phase 33 (Permit procedure)
+    status: active
+    phase: '33'
+    kind: custom
+  - id: '33:E'
+    code: E
+    sort_order: 18
     name:
       de: Ende 33 (Bewilligungsverfahren)
       fr: Fin 33 (Procédure d'autorisation)
       it: Fine 33 (Procedura di autorizzazione)
-      en: End 33 (Permit procedure)
+      en: End Phase 33 (Permit procedure)
     status: active
     phase: '33'
     kind: end
-  - id: '41:beginning'
-    code: beginning
-    sort_order: 13
+  - id: '41:B'
+    code: B
+    sort_order: 19
     name:
       de: Beginn 41 (Ausschreibung)
       fr: Début 41 (Appel d'offres)
@@ -161,20 +227,31 @@ milestones:
     status: active
     phase: '41'
     kind: beginning
-  - id: '41:end'
-    code: end
-    sort_order: 14
+  - id: '41:M'
+    code: M
+    sort_order: 20
+    name:
+      de: Mitte 41 (Ausschreibung)
+      fr: Milieu 41 (Appel d'offres)
+      it: Metà 41 (Gara)
+      en: Mid Phase 41 (Tender)
+    status: active
+    phase: '41'
+    kind: custom
+  - id: '41:E'
+    code: E
+    sort_order: 21
     name:
       de: Ende 41 (Ausschreibung)
       fr: Fin 41 (Appel d'offres)
       it: Fine 41 (Gara)
-      en: End 41 (Tender)
+      en: End Phase 41 (Tender)
     status: active
     phase: '41'
     kind: end
-  - id: '51:beginning'
-    code: beginning
-    sort_order: 15
+  - id: '51:B'
+    code: B
+    sort_order: 22
     name:
       de: Beginn 51 (Ausführungsplanung)
       fr: Début 51 (Planification d'exécution)
@@ -183,20 +260,31 @@ milestones:
     status: active
     phase: '51'
     kind: beginning
-  - id: '51:end'
-    code: end
-    sort_order: 16
+  - id: '51:M'
+    code: M
+    sort_order: 23
+    name:
+      de: Mitte 51 (Ausführungsplanung)
+      fr: Milieu 51 (Planification d'exécution)
+      it: Metà 51 (Pianificazione esecutiva)
+      en: Mid Phase 51 (Execution planning)
+    status: active
+    phase: '51'
+    kind: custom
+  - id: '51:E'
+    code: E
+    sort_order: 24
     name:
       de: Ende 51 (Ausführungsplanung)
       fr: Fin 51 (Planification d'exécution)
       it: Fine 51 (Pianificazione esecutiva)
-      en: End 51 (Execution planning)
+      en: End Phase 51 (Execution planning)
     status: active
     phase: '51'
     kind: end
-  - id: '52:beginning'
-    code: beginning
-    sort_order: 17
+  - id: '52:B'
+    code: B
+    sort_order: 25
     name:
       de: Beginn 52 (Ausführung)
       fr: Début 52 (Exécution)
@@ -205,20 +293,31 @@ milestones:
     status: active
     phase: '52'
     kind: beginning
-  - id: '52:end'
-    code: end
-    sort_order: 18
+  - id: '52:M'
+    code: M
+    sort_order: 26
+    name:
+      de: Mitte 52 (Ausführung)
+      fr: Milieu 52 (Exécution)
+      it: Metà 52 (Esecuzione)
+      en: Mid Phase 52 (Construction)
+    status: active
+    phase: '52'
+    kind: custom
+  - id: '52:E'
+    code: E
+    sort_order: 27
     name:
       de: Ende 52 (Ausführung)
       fr: Fin 52 (Exécution)
       it: Fine 52 (Esecuzione)
-      en: End 52 (Construction)
+      en: End Phase 52 (Construction)
     status: active
     phase: '52'
     kind: end
-  - id: '53:beginning'
-    code: beginning
-    sort_order: 19
+  - id: '53:B'
+    code: B
+    sort_order: 28
     name:
       de: Beginn 53 (Inbetriebnahme)
       fr: Début 53 (Mise en service)
@@ -227,20 +326,31 @@ milestones:
     status: active
     phase: '53'
     kind: beginning
-  - id: '53:end'
-    code: end
-    sort_order: 20
+  - id: '53:M'
+    code: M
+    sort_order: 29
+    name:
+      de: Mitte 53 (Inbetriebnahme)
+      fr: Milieu 53 (Mise en service)
+      it: Metà 53 (Messa in servizio)
+      en: Mid Phase 53 (Commissioning)
+    status: active
+    phase: '53'
+    kind: custom
+  - id: '53:E'
+    code: E
+    sort_order: 30
     name:
       de: Ende 53 (Inbetriebnahme)
       fr: Fin 53 (Mise en service)
       it: Fine 53 (Messa in servizio)
-      en: End 53 (Commissioning)
+      en: End Phase 53 (Commissioning)
     status: active
     phase: '53'
     kind: end
-  - id: '61:beginning'
-    code: beginning
-    sort_order: 21
+  - id: '61:B'
+    code: B
+    sort_order: 31
     name:
       de: Beginn 61 (Betrieb)
       fr: Début 61 (Exploitation)
@@ -249,20 +359,31 @@ milestones:
     status: active
     phase: '61'
     kind: beginning
-  - id: '61:end'
-    code: end
-    sort_order: 22
+  - id: '61:M'
+    code: M
+    sort_order: 32
+    name:
+      de: Mitte 61 (Betrieb)
+      fr: Milieu 61 (Exploitation)
+      it: Metà 61 (Esercizio)
+      en: Mid Phase 61 (Operation)
+    status: active
+    phase: '61'
+    kind: custom
+  - id: '61:E'
+    code: E
+    sort_order: 33
     name:
       de: Ende 61 (Betrieb)
       fr: Fin 61 (Exploitation)
       it: Fine 61 (Esercizio)
-      en: End 61 (Operation)
+      en: End Phase 61 (Operation)
     status: active
     phase: '61'
     kind: end
-  - id: '62:beginning'
-    code: beginning
-    sort_order: 23
+  - id: '62:B'
+    code: B
+    sort_order: 34
     name:
       de: Beginn 62 (Überwachung)
       fr: Début 62 (Surveillance)
@@ -271,14 +392,25 @@ milestones:
     status: active
     phase: '62'
     kind: beginning
-  - id: '62:end'
-    code: end
-    sort_order: 24
+  - id: '62:M'
+    code: M
+    sort_order: 35
+    name:
+      de: Mitte 62 (Überwachung)
+      fr: Milieu 62 (Surveillance)
+      it: Metà 62 (Sorveglianza)
+      en: Mid Phase 62 (Monitoring)
+    status: active
+    phase: '62'
+    kind: custom
+  - id: '62:E'
+    code: E
+    sort_order: 36
     name:
       de: Ende 62 (Überwachung)
       fr: Fin 62 (Surveillance)
       it: Fine 62 (Sorveglianza)
-      en: End 62 (Monitoring)
+      en: End Phase 62 (Monitoring)
     status: active
     phase: '62'
     kind: end

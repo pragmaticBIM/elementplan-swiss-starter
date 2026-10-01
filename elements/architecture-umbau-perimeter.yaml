@@ -1,0 +1,361 @@
+id: pragmaticbim:element/architecture-umbau-perimeter
+code: ARC-UMBAU-PER
+sort_order: 77
+status: active
+name:
+  de: Umbauperimeter
+  fr: Périmètre de transformation
+  it: Perimetro di trasformazione
+  en: Alteration area
+definition:
+  de: 'Macht geplante und abgeschlossene Umbauten im Gesamtmodell räumlich und zeitlich nachvollziehbar.
+
+
+    **Beschreibung**
+
+    - Volumen, das den Bearbeitungsbereich eines eigenständigen Umbauprojekts abgrenzt.
+
+    - Bleibt nach Abschluss als Historieneintrag im Gesamtmodell erhalten – kein Raumobjekt und kein Bauwerksteil.
+
+
+    **Modellierungshinweis**
+
+    - Als vereinfachten Proxy-Körper mit der tatsächlichen räumlichen Ausdehnung des Umbauprojekts modellieren.
+
+    - Dem Planungsperimeter bzw. den betroffenen Geschossen zuweisen; ObjectType = Umbauperimeter.
+
+    - Name = Projektnummer; StartDate und EndDate = geplanter Bearbeitungszeitraum.
+
+    - Pro Umbauprojekt einen eigenen Körper mit stabiler GlobalId führen und nach Abschluss mit AlterationStatus = COMPLETED im Modell belassen.'
+  fr: 'Rend les transformations prévues et achevées traçables dans la maquette globale, dans l''espace et dans le temps.
+
+
+    **Description**
+
+    - Volume délimitant le secteur traité par un projet de transformation autonome.
+
+    - Reste dans la maquette globale après l''achèvement comme trace historique – ce n''est ni un local ni un élément de construction.
+
+
+    **Directives de modélisation**
+
+    - Modéliser comme corps proxy simplifié selon l''étendue spatiale réelle du projet de transformation.
+
+    - Rattacher au périmètre de planification ou aux étages concernés ; ObjectType = Périmètre de transformation.
+
+    - Name = numéro du projet ; StartDate et EndDate = période d''étude prévue.
+
+    - Saisir un corps distinct avec un GlobalId stable par projet de transformation et le conserver dans la maquette après l''achèvement avec AlterationStatus = COMPLETED.'
+  it: 'Rende tracciabili nel modello complessivo, nello spazio e nel tempo, le trasformazioni previste e completate.
+
+
+    **Descrizione**
+
+    - Volume che delimita l''area interessata da un progetto di trasformazione autonomo.
+
+    - Rimane nel modello complessivo dopo il completamento come traccia storica – non è né un locale né un elemento costruttivo.
+
+
+    **Direttive di modellazione**
+
+    - Modellare come corpo proxy semplificato secondo l''estensione spaziale effettiva del progetto di trasformazione.
+
+    - Assegnare al perimetro di pianificazione o ai piani interessati; ObjectType = Perimetro di trasformazione.
+
+    - Name = numero del progetto; StartDate e EndDate = periodo di progettazione previsto.
+
+    - Gestire un corpo separato con GlobalId stabile per ogni progetto di trasformazione e conservarlo nel modello dopo il completamento con AlterationStatus = COMPLETED.'
+  en: 'Makes planned and completed alterations spatially and chronologically traceable in the overall model.
+
+
+    **Description**
+
+    - Volume defining the area covered by a separate alteration project.
+
+    - Remains in the overall model as a historical record after completion – it is neither a space nor a building component.
+
+
+    **Modelling guidelines**
+
+    - Model as a simplified proxy body matching the actual spatial extent of the alteration project.
+
+    - Assign to the planning perimeter or affected storeys; ObjectType = Alteration area.
+
+    - Name = project number; StartDate and EndDate = planned design period.
+
+    - Keep one separate body with a stable GlobalId for each alteration project and retain it in the model after completion with AlterationStatus = COMPLETED.'
+needed_in_domain:
+- pragmaticbim:domain/architecture
+- pragmaticbim:domain/mep
+- pragmaticbim:domain/structural
+entity_ifc2x3: IfcBuildingElementProxy
+entity_ifc4: IfcBuildingElementProxy
+entity_ifc4_3: IfcBuildingElementProxy
+picture_link: architecture-umbau-perimeter.png
+picture_print_link: architecture-umbau-perimeter-print.tif
+attachment_link: architecture-umbau-perimeter.ifc
+model_link: architecture-umbau-perimeter.ifc
+applicability:
+  de: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType=Umbauperimeter) OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType=Umbauperimeter)
+  fr: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Périmètre de transformation") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Périmètre de transformation")
+  it: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Perimetro di trasformazione") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Perimetro di trasformazione")
+  en: (entity_ifc4=IfcBuildingElementProxy AND PredefinedType=USERDEFINED AND ObjectType="Alteration area") OR (entity_ifc2x3=IfcBuildingElementProxy AND ObjectType="Alteration area")
+attributes:
+- name: Name
+  pset: null
+  definition:
+    de: Projektnummer des Umbaus.
+    fr: Numéro du projet de transformation.
+    it: Numero del progetto di trasformazione.
+    en: Alteration project number.
+  datatype: IfcLabel
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/opr-facility-management-architecture-model
+  is_applicability: false
+  status: active
+  sort_order: 1
+- name: PredefinedType
+  pset: null
+  definition:
+    de: 'Kennzeichnet den Proxy als benutzerdefinierten Typ.
+
+
+      **Zulässige Werte**
+
+      - `USERDEFINED` — benutzerdefinierter Typ; ObjectType präzisiert die Art'
+    fr: 'Identifie le proxy comme type défini par l''utilisateur.
+
+
+      **Valeurs admises**
+
+      - `USERDEFINED` — type défini par l''utilisateur ; ObjectType précise la nature'
+    it: 'Identifica il proxy come tipo definito dall''utente.
+
+
+      **Valori ammessi**
+
+      - `USERDEFINED` — tipo definito dall''utente; ObjectType precisa il tipo'
+    en: 'Marks the proxy as a user-defined type.
+
+
+      **Allowed values**
+
+      - `USERDEFINED` — user-defined type; ObjectType specifies the kind'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/predefinedtype-building-element-proxy
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/opr-facility-management-architecture-model
+  is_applicability: true
+  status: active
+  sort_order: 2
+- name: ObjectType
+  pset: null
+  definition:
+    de: 'Art des Proxy-Elements.
+
+
+      **Zulässige Werte**
+
+      - `Umbauperimeter` — räumliche Abgrenzung eines Umbauprojekts'
+    fr: 'Nature de l''élément proxy.
+
+
+      **Valeurs admises**
+
+      - `Périmètre de transformation` — délimitation spatiale d''un projet de transformation'
+    it: 'Tipo dell''elemento proxy.
+
+
+      **Valori ammessi**
+
+      - `Perimetro di trasformazione` — delimitazione spaziale di un progetto di trasformazione'
+    en: 'Kind of proxy element.
+
+
+      **Allowed values**
+
+      - `Alteration area` — spatial boundary of an alteration project'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/objecttype-umbau-perimeter
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/opr-facility-management-architecture-model
+  is_applicability: true
+  status: active
+  sort_order: 3
+- name: StartDate
+  pset: ePset_AlterationArea
+  definition:
+    de: Geplanter Beginn des Umbauprojekts.
+    fr: Début prévu du projet de transformation.
+    it: Inizio previsto del progetto di trasformazione.
+    en: Planned start of the alteration project.
+  datatype: IfcDate
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/opr-facility-management-architecture-model
+  is_applicability: false
+  status: active
+  sort_order: 4
+- name: EndDate
+  pset: ePset_AlterationArea
+  definition:
+    de: Geplantes Ende des Umbauprojekts.
+    fr: Fin prévue du projet de transformation.
+    it: Fine prevista del progetto di trasformazione.
+    en: Planned end of the alteration project.
+  datatype: IfcDate
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/opr-facility-management-architecture-model
+  is_applicability: false
+  status: active
+  sort_order: 5
+- name: AlterationStatus
+  pset: ePset_AlterationArea
+  definition:
+    de: 'Bearbeitungsstatus des Umbauperimeters.
+
+
+      **Zulässige Werte**
+
+      - `PLANNED` — geplant
+
+      - `ACTIVE` — in Bearbeitung
+
+      - `COMPLETED` — abgeschlossen
+
+      - `CANCELLED` — aufgehoben'
+    fr: 'Statut de traitement du périmètre de transformation.
+
+
+      **Valeurs admises**
+
+      - `PLANNED` — prévu
+
+      - `ACTIVE` — en cours
+
+      - `COMPLETED` — achevé
+
+      - `CANCELLED` — annulé'
+    it: 'Stato di elaborazione del perimetro di trasformazione.
+
+
+      **Valori ammessi**
+
+      - `PLANNED` — previsto
+
+      - `ACTIVE` — in corso
+
+      - `COMPLETED` — completato
+
+      - `CANCELLED` — annullato'
+    en: 'Status of the alteration area.
+
+
+      **Allowed values**
+
+      - `PLANNED` — planned
+
+      - `ACTIVE` — active
+
+      - `COMPLETED` — completed
+
+      - `CANCELLED` — cancelled'
+  datatype: IfcLabel
+  allowed_values: pragmaticbim:value/alteration-status
+  needed_in_phases:
+  - '21'
+  - '22'
+  - '31'
+  - '32'
+  - '33'
+  - '41'
+  - '51'
+  - '52'
+  - '53'
+  - '61'
+  - '62'
+  ifc_versions:
+  - ifc2x3
+  - ifc4
+  - ifc4x3
+  needed_for_workflows:
+  - pragmaticbim:workflow/opr-facility-management-architecture-model
+  is_applicability: false
+  status: active
+  sort_order: 6

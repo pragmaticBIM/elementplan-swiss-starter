@@ -1,6 +1,6 @@
 id: pragmaticbim:document/system-schematics
 code: SYS
-sort_order: 121
+sort_order: 141
 name:
   de: System- und Anlageschemata (HLKSE)
   fr: Schémas de système et d'installation (CVC)
@@ -36,21 +36,17 @@ file_name:
   de: '{Projektnummer}_TGA-SYS_{Freitext}.{ext}'
   fr: '{NumeroProjet}_CVC-SYS_{Libre}.{ext}'
   it: '{NumeroProgetto}_IMP-SYS_{Libero}.{ext}'
-  en: '{ProjectNumber}_MEP-SYS_{Free}.{ext}'
+  en: '{ProjectNumber}_MEP-SYS_{FreeText}.{ext}'
 status: active
 domain: pragmaticbim:domain/mep
+includes_spatial_baseline: true
 included_elements:
-  - pragmaticbim:element/project
-  - pragmaticbim:element/site
-  - pragmaticbim:element/building
-  - pragmaticbim:element/storey
-  - pragmaticbim:element/survey-reference-point
   - pragmaticbim:element/mep-schematic-pipe
   - pragmaticbim:element/mep-schematic-duct
   - pragmaticbim:element/mep-schematic-tray
   - pragmaticbim:element/mep-schematic-equipment-space
 scheduled_milestones:
-  - "32:beginning"
-  - "33:beginning"
-  - "41:beginning"
-  - "51:beginning"
+  - "32:M"
+  - "33:M"
+  - "41:M"
+  - "51:M"

@@ -6,10 +6,10 @@ name:
   it: Tipo di proxy
   en: Proxy type
 description:
-  de: PredefinedType für IfcBuildingElementProxy in der Detailverweisübersicht.
-  fr: PredefinedType pour IfcBuildingElementProxy dans la vue d'ensemble des renvois de détail.
-  it: PredefinedType per IfcBuildingElementProxy nella panoramica dei riferimenti al dettaglio.
-  en: PredefinedType for IfcBuildingElementProxy in the detail reference overview.
+  de: PredefinedType für IfcBuildingElementProxy als Detailverweis.
+  fr: PredefinedType pour IfcBuildingElementProxy comme renvoi de détail.
+  it: PredefinedType per IfcBuildingElementProxy come riferimento al dettaglio.
+  en: PredefinedType for IfcBuildingElementProxy used as a detail reference.
 year: 2026
 norm_reference: IFC4
 status: active

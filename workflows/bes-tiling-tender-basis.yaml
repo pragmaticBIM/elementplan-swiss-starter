@@ -1,0 +1,152 @@
+id: pragmaticbim:workflow/bes-tiling-tender-basis
+code: BES-TILING-TENDER
+sort_order: 21
+name:
+  de: Grundlage für die Plattenausschreibung liefern
+  fr: Fournir la base pour l'appel d'offres des carrelages
+  it: Fornire la base per la gara dei rivestimenti in piastrelle
+  en: Provide the basis for the tiling tender
+description:
+  de: 'Plattenbeläge an Böden und Wänden raumweise als prüfbare Grundlage für Mengen und Ausschreibung bereitstellen.
+
+
+    **Ausgangslage**
+
+    - Boden- und Wandplatten werden für die Ausschreibung oft manuell aus Raumlisten und Plänen zusammengestellt.
+
+    - Doppelte Mengenermittlungen für Ausschreibung und Rechnungsprüfung verursachen Aufwand und führen zu nicht nachvollziehbaren Abweichungen.
+
+
+    **Ziel & Nutzen**
+
+    - Boden- und Wandbelagstyp sowie Nettoflächen je Raum gemeinsam auswerten.
+
+    - Öffnungen über die Nettowandfläche berücksichtigen und eine vereinbarte Modellunschärfe bewusst akzeptieren.
+
+    - Bei geometrisch anspruchsvollen Bereichen separate Boden- oder Wandbekleidungen für eine genauere Mengenermittlung modellieren.
+
+
+    **Ablauf**
+
+    1. Innenräume mit Raumnummer, Boden- und Wandbelag sowie Netto-Boden- und Nettowandfläche bereitstellen.
+
+    2. Räume mit Plattenbelägen filtern, Flächen und Öffnungsabzüge prüfen und bei ungenügender Genauigkeit separate Bekleidungselemente modellieren.
+
+    3. Mengen nach Belagsart und Raum auswerten und mit Leistungsverzeichnis und Ausschreibungsplänen abstimmen.
+
+
+    **Lieferergebnis**
+
+    - Architekturmodell mit raumbezogenen Boden- und Wandbelägen sowie prüfbaren Nettoflächen
+
+    - Mengenübersicht nach Belagsart und Raum als Grundlage für Ausschreibung und Rechnungsprüfung'
+  fr: 'Mettre à disposition les carrelages de sols et de murs par local comme base vérifiable pour les quantités et l''appel d''offres.
+
+
+    **Situation de départ**
+
+    - Les carrelages de sols et de murs sont souvent rassemblés manuellement à partir des listes de locaux et des plans pour l''appel d''offres.
+
+    - Des métrés distincts pour l''appel d''offres et le contrôle des factures génèrent du travail et des écarts difficiles à retracer.
+
+
+    **Objectif et bénéfice**
+
+    - Quantifier ensemble le type de revêtement de sol et de mur ainsi que les surfaces nettes de chaque local.
+
+    - Tenir compte des ouvertures au moyen de la surface murale nette et accepter consciemment l''imprécision convenue de la maquette.
+
+    - Modéliser des revêtements de sol ou de mur distincts pour les zones géométriquement complexes qui exigent un métré plus précis.
+
+
+    **Déroulement**
+
+    1. Fournir les locaux intérieurs avec numéro, revêtements de sol et de mur ainsi que surfaces nettes de sol et de mur.
+
+    2. Filtrer les locaux avec carrelage, contrôler les surfaces et les déductions d''ouvertures et, si la précision est insuffisante, modéliser des revêtements distincts.
+
+    3. Quantifier par type de revêtement et par local, puis coordonner les résultats avec le devis et les plans d''appel d''offres.
+
+
+    **Livrable**
+
+    - Maquette d''architecture avec revêtements de sol et de mur par local et surfaces nettes vérifiables
+
+    - Vue d''ensemble des quantités par type de revêtement et local comme base pour l''appel d''offres et le contrôle des factures'
+  it: 'Mettere a disposizione i rivestimenti in piastrelle di pavimenti e pareti per locale come base verificabile per le quantità e la gara.
+
+
+    **Situazione di partenza**
+
+    - I rivestimenti in piastrelle di pavimenti e pareti vengono spesso raccolti manualmente da elenchi locali e piani per la gara.
+
+    - Computi separati per la gara e il controllo delle fatture generano lavoro e scostamenti difficili da ricostruire.
+
+
+    **Obiettivo e beneficio**
+
+    - Quantificare insieme il tipo di rivestimento di pavimento e parete e le superfici nette di ogni locale.
+
+    - Considerare le aperture mediante la superficie netta delle pareti e accettare consapevolmente l''imprecisione concordata del modello.
+
+    - Modellare rivestimenti separati di pavimenti o pareti per le zone geometricamente complesse che richiedono quantità più precise.
+
+
+    **Svolgimento**
+
+    1. Fornire gli spazi interni con numero, rivestimenti di pavimento e parete e superfici nette di pavimento e parete.
+
+    2. Filtrare gli spazi con piastrelle, verificare superfici e deduzioni per aperture e, se la precisione è insufficiente, modellare rivestimenti separati.
+
+    3. Quantificare per tipo di rivestimento e locale, quindi coordinare i risultati con il capitolato e i piani di gara.
+
+
+    **Risultato della fornitura**
+
+    - Modello di architettura con rivestimenti di pavimento e parete per locale e superfici nette verificabili
+
+    - Quadro delle quantità per tipo di rivestimento e locale come base per la gara e il controllo delle fatture'
+  en: 'Provide floor and wall tiling by space as a verifiable basis for quantities and tendering.
+
+
+    **Starting point**
+
+    - Floor and wall tiling is often compiled manually from room lists and drawings for tendering.
+
+    - Separate quantity take-offs for tendering and invoice checking create extra work and discrepancies that are difficult to trace.
+
+
+    **Goal & benefit**
+
+    - Evaluate floor and wall finish types together with the net areas of each space.
+
+    - Account for openings through the net wall area and consciously accept the agreed model uncertainty.
+
+    - Model separate floor or wall coverings for geometrically complex areas that require more accurate quantities.
+
+
+    **Process**
+
+    1. Provide interior spaces with room number, floor and wall finishes, and net floor and wall areas.
+
+    2. Filter spaces with tiling, check areas and opening deductions, and model separate covering elements where accuracy is insufficient.
+
+    3. Quantify by finish type and space, then coordinate the results with the bill of quantities and tender drawings.
+
+
+    **Deliverable**
+
+    - Architecture model with floor and wall finishes by space and verifiable net areas
+
+    - Quantity overview by finish type and space as the basis for tendering and invoice checking'
+workflow_group: ausschreibung
+parent_workflow: pragmaticbim:workflow/bes
+picture_link: null
+status: active
+service_kind: basic
+countries:
+- CH
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Tender preparation in SIA phase 41. The pragmatic room-based method uses FloorCovering with NetFloorArea and WallCovering with NetWallArea. Accept the agreed quantity tolerance; where this is insufficient,
+  model architecture-floor-covering or architecture-wall-cladding-interior elements.

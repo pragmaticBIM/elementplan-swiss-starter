@@ -1,0 +1,35 @@
+id: pragmaticbim:usage-scenario/flucht
+code: US-WH-16
+sort_order: 16
+name:
+  de: Flucht
+  fr: Évacuation
+  it: Fuga
+  en: Escape
+description:
+  de: Bewohnende verlassen das Wohnzimmer über den Wohnungseingang und das Treppenhaus zur Strasse; der Fluchtbalkon ist der zweite Ausgang.
+  fr: Les occupants quittent le séjour par l'entrée du logement et la cage d'escalier jusqu'à la rue ; le balcon de fuite est la seconde sortie.
+  it: Chi abita lascia il soggiorno dall'ingresso dell'alloggio e dal vano scale fino alla strada; il balcone di fuga è la seconda uscita.
+  en: Occupants leave the living room via the dwelling entry and stairwell to the street; the escape balcony is the second exit.
+scenario_group: Wohnen
+status: active
+jurisdiction:
+- ch
+required_room_types:
+- pragmaticbim:room-type/wohnzimmer
+- pragmaticbim:room-type/wohnungseingang
+- pragmaticbim:room-type/treppenhaus
+- pragmaticbim:room-type/eingangshalle
+- pragmaticbim:room-type/strasse
+- pragmaticbim:room-type/fluchtbalkon
+room_relationships:
+- from_room_type: pragmaticbim:room-type/wohnzimmer
+  to_room_type: pragmaticbim:room-type/wohnungseingang
+- from_room_type: pragmaticbim:room-type/wohnungseingang
+  to_room_type: pragmaticbim:room-type/treppenhaus
+- from_room_type: pragmaticbim:room-type/treppenhaus
+  to_room_type: pragmaticbim:room-type/eingangshalle
+- from_room_type: pragmaticbim:room-type/eingangshalle
+  to_room_type: pragmaticbim:room-type/strasse
+- from_room_type: pragmaticbim:room-type/wohnzimmer
+  to_room_type: pragmaticbim:room-type/fluchtbalkon

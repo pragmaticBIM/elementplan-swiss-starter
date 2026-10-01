@@ -1,0 +1,166 @@
+id: pragmaticbim:workflow/des-apartment-schedule
+code: DES-APT-SCHEDULE
+sort_order: 44
+name:
+  de: Wohnungsspiegel erstellen
+  fr: Établir le tableau des logements
+  it: Elaborare l'elenco degli appartamenti
+  en: Prepare apartment schedule
+description:
+  de: 'Wohnungsspiegel aus Brutto- und Nettoräumen ableiten und bei Planungsänderungen zuverlässig nachführen.
+
+
+    **Ausgangslage**
+
+    - Anzahl, Typ und Fläche der Wohnungen bilden eine zentrale Grundlage des Business Case; bereits kleine Änderungen können die Finanzierung beeinflussen.
+
+    - Manuell geführte Wohnungsspiegel und Raumzuordnungen veralten bei Varianten und Grundrissanpassungen schnell.
+
+
+    **Ziel & Nutzen**
+
+    - Bereits in frühen Phasen belastbare Wohnungskennwerte mit geringem Modellierungsaufwand bereitstellen.
+
+    - Nettowohnflächen mit zunehmender Planungstiefe präzisieren und fehlerhafte oder fehlende Raumzuordnungen sichtbar machen.
+
+
+    **Ablauf**
+
+    1. Jede Wohnung als eigenes Bruttovolumen mit stabiler Wohnungsnummer und Wohnungstyp modellieren.
+
+    2. In frühen Phasen die Nettowohnfläche aus Bruttofläche minus berechneter Konstruktionsfläche ermitteln; später ausgewählte Wohnungstypen mit Nettoräumen detaillieren, ohne jede Wohnung einzeln auszuarbeiten.
+
+    3. In späteren Planungsphasen `ePset_Space.UsageUnitReference` für die Nettoräume möglichst algorithmisch anhand ihrer geometrischen Lage im jeweiligen Bruttovolumen befüllen.
+
+
+    **Lieferergebnis**
+
+    - Wohnungsspiegel mit Anzahl, Typ, Brutto- und Nettowohnfläche je Wohnung
+
+    - Nachvollziehbare Flächenberechnung und geprüfte geometrische Zuordnung der Nettoräume
+
+
+    **Hinweis**
+
+    - Alternativ können die Nettoräume einer Wohnung über `IfcZone` gruppiert werden. Die Erstellung und Bedienung solcher Zonen wird jedoch nicht von allen Autorensystemen und Viewern einfach unterstützt.'
+  fr: 'Déduire le tableau des logements des volumes bruts et des locaux nets et le tenir à jour de manière fiable lors des modifications du projet.
+
+
+    **Situation de départ**
+
+    - Le nombre, le type et la surface des logements constituent une base essentielle du plan financier ; même de petites modifications peuvent influer sur le financement.
+
+    - Les tableaux de logements et les affectations de locaux tenus manuellement deviennent rapidement obsolètes lors de variantes et d''adaptations des plans.
+
+
+    **Objectif et bénéfice**
+
+    - Disposer dès la phase initiale de données fiables sur les logements avec un effort de modélisation limité.
+
+    - Préciser progressivement les surfaces nettes des logements et rendre visibles les affectations de locaux erronées ou manquantes.
+
+
+    **Déroulement**
+
+    1. Modéliser chaque logement comme un volume brut distinct, avec un numéro et un type de logement stables.
+
+    2. En phase initiale, calculer la surface nette du logement en déduisant la surface de construction calculée de la surface brute ; par la suite, détailler des types de logements représentatifs avec
+    leurs locaux nets, sans élaborer chaque logement individuellement.
+
+    3. Dans les phases ultérieures, renseigner si possible `ePset_Space.UsageUnitReference` pour les locaux nets au moyen d''un algorithme fondé sur leur position géométrique dans le volume brut correspondant.
+
+
+    **Livrable**
+
+    - Tableau indiquant le nombre, le type ainsi que les surfaces brute et nette de chaque logement
+
+    - Calcul des surfaces traçable et affectation géométrique contrôlée des locaux nets
+
+
+    **Remarque**
+
+    - Les locaux nets d''un logement peuvent aussi être regroupés au moyen d''une `IfcZone`. La création et l''utilisation de telles zones ne sont toutefois pas aisées dans tous les logiciels auteurs et
+    visionneuses.'
+  it: 'Ricavare l''elenco degli appartamenti dai volumi lordi e dai locali netti e aggiornarlo in modo affidabile in caso di modifiche progettuali.
+
+
+    **Situazione di partenza**
+
+    - Il numero, il tipo e la superficie degli appartamenti costituiscono una base essenziale del business plan; anche piccole modifiche possono influire sul finanziamento.
+
+    - Gli elenchi degli appartamenti e le associazioni dei locali gestiti manualmente diventano rapidamente obsoleti in caso di varianti e modifiche delle piante.
+
+
+    **Obiettivo e beneficio**
+
+    - Disporre già nella fase iniziale di dati affidabili sugli appartamenti con un onere di modellazione limitato.
+
+    - Precisare progressivamente le superfici nette degli appartamenti e rendere visibili le associazioni dei locali errate o mancanti.
+
+
+    **Svolgimento**
+
+    1. Modellare ogni appartamento come volume lordo distinto, con numero e tipo di appartamento stabili.
+
+    2. Nella fase iniziale, calcolare la superficie netta dell''appartamento sottraendo dalla superficie lorda la superficie di costruzione calcolata; in seguito, dettagliare tipi di appartamenti rappresentativi
+    con i relativi locali netti, senza elaborare singolarmente ogni appartamento.
+
+    3. Nelle fasi successive, compilare se possibile `ePset_Space.UsageUnitReference` per i locali netti mediante un algoritmo basato sulla loro posizione geometrica nel rispettivo volume lordo.
+
+
+    **Risultato della fornitura**
+
+    - Elenco con numero, tipo, superficie lorda e superficie netta di ogni appartamento
+
+    - Calcolo tracciabile delle superfici e associazione geometrica verificata dei locali netti
+
+
+    **Nota**
+
+    - In alternativa, i locali netti di un appartamento possono essere raggruppati mediante una `IfcZone`. La creazione e l''uso di tali zone non sono tuttavia semplici in tutti i software di authoring
+    e visualizzazione.'
+  en: 'Derive the apartment schedule from gross volumes and net spaces and update it reliably when the design changes.
+
+
+    **Starting point**
+
+    - Apartment count, type, and area are a key basis for the business case; even small changes can affect financing.
+
+    - Manually maintained apartment schedules and space assignments quickly become outdated as options and layouts change.
+
+
+    **Goal & benefit**
+
+    - Provide reliable apartment metrics in early phases with limited modelling effort.
+
+    - Refine net apartment areas as the design develops and expose incorrect or missing space assignments.
+
+
+    **Process**
+
+    1. Model each apartment as a separate gross volume with a stable apartment number and apartment type.
+
+    2. In early phases, calculate net apartment area as gross area minus calculated construction area; later, detail representative apartment types with net spaces without developing every apartment individually.
+
+    3. In later design phases, populate `ePset_Space.UsageUnitReference` for net spaces where possible using an algorithm based on their geometric position within the corresponding gross volume.
+
+
+    **Deliverable**
+
+    - Apartment schedule showing the count, type, gross area, and net area of each apartment
+
+    - Traceable area calculation and verified geometric assignment of net spaces
+
+
+    **Note**
+
+    - Alternatively, an apartment''s net spaces can be grouped using `IfcZone`. However, creating and using such zones is not straightforward in all authoring tools and viewers.'
+workflow_group: konzept
+parent_workflow: pragmaticbim:workflow/des
+picture_link: null
+status: active
+service_kind: basic
+needed_in_domain:
+- pragmaticbim:domain/architecture
+comment: Use one gross-volume space per apartment. In later phases, assign interior spaces to apartments by geometric containment or intersection and report missing or ambiguous assignments. IfcZone can
+  represent the apartment grouping, but is optional because authoring and viewer support are often difficult for planning teams.
